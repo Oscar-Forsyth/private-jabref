@@ -1,0 +1,693 @@
+
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java–
+
+(org.jabref.gui.fieldeditors.FieldEditorsCLASSE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java   ("&
+packageorg.jabref.gui.fieldeditors"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"Æ
+declarationStringò<mark class="annotation">@SuppressWarnings("unchecked")</mark> <br><mark class="modifier">public </mark><mark class="modifier">class </mark>FieldEditors"
+accesspublic*FieldEditors2˘
+¢org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)DECLARATIONE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java$  $(+2è
+∏org.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)DECLARATIONE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javam) m(>2ë
+;org.jabref.gui.fieldeditors.FieldEditors?LOGGER@34.32:34.38DECLARATIONE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java"  "(&Ωª
+¢org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)METHODE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java$  $(+"
+isFinalfalse"»
+declarationString≤<mark class="modifier">public </mark><mark class="modifier">static </mark>FieldEditorFX <mark class="method">getForField</mark>(final Field field<mark class="modifier"><mark class="modifier">,</mark></mark> final TaskExecutor taskExecutor<mark class="modifier"><mark class="modifier">,</mark></mark> final DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> final JournalAbbreviationRepository journalAbbreviationRepository<mark class="modifier"><mark class="modifier">,</mark></mark> final PreferencesService preferences<mark class="modifier"><mark class="modifier">,</mark></mark> final BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> final EntryType entryType<mark class="modifier"><mark class="modifier">,</mark></mark> final SuggestionProviders suggestionProviders<mark class="modifier"><mark class="modifier">,</mark></mark> final UndoManager undoManager)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeFieldEditorFX*getForField2Å
+2org.jabref.model.entry.field.Field.getProperties()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java-9 -(F2à
+∏org.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java/9 /(N2ä
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLF
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java/{ /(Ü2ç
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java3 3(.2¢
+Sorg.jabref.gui.entryeditor.EntryEditorPreferences.shouldAllowIntegerEditionBibtex()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java58 5(W2î
+Eorg.jabref.preferences.PreferencesService.getEntryEditorPreferences()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java5 5(52è
+@org.jabref.logic.bibtex.FieldPreferences.getNonWrappableFields()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java7e 7(z2é
+?org.jabref.preferences.PreferencesService.getFieldPreferences()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java7O 7(b2x
+)java.lang.Object.equals(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java9F 9(L2î
+Eorg.jabref.logic.preferences.TimestampPreferences.getTimestampField()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java92 9(C2í
+Corg.jabref.preferences.PreferencesService.getTimestampPreferences()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java9 9(/2ç
+>java.time.format.DateTimeFormatter.ofPattern(java.lang.String)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java:; :(D2ï
+Forg.jabref.logic.preferences.TimestampPreferences.getTimestampFormat()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java:k :(}2í
+Corg.jabref.preferences.PreferencesService.getTimestampPreferences()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java:Q :(h2w
+(java.util.Set.contains(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java;# ;(+2ç
+>java.time.format.DateTimeFormatter.ofPattern(java.lang.String)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java<; <(D2w
+(java.util.Set.contains(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java=# =(+2w
+(java.util.Set.contains(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java?# ?(+2w
+(java.util.Set.contains(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaA# A(+2w
+(java.util.Set.contains(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaAR A(Z2y
+(java.util.Set.contains(java.lang.Object)CALLG
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaAÑ A(å2w
+(java.util.Set.contains(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaC# C(+2w
+(java.util.Set.contains(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaI# I(+2w
+(java.util.Set.contains(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaK# K(+2w
+(java.util.Set.contains(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaM# M(+2Ö
+6org.jabref.model.database.BibDatabaseContext.getMode()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaNj N(q2w
+(java.util.Set.contains(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaO# O(+2w
+(java.util.Set.contains(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaQ# Q(+2w
+(java.util.Set.contains(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaS# S(+2w
+(java.util.Set.contains(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaU# U(+2x
+)java.lang.Object.equals(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaV V( 2w
+(java.util.Set.contains(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java[# [(+2w
+(java.util.Set.contains(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java]# ](+2w
+(java.util.Set.contains(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java_# _(+2w
+(java.util.Set.contains(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javae# e(+2û
+Œorg.jabref.logic.integrity.FieldCheckers.FieldCheckers(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences, org.jabref.logic.journals.JournalAbbreviationRepository, boolean)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java10 1(=2ß
+◊org.jabref.gui.fieldeditors.DateEditor.DateEditor(org.jabref.model.entry.field.Field, java.time.format.DateTimeFormatter, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java: :(!2ß
+◊org.jabref.gui.fieldeditors.DateEditor.DateEditor(org.jabref.model.entry.field.Field, java.time.format.DateTimeFormatter, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java< <(!2Å
+±org.jabref.gui.fieldeditors.UrlEditor.UrlEditor(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java> >( 2â
+πorg.jabref.gui.fieldeditors.JournalEditor.JournalEditor(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java@ @($2É
+≥org.jabref.gui.fieldeditors.ISSNEditor.ISSNEditor(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaD D(!2Ö
+µorg.jabref.gui.fieldeditors.OwnerEditor.OwnerEditor(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaF F("2◊
+áorg.jabref.gui.fieldeditors.GroupEditor.GroupEditor(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, boolean, javax.swing.undo.UndoManager)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaH H("2ø
+Ôorg.jabref.gui.fieldeditors.LinkedFilesEditor.LinkedFilesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaJ J((2∫
+korg.jabref.gui.fieldeditors.OptionEditor.OptionEditor(org.jabref.gui.fieldeditors.OptionEditorViewModel<T>)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaL L(%2µ
+Âorg.jabref.gui.fieldeditors.YesNoEditorViewModel.YesNoEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers, javax.swing.undo.UndoManager)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaL* L(>2∫
+korg.jabref.gui.fieldeditors.OptionEditor.OptionEditor(org.jabref.gui.fieldeditors.OptionEditorViewModel<T>)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaN N(%2‡
+êorg.jabref.gui.fieldeditors.MonthEditorViewModel.MonthEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.integrity.FieldCheckers, javax.swing.undo.UndoManager)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaN* N(>2∫
+korg.jabref.gui.fieldeditors.OptionEditor.OptionEditor(org.jabref.gui.fieldeditors.OptionEditorViewModel<T>)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaP P(%2∑
+Áorg.jabref.gui.fieldeditors.GenderEditorViewModel.GenderEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers, javax.swing.undo.UndoManager)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaP* P(?2∫
+korg.jabref.gui.fieldeditors.OptionEditor.OptionEditor(org.jabref.gui.fieldeditors.OptionEditorViewModel<T>)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaR R(%2ø
+Ôorg.jabref.gui.fieldeditors.EditorTypeEditorViewModel.EditorTypeEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers, javax.swing.undo.UndoManager)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaR* R(C2∫
+korg.jabref.gui.fieldeditors.OptionEditor.OptionEditor(org.jabref.gui.fieldeditors.OptionEditorViewModel<T>)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaT T(%2ø
+Ôorg.jabref.gui.fieldeditors.PaginationEditorViewModel.PaginationEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers, javax.swing.undo.UndoManager)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaT* T(C2∫
+korg.jabref.gui.fieldeditors.OptionEditor.OptionEditor(org.jabref.gui.fieldeditors.OptionEditorViewModel<T>)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaW W()2ø
+Ôorg.jabref.gui.fieldeditors.PatentTypeEditorViewModel.PatentTypeEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers, javax.swing.undo.UndoManager)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaW. W(G2∫
+korg.jabref.gui.fieldeditors.OptionEditor.OptionEditor(org.jabref.gui.fieldeditors.OptionEditorViewModel<T>)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaY Y()2≥
+„org.jabref.gui.fieldeditors.TypeEditorViewModel.TypeEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers, javax.swing.undo.UndoManager)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaY. Y(A2·
+ëorg.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java\ \(*2·
+ëorg.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java^ ^(*2€
+ãorg.jabref.gui.fieldeditors.PersonsEditor.PersonsEditor(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.preferences.PreferencesService, org.jabref.logic.integrity.FieldCheckers, boolean, javax.swing.undo.UndoManager)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java` `($2‘
+Ñorg.jabref.gui.fieldeditors.KeywordsEditor.KeywordsEditor(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javab b(%2ø
+Ôorg.jabref.gui.fieldeditors.CitationKeyEditor.CitationKeyEditor(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers, org.jabref.model.database.BibDatabaseContext)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javad d((2‘
+Ñorg.jabref.gui.fieldeditors.MarkdownEditor.MarkdownEditor(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaf f(%2Ÿ
+âorg.jabref.gui.fieldeditors.SimpleEditor.SimpleEditor(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, boolean, javax.swing.undo.UndoManager)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javai i(#2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java-3 -(82¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java/O /(T2Ü
+∂org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!suggestionProvidersCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java/V /(i2Ç
+≤org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!databaseContextCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java/k /(z2Ç
+≤org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!databaseContextCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java2 2(2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!preferencesCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java3 3(2ê
+¿org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!journalAbbreviationRepositoryCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java4 4(-2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!preferencesCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java5 5(2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java7< 7(A2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!preferencesCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java7C 7(N2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!preferencesCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java9 9(2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java9M 9(R2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java:" :('2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!preferencesCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java:E :(P2ì
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLG
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java:Ç :(î2é
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLG
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java:ñ :(£2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java; ;("2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java<" <('2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java<Z <(l2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java<n <({2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java= =("2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java>! >(&2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java>( >(:2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java>< >(I2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java? ?("2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java@% @(*2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java@, @(>2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java@@ @(M2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaA A("2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaAB A(Q2è
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLF
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaAt A(É2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaB( B(-2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaB/ B(A2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaBC B(P2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaC C("2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaD" D('2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaD) D(;2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaD= D(J2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaE E(2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaF# F((2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaF* F(<2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaF> F(K2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaG G(2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaH# H((2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaH* H(<2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaH> H(K2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!preferencesCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaHM H(X2ä
+∫org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?isMultiLine@55.16:55.27CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaHZ H(e2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!undoManagerCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaHg H(r2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaI I("2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaJ) J(.2Ç
+≤org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!databaseContextCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaJ0 J(?2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaJA J(S2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaJU J(b2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaK K("2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaL? L(D2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaLF L(X2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaLZ L(g2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!undoManagerCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaLi L(t2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaM M("2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaN? N(D2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaNF N(X2Ç
+≤org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!databaseContextCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaNZ N(i2ç
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLF
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaNu N(Ç2Ä
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!undoManagerCALLG
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaNÑ N(è2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaO O("2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaP@ P(E2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaPG P(Y2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaP[ P(h2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!undoManagerCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaPj P(u2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaQ Q("2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaRD R(I2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaRK R(]2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaR_ R(l2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!undoManagerCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaRn R(y2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaS S("2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaTD T(I2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaTK T(]2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaT_ T(l2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!undoManagerCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaTn T(y2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaU U("2¸
+¨org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!entryTypeCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaV V(2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaWH W(M2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaWO W(a2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaWc W(p2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!undoManagerCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaWr W(}2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaYB Y(G2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaYI Y([2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaY] Y(j2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!undoManagerCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaYl Y(w2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java[ [("2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java\+ \(02Ç
+≤org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!databaseContextCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java\2 \(A2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java\b \(t2ç
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLF
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java\v \(É2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java] ]("2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java^+ ^(02Ç
+≤org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!databaseContextCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java^2 ^(A2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java^b ^(t2ç
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLF
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java^v ^(É2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java_ _("2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java`% `(*2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java`, `(>2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!preferencesCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java`@ `(K2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java`M `(Z2ä
+∫org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?isMultiLine@55.16:55.27CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java`\ `(g2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!undoManagerCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java`i `(t2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaa- a(22¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javab& b(+2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javab- b(?2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javabA b(N2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!preferencesCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javabP b([2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!undoManagerCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javab] b(h2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javac c(2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javad) d(.2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javad0 d(B2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javadD d(Q2Ç
+≤org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!databaseContextCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javadS d(b2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javae e("2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaf& f(+2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaf- f(?2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javafA f(N2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!preferencesCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javafP f([2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!undoManagerCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaf] f(h2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javai$ i()2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javai+ i(=2å
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javai? i(L2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!preferencesCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaiN i(Y2ä
+∫org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?isMultiLine@55.16:55.27CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javai[ i(f2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!undoManagerCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaih i(s2˝
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!field	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java$8 $(=2Ñ
+Øorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!taskExecutor	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java%? %(K2Ö
+∞org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!dialogService	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java&@ &(M2ï
+¿org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!journalAbbreviationRepository	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java'P '(m2É
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!preferences	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java(E ((P2á
+≤org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!databaseContext	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java)E )(T2Å
+¨org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!entryType	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java*< *(E2ã
+∂org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!suggestionProviders	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java+F +(Y2É
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!undoManager	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java,> ,(I2ï
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48DECLARATIONE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java-! -(02ò
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54DECLARATIONE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java/$ /(62ì
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41DECLARATIONE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java1 1()2ë
+∫org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?isMultiLine@55.16:55.27DECLARATIONE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java7 7(2
+)org.jabref.gui.fieldeditors.FieldEditorFXRETURN_TYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java$ $(Ê
+æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldProperties@45.33:45.48VALUEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java-! -(0"
+typeSet<FieldProperty>"
+isFinaltrue"¥
+declarationStringû<mark class="modifier"> </mark><mark class="modifier">final </mark>Set<FieldProperty> <mark class="class-field">fieldProperties</mark> = field.getProperties()*fieldProperties2\
+java.util.SetTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java- -(2Ç
+*org.jabref.model.entry.field.FieldPropertyTYPE_ARGUMENTE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java- -(2Å
+2org.jabref.model.entry.field.Field.getProperties()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java-9 -(F2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java-3 -(8Ô
+¡org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?suggestionProvider@47.36:47.54VALUEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java/$ /(6"
+typeSuggestionProvider<?>"
+isFinaltrue"ı
+declarationStringﬂ<mark class="modifier"> </mark><mark class="modifier">final </mark>SuggestionProvider<?> <mark class="class-field">suggestionProvider</mark> = getSuggestionProvider(field, suggestionProviders, databaseContext.getMetaData())*suggestionProvider2~
+/org.jabref.gui.autocompleter.SuggestionProviderTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java/ /( 2à
+∏org.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java/9 /(N2ä
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLF
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java/{ /(Ü2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java/O /(T2Ü
+∂org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!suggestionProvidersCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java/V /(i2Ç
+≤org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!databaseContextCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java/k /(z´
+ºorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?fieldCheckers@49.28:49.41VALUEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java1 1()"
+typeFieldCheckers"
+isFinaltrue"‰
+declarationStringŒ<mark class="modifier"> </mark><mark class="modifier">final </mark>FieldCheckers <mark class="class-field">fieldCheckers</mark> = new FieldCheckers(databaseContext, preferences.getFilePreferences()<mark class="modifier">,</mark> journalAbbreviationRepository, preferences.getEntryEditorPreferences().shouldAllowIntegerEditionBibtex())*fieldCheckers2w
+(org.jabref.logic.integrity.FieldCheckersTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java1 1(2ç
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java3 3(.2¢
+Sorg.jabref.gui.entryeditor.EntryEditorPreferences.shouldAllowIntegerEditionBibtex()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java58 5(W2î
+Eorg.jabref.preferences.PreferencesService.getEntryEditorPreferences()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java5 5(52û
+Œorg.jabref.logic.integrity.FieldCheckers.FieldCheckers(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences, org.jabref.logic.journals.JournalAbbreviationRepository, boolean)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java10 1(=2Ç
+≤org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!databaseContextCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java2 2(2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!preferencesCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java3 3(2ê
+¿org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!journalAbbreviationRepositoryCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java4 4(-2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!preferencesCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java5 5(°
+∫org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)?isMultiLine@55.16:55.27VARIABLEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java7 7("
+typeboolean"
+isFinalfalse"È
+declarationString”<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">isMultiLine</mark> = FieldFactory.isMultiLineField(field, preferences.getFieldPreferences().getNonWrappableFields())*isMultiLine2V
+booleanTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java7 7(2è
+@org.jabref.logic.bibtex.FieldPreferences.getNonWrappableFields()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java7e 7(z2é
+?org.jabref.preferences.PreferencesService.getFieldPreferences()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java7O 7(b2¯
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java7< 7(A2˛
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!preferencesCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java7C 7(Nπ
+®org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!field	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java$8 $(="
+typeField"
+isFinaltrue" 
+declarationStringField field*field2q
+"org.jabref.model.entry.field.FieldTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java$2 $(7⁄
+Øorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!taskExecutor	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java%? %(K"
+typeTaskExecutor"
+isFinaltrue".
+declarationStringTaskExecutor taskExecutor*taskExecutor2o
+ org.jabref.gui.util.TaskExecutorTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java%2 %(>€
+∞org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!dialogService	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java&@ &(M"
+typeDialogService"
+isFinaltrue"0
+declarationStringDialogService dialogService*dialogService2k
+org.jabref.gui.DialogServiceTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java&2 &(?«
+¿org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!journalAbbreviationRepository	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java'P '(m"%
+typeJournalAbbreviationRepository"
+isFinaltrue"P
+declarationString;JournalAbbreviationRepository journalAbbreviationRepository*journalAbbreviationRepository2Ü
+7org.jabref.logic.journals.JournalAbbreviationRepositoryTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java'2 '(OÏ
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!preferences	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java(E ((P"
+typePreferencesService"
+isFinaltrue"3
+declarationStringPreferencesService preferences*preferences2x
+)org.jabref.preferences.PreferencesServiceTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java(2 ((D˚
+≤org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!databaseContext	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java)E )(T"
+typeBibDatabaseContext"
+isFinaltrue"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2{
+,org.jabref.model.database.BibDatabaseContextTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java)2 )(D—
+¨org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!entryType	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java*< *(E"
+type	EntryType"
+isFinaltrue"(
+declarationStringEntryType entryType*	entryType2u
+&org.jabref.model.entry.types.EntryTypeTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java*2 *(;ç
+∂org.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!suggestionProviders	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java+F +(Y"
+typeSuggestionProviders"
+isFinaltrue"<
+declarationString'SuggestionProviders suggestionProviders*suggestionProviders2
+0org.jabref.gui.autocompleter.SuggestionProvidersTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java+2 +(E—
+Æorg.jabref.gui.fieldeditors.FieldEditors.getForField(org.jabref.model.entry.field.Field, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.types.EntryType, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager)!undoManager	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java,> ,(I"
+typeUndoManager"
+isFinaltrue",
+declarationStringUndoManager undoManager*undoManager2k
+javax.swing.undo.UndoManagerTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java,2 ,(=û0
+∏org.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)METHODE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javam) m(>"
+isFinalfalse"Ô
+declarationStringŸ<mark class="modifier">private </mark><mark class="modifier">static </mark>SuggestionProvider&lt;?&gt; <mark class="method">getSuggestionProvider</mark>(Field field<mark class="modifier"><mark class="modifier">,</mark></mark> SuggestionProviders suggestionProviders<mark class="modifier"><mark class="modifier">,</mark></mark> MetaData metaData)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeSuggestionProvider<?>*getSuggestionProvider2Ø
+`org.jabref.gui.autocompleter.SuggestionProviders.getForField(org.jabref.model.entry.field.Field)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javanG n(R2∂
+gorg.jabref.model.metadata.MetaData.getContentSelectorValuesForField(org.jabref.model.entry.field.Field)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javap6 p(V2g
+java.util.List.isEmpty()CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaq# q(*2ï
+≈org.jabref.gui.autocompleter.ContentSelectorSuggestionProvider.ContentSelectorSuggestionProvider(org.jabref.gui.autocompleter.SuggestionProvider<java.lang.String>, java.util.List<java.lang.String>)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javat t(<2ú
+Ãorg.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)!suggestionProvidersCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javan3 n(F2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javanS n(X2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)!metaDataCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javap- p(52é
+æorg.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javapW p(\2¨
+‹org.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)?contentSelectorValues@112.21:112.42CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaq q("2©
+Ÿorg.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)?suggestionProvider@110.30:110.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javatZ t(l2≠
+‹org.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)?contentSelectorValues@112.21:112.42CALLF
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javatn t(É2ä
+;org.jabref.gui.fieldeditors.FieldEditors?LOGGER@34.32:34.38CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javav v(2©
+Ÿorg.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)?suggestionProvider@110.30:110.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaw w()2©
+Ÿorg.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)?suggestionProvider@110.30:110.48CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javaz z(%2ì
+æorg.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)!field	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javamE m(J2°
+Ãorg.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)!suggestionProviders	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javam` m(s2ó
+¡org.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)!metaData	PARAMETERF
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javam~ m(Ü2∞
+Ÿorg.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)?suggestionProvider@110.30:110.48DECLARATIONE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javan n(02≥
+‹org.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)?contentSelectorValues@112.21:112.42DECLARATIONE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javap p(*2ß
+–org.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)?exception@117.40:117.49DECLARATIONE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javau( u(12Ö
+/org.jabref.gui.autocompleter.SuggestionProviderRETURN_TYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javam m(%˛
+
+Ÿorg.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)?suggestionProvider@110.30:110.48VARIABLEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javan n(0"
+typeSuggestionProvider<?>"
+isFinalfalse"ß
+declarationStringë<mark class="modifier"> </mark>SuggestionProvider<?> <mark class="class-field">suggestionProvider</mark> = suggestionProviders.getForField(field)*suggestionProvider2~
+/org.jabref.gui.autocompleter.SuggestionProviderTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javan n(2Ø
+`org.jabref.gui.autocompleter.SuggestionProviders.getForField(org.jabref.model.entry.field.Field)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javanG n(R2ú
+Ãorg.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)!suggestionProvidersCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javan3 n(F2é
+æorg.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javanS n(Xƒ
+‹org.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)?contentSelectorValues@112.21:112.42VARIABLEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javap p(*"
+typeList<String>"
+isFinalfalse"´
+declarationStringï<mark class="modifier"> </mark>List<String> <mark class="class-field">contentSelectorValues</mark> = metaData.getContentSelectorValuesForField(field)*contentSelectorValues2]
+java.util.ListTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javap p(2h
+java.lang.StringTYPE_ARGUMENTE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javap p(2∂
+gorg.jabref.model.metadata.MetaData.getContentSelectorValuesForField(org.jabref.model.entry.field.Field)CALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javap6 p(V2ë
+¡org.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)!metaDataCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javap- p(52é
+æorg.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)!fieldCALLE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javapW p(\–
+æorg.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)!field	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javamE m(J"
+typeField"
+isFinalfalse" 
+declarationStringField field*field2q
+"org.jabref.model.entry.field.FieldTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javam? m(D§
+Ãorg.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)!suggestionProviders	PARAMETERE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javam` m(s"
+typeSuggestionProviders"
+isFinalfalse"<
+declarationString'SuggestionProviders suggestionProviders*suggestionProviders2
+0org.jabref.gui.autocompleter.SuggestionProvidersTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javamL m(_‡
+¡org.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)!metaData	PARAMETERF
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javam~ m(Ü"
+typeMetaData"
+isFinalfalse"&
+declarationStringMetaData metaData*metaData2q
+"org.jabref.model.metadata.MetaDataTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javamu m(}˝
+–org.jabref.gui.fieldeditors.FieldEditors.getSuggestionProvider(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProviders, org.jabref.model.metadata.MetaData)?exception@117.40:117.49VARIABLEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javau( u(1"
+typeClassCastException"
+isFinalfalse"1
+declarationStringClassCastException exception*	exception2k
+java.lang.ClassCastExceptionTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.javau u('ü
+;org.jabref.gui.fieldeditors.FieldEditors?LOGGER@34.32:34.38VALUEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java"  "(&"
+isFinaltrue"
+typeLogger"‚
+declarationStringÃ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(FieldEditors.class);"
+isStatictrue"
+accessprivate*LOGGER2_
+org.slf4j.LoggerTYPEE
+;src\main\java\org\jabref\gui\fieldeditors\FieldEditors.java" "(

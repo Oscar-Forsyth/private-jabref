@@ -1,0 +1,549 @@
+
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java≠
+#org.jabref.logic.cleanup.URLCleanupCLASS@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java ("#
+packageorg.jabref.logic.cleanup"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"†
+declarationStringä<mark class="modifier">public </mark><mark class="modifier">class </mark>URLCleanup<mark class="modifier"><br>implements </mark>CleanupJob"
+accesspublic*
+URLCleanup2ù
+Lorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java* *($2ä
+9org.jabref.logic.cleanup.URLCleanup?URL_REGEX@25.31:25.40DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java ((2ë
+@org.jabref.logic.cleanup.URLCleanup?DATE_TERMS_REGEX@30.31:30.47DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java (/2ã
+:org.jabref.logic.cleanup.URLCleanup?NOTE_FIELD@32.31:32.41DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java   ()2ä
+9org.jabref.logic.cleanup.URLCleanup?URL_FIELD@33.31:33.40DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java! !((2é
+=org.jabref.logic.cleanup.URLCleanup?URLDATE_FIELD@34.31:34.44DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java" "(,2ã
+:org.jabref.logic.cleanup.URLCleanup?urlPattern@36.18:36.28DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java$ $(2ë
+@org.jabref.logic.cleanup.URLCleanup?dateTermsPattern@37.18:37.34DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java% %("2å
+;org.jabref.logic.cleanup.URLCleanup?datePattern@38.18:38.29DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java& &(2ä
+9org.jabref.logic.cleanup.URLCleanup?formatter@39.41:39.50DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java') '(22o
+#org.jabref.logic.cleanup.CleanupJobEXTEND@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java# (-ç
+Lorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)METHOD@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java* *($"
+isFinalfalse"¥
+declarationStringû<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>List&lt;FieldChange&gt; <mark class="method">cleanup</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<FieldChange>*cleanup2f
+java.util.Optional.orElse(T)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java-; -(A2ñ
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java-& -(.2Å
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java/. /(52Å
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java0: 0(A2Å
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java10 1(72h
+java.util.regex.Matcher.find()CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java3 3(2i
+java.util.regex.Matcher.group()CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java4$ 4()2â
+?java.lang.String.replaceAll(java.lang.String, java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaD D(2í
+Hjava.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java8 8(2ñ
+Lorg.jabref.model.entry.BibEntry.hasField(org.jabref.model.entry.field.Field)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaJ J(2f
+java.util.Optional.orElse(T)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaKA K(G2ñ
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaK- K(52s
+)java.lang.String.equals(java.lang.Object)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaL" L((2é
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaMB M(K2®
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaM M("2é
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaP> P(G2®
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaP P(2é
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaQ/ Q(82®
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaQ Q(2h
+java.util.regex.Matcher.find()CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaT! T(%2i
+java.util.regex.Matcher.group()CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaU/ U(42í
+Hjava.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaW W( 2h
+java.util.regex.Matcher.find()CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaX  X($2i
+java.util.regex.Matcher.group()CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaY. Y(32°
+Worg.jabref.logic.formatter.bibtexfields.NormalizeDateFormatter.format(java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaZ5 Z(;2a
+java.lang.String.trim()CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java]5 ](92â
+?java.lang.String.replaceAll(java.lang.String, java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java] ]('2a
+java.lang.String.trim()CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java\/ \(32í
+Hjava.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java\ \($2ñ
+Lorg.jabref.model.entry.BibEntry.hasField(org.jabref.model.entry.field.Field)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java` `(&2f
+java.util.Optional.orElse(T)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaaQ a(W2ñ
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaa9 a(A2s
+)java.lang.String.equals(java.lang.Object)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javab. b(42é
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javacJ c(S2®
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javac" c(*2é
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javafF f(O2®
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaf f(&2é
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javagE g(N2®
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javag g(&2i
+java.util.ArrayList.ArrayList()CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java+( +(32ú
+Rorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java-  -(%2Ñ
+:org.jabref.logic.cleanup.URLCleanup?NOTE_FIELD@32.31:32.41CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java-/ -(92Ñ
+:org.jabref.logic.cleanup.URLCleanup?urlPattern@36.18:36.28CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java/# /(-2±
+gorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?noteFieldValue@45.15:45.29CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java/6 /(D2ä
+@org.jabref.logic.cleanup.URLCleanup?dateTermsPattern@37.18:37.34CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java0) 0(92±
+gorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?noteFieldValue@45.15:45.29CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java0B 0(P2Ö
+;org.jabref.logic.cleanup.URLCleanup?datePattern@38.18:38.29CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java1$ 1(/2±
+gorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?noteFieldValue@45.15:45.29CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java18 1(F2≠
+corg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?urlMatcher@47.22:47.32CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java3 3(2≠
+corg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?urlMatcher@47.22:47.32CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java4 4(#2±
+gorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?noteFieldValue@45.15:45.29CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java7' 7(52¶
+\org.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?url@52.19:52.22CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java8 8( 2ú
+Rorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaJ J(2É
+9org.jabref.logic.cleanup.URLCleanup?URL_FIELD@33.31:33.40CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaJ J((2ú
+Rorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaK' K(,2É
+9org.jabref.logic.cleanup.URLCleanup?URL_FIELD@33.31:33.40CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaK6 K(?2∞
+forg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?urlFieldValue@75.23:75.36CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaL L(!2¶
+\org.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?url@52.19:52.22CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaL) L(,2ú
+Rorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaM M(2Ñ
+:org.jabref.logic.cleanup.URLCleanup?NOTE_FIELD@32.31:32.41CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaM# M(-2¥
+jorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?newNoteFieldValue@55.19:55.36CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaM/ M(@2ú
+Rorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaP P(2Ñ
+:org.jabref.logic.cleanup.URLCleanup?NOTE_FIELD@32.31:32.41CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaP P()2¥
+jorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?newNoteFieldValue@55.19:55.36CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaP+ P(<2ú
+Rorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaQ Q(2É
+9org.jabref.logic.cleanup.URLCleanup?URL_FIELD@33.31:33.40CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaQ Q((2¶
+\org.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?url@52.19:52.22CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaQ* Q(-2≥
+iorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?dateTermsMatcher@48.22:48.38CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaT T( 2≥
+iorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?dateTermsMatcher@48.22:48.38CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaU U(.2¥
+jorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?newNoteFieldValue@55.19:55.36CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaV V(!2¥
+jorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?newNoteFieldValue@55.19:55.36CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaV$ V(52ß
+]org.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?term@85.23:85.27CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaW! W(%2Æ
+dorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?dateMatcher@49.22:49.33CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaX X(2Æ
+dorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?dateMatcher@49.22:49.33CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaY" Y(-2É
+9org.jabref.logic.cleanup.URLCleanup?formatter@39.41:39.50CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaZ+ Z(42ß
+]org.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?date@89.27:89.31CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaZ< Z(@2¥
+jorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?newNoteFieldValue@55.19:55.36CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java[ [(%2¥
+jorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?newNoteFieldValue@55.19:55.36CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java[( [(92ß
+]org.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?date@89.27:89.31CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java\% \()2ú
+Rorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java` `(2á
+=org.jabref.logic.cleanup.URLCleanup?URLDATE_FIELD@34.31:34.44CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java`' `(42ú
+Rorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaa3 a(82á
+=org.jabref.logic.cleanup.URLCleanup?URLDATE_FIELD@34.31:34.44CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaaB a(O2¥
+jorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?urlDateFieldValue@97.31:97.48CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javab b(-2∞
+forg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?formattedDate@90.27:90.40CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javab5 b(B2ú
+Rorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javac c(!2Ñ
+:org.jabref.logic.cleanup.URLCleanup?NOTE_FIELD@32.31:32.41CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javac+ c(52¥
+jorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?newNoteFieldValue@55.19:55.36CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javac7 c(H2ú
+Rorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaf f(2Ñ
+:org.jabref.logic.cleanup.URLCleanup?NOTE_FIELD@32.31:32.41CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaf' f(12¥
+jorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?newNoteFieldValue@55.19:55.36CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaf3 f(D2ú
+Rorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javag g(2á
+=org.jabref.logic.cleanup.URLCleanup?URLDATE_FIELD@34.31:34.44CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javag' g(42∞
+forg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?formattedDate@90.27:90.40CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javag6 g(C2™
+`org.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?changes@43.26:43.33CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javal l(2_
+java.util.List.add(E)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaML M(X2_
+java.util.List.add(E)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaPH P(T2_
+java.util.List.add(E)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaQ9 Q(E2_
+java.util.List.add(E)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javacT c(`2_
+java.util.List.add(E)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javafP f(\2_
+java.util.List.add(E)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javagO g([2ö
+Lorg.jabref.logic.cleanup.CleanupJob.cleanup(org.jabref.model.entry.BibEntry)OVERRIDE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java* *($2°
+Rorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)!entry	PARAMETER@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java*. *(32±
+`org.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?changes@43.26:43.33DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java+ +(!2∏
+gorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?noteFieldValue@45.15:45.29DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java- -(2¥
+corg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?urlMatcher@47.22:47.32DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java/ /( 2∫
+iorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?dateTermsMatcher@48.22:48.38DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java0 0(&2µ
+dorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?dateMatcher@49.22:49.33DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java1 1(!2≠
+\org.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?url@52.19:52.22DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java4 4(2ª
+jorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?newNoteFieldValue@55.19:55.36DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java7 7($2∑
+forg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?urlFieldValue@75.23:75.36DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaK K($2Æ
+]org.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?term@85.23:85.27DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaU U(2Æ
+]org.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?date@89.27:89.31DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaY Y(2∑
+forg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?formattedDate@90.27:90.40DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaZ Z((2ª
+jorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?urlDateFieldValue@97.31:97.48DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaa a(02_
+java.util.ListRETURN_TYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java* *(2v
+org.jabref.model.FieldChangeRETURN_TYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java* *(ü
+`org.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?changes@43.26:43.33VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java+ +(!"
+typeList<FieldChange>"
+isFinalfalse"Ç
+declarationStringm<mark class="modifier"> </mark>List<FieldChange> <mark class="class-field">changes</mark> = new ArrayList<>()*changes2X
+java.util.ListTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java+ +(2o
+org.jabref.model.FieldChangeTYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java+ +(2i
+java.util.ArrayList.ArrayList()CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java+( +(3ˇ
+gorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?noteFieldValue@45.15:45.29VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java- -("
+typeString"
+isFinalfalse"í
+declarationString}<mark class="modifier"> </mark>String <mark class="class-field">noteFieldValue</mark> = entry.getField(NOTE_FIELD).orElse("")*noteFieldValue2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java- -(2f
+java.util.Optional.orElse(T)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java-; -(A2ñ
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java-& -(.2ú
+Rorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java-  -(%2Ñ
+:org.jabref.logic.cleanup.URLCleanup?NOTE_FIELD@32.31:32.41CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java-/ -(9≤
+corg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?urlMatcher@47.22:47.32VALUE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java/ /( "
+typeMatcher"
+isFinaltrue"±
+declarationStringõ<mark class="modifier"> </mark><mark class="modifier">final </mark>Matcher <mark class="class-field">urlMatcher</mark> = urlPattern.matcher(noteFieldValue)*
+urlMatcher2a
+java.util.regex.MatcherTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java/ /(2Å
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java/. /(52Ñ
+:org.jabref.logic.cleanup.URLCleanup?urlPattern@36.18:36.28CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java/# /(-2±
+gorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?noteFieldValue@45.15:45.29CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java/6 /(D–
+iorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?dateTermsMatcher@48.22:48.38VALUE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java0 0(&"
+typeMatcher"
+isFinaltrue"Ω
+declarationStringß<mark class="modifier"> </mark><mark class="modifier">final </mark>Matcher <mark class="class-field">dateTermsMatcher</mark> = dateTermsPattern.matcher(noteFieldValue)*dateTermsMatcher2a
+java.util.regex.MatcherTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java0 0(2Å
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java0: 0(A2ä
+@org.jabref.logic.cleanup.URLCleanup?dateTermsPattern@37.18:37.34CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java0) 0(92±
+gorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?noteFieldValue@45.15:45.29CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java0B 0(P∑
+dorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?dateMatcher@49.22:49.33VALUE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java1 1(!"
+typeMatcher"
+isFinaltrue"≥
+declarationStringù<mark class="modifier"> </mark><mark class="modifier">final </mark>Matcher <mark class="class-field">dateMatcher</mark> = datePattern.matcher(noteFieldValue)*dateMatcher2a
+java.util.regex.MatcherTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java1 1(2Å
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java10 1(72Ö
+;org.jabref.logic.cleanup.URLCleanup?datePattern@38.18:38.29CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java1$ 1(/2±
+gorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?noteFieldValue@45.15:45.29CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java18 1(Fæ
+\org.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?url@52.19:52.22VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java4 4("
+typeString"
+isFinalfalse"t
+declarationString_<mark class="modifier"> </mark>String <mark class="class-field">url</mark> = urlMatcher.group()*url2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java4 4(2i
+java.util.regex.Matcher.group()CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java4$ 4()2≠
+corg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?urlMatcher@47.22:47.32CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java4 4(#√
+jorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?newNoteFieldValue@55.19:55.36VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java7 7($"
+typeString"
+isFinalfalse"˘
+declarationString„<mark class="modifier"> </mark>String <mark class="class-field">newNoteFieldValue</mark> = noteFieldValue.replace(url, "")./*
+                     * The following regex erases unnecessary remaining
+                     * content in note field. Explanation:
+                     * <ul>
+                     *     <li>"(<mark class="modifier">,</mark> )?": Matches an optional comma followed by a space</li>
+                     *     <li>"\\?": Matches an optional backslash</li>
+                     *     <li>"url\{\}": Matches the literal <mark class="modifier">string</mark> "url{}"</li>
+                     * </ul>
+                     * Note that the backslashes are doubled as Java requirement
+                     */
+replaceAll("(<mark class="modifier">,</mark> )?\\\\?url\\{\\}(<mark class="modifier">,</mark> )?"<mark class="modifier">,</mark> "")*newNoteFieldValue2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java7 7(2â
+?java.lang.String.replaceAll(java.lang.String, java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaD D(2í
+Hjava.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java8 8(2±
+gorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?noteFieldValue@45.15:45.29CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java7' 7(52¶
+\org.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?url@52.19:52.22CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java8 8( ˙
+forg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?urlFieldValue@75.23:75.36VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaK K($"
+typeString"
+isFinalfalse"ê
+declarationString{<mark class="modifier"> </mark>String <mark class="class-field">urlFieldValue</mark> = entry.getField(URL_FIELD).orElse("")*urlFieldValue2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaK K(2f
+java.util.Optional.orElse(T)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaKA K(G2ñ
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaK- K(52ú
+Rorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaK' K(,2É
+9org.jabref.logic.cleanup.URLCleanup?URL_FIELD@33.31:33.40CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaK6 K(?Õ
+]org.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?term@85.23:85.27VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaU U("
+typeString"
+isFinalfalse"{
+declarationStringf<mark class="modifier"> </mark>String <mark class="class-field">term</mark> = dateTermsMatcher.group()*term2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaU U(2i
+java.util.regex.Matcher.group()CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaU/ U(42≥
+iorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?dateTermsMatcher@48.22:48.38CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaU U(.√
+]org.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?date@89.27:89.31VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaY Y("
+typeString"
+isFinalfalse"v
+declarationStringa<mark class="modifier"> </mark>String <mark class="class-field">date</mark> = dateMatcher.group()*date2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaY Y(2i
+java.util.regex.Matcher.group()CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaY. Y(32Æ
+dorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?dateMatcher@49.22:49.33CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaY" Y(-ö
+forg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?formattedDate@90.27:90.40VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaZ Z(("
+typeString"
+isFinalfalse"Ç
+declarationStringm<mark class="modifier"> </mark>String <mark class="class-field">formattedDate</mark> = formatter.format(date)*formattedDate2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaZ Z(2°
+Worg.jabref.logic.formatter.bibtexfields.NormalizeDateFormatter.format(java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaZ5 Z(;2É
+9org.jabref.logic.cleanup.URLCleanup?formatter@39.41:39.50CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaZ+ Z(42ß
+]org.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?date@89.27:89.31CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaZ< Z(@è
+jorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)?urlDateFieldValue@97.31:97.48VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaa a(0"
+typeString"
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier"> </mark>String <mark class="class-field">urlDateFieldValue</mark> = entry.getField(URLDATE_FIELD).orElse("")*urlDateFieldValue2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaa a(2f
+java.util.Optional.orElse(T)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaaQ a(W2ñ
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaa9 a(A2ú
+Rorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaa3 a(82á
+=org.jabref.logic.cleanup.URLCleanup?URLDATE_FIELD@34.31:34.44CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.javaaB a(O‹
+Rorg.jabref.logic.cleanup.URLCleanup.cleanup(org.jabref.model.entry.BibEntry)!entry	PARAMETER@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java*. *(3"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2i
+org.jabref.model.entry.BibEntryTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java*% *(-Ç
+9org.jabref.logic.cleanup.URLCleanup?URL_REGEX@25.31:25.40VALUE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java (("
+isFinaltrue"
+typeString"œ
+declarationStringπ<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">URL_REGEX</mark> = "(?i)\\b((?:https?://|www\\d{0,3}[.]|[a-z0-9.\\-]+[.]" + "[a-z]{2,4}/)(?:[^\\s()<>\\\\]+|\\(([^\\s()<>\\\\]+|(\\([^\\s()" + "<>\\\\]+\\)))*\\))+(?:\\(([^\\s()<>\\\\]+|(\\([^\\s()<>\\\\]+\\" + ")))*\\)|[^\\s`!()\\[\\]{};:'\".<mark class="modifier">,</mark><>?¬´¬ª‚Äú‚Äù‚Äò‚Äô]))";"
+isStatictrue"
+accesspublic*	URL_REGEX2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java (∞
+@org.jabref.logic.cleanup.URLCleanup?DATE_TERMS_REGEX@30.31:30.47VALUE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java (/"
+isFinaltrue"
+typeString"Ô
+declarationStringŸ<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">DATE_TERMS_REGEX</mark> = "accessed on|visited on|retrieved on|viewed on";"
+isStatictrue"
+accesspublic*DATE_TERMS_REGEX2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java (ì
+:org.jabref.logic.cleanup.URLCleanup?NOTE_FIELD@32.31:32.41VALUE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java   ()"
+isFinaltrue"
+typeField"Ã
+declarationString∂<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Field <mark class="class-field">NOTE_FIELD</mark> = StandardField.NOTE;"
+isStatictrue"
+accessprivate*
+NOTE_FIELD2l
+"org.jabref.model.entry.field.FieldTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java   (è
+9org.jabref.logic.cleanup.URLCleanup?URL_FIELD@33.31:33.40VALUE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java! !(("
+isFinaltrue"
+typeField" 
+declarationString¥<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Field <mark class="class-field">URL_FIELD</mark> = StandardField.URL;"
+isStatictrue"
+accessprivate*	URL_FIELD2l
+"org.jabref.model.entry.field.FieldTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java! !(ü
+=org.jabref.logic.cleanup.URLCleanup?URLDATE_FIELD@34.31:34.44VALUE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java" "(,"
+isFinaltrue"
+typeField"“
+declarationStringº<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Field <mark class="class-field">URLDATE_FIELD</mark> = StandardField.URLDATE;"
+isStatictrue"
+accessprivate*URLDATE_FIELD2l
+"org.jabref.model.entry.field.FieldTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java" "(î
+:org.jabref.logic.cleanup.URLCleanup?urlPattern@36.18:36.28VALUE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java$ $("
+isFinaltrue"
+typePattern"ƒ
+declarationStringÆ<mark class="modifier"> </mark><mark class="modifier">final </mark>Pattern <mark class="class-field">urlPattern</mark> = Pattern.compile(URL_REGEX, Pattern.CASE_INSENSITIVE);"
+isStaticfalse"
+accesspackage_private*
+urlPattern2a
+java.util.regex.PatternTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java$
+ $(2Ä
+6java.util.regex.Pattern.compile(java.lang.String, int)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java$' $(.2É
+9org.jabref.logic.cleanup.URLCleanup?URL_REGEX@25.31:25.40CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java$/ $(8¥
+@org.jabref.logic.cleanup.URLCleanup?dateTermsPattern@37.18:37.34VALUE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java% %(""
+isFinaltrue"
+typePattern"—
+declarationStringª<mark class="modifier"> </mark><mark class="modifier">final </mark>Pattern <mark class="class-field">dateTermsPattern</mark> = Pattern.compile(DATE_TERMS_REGEX, Pattern.CASE_INSENSITIVE);"
+isStaticfalse"
+accesspackage_private*dateTermsPattern2a
+java.util.regex.PatternTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java%
+ %(2Ä
+6java.util.regex.Pattern.compile(java.lang.String, int)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java%- %(42ä
+@org.jabref.logic.cleanup.URLCleanup?DATE_TERMS_REGEX@30.31:30.47CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java%5 %(Eó
+;org.jabref.logic.cleanup.URLCleanup?datePattern@38.18:38.29VALUE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java& &("
+isFinaltrue"
+typePattern"À
+declarationStringµ<mark class="modifier"> </mark><mark class="modifier">final </mark>Pattern <mark class="class-field">datePattern</mark> = Pattern.compile(Date.DATE_REGEX, Pattern.CASE_INSENSITIVE);"
+isStaticfalse"
+accesspackage_private*datePattern2a
+java.util.regex.PatternTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java&
+ &(2Ä
+6java.util.regex.Pattern.compile(java.lang.String, int)CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java&( &(/Ÿ
+9org.jabref.logic.cleanup.URLCleanup?formatter@39.41:39.50VALUE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java') '(2"
+isFinaltrue"
+typeNormalizeDateFormatter"¡
+declarationString´<mark class="modifier">private </mark><mark class="modifier">final </mark>NormalizeDateFormatter <mark class="class-field">formatter</mark> = new NormalizeDateFormatter();"
+isStaticfalse"
+accessprivate*	formatter2à
+>org.jabref.logic.formatter.bibtexfields.NormalizeDateFormatterTYPE@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java' '((2°
+Worg.jabref.logic.formatter.bibtexfields.NormalizeDateFormatter.NormalizeDateFormatter()CALL@
+6src\main\java\org\jabref\logic\cleanup\URLCleanup.java'9 '(O

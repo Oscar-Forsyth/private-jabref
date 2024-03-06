@@ -1,0 +1,450 @@
+
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java§
+0org.jabref.logic.openoffice.OpenOfficeFileSearchCLASSM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java (!"&
+packageorg.jabref.logic.openoffice"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"r
+declarationString]<mark class="modifier">public </mark><mark class="modifier">class </mark>OpenOfficeFileSearch"
+accesspublic*OpenOfficeFileSearch2§
+Forg.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java (02Ã
+norg.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java+ +(72™
+Lorg.jabref.logic.openoffice.OpenOfficeFileSearch.findWindowsOpenOfficeDirs()DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java: :(72¶
+Horg.jabref.logic.openoffice.OpenOfficeFileSearch.findOSXOpenOfficeDirs()DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaL L(32®
+Jorg.jabref.logic.openoffice.OpenOfficeFileSearch.findLinuxOpenOfficeDirs()DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaR R(52°
+Corg.jabref.logic.openoffice.OpenOfficeFileSearch?LOGGER@22.32:22.38DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java  (&±/
+Forg.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()METHODM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java (0"
+isFinalfalse"¢
+declarationStringå<mark class="modifier">public </mark><mark class="modifier">static </mark>List&lt;Path&gt; <mark class="method">detectInstallations</mark>()"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+type
+List<Path>*detectInstallations2£
+Lorg.jabref.logic.openoffice.OpenOfficeFileSearch.findWindowsOpenOfficeDirs()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java% (>2•
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLO
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java Ä  (á2û
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java (  (.2t
+java.util.Collection.stream()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java   (%2u
+java.util.Optional.isPresent()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java s  (|2£
+Lorg.jabref.logic.util.io.FileUtil.find(java.lang.String, java.nio.file.Path)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java ?  (C2}
+$java.util.stream.Collectors.toList()CALLO
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java ì  (ô2ü
+Horg.jabref.logic.openoffice.OpenOfficeFileSearch.findOSXOpenOfficeDirs()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java"% "(:2§
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLN
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java#| #(É2û
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java#( #(.2t
+java.util.Collection.stream()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java# #(%2u
+java.util.Optional.isPresent()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java#o #(x2£
+Lorg.jabref.logic.util.io.FileUtil.find(java.lang.String, java.nio.file.Path)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java#? #(C2}
+$java.util.stream.Collectors.toList()CALLO
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java#è #(ï2°
+Jorg.jabref.logic.openoffice.OpenOfficeFileSearch.findLinuxOpenOfficeDirs()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java%% %(<2§
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLN
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java&~ &(Ö2û
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java&( &(.2t
+java.util.Collection.stream()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java& &(%2u
+java.util.Optional.isPresent()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java&q &(z2£
+Lorg.jabref.logic.util.io.FileUtil.find(java.lang.String, java.nio.file.Path)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java&? &(C2}
+$java.util.stream.Collectors.toList()CALLO
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java&ë &(ó2y
+"java.util.ArrayList.ArrayList(int)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java( ((2µ
+^org.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?programDirs@31.23:31.34CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java   (2≠
+Vorg.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?dir@32.47:32.50CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java n  (q2µ
+^org.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?programDirs@34.23:34.34CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java# #(2≠
+Vorg.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?dir@35.47:35.50CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java#j #(m2µ
+^org.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?programDirs@37.23:37.34CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java& &(2≠
+Vorg.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?dir@38.47:38.50CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java&l &(o2º
+^org.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?programDirs@31.23:31.34DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java ("2º
+^org.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?programDirs@34.23:34.34DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java" "("2º
+^org.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?programDirs@37.23:37.34DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java% %("2¥
+Vorg.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?dir@32.47:32.50DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java /  (22¥
+Vorg.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?dir@35.47:35.50DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java#/ #(22¥
+Vorg.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?dir@38.47:38.50DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java&/ &(22l
+java.util.ListRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java (2y
+java.nio.file.PathRETURN_TYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java (˘
+^org.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?programDirs@31.23:31.34VARIABLEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java (""
+type
+List<Path>"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark>List<Path> <mark class="class-field">programDirs</mark> = findWindowsOpenOfficeDirs()*programDirs2e
+java.util.ListTYPEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java (2r
+java.nio.file.PathTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java (2£
+Lorg.jabref.logic.openoffice.OpenOfficeFileSearch.findWindowsOpenOfficeDirs()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java% (>Ò
+^org.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?programDirs@34.23:34.34VARIABLEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java" "(""
+type
+List<Path>"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark>List<Path> <mark class="class-field">programDirs</mark> = findOSXOpenOfficeDirs()*programDirs2e
+java.util.ListTYPEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java" "(2r
+java.nio.file.PathTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java" "(2ü
+Horg.jabref.logic.openoffice.OpenOfficeFileSearch.findOSXOpenOfficeDirs()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java"% "(:ı
+^org.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?programDirs@37.23:37.34VARIABLEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java% %(""
+type
+List<Path>"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>List<Path> <mark class="class-field">programDirs</mark> = findLinuxOpenOfficeDirs()*programDirs2e
+java.util.ListTYPEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java% %(2r
+java.nio.file.PathTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java% %(2°
+Jorg.jabref.logic.openoffice.OpenOfficeFileSearch.findLinuxOpenOfficeDirs()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java%% %(<Û
+Vorg.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?dir@32.47:32.50VARIABLEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java /  (2"
+type"
+isFinalfalse"
+declarationString dir*dir2TYPEÛ
+Vorg.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?dir@35.47:35.50VARIABLEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java#/ #(2"
+type"
+isFinalfalse"
+declarationString dir*dir2TYPEÛ
+Vorg.jabref.logic.openoffice.OpenOfficeFileSearch.detectInstallations()?dir@38.47:38.50VARIABLEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java&/ &(2"
+type"
+isFinalfalse"
+declarationString dir*dir2TYPE€+
+norg.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)METHODM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java+ +(7"
+isFinalfalse"Ã
+declarationString∂<mark class="modifier">private </mark><mark class="modifier">static </mark>List&lt;Path&gt; <mark class="method">findOpenOfficeDirectories</mark>(List&lt;Path&gt; programDirectories)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+type
+List<Path>*findOpenOfficeDirectories2à
+1java.lang.String.contains(java.lang.CharSequence)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java-P -(X2Ö
+.java.lang.String.toLowerCase(java.util.Locale)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java-7 -(B2t
+java.nio.file.Path.toString()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java-, -(42à
+1java.lang.String.contains(java.lang.CharSequence)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java.D .(L2Ö
+.java.lang.String.toLowerCase(java.util.Locale)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java.+ .(62t
+java.nio.file.Path.toString()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java.  .((2£
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java7 7(2Œ
+wjava.util.stream.Stream.flatMap(java.util.function.Function<? super T, ? extends java.util.stream.Stream<? extends R>>)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java0+ 0(22t
+java.util.Collection.stream()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java0" 0((2å
+¥java.nio.file.Files.find(java.nio.file.Path, int, java.util.function.BiPredicate<java.nio.file.Path, java.nio.file.attribute.BasicFileAttributes>, java.nio.file.FileVisitOption...)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java2 2(!2v
+java.util.stream.Stream.empty()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java5 5(#2{
+$java.util.stream.Collectors.toList()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java7 7($2÷
+org.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?attr@44.70:44.74CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java- -(2÷
+org.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?path@44.64:44.68CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java-' -(+2÷
+org.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?path@44.64:44.68CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java. .(2Ÿ
+Åorg.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)!programDirectoriesCALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java0 0(!2÷
+org.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?dirs@48.51:48.55CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java2" 2(&2‡
+àorg.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?filePredicate@44.47:44.60CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java2+ 2(82ö
+Corg.jabref.logic.openoffice.OpenOfficeFileSearch?LOGGER@22.32:22.38CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java4 4(2”
+|org.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?e@51.33:51.34CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java4_ 4(`2ﬁ
+Åorg.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)!programDirectories	PARAMETERM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java+C +(U2Á
+àorg.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?filePredicate@44.47:44.60DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java,/ ,(<2›
+org.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?path@44.64:44.68DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java,@ ,(D2›
+org.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?attr@44.70:44.74DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java,F ,(J2›
+org.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?dirs@48.51:48.55DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java03 0(72⁄
+|org.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?e@51.33:51.34DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java3! 3("2l
+java.util.ListRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java+ +(2y
+java.nio.file.PathRETURN_TYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java+ +(Ü
+àorg.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?filePredicate@44.47:44.60VARIABLEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java,/ ,(<".
+type&BiPredicate<Path, BasicFileAttributes>"
+isFinalfalse"∏
+declarationString¢<mark class="modifier"> </mark>BiPredicate<Path, BasicFileAttributes> <mark class="class-field">filePredicate</mark> = (path, attr) -> attr.isDirectory() && (path.toString().toLowerCase(Locale.ROOT).contains("openoffice") || path.toString().toLowerCase(Locale.ROOT).contains("libreoffice"))*filePredicate2u
+java.util.function.BiPredicateTYPEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java, ,(2ã
++java.nio.file.attribute.BasicFileAttributesTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java, ,(2r
+java.nio.file.PathTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java, ,(-2à
+1java.lang.String.contains(java.lang.CharSequence)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java-P -(X2Ö
+.java.lang.String.toLowerCase(java.util.Locale)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java-7 -(B2t
+java.nio.file.Path.toString()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java-, -(42à
+1java.lang.String.contains(java.lang.CharSequence)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java.D .(L2Ö
+.java.lang.String.toLowerCase(java.util.Locale)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java.+ .(62t
+java.nio.file.Path.toString()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java.  .((2÷
+org.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?attr@44.70:44.74CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java- -(2÷
+org.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?path@44.64:44.68CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java-' -(+2÷
+org.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?path@44.64:44.68CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java. .(ß
+Åorg.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)!programDirectories	PARAMETERM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java+C +(U"
+type
+List<Path>"
+isFinalfalse"2
+declarationStringList<Path> programDirectories*programDirectories2e
+java.util.ListTYPEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java+8 +(<2r
+java.nio.file.PathTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java+= +(Aû
+org.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?path@44.64:44.68VARIABLEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java,@ ,(D"
+type"
+isFinalfalse"
+declarationString path*path2TYPEû
+org.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?attr@44.70:44.74VARIABLEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java,F ,(J"
+type"
+isFinalfalse"
+declarationString attr*attr2TYPEû
+org.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?dirs@48.51:48.55VARIABLEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java03 0(7"
+type"
+isFinalfalse"
+declarationString dirs*dirs2TYPEë
+|org.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)?e@51.33:51.34VARIABLEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java3! 3(""
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2j
+java.io.IOExceptionTYPEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java3 3( Ì
+Lorg.jabref.logic.openoffice.OpenOfficeFileSearch.findWindowsOpenOfficeDirs()METHODM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java: :(7"
+isFinalfalse"©
+declarationStringì<mark class="modifier">private </mark><mark class="modifier">static </mark>List&lt;Path&gt; <mark class="method">findWindowsOpenOfficeDirs</mark>()"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+type
+List<Path>*findWindowsOpenOfficeDirs2Ä
+)java.lang.System.getenv(java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java>" >((2l
+java.util.List.add(E)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java@ @(2ì
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java@  @("2Ä
+)java.lang.System.getenv(java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaD D(!2l
+java.util.List.add(E)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaF F(2ì
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaF  F("2≈
+norg.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaI I((2v
+java.util.ArrayList.ArrayList()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java;$ ;(/2π
+borg.jabref.logic.openoffice.OpenOfficeFileSearch.findWindowsOpenOfficeDirs()?progFiles@62.15:62.24CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java? ?(2∫
+corg.jabref.logic.openoffice.OpenOfficeFileSearch.findWindowsOpenOfficeDirs()?sourceList@59.19:59.29CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java@ @(2π
+borg.jabref.logic.openoffice.OpenOfficeFileSearch.findWindowsOpenOfficeDirs()?progFiles@62.15:62.24CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java@# @(,2π
+borg.jabref.logic.openoffice.OpenOfficeFileSearch.findWindowsOpenOfficeDirs()?progFiles@62.15:62.24CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaD D(2π
+borg.jabref.logic.openoffice.OpenOfficeFileSearch.findWindowsOpenOfficeDirs()?progFiles@62.15:62.24CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaE E(2∫
+corg.jabref.logic.openoffice.OpenOfficeFileSearch.findWindowsOpenOfficeDirs()?sourceList@59.19:59.29CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaF F(2π
+borg.jabref.logic.openoffice.OpenOfficeFileSearch.findWindowsOpenOfficeDirs()?progFiles@62.15:62.24CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaF# F(,2∫
+corg.jabref.logic.openoffice.OpenOfficeFileSearch.findWindowsOpenOfficeDirs()?sourceList@59.19:59.29CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaI) I(32¡
+corg.jabref.logic.openoffice.OpenOfficeFileSearch.findWindowsOpenOfficeDirs()?sourceList@59.19:59.29DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java; ;(2¿
+borg.jabref.logic.openoffice.OpenOfficeFileSearch.findWindowsOpenOfficeDirs()?progFiles@62.15:62.24DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java> >(2l
+java.util.ListRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java: :(2y
+java.nio.file.PathRETURN_TYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java: :(√
+corg.jabref.logic.openoffice.OpenOfficeFileSearch.findWindowsOpenOfficeDirs()?sourceList@59.19:59.29VARIABLEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java; ;("
+type
+List<Path>"
+isFinalfalse"~
+declarationStringi<mark class="modifier"> </mark>List<Path> <mark class="class-field">sourceList</mark> = new ArrayList<>()*
+sourceList2e
+java.util.ListTYPEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java; ;(2r
+java.nio.file.PathTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java; ;(2v
+java.util.ArrayList.ArrayList()CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java;$ ;(/ﬁ
+borg.jabref.logic.openoffice.OpenOfficeFileSearch.findWindowsOpenOfficeDirs()?progFiles@62.15:62.24VARIABLEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java> >("
+typeString"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark>String <mark class="class-field">progFiles</mark> = System.getenv("ProgramFiles")*	progFiles2g
+java.lang.StringTYPEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java> >(2Ä
+)java.lang.System.getenv(java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java>" >((ˇ
+Horg.jabref.logic.openoffice.OpenOfficeFileSearch.findOSXOpenOfficeDirs()METHODM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaL L(3"
+isFinalfalse"•
+declarationStringè<mark class="modifier">private </mark><mark class="modifier">static </mark>List&lt;Path&gt; <mark class="method">findOSXOpenOfficeDirs</mark>()"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+type
+List<Path>*findOSXOpenOfficeDirs2}
+&java.util.Collections.singletonList(T)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaM, M(92ì
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaM? M(A2≈
+norg.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaO O((2∂
+_org.jabref.logic.openoffice.OpenOfficeFileSearch.findOSXOpenOfficeDirs()?sourceList@77.19:77.29CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaO) O(32Ω
+_org.jabref.logic.openoffice.OpenOfficeFileSearch.findOSXOpenOfficeDirs()?sourceList@77.19:77.29DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaM M(2l
+java.util.ListRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaL L(2y
+java.nio.file.PathRETURN_TYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaL L(Ä
+_org.jabref.logic.openoffice.OpenOfficeFileSearch.findOSXOpenOfficeDirs()?sourceList@77.19:77.29VARIABLEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaM M("
+type
+List<Path>"
+isFinalfalse"°
+declarationStringã<mark class="modifier"> </mark>List<Path> <mark class="class-field">sourceList</mark> = Collections.singletonList(Path.of("/Applications"))*
+sourceList2e
+java.util.ListTYPEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaM M(2r
+java.nio.file.PathTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaM M(2}
+&java.util.Collections.singletonList(T)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaM, M(92ì
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaM? M(A¨
+Jorg.jabref.logic.openoffice.OpenOfficeFileSearch.findLinuxOpenOfficeDirs()METHODM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaR R(5"
+isFinalfalse"ß
+declarationStringë<mark class="modifier">private </mark><mark class="modifier">static </mark>List&lt;Path&gt; <mark class="method">findLinuxOpenOfficeDirs</mark>()"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+type
+List<Path>*findLinuxOpenOfficeDirs2t
+java.util.Arrays.asList(T...)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaS' S(-2ì
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaS3 S(52ì
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaSH S(J2ì
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaS_ S(a2≈
+norg.jabref.logic.openoffice.OpenOfficeFileSearch.findOpenOfficeDirectories(java.util.List<java.nio.file.Path>)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaU U((2∏
+aorg.jabref.logic.openoffice.OpenOfficeFileSearch.findLinuxOpenOfficeDirs()?sourceList@83.19:83.29CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaU) U(32ø
+aorg.jabref.logic.openoffice.OpenOfficeFileSearch.findLinuxOpenOfficeDirs()?sourceList@83.19:83.29DECLARATIONM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaS S(2l
+java.util.ListRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaR R(2y
+java.nio.file.PathRETURN_TYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaR R(¯	
+aorg.jabref.logic.openoffice.OpenOfficeFileSearch.findLinuxOpenOfficeDirs()?sourceList@83.19:83.29VARIABLEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaS S("
+type
+List<Path>"
+isFinalfalse"Ù
+declarationStringﬁ<mark class="modifier"> </mark>List<Path> <mark class="class-field">sourceList</mark> = Arrays.asList(Path.of("/usr/lib")<mark class="modifier">,</mark> Path.of("/usr/lib64")<mark class="modifier">,</mark> Path.of("/opt"))*
+sourceList2e
+java.util.ListTYPEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaS S(2r
+java.nio.file.PathTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaS S(2t
+java.util.Arrays.asList(T...)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaS' S(-2ì
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaS3 S(52ì
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaSH S(J2ì
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.javaS_ S(aø
+Corg.jabref.logic.openoffice.OpenOfficeFileSearch?LOGGER@22.32:22.38VALUEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java  (&"
+isFinaltrue"
+typeLogger"Í
+declarationString‘<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(OpenOfficeFileSearch.class);"
+isStatictrue"
+accessprivate*LOGGER2g
+org.slf4j.LoggerTYPEM
+Csrc\main\java\org\jabref\logic\openoffice\OpenOfficeFileSearch.java (

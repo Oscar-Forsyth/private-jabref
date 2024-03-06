@@ -1,0 +1,376 @@
+
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.javaŒ
+(org.jabref.logic.util.CoarseChangeFilterCLASSE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (" 
+packageorg.jabref.logic.util"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"p
+declarationString[<mark class="modifier">public </mark><mark class="modifier">class </mark>CoarseChangeFilter"
+accesspublic*CoarseChangeFilter2ø
+iorg.jabref.logic.util.CoarseChangeFilter.CoarseChangeFilter(org.jabref.model.database.BibDatabaseContext)DECLARATIONE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (2≈
+oorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)DECLARATIONE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java# #(#2°
+Korg.jabref.logic.util.CoarseChangeFilter.registerListener(java.lang.Object)DECLARATIONE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java9 9( 2£
+Morg.jabref.logic.util.CoarseChangeFilter.unregisterListener(java.lang.Object)DECLARATIONE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java= =("2â
+3org.jabref.logic.util.CoarseChangeFilter.shutdown()DECLARATIONE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.javaA A(2í
+<org.jabref.logic.util.CoarseChangeFilter?context@18.37:18.44DECLARATIONE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java% (,2ì
+=org.jabref.logic.util.CoarseChangeFilter?eventBus@19.27:19.35DECLARATIONE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (#2õ
+Eorg.jabref.logic.util.CoarseChangeFilter?lastFieldChanged@21.28:21.44DECLARATIONE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (,2õ
+Eorg.jabref.logic.util.CoarseChangeFilter?lastEntryChanged@22.31:22.47DECLARATIONE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (/2ï
+?org.jabref.logic.util.CoarseChangeFilter?totalDelta@23.16:23.26DECLARATIONE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (˝
+iorg.jabref.logic.util.CoarseChangeFilter.CoarseChangeFilter(org.jabref.model.database.BibDatabaseContext)CONSTRUCTORE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java ("è
+declarationStringz<mark class="modifier">public </mark><mark class="method">CoarseChangeFilter</mark>(BibDatabaseContext bibDatabaseContext)*CoarseChangeFilter2ó
+Horg.jabref.model.database.BibDatabase.registerListener(java.lang.Object)CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (.2â
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (2î
+Eorg.jabref.model.metadata.MetaData.registerListener(java.lang.Object)CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (.2â
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (2i
+java.util.Optional.empty()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java) (.2i
+java.util.Optional.empty()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java) (.2À
+|org.jabref.logic.util.CoarseChangeFilter.CoarseChangeFilter(org.jabref.model.database.BibDatabaseContext)!bibDatabaseContextCALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java ()2ã
+<org.jabref.logic.util.CoarseChangeFilter?context@18.37:18.44CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (2ã
+<org.jabref.logic.util.CoarseChangeFilter?context@18.37:18.44CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (2ã
+<org.jabref.logic.util.CoarseChangeFilter?context@18.37:18.44CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (2î
+Eorg.jabref.logic.util.CoarseChangeFilter?lastFieldChanged@21.28:21.44CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (2î
+Eorg.jabref.logic.util.CoarseChangeFilter?lastEntryChanged@22.31:22.47CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (2–
+|org.jabref.logic.util.CoarseChangeFilter.CoarseChangeFilter(org.jabref.model.database.BibDatabaseContext)!bibDatabaseContext	PARAMETERE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java1 (C2~
+(org.jabref.logic.util.CoarseChangeFilterRETURN_TYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (À
+|org.jabref.logic.util.CoarseChangeFilter.CoarseChangeFilter(org.jabref.model.database.BibDatabaseContext)!bibDatabaseContext	PARAMETERE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java1 (C"
+typeBibDatabaseContext"
+isFinalfalse":
+declarationString%BibDatabaseContext bibDatabaseContext*bibDatabaseContext2{
+,org.jabref.model.database.BibDatabaseContextTYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (0Æ;
+oorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)METHODE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java# #(#"
+isFinalfalse"Ä
+declarationStringÍ<mark class="annotation">@Subscribe</mark> <br><mark class="modifier">public </mark><mark class="modifier">synchronized </mark><mark class="modifier">void</mark> <mark class="method">listen</mark>(BibDatabaseContextChangedEvent event)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*listen2k
+java.util.Optional.isEmpty()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java&1 &(82k
+java.util.Optional.isEmpty()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java&O &(V2m
+java.util.Optional.isPresent()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java(e ((n2ë
+Bjava.util.Optional.filter(java.util.function.Predicate<? super T>)CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java(6 ((<2x
+)java.lang.Object.equals(java.lang.Object)CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java(E ((K2à
+9org.jabref.model.entry.event.FieldChangedEvent.getField()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java(X ((`2m
+java.util.Optional.isPresent()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java)h )(q2ë
+Bjava.util.Optional.filter(java.util.function.Predicate<? super T>)CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java)6 )(<2á
+8org.jabref.model.entry.BibEntry.equals(java.lang.Object)CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java)E )(K2ã
+<org.jabref.model.entry.event.EntryChangedEvent.getBibEntry()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java)X )(c2ó
+Horg.jabref.model.entry.event.FieldChangedEvent.getMajorCharacterChange()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java,0 ,(G2•
+Vorg.jabref.model.database.event.BibDatabaseContextChangedEvent.setFilteredOut(boolean)CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java. .(&2g
+java.util.Optional.of(T)CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java2( 2(*2à
+9org.jabref.model.entry.event.FieldChangedEvent.getField()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java27 2(?2g
+java.util.Optional.of(T)CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java3( 3(*2ã
+<org.jabref.model.entry.event.EntryChangedEvent.getBibEntry()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java37 3(B2ƒ
+uorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)!eventCALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java$ $(2î
+Eorg.jabref.logic.util.CoarseChangeFilter?lastFieldChanged@21.28:21.44CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java&  &(02î
+Eorg.jabref.logic.util.CoarseChangeFilter?lastEntryChanged@22.31:22.47CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java&> &(N2î
+Eorg.jabref.logic.util.CoarseChangeFilter?lastFieldChanged@21.28:21.44CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java(% ((52Ã
+}org.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?f@40.61:40.62CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java(C ((D2î
+Eorg.jabref.logic.util.CoarseChangeFilter?lastEntryChanged@22.31:22.47CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java)% )(52Ã
+}org.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?e@41.61:41.62CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java)C )(D2’
+Öorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isNewEdit@38.20:38.29CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java*% *(.2⁄
+äorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isChangedField@40.20:40.34CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java*3 *(A2⁄
+äorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isChangedEntry@41.20:41.34CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java*E *(S2Ÿ
+âorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isEditChanged@42.20:42.33CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java.) .(62Ÿ
+âorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isMajorChange@44.20:44.33CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java.: .(G2å
+=org.jabref.logic.util.CoarseChangeFilter?eventBus@19.27:19.35CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java0 0(2î
+Eorg.jabref.logic.util.CoarseChangeFilter?lastFieldChanged@21.28:21.44CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java2 2(2î
+Eorg.jabref.logic.util.CoarseChangeFilter?lastEntryChanged@22.31:22.47CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java3 3(2å
+=org.jabref.logic.util.CoarseChangeFilter?eventBus@19.27:19.35CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java5 5(2ƒ
+uorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)!eventCALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java5 5(2…
+uorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)!event	PARAMETERE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java#C #(H2‹
+Öorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isNewEdit@38.20:38.29DECLARATIONE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java& &(2·
+äorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isChangedField@40.20:40.34DECLARATIONE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java( (("2·
+äorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isChangedEntry@41.20:41.34DECLARATIONE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java) )("2‡
+âorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isEditChanged@42.20:42.33DECLARATIONE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java* *(!2‡
+âorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isMajorChange@44.20:44.33DECLARATIONE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java, ,(!2”
+}org.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?f@40.61:40.62DECLARATIONE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java(= ((>2”
+}org.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?e@41.61:41.62DECLARATIONE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java)= )(>2Z
+voidRETURN_TYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java# #(™
+Öorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isNewEdit@38.20:38.29VARIABLEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java& &("
+typeboolean"
+isFinalfalse"¿
+declarationString™<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">isNewEdit</mark> = lastFieldChanged.isEmpty() || lastEntryChanged.isEmpty()*	isNewEdit2V
+booleanTYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java& &(2k
+java.util.Optional.isEmpty()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java&1 &(82k
+java.util.Optional.isEmpty()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java&O &(V2î
+Eorg.jabref.logic.util.CoarseChangeFilter?lastFieldChanged@21.28:21.44CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java&  &(02î
+Eorg.jabref.logic.util.CoarseChangeFilter?lastEntryChanged@22.31:22.47CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java&> &(N≤
+äorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isChangedField@40.20:40.34VARIABLEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java( ((""
+typeboolean"
+isFinalfalse"ÿ
+declarationString¬<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">isChangedField</mark> = lastFieldChanged.filter(f -> !f.equals(fieldChange.getField())).isPresent()*isChangedField2V
+booleanTYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java( ((2m
+java.util.Optional.isPresent()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java(e ((n2ë
+Bjava.util.Optional.filter(java.util.function.Predicate<? super T>)CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java(6 ((<2x
+)java.lang.Object.equals(java.lang.Object)CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java(E ((K2à
+9org.jabref.model.entry.event.FieldChangedEvent.getField()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java(X ((`2î
+Eorg.jabref.logic.util.CoarseChangeFilter?lastFieldChanged@21.28:21.44CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java(% ((52Ã
+}org.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?f@40.61:40.62CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java(C ((D»
+äorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isChangedEntry@41.20:41.34VARIABLEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java) )(""
+typeboolean"
+isFinalfalse"€
+declarationString≈<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">isChangedEntry</mark> = lastEntryChanged.filter(e -> !e.equals(fieldChange.getBibEntry())).isPresent()*isChangedEntry2V
+booleanTYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java) )(2m
+java.util.Optional.isPresent()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java)h )(q2ë
+Bjava.util.Optional.filter(java.util.function.Predicate<? super T>)CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java)6 )(<2á
+8org.jabref.model.entry.BibEntry.equals(java.lang.Object)CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java)E )(K2ã
+<org.jabref.model.entry.event.EntryChangedEvent.getBibEntry()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java)X )(c2î
+Eorg.jabref.logic.util.CoarseChangeFilter?lastEntryChanged@22.31:22.47CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java)% )(52Ã
+}org.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?e@41.61:41.62CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java)C )(D∏	
+âorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isEditChanged@42.20:42.33VARIABLEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java* *(!"
+typeboolean"
+isFinalfalse"º
+declarationString¶<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">isEditChanged</mark> = !isNewEdit && (isChangedField || isChangedEntry)*isEditChanged2V
+booleanTYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java* *(2’
+Öorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isNewEdit@38.20:38.29CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java*% *(.2⁄
+äorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isChangedField@40.20:40.34CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java*3 *(A2⁄
+äorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isChangedEntry@41.20:41.34CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java*E *(Sπ
+âorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?isMajorChange@44.20:44.33VARIABLEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java, ,(!"
+typeboolean"
+isFinalfalse"µ
+declarationStringü<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">isMajorChange</mark> = fieldChange.getMajorCharacterChange() > 1*isMajorChange2V
+booleanTYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java, ,(2ó
+Horg.jabref.model.entry.event.FieldChangedEvent.getMajorCharacterChange()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java,0 ,(G’
+uorg.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)!event	PARAMETERE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java#C #(H"&
+typeBibDatabaseContextChangedEvent"
+isFinalfalse"9
+declarationString$BibDatabaseContextChangedEvent event*event2ç
+>org.jabref.model.database.event.BibDatabaseContextChangedEventTYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java#$ #(Bé
+}org.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?f@40.61:40.62VARIABLEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java(= ((>"
+type"
+isFinalfalse"
+declarationString f*f2TYPEé
+}org.jabref.logic.util.CoarseChangeFilter.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)?e@41.61:41.62VARIABLEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java)= )(>"
+type"
+isFinalfalse"
+declarationString e*e2TYPE‚
+Korg.jabref.logic.util.CoarseChangeFilter.registerListener(java.lang.Object)METHODE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java9 9( "
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">registerListener</mark>(Object listener)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*registerListener2å
+=org.jabref.logic.util.CoarseChangeFilter?eventBus@19.27:19.35CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java: :(2£
+Torg.jabref.logic.util.CoarseChangeFilter.registerListener(java.lang.Object)!listenerCALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java: :("2®
+Torg.jabref.logic.util.CoarseChangeFilter.registerListener(java.lang.Object)!listener	PARAMETERE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java9( 9(02Z
+voidRETURN_TYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java9 9(€
+Torg.jabref.logic.util.CoarseChangeFilter.registerListener(java.lang.Object)!listener	PARAMETERE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java9( 9(0"
+typeObject"
+isFinalfalse"$
+declarationStringObject listener*listener2_
+java.lang.ObjectTYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java9! 9('Ï
+Morg.jabref.logic.util.CoarseChangeFilter.unregisterListener(java.lang.Object)METHODE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java= =(""
+isFinalfalse"ù
+declarationStringá<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">unregisterListener</mark>(Object listener)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*unregisterListener2å
+=org.jabref.logic.util.CoarseChangeFilter?eventBus@19.27:19.35CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java> >(2•
+Vorg.jabref.logic.util.CoarseChangeFilter.unregisterListener(java.lang.Object)!listenerCALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java> >($2™
+Vorg.jabref.logic.util.CoarseChangeFilter.unregisterListener(java.lang.Object)!listener	PARAMETERE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java=* =(22Z
+voidRETURN_TYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java= =(›
+Vorg.jabref.logic.util.CoarseChangeFilter.unregisterListener(java.lang.Object)!listener	PARAMETERE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java=* =(2"
+typeObject"
+isFinalfalse"$
+declarationStringObject listener*listener2_
+java.lang.ObjectTYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java=# =()≥
+
+3org.jabref.logic.util.CoarseChangeFilter.shutdown()METHODE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.javaA A("
+isFinalfalse"É
+declarationStringn<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">shutdown</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*shutdown2ô
+Jorg.jabref.model.database.BibDatabase.unregisterListener(java.lang.Object)CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.javaB B(02â
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.javaB B(2ñ
+Gorg.jabref.model.metadata.MetaData.unregisterListener(java.lang.Object)CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.javaC C(02â
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.javaC C(2ã
+<org.jabref.logic.util.CoarseChangeFilter?context@18.37:18.44CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.javaB B(2ã
+<org.jabref.logic.util.CoarseChangeFilter?context@18.37:18.44CALLE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.javaC C(2Z
+voidRETURN_TYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.javaA A(É
+<org.jabref.logic.util.CoarseChangeFilter?context@18.37:18.44VALUEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java% (,"
+isFinaltrue"
+typeBibDatabaseContext"õ
+declarationStringÖ<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">context</mark>"
+isStaticfalse"
+accessprivate*context2{
+,org.jabref.model.database.BibDatabaseContextTYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java ($˚
+=org.jabref.logic.util.CoarseChangeFilter?eventBus@19.27:19.35VALUEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (#"
+isFinaltrue"
+typeEventBus"§
+declarationStringé<mark class="modifier">private </mark><mark class="modifier">final </mark>EventBus <mark class="class-field">eventBus</mark> = new EventBus();"
+isStaticfalse"
+accessprivate*eventBus2r
+#com.google.common.eventbus.EventBusTYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (ÿ
+Eorg.jabref.logic.util.CoarseChangeFilter?lastFieldChanged@21.28:21.44VARIABLEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (,"
+isFinalfalse"
+typeOptional<Field>"|
+declarationStringg<mark class="modifier">private </mark>Optional<Field> <mark class="class-field">lastFieldChanged</mark>"
+isStaticfalse"
+accessprivate*lastFieldChanged2a
+java.util.OptionalTYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (2z
+"org.jabref.model.entry.field.FieldTYPE_ARGUMENTE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (€
+Eorg.jabref.logic.util.CoarseChangeFilter?lastEntryChanged@22.31:22.47VARIABLEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (/"
+isFinalfalse"
+typeOptional<BibEntry>"
+declarationStringj<mark class="modifier">private </mark>Optional<BibEntry> <mark class="class-field">lastEntryChanged</mark>"
+isStaticfalse"
+accessprivate*lastEntryChanged2a
+java.util.OptionalTYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (2w
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (¬
+?org.jabref.logic.util.CoarseChangeFilter?totalDelta@23.16:23.26VARIABLEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java ("
+isFinalfalse"
+typeint"à
+declarationStrings<mark class="modifier">private </mark><mark class="modifier">int</mark> <mark class="class-field">totalDelta</mark>"
+isStaticfalse"
+accessprivate*
+totalDelta2R
+intTYPEE
+;src\main\java\org\jabref\logic\util\CoarseChangeFilter.java (

@@ -1,0 +1,978 @@
+
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaø
+)org.jabref.gui.sidepane.SidePaneViewModelCLASSF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java (""
+packageorg.jabref.gui.sidepane"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"®
+declarationStringí<mark class="modifier">public </mark><mark class="modifier">class </mark>SidePaneViewModel<mark class="modifier"> extends </mark>AbstractViewModel"
+accesspublic*SidePaneViewModel2Ï
+îorg.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java( ((2ª
+dorg.jabref.gui.sidepane.SidePaneViewModel.getSidePaneComponent(org.jabref.gui.sidepane.SidePaneType)DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaK  K(42õ
+Dorg.jabref.gui.sidepane.SidePaneViewModel.updatePreferredPositions()DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javae e()2≠
+Vorg.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javal l(2Ø
+Xorg.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java{ {(2≠
+Torg.jabref.gui.sidepane.SidePaneViewModel.show(org.jabref.gui.sidepane.SidePaneType)DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaä ä(2ç
+4org.jabref.gui.sidepane.SidePaneViewModel.getPanes()DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaì) ì(12∑
+^org.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaó ó(2ì
+<org.jabref.gui.sidepane.SidePaneViewModel?LOGGER@31.32:31.38DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java  (&2§
+Morg.jabref.gui.sidepane.SidePaneViewModel?sidePaneComponentLookup@33.55:33.78DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java!7 !(N2ü
+Horg.jabref.gui.sidepane.SidePaneViewModel?preferencesService@35.37:35.55DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java#% #(72ô
+Borg.jabref.gui.sidepane.SidePaneViewModel?stateManager@36.31:36.43DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java$ $(+2£
+Lorg.jabref.gui.sidepane.SidePaneViewModel?sidePaneContentFactory@37.41:37.63DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java%) %(?2ö
+Corg.jabref.gui.sidepane.SidePaneViewModel?dialogService@38.32:38.45DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java&  &(-2è
+6org.jabref.gui.sidepane.SidePaneViewModel.MoveUpActionDECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java∞ ∞(2ë
+8org.jabref.gui.sidepane.SidePaneViewModel.MoveDownActionDECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaΩ Ω( 2í
+9org.jabref.gui.sidepane.SidePaneViewModel.ClosePaneActionDECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java   ( 2r
+ org.jabref.gui.AbstractViewModelEXTENDF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java' (8°ì
+îorg.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)CONSTRUCTORF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java( (("Ä
+declarationStringÍ<mark class="modifier">public </mark><mark class="method">SidePaneViewModel</mark>(LibraryTabContainer tabContainer<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferencesService<mark class="modifier"><mark class="modifier">,</mark></mark> JournalAbbreviationRepository abbreviationRepository<mark class="modifier"><mark class="modifier">,</mark></mark> StateManager stateManager<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileUpdateMonitor<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntryTypesManager entryTypesManager<mark class="modifier"><mark class="modifier">,</mark></mark> UndoManager undoManager)*SidePaneViewModel2â
+9org.jabref.preferences.SidePanePreferences.visiblePanes()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java?4 ?(@2í
+Borg.jabref.preferences.PreferencesService.getSidePanePreferences()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java? ?(12Ñ
+4org.jabref.gui.sidepane.SidePaneViewModel.getPanes()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java@ @(2â
+9org.jabref.preferences.SidePanePreferences.visiblePanes()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaC@ C(L2í
+Borg.jabref.preferences.PreferencesService.getSidePanePreferences()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaC' C(=2â
+9org.jabref.preferences.SidePanePreferences.visiblePanes()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaE@ E(L2í
+Borg.jabref.preferences.PreferencesService.getSidePanePreferences()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaE' E(=2Ô
+ûorg.jabref.gui.sidepane.SidePaneContentFactory.SidePaneContentFactory(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java4* 4(@2¯
+ßorg.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!preferencesServiceCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java1" 1(42Ú
+°org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!stateManagerCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java2 2((2Û
+¢org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!dialogServiceCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java3 3(*2Ú
+°org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!tabContainerCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java5 5(2¯
+ßorg.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!preferencesServiceCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java6 6("2¸
+´org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!abbreviationRepositoryCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java7 7(&2Ú
+°org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!taskExecutorCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java8 8(2Û
+¢org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!dialogServiceCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java9 9(2Ú
+°org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!stateManagerCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java: :(2˜
+¶org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!fileUpdateMonitorCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java; ;(!2˜
+¶org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!entryTypesManagerCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java< <(!2Ò
+†org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!undoManagerCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java= =(2¯
+ßorg.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!preferencesServiceCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java? ?(2¯
+ßorg.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)?change@64.74:64.80CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaA A(2¯
+ßorg.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)?change@64.74:64.80CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaB B(2¯
+ßorg.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!preferencesServiceCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaC C(&2¯
+ßorg.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)?change@64.74:64.80CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaCS C(Y2¯
+ßorg.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)?change@64.74:64.80CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaD D(!2¯
+ßorg.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!preferencesServiceCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaE E(&2¯
+ßorg.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)?change@64.74:64.80CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaEV E(\2ò
+Horg.jabref.gui.sidepane.SidePaneViewModel?preferencesService@35.37:35.55CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java1 1(2í
+Borg.jabref.gui.sidepane.SidePaneViewModel?stateManager@36.31:36.43CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java2 2(2ì
+Corg.jabref.gui.sidepane.SidePaneViewModel?dialogService@38.32:38.45CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java3 3(2ú
+Lorg.jabref.gui.sidepane.SidePaneViewModel?sidePaneContentFactory@37.41:37.63CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java4 4(#2˜
+°org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!tabContainer	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java(1 ((=2˝
+ßorg.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!preferencesService	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java)0 )(B2Å
+´org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!abbreviationRepository	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java*; *(Q2˜
+°org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!stateManager	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java+* +(62˜
+°org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!taskExecutor	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java,* ,(62¯
+¢org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!dialogService	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java-+ -(82¸
+¶org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!fileUpdateMonitor	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java./ .(@2¸
+¶org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!entryTypesManager	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java/2 /(C2ˆ
+†org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!undoManager	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java0) 0(42ˇ
+ßorg.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)?change@64.74:64.80DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java@J @(P2Ä
+)org.jabref.gui.sidepane.SidePaneViewModelRETURN_TYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java( ((ﬂ
+°org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!tabContainer	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java(1 ((="
+typeLibraryTabContainer"
+isFinalfalse"5
+declarationString LibraryTabContainer tabContainer*tabContainer2r
+"org.jabref.gui.LibraryTabContainerTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java( ((0ˆ
+ßorg.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!preferencesService	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java)0 )(B"
+typePreferencesService"
+isFinalfalse":
+declarationString%PreferencesService preferencesService*preferencesService2y
+)org.jabref.preferences.PreferencesServiceTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java) )(/ß
+´org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!abbreviationRepository	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java*; *(Q"%
+typeJournalAbbreviationRepository"
+isFinalfalse"I
+declarationString4JournalAbbreviationRepository abbreviationRepository*abbreviationRepository2á
+7org.jabref.logic.journals.JournalAbbreviationRepositoryTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java* *(: 
+°org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!stateManager	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java+* +(6"
+typeStateManager"
+isFinalfalse".
+declarationStringStateManager stateManager*stateManager2k
+org.jabref.gui.StateManagerTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java+ +()œ
+°org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!taskExecutor	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java,* ,(6"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2p
+ org.jabref.gui.util.TaskExecutorTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java, ,()–
+¢org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!dialogService	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java-+ -(8"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2l
+org.jabref.gui.DialogServiceTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java- -(*Ô
+¶org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!fileUpdateMonitor	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java./ .(@"
+typeFileUpdateMonitor"
+isFinalfalse"8
+declarationString#FileUpdateMonitor fileUpdateMonitor*fileUpdateMonitor2w
+'org.jabref.model.util.FileUpdateMonitorTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java. .(.˘
+¶org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!entryTypesManager	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java/2 /(C"
+typeBibEntryTypesManager"
+isFinalfalse";
+declarationString&BibEntryTypesManager entryTypesManager*entryTypesManager2{
++org.jabref.model.entry.BibEntryTypesManagerTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java/ /(1∆
+†org.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)!undoManager	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java0) 0(4"
+typeUndoManager"
+isFinalfalse",
+declarationStringUndoManager undoManager*undoManager2l
+javax.swing.undo.UndoManagerTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java0 0((ƒ
+ßorg.jabref.gui.sidepane.SidePaneViewModel.SidePaneViewModel(org.jabref.gui.LibraryTabContainer, org.jabref.preferences.PreferencesService, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager, javax.swing.undo.UndoManager)?change@64.74:64.80VARIABLEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java@J @(P"
+type"
+isFinalfalse"
+declarationString change*change2TYPEñ
+dorg.jabref.gui.sidepane.SidePaneViewModel.getSidePaneComponent(org.jabref.gui.sidepane.SidePaneType)METHODF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaK  K(4"
+isFinalfalse"í
+declarationString}<mark class="modifier">protected </mark>SidePaneComponent <mark class="method">getSidePaneComponent</mark>(SidePaneType pane)"
+isStaticfalse"
+access	protected"
+
+isAbstractfalse"
+typeSidePaneComponent*getSidePaneComponent2s
+#java.util.Map.get(java.lang.Object)CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaLF L(I2g
+java.util.Map.put(K, V)CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java\$ \('2ù
+Morg.jabref.gui.sidepane.SidePaneViewModel?sidePaneComponentLookup@33.55:33.78CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaL. L(E2π
+iorg.jabref.gui.sidepane.SidePaneViewModel.getSidePaneComponent(org.jabref.gui.sidepane.SidePaneType)!paneCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaLJ L(N2”
+Çorg.jabref.gui.sidepane.SidePaneViewModel.getSidePaneComponent(org.jabref.gui.sidepane.SidePaneType)?sidePaneComponent@76.26:76.43CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaM M(2”
+Çorg.jabref.gui.sidepane.SidePaneViewModel.getSidePaneComponent(org.jabref.gui.sidepane.SidePaneType)?sidePaneComponent@76.26:76.43CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaN N(2π
+iorg.jabref.gui.sidepane.SidePaneViewModel.getSidePaneComponent(org.jabref.gui.sidepane.SidePaneType)!paneCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaN( N(,2ù
+Morg.jabref.gui.sidepane.SidePaneViewModel?sidePaneComponentLookup@33.55:33.78CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java\ \(#2π
+iorg.jabref.gui.sidepane.SidePaneViewModel.getSidePaneComponent(org.jabref.gui.sidepane.SidePaneType)!paneCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java\( \(,2”
+Çorg.jabref.gui.sidepane.SidePaneViewModel.getSidePaneComponent(org.jabref.gui.sidepane.SidePaneType)?sidePaneComponent@76.26:76.43CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java\. \(?2”
+Çorg.jabref.gui.sidepane.SidePaneViewModel.getSidePaneComponent(org.jabref.gui.sidepane.SidePaneType)?sidePaneComponent@76.26:76.43CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java^ ^( 2æ
+iorg.jabref.gui.sidepane.SidePaneViewModel.getSidePaneComponent(org.jabref.gui.sidepane.SidePaneType)!pane	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaKB K(F2⁄
+Çorg.jabref.gui.sidepane.SidePaneViewModel.getSidePaneComponent(org.jabref.gui.sidepane.SidePaneType)?sidePaneComponent@76.26:76.43DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaL L(+2Ä
+)org.jabref.gui.sidepane.SidePaneComponentRETURN_TYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaK K(É
+Çorg.jabref.gui.sidepane.SidePaneViewModel.getSidePaneComponent(org.jabref.gui.sidepane.SidePaneType)?sidePaneComponent@76.26:76.43VARIABLEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaL L(+"
+typeSidePaneComponent"
+isFinalfalse"ù
+declarationStringá<mark class="modifier"> </mark>SidePaneComponent <mark class="class-field">sidePaneComponent</mark> = sidePaneComponentLookup.get(pane)*sidePaneComponent2y
+)org.jabref.gui.sidepane.SidePaneComponentTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaL L(2s
+#java.util.Map.get(java.lang.Object)CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaLF L(I2ù
+Morg.jabref.gui.sidepane.SidePaneViewModel?sidePaneComponentLookup@33.55:33.78CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaL. L(E2π
+iorg.jabref.gui.sidepane.SidePaneViewModel.getSidePaneComponent(org.jabref.gui.sidepane.SidePaneType)!paneCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaLJ L(Nä
+iorg.jabref.gui.sidepane.SidePaneViewModel.getSidePaneComponent(org.jabref.gui.sidepane.SidePaneType)!pane	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaKB K(F"
+typeSidePaneType"
+isFinalfalse"&
+declarationStringSidePaneType pane*pane2t
+$org.jabref.gui.sidepane.SidePaneTypeTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaK5 K(Aâ
+Dorg.jabref.gui.sidepane.SidePaneViewModel.updatePreferredPositions()METHODF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javae e()"
+isFinalfalse"î
+declarationString<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">updatePreferredPositions</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*updatePreferredPositions2í
+Borg.jabref.preferences.SidePanePreferences.getPreferredPositions()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javagY g(n2í
+Borg.jabref.preferences.PreferencesService.getSidePanePreferences()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javafY f(o2Ñ
+4org.jabref.gui.sidepane.SidePaneViewModel.getPanes()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javah h(#2Ñ
+4org.jabref.gui.sidepane.SidePaneViewModel.getPanes()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javahR h(Z2Ÿ
+àorg.jabref.preferences.SidePanePreferences.setPreferredPositions(java.util.Map<org.jabref.gui.sidepane.SidePaneType, java.lang.Integer>)CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javai4 i(I2í
+Borg.jabref.preferences.PreferencesService.getSidePanePreferences()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javai i(12ò
+Horg.jabref.gui.sidepane.SidePaneViewModel?preferencesService@35.37:35.55CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javafF f(X2µ
+eorg.jabref.gui.sidepane.SidePaneViewModel.updatePreferredPositions()?preferredPositions@102.35:102.53CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javah; h(M2§
+Torg.jabref.gui.sidepane.SidePaneViewModel.updatePreferredPositions()?i@104.54:104.55CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaha h(b2§
+Torg.jabref.gui.sidepane.SidePaneViewModel.updatePreferredPositions()?i@104.54:104.55CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javahe h(f2ò
+Horg.jabref.gui.sidepane.SidePaneViewModel?preferencesService@35.37:35.55CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javai i(2µ
+eorg.jabref.gui.sidepane.SidePaneViewModel.updatePreferredPositions()?preferredPositions@102.35:102.53CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaiJ i(\2º
+eorg.jabref.gui.sidepane.SidePaneViewModel.updatePreferredPositions()?preferredPositions@102.35:102.53DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaf# f(52´
+Torg.jabref.gui.sidepane.SidePaneViewModel.updatePreferredPositions()?i@104.54:104.55DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javah6 h(72[
+voidRETURN_TYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javae e(Ì	
+eorg.jabref.gui.sidepane.SidePaneViewModel.updatePreferredPositions()?preferredPositions@102.35:102.53VARIABLEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaf# f(5""
+typeMap<SidePaneType, Integer>"
+isFinalfalse"ÿ
+declarationString¬<mark class="modifier"> </mark>Map<SidePaneType, Integer> <mark class="class-field">preferredPositions</mark> = new HashMap<>(preferencesService.getSidePanePreferences().getPreferredPositions())*preferredPositions2]
+java.util.MapTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaf f(2}
+$org.jabref.gui.sidepane.SidePaneTypeTYPE_ARGUMENTF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaf f(2j
+java.lang.IntegerTYPE_ARGUMENTF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaf f(!2í
+Borg.jabref.preferences.SidePanePreferences.getPreferredPositions()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javagY g(n2í
+Borg.jabref.preferences.PreferencesService.getSidePanePreferences()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javafY f(o2ò
+Horg.jabref.gui.sidepane.SidePaneViewModel?preferencesService@35.37:35.55CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javafF f(XÊ
+Torg.jabref.gui.sidepane.SidePaneViewModel.updatePreferredPositions()?i@104.54:104.55VARIABLEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javah6 h(7"
+type"
+isFinalfalse"
+declarationString i*i2TYPEÂ
+Vorg.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)METHODF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javal l("
+isFinalfalse"í
+declarationString}<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">moveUp</mark>(SidePaneType pane)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*moveUp2Ñ
+4org.jabref.gui.sidepane.SidePaneViewModel.getPanes()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javam m(2Ñ
+4org.jabref.gui.sidepane.SidePaneViewModel.getPanes()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javan" n(*2Æ
+^org.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaq q(2Ñ
+4org.jabref.gui.sidepane.SidePaneViewModel.getPanes()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaq q(2î
+Dorg.jabref.gui.sidepane.SidePaneViewModel.updatePreferredPositions()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javar r((2
+/org.jabref.gui.sidepane.SidePaneType.getTitle()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javawA w(I2´
+[org.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)!paneCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javam  m($2´
+[org.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)!paneCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javan5 n(92ƒ
+torg.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)?currentPosition@110.16:110.31CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javao o(2ƒ
+torg.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)?currentPosition@110.16:110.31CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javap" p(12ƒ
+torg.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)?currentPosition@110.16:110.31CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaq! q(02¿
+porg.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)?newPosition@112.20:112.31CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaq2 q(=2å
+<org.jabref.gui.sidepane.SidePaneViewModel?LOGGER@31.32:31.38CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javat t(2å
+<org.jabref.gui.sidepane.SidePaneViewModel?LOGGER@31.32:31.38CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaw w(2´
+[org.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)!paneCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaw< w(@2∞
+[org.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)!pane	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javal$ l((2À
+torg.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)?currentPosition@110.16:110.31DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javan n(2«
+porg.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)?newPosition@112.20:112.31DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javap p(2[
+voidRETURN_TYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javal l(ß
+torg.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)?currentPosition@110.16:110.31VARIABLEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javan n("
+typeint"
+isFinalfalse"¢
+declarationStringå<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">currentPosition</mark> = getPanes().indexOf(pane)*currentPosition2S
+intTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javan n(2Ñ
+4org.jabref.gui.sidepane.SidePaneViewModel.getPanes()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javan" n(*2´
+[org.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)!paneCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javan5 n(9®
+porg.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)?newPosition@112.20:112.31VARIABLEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javap p("
+typeint"
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">newPosition</mark> = currentPosition - 1*newPosition2S
+intTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javap p(2ƒ
+torg.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)?currentPosition@110.16:110.31CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javap" p(1¸
+[org.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)!pane	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javal$ l(("
+typeSidePaneType"
+isFinalfalse"&
+declarationStringSidePaneType pane*pane2t
+$org.jabref.gui.sidepane.SidePaneTypeTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javal l(#œ
+Xorg.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)METHODF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java{ {("
+isFinalfalse"î
+declarationString<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">moveDown</mark>(SidePaneType pane)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*moveDown2Ñ
+4org.jabref.gui.sidepane.SidePaneViewModel.getPanes()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java| |(2Ñ
+4org.jabref.gui.sidepane.SidePaneViewModel.getPanes()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java}" }(*2Ñ
+4org.jabref.gui.sidepane.SidePaneViewModel.getPanes()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java~# ~(+2∞
+^org.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÄ Ä(2Ü
+4org.jabref.gui.sidepane.SidePaneViewModel.getPanes()CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÄ Ä(2ñ
+Dorg.jabref.gui.sidepane.SidePaneViewModel.updatePreferredPositions()CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÅ Å((2Å
+/org.jabref.gui.sidepane.SidePaneType.getTitle()CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÉP É(X2Å
+/org.jabref.gui.sidepane.SidePaneType.getTitle()CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÜA Ü(I2≠
+]org.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)!paneCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java|  |($2≠
+]org.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)!paneCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java}5 }(92∆
+vorg.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)?currentPosition@125.16:125.31CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java~ ~(2∆
+vorg.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)?currentPosition@125.16:125.31CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java" (12»
+vorg.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)?currentPosition@125.16:125.31CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÄ! Ä(02ƒ
+rorg.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)?newPosition@127.20:127.31CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÄ2 Ä(=2é
+<org.jabref.gui.sidepane.SidePaneViewModel?LOGGER@31.32:31.38CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÉ É(2Ø
+]org.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)!paneCALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÉK É(O2é
+<org.jabref.gui.sidepane.SidePaneViewModel?LOGGER@31.32:31.38CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÜ Ü(2Ø
+]org.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)!paneCALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÜ< Ü(@2≤
+]org.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)!pane	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java{& {(*2Õ
+vorg.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)?currentPosition@125.16:125.31DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java} }(2…
+rorg.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)?newPosition@127.20:127.31DECLARATIONF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java (2[
+voidRETURN_TYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java{ {(´
+vorg.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)?currentPosition@125.16:125.31VARIABLEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java} }("
+typeint"
+isFinalfalse"¢
+declarationStringå<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">currentPosition</mark> = getPanes().indexOf(pane)*currentPosition2S
+intTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java} }(2Ñ
+4org.jabref.gui.sidepane.SidePaneViewModel.getPanes()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java}" }(*2≠
+]org.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)!paneCALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java}5 }(9¨
+rorg.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)?newPosition@127.20:127.31VARIABLEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java ("
+typeint"
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">newPosition</mark> = currentPosition + 1*newPosition2S
+intTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java (2∆
+vorg.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)?currentPosition@125.16:125.31CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java" (1˛
+]org.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)!pane	PARAMETERF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java{& {(*"
+typeSidePaneType"
+isFinalfalse"&
+declarationStringSidePaneType pane*pane2t
+$org.jabref.gui.sidepane.SidePaneTypeTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java{ {(%Ì
+Torg.jabref.gui.sidepane.SidePaneViewModel.show(org.jabref.gui.sidepane.SidePaneType)METHODH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaä ä("
+isFinalfalse"ë
+declarationString|<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">show</mark>(SidePaneType pane)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*show2Ü
+4org.jabref.gui.sidepane.SidePaneViewModel.getPanes()CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaã ã(2Ü
+4org.jabref.gui.sidepane.SidePaneViewModel.getPanes()CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaå å(2Ü
+4org.jabref.gui.sidepane.SidePaneViewModel.getPanes()CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaç ç(2î
+Borg.jabref.preferences.PreferencesService.getSidePanePreferences()CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaçF ç(\2Å
+/org.jabref.gui.sidepane.SidePaneType.getTitle()CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaèA è(I2Õ
+{org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.PreferredIndexSort(org.jabref.preferences.SidePanePreferences)CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaç  ç(22´
+Yorg.jabref.gui.sidepane.SidePaneViewModel.show(org.jabref.gui.sidepane.SidePaneType)!paneCALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaã! ã(%2´
+Yorg.jabref.gui.sidepane.SidePaneViewModel.show(org.jabref.gui.sidepane.SidePaneType)!paneCALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaå å(2ö
+Horg.jabref.gui.sidepane.SidePaneViewModel?preferencesService@35.37:35.55CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaç3 ç(E2é
+<org.jabref.gui.sidepane.SidePaneViewModel?LOGGER@31.32:31.38CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaè è(2´
+Yorg.jabref.gui.sidepane.SidePaneViewModel.show(org.jabref.gui.sidepane.SidePaneType)!paneCALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaè< è(@2∞
+Yorg.jabref.gui.sidepane.SidePaneViewModel.show(org.jabref.gui.sidepane.SidePaneType)!pane	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaä# ä('2]
+voidRETURN_TYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaä ä(˛
+Yorg.jabref.gui.sidepane.SidePaneViewModel.show(org.jabref.gui.sidepane.SidePaneType)!pane	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaä# ä('"
+typeSidePaneType"
+isFinalfalse"&
+declarationStringSidePaneType pane*pane2v
+$org.jabref.gui.sidepane.SidePaneTypeTYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaä ä("∑
+4org.jabref.gui.sidepane.SidePaneViewModel.getPanes()METHODH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaì) ì(1"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier">private </mark>ObservableList&lt;SidePaneType&gt; <mark class="method">getPanes</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"$
+typeObservableList<SidePaneType>*getPanes2å
+:org.jabref.gui.StateManager.getVisibleSidePaneComponents()CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaî î(82î
+Borg.jabref.gui.sidepane.SidePaneViewModel?stateManager@36.31:36.43CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaî î(2z
+!javafx.collections.ObservableListRETURN_TYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaì ì(2Ü
+$org.jabref.gui.sidepane.SidePaneTypeRETURN_TYPE_ARGUMENTH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaì ì('´
+^org.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)METHODH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaó ó("
+isFinalfalse"È
+declarationString”<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">swap</mark>(ObservableList&lt;T&gt; observableList<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">int</mark> i<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">int</mark> j)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*swap2¢
+Pjava.util.Collections.swap(java.util.List<? extends java.lang.Object>, int, int)CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaô ô(2†
+Njava.util.Comparator.comparingInt(java.util.function.ToIntFunction<? super T>)CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaö' ö(32ø
+morg.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)!observableListCALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaò. ò(<2 
+xorg.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)?placeholder@152.16:152.27CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaô ô($2≤
+`org.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)!iCALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaô& ô('2≤
+`org.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)!jCALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaô) ô(*2ø
+morg.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)!observableListCALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaö ö(2z
+(java.util.List.indexOf(java.lang.Object)CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaö4 ö(H2ƒ
+morg.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)!observableList	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaó, ó(:2∑
+`org.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)!i	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaó@ ó(A2∑
+`org.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)!j	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaóG ó(H2—
+xorg.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)?placeholder@152.16:152.27DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaò ò(2]
+voidRETURN_TYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaó ó(2º
+`org.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int).TTYPE_PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaó ó(Ì
+xorg.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)?placeholder@152.16:152.27VARIABLEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaò ò("
+typeList<T>"
+isFinalfalse"ä
+declarationStringu<mark class="modifier"> </mark>List<T> <mark class="class-field">placeholder</mark> = new ArrayList<>(observableList)*placeholder2`
+java.util.ListTYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaò ò(2ª
+`org.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int).TTYPE_ARGUMENTH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaò ò(2ø
+morg.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)!observableListCALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaò. ò(<è
+morg.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)!observableList	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaó, ó(:"
+typeObservableList<T>"
+isFinalfalse"Y
+declarationStringDObservableList<<mark class="type-parameter">T</mark>> observableList*observableList2s
+!javafx.collections.ObservableListTYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaó ó((2ª
+`org.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int).TTYPE_ARGUMENTH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaó) ó(*Í
+`org.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)!i	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaó@ ó(A"
+typeint"
+isFinalfalse"8
+declarationString#<mark class="modifier">int</mark> i*i2U
+intTYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaó< ó(?Í
+`org.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int)!j	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaóG ó(H"
+typeint"
+isFinalfalse"8
+declarationString#<mark class="modifier">int</mark> j*j2U
+intTYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaóC ó(Fø
+`org.jabref.gui.sidepane.SidePaneViewModel.swap(javafx.collections.ObservableList<T>, int, int).TTYPE_PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaó ó(*Tß
+<org.jabref.gui.sidepane.SidePaneViewModel?LOGGER@31.32:31.38VALUEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java  (&"
+isFinaltrue"
+typeLogger"Á
+declarationString—<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(SidePaneViewModel.class);"
+isStatictrue"
+accessprivate*LOGGER2`
+org.slf4j.LoggerTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java (ø
+Morg.jabref.gui.sidepane.SidePaneViewModel?sidePaneComponentLookup@33.55:33.78VALUEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java!7 !(N"
+isFinaltrue",
+type$Map<SidePaneType, SidePaneComponent>"–
+declarationString∫<mark class="modifier">private </mark><mark class="modifier">final </mark>Map<SidePaneType, SidePaneComponent> <mark class="class-field">sidePaneComponentLookup</mark> = new HashMap<>();"
+isStaticfalse"
+accessprivate*sidePaneComponentLookup2]
+java.util.MapTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java! !(2}
+$org.jabref.gui.sidepane.SidePaneTypeTYPE_ARGUMENTF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java! !("2Ç
+)org.jabref.gui.sidepane.SidePaneComponentTYPE_ARGUMENTF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java!$ !(52k
+java.util.HashMap.HashMap()CALLF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java!U !(^§
+Horg.jabref.gui.sidepane.SidePaneViewModel?preferencesService@35.37:35.55VALUEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java#% #(7"
+isFinaltrue"
+typePreferencesService"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferencesService</mark>"
+isStaticfalse"
+accessprivate*preferencesService2y
+)org.jabref.preferences.PreferencesServiceTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java# #($¯
+Borg.jabref.gui.sidepane.SidePaneViewModel?stateManager@36.31:36.43VALUEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java$ $(+"
+isFinaltrue"
+typeStateManager"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>StateManager <mark class="class-field">stateManager</mark>"
+isStaticfalse"
+accessprivate*stateManager2k
+org.jabref.gui.StateManagerTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java$ $(Ω
+Lorg.jabref.gui.sidepane.SidePaneViewModel?sidePaneContentFactory@37.41:37.63VALUEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java%) %(?"
+isFinaltrue"
+typeSidePaneContentFactory"Æ
+declarationStringò<mark class="modifier">private </mark><mark class="modifier">final </mark>SidePaneContentFactory <mark class="class-field">sidePaneContentFactory</mark>"
+isStaticfalse"
+accessprivate*sidePaneContentFactory2~
+.org.jabref.gui.sidepane.SidePaneContentFactoryTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java% %((˛
+Corg.jabref.gui.sidepane.SidePaneViewModel?dialogService@38.32:38.45VALUEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java&  &(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2l
+org.jabref.gui.DialogServiceTYPEF
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java& &(›
+
+<org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSortCLASSH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java† †(-"4
+package)org.jabref.gui.sidepane.SidePaneViewModel"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"ø
+declarationString©<mark class="modifier">protected </mark><mark class="modifier">class </mark>PreferredIndexSort<mark class="modifier"><br>implements </mark>Comparator&lt;SidePaneType&gt;"
+access	protected*PreferredIndexSort2‘
+{org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.PreferredIndexSort(org.jabref.preferences.SidePanePreferences)DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java§ §(!2Í
+êorg.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.compare(org.jabref.gui.sidepane.SidePaneType, org.jabref.gui.sidepane.SidePaneType)DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java© ©(2∂
+]org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort?preferredPositions@162.49:162.67DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¢1 ¢(C2h
+java.util.ComparatorEXTENDH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java†9 †(C2Ü
+$org.jabref.gui.sidepane.SidePaneTypeEXTEND_TYPE_ARGUMENTH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java†D †(P¨
+
+{org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.PreferredIndexSort(org.jabref.preferences.SidePanePreferences)CONSTRUCTORH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java§ §(!"ë
+declarationString|<mark class="modifier">public </mark><mark class="method">PreferredIndexSort</mark>(SidePanePreferences sidePanePreferences)*PreferredIndexSort2î
+Borg.jabref.preferences.SidePanePreferences.getPreferredPositions()CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java•: •(O2‚
+èorg.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.PreferredIndexSort(org.jabref.preferences.SidePanePreferences)!sidePanePreferencesCALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java•& •(92Ø
+]org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort?preferredPositions@162.49:162.67CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java• •(#2Á
+èorg.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.PreferredIndexSort(org.jabref.preferences.SidePanePreferences)!sidePanePreferences	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java§6 §(I2ï
+<org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSortRETURN_TYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java§ §(!Á
+èorg.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.PreferredIndexSort(org.jabref.preferences.SidePanePreferences)!sidePanePreferences	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java§6 §(I"
+typeSidePanePreferences"
+isFinalfalse"<
+declarationString'SidePanePreferences sidePanePreferences*sidePanePreferences2|
+*org.jabref.preferences.SidePanePreferencesTYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java§" §(5…
+êorg.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.compare(org.jabref.gui.sidepane.SidePaneType, org.jabref.gui.sidepane.SidePaneType)METHODH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java© ©("
+isFinalfalse"í
+declarationString¸<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">int</mark> <mark class="method">compare</mark>(SidePaneType type1<mark class="modifier"><mark class="modifier">,</mark></mark> SidePaneType type2)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeint*compare2Å
+/java.util.Map.getOrDefault(java.lang.Object, V)CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java™* ™(62Å
+/java.util.Map.getOrDefault(java.lang.Object, V)CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java´* ´(62u
+#java.lang.Integer.compare(int, int)CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¨ ¨("2Ø
+]org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort?preferredPositions@162.49:162.67CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java™ ™()2È
+ñorg.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.compare(org.jabref.gui.sidepane.SidePaneType, org.jabref.gui.sidepane.SidePaneType)!type1CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java™7 ™(<2Ø
+]org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort?preferredPositions@162.49:162.67CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java´ ´()2È
+ñorg.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.compare(org.jabref.gui.sidepane.SidePaneType, org.jabref.gui.sidepane.SidePaneType)!type2CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java´7 ´(<2ˆ
+£org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.compare(org.jabref.gui.sidepane.SidePaneType, org.jabref.gui.sidepane.SidePaneType)?pos1@170.16:170.20CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¨# ¨('2ˆ
+£org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.compare(org.jabref.gui.sidepane.SidePaneType, org.jabref.gui.sidepane.SidePaneType)?pos2@171.16:171.20CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¨) ¨(-2Ó
+ñorg.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.compare(org.jabref.gui.sidepane.SidePaneType, org.jabref.gui.sidepane.SidePaneType)!type1	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java©( ©(-2Ó
+ñorg.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.compare(org.jabref.gui.sidepane.SidePaneType, org.jabref.gui.sidepane.SidePaneType)!type2	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java©< ©(A2˝
+£org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.compare(org.jabref.gui.sidepane.SidePaneType, org.jabref.gui.sidepane.SidePaneType)?pos1@170.16:170.20DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java™ ™(2˝
+£org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.compare(org.jabref.gui.sidepane.SidePaneType, org.jabref.gui.sidepane.SidePaneType)?pos2@171.16:171.20DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java´ ´(2\
+intRETURN_TYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java© ©(√
+£org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.compare(org.jabref.gui.sidepane.SidePaneType, org.jabref.gui.sidepane.SidePaneType)?pos1@170.16:170.20VARIABLEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java™ ™("
+typeint"
+isFinalfalse"®
+declarationStringí<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">pos1</mark> = preferredPositions.getOrDefault(type1, 0)*pos12U
+intTYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java™ ™(2Å
+/java.util.Map.getOrDefault(java.lang.Object, V)CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java™* ™(62Ø
+]org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort?preferredPositions@162.49:162.67CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java™ ™()2È
+ñorg.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.compare(org.jabref.gui.sidepane.SidePaneType, org.jabref.gui.sidepane.SidePaneType)!type1CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java™7 ™(<√
+£org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.compare(org.jabref.gui.sidepane.SidePaneType, org.jabref.gui.sidepane.SidePaneType)?pos2@171.16:171.20VARIABLEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java´ ´("
+typeint"
+isFinalfalse"®
+declarationStringí<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">pos2</mark> = preferredPositions.getOrDefault(type2, 0)*pos22U
+intTYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java´ ´(2Å
+/java.util.Map.getOrDefault(java.lang.Object, V)CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java´* ´(62Ø
+]org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort?preferredPositions@162.49:162.67CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java´ ´()2È
+ñorg.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.compare(org.jabref.gui.sidepane.SidePaneType, org.jabref.gui.sidepane.SidePaneType)!type2CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java´7 ´(<æ
+ñorg.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.compare(org.jabref.gui.sidepane.SidePaneType, org.jabref.gui.sidepane.SidePaneType)!type1	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java©( ©(-"
+typeSidePaneType"
+isFinalfalse"'
+declarationStringSidePaneType type1*type12v
+$org.jabref.gui.sidepane.SidePaneTypeTYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java© ©('æ
+ñorg.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort.compare(org.jabref.gui.sidepane.SidePaneType, org.jabref.gui.sidepane.SidePaneType)!type2	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java©< ©(A"
+typeSidePaneType"
+isFinalfalse"'
+declarationStringSidePaneType type2*type22v
+$org.jabref.gui.sidepane.SidePaneTypeTYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java©/ ©(;†
+]org.jabref.gui.sidepane.SidePaneViewModel.PreferredIndexSort?preferredPositions@162.49:162.67VALUEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¢1 ¢(C"
+isFinaltrue""
+typeMap<SidePaneType, Integer>"Æ
+declarationStringò<mark class="modifier">private </mark><mark class="modifier">final </mark>Map<SidePaneType, Integer> <mark class="class-field">preferredPositions</mark>"
+isStaticfalse"
+accessprivate*preferredPositions2_
+java.util.MapTYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¢ ¢(2
+$org.jabref.gui.sidepane.SidePaneTypeTYPE_ARGUMENTH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¢ ¢(&2l
+java.lang.IntegerTYPE_ARGUMENTH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¢( ¢(/«
+6org.jabref.gui.sidepane.SidePaneViewModel.MoveUpActionCLASSH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java∞ ∞("4
+package)org.jabref.gui.sidepane.SidePaneViewModel"
+isFinalfalse"
+inner classtrue"
+
+isAbstractfalse"†
+declarationStringä<mark class="modifier">private </mark><mark class="modifier">class </mark>MoveUpAction<mark class="modifier"> extends </mark>SimpleCommand"
+accessprivate*MoveUpAction2¬
+iorg.jabref.gui.sidepane.SidePaneViewModel.MoveUpAction.MoveUpAction(org.jabref.gui.sidepane.SidePaneType)DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java≥ ≥(2ô
+@org.jabref.gui.sidepane.SidePaneViewModel.MoveUpAction.execute()DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java∏ ∏(2™
+Qorg.jabref.gui.sidepane.SidePaneViewModel.MoveUpAction?toMoveUpPane@177.35:177.47DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java±# ±(/2x
+$org.jabref.gui.actions.SimpleCommandEXTENDH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java∞' ∞(4¢
+iorg.jabref.gui.sidepane.SidePaneViewModel.MoveUpAction.MoveUpAction(org.jabref.gui.sidepane.SidePaneType)CONSTRUCTORH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java≥ ≥("}
+declarationStringh<mark class="modifier">public </mark><mark class="method">MoveUpAction</mark>(SidePaneType toMoveUpPane)*MoveUpAction2»
+vorg.jabref.gui.sidepane.SidePaneViewModel.MoveUpAction.MoveUpAction(org.jabref.gui.sidepane.SidePaneType)!toMoveUpPaneCALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¥  ¥(,2£
+Qorg.jabref.gui.sidepane.SidePaneViewModel.MoveUpAction?toMoveUpPane@177.35:177.47CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¥ ¥(2Õ
+vorg.jabref.gui.sidepane.SidePaneViewModel.MoveUpAction.MoveUpAction(org.jabref.gui.sidepane.SidePaneType)!toMoveUpPane	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java≥) ≥(52è
+6org.jabref.gui.sidepane.SidePaneViewModel.MoveUpActionRETURN_TYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java≥ ≥(´
+vorg.jabref.gui.sidepane.SidePaneViewModel.MoveUpAction.MoveUpAction(org.jabref.gui.sidepane.SidePaneType)!toMoveUpPane	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java≥) ≥(5"
+typeSidePaneType"
+isFinalfalse".
+declarationStringSidePaneType toMoveUpPane*toMoveUpPane2v
+$org.jabref.gui.sidepane.SidePaneTypeTYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java≥ ≥((€
+@org.jabref.gui.sidepane.SidePaneViewModel.MoveUpAction.execute()METHODH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java∏ ∏("
+isFinalfalse"±
+declarationStringõ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">execute</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*execute2®
+Vorg.jabref.gui.sidepane.SidePaneViewModel.moveUp(org.jabref.gui.sidepane.SidePaneType)CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaπ π(2£
+Qorg.jabref.gui.sidepane.SidePaneViewModel.MoveUpAction?toMoveUpPane@177.35:177.47CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaπ π(2]
+voidRETURN_TYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java∏ ∏(î
+Qorg.jabref.gui.sidepane.SidePaneViewModel.MoveUpAction?toMoveUpPane@177.35:177.47VALUEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java±# ±(/"
+isFinaltrue"
+typeSidePaneType"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>SidePaneType <mark class="class-field">toMoveUpPane</mark>"
+isStaticfalse"
+accessprivate*toMoveUpPane2v
+$org.jabref.gui.sidepane.SidePaneTypeTYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java± ±("◊
+8org.jabref.gui.sidepane.SidePaneViewModel.MoveDownActionCLASSH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaΩ Ω( "4
+package)org.jabref.gui.sidepane.SidePaneViewModel"
+isFinalfalse"
+inner classtrue"
+
+isAbstractfalse"¢
+declarationStringå<mark class="modifier">private </mark><mark class="modifier">class </mark>MoveDownAction<mark class="modifier"> extends </mark>SimpleCommand"
+accessprivate*MoveDownAction2∆
+morg.jabref.gui.sidepane.SidePaneViewModel.MoveDownAction.MoveDownAction(org.jabref.gui.sidepane.SidePaneType)DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¿ ¿(2õ
+Borg.jabref.gui.sidepane.SidePaneViewModel.MoveDownAction.execute()DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java≈ ≈(2Æ
+Uorg.jabref.gui.sidepane.SidePaneViewModel.MoveDownAction?toMoveDownPane@190.35:190.49DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaæ# æ(12x
+$org.jabref.gui.actions.SimpleCommandEXTENDH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaΩ) Ω(6ø
+morg.jabref.gui.sidepane.SidePaneViewModel.MoveDownAction.MoveDownAction(org.jabref.gui.sidepane.SidePaneType)CONSTRUCTORH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¿ ¿("Å
+declarationStringl<mark class="modifier">public </mark><mark class="method">MoveDownAction</mark>(SidePaneType toMoveDownPane)*MoveDownAction2Œ
+|org.jabref.gui.sidepane.SidePaneViewModel.MoveDownAction.MoveDownAction(org.jabref.gui.sidepane.SidePaneType)!toMoveDownPaneCALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¡" ¡(02ß
+Uorg.jabref.gui.sidepane.SidePaneViewModel.MoveDownAction?toMoveDownPane@190.35:190.49CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¡ ¡(2”
+|org.jabref.gui.sidepane.SidePaneViewModel.MoveDownAction.MoveDownAction(org.jabref.gui.sidepane.SidePaneType)!toMoveDownPane	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¿+ ¿(92ë
+8org.jabref.gui.sidepane.SidePaneViewModel.MoveDownActionRETURN_TYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¿ ¿(µ
+|org.jabref.gui.sidepane.SidePaneViewModel.MoveDownAction.MoveDownAction(org.jabref.gui.sidepane.SidePaneType)!toMoveDownPane	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¿+ ¿(9"
+typeSidePaneType"
+isFinalfalse"0
+declarationStringSidePaneType toMoveDownPane*toMoveDownPane2v
+$org.jabref.gui.sidepane.SidePaneTypeTYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java¿ ¿(*„
+Borg.jabref.gui.sidepane.SidePaneViewModel.MoveDownAction.execute()METHODH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java≈ ≈("
+isFinalfalse"±
+declarationStringõ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">execute</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*execute2™
+Xorg.jabref.gui.sidepane.SidePaneViewModel.moveDown(org.jabref.gui.sidepane.SidePaneType)CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java∆ ∆(2ß
+Uorg.jabref.gui.sidepane.SidePaneViewModel.MoveDownAction?toMoveDownPane@190.35:190.49CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java∆ ∆(#2]
+voidRETURN_TYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java≈ ≈(ú
+Uorg.jabref.gui.sidepane.SidePaneViewModel.MoveDownAction?toMoveDownPane@190.35:190.49VALUEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaæ# æ(1"
+isFinaltrue"
+typeSidePaneType"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>SidePaneType <mark class="class-field">toMoveDownPane</mark>"
+isStaticfalse"
+accessprivate*toMoveDownPane2v
+$org.jabref.gui.sidepane.SidePaneTypeTYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaæ æ("Ÿ
+9org.jabref.gui.sidepane.SidePaneViewModel.ClosePaneActionCLASSH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java   ( "4
+package)org.jabref.gui.sidepane.SidePaneViewModel"
+isFinalfalse"
+inner classtrue"
+
+isAbstractfalse"¢
+declarationStringå<mark class="modifier">public </mark><mark class="modifier">class </mark>ClosePaneAction<mark class="modifier"> extends </mark>SimpleCommand"
+accesspublic*ClosePaneAction2»
+oorg.jabref.gui.sidepane.SidePaneViewModel.ClosePaneAction.ClosePaneAction(org.jabref.gui.sidepane.SidePaneType)DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÕ Õ(2ú
+Corg.jabref.gui.sidepane.SidePaneViewModel.ClosePaneAction.execute()DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java“ “(2¨
+Sorg.jabref.gui.sidepane.SidePaneViewModel.ClosePaneAction?toClosePane@203.35:203.46DECLARATIONH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÀ# À(.2x
+$org.jabref.gui.actions.SimpleCommandEXTENDH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java )  (6º
+oorg.jabref.gui.sidepane.SidePaneViewModel.ClosePaneAction.ClosePaneAction(org.jabref.gui.sidepane.SidePaneType)CONSTRUCTORH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÕ Õ("
+declarationStringj<mark class="modifier">public </mark><mark class="method">ClosePaneAction</mark>(SidePaneType toClosePane)*ClosePaneAction2Õ
+{org.jabref.gui.sidepane.SidePaneViewModel.ClosePaneAction.ClosePaneAction(org.jabref.gui.sidepane.SidePaneType)!toClosePaneCALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaŒ Œ(*2•
+Sorg.jabref.gui.sidepane.SidePaneViewModel.ClosePaneAction?toClosePane@203.35:203.46CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaŒ Œ(2“
+{org.jabref.gui.sidepane.SidePaneViewModel.ClosePaneAction.ClosePaneAction(org.jabref.gui.sidepane.SidePaneType)!toClosePane	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÕ, Õ(72í
+9org.jabref.gui.sidepane.SidePaneViewModel.ClosePaneActionRETURN_TYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÕ Õ(Æ
+{org.jabref.gui.sidepane.SidePaneViewModel.ClosePaneAction.ClosePaneAction(org.jabref.gui.sidepane.SidePaneType)!toClosePane	PARAMETERH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÕ, Õ(7"
+typeSidePaneType"
+isFinalfalse"-
+declarationStringSidePaneType toClosePane*toClosePane2v
+$org.jabref.gui.sidepane.SidePaneTypeTYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÕ Õ(+€
+Corg.jabref.gui.sidepane.SidePaneViewModel.ClosePaneAction.execute()METHODH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java“ “("
+isFinalfalse"±
+declarationStringõ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">execute</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*execute2å
+:org.jabref.gui.StateManager.getVisibleSidePaneComponents()CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java” ”(52î
+Borg.jabref.gui.sidepane.SidePaneViewModel?stateManager@36.31:36.43CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java” ”(2•
+Sorg.jabref.gui.sidepane.SidePaneViewModel.ClosePaneAction?toClosePane@203.35:203.46CALLH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java”? ”(J2]
+voidRETURN_TYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.java“ “(î
+Sorg.jabref.gui.sidepane.SidePaneViewModel.ClosePaneAction?toClosePane@203.35:203.46VALUEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÀ# À(."
+isFinaltrue"
+typeSidePaneType"ô
+declarationStringÉ<mark class="modifier">private </mark><mark class="modifier">final </mark>SidePaneType <mark class="class-field">toClosePane</mark>"
+isStaticfalse"
+accessprivate*toClosePane2v
+$org.jabref.gui.sidepane.SidePaneTypeTYPEH
+<src\main\java\org\jabref\gui\sidepane\SidePaneViewModel.javaÀ À("

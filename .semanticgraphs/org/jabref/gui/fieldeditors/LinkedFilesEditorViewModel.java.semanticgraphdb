@@ -1,0 +1,1558 @@
+
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaˆ-
+6org.jabref.gui.fieldeditors.LinkedFilesEditorViewModelCLASSS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java4 4('"&
+packageorg.jabref.gui.fieldeditors"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"∑
+declarationString°<mark class="modifier">public </mark><mark class="modifier">class </mark>LinkedFilesEditorViewModel<mark class="modifier"> extends </mark>AbstractEditorViewModel"
+accesspublic*LinkedFilesEditorViewModel2Ô
+äorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java> >(%2Ù
+èorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.getStringRepresentation(java.util.List<org.jabref.gui.fieldeditors.LinkedFileViewModel>)DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaT T(12Ñ
+üorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javad d(%2ﬂ
+{org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, org.jabref.preferences.FilePreferences)DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javal l('2¡
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.parseToFileViewModel(java.lang.String)DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javay& y(:2ß
+Aorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.getFiles()DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÖ/ Ö(72¨
+Forg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.filesProperty()DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaâ- â(:2©
+Corg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaç ç(2Â
+org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewLinkedFile(java.nio.file.Path, java.util.List<java.nio.file.Path>)DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java∞ ∞(!2…
+corg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.bindToEntry(org.jabref.model.entry.BibEntry)DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaº º(2⁄
+torg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java &  (B2ª
+Uorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.downloadFile(java.lang.String)DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÂ Â(2¨
+Forg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÚ Ú(2©
+Corg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addFromURL()DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaã ã(2¿
+Zorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addFromURLAndDownload(java.net.URL)DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaê ê(&2ÿ
+rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.deleteFile(org.jabref.gui.fieldeditors.LinkedFileViewModel)DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaú ú(2‹
+vorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.removeFileLink(org.jabref.gui.fieldeditors.LinkedFileViewModel)DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaß ß(2ø
+Yorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fulltextLookupInProgressProperty()DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java´# ´(C2≠
+Iorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?LOGGER@53.32:53.38DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java5  5(&2¨
+Horg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?files@55.52:55.57DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java74 7(92ø
+[org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?fulltextLookupInProgress@56.34:56.58DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java8" 8(:2¥
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java9  9(-2∂
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java:% :(42≥
+Oorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?taskExecutor@59.31:59.43DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java; ;(+2≤
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java<% <(02í
+3org.jabref.gui.fieldeditors.AbstractEditorViewModelEXTENDS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java40 4(GéT
+äorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)CONSTRUCTORS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java> >(%"Ñ
+declarationStringÓ<mark class="modifier">public </mark><mark class="method">LinkedFilesEditorViewModel</mark>(Field field<mark class="modifier"><mark class="modifier">,</mark></mark> SuggestionProvider&lt;?&gt; suggestionProvider<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor<mark class="modifier"><mark class="modifier">,</mark></mark> FieldCheckers fieldCheckers<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferences<mark class="modifier"><mark class="modifier">,</mark></mark> UndoManager undoManager)*LinkedFilesEditorViewModel2…
+Îorg.jabref.gui.fieldeditors.AbstractEditorViewModel.AbstractEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.logic.integrity.FieldCheckers, javax.swing.undo.UndoManager)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaF F(2Ó
+êorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!fieldCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaF F(2˚
+ùorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!suggestionProviderCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaF F('2ˆ
+òorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!fieldCheckersCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaF) F(62Ù
+ñorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!undoManagerCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaF8 F(C2ˆ
+òorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!dialogServiceCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaH H(*2¯
+öorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!databaseContextCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaI I(.2ı
+óorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!taskExecutorCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaJ J((2Ù
+ñorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!preferencesCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaK K(&2•
+Horg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?files@55.52:55.57CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaN N(2≠
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaH H(2Ø
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaI I(2¨
+Oorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?taskExecutor@59.31:59.43CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaJ J(2´
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaK K(2Û
+êorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!field	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java>, >(12Ä
+ùorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!suggestionProvider	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java>I >([2˚
+òorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!dialogService	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java?4 ?(A2˝
+öorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!databaseContext	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java@9 @(H2˙
+óorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!taskExecutor	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaA3 A(?2˚
+òorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!fieldCheckers	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaB4 B(A2˘
+ñorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!preferences	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaC9 C(D2˘
+ñorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!undoManager	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaD2 D(=2ö
+6org.jabref.gui.fieldeditors.LinkedFilesEditorViewModelRETURN_TYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java> >(%æ
+êorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!field	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java>, >(1"
+typeField"
+isFinalfalse" 
+declarationStringField field*field2
+"org.jabref.model.entry.field.FieldTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java>& >(+ì
+ùorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!suggestionProvider	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java>I >(["
+typeSuggestionProvider<?>"
+isFinalfalse"=
+declarationString(SuggestionProvider<?> suggestionProvider*suggestionProvider2å
+/org.jabref.gui.autocompleter.SuggestionProviderTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java>3 >(E‡
+òorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!dialogService	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java?4 ?(A"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2y
+org.jabref.gui.DialogServiceTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java?& ?(3Å
+öorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!databaseContext	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java@9 @(H"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2â
+,org.jabref.model.database.BibDatabaseContextTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java@& @(8ﬂ
+óorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!taskExecutor	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaA3 A(?"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2}
+ org.jabref.gui.util.TaskExecutorTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaA& A(2Ì
+òorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!fieldCheckers	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaB4 B(A"
+typeFieldCheckers"
+isFinalfalse"0
+declarationStringFieldCheckers fieldCheckers*fieldCheckers2Ö
+(org.jabref.logic.integrity.FieldCheckersTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaB& B(3Ú
+ñorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!preferences	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaC9 C(D"
+typePreferencesService"
+isFinalfalse"3
+declarationStringPreferencesService preferences*preferences2Ü
+)org.jabref.preferences.PreferencesServiceTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaC& C(8÷
+ñorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.LinkedFilesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.logic.integrity.FieldCheckers, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!undoManager	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaD2 D(="
+typeUndoManager"
+isFinalfalse",
+declarationStringUndoManager undoManager*undoManager2y
+javax.swing.undo.UndoManagerTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaD& D(1Œ
+èorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.getStringRepresentation(java.util.List<org.jabref.gui.fieldeditors.LinkedFileViewModel>)METHODS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaT T(1"
+isFinalfalse"¬
+declarationString¨<mark class="modifier">private </mark><mark class="modifier">static </mark>String <mark class="method">getStringRepresentation</mark>(List&lt;LinkedFileViewModel&gt; files)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeString*getStringRepresentation2©
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaY2 Y(92≠
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaX2 X(52§
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaW2 W(82z
+java.util.Collection.stream()CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaV2 V(82£
+Forg.jabref.gui.fieldeditors.LinkedFileViewModel.isAutomaticallyFound()CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaWG W([2Å
+$java.util.stream.Collectors.toList()CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaYE Y(K2œ
+rorg.jabref.logic.bibtex.FileFieldWriter.getStringRepresentation(java.util.List<org.jabref.model.entry.LinkedFile>)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java[ [(62Û
+ïorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.getStringRepresentation(java.util.List<org.jabref.gui.fieldeditors.LinkedFileViewModel>)!filesCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaV, V(12˛
+†org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.getStringRepresentation(java.util.List<org.jabref.gui.fieldeditors.LinkedFileViewModel>)?file@87.57:87.61CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaWB W(F2ä
+¨org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.getStringRepresentation(java.util.List<org.jabref.gui.fieldeditors.LinkedFileViewModel>)?filesToSerialize@86.25:86.41CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java[7 [(G2ñ
+9org.jabref.gui.fieldeditors.LinkedFileViewModel.getFile()CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaX6 X(R2¯
+ïorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.getStringRepresentation(java.util.List<org.jabref.gui.fieldeditors.LinkedFileViewModel>)!files	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaTL T(Q2ë
+¨org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.getStringRepresentation(java.util.List<org.jabref.gui.fieldeditors.LinkedFileViewModel>)?filesToSerialize@86.25:86.41DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaV V()2Ö
+†org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.getStringRepresentation(java.util.List<org.jabref.gui.fieldeditors.LinkedFileViewModel>)?file@87.57:87.61DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaW9 W(=2t
+java.lang.StringRETURN_TYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaT T(Û
+¨org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.getStringRepresentation(java.util.List<org.jabref.gui.fieldeditors.LinkedFileViewModel>)?filesToSerialize@86.25:86.41VARIABLES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaV V()"
+typeList<LinkedFile>"
+isFinalfalse"Ù
+declarationStringﬁ<mark class="modifier"> </mark>List<LinkedFile> <mark class="class-field">filesToSerialize</mark> = files.stream().filter(file -> !file.isAutomaticallyFound()).map(LinkedFileViewModel::getFile).collect(Collectors.toList())*filesToSerialize2k
+java.util.ListTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaV V(2á
+!org.jabref.model.entry.LinkedFileTYPE_ARGUMENTS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaV V(2©
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaY2 Y(92≠
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaX2 X(52§
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaW2 W(82z
+java.util.Collection.stream()CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaV2 V(82£
+Forg.jabref.gui.fieldeditors.LinkedFileViewModel.isAutomaticallyFound()CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaWG W([2Å
+$java.util.stream.Collectors.toList()CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaYE Y(K2Û
+ïorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.getStringRepresentation(java.util.List<org.jabref.gui.fieldeditors.LinkedFileViewModel>)!filesCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaV, V(12˛
+†org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.getStringRepresentation(java.util.List<org.jabref.gui.fieldeditors.LinkedFileViewModel>)?file@87.57:87.61CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaWB W(F2ñ
+9org.jabref.gui.fieldeditors.LinkedFileViewModel.getFile()CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaX6 X(RÔ
+ïorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.getStringRepresentation(java.util.List<org.jabref.gui.fieldeditors.LinkedFileViewModel>)!files	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaTL T(Q"!
+typeList<LinkedFileViewModel>"
+isFinalfalse"4
+declarationStringList<LinkedFileViewModel> files*files2k
+java.util.ListTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaT2 T(62ï
+/org.jabref.gui.fieldeditors.LinkedFileViewModelTYPE_ARGUMENTS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaT7 T(J∆
+†org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.getStringRepresentation(java.util.List<org.jabref.gui.fieldeditors.LinkedFileViewModel>)?file@87.57:87.61VARIABLES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaW9 W(="
+type"
+isFinalfalse"
+declarationString file*file2TYPEÈ/
+üorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)METHODS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javad d(%"
+isFinalfalse"’
+declarationStringø<mark class="modifier">public </mark><mark class="modifier">static </mark>LinkedFile <mark class="method">fromFile</mark>(Path file<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;Path&gt; fileDirectories<mark class="modifier"><mark class="modifier">,</mark></mark> FilePreferences filePreferences)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+type
+LinkedFile*fromFile2y
+java.util.Optional.orElse(T)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javae? e(E2£
+Forg.jabref.logic.util.io.FileUtil.getFileExtension(java.nio.file.Path)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javae( e(82y
+java.util.Optional.orElse(T)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javag? g(E2‚
+Ñorg.jabref.gui.externalfiletype.ExternalFileTypes.getExternalFileTypeByExt(java.lang.String, org.jabref.preferences.FilePreferences)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaf? f(W2¡
+dorg.jabref.logic.util.io.FileUtil.relativize(java.nio.file.Path, java.util.List<java.nio.file.Path>)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javah% h(/2ó
+:org.jabref.gui.externalfiletype.ExternalFileType.getName()CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaiB i(I2æ
+aorg.jabref.gui.externalfiletype.UnknownExternalFileType.UnknownExternalFileType(java.lang.String)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javagJ g(a2¡
+dorg.jabref.model.entry.LinkedFile.LinkedFile(java.lang.String, java.nio.file.Path, java.lang.String)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javai i(2Ç
+§org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)!fileCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javae9 e(=2ô
+ªorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)?fileExtension@101.15:101.28CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javafX f(e2ç
+Øorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)!filePreferencesCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javafg f(v2ô
+ªorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)?fileExtension@101.15:101.28CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javagb g(o2Ç
+§org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)!fileCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javah0 h(42ç
+Øorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)!fileDirectoriesCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javah6 h(E2ò
+∫org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)?relativePath@104.13:104.25CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javai" i(.2ù
+øorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)?suggestedFileType@102.25:102.42CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javai0 i(A2á
+§org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)!file	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javad+ d(/2í
+Øorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)!fileDirectories	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javad< d(K2í
+Øorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)!filePreferences	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javad] d(l2†
+ªorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)?fileExtension@101.15:101.28DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javae e(2§
+øorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)?suggestedFileType@102.25:102.42DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaf f(*2ü
+∫org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)?relativePath@104.13:104.25DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javah h(2Ö
+!org.jabref.model.entry.LinkedFileRETURN_TYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javad d(˝
+ªorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)?fileExtension@101.15:101.28VARIABLES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javae e("
+typeString"
+isFinalfalse"ó
+declarationStringÅ<mark class="modifier"> </mark>String <mark class="class-field">fileExtension</mark> = FileUtil.getFileExtension(file).orElse("")*fileExtension2m
+java.lang.StringTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javae e(2y
+java.util.Optional.orElse(T)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javae? e(E2£
+Forg.jabref.logic.util.io.FileUtil.getFileExtension(java.nio.file.Path)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javae( e(82Ç
+§org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)!fileCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javae9 e(=‘
+øorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)?suggestedFileType@102.25:102.42VARIABLES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaf f(*"
+typeExternalFileType"
+isFinalfalse"¯
+declarationString‚<mark class="modifier"> </mark>ExternalFileType <mark class="class-field">suggestedFileType</mark> = ExternalFileTypes.getExternalFileTypeByExt(fileExtension, filePreferences).orElse(new UnknownExternalFileType(fileExtension))*suggestedFileType2ç
+0org.jabref.gui.externalfiletype.ExternalFileTypeTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaf f(2y
+java.util.Optional.orElse(T)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javag? g(E2‚
+Ñorg.jabref.gui.externalfiletype.ExternalFileTypes.getExternalFileTypeByExt(java.lang.String, org.jabref.preferences.FilePreferences)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaf? f(W2æ
+aorg.jabref.gui.externalfiletype.UnknownExternalFileType.UnknownExternalFileType(java.lang.String)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javagJ g(a2ô
+ªorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)?fileExtension@101.15:101.28CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javafX f(e2ç
+Øorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)!filePreferencesCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javafg f(v2ô
+ªorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)?fileExtension@101.15:101.28CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javagb g(o™
+
+∫org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)?relativePath@104.13:104.25VARIABLES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javah h("
+typePath"
+isFinalfalse"ì
+declarationString~<mark class="modifier"> </mark>Path <mark class="class-field">relativePath</mark> = FileUtil.relativize(file, fileDirectories)*relativePath2o
+java.nio.file.PathTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javah h(2¡
+dorg.jabref.logic.util.io.FileUtil.relativize(java.nio.file.Path, java.util.List<java.nio.file.Path>)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javah% h(/2Ç
+§org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)!fileCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javah0 h(42ç
+Øorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)!fileDirectoriesCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javah6 h(Eæ
+§org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)!file	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javad+ d(/"
+typePath"
+isFinalfalse"
+declarationString	Path file*file2o
+java.nio.file.PathTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javad& d(*·
+Øorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)!fileDirectories	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javad< d(K"
+type
+List<Path>"
+isFinalfalse"/
+declarationStringList<Path> fileDirectories*fileDirectories2k
+java.util.ListTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javad1 d(52x
+java.nio.file.PathTYPE_ARGUMENTS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javad6 d(:ä
+Øorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)!filePreferences	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javad] d(l"
+typeFilePreferences"
+isFinalfalse"4
+declarationStringFilePreferences filePreferences*filePreferences2É
+&org.jabref.preferences.FilePreferencesTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javadM d(\÷$
+{org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, org.jabref.preferences.FilePreferences)METHODS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javal l('"
+isFinalfalse"€
+declarationString≈<mark class="modifier">public </mark>LinkedFileViewModel <mark class="method">fromFile</mark>(Path file<mark class="modifier"><mark class="modifier">,</mark></mark> FilePreferences filePreferences)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeLinkedFileViewModel*fromFile2ƒ
+gorg.jabref.model.database.BibDatabaseContext.getFileDirectories(org.jabref.preferences.FilePreferences)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javam5 m(G2õ
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javamT m(f2˝
+üorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javao  o((2˛
+†org.jabref.gui.fieldeditors.LinkedFileViewModel.LinkedFileViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javap p(&2Ø
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javam% m(42´
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javamH m(S2ﬁ
+Äorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, org.jabref.preferences.FilePreferences)!fileCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javao) o(-2˜
+ôorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, org.jabref.preferences.FilePreferences)?fileDirectories@109.19:109.34CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javao/ o(>2È
+ãorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, org.jabref.preferences.FilePreferences)!filePreferencesCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javao@ o(O2Ú
+îorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, org.jabref.preferences.FilePreferences)?linkedFile@111.19:111.29CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaq q(2Ø
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javas s(2¨
+Oorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?taskExecutor@59.31:59.43CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javat t(2≠
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javau u(2´
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javav v(2„
+Äorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, org.jabref.preferences.FilePreferences)!file	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javal- l(12Ó
+ãorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, org.jabref.preferences.FilePreferences)!filePreferences	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javalC l(R2˛
+ôorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, org.jabref.preferences.FilePreferences)?fileDirectories@109.19:109.34DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javam m("2˘
+îorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, org.jabref.preferences.FilePreferences)?linkedFile@111.19:111.29DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javao o(2ì
+/org.jabref.gui.fieldeditors.LinkedFileViewModelRETURN_TYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javal l(ò
+ôorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, org.jabref.preferences.FilePreferences)?fileDirectories@109.19:109.34VARIABLES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javam m(""
+type
+List<Path>"
+isFinalfalse"∑
+declarationString°<mark class="modifier"> </mark>List<Path> <mark class="class-field">fileDirectories</mark> = databaseContext.getFileDirectories(preferences.getFilePreferences())*fileDirectories2k
+java.util.ListTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javam m(2x
+java.nio.file.PathTYPE_ARGUMENTS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javam m(2ƒ
+gorg.jabref.model.database.BibDatabaseContext.getFileDirectories(org.jabref.preferences.FilePreferences)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javam5 m(G2õ
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javamT m(f2Ø
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javam% m(42´
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javamH m(Sê
+îorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, org.jabref.preferences.FilePreferences)?linkedFile@111.19:111.29VARIABLES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javao o("
+type
+LinkedFile"
+isFinalfalse"û
+declarationStringà<mark class="modifier"> </mark>LinkedFile <mark class="class-field">linkedFile</mark> = fromFile(file, fileDirectories, filePreferences)*
+linkedFile2~
+!org.jabref.model.entry.LinkedFileTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javao o(2˝
+üorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javao  o((2ﬁ
+Äorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, org.jabref.preferences.FilePreferences)!fileCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javao) o(-2˜
+ôorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, org.jabref.preferences.FilePreferences)?fileDirectories@109.19:109.34CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javao/ o(>2È
+ãorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, org.jabref.preferences.FilePreferences)!filePreferencesCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javao@ o(Oö
+Äorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, org.jabref.preferences.FilePreferences)!file	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javal- l(1"
+typePath"
+isFinalfalse"
+declarationString	Path file*file2o
+java.nio.file.PathTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javal( l(,Ê
+ãorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, org.jabref.preferences.FilePreferences)!filePreferences	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javalC l(R"
+typeFilePreferences"
+isFinalfalse"4
+declarationStringFilePreferences filePreferences*filePreferences2É
+&org.jabref.preferences.FilePreferencesTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javal3 l(Bå
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.parseToFileViewModel(java.lang.String)METHODS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javay& y(:"
+isFinalfalse"†
+declarationStringä<mark class="modifier">private </mark>List&lt;LinkedFileViewModel&gt; <mark class="method">parseToFileViewModel</mark>(String stringValue)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"!
+typeList<LinkedFileViewModel>*parseToFileViewModel2´
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÇ Ç(&2≠
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java{ {("2z
+java.util.Collection.stream()CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaz2 z(82£
+Forg.jabref.logic.importer.util.FileFieldParser.parse(java.lang.String)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaz z($2É
+$java.util.stream.Collectors.toList()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÇ2 Ç(82˛
+†org.jabref.gui.fieldeditors.LinkedFileViewModel.LinkedFileViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java{5 {(H2∆
+iorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.parseToFileViewModel(java.lang.String)!stringValueCALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaz% z(02”
+vorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.parseToFileViewModel(java.lang.String)?linkedFile@123.35:123.45CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java|& |(02Ø
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java~& ~(52¨
+Oorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?taskExecutor@59.31:59.43CALLS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java& (22Ø
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÄ& Ä(32≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÅ& Å(12À
+iorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.parseToFileViewModel(java.lang.String)!stringValue	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javayB y(M2⁄
+vorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.parseToFileViewModel(java.lang.String)?linkedFile@123.35:123.45DECLARATIONS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java{# {(-2r
+java.util.ListRETURN_TYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javay y(2ú
+/org.jabref.gui.fieldeditors.LinkedFileViewModelRETURN_TYPE_ARGUMENTS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javay y($í
+iorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.parseToFileViewModel(java.lang.String)!stringValue	PARAMETERS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javayB y(M"
+typeString"
+isFinalfalse"'
+declarationStringString stringValue*stringValue2m
+java.lang.StringTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javay; y(Aß
+vorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.parseToFileViewModel(java.lang.String)?linkedFile@123.35:123.45VARIABLES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java{# {(-"
+type"
+isFinalfalse" 
+declarationString linkedFile*
+linkedFile2TYPEá
+Aorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.getFiles()METHODU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÖ/ Ö(7"
+isFinalfalse"ä
+declarationStringu<mark class="modifier">public </mark>ObservableList&lt;LinkedFileViewModel&gt; <mark class="method">getFiles</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"+
+type#ObservableList<LinkedFileViewModel>*getFiles2ß
+Horg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?files@55.52:55.57CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÜ Ü(2á
+!javafx.collections.ObservableListRETURN_TYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÖ Ö(2û
+/org.jabref.gui.fieldeditors.LinkedFileViewModelRETURN_TYPE_ARGUMENTU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÖ Ö(-ì
+Forg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.filesProperty()METHODU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaâ- â(:"
+isFinalfalse"ç
+declarationStringx<mark class="modifier">public </mark>ListProperty&lt;LinkedFileViewModel&gt; <mark class="method">filesProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse")
+type!ListProperty<LinkedFileViewModel>*filesProperty2ß
+Horg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?files@55.52:55.57CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaä ä(2à
+"javafx.beans.property.ListPropertyRETURN_TYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaâ â(2û
+/org.jabref.gui.fieldeditors.LinkedFileViewModelRETURN_TYPE_ARGUMENTU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaâ â(+ã\
+Corg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()METHODU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaç ç("
+isFinalfalse"Ö
+declarationStringp<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">addNewFile</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*
+addNewFile2{
+java.util.Optional.orElse(T)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaè0 è(62À
+lorg.jabref.model.database.BibDatabaseContext.getFirstExistingFileDir(org.jabref.preferences.FilePreferences)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaé0 é(G2ù
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaéT é(f2õ
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaèX è(k2ù
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaèC è(U2ö
+;org.jabref.gui.util.FileDialogConfiguration.Builder.build()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaì ì(2ª
+\org.jabref.gui.util.FileDialogConfiguration.Builder.withInitialDirectory(java.nio.file.Path)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaí í(%2∆
+gorg.jabref.model.database.BibDatabaseContext.getFileDirectories(org.jabref.preferences.FilePreferences)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaï5 ï(G2ù
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaïT ï(f2Œ
+oorg.jabref.gui.DialogService.showFileOpenDialogAndGetMultipleFiles(org.jabref.gui.util.FileDialogConfiguration)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javañ1 ñ(V2§
+Eorg.jabref.logic.util.io.FileUtil.detectBadFileName(java.lang.String)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaô ô(*2|
+java.nio.file.Path.toString()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaô5 ô(=2ß
+Horg.jabref.logic.util.io.FileNameCleaner.cleanFileName(java.lang.String)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaö5 ö(B2|
+java.nio.file.Path.toString()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaö[ ö(c2
+ java.nio.file.Path.getFileName()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaöM ö(X2œ
+porg.jabref.gui.DialogService.showConfirmationDialogAndWait(java.lang.String, java.lang.String, java.lang.String)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaú= ú(Z2≠
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaúh ú(l2Å
+ java.nio.file.Path.getFileName()CALLW
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaúó ú(¢2≠
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaù% ù()2≠
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaû% û()2í
+3java.nio.file.Path.resolveSibling(java.lang.String)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java°1 °(?2º
+]java.nio.file.Files.move(java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption...)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java£ £("2ﬁ
+org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewLinkedFile(java.nio.file.Path, java.util.List<java.nio.file.Path>)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java§ §((2ß
+Horg.jabref.gui.DialogService.showErrorDialogAndWait(java.lang.Exception)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaß& ß(<2ﬁ
+org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewLinkedFile(java.nio.file.Path, java.util.List<java.nio.file.Path>)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java´ ´( 2ú
+=org.jabref.gui.util.FileDialogConfiguration.Builder.Builder()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaë> ë(]2±
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaé  é(/2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaéH é(S2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaè7 è(B2¡
+borg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?workingDirectory@142.13:142.29CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaí& í(62±
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaï% ï(42≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaïH ï(S2Ø
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javañ# ñ(02»
+iorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileDialogConfiguration@145.32:145.55CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javañW ñ(n2æ
+_org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?selectedFiles@150.19:150.32CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaò ò(+2∫
+[org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileToAdd@152.18:152.27CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaô+ ô(42∫
+[org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileToAdd@152.18:152.27CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaöC ö(L2Ø
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaú/ ú(<2º
+[org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileToAdd@152.18:152.27CALLW
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaúç ú(ñ2æ
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?newFilename@154.23:154.34CALLW
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaùÜ ù(ë2≈
+forg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?correctButtonPressed@156.24:156.44CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java† †((2∫
+[org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileToAdd@152.18:152.27CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java°' °(02º
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?newFilename@154.23:154.34CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java°@ °(K2∫
+[org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileToAdd@152.18:152.27CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java£# £(,2º
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?correctPath@161.25:161.36CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java£. £(92º
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?correctPath@161.25:161.36CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java§) §(42¿
+aorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileDirectories@149.19:149.34CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java§6 §(E2®
+Iorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?LOGGER@53.32:53.38CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¶ ¶(2≥
+Torg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?ex@165.41:165.43CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¶: ¶(<2Ø
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaß ß(%2≥
+Torg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?ex@165.41:165.43CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaß= ß(?2∫
+[org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileToAdd@152.18:152.27CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java´! ´(*2¿
+aorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileDirectories@149.19:149.34CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java´, ´(;2»
+borg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?workingDirectory@142.13:142.29DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaé é(2œ
+iorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileDialogConfiguration@145.32:145.55DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaë  ë(72«
+aorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileDirectories@149.19:149.34DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaï ï("2≈
+_org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?selectedFiles@150.19:150.32DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javañ ñ( 2¡
+[org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileToAdd@152.18:152.27DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaò ò(2√
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?newFilename@154.23:154.34DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaö ö("2Ã
+forg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?correctButtonPressed@156.24:156.44DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaú ú(,2√
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?correctPath@161.25:161.36DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java° °($2∫
+Torg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?ex@165.41:165.43DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java•) •(+2j
+voidRETURN_TYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaç ç(†
+borg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?workingDirectory@142.13:142.29VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaé é("
+typePath"
+isFinalfalse"ˆ
+declarationString‡<mark class="modifier"> </mark>Path <mark class="class-field">workingDirectory</mark> = databaseContext.getFirstExistingFileDir(preferences.getFilePreferences()).orElse(preferences.getFilePreferences().getWorkingDirectory())*workingDirectory2q
+java.nio.file.PathTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaé é(2{
+java.util.Optional.orElse(T)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaè0 è(62À
+lorg.jabref.model.database.BibDatabaseContext.getFirstExistingFileDir(org.jabref.preferences.FilePreferences)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaé0 é(G2ù
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaéT é(f2õ
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaèX è(k2ù
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaèC è(U2±
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaé  é(/2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaéH é(S2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaè7 è(B¬
+
+iorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileDialogConfiguration@145.32:145.55VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaë  ë(7"
+typeFileDialogConfiguration"
+isFinalfalse"‹
+declarationString∆<mark class="modifier"> </mark>FileDialogConfiguration <mark class="class-field">fileDialogConfiguration</mark> = new FileDialogConfiguration.Builder().withInitialDirectory(workingDirectory).build()*fileDialogConfiguration2ä
++org.jabref.gui.util.FileDialogConfigurationTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaë ë(2ö
+;org.jabref.gui.util.FileDialogConfiguration.Builder.build()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaì ì(2ª
+\org.jabref.gui.util.FileDialogConfiguration.Builder.withInitialDirectory(java.nio.file.Path)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaí í(%2ú
+=org.jabref.gui.util.FileDialogConfiguration.Builder.Builder()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaë> ë(]2¡
+borg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?workingDirectory@142.13:142.29CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaí& í(6Ì
+
+aorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileDirectories@149.19:149.34VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaï ï(""
+type
+List<Path>"
+isFinalfalse"∑
+declarationString°<mark class="modifier"> </mark>List<Path> <mark class="class-field">fileDirectories</mark> = databaseContext.getFileDirectories(preferences.getFilePreferences())*fileDirectories2m
+java.util.ListTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaï ï(2z
+java.nio.file.PathTYPE_ARGUMENTU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaï ï(2∆
+gorg.jabref.model.database.BibDatabaseContext.getFileDirectories(org.jabref.preferences.FilePreferences)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaï5 ï(G2ù
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaïT ï(f2±
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaï% ï(42≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaïH ï(S	
+_org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?selectedFiles@150.19:150.32VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javañ ñ( "
+type
+List<Path>"
+isFinalfalse"Ω
+declarationStringß<mark class="modifier"> </mark>List<Path> <mark class="class-field">selectedFiles</mark> = dialogService.showFileOpenDialogAndGetMultipleFiles(fileDialogConfiguration)*selectedFiles2m
+java.util.ListTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javañ ñ(2z
+java.nio.file.PathTYPE_ARGUMENTU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javañ ñ(2Œ
+oorg.jabref.gui.DialogService.showFileOpenDialogAndGetMultipleFiles(org.jabref.gui.util.FileDialogConfiguration)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javañ1 ñ(V2Ø
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javañ# ñ(02»
+iorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileDialogConfiguration@145.32:145.55CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javañW ñ(n¡
+[org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileToAdd@152.18:152.27VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaò ò("
+typePath"
+isFinalfalse"c
+declarationStringN<mark class="modifier"> </mark>Path <mark class="class-field">fileToAdd</mark>*	fileToAdd2q
+java.nio.file.PathTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaò ò(ı
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?newFilename@154.23:154.34VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaö ö(""
+typeString"
+isFinalfalse"¨
+declarationStringñ<mark class="modifier"> </mark>String <mark class="class-field">newFilename</mark> = FileNameCleaner.cleanFileName(fileToAdd.getFileName().toString())*newFilename2o
+java.lang.StringTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaö ö(2ß
+Horg.jabref.logic.util.io.FileNameCleaner.cleanFileName(java.lang.String)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaö5 ö(B2|
+java.nio.file.Path.toString()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaö[ ö(c2
+ java.nio.file.Path.getFileName()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaöM ö(X2∫
+[org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileToAdd@152.18:152.27CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaöC ö(L®
+forg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?correctButtonPressed@156.24:156.44VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaú ú(,"
+typeboolean"
+isFinalfalse"£
+declarationStringç<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">correctButtonPressed</mark> = dialogService.showConfirmationDialogAndWait(Localization.lang("File \"%0\" cannot be added!"<mark class="modifier">,</mark> fileToAdd.getFileName())<mark class="modifier">,</mark> Localization.lang("Illegal characters in the file name detected.\nFile will be renamed to \"%0\" and added."<mark class="modifier">,</mark> newFilename)<mark class="modifier">,</mark> Localization.lang("Rename and add"))*correctButtonPressed2f
+booleanTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaú ú(2œ
+porg.jabref.gui.DialogService.showConfirmationDialogAndWait(java.lang.String, java.lang.String, java.lang.String)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaú= ú(Z2≠
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaúh ú(l2Å
+ java.nio.file.Path.getFileName()CALLW
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaúó ú(¢2≠
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaù% ù()2≠
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaû% û()2Ø
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaú/ ú(<2º
+[org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileToAdd@152.18:152.27CALLW
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaúç ú(ñ2æ
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?newFilename@154.23:154.34CALLW
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaùÜ ù(ëÅ
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?correctPath@161.25:161.36VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java° °($"
+typePath"
+isFinalfalse"ç
+declarationStringx<mark class="modifier"> </mark>Path <mark class="class-field">correctPath</mark> = fileToAdd.resolveSibling(newFilename)*correctPath2q
+java.nio.file.PathTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java° °(2í
+3java.nio.file.Path.resolveSibling(java.lang.String)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java°1 °(?2∫
+[org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?fileToAdd@152.18:152.27CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java°' °(02º
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?newFilename@154.23:154.34CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java°@ °(K˚
+Torg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewFile()?ex@165.41:165.43VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java•) •(+"
+typeIOException"
+isFinalfalse"#
+declarationStringIOException ex*ex2r
+java.io.IOExceptionTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java• •(( 
+org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewLinkedFile(java.nio.file.Path, java.util.List<java.nio.file.Path>)METHODU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java∞ ∞(!"
+isFinalfalse"˚
+declarationStringÂ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">addNewLinkedFile</mark>(Path correctPath<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;Path&gt; fileDirectories)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*addNewLinkedFile2ˇ
+üorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java±# ±(+2ù
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java±V ±(h2Ä
+†org.jabref.gui.fieldeditors.LinkedFileViewModel.LinkedFileViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java≤ ≤()2Î
+ãorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewLinkedFile(java.nio.file.Path, java.util.List<java.nio.file.Path>)!correctPathCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java±, ±(72Ô
+èorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewLinkedFile(java.nio.file.Path, java.util.List<java.nio.file.Path>)!fileDirectoriesCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java±9 ±(H2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java±J ±(U2ß
+Horg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?files@55.52:55.57CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java≤ ≤(2˚
+õorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewLinkedFile(java.nio.file.Path, java.util.List<java.nio.file.Path>)?newLinkedFile@177.19:177.32CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java≥ ≥(2±
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaµ µ(2Æ
+Oorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?taskExecutor@59.31:59.43CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java∂ ∂(2Ø
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java∑ ∑(2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java∏ ∏(2
+ãorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewLinkedFile(java.nio.file.Path, java.util.List<java.nio.file.Path>)!correctPath	PARAMETERU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java∞' ∞(22Ù
+èorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewLinkedFile(java.nio.file.Path, java.util.List<java.nio.file.Path>)!fileDirectories	PARAMETERU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java∞? ∞(N2Ç
+õorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewLinkedFile(java.nio.file.Path, java.util.List<java.nio.file.Path>)?newLinkedFile@177.19:177.32DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java± ±( 2j
+voidRETURN_TYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java∞ ∞(•
+õorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewLinkedFile(java.nio.file.Path, java.util.List<java.nio.file.Path>)?newLinkedFile@177.19:177.32VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java± ±( "
+type
+LinkedFile"
+isFinalfalse"π
+declarationString£<mark class="modifier"> </mark>LinkedFile <mark class="class-field">newLinkedFile</mark> = fromFile(correctPath, fileDirectories, preferences.getFilePreferences())*newLinkedFile2Ä
+!org.jabref.model.entry.LinkedFileTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java± ±(2ˇ
+üorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java±# ±(+2ù
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java±V ±(h2Î
+ãorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewLinkedFile(java.nio.file.Path, java.util.List<java.nio.file.Path>)!correctPathCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java±, ±(72Ô
+èorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewLinkedFile(java.nio.file.Path, java.util.List<java.nio.file.Path>)!fileDirectoriesCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java±9 ±(H2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java±J ±(U∑
+ãorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewLinkedFile(java.nio.file.Path, java.util.List<java.nio.file.Path>)!correctPath	PARAMETERU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java∞' ∞(2"
+typePath"
+isFinalfalse"%
+declarationStringPath correctPath*correctPath2q
+java.nio.file.PathTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java∞" ∞(&«
+èorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addNewLinkedFile(java.nio.file.Path, java.util.List<java.nio.file.Path>)!fileDirectories	PARAMETERU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java∞? ∞(N"
+type
+List<Path>"
+isFinalfalse"/
+declarationStringList<Path> fileDirectories*fileDirectories2m
+java.util.ListTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java∞4 ∞(82z
+java.nio.file.PathTYPE_ARGUMENTU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java∞9 ∞(=É
+corg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.bindToEntry(org.jabref.model.entry.BibEntry)METHODU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaº º("
+isFinalfalse"√
+declarationString≠<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">bindToEntry</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*bindToEntry2ø
+`org.jabref.gui.fieldeditors.AbstractEditorViewModel.bindToEntry(org.jabref.model.entry.BibEntry)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaΩ Ω(2ß
+Horg.jabref.gui.entryeditor.EntryEditorPreferences.autoLinkFilesEnabled()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaøG ø([2§
+Eorg.jabref.preferences.PreferencesService.getEntryEditorPreferences()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaø+ ø(D2´
+Lorg.jabref.gui.util.BackgroundTask.onSuccess(java.util.function.Consumer<V>)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¬ ¬(2ö
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¡ ¡(2”
+torg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¡  ¡(<2Æ
+Oorg.jabref.gui.util.TaskExecutor.execute(org.jabref.gui.util.BackgroundTask<V>)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java√ √( 2»
+iorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.bindToEntry(org.jabref.model.entry.BibEntry)!entryCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaΩ Ω(2»
+iorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.bindToEntry(org.jabref.model.entry.BibEntry)!entryCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaø ø(2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaø ø(*2»
+iorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.bindToEntry(org.jabref.model.entry.BibEntry)!entryCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¡= ¡(B2Æ
+Oorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?taskExecutor@59.31:59.43CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java√ √(2Ó
+éorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.bindToEntry(org.jabref.model.entry.BibEntry)?findAssociatedNotLinkedFiles@192.54:192.82CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java√! √(=2√
+`org.jabref.gui.fieldeditors.AbstractEditorViewModel.bindToEntry(org.jabref.model.entry.BibEntry)OVERRIDEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaº º(2Õ
+iorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.bindToEntry(org.jabref.model.entry.BibEntry)!entry	PARAMETERU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaº% º(*2ı
+éorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.bindToEntry(org.jabref.model.entry.BibEntry)?findAssociatedNotLinkedFiles@192.54:192.82DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¿6 ¿(R2j
+voidRETURN_TYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaº º(–
+éorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.bindToEntry(org.jabref.model.entry.BibEntry)?findAssociatedNotLinkedFiles@192.54:192.82VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¿6 ¿(R"1
+type)BackgroundTask<List<LinkedFileViewModel>>"
+isFinalfalse"ˆ
+declarationString‡<mark class="modifier"> </mark>BackgroundTask<List<LinkedFileViewModel>> <mark class="class-field">findAssociatedNotLinkedFiles</mark> = BackgroundTask.wrap(() -> findAssociatedNotLinkedFiles(entry)).onSuccess(files::addAll)*findAssociatedNotLinkedFiles2Å
+"org.jabref.gui.util.BackgroundTaskTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¿ ¿(2v
+java.util.ListTYPE_ARGUMENTU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¿ ¿(2ó
+/org.jabref.gui.fieldeditors.LinkedFileViewModelTYPE_ARGUMENTU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¿  ¿(32´
+Lorg.jabref.gui.util.BackgroundTask.onSuccess(java.util.function.Consumer<V>)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¬ ¬(2ö
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¡ ¡(2”
+torg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¡  ¡(<2»
+iorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.bindToEntry(org.jabref.model.entry.BibEntry)!entryCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¡= ¡(Bù
+iorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.bindToEntry(org.jabref.model.entry.BibEntry)!entry	PARAMETERU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaº% º(*"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2~
+org.jabref.model.entry.BibEntryTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaº º($ï?
+torg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)METHODU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java &  (B"
+isFinalfalse"§
+declarationStringé<mark class="modifier">private </mark>List&lt;LinkedFileViewModel&gt; <mark class="method">findAssociatedNotLinkedFiles</mark>(BibEntry entry)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"!
+typeList<LinkedFileViewModel>*findAssociatedNotLinkedFiles2ù
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaœ œ(.2°
+Borg.jabref.preferences.PreferencesService.getAutoLinkPreferences()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java– –(22Œ
+oorg.jabref.gui.externalfiles.AutoSetFileLinksUtil.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java“0 “(L2©
+Jorg.jabref.gui.fieldeditors.LinkedFileViewModel.markAsAutomaticallyFound()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java€ €(62t
+java.util.List.add(E)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java‹ ‹(2π
+Zorg.jabref.gui.DialogService.showErrorDialogAndWait(java.lang.String, java.lang.Throwable)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaﬂ ﬂ(02~
+java.util.ArrayList.ArrayList()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÀ/ À(:2™
+ org.jabref.gui.externalfiles.AutoSetFileLinksUtil.AutoSetFileLinksUtil(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences, org.jabref.logic.util.io.AutoLinkPreferences)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÕ( Õ(<2Ä
+†org.jabref.gui.fieldeditors.LinkedFileViewModel.LinkedFileViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java‘8 ‘(K2±
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaŒ Œ(2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaœ œ(2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java– –(2Á
+áorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?util@205.29:205.33CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java“+ “(/2Ÿ
+zorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)!entryCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java“M “(R2Ó
+éorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?linkedFiles@210.29:210.40CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java”) ”(42Ì
+çorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?linkedFile@211.28:211.38CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java’ ’("2Ÿ
+zorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)!entryCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java÷ ÷(2±
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java◊ ◊('2Æ
+Oorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?taskExecutor@59.31:59.43CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÿ ÿ($2Ø
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaŸ Ÿ(%2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java⁄ ⁄(#2
+êorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?newLinkedFile@212.36:212.49CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java€ €(2È
+âorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?result@203.34:203.40CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java‹ ‹(2
+êorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?newLinkedFile@212.36:212.49CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java‹ ‹((2Ø
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaﬂ ﬂ(2‰
+Ñorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?e@222.29:222.30CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaﬂT ﬂ(U2È
+âorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?result@203.34:203.40CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java‚ ‚(2ﬁ
+zorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)!entry	PARAMETERU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java L  (Q2
+âorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?result@203.34:203.40DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÀ" À((2Ó
+áorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?util@205.29:205.33DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÕ Õ(!2ı
+éorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?linkedFiles@210.29:210.40DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java“ “((2Ù
+çorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?linkedFile@211.28:211.38DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java” ”(&2˜
+êorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?newLinkedFile@212.36:212.49DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java‘$ ‘(12Î
+Ñorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?e@222.29:222.30DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaﬁ ﬁ(2t
+java.util.ListRETURN_TYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java   (2û
+/org.jabref.gui.fieldeditors.LinkedFileViewModelRETURN_TYPE_ARGUMENTU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java   ($ø
+âorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?result@203.34:203.40VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÀ" À(("!
+typeList<LinkedFileViewModel>"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark>List<LinkedFileViewModel> <mark class="class-field">result</mark> = new ArrayList<>()*result2m
+java.util.ListTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÀ À(2ó
+/org.jabref.gui.fieldeditors.LinkedFileViewModelTYPE_ARGUMENTU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÀ À( 2~
+java.util.ArrayList.ArrayList()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÀ/ À(:Ω
+áorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?util@205.29:205.33VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÕ Õ(!"
+typeAutoSetFileLinksUtil"
+isFinalfalse"Å
+declarationStringÎ<mark class="modifier"> </mark>AutoSetFileLinksUtil <mark class="class-field">util</mark> = new AutoSetFileLinksUtil(databaseContext, preferences.getFilePreferences()<mark class="modifier">,</mark> preferences.getAutoLinkPreferences())*util2ê
+1org.jabref.gui.externalfiles.AutoSetFileLinksUtilTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÕ Õ(2ù
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaœ œ(.2°
+Borg.jabref.preferences.PreferencesService.getAutoLinkPreferences()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java– –(22™
+ org.jabref.gui.externalfiles.AutoSetFileLinksUtil.AutoSetFileLinksUtil(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences, org.jabref.logic.util.io.AutoLinkPreferences)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÕ( Õ(<2±
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaŒ Œ(2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaœ œ(2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java– –(›
+
+éorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?linkedFiles@210.29:210.40VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java“ “(("
+typeList<LinkedFile>"
+isFinalfalse"ù
+declarationStringá<mark class="modifier"> </mark>List<LinkedFile> <mark class="class-field">linkedFiles</mark> = util.findAssociatedNotLinkedFiles(entry)*linkedFiles2m
+java.util.ListTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java“ “(2â
+!org.jabref.model.entry.LinkedFileTYPE_ARGUMENTU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java“ “(2Œ
+oorg.jabref.gui.externalfiles.AutoSetFileLinksUtil.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java“0 “(L2Á
+áorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?util@205.29:205.33CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java“+ “(/2Ÿ
+zorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)!entryCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java“M “(Rí
+çorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?linkedFile@211.28:211.38VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java” ”(&"
+type
+LinkedFile"
+isFinalfalse"j
+declarationStringU<mark class="modifier"> </mark>LinkedFile <mark class="class-field">linkedFile</mark>*
+linkedFile2Ä
+!org.jabref.model.entry.LinkedFileTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java” ”(ª
+êorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?newLinkedFile@212.36:212.49VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java‘$ ‘(1"
+typeLinkedFileViewModel"
+isFinalfalse"ﬂ
+declarationString…<mark class="modifier"> </mark>LinkedFileViewModel <mark class="class-field">newLinkedFile</mark> = new LinkedFileViewModel(linkedFile, entry, databaseContext, taskExecutor, dialogService, preferences)*newLinkedFile2é
+/org.jabref.gui.fieldeditors.LinkedFileViewModelTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java‘ ‘(#2Ä
+†org.jabref.gui.fieldeditors.LinkedFileViewModel.LinkedFileViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java‘8 ‘(K2Ì
+çorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?linkedFile@211.28:211.38CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java’ ’("2Ÿ
+zorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)!entryCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java÷ ÷(2±
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java◊ ◊('2Æ
+Oorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?taskExecutor@59.31:59.43CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÿ ÿ($2Ø
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaŸ Ÿ(%2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java⁄ ⁄(#Æ
+zorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)!entry	PARAMETERU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java L  (Q"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2~
+org.jabref.model.entry.BibEntryTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java C  (K™
+Ñorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.findAssociatedNotLinkedFiles(org.jabref.model.entry.BibEntry)?e@222.29:222.30VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaﬁ ﬁ("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2r
+java.io.IOExceptionTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaﬁ ﬁ(À
+Uorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.downloadFile(java.lang.String)METHODU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÂ Â("
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">downloadFile</mark>(String urlText)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*downloadFile2π
+Zorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addFromURLAndDownload(java.net.URL)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaË Ë(!2π
+Zorg.jabref.gui.DialogService.showErrorDialogAndWait(java.lang.String, java.lang.Throwable)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÎ Î(02≠
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÏ! Ï(%2Å
+"java.net.URL.URL(java.lang.String)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÁ Á(2º
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.downloadFile(java.lang.String)!urlTextCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÁ Á(%2∆
+gorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.downloadFile(java.lang.String)?url@231.16:231.19CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaË" Ë(%2Ø
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÎ Î(2Ã
+morg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.downloadFile(java.lang.String)?exception@234.39:234.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÌ Ì(2¡
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.downloadFile(java.lang.String)!urlText	PARAMETERU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÂ' Â(.2Õ
+gorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.downloadFile(java.lang.String)?url@231.16:231.19DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÁ Á(2”
+morg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.downloadFile(java.lang.String)?exception@234.39:234.48DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÍ' Í(02m
+booleanRETURN_TYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÂ Â(è
+gorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.downloadFile(java.lang.String)?url@231.16:231.19VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÁ Á("
+typeURL"
+isFinalfalse"o
+declarationStringZ<mark class="modifier"> </mark>URL <mark class="class-field">url</mark> = new URL(urlText)*url2k
+java.net.URLTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÁ Á(2Å
+"java.net.URL.URL(java.lang.String)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÁ Á(2º
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.downloadFile(java.lang.String)!urlTextCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÁ Á(%Ç
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.downloadFile(java.lang.String)!urlText	PARAMETERU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÂ' Â(."
+typeString"
+isFinalfalse"#
+declarationStringString urlText*urlText2o
+java.lang.StringTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÂ  Â(&¡
+morg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.downloadFile(java.lang.String)?exception@234.39:234.48VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÍ' Í(0"
+typeMalformedURLException"
+isFinalfalse"4
+declarationStringMalformedURLException exception*	exception2}
+java.net.MalformedURLExceptionTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÍ Í(&Á.
+Forg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()METHODU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÚ Ú("
+isFinalfalse"à
+declarationStrings<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">fetchFulltext</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*fetchFulltext2•
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÙ Ù(62°
+Borg.jabref.preferences.PreferencesService.getImporterPreferences()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaı ı(22´
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaˆ* ˆ(22}
+java.util.Optional.isPresent()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¯ ¯(2¥
+Uorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.downloadFile(java.lang.String)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java˘ ˘(+2w
+java.util.Optional.get()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java˘5 ˘(82{
+java.util.Optional.isEmpty()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java˚ ˚(2†
+Aorg.jabref.gui.util.BackgroundTask.onFinished(java.lang.Runnable)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaˇ ˇ(2ü
+@org.jabref.gui.util.BackgroundTask.onRunning(java.lang.Runnable)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java˛ ˛(2ö
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java˝ ˝(2∫
+[org.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java˝$ ˝(32î
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÑ& Ñ(,2≠
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÑ: Ñ(>2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÙ Ù(2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaı ı(2º
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()?urlField@246.25:246.33CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¯ ¯(2ƒ
+eorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()?download_success@247.16:247.32CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java˘ ˘(2º
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()?urlField@246.25:246.33CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java˘, ˘(42º
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()?urlField@246.25:246.33CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java˚ ˚(2ƒ
+eorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()?download_success@247.16:247.32CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java˚# ˚(32ª
+\org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()?fetcher@243.25:243.32CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java˝ ˝(#2∫
+[org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?fulltextLookupInProgress@56.34:56.58CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java˛! ˛(92∫
+[org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?fulltextLookupInProgress@56.34:56.58CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaˇ" ˇ(:2∑
+Xorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()?url@256.27:256.30CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÅ Å(2∑
+Xorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()?url@256.27:256.30CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÇ. Ç(12Ø
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÑ Ñ(%2Æ
+Oorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?taskExecutor@59.31:59.43CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaá á()2¬
+\org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()?fetcher@243.25:243.32DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÛ Û( 2√
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()?urlField@246.25:246.33DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaˆ ˆ(!2À
+eorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()?download_success@247.16:247.32DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java˜ ˜( 2æ
+Xorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()?url@256.27:256.30DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÄ Ä(2j
+voidRETURN_TYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÚ Ú(¢
+
+\org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()?fetcher@243.25:243.32VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÛ Û( "
+typeFulltextFetchers"
+isFinalfalse"Û
+declarationString›<mark class="modifier"> </mark>FulltextFetchers <mark class="class-field">fetcher</mark> = new FulltextFetchers(preferences.getImportFormatPreferences()<mark class="modifier">,</mark> preferences.getImporterPreferences())*fetcher2â
+*org.jabref.logic.importer.FulltextFetchersTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÛ Û(2•
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÙ Ù(62°
+Borg.jabref.preferences.PreferencesService.getImporterPreferences()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaı ı(22≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÙ Ù(2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaı ı(¶
+]org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()?urlField@246.25:246.33VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaˆ ˆ(!"
+typeOptional<String>"
+isFinalfalse"í
+declarationString}<mark class="modifier"> </mark>Optional<String> <mark class="class-field">urlField</mark> = entry.getField(StandardField.URL)*urlField2q
+java.util.OptionalTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaˆ ˆ(2x
+java.lang.StringTYPE_ARGUMENTU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaˆ ˆ(2´
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaˆ* ˆ(2ö
+eorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()?download_success@247.16:247.32VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java˜ ˜( "
+typeboolean"
+isFinalfalse"≤
+declarationStringú<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">download_success</mark> = <mark class="modifier">false</mark>*download_success2f
+booleanTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java˜ ˜(˝
+Xorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fetchFulltext()?url@256.27:256.30VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaÄ Ä("
+type"
+isFinalfalse"
+declarationString url*url2TYPEÜ
+
+Corg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addFromURL()METHODU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaã ã("
+isFinalfalse"Ö
+declarationStringp<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">addFromURL</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*
+addFromURL2£
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaç  ç()2ˆ
+ñorg.jabref.gui.linkedfile.AttachFileFromURLAction.getUrlForDownloadFromClipBoardOrEntry(org.jabref.gui.DialogService, org.jabref.model.entry.BibEntry)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaå  å(E2Ø
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaåF å(S2¥
+Uorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.downloadFile(java.lang.String)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaç* ç(<2j
+voidRETURN_TYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaã ã(˛
+Zorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addFromURLAndDownload(java.net.URL)METHODU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaê ê(&"
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">addFromURLAndDownload</mark>(URL url)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*addFromURLAndDownload2ô
+:org.jabref.gui.fieldeditors.LinkedFileViewModel.download()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaô ô(2Ä
+†org.jabref.gui.fieldeditors.LinkedFileViewModel.LinkedFileViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaë- ë(@2´
+Lorg.jabref.model.entry.LinkedFile.LinkedFile(java.net.URL, java.lang.String)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaí í(2Ω
+^org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addFromURLAndDownload(java.net.URL)!urlCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaí í("2±
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaî î(2Æ
+Oorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?taskExecutor@59.31:59.43CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaï ï(2Ø
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javañ ñ(2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaó ó(2ß
+Horg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?files@55.52:55.57CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaò ò(2“
+sorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addFromURLAndDownload(java.net.URL)?onlineFile@273.28:273.38CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaò ò(2“
+sorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addFromURLAndDownload(java.net.URL)?onlineFile@273.28:273.38CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaô ô(2¬
+^org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addFromURLAndDownload(java.net.URL)!url	PARAMETERU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaê+ ê(.2Ÿ
+sorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addFromURLAndDownload(java.net.URL)?onlineFile@273.28:273.38DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaë ë(&2j
+voidRETURN_TYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaê ê(‰
+sorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addFromURLAndDownload(java.net.URL)?onlineFile@273.28:273.38VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaë ë(&"
+typeLinkedFileViewModel"
+isFinalfalse"á
+declarationStringÒ<mark class="modifier"> </mark>LinkedFileViewModel <mark class="class-field">onlineFile</mark> = new LinkedFileViewModel(new LinkedFile(url, "")<mark class="modifier">,</mark> entry, databaseContext, taskExecutor, dialogService, preferences)*
+onlineFile2é
+/org.jabref.gui.fieldeditors.LinkedFileViewModelTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaë ë(2Ä
+†org.jabref.gui.fieldeditors.LinkedFileViewModel.LinkedFileViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaë- ë(@2´
+Lorg.jabref.model.entry.LinkedFile.LinkedFile(java.net.URL, java.lang.String)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaí í(2Ω
+^org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addFromURLAndDownload(java.net.URL)!urlCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaí í("2±
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaî î(2Æ
+Oorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?taskExecutor@59.31:59.43CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaï ï(2Ø
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javañ ñ(2≠
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaó ó(Ò
+^org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.addFromURLAndDownload(java.net.URL)!url	PARAMETERU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaê+ ê(."
+typeURL"
+isFinalfalse"
+declarationStringURL url*url2k
+java.net.URLTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaê' ê(*¿
+rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.deleteFile(org.jabref.gui.fieldeditors.LinkedFileViewModel)METHODU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaú ú("
+isFinalfalse"û
+declarationStringà<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">deleteFile</mark>(LinkedFileViewModel file)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*
+deleteFile2è
+0org.jabref.model.entry.LinkedFile.isOnlineLink()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaù ù('2ò
+9org.jabref.gui.fieldeditors.LinkedFileViewModel.getFile()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaù ù(2’
+vorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.removeFileLink(org.jabref.gui.fieldeditors.LinkedFileViewModel)CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaû û(2ó
+8org.jabref.gui.fieldeditors.LinkedFileViewModel.delete()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java†, †(22÷
+worg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.deleteFile(org.jabref.gui.fieldeditors.LinkedFileViewModel)!fileCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaù ù(2÷
+worg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.deleteFile(org.jabref.gui.fieldeditors.LinkedFileViewModel)!fileCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaû û(2÷
+worg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.deleteFile(org.jabref.gui.fieldeditors.LinkedFileViewModel)!fileCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java†' †(+2Ò
+ëorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.deleteFile(org.jabref.gui.fieldeditors.LinkedFileViewModel)?deleteSuccessful@288.20:288.36CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java° °( 2ß
+Horg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?files@55.52:55.57CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¢ ¢(2÷
+worg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.deleteFile(org.jabref.gui.fieldeditors.LinkedFileViewModel)!fileCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¢ ¢(!2€
+worg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.deleteFile(org.jabref.gui.fieldeditors.LinkedFileViewModel)!file	PARAMETERU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaú/ ú(32¯
+ëorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.deleteFile(org.jabref.gui.fieldeditors.LinkedFileViewModel)?deleteSuccessful@288.20:288.36DECLARATIONU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java† †($2j
+voidRETURN_TYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaú ú(§
+ëorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.deleteFile(org.jabref.gui.fieldeditors.LinkedFileViewModel)?deleteSuccessful@288.20:288.36VARIABLEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java† †($"
+typeboolean"
+isFinalfalse"ú
+declarationStringÜ<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">deleteSuccessful</mark> = file.delete()*deleteSuccessful2f
+booleanTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java† †(2ó
+8org.jabref.gui.fieldeditors.LinkedFileViewModel.delete()CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java†, †(22÷
+worg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.deleteFile(org.jabref.gui.fieldeditors.LinkedFileViewModel)!fileCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java†' †(+–
+worg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.deleteFile(org.jabref.gui.fieldeditors.LinkedFileViewModel)!file	PARAMETERU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaú/ ú(3"
+typeLinkedFileViewModel"
+isFinalfalse"-
+declarationStringLinkedFileViewModel file*file2é
+/org.jabref.gui.fieldeditors.LinkedFileViewModelTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaú ú(.ª	
+vorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.removeFileLink(org.jabref.gui.fieldeditors.LinkedFileViewModel)METHODU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaß ß("
+isFinalfalse"¢
+declarationStringå<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">removeFileLink</mark>(LinkedFileViewModel file)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*removeFileLink2ß
+Horg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?files@55.52:55.57CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java® ®(2⁄
+{org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.removeFileLink(org.jabref.gui.fieldeditors.LinkedFileViewModel)!fileCALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java® ®(2ﬂ
+{org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.removeFileLink(org.jabref.gui.fieldeditors.LinkedFileViewModel)!file	PARAMETERU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaß3 ß(72j
+voidRETURN_TYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaß ß(‘
+{org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.removeFileLink(org.jabref.gui.fieldeditors.LinkedFileViewModel)!file	PARAMETERU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaß3 ß(7"
+typeLinkedFileViewModel"
+isFinalfalse"-
+declarationStringLinkedFileViewModel file*file2é
+/org.jabref.gui.fieldeditors.LinkedFileViewModelTYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.javaß ß(2Ø
+Yorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fulltextLookupInProgressProperty()METHODU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java´# ´(C"
+isFinalfalse"ê
+declarationString{<mark class="modifier">public </mark>ReadOnlyBooleanProperty <mark class="method">fulltextLookupInProgressProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeReadOnlyBooleanProperty* fulltextLookupInProgressProperty2∫
+[org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?fulltextLookupInProgress@56.34:56.58CALLU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java¨ ¨('2ì
+-javafx.beans.property.ReadOnlyBooleanPropertyRETURN_TYPEU
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java´ ´("◊
+Iorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?LOGGER@53.32:53.38VALUES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java5  5(&"
+isFinaltrue"
+typeLogger"
+declarationString⁄<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(LinkedFilesEditorViewModel.class);"
+isStatictrue"
+accessprivate*LOGGER2m
+org.slf4j.LoggerTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java5 5(∑
+Horg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?files@55.52:55.57VALUES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java74 7(9"
+isFinaltrue")
+type!ListProperty<LinkedFileViewModel>"å
+declarationStringˆ<mark class="modifier">private </mark><mark class="modifier">final </mark>ListProperty<LinkedFileViewModel> <mark class="class-field">files</mark> = new SimpleListProperty<>(FXCollections.observableArrayList(LinkedFileViewModel::getObservables));"
+isStaticfalse"
+accessprivate*files2
+"javafx.beans.property.ListPropertyTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java7 7(2ï
+/org.jabref.gui.fieldeditors.LinkedFileViewModelTYPE_ARGUMENTS
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java7 7(2ñ
+[org.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?fulltextLookupInProgress@56.34:56.58VALUES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java8" 8(:"
+isFinaltrue"
+typeBooleanProperty"Î
+declarationString’<mark class="modifier">private </mark><mark class="modifier">final </mark>BooleanProperty <mark class="class-field">fulltextLookupInProgress</mark> = new SimpleBooleanProperty(<mark class="modifier">false</mark>);"
+isStaticfalse"
+accessprivate*fulltextLookupInProgress2Ç
+%javafx.beans.property.BooleanPropertyTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java8 8(!•
+Porg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?dialogService@57.32:57.45VALUES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java9  9(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2y
+org.jabref.gui.DialogServiceTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java9 9(∆
+Rorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?databaseContext@58.37:58.52VALUES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java:% :(4"
+isFinaltrue"
+typeBibDatabaseContext"£
+declarationStringç<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">databaseContext</mark>"
+isStaticfalse"
+accessprivate*databaseContext2â
+,org.jabref.model.database.BibDatabaseContextTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java: :($§
+Oorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?taskExecutor@59.31:59.43VALUES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java; ;(+"
+isFinaltrue"
+typeTaskExecutor"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2}
+ org.jabref.gui.util.TaskExecutorTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java; ;(∑
+Norg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel?preferences@60.37:60.48VALUES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java<% <(0"
+isFinaltrue"
+typePreferencesService"ü
+declarationStringâ<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferences</mark>"
+isStaticfalse"
+accessprivate*preferences2Ü
+)org.jabref.preferences.PreferencesServiceTYPES
+Isrc\main\java\org\jabref\gui\fieldeditors\LinkedFilesEditorViewModel.java< <($

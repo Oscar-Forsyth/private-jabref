@@ -1,0 +1,803 @@
+
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java˘
+(org.jabref.gui.journals.AbbreviateActionCLASSE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java$ $(""
+packageorg.jabref.gui.journals"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"£
+declarationStringç<mark class="modifier">public </mark><mark class="modifier">class </mark>AbbreviateAction<mark class="modifier"> extends </mark>SimpleCommand"
+accesspublic*AbbreviateAction2ﬁ
+áorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java3 3(2à
+2org.jabref.gui.journals.AbbreviateAction.execute()DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaO O(2È
+íorg.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javac c(2Ì
+îorg.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)DECLARATIONG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaà à(2ë
+;org.jabref.gui.journals.AbbreviateAction?LOGGER@38.32:38.38DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java&  &(&2ë
+;org.jabref.gui.journals.AbbreviateAction?action@40.34:40.40DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java(" (((2ñ
+@org.jabref.gui.journals.AbbreviateAction?tabSupplier@41.39:41.50DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java)' )(22ò
+Borg.jabref.gui.journals.AbbreviateAction?dialogService@42.32:42.45DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java*  *(-2ó
+Aorg.jabref.gui.journals.AbbreviateAction?stateManager@43.31:43.43DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java+ +(+2©
+Sorg.jabref.gui.journals.AbbreviateAction?journalAbbreviationPreferences@44.49:44.79DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java,1 ,(O2°
+Korg.jabref.gui.journals.AbbreviateAction?abbreviationRepository@45.48:45.70DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java-0 -(F2ó
+Aorg.jabref.gui.journals.AbbreviateAction?taskExecutor@46.31:46.43DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java. .(+2ñ
+@org.jabref.gui.journals.AbbreviateAction?undoManager@47.30:47.41DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java/ /()2õ
+Eorg.jabref.gui.journals.AbbreviateAction?abbreviationType@49.29:49.45DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java1 1(-2u
+$org.jabref.gui.actions.SimpleCommandEXTENDE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java$& $(3Åd
+áorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)CONSTRUCTORE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java3 3("•
+declarationStringè<mark class="modifier">public </mark><mark class="method">AbbreviateAction</mark>(StandardActions action<mark class="modifier"><mark class="modifier">,</mark></mark> Supplier&lt;LibraryTab&gt; tabSupplier<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> StateManager stateManager<mark class="modifier"><mark class="modifier">,</mark></mark> JournalAbbreviationPreferences abbreviationPreferences<mark class="modifier"><mark class="modifier">,</mark></mark> JournalAbbreviationRepository abbreviationRepository<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor<mark class="modifier"><mark class="modifier">,</mark></mark> UndoManager undoManager)*AbbreviateAction2d
+java.lang.Enum.name()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaH@ H(D2§
+Uorg.jabref.gui.actions.ActionHelper.needsEntriesSelected(org.jabref.gui.StateManager)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaK* K(>2ﬁ
+éorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!actionCALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java; ;(2„
+ìorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!tabSupplierCALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java< <(&2Â
+ïorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!dialogServiceCALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java= =(*2‰
+îorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!stateManagerCALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java> >((2Ô
+üorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!abbreviationPreferencesCALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java?. ?(E2Ó
+ûorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!abbreviationRepositoryCALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java@& @(<2‰
+îorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!taskExecutorCALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaA A((2„
+ìorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!undoManagerCALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaB B(&2ﬁ
+éorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!actionCALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaD D(2î
+Eorg.jabref.gui.journals.AbbreviateAction?abbreviationType@49.29:49.45CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaE' E(72î
+Eorg.jabref.gui.journals.AbbreviateAction?abbreviationType@49.29:49.45CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaF' F(72î
+Eorg.jabref.gui.journals.AbbreviateAction?abbreviationType@49.29:49.45CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaG/ G(?2ä
+;org.jabref.gui.journals.AbbreviateAction?LOGGER@38.32:38.38CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaH H(2ﬁ
+éorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!actionCALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaH9 H(?2‰
+îorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!stateManagerCALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaK? K(K2ä
+;org.jabref.gui.journals.AbbreviateAction?action@40.34:40.40CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java; ;(2è
+@org.jabref.gui.journals.AbbreviateAction?tabSupplier@41.39:41.50CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java< <(2ë
+Borg.jabref.gui.journals.AbbreviateAction?dialogService@42.32:42.45CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java= =(2ê
+Aorg.jabref.gui.journals.AbbreviateAction?stateManager@43.31:43.43CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java> >(2¢
+Sorg.jabref.gui.journals.AbbreviateAction?journalAbbreviationPreferences@44.49:44.79CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java? ?(+2ö
+Korg.jabref.gui.journals.AbbreviateAction?abbreviationRepository@45.48:45.70CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java@ @(#2ê
+Aorg.jabref.gui.journals.AbbreviateAction?taskExecutor@46.31:46.43CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaA A(2è
+@org.jabref.gui.journals.AbbreviateAction?undoManager@47.30:47.41CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaB B(2„
+éorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!action	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java3, 3(22Ë
+ìorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!tabSupplier	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java41 4(<2Í
+ïorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!dialogService	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java5* 5(72È
+îorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!stateManager	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java6) 6(52Ù
+üorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!abbreviationPreferences	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java7; 7(R2Û
+ûorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!abbreviationRepository	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java8: 8(P2È
+îorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!taskExecutor	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java9) 9(52Ë
+ìorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!undoManager	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java:( :(32~
+(org.jabref.gui.journals.AbbreviateActionRETURN_TYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java3 3(∫
+éorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!action	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java3, 3(2"
+typeStandardActions"
+isFinalfalse"+
+declarationStringStandardActions action*action2u
+&org.jabref.gui.actions.StandardActionsTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java3 3(+ª
+ìorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!tabSupplier	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java41 4(<"
+typeSupplier<LibraryTab>"
+isFinalfalse"5
+declarationString Supplier<LibraryTab> tabSupplier*tabSupplier2j
+java.util.function.SupplierTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java4 4($2q
+org.jabref.gui.LibraryTabTYPE_ARGUMENTE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java4% 4(/¡
+ïorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!dialogService	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java5* 5(7"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2k
+org.jabref.gui.DialogServiceTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java5 5()ª
+îorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!stateManager	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java6) 6(5"
+typeStateManager"
+isFinalfalse".
+declarationStringStateManager stateManager*stateManager2j
+org.jabref.gui.StateManagerTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java6 6((û
+üorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!abbreviationPreferences	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java7; 7(R"&
+typeJournalAbbreviationPreferences"
+isFinalfalse"K
+declarationString6JournalAbbreviationPreferences abbreviationPreferences*abbreviationPreferences2á
+8org.jabref.logic.journals.JournalAbbreviationPreferencesTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java7 7(:ò
+ûorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!abbreviationRepository	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java8: 8(P"%
+typeJournalAbbreviationRepository"
+isFinalfalse"I
+declarationString4JournalAbbreviationRepository abbreviationRepository*abbreviationRepository2Ü
+7org.jabref.logic.journals.JournalAbbreviationRepositoryTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java8 8(9¿
+îorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!taskExecutor	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java9) 9(5"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2o
+ org.jabref.gui.util.TaskExecutorTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java9 9((∑
+ìorg.jabref.gui.journals.AbbreviateAction.AbbreviateAction(org.jabref.gui.actions.StandardActions, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.logic.journals.JournalAbbreviationPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!undoManager	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java:( :(3"
+typeUndoManager"
+isFinalfalse",
+declarationStringUndoManager undoManager*undoManager2k
+javax.swing.undo.UndoManagerTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java: :('‡,
+2org.jabref.gui.journals.AbbreviateAction.execute()METHODE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaO O("
+isFinalfalse"±
+declarationStringõ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">execute</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*execute2Ñ
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaS S( 2ù
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaS. S(22ì
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaT- T(62~
+/org.jabref.gui.StateManager.getActiveDatabase()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaT T(*2õ
+Lorg.jabref.gui.util.BackgroundTask.onSuccess(java.util.function.Consumer<V>)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaV# V(,2ä
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaU# U('2g
+java.util.Optional.get()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaUZ U(]2~
+/org.jabref.gui.StateManager.getActiveDatabase()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaUF U(W2Ä
+0org.jabref.gui.StateManager.getSelectedEntries()CALLF
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaUn U(Ä2Ñ
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaY Y( 2ù
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaY. Y(22ì
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaZ- Z(62~
+/org.jabref.gui.StateManager.getActiveDatabase()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaZ Z(*2õ
+Lorg.jabref.gui.util.BackgroundTask.onSuccess(java.util.function.Consumer<V>)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java\# \(,2ä
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java[# [('2g
+java.util.Optional.get()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java[\ [(_2~
+/org.jabref.gui.StateManager.getActiveDatabase()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java[H [(Y2Ä
+0org.jabref.gui.StateManager.getSelectedEntries()CALLF
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java[p [(Ç2d
+java.lang.Enum.name()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java_5 _(92ä
+;org.jabref.gui.journals.AbbreviateAction?action@40.34:40.40CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaP P(2ä
+;org.jabref.gui.journals.AbbreviateAction?action@40.34:40.40CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaQ Q(2ä
+;org.jabref.gui.journals.AbbreviateAction?action@40.34:40.40CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaR R(2ë
+Borg.jabref.gui.journals.AbbreviateAction?dialogService@42.32:42.45CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaS S(2ê
+Aorg.jabref.gui.journals.AbbreviateAction?stateManager@43.31:43.43CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaT T(2ê
+Aorg.jabref.gui.journals.AbbreviateAction?stateManager@43.31:43.43CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaU9 U(E2ê
+Aorg.jabref.gui.journals.AbbreviateAction?stateManager@43.31:43.43CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaUa U(m2ê
+Aorg.jabref.gui.journals.AbbreviateAction?taskExecutor@46.31:46.43CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaW/ W(;2ä
+;org.jabref.gui.journals.AbbreviateAction?action@40.34:40.40CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaX X(2ë
+Borg.jabref.gui.journals.AbbreviateAction?dialogService@42.32:42.45CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaY Y(2ê
+Aorg.jabref.gui.journals.AbbreviateAction?stateManager@43.31:43.43CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaZ Z(2ê
+Aorg.jabref.gui.journals.AbbreviateAction?stateManager@43.31:43.43CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java[; [(G2ê
+Aorg.jabref.gui.journals.AbbreviateAction?stateManager@43.31:43.43CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java[c [(o2ê
+Aorg.jabref.gui.journals.AbbreviateAction?taskExecutor@46.31:46.43CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java]/ ](;2ä
+;org.jabref.gui.journals.AbbreviateAction?LOGGER@38.32:38.38CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java_ _(2ä
+;org.jabref.gui.journals.AbbreviateAction?action@40.34:40.40CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java_. _(42§
+Norg.jabref.gui.journals.AbbreviateAction.execute()?databaseContext@84.55:84.70DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaT7 T(F2§
+Norg.jabref.gui.journals.AbbreviateAction.execute()?databaseContext@90.55:90.70DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaZ7 Z(F2Z
+voidRETURN_TYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaO O(˚
+Norg.jabref.gui.journals.AbbreviateAction.execute()?databaseContext@84.55:84.70VARIABLEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaT7 T(F"
+type"
+isFinalfalse"%
+declarationString databaseContext*databaseContext2TYPE˚
+Norg.jabref.gui.journals.AbbreviateAction.execute()?databaseContext@90.55:90.70VARIABLEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaZ7 Z(F"
+type"
+isFinalfalse"%
+declarationString databaseContext*databaseContext2TYPE¿Y
+íorg.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)METHODE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javac c("
+isFinalfalse"Á
+declarationString—<mark class="modifier">private </mark>String <mark class="method">abbreviate</mark>(BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;BibEntry&gt; entries)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*
+abbreviate2†
+Qorg.jabref.logic.journals.JournalAbbreviationPreferences.shouldUseFJournalField()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javag/ g(E2ù
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javai: i(>2ü
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javalK l(N2l
+java.util.Collection.stream()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javal/ l(52ò
+Ijava.util.stream.Stream.anyMatch(java.util.function.Predicate<? super T>)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javam= m(E2l
+java.util.Collection.stream()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javam4 m(:2è
+@org.jabref.model.entry.field.FieldFactory.getJournalNameFields()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javam m(12ë
+¡org.jabref.gui.journals.UndoableAbbreviator.abbreviate(org.jabref.model.database.BibDatabase, org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, javax.swing.undo.CompoundEdit)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javan, n(62â
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javanG n(R2r
+#java.util.stream.Collectors.toSet()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javao$ o()2∂
+gorg.jabref.gui.JabRefExecutorService.executeAll(java.util.Collection<java.util.concurrent.Callable<T>>)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javarG r(Q2n
+java.util.stream.Stream.count()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java| |(2ñ
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javau& u(,2l
+java.util.Collection.stream()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javau u(#2p
+!java.util.concurrent.Future.get()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaw w(!2ù
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java  ($2t
+#javax.swing.undo.CompoundEdit.end()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaÇ Ç(2î
+Cjavax.swing.undo.UndoManager.addEdit(javax.swing.undo.UndoableEdit)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaÉ É(2|
++org.jabref.gui.LibraryTab.markBaseChanged()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaÑ Ñ()2r
+!java.util.function.Supplier.get()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaÑ Ñ(2ü
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaÖ Ö( 2o
+java.lang.String.valueOf(long)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaÖI Ö(P2˚
+´org.jabref.gui.journals.UndoableAbbreviator.UndoableAbbreviator(org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.journals.AbbreviationType, boolean)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javad6 d(I2ê
+Aorg.jabref.gui.undo.NamedCompound.NamedCompound(java.lang.String)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javai i(,2ö
+Korg.jabref.gui.journals.AbbreviateAction?abbreviationRepository@45.48:45.70CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javae e(&2î
+Eorg.jabref.gui.journals.AbbreviateAction?abbreviationType@49.29:49.45CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaf f( 2¢
+Sorg.jabref.gui.journals.AbbreviateAction?journalAbbreviationPreferences@44.49:44.79CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javag g(.2Í
+öorg.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)!entriesCALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javal' l(.2Ñ
+¥org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?undoableAbbreviator@100.28:100.47CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javan n(+2Ú
+¢org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)!databaseContextCALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javan7 n(F2ˆ
+¶org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?entry@108.79:108.84CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javanV n([2˝
+≠org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?journalField@109.70:109.82CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javan] n(i2Û
+£org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?ce@105.22:105.24CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javank n(m2ˆ
+¶org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?tasks@108.31:108.36CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javarR r(W2¯
+®org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?futures@114.30:114.37CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javau u(2˜
+ßorg.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?future@117.45:117.51CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaw w(2ä
+;org.jabref.gui.journals.AbbreviateAction?LOGGER@38.32:38.38CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javay y(2˙
+™org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?exception@120.63:120.72CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javay: y(C2ˆ
+¶org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?count@117.13:117.18CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java~ ~(2ı
+£org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?ce@105.22:105.24CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaÇ Ç(
+2ë
+@org.jabref.gui.journals.AbbreviateAction?undoManager@47.30:47.41CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaÉ É(2ı
+£org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?ce@105.22:105.24CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaÉ É(2ë
+@org.jabref.gui.journals.AbbreviateAction?tabSupplier@41.39:41.50CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaÑ Ñ(2¯
+¶org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?count@117.13:117.18CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaÖQ Ö(V2˜
+¢org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)!databaseContext	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javac1 c(@2Ô
+öorg.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javacQ c(X2ã
+¥org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?undoableAbbreviator@100.28:100.47DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javad d(/2˙
+£org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?ce@105.22:105.24DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javai i(2˝
+¶org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?tasks@108.31:108.36DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javal l($2ˇ
+®org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?futures@114.30:114.37DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javar r(%2˝
+¶org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?count@117.13:117.18DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javau u(2˝
+¶org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?entry@108.79:108.84DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javalO l(T2Ñ
+≠org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?journalField@109.70:109.82DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javamF m(R2˛
+ßorg.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?future@117.45:117.51DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javau- u(32Å
+™org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?exception@120.63:120.72DECLARATIONE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javax? x(H2f
+java.lang.StringRETURN_TYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javac c(ø
+¥org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?undoableAbbreviator@100.28:100.47VARIABLEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javad d(/"
+typeUndoableAbbreviator"
+isFinalfalse"˙
+declarationString‰<mark class="modifier"> </mark>UndoableAbbreviator <mark class="class-field">undoableAbbreviator</mark> = new UndoableAbbreviator(abbreviationRepository, abbreviationType, journalAbbreviationPreferences.shouldUseFJournalField())*undoableAbbreviator2z
++org.jabref.gui.journals.UndoableAbbreviatorTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javad d(2†
+Qorg.jabref.logic.journals.JournalAbbreviationPreferences.shouldUseFJournalField()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javag/ g(E2˚
+´org.jabref.gui.journals.UndoableAbbreviator.UndoableAbbreviator(org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.journals.AbbreviationType, boolean)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javad6 d(I2ö
+Korg.jabref.gui.journals.AbbreviateAction?abbreviationRepository@45.48:45.70CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javae e(&2î
+Eorg.jabref.gui.journals.AbbreviateAction?abbreviationType@49.29:49.45CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaf f( 2¢
+Sorg.jabref.gui.journals.AbbreviateAction?journalAbbreviationPreferences@44.49:44.79CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javag g(.ı
+£org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?ce@105.22:105.24VARIABLEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javai i("
+typeNamedCompound"
+isFinalfalse"©
+declarationStringì<mark class="modifier"> </mark>NamedCompound <mark class="class-field">ce</mark> = new NamedCompound(Localization.lang("Abbreviate journal names"))*ce2p
+!org.jabref.gui.undo.NamedCompoundTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javai i(2ù
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javai: i(>2ê
+Aorg.jabref.gui.undo.NamedCompound.NamedCompound(java.lang.String)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javai i(,Ø
+¶org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?tasks@108.31:108.36VARIABLEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javal l($"
+typeSet<Callable<Boolean>>"
+isFinalfalse"Ñ
+declarationStringÓ<mark class="modifier"> </mark>Set<Callable<Boolean>> <mark class="class-field">tasks</mark> = entries.stream().<Callable<Boolean>>map(entry -> () -> FieldFactory.getJournalNameFields().stream().anyMatch(journalField -> undoableAbbreviator.abbreviate(databaseContext.getDatabase()<mark class="modifier">,</mark> entry, journalField, ce))).collect(Collectors.toSet())*tasks2\
+java.util.SetTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javal l(2u
+java.util.concurrent.CallableTYPE_ARGUMENTE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javal l(2i
+java.lang.BooleanTYPE_ARGUMENTE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javal l(2õ
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javao o(2ü
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javalK l(N2l
+java.util.Collection.stream()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javal/ l(52ò
+Ijava.util.stream.Stream.anyMatch(java.util.function.Predicate<? super T>)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javam= m(E2l
+java.util.Collection.stream()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javam4 m(:2è
+@org.jabref.model.entry.field.FieldFactory.getJournalNameFields()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javam m(12ë
+¡org.jabref.gui.journals.UndoableAbbreviator.abbreviate(org.jabref.model.database.BibDatabase, org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, javax.swing.undo.CompoundEdit)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javan, n(62â
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javanG n(R2r
+#java.util.stream.Collectors.toSet()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javao$ o()2Í
+öorg.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)!entriesCALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javal' l(.2Ñ
+¥org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?undoableAbbreviator@100.28:100.47CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javan n(+2Ú
+¢org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)!databaseContextCALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javan7 n(F2ˆ
+¶org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?entry@108.79:108.84CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javanV n([2˝
+≠org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?journalField@109.70:109.82CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javan] n(i2Û
+£org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?ce@105.22:105.24CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javank n(m–	
+®org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?futures@114.30:114.37VARIABLEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javar r(%"
+typeList<Future<Boolean>>"
+isFinalfalse"¶
+declarationStringê<mark class="modifier"> </mark>List<Future<Boolean>> <mark class="class-field">futures</mark> = JabRefExecutorService.INSTANCE.executeAll(tasks)*futures2]
+java.util.ListTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javar r(2s
+java.util.concurrent.FutureTYPE_ARGUMENTE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javar r(2i
+java.lang.BooleanTYPE_ARGUMENTE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javar r(2∂
+gorg.jabref.gui.JabRefExecutorService.executeAll(java.util.Collection<java.util.concurrent.Callable<T>>)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javarG r(Q2ˆ
+¶org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?tasks@108.31:108.36CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javarR r(Wò
+¶org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?count@117.13:117.18VARIABLEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javau u("
+typelong"
+isFinalfalse"∑
+declarationString°<mark class="modifier"> </mark><mark class="modifier">long</mark> <mark class="class-field">count</mark> = futures.stream().filter(future -> {
+    try {
+        return future.get();
+    } catch (InterruptedException | ExecutionException exception) {
+        LOGGER.error("Unable to retrieve value."<mark class="modifier">,</mark> exception);
+        return <mark class="modifier">false</mark>;
+    }
+}).count()*count2S
+longTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javau u(2n
+java.util.stream.Stream.count()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java| |(2ñ
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javau& u(,2l
+java.util.Collection.stream()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javau u(#2p
+!java.util.concurrent.Future.get()CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaw w(!2¯
+®org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?futures@114.30:114.37CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javau u(2˜
+ßorg.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?future@117.45:117.51CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaw w(2ä
+;org.jabref.gui.journals.AbbreviateAction?LOGGER@38.32:38.38CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javay y(2˙
+™org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?exception@120.63:120.72CALLE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javay: y(CÏ
+¢org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)!databaseContext	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javac1 c(@"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2{
+,org.jabref.model.database.BibDatabaseContextTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javac c(0ß
+öorg.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETERE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javacQ c(X"
+typeList<BibEntry>"
+isFinalfalse"+
+declarationStringList<BibEntry> entries*entries2]
+java.util.ListTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javacB c(F2w
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javacG c(O¿
+¶org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?entry@108.79:108.84VARIABLEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javalO l(T"
+type"
+isFinalfalse"
+declarationString entry*entry2TYPE’
+≠org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?journalField@109.70:109.82VARIABLEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javamF m(R"
+type"
+isFinalfalse""
+declarationString journalField*journalField2TYPE√
+ßorg.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?future@117.45:117.51VARIABLEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javau- u(3"
+type"
+isFinalfalse"
+declarationString future*future2TYPE≤
+™org.jabref.gui.journals.AbbreviateAction.abbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?exception@120.63:120.72VARIABLEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javax? x(H"1
+type)InterruptedException | ExecutionException"
+isFinalfalse"H
+declarationString3InterruptedException | ExecutionException exception*	exception2ó
+Hjava.lang.InterruptedException | java.util.concurrent.ExecutionExceptionTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javax x(>¿?
+îorg.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)METHODG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaà à("
+isFinalfalse"È
+declarationString”<mark class="modifier">private </mark>String <mark class="method">unabbreviate</mark>(BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;BibEntry&gt; entries)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*unabbreviate2ü
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaã: ã(>2q
+ java.util.stream.IntStream.sum()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaé{ é(~2û
+Mjava.util.stream.Stream.mapToInt(java.util.function.ToIntFunction<? super T>)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaå% å(-2n
+java.util.Collection.stream()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaå å("2p
+java.util.stream.Stream.count()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaér é(w2ò
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaçC ç(I2n
+java.util.Collection.stream()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaç: ç(@2ë
+@org.jabref.model.entry.field.FieldFactory.getJournalNameFields()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaç# ç(72ó
+≈org.jabref.gui.journals.UndoableUnabbreviator.unabbreviate(org.jabref.model.database.BibDatabase, org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, javax.swing.undo.CompoundEdit)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaé, é(82ã
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaéI é(T2ü
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaê  ê($2t
+#javax.swing.undo.CompoundEdit.end()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaì ì(2î
+Cjavax.swing.undo.UndoManager.addEdit(javax.swing.undo.UndoableEdit)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaî î(2|
++org.jabref.gui.LibraryTab.markBaseChanged()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaï ï()2r
+!java.util.function.Supplier.get()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaï ï(2ü
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javañ ñ( 2n
+java.lang.String.valueOf(int)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javañK ñ(R2Õ
+|org.jabref.gui.journals.UndoableUnabbreviator.UndoableUnabbreviator(org.jabref.logic.journals.JournalAbbreviationRepository)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaâ8 â(M2í
+Aorg.jabref.gui.undo.NamedCompound.NamedCompound(java.lang.String)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaã ã(,2Ó
+úorg.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)!entriesCALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaå å(2à
+∂org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?undoableAbbreviator@137.30:137.49CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaé é(+2ˆ
+§org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)!databaseContextCALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaé9 é(H2˙
+®org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?entry@140.46:140.51CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaéX é(]2Å
+Øorg.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?journalField@141.74:141.86CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaé_ é(k2˜
+•org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?ce@139.22:139.24CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaém é(o2˙
+®org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?count@140.12:140.17CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaè è(2˜
+•org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?ce@139.22:139.24CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaì ì(
+2ë
+@org.jabref.gui.journals.AbbreviateAction?undoManager@47.30:47.41CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaî î(2˜
+•org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?ce@139.22:139.24CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaî î(2ë
+@org.jabref.gui.journals.AbbreviateAction?tabSupplier@41.39:41.50CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaï ï(2˙
+®org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?count@140.12:140.17CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javañS ñ(X2˚
+§org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)!databaseContext	PARAMETERG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaà3 à(B2Û
+úorg.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETERG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaàS à(Z2è
+∂org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?undoableAbbreviator@137.30:137.49DECLARATIONG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaâ â(12˛
+•org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?ce@139.22:139.24DECLARATIONG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaã ã(2Å
+®org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?count@140.12:140.17DECLARATIONG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaå å(2Å
+®org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?entry@140.46:140.51DECLARATIONG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaå. å(32à
+Øorg.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?journalField@141.74:141.86DECLARATIONG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaçJ ç(V2h
+java.lang.StringRETURN_TYPEG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaà à(Á
+∂org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?undoableAbbreviator@137.30:137.49VARIABLEG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaâ â(1"
+typeUndoableUnabbreviator"
+isFinalfalse"¬
+declarationString¨<mark class="modifier"> </mark>UndoableUnabbreviator <mark class="class-field">undoableAbbreviator</mark> = new UndoableUnabbreviator(Globals.journalAbbreviationRepository)*undoableAbbreviator2~
+-org.jabref.gui.journals.UndoableUnabbreviatorTYPEG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaâ â(2Õ
+|org.jabref.gui.journals.UndoableUnabbreviator.UndoableUnabbreviator(org.jabref.logic.journals.JournalAbbreviationRepository)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaâ8 â(MÅ
+•org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?ce@139.22:139.24VARIABLEG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaã ã("
+typeNamedCompound"
+isFinalfalse"´
+declarationStringï<mark class="modifier"> </mark>NamedCompound <mark class="class-field">ce</mark> = new NamedCompound(Localization.lang("Unabbreviate journal names"))*ce2r
+!org.jabref.gui.undo.NamedCompoundTYPEG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaã ã(2ü
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaã: ã(>2í
+Aorg.jabref.gui.undo.NamedCompound.NamedCompound(java.lang.String)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaã ã(,ª
+®org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?count@140.12:140.17VARIABLEG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaå å("
+typeint"
+isFinalfalse"ë
+declarationString˚<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">count</mark> = entries.stream().mapToInt(entry -> (<mark class="modifier">int</mark>) FieldFactory.getJournalNameFields().stream().filter(journalField -> undoableAbbreviator.unabbreviate(databaseContext.getDatabase()<mark class="modifier">,</mark> entry, journalField, ce)).count()).sum()*count2T
+intTYPEG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaå å(2q
+ java.util.stream.IntStream.sum()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaé{ é(~2û
+Mjava.util.stream.Stream.mapToInt(java.util.function.ToIntFunction<? super T>)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaå% å(-2n
+java.util.Collection.stream()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaå å("2p
+java.util.stream.Stream.count()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaér é(w2ò
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaçC ç(I2n
+java.util.Collection.stream()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaç: ç(@2ë
+@org.jabref.model.entry.field.FieldFactory.getJournalNameFields()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaç# ç(72ó
+≈org.jabref.gui.journals.UndoableUnabbreviator.unabbreviate(org.jabref.model.database.BibDatabase, org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, javax.swing.undo.CompoundEdit)CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaé, é(82ã
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaéI é(T2Ó
+úorg.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)!entriesCALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaå å(2à
+∂org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?undoableAbbreviator@137.30:137.49CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaé é(+2ˆ
+§org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)!databaseContextCALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaé9 é(H2˙
+®org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?entry@140.46:140.51CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaéX é(]2Å
+Øorg.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?journalField@141.74:141.86CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaé_ é(k2˜
+•org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?ce@139.22:139.24CALLG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaém é(oÚ
+§org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)!databaseContext	PARAMETERG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaà3 à(B"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2}
+,org.jabref.model.database.BibDatabaseContextTYPEG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaà  à(2Ø
+úorg.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETERG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaàS à(Z"
+typeList<BibEntry>"
+isFinalfalse"+
+declarationStringList<BibEntry> entries*entries2_
+java.util.ListTYPEG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaàD à(H2y
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaàI à(Qƒ
+®org.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?entry@140.46:140.51VARIABLEG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaå. å(3"
+type"
+isFinalfalse"
+declarationString entry*entry2TYPEŸ
+Øorg.jabref.gui.journals.AbbreviateAction.unabbreviate(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)?journalField@141.74:141.86VARIABLEG
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.javaçJ ç(V"
+type"
+isFinalfalse""
+declarationString journalField*journalField2TYPE£
+;org.jabref.gui.journals.AbbreviateAction?LOGGER@38.32:38.38VALUEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java&  &(&"
+isFinaltrue"
+typeLogger"Ê
+declarationString–<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(AbbreviateAction.class);"
+isStatictrue"
+accessprivate*LOGGER2_
+org.slf4j.LoggerTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java& &(Ù
+;org.jabref.gui.journals.AbbreviateAction?action@40.34:40.40VALUEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java(" ((("
+isFinaltrue"
+typeStandardActions"ó
+declarationStringÅ<mark class="modifier">private </mark><mark class="modifier">final </mark>StandardActions <mark class="class-field">action</mark>"
+isStaticfalse"
+accessprivate*action2u
+&org.jabref.gui.actions.StandardActionsTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java( ((!ı
+@org.jabref.gui.journals.AbbreviateAction?tabSupplier@41.39:41.50VALUEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java)' )(2"
+isFinaltrue"
+typeSupplier<LibraryTab>"°
+declarationStringã<mark class="modifier">private </mark><mark class="modifier">final </mark>Supplier<LibraryTab> <mark class="class-field">tabSupplier</mark>"
+isStaticfalse"
+accessprivate*tabSupplier2j
+java.util.function.SupplierTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java) )(2q
+org.jabref.gui.LibraryTabTYPE_ARGUMENTE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java) )(%˚
+Borg.jabref.gui.journals.AbbreviateAction?dialogService@42.32:42.45VALUEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java*  *(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2k
+org.jabref.gui.DialogServiceTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java* *(ı
+Aorg.jabref.gui.journals.AbbreviateAction?stateManager@43.31:43.43VALUEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java+ +(+"
+isFinaltrue"
+typeStateManager"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>StateManager <mark class="class-field">stateManager</mark>"
+isStaticfalse"
+accessprivate*stateManager2j
+org.jabref.gui.StateManagerTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java+ +(Ì
+Sorg.jabref.gui.journals.AbbreviateAction?journalAbbreviationPreferences@44.49:44.79VALUEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java,1 ,(O"
+isFinaltrue"&
+typeJournalAbbreviationPreferences"æ
+declarationString®<mark class="modifier">private </mark><mark class="modifier">final </mark>JournalAbbreviationPreferences <mark class="class-field">journalAbbreviationPreferences</mark>"
+isStaticfalse"
+accessprivate*journalAbbreviationPreferences2á
+8org.jabref.logic.journals.JournalAbbreviationPreferencesTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java, ,(0“
+Korg.jabref.gui.journals.AbbreviateAction?abbreviationRepository@45.48:45.70VALUEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java-0 -(F"
+isFinaltrue"%
+typeJournalAbbreviationRepository"µ
+declarationStringü<mark class="modifier">private </mark><mark class="modifier">final </mark>JournalAbbreviationRepository <mark class="class-field">abbreviationRepository</mark>"
+isStaticfalse"
+accessprivate*abbreviationRepository2Ü
+7org.jabref.logic.journals.JournalAbbreviationRepositoryTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java- -(/˙
+Aorg.jabref.gui.journals.AbbreviateAction?taskExecutor@46.31:46.43VALUEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java. .(+"
+isFinaltrue"
+typeTaskExecutor"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2o
+ org.jabref.gui.util.TaskExecutorTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java. .(Ò
+@org.jabref.gui.journals.AbbreviateAction?undoManager@47.30:47.41VALUEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java/ /()"
+isFinaltrue"
+typeUndoManager"ò
+declarationStringÇ<mark class="modifier">private </mark><mark class="modifier">final </mark>UndoManager <mark class="class-field">undoManager</mark>"
+isStaticfalse"
+accessprivate*undoManager2k
+javax.swing.undo.UndoManagerTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java/ /(Ù
+Eorg.jabref.gui.journals.AbbreviateAction?abbreviationType@49.29:49.45VARIABLEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java1 1(-"
+isFinalfalse"
+typeAbbreviationType"}
+declarationStringh<mark class="modifier">private </mark>AbbreviationType <mark class="class-field">abbreviationType</mark>"
+isStaticfalse"
+accessprivate*abbreviationType2w
+(org.jabref.gui.journals.AbbreviationTypeTYPEE
+;src\main\java\org\jabref\gui\journals\AbbreviateAction.java1 1(

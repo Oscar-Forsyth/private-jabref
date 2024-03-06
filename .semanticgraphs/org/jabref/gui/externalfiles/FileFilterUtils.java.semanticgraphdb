@@ -1,0 +1,556 @@
+
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java»
+,org.jabref.gui.externalfiles.FileFilterUtilsCLASSI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java ("'
+packageorg.jabref.gui.externalfiles"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"m
+declarationStringX<mark class="modifier">public </mark><mark class="modifier">class </mark>FileFilterUtils"
+accesspublic*FileFilterUtils2¶
+Lorg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java  (+2Ø
+Uorg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastDay(java.time.LocalDateTime)DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java% %("2∞
+Vorg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastWeek(java.time.LocalDateTime)DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java, ,(#2±
+Worg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastMonth(java.time.LocalDateTime)DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java3 3($2∞
+Vorg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastYear(java.time.LocalDateTime)DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java: :(#2œ
+uorg.jabref.gui.externalfiles.FileFilterUtils.filterByDate(java.nio.file.Path, org.jabref.gui.externalfiles.DateRange)DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java@ @(&2æ
+dorg.jabref.gui.externalfiles.FileFilterUtils.sortByDateAscending(java.util.List<java.nio.file.Path>)DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaQ Q()2ø
+eorg.jabref.gui.externalfiles.FileFilterUtils.sortByDateDescending(java.util.List<java.nio.file.Path>)DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java^ ^(*2Á
+åorg.jabref.gui.externalfiles.FileFilterUtils.sortByDate(java.util.List<java.nio.file.Path>, org.jabref.gui.externalfiles.ExternalFileSorter)DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javak k('2ô
+?org.jabref.gui.externalfiles.FileFilterUtils?LOGGER@17.32:17.38DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java  (&≈
+Lorg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)METHODI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java  (+"
+isFinalfalse"†
+declarationStringä<mark class="modifier">public </mark><mark class="modifier">static </mark>LocalDateTime <mark class="method">getFileTime</mark>(Path path)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeLocalDateTime*getFileTime2´
+Xjava.nio.file.Files.getLastModifiedTime(java.nio.file.Path, java.nio.file.LinkOption...)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java# (62p
+java.time.LocalDateTime.now()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java! ($2|
+)java.time.ZonedDateTime.toLocalDateTime()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java ( 2}
+*java.time.Instant.atZone(java.time.ZoneId)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java (2
+,java.nio.file.attribute.FileTime.toInstant()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java (2s
+ java.time.ZoneId.systemDefault()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java (,2∫
+gorg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)?lastEditedTime@21.17:21.31CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java (2§
+Qorg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)!pathCALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java7 (;2í
+?org.jabref.gui.externalfiles.FileFilterUtils?LOGGER@17.32:17.38CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java (2≠
+Zorg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)?e@24.29:24.30CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java9 (:2∫
+gorg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)?lastEditedTime@21.17:21.31CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java& (42π
+forg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)?localDateTime@28.22:28.35CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java   (2©
+Qorg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)!path	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java1 (52¡
+gorg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)?lastEditedTime@21.17:21.31DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java (2¿
+forg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)?localDateTime@28.22:28.35DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java (#2¥
+Zorg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)?e@24.29:24.30DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java (2q
+java.time.LocalDateTimeRETURN_TYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java (’
+gorg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)?lastEditedTime@21.17:21.31VARIABLEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java ("
+typeFileTime"
+isFinalfalse"l
+declarationStringW<mark class="modifier"> </mark>FileTime <mark class="class-field">lastEditedTime</mark>*lastEditedTime2s
+ java.nio.file.attribute.FileTimeTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java (”	
+forg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)?localDateTime@28.22:28.35VARIABLEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java (#"
+typeLocalDateTime"
+isFinalfalse"ø
+declarationString©<mark class="modifier"> </mark>LocalDateTime <mark class="class-field">localDateTime</mark> = lastEditedTime.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime()*localDateTime2j
+java.time.LocalDateTimeTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java (2|
+)java.time.ZonedDateTime.toLocalDateTime()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java ( 2}
+*java.time.Instant.atZone(java.time.ZoneId)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java (2
+,java.nio.file.attribute.FileTime.toInstant()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java (2s
+ java.time.ZoneId.systemDefault()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java (,2∫
+gorg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)?lastEditedTime@21.17:21.31CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java& (4÷
+Qorg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)!path	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java1 (5"
+typePath"
+isFinalfalse"
+declarationString	Path path*path2e
+java.nio.file.PathTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java, (0Á
+Zorg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)?e@24.29:24.30VARIABLEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java ("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2f
+java.io.IOExceptionTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java (ƒ
+Uorg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastDay(java.time.LocalDateTime)METHODI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java% %(""
+isFinalfalse"®
+declarationStringí<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">isDuringLastDay</mark>(LocalDateTime fileEditTime)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*isDuringLastDay2Ä
+-java.time.LocalDateTime.now(java.time.ZoneId)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java&* &(-2s
+ java.time.ZoneId.systemDefault()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java&5 &(B2¥
+ajava.time.LocalDateTime.isAfter(java.time.chrono.ChronoLocalDateTime<? extends java.lang.Object>)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java' '(#2{
+(java.time.LocalDateTime.minusHours(long)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java'( '(22µ
+borg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastDay(java.time.LocalDateTime)!fileEditTimeCALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java' '(2∏
+eorg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastDay(java.time.LocalDateTime)?NOW@38.22:38.25CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java'$ '('2∫
+borg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastDay(java.time.LocalDateTime)!fileEditTime	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java%1 %(=2ø
+eorg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastDay(java.time.LocalDateTime)?NOW@38.22:38.25DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java& &(2a
+booleanRETURN_TYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java% %(„
+eorg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastDay(java.time.LocalDateTime)?NOW@38.22:38.25VARIABLEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java& &("
+typeLocalDateTime"
+isFinalfalse"í
+declarationString}<mark class="modifier"> </mark>LocalDateTime <mark class="class-field">NOW</mark> = LocalDateTime.now(ZoneId.systemDefault())*NOW2j
+java.time.LocalDateTimeTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java& &(2Ä
+-java.time.LocalDateTime.now(java.time.ZoneId)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java&* &(-2s
+ java.time.ZoneId.systemDefault()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java&5 &(Bé
+borg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastDay(java.time.LocalDateTime)!fileEditTime	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java%1 %(="
+typeLocalDateTime"
+isFinalfalse"/
+declarationStringLocalDateTime fileEditTime*fileEditTime2j
+java.time.LocalDateTimeTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java%# %(0 
+Vorg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastWeek(java.time.LocalDateTime)METHODI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java, ,(#"
+isFinalfalse"©
+declarationStringì<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">isDuringLastWeek</mark>(LocalDateTime fileEditTime)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*isDuringLastWeek2Ä
+-java.time.LocalDateTime.now(java.time.ZoneId)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java-* -(-2s
+ java.time.ZoneId.systemDefault()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java-5 -(B2¥
+ajava.time.LocalDateTime.isAfter(java.time.chrono.ChronoLocalDateTime<? extends java.lang.Object>)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java. .(#2z
+'java.time.LocalDateTime.minusDays(long)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java.( .(12∂
+corg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastWeek(java.time.LocalDateTime)!fileEditTimeCALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java. .(2π
+forg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastWeek(java.time.LocalDateTime)?NOW@45.22:45.25CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java.$ .('2ª
+corg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastWeek(java.time.LocalDateTime)!fileEditTime	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java,2 ,(>2¿
+forg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastWeek(java.time.LocalDateTime)?NOW@45.22:45.25DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java- -(2a
+booleanRETURN_TYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java, ,(‰
+forg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastWeek(java.time.LocalDateTime)?NOW@45.22:45.25VARIABLEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java- -("
+typeLocalDateTime"
+isFinalfalse"í
+declarationString}<mark class="modifier"> </mark>LocalDateTime <mark class="class-field">NOW</mark> = LocalDateTime.now(ZoneId.systemDefault())*NOW2j
+java.time.LocalDateTimeTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java- -(2Ä
+-java.time.LocalDateTime.now(java.time.ZoneId)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java-* -(-2s
+ java.time.ZoneId.systemDefault()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java-5 -(Bè
+corg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastWeek(java.time.LocalDateTime)!fileEditTime	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java,2 ,(>"
+typeLocalDateTime"
+isFinalfalse"/
+declarationStringLocalDateTime fileEditTime*fileEditTime2j
+java.time.LocalDateTimeTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java,$ ,(1—
+Worg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastMonth(java.time.LocalDateTime)METHODI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java3 3($"
+isFinalfalse"™
+declarationStringî<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">isDuringLastMonth</mark>(LocalDateTime fileEditTime)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*isDuringLastMonth2Ä
+-java.time.LocalDateTime.now(java.time.ZoneId)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java4* 4(-2s
+ java.time.ZoneId.systemDefault()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java45 4(B2¥
+ajava.time.LocalDateTime.isAfter(java.time.chrono.ChronoLocalDateTime<? extends java.lang.Object>)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java5 5(#2z
+'java.time.LocalDateTime.minusDays(long)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java5( 5(12∑
+dorg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastMonth(java.time.LocalDateTime)!fileEditTimeCALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java5 5(2∫
+gorg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastMonth(java.time.LocalDateTime)?NOW@52.22:52.25CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java5$ 5('2º
+dorg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastMonth(java.time.LocalDateTime)!fileEditTime	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java33 3(?2¡
+gorg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastMonth(java.time.LocalDateTime)?NOW@52.22:52.25DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java4 4(2a
+booleanRETURN_TYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java3 3(Â
+gorg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastMonth(java.time.LocalDateTime)?NOW@52.22:52.25VARIABLEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java4 4("
+typeLocalDateTime"
+isFinalfalse"í
+declarationString}<mark class="modifier"> </mark>LocalDateTime <mark class="class-field">NOW</mark> = LocalDateTime.now(ZoneId.systemDefault())*NOW2j
+java.time.LocalDateTimeTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java4 4(2Ä
+-java.time.LocalDateTime.now(java.time.ZoneId)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java4* 4(-2s
+ java.time.ZoneId.systemDefault()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java45 4(Bê
+dorg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastMonth(java.time.LocalDateTime)!fileEditTime	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java33 3(?"
+typeLocalDateTime"
+isFinalfalse"/
+declarationStringLocalDateTime fileEditTime*fileEditTime2j
+java.time.LocalDateTimeTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java3% 3(2 
+Vorg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastYear(java.time.LocalDateTime)METHODI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java: :(#"
+isFinalfalse"©
+declarationStringì<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">isDuringLastYear</mark>(LocalDateTime fileEditTime)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*isDuringLastYear2Ä
+-java.time.LocalDateTime.now(java.time.ZoneId)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java;* ;(-2s
+ java.time.ZoneId.systemDefault()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java;5 ;(B2¥
+ajava.time.LocalDateTime.isAfter(java.time.chrono.ChronoLocalDateTime<? extends java.lang.Object>)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java< <(#2z
+'java.time.LocalDateTime.minusDays(long)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java<( <(12∂
+corg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastYear(java.time.LocalDateTime)!fileEditTimeCALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java< <(2π
+forg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastYear(java.time.LocalDateTime)?NOW@59.22:59.25CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java<$ <('2ª
+corg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastYear(java.time.LocalDateTime)!fileEditTime	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java:2 :(>2¿
+forg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastYear(java.time.LocalDateTime)?NOW@59.22:59.25DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java; ;(2a
+booleanRETURN_TYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java: :(‰
+forg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastYear(java.time.LocalDateTime)?NOW@59.22:59.25VARIABLEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java; ;("
+typeLocalDateTime"
+isFinalfalse"í
+declarationString}<mark class="modifier"> </mark>LocalDateTime <mark class="class-field">NOW</mark> = LocalDateTime.now(ZoneId.systemDefault())*NOW2j
+java.time.LocalDateTimeTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java; ;(2Ä
+-java.time.LocalDateTime.now(java.time.ZoneId)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java;* ;(-2s
+ java.time.ZoneId.systemDefault()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java;5 ;(Bè
+corg.jabref.gui.externalfiles.FileFilterUtils.isDuringLastYear(java.time.LocalDateTime)!fileEditTime	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java:2 :(>"
+typeLocalDateTime"
+isFinalfalse"/
+declarationStringLocalDateTime fileEditTime*fileEditTime2j
+java.time.LocalDateTimeTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java:$ :(1 
+uorg.jabref.gui.externalfiles.FileFilterUtils.filterByDate(java.nio.file.Path, org.jabref.gui.externalfiles.DateRange)METHODI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java@ @(&"
+isFinalfalse"á
+declarationStringÒ<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">boolean</mark> <mark class="method">filterByDate</mark>(Path path<mark class="modifier"><mark class="modifier">,</mark></mark> DateRange filter)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*filterByDate2ü
+Lorg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaB1 B(<2ë
+>org.jabref.gui.externalfiles.FileFilterUtils.FileFilterUtils()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaA) A(82Õ
+zorg.jabref.gui.externalfiles.FileFilterUtils.filterByDate(java.nio.file.Path, org.jabref.gui.externalfiles.DateRange)!pathCALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaB= B(A2œ
+|org.jabref.gui.externalfiles.FileFilterUtils.filterByDate(java.nio.file.Path, org.jabref.gui.externalfiles.DateRange)!filterCALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaC( C(.2„
+èorg.jabref.gui.externalfiles.FileFilterUtils.filterByDate(java.nio.file.Path, org.jabref.gui.externalfiles.DateRange)?isInDateRange@67.16:67.29CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaJ J(2“
+zorg.jabref.gui.externalfiles.FileFilterUtils.filterByDate(java.nio.file.Path, org.jabref.gui.externalfiles.DateRange)!path	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java@, @(02‘
+|org.jabref.gui.externalfiles.FileFilterUtils.filterByDate(java.nio.file.Path, org.jabref.gui.externalfiles.DateRange)!filter	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java@< @(B2Á
+åorg.jabref.gui.externalfiles.FileFilterUtils.filterByDate(java.nio.file.Path, org.jabref.gui.externalfiles.DateRange)?fileFilter@65.24:65.34DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaA A("2Â
+äorg.jabref.gui.externalfiles.FileFilterUtils.filterByDate(java.nio.file.Path, org.jabref.gui.externalfiles.DateRange)?fileTime@66.22:66.30DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaB B(2Í
+èorg.jabref.gui.externalfiles.FileFilterUtils.filterByDate(java.nio.file.Path, org.jabref.gui.externalfiles.DateRange)?isInDateRange@67.16:67.29DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaC C(2a
+booleanRETURN_TYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java@ @(∫
+åorg.jabref.gui.externalfiles.FileFilterUtils.filterByDate(java.nio.file.Path, org.jabref.gui.externalfiles.DateRange)?fileFilter@65.24:65.34VARIABLEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaA A(""
+typeFileFilterUtils"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>FileFilterUtils <mark class="class-field">fileFilter</mark> = new FileFilterUtils()*
+fileFilter2
+,org.jabref.gui.externalfiles.FileFilterUtilsTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaA A(2ë
+>org.jabref.gui.externalfiles.FileFilterUtils.FileFilterUtils()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaA) A(8Ö
+äorg.jabref.gui.externalfiles.FileFilterUtils.filterByDate(java.nio.file.Path, org.jabref.gui.externalfiles.DateRange)?fileTime@66.22:66.30VARIABLEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaB B("
+typeLocalDateTime"
+isFinalfalse"è
+declarationStringz<mark class="modifier"> </mark>LocalDateTime <mark class="class-field">fileTime</mark> = FileFilterUtils.getFileTime(path)*fileTime2j
+java.time.LocalDateTimeTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaB B(2ü
+Lorg.jabref.gui.externalfiles.FileFilterUtils.getFileTime(java.nio.file.Path)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaB1 B(<2Õ
+zorg.jabref.gui.externalfiles.FileFilterUtils.filterByDate(java.nio.file.Path, org.jabref.gui.externalfiles.DateRange)!pathCALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaB= B(Añ
+èorg.jabref.gui.externalfiles.FileFilterUtils.filterByDate(java.nio.file.Path, org.jabref.gui.externalfiles.DateRange)?isInDateRange@67.16:67.29VARIABLEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaC C("
+typeboolean"
+isFinalfalse"Ã
+declarationString∂<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">isInDateRange</mark> = switch(filter) {
+    case DAY ->
+        fileFilter.isDuringLastDay(fileTime);
+    case WEEK ->
+        fileFilter.isDuringLastWeek(fileTime);
+    case MONTH ->
+        fileFilter.isDuringLastMonth(fileTime);
+    case YEAR ->
+        fileFilter.isDuringLastYear(fileTime);
+    case ALL_TIME ->
+        true;
+}*isInDateRange2Z
+booleanTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaC C(2œ
+|org.jabref.gui.externalfiles.FileFilterUtils.filterByDate(java.nio.file.Path, org.jabref.gui.externalfiles.DateRange)!filterCALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaC( C(.ˇ
+zorg.jabref.gui.externalfiles.FileFilterUtils.filterByDate(java.nio.file.Path, org.jabref.gui.externalfiles.DateRange)!path	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java@, @(0"
+typePath"
+isFinalfalse"
+declarationString	Path path*path2e
+java.nio.file.PathTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java@' @(+£
+|org.jabref.gui.externalfiles.FileFilterUtils.filterByDate(java.nio.file.Path, org.jabref.gui.externalfiles.DateRange)!filter	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java@< @(B"
+type	DateRange"
+isFinalfalse"%
+declarationStringDateRange filter*filter2y
+&org.jabref.gui.externalfiles.DateRangeTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java@2 @(;·
+dorg.jabref.gui.externalfiles.FileFilterUtils.sortByDateAscending(java.util.List<java.nio.file.Path>)METHODI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaQ Q()"
+isFinalfalse"í
+declarationString}<mark class="modifier">public </mark>List&lt;Path&gt; <mark class="method">sortByDateAscending</mark>(List&lt;Path&gt; files)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+type
+List<Path>*sortByDateAscending2í
+?java.util.stream.Stream.sorted(java.util.Comparator<? super T>)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaS S(2p
+java.util.Collection.stream()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaR R(2£
+Pjava.util.Comparator.comparingLong(java.util.function.ToLongFunction<? super T>)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaS# S(02s
+ java.time.ZoneId.systemDefault()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaT' T(42w
+$java.util.stream.Collectors.toList()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaW$ W(*2Ω
+jorg.jabref.gui.externalfiles.FileFilterUtils.sortByDateAscending(java.util.List<java.nio.file.Path>)!filesCALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaR R(2»
+uorg.jabref.gui.externalfiles.FileFilterUtils.sortByDateAscending(java.util.List<java.nio.file.Path>)?file@83.49:83.53CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaSU S(Y2¬
+jorg.jabref.gui.externalfiles.FileFilterUtils.sortByDateAscending(java.util.List<java.nio.file.Path>)!files	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaQ5 Q(:2œ
+uorg.jabref.gui.externalfiles.FileFilterUtils.sortByDateAscending(java.util.List<java.nio.file.Path>)?file@83.49:83.53DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaS1 S(52h
+java.util.ListRETURN_TYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaQ Q(2u
+java.nio.file.PathRETURN_TYPE_ARGUMENTI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaQ Q(È
+jorg.jabref.gui.externalfiles.FileFilterUtils.sortByDateAscending(java.util.List<java.nio.file.Path>)!files	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaQ5 Q(:"
+type
+List<Path>"
+isFinalfalse"%
+declarationStringList<Path> files*files2a
+java.util.ListTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaQ* Q(.2n
+java.nio.file.PathTYPE_ARGUMENTI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaQ/ Q(3ê
+uorg.jabref.gui.externalfiles.FileFilterUtils.sortByDateAscending(java.util.List<java.nio.file.Path>)?file@83.49:83.53VARIABLEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaS1 S(5"
+type"
+isFinalfalse"
+declarationString file*file2TYPEË
+eorg.jabref.gui.externalfiles.FileFilterUtils.sortByDateDescending(java.util.List<java.nio.file.Path>)METHODI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java^ ^(*"
+isFinalfalse"ì
+declarationString~<mark class="modifier">public </mark>List&lt;Path&gt; <mark class="method">sortByDateDescending</mark>(List&lt;Path&gt; files)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+type
+List<Path>*sortByDateDescending2í
+?java.util.stream.Stream.sorted(java.util.Comparator<? super T>)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java` `(2p
+java.util.Collection.stream()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java_ _(2£
+Pjava.util.Comparator.comparingLong(java.util.function.ToLongFunction<? super T>)CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java`# `(02s
+ java.time.ZoneId.systemDefault()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javaa' a(42w
+$java.util.stream.Collectors.toList()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javad$ d(*2æ
+korg.jabref.gui.externalfiles.FileFilterUtils.sortByDateDescending(java.util.List<java.nio.file.Path>)!filesCALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java_ _(2…
+vorg.jabref.gui.externalfiles.FileFilterUtils.sortByDateDescending(java.util.List<java.nio.file.Path>)?file@96.49:96.53CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java`V `(Z2√
+korg.jabref.gui.externalfiles.FileFilterUtils.sortByDateDescending(java.util.List<java.nio.file.Path>)!files	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java^6 ^(;2–
+vorg.jabref.gui.externalfiles.FileFilterUtils.sortByDateDescending(java.util.List<java.nio.file.Path>)?file@96.49:96.53DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java`1 `(52h
+java.util.ListRETURN_TYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java^ ^(2u
+java.nio.file.PathRETURN_TYPE_ARGUMENTI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java^ ^(Í
+korg.jabref.gui.externalfiles.FileFilterUtils.sortByDateDescending(java.util.List<java.nio.file.Path>)!files	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java^6 ^(;"
+type
+List<Path>"
+isFinalfalse"%
+declarationStringList<Path> files*files2a
+java.util.ListTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java^+ ^(/2n
+java.nio.file.PathTYPE_ARGUMENTI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java^0 ^(4ë
+vorg.jabref.gui.externalfiles.FileFilterUtils.sortByDateDescending(java.util.List<java.nio.file.Path>)?file@96.49:96.53VARIABLEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java`1 `(5"
+type"
+isFinalfalse"
+declarationString file*file2TYPEú
+åorg.jabref.gui.externalfiles.FileFilterUtils.sortByDate(java.util.List<java.nio.file.Path>, org.jabref.gui.externalfiles.ExternalFileSorter)METHODI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javak k('"
+isFinalfalse"à
+declarationStringÚ<mark class="modifier">public </mark><mark class="modifier">static </mark>List&lt;Path&gt; <mark class="method">sortByDate</mark>(List&lt;Path&gt; files<mark class="modifier"><mark class="modifier">,</mark></mark> ExternalFileSorter sortType)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+type
+List<Path>*
+sortByDate2ë
+>org.jabref.gui.externalfiles.FileFilterUtils.FileFilterUtils()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javal) l(82È
+ïorg.jabref.gui.externalfiles.FileFilterUtils.sortByDate(java.util.List<java.nio.file.Path>, org.jabref.gui.externalfiles.ExternalFileSorter)!sortTypeCALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javam) m(12˙
+¶org.jabref.gui.externalfiles.FileFilterUtils.sortByDate(java.util.List<java.nio.file.Path>, org.jabref.gui.externalfiles.ExternalFileSorter)?sortedFiles@109.19:109.30CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javar r(2Î
+íorg.jabref.gui.externalfiles.FileFilterUtils.sortByDate(java.util.List<java.nio.file.Path>, org.jabref.gui.externalfiles.ExternalFileSorter)!files	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javak3 k(82Ó
+ïorg.jabref.gui.externalfiles.FileFilterUtils.sortByDate(java.util.List<java.nio.file.Path>, org.jabref.gui.externalfiles.ExternalFileSorter)!sortType	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javakM k(U2Ä
+•org.jabref.gui.externalfiles.FileFilterUtils.sortByDate(java.util.List<java.nio.file.Path>, org.jabref.gui.externalfiles.ExternalFileSorter)?fileFilter@108.24:108.34DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javal l("2Å
+¶org.jabref.gui.externalfiles.FileFilterUtils.sortByDate(java.util.List<java.nio.file.Path>, org.jabref.gui.externalfiles.ExternalFileSorter)?sortedFiles@109.19:109.30DECLARATIONI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javam m(2h
+java.util.ListRETURN_TYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javak k(2u
+java.nio.file.PathRETURN_TYPE_ARGUMENTI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javak k(”
+•org.jabref.gui.externalfiles.FileFilterUtils.sortByDate(java.util.List<java.nio.file.Path>, org.jabref.gui.externalfiles.ExternalFileSorter)?fileFilter@108.24:108.34VARIABLEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javal l(""
+typeFileFilterUtils"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>FileFilterUtils <mark class="class-field">fileFilter</mark> = new FileFilterUtils()*
+fileFilter2
+,org.jabref.gui.externalfiles.FileFilterUtilsTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javal l(2ë
+>org.jabref.gui.externalfiles.FileFilterUtils.FileFilterUtils()CALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javal) l(8∂
+¶org.jabref.gui.externalfiles.FileFilterUtils.sortByDate(java.util.List<java.nio.file.Path>, org.jabref.gui.externalfiles.ExternalFileSorter)?sortedFiles@109.19:109.30VARIABLEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javam m("
+type
+List<Path>"
+isFinalfalse"√
+declarationString≠<mark class="modifier"> </mark>List<Path> <mark class="class-field">sortedFiles</mark> = switch(sortType) {
+    case DEFAULT ->
+        files;
+    case DATE_ASCENDING ->
+        fileFilter.sortByDateDescending(files);
+    case DATE_DESCENDING ->
+        fileFilter.sortByDateAscending(files);
+}*sortedFiles2a
+java.util.ListTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javam m(2n
+java.nio.file.PathTYPE_ARGUMENTI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javam m(2È
+ïorg.jabref.gui.externalfiles.FileFilterUtils.sortByDate(java.util.List<java.nio.file.Path>, org.jabref.gui.externalfiles.ExternalFileSorter)!sortTypeCALLI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javam) m(1í
+íorg.jabref.gui.externalfiles.FileFilterUtils.sortByDate(java.util.List<java.nio.file.Path>, org.jabref.gui.externalfiles.ExternalFileSorter)!files	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javak3 k(8"
+type
+List<Path>"
+isFinalfalse"%
+declarationStringList<Path> files*files2a
+java.util.ListTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javak( k(,2n
+java.nio.file.PathTYPE_ARGUMENTI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javak- k(1›
+ïorg.jabref.gui.externalfiles.FileFilterUtils.sortByDate(java.util.List<java.nio.file.Path>, org.jabref.gui.externalfiles.ExternalFileSorter)!sortType	PARAMETERI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javakM k(U"
+typeExternalFileSorter"
+isFinalfalse"0
+declarationStringExternalFileSorter sortType*sortType2Ç
+/org.jabref.gui.externalfiles.ExternalFileSorterTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.javak: k(LÆ
+?org.jabref.gui.externalfiles.FileFilterUtils?LOGGER@17.32:17.38VALUEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java  (&"
+isFinaltrue"
+typeLogger"Â
+declarationStringœ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(FileFilterUtils.class);"
+isStatictrue"
+accessprivate*LOGGER2c
+org.slf4j.LoggerTYPEI
+?src\main\java\org\jabref\gui\externalfiles\FileFilterUtils.java (

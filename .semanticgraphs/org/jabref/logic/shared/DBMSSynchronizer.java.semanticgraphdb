@@ -1,0 +1,1540 @@
+
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˙5
+(org.jabref.logic.shared.DBMSSynchronizerCLASSE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java* *(""
+packageorg.jabref.logic.shared"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"∞
+declarationStringö<mark class="modifier">public </mark><mark class="modifier">class </mark>DBMSSynchronizer<mark class="modifier"><br>implements </mark>DatabaseSynchronizer"
+accesspublic*DBMSSynchronizer2∫
+„org.jabref.logic.shared.DBMSSynchronizer.DBMSSynchronizer(org.jabref.model.database.BibDatabaseContext, java.lang.Character, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern, org.jabref.model.util.FileUpdateMonitor)DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java: :(2∏
+borg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.database.event.EntriesAddedEvent)DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaJ J(2µ
+_org.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.entry.event.FieldChangedEvent)DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java[ [(2∫
+dorg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.database.event.EntriesRemovedEvent)DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javan n(2ª
+eorg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.metadata.event.MetaDataChangedEvent)DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java} }(2ñ
+>org.jabref.logic.shared.DBMSSynchronizer.initializeDatabases()DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaå å(#2õ
+Corg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java® ®((2Î
+íorg.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‡ ‡('2∏
+`org.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedEntry(org.jabref.model.entry.BibEntry)DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java (&2õ
+Corg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalMetaData()DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÅ Å((2˝
+§org.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedMetaData(org.jabref.model.metadata.MetaData, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern)DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaì ì(*2ê
+8org.jabref.logic.shared.DBMSSynchronizer.applyMetaData()DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java° °(2é
+6org.jabref.logic.shared.DBMSSynchronizer.pullChanges()DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∑ ∑(2ó
+?org.jabref.logic.shared.DBMSSynchronizer.pullLastEntryChanges()DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaƒ ƒ($2î
+<org.jabref.logic.shared.DBMSSynchronizer.pullWithLastEntry()DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java” ”("2ô
+Aorg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‡ ‡()2¡
+iorg.jabref.logic.shared.DBMSSynchronizer.isEventSourceAccepted(org.jabref.model.entry.event.EntriesEvent)DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaı ı((2ø
+gorg.jabref.logic.shared.DBMSSynchronizer.openSharedDatabase(org.jabref.logic.shared.DatabaseConnection)DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˚ ˚("2ñ
+>org.jabref.logic.shared.DBMSSynchronizer.closeSharedDatabase()DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÉ É(#2∏
+`org.jabref.logic.shared.DBMSSynchronizer.isPresentLocalBibEntry(org.jabref.model.entry.BibEntry)DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaé é(*2å
+4org.jabref.logic.shared.DBMSSynchronizer.getDBName()DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaì ì(2ë
+9org.jabref.logic.shared.DBMSSynchronizer.getDBProcessor()DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaó ó('2ö
+Borg.jabref.logic.shared.DBMSSynchronizer.getConnectionProperties()DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaú( ú(?2∞
+Xorg.jabref.logic.shared.DBMSSynchronizer.setMetaData(org.jabref.model.metadata.MetaData)DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java† †(2£
+Korg.jabref.logic.shared.DBMSSynchronizer.registerListener(java.lang.Object)DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java• •( 2ë
+;org.jabref.logic.shared.DBMSSynchronizer?LOGGER@44.32:44.38DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java,  ,(&2ò
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java. .('2ë
+;org.jabref.logic.shared.DBMSSynchronizer?dbName@47.19:47.25DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java/ /(2ù
+Gorg.jabref.logic.shared.DBMSSynchronizer?bibDatabaseContext@48.37:48.55DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java0% 0(72ì
+=org.jabref.logic.shared.DBMSSynchronizer?metaData@49.21:49.29DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java1 1(2ñ
+@org.jabref.logic.shared.DBMSSynchronizer?bibDatabase@50.30:50.41DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java2 2()2ì
+=org.jabref.logic.shared.DBMSSynchronizer?eventBus@51.27:51.35DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java3 3(#2ú
+Forg.jabref.logic.shared.DBMSSynchronizer?currentConnection@52.23:52.40DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java4 4((2õ
+Eorg.jabref.logic.shared.DBMSSynchronizer?keywordSeparator@53.28:53.44DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java5 5(,2ü
+Iorg.jabref.logic.shared.DBMSSynchronizer?globalCiteKeyPattern@54.43:54.63DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java6+ 6(?2ñ
+@org.jabref.logic.shared.DBMSSynchronizer?fileMonitor@55.36:55.47DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java7$ 7(/2õ
+Eorg.jabref.logic.shared.DBMSSynchronizer?lastEntryChanged@56.31:56.47DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java8 8(/2}
+,org.jabref.logic.shared.DatabaseSynchronizerEXTENDE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java*) *(=Í.
+„org.jabref.logic.shared.DBMSSynchronizer.DBMSSynchronizer(org.jabref.model.database.BibDatabaseContext, java.lang.Character, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern, org.jabref.model.util.FileUpdateMonitor)CONSTRUCTORE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java: :("¨
+declarationStringñ<mark class="modifier">public </mark><mark class="method">DBMSSynchronizer</mark>(BibDatabaseContext bibDatabaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> Character keywordSeparator<mark class="modifier"><mark class="modifier">,</mark></mark> GlobalCitationKeyPattern globalCiteKeyPattern<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileMonitor)*DBMSSynchronizer2r
+#java.util.Objects.requireNonNull(T)CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java<* <(82â
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java=. =(92â
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java>+ >(62r
+#java.util.Objects.requireNonNull(T)CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaB, B(:2i
+java.util.Optional.empty()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaC) C(.2∆
+ˆorg.jabref.logic.shared.DBMSSynchronizer.DBMSSynchronizer(org.jabref.model.database.BibDatabaseContext, java.lang.Character, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern, org.jabref.model.util.FileUpdateMonitor)!bibDatabaseContextCALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java<9 <(K2∆
+ˆorg.jabref.logic.shared.DBMSSynchronizer.DBMSSynchronizer(org.jabref.model.database.BibDatabaseContext, java.lang.Character, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern, org.jabref.model.util.FileUpdateMonitor)!bibDatabaseContextCALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java= =(-2∆
+ˆorg.jabref.logic.shared.DBMSSynchronizer.DBMSSynchronizer(org.jabref.model.database.BibDatabaseContext, java.lang.Character, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern, org.jabref.model.util.FileUpdateMonitor)!bibDatabaseContextCALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java> >(*2ø
+Ôorg.jabref.logic.shared.DBMSSynchronizer.DBMSSynchronizer(org.jabref.model.database.BibDatabaseContext, java.lang.Character, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern, org.jabref.model.util.FileUpdateMonitor)!fileMonitorCALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java? ?(&2ƒ
+Ùorg.jabref.logic.shared.DBMSSynchronizer.DBMSSynchronizer(org.jabref.model.database.BibDatabaseContext, java.lang.Character, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern, org.jabref.model.util.FileUpdateMonitor)!keywordSeparatorCALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaA  A(02»
+¯org.jabref.logic.shared.DBMSSynchronizer.DBMSSynchronizer(org.jabref.model.database.BibDatabaseContext, java.lang.Character, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern, org.jabref.model.util.FileUpdateMonitor)!globalCiteKeyPatternCALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaB; B(O2ñ
+Gorg.jabref.logic.shared.DBMSSynchronizer?bibDatabaseContext@48.37:48.55CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java< <(2è
+@org.jabref.logic.shared.DBMSSynchronizer?bibDatabase@50.30:50.41CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java= =(2å
+=org.jabref.logic.shared.DBMSSynchronizer?metaData@49.21:49.29CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java> >(2è
+@org.jabref.logic.shared.DBMSSynchronizer?fileMonitor@55.36:55.47CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java? ?(2å
+=org.jabref.logic.shared.DBMSSynchronizer?eventBus@51.27:51.35CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java@ @(2î
+Eorg.jabref.logic.shared.DBMSSynchronizer?keywordSeparator@53.28:53.44CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaA A(2ò
+Iorg.jabref.logic.shared.DBMSSynchronizer?globalCiteKeyPattern@54.43:54.63CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaB B(!2î
+Eorg.jabref.logic.shared.DBMSSynchronizer?lastEntryChanged@56.31:56.47CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaC C(2À
+ˆorg.jabref.logic.shared.DBMSSynchronizer.DBMSSynchronizer(org.jabref.model.database.BibDatabaseContext, java.lang.Character, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern, org.jabref.model.util.FileUpdateMonitor)!bibDatabaseContext	PARAMETERE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java:/ :(A2…
+Ùorg.jabref.logic.shared.DBMSSynchronizer.DBMSSynchronizer(org.jabref.model.database.BibDatabaseContext, java.lang.Character, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern, org.jabref.model.util.FileUpdateMonitor)!keywordSeparator	PARAMETERE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java:M :(]2Õ
+¯org.jabref.logic.shared.DBMSSynchronizer.DBMSSynchronizer(org.jabref.model.database.BibDatabaseContext, java.lang.Character, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern, org.jabref.model.util.FileUpdateMonitor)!globalCiteKeyPattern	PARAMETERE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java;5 ;(I2ƒ
+Ôorg.jabref.logic.shared.DBMSSynchronizer.DBMSSynchronizer(org.jabref.model.database.BibDatabaseContext, java.lang.Character, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern, org.jabref.model.util.FileUpdateMonitor)!fileMonitor	PARAMETERE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java;] ;(h2~
+(org.jabref.logic.shared.DBMSSynchronizerRETURN_TYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java: :(∆
+ˆorg.jabref.logic.shared.DBMSSynchronizer.DBMSSynchronizer(org.jabref.model.database.BibDatabaseContext, java.lang.Character, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern, org.jabref.model.util.FileUpdateMonitor)!bibDatabaseContext	PARAMETERE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java:/ :(A"
+typeBibDatabaseContext"
+isFinalfalse":
+declarationString%BibDatabaseContext bibDatabaseContext*bibDatabaseContext2{
+,org.jabref.model.database.BibDatabaseContextTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java: :(.ï
+Ùorg.jabref.logic.shared.DBMSSynchronizer.DBMSSynchronizer(org.jabref.model.database.BibDatabaseContext, java.lang.Character, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern, org.jabref.model.util.FileUpdateMonitor)!keywordSeparator	PARAMETERE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java:M :(]"
+type	Character"
+isFinalfalse"/
+declarationStringCharacter keywordSeparator*keywordSeparator2b
+java.lang.CharacterTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java:C :(LÈ
+¯org.jabref.logic.shared.DBMSSynchronizer.DBMSSynchronizer(org.jabref.model.database.BibDatabaseContext, java.lang.Character, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern, org.jabref.model.util.FileUpdateMonitor)!globalCiteKeyPattern	PARAMETERE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java;5 ;(I" 
+typeGlobalCitationKeyPattern"
+isFinalfalse"B
+declarationString-GlobalCitationKeyPattern globalCiteKeyPattern*globalCiteKeyPattern2ã
+<org.jabref.logic.citationkeypattern.GlobalCitationKeyPatternTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java; ;(4™
+Ôorg.jabref.logic.shared.DBMSSynchronizer.DBMSSynchronizer(org.jabref.model.database.BibDatabaseContext, java.lang.Character, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern, org.jabref.model.util.FileUpdateMonitor)!fileMonitor	PARAMETERE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java;] ;(h"
+typeFileUpdateMonitor"
+isFinalfalse"2
+declarationStringFileUpdateMonitor fileMonitor*fileMonitor2v
+'org.jabref.model.util.FileUpdateMonitorTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java;K ;(\Ã
+borg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.database.event.EntriesAddedEvent)METHODE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaJ J("
+isFinalfalse"»
+declarationString≤<mark class="annotation">@Subscribe</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">listen</mark>(EntriesAddedEvent event)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*listen2∏
+iorg.jabref.logic.shared.DBMSSynchronizer.isEventSourceAccepted(org.jabref.model.entry.event.EntriesEvent)CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaM M(!2ê
+Aorg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaM, M(B2í
+Corg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalMetaData()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaN N($2ã
+<org.jabref.logic.shared.DBMSSynchronizer.pullWithLastEntry()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaO O(2í
+Corg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaP P($2≥
+dorg.jabref.logic.shared.DBMSProcessor.insertEntries(java.util.List<org.jabref.model.entry.BibEntry>)CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaQ Q('2à
+9org.jabref.model.entry.event.EntriesEvent.getBibEntries()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaQ. Q(;2i
+java.util.Optional.empty()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaS( S(-2∑
+horg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.database.event.EntriesAddedEvent)!eventCALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaM" M('2ë
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaQ Q(2∑
+horg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.database.event.EntriesAddedEvent)!eventCALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaQ( Q(-2î
+Eorg.jabref.logic.shared.DBMSSynchronizer?lastEntryChanged@56.31:56.47CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaS S(2º
+horg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.database.event.EntriesAddedEvent)!event	PARAMETERE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaJ) J(.2Z
+voidRETURN_TYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaJ J(°
+horg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.database.event.EntriesAddedEvent)!event	PARAMETERE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaJ) J(."
+typeEntriesAddedEvent"
+isFinalfalse",
+declarationStringEntriesAddedEvent event*event2Ä
+1org.jabref.model.database.event.EntriesAddedEventTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaJ J((“
+_org.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.entry.event.FieldChangedEvent)METHODE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java[ [("
+isFinalfalse"»
+declarationString≤<mark class="annotation">@Subscribe</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">listen</mark>(FieldChangedEvent event)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*listen2ã
+<org.jabref.model.entry.event.EntryChangedEvent.getBibEntry()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java\" \(-2Ø
+`org.jabref.logic.shared.DBMSSynchronizer.isPresentLocalBibEntry(org.jabref.model.entry.BibEntry)CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java_ _("2∏
+iorg.jabref.logic.shared.DBMSSynchronizer.isEventSourceAccepted(org.jabref.model.entry.event.EntriesEvent)CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java_0 _(E2ê
+Aorg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java_P _(f2û
+Norg.jabref.model.database.event.BibDatabaseContextChangedEvent.isFilteredOut()CALLF
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java_s _(Ä2í
+Corg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalMetaData()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java` `($2ã
+<org.jabref.logic.shared.DBMSSynchronizer.pullWithLastEntry()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaa a(2Ø
+`org.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedEntry(org.jabref.model.entry.BibEntry)CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javab b("2í
+Corg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javac c($2g
+java.util.Optional.of(T)CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaf( f(*2¥
+eorg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.entry.event.FieldChangedEvent)!eventCALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java\ \(!2√
+torg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.entry.event.FieldChangedEvent)?bibEntry@92.17:92.25CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java_# _(+2¥
+eorg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.entry.event.FieldChangedEvent)!eventCALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java_F _(K2¥
+eorg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.entry.event.FieldChangedEvent)!eventCALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java_m _(r2√
+torg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.entry.event.FieldChangedEvent)?bibEntry@92.17:92.25CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javab# b(+2î
+Eorg.jabref.logic.shared.DBMSSynchronizer?lastEntryChanged@56.31:56.47CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaf f(2√
+torg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.entry.event.FieldChangedEvent)?bibEntry@92.17:92.25CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaf+ f(32π
+eorg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.entry.event.FieldChangedEvent)!event	PARAMETERE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java[) [(.2 
+torg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.entry.event.FieldChangedEvent)?bibEntry@92.17:92.25DECLARATIONE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java\ \(2Z
+voidRETURN_TYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java[ [(®
+torg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.entry.event.FieldChangedEvent)?bibEntry@92.17:92.25VARIABLEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java\ \("
+typeBibEntry"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark>BibEntry <mark class="class-field">bibEntry</mark> = event.getBibEntry()*bibEntry2n
+org.jabref.model.entry.BibEntryTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java\ \(2ã
+<org.jabref.model.entry.event.EntryChangedEvent.getBibEntry()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java\" \(-2¥
+eorg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.entry.event.FieldChangedEvent)!eventCALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java\ \(!ö
+eorg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.entry.event.FieldChangedEvent)!event	PARAMETERE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java[) [(."
+typeFieldChangedEvent"
+isFinalfalse",
+declarationStringFieldChangedEvent event*event2}
+.org.jabref.model.entry.event.FieldChangedEventTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java[ [((‘
+dorg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.database.event.EntriesRemovedEvent)METHODE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javan n("
+isFinalfalse" 
+declarationString¥<mark class="annotation">@Subscribe</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">listen</mark>(EntriesRemovedEvent event)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*listen2∏
+iorg.jabref.logic.shared.DBMSSynchronizer.isEventSourceAccepted(org.jabref.model.entry.event.EntriesEvent)CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaq q(!2ê
+Aorg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaq, q(B2í
+Corg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalMetaData()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javar r($2ã
+<org.jabref.logic.shared.DBMSSynchronizer.pullWithLastEntry()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javas s(2≥
+dorg.jabref.logic.shared.DBMSProcessor.removeEntries(java.util.List<org.jabref.model.entry.BibEntry>)CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javat t('2à
+9org.jabref.model.entry.event.EntriesEvent.getBibEntries()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javat. t(;2í
+Corg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javau u($2π
+jorg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.database.event.EntriesRemovedEvent)!eventCALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaq" q('2ë
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javat t(2π
+jorg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.database.event.EntriesRemovedEvent)!eventCALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javat( t(-2æ
+jorg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.database.event.EntriesRemovedEvent)!event	PARAMETERE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javan+ n(02Z
+voidRETURN_TYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javan n(©
+jorg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.database.event.EntriesRemovedEvent)!event	PARAMETERE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javan+ n(0"
+typeEntriesRemovedEvent"
+isFinalfalse".
+declarationStringEntriesRemovedEvent event*event2Ç
+3org.jabref.model.database.event.EntriesRemovedEventTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javan n(*º
+eorg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.metadata.event.MetaDataChangedEvent)METHODE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java} }("
+isFinalfalse"À
+declarationStringµ<mark class="annotation">@Subscribe</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">listen</mark>(MetaDataChangedEvent event)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*listen2ê
+Aorg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java~ ~("2Ù
+§org.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedMetaData(org.jabref.model.metadata.MetaData, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern)CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java (%2ë
+Borg.jabref.model.metadata.event.MetaDataChangedEvent.getMetaData()CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java, (72î
+Corg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÄ Ä($2â
+8org.jabref.logic.shared.DBMSSynchronizer.applyMetaData()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÅ Å(2Ü
+5org.jabref.logic.shared.DBMSProcessor.notifyClients()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÇ Ç('2∫
+korg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.metadata.event.MetaDataChangedEvent)!eventCALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java& (+2ò
+Iorg.jabref.logic.shared.DBMSSynchronizer?globalCiteKeyPattern@54.43:54.63CALLE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java; (O2ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÇ Ç(2ø
+korg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.metadata.event.MetaDataChangedEvent)!event	PARAMETERE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java}, }(12Z
+voidRETURN_TYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java} }(≠
+korg.jabref.logic.shared.DBMSSynchronizer.listen(org.jabref.model.metadata.event.MetaDataChangedEvent)!event	PARAMETERE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java}, }(1"
+typeMetaDataChangedEvent"
+isFinalfalse"/
+declarationStringMetaDataChangedEvent event*event2É
+4org.jabref.model.metadata.event.MetaDataChangedEventTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java} }(+ó
+>org.jabref.logic.shared.DBMSSynchronizer.initializeDatabases()METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaå å(#"
+isFinalfalse"
+declarationString⁄<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">initializeDatabases</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>DatabaseNotSupportedException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*initializeDatabases2ã
+:org.jabref.logic.shared.DBMSProcessor.checkBaseIntegrity()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaé é(12ë
+@org.jabref.logic.shared.DBMSProcessor.databaseIsAtMostJabRef35()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaí" í(:2å
+;org.jabref.logic.shared.DBMSProcessor.setupSharedDatabase()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaó ó(12∫
+iorg.jabref.logic.shared.DBMSProcessor.startNotificationListener(org.jabref.logic.shared.DBMSSynchronizer)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaû û(/2î
+Corg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalMetaData()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaü ü( 2î
+Corg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java† †( 2¶
+Uorg.jabref.logic.shared.DatabaseNotSupportedException.DatabaseNotSupportedException()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaì ì(;2õ
+Jjava.lang.IllegalStateException.IllegalStateException(java.lang.Throwable)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaõ õ(+2ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaé é(2å
+;org.jabref.logic.shared.DBMSSynchronizer?LOGGER@44.32:44.38CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaè è(2ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaí í(!2ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaó ó(2å
+;org.jabref.logic.shared.DBMSSynchronizer?LOGGER@44.32:44.38CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaö ö(2ü
+Norg.jabref.logic.shared.DBMSSynchronizer.initializeDatabases()?e@153.30:153.31CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaö7 ö(82ü
+Norg.jabref.logic.shared.DBMSSynchronizer.initializeDatabases()?e@153.30:153.31CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaõ, õ(-2ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaû û(2¶
+Norg.jabref.logic.shared.DBMSSynchronizer.initializeDatabases()?e@153.30:153.31DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaô ô(2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaå å(€
+Norg.jabref.logic.shared.DBMSSynchronizer.initializeDatabases()?e@153.30:153.31VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaô ô("
+typeSQLException"
+isFinalfalse"#
+declarationStringSQLException e*e2f
+java.sql.SQLExceptionTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaô ô(ãk
+Corg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java® ®(("
+isFinalfalse"¬
+declarationString¨<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">synchronizeLocalDatabase</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*synchronizeLocalDatabase2í
+Aorg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java© ©(#2É
+2org.jabref.model.database.BibDatabase.getEntries()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≠2 ≠(<2í
+Aorg.jabref.logic.shared.DBMSProcessor.getSharedIDVersionMapping()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÆ; Æ(T2‰
+íorg.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java± ±(2g
+java.util.Map.keySet()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java±: ±(@2i
+java.util.Map.entrySet()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¥G ¥(O2{
+*java.lang.Integer.equals(java.lang.Object)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∑, ∑(22m
+java.util.Map.Entry.getKey()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∑# ∑()2à
+7org.jabref.model.entry.SharedBibEntryData.getSharedID()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∑V ∑(a2à
+7org.jabref.model.entry.BibEntry.getSharedBibEntryData()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∑> ∑(S2o
+java.util.Map.Entry.getValue()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaπ' π(/2á
+6org.jabref.model.entry.SharedBibEntryData.getVersion()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaπW π(a2à
+7org.jabref.model.entry.BibEntry.getSharedBibEntryData()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaπ? π(T2ä
+9org.jabref.logic.shared.DBMSProcessor.getSharedEntry(int)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∫G ∫(U2m
+java.util.Map.Entry.getKey()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∫e ∫(k2o
+java.util.Optional.isPresent()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaª( ª(12“
+Äorg.jabref.model.entry.BibEntry.setType(org.jabref.model.entry.types.EntryType, org.jabref.model.entry.event.EntriesEventSource)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaΩ' Ω(.2z
+)org.jabref.model.entry.BibEntry.getType()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaΩA Ω(H2i
+java.util.Optional.get()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaΩ; Ω(>2ä
+9org.jabref.model.entry.SharedBibEntryData.setVersion(int)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaø' ø(12à
+7org.jabref.model.entry.BibEntry.getSharedBibEntryData()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaæ' æ(<2á
+6org.jabref.model.entry.SharedBibEntryData.getVersion()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaø\ ø(f2à
+7org.jabref.model.entry.BibEntry.getSharedBibEntryData()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaøD ø(Y2i
+java.util.Optional.get()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaø> ø(A2õ
+Jjava.util.Map.forEach(java.util.function.BiConsumer<? super K, ? super V>)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¿< ¿(C2~
+-org.jabref.model.entry.BibEntry.getFieldMap()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¿. ¿(92i
+java.util.Optional.get()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¿( ¿(+2·
+èorg.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String, org.jabref.model.entry.event.EntriesEventSource)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¬A ¬(I2|
++org.jabref.model.entry.BibEntry.getFields()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∆' ∆(02i
+java.util.Optional.get()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java«D «(G2f
+java.util.List.add(E)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java–1 –(42m
+java.util.Map.Entry.getKey()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java–D –(J2i
+java.util.List.isEmpty()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‘. ‘(52Á
+ïorg.jabref.model.database.BibDatabase.insertEntries(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.entry.event.EntriesEventSource)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java÷ ÷(%2∂
+eorg.jabref.logic.shared.DBMSProcessor.partitionAndGetSharedEntries(java.util.List<java.lang.Integer>)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java÷4 ÷(P2p
+java.util.ArrayList.ArrayList()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≤= ≤(H2ë
+@org.jabref.logic.shared.DBMSSynchronizer?bibDatabase@50.30:50.41CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≠& ≠(12ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÆ- Æ(:2Ø
+^org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?localEntries@173.23:173.35CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java± ±(+2Ø
+^org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?idVersionMap@174.30:174.42CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java±- ±(92Ø
+^org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?idVersionMap@174.30:174.42CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¥: ¥(F2Ø
+^org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?localEntries@173.23:173.35CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∂' ∂(32±
+`org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?idVersionEntry@180.41:180.55CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∑ ∑("2≠
+\org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?localEntry@182.26:182.36CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∑3 ∑(=2»
+worg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?remoteEntryMatchingOneLocalEntryFound@181.20:181.57CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∏ ∏(92±
+`org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?idVersionEntry@180.41:180.55CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaπ π(&2≠
+\org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?localEntry@182.26:182.36CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaπ4 π(>2ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∫9 ∫(F2±
+`org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?idVersionEntry@180.41:180.55CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∫V ∫(d2Æ
+]org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?sharedEntry@186.43:186.54CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaª ª('2≠
+\org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?localEntry@182.26:182.36CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaΩ Ω(&2Æ
+]org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?sharedEntry@186.43:186.54CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaΩ/ Ω(:2≠
+\org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?localEntry@182.26:182.36CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaæ æ(&2Æ
+]org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?sharedEntry@186.43:186.54CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaø2 ø(=2Æ
+]org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?sharedEntry@186.43:186.54CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¿ ¿('2≠
+\org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?localEntry@182.26:182.36CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¬6 ¬(@2®
+Worg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?field@194.37:194.42CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¬J ¬(O2®
+Worg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?value@194.44:194.49CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¬Q ¬(V2≠
+\org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?localEntry@182.26:182.36CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∆ ∆(&2Æ
+]org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?sharedEntry@186.43:186.54CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java«8 «(C2®
+Worg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?field@199.46:199.51CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java«S «(X2≠
+\org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?localEntry@182.26:182.36CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java…7 …(A2®
+Worg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?field@201.46:201.51CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java…M …(R2»
+worg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?remoteEntryMatchingOneLocalEntryFound@181.20:181.57CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaœ œ(62√
+rorg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?entriesToInsertIntoLocalDatabase@178.22:178.54CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java– –(02±
+`org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?idVersionEntry@180.41:180.55CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java–5 –(C2√
+rorg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?entriesToInsertIntoLocalDatabase@178.22:178.54CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‘ ‘(-2ë
+@org.jabref.logic.shared.DBMSSynchronizer?bibDatabase@50.30:50.41CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java÷ ÷(2ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java÷& ÷(32√
+rorg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?entriesToInsertIntoLocalDatabase@178.22:178.54CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java÷Q ÷(q2ú
+Gorg.jabref.logic.shared.DatabaseSynchronizer.synchronizeLocalDatabase()OVERRIDEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java® ®((2∂
+^org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?localEntries@173.23:173.35DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≠ ≠(#2∂
+^org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?idVersionMap@174.30:174.42DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÆ Æ(*2 
+rorg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?entriesToInsertIntoLocalDatabase@178.22:178.54DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≤ ≤(62∏
+`org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?idVersionEntry@180.41:180.55DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¥) ¥(72œ
+worg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?remoteEntryMatchingOneLocalEntryFound@181.20:181.57DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaµ µ(92¥
+\org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?localEntry@182.26:182.36DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∂ ∂($2µ
+]org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?sharedEntry@186.43:186.54DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∫+ ∫(62Ø
+Worg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?field@194.37:194.42DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¬% ¬(*2Ø
+Worg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?value@194.44:194.49DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¬, ¬(12Ø
+Worg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?field@199.46:199.51DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java«. «(32Ø
+Worg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?field@201.46:201.51DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java…. …(32\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java® ®(Ô
+^org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?localEntries@173.23:173.35VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≠ ≠(#"
+typeList<BibEntry>"
+isFinalfalse"ã
+declarationStringv<mark class="modifier"> </mark>List<BibEntry> <mark class="class-field">localEntries</mark> = bibDatabase.getEntries()*localEntries2_
+java.util.ListTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≠ ≠(2y
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≠ ≠(2É
+2org.jabref.model.database.BibDatabase.getEntries()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≠2 ≠(<2ë
+@org.jabref.logic.shared.DBMSSynchronizer?bibDatabase@50.30:50.41CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≠& ≠(1˛
+^org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?idVersionMap@174.30:174.42VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÆ Æ(*"
+typeMap<Integer, Integer>"
+isFinalfalse"§
+declarationStringé<mark class="modifier"> </mark>Map<Integer, Integer> <mark class="class-field">idVersionMap</mark> = dbmsProcessor.getSharedIDVersionMapping()*idVersionMap2^
+java.util.MapTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÆ Æ(2k
+java.lang.IntegerTYPE_ARGUMENTG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÆ Æ(2k
+java.lang.IntegerTYPE_ARGUMENTG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÆ Æ(2í
+Aorg.jabref.logic.shared.DBMSProcessor.getSharedIDVersionMapping()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÆ; Æ(T2ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÆ- Æ(:Ì
+rorg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?entriesToInsertIntoLocalDatabase@178.22:178.54VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≤ ≤(6"
+typeList<Integer>"
+isFinalfalse"ò
+declarationStringÇ<mark class="modifier"> </mark>List<Integer> <mark class="class-field">entriesToInsertIntoLocalDatabase</mark> = new ArrayList<>()* entriesToInsertIntoLocalDatabase2_
+java.util.ListTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≤ ≤(2k
+java.lang.IntegerTYPE_ARGUMENTG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≤ ≤(2p
+java.util.ArrayList.ArrayList()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≤= ≤(HΩ
+`org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?idVersionEntry@180.41:180.55VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¥) ¥(7"#
+typeMap.Entry<Integer, Integer>"
+isFinalfalse"
+declarationStringj<mark class="modifier"> </mark>Map.Entry<Integer, Integer> <mark class="class-field">idVersionEntry</mark>*idVersionEntry2d
+java.util.Map.EntryTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¥ ¥(2k
+java.lang.IntegerTYPE_ARGUMENTG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¥ ¥(2k
+java.lang.IntegerTYPE_ARGUMENTG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¥ ¥(∫
+worg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?remoteEntryMatchingOneLocalEntryFound@181.20:181.57VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaµ µ(9"
+typeboolean"
+isFinalfalse"«
+declarationString±<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">remoteEntryMatchingOneLocalEntryFound</mark> = <mark class="modifier">false</mark>*%remoteEntryMatchingOneLocalEntryFound2X
+booleanTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaµ µ(Ω
+\org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?localEntry@182.26:182.36VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∂ ∂($"
+typeBibEntry"
+isFinalfalse"h
+declarationStringS<mark class="modifier"> </mark>BibEntry <mark class="class-field">localEntry</mark>*
+localEntry2p
+org.jabref.model.entry.BibEntryTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∂ ∂(¬	
+]org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?sharedEntry@186.43:186.54VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∫+ ∫(6"
+typeOptional<BibEntry>"
+isFinalfalse"¨
+declarationStringñ<mark class="modifier"> </mark>Optional<BibEntry> <mark class="class-field">sharedEntry</mark> = dbmsProcessor.getSharedEntry(idVersionEntry.getKey())*sharedEntry2c
+java.util.OptionalTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∫ ∫( 2y
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∫! ∫()2ä
+9org.jabref.logic.shared.DBMSProcessor.getSharedEntry(int)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∫G ∫(U2m
+java.util.Map.Entry.getKey()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∫e ∫(k2ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∫9 ∫(F2±
+`org.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?idVersionEntry@180.41:180.55CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∫V ∫(dÚ
+Worg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?field@194.37:194.42VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¬% ¬(*"
+type"
+isFinalfalse"
+declarationString field*field2TYPEÚ
+Worg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?value@194.44:194.49VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¬, ¬(1"
+type"
+isFinalfalse"
+declarationString value*value2TYPEÚ
+Worg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?field@199.46:199.51VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java«. «(3"
+type"
+isFinalfalse"
+declarationString field*field2TYPEÚ
+Worg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()?field@201.46:201.51VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java…. …(3"
+type"
+isFinalfalse"
+declarationString field*field2TYPE»'
+íorg.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‡ ‡('"
+isFinalfalse"é
+declarationString¯<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">removeNotSharedEntries</mark>(List&lt;BibEntry&gt; localEntries<mark class="modifier"><mark class="modifier">,</mark></mark> Set&lt;Integer&gt; sharedIDs)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*removeNotSharedEntries2ù
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‰ ‰($2ò
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java„ „(#2n
+java.util.Collection.stream()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‚ ‚(#2y
+(java.util.Set.contains(java.lang.Object)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java„= „(E2à
+7org.jabref.model.entry.SharedBibEntryData.getSharedID()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java„i „(t2à
+7org.jabref.model.entry.BibEntry.getSharedBibEntryData()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java„Q „(f2u
+$java.util.stream.Collectors.toList()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‰0 ‰(62i
+java.util.List.isEmpty()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÂ Â($2Á
+ïorg.jabref.model.database.BibDatabase.removeEntries(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.entry.event.EntriesEventSource)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaË Ë(%2⁄
+àorg.jabref.logic.shared.event.SharedEntriesNotPresentEvent.SharedEntriesNotPresentEvent(java.util.List<org.jabref.model.entry.BibEntry>)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÊ Ê(:2Ò
+üorg.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)!localEntriesCALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‚ ‚(2Ó
+úorg.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)!sharedIDsCALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java„3 „(<2˝
+´org.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)?localEntry@227.36:227.46CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java„F „(P2Ç
+∞org.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)?entriesToRemove@225.23:225.38CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÂ Â(2é
+=org.jabref.logic.shared.DBMSSynchronizer?eventBus@51.27:51.35CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÊ Ê(2Ç
+∞org.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)?entriesToRemove@225.23:225.38CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÊ; Ê(J2ë
+@org.jabref.logic.shared.DBMSSynchronizer?bibDatabase@50.30:50.41CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaË Ë(2Ç
+∞org.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)?entriesToRemove@225.23:225.38CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaË& Ë(52ˆ
+üorg.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)!localEntries	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‡7 ‡(C2Û
+úorg.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)!sharedIDs	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‡R ‡([2â
+∞org.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)?entriesToRemove@225.23:225.38DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java· ·(&2Ñ
+´org.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)?localEntry@227.36:227.46DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java„$ „(.2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‡ ‡(Ω
+∞org.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)?entriesToRemove@225.23:225.38VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java· ·(&"
+typeList<BibEntry>"
+isFinalfalse"Ö
+declarationStringÔ<mark class="modifier"> </mark>List<BibEntry> <mark class="class-field">entriesToRemove</mark> = localEntries.stream().filter(localEntry -> !sharedIDs.contains(localEntry.getSharedBibEntryData().getSharedID())).collect(Collectors.toList())*entriesToRemove2_
+java.util.ListTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java· ·(2y
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java· ·(2ù
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‰ ‰($2ò
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java„ „(#2n
+java.util.Collection.stream()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‚ ‚(#2y
+(java.util.Set.contains(java.lang.Object)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java„= „(E2à
+7org.jabref.model.entry.SharedBibEntryData.getSharedID()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java„i „(t2à
+7org.jabref.model.entry.BibEntry.getSharedBibEntryData()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java„Q „(f2u
+$java.util.stream.Collectors.toList()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‰0 ‰(62Ò
+üorg.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)!localEntriesCALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‚ ‚(2Ó
+úorg.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)!sharedIDsCALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java„3 „(<2˝
+´org.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)?localEntry@227.36:227.46CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java„F „(Pº
+üorg.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)!localEntries	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‡7 ‡(C"
+typeList<BibEntry>"
+isFinalfalse"0
+declarationStringList<BibEntry> localEntries*localEntries2_
+java.util.ListTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‡( ‡(,2y
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‡- ‡(5†
+úorg.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)!sharedIDs	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‡R ‡(["
+typeSet<Integer>"
+isFinalfalse"+
+declarationStringSet<Integer> sharedIDs*	sharedIDs2^
+java.util.SetTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‡E ‡(H2k
+java.lang.IntegerTYPE_ARGUMENTG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‡I ‡(P—
+´org.jabref.logic.shared.DBMSSynchronizer.removeNotSharedEntries(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Set<java.lang.Integer>)?localEntry@227.36:227.46VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java„$ „(."
+type"
+isFinalfalse" 
+declarationString localEntry*
+localEntry2TYPEˇ 
+`org.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedEntry(org.jabref.model.entry.BibEntry)METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java (&"
+isFinalfalse"—
+declarationStringª<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">synchronizeSharedEntry</mark>(BibEntry bibEntry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*synchronizeSharedEntry2í
+Aorg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÒ Ò(#2”
+Åorg.jabref.logic.exporter.BibDatabaseWriter.applySaveActions(org.jabref.model.entry.BibEntry, org.jabref.model.metadata.MetaData)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaı ı(.2£
+Rorg.jabref.logic.shared.DBMSProcessor.updateEntry(org.jabref.model.entry.BibEntry)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaˆ ˆ(%2ö
+Iorg.jabref.logic.shared.exception.OfflineLockException.getLocalBibEntry()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¯O ¯(_2õ
+Jorg.jabref.logic.shared.exception.OfflineLockException.getSharedBibEntry()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¯m ¯(~2Ö
+≥org.jabref.logic.shared.event.UpdateRefusedEvent.UpdateRefusedEvent(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¯ ¯(02∫
+iorg.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedEntry(org.jabref.model.entry.BibEntry)!bibEntryCALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaı/ ı(72é
+=org.jabref.logic.shared.DBMSSynchronizer?metaData@49.21:49.29CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaı9 ı(A2ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaˆ ˆ(2∫
+iorg.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedEntry(org.jabref.model.entry.BibEntry)!bibEntryCALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaˆ& ˆ(.2é
+=org.jabref.logic.shared.DBMSSynchronizer?eventBus@51.27:51.35CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¯ ¯(2ò
+Gorg.jabref.logic.shared.DBMSSynchronizer?bibDatabaseContext@48.37:48.55CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¯1 ¯(C2…
+xorg.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedEntry(org.jabref.model.entry.BibEntry)?exception@247.38:247.47CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¯E ¯(N2…
+xorg.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedEntry(org.jabref.model.entry.BibEntry)?exception@247.38:247.47CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¯c ¯(l2å
+;org.jabref.logic.shared.DBMSSynchronizer?LOGGER@44.32:44.38CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˙ ˙(2¡
+porg.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedEntry(org.jabref.model.entry.BibEntry)?e@249.30:249.31CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˙& ˙('2π
+dorg.jabref.logic.shared.DatabaseSynchronizer.synchronizeSharedEntry(org.jabref.model.entry.BibEntry)OVERRIDEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java (&2ø
+iorg.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedEntry(org.jabref.model.entry.BibEntry)!bibEntry	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java0 (82–
+xorg.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedEntry(org.jabref.model.entry.BibEntry)?exception@247.38:247.47DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˜& ˜(/2»
+porg.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedEntry(org.jabref.model.entry.BibEntry)?e@249.30:249.31DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˘ ˘(2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java (á
+iorg.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedEntry(org.jabref.model.entry.BibEntry)!bibEntry	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java0 (8"
+typeBibEntry"
+isFinalfalse"&
+declarationStringBibEntry bibEntry*bibEntry2p
+org.jabref.model.entry.BibEntryTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java' (/«
+xorg.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedEntry(org.jabref.model.entry.BibEntry)?exception@247.38:247.47VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˜& ˜(/"
+typeOfflineLockException"
+isFinalfalse"3
+declarationStringOfflineLockException exception*	exception2á
+6org.jabref.logic.shared.exception.OfflineLockExceptionTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˜ ˜(%˝
+porg.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedEntry(org.jabref.model.entry.BibEntry)?e@249.30:249.31VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˘ ˘("
+typeSQLException"
+isFinalfalse"#
+declarationStringSQLException e*e2f
+java.sql.SQLExceptionTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˘ ˘(¨
+Corg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalMetaData()METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÅ Å(("
+isFinalfalse"ì
+declarationString~<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">synchronizeLocalMetaData</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*synchronizeLocalMetaData2í
+Aorg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÇ Ç(#2ê
+?org.jabref.model.metadata.MetaData.setEventPropagation(boolean)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaá á((2Ò
+üorg.jabref.logic.importer.util.MetaDataParser.parse(org.jabref.model.metadata.MetaData, java.util.Map<java.lang.String, java.lang.String>, java.lang.Character)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaâ â(2ä
+9org.jabref.logic.shared.DBMSProcessor.getSharedMetaData()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaâ1 â(B2ê
+?org.jabref.model.metadata.MetaData.setEventPropagation(boolean)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaä ä((2∂
+eorg.jabref.logic.importer.util.MetaDataParser.MetaDataParser(org.jabref.model.util.FileUpdateMonitor)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaà( à(62é
+=org.jabref.logic.shared.DBMSSynchronizer?metaData@49.21:49.29CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaá á(2ë
+@org.jabref.logic.shared.DBMSSynchronizer?fileMonitor@55.36:55.47CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaà7 à(B2©
+Xorg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalMetaData()?parser@264.27:264.33CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaâ â(2é
+=org.jabref.logic.shared.DBMSSynchronizer?metaData@49.21:49.29CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaâ â(!2ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaâ# â(02ñ
+Eorg.jabref.logic.shared.DBMSSynchronizer?keywordSeparator@53.28:53.44CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaâF â(V2é
+=org.jabref.logic.shared.DBMSSynchronizer?metaData@49.21:49.29CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaä ä(2å
+;org.jabref.logic.shared.DBMSSynchronizer?LOGGER@44.32:44.38CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaå å(2§
+Sorg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalMetaData()?e@267.32:267.33CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaå( å()2∞
+Xorg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalMetaData()?parser@264.27:264.33DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaà à(!2´
+Sorg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalMetaData()?e@267.32:267.33DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaã  ã(!2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÅ Å(ª
+Xorg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalMetaData()?parser@264.27:264.33VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaà à(!"
+typeMetaDataParser"
+isFinalfalse"å
+declarationStringw<mark class="modifier"> </mark>MetaDataParser <mark class="class-field">parser</mark> = new MetaDataParser(fileMonitor)*parser2~
+-org.jabref.logic.importer.util.MetaDataParserTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaà à(2∂
+eorg.jabref.logic.importer.util.MetaDataParser.MetaDataParser(org.jabref.model.util.FileUpdateMonitor)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaà( à(62ë
+@org.jabref.logic.shared.DBMSSynchronizer?fileMonitor@55.36:55.47CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaà7 à(B˜
+Sorg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalMetaData()?e@267.32:267.33VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaã  ã(!"
+typeParseException"
+isFinalfalse"%
+declarationStringParseException e*e2y
+(org.jabref.logic.importer.ParseExceptionTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaã ã(ä
+§org.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedMetaData(org.jabref.model.metadata.MetaData, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern)METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaì ì(*"
+isFinalfalse"é
+declarationString¯<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">synchronizeSharedMetaData</mark>(MetaData data<mark class="modifier"><mark class="modifier">,</mark></mark> GlobalCitationKeyPattern globalCiteKeyPattern)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*synchronizeSharedMetaData2í
+Aorg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaî î(#2ª
+jorg.jabref.logic.shared.DBMSProcessor.setSharedMetaData(java.util.Map<java.lang.String, java.lang.String>)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaò ò(+2˜
+•org.jabref.logic.exporter.MetaDataSerializer.getSerializedStringMap(org.jabref.model.metadata.MetaData, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaò? ò(U2ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaò ò(2˚
+©org.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedMetaData(org.jabref.model.metadata.MetaData, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern)!dataCALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaòV ò(Z2ã
+πorg.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedMetaData(org.jabref.model.metadata.MetaData, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern)!globalCiteKeyPatternCALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaò\ ò(p2å
+;org.jabref.logic.shared.DBMSSynchronizer?LOGGER@44.32:44.38CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaö ö(2Ü
+¥org.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedMetaData(org.jabref.model.metadata.MetaData, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern)?e@281.30:281.31CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaö( ö()2Ä
+©org.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedMetaData(org.jabref.model.metadata.MetaData, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern)!data	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaì4 ì(82ê
+πorg.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedMetaData(org.jabref.model.metadata.MetaData, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern)!globalCiteKeyPattern	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaìS ì(g2ç
+¥org.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedMetaData(org.jabref.model.metadata.MetaData, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern)?e@281.30:281.31DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaô ô(2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaì ì(√
+©org.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedMetaData(org.jabref.model.metadata.MetaData, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern)!data	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaì4 ì(8"
+typeMetaData"
+isFinalfalse""
+declarationStringMetaData data*data2s
+"org.jabref.model.metadata.MetaDataTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaì+ ì(3Æ
+πorg.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedMetaData(org.jabref.model.metadata.MetaData, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern)!globalCiteKeyPattern	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaìS ì(g" 
+typeGlobalCitationKeyPattern"
+isFinalfalse"B
+declarationString-GlobalCitationKeyPattern globalCiteKeyPattern*globalCiteKeyPattern2ç
+<org.jabref.logic.citationkeypattern.GlobalCitationKeyPatternTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaì: ì(R¬
+¥org.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedMetaData(org.jabref.model.metadata.MetaData, org.jabref.logic.citationkeypattern.GlobalCitationKeyPattern)?e@281.30:281.31VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaô ô("
+typeSQLException"
+isFinalfalse"#
+declarationStringSQLException e*e2f
+java.sql.SQLExceptionTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaô ô(ª
+8org.jabref.logic.shared.DBMSSynchronizer.applyMetaData()METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java° °("
+isFinalfalse"à
+declarationStrings<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">applyMetaData</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*applyMetaData2í
+Aorg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¢ ¢(#2É
+2org.jabref.model.database.BibDatabase.getEntries()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java•- •(72i
+java.util.List.isEmpty()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java®L ®(S2”
+Åorg.jabref.logic.exporter.BibDatabaseWriter.applySaveActions(org.jabref.model.entry.BibEntry, org.jabref.model.metadata.MetaData)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java®' ®(72£
+Rorg.jabref.logic.shared.DBMSProcessor.updateEntry(org.jabref.model.entry.BibEntry)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java©" ©(-2ö
+Iorg.jabref.logic.shared.exception.OfflineLockException.getLocalBibEntry()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¨S ¨(c2ú
+Jorg.jabref.logic.shared.exception.OfflineLockException.getSharedBibEntry()CALLH
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¨q ¨(Ç2Ö
+≥org.jabref.logic.shared.event.UpdateRefusedEvent.UpdateRefusedEvent(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¨" ¨(42ë
+@org.jabref.logic.shared.DBMSSynchronizer?bibDatabase@50.30:50.41CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java•! •(,2†
+Oorg.jabref.logic.shared.DBMSSynchronizer.applyMetaData()?bibEntry@293.22:293.30CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java®8 ®(@2é
+=org.jabref.logic.shared.DBMSSynchronizer?metaData@49.21:49.29CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java®B ®(J2ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java© ©(!2†
+Oorg.jabref.logic.shared.DBMSSynchronizer.applyMetaData()?bibEntry@293.22:293.30CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java©. ©(62é
+=org.jabref.logic.shared.DBMSSynchronizer?eventBus@51.27:51.35CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¨ ¨(2ò
+Gorg.jabref.logic.shared.DBMSSynchronizer?bibDatabaseContext@48.37:48.55CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¨5 ¨(G2°
+Porg.jabref.logic.shared.DBMSSynchronizer.applyMetaData()?exception@299.42:299.51CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¨I ¨(R2°
+Porg.jabref.logic.shared.DBMSSynchronizer.applyMetaData()?exception@299.42:299.51CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¨g ¨(p2å
+;org.jabref.logic.shared.DBMSSynchronizer?LOGGER@44.32:44.38CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÆ Æ(2ô
+Horg.jabref.logic.shared.DBMSSynchronizer.applyMetaData()?e@301.34:301.35CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÆ, Æ(-2ß
+Oorg.jabref.logic.shared.DBMSSynchronizer.applyMetaData()?bibEntry@293.22:293.30DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java• •(2®
+Porg.jabref.logic.shared.DBMSSynchronizer.applyMetaData()?exception@299.42:299.51DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java´* ´(32†
+Horg.jabref.logic.shared.DBMSSynchronizer.applyMetaData()?e@301.34:301.35DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≠" ≠(#2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java° °(¨
+Oorg.jabref.logic.shared.DBMSSynchronizer.applyMetaData()?bibEntry@293.22:293.30VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java• •("
+typeBibEntry"
+isFinalfalse"f
+declarationStringQ<mark class="modifier"> </mark>BibEntry <mark class="class-field">bibEntry</mark>*bibEntry2p
+org.jabref.model.entry.BibEntryTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java• •(ü
+Porg.jabref.logic.shared.DBMSSynchronizer.applyMetaData()?exception@299.42:299.51VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java´* ´(3"
+typeOfflineLockException"
+isFinalfalse"3
+declarationStringOfflineLockException exception*	exception2á
+6org.jabref.logic.shared.exception.OfflineLockExceptionTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java´ ´()’
+Horg.jabref.logic.shared.DBMSSynchronizer.applyMetaData()?e@301.34:301.35VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≠" ≠(#"
+typeSQLException"
+isFinalfalse"#
+declarationStringSQLException e*e2f
+java.sql.SQLExceptionTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≠ ≠(!Î	
+6org.jabref.logic.shared.DBMSSynchronizer.pullChanges()METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∑ ∑("
+isFinalfalse"µ
+declarationStringü<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">pullChanges</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*pullChanges2í
+Aorg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∏ ∏(#2ç
+<org.jabref.logic.shared.DBMSSynchronizer.pullWithLastEntry()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaº º(2î
+Corg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaΩ Ω( 2î
+Corg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalMetaData()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaæ æ( 2è
+:org.jabref.logic.shared.DatabaseSynchronizer.pullChanges()OVERRIDEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∑ ∑(2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∑ ∑(Õ
+
+?org.jabref.logic.shared.DBMSSynchronizer.pullLastEntryChanges()METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaƒ ƒ($"
+isFinalfalse"è
+declarationStringz<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">pullLastEntryChanges</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*pullLastEntryChanges2m
+java.util.Optional.isEmpty()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≈ ≈(%2í
+Aorg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java∆ ∆('2î
+Corg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalMetaData()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java… …($2ç
+<org.jabref.logic.shared.DBMSSynchronizer.pullWithLastEntry()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java   (2î
+Corg.jabref.logic.shared.DBMSSynchronizer.synchronizeLocalDatabase()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÃ Ã($2ñ
+Eorg.jabref.logic.shared.DBMSSynchronizer?lastEntryChanged@56.31:56.47CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java≈ ≈(2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaƒ ƒ(È
+<org.jabref.logic.shared.DBMSSynchronizer.pullWithLastEntry()METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java” ”(""
+isFinalfalse"ç
+declarationStringx<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">pullWithLastEntry</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*pullWithLastEntry2m
+java.util.Optional.isEmpty()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‘ ‘(%2±
+`org.jabref.logic.shared.DBMSSynchronizer.isPresentLocalBibEntry(org.jabref.model.entry.BibEntry)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‘+ ‘(A2i
+java.util.Optional.get()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‘S ‘(V2±
+`org.jabref.logic.shared.DBMSSynchronizer.synchronizeSharedEntry(org.jabref.model.entry.BibEntry)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java’ ’("2i
+java.util.Optional.get()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java’4 ’(72k
+java.util.Optional.empty()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java◊$ ◊()2ñ
+Eorg.jabref.logic.shared.DBMSSynchronizer?lastEntryChanged@56.31:56.47CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‘ ‘(2ñ
+Eorg.jabref.logic.shared.DBMSSynchronizer?lastEntryChanged@56.31:56.47CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‘B ‘(R2ñ
+Eorg.jabref.logic.shared.DBMSSynchronizer?lastEntryChanged@56.31:56.47CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java’# ’(32ñ
+Eorg.jabref.logic.shared.DBMSSynchronizer?lastEntryChanged@56.31:56.47CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java◊ ◊(2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java” ”(¯
+Aorg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‡ ‡()"
+isFinalfalse"î
+declarationString<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">checkCurrentConnection</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*checkCurrentConnection2q
+ java.sql.Connection.isValid(int)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‚0 ‚(72ƒ
+sorg.jabref.logic.shared.event.ConnectionLostEvent.ConnectionLostEvent(org.jabref.model.database.BibDatabaseContext)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÂ" Â(52ó
+Forg.jabref.logic.shared.DBMSSynchronizer?currentConnection@52.23:52.40CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‚ ‚(/2®
+Worg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()?isValid@354.20:354.27CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java„ „(2å
+;org.jabref.logic.shared.DBMSSynchronizer?LOGGER@44.32:44.38CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‰ ‰(2é
+=org.jabref.logic.shared.DBMSSynchronizer?eventBus@51.27:51.35CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÂ Â(2ò
+Gorg.jabref.logic.shared.DBMSSynchronizer?bibDatabaseContext@48.37:48.55CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÂ6 Â(H2®
+Worg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()?isValid@354.20:354.27CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÁ Á(2å
+;org.jabref.logic.shared.DBMSSynchronizer?LOGGER@44.32:44.38CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÈ È(2¢
+Qorg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()?e@360.30:360.31CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÈ> È(?2Ø
+Worg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()?isValid@354.20:354.27DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‚ ‚(2©
+Qorg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()?e@360.30:360.31DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaË Ë(2_
+booleanRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‡ ‡(‰
+Worg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()?isValid@354.20:354.27VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‚ ‚("
+typeboolean"
+isFinalfalse"¢
+declarationStringå<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">isValid</mark> = currentConnection.isValid(0)*isValid2X
+booleanTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‚ ‚(2q
+ java.sql.Connection.isValid(int)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‚0 ‚(72ó
+Forg.jabref.logic.shared.DBMSSynchronizer?currentConnection@52.23:52.40CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java‚ ‚(/ﬁ
+Qorg.jabref.logic.shared.DBMSSynchronizer.checkCurrentConnection()?e@360.30:360.31VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaË Ë("
+typeSQLException"
+isFinalfalse"#
+declarationStringSQLException e*e2f
+java.sql.SQLExceptionTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaË Ë(È
+iorg.jabref.logic.shared.DBMSSynchronizer.isEventSourceAccepted(org.jabref.model.entry.event.EntriesEvent)METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaı ı(("
+isFinalfalse"¶
+declarationStringê<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">isEventSourceAccepted</mark>(EntriesEvent event)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*isEventSourceAccepted2í
+Aorg.jabref.model.entry.event.EntriesEvent.getEntriesEventSource()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaˆ/ ˆ(D2¿
+oorg.jabref.logic.shared.DBMSSynchronizer.isEventSourceAccepted(org.jabref.model.entry.event.EntriesEvent)!eventCALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaˆ) ˆ(.2’
+Éorg.jabref.logic.shared.DBMSSynchronizer.isEventSourceAccepted(org.jabref.model.entry.event.EntriesEvent)?eventSource@374.27:374.38CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˜ ˜(2’
+Éorg.jabref.logic.shared.DBMSSynchronizer.isEventSourceAccepted(org.jabref.model.entry.event.EntriesEvent)?eventSource@374.27:374.38CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˜= ˜(H2≈
+oorg.jabref.logic.shared.DBMSSynchronizer.isEventSourceAccepted(org.jabref.model.entry.event.EntriesEvent)!event	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaı6 ı(;2‹
+Éorg.jabref.logic.shared.DBMSSynchronizer.isEventSourceAccepted(org.jabref.model.entry.event.EntriesEvent)?eventSource@374.27:374.38DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaˆ ˆ(&2_
+booleanRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaı ı(Ö
+Éorg.jabref.logic.shared.DBMSSynchronizer.isEventSourceAccepted(org.jabref.model.entry.event.EntriesEvent)?eventSource@374.27:374.38VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaˆ ˆ(&"
+typeEntriesEventSource"
+isFinalfalse"ì
+declarationString~<mark class="modifier"> </mark>EntriesEventSource <mark class="class-field">eventSource</mark> = event.getEntriesEventSource()*eventSource2Ä
+/org.jabref.model.entry.event.EntriesEventSourceTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaˆ ˆ(2í
+Aorg.jabref.model.entry.event.EntriesEvent.getEntriesEventSource()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaˆ/ ˆ(D2¿
+oorg.jabref.logic.shared.DBMSSynchronizer.isEventSourceAccepted(org.jabref.model.entry.event.EntriesEvent)!eventCALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaˆ) ˆ(.ô
+oorg.jabref.logic.shared.DBMSSynchronizer.isEventSourceAccepted(org.jabref.model.entry.event.EntriesEvent)!event	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaı6 ı(;"
+typeEntriesEvent"
+isFinalfalse"'
+declarationStringEntriesEvent event*event2z
+)org.jabref.model.entry.event.EntriesEventTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaı) ı(5‡
+gorg.jabref.logic.shared.DBMSSynchronizer.openSharedDatabase(org.jabref.logic.shared.DatabaseConnection)METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˚ ˚(""
+isFinalfalse"∫
+declarationString§<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">openSharedDatabase</mark>(DatabaseConnection connection)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>DatabaseNotSupportedException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*openSharedDatabase2ì
+Borg.jabref.logic.shared.DatabaseConnectionProperties.getDatabase()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¸1 ¸(<2ã
+:org.jabref.logic.shared.DatabaseConnection.getProperties()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¸! ¸(.2ã
+:org.jabref.logic.shared.DatabaseConnection.getConnection()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˝, ˝(92∑
+forg.jabref.logic.shared.DBMSProcessor.getProcessorInstance(org.jabref.logic.shared.DatabaseConnection)CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˛+ ˛(?2è
+>org.jabref.logic.shared.DBMSSynchronizer.initializeDatabases()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaˇ ˇ(2√
+rorg.jabref.logic.shared.DBMSSynchronizer.openSharedDatabase(org.jabref.logic.shared.DatabaseConnection)!connectionCALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¸ ¸( 2√
+rorg.jabref.logic.shared.DBMSSynchronizer.openSharedDatabase(org.jabref.logic.shared.DatabaseConnection)!connectionCALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˝! ˝(+2√
+rorg.jabref.logic.shared.DBMSSynchronizer.openSharedDatabase(org.jabref.logic.shared.DatabaseConnection)!connectionCALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˛@ ˛(J2å
+;org.jabref.logic.shared.DBMSSynchronizer?dbName@47.19:47.25CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¸ ¸(2ó
+Forg.jabref.logic.shared.DBMSSynchronizer?currentConnection@52.23:52.40CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˝ ˝(2ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˛ ˛(2¿
+korg.jabref.logic.shared.DatabaseSynchronizer.openSharedDatabase(org.jabref.logic.shared.DatabaseConnection)OVERRIDEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˚ ˚("2»
+rorg.jabref.logic.shared.DBMSSynchronizer.openSharedDatabase(org.jabref.logic.shared.DatabaseConnection)!connection	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˚6 ˚(@2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˚ ˚(≥
+rorg.jabref.logic.shared.DBMSSynchronizer.openSharedDatabase(org.jabref.logic.shared.DatabaseConnection)!connection	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˚6 ˚(@"
+typeDatabaseConnection"
+isFinalfalse"2
+declarationStringDatabaseConnection connection*
+connection2{
+*org.jabref.logic.shared.DatabaseConnectionTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java˚# ˚(5◊
+>org.jabref.logic.shared.DBMSSynchronizer.closeSharedDatabase()METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÉ É(#"
+isFinalfalse"Ω
+declarationStringß<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">closeSharedDatabase</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*closeSharedDatabase2ê
+?org.jabref.logic.shared.DBMSSynchronizer.pullLastEntryChanges()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÖ Ö(2ë
+@org.jabref.logic.shared.DBMSProcessor.stopNotificationListener()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaá á(22l
+java.sql.Connection.close()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaà à(#2ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaá á(2ó
+Forg.jabref.logic.shared.DBMSSynchronizer?currentConnection@52.23:52.40CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaà à(2å
+;org.jabref.logic.shared.DBMSSynchronizer?LOGGER@44.32:44.38CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaä ä(2ü
+Norg.jabref.logic.shared.DBMSSynchronizer.closeSharedDatabase()?e@393.30:393.31CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaä' ä((2ó
+Borg.jabref.logic.shared.DatabaseSynchronizer.closeSharedDatabase()OVERRIDEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÉ É(#2¶
+Norg.jabref.logic.shared.DBMSSynchronizer.closeSharedDatabase()?e@393.30:393.31DECLARATIONG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaâ â(2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaÉ É(€
+Norg.jabref.logic.shared.DBMSSynchronizer.closeSharedDatabase()?e@393.30:393.31VARIABLEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaâ â("
+typeSQLException"
+isFinalfalse"#
+declarationStringSQLException e*e2f
+java.sql.SQLExceptionTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaâ â(Õ	
+`org.jabref.logic.shared.DBMSSynchronizer.isPresentLocalBibEntry(org.jabref.model.entry.BibEntry)METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaé é(*"
+isFinalfalse"ß
+declarationStringë<mark class="modifier">private </mark><mark class="modifier">boolean</mark> <mark class="method">isPresentLocalBibEntry</mark>(BibEntry bibEntry)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeboolean*isPresentLocalBibEntry2É
+2org.jabref.model.database.BibDatabase.getEntries()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaè è(%2ë
+@org.jabref.logic.shared.DBMSSynchronizer?bibDatabase@50.30:50.41CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaè è(2∫
+iorg.jabref.logic.shared.DBMSSynchronizer.isPresentLocalBibEntry(org.jabref.model.entry.BibEntry)!bibEntryCALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaè1 è(92ø
+iorg.jabref.logic.shared.DBMSSynchronizer.isPresentLocalBibEntry(org.jabref.model.entry.BibEntry)!bibEntry	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaé4 é(<2_
+booleanRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaé é(á
+iorg.jabref.logic.shared.DBMSSynchronizer.isPresentLocalBibEntry(org.jabref.model.entry.BibEntry)!bibEntry	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaé4 é(<"
+typeBibEntry"
+isFinalfalse"&
+declarationStringBibEntry bibEntry*bibEntry2p
+org.jabref.model.entry.BibEntryTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaé+ é(3ë
+4org.jabref.logic.shared.DBMSSynchronizer.getDBName()METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaì ì("
+isFinalfalse"ó
+declarationStringÅ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>String <mark class="method">getDBName</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*	getDBName2å
+;org.jabref.logic.shared.DBMSSynchronizer?dbName@47.19:47.25CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaî î(2ç
+8org.jabref.logic.shared.DatabaseSynchronizer.getDBName()OVERRIDEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaì ì(2h
+java.lang.StringRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaì ì(ä
+9org.jabref.logic.shared.DBMSSynchronizer.getDBProcessor()METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaó ó('"
+isFinalfalse"t
+declarationString_<mark class="modifier">public </mark>DBMSProcessor <mark class="method">getDBProcessor</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeDBMSProcessor*getDBProcessor2ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaò ò(2}
+%org.jabref.logic.shared.DBMSProcessorRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaó ó(∏
+Borg.jabref.logic.shared.DBMSSynchronizer.getConnectionProperties()METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaú( ú(?"
+isFinalfalse"ª
+declarationString•<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>DatabaseConnectionProperties <mark class="method">getConnectionProperties</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"$
+typeDatabaseConnectionProperties*getConnectionProperties2î
+Corg.jabref.logic.shared.DBMSProcessor.getDBMSConnectionProperties()CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaù ù(82ì
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaù ù(2õ
+Forg.jabref.logic.shared.DatabaseSynchronizer.getConnectionProperties()OVERRIDEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaú( ú(?2å
+4org.jabref.logic.shared.DatabaseConnectionPropertiesRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.javaú ú('ã
+Xorg.jabref.logic.shared.DBMSSynchronizer.setMetaData(org.jabref.model.metadata.MetaData)METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java† †("
+isFinalfalse"ò
+declarationStringÇ<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">setMetaData</mark>(MetaData metaData)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*setMetaData2≤
+aorg.jabref.logic.shared.DBMSSynchronizer.setMetaData(org.jabref.model.metadata.MetaData)!metaDataCALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java° °( 2é
+=org.jabref.logic.shared.DBMSSynchronizer?metaData@49.21:49.29CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java° °(2∑
+aorg.jabref.logic.shared.DBMSSynchronizer.setMetaData(org.jabref.model.metadata.MetaData)!metaData	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java†% †(-2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java† †(Ç
+aorg.jabref.logic.shared.DBMSSynchronizer.setMetaData(org.jabref.model.metadata.MetaData)!metaData	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java†% †(-"
+typeMetaData"
+isFinalfalse"&
+declarationStringMetaData metaData*metaData2s
+"org.jabref.model.metadata.MetaDataTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java† †($¡	
+Korg.jabref.logic.shared.DBMSSynchronizer.registerListener(java.lang.Object)METHODG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java• •( "
+isFinalfalse"…
+declarationString≥<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">registerListener</mark>(Object listener)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*registerListener2é
+=org.jabref.logic.shared.DBMSSynchronizer?eventBus@51.27:51.35CALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¶ ¶(2•
+Torg.jabref.logic.shared.DBMSSynchronizer.registerListener(java.lang.Object)!listenerCALLG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java¶ ¶("2§
+Oorg.jabref.logic.shared.DatabaseSynchronizer.registerListener(java.lang.Object)OVERRIDEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java• •( 2™
+Torg.jabref.logic.shared.DBMSSynchronizer.registerListener(java.lang.Object)!listener	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java•( •(02\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java• •(ﬂ
+Torg.jabref.logic.shared.DBMSSynchronizer.registerListener(java.lang.Object)!listener	PARAMETERG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java•( •(0"
+typeObject"
+isFinalfalse"$
+declarationStringObject listener*listener2a
+java.lang.ObjectTYPEG
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java•! •('£
+;org.jabref.logic.shared.DBMSSynchronizer?LOGGER@44.32:44.38VALUEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java,  ,(&"
+isFinaltrue"
+typeLogger"Ê
+declarationString–<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(DBMSSynchronizer.class);"
+isStatictrue"
+accessprivate*LOGGER2_
+org.slf4j.LoggerTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java, ,(‚
+Borg.jabref.logic.shared.DBMSSynchronizer?dbmsProcessor@46.26:46.39VARIABLEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java. .('"
+isFinalfalse"
+typeDBMSProcessor"w
+declarationStringb<mark class="modifier">private </mark>DBMSProcessor <mark class="class-field">dbmsProcessor</mark>"
+isStaticfalse"
+accessprivate*dbmsProcessor2t
+%org.jabref.logic.shared.DBMSProcessorTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java. .(™
+;org.jabref.logic.shared.DBMSSynchronizer?dbName@47.19:47.25VARIABLEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java/ /("
+isFinalfalse"
+typeString"i
+declarationStringT<mark class="modifier">private </mark>String <mark class="class-field">dbName</mark>"
+isStaticfalse"
+accessprivate*dbName2_
+java.lang.StringTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java/ /(§
+Gorg.jabref.logic.shared.DBMSSynchronizer?bibDatabaseContext@48.37:48.55VALUEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java0% 0(7"
+isFinaltrue"
+typeBibDatabaseContext"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">bibDatabaseContext</mark>"
+isStaticfalse"
+accessprivate*bibDatabaseContext2{
+,org.jabref.model.database.BibDatabaseContextTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java0 0($∆
+=org.jabref.logic.shared.DBMSSynchronizer?metaData@49.21:49.29VARIABLEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java1 1("
+isFinalfalse"
+typeMetaData"m
+declarationStringX<mark class="modifier">private </mark>MetaData <mark class="class-field">metaData</mark>"
+isStaticfalse"
+accessprivate*metaData2q
+"org.jabref.model.metadata.MetaDataTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java1 1(˙
+@org.jabref.logic.shared.DBMSSynchronizer?bibDatabase@50.30:50.41VALUEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java2 2()"
+isFinaltrue"
+typeBibDatabase"ò
+declarationStringÇ<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabase <mark class="class-field">bibDatabase</mark>"
+isStaticfalse"
+accessprivate*bibDatabase2t
+%org.jabref.model.database.BibDatabaseTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java2 2(Ë
+=org.jabref.logic.shared.DBMSSynchronizer?eventBus@51.27:51.35VALUEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java3 3(#"
+isFinaltrue"
+typeEventBus"ë
+declarationString|<mark class="modifier">private </mark><mark class="modifier">final </mark>EventBus <mark class="class-field">eventBus</mark>"
+isStaticfalse"
+accessprivate*eventBus2r
+#com.google.common.eventbus.EventBusTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java3 3(÷
+Forg.jabref.logic.shared.DBMSSynchronizer?currentConnection@52.23:52.40VARIABLEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java4 4(("
+isFinalfalse"
+type
+Connection"x
+declarationStringc<mark class="modifier">private </mark>Connection <mark class="class-field">currentConnection</mark>"
+isStaticfalse"
+accessprivate*currentConnection2b
+java.sql.ConnectionTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java4 4(Û
+Eorg.jabref.logic.shared.DBMSSynchronizer?keywordSeparator@53.28:53.44VALUEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java5 5(,"
+isFinaltrue"
+type	Character"õ
+declarationStringÖ<mark class="modifier">private </mark><mark class="modifier">final </mark>Character <mark class="class-field">keywordSeparator</mark>"
+isStaticfalse"
+accessprivate*keywordSeparator2b
+java.lang.CharacterTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java5 5(«
+Iorg.jabref.logic.shared.DBMSSynchronizer?globalCiteKeyPattern@54.43:54.63VALUEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java6+ 6(?"
+isFinaltrue" 
+typeGlobalCitationKeyPattern"Æ
+declarationStringò<mark class="modifier">private </mark><mark class="modifier">final </mark>GlobalCitationKeyPattern <mark class="class-field">globalCiteKeyPattern</mark>"
+isStaticfalse"
+accessprivate*globalCiteKeyPattern2ã
+<org.jabref.logic.citationkeypattern.GlobalCitationKeyPatternTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java6 6(*à
+@org.jabref.logic.shared.DBMSSynchronizer?fileMonitor@55.36:55.47VALUEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java7$ 7(/"
+isFinaltrue"
+typeFileUpdateMonitor"û
+declarationStringà<mark class="modifier">private </mark><mark class="modifier">final </mark>FileUpdateMonitor <mark class="class-field">fileMonitor</mark>"
+isStaticfalse"
+accessprivate*fileMonitor2v
+'org.jabref.model.util.FileUpdateMonitorTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java7 7(#€
+Eorg.jabref.logic.shared.DBMSSynchronizer?lastEntryChanged@56.31:56.47VARIABLEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java8 8(/"
+isFinalfalse"
+typeOptional<BibEntry>"
+declarationStringj<mark class="modifier">private </mark>Optional<BibEntry> <mark class="class-field">lastEntryChanged</mark>"
+isStaticfalse"
+accessprivate*lastEntryChanged2a
+java.util.OptionalTYPEE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java8 8(2w
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTE
+;src\main\java\org\jabref\logic\shared\DBMSSynchronizer.java8 8(

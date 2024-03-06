@@ -1,0 +1,1976 @@
+
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˇ9
+(org.jabref.logic.crawler.StudyRepositoryCLASSE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java2 2("#
+packageorg.jabref.logic.crawler"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"m
+declarationStringX<mark class="modifier">public </mark><mark class="modifier">class </mark>StudyRepository"
+accesspublic*StudyRepository2»
+Òorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaR R(2º
+dorg.jabref.logic.crawler.StudyRepository.getFetcherResultEntries(java.lang.String, java.lang.String)DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaà à(52®
+Porg.jabref.logic.crawler.StudyRepository.getQueryResultEntries(java.lang.String)DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaî î(32ò
+@org.jabref.logic.crawler.StudyRepository.getStudyResultEntries()DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java† †(32ë
+9org.jabref.logic.crawler.StudyRepository.parseStudyFile()DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØ Ø( 2ò
+@org.jabref.logic.crawler.StudyRepository.getSearchQueryStrings()DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∏ ∏(-2ö
+Borg.jabref.logic.crawler.StudyRepository.getActiveLibraryEntries()DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≈ ≈(62ã
+3org.jabref.logic.crawler.StudyRepository.getStudy()DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÃ Ã(2º
+dorg.jabref.logic.crawler.StudyRepository.persist(java.util.List<org.jabref.model.study.QueryResult>)DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‹ ‹(2¢
+Jorg.jabref.logic.crawler.StudyRepository.updateRemoteSearchAndWorkBranch()DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˆ ˆ(02ú
+Dorg.jabref.logic.crawler.StudyRepository.updateWorkAndSearchBranch()DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaà à(*2∞
+Xorg.jabref.logic.crawler.StudyRepository.setUpRepositoryStructureForQueriesAndFetchers()DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaô ô(>2™
+Rorg.jabref.logic.crawler.StudyRepository.createQueryResultFolder(java.lang.String)DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆ Æ((2°
+Iorg.jabref.logic.crawler.StudyRepository.createFolder(java.nio.file.Path)DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≥ ≥(2Ÿ
+Äorg.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaπ π((2®
+Porg.jabref.logic.crawler.StudyRepository.createQueryResultFile(java.lang.String)DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaø ø(&2ò
+@org.jabref.logic.crawler.StudyRepository.createStudyResultFile()DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaƒ ƒ(&2¢
+Jorg.jabref.logic.crawler.StudyRepository.createBibFile(java.nio.file.Path)DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java» »(2£
+Korg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÊ Ê(#2§
+Lorg.jabref.logic.crawler.StudyRepository.computeIDForQuery(java.lang.String)DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˆ ˆ($2√
+korg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˇ ˇ(2Á
+éorg.jabref.logic.crawler.StudyRepository.generateCiteKeys(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabase)DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java• •(!2‘
+|org.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java´ ´("2ø
+gorg.jabref.logic.crawler.StudyRepository.getPathToFetcherResultFile(java.lang.String, java.lang.String)DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaø ø(+2´
+Sorg.jabref.logic.crawler.StudyRepository.getPathToQueryResultFile(java.lang.String)DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java√ √()2õ
+Corg.jabref.logic.crawler.StudyRepository.getPathToStudyResultFile()DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java« «()2™
+Rorg.jabref.logic.crawler.StudyRepository.getPathToQueryDirectory(java.lang.String)DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÀ À((2•
+Oorg.jabref.logic.crawler.StudyRepository?STUDY_DEFINITION_FILE_NAME@52.31:52.57DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java4 4(92ë
+;org.jabref.logic.crawler.StudyRepository?LOGGER@54.32:54.38DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java6  6(&2ñ
+@org.jabref.logic.crawler.StudyRepository?MATCH_COLON@56.33:56.44DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java8! 8(,2£
+Morg.jabref.logic.crawler.StudyRepository?MATCH_ILLEGAL_CHARACTERS@57.33:57.57DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java9! 9(92ë
+;org.jabref.logic.crawler.StudyRepository?REMOTE@60.32:60.38DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java<  <(&2ñ
+@org.jabref.logic.crawler.StudyRepository?WORK_BRANCH@61.32:61.43DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java=  =(+2ò
+Borg.jabref.logic.crawler.StudyRepository?SEARCH_BRANCH@62.32:62.45DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java>  >(-2ô
+Corg.jabref.logic.crawler.StudyRepository?repositoryPath@64.23:64.37DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java@ @(%2û
+Horg.jabref.logic.crawler.StudyRepository?studyDefinitionFile@65.23:65.42DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaA A(*2ï
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaB  B(*2ê
+:org.jabref.logic.crawler.StudyRepository?study@67.24:67.29DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaC C(2ù
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaD% D(72ú
+Forg.jabref.logic.crawler.StudyRepository?fileUpdateMonitor@69.36:69.53DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaE$ E(52ü
+Iorg.jabref.logic.crawler.StudyRepository?bibEntryTypesManager@70.39:70.59DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaF' F(;§}
+Òorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)CONSTRUCTORE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaR R("Õ
+declarationString∑<mark class="modifier">public </mark><mark class="method">StudyRepository</mark>(Path pathToRepository<mark class="modifier"><mark class="modifier">,</mark></mark> SlrGitHandler gitHandler<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferencesService<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileUpdateMonitor<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntryTypesManager bibEntryTypesManager)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException*StudyRepository2ã
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java[( [(*2l
+java.nio.file.Path.toString()CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java[: [(B2ù
+Njava.nio.file.Files.notExists(java.nio.file.Path, java.nio.file.LinkOption...)CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java^ ^(2•
+Vorg.jabref.logic.git.GitHandler.createCommitOnCurrentBranch(java.lang.String, boolean)CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javab b(22è
+@org.jabref.logic.git.GitHandler.checkoutBranch(java.lang.String)CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javac c(%2ì
+Dorg.jabref.logic.crawler.StudyRepository.updateWorkAndSearchBranch()CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javad d(%2ù
+Njava.nio.file.Files.notExists(java.nio.file.Path, java.nio.file.LinkOption...)CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javah h(2à
+9org.jabref.logic.crawler.StudyRepository.parseStudyFile()CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javak k(2ß
+Xorg.jabref.logic.crawler.StudyRepository.setUpRepositoryStructureForQueriesAndFetchers()CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javap p(92•
+Vorg.jabref.logic.git.GitHandler.createCommitOnCurrentBranch(java.lang.String, boolean)CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaq q(22è
+@org.jabref.logic.git.GitHandler.checkoutBranch(java.lang.String)CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javas s(%2ö
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javauC u(I2Ü
+5org.jabref.model.study.Study.equals(java.lang.Object)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javau† u(¶2ü
+Oorg.jabref.logic.crawler.StudyYamlParser.parseStudyYamlFile(java.nio.file.Path)CALLF
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaux u(ä2º
+morg.jabref.logic.crawler.StudyYamlParser.writeStudyYamlFile(org.jabref.model.study.Study, java.nio.file.Path)CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaw& w(82ß
+Xorg.jabref.logic.crawler.StudyRepository.setUpRepositoryStructureForQueriesAndFetchers()CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javay y(92•
+Vorg.jabref.logic.git.GitHandler.createCommitOnCurrentBranch(java.lang.String, boolean)CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaz z(22è
+@org.jabref.logic.git.GitHandler.checkoutBranch(java.lang.String)CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java (%2Ä
+1java.io.IOException.IOException(java.lang.String)CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java_ _(!2Ä
+1java.io.IOException.IOException(java.lang.String)CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javai i(!2â
+:org.jabref.logic.crawler.StudyYamlParser.StudyYamlParser()CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javauf u(u2â
+:org.jabref.logic.crawler.StudyYamlParser.StudyYamlParser()CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaw w(#2“
+Çorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!pathToRepositoryCALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaW W(.2Ã
+¸org.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!gitHandlerCALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaX X($2‘
+Ñorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!preferencesServiceCALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaY" Y(42”
+Éorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!fileUpdateMonitorCALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaZ! Z(22í
+Corg.jabref.logic.crawler.StudyRepository?repositoryPath@64.23:64.37CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java[+ [(92û
+Oorg.jabref.logic.crawler.StudyRepository?STUDY_DEFINITION_FILE_NAME@52.31:52.57CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java[F [(`2÷
+Üorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!bibEntryTypesManagerCALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java\$ \(82í
+Corg.jabref.logic.crawler.StudyRepository?repositoryPath@64.23:64.37CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java^ ^(*2Ã
+¸org.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!gitHandlerCALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javab b(2Ã
+¸org.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!gitHandlerCALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javac c(2è
+@org.jabref.logic.crawler.StudyRepository?WORK_BRANCH@61.32:61.43CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javac& c(12ä
+;org.jabref.logic.crawler.StudyRepository?LOGGER@54.32:54.38CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaf f(2ó
+Horg.jabref.logic.crawler.StudyRepository?studyDefinitionFile@65.23:65.42CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javah h(/2â
+:org.jabref.logic.crawler.StudyRepository?study@67.24:67.29CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javak k(2Ã
+¸org.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!gitHandlerCALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaq q(2
+†org.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)?updateRepositoryStructureMessage@109.25:109.57CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaq3 q(S2Ã
+¸org.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!gitHandlerCALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javas s(2ë
+Borg.jabref.logic.crawler.StudyRepository?SEARCH_BRANCH@62.32:62.45CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javas& s(32ó
+Horg.jabref.logic.crawler.StudyRepository?studyDefinitionFile@65.23:65.42CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javauJ u(]2ô
+Horg.jabref.logic.crawler.StudyRepository?studyDefinitionFile@65.23:65.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javauã u(û2ã
+:org.jabref.logic.crawler.StudyRepository?study@67.24:67.29CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javauß u(¨2Ù
+§org.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)?studyDefinitionDoesNotExistOrChanged@117.20:117.56CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javav v(42â
+:org.jabref.logic.crawler.StudyRepository?study@67.24:67.29CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaw9 w(>2ó
+Horg.jabref.logic.crawler.StudyRepository?studyDefinitionFile@65.23:65.42CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaw@ w(S2Ã
+¸org.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!gitHandlerCALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaz z(2
+†org.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)?updateRepositoryStructureMessage@109.25:109.57CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaz3 z(S2ä
+;org.jabref.logic.crawler.StudyRepository?LOGGER@54.32:54.38CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java| |(2Ã
+¸org.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!gitHandlerCALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java (2è
+@org.jabref.logic.crawler.StudyRepository?WORK_BRANCH@61.32:61.43CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java& (12å
+;org.jabref.logic.crawler.StudyRepository?LOGGER@54.32:54.38CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÅ Å(2í
+Corg.jabref.logic.crawler.StudyRepository?repositoryPath@64.23:64.37CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaW W(2é
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaX X(2ñ
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaY Y(2ï
+Forg.jabref.logic.crawler.StudyRepository?fileUpdateMonitor@69.36:69.53CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaZ Z(2ó
+Horg.jabref.logic.crawler.StudyRepository?studyDefinitionFile@65.23:65.42CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java[ [( 2ò
+Iorg.jabref.logic.crawler.StudyRepository?bibEntryTypesManager@70.39:70.59CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java\ \(!2◊
+Çorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!pathToRepository	PARAMETERE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaR  R(02—
+¸org.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!gitHandler	PARAMETERE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaS) S(32Ÿ
+Ñorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!preferencesService	PARAMETERE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaT. T(@2ÿ
+Éorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!fileUpdateMonitor	PARAMETERE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaU- U(>2€
+Üorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!bibEntryTypesManager	PARAMETERE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaV0 V(D2˜
+†org.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)?updateRepositoryStructureMessage@109.25:109.57DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javam m(92˚
+§org.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)?studyDefinitionDoesNotExistOrChanged@117.20:117.56DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javau u(82ÿ
+Åorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)?e@101.33:101.34DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javae! e("2ÿ
+Åorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)?e@123.33:123.34DECLARATIONE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java{! {("2⁄
+Åorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)?e@128.33:128.34DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÄ! Ä("2~
+(org.jabref.logic.crawler.StudyRepositoryRETURN_TYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaVM V(XŸ
+†org.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)?updateRepositoryStructureMessage@109.25:109.57VALUEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javam m(9"
+typeString"
+isFinaltrue"¡
+declarationString´<mark class="modifier"> </mark><mark class="modifier">final </mark>String <mark class="class-field">updateRepositoryStructureMessage</mark> = "Update repository structure"* updateRepositoryStructureMessage2_
+java.lang.StringTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javam m( 
+§org.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)?studyDefinitionDoesNotExistOrChanged@117.20:117.56VARIABLEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javau u(8"
+typeboolean"
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">studyDefinitionDoesNotExistOrChanged</mark> = !(Files.exists(studyDefinitionFile) && new StudyYamlParser().parseStudyYamlFile(studyDefinitionFile).equals(study))*$studyDefinitionDoesNotExistOrChanged2V
+booleanTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javau u(2ö
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javauC u(I2Ü
+5org.jabref.model.study.Study.equals(java.lang.Object)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javau† u(¶2ü
+Oorg.jabref.logic.crawler.StudyYamlParser.parseStudyYamlFile(java.nio.file.Path)CALLF
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaux u(ä2â
+:org.jabref.logic.crawler.StudyYamlParser.StudyYamlParser()CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javauf u(u2ó
+Horg.jabref.logic.crawler.StudyRepository?studyDefinitionFile@65.23:65.42CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javauJ u(]2ô
+Horg.jabref.logic.crawler.StudyRepository?studyDefinitionFile@65.23:65.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javauã u(û2ã
+:org.jabref.logic.crawler.StudyRepository?study@67.24:67.29CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javauß u(¨ò
+Çorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!pathToRepository	PARAMETERE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaR  R(0"
+typePath"
+isFinalfalse"*
+declarationStringPath pathToRepository*pathToRepository2a
+java.nio.file.PathTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaR R(®
+¸org.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!gitHandler	PARAMETERE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaS) S(3"
+typeSlrGitHandler"
+isFinalfalse"-
+declarationStringSlrGitHandler gitHandler*
+gitHandler2q
+"org.jabref.logic.git.SlrGitHandlerTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaS S((—
+Ñorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!preferencesService	PARAMETERE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaT. T(@"
+typePreferencesService"
+isFinalfalse":
+declarationString%PreferencesService preferencesService*preferencesService2x
+)org.jabref.preferences.PreferencesServiceTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaT T(- 
+Éorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!fileUpdateMonitor	PARAMETERE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaU- U(>"
+typeFileUpdateMonitor"
+isFinalfalse"8
+declarationString#FileUpdateMonitor fileUpdateMonitor*fileUpdateMonitor2v
+'org.jabref.model.util.FileUpdateMonitorTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaU U(,›
+Üorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)!bibEntryTypesManager	PARAMETERE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaV0 V(D"
+typeBibEntryTypesManager"
+isFinalfalse">
+declarationString)BibEntryTypesManager bibEntryTypesManager*bibEntryTypesManager2z
++org.jabref.model.entry.BibEntryTypesManagerTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaV V(/ß
+Åorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)?e@101.33:101.34VARIABLEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javae! e(""
+typeGitAPIException"
+isFinalfalse"&
+declarationStringGitAPIException e*e2z
++org.eclipse.jgit.api.errors.GitAPIExceptionTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javae e( ß
+Åorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)?e@123.33:123.34VARIABLEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java{! {(""
+typeGitAPIException"
+isFinalfalse"&
+declarationStringGitAPIException e*e2z
++org.eclipse.jgit.api.errors.GitAPIExceptionTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java{ {( ´
+Åorg.jabref.logic.crawler.StudyRepository.StudyRepository(java.nio.file.Path, org.jabref.logic.git.SlrGitHandler, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.entry.BibEntryTypesManager)?e@128.33:128.34VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÄ! Ä(""
+typeGitAPIException"
+isFinalfalse"&
+declarationStringGitAPIException e*e2|
++org.eclipse.jgit.api.errors.GitAPIExceptionTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÄ Ä( ˘
+dorg.jabref.logic.crawler.StudyRepository.getFetcherResultEntries(java.lang.String, java.lang.String)METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaà à(5"
+isFinalfalse"Æ
+declarationStringò<mark class="modifier">public </mark>BibDatabaseContext <mark class="method">getFetcherResultEntries</mark>(String query<mark class="modifier"><mark class="modifier">,</mark></mark> String fetcherName)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeBibDatabaseContext*getFetcherResultEntries2ú
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaâ â(2∏
+gorg.jabref.logic.crawler.StudyRepository.getPathToFetcherResultFile(java.lang.String, java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaâ â(32∏
+gorg.jabref.logic.crawler.StudyRepository.getPathToFetcherResultFile(java.lang.String, java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaä- ä(G2ó
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaã' ã(A2í
+Aorg.jabref.model.database.BibDatabaseContext.BibDatabaseContext()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaé é(%2ª
+jorg.jabref.logic.crawler.StudyRepository.getFetcherResultEntries(java.lang.String, java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaâ4 â(92¡
+porg.jabref.logic.crawler.StudyRepository.getFetcherResultEntries(java.lang.String, java.lang.String)!fetcherNameCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaâ; â(F2ª
+jorg.jabref.logic.crawler.StudyRepository.getFetcherResultEntries(java.lang.String, java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaäH ä(M2¡
+porg.jabref.logic.crawler.StudyRepository.getFetcherResultEntries(java.lang.String, java.lang.String)!fetcherNameCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaäO ä(Z2ò
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaã ã(&2ó
+Forg.jabref.logic.crawler.StudyRepository?fileUpdateMonitor@69.36:69.53CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaå å(%2¿
+jorg.jabref.logic.crawler.StudyRepository.getFetcherResultEntries(java.lang.String, java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaà= à(B2∆
+porg.jabref.logic.crawler.StudyRepository.getFetcherResultEntries(java.lang.String, java.lang.String)!fetcherName	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaàK à(V2Ñ
+,org.jabref.model.database.BibDatabaseContextRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaà à(Ô
+jorg.jabref.logic.crawler.StudyRepository.getFetcherResultEntries(java.lang.String, java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaà= à(B"
+typeString"
+isFinalfalse"!
+declarationStringString query*query2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaà6 à(<Å
+porg.jabref.logic.crawler.StudyRepository.getFetcherResultEntries(java.lang.String, java.lang.String)!fetcherName	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaàK à(V"
+typeString"
+isFinalfalse"'
+declarationStringString fetcherName*fetcherName2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaàD à(J‹
+Porg.jabref.logic.crawler.StudyRepository.getQueryResultEntries(java.lang.String)METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaî î(3"
+isFinalfalse"‹
+declarationString∆<mark class="modifier">public </mark>BibDatabaseContext <mark class="method">getQueryResultEntries</mark>(String query)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeBibDatabaseContext*getQueryResultEntries2ú
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaï ï(2§
+Sorg.jabref.logic.crawler.StudyRepository.getPathToQueryResultFile(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaï ï(12§
+Sorg.jabref.logic.crawler.StudyRepository.getPathToQueryResultFile(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javañ- ñ(E2ó
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaó' ó(A2í
+Aorg.jabref.model.database.BibDatabaseContext.BibDatabaseContext()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaö ö(%2ß
+Vorg.jabref.logic.crawler.StudyRepository.getQueryResultEntries(java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaï2 ï(72ß
+Vorg.jabref.logic.crawler.StudyRepository.getQueryResultEntries(java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javañF ñ(K2ò
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaó ó(&2ó
+Forg.jabref.logic.crawler.StudyRepository?fileUpdateMonitor@69.36:69.53CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaò ò(%2¨
+Vorg.jabref.logic.crawler.StudyRepository.getQueryResultEntries(java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaî; î(@2Ñ
+,org.jabref.model.database.BibDatabaseContextRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaî î(€
+Vorg.jabref.logic.crawler.StudyRepository.getQueryResultEntries(java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaî; î(@"
+typeString"
+isFinalfalse"!
+declarationStringString query*query2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaî4 î(:ù
+@org.jabref.logic.crawler.StudyRepository.getStudyResultEntries()METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java† †(3"
+isFinalfalse"–
+declarationString∫<mark class="modifier">public </mark>BibDatabaseContext <mark class="method">getStudyResultEntries</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeBibDatabaseContext*getStudyResultEntries2ú
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java° °(2î
+Corg.jabref.logic.crawler.StudyRepository.getPathToStudyResultFile()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java° °(12î
+Corg.jabref.logic.crawler.StudyRepository.getPathToStudyResultFile()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¢- ¢(E2ó
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java£' £(A2í
+Aorg.jabref.model.database.BibDatabaseContext.BibDatabaseContext()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¶ ¶(%2ò
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java£ £(&2ó
+Forg.jabref.logic.crawler.StudyRepository?fileUpdateMonitor@69.36:69.53CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java§ §(%2Ñ
+,org.jabref.model.database.BibDatabaseContextRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java† †(˚
+9org.jabref.logic.crawler.StudyRepository.parseStudyFile()METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØ Ø( "
+isFinalfalse"Ω
+declarationStringß<mark class="modifier">private </mark>Study <mark class="method">parseStudyFile</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeStudy*parseStudyFile2†
+Oorg.jabref.logic.crawler.StudyYamlParser.parseStudyYamlFile(java.nio.file.Path)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∞% ∞(72ã
+:org.jabref.logic.crawler.StudyYamlParser.StudyYamlParser()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∞ ∞("2ô
+Horg.jabref.logic.crawler.StudyRepository?studyDefinitionFile@65.23:65.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∞8 ∞(K2t
+org.jabref.model.study.StudyRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØ Ø(¶
+@org.jabref.logic.crawler.StudyRepository.getSearchQueryStrings()METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∏ ∏(-"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier">public </mark>List&lt;String&gt; <mark class="method">getSearchQueryStrings</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<String>*getSearchQueryStrings2ù
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaº º(2°
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaª ª(2v
+%java.util.Collection.parallelStream()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∫ ∫(#2z
+)org.jabref.model.study.Study.getQueries()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaπ π(2u
+$java.util.stream.Collectors.toList()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaº( º(.2ã
+:org.jabref.logic.crawler.StudyRepository?study@67.24:67.29CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaπ π(2}
+,org.jabref.model.study.StudyQuery.getQuery()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaª ª(-2f
+java.util.ListRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∏ ∏(2q
+java.lang.StringRETURN_TYPE_ARGUMENTG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∏ ∏(™
+Borg.jabref.logic.crawler.StudyRepository.getActiveLibraryEntries()METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≈ ≈(6"
+isFinalfalse"Ê
+declarationString–<mark class="modifier">public </mark>List&lt;StudyDatabase&gt; <mark class="method">getActiveLibraryEntries</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IllegalArgumentException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<StudyDatabase>*getActiveLibraryEntries2ù
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java… …(2ò
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java» »(2v
+%java.util.Collection.parallelStream()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java« «(#2|
++org.jabref.model.study.Study.getDatabases()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∆ ∆(!2u
+$java.util.stream.Collectors.toList()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java…( …(.2ã
+:org.jabref.logic.crawler.StudyRepository?study@67.24:67.29CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∆ ∆(2Å
+0org.jabref.model.study.StudyDatabase.isEnabled()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java» »(42f
+java.util.ListRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≈ ≈(2Ö
+$org.jabref.model.study.StudyDatabaseRETURN_TYPE_ARGUMENTG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≈ ≈(◊
+3org.jabref.logic.crawler.StudyRepository.getStudy()METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÃ Ã("
+isFinalfalse"f
+declarationStringQ<mark class="modifier">public </mark>Study <mark class="method">getStudy</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeStudy*getStudy2ã
+:org.jabref.logic.crawler.StudyRepository?study@67.24:67.29CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÕ Õ(2t
+org.jabref.model.study.StudyRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÃ Ã(õ)
+dorg.jabref.logic.crawler.StudyRepository.persist(java.util.List<org.jabref.model.study.QueryResult>)METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‹ ‹("
+isFinalfalse"é
+declarationString¯<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">persist</mark>(List&lt;QueryResult&gt; crawlResults)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException<mark class="modifier"><mark class="modifier">,</mark></mark> GitAPIException<mark class="modifier"><mark class="modifier">,</mark></mark> SaveException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*persist2ï
+Dorg.jabref.logic.crawler.StudyRepository.updateWorkAndSearchBranch()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java› ›(!2ë
+@org.jabref.logic.git.GitHandler.checkoutBranch(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaﬂ ﬂ(!2º
+korg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‡ ‡(2ï
+Djava.time.LocalDateTime.truncatedTo(java.time.temporal.TemporalUnit)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java„N „(Y2n
+java.time.LocalDateTime.now()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java„H „(K2ß
+Vorg.jabref.logic.git.GitHandler.createCommitOnCurrentBranch(java.lang.String, boolean)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‰2 ‰(M2ë
+@org.jabref.logic.git.GitHandler.checkoutBranch(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÂ Â(%2¬
+qorg.jabref.logic.git.SlrGitHandler.appendLatestSearchResultsOntoCurrentBranch(java.lang.String, java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÍ Í(A2õ
+Jorg.jabref.logic.crawler.StudyRepository.updateRemoteSearchAndWorkBranch()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÏ Ï(+2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaﬂ ﬂ(2ì
+Borg.jabref.logic.crawler.StudyRepository?SEARCH_BRANCH@62.32:62.45CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaﬂ" ﬂ(/2¬
+qorg.jabref.logic.crawler.StudyRepository.persist(java.util.List<org.jabref.model.study.QueryResult>)!crawlResultsCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‡ ‡(#2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‰' ‰(12“
+Äorg.jabref.logic.crawler.StudyRepository.persist(java.util.List<org.jabref.model.study.QueryResult>)?commitMessage@227.19:227.32CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‰N ‰([2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÂ Â(2ë
+@org.jabref.logic.crawler.StudyRepository?WORK_BRANCH@61.32:61.43CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÂ& Â(12’
+Éorg.jabref.logic.crawler.StudyRepository.persist(java.util.List<org.jabref.model.study.QueryResult>)?newSearchResults@228.20:228.36CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÊ Ê(!2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÍ Í(2“
+Äorg.jabref.logic.crawler.StudyRepository.persist(java.util.List<org.jabref.model.study.QueryResult>)?commitMessage@227.19:227.32CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÍB Í(O2ì
+Borg.jabref.logic.crawler.StudyRepository?SEARCH_BRANCH@62.32:62.45CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÍ^ Í(k2å
+;org.jabref.logic.crawler.StudyRepository?LOGGER@54.32:54.38CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÓ Ó(2≈
+torg.jabref.logic.crawler.StudyRepository.persist(java.util.List<org.jabref.model.study.QueryResult>)?e@237.33:237.34CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÓ> Ó(?2«
+qorg.jabref.logic.crawler.StudyRepository.persist(java.util.List<org.jabref.model.study.QueryResult>)!crawlResults	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‹* ‹(62Ÿ
+Äorg.jabref.logic.crawler.StudyRepository.persist(java.util.List<org.jabref.model.study.QueryResult>)?commitMessage@227.19:227.32DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java„ „( 2‹
+Éorg.jabref.logic.crawler.StudyRepository.persist(java.util.List<org.jabref.model.study.QueryResult>)?newSearchResults@228.20:228.36DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‰ ‰($2Ã
+torg.jabref.logic.crawler.StudyRepository.persist(java.util.List<org.jabref.model.study.QueryResult>)?e@237.33:237.34DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÌ! Ì("2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‹ ‹(¨
+Äorg.jabref.logic.crawler.StudyRepository.persist(java.util.List<org.jabref.model.study.QueryResult>)?commitMessage@227.19:227.32VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java„ „( "
+typeString"
+isFinalfalse"∑
+declarationString°<mark class="modifier"> </mark>String <mark class="class-field">commitMessage</mark> = "Conducted search: " + LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS)*commitMessage2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java„ „(2ï
+Djava.time.LocalDateTime.truncatedTo(java.time.temporal.TemporalUnit)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java„N „(Y2n
+java.time.LocalDateTime.now()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java„H „(KÊ
+Éorg.jabref.logic.crawler.StudyRepository.persist(java.util.List<org.jabref.model.study.QueryResult>)?newSearchResults@228.20:228.36VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‰ ‰($"
+typeboolean"
+isFinalfalse"È
+declarationString”<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">newSearchResults</mark> = gitHandler.createCommitOnCurrentBranch(commitMessage, <mark class="modifier">false</mark>)*newSearchResults2X
+booleanTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‰ ‰(2ß
+Vorg.jabref.logic.git.GitHandler.createCommitOnCurrentBranch(java.lang.String, boolean)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‰2 ‰(M2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‰' ‰(12“
+Äorg.jabref.logic.crawler.StudyRepository.persist(java.util.List<org.jabref.model.study.QueryResult>)?commitMessage@227.19:227.32CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‰N ‰([ñ
+qorg.jabref.logic.crawler.StudyRepository.persist(java.util.List<org.jabref.model.study.QueryResult>)!crawlResults	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‹* ‹(6"
+typeList<QueryResult>"
+isFinalfalse"3
+declarationStringList<QueryResult> crawlResults*crawlResults2_
+java.util.ListTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‹ ‹(2|
+"org.jabref.model.study.QueryResultTYPE_ARGUMENTG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java‹ ‹((ù
+torg.jabref.logic.crawler.StudyRepository.persist(java.util.List<org.jabref.model.study.QueryResult>)?e@237.33:237.34VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÌ! Ì(""
+typeGitAPIException"
+isFinalfalse"&
+declarationStringGitAPIException e*e2|
++org.eclipse.jgit.api.errors.GitAPIExceptionTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÌ Ì( Ω
+Jorg.jabref.logic.crawler.StudyRepository.updateRemoteSearchAndWorkBranch()METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˆ ˆ(0"
+isFinalfalse"∏
+declarationString¢<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">updateRemoteSearchAndWorkBranch</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException<mark class="modifier"><mark class="modifier">,</mark></mark> GitAPIException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*updateRemoteSearchAndWorkBranch2è
+>org.jabref.logic.git.GitHandler.getCurrentlyCheckedOutBranch()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˜* ˜(F2ë
+@org.jabref.logic.git.GitHandler.checkoutBranch(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˙ ˙(!2ê
+?org.jabref.logic.git.GitHandler.pushCommitsToRemoteRepository()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˚ ˚(02ë
+@org.jabref.logic.git.GitHandler.checkoutBranch(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˛ ˛(!2ê
+?org.jabref.logic.git.GitHandler.pushCommitsToRemoteRepository()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˇ ˇ(02ë
+@org.jabref.logic.git.GitHandler.checkoutBranch(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÅ Å(!2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˜ ˜()2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˙ ˙(2ì
+Borg.jabref.logic.crawler.StudyRepository?SEARCH_BRANCH@62.32:62.45CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˙" ˙(/2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˚ ˚(2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˛ ˛(2ë
+@org.jabref.logic.crawler.StudyRepository?WORK_BRANCH@61.32:61.43CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˛" ˛(-2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˇ ˇ(2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÅ Å(2∑
+forg.jabref.logic.crawler.StudyRepository.updateRemoteSearchAndWorkBranch()?currentBranch@247.15:247.28CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÅ" Å(/2æ
+forg.jabref.logic.crawler.StudyRepository.updateRemoteSearchAndWorkBranch()?currentBranch@247.15:247.28DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˜ ˜(2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˆ ˆ(ç
+forg.jabref.logic.crawler.StudyRepository.updateRemoteSearchAndWorkBranch()?currentBranch@247.15:247.28VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˜ ˜("
+typeString"
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier"> </mark>String <mark class="class-field">currentBranch</mark> = gitHandler.getCurrentlyCheckedOutBranch()*currentBranch2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˜ ˜(2è
+>org.jabref.logic.git.GitHandler.getCurrentlyCheckedOutBranch()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˜* ˜(F2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˜ ˜()ã
+Dorg.jabref.logic.crawler.StudyRepository.updateWorkAndSearchBranch()METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaà à(*"
+isFinalfalse"≤
+declarationStringú<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">updateWorkAndSearchBranch</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException<mark class="modifier"><mark class="modifier">,</mark></mark> GitAPIException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*updateWorkAndSearchBranch2è
+>org.jabref.logic.git.GitHandler.getCurrentlyCheckedOutBranch()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaâ* â(F2ë
+@org.jabref.logic.git.GitHandler.checkoutBranch(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaå å(!2Ü
+5org.jabref.logic.git.GitHandler.pullOnCurrentBranch()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaç ç(&2ë
+@org.jabref.logic.git.GitHandler.checkoutBranch(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaê ê(!2Ü
+5org.jabref.logic.git.GitHandler.pullOnCurrentBranch()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaë ë(&2ë
+@org.jabref.logic.git.GitHandler.checkoutBranch(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaì ì(!2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaâ â()2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaå å(2ì
+Borg.jabref.logic.crawler.StudyRepository?SEARCH_BRANCH@62.32:62.45CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaå" å(/2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaç ç(2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaê ê(2ë
+@org.jabref.logic.crawler.StudyRepository?WORK_BRANCH@61.32:61.43CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaê" ê(-2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaë ë(2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaì ì(2±
+`org.jabref.logic.crawler.StudyRepository.updateWorkAndSearchBranch()?currentBranch@265.15:265.28CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaì" ì(/2∏
+`org.jabref.logic.crawler.StudyRepository.updateWorkAndSearchBranch()?currentBranch@265.15:265.28DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaâ â(2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaà à(á
+`org.jabref.logic.crawler.StudyRepository.updateWorkAndSearchBranch()?currentBranch@265.15:265.28VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaâ â("
+typeString"
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier"> </mark>String <mark class="class-field">currentBranch</mark> = gitHandler.getCurrentlyCheckedOutBranch()*currentBranch2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaâ â(2è
+>org.jabref.logic.git.GitHandler.getCurrentlyCheckedOutBranch()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaâ* â(F2ê
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaâ â()æ 
+Xorg.jabref.logic.crawler.StudyRepository.setUpRepositoryStructureForQueriesAndFetchers()METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaô ô(>"
+isFinalfalse"˘
+declarationString„<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">setUpRepositoryStructureForQueriesAndFetchers</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*-setUpRepositoryStructureForQueriesAndFetchers2ì
+Borg.jabref.logic.crawler.StudyRepository.getActiveLibraryEntries()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaú ú(,2ó
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaù# ù(=2ì
+Borg.jabref.preferences.PreferencesService.getImporterPreferences()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaû# û(92ë
+@org.jabref.logic.crawler.StudyRepository.getSearchQueryStrings()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaü! ü(62£
+Rorg.jabref.logic.crawler.StudyRepository.createQueryResultFolder(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java† †(#2ì
+Bjava.lang.Iterable.forEach(java.util.function.Consumer<? super T>)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¢ ¢(2ú
+Korg.jabref.logic.crawler.StudyCatalogToFetcherConverter.getActiveFetchers()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java° °('2“
+Äorg.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¢4 ¢(K2°
+Porg.jabref.logic.crawler.StudyRepository.createQueryResultFile(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java£ £(!2ë
+@org.jabref.logic.crawler.StudyRepository.createStudyResultFile()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java• •(2ò
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaù ù("2ò
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaû û("2Ω
+lorg.jabref.logic.crawler.StudyRepository.setUpRepositoryStructureForQueriesAndFetchers()?query@287.20:287.25CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java†$ †()2¡
+porg.jabref.logic.crawler.StudyRepository.setUpRepositoryStructureForQueriesAndFetchers()?converter@283.39:283.48CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java° °(2Ω
+lorg.jabref.logic.crawler.StudyRepository.setUpRepositoryStructureForQueriesAndFetchers()?query@287.20:287.25CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¢L ¢(Q2 
+yorg.jabref.logic.crawler.StudyRepository.setUpRepositoryStructureForQueriesAndFetchers()?searchBasedFetcher@290.30:290.48CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¢S ¢(e2Ω
+lorg.jabref.logic.crawler.StudyRepository.setUpRepositoryStructureForQueriesAndFetchers()?query@287.20:287.25CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java£" £('2»
+porg.jabref.logic.crawler.StudyRepository.setUpRepositoryStructureForQueriesAndFetchers()?converter@283.39:283.48DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaõ' õ(02ƒ
+lorg.jabref.logic.crawler.StudyRepository.setUpRepositoryStructureForQueriesAndFetchers()?query@287.20:287.25DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaü ü(2—
+yorg.jabref.logic.crawler.StudyRepository.setUpRepositoryStructureForQueriesAndFetchers()?searchBasedFetcher@290.30:290.48DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¢ ¢(02\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaô ô(è
+porg.jabref.logic.crawler.StudyRepository.setUpRepositoryStructureForQueriesAndFetchers()?converter@283.39:283.48VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaõ' õ(0"&
+typeStudyCatalogToFetcherConverter"
+isFinalfalse"˚
+declarationStringÂ<mark class="modifier"> </mark>StudyCatalogToFetcherConverter <mark class="class-field">converter</mark> = new StudyCatalogToFetcherConverter(<mark class="modifier">this</mark>.getActiveLibraryEntries()<mark class="modifier">,</mark> preferencesService.getImportFormatPreferences()<mark class="modifier">,</mark> preferencesService.getImporterPreferences())*	converter2à
+7org.jabref.logic.crawler.StudyCatalogToFetcherConverterTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaõ õ(&2ì
+Borg.jabref.logic.crawler.StudyRepository.getActiveLibraryEntries()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaú ú(,2ó
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaù# ù(=2ì
+Borg.jabref.preferences.PreferencesService.getImporterPreferences()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaû# û(92ò
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaù ù("2ò
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaû û("∞
+lorg.jabref.logic.crawler.StudyRepository.setUpRepositoryStructureForQueriesAndFetchers()?query@287.20:287.25VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaü ü("
+typeString"
+isFinalfalse"a
+declarationStringL<mark class="modifier"> </mark>String <mark class="class-field">query</mark>*query2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaü ü(Æ
+yorg.jabref.logic.crawler.StudyRepository.setUpRepositoryStructureForQueriesAndFetchers()?searchBasedFetcher@290.30:290.48VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¢ ¢(0"
+type"
+isFinalfalse"(
+declarationString searchBasedFetcher*searchBasedFetcher2TYPEú
+Rorg.jabref.logic.crawler.StudyRepository.createQueryResultFolder(java.lang.String)METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆ Æ(("
+isFinalfalse"Ô
+declarationStringŸ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">createQueryResultFolder</mark>(String query)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*createQueryResultFolder2£
+Rorg.jabref.logic.crawler.StudyRepository.getPathToQueryDirectory(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØ! Ø(82ö
+Iorg.jabref.logic.crawler.StudyRepository.createFolder(java.nio.file.Path)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∞ ∞(2©
+Xorg.jabref.logic.crawler.StudyRepository.createQueryResultFolder(java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØ9 Ø(>2√
+rorg.jabref.logic.crawler.StudyRepository.createQueryResultFolder(java.lang.String)?queryResultFolder@303.13:303.30CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∞ ∞(&2Æ
+Xorg.jabref.logic.crawler.StudyRepository.createQueryResultFolder(java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆ0 Æ(52 
+rorg.jabref.logic.crawler.StudyRepository.createQueryResultFolder(java.lang.String)?queryResultFolder@303.13:303.30DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØ Ø(2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆ Æ(¿
+rorg.jabref.logic.crawler.StudyRepository.createQueryResultFolder(java.lang.String)?queryResultFolder@303.13:303.30VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØ Ø("
+typePath"
+isFinalfalse"å
+declarationStringw<mark class="modifier"> </mark>Path <mark class="class-field">queryResultFolder</mark> = getPathToQueryDirectory(query)*queryResultFolder2c
+java.nio.file.PathTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØ Ø(2£
+Rorg.jabref.logic.crawler.StudyRepository.getPathToQueryDirectory(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØ! Ø(82©
+Xorg.jabref.logic.crawler.StudyRepository.createQueryResultFolder(java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØ9 Ø(>›
+Xorg.jabref.logic.crawler.StudyRepository.createQueryResultFolder(java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆ0 Æ(5"
+typeString"
+isFinalfalse"!
+declarationStringString query*query2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆ) Æ(/≠
+Iorg.jabref.logic.crawler.StudyRepository.createFolder(java.nio.file.Path)METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≥ ≥("
+isFinalfalse"„
+declarationStringÕ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">createFolder</mark>(Path folder)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*createFolder2ü
+Njava.nio.file.Files.notExists(java.nio.file.Path, java.nio.file.LinkOption...)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¥ ¥(2Œ
+}java.nio.file.Files.createDirectory(java.nio.file.Path, java.nio.file.attribute.FileAttribute<? extends java.lang.Object>...)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaµ µ(!2°
+Porg.jabref.logic.crawler.StudyRepository.createFolder(java.nio.file.Path)!folderCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¥ ¥("2°
+Porg.jabref.logic.crawler.StudyRepository.createFolder(java.nio.file.Path)!folderCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaµ" µ((2¶
+Porg.jabref.logic.crawler.StudyRepository.createFolder(java.nio.file.Path)!folder	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≥# ≥()2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≥ ≥(’
+Porg.jabref.logic.crawler.StudyRepository.createFolder(java.nio.file.Path)!folder	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≥# ≥()"
+typePath"
+isFinalfalse" 
+declarationStringPath folder*folder2c
+java.nio.file.PathTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≥ ≥("Ï
+Äorg.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaπ π(("
+isFinalfalse"É
+declarationStringÌ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">createFetcherResultFile</mark>(String query<mark class="modifier"><mark class="modifier">,</mark></mark> SearchBasedFetcher searchBasedFetcher)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*createFetcherResultFile2
+.org.jabref.logic.importer.WebFetcher.getName()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∫0 ∫(72∏
+gorg.jabref.logic.crawler.StudyRepository.getPathToFetcherResultFile(java.lang.String, java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaª! ª(;2õ
+Jorg.jabref.logic.crawler.StudyRepository.createBibFile(java.nio.file.Path)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaº º(2Â
+ìorg.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)!searchBasedFetcherCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∫ ∫(/2ÿ
+Üorg.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaª< ª(A2Ï
+öorg.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)?fetcherName@314.15:314.26CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaªC ª(N2Ú
+†org.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)?fetcherResultFile@315.13:315.30CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaº º('2›
+Üorg.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaπ0 π(52Í
+ìorg.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)!searchBasedFetcher	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaπJ π(\2Û
+öorg.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)?fetcherName@314.15:314.26DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∫ ∫(2˘
+†org.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)?fetcherResultFile@315.13:315.30DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaª ª(2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaπ π(Ù
+öorg.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)?fetcherName@314.15:314.26VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∫ ∫("
+typeString"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>String <mark class="class-field">fetcherName</mark> = searchBasedFetcher.getName()*fetcherName2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∫ ∫(2
+.org.jabref.logic.importer.WebFetcher.getName()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∫0 ∫(72Â
+ìorg.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)!searchBasedFetcherCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∫ ∫(/≥	
+†org.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)?fetcherResultFile@315.13:315.30VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaª ª("
+typePath"
+isFinalfalse"ù
+declarationStringá<mark class="modifier"> </mark>Path <mark class="class-field">fetcherResultFile</mark> = getPathToFetcherResultFile(query, fetcherName)*fetcherResultFile2c
+java.nio.file.PathTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaª ª(2∏
+gorg.jabref.logic.crawler.StudyRepository.getPathToFetcherResultFile(java.lang.String, java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaª! ª(;2ÿ
+Üorg.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaª< ª(A2Ï
+öorg.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)?fetcherName@314.15:314.26CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaªC ª(Nå
+Üorg.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaπ0 π(5"
+typeString"
+isFinalfalse"!
+declarationStringString query*query2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaπ) π(/Á
+ìorg.jabref.logic.crawler.StudyRepository.createFetcherResultFile(java.lang.String, org.jabref.logic.importer.SearchBasedFetcher)!searchBasedFetcher	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaπJ π(\"
+typeSearchBasedFetcher"
+isFinalfalse":
+declarationString%SearchBasedFetcher searchBasedFetcher*searchBasedFetcher2}
+,org.jabref.logic.importer.SearchBasedFetcherTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaπ7 π(I—
+Porg.jabref.logic.crawler.StudyRepository.createQueryResultFile(java.lang.String)METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaø ø(&"
+isFinalfalse"û
+declarationStringà<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">createQueryResultFile</mark>(String query)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*createQueryResultFile2∏
+gorg.jabref.logic.crawler.StudyRepository.getPathToFetcherResultFile(java.lang.String, java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¿ ¿(92õ
+Jorg.jabref.logic.crawler.StudyRepository.createBibFile(java.nio.file.Path)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¡ ¡(2ß
+Vorg.jabref.logic.crawler.StudyRepository.createQueryResultFile(java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¿: ¿(?2ø
+norg.jabref.logic.crawler.StudyRepository.createQueryResultFile(java.lang.String)?queryResultFile@320.13:320.28CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¡ ¡(%2¨
+Vorg.jabref.logic.crawler.StudyRepository.createQueryResultFile(java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaø. ø(32∆
+norg.jabref.logic.crawler.StudyRepository.createQueryResultFile(java.lang.String)?queryResultFile@320.13:320.28DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¿ ¿(2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaø ø(Ÿ
+norg.jabref.logic.crawler.StudyRepository.createQueryResultFile(java.lang.String)?queryResultFile@320.13:320.28VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¿ ¿("
+typePath"
+isFinalfalse"ò
+declarationStringÇ<mark class="modifier"> </mark>Path <mark class="class-field">queryResultFile</mark> = getPathToFetcherResultFile(query, "result")*queryResultFile2c
+java.nio.file.PathTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¿ ¿(2∏
+gorg.jabref.logic.crawler.StudyRepository.getPathToFetcherResultFile(java.lang.String, java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¿ ¿(92ß
+Vorg.jabref.logic.crawler.StudyRepository.createQueryResultFile(java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¿: ¿(?€
+Vorg.jabref.logic.crawler.StudyRepository.createQueryResultFile(java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaø. ø(3"
+typeString"
+isFinalfalse"!
+declarationStringString query*query2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaø' ø(-¨
+@org.jabref.logic.crawler.StudyRepository.createStudyResultFile()METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaƒ ƒ(&"
+isFinalfalse"ë
+declarationString|<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">createStudyResultFile</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*createStudyResultFile2õ
+Jorg.jabref.logic.crawler.StudyRepository.createBibFile(java.nio.file.Path)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≈ ≈(2î
+Corg.jabref.logic.crawler.StudyRepository.getPathToStudyResultFile()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≈ ≈(.2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaƒ ƒ(È
+Jorg.jabref.logic.crawler.StudyRepository.createBibFile(java.nio.file.Path)METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java» »("
+isFinalfalse"í
+declarationString}<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">createBibFile</mark>(Path file)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*createBibFile2ü
+Njava.nio.file.Files.notExists(java.nio.file.Path, java.nio.file.LinkOption...)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java… …(2…
+xjava.nio.file.Files.createFile(java.nio.file.Path, java.nio.file.attribute.FileAttribute<? extends java.lang.Object>...)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÀ À( 2≠
+\java.lang.IllegalStateException.IllegalStateException(java.lang.String, java.lang.Throwable)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÕ Õ(/2†
+Oorg.jabref.logic.crawler.StudyRepository.createBibFile(java.nio.file.Path)!fileCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java… …( 2†
+Oorg.jabref.logic.crawler.StudyRepository.createBibFile(java.nio.file.Path)!fileCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÀ! À(%2´
+Zorg.jabref.logic.crawler.StudyRepository.createBibFile(java.nio.file.Path)?e@332.33:332.34CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÕb Õ(c2•
+Oorg.jabref.logic.crawler.StudyRepository.createBibFile(java.nio.file.Path)!file	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java»$ »((2≤
+Zorg.jabref.logic.crawler.StudyRepository.createBibFile(java.nio.file.Path)?e@332.33:332.34DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÃ! Ã("2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java» »(–
+Oorg.jabref.logic.crawler.StudyRepository.createBibFile(java.nio.file.Path)!file	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java»$ »(("
+typePath"
+isFinalfalse"
+declarationString	Path file*file2c
+java.nio.file.PathTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java» »(#„
+Zorg.jabref.logic.crawler.StudyRepository.createBibFile(java.nio.file.Path)?e@332.33:332.34VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÃ! Ã(""
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2d
+java.io.IOExceptionTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÃ Ã( ˇ'
+Korg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÊ Ê(#"
+isFinalfalse"|
+declarationStringg<mark class="modifier">private </mark>String <mark class="method">trimNameAndAddID</mark>(String query)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*trimNameAndAddID2Ö
+4java.util.regex.Matcher.replaceAll(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaË9 Ë(C2à
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaË* Ë(12Ö
+4java.util.regex.Matcher.replaceAll(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÈF È(P2à
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÈ0 È(72ù
+Lorg.jabref.logic.crawler.StudyRepository.computeIDForQuery(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÍ Í(%2j
+java.lang.String.length()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÏG Ï(M2n
+java.nio.file.Path.toString()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÏ< Ï(D2j
+java.lang.String.length()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÏU Ï([2j
+java.lang.String.length()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÌ Ì(2u
+$java.lang.String.substring(int, int)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÓ! Ó(*2ë
+@org.jabref.logic.crawler.StudyRepository?MATCH_COLON@56.33:56.44CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaË Ë()2¢
+Qorg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaË2 Ë(72∑
+forg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)?trimmedNamed@360.15:360.27CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÈ È(2û
+Morg.jabref.logic.crawler.StudyRepository?MATCH_ILLEGAL_CHARACTERS@57.33:57.57CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÈ È(/2∑
+forg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)?trimmedNamed@360.15:360.27CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÈ8 È(D2¢
+Qorg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÍ& Í(+2ô
+Horg.jabref.logic.crawler.StudyRepository?studyDefinitionFile@65.23:65.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÏ( Ï(;2≠
+\org.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)?id@362.15:362.17CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÏR Ï(T2¢
+Qorg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÌ Ì(2æ
+morg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)?remainingPathLength@364.12:364.31CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÌ Ì(02∑
+forg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)?trimmedNamed@360.15:360.27CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÓ Ó(2¢
+Qorg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÓ Ó( 2æ
+morg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)?remainingPathLength@364.12:364.31CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÓ. Ó(A2≠
+\org.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)?id@362.15:362.17CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java (2∑
+forg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)?trimmedNamed@360.15:360.27CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java ((2ß
+Qorg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÊ+ Ê(02æ
+forg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)?trimmedNamed@360.15:360.27DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaË Ë(2¥
+\org.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)?id@362.15:362.17DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÍ Í(2≈
+morg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)?remainingPathLength@364.12:364.31DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÏ Ï(2h
+java.lang.StringRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÊ Ê(≥
+forg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)?trimmedNamed@360.15:360.27VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaË Ë("
+typeString"
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier"> </mark>String <mark class="class-field">trimmedNamed</mark> = MATCH_COLON.matcher(query).replaceAll("=")*trimmedNamed2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaË Ë(2Ö
+4java.util.regex.Matcher.replaceAll(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaË9 Ë(C2à
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaË* Ë(12ë
+@org.jabref.logic.crawler.StudyRepository?MATCH_COLON@56.33:56.44CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaË Ë()2¢
+Qorg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaË2 Ë(7˙
+\org.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)?id@362.15:362.17VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÍ Í("
+typeString"
+isFinalfalse"y
+declarationStringd<mark class="modifier"> </mark>String <mark class="class-field">id</mark> = computeIDForQuery(query)*id2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÍ Í(2ù
+Lorg.jabref.logic.crawler.StudyRepository.computeIDForQuery(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÍ Í(%2¢
+Qorg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÍ& Í(+¨	
+morg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)?remainingPathLength@364.12:364.31VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÏ Ï("
+typeint"
+isFinalfalse"…
+declarationString≥<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">remainingPathLength</mark> = 220 - studyDefinitionFile.toString().length() - id.length()*remainingPathLength2T
+intTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÏ Ï(2j
+java.lang.String.length()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÏG Ï(M2n
+java.nio.file.Path.toString()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÏ< Ï(D2j
+java.lang.String.length()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÏU Ï([2ô
+Horg.jabref.logic.crawler.StudyRepository?studyDefinitionFile@65.23:65.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÏ( Ï(;2≠
+\org.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)?id@362.15:362.17CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÏR Ï(T÷
+Qorg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÊ+ Ê(0"
+typeString"
+isFinalfalse"!
+declarationStringString query*query2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÊ$ Ê(*ß
+Lorg.jabref.logic.crawler.StudyRepository.computeIDForQuery(java.lang.String)METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˆ ˆ($"
+isFinalfalse"}
+declarationStringh<mark class="modifier">private </mark>String <mark class="method">computeIDForQuery</mark>(String query)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*computeIDForQuery2n
+java.lang.String.valueOf(int)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˜ ˜(2l
+java.lang.String.hashCode()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˜$ ˜(,2£
+Rorg.jabref.logic.crawler.StudyRepository.computeIDForQuery(java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java˜ ˜(#2®
+Rorg.jabref.logic.crawler.StudyRepository.computeIDForQuery(java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˆ, ˆ(12h
+java.lang.StringRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˆ ˆ(◊
+Rorg.jabref.logic.crawler.StudyRepository.computeIDForQuery(java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˆ, ˆ(1"
+typeString"
+isFinalfalse"!
+declarationStringString query*query2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˆ% ˆ(+±r
+korg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˇ ˇ("
+isFinalfalse"…
+declarationString≥<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">persistResults</mark>(List&lt;QueryResult&gt; crawlResults)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException<mark class="modifier"><mark class="modifier">,</mark></mark> SaveException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*persistResults2ë
+@org.jabref.preferences.BibEntryPreferences.getKeywordSeparator()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÄ_ Ä(r2ì
+Borg.jabref.preferences.PreferencesService.getBibEntryPreferences()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÄF Ä(\2ä
+9org.jabref.model.study.QueryResult.getResultsPerFetcher()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÖ4 Ö(H2Ñ
+3org.jabref.model.study.FetchResult.getFetchResult()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÜ; Ü(I2µ
+dorg.jabref.logic.crawler.StudyRepository.getFetcherResultEntries(java.lang.String, java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaá; á(R2~
+-org.jabref.model.study.QueryResult.getQuery()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaáZ á(b2Ö
+3org.jabref.model.study.FetchResult.getFetcherName()CALLH
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaát á(Ç2Õ
+|org.jabref.logic.database.DatabaseMerger.merge(org.jabref.model.database.BibDatabase, org.jabref.model.database.BibDatabase)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaä ä(2ã
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaä3 ä(>2‡
+éorg.jabref.logic.crawler.StudyRepository.generateCiteKeys(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabase)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaç ç( 2Õ
+|org.jabref.logic.database.DatabaseMerger.merge(org.jabref.model.database.BibDatabase, org.jabref.model.database.BibDatabase)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaê ê(2Õ
+|org.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaí í(!2∏
+gorg.jabref.logic.crawler.StudyRepository.getPathToFetcherResultFile(java.lang.String, java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaí" í(<2~
+-org.jabref.model.study.QueryResult.getQuery()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaíD í(L2Ñ
+3org.jabref.model.study.FetchResult.getFetcherName()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaí^ í(l2°
+Porg.jabref.logic.crawler.StudyRepository.getQueryResultEntries(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaî6 î(K2~
+-org.jabref.model.study.QueryResult.getQuery()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaîS î([2Õ
+|org.jabref.logic.database.DatabaseMerger.merge(org.jabref.model.database.BibDatabase, org.jabref.model.database.BibDatabase)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaó ó(2ã
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaó. ó(92Õ
+|org.jabref.logic.database.DatabaseMerger.merge(org.jabref.model.database.BibDatabase, org.jabref.model.database.BibDatabase)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaô ô(2Õ
+|org.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaõ õ(2§
+Sorg.jabref.logic.crawler.StudyRepository.getPathToQueryResultFile(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaõ õ(62~
+-org.jabref.model.study.QueryResult.getQuery()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaõ> õ(F2ë
+@org.jabref.logic.crawler.StudyRepository.getStudyResultEntries()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaù8 ù(M2Õ
+|org.jabref.logic.database.DatabaseMerger.merge(org.jabref.model.database.BibDatabase, org.jabref.model.database.BibDatabase)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java† †(2ã
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java†0 †(;2Õ
+|org.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¢ ¢(2î
+Corg.jabref.logic.crawler.StudyRepository.getPathToStudyResultFile()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¢ ¢(22é
+=org.jabref.logic.database.DatabaseMerger.DatabaseMerger(char)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÄ$ Ä(22Ñ
+3org.jabref.model.database.BibDatabase.BibDatabase()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÅ0 Å(;2Ñ
+3org.jabref.model.database.BibDatabase.BibDatabase()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÑ1 Ñ(<2ò
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÄ3 Ä(E2…
+xorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)!crawlResultsCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÉ" É(.2“
+Äorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?result@387.25:387.31CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÖ- Ö(32Ÿ
+áorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?fetcherResult@389.29:389.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÜ- Ü(:2“
+Äorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?result@387.25:387.31CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaáS á(Y2Ÿ
+áorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?fetcherResult@389.29:389.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaáf á(s2“
+Äorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?merger@384.23:384.29CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaä ä(2·
+èorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?existingFetcherResult@391.35:391.56CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaä ä(22⁄
+àorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?fetcherEntries@390.28:390.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaäB ä(P2·
+èorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?existingFetcherResult@391.35:391.56CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaç! ç(62⁄
+àorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?fetcherEntries@390.28:390.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaç8 ç(F2“
+Äorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?merger@384.23:384.29CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaê ê(2ﬁ
+åorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?queryResultEntries@388.24:388.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaê ê(/2⁄
+àorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?fetcherEntries@390.28:390.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaê1 ê(?2“
+Äorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?result@387.25:387.31CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaí= í(C2Ÿ
+áorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?fetcherResult@389.29:389.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaíP í(]2‚
+èorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?existingFetcherResult@391.35:391.56CALLH
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaíq í(Ü2“
+Äorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?result@387.25:387.31CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaîL î(R2“
+Äorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?merger@384.23:384.29CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaó ó(2‡
+éorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?existingQueryEntries@404.31:404.51CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaó ó(-2ﬁ
+åorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?queryResultEntries@388.24:388.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaó= ó(O2“
+Äorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?merger@384.23:384.29CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaô ô(2·
+èorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?newStudyResultEntries@385.20:385.41CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaô ô(.2ﬁ
+åorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?queryResultEntries@388.24:388.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaô0 ô(B2“
+Äorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?result@387.25:387.31CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaõ7 õ(=2‡
+éorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?existingQueryEntries@404.31:404.51CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaõK õ(_2“
+Äorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?merger@384.23:384.29CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java† †(2Ê
+îorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?existingStudyResultEntries@413.27:413.53CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java† †(/2·
+èorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?newStudyResultEntries@385.20:385.41CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java†? †(T2Ê
+îorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?existingStudyResultEntries@413.27:413.53CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¢6 ¢(P2Œ
+xorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)!crawlResults	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˇ2 ˇ(>2Ÿ
+Äorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?merger@384.23:384.29DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÄ Ä(2Ë
+èorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?newStudyResultEntries@385.20:385.41DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÅ Å()2Ÿ
+Äorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?result@387.25:387.31DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÉ É(2Â
+åorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?queryResultEntries@388.24:388.42DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÑ Ñ(*2‡
+áorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?fetcherResult@389.29:389.42DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÖ Ö(*2·
+àorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?fetcherEntries@390.28:390.42DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÜ Ü(*2Ë
+èorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?existingFetcherResult@391.35:391.56DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaá# á(82Á
+éorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?existingQueryEntries@404.31:404.51DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaî î(32Ì
+îorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?existingStudyResultEntries@413.27:413.53DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaù ù(52\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˇ ˇ(ü	
+Äorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?merger@384.23:384.29VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÄ Ä("
+typeDatabaseMerger"
+isFinalfalse"√
+declarationString≠<mark class="modifier"> </mark>DatabaseMerger <mark class="class-field">merger</mark> = new DatabaseMerger(preferencesService.getBibEntryPreferences().getKeywordSeparator())*merger2y
+(org.jabref.logic.database.DatabaseMergerTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÄ Ä(2ë
+@org.jabref.preferences.BibEntryPreferences.getKeywordSeparator()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÄ_ Ä(r2ì
+Borg.jabref.preferences.PreferencesService.getBibEntryPreferences()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÄF Ä(\2é
+=org.jabref.logic.database.DatabaseMerger.DatabaseMerger(char)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÄ$ Ä(22ò
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÄ3 Ä(EØ
+èorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?newStudyResultEntries@385.20:385.41VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÅ Å()"
+typeBibDatabase"
+isFinalfalse"ä
+declarationStringu<mark class="modifier"> </mark>BibDatabase <mark class="class-field">newStudyResultEntries</mark> = new BibDatabase()*newStudyResultEntries2v
+%org.jabref.model.database.BibDatabaseTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÅ Å(2Ñ
+3org.jabref.model.database.BibDatabase.BibDatabase()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÅ0 Å(;„
+Äorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?result@387.25:387.31VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÉ É("
+typeQueryResult"
+isFinalfalse"g
+declarationStringR<mark class="modifier"> </mark>QueryResult <mark class="class-field">result</mark>*result2s
+"org.jabref.model.study.QueryResultTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÉ É(¶
+åorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?queryResultEntries@388.24:388.42VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÑ Ñ(*"
+typeBibDatabase"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>BibDatabase <mark class="class-field">queryResultEntries</mark> = new BibDatabase()*queryResultEntries2v
+%org.jabref.model.database.BibDatabaseTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÑ Ñ(2Ñ
+3org.jabref.model.database.BibDatabase.BibDatabase()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÑ1 Ñ(<¯
+áorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?fetcherResult@389.29:389.42VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÖ Ö(*"
+typeFetchResult"
+isFinalfalse"n
+declarationStringY<mark class="modifier"> </mark>FetchResult <mark class="class-field">fetcherResult</mark>*fetcherResult2s
+"org.jabref.model.study.FetchResultTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÖ Ö(É
+àorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?fetcherEntries@390.28:390.42VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÜ Ü(*"
+typeBibDatabase"
+isFinalfalse"ê
+declarationString{<mark class="modifier"> </mark>BibDatabase <mark class="class-field">fetcherEntries</mark> = fetcherResult.getFetchResult()*fetcherEntries2v
+%org.jabref.model.database.BibDatabaseTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÜ Ü(2Ñ
+3org.jabref.model.study.FetchResult.getFetchResult()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÜ; Ü(I2Ÿ
+áorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?fetcherResult@389.29:389.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÜ- Ü(:Ü
+èorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?existingFetcherResult@391.35:391.56VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaá# á(8"
+typeBibDatabaseContext"
+isFinalfalse"È
+declarationString”<mark class="modifier"> </mark>BibDatabaseContext <mark class="class-field">existingFetcherResult</mark> = getFetcherResultEntries(result.getQuery()<mark class="modifier">,</mark> fetcherResult.getFetcherName())*existingFetcherResult2}
+,org.jabref.model.database.BibDatabaseContextTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaá á("2µ
+dorg.jabref.logic.crawler.StudyRepository.getFetcherResultEntries(java.lang.String, java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaá; á(R2~
+-org.jabref.model.study.QueryResult.getQuery()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaáZ á(b2Ö
+3org.jabref.model.study.FetchResult.getFetcherName()CALLH
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaát á(Ç2“
+Äorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?result@387.25:387.31CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaáS á(Y2Ÿ
+áorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?fetcherResult@389.29:389.42CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaáf á(sÀ
+éorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?existingQueryEntries@404.31:404.51VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaî î(3"
+typeBibDatabaseContext"
+isFinalfalse"®
+declarationStringí<mark class="modifier"> </mark>BibDatabaseContext <mark class="class-field">existingQueryEntries</mark> = getQueryResultEntries(result.getQuery())*existingQueryEntries2}
+,org.jabref.model.database.BibDatabaseContextTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaî î(2°
+Porg.jabref.logic.crawler.StudyRepository.getQueryResultEntries(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaî6 î(K2~
+-org.jabref.model.study.QueryResult.getQuery()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaîS î([2“
+Äorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?result@387.25:387.31CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaîL î(RÁ
+îorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)?existingStudyResultEntries@413.27:413.53VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaù ù(5"
+typeBibDatabaseContext"
+isFinalfalse"ù
+declarationStringá<mark class="modifier"> </mark>BibDatabaseContext <mark class="class-field">existingStudyResultEntries</mark> = getStudyResultEntries()*existingStudyResultEntries2}
+,org.jabref.model.database.BibDatabaseContextTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaù ù(2ë
+@org.jabref.logic.crawler.StudyRepository.getStudyResultEntries()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaù8 ù(Mù
+xorg.jabref.logic.crawler.StudyRepository.persistResults(java.util.List<org.jabref.model.study.QueryResult>)!crawlResults	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˇ2 ˇ(>"
+typeList<QueryResult>"
+isFinalfalse"3
+declarationStringList<QueryResult> crawlResults*crawlResults2_
+java.util.ListTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˇ  ˇ($2|
+"org.jabref.model.study.QueryResultTYPE_ARGUMENTG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaˇ% ˇ(0‰
+éorg.jabref.logic.crawler.StudyRepository.generateCiteKeys(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabase)METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java• •(!"
+isFinalfalse"Ü
+declarationString<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">generateCiteKeys</mark>(BibDatabaseContext existingEntries<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabase targetEntries)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*generateCiteKeys2ù
+Lorg.jabref.preferences.PreferencesService.getCitationKeyPatternPreferences()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaß# ß(C2É
+2org.jabref.model.database.BibDatabase.getEntries()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java® ®( 2ê
+æorg.jabref.logic.citationkeypattern.CitationKeyGenerator.CitationKeyGenerator(org.jabref.model.database.BibDatabaseContext, org.jabref.logic.citationkeypattern.CitationKeyPatternPreferences)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¶8 ¶(L2
+ûorg.jabref.logic.crawler.StudyRepository.generateCiteKeys(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabase)!existingEntriesCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¶M ¶(\2ò
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaß ß("2Ó
+úorg.jabref.logic.crawler.StudyRepository.generateCiteKeys(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabase)!targetEntriesCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java® ®(2˜
+•org.jabref.logic.crawler.StudyRepository.generateCiteKeys(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabase)?bibEntry@424.51:424.59CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java®@ ®(H2ı
+ûorg.jabref.logic.crawler.StudyRepository.generateCiteKeys(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabase)!existingEntries	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java•5 •(D2Û
+úorg.jabref.logic.crawler.StudyRepository.generateCiteKeys(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabase)!targetEntries	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java•R •(_2ä
+±org.jabref.logic.crawler.StudyRepository.generateCiteKeys(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabase)?citationKeyGenerator@422.29:422.49DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¶ ¶(12˛
+•org.jabref.logic.crawler.StudyRepository.generateCiteKeys(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabase)?bibEntry@424.51:424.59DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java®3 ®(;2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java• •(ˇ
+±org.jabref.logic.crawler.StudyRepository.generateCiteKeys(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabase)?citationKeyGenerator@422.29:422.49VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¶ ¶(1"
+typeCitationKeyGenerator"
+isFinalfalse"‚
+declarationStringÃ<mark class="modifier"> </mark>CitationKeyGenerator <mark class="class-field">citationKeyGenerator</mark> = new CitationKeyGenerator(existingEntries, preferencesService.getCitationKeyPatternPreferences())*citationKeyGenerator2â
+8org.jabref.logic.citationkeypattern.CitationKeyGeneratorTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¶ ¶(2ù
+Lorg.jabref.preferences.PreferencesService.getCitationKeyPatternPreferences()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaß# ß(C2ê
+æorg.jabref.logic.citationkeypattern.CitationKeyGenerator.CitationKeyGenerator(org.jabref.model.database.BibDatabaseContext, org.jabref.logic.citationkeypattern.CitationKeyPatternPreferences)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¶8 ¶(L2
+ûorg.jabref.logic.crawler.StudyRepository.generateCiteKeys(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabase)!existingEntriesCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¶M ¶(\2ò
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaß ß("Ï
+ûorg.jabref.logic.crawler.StudyRepository.generateCiteKeys(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabase)!existingEntries	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java•5 •(D"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext existingEntries*existingEntries2}
+,org.jabref.model.database.BibDatabaseContextTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java•" •(4—
+úorg.jabref.logic.crawler.StudyRepository.generateCiteKeys(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabase)!targetEntries	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java•R •(_"
+typeBibDatabase"
+isFinalfalse".
+declarationStringBibDatabase targetEntries*targetEntries2v
+%org.jabref.model.database.BibDatabaseTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java•F •(Q«
+•org.jabref.logic.crawler.StudyRepository.generateCiteKeys(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabase)?bibEntry@424.51:424.59VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java®3 ®(;"
+type"
+isFinalfalse"
+declarationString	 bibEntry*bibEntry2TYPE—G
+|org.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java´ ´(""
+isFinalfalse"∆
+declarationString∞<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">writeResultToFile</mark>(Path pathToFile<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseContext context)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>SaveException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*writeResultToFile2ò
+Gorg.jabref.logic.exporter.SaveConfiguration.withReformatOnSave(boolean)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØ Ø('2Ø
+^org.jabref.logic.exporter.SaveConfiguration.withSaveOrder(org.jabref.model.metadata.SaveOrder)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆ Æ("2m
+java.util.Optional.orElse(T)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆq Æ(w2ú
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆH Æ(K2Ç
+1org.jabref.model.metadata.MetaData.getSaveOrder()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆ9 Æ(E2ã
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆ+ Æ(62©
+Xorg.jabref.model.metadata.SelfContainedSaveOrder.of(org.jabref.model.metadata.SaveOrder)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆi Æ(k2å
+9org.jabref.model.metadata.SaveOrder.getDefaultSaveOrder()CALLI
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆÇ Æ(ï2ó
+Forg.jabref.preferences.LibraryPreferences.shouldAlwaysReformatOnSave()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØS Ø(m2í
+Aorg.jabref.preferences.PreferencesService.getLibraryPreferences()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØ; Ø(P2ê
+?org.jabref.preferences.PreferencesService.getFieldPreferences()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¥' ¥(:2ù
+Lorg.jabref.preferences.PreferencesService.getCitationKeyPatternPreferences()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaµ' µ(G2∑
+forg.jabref.logic.exporter.BibDatabaseWriter.saveDatabase(org.jabref.model.database.BibDatabaseContext)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∑ ∑('2ü
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaπ1 π(52∫
+iorg.jabref.logic.exporter.AtomicFileWriter.AtomicFileWriter(java.nio.file.Path, java.nio.charset.Charset)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¨/ ¨(?2´
+Yorg.jabref.logic.exporter.SelfContainedSaveConfiguration.SelfContainedSaveConfiguration()CALLH
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≠d ≠(Ç2†
+Oorg.jabref.logic.exporter.BibWriter.BibWriter(java.io.Writer, java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∞& ∞(/2é
+ºorg.jabref.logic.exporter.BibtexDatabaseWriter.BibtexDatabaseWriter(org.jabref.logic.exporter.BibWriter, org.jabref.logic.exporter.SelfContainedSaveConfiguration, org.jabref.logic.bibtex.FieldPreferences, org.jabref.logic.citationkeypattern.CitationKeyPatternPreferences, org.jabref.model.entry.BibEntryTypesManager)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java±6 ±(J2ò
+Gorg.jabref.logic.exporter.SaveException.SaveException(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaπ π(#2≠
+\org.jabref.logic.exporter.SaveException.SaveException(java.lang.String, java.lang.Throwable)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaª ª(#2Ÿ
+áorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)!pathToFileCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¨@ ¨(J2÷
+Ñorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)!contextCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆ# Æ(*2ﬂ
+çorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?so@430.76:430.78CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆl Æ(n2ò
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØ( Ø(:2Á
+ïorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?fileWriter@428.30:428.40CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∞0 ∞(:2Ê
+îorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?bibWriter@432.22:432.31CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≤ ≤(2Ó
+úorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?saveConfiguration@429.43:429.60CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≥ ≥(%2ò
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¥ ¥(&2ò
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaµ µ(&2ö
+Iorg.jabref.logic.crawler.StudyRepository?bibEntryTypesManager@70.39:70.59CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∂ ∂((2Î
+ôorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?databaseWriter@433.33:433.47CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∑ ∑(2÷
+Ñorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)!contextCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∑( ∑(/2ﬂ
+çorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?ex@440.45:440.47CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaπd π(f2ﬂ
+çorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?ex@442.29:442.31CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaª7 ª(92ﬁ
+áorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)!pathToFile	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java´( ´(22€
+Ñorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)!context	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java´G ´(N2Ó
+ïorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?fileWriter@428.30:428.40DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¨ ¨((2ı
+úorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?saveConfiguration@429.43:429.60DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≠+ ≠(<2Ì
+îorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?bibWriter@432.22:432.31DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∞ ∞(2Ú
+ôorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?databaseWriter@433.33:433.47DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java±! ±(/2Ê
+çorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?so@430.76:430.78DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆL Æ(N2Ê
+çorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?ex@440.45:440.47DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∏- ∏(/2Ê
+çorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?ex@442.29:442.31DECLARATIONG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∫ ∫(2\
+voidRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java´ ´(Ë
+ïorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?fileWriter@428.30:428.40VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¨ ¨(("
+typeAtomicFileWriter"
+isFinalfalse"¨
+declarationStringñ<mark class="modifier"> </mark>AtomicFileWriter <mark class="class-field">fileWriter</mark> = new AtomicFileWriter(pathToFile, StandardCharsets.UTF_8)*
+fileWriter2{
+*org.jabref.logic.exporter.AtomicFileWriterTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¨ ¨(2∫
+iorg.jabref.logic.exporter.AtomicFileWriter.AtomicFileWriter(java.nio.file.Path, java.nio.charset.Charset)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¨/ ¨(?2Ÿ
+áorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)!pathToFileCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¨@ ¨(JŸ
+úorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?saveConfiguration@429.43:429.60VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≠+ ≠(<"&
+typeSelfContainedSaveConfiguration"
+isFinalfalse"Ø
+declarationStringô<mark class="modifier"> </mark>SelfContainedSaveConfiguration <mark class="class-field">saveConfiguration</mark> = (SelfContainedSaveConfiguration) new SelfContainedSaveConfiguration().withSaveOrder(context.getMetaData().getSaveOrder().map(so -> SelfContainedSaveOrder.of(so)).orElse(SaveOrder.getDefaultSaveOrder())).withReformatOnSave(preferencesService.getLibraryPreferences().shouldAlwaysReformatOnSave())*saveConfiguration2â
+8org.jabref.logic.exporter.SelfContainedSaveConfigurationTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≠ ≠(*2ò
+Gorg.jabref.logic.exporter.SaveConfiguration.withReformatOnSave(boolean)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØ Ø('2Ø
+^org.jabref.logic.exporter.SaveConfiguration.withSaveOrder(org.jabref.model.metadata.SaveOrder)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆ Æ("2m
+java.util.Optional.orElse(T)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆq Æ(w2ú
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆH Æ(K2Ç
+1org.jabref.model.metadata.MetaData.getSaveOrder()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆ9 Æ(E2ã
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆ+ Æ(62©
+Xorg.jabref.model.metadata.SelfContainedSaveOrder.of(org.jabref.model.metadata.SaveOrder)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆi Æ(k2å
+9org.jabref.model.metadata.SaveOrder.getDefaultSaveOrder()CALLI
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆÇ Æ(ï2ó
+Forg.jabref.preferences.LibraryPreferences.shouldAlwaysReformatOnSave()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØS Ø(m2í
+Aorg.jabref.preferences.PreferencesService.getLibraryPreferences()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØ; Ø(P2´
+Yorg.jabref.logic.exporter.SelfContainedSaveConfiguration.SelfContainedSaveConfiguration()CALLH
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≠d ≠(Ç2÷
+Ñorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)!contextCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆ# Æ(*2ﬂ
+çorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?so@430.76:430.78CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆl Æ(n2ò
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaØ( Ø(:∞
+îorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?bibWriter@432.22:432.31VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∞ ∞("
+type	BibWriter"
+isFinalfalse"ê
+declarationString{<mark class="modifier"> </mark>BibWriter <mark class="class-field">bibWriter</mark> = new BibWriter(fileWriter, OS.NEWLINE)*	bibWriter2t
+#org.jabref.logic.exporter.BibWriterTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∞ ∞(2†
+Oorg.jabref.logic.exporter.BibWriter.BibWriter(java.io.Writer, java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∞& ∞(/2Á
+ïorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?fileWriter@428.30:428.40CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∞0 ∞(:â
+ôorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?databaseWriter@433.33:433.47VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java±! ±(/"
+typeBibtexDatabaseWriter"
+isFinalfalse"Â
+declarationStringœ<mark class="modifier"> </mark>BibtexDatabaseWriter <mark class="class-field">databaseWriter</mark> = new BibtexDatabaseWriter(bibWriter, saveConfiguration, preferencesService.getFieldPreferences()<mark class="modifier">,</mark> preferencesService.getCitationKeyPatternPreferences()<mark class="modifier">,</mark> bibEntryTypesManager)*databaseWriter2
+.org.jabref.logic.exporter.BibtexDatabaseWriterTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java± ±( 2ê
+?org.jabref.preferences.PreferencesService.getFieldPreferences()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¥' ¥(:2ù
+Lorg.jabref.preferences.PreferencesService.getCitationKeyPatternPreferences()CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaµ' µ(G2é
+ºorg.jabref.logic.exporter.BibtexDatabaseWriter.BibtexDatabaseWriter(org.jabref.logic.exporter.BibWriter, org.jabref.logic.exporter.SelfContainedSaveConfiguration, org.jabref.logic.bibtex.FieldPreferences, org.jabref.logic.citationkeypattern.CitationKeyPatternPreferences, org.jabref.model.entry.BibEntryTypesManager)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java±6 ±(J2Ê
+îorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?bibWriter@432.22:432.31CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≤ ≤(2Ó
+úorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?saveConfiguration@429.43:429.60CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java≥ ≥(%2ò
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¥ ¥(&2ò
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaµ µ(&2ö
+Iorg.jabref.logic.crawler.StudyRepository?bibEntryTypesManager@70.39:70.59CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∂ ∂((ï
+áorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)!pathToFile	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java´( ´(2"
+typePath"
+isFinalfalse"$
+declarationStringPath pathToFile*
+pathToFile2c
+java.nio.file.PathTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java´# ´('¬
+Ñorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)!context	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java´G ´(N"
+typeBibDatabaseContext"
+isFinalfalse"/
+declarationStringBibDatabaseContext context*context2}
+,org.jabref.model.database.BibDatabaseContextTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java´4 ´(F£
+çorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?so@430.76:430.78VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÆL Æ(N"
+type"
+isFinalfalse"
+declarationString so*so2TYPE“
+çorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?ex@440.45:440.47VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∏- ∏(/"#
+typeUnsupportedCharsetException"
+isFinalfalse"3
+declarationStringUnsupportedCharsetException ex*ex2}
+,java.nio.charset.UnsupportedCharsetExceptionTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∏ ∏(,ô
+çorg.jabref.logic.crawler.StudyRepository.writeResultToFile(java.nio.file.Path, org.jabref.model.database.BibDatabaseContext)?ex@442.29:442.31VARIABLEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∫ ∫("
+typeIOException"
+isFinalfalse"#
+declarationStringIOException ex*ex2d
+java.io.IOExceptionTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java∫ ∫(ﬂ
+gorg.jabref.logic.crawler.StudyRepository.getPathToFetcherResultFile(java.lang.String, java.lang.String)METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaø ø(+"
+isFinalfalse"’
+declarationStringø<mark class="modifier">private </mark>Path <mark class="method">getPathToFetcherResultFile</mark>(String query<mark class="modifier"><mark class="modifier">,</mark></mark> String fetcherName)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typePath*getPathToFetcherResultFile2}
+,java.nio.file.Path.resolve(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¿? ¿(F2}
+,java.nio.file.Path.resolve(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¿ ¿(%2ú
+Korg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¿& ¿(62ô
+Horg.jabref.logic.util.io.FileNameCleaner.cleanFileName(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¿W ¿(d2î
+Corg.jabref.logic.crawler.StudyRepository?repositoryPath@64.23:64.37CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¿ ¿(2æ
+morg.jabref.logic.crawler.StudyRepository.getPathToFetcherResultFile(java.lang.String, java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¿7 ¿(<2ƒ
+sorg.jabref.logic.crawler.StudyRepository.getPathToFetcherResultFile(java.lang.String, java.lang.String)!fetcherNameCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java¿e ¿(p2√
+morg.jabref.logic.crawler.StudyRepository.getPathToFetcherResultFile(java.lang.String, java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaø3 ø(82…
+sorg.jabref.logic.crawler.StudyRepository.getPathToFetcherResultFile(java.lang.String, java.lang.String)!fetcherName	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaøA ø(L2j
+java.nio.file.PathRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaø ø(Ú
+morg.jabref.logic.crawler.StudyRepository.getPathToFetcherResultFile(java.lang.String, java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaø3 ø(8"
+typeString"
+isFinalfalse"!
+declarationStringString query*query2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaø, ø(2Ñ
+sorg.jabref.logic.crawler.StudyRepository.getPathToFetcherResultFile(java.lang.String, java.lang.String)!fetcherName	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaøA ø(L"
+typeString"
+isFinalfalse"'
+declarationStringString fetcherName*fetcherName2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaø: ø(@ü
+Sorg.jabref.logic.crawler.StudyRepository.getPathToQueryResultFile(java.lang.String)METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java√ √()"
+isFinalfalse"Ç
+declarationStringm<mark class="modifier">private </mark>Path <mark class="method">getPathToQueryResultFile</mark>(String query)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typePath*getPathToQueryResultFile2}
+,java.nio.file.Path.resolve(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaƒ? ƒ(F2}
+,java.nio.file.Path.resolve(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaƒ ƒ(%2ú
+Korg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaƒ& ƒ(62î
+Corg.jabref.logic.crawler.StudyRepository?repositoryPath@64.23:64.37CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaƒ ƒ(2™
+Yorg.jabref.logic.crawler.StudyRepository.getPathToQueryResultFile(java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaƒ7 ƒ(<2Ø
+Yorg.jabref.logic.crawler.StudyRepository.getPathToQueryResultFile(java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java√1 √(62j
+java.nio.file.PathRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java√ √(ﬁ
+Yorg.jabref.logic.crawler.StudyRepository.getPathToQueryResultFile(java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java√1 √(6"
+typeString"
+isFinalfalse"!
+declarationStringString query*query2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java√* √(0Ö
+Corg.jabref.logic.crawler.StudyRepository.getPathToStudyResultFile()METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java« «()"
+isFinalfalse"v
+declarationStringa<mark class="modifier">private </mark>Path <mark class="method">getPathToStudyResultFile</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typePath*getPathToStudyResultFile2}
+,java.nio.file.Path.resolve(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java» »(%2î
+Corg.jabref.logic.crawler.StudyRepository?repositoryPath@64.23:64.37CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java» »(2j
+java.nio.file.PathRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java« «(õ
+
+Rorg.jabref.logic.crawler.StudyRepository.getPathToQueryDirectory(java.lang.String)METHODG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÀ À(("
+isFinalfalse"Å
+declarationStringl<mark class="modifier">private </mark>Path <mark class="method">getPathToQueryDirectory</mark>(String query)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typePath*getPathToQueryDirectory2}
+,java.nio.file.Path.resolve(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÃ Ã(%2ú
+Korg.jabref.logic.crawler.StudyRepository.trimNameAndAddID(java.lang.String)CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÃ& Ã(62î
+Corg.jabref.logic.crawler.StudyRepository?repositoryPath@64.23:64.37CALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÃ Ã(2©
+Xorg.jabref.logic.crawler.StudyRepository.getPathToQueryDirectory(java.lang.String)!queryCALLG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÃ7 Ã(<2Æ
+Xorg.jabref.logic.crawler.StudyRepository.getPathToQueryDirectory(java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÀ0 À(52j
+java.nio.file.PathRETURN_TYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÀ À(›
+Xorg.jabref.logic.crawler.StudyRepository.getPathToQueryDirectory(java.lang.String)!query	PARAMETERG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÀ0 À(5"
+typeString"
+isFinalfalse"!
+declarationStringString query*query2a
+java.lang.StringTYPEG
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaÀ) À(/π
+Oorg.jabref.logic.crawler.StudyRepository?STUDY_DEFINITION_FILE_NAME@52.31:52.57VALUEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java4 4(9"
+isFinaltrue"
+typeString"’
+declarationStringø<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">STUDY_DEFINITION_FILE_NAME</mark> = "study.yml";"
+isStatictrue"
+accesspublic*STUDY_DEFINITION_FILE_NAME2_
+java.lang.StringTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java4 4(¢
+;org.jabref.logic.crawler.StudyRepository?LOGGER@54.32:54.38VALUEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java6  6(&"
+isFinaltrue"
+typeLogger"Â
+declarationStringœ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(StudyRepository.class);"
+isStatictrue"
+accessprivate*LOGGER2_
+org.slf4j.LoggerTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java6 6(£
+@org.jabref.logic.crawler.StudyRepository?MATCH_COLON@56.33:56.44VALUEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java8! 8(,"
+isFinaltrue"
+typePattern"—
+declarationStringª<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Pattern <mark class="class-field">MATCH_COLON</mark> = Pattern.compile(":");"
+isStatictrue"
+accessprivate*MATCH_COLON2f
+java.util.regex.PatternTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java8 8( 2Ä
+1java.util.regex.Pattern.compile(java.lang.String)CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java87 8(>‹
+Morg.jabref.logic.crawler.StudyRepository?MATCH_ILLEGAL_CHARACTERS@57.33:57.57VALUEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java9! 9(9"
+isFinaltrue"
+typePattern"
+declarationString⁄<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Pattern <mark class="class-field">MATCH_ILLEGAL_CHARACTERS</mark> = Pattern.compile("[^A-Za-z0-9_.\\s=-]");"
+isStatictrue"
+accessprivate*MATCH_ILLEGAL_CHARACTERS2f
+java.util.regex.PatternTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java9 9( 2Ä
+1java.util.regex.Pattern.compile(java.lang.String)CALLE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java9D 9(K¸
+;org.jabref.logic.crawler.StudyRepository?REMOTE@60.32:60.38VALUEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java<  <(&"
+isFinaltrue"
+typeString"ø
+declarationString©<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">REMOTE</mark> = "origin";"
+isStatictrue"
+accessprivate*REMOTE2_
+java.lang.StringTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java< <(â
+@org.jabref.logic.crawler.StudyRepository?WORK_BRANCH@61.32:61.43VALUEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java=  =(+"
+isFinaltrue"
+typeString"¬
+declarationString¨<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">WORK_BRANCH</mark> = "work";"
+isStatictrue"
+accessprivate*WORK_BRANCH2_
+java.lang.StringTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java= =(ë
+Borg.jabref.logic.crawler.StudyRepository?SEARCH_BRANCH@62.32:62.45VALUEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java>  >(-"
+isFinaltrue"
+typeString"∆
+declarationString∞<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">SEARCH_BRANCH</mark> = "search";"
+isStatictrue"
+accessprivate*SEARCH_BRANCH2_
+java.lang.StringTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java> >(·
+Corg.jabref.logic.crawler.StudyRepository?repositoryPath@64.23:64.37VALUEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java@ @(%"
+isFinaltrue"
+typePath"ì
+declarationString~<mark class="modifier">private </mark><mark class="modifier">final </mark>Path <mark class="class-field">repositoryPath</mark>"
+isStaticfalse"
+accessprivate*repositoryPath2a
+java.nio.file.PathTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.java@ @(Ò
+Horg.jabref.logic.crawler.StudyRepository?studyDefinitionFile@65.23:65.42VALUEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaA A(*"
+isFinaltrue"
+typePath"ô
+declarationStringÉ<mark class="modifier">private </mark><mark class="modifier">final </mark>Path <mark class="class-field">studyDefinitionFile</mark>"
+isStaticfalse"
+accessprivate*studyDefinitionFile2a
+java.nio.file.PathTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaA A(¯
+?org.jabref.logic.crawler.StudyRepository?gitHandler@66.32:66.42VALUEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaB  B(*"
+isFinaltrue"
+typeSlrGitHandler"ô
+declarationStringÉ<mark class="modifier">private </mark><mark class="modifier">final </mark>SlrGitHandler <mark class="class-field">gitHandler</mark>"
+isStaticfalse"
+accessprivate*
+gitHandler2q
+"org.jabref.logic.git.SlrGitHandlerTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaB B(“
+:org.jabref.logic.crawler.StudyRepository?study@67.24:67.29VALUEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaC C("
+isFinaltrue"
+typeStudy"ã
+declarationStringv<mark class="modifier">private </mark><mark class="modifier">final </mark>Study <mark class="class-field">study</mark>"
+isStaticfalse"
+accessprivate*study2k
+org.jabref.model.study.StudyTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaC C(°
+Gorg.jabref.logic.crawler.StudyRepository?preferencesService@68.37:68.55VALUEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaD% D(7"
+isFinaltrue"
+typePreferencesService"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferencesService</mark>"
+isStaticfalse"
+accessprivate*preferencesService2x
+)org.jabref.preferences.PreferencesServiceTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaD D($ö
+Forg.jabref.logic.crawler.StudyRepository?fileUpdateMonitor@69.36:69.53VALUEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaE$ E(5"
+isFinaltrue"
+typeFileUpdateMonitor"§
+declarationStringé<mark class="modifier">private </mark><mark class="modifier">final </mark>FileUpdateMonitor <mark class="class-field">fileUpdateMonitor</mark>"
+isStaticfalse"
+accessprivate*fileUpdateMonitor2v
+'org.jabref.model.util.FileUpdateMonitorTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaE E(#≠
+Iorg.jabref.logic.crawler.StudyRepository?bibEntryTypesManager@70.39:70.59VALUEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaF' F(;"
+isFinaltrue"
+typeBibEntryTypesManager"™
+declarationStringî<mark class="modifier">private </mark><mark class="modifier">final </mark>BibEntryTypesManager <mark class="class-field">bibEntryTypesManager</mark>"
+isStaticfalse"
+accessprivate*bibEntryTypesManager2z
++org.jabref.model.entry.BibEntryTypesManagerTYPEE
+;src\main\java\org\jabref\logic\crawler\StudyRepository.javaF F(&

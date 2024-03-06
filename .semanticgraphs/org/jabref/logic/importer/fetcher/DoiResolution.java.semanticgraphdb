@@ -1,0 +1,744 @@
+
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java˚
+/org.jabref.logic.importer.fetcher.DoiResolutionCLASSL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java' '(",
+package!org.jabref.logic.importer.fetcher"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"®
+declarationStringí<mark class="modifier">public </mark><mark class="modifier">class </mark>DoiResolution<mark class="modifier"><br>implements </mark>FulltextFetcher"
+accesspublic*DoiResolution2«
+jorg.jabref.logic.importer.fetcher.DoiResolution.DoiResolution(org.jabref.logic.preferences.DOIPreferences)DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java, ,(2∫
+]org.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java2 2(%2∏
+Yorg.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaê ê()2«
+horg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaû û(*2æ
+_org.jabref.logic.importer.fetcher.DoiResolution.findDistinctLinks(java.util.List<java.net.URL>)DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaØ Ø(+2û
+?org.jabref.logic.importer.fetcher.DoiResolution.getTrustLevel()DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaæ æ(#2ü
+Borg.jabref.logic.importer.fetcher.DoiResolution?LOGGER@41.32:41.38DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java)  )(&2ß
+Jorg.jabref.logic.importer.fetcher.DoiResolution?doiPreferences@42.33:42.47DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java*! *(/2Å
+)org.jabref.logic.importer.FulltextFetcherEXTENDL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java'& '(5ß	
+jorg.jabref.logic.importer.fetcher.DoiResolution.DoiResolution(org.jabref.logic.preferences.DOIPreferences)CONSTRUCTORL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java, ,("Ç
+declarationStringm<mark class="modifier">public </mark><mark class="method">DoiResolution</mark>(DOIPreferences doiPreferences)*DoiResolution2o
+java.lang.Object.Object()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java- -(2œ
+yorg.jabref.logic.importer.fetcher.DoiResolution.DoiResolution(org.jabref.logic.preferences.DOIPreferences)!doiPreferencesCALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java. .(,2†
+Jorg.jabref.logic.importer.fetcher.DoiResolution?doiPreferences@42.33:42.47CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java. .(2‘
+yorg.jabref.logic.importer.fetcher.DoiResolution.DoiResolution(org.jabref.logic.preferences.DOIPreferences)!doiPreferences	PARAMETERL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java,( ,(62å
+/org.jabref.logic.importer.fetcher.DoiResolutionRETURN_TYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java, ,(∆
+yorg.jabref.logic.importer.fetcher.DoiResolution.DoiResolution(org.jabref.logic.preferences.DOIPreferences)!doiPreferences	PARAMETERL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java,( ,(6"
+typeDOIPreferences"
+isFinalfalse"2
+declarationStringDOIPreferences doiPreferences*doiPreferences2Å
++org.jabref.logic.preferences.DOIPreferencesTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java, ,('ûô
+]org.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)METHODL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java2 2(%"
+isFinalfalse"Ñ
+declarationStringÓ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>Optional&lt;URL&gt; <mark class="method">findFullText</mark>(BibEntry entry)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<URL>*findFullText2y
+#java.util.Objects.requireNonNull(T)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java3 3(2√
+mjava.util.Optional.flatMap(java.util.function.Function<? super T, ? extends java.util.Optional<? extends U>>)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java5> 5(E2¢
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java5" 5(*2r
+java.util.Optional.isEmpty()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java7 7(2p
+java.util.Optional.empty()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java8 8(!2è
+9org.jabref.logic.preferences.DOIPreferences.isUseCustom()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java> >(&2ï
+?org.jabref.logic.preferences.DOIPreferences.getDefaultBaseURI()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java?* ?(;2r
+java.util.Optional.orElse(T)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaC C( 2°
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaB B(2™
+Torg.jabref.model.entry.identifier.DOI.getExternalURIWithCustomBase(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaA A(62n
+java.util.Optional.get()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java@ @(2m
+java.net.URL.toString()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaA< A(D2j
+java.net.URI.toURL()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaE  E(%2ë
+;org.jabref.model.entry.identifier.DOI.getURIAsASCIIString()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaF  F(32n
+java.util.Optional.get()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaF F(2p
+java.lang.String.isEmpty()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaH H(2p
+java.util.Optional.empty()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaI I(!2Ø
+Yorg.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java[, [(;2t
+java.util.Optional.isPresent()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java\  \()2æ
+horg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java_) _(92t
+java.util.Optional.isPresent()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java` `(&2~
+(org.jabref.logic.net.URLDownload.isPdf()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaoo o(t2n
+java.util.Optional.of(T)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javap$ p(&2á
+1java.lang.String.contains(java.lang.CharSequence)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javas s(!2á
+1java.lang.String.contains(java.lang.CharSequence)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javas5 s(=2~
+(org.jabref.logic.net.URLDownload.isPdf()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javas^ s(c2k
+java.util.List.add(E)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javat t(2k
+java.util.List.size()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javay y(2µ
+_org.jabref.logic.importer.fetcher.DoiResolution.findDistinctLinks(java.util.List<java.net.URL>)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java~ ~($2p
+java.util.Optional.of(T)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaÇ  Ç("2r
+java.util.Optional.empty()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaâ â(2x
+"java.net.URL.URL(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java? ?(2u
+java.util.ArrayList.ArrayList()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javag" g(-2î
+>org.jabref.logic.net.URLDownload.URLDownload(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javao] o(h2x
+"java.net.URL.URL(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javap+ p(.2î
+>org.jabref.logic.net.URLDownload.URLDownload(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javasL s(W2x
+"java.net.URL.URL(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javat" t(%2π
+corg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)!entryCALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java3 3($2π
+corg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)!entryCALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java5 5(!2√
+morg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?doi@53.22:53.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java7 7(2†
+Jorg.jabref.logic.importer.fetcher.DoiResolution?doiPreferences@42.33:42.47CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java> >(2ƒ
+norg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?base@59.12:59.16CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java? ?(2†
+Jorg.jabref.logic.importer.fetcher.DoiResolution?doiPreferences@42.33:42.47CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java? ?()2«
+qorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?doiLink@61.15:61.22CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java@ @(2√
+morg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?doi@53.22:53.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java@ @(2ƒ
+norg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?base@59.12:59.16CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaA7 A(;2ƒ
+norg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?base@59.12:59.16CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaE E(2«
+qorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?doiLink@61.15:61.22CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaF F(2√
+morg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?doi@53.22:53.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaF F(2«
+qorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?doiLink@61.15:61.22CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaH H(2«
+qorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?doiLink@61.15:61.22CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaN2 N(92 
+torg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?connection@78.23:78.33CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaP P(2 
+torg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?connection@78.23:78.33CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaQ Q(2 
+torg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?connection@78.23:78.33CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaR R(2 
+torg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?connection@78.23:78.33CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaS S(2 
+torg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?connection@78.23:78.33CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaU U(2 
+torg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?connection@78.23:78.33CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaW+ W(52»
+rorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?response@87.32:87.40CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaY Y($2ƒ
+norg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?html@89.21:89.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java[< [(@2œ
+yorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?citationMetaTag@91.26:91.41CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java\ \(2œ
+yorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?citationMetaTag@91.26:91.41CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java] ](&2ƒ
+norg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?html@89.21:89.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java_: _(>2ƒ
+norg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?base@59.12:59.16CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java_@ _(D2Ã
+vorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?embeddedLink@95.26:95.38CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java` `(2Ã
+vorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?embeddedLink@95.26:95.38CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaa a(#2ƒ
+norg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?html@89.21:89.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javae$ e((2Œ
+xorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?hrefElements@101.21:101.33CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javah# h(/2…
+sorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?element@104.25:104.32CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javai i(%2…
+sorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?element@104.25:104.32CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaj" j()2…
+sorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?element@104.25:104.32CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javao o(2∆
+porg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?href@105.23:105.27CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaoi o(m2∆
+porg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?href@105.23:105.27CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javap/ p(32∆
+porg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?href@105.23:105.27CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javas s(2 
+torg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?hrefText@106.23:106.31CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javas, s(42∆
+porg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?href@105.23:105.27CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javasX s(\2«
+qorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?links@103.22:103.27CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javat t(2∆
+porg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?href@105.23:105.27CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javat& t(*2«
+qorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?links@103.22:103.27CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javay y(2ò
+Borg.jabref.logic.importer.fetcher.DoiResolution?LOGGER@41.32:41.38CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaz z(2«
+qorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?doiLink@61.15:61.22CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaz7 z(>2«
+qorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?links@103.22:103.27CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java{# {((2«
+qorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?links@103.22:103.27CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java~% ~(*2»
+porg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?type@127.46:127.50CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaÅ Å(2»
+porg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?type@127.46:127.50CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaÇ+ Ç(/2ö
+Borg.jabref.logic.importer.fetcher.DoiResolution?LOGGER@41.32:41.38CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaÑ Ñ(2»
+porg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?type@127.46:127.50CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaÑ: Ñ(>2ö
+Borg.jabref.logic.importer.fetcher.DoiResolution?LOGGER@41.32:41.38CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaÜ Ü(2≈
+morg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?e@133.29:133.30CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaÜ: Ü(;2ì
+=org.jabref.model.entry.identifier.DOI.parse(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java5F 5(P2r
+java.net.URI.toASCIIString()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaB B(02±
+Worg.jabref.logic.importer.FulltextFetcher.findFullText(org.jabref.model.entry.BibEntry)OVERRIDEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java2 2(%2æ
+corg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)!entry	PARAMETERL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java2/ 2(42 
+morg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?doi@53.22:53.25DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java5 5(2À
+norg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?base@59.12:59.16DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java; ;(2Œ
+qorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?doiLink@61.15:61.22DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java= =(2—
+torg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?connection@78.23:78.33DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaN N(!2œ
+rorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?response@87.32:87.40DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaW  W((2À
+norg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?html@89.21:89.25DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaY Y(2÷
+yorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?citationMetaTag@91.26:91.41DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java[ [()2”
+vorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?embeddedLink@95.26:95.38DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java_ _(&2’
+xorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?hrefElements@101.21:101.33DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javae e(!2Œ
+qorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?links@103.22:103.27DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javag g(2–
+sorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?element@104.25:104.32DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javah h( 2Õ
+porg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?href@105.23:105.27DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javai i(2—
+torg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?hrefText@106.23:106.31DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaj j(2Õ
+porg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?type@127.46:127.50DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java. (22Ã
+morg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?e@133.29:133.30DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaÖ Ö(2o
+java.util.OptionalRETURN_TYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java2 2(2r
+java.net.URLRETURN_TYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java2 2(≈
+
+morg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?doi@53.22:53.25VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java5 5("
+typeOptional<DOI>"
+isFinalfalse"ü
+declarationStringâ<mark class="modifier"> </mark>Optional<DOI> <mark class="class-field">doi</mark> = entry.getField(StandardField.DOI).flatMap(DOI::parse)*doi2h
+java.util.OptionalTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java5 5(2Ñ
+%org.jabref.model.entry.identifier.DOITYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java5 5(2√
+mjava.util.Optional.flatMap(java.util.function.Function<? super T, ? extends java.util.Optional<? extends U>>)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java5> 5(E2¢
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java5" 5(*2π
+corg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)!entryCALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java5 5(!2ì
+=org.jabref.model.entry.identifier.DOI.parse(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java5F 5(P∞
+norg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?base@59.12:59.16VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java; ;("
+typeURL"
+isFinalfalse"]
+declarationStringH<mark class="modifier"> </mark>URL <mark class="class-field">base</mark>*base2b
+java.net.URLTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java; ;(√
+qorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?doiLink@61.15:61.22VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java= =("
+typeString"
+isFinalfalse"c
+declarationStringN<mark class="modifier"> </mark>String <mark class="class-field">doiLink</mark>*doiLink2f
+java.lang.StringTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java= =(º
+torg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?connection@78.23:78.33VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaN N(!"
+type
+Connection"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark>Connection <mark class="class-field">connection</mark> = Jsoup.connect(doiLink)*
+connection2j
+org.jsoup.ConnectionTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaN N(2«
+qorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?doiLink@61.15:61.22CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaN2 N(9“
+rorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?response@87.32:87.40VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaW  W(("
+typeConnection.Response"
+isFinalfalse"à
+declarationStrings<mark class="modifier"> </mark>Connection.Response <mark class="class-field">response</mark> = connection.execute()*response2s
+org.jsoup.Connection.ResponseTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaW W(2 
+torg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?connection@78.23:78.33CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaW+ W(5§
+norg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?html@89.21:89.25VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaY Y("
+typeDocument"
+isFinalfalse"u
+declarationString`<mark class="modifier"> </mark>Document <mark class="class-field">html</mark> = response.parse()*html2n
+org.jsoup.nodes.DocumentTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaY Y(2»
+rorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?response@87.32:87.40CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaY Y($Í
+yorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?citationMetaTag@91.26:91.41VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java[ [()"
+typeOptional<URL>"
+isFinalfalse"ä
+declarationStringu<mark class="modifier"> </mark>Optional<URL> <mark class="class-field">citationMetaTag</mark> = citationMetaTag(html)*citationMetaTag2h
+java.util.OptionalTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java[ [(2k
+java.net.URLTYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java[ [(2Ø
+Yorg.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java[, [(;2ƒ
+norg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?html@89.21:89.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java[< [(@æ	
+vorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?embeddedLink@95.26:95.38VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java_ _(&"
+typeOptional<URL>"
+isFinalfalse"é
+declarationStringy<mark class="modifier"> </mark>Optional<URL> <mark class="class-field">embeddedLink</mark> = findEmbeddedLink(html, base)*embeddedLink2h
+java.util.OptionalTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java_ _(2k
+java.net.URLTYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java_ _(2æ
+horg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java_) _(92ƒ
+norg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?html@89.21:89.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java_: _(>2ƒ
+norg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?base@59.12:59.16CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java_@ _(D…
+xorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?hrefElements@101.21:101.33VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javae e(!"
+typeElements"
+isFinalfalse"ä
+declarationStringu<mark class="modifier"> </mark>Elements <mark class="class-field">hrefElements</mark> = html.body().select("a[href]")*hrefElements2o
+org.jsoup.select.ElementsTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javae e(2ƒ
+norg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?html@89.21:89.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javae$ e((ª
+qorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?links@103.22:103.27VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javag g("
+type	List<URL>"
+isFinalfalse"x
+declarationStringc<mark class="modifier"> </mark>List<URL> <mark class="class-field">links</mark> = new ArrayList<>()*links2d
+java.util.ListTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javag g(2k
+java.net.URLTYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javag g(2u
+java.util.ArrayList.ArrayList()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javag" g(-Œ
+sorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?element@104.25:104.32VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javah h( "
+typeElement"
+isFinalfalse"d
+declarationStringO<mark class="modifier"> </mark>Element <mark class="class-field">element</mark>*element2m
+org.jsoup.nodes.ElementTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javah h(¡
+porg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?href@105.23:105.27VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javai i("
+typeString"
+isFinalfalse"ò
+declarationStringÇ<mark class="modifier"> </mark>String <mark class="class-field">href</mark> = element.attr("abs:href").toLowerCase(Locale.ENGLISH)*href2f
+java.lang.StringTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javai i(2…
+sorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?element@104.25:104.32CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javai i(%¬
+torg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?hrefText@106.23:106.31VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaj j("
+typeString"
+isFinalfalse"ë
+declarationString|<mark class="modifier"> </mark>String <mark class="class-field">hrefText</mark> = element.text().toLowerCase(Locale.ENGLISH)*hrefText2f
+java.lang.StringTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaj j(2…
+sorg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?element@104.25:104.32CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaj" j()Ö
+corg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)!entry	PARAMETERL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java2/ 2(4"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2u
+org.jabref.model.entry.BibEntryTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java2& 2(.æ
+porg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?type@127.46:127.50VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java. (2"$
+typeUnsupportedMimeTypeException"
+isFinalfalse"6
+declarationString!UnsupportedMimeTypeException type*type2|
+&org.jsoup.UnsupportedMimeTypeExceptionTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java (-Ñ
+morg.jabref.logic.importer.fetcher.DoiResolution.findFullText(org.jabref.model.entry.BibEntry)?e@133.29:133.30VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaÖ Ö("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2k
+java.io.IOExceptionTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaÖ Ö(ﬂ
+Yorg.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)METHODN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaê ê()"
+isFinalfalse"â
+declarationStringt<mark class="modifier">private </mark>Optional&lt;URL&gt; <mark class="method">citationMetaTag</mark>(Document html)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeOptional<URL>*citationMetaTag2v
+java.util.Optional.isPresent()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaî î($2p
+java.util.Optional.of(T)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javañ  ñ("2p
+java.util.Optional.get()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javañ: ñ(=2r
+java.util.Optional.empty()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaò  ò(%2r
+java.util.Optional.empty()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaõ õ(2z
+"java.net.URL.URL(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javañ' ñ(*2∂
+^org.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)!htmlCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaë) ë(-2’
+}org.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)?citationPdfUrlElement@145.17:145.38CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaí* í(?2¡
+iorg.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)?e@146.77:146.78CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaíR í(S2Œ
+vorg.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)?citationPdfUrl@146.25:146.39CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaî î(2Œ
+vorg.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)?citationPdfUrl@146.25:146.39CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javañ+ ñ(92ª
+^org.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)!html	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaê3 ê(72‹
+}org.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)?citationPdfUrlElement@145.17:145.38DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaë ë(&2’
+vorg.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)?citationPdfUrl@146.25:146.39DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaí í('2»
+iorg.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)?e@146.77:146.78DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaíM í(N2»
+iorg.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)?e@151.43:151.44DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaó+ ó(,2q
+java.util.OptionalRETURN_TYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaê ê(2t
+java.net.URLRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaê ê(Ì
+}org.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)?citationPdfUrlElement@145.17:145.38VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaë ë(&"
+typeElements"
+isFinalfalse"™
+declarationStringî<mark class="modifier"> </mark>Elements <mark class="class-field">citationPdfUrlElement</mark> = html.head().select("meta[name='citation_pdf_url']")*citationPdfUrlElement2q
+org.jsoup.select.ElementsTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaë ë(2∂
+^org.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)!htmlCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaë) ë(- 
+vorg.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)?citationPdfUrl@146.25:146.39VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaí í('"
+typeOptional<String>"
+isFinalfalse"æ
+declarationString®<mark class="modifier"> </mark>Optional<String> <mark class="class-field">citationPdfUrl</mark> = citationPdfUrlElement.stream().map(e -> e.attr("content")).findFirst()*citationPdfUrl2j
+java.util.OptionalTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaí í(2q
+java.lang.StringTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaí í(2’
+}org.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)?citationPdfUrlElement@145.17:145.38CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaí* í(?2¡
+iorg.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)?e@146.77:146.78CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaíR í(S˚
+^org.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)!html	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaê3 ê(7"
+typeDocument"
+isFinalfalse""
+declarationStringDocument html*html2p
+org.jsoup.nodes.DocumentTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaê* ê(2É
+iorg.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)?e@146.77:146.78VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaíM í(N"
+type"
+isFinalfalse"
+declarationString e*e2TYPEü
+iorg.jabref.logic.importer.fetcher.DoiResolution.citationMetaTag(org.jsoup.nodes.Document)?e@151.43:151.44VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaó+ ó(,"
+typeMalformedURLException"
+isFinalfalse",
+declarationStringMalformedURLException e*e2v
+java.net.MalformedURLExceptionTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaó ó(*À$
+horg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)METHODN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaû û(*"
+isFinalfalse"—
+declarationStringª<mark class="modifier">private </mark>Optional&lt;URL&gt; <mark class="method">findEmbeddedLink</mark>(Document html<mark class="modifier"><mark class="modifier">,</mark></mark> URL base)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeOptional<URL>*findEmbeddedLink2v
+java.util.Optional.isPresent()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java§ §(2l
+java.net.URI.toURL()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¶= ¶(B2~
+&java.net.URI.resolve(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¶' ¶(.2l
+java.net.URL.toURI()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¶ ¶($2p
+java.util.Optional.get()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¶6 ¶(92p
+java.util.Optional.of(T)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaß  ß("2r
+java.util.Optional.empty()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java©  ©(%2r
+java.util.Optional.empty()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¨ ¨(2≈
+morg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)!htmlCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaü  ü($2‹
+Éorg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?embedElement@159.17:159.29CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java†" †(.2–
+xorg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?e@162.21:162.22CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¢ ¢(2’
+}org.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?pdfUrl@160.25:160.31CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java§ §(2≈
+morg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)!baseCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¶ ¶(2’
+}org.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?pdfUrl@160.25:160.31CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¶/ ¶(52“
+zorg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?url@166.20:166.23CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaß# ß(&2 
+morg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)!html	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaû4 û(82 
+morg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)!base	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaû> û(B2„
+Éorg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?embedElement@159.17:159.29DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaü ü(2‹
+}org.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?pdfUrl@160.25:160.31DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java† †(2Ÿ
+zorg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?url@166.20:166.23DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¶ ¶(2◊
+xorg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?e@162.21:162.22DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¢ ¢(2◊
+xorg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?e@168.64:168.65DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java®@ ®(A2q
+java.util.OptionalRETURN_TYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaû û(2t
+java.net.URLRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaû û(‚
+Éorg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?embedElement@159.17:159.29VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaü ü("
+typeElements"
+isFinalfalse"í
+declarationString}<mark class="modifier"> </mark>Elements <mark class="class-field">embedElement</mark> = html.body().select("embed[id='pdf']")*embedElement2q
+org.jsoup.select.ElementsTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaü ü(2≈
+morg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)!htmlCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaü  ü($ 
+}org.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?pdfUrl@160.25:160.31VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java† †("
+typeOptional<String>"
+isFinalfalse"©
+declarationStringì<mark class="modifier"> </mark>Optional<String> <mark class="class-field">pdfUrl</mark> = embedElement.stream().map(e -> e.attr("src")).findFirst()*pdfUrl2j
+java.util.OptionalTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java† †(2q
+java.lang.StringTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java† †(2‹
+Éorg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?embedElement@159.17:159.29CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java†" †(.2–
+xorg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?e@162.21:162.22CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¢ ¢(⁄
+
+zorg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?url@166.20:166.23VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¶ ¶("
+typeURL"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark>URL <mark class="class-field">url</mark> = base.toURI().resolve(pdfUrl.get()).toURL()*url2d
+java.net.URLTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¶ ¶(2l
+java.net.URI.toURL()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¶= ¶(B2~
+&java.net.URI.resolve(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¶' ¶(.2l
+java.net.URL.toURI()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¶ ¶($2p
+java.util.Optional.get()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¶6 ¶(92≈
+morg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)!baseCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¶ ¶(2’
+}org.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?pdfUrl@160.25:160.31CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¶/ ¶(5ä
+morg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)!html	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaû4 û(8"
+typeDocument"
+isFinalfalse""
+declarationStringDocument html*html2p
+org.jsoup.nodes.DocumentTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaû+ û(3Ù
+morg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)!base	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaû> û(B"
+typeURL"
+isFinalfalse"
+declarationStringURL base*base2d
+java.net.URLTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaû: û(=í
+xorg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?e@162.21:162.22VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java¢ ¢("
+type"
+isFinalfalse"
+declarationString e*e2TYPE˜
+xorg.jabref.logic.importer.fetcher.DoiResolution.findEmbeddedLink(org.jsoup.nodes.Document, java.net.URL)?e@168.64:168.65VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java®@ ®(A"2
+type*MalformedURLException | URISyntaxException"
+isFinalfalse"A
+declarationString,MalformedURLException | URISyntaxException e*e2î
+<java.net.MalformedURLException | java.net.URISyntaxExceptionTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java® ®(?Ò
+_org.jabref.logic.importer.fetcher.DoiResolution.findDistinctLinks(java.util.List<java.net.URL>)METHODN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaØ Ø(+"
+isFinalfalse"í
+declarationString}<mark class="modifier">private </mark>Optional&lt;URL&gt; <mark class="method">findDistinctLinks</mark>(List&lt;URL&gt; urls)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeOptional<URL>*findDistinctLinks2§
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∞; ∞(B2z
+"java.util.stream.Stream.distinct()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∞0 ∞(82u
+java.util.Collection.stream()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∞' ∞(-2|
+$java.util.stream.Collectors.toList()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∞N ∞(T2p
+java.util.List.isEmpty()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java≤ ≤(!2r
+java.util.Optional.empty()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java≥ ≥(!2m
+java.util.List.size()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∂ ∂(2r
+java.util.Optional.empty()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∫ ∫(2º
+dorg.jabref.logic.importer.fetcher.DoiResolution.findDistinctLinks(java.util.List<java.net.URL>)!urlsCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∞" ∞(&2”
+{org.jabref.logic.importer.fetcher.DoiResolution.findDistinctLinks(java.util.List<java.net.URL>)?distinctLinks@176.18:176.31CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java≤ ≤(2”
+{org.jabref.logic.importer.fetcher.DoiResolution.findDistinctLinks(java.util.List<java.net.URL>)?distinctLinks@176.18:176.31CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∂ ∂(2”
+{org.jabref.logic.importer.fetcher.DoiResolution.findDistinctLinks(java.util.List<java.net.URL>)?distinctLinks@176.18:176.31CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∑ ∑(,2¡
+dorg.jabref.logic.importer.fetcher.DoiResolution.findDistinctLinks(java.util.List<java.net.URL>)!urls	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaØ6 Ø(:2⁄
+{org.jabref.logic.importer.fetcher.DoiResolution.findDistinctLinks(java.util.List<java.net.URL>)?distinctLinks@176.18:176.31DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∞ ∞(2q
+java.util.OptionalRETURN_TYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaØ Ø(2t
+java.net.URLRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaØ Ø(·
+
+{org.jabref.logic.importer.fetcher.DoiResolution.findDistinctLinks(java.util.List<java.net.URL>)?distinctLinks@176.18:176.31VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∞ ∞("
+type	List<URL>"
+isFinalfalse"•
+declarationStringè<mark class="modifier"> </mark>List<URL> <mark class="class-field">distinctLinks</mark> = urls.stream().distinct().collect(Collectors.toList())*distinctLinks2f
+java.util.ListTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∞ ∞(2m
+java.net.URLTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∞ ∞(2§
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∞; ∞(B2z
+"java.util.stream.Stream.distinct()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∞0 ∞(82u
+java.util.Collection.stream()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∞' ∞(-2|
+$java.util.stream.Collectors.toList()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∞N ∞(T2º
+dorg.jabref.logic.importer.fetcher.DoiResolution.findDistinctLinks(java.util.List<java.net.URL>)!urlsCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java∞" ∞(&Ë
+dorg.jabref.logic.importer.fetcher.DoiResolution.findDistinctLinks(java.util.List<java.net.URL>)!urls	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaØ6 Ø(:"
+type	List<URL>"
+isFinalfalse"#
+declarationStringList<URL> urls*urls2f
+java.util.ListTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaØ, Ø(02m
+java.net.URLTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaØ1 Ø(4–
+?org.jabref.logic.importer.fetcher.DoiResolution.getTrustLevel()METHODN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaæ æ(#"
+isFinalfalse"ü
+declarationStringâ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>TrustLevel <mark class="method">getTrustLevel</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+type
+TrustLevel*getTrustLevel2ï
+9org.jabref.logic.importer.FulltextFetcher.getTrustLevel()OVERRIDEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaæ æ(#2ã
+,org.jabref.logic.importer.fetcher.TrustLevelRETURN_TYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.javaæ æ(µ
+Borg.jabref.logic.importer.fetcher.DoiResolution?LOGGER@41.32:41.38VALUEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java)  )(&"
+isFinaltrue"
+typeLogger"„
+declarationStringÕ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(DoiResolution.class);"
+isStatictrue"
+accessprivate*LOGGER2f
+org.slf4j.LoggerTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java) )(•
+Jorg.jabref.logic.importer.fetcher.DoiResolution?doiPreferences@42.33:42.47VALUEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java*! *(/"
+isFinaltrue"
+typeDOIPreferences"û
+declarationStringà<mark class="modifier">private </mark><mark class="modifier">final </mark>DOIPreferences <mark class="class-field">doiPreferences</mark>"
+isStaticfalse"
+accessprivate*doiPreferences2Å
++org.jabref.logic.preferences.DOIPreferencesTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\DoiResolution.java* *( 

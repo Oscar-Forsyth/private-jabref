@@ -1,0 +1,585 @@
+
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java≈
+/org.jabref.gui.fieldeditors.LinkedEntriesEditorCLASSL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java( (( "&
+packageorg.jabref.gui.fieldeditors"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"◊
+declarationString¡<mark class="modifier">public </mark><mark class="modifier">class </mark>LinkedEntriesEditor<mark class="modifier"> extends </mark>HBox<mark class="modifier"><br>implements </mark>FieldEditorFX"
+accesspublic*LinkedEntriesEditor2Ô
+ëorg.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java5 5(2æ
+aorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaP P(2õ
+>org.jabref.gui.fieldeditors.LinkedEntriesEditor.getViewModel()DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javag( g(42π
+\org.jabref.gui.fieldeditors.LinkedEntriesEditor.bindToEntry(org.jabref.model.entry.BibEntry)DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javal l(2ñ
+9org.jabref.gui.fieldeditors.LinkedEntriesEditor.getNode()DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaq q(2ü
+Borg.jabref.gui.fieldeditors.LinkedEntriesEditor?LOGGER@42.32:42.38DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java*  *(&2ß
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor?entryLinkField@44.44:44.58DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java,, ,(:2¶
+Iorg.jabref.gui.fieldeditors.LinkedEntriesEditor?dialogService@46.34:46.47DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java." .(/2©
+Lorg.jabref.gui.fieldeditors.LinkedEntriesEditor?clipBoardManager@47.37:47.53DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java/% /(52≠
+Porg.jabref.gui.fieldeditors.LinkedEntriesEditor?keyBindingRepository@48.41:48.61DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java0) 0(=2§
+Gorg.jabref.gui.fieldeditors.LinkedEntriesEditor?undoManager@49.32:49.43DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java1  1(+2¢
+Eorg.jabref.gui.fieldeditors.LinkedEntriesEditor?viewModel@51.47:51.56DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java3/ 3(82ù
+@org.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextActionDECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javau u("2Å
+)org.jabref.gui.fieldeditors.FieldEditorFXEXTENDL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java(9 ((F2p
+javafx.scene.layout.HBoxEXTENDL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java() ((-g
+ëorg.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)CONSTRUCTORL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java5 5("£
+declarationStringç<mark class="modifier">public </mark><mark class="method">LinkedEntriesEditor</mark>(Field field<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> SuggestionProvider&lt;BibEntry&gt; suggestionProvider<mark class="modifier"><mark class="modifier">,</mark></mark> FieldCheckers fieldCheckers)*LinkedEntriesEditor2¶
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaB# B(&2ù
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java@# @()2s
+java.util.Collection.stream()CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java?< ?(B2û
+Horg.jabref.gui.autocompleter.SuggestionProvider.getPossibleSuggestions()CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java?# ?(92t
+java.lang.String.toLowerCase()CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java@_ @(j2r
+java.util.Optional.orElse(T)CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java@T @(Z2Ü
+0org.jabref.model.entry.BibEntry.getCitationKey()CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java@C @(Q2z
+$java.util.stream.Collectors.toList()CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaC6 C(<2£
+Morg.jabref.gui.fieldeditors.LinkedEntriesEditorViewModel.getStringConverter()CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaE. E(@2£
+Morg.jabref.gui.fieldeditors.LinkedEntriesEditorViewModel.getStringConverter()CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaFB F(T2©
+Sjava.util.Comparator.comparing(java.util.function.Function<? super T, ? extends U>)CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaH0 H(92¶
+Porg.jabref.gui.fieldeditors.LinkedEntriesEditorViewModel.linkedEntriesProperty()CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaMN M(c2˙
+£org.jabref.gui.fieldeditors.LinkedEntriesEditorViewModel.LinkedEntriesEditorViewModel(org.jabref.model.entry.field.Field, org.jabref.gui.autocompleter.SuggestionProvider<?>, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.integrity.FieldCheckers, javax.swing.undo.UndoManager)CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java: :(92ù
+Gorg.jabref.gui.util.ViewModelListCellFactory.ViewModelListCellFactory()CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java<* <(S2Ó
+óorg.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)!fieldCALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java:: :(?2˚
+§org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)!suggestionProviderCALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java:A :(S2¯
+°org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)!databaseContextCALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java:U :(d2ˆ
+üorg.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)!fieldCheckersCALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java:f :(s2û
+Gorg.jabref.gui.fieldeditors.LinkedEntriesEditor?undoManager@49.32:49.43CALLM
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java:u :(Ä2†
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor?entryLinkField@44.44:44.58CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java< <(2†
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor?entryLinkField@44.44:44.58CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java> >(2˚
+§org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)!suggestionProviderCALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java? ?("2ˇ
+®org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)?suggestion@64.42:64.52CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java@8 @(B2¸
+•org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)?request@62.45:62.52CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaAL A(S2†
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor?entryLinkField@44.44:44.58CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaD D(2†
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor?entryLinkField@44.44:44.58CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaE E(2õ
+Eorg.jabref.gui.fieldeditors.LinkedEntriesEditor?viewModel@51.47:51.56CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaE$ E(-2†
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor?entryLinkField@44.44:44.58CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaF F(2õ
+Eorg.jabref.gui.fieldeditors.LinkedEntriesEditor?viewModel@51.47:51.56CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaF8 F(A2ˇ
+®org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)?searchText@70.42:70.52CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaFb F(l2†
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor?entryLinkField@44.44:44.58CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaG G(2˛
+ßorg.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)?entryLink@71.35:71.44CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaG= G(F2ˇ
+®org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)?searchText@71.46:71.56CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaGi G(s2†
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor?entryLinkField@44.44:44.58CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaH H(2†
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor?entryLinkField@44.44:44.58CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaI I(2†
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor?entryLinkField@44.44:44.58CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaJ J(2†
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor?entryLinkField@44.44:44.58CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaK K(2†
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor?entryLinkField@44.44:44.58CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaM* M(82õ
+Eorg.jabref.gui.fieldeditors.LinkedEntriesEditor?viewModel@51.47:51.56CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaMD M(M2õ
+Eorg.jabref.gui.fieldeditors.LinkedEntriesEditor?viewModel@51.47:51.56CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java: :(2Ö
+/org.jabref.model.entry.ParsedEntryLink.getKey()CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaH: H(Q2Û
+óorg.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)!field	PARAMETERL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java5% 5(*2˝
+°org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)!databaseContext	PARAMETERL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java5? 5(N2Ä
+§org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)!suggestionProvider	PARAMETERL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java5m 5(2˝
+üorg.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)!fieldCheckers	PARAMETERN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java5è 5(ú2É
+•org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)?request@62.45:62.52DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java>- >(42Ü
+®org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)?suggestion@64.42:64.52DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java@* @(42Ü
+®org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)?searchText@70.42:70.52DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaF* F(42Ö
+ßorg.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)?entryLink@71.35:71.44DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaG# G(,2Ü
+®org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)?searchText@71.46:71.56DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaG. G(82å
+/org.jabref.gui.fieldeditors.LinkedEntriesEditorRETURN_TYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java5 5(∑
+óorg.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)!field	PARAMETERL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java5% 5(*"
+typeField"
+isFinalfalse" 
+declarationStringField field*field2x
+"org.jabref.model.entry.field.FieldTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java5 5($˙
+°org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)!databaseContext	PARAMETERL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java5? 5(N"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2Ç
+,org.jabref.model.database.BibDatabaseContextTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java5, 5(>ö
+§org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)!suggestionProvider	PARAMETERL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java5m 5("$
+typeSuggestionProvider<BibEntry>"
+isFinalfalse"D
+declarationString/SuggestionProvider<BibEntry> suggestionProvider*suggestionProvider2Ö
+/org.jabref.gui.autocompleter.SuggestionProviderTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java5P 5(b2~
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java5c 5(kÍ
+üorg.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)!fieldCheckers	PARAMETERN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java5è 5(ú"
+typeFieldCheckers"
+isFinalfalse"0
+declarationStringFieldCheckers fieldCheckers*fieldCheckers2Ä
+(org.jabref.logic.integrity.FieldCheckersTYPEN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java5Å 5(é 
+•org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)?request@62.45:62.52VARIABLEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java>- >(4"
+type"
+isFinalfalse"
+declarationString request*request2TYPE”
+®org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)?suggestion@64.42:64.52VARIABLEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java@* @(4"
+type"
+isFinalfalse" 
+declarationString suggestion*
+suggestion2TYPE”
+®org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)?searchText@70.42:70.52VARIABLEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaF* F(4"
+type"
+isFinalfalse" 
+declarationString searchText*
+searchText2TYPE–
+ßorg.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)?entryLink@71.35:71.44VARIABLEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaG# G(,"
+type"
+isFinalfalse"
+declarationString
+ entryLink*	entryLink2TYPE”
+®org.jabref.gui.fieldeditors.LinkedEntriesEditor.LinkedEntriesEditor(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProvider<org.jabref.model.entry.BibEntry>, org.jabref.logic.integrity.FieldCheckers)?searchText@71.46:71.56VARIABLEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaG. G(8"
+type"
+isFinalfalse" 
+declarationString searchText*
+searchText2TYPE˚<
+aorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)METHODL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaP P("
+isFinalfalse"Ä
+declarationStringk<mark class="modifier">private </mark>Node <mark class="method">createTag</mark>(ParsedEntryLink entryLink)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeNode*	createTag2ê
+:org.jabref.gui.icon.IconTheme.JabRefIcons.getGraphicNode()CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaS> S(L2¬
+lorg.jabref.gui.fieldeditors.LinkedEntriesEditorViewModel.jumpToEntry(org.jabref.model.entry.ParsedEntryLink)CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaX X(%2∂
+`org.jabref.gui.actions.ActionFactory.ActionFactory(org.jabref.gui.keyboard.KeyBindingRepository)CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java]$ ](12¯
+°org.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction.TagContextAction(org.jabref.gui.actions.StandardActions, org.jabref.model.entry.ParsedEntryLink)CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java_A _(Q2¯
+°org.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction.TagContextAction(org.jabref.gui.actions.StandardActions, org.jabref.model.entry.ParsedEntryLink)CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java`@ `(P2¯
+°org.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction.TagContextAction(org.jabref.gui.actions.StandardActions, org.jabref.model.entry.ParsedEntryLink)CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaaC a(S2Ã
+vorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?tagLabel@81.14:81.22CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaR R(2†
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor?entryLinkField@44.44:44.58CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaR R('2¡
+korg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)!entryLinkCALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaR@ R(I2Ã
+vorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?tagLabel@81.14:81.22CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaS S(2Ã
+vorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?tagLabel@81.14:81.22CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaT T(2†
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor?entryLinkField@44.44:44.58CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaT9 T(G2¡
+korg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)!entryLinkCALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaTS T(\2Ã
+vorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?tagLabel@81.14:81.22CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaU U(2Ã
+vorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?tagLabel@81.14:81.22CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaV V(2…
+sorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?event@86.35:86.40CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaW W(2…
+sorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?event@86.35:86.40CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaW. W(32õ
+Eorg.jabref.gui.fieldeditors.LinkedEntriesEditor?viewModel@51.47:51.56CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaX X(2¡
+korg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)!entryLinkCALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaX& X(/2¶
+Porg.jabref.gui.fieldeditors.LinkedEntriesEditor?keyBindingRepository@48.41:48.61CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java]2 ](F2œ
+yorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?contextMenu@92.20:92.31CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java^ ^(2À
+uorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?factory@93.22:93.29CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java_ _(2¡
+korg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)!entryLinkCALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java_h _(q2À
+uorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?factory@93.22:93.29CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java` `(2¡
+korg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)!entryLinkCALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java`f `(o2À
+uorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?factory@93.22:93.29CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaa a(2¡
+korg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)!entryLinkCALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaal a(u2Ã
+vorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?tagLabel@81.14:81.22CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javac c(2œ
+yorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?contextMenu@92.20:92.31CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javac  c(+2Ã
+vorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?tagLabel@81.14:81.22CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javad d(2∆
+korg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)!entryLink	PARAMETERL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaP+ P(42”
+vorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?tagLabel@81.14:81.22DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaQ Q(2÷
+yorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?contextMenu@92.20:92.31DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java\ \(2“
+uorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?factory@93.22:93.29DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java] ](2–
+sorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?event@84.48:84.53DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaT0 T(52–
+sorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?event@86.35:86.40DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaV# V((2n
+javafx.scene.NodeRETURN_TYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaP P(‡
+vorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?tagLabel@81.14:81.22VARIABLEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaQ Q("
+typeLabel"
+isFinalfalse"q
+declarationString\<mark class="modifier"> </mark>Label <mark class="class-field">tagLabel</mark> = new Label()*tagLabel2p
+javafx.scene.control.LabelTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaQ Q(Ç
+yorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?contextMenu@92.20:92.31VARIABLEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java\ \("
+typeContextMenu"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier"> </mark>ContextMenu <mark class="class-field">contextMenu</mark> = new ContextMenu()*contextMenu2v
+ javafx.scene.control.ContextMenuTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java\ \(ˆ
+uorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?factory@93.22:93.29VARIABLEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java] ]("
+typeActionFactory"
+isFinalfalse"î
+declarationString<mark class="modifier"> </mark>ActionFactory <mark class="class-field">factory</mark> = new ActionFactory(keyBindingRepository)*factory2z
+$org.jabref.gui.actions.ActionFactoryTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java] ](2∂
+`org.jabref.gui.actions.ActionFactory.ActionFactory(org.jabref.gui.keyboard.KeyBindingRepository)CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java]$ ](12¶
+Porg.jabref.gui.fieldeditors.LinkedEntriesEditor?keyBindingRepository@48.41:48.61CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java]2 ](F™
+korg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)!entryLink	PARAMETERL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaP+ P(4"
+typeParsedEntryLink"
+isFinalfalse".
+declarationStringParsedEntryLink entryLink*	entryLink2|
+&org.jabref.model.entry.ParsedEntryLinkTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaP P(*ì
+sorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?event@84.48:84.53VARIABLEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaT0 T(5"
+type"
+isFinalfalse"
+declarationString event*event2TYPEì
+sorg.jabref.gui.fieldeditors.LinkedEntriesEditor.createTag(org.jabref.model.entry.ParsedEntryLink)?event@86.35:86.40VARIABLEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaV# V(("
+type"
+isFinalfalse"
+declarationString event*event2TYPE–
+>org.jabref.gui.fieldeditors.LinkedEntriesEditor.getViewModel()METHODL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javag( g(4"
+isFinalfalse"Å
+declarationStringl<mark class="modifier">public </mark>LinkedEntriesEditorViewModel <mark class="method">getViewModel</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"$
+typeLinkedEntriesEditorViewModel*getViewModel2õ
+Eorg.jabref.gui.fieldeditors.LinkedEntriesEditor?viewModel@51.47:51.56CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javah h(2ï
+8org.jabref.gui.fieldeditors.LinkedEntriesEditorViewModelRETURN_TYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javag g('…
+\org.jabref.gui.fieldeditors.LinkedEntriesEditor.bindToEntry(org.jabref.model.entry.BibEntry)METHODL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javal l("
+isFinalfalse"√
+declarationString≠<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">bindToEntry</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*bindToEntry2∂
+`org.jabref.gui.fieldeditors.AbstractEditorViewModel.bindToEntry(org.jabref.model.entry.BibEntry)CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javam m(2õ
+Eorg.jabref.gui.fieldeditors.LinkedEntriesEditor?viewModel@51.47:51.56CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javam m(2∏
+borg.jabref.gui.fieldeditors.LinkedEntriesEditor.bindToEntry(org.jabref.model.entry.BibEntry)!entryCALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javam m(#2∞
+Vorg.jabref.gui.fieldeditors.FieldEditorFX.bindToEntry(org.jabref.model.entry.BibEntry)OVERRIDEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javal l(2Ω
+borg.jabref.gui.fieldeditors.LinkedEntriesEditor.bindToEntry(org.jabref.model.entry.BibEntry)!entry	PARAMETERL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javal% l(*2a
+voidRETURN_TYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javal l(Ñ
+borg.jabref.gui.fieldeditors.LinkedEntriesEditor.bindToEntry(org.jabref.model.entry.BibEntry)!entry	PARAMETERL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javal% l(*"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2u
+org.jabref.model.entry.BibEntryTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javal l($è
+9org.jabref.gui.fieldeditors.LinkedEntriesEditor.getNode()METHODL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaq q("
+isFinalfalse"î
+declarationString<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>Parent <mark class="method">getNode</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeParent*getNode2ç
+3org.jabref.gui.fieldeditors.FieldEditorFX.getNode()OVERRIDEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaq q(2p
+javafx.scene.ParentRETURN_TYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaq q(ª
+Borg.jabref.gui.fieldeditors.LinkedEntriesEditor?LOGGER@42.32:42.38VALUEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java*  *(&"
+isFinaltrue"
+typeLogger"È
+declarationString”<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(LinkedEntriesEditor.class);"
+isStatictrue"
+accessprivate*LOGGER2f
+org.slf4j.LoggerTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java* *(è
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor?entryLinkField@44.44:44.58VARIABLEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java,, ,(:"
+isFinalfalse""
+typeTagsField<ParsedEntryLink>"Ñ
+declarationStringo<mark class="modifier">public </mark>TagsField<ParsedEntryLink> <mark class="class-field">entryLinkField</mark>"
+isStaticfalse"
+accesspublic*entryLinkField2o
+com.dlsc.gemsfx.TagsFieldTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java, ,(2Ö
+&org.jabref.model.entry.ParsedEntryLinkTYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java, ,(*Ó
+Iorg.jabref.gui.fieldeditors.LinkedEntriesEditor?dialogService@46.34:46.47VARIABLEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java." .(/"
+isFinalfalse"
+typeDialogService"w
+declarationStringb<mark class="modifier">private </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2r
+org.jabref.gui.DialogServiceTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java. .(!Ä
+Lorg.jabref.gui.fieldeditors.LinkedEntriesEditor?clipBoardManager@47.37:47.53VARIABLEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java/% /(5"
+isFinalfalse"
+typeClipBoardManager"}
+declarationStringh<mark class="modifier">private </mark>ClipBoardManager <mark class="class-field">clipBoardManager</mark>"
+isStaticfalse"
+accessprivate*clipBoardManager2u
+org.jabref.gui.ClipBoardManagerTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java/ /($£
+Porg.jabref.gui.fieldeditors.LinkedEntriesEditor?keyBindingRepository@48.41:48.61VARIABLEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java0) 0(="
+isFinalfalse"
+typeKeyBindingRepository"Ö
+declarationStringp<mark class="modifier">private </mark>KeyBindingRepository <mark class="class-field">keyBindingRepository</mark>"
+isStaticfalse"
+accessprivate*keyBindingRepository2Ç
+,org.jabref.gui.keyboard.KeyBindingRepositoryTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java0 0((‰
+Gorg.jabref.gui.fieldeditors.LinkedEntriesEditor?undoManager@49.32:49.43VARIABLEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java1  1(+"
+isFinalfalse"
+typeUndoManager"s
+declarationString^<mark class="modifier">private </mark>UndoManager <mark class="class-field">undoManager</mark>"
+isStaticfalse"
+accessprivate*undoManager2r
+javax.swing.undo.UndoManagerTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java1 1(ø
+Eorg.jabref.gui.fieldeditors.LinkedEntriesEditor?viewModel@51.47:51.56VALUEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java3/ 3(8"
+isFinaltrue"$
+typeLinkedEntriesEditorViewModel"ß
+declarationStringë<mark class="modifier">private </mark><mark class="modifier">final </mark>LinkedEntriesEditorViewModel <mark class="class-field">viewModel</mark>"
+isStaticfalse"
+accessprivate*	viewModel2é
+8org.jabref.gui.fieldeditors.LinkedEntriesEditorViewModelTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java3 3(.Û
+
+@org.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextActionCLASSL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javau u("":
+package/org.jabref.gui.fieldeditors.LinkedEntriesEditor"
+isFinalfalse"
+inner classtrue"
+
+isAbstractfalse"§
+declarationStringé<mark class="modifier">private </mark><mark class="modifier">class </mark>TagContextAction<mark class="modifier"> extends </mark>SimpleCommand"
+accessprivate*TagContextAction2ˇ
+°org.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction.TagContextAction(org.jabref.gui.actions.StandardActions, org.jabref.model.entry.ParsedEntryLink)DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javay y(2ß
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction.execute()DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java (2≥
+Vorg.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction?command@118.38:118.45DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javav& v(-2µ
+Xorg.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction?entryLink@119.38:119.47DECLARATIONL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaw& w(/2|
+$org.jabref.gui.actions.SimpleCommandEXTENDL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javau+ u(8Ö
+°org.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction.TagContextAction(org.jabref.gui.actions.StandardActions, org.jabref.model.entry.ParsedEntryLink)CONSTRUCTORL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javay y("◊
+declarationString¡<mark class="modifier">public </mark><mark class="method">TagContextAction</mark>(StandardActions command<mark class="modifier"><mark class="modifier">,</mark></mark> ParsedEntryLink entryLink)*TagContextAction2Ä
+©org.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction.TagContextAction(org.jabref.gui.actions.StandardActions, org.jabref.model.entry.ParsedEntryLink)!commandCALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaz z("2Ç
+´org.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction.TagContextAction(org.jabref.gui.actions.StandardActions, org.jabref.model.entry.ParsedEntryLink)!entryLinkCALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java{ {(&2¨
+Vorg.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction?command@118.38:118.45CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaz z(2Æ
+Xorg.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction?entryLink@119.38:119.47CALLL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java{ {(2Ö
+©org.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction.TagContextAction(org.jabref.gui.actions.StandardActions, org.jabref.model.entry.ParsedEntryLink)!command	PARAMETERL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javay0 y(72á
+´org.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction.TagContextAction(org.jabref.gui.actions.StandardActions, org.jabref.model.entry.ParsedEntryLink)!entryLink	PARAMETERL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javayI y(R2ù
+@org.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextActionRETURN_TYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javay y(Â
+©org.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction.TagContextAction(org.jabref.gui.actions.StandardActions, org.jabref.model.entry.ParsedEntryLink)!command	PARAMETERL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javay0 y(7"
+typeStandardActions"
+isFinalfalse",
+declarationStringStandardActions command*command2|
+&org.jabref.gui.actions.StandardActionsTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javay  y(/Î
+´org.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction.TagContextAction(org.jabref.gui.actions.StandardActions, org.jabref.model.entry.ParsedEntryLink)!entryLink	PARAMETERL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javayI y(R"
+typeParsedEntryLink"
+isFinalfalse".
+declarationStringParsedEntryLink entryLink*	entryLink2|
+&org.jabref.model.entry.ParsedEntryLinkTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javay9 y(H»'
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction.execute()METHODL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java ("
+isFinalfalse"±
+declarationStringõ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">execute</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*execute2î
+<org.jabref.gui.ClipBoardManager.setContent(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaÇ% Ç(/2á
+/org.jabref.model.entry.ParsedEntryLink.getKey()CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaÇ: Ç(@2ç
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaÉ" É((2¶
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaÉ6 É(:2°
+Iorg.jabref.gui.JabRefDialogService.shortenDialogMessage(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaÑ0 Ñ(D2á
+/org.jabref.model.entry.ParsedEntryLink.getKey()CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaÑO Ñ(U2î
+<org.jabref.gui.ClipBoardManager.setContent(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaá% á(/2á
+/org.jabref.model.entry.ParsedEntryLink.getKey()CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaá: á(@2ç
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaà" à((2¶
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaà6 à(:2°
+Iorg.jabref.gui.JabRefDialogService.shortenDialogMessage(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaâ0 â(D2á
+/org.jabref.model.entry.ParsedEntryLink.getKey()CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaâO â(U2à
+0org.jabref.gui.actions.StandardActions.getText()CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaèE è(L2Æ
+Vorg.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction?command@118.38:118.45CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaÄ Ä(2§
+Lorg.jabref.gui.fieldeditors.LinkedEntriesEditor?clipBoardManager@47.37:47.53CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaÇ Ç($2∞
+Xorg.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction?entryLink@119.38:119.47CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaÇ0 Ç(92°
+Iorg.jabref.gui.fieldeditors.LinkedEntriesEditor?dialogService@46.34:46.47CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaÉ É(!2∞
+Xorg.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction?entryLink@119.38:119.47CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaÑE Ñ(N2§
+Lorg.jabref.gui.fieldeditors.LinkedEntriesEditor?clipBoardManager@47.37:47.53CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaá á($2∞
+Xorg.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction?entryLink@119.38:119.47CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaá0 á(92°
+Iorg.jabref.gui.fieldeditors.LinkedEntriesEditor?dialogService@46.34:46.47CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaà à(!2∞
+Xorg.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction?entryLink@119.38:119.47CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaâE â(N2¢
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor?entryLinkField@44.44:44.58CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaä ä("2∞
+Xorg.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction?entryLink@119.38:119.47CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaä. ä(72¢
+Jorg.jabref.gui.fieldeditors.LinkedEntriesEditor?entryLinkField@44.44:44.58CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaç ç(&2∞
+Xorg.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction?entryLink@119.38:119.47CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaç2 ç(;2ö
+Borg.jabref.gui.fieldeditors.LinkedEntriesEditor?LOGGER@42.32:42.38CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaè è(2Æ
+Vorg.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction?command@118.38:118.45CALLN
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaè= è(D2a
+voidRETURN_TYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.java (ü
+Vorg.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction?command@118.38:118.45VALUEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javav& v(-"
+isFinaltrue"
+typeStandardActions"ò
+declarationStringÇ<mark class="modifier">private </mark><mark class="modifier">final </mark>StandardActions <mark class="class-field">command</mark>"
+isStaticfalse"
+accessprivate*command2|
+&org.jabref.gui.actions.StandardActionsTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javav v(%•
+Xorg.jabref.gui.fieldeditors.LinkedEntriesEditor.TagContextAction?entryLink@119.38:119.47VALUEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaw& w(/"
+isFinaltrue"
+typeParsedEntryLink"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>ParsedEntryLink <mark class="class-field">entryLink</mark>"
+isStaticfalse"
+accessprivate*	entryLink2|
+&org.jabref.model.entry.ParsedEntryLinkTYPEL
+Bsrc\main\java\org\jabref\gui\fieldeditors\LinkedEntriesEditor.javaw w(%

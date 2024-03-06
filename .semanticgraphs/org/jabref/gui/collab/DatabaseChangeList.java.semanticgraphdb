@@ -1,0 +1,402 @@
+
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaÅ
+(org.jabref.gui.collab.DatabaseChangeListCLASSE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java (" 
+packageorg.jabref.gui.collab"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"p
+declarationString[<mark class="modifier">public </mark><mark class="modifier">class </mark>DatabaseChangeList"
+accesspublic*DatabaseChangeList2ì
+=org.jabref.gui.collab.DatabaseChangeList.DatabaseChangeList()DECLARATIONE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java (2•
+Œorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)DECLARATIONE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java '  (;2®
+—org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)DECLARATIONE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java2" 2(52¶
+œorg.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)DECLARATIONE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaB" B(4î
+=org.jabref.gui.collab.DatabaseChangeList.DatabaseChangeList()CONSTRUCTORE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java ("k
+declarationStringV<mark class="modifier">private </mark><mark class="method">DatabaseChangeList</mark>()*DatabaseChangeList2~
+(org.jabref.gui.collab.DatabaseChangeListRETURN_TYPEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java (Ê}
+Œorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)METHODE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java '  (;"
+isFinalfalse"ß
+declarationStringë<mark class="modifier">public </mark><mark class="modifier">static </mark>List&lt;DatabaseChange&gt; <mark class="method">compareAndGetChanges</mark>(BibDatabaseContext originalDatabase<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseContext otherDatabase<mark class="modifier"><mark class="modifier">,</mark></mark> DatabaseChangeResolverFactory databaseChangeResolverFactory)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeList<DatabaseChange>*compareAndGetChanges2Ê
+ñorg.jabref.logic.bibtex.comparator.BibDatabaseDiff.compare(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java#6 #(=2ì
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java%- %(62ö
+Korg.jabref.logic.bibtex.comparator.BibDatabaseDiff.getMetaDataDifferences()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java% %(*2ì
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java'' '(02î
+Eorg.jabref.logic.bibtex.comparator.MetaDataDiff.getGroupDifferences()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java' '($2ì
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java+- +(62ö
+Korg.jabref.logic.bibtex.comparator.BibDatabaseDiff.getPreambleDifferences()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java+ +(*2ë
+Bjava.lang.Iterable.forEach(java.util.function.Consumer<? super T>)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java,. ,(52õ
+Lorg.jabref.logic.bibtex.comparator.BibDatabaseDiff.getBibStringDifferences()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java, ,(+2°
+—org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java,J ,(]2ë
+Bjava.lang.Iterable.forEach(java.util.function.Consumer<? super T>)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java-* -(12ó
+Horg.jabref.logic.bibtex.comparator.BibDatabaseDiff.getEntryDifferences()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java- -('2ü
+œorg.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java-F -(X2n
+java.util.ArrayList.ArrayList()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java!+ !(62¶
+÷org.jabref.gui.collab.metedatachange.MetadataChange.MetadataChange(org.jabref.logic.bibtex.comparator.MetaDataDiff, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java& &(*2ö
+ org.jabref.gui.collab.groupchange.GroupChange.GroupChange(org.jabref.logic.bibtex.comparator.GroupDiff, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java'N '(Y2¶
+÷org.jabref.gui.collab.preamblechange.PreambleChange.PreambleChange(org.jabref.logic.bibtex.comparator.PreambleDiff, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java+O +(]2Ø
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!originalDatabaseCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java#> #(N2¨
+‹org.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!otherDatabaseCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java#P #(]2∂
+Êorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?differences@35.24:35.35CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java% %(2≤
+‚org.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?changes@33.29:33.36CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java& &(2Ø
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?diff@37.55:37.59CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java&+ &(/2Ø
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!originalDatabaseCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java&1 &(A2º
+Ïorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!databaseChangeResolverFactoryCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java&C &(`2Ø
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?diff@37.55:37.59CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java' '(2≤
+‚org.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?changes@33.29:33.36CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java'> '(E2¥
+‰org.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?groupDiff@39.49:39.58CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java( ((2Ø
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!originalDatabaseCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java( ((/2º
+Ïorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!databaseChangeResolverFactoryCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java(1 ((N2∂
+Êorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?differences@35.24:35.35CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java+ +(2≤
+‚org.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?changes@33.29:33.36CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java+? +(F2Ø
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?diff@43.55:43.59CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java+^ +(b2Ø
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!originalDatabaseCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java+d +(t2Ω
+Ïorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!databaseChangeResolverFactoryCALLF
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java+v +(ì2∂
+Êorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?differences@35.24:35.35CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java, ,(2≤
+‚org.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?changes@33.29:33.36CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java,> ,(E2Ø
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!originalDatabaseCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java,^ ,(n2Ω
+Ïorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!databaseChangeResolverFactoryCALLF
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java,p ,(ç2±
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?diff@44.54:44.58CALLG
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java,è ,(ì2∂
+Êorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?differences@35.24:35.35CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java- -(2≤
+‚org.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?changes@33.29:33.36CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java-: -(A2Ø
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!originalDatabaseCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java-Y -(i2Ω
+Ïorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!databaseChangeResolverFactoryCALLF
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java-k -(à2±
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?diff@45.50:45.54CALLG
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java-ä -(é2≤
+‚org.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?changes@33.29:33.36CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java/, /(32¥
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!originalDatabase	PARAMETERE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java O  (_2≤
+‹org.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!otherDatabase	PARAMETERF
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java t  (Å2√
+Ïorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!databaseChangeResolverFactory	PARAMETERG
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java °  (æ2π
+‚org.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?changes@33.29:33.36DECLARATIONE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java! !($2Ω
+Êorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?differences@35.24:35.35DECLARATIONE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java# #(#2∂
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?diff@37.55:37.59DECLARATIONE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java%7 %(;2ª
+‰org.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?groupDiff@39.49:39.58DECLARATIONE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java'1 '(:2∂
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?diff@43.55:43.59DECLARATIONE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java+7 +(;2∂
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?diff@44.54:44.58DECLARATIONE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java,6 ,(:2∂
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?diff@45.50:45.54DECLARATIONE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java-2 -(62Z
+ListRETURN_TYPEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java   (º
+‚org.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?changes@33.29:33.36VARIABLEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java! !($"
+typeList<DatabaseChange>"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark>List<DatabaseChange> <mark class="class-field">changes</mark> = new ArrayList<>()*changes2S
+ListTYPEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java! !(2n
+java.util.ArrayList.ArrayList()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java!+ !(6Ô
+Êorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?differences@35.24:35.35VARIABLEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java# #(#"
+typeBibDatabaseDiff"
+isFinalfalse"¨
+declarationStringñ<mark class="modifier"> </mark>BibDatabaseDiff <mark class="class-field">differences</mark> = BibDatabaseDiff.compare(originalDatabase, otherDatabase)*differences2Å
+2org.jabref.logic.bibtex.comparator.BibDatabaseDiffTYPEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java# #(2Ê
+ñorg.jabref.logic.bibtex.comparator.BibDatabaseDiff.compare(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java#6 #(=2Ø
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!originalDatabaseCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java#> #(N2¨
+‹org.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!otherDatabaseCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java#P #(]´
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!originalDatabase	PARAMETERE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java O  (_"
+typeBibDatabaseContext"
+isFinalfalse"8
+declarationString#BibDatabaseContext originalDatabase*originalDatabase2{
+,org.jabref.model.database.BibDatabaseContextTYPEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java <  (N£
+‹org.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!otherDatabase	PARAMETERF
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java t  (Å"
+typeBibDatabaseContext"
+isFinalfalse"5
+declarationString BibDatabaseContext otherDatabase*otherDatabase2{
+,org.jabref.model.database.BibDatabaseContextTYPEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java a  (sÙ
+Ïorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)!databaseChangeResolverFactory	PARAMETERG
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java °  (æ"%
+typeDatabaseChangeResolverFactory"
+isFinalfalse"P
+declarationString;DatabaseChangeResolverFactory databaseChangeResolverFactory*databaseChangeResolverFactory2Ñ
+3org.jabref.gui.collab.DatabaseChangeResolverFactoryTYPEG
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java É  (†˜
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?diff@37.55:37.59VARIABLEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java%7 %(;"
+type"
+isFinalfalse"
+declarationString diff*diff2TYPEÜ
+‰org.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?groupDiff@39.49:39.58VARIABLEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java'1 '(:"
+type"
+isFinalfalse"
+declarationString
+ groupDiff*	groupDiff2TYPE˜
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?diff@43.55:43.59VARIABLEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java+7 +(;"
+type"
+isFinalfalse"
+declarationString diff*diff2TYPE˜
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?diff@44.54:44.58VARIABLEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java,6 ,(:"
+type"
+isFinalfalse"
+declarationString diff*diff2TYPE˜
+ﬂorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)?diff@45.50:45.54VARIABLEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java-2 -(6"
+type"
+isFinalfalse"
+declarationString diff*diff2TYPE¬Q
+—org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)METHODE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java2" 2(5"
+isFinalfalse"ç
+declarationString˜<mark class="modifier">private </mark><mark class="modifier">static </mark>DatabaseChange <mark class="method">createBibStringDiff</mark>(BibDatabaseContext originalDatabase<mark class="modifier"><mark class="modifier">,</mark></mark> DatabaseChangeResolverFactory databaseChangeResolverFactory<mark class="modifier"><mark class="modifier">,</mark></mark> BibStringDiff diff)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeDatabaseChange*createBibStringDiff2ì
+Dorg.jabref.logic.bibtex.comparator.BibStringDiff.getOriginalString()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java3 3("2é
+?org.jabref.logic.bibtex.comparator.BibStringDiff.getNewString()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java4, 4(82é
+?org.jabref.logic.bibtex.comparator.BibStringDiff.getNewString()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java7 7(2ì
+Dorg.jabref.logic.bibtex.comparator.BibStringDiff.getOriginalString()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java8/ 8(@2x
+)java.lang.String.equals(java.lang.Object)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java;/ ;(52|
+-org.jabref.model.entry.BibtexString.getName()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java;% ;(,2ì
+Dorg.jabref.logic.bibtex.comparator.BibStringDiff.getOriginalString()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java; ;("2|
+-org.jabref.model.entry.BibtexString.getName()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java;J ;(Q2é
+?org.jabref.logic.bibtex.comparator.BibStringDiff.getNewString()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java;; ;(G2ì
+Dorg.jabref.logic.bibtex.comparator.BibStringDiff.getOriginalString()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java</ <(@2é
+?org.jabref.logic.bibtex.comparator.BibStringDiff.getNewString()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java<I <(U2ì
+Dorg.jabref.logic.bibtex.comparator.BibStringDiff.getOriginalString()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java?+ ?(<2é
+?org.jabref.logic.bibtex.comparator.BibStringDiff.getNewString()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java?E ?(Q2ó
+«org.jabref.gui.collab.stringadd.BibTexStringAdd.BibTexStringAdd(org.jabref.model.entry.BibtexString, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java4 4(&2†
+–org.jabref.gui.collab.stringdelete.BibTexStringDelete.BibTexStringDelete(org.jabref.model.entry.BibtexString, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java8 8()2≈
+ıorg.jabref.gui.collab.stringchange.BibTexStringChange.BibTexStringChange(org.jabref.model.entry.BibtexString, org.jabref.model.entry.BibtexString, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java< <()2≈
+ıorg.jabref.gui.collab.stringrename.BibTexStringRename.BibTexStringRename(org.jabref.model.entry.BibtexString, org.jabref.model.entry.BibtexString, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java? ?(%2¶
+÷org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!diffCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java3 3(2¶
+÷org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!diffCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java4' 4(+2≤
+‚org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!originalDatabaseCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java4< 4(L2ø
+Ôorg.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!databaseChangeResolverFactoryCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java4N 4(k2¶
+÷org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!diffCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java7 7(2¶
+÷org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!diffCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java8* 8(.2≤
+‚org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!originalDatabaseCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java8D 8(T2ø
+Ôorg.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!databaseChangeResolverFactoryCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java8V 8(s2¶
+÷org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!diffCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java; ;(2¶
+÷org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!diffCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java;6 ;(:2¶
+÷org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!diffCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java<* <(.2¶
+÷org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!diffCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java<D <(H2≤
+‚org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!originalDatabaseCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java<Y <(i2¿
+Ôorg.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!databaseChangeResolverFactoryCALLF
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java<k <(à2¶
+÷org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!diffCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java?& ?(*2¶
+÷org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!diffCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java?@ ?(D2≤
+‚org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!originalDatabaseCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java?U ?(e2¿
+Ôorg.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!databaseChangeResolverFactoryCALLF
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java?g ?(Ñ2∑
+‚org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!originalDatabase	PARAMETERE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java2I 2(Y2≈
+Ôorg.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!databaseChangeResolverFactory	PARAMETERF
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java2y 2(ñ2≠
+÷org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!diff	PARAMETERG
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java2¶ 2(™2d
+DatabaseChangeRETURN_TYPEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java2 2(!Æ
+‚org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!originalDatabase	PARAMETERE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java2I 2(Y"
+typeBibDatabaseContext"
+isFinalfalse"8
+declarationString#BibDatabaseContext originalDatabase*originalDatabase2{
+,org.jabref.model.database.BibDatabaseContextTYPEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java26 2(HÙ
+Ôorg.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!databaseChangeResolverFactory	PARAMETERF
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java2y 2(ñ"%
+typeDatabaseChangeResolverFactory"
+isFinalfalse"P
+declarationString;DatabaseChangeResolverFactory databaseChangeResolverFactory*databaseChangeResolverFactory2Ç
+3org.jabref.gui.collab.DatabaseChangeResolverFactoryTYPEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java2[ 2(xâ
+÷org.jabref.gui.collab.DatabaseChangeList.createBibStringDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibStringDiff)!diff	PARAMETERG
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java2¶ 2(™"
+typeBibStringDiff"
+isFinalfalse"'
+declarationStringBibStringDiff diff*diff2Å
+0org.jabref.logic.bibtex.comparator.BibStringDiffTYPEG
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.java2ò 2(•≠8
+œorg.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)METHODE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaB" B(4"
+isFinalfalse"ã
+declarationStringı<mark class="modifier">private </mark><mark class="modifier">static </mark>DatabaseChange <mark class="method">createBibEntryDiff</mark>(BibDatabaseContext originalDatabase<mark class="modifier"><mark class="modifier">,</mark></mark> DatabaseChangeResolverFactory databaseChangeResolverFactory<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntryDiff diff)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeDatabaseChange*createBibEntryDiff2ë
+Borg.jabref.logic.bibtex.comparator.BibEntryDiff.getOriginalEntry()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaC C(!2å
+=org.jabref.logic.bibtex.comparator.BibEntryDiff.getNewEntry()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaD% D(02å
+=org.jabref.logic.bibtex.comparator.BibEntryDiff.getNewEntry()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaG G(2ë
+Borg.jabref.logic.bibtex.comparator.BibEntryDiff.getOriginalEntry()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaH( H(82ë
+Borg.jabref.logic.bibtex.comparator.BibEntryDiff.getOriginalEntry()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaK$ K(42å
+=org.jabref.logic.bibtex.comparator.BibEntryDiff.getNewEntry()CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaK= K(H2Ñ
+¥org.jabref.gui.collab.entryadd.EntryAdd.EntryAdd(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaD D(2ç
+Ωorg.jabref.gui.collab.entrydelete.EntryDelete.EntryDelete(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaH H("2Æ
+ﬁorg.jabref.gui.collab.entrychange.EntryChange.EntryChange(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)CALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaK K(2§
+‘org.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!diffCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaC C(2§
+‘org.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!diffCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaD  D($2∞
+‡org.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!originalDatabaseCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaD4 D(D2Ω
+Ìorg.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!databaseChangeResolverFactoryCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaDF D(c2§
+‘org.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!diffCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaG G(2§
+‘org.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!diffCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaH# H('2∞
+‡org.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!originalDatabaseCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaH< H(L2Ω
+Ìorg.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!databaseChangeResolverFactoryCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaHN H(k2§
+‘org.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!diffCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaK K(#2§
+‘org.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!diffCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaK8 K(<2∞
+‡org.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!originalDatabaseCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaKL K(\2Ω
+Ìorg.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!databaseChangeResolverFactoryCALLE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaK^ K({2µ
+‡org.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!originalDatabase	PARAMETERE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaBH B(X2√
+Ìorg.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!databaseChangeResolverFactory	PARAMETERF
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaBx B(ï2´
+‘org.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!diff	PARAMETERG
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaB§ B(®2d
+DatabaseChangeRETURN_TYPEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaB B(!¨
+‡org.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!originalDatabase	PARAMETERE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaBH B(X"
+typeBibDatabaseContext"
+isFinalfalse"8
+declarationString#BibDatabaseContext originalDatabase*originalDatabase2{
+,org.jabref.model.database.BibDatabaseContextTYPEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaB5 B(GÚ
+Ìorg.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!databaseChangeResolverFactory	PARAMETERF
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaBx B(ï"%
+typeDatabaseChangeResolverFactory"
+isFinalfalse"P
+declarationString;DatabaseChangeResolverFactory databaseChangeResolverFactory*databaseChangeResolverFactory2Ç
+3org.jabref.gui.collab.DatabaseChangeResolverFactoryTYPEE
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaBZ B(wÑ
+‘org.jabref.gui.collab.DatabaseChangeList.createBibEntryDiff(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory, org.jabref.logic.bibtex.comparator.BibEntryDiff)!diff	PARAMETERG
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaB§ B(®"
+typeBibEntryDiff"
+isFinalfalse"&
+declarationStringBibEntryDiff diff*diff2Ä
+/org.jabref.logic.bibtex.comparator.BibEntryDiffTYPEG
+;src\main\java\org\jabref\gui\collab\DatabaseChangeList.javaBó B(£

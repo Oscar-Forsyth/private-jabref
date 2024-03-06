@@ -1,0 +1,593 @@
+
+6src\main\java\org\jabref\logic\search\SearchQuery.javaµ
+#org.jabref.logic.search.SearchQueryCLASS@
+6src\main\java\org\jabref\logic\search\SearchQuery.java (""
+packageorg.jabref.logic.search"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"§
+declarationStringé<mark class="modifier">public </mark><mark class="modifier">class </mark>SearchQuery<mark class="modifier"><br>implements </mark>SearchMatcher"
+accesspublic*SearchQuery2›
+ãorg.jabref.logic.search.SearchQuery.SearchQuery(java.lang.String, java.util.EnumSet<org.jabref.model.search.rules.SearchRules.SearchFlags>)DECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.java? ?(2
+.org.jabref.logic.search.SearchQuery.toString()DECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaF F(2ù
+Lorg.jabref.logic.search.SearchQuery.isMatch(org.jabref.model.entry.BibEntry)DECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaK K(2~
+-org.jabref.logic.search.SearchQuery.isValid()DECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaO O(2å
+;org.jabref.logic.search.SearchQuery.isContainsBasedSearch()DECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaS S((2í
+Aorg.jabref.logic.search.SearchQuery.getCaseSensitiveDescription()DECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaW W(.2ñ
+Eorg.jabref.logic.search.SearchQuery.getRegularExpressionDescription()DECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.java_ _(22
+.org.jabref.logic.search.SearchQuery.localize()DECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.javag g(2õ
+Jorg.jabref.logic.search.SearchQuery.getLocalizedCaseSensitiveDescription()DECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.javan n(72ü
+Norg.jabref.logic.search.SearchQuery.getLocalizedRegularExpressionDescription()DECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.javav v(;2ç
+:org.jabref.logic.search.SearchQuery.isGrammarBasedSearch()DECLARATIONB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaÉ É('2Å
+.org.jabref.logic.search.SearchQuery.getQuery()DECLARATIONB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaá á(2á
+4org.jabref.logic.search.SearchQuery.getSearchFlags()DECLARATIONB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaã, ã(:2á
+4org.jabref.logic.search.SearchQuery.getSearchWords()DECLARATIONB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaí í(&2ã
+8org.jabref.logic.search.SearchQuery.getPatternForWords()DECLARATIONB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaù ù(/2ï
+Borg.jabref.logic.search.SearchQuery.getJavaScriptPatternForWords()DECLARATIONB
+6src\main\java\org\jabref\logic\search\SearchQuery.java¢ ¢(92π
+forg.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)DECLARATIONB
+6src\main\java\org\jabref\logic\search\SearchQuery.java´ ´(02Ä
+-org.jabref.logic.search.SearchQuery.getRule()DECLARATIONB
+6src\main\java\org\jabref\logic\search\SearchQuery.java¡ ¡(2Ü
+5org.jabref.logic.search.SearchQuery?query@59.25:59.30DECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.java; ;(2å
+;org.jabref.logic.search.SearchQuery?searchFlags@60.45:60.56DECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.java<- <(82Ö
+4org.jabref.logic.search.SearchQuery?rule@61.29:61.33DECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.java= =(!2
+.org.jabref.logic.search.SearchQuery.EscapeModeDECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.java (2q
+%org.jabref.model.search.SearchMatcherEXTEND@
+6src\main\java\org\jabref\logic\search\SearchQuery.java$ (1˘
+ãorg.jabref.logic.search.SearchQuery.SearchQuery(java.lang.String, java.util.EnumSet<org.jabref.model.search.rules.SearchRules.SearchFlags>)CONSTRUCTOR@
+6src\main\java\org\jabref\logic\search\SearchQuery.java? ?("‡
+declarationString <mark class="modifier">public </mark><mark class="method">SearchQuery</mark>(String query<mark class="modifier"><mark class="modifier">,</mark></mark> EnumSet&lt;SearchRules.SearchFlags&gt; searchFlags)*SearchQuery2m
+#java.util.Objects.requireNonNull(T)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.java@ @(+2Â
+öorg.jabref.model.search.rules.SearchRules.getSearchRuleByQuery(java.lang.String, java.util.EnumSet<org.jabref.model.search.rules.SearchRules.SearchFlags>)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaB  B(42‹
+ëorg.jabref.logic.search.SearchQuery.SearchQuery(java.lang.String, java.util.EnumSet<org.jabref.model.search.rules.SearchRules.SearchFlags>)!queryCALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.java@, @(12‚
+óorg.jabref.logic.search.SearchQuery.SearchQuery(java.lang.String, java.util.EnumSet<org.jabref.model.search.rules.SearchRules.SearchFlags>)!searchFlagsCALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaA A(&2‹
+ëorg.jabref.logic.search.SearchQuery.SearchQuery(java.lang.String, java.util.EnumSet<org.jabref.model.search.rules.SearchRules.SearchFlags>)!queryCALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaB5 B(:2‚
+óorg.jabref.logic.search.SearchQuery.SearchQuery(java.lang.String, java.util.EnumSet<org.jabref.model.search.rules.SearchRules.SearchFlags>)!searchFlagsCALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaB< B(G2
+5org.jabref.logic.search.SearchQuery?query@59.25:59.30CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.java@ @(2Ö
+;org.jabref.logic.search.SearchQuery?searchFlags@60.45:60.56CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaA A(2~
+4org.jabref.logic.search.SearchQuery?rule@61.29:61.33CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaB B(2·
+ëorg.jabref.logic.search.SearchQuery.SearchQuery(java.lang.String, java.util.EnumSet<org.jabref.model.search.rules.SearchRules.SearchFlags>)!query	PARAMETER@
+6src\main\java\org\jabref\logic\search\SearchQuery.java? ?(#2Á
+óorg.jabref.logic.search.SearchQuery.SearchQuery(java.lang.String, java.util.EnumSet<org.jabref.model.search.rules.SearchRules.SearchFlags>)!searchFlags	PARAMETER@
+6src\main\java\org\jabref\logic\search\SearchQuery.java?F ?(Q2t
+#org.jabref.logic.search.SearchQueryRETURN_TYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.java? ?(â
+ëorg.jabref.logic.search.SearchQuery.SearchQuery(java.lang.String, java.util.EnumSet<org.jabref.model.search.rules.SearchRules.SearchFlags>)!query	PARAMETER@
+6src\main\java\org\jabref\logic\search\SearchQuery.java? ?(#"
+typeString"
+isFinalfalse"!
+declarationStringString query*query2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.java? ?(€
+óorg.jabref.logic.search.SearchQuery.SearchQuery(java.lang.String, java.util.EnumSet<org.jabref.model.search.rules.SearchRules.SearchFlags>)!searchFlags	PARAMETER@
+6src\main\java\org\jabref\logic\search\SearchQuery.java?F ?(Q"(
+type EnumSet<SearchRules.SearchFlags>"
+isFinalfalse"A
+declarationString,EnumSet<SearchRules.SearchFlags> searchFlags*searchFlags2[
+java.util.EnumSetTYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.java?% ?(,2à
+5org.jabref.model.search.rules.SearchRules.SearchFlagsTYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\search\SearchQuery.java?9 ?(D˙
+.org.jabref.logic.search.SearchQuery.toString()METHOD@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaF F("
+isFinalfalse"ñ
+declarationStringÄ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>String <mark class="method">toString</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*toString2y
+/java.lang.String.formatted(java.lang.Object...)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaG$ G(-2x
+.org.jabref.logic.search.SearchQuery.getQuery()CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaG. G(62ã
+Aorg.jabref.logic.search.SearchQuery.getCaseSensitiveDescription()CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaG: G(U2è
+Eorg.jabref.logic.search.SearchQuery.getRegularExpressionDescription()CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaGY G(x2Ü
+;org.jabref.logic.search.SearchQuery?searchFlags@60.45:60.56CALLA
+6src\main\java\org\jabref\logic\search\SearchQuery.javaG| G(á2a
+java.lang.StringRETURN_TYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaF F(´
+Lorg.jabref.logic.search.SearchQuery.isMatch(org.jabref.model.entry.BibEntry)METHOD@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaK K("
+isFinalfalse"¬
+declarationString¨<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">isMatch</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*isMatch2Ø
+eorg.jabref.model.search.rules.SearchRule.applyRule(java.lang.String, org.jabref.model.entry.BibEntry)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaL L(2x
+.org.jabref.logic.search.SearchQuery.getQuery()CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaL L(&2~
+4org.jabref.logic.search.SearchQuery?rule@61.29:61.33CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaL L(2ú
+Rorg.jabref.logic.search.SearchQuery.isMatch(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaL* L(/2ú
+Norg.jabref.model.search.SearchMatcher.isMatch(org.jabref.model.entry.BibEntry)OVERRIDE@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaK K(2°
+Rorg.jabref.logic.search.SearchQuery.isMatch(org.jabref.model.entry.BibEntry)!entry	PARAMETER@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaK$ K()2X
+booleanRETURN_TYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaK K(‹
+Rorg.jabref.logic.search.SearchQuery.isMatch(org.jabref.model.entry.BibEntry)!entry	PARAMETER@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaK$ K()"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2i
+org.jabref.model.entry.BibEntryTYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaK K(#ÿ
+-org.jabref.logic.search.SearchQuery.isValid()METHOD@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaO O("
+isFinalfalse"Ö
+declarationStringp<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">isValid</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*isValid2ö
+Porg.jabref.model.search.rules.SearchRule.validateSearchStrings(java.lang.String)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaP P()2x
+.org.jabref.logic.search.SearchQuery.getQuery()CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaP* P(22~
+4org.jabref.logic.search.SearchQuery?rule@61.29:61.33CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaP P(2X
+booleanRETURN_TYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaO O(Î
+;org.jabref.logic.search.SearchQuery.isContainsBasedSearch()METHOD@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaS S(("
+isFinalfalse"ì
+declarationString~<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">isContainsBasedSearch</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*isContainsBasedSearch2~
+4org.jabref.logic.search.SearchQuery?rule@61.29:61.33CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaT T(2X
+booleanRETURN_TYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaS S(Û
+Aorg.jabref.logic.search.SearchQuery.getCaseSensitiveDescription()METHOD@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaW W(."
+isFinalfalse"{
+declarationStringf<mark class="modifier">private </mark>String <mark class="method">getCaseSensitiveDescription</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*getCaseSensitiveDescription2Å
+7java.util.AbstractCollection.contains(java.lang.Object)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaX X( 2Ö
+;org.jabref.logic.search.SearchQuery?searchFlags@60.45:60.56CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaX X(2a
+java.lang.StringRETURN_TYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaW W(ˇ
+Eorg.jabref.logic.search.SearchQuery.getRegularExpressionDescription()METHOD@
+6src\main\java\org\jabref\logic\search\SearchQuery.java_ _(2"
+isFinalfalse"
+declarationStringj<mark class="modifier">private </mark>String <mark class="method">getRegularExpressionDescription</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*getRegularExpressionDescription2Å
+7java.util.AbstractCollection.contains(java.lang.Object)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.java` `( 2Ö
+;org.jabref.logic.search.SearchQuery?searchFlags@60.45:60.56CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.java` `(2a
+java.lang.StringRETURN_TYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.java_ _(”
+.org.jabref.logic.search.SearchQuery.localize()METHOD@
+6src\main\java\org\jabref\logic\search\SearchQuery.javag g("
+isFinalfalse"g
+declarationStringR<mark class="modifier">public </mark>String <mark class="method">localize</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*localize2y
+/java.lang.String.formatted(java.lang.Object...)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javah! h(*2x
+.org.jabref.logic.search.SearchQuery.getQuery()CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javai i(2î
+Jorg.jabref.logic.search.SearchQuery.getLocalizedCaseSensitiveDescription()CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaj j(42ò
+Norg.jabref.logic.search.SearchQuery.getLocalizedRegularExpressionDescription()CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javak k(82a
+java.lang.StringRETURN_TYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.javag g(≈
+Jorg.jabref.logic.search.SearchQuery.getLocalizedCaseSensitiveDescription()METHOD@
+6src\main\java\org\jabref\logic\search\SearchQuery.javan n(7"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier">private </mark>String <mark class="method">getLocalizedCaseSensitiveDescription</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*$getLocalizedCaseSensitiveDescription2Å
+7java.util.AbstractCollection.contains(java.lang.Object)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javao o( 2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javap  p($2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javar  r($2Ö
+;org.jabref.logic.search.SearchQuery?searchFlags@60.45:60.56CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javao o(2a
+java.lang.StringRETURN_TYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.javan n(—
+Norg.jabref.logic.search.SearchQuery.getLocalizedRegularExpressionDescription()METHOD@
+6src\main\java\org\jabref\logic\search\SearchQuery.javav v(;"
+isFinalfalse"à
+declarationStrings<mark class="modifier">private </mark>String <mark class="method">getLocalizedRegularExpressionDescription</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*(getLocalizedRegularExpressionDescription2Å
+7java.util.AbstractCollection.contains(java.lang.Object)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaw w( 2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javax  x($2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaz  z($2Ö
+;org.jabref.logic.search.SearchQuery?searchFlags@60.45:60.56CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.javaw w(2a
+java.lang.StringRETURN_TYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.javav v(Ô
+:org.jabref.logic.search.SearchQuery.isGrammarBasedSearch()METHODB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaÉ É('"
+isFinalfalse"í
+declarationString}<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">isGrammarBasedSearch</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*isGrammarBasedSearch2Ä
+4org.jabref.logic.search.SearchQuery?rule@61.29:61.33CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaÑ Ñ(2Z
+booleanRETURN_TYPEB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaÉ É(¥
+.org.jabref.logic.search.SearchQuery.getQuery()METHODB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaá á("
+isFinalfalse"g
+declarationStringR<mark class="modifier">public </mark>String <mark class="method">getQuery</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*getQuery2Å
+5org.jabref.logic.search.SearchQuery?query@59.25:59.30CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaà à(2c
+java.lang.StringRETURN_TYPEB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaá á(ú
+4org.jabref.logic.search.SearchQuery.getSearchFlags()METHODB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaã, ã(:"
+isFinalfalse"ç
+declarationStringx<mark class="modifier">public </mark>EnumSet&lt;SearchRules.SearchFlags&gt; <mark class="method">getSearchFlags</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"(
+type EnumSet<SearchRules.SearchFlags>*getSearchFlags2á
+;org.jabref.logic.search.SearchQuery?searchFlags@60.45:60.56CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaå å(2d
+java.util.EnumSetRETURN_TYPEB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaã ã(2ë
+5org.jabref.model.search.rules.SearchRules.SearchFlagsRETURN_TYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaã ã(*‰
+4org.jabref.logic.search.SearchQuery.getSearchWords()METHODB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaí í(&"
+isFinalfalse"y
+declarationStringd<mark class="modifier">public </mark>List&lt;String&gt; <mark class="method">getSearchWords</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<String>*getSearchWords2É
+7java.util.AbstractCollection.contains(java.lang.Object)CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaì ì( 2r
+&java.util.Collections.singletonList(T)CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaî î(,2z
+.org.jabref.logic.search.SearchQuery.getQuery()CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaî- î(52Ö
+9org.jabref.model.search.rules.SentenceAnalyzer.getWords()CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaò6 ò(>2z
+.org.jabref.logic.search.SearchQuery.getQuery()CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaò) ò(12ù
+Qorg.jabref.model.search.rules.SentenceAnalyzer.SentenceAnalyzer(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaò ò((2á
+;org.jabref.logic.search.SearchQuery?searchFlags@60.45:60.56CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaì ì(2a
+java.util.ListRETURN_TYPEB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaí í(2l
+java.lang.StringRETURN_TYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaí í(ò
+8org.jabref.logic.search.SearchQuery.getPatternForWords()METHODB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaù ù(/"
+isFinalfalse"Ç
+declarationStringm<mark class="modifier">public </mark>Optional&lt;Pattern&gt; <mark class="method">getPatternForWords</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<Pattern>*getPatternForWords2≤
+forg.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaû û(!2
+3org.jabref.logic.search.SearchQuery.EscapeMode?JAVACALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaû- û(12e
+java.util.OptionalRETURN_TYPEB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaù ù(2s
+java.util.regex.PatternRETURN_TYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaù ù(Ω
+Borg.jabref.logic.search.SearchQuery.getJavaScriptPatternForWords()METHODB
+6src\main\java\org\jabref\logic\search\SearchQuery.java¢ ¢(9"
+isFinalfalse"å
+declarationStringw<mark class="modifier">public </mark>Optional&lt;Pattern&gt; <mark class="method">getJavaScriptPatternForWords</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<Pattern>*getJavaScriptPatternForWords2≤
+forg.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java£ £(!2Ö
+9org.jabref.logic.search.SearchQuery.EscapeMode?JAVASCRIPTCALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java£- £(72e
+java.util.OptionalRETURN_TYPEB
+6src\main\java\org\jabref\logic\search\SearchQuery.java¢ ¢(2s
+java.util.regex.PatternRETURN_TYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\search\SearchQuery.java¢ ¢(√*
+forg.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)METHODB
+6src\main\java\org\jabref\logic\search\SearchQuery.java´ ´(0"
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier">private </mark>Optional&lt;Pattern&gt; <mark class="method">joinWordsToPattern</mark>(EscapeMode escapeMode)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeOptional<Pattern>*joinWordsToPattern2Ä
+4org.jabref.logic.search.SearchQuery.getSearchWords()CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java¨ ¨(+2d
+java.util.List.isEmpty()CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaÆ% Æ(,2f
+java.util.Optional.empty()CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaØ Ø(!2i
+java.util.Collection.stream()CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java≥& ≥(,2É
+7java.util.AbstractCollection.contains(java.lang.Object)CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java¥ ¥(!2ú
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java∂ ∂(2ò
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java∏& ∏(-2∑
+kjava.util.stream.Collectors.joining(java.lang.CharSequence, java.lang.CharSequence, java.lang.CharSequence)CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java∏9 ∏(@2É
+7java.util.AbstractCollection.contains(java.lang.Object)CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java∫ ∫( 2d
+java.util.Optional.of(T)CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaª ª(2}
+1java.util.regex.Pattern.compile(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaª' ª(.2d
+java.util.Optional.of(T)CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaΩ Ω(2Ç
+6java.util.regex.Pattern.compile(java.lang.String, int)CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaΩ' Ω(.2∆
+zorg.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)?words@172.21:172.26CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaÆ Æ(2∆
+zorg.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)?words@172.21:172.26CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaÆ Æ($2∆
+zorg.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)?words@172.21:172.26CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaÆ2 Æ(72∆
+zorg.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)?words@172.21:172.26CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java≥  ≥(%2á
+;org.jabref.logic.search.SearchQuery?searchFlags@60.45:60.56CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java¥ ¥(2«
+{org.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)?joiner@179.23:179.29CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java∂ ∂(2«
+{org.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)?joiner@179.23:179.29CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java∂ ∂(2«
+{org.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)?joiner@179.23:179.29CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java∏ ∏(%2á
+;org.jabref.logic.search.SearchQuery?searchFlags@60.45:60.56CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java∫ ∫(2œ
+Çorg.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)?searchPattern@184.15:184.28CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaª/ ª(<2œ
+Çorg.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)?searchPattern@184.15:184.28CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.javaΩ/ Ω(<2ì
+Gorg.jabref.logic.search.SearchQuery.EscapeMode.format(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java∂  ∂(22¬
+qorg.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)!escapeMode	PARAMETERB
+6src\main\java\org\jabref\logic\search\SearchQuery.java´< ´(F2Õ
+zorg.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)?words@172.21:172.26DECLARATIONB
+6src\main\java\org\jabref\logic\search\SearchQuery.java¨ ¨(2Œ
+{org.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)?joiner@179.23:179.29DECLARATIONB
+6src\main\java\org\jabref\logic\search\SearchQuery.java≥ ≥(2÷
+Çorg.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)?searchPattern@184.15:184.28DECLARATIONB
+6src\main\java\org\jabref\logic\search\SearchQuery.java∏ ∏(2e
+java.util.OptionalRETURN_TYPEB
+6src\main\java\org\jabref\logic\search\SearchQuery.java´ ´(2s
+java.util.regex.PatternRETURN_TYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\search\SearchQuery.java´ ´(ª
+zorg.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)?words@172.21:172.26VARIABLEB
+6src\main\java\org\jabref\logic\search\SearchQuery.java¨ ¨("
+typeList<String>"
+isFinalfalse"z
+declarationStringe<mark class="modifier"> </mark>List<String> <mark class="class-field">words</mark> = getSearchWords()*words2Z
+java.util.ListTYPEB
+6src\main\java\org\jabref\logic\search\SearchQuery.java¨ ¨(2e
+java.lang.StringTYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\search\SearchQuery.java¨ ¨(2Ä
+4org.jabref.logic.search.SearchQuery.getSearchWords()CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java¨ ¨(+˙
+{org.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)?joiner@179.23:179.29VARIABLEB
+6src\main\java\org\jabref\logic\search\SearchQuery.java≥ ≥("
+typeStream<String>"
+isFinalfalse"{
+declarationStringf<mark class="modifier"> </mark>Stream<String> <mark class="class-field">joiner</mark> = words.stream()*joiner2c
+java.util.stream.StreamTYPEB
+6src\main\java\org\jabref\logic\search\SearchQuery.java≥ ≥(2e
+java.lang.StringTYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\search\SearchQuery.java≥ ≥(2i
+java.util.Collection.stream()CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java≥& ≥(,2∆
+zorg.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)?words@172.21:172.26CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java≥  ≥(%‡
+Çorg.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)?searchPattern@184.15:184.28VARIABLEB
+6src\main\java\org\jabref\logic\search\SearchQuery.java∏ ∏("
+typeString"
+isFinalfalse"‹
+declarationString∆<mark class="modifier"> </mark>String <mark class="class-field">searchPattern</mark> = joiner.collect(Collectors.joining(")|("<mark class="modifier">,</mark> "("<mark class="modifier">,</mark> ")"))*searchPattern2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\search\SearchQuery.java∏ ∏(2ò
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java∏& ∏(-2∑
+kjava.util.stream.Collectors.joining(java.lang.CharSequence, java.lang.CharSequence, java.lang.CharSequence)CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java∏9 ∏(@2«
+{org.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)?joiner@179.23:179.29CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java∏ ∏(%ú
+qorg.jabref.logic.search.SearchQuery.joinWordsToPattern(org.jabref.logic.search.SearchQuery.EscapeMode)!escapeMode	PARAMETERB
+6src\main\java\org\jabref\logic\search\SearchQuery.java´< ´(F"
+type
+EscapeMode"
+isFinalfalse"*
+declarationStringEscapeMode escapeMode*
+escapeMode2z
+.org.jabref.logic.search.SearchQuery.EscapeModeTYPEB
+6src\main\java\org\jabref\logic\search\SearchQuery.java´1 ´(;–
+-org.jabref.logic.search.SearchQuery.getRule()METHODB
+6src\main\java\org\jabref\logic\search\SearchQuery.java¡ ¡("
+isFinalfalse"j
+declarationStringU<mark class="modifier">public </mark>SearchRule <mark class="method">getRule</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+type
+SearchRule*getRule2Ä
+4org.jabref.logic.search.SearchQuery?rule@61.29:61.33CALLB
+6src\main\java\org\jabref\logic\search\SearchQuery.java¬ ¬(2{
+(org.jabref.model.search.rules.SearchRuleRETURN_TYPEB
+6src\main\java\org\jabref\logic\search\SearchQuery.java¡ ¡(π
+5org.jabref.logic.search.SearchQuery?query@59.25:59.30VALUE@
+6src\main\java\org\jabref\logic\search\SearchQuery.java; ;("
+isFinaltrue"
+typeString"å
+declarationStringw<mark class="modifier">private </mark><mark class="modifier">final </mark>String <mark class="class-field">query</mark>"
+isStaticfalse"
+accessprivate*query2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.java; ;(Î
+;org.jabref.logic.search.SearchQuery?searchFlags@60.45:60.56VARIABLE@
+6src\main\java\org\jabref\logic\search\SearchQuery.java<- <(8"
+isFinalfalse"(
+type EnumSet<SearchRules.SearchFlags>"à
+declarationStrings<mark class="modifier">private </mark>EnumSet<SearchRules.SearchFlags> <mark class="class-field">searchFlags</mark>"
+isStaticfalse"
+accessprivate*searchFlags2[
+java.util.EnumSetTYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.java< <(2à
+5org.jabref.model.search.rules.SearchRules.SearchFlagsTYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\search\SearchQuery.java<  <(+÷
+4org.jabref.logic.search.SearchQuery?rule@61.29:61.33VALUE@
+6src\main\java\org\jabref\logic\search\SearchQuery.java= =(!"
+isFinaltrue"
+type
+SearchRule"è
+declarationStringz<mark class="modifier">private </mark><mark class="modifier">final </mark>SearchRule <mark class="class-field">rule</mark>"
+isStaticfalse"
+accessprivate*rule2r
+(org.jabref.model.search.rules.SearchRuleTYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.java= =(¶
+.org.jabref.logic.search.SearchQuery.EscapeModeENUM@
+6src\main\java\org\jabref\logic\search\SearchQuery.java ("B
+declarationString-<mark class="modifier">enum </mark>EscapeMode*
+EscapeMode2ò
+Gorg.jabref.logic.search.SearchQuery.EscapeMode.format(java.lang.String)DECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.java8 8(2¨
+[org.jabref.logic.search.SearchQuery.EscapeMode?JAVASCRIPT_ESCAPED_CHARS_PATTERN@48.37:48.69DECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.java0% 0(E2Ñ
+3org.jabref.logic.search.SearchQuery.EscapeMode?JAVADECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.java (2ä
+9org.jabref.logic.search.SearchQuery.EscapeMode?JAVASCRIPTDECLARATION@
+6src\main\java\org\jabref\logic\search\SearchQuery.java& &(ß
+3org.jabref.logic.search.SearchQuery.EscapeMode?JAVAVALUE@
+6src\main\java\org\jabref\logic\search\SearchQuery.java ("
+enumtrue*JAVA2y
+/java.util.regex.Pattern.quote(java.lang.String)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.java   ($2ó
+Morg.jabref.logic.search.SearchQuery.EscapeMode.format(java.lang.String)!regexCALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.java %  (*‰
+9org.jabref.logic.search.SearchQuery.EscapeMode?JAVASCRIPTVALUE@
+6src\main\java\org\jabref\logic\search\SearchQuery.java& &("
+enumtrue*
+JAVASCRIPT2~
+4java.util.regex.Matcher.replaceAll(java.lang.String)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.java)G )(Q2Å
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.java)8 )(?2•
+[org.jabref.logic.search.SearchQuery.EscapeMode?JAVASCRIPT_ESCAPED_CHARS_PATTERN@48.37:48.69CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.java) )(72ó
+Morg.jabref.logic.search.SearchQuery.EscapeMode.format(java.lang.String)!regexCALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.java)@ )(Eñ
+Gorg.jabref.logic.search.SearchQuery.EscapeMode.format(java.lang.String)METHOD@
+6src\main\java\org\jabref\logic\search\SearchQuery.java8 8("
+isFinalfalse"í
+declarationString}<mark class="modifier"> </mark><mark class="modifier">abstract </mark>String <mark class="method">format</mark>(String regex)"
+isStaticfalse"
+accesspackage_private"
+
+isAbstracttrue"
+typeString*format2ú
+Morg.jabref.logic.search.SearchQuery.EscapeMode.format(java.lang.String)!regex	PARAMETER@
+6src\main\java\org\jabref\logic\search\SearchQuery.java8& 8(+2a
+java.lang.StringRETURN_TYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.java8 8(ƒ
+Morg.jabref.logic.search.SearchQuery.EscapeMode.format(java.lang.String)!regex	PARAMETER@
+6src\main\java\org\jabref\logic\search\SearchQuery.java8& 8(+"
+typeString"
+isFinalfalse"!
+declarationStringString regex*regex2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.java8 8(%Ô
+[org.jabref.logic.search.SearchQuery.EscapeMode?JAVASCRIPT_ESCAPED_CHARS_PATTERN@48.37:48.69VALUE@
+6src\main\java\org\jabref\logic\search\SearchQuery.java0% 0(E"
+isFinaltrue"
+typePattern"˝
+declarationStringÁ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Pattern <mark class="class-field">JAVASCRIPT_ESCAPED_CHARS_PATTERN</mark> = Pattern.compile("[.*+?^${}()|\\[\\]\\\\/]");"
+isStatictrue"
+accessprivate* JAVASCRIPT_ESCAPED_CHARS_PATTERN2a
+java.util.regex.PatternTYPE@
+6src\main\java\org\jabref\logic\search\SearchQuery.java0 0($2{
+1java.util.regex.Pattern.compile(java.lang.String)CALL@
+6src\main\java\org\jabref\logic\search\SearchQuery.java0P 0(W

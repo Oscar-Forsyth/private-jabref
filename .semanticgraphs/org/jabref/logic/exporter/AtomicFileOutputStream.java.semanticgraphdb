@@ -1,0 +1,726 @@
+
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java¸ 
+0org.jabref.logic.exporter.AtomicFileOutputStreamCLASSM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java. .(#"$
+packageorg.jabref.logic.exporter"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"Æ
+declarationStringò<mark class="modifier">public </mark><mark class="modifier">class </mark>AtomicFileOutputStream<mark class="modifier"> extends </mark>FilterOutputStream"
+accesspublic*AtomicFileOutputStream2¬
+dorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, boolean)DECLARATIONM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaP P(!2π
+[org.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path)DECLARATIONM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java[ [(!2Ì
+éorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)DECLARATIONM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javab b(2π
+[org.jabref.logic.exporter.AtomicFileOutputStream.getPathOfTemporaryFile(java.nio.file.Path)DECLARATIONM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java{ {(.2∫
+\org.jabref.logic.exporter.AtomicFileOutputStream.getPathOfSaveBackupFile(java.nio.file.Path)DECLARATIONM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java (/2ú
+<org.jabref.logic.exporter.AtomicFileOutputStream.getBackup()DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÜ Ü(2®
+Horg.jabref.logic.exporter.AtomicFileOutputStream.write(byte[], int, int)DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaé é(2ò
+8org.jabref.logic.exporter.AtomicFileOutputStream.abort()DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaõ õ(2ö
+:org.jabref.logic.exporter.AtomicFileOutputStream.cleanup()DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java¶ ¶(2ò
+8org.jabref.logic.exporter.AtomicFileOutputStream.close()DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaª ª(2ò
+8org.jabref.logic.exporter.AtomicFileOutputStream.flush()DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÅ Å(2õ
+;org.jabref.logic.exporter.AtomicFileOutputStream.write(int)DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaã ã(2°
+Corg.jabref.logic.exporter.AtomicFileOutputStream?LOGGER@48.32:48.38DECLARATIONM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java0  0(&2Æ
+Porg.jabref.logic.exporter.AtomicFileOutputStream?TEMPORARY_EXTENSION@50.32:50.51DECLARATIONM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java2  2(32©
+Korg.jabref.logic.exporter.AtomicFileOutputStream?SAVE_EXTENSION@51.32:51.46DECLARATIONM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java3  3(.2•
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?targetFile@56.23:56.33DECLARATIONM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java8 8(!2®
+Jorg.jabref.logic.exporter.AtomicFileOutputStream?temporaryFile@61.23:61.36DECLARATIONM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java= =($2¨
+Norg.jabref.logic.exporter.AtomicFileOutputStream?temporaryFileLock@63.21:63.38DECLARATIONM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java? ?(&2•
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?backupFile@68.23:68.33DECLARATIONM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaD D(!2•
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?keepBackup@70.26:70.36DECLARATIONM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaF F($2´
+Morg.jabref.logic.exporter.AtomicFileOutputStream?errorDuringWrite@72.20:72.36DECLARATIONM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaH H($2s
+java.io.FilterOutputStreamEXTENDM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java., .(>∫
+dorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, boolean)CONSTRUCTORM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaP P(!"µ
+declarationStringü<mark class="modifier">public </mark><mark class="method">AtomicFileOutputStream</mark>(Path path<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">boolean</mark> keepBackup)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException*AtomicFileOutputStream2≤
+[org.jabref.logic.exporter.AtomicFileOutputStream.getPathOfTemporaryFile(java.nio.file.Path)CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaR R()2r
+java.nio.file.Path.toFile()CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaRc R(i2≤
+[org.jabref.logic.exporter.AtomicFileOutputStream.getPathOfTemporaryFile(java.nio.file.Path)CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaRF R(\2é
+7java.io.FileOutputStream.FileOutputStream(java.io.File)CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaR5 R(E2¿
+iorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, boolean)!pathCALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaR R(2¿
+iorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, boolean)!pathCALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaR* R(.2¿
+iorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, boolean)!pathCALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaR] R(a2∆
+oorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, boolean)!keepBackupCALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaRn R(x2≈
+iorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, boolean)!path	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaP' P(+2À
+oorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, boolean)!keepBackup	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaP5 P(?2é
+0org.jabref.logic.exporter.AtomicFileOutputStreamRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaPH P(Sˆ
+iorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, boolean)!path	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaP' P(+"
+typePath"
+isFinalfalse"
+declarationString	Path path*path2i
+java.nio.file.PathTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaP" P(&°
+oorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, boolean)!keepBackup	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaP5 P(?"
+typeboolean"
+isFinalfalse"E
+declarationString0<mark class="modifier">boolean</mark> keepBackup*
+keepBackup2^
+booleanTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaP- P(4•
+[org.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path)CONSTRUCTORM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java[ [(!"«
+declarationString±<mark class="modifier">public </mark><mark class="method">AtomicFileOutputStream</mark>(Path path)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException*AtomicFileOutputStream2∑
+`org.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path)!pathCALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java\ \(2º
+`org.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path)!path	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java[' [(+2é
+0org.jabref.logic.exporter.AtomicFileOutputStreamRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java[4 [(?Ì
+`org.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path)!path	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java[' [(+"
+typePath"
+isFinalfalse"
+declarationString	Path path*path2i
+java.nio.file.PathTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java[" [(&Å2
+éorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)CONSTRUCTORM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javab b("È
+declarationString”<mark class="modifier"> </mark><mark class="method">AtomicFileOutputStream</mark>(Path path<mark class="modifier"><mark class="modifier">,</mark></mark> Path pathOfTemporaryFile<mark class="modifier"><mark class="modifier">,</mark></mark> OutputStream temporaryFileOutputStream<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">boolean</mark> keepBackup)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException*AtomicFileOutputStream2≥
+\org.jabref.logic.exporter.AtomicFileOutputStream.getPathOfSaveBackupFile(java.nio.file.Path)CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaf f(12~
+'java.nio.channels.FileChannel.tryLock()CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javam< m(C2|
+%java.io.FileOutputStream.getChannel()CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javam/ m(92ù
+Fjava.io.IOException.IOException(java.lang.String, java.lang.Throwable)CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaw w(!2ö
+Cjava.io.FilterOutputStream.FilterOutputStream(java.io.OutputStream)CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javac c(2Ä
+®org.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)!temporaryFileOutputStreamCALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javac c('2Î
+ìorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)!pathCALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javad d(2˙
+¢org.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)!pathOfTemporaryFileCALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javae e(02Î
+ìorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)!pathCALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaf2 f(62Ò
+ôorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)!keepBackupCALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javag g($2•
+Norg.jabref.logic.exporter.AtomicFileOutputStream?temporaryFileLock@63.21:63.38CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javam m(%2ö
+Corg.jabref.logic.exporter.AtomicFileOutputStream?LOGGER@48.32:48.38CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javap p(2˜
+üorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)?ex@110.37:110.39CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javapa p(c2•
+Norg.jabref.logic.exporter.AtomicFileOutputStream?temporaryFileLock@63.21:63.38CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaq q(%2•
+Norg.jabref.logic.exporter.AtomicFileOutputStream?temporaryFileLock@63.21:63.38CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javat t(!2°
+Jorg.jabref.logic.exporter.AtomicFileOutputStream?temporaryFile@61.23:61.36CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javawH w(U2Ä
+¶org.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)?exception@118.46:118.55CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaw• w(Æ2û
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?targetFile@56.23:56.33CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javad d(2°
+Jorg.jabref.logic.exporter.AtomicFileOutputStream?temporaryFile@61.23:61.36CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javae e(2û
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?backupFile@68.23:68.33CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaf f(2û
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?keepBackup@70.26:70.36CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javag g(2
+ìorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)!path	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javab  b($2ˇ
+¢org.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)!pathOfTemporaryFile	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javab+ b(>2Ö
+®org.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)!temporaryFileOutputStream	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javabM b(f2ˆ
+ôorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)!keepBackup	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javabp b(z2˛
+üorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)?ex@110.37:110.39DECLARATIONM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javan% n('2Ö
+¶org.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)?exception@118.46:118.55DECLARATIONM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javav. v(72ê
+0org.jabref.logic.exporter.AtomicFileOutputStreamRETURN_TYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javabÉ b(é°
+ìorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)!path	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javab  b($"
+typePath"
+isFinalfalse"
+declarationString	Path path*path2i
+java.nio.file.PathTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javab b(Œ
+¢org.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)!pathOfTemporaryFile	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javab+ b(>"
+typePath"
+isFinalfalse"-
+declarationStringPath pathOfTemporaryFile*pathOfTemporaryFile2i
+java.nio.file.PathTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javab& b(*Ú
+®org.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)!temporaryFileOutputStream	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javabM b(f"
+typeOutputStream"
+isFinalfalse";
+declarationString&OutputStream temporaryFileOutputStream*temporaryFileOutputStream2k
+java.io.OutputStreamTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javab@ b(LÃ
+ôorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)!keepBackup	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javabp b(z"
+typeboolean"
+isFinalfalse"E
+declarationString0<mark class="modifier">boolean</mark> keepBackup*
+keepBackup2^
+booleanTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javabh b(o∑
+üorg.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)?ex@110.37:110.39VARIABLEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javan% n('"
+typeIOException"
+isFinalfalse"#
+declarationStringIOException ex*ex2j
+java.io.IOExceptionTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javan n($ä
+¶org.jabref.logic.exporter.AtomicFileOutputStream.AtomicFileOutputStream(java.nio.file.Path, java.nio.file.Path, java.io.OutputStream, boolean)?exception@118.46:118.55VARIABLEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javav. v(7"$
+typeOverlappingFileLockException"
+isFinalfalse";
+declarationString&OverlappingFileLockException exception*	exception2Ö
+.java.nio.channels.OverlappingFileLockExceptionTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javav v(-°
+
+[org.jabref.logic.exporter.AtomicFileOutputStream.getPathOfTemporaryFile(java.nio.file.Path)METHODM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java{ {(."
+isFinalfalse"©
+declarationStringì<mark class="modifier">private </mark><mark class="modifier">static </mark>Path <mark class="method">getPathOfTemporaryFile</mark>(Path targetFile)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typePath*getPathOfTemporaryFile2´
+Torg.jabref.logic.util.io.FileUtil.addExtension(java.nio.file.Path, java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java| |($2Ω
+forg.jabref.logic.exporter.AtomicFileOutputStream.getPathOfTemporaryFile(java.nio.file.Path)!targetFileCALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java|% |(/2ß
+Porg.jabref.logic.exporter.AtomicFileOutputStream?TEMPORARY_EXTENSION@50.32:50.51CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java|1 |(D2¬
+forg.jabref.logic.exporter.AtomicFileOutputStream.getPathOfTemporaryFile(java.nio.file.Path)!targetFile	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java{4 {(>2p
+java.nio.file.PathRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java{ {(ˇ
+forg.jabref.logic.exporter.AtomicFileOutputStream.getPathOfTemporaryFile(java.nio.file.Path)!targetFile	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java{4 {(>"
+typePath"
+isFinalfalse"$
+declarationStringPath targetFile*
+targetFile2i
+java.nio.file.PathTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java{/ {(3ß
+
+\org.jabref.logic.exporter.AtomicFileOutputStream.getPathOfSaveBackupFile(java.nio.file.Path)METHODM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java (/"
+isFinalfalse"™
+declarationStringî<mark class="modifier">private </mark><mark class="modifier">static </mark>Path <mark class="method">getPathOfSaveBackupFile</mark>(Path targetFile)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typePath*getPathOfSaveBackupFile2≠
+Torg.jabref.logic.util.io.FileUtil.addExtension(java.nio.file.Path, java.lang.String)CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÄ Ä($2¿
+gorg.jabref.logic.exporter.AtomicFileOutputStream.getPathOfSaveBackupFile(java.nio.file.Path)!targetFileCALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÄ% Ä(/2§
+Korg.jabref.logic.exporter.AtomicFileOutputStream?SAVE_EXTENSION@51.32:51.46CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÄ1 Ä(?2√
+gorg.jabref.logic.exporter.AtomicFileOutputStream.getPathOfSaveBackupFile(java.nio.file.Path)!targetFile	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java5 (?2p
+java.nio.file.PathRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java (Ä
+gorg.jabref.logic.exporter.AtomicFileOutputStream.getPathOfSaveBackupFile(java.nio.file.Path)!targetFile	PARAMETERM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java5 (?"
+typePath"
+isFinalfalse"$
+declarationStringPath targetFile*
+targetFile2i
+java.nio.file.PathTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java0 (4˚
+<org.jabref.logic.exporter.AtomicFileOutputStream.getBackup()METHODO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÜ Ü("
+isFinalfalse"f
+declarationStringQ<mark class="modifier">public </mark>Path <mark class="method">getBackup</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typePath*	getBackup2†
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?backupFile@68.23:68.33CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaá á(2r
+java.nio.file.PathRETURN_TYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÜ Ü(˙
+Horg.jabref.logic.exporter.AtomicFileOutputStream.write(byte[], int, int)METHODO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaé é("
+isFinalfalse"Ã
+declarationString∂<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">write</mark>(byte[] b<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">int</mark> off<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">int</mark> len)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*write2Ö
+,java.io.OutputStream.write(byte[], int, int)CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaê ê(2ì
+:org.jabref.logic.exporter.AtomicFileOutputStream.cleanup()CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaí í(2£
+Jorg.jabref.logic.exporter.AtomicFileOutputStream.write(byte[], int, int)!bCALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaê ê(2•
+Lorg.jabref.logic.exporter.AtomicFileOutputStream.write(byte[], int, int)!offCALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaê ê(2•
+Lorg.jabref.logic.exporter.AtomicFileOutputStream.write(byte[], int, int)!lenCALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaê ê(!2¶
+Morg.jabref.logic.exporter.AtomicFileOutputStream?errorDuringWrite@72.20:72.36CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaì ì(2π
+`org.jabref.logic.exporter.AtomicFileOutputStream.write(byte[], int, int)?exception@145.29:145.38CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaî î(2®
+Jorg.jabref.logic.exporter.AtomicFileOutputStream.write(byte[], int, int)!b	PARAMETERO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaé é(2™
+Lorg.jabref.logic.exporter.AtomicFileOutputStream.write(byte[], int, int)!off	PARAMETERO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaé$ é('2™
+Lorg.jabref.logic.exporter.AtomicFileOutputStream.write(byte[], int, int)!len	PARAMETERO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaé- é(02¿
+`org.jabref.logic.exporter.AtomicFileOutputStream.write(byte[], int, int)?exception@145.29:145.38DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaë ë(&2d
+voidRETURN_TYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaé é(Õ
+Jorg.jabref.logic.exporter.AtomicFileOutputStream.write(byte[], int, int)!b	PARAMETERO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaé é("
+typebyte[]"
+isFinalfalse"
+declarationStringbyte[] b*b2_
+byte[]TYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaé é(Ë
+Lorg.jabref.logic.exporter.AtomicFileOutputStream.write(byte[], int, int)!off	PARAMETERO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaé$ é('"
+typeint"
+isFinalfalse":
+declarationString%<mark class="modifier">int</mark> off*off2\
+intTYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaé  é(#Ë
+Lorg.jabref.logic.exporter.AtomicFileOutputStream.write(byte[], int, int)!len	PARAMETERO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaé- é(0"
+typeint"
+isFinalfalse":
+declarationString%<mark class="modifier">int</mark> len*len2\
+intTYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaé) é(,â
+`org.jabref.logic.exporter.AtomicFileOutputStream.write(byte[], int, int)?exception@145.29:145.38VARIABLEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaë ë(&"
+typeIOException"
+isFinalfalse"*
+declarationStringIOException exception*	exception2l
+java.io.IOExceptionTYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaë ë(î
+8org.jabref.logic.exporter.AtomicFileOutputStream.abort()METHODO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaõ õ("
+isFinalfalse"Ä
+declarationStringk<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">abort</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*abort2{
+"java.io.FilterOutputStream.close()CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaû û(2è
+6java.nio.file.Files.deleteIfExists(java.nio.file.Path)CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaü ü( 2è
+6java.nio.file.Files.deleteIfExists(java.nio.file.Path)CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java† †( 2¶
+Morg.jabref.logic.exporter.AtomicFileOutputStream?errorDuringWrite@72.20:72.36CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaú ú(2£
+Jorg.jabref.logic.exporter.AtomicFileOutputStream?temporaryFile@61.23:61.36CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaü! ü(.2†
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?backupFile@68.23:68.33CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java†! †(+2ú
+Corg.jabref.logic.exporter.AtomicFileOutputStream?LOGGER@48.32:48.38CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java¢ ¢(2£
+Jorg.jabref.logic.exporter.AtomicFileOutputStream?temporaryFile@61.23:61.36CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java¢? ¢(L2©
+Porg.jabref.logic.exporter.AtomicFileOutputStream.abort()?exception@161.29:161.38CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java¢N ¢(W2∞
+Porg.jabref.logic.exporter.AtomicFileOutputStream.abort()?exception@161.29:161.38DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java° °(&2d
+voidRETURN_TYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaõ õ(˘
+Porg.jabref.logic.exporter.AtomicFileOutputStream.abort()?exception@161.29:161.38VARIABLEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java° °(&"
+typeIOException"
+isFinalfalse"*
+declarationStringIOException exception*	exception2l
+java.io.IOExceptionTYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java° °(¿
+:org.jabref.logic.exporter.AtomicFileOutputStream.cleanup()METHODO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java¶ ¶("
+isFinalfalse"É
+declarationStringn<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">cleanup</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*cleanup2}
+$java.nio.channels.FileLock.release()CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java©" ©()2è
+6java.nio.file.Files.deleteIfExists(java.nio.file.Path)CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java± ±( 2ß
+Norg.jabref.logic.exporter.AtomicFileOutputStream?temporaryFileLock@63.21:63.38CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java® ®(!2ß
+Norg.jabref.logic.exporter.AtomicFileOutputStream?temporaryFileLock@63.21:63.38CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java© ©(!2ú
+Corg.jabref.logic.exporter.AtomicFileOutputStream?LOGGER@48.32:48.38CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÆ Æ(2£
+Jorg.jabref.logic.exporter.AtomicFileOutputStream?temporaryFile@61.23:61.36CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÆ> Æ(K2´
+Rorg.jabref.logic.exporter.AtomicFileOutputStream.cleanup()?exception@171.29:171.38CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÆM Æ(V2£
+Jorg.jabref.logic.exporter.AtomicFileOutputStream?temporaryFile@61.23:61.36CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java±! ±(.2ú
+Corg.jabref.logic.exporter.AtomicFileOutputStream?LOGGER@48.32:48.38CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java≥ ≥(2£
+Jorg.jabref.logic.exporter.AtomicFileOutputStream?temporaryFile@61.23:61.36CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java≥5 ≥(B2´
+Rorg.jabref.logic.exporter.AtomicFileOutputStream.cleanup()?exception@178.29:178.38CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java≥D ≥(M2≤
+Rorg.jabref.logic.exporter.AtomicFileOutputStream.cleanup()?exception@171.29:171.38DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java´ ´(&2≤
+Rorg.jabref.logic.exporter.AtomicFileOutputStream.cleanup()?exception@178.29:178.38DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java≤ ≤(&2d
+voidRETURN_TYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java¶ ¶(˚
+Rorg.jabref.logic.exporter.AtomicFileOutputStream.cleanup()?exception@171.29:171.38VARIABLEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java´ ´(&"
+typeIOException"
+isFinalfalse"*
+declarationStringIOException exception*	exception2l
+java.io.IOExceptionTYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java´ ´(˚
+Rorg.jabref.logic.exporter.AtomicFileOutputStream.cleanup()?exception@178.29:178.38VARIABLEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java≤ ≤(&"
+typeIOException"
+isFinalfalse"*
+declarationStringIOException exception*	exception2l
+java.io.IOExceptionTYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java≤ ≤(◊;
+8org.jabref.logic.exporter.AtomicFileOutputStream.close()METHODO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaª ª("
+isFinalfalse"˛
+declarationStringË<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">close</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*close2ë
+8org.jabref.logic.exporter.AtomicFileOutputStream.flush()CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaø ø(2v
+java.io.FileDescriptor.sync()CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java¡# ¡('2y
+ java.io.FileOutputStream.getFD()CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java¡ ¡( 2{
+"java.io.FilterOutputStream.close()CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java≈ ≈(2{
+"java.io.FilterOutputStream.close()CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java» »(2|
+#java.util.EnumSet.of(E, E, E, E, E)CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java—B —(D2§
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java÷ ÷(2∂
+]java.nio.file.Files.copy(java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption...)CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÿ ÿ(2µ
+\java.nio.file.Files.getPosixFilePermissions(java.nio.file.Path, java.nio.file.LinkOption...)CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaﬁ3 ﬁ(J2∂
+]java.nio.file.Files.move(java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption...)CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÁ Á(2‘
+{java.nio.file.Files.setPosixFilePermissions(java.nio.file.Path, java.util.Set<java.nio.file.attribute.PosixFilePermission>)CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java (12è
+6java.nio.file.Files.deleteIfExists(java.nio.file.Path)CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java¯ ¯($2ì
+:org.jabref.logic.exporter.AtomicFileOutputStream.cleanup()CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java¸ ¸(2©
+Porg.jabref.logic.exporter.AtomicFileOutputStream.close()?exception@195.33:195.42CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java∆ ∆(2¶
+Morg.jabref.logic.exporter.AtomicFileOutputStream?errorDuringWrite@72.20:72.36CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java   ( 2†
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?targetFile@56.23:56.33CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java÷ ÷('2†
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?targetFile@56.23:56.33CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÿ ÿ()2†
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?backupFile@68.23:68.33CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÿ+ ÿ(52ú
+Corg.jabref.logic.exporter.AtomicFileOutputStream?LOGGER@48.32:48.38CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java⁄ ⁄(2†
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?backupFile@68.23:68.33CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java⁄C ⁄(M2≤
+Yorg.jabref.logic.exporter.AtomicFileOutputStream.close()?oldFilePermissions@209.37:209.55CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaﬁ ﬁ(*2†
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?targetFile@56.23:56.33CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaﬁK ﬁ(U2ú
+Corg.jabref.logic.exporter.AtomicFileOutputStream?LOGGER@48.32:48.38CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java‡ ‡(2†
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?targetFile@56.23:56.33CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java‡S ‡(]2©
+Porg.jabref.logic.exporter.AtomicFileOutputStream.close()?exception@223.41:223.50CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java‡_ ‡(h2£
+Jorg.jabref.logic.exporter.AtomicFileOutputStream?temporaryFile@61.23:61.36CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÁ Á((2†
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?targetFile@56.23:56.33CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÁ* Á(42ú
+Corg.jabref.logic.exporter.AtomicFileOutputStream?LOGGER@48.32:48.38CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÈ È(2°
+Horg.jabref.logic.exporter.AtomicFileOutputStream.close()?e@232.31:232.32CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÈ= È(>2°
+Horg.jabref.logic.exporter.AtomicFileOutputStream.close()?e@232.31:232.32CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÍ Í(2†
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?targetFile@56.23:56.33CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java2 (<2≤
+Yorg.jabref.logic.exporter.AtomicFileOutputStream.close()?oldFilePermissions@209.37:209.55CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java> (P2ú
+Corg.jabref.logic.exporter.AtomicFileOutputStream?LOGGER@48.32:48.38CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÚ Ú(2†
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?targetFile@56.23:56.33CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÚN Ú(X2©
+Porg.jabref.logic.exporter.AtomicFileOutputStream.close()?exception@241.37:241.46CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÚZ Ú(c2†
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?keepBackup@70.26:70.36CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaˆ ˆ(2†
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?backupFile@68.23:68.33CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java¯% ¯(/2π
+Yorg.jabref.logic.exporter.AtomicFileOutputStream.close()?oldFilePermissions@209.37:209.55DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java—% —(72∞
+Porg.jabref.logic.exporter.AtomicFileOutputStream.close()?exception@195.33:195.42DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java√! √(*2®
+Horg.jabref.logic.exporter.AtomicFileOutputStream.close()?e@217.35:217.36DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaŸ# Ÿ($2∞
+Porg.jabref.logic.exporter.AtomicFileOutputStream.close()?exception@223.41:223.50DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaﬂ) ﬂ(22®
+Horg.jabref.logic.exporter.AtomicFileOutputStream.close()?e@232.31:232.32DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaË Ë( 2∞
+Porg.jabref.logic.exporter.AtomicFileOutputStream.close()?exception@241.37:241.46DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÒ% Ò(.2d
+voidRETURN_TYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaª ª(®
+Yorg.jabref.logic.exporter.AtomicFileOutputStream.close()?oldFilePermissions@209.37:209.55VARIABLEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java—% —(7" 
+typeSet<PosixFilePermission>"
+isFinalfalse"±
+declarationStringõ<mark class="modifier"> </mark>Set<PosixFilePermission> <mark class="class-field">oldFilePermissions</mark> = EnumSet.of(PosixFilePermission.OWNER_READ, PosixFilePermission.OWNER_WRITE, PosixFilePermission.GROUP_READ, PosixFilePermission.GROUP_WRITE, PosixFilePermission.OTHERS_READ)*oldFilePermissions2f
+java.util.SetTYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java— —(2ç
++java.nio.file.attribute.PosixFilePermissionTYPE_ARGUMENTO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java— —(#2|
+#java.util.EnumSet.of(E, E, E, E, E)CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java—B —(D˘
+Porg.jabref.logic.exporter.AtomicFileOutputStream.close()?exception@195.33:195.42VARIABLEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java√! √(*"
+typeIOException"
+isFinalfalse"*
+declarationStringIOException exception*	exception2l
+java.io.IOExceptionTYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java√ √( ›
+Horg.jabref.logic.exporter.AtomicFileOutputStream.close()?e@217.35:217.36VARIABLEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaŸ# Ÿ($"
+type	Exception"
+isFinalfalse" 
+declarationStringException e*e2l
+java.lang.ExceptionTYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaŸ Ÿ("˘
+Porg.jabref.logic.exporter.AtomicFileOutputStream.close()?exception@223.41:223.50VARIABLEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaﬂ) ﬂ(2"
+typeIOException"
+isFinalfalse"*
+declarationStringIOException exception*	exception2l
+java.io.IOExceptionTYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaﬂ ﬂ((›
+Horg.jabref.logic.exporter.AtomicFileOutputStream.close()?e@232.31:232.32VARIABLEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaË Ë( "
+type	Exception"
+isFinalfalse" 
+declarationStringException e*e2l
+java.lang.ExceptionTYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaË Ë(˘
+Porg.jabref.logic.exporter.AtomicFileOutputStream.close()?exception@241.37:241.46VARIABLEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÒ% Ò(."
+typeIOException"
+isFinalfalse"*
+declarationStringIOException exception*	exception2l
+java.io.IOExceptionTYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÒ Ò($Õ	
+8org.jabref.logic.exporter.AtomicFileOutputStream.flush()METHODO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÅ Å("
+isFinalfalse"˛
+declarationStringË<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">flush</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*flush2{
+"java.io.FilterOutputStream.flush()CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÉ É(2ì
+:org.jabref.logic.exporter.AtomicFileOutputStream.cleanup()CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÖ Ö(2©
+Porg.jabref.logic.exporter.AtomicFileOutputStream.flush()?exception@260.29:260.38CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÜ Ü(2∞
+Porg.jabref.logic.exporter.AtomicFileOutputStream.flush()?exception@260.29:260.38DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÑ Ñ(&2d
+voidRETURN_TYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÅ Å(˘
+Porg.jabref.logic.exporter.AtomicFileOutputStream.flush()?exception@260.29:260.38VARIABLEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÑ Ñ(&"
+typeIOException"
+isFinalfalse"*
+declarationStringIOException exception*	exception2l
+java.io.IOExceptionTYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaÑ Ñ(≥
+;org.jabref.logic.exporter.AtomicFileOutputStream.write(int)METHODO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaã ã("
+isFinalfalse"°
+declarationStringã<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">write</mark>(<mark class="modifier">int</mark> b)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*write2~
+%java.io.FilterOutputStream.write(int)CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaç ç(2ì
+:org.jabref.logic.exporter.AtomicFileOutputStream.cleanup()CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaè è(2ñ
+=org.jabref.logic.exporter.AtomicFileOutputStream.write(int)!bCALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaç ç(2¨
+Sorg.jabref.logic.exporter.AtomicFileOutputStream.write(int)?exception@270.29:270.38CALLO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaê ê(2õ
+=org.jabref.logic.exporter.AtomicFileOutputStream.write(int)!b	PARAMETERO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaã ã(2≥
+Sorg.jabref.logic.exporter.AtomicFileOutputStream.write(int)?exception@270.29:270.38DECLARATIONO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaé é(&2d
+voidRETURN_TYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaã ã(’
+=org.jabref.logic.exporter.AtomicFileOutputStream.write(int)!b	PARAMETERO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaã ã("
+typeint"
+isFinalfalse"8
+declarationString#<mark class="modifier">int</mark> b*b2\
+intTYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaã ã(¸
+Sorg.jabref.logic.exporter.AtomicFileOutputStream.write(int)?exception@270.29:270.38VARIABLEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaé é(&"
+typeIOException"
+isFinalfalse"*
+declarationStringIOException exception*	exception2l
+java.io.IOExceptionTYPEO
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaé é(¡
+Corg.jabref.logic.exporter.AtomicFileOutputStream?LOGGER@48.32:48.38VALUEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java0  0(&"
+isFinaltrue"
+typeLogger"Ï
+declarationString÷<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(AtomicFileOutputStream.class);"
+isStatictrue"
+accessprivate*LOGGER2g
+org.slf4j.LoggerTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java0 0(π
+Porg.jabref.logic.exporter.AtomicFileOutputStream?TEMPORARY_EXTENSION@50.32:50.51VALUEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java2  2(3"
+isFinaltrue"
+typeString" 
+declarationString¥<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">TEMPORARY_EXTENSION</mark> = ".tmp";"
+isStatictrue"
+accessprivate*TEMPORARY_EXTENSION2g
+java.lang.StringTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java2 2(“
+Korg.jabref.logic.exporter.AtomicFileOutputStream?SAVE_EXTENSION@51.32:51.46VALUEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java3  3(."
+isFinaltrue"
+typeString"Ô
+declarationStringŸ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">SAVE_EXTENSION</mark> = "." + BackupFileType.SAVE.getExtensions().get(0);"
+isStatictrue"
+accessprivate*SAVE_EXTENSION2g
+java.lang.StringTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java3 3(2n
+java.util.List.get(int)CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java3[ 3(^2ã
+4org.jabref.logic.util.BackupFileType.getExtensions()CALLM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java3K 3(XÌ
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?targetFile@56.23:56.33VALUEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java8 8(!"
+isFinaltrue"
+typePath"è
+declarationStringz<mark class="modifier">private </mark><mark class="modifier">final </mark>Path <mark class="class-field">targetFile</mark>"
+isStaticfalse"
+accessprivate*
+targetFile2i
+java.nio.file.PathTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java8 8(ˆ
+Jorg.jabref.logic.exporter.AtomicFileOutputStream?temporaryFile@61.23:61.36VALUEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java= =($"
+isFinaltrue"
+typePath"í
+declarationString}<mark class="modifier">private </mark><mark class="modifier">final </mark>Path <mark class="class-field">temporaryFile</mark>"
+isStaticfalse"
+accessprivate*temporaryFile2i
+java.nio.file.PathTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java= =(Ò
+Norg.jabref.logic.exporter.AtomicFileOutputStream?temporaryFileLock@63.21:63.38VARIABLEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java? ?(&"
+isFinalfalse"
+typeFileLock"v
+declarationStringa<mark class="modifier">private </mark>FileLock <mark class="class-field">temporaryFileLock</mark>"
+isStaticfalse"
+accessprivate*temporaryFileLock2q
+java.nio.channels.FileLockTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.java? ?(Ì
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?backupFile@68.23:68.33VALUEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaD D(!"
+isFinaltrue"
+typePath"è
+declarationStringz<mark class="modifier">private </mark><mark class="modifier">final </mark>Path <mark class="class-field">backupFile</mark>"
+isStaticfalse"
+accessprivate*
+backupFile2i
+java.nio.file.PathTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaD D(á
+Gorg.jabref.logic.exporter.AtomicFileOutputStream?keepBackup@70.26:70.36VALUEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaF F($"
+isFinaltrue"
+typeboolean"±
+declarationStringõ<mark class="modifier">private </mark><mark class="modifier">final </mark><mark class="modifier">boolean</mark> <mark class="class-field">keepBackup</mark>"
+isStaticfalse"
+accessprivate*
+keepBackup2^
+booleanTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaF F(†
+Morg.jabref.logic.exporter.AtomicFileOutputStream?errorDuringWrite@72.20:72.36VARIABLEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaH H($"
+isFinalfalse"
+typeboolean"∫
+declarationString§<mark class="modifier">private </mark><mark class="modifier">boolean</mark> <mark class="class-field">errorDuringWrite</mark> = <mark class="modifier">false</mark>;"
+isStaticfalse"
+accessprivate*errorDuringWrite2^
+booleanTYPEM
+Csrc\main\java\org\jabref\logic\exporter\AtomicFileOutputStream.javaH H(

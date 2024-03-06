@@ -1,0 +1,933 @@
+
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java∏
+/org.jabref.logic.importer.fetcher.GoogleScholarCLASSL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java* *(",
+package!org.jabref.logic.importer.fetcher"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"¡
+declarationString´<mark class="modifier">public </mark><mark class="modifier">class </mark>GoogleScholar<mark class="modifier"><br>implements </mark>FulltextFetcher, PagedSearchBasedFetcher"
+accesspublic*GoogleScholar2j
+GoogleScholarDECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java5 5(2∫
+]org.jabref.logic.importer.fetcher.GoogleScholar.findFullText(org.jabref.model.entry.BibEntry)DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java; ;(%2ú
+?org.jabref.logic.importer.fetcher.GoogleScholar.getTrustLevel()DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaS S(#2•
+Horg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaW W( 2´
+Norg.jabref.logic.importer.fetcher.GoogleScholar.needsCaptcha(java.lang.String)DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javat t( 2ñ
+9org.jabref.logic.importer.fetcher.GoogleScholar.getName()DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javay y(2ö
+=org.jabref.logic.importer.fetcher.GoogleScholar.getHelpPage()DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java~ ~()2„
+Éorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÇ Ç(!2Æ
+Oorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaí í("2¶
+Gorg.jabref.logic.importer.fetcher.GoogleScholar.obtainAndModifyCookie()DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java§ §(&2‰
+Ñorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≤ ≤(,2ü
+Borg.jabref.logic.importer.fetcher.GoogleScholar?LOGGER@43.32:43.38DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java+  +(&2¨
+Oorg.jabref.logic.importer.fetcher.GoogleScholar?LINK_TO_BIB_PATTERN@45.33:45.52DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java-! -(42©
+Lorg.jabref.logic.importer.fetcher.GoogleScholar?BASIC_SEARCH_URL@47.32:47.48DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java/  /(02§
+Gorg.jabref.logic.importer.fetcher.GoogleScholar?NUM_RESULTS@49.29:49.40DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java1 1((2∞
+Sorg.jabref.logic.importer.fetcher.GoogleScholar?importFormatPreferences@51.42:51.65DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java3* 3(A2Å
+)org.jabref.logic.importer.FulltextFetcherEXTENDL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java*& *(52â
+1org.jabref.logic.importer.PagedSearchBasedFetcherEXTENDL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java*7 *(NÀ
+GoogleScholarCONSTRUCTORL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java5 5("î
+declarationString<mark class="modifier">public </mark><mark class="method">GoogleScholar</mark>(ImportFormatPreferences importFormatPreferences)*GoogleScholar2©
+Sorg.jabref.logic.importer.fetcher.GoogleScholar?importFormatPreferences@51.42:51.65CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java7 7($2å
+/org.jabref.logic.importer.fetcher.GoogleScholarRETURN_TYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java5 5(Û
+importFormatPreferences	PARAMETERL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java51 5(H"
+typeImportFormatPreferences"
+isFinalfalse"D
+declarationString/ImportFormatPreferences importFormatPreferences*importFormatPreferences2m
+ImportFormatPreferencesTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java5 5(0´!
+]org.jabref.logic.importer.fetcher.GoogleScholar.findFullText(org.jabref.model.entry.BibEntry)METHODL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java; ;(%"
+isFinalfalse"“
+declarationStringº<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>Optional&lt;URL&gt; <mark class="method">findFullText</mark>(BibEntry entry)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException<mark class="modifier"><mark class="modifier">,</mark></mark> FetcherException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<URL>*findFullText2y
+#java.util.Objects.requireNonNull(T)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java< <(2¢
+Lorg.jabref.model.entry.BibEntry.hasField(org.jabref.model.entry.field.Field)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java? ?(2p
+java.util.Optional.empty()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java@ @(!2r
+java.util.Optional.orElse(T)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaHR H(X2¢
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaH4 H(<2∏
+borg.jabref.logic.importer.FetcherException.FetcherException(java.lang.String, java.lang.Throwable)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaN N(&2π
+corg.jabref.logic.importer.fetcher.GoogleScholar.findFullText(org.jabref.model.entry.BibEntry)!entryCALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java< <($2π
+corg.jabref.logic.importer.fetcher.GoogleScholar.findFullText(org.jabref.model.entry.BibEntry)!entryCALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java? ?(2¢
+Lorg.jabref.logic.importer.fetcher.GoogleScholar?BASIC_SEARCH_URL@47.32:47.48CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaE3 E(C2 
+torg.jabref.logic.importer.fetcher.GoogleScholar.findFullText(org.jabref.model.entry.BibEntry)?uriBuilder@69.23:69.33CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaF F(2 
+torg.jabref.logic.importer.fetcher.GoogleScholar.findFullText(org.jabref.model.entry.BibEntry)?uriBuilder@69.23:69.33CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaH H(2π
+corg.jabref.logic.importer.fetcher.GoogleScholar.findFullText(org.jabref.model.entry.BibEntry)!entryCALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaH. H(32 
+torg.jabref.logic.importer.fetcher.GoogleScholar.findFullText(org.jabref.model.entry.BibEntry)?uriBuilder@69.23:69.33CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaJ J(2 
+torg.jabref.logic.importer.fetcher.GoogleScholar.findFullText(org.jabref.model.entry.BibEntry)?uriBuilder@69.23:69.33CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaL L($2¡
+korg.jabref.logic.importer.fetcher.GoogleScholar.findFullText(org.jabref.model.entry.BibEntry)?e@77.36:77.37CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaN? N(@2±
+Worg.jabref.logic.importer.FulltextFetcher.findFullText(org.jabref.model.entry.BibEntry)OVERRIDEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java; ;(%2æ
+corg.jabref.logic.importer.fetcher.GoogleScholar.findFullText(org.jabref.model.entry.BibEntry)!entry	PARAMETERL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java;/ ;(42—
+torg.jabref.logic.importer.fetcher.GoogleScholar.findFullText(org.jabref.model.entry.BibEntry)?uriBuilder@69.23:69.33DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaE E(!2»
+korg.jabref.logic.importer.fetcher.GoogleScholar.findFullText(org.jabref.model.entry.BibEntry)?e@77.36:77.37DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaM$ M(%2o
+java.util.OptionalRETURN_TYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java; ;(2r
+java.net.URLRETURN_TYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java; ;(¥
+torg.jabref.logic.importer.fetcher.GoogleScholar.findFullText(org.jabref.model.entry.BibEntry)?uriBuilder@69.23:69.33VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaE E(!"
+type
+URIBuilder"
+isFinalfalse"ç
+declarationStringx<mark class="modifier"> </mark>URIBuilder <mark class="class-field">uriBuilder</mark> = new URIBuilder(BASIC_SEARCH_URL)*
+uriBuilder2}
+'org.apache.http.client.utils.URIBuilderTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaE E(2¢
+Lorg.jabref.logic.importer.fetcher.GoogleScholar?BASIC_SEARCH_URL@47.32:47.48CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaE3 E(CÖ
+corg.jabref.logic.importer.fetcher.GoogleScholar.findFullText(org.jabref.model.entry.BibEntry)!entry	PARAMETERL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java;/ ;(4"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2u
+org.jabref.model.entry.BibEntryTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java;& ;(.î
+korg.jabref.logic.importer.fetcher.GoogleScholar.findFullText(org.jabref.model.entry.BibEntry)?e@77.36:77.37VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaM$ M(%"
+typeURISyntaxException"
+isFinalfalse")
+declarationStringURISyntaxException e*e2q
+java.net.URISyntaxExceptionTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaM M(# 
+?org.jabref.logic.importer.fetcher.GoogleScholar.getTrustLevel()METHODL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaS S(#"
+isFinalfalse"ü
+declarationStringâ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>TrustLevel <mark class="method">getTrustLevel</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+type
+TrustLevel*getTrustLevel2ì
+9org.jabref.logic.importer.FulltextFetcher.getTrustLevel()OVERRIDEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaS S(#2â
+,org.jabref.logic.importer.fetcher.TrustLevelRETURN_TYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaS S(˙,
+Horg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)METHODL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaW W( "
+isFinalfalse"Õ
+declarationString∑<mark class="modifier">private </mark>Optional&lt;URL&gt; <mark class="method">search</mark>(String url)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeOptional<URL>*search2p
+java.util.Optional.empty()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaX) X(.2p
+java.util.Optional.empty()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java^ ^(!2Ö
+/java.lang.String.formatted(java.lang.Object...)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javacJ c(S2p
+java.lang.String.isEmpty()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javah h(#2~
+(org.jabref.logic.net.URLDownload.isPdf()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javahA h(F2n
+java.util.Optional.of(T)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javal' l()2î
+>org.jabref.logic.net.URLDownload.URLDownload(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javah- h(82x
+"java.net.URL.URL(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javal. l(12¢
+Lorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)!urlCALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaZ% Z((2Æ
+Xorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?doc@90.17:90.20CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java\ \(2ò
+Borg.jabref.logic.importer.fetcher.GoogleScholar?LOGGER@43.32:43.38CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java] ](2¨
+Vorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?i@98.17:98.18CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javab b(2ù
+Gorg.jabref.logic.importer.fetcher.GoogleScholar?NUM_RESULTS@49.29:49.40CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javab b('2¨
+Vorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?i@98.17:98.18CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javab) b(*2Æ
+Xorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?doc@90.17:90.20CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javac c(2¨
+Vorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?i@98.17:98.18CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javacT c(U2Ø
+Yorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?link@99.21:99.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javae e(2Ø
+Yorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?link@99.21:99.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaf  f($2≥
+]org.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?target@102.23:102.29CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javah h(2≥
+]org.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?target@102.23:102.29CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javah9 h(?2ò
+Borg.jabref.logic.importer.fetcher.GoogleScholar?LOGGER@43.32:43.38CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javak k(2≥
+]org.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?target@102.23:102.29CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javakB k(H2≤
+\org.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?pdfLink@88.22:88.29CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javal l(2≥
+]org.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?target@102.23:102.29CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javal2 l(82≤
+\org.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?pdfLink@88.22:88.29CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaq q(2ß
+Lorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)!url	PARAMETERL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaW( W(+2π
+\org.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?pdfLink@88.22:88.29DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaX X(2µ
+Xorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?doc@90.17:90.20DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaZ Z(2≥
+Vorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?i@98.17:98.18DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javab b(2∂
+Yorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?link@99.21:99.25DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javac c(2∫
+]org.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?target@102.23:102.29DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaf f(2o
+java.util.OptionalRETURN_TYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaW W(2r
+java.net.URLRETURN_TYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaW W(∞
+\org.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?pdfLink@88.22:88.29VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaX X("
+typeOptional<URL>"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>Optional<URL> <mark class="class-field">pdfLink</mark> = Optional.empty()*pdfLink2h
+java.util.OptionalTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaX X(2k
+java.net.URLTYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaX X(2p
+java.util.Optional.empty()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaX) X(.í
+Xorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?doc@90.17:90.20VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaZ Z("
+typeDocument"
+isFinalfalse"ü
+declarationStringâ<mark class="modifier"> </mark>Document <mark class="class-field">doc</mark> = Jsoup.connect(url).userAgent(URLDownload.USER_AGENT).get()*doc2n
+org.jsoup.nodes.DocumentTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaZ Z(2¢
+Lorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)!urlCALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaZ% Z((´
+Vorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?i@98.17:98.18VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javab b("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 0*i2Y
+intTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javab b(⁄
+Yorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?link@99.21:99.25VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javac c("
+typeElements"
+isFinalfalse"°
+declarationStringã<mark class="modifier"> </mark>Elements <mark class="class-field">link</mark> = doc.select("div[data-rp=%S] div.gs_or_ggsm a".formatted(i))*link2o
+org.jsoup.select.ElementsTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javac c(2Ö
+/java.lang.String.formatted(java.lang.Object...)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javacJ c(S2Æ
+Xorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?doc@90.17:90.20CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javac c(2¨
+Vorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?i@98.17:98.18CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javacT c(U˚
+]org.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?target@102.23:102.29VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaf f("
+typeString"
+isFinalfalse"~
+declarationStringi<mark class="modifier"> </mark>String <mark class="class-field">target</mark> = link.first().attr("href")*target2f
+java.lang.StringTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaf f(2Ø
+Yorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)?link@99.21:99.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaf  f($◊
+Lorg.jabref.logic.importer.fetcher.GoogleScholar.search(java.lang.String)!url	PARAMETERL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaW( W(+"
+typeString"
+isFinalfalse"
+declarationString
+String url*url2f
+java.lang.StringTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaW! W('˘
+Norg.jabref.logic.importer.fetcher.GoogleScholar.needsCaptcha(java.lang.String)METHODL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javat t( "
+isFinalfalse"ó
+declarationStringÅ<mark class="modifier">private </mark><mark class="modifier">boolean</mark> <mark class="method">needsCaptcha</mark>(String body)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeboolean*needsCaptcha2á
+1java.lang.String.contains(java.lang.CharSequence)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javau u(2©
+Sorg.jabref.logic.importer.fetcher.GoogleScholar.needsCaptcha(java.lang.String)!bodyCALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javau u(2Æ
+Sorg.jabref.logic.importer.fetcher.GoogleScholar.needsCaptcha(java.lang.String)!body	PARAMETERL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javat( t(,2d
+booleanRETURN_TYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javat t(‡
+Sorg.jabref.logic.importer.fetcher.GoogleScholar.needsCaptcha(java.lang.String)!body	PARAMETERL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javat( t(,"
+typeString"
+isFinalfalse" 
+declarationStringString body*body2f
+java.lang.StringTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javat! t('á
+9org.jabref.logic.importer.fetcher.GoogleScholar.getName()METHODL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javay y("
+isFinalfalse"î
+declarationString<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>String <mark class="method">getName</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*getName2à
+.org.jabref.logic.importer.WebFetcher.getName()OVERRIDEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javay y(2m
+java.lang.StringRETURN_TYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javay y(Ø
+=org.jabref.logic.importer.fetcher.GoogleScholar.getHelpPage()METHODL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java~ ~()"
+isFinalfalse"´
+declarationStringï<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>Optional&lt;HelpFile&gt; <mark class="method">getHelpPage</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<HelpFile>*getHelpPage2n
+java.util.Optional.of(T)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java (2å
+2org.jabref.logic.importer.WebFetcher.getHelpPage()OVERRIDEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java~ ~()2o
+java.util.OptionalRETURN_TYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java~ ~(2Ñ
+org.jabref.logic.help.HelpFileRETURN_TYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java~ ~(«1
+Éorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)METHODN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÇ Ç(!"
+isFinalfalse"ï
+declarationStringˇ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">addHitsFromQuery</mark>(List&lt;BibEntry&gt; entryList<mark class="modifier"><mark class="modifier">,</mark></mark> String queryURL)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException<mark class="modifier"><mark class="modifier">,</mark></mark> FetcherException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*addHitsFromQuery2É
++org.jabref.logic.net.URLDownload.asString()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÉ3 É(;2¶
+Norg.jabref.logic.importer.fetcher.GoogleScholar.needsCaptcha(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÖ Ö(2¶
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaá! á(%2è
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaä. ä(52v
+java.util.regex.Matcher.find()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaã ã(2†
+Hjava.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaå6 å(=2w
+java.util.regex.Matcher.group()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaå. å(32ß
+Oorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaç  ç(-2m
+java.util.List.add(E)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaé é(2ñ
+>org.jabref.logic.net.URLDownload.URLDownload(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÉ É((2Ã
+torg.jabref.logic.importer.FetcherException.FetcherException(java.lang.String, java.lang.String, java.lang.Throwable)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÜ Ü(&2Â
+åorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)!queryURLCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÉ) É(12Ú
+ôorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)?content@131.15:131.22CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÖ Ö( 2Â
+åorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)!queryURLCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÜa Ü(i2ß
+Oorg.jabref.logic.importer.fetcher.GoogleScholar?LINK_TO_BIB_PATTERN@45.33:45.52CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaä ä(-2Ú
+ôorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)?content@131.15:131.22CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaä6 ä(=2Ú
+ôorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)?matcher@138.16:138.23CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaã ã(2Ú
+ôorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)?matcher@138.16:138.23CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaå& å(-2˚
+¢org.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)?citationsPageURL@140.19:140.35CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaç. ç(>2Ê
+çorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)!entryListCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaé é(2Û
+öorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)?newEntry@141.21:141.29CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaé é("2Î
+çorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)!entryList	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÇ1 Ç(:2Í
+åorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)!queryURL	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÇC Ç(K2˘
+ôorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)?content@131.15:131.22DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÉ É(2˘
+ôorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)?matcher@138.16:138.23DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaä ä(2Ç
+¢org.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)?citationsPageURL@140.19:140.35DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaå å(#2˙
+öorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)?newEntry@141.21:141.29DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaç ç(2c
+voidRETURN_TYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÇ Ç(ü
+ôorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)?content@131.15:131.22VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÉ É("
+typeString"
+isFinalfalse"ä
+declarationStringu<mark class="modifier"> </mark>String <mark class="class-field">content</mark> = new URLDownload(queryURL).asString()*content2h
+java.lang.StringTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÉ É(2É
++org.jabref.logic.net.URLDownload.asString()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÉ3 É(;2ñ
+>org.jabref.logic.net.URLDownload.URLDownload(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÉ É((2Â
+åorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)!queryURLCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÉ) É(1“
+ôorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)?matcher@138.16:138.23VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaä ä("
+typeMatcher"
+isFinalfalse"ã
+declarationStringv<mark class="modifier"> </mark>Matcher <mark class="class-field">matcher</mark> = LINK_TO_BIB_PATTERN.matcher(content)*matcher2o
+java.util.regex.MatcherTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaä ä(2è
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaä. ä(52ß
+Oorg.jabref.logic.importer.fetcher.GoogleScholar?LINK_TO_BIB_PATTERN@45.33:45.52CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaä ä(-2Ú
+ôorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)?content@131.15:131.22CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaä6 ä(=‰
+¢org.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)?citationsPageURL@140.19:140.35VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaå å(#"
+typeString"
+isFinalfalse"≥
+declarationStringù<mark class="modifier"> </mark>String <mark class="class-field">citationsPageURL</mark> = matcher.group().replace("&amp;"<mark class="modifier">,</mark> "&")*citationsPageURL2h
+java.lang.StringTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaå å(2†
+Hjava.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaå6 å(=2w
+java.util.regex.Matcher.group()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaå. å(32Ú
+ôorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)?matcher@138.16:138.23CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaå& å(-—
+öorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)?newEntry@141.21:141.29VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaç ç("
+typeBibEntry"
+isFinalfalse"à
+declarationStrings<mark class="modifier"> </mark>BibEntry <mark class="class-field">newEntry</mark> = downloadEntry(citationsPageURL)*newEntry2w
+org.jabref.model.entry.BibEntryTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaç ç(2ß
+Oorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaç  ç(-2˚
+¢org.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)?citationsPageURL@140.19:140.35CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaç. ç(>∫
+çorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)!entryList	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÇ1 Ç(:"
+typeList<BibEntry>"
+isFinalfalse"-
+declarationStringList<BibEntry> entryList*	entryList2f
+java.util.ListTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÇ" Ç(&2Ä
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÇ' Ç(/¶
+åorg.jabref.logic.importer.fetcher.GoogleScholar.addHitsFromQuery(java.util.List<org.jabref.model.entry.BibEntry>, java.lang.String)!queryURL	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÇC Ç(K"
+typeString"
+isFinalfalse"$
+declarationStringString queryURL*queryURL2h
+java.lang.StringTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÇ< Ç(B‹/
+Oorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)METHODN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaí í(""
+isFinalfalse"ò
+declarationStringÇ<mark class="modifier">private </mark>BibEntry <mark class="method">downloadEntry</mark>(String link)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException<mark class="modifier"><mark class="modifier">,</mark></mark> FetcherException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeBibEntry*downloadEntry2É
++org.jabref.logic.net.URLDownload.asString()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaì9 ì(A2ü
+Gorg.jabref.logic.importer.fileformat.BibtexParser.parse(java.io.Reader)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaï% ï(*2å
+4org.jabref.logic.importer.ParserResult.getDatabase()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javañ( ñ(32ä
+2org.jabref.model.database.BibDatabase.getEntries()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaô@ ô(J2å
+4org.jabref.logic.importer.ParserResult.getDatabase()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaô2 ô(=2s
+java.util.Collection.size()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaö ö(2s
+java.util.Collection.size()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaõ% õ()2q
+java.util.Iterator.next()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaû4 û(82w
+java.util.Collection.iterator()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaû) û(12ñ
+>org.jabref.logic.net.URLDownload.URLDownload(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaì' ì(22ã
+3java.io.StringReader.StringReader(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaï/ ï(;2•
+Morg.jabref.logic.importer.FetcherException.FetcherException(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaó ó(&2•
+Morg.jabref.logic.importer.FetcherException.FetcherException(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaú ú(*2¨
+Torg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)!linkCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaì3 ì(72´
+Sorg.jabref.logic.importer.fetcher.GoogleScholar?importFormatPreferences@51.42:51.65CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaî/ î(F2º
+dorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?parser@148.21:148.27CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaï ï($2«
+oorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?downloadedContent@147.15:147.32CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaï< ï(M2º
+dorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?result@149.21:149.27CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javañ ñ(2º
+dorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?result@149.21:149.27CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javañ! ñ('2º
+dorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?result@149.21:149.27CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaô+ ô(12Ω
+eorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?entries@153.33:153.40CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaö ö(2ö
+Borg.jabref.logic.importer.fetcher.GoogleScholar?LOGGER@43.32:43.38CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaõ õ(2Ω
+eorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?entries@153.33:153.40CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaõ õ($2¨
+Torg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)!linkCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaõD õ(H2Ω
+eorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?entries@153.33:153.40CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaû! û((2ª
+corg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?entry@158.25:158.30CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaü ü(2±
+Torg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)!link	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaí* í(.2Œ
+oorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?downloadedContent@147.15:147.32DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaì ì( 2√
+dorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?parser@148.21:148.27DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaî î(2√
+dorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?result@149.21:149.27DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaï ï(2ƒ
+eorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?entries@153.33:153.40DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaô! ô((2¬
+corg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?entry@158.25:158.30DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaû û(2~
+org.jabref.model.entry.BibEntryRETURN_TYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaí í(À
+oorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?downloadedContent@147.15:147.32VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaì ì( "
+typeString"
+isFinalfalse"ê
+declarationString{<mark class="modifier"> </mark>String <mark class="class-field">downloadedContent</mark> = new URLDownload(link).asString()*downloadedContent2h
+java.lang.StringTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaì ì(2É
++org.jabref.logic.net.URLDownload.asString()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaì9 ì(A2ñ
+>org.jabref.logic.net.URLDownload.URLDownload(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaì' ì(22¨
+Torg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)!linkCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaì3 ì(7¡
+dorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?parser@148.21:148.27VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaî î("
+typeBibtexParser"
+isFinalfalse"î
+declarationString<mark class="modifier"> </mark>BibtexParser <mark class="class-field">parser</mark> = new BibtexParser(importFormatPreferences)*parser2â
+1org.jabref.logic.importer.fileformat.BibtexParserTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaî î(2´
+Sorg.jabref.logic.importer.fetcher.GoogleScholar?importFormatPreferences@51.42:51.65CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaî/ î(F…	
+dorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?result@149.21:149.27VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaï ï("
+typeParserResult"
+isFinalfalse"ù
+declarationStringá<mark class="modifier"> </mark>ParserResult <mark class="class-field">result</mark> = parser.parse(new StringReader(downloadedContent))*result2~
+&org.jabref.logic.importer.ParserResultTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaï ï(2ü
+Gorg.jabref.logic.importer.fileformat.BibtexParser.parse(java.io.Reader)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaï% ï(*2ã
+3java.io.StringReader.StringReader(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaï/ ï(;2º
+dorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?parser@148.21:148.27CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaï ï($2«
+oorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?downloadedContent@147.15:147.32CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaï< ï(Mﬂ
+eorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?entries@153.33:153.40VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaô! ô(("
+typeCollection<BibEntry>"
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier"> </mark>Collection<BibEntry> <mark class="class-field">entries</mark> = result.getDatabase().getEntries()*entries2l
+java.util.CollectionTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaô ô(2Ä
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaô ô(2ä
+2org.jabref.model.database.BibDatabase.getEntries()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaô@ ô(J2å
+4org.jabref.logic.importer.ParserResult.getDatabase()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaô2 ô(=2º
+dorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?result@149.21:149.27CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaô+ ô(1ê
+corg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?entry@158.25:158.30VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaû û("
+typeBibEntry"
+isFinalfalse"
+declarationStringj<mark class="modifier"> </mark>BibEntry <mark class="class-field">entry</mark> = entries.iterator().next()*entry2w
+org.jabref.model.entry.BibEntryTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaû û(2q
+java.util.Iterator.next()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaû4 û(82w
+java.util.Collection.iterator()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaû) û(12Ω
+eorg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)?entries@153.33:153.40CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaû! û((Â
+Torg.jabref.logic.importer.fetcher.GoogleScholar.downloadEntry(java.lang.String)!link	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaí* í(."
+typeString"
+isFinalfalse" 
+declarationStringString link*link2h
+java.lang.StringTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaí# í()—
+Gorg.jabref.logic.importer.fetcher.GoogleScholar.obtainAndModifyCookie()METHODN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java§ §(&"
+isFinalfalse"Ê
+declarationString–<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">obtainAndModifyCookie</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>FetcherException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*obtainAndModifyCookie2ã
+3org.jabref.logic.net.URLDownload.getCookieFromUrl()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaß2 ß(B2Ü
+.java.net.HttpCookie.setValue(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java™ ™(2v
+java.net.HttpCookie.getValue()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java™' ™(/2ñ
+>org.jabref.logic.net.URLDownload.URLDownload(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java¶) ¶(42∫
+borg.jabref.logic.importer.FetcherException.FetcherException(java.lang.String, java.lang.Throwable)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≠ ≠(&2∏
+`org.jabref.logic.importer.fetcher.GoogleScholar.obtainAndModifyCookie()?downloader@166.24:166.34CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaß' ß(12µ
+]org.jabref.logic.importer.fetcher.GoogleScholar.obtainAndModifyCookie()?cookies@167.29:167.36CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java®% ®(,2¥
+\org.jabref.logic.importer.fetcher.GoogleScholar.obtainAndModifyCookie()?cookie@168.28:168.34CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java™ ™(2¥
+\org.jabref.logic.importer.fetcher.GoogleScholar.obtainAndModifyCookie()?cookie@168.28:168.34CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java™  ™(&2Ø
+Worg.jabref.logic.importer.fetcher.GoogleScholar.obtainAndModifyCookie()?e@172.29:172.30CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≠Z ≠([2ø
+`org.jabref.logic.importer.fetcher.GoogleScholar.obtainAndModifyCookie()?downloader@166.24:166.34DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java¶ ¶("2º
+]org.jabref.logic.importer.fetcher.GoogleScholar.obtainAndModifyCookie()?cookies@167.29:167.36DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaß ß($2ª
+\org.jabref.logic.importer.fetcher.GoogleScholar.obtainAndModifyCookie()?cookie@168.28:168.34DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java® ®("2∂
+Worg.jabref.logic.importer.fetcher.GoogleScholar.obtainAndModifyCookie()?e@172.29:172.30DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java¨ ¨(2c
+voidRETURN_TYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java§ §(°
+`org.jabref.logic.importer.fetcher.GoogleScholar.obtainAndModifyCookie()?downloader@166.24:166.34VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java¶ ¶(""
+typeURLDownload"
+isFinalfalse"ú
+declarationStringÜ<mark class="modifier"> </mark>URLDownload <mark class="class-field">downloader</mark> = new URLDownload("https://scholar.google.com")*
+downloader2x
+ org.jabref.logic.net.URLDownloadTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java¶ ¶(2ñ
+>org.jabref.logic.net.URLDownload.URLDownload(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java¶) ¶(4•
+]org.jabref.logic.importer.fetcher.GoogleScholar.obtainAndModifyCookie()?cookies@167.29:167.36VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaß ß($"
+typeList<HttpCookie>"
+isFinalfalse"ç
+declarationStringx<mark class="modifier"> </mark>List<HttpCookie> <mark class="class-field">cookies</mark> = downloader.getCookieFromUrl()*cookies2f
+java.util.ListTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaß ß(2t
+java.net.HttpCookieTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaß ß(2ã
+3org.jabref.logic.net.URLDownload.getCookieFromUrl()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaß2 ß(B2∏
+`org.jabref.logic.importer.fetcher.GoogleScholar.obtainAndModifyCookie()?downloader@166.24:166.34CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaß' ß(1ª
+\org.jabref.logic.importer.fetcher.GoogleScholar.obtainAndModifyCookie()?cookie@168.28:168.34VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java® ®(""
+type
+HttpCookie"
+isFinalfalse"f
+declarationStringQ<mark class="modifier"> </mark>HttpCookie <mark class="class-field">cookie</mark>*cookie2k
+java.net.HttpCookieTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java® ®(Ó
+Worg.jabref.logic.importer.fetcher.GoogleScholar.obtainAndModifyCookie()?e@172.29:172.30VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java¨ ¨("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2k
+java.io.IOExceptionTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java¨ ¨(Ωd
+Ñorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)METHODN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≤ ≤(,"
+isFinalfalse"Å
+declarationStringÎ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>Page&lt;BibEntry&gt; <mark class="method">performSearchPaged</mark>(QueryNode luceneQuery<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">int</mark> pageNumber)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>FetcherException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typePage<BibEntry>*performSearchPaged2ü
+Gorg.jabref.logic.importer.fetcher.GoogleScholar.obtainAndModifyCookie()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java∂ ∂(!2u
+java.lang.String.valueOf(int)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaº4 º(;2ó
+?org.jabref.logic.importer.PagedSearchBasedFetcher.getPageSize()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaºI º(T2u
+java.lang.String.valueOf(int)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaΩ2 Ω(92ó
+?org.jabref.logic.importer.PagedSearchBasedFetcher.getPageSize()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaΩ: Ω(E2m
+java.util.List.size()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaƒ! ƒ(%2â
+1java.lang.String.contains(java.lang.CharSequence)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÕ# Õ(+2x
+ java.lang.Throwable.getMessage()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÕ Õ( 2¶
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaœ) œ(-2ë
+9org.jabref.logic.importer.fetcher.GoogleScholar.getName()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java—N —(U2ë
+9org.jabref.logic.importer.fetcher.GoogleScholar.getName()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java÷F ÷(M2∏
+`org.jabref.logic.importer.fetcher.transformers.ScholarQueryTransformer.ScholarQueryTransformer()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≥7 ≥(N2z
+"java.util.ArrayList.ArrayList(int)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java∑. ∑(92Ã
+torg.jabref.logic.importer.FetcherException.FetcherException(java.lang.String, java.lang.String, java.lang.Throwable)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaŒ Œ(.2∫
+borg.jabref.logic.importer.FetcherException.FetcherException(java.lang.String, java.lang.Throwable)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java— —(.2©
+Qorg.jabref.model.paging.Page.Page(java.lang.String, int, java.util.Collection<T>)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java‘ ‘(2∫
+borg.jabref.logic.importer.FetcherException.FetcherException(java.lang.String, java.lang.Throwable)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java÷ ÷(&2¸
+£org.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?queryTransformer@179.32:179.48CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java¥" ¥(22È
+êorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)!luceneQueryCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java¥H ¥(S2§
+Lorg.jabref.logic.importer.fetcher.GoogleScholar?BASIC_SEARCH_URL@47.32:47.48CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java∏3 ∏(C2ˆ
+ùorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@184.23:184.33CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaπ π(2ˆ
+ùorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@184.23:184.33CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java∫ ∫(2ˆ
+ùorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@184.23:184.33CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaª ª(2¸
+£org.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?transformedQuery@180.15:180.31CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaª) ª(92ˆ
+ùorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@184.23:184.33CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaº º(2Ë
+èorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)!pageNumberCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaº< º(F2ˆ
+ùorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@184.23:184.33CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaΩ Ω(2ˆ
+ùorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@184.23:184.33CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaæ æ(2¸
+£org.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?queryTransformer@179.32:179.48CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaæ= æ(M2ˆ
+ùorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@184.23:184.33CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaø ø(2¸
+£org.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?queryTransformer@179.32:179.48CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaø= ø(M2¯
+üorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?foundEntries@183.27:183.39CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java¬! ¬(-2ˆ
+ùorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@184.23:184.33CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java¬/ ¬(92¯
+üorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?foundEntries@183.27:183.39CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaƒ ƒ( 2ˆ
+ùorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@184.23:184.33CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≈ ≈(2¯
+üorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?foundEntries@183.27:183.39CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java∆% ∆(12ˆ
+ùorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@184.23:184.33CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java∆3 ∆(=2ö
+Borg.jabref.logic.importer.fetcher.GoogleScholar?LOGGER@43.32:43.38CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java… …(2ˆ
+ùorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@184.23:184.33CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java…6 …(@2Ì
+îorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?e@200.33:200.34CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaÕ Õ(2Ô
+îorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?e@200.33:200.34CALLP
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.javaœñ œ(ó2Ì
+îorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?e@200.33:200.34CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java—Y —(Z2¸
+£org.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?transformedQuery@180.15:180.31CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java‘ ‘(.2Ë
+èorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)!pageNumberCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java‘0 ‘(:2¯
+üorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?foundEntries@183.27:183.39CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java‘< ‘(H2Ì
+îorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?e@213.36:213.37CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java÷Q ÷(R2„
+Üorg.jabref.logic.importer.PagedSearchBasedFetcher.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)OVERRIDEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≤ ≤(,2Ó
+êorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)!luceneQuery	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≤7 ≤(B2Ì
+èorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)!pageNumber	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≤H ≤(R2É
+£org.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?queryTransformer@179.32:179.48DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≥  ≥(02É
+£org.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?transformedQuery@180.15:180.31DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java¥ ¥(2ˇ
+üorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?foundEntries@183.27:183.39DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java∑ ∑('2˝
+ùorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@184.23:184.33DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java∏ ∏(!2Ù
+îorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?e@200.33:200.34DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java»! »("2Ù
+îorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?e@213.36:213.37DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java’$ ’(%2{
+org.jabref.model.paging.PageRETURN_TYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≤ ≤(2á
+org.jabref.model.entry.BibEntryRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≤ ≤(¬
+£org.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?queryTransformer@179.32:179.48VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≥  ≥(0"
+typeScholarQueryTransformer"
+isFinalfalse"û
+declarationStringà<mark class="modifier"> </mark>ScholarQueryTransformer <mark class="class-field">queryTransformer</mark> = new ScholarQueryTransformer()*queryTransformer2û
+Forg.jabref.logic.importer.fetcher.transformers.ScholarQueryTransformerTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≥ ≥(2∏
+`org.jabref.logic.importer.fetcher.transformers.ScholarQueryTransformer.ScholarQueryTransformer()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≥7 ≥(Nπ
+£org.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?transformedQuery@180.15:180.31VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java¥ ¥("
+typeString"
+isFinalfalse"≠
+declarationStringó<mark class="modifier"> </mark>String <mark class="class-field">transformedQuery</mark> = queryTransformer.transformLuceneQuery(luceneQuery).orElse("")*transformedQuery2h
+java.lang.StringTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java¥ ¥(2¸
+£org.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?queryTransformer@179.32:179.48CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java¥" ¥(22È
+êorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)!luceneQueryCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java¥H ¥(S§
+üorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?foundEntries@183.27:183.39VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java∑ ∑('"
+typeList<BibEntry>"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>List<BibEntry> <mark class="class-field">foundEntries</mark> = new ArrayList<>(10)*foundEntries2f
+java.util.ListTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java∑ ∑(2Ä
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java∑ ∑(2z
+"java.util.ArrayList.ArrayList(int)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java∑. ∑(9‰
+ùorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@184.23:184.33VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java∏ ∏(!"
+type
+URIBuilder"
+isFinalfalse"ç
+declarationStringx<mark class="modifier"> </mark>URIBuilder <mark class="class-field">uriBuilder</mark> = new URIBuilder(BASIC_SEARCH_URL)*
+uriBuilder2
+'org.apache.http.client.utils.URIBuilderTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java∏ ∏(2§
+Lorg.jabref.logic.importer.fetcher.GoogleScholar?BASIC_SEARCH_URL@47.32:47.48CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java∏3 ∏(C‚
+êorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)!luceneQuery	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≤7 ≤(B"
+type	QueryNode"
+isFinalfalse"*
+declarationStringQueryNode luceneQuery*luceneQuery2ì
+;org.apache.lucene.queryparser.flexible.core.nodes.QueryNodeTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≤- ≤(6∏
+èorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)!pageNumber	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≤H ≤(R"
+typeint"
+isFinalfalse"A
+declarationString,<mark class="modifier">int</mark> pageNumber*
+pageNumber2[
+intTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java≤D ≤(G¨
+îorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?e@200.33:200.34VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java»! »(""
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2k
+java.io.IOExceptionTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java» »( ¬
+îorg.jabref.logic.importer.fetcher.GoogleScholar.performSearchPaged(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?e@213.36:213.37VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java’$ ’(%"
+typeURISyntaxException"
+isFinalfalse")
+declarationStringURISyntaxException e*e2s
+java.net.URISyntaxExceptionTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java’ ’(#µ
+Borg.jabref.logic.importer.fetcher.GoogleScholar?LOGGER@43.32:43.38VALUEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java+  +(&"
+isFinaltrue"
+typeLogger"„
+declarationStringÕ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(GoogleScholar.class);"
+isStatictrue"
+accessprivate*LOGGER2f
+org.slf4j.LoggerTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java+ +(ï
+Oorg.jabref.logic.importer.fetcher.GoogleScholar?LINK_TO_BIB_PATTERN@45.33:45.52VALUEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java-! -(4"
+isFinaltrue"
+typePattern"ó
+declarationStringÅ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Pattern <mark class="class-field">LINK_TO_BIB_PATTERN</mark> = Pattern.compile("(https:\\/\\/scholar.googleusercontent.com\\/scholar.bib[^\"]*)");"
+isStatictrue"
+accessprivate*LINK_TO_BIB_PATTERN2m
+java.util.regex.PatternTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java- -( 2á
+1java.util.regex.Pattern.compile(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java-? -(FÀ
+Lorg.jabref.logic.importer.fetcher.GoogleScholar?BASIC_SEARCH_URL@47.32:47.48VALUEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java/  /(0"
+isFinaltrue"
+typeString"Â
+declarationStringœ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">BASIC_SEARCH_URL</mark> = "https://scholar.google.ch/scholar?";"
+isStatictrue"
+accessprivate*BASIC_SEARCH_URL2f
+java.lang.StringTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java/ /(•
+Gorg.jabref.logic.importer.fetcher.GoogleScholar?NUM_RESULTS@49.29:49.40VALUEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java1 1(("
+isFinaltrue"
+typeint"Ÿ
+declarationString√<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark><mark class="modifier">int</mark> <mark class="class-field">NUM_RESULTS</mark> = 10;"
+isStatictrue"
+accessprivate*NUM_RESULTS2Y
+intTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java1 1(Ω
+Sorg.jabref.logic.importer.fetcher.GoogleScholar?importFormatPreferences@51.42:51.65VALUEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java3* 3(A"
+isFinaltrue"
+typeImportFormatPreferences"∞
+declarationStringö<mark class="modifier">private </mark><mark class="modifier">final </mark>ImportFormatPreferences <mark class="class-field">importFormatPreferences</mark>"
+isStaticfalse"
+accessprivate*importFormatPreferences2m
+ImportFormatPreferencesTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\GoogleScholar.java3 3()

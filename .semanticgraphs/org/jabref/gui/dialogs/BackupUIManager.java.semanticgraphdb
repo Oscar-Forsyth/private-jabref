@@ -1,0 +1,513 @@
+
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java—
+&org.jabref.gui.dialogs.BackupUIManagerCLASSC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java" "("!
+packageorg.jabref.gui.dialogs"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"m
+declarationStringX<mark class="modifier">public </mark><mark class="modifier">class </mark>BackupUIManager"
+accesspublic*BackupUIManager2å
+8org.jabref.gui.dialogs.BackupUIManager.BackupUIManager()DECLARATIONC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java% %(2ô
+ƒorg.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)DECLARATIONC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java() ((@2í
+Ωorg.jabref.gui.dialogs.BackupUIManager.showBackupResolverDialog(org.jabref.gui.DialogService, org.jabref.preferences.ExternalApplicationsPreferences, java.nio.file.Path, java.nio.file.Path)DECLARATIONC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java<( <(@2ò
+√org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)DECLARATIONC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaD* D(@2ç
+9org.jabref.gui.dialogs.BackupUIManager?LOGGER@35.32:35.38DECLARATIONC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java#  #(&É
+8org.jabref.gui.dialogs.BackupUIManager.BackupUIManager()CONSTRUCTORC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java% %("h
+declarationStringS<mark class="modifier">private </mark><mark class="method">BackupUIManager</mark>()*BackupUIManager2z
+&org.jabref.gui.dialogs.BackupUIManagerRETURN_TYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java% %(ïC
+ƒorg.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)METHODC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java() ((@"
+isFinalfalse"‡
+declarationString <mark class="modifier">public </mark><mark class="modifier">static </mark>Optional&lt;ParserResult&gt; <mark class="method">showRestoreBackupDialog</mark>(DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> Path originalPath<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferencesService<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileUpdateMonitor)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<ParserResult>*showRestoreBackupDialog2ã
+Ωorg.jabref.gui.dialogs.BackupUIManager.showBackupResolverDialog(org.jabref.gui.DialogService, org.jabref.preferences.ExternalApplicationsPreferences, java.nio.file.Path, java.nio.file.Path)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java, ,(02õ
+Norg.jabref.preferences.PreferencesService.getExternalApplicationsPreferences()CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java.# .(E2à
+;org.jabref.preferences.FilePreferences.getBackupDirectory()CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java08 0(J2ã
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java0# 0(52∫
+mjava.util.Optional.flatMap(java.util.function.Function<? super T, ? extends java.util.Optional<? extends U>>)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java1 1( 2±
+dorg.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java3 3(+2à
+;org.jabref.preferences.FilePreferences.getBackupDirectory()CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java3b 3(t2ã
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java3M 3(_2g
+java.util.Optional.empty()CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java4  4(%2ë
+√org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java6 6(-2g
+java.util.Optional.empty()CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java8 8(!2†
+“org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!dialogServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java- -(2•
+◊org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java. .("2ü
+—org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!originalPathCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java/ /(2•
+◊org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java0 0("2®
+⁄org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?actionOpt@44.12:44.21CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java1 1(2•
+◊org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?action@49.33:49.39CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java2 2(2ü
+—org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!originalPathCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java3, 3(82•
+◊org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java3: 3(L2•
+◊org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?action@49.33:49.39CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java5 5(2†
+“org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!dialogServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java6. 6(;2ü
+—org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!originalPathCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java6= 6(I2•
+◊org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java6K 6(]2§
+÷org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!fileUpdateMonitorCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java6_ 6(p2•
+“org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!dialogService	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java(O ((\2§
+—org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!originalPath	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java)F )(R2™
+◊org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesService	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java*T *(f2©
+÷org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!fileUpdateMonitor	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java+S +(d2Ø
+⁄org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?actionOpt@44.12:44.21DECLARATIONC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java, ,(2¨
+◊org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?action@49.33:49.39DECLARATIONC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java1! 1('2f
+java.util.OptionalRETURN_TYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java( ((2É
+&org.jabref.logic.importer.ParserResultRETURN_TYPE_ARGUMENTC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java( (('ƒ
+⁄org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?actionOpt@44.12:44.21VARIABLEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java, ,("
+typevar"
+isFinalfalse"∞
+declarationStringö<mark class="modifier"> </mark>var <mark class="class-field">actionOpt</mark> = showBackupResolverDialog(dialogService, preferencesService.getExternalApplicationsPreferences()<mark class="modifier">,</mark> originalPath, preferencesService.getFilePreferences().getBackupDirectory())*	actionOpt2_
+java.util.OptionalTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java, ,(2ã
+Ωorg.jabref.gui.dialogs.BackupUIManager.showBackupResolverDialog(org.jabref.gui.DialogService, org.jabref.preferences.ExternalApplicationsPreferences, java.nio.file.Path, java.nio.file.Path)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java, ,(02õ
+Norg.jabref.preferences.PreferencesService.getExternalApplicationsPreferences()CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java.# .(E2à
+;org.jabref.preferences.FilePreferences.getBackupDirectory()CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java08 0(J2ã
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java0# 0(52†
+“org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!dialogServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java- -(2•
+◊org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java. .("2ü
+—org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!originalPathCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java/ /(2•
+◊org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java0 0("˙
+“org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!dialogService	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java(O ((\"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2i
+org.jabref.gui.DialogServiceTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java(A ((N€
+—org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!originalPath	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java)F )(R"
+typePath"
+isFinalfalse"&
+declarationStringPath originalPath*originalPath2_
+java.nio.file.PathTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java)A )(E†
+◊org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesService	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java*T *(f"
+typePreferencesService"
+isFinalfalse":
+declarationString%PreferencesService preferencesService*preferencesService2v
+)org.jabref.preferences.PreferencesServiceTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java*A *(Sô
+÷org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!fileUpdateMonitor	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java+S +(d"
+typeFileUpdateMonitor"
+isFinalfalse"8
+declarationString#FileUpdateMonitor fileUpdateMonitor*fileUpdateMonitor2t
+'org.jabref.model.util.FileUpdateMonitorTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java+A +(RÒ
+◊org.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?action@49.33:49.39VARIABLEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java1! 1('"
+type"
+isFinalfalse"
+declarationString action*action2TYPE¸
+Ωorg.jabref.gui.dialogs.BackupUIManager.showBackupResolverDialog(org.jabref.gui.DialogService, org.jabref.preferences.ExternalApplicationsPreferences, java.nio.file.Path, java.nio.file.Path)METHODC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java<( <(@"
+isFinalfalse"Â
+declarationStringœ<mark class="modifier">private </mark><mark class="modifier">static </mark>Optional&lt;ButtonType&gt; <mark class="method">showBackupResolverDialog</mark>(DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> ExternalApplicationsPreferences externalApplicationsPreferences<mark class="modifier"><mark class="modifier">,</mark></mark> Path originalPath<mark class="modifier"><mark class="modifier">,</mark></mark> Path backupDir)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeOptional<ButtonType>*showBackupResolverDialog2ö
+Morg.jabref.gui.util.DefaultTaskExecutor.runInJavaFXThread(java.lang.Runnable)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java@# @(42Ì
+üorg.jabref.gui.backup.BackupResolverDialog.BackupResolverDialog(java.nio.file.Path, java.nio.file.Path, org.jabref.preferences.ExternalApplicationsPreferences)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaA@ A(T2ô
+Àorg.jabref.gui.dialogs.BackupUIManager.showBackupResolverDialog(org.jabref.gui.DialogService, org.jabref.preferences.ExternalApplicationsPreferences, java.nio.file.Path, java.nio.file.Path)!dialogServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaA A(#2ò
+ org.jabref.gui.dialogs.BackupUIManager.showBackupResolverDialog(org.jabref.gui.DialogService, org.jabref.preferences.ExternalApplicationsPreferences, java.nio.file.Path, java.nio.file.Path)!originalPathCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaAU A(a2ï
+«org.jabref.gui.dialogs.BackupUIManager.showBackupResolverDialog(org.jabref.gui.DialogService, org.jabref.preferences.ExternalApplicationsPreferences, java.nio.file.Path, java.nio.file.Path)!backupDirCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaAc A(l2¨
+›org.jabref.gui.dialogs.BackupUIManager.showBackupResolverDialog(org.jabref.gui.DialogService, org.jabref.preferences.ExternalApplicationsPreferences, java.nio.file.Path, java.nio.file.Path)!externalApplicationsPreferencesCALLD
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaAn A(ç2û
+Àorg.jabref.gui.dialogs.BackupUIManager.showBackupResolverDialog(org.jabref.gui.DialogService, org.jabref.preferences.ExternalApplicationsPreferences, java.nio.file.Path, java.nio.file.Path)!dialogService	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java<O <(\2±
+›org.jabref.gui.dialogs.BackupUIManager.showBackupResolverDialog(org.jabref.gui.DialogService, org.jabref.preferences.ExternalApplicationsPreferences, java.nio.file.Path, java.nio.file.Path)!externalApplicationsPreferences	PARAMETERD
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java=a =(Ä2ù
+ org.jabref.gui.dialogs.BackupUIManager.showBackupResolverDialog(org.jabref.gui.DialogService, org.jabref.preferences.ExternalApplicationsPreferences, java.nio.file.Path, java.nio.file.Path)!originalPath	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java>F >(R2ö
+«org.jabref.gui.dialogs.BackupUIManager.showBackupResolverDialog(org.jabref.gui.DialogService, org.jabref.preferences.ExternalApplicationsPreferences, java.nio.file.Path, java.nio.file.Path)!backupDir	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java?F ?(O2f
+java.util.OptionalRETURN_TYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java< <(2|
+javafx.scene.control.ButtonTypeRETURN_TYPE_ARGUMENTC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java< <(&Û
+Àorg.jabref.gui.dialogs.BackupUIManager.showBackupResolverDialog(org.jabref.gui.DialogService, org.jabref.preferences.ExternalApplicationsPreferences, java.nio.file.Path, java.nio.file.Path)!dialogService	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java<O <(\"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2i
+org.jabref.gui.DialogServiceTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java<A <(NÈ
+›org.jabref.gui.dialogs.BackupUIManager.showBackupResolverDialog(org.jabref.gui.DialogService, org.jabref.preferences.ExternalApplicationsPreferences, java.nio.file.Path, java.nio.file.Path)!externalApplicationsPreferences	PARAMETERD
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java=a =(Ä"'
+typeExternalApplicationsPreferences"
+isFinalfalse"T
+declarationString?ExternalApplicationsPreferences externalApplicationsPreferences*externalApplicationsPreferences2É
+6org.jabref.preferences.ExternalApplicationsPreferencesTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java=A =(`‘
+ org.jabref.gui.dialogs.BackupUIManager.showBackupResolverDialog(org.jabref.gui.DialogService, org.jabref.preferences.ExternalApplicationsPreferences, java.nio.file.Path, java.nio.file.Path)!originalPath	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java>F >(R"
+typePath"
+isFinalfalse"&
+declarationStringPath originalPath*originalPath2_
+java.nio.file.PathTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java>A >(EÀ
+«org.jabref.gui.dialogs.BackupUIManager.showBackupResolverDialog(org.jabref.gui.DialogService, org.jabref.preferences.ExternalApplicationsPreferences, java.nio.file.Path, java.nio.file.Path)!backupDir	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java?F ?(O"
+typePath"
+isFinalfalse"#
+declarationStringPath backupDir*	backupDir2_
+java.nio.file.PathTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java?A ?(E±
+√org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)METHODC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaD* D(@"
+isFinalfalse"‡
+declarationString <mark class="modifier">private </mark><mark class="modifier">static </mark>Optional&lt;ParserResult&gt; <mark class="method">showReviewBackupDialog</mark>(DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> Path originalPath<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferencesService<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileUpdateMonitor)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeOptional<ParserResult>*showReviewBackupDialog2ì
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaJQ J(k2à
+;org.jabref.logic.importer.ParserResult.getDatabaseContext()CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaOG O(Y2o
+ java.util.Optional.orElseThrow()CALLE
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaQ≤ Q(Ω2Â
+óorg.jabref.logic.util.io.BackupFileUtil.getPathOfLatestExistingBackupFile(java.nio.file.Path, org.jabref.logic.util.BackupFileType, java.nio.file.Path)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaQ- Q(N2ä
+;org.jabref.preferences.FilePreferences.getBackupDirectory()CALLE
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaQú Q(Æ2ç
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLE
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaQá Q(ô2ö
+Morg.jabref.gui.util.DefaultTaskExecutor.runInJavaFXThread(java.lang.Runnable)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaV' V(82ú
+Œorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaWB W(V2°
+Torg.jabref.gui.DialogService.showCustomDialogAndWait(javafx.scene.control.Dialog<R>)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java\7 \(N2i
+java.util.Optional.isEmpty()CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java]' ](.2e
+java.util.Optional.get()CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java]H ](K2í
+ƒorg.jabref.gui.dialogs.BackupUIManager.showRestoreBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java_ _(22e
+java.util.Optional.of(T)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javac  c("2g
+java.util.Optional.empty()CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javag g(!2ì
+Eorg.jabref.model.util.DummyFileUpdateMonitor.DummyFileUpdateMonitor()CALLD
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaRs R(â2ñ
+»org.jabref.gui.collab.DatabaseChangeResolverFactory.DatabaseChangeResolverFactory(org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaTF T(c2§
+÷org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaJ> J(P2û
+–org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!originalPathCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaMJ M(V2µ
+Áorg.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?importFormatPreferences@74.36:74.59CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaMX M(o2§
+’org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!fileUpdateMonitorCALLD
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaMq M(Ç2≤
+‰org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?originalParserResult@77.25:77.45CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaO2 O(F2û
+–org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!originalPathCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaQO Q([2•
+÷org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesServiceCALLD
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaQt Q(Ü2®
+⁄org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?backupPath@81.17:81.27CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaRJ R(T2µ
+Áorg.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?importFormatPreferences@74.36:74.59CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaRV R(m2ü
+—org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!dialogServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaTd T(q2Ø
+‡org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?originalDatabase@79.31:79.47CALLD
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaTs T(É2¶
+÷org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesServiceCALLE
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaTÖ T(ó2Æ
+‡org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?originalDatabase@79.31:79.47CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaWW W(g2¨
+ﬁorg.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?backupDatabase@82.31:82.45CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaWi W(w2¥
+Âorg.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?changeResolverFactory@84.42:84.63CALLD
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaWy W(é2•
+◊org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?changes@87.37:87.44CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaY Y(2Æ
+‡org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?originalDatabase@79.31:79.47CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaZ Z((2ü
+—org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!dialogServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java\) \(62∞
+‚org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?reviewBackupDialog@88.46:88.64CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java\O \(a2∞
+‚org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?allChangesResolved@92.20:92.38CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java] ](&2∞
+‚org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?allChangesResolved@92.20:92.38CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java]5 ](G2ü
+—org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!dialogServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java_3 _(@2û
+–org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!originalPathCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java_B _(N2§
+÷org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java_P _(b2£
+’org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!fileUpdateMonitorCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java_d _(u2≤
+‰org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?originalParserResult@77.25:77.45CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javac# c(72Ü
+9org.jabref.gui.dialogs.BackupUIManager?LOGGER@35.32:35.38CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaf f(2°
+”org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?e@101.29:101.30CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javafK f(L2§
+—org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!dialogService	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaE E('2£
+–org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!originalPath	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaF F(2©
+÷org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesService	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaG G(12®
+’org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!fileUpdateMonitor	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaH H(/2º
+Áorg.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?importFormatPreferences@74.36:74.59DECLARATIONC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaJ$ J(;2π
+‰org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?originalParserResult@77.25:77.45DECLARATIONC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaM M(-2µ
+‡org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?originalDatabase@79.31:79.47DECLARATIONC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaO O(/2Ø
+⁄org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?backupPath@81.17:81.27DECLARATIONC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaQ Q(2≥
+ﬁorg.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?backupDatabase@82.31:82.45DECLARATIONC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaR R(-2∫
+Âorg.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?changeResolverFactory@84.42:84.63DECLARATIONC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaT* T(?2¨
+◊org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?changes@87.37:87.44DECLARATIONC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaW% W(,2∑
+‚org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?reviewBackupDialog@88.46:88.64DECLARATIONC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaX. X(@2∑
+‚org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?allChangesResolved@92.20:92.38DECLARATIONC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java\ \(&2®
+”org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?e@101.29:101.30DECLARATIONC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javae e(2f
+java.util.OptionalRETURN_TYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaD D(2É
+&org.jabref.logic.importer.ParserResultRETURN_TYPE_ARGUMENTC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaD D((‚
+Áorg.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?importFormatPreferences@74.36:74.59VARIABLEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaJ$ J(;"
+typeImportFormatPreferences"
+isFinalfalse"∑
+declarationString°<mark class="modifier"> </mark>ImportFormatPreferences <mark class="class-field">importFormatPreferences</mark> = preferencesService.getImportFormatPreferences()*importFormatPreferences2d
+ImportFormatPreferencesTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaJ J(#2ì
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaJQ J(k2§
+÷org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaJ> J(Pπ
+‰org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?originalParserResult@77.25:77.45VARIABLEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaM M(-"
+typeParserResult"
+isFinalfalse"Õ
+declarationString∑<mark class="modifier"> </mark>ParserResult <mark class="class-field">originalParserResult</mark> = OpenDatabase.loadDatabase(originalPath, importFormatPreferences, fileUpdateMonitor)*originalParserResult2s
+&org.jabref.logic.importer.ParserResultTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaM M(2û
+–org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!originalPathCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaMJ M(V2µ
+Áorg.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?importFormatPreferences@74.36:74.59CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaMX M(o2§
+’org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!fileUpdateMonitorCALLD
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaMq M(Ç’
+‡org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?originalDatabase@79.31:79.47VARIABLEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaO O(/"
+typeBibDatabaseContext"
+isFinalfalse"•
+declarationStringè<mark class="modifier"> </mark>BibDatabaseContext <mark class="class-field">originalDatabase</mark> = originalParserResult.getDatabaseContext()*originalDatabase2y
+,org.jabref.model.database.BibDatabaseContextTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaO O(2à
+;org.jabref.logic.importer.ParserResult.getDatabaseContext()CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaOG O(Y2≤
+‰org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?originalParserResult@77.25:77.45CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaO2 O(FÑ
+⁄org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?backupPath@81.17:81.27VARIABLEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaQ Q("
+typePath"
+isFinalfalse"â
+declarationStringÛ<mark class="modifier"> </mark>Path <mark class="class-field">backupPath</mark> = BackupFileUtil.getPathOfLatestExistingBackupFile(originalPath, BackupFileType.BACKUP, preferencesService.getFilePreferences().getBackupDirectory()).orElseThrow()*
+backupPath2_
+java.nio.file.PathTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaQ Q(2o
+ java.util.Optional.orElseThrow()CALLE
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaQ≤ Q(Ω2Â
+óorg.jabref.logic.util.io.BackupFileUtil.getPathOfLatestExistingBackupFile(java.nio.file.Path, org.jabref.logic.util.BackupFileType, java.nio.file.Path)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaQ- Q(N2ä
+;org.jabref.preferences.FilePreferences.getBackupDirectory()CALLE
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaQú Q(Æ2ç
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLE
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaQá Q(ô2û
+–org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!originalPathCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaQO Q([2•
+÷org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesServiceCALLD
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaQt Q(Ü–
+ﬁorg.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?backupDatabase@82.31:82.45VARIABLEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaR R(-"
+typeBibDatabaseContext"
+isFinalfalse"Î
+declarationString’<mark class="modifier"> </mark>BibDatabaseContext <mark class="class-field">backupDatabase</mark> = OpenDatabase.loadDatabase(backupPath, importFormatPreferences, new DummyFileUpdateMonitor()).getDatabaseContext()*backupDatabase2y
+,org.jabref.model.database.BibDatabaseContextTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaR R(2ì
+Eorg.jabref.model.util.DummyFileUpdateMonitor.DummyFileUpdateMonitor()CALLD
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaRs R(â2®
+⁄org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?backupPath@81.17:81.27CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaRJ R(T2µ
+Áorg.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?importFormatPreferences@74.36:74.59CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaRV R(mÖ
+Âorg.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?changeResolverFactory@84.42:84.63VARIABLEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaT* T(?"%
+typeDatabaseChangeResolverFactory"
+isFinalfalse"‚
+declarationStringÃ<mark class="modifier"> </mark>DatabaseChangeResolverFactory <mark class="class-field">changeResolverFactory</mark> = new DatabaseChangeResolverFactory(dialogService, originalDatabase, preferencesService)*changeResolverFactory2Ä
+3org.jabref.gui.collab.DatabaseChangeResolverFactoryTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaT T()2ñ
+»org.jabref.gui.collab.DatabaseChangeResolverFactory.DatabaseChangeResolverFactory(org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaTF T(c2ü
+—org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!dialogServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaTd T(q2Ø
+‡org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?originalDatabase@79.31:79.47CALLD
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaTs T(É2¶
+÷org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesServiceCALLE
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaTÖ T(ó√
+◊org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?changes@87.37:87.44VARIABLEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaW% W(,"
+typeList<DatabaseChange>"
+isFinalfalse"’
+declarationStringø<mark class="modifier"> </mark>List<DatabaseChange> <mark class="class-field">changes</mark> = DatabaseChangeList.compareAndGetChanges(originalDatabase, backupDatabase, changeResolverFactory)*changes2Q
+ListTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaW W(2ú
+Œorg.jabref.gui.collab.DatabaseChangeList.compareAndGetChanges(org.jabref.model.database.BibDatabaseContext, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.collab.DatabaseChangeResolverFactory)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaWB W(V2Æ
+‡org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?originalDatabase@79.31:79.47CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaWW W(g2¨
+ﬁorg.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?backupDatabase@82.31:82.45CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaWi W(w2¥
+Âorg.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?changeResolverFactory@84.42:84.63CALLD
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaWy W(é∂
+
+‚org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?reviewBackupDialog@88.46:88.64VARIABLEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaX. X(@"%
+typeDatabaseChangesResolverDialog"
+isFinalfalse"÷
+declarationString¿<mark class="modifier"> </mark>DatabaseChangesResolverDialog <mark class="class-field">reviewBackupDialog</mark> = new DatabaseChangesResolverDialog(changes, originalDatabase, "Review Backup")*reviewBackupDialog2Ä
+3org.jabref.gui.collab.DatabaseChangesResolverDialogTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaX X(-2•
+◊org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?changes@87.37:87.44CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaY Y(2Æ
+‡org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?originalDatabase@79.31:79.47CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaZ Z((Ï
+
+‚org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?allChangesResolved@92.20:92.38VARIABLEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java\ \(&"
+typevar"
+isFinalfalse"®
+declarationStringí<mark class="modifier"> </mark>var <mark class="class-field">allChangesResolved</mark> = dialogService.showCustomDialogAndWait(reviewBackupDialog)*allChangesResolved2_
+java.util.OptionalTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java\ \(2°
+Torg.jabref.gui.DialogService.showCustomDialogAndWait(javafx.scene.control.Dialog<R>)CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java\7 \(N2ü
+—org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!dialogServiceCALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java\) \(62∞
+‚org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?reviewBackupDialog@88.46:88.64CALLC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java\O \(a˘
+—org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!dialogService	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaE E('"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2i
+org.jabref.gui.DialogServiceTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaE E(⁄
+–org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!originalPath	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaF F("
+typePath"
+isFinalfalse"&
+declarationStringPath originalPath*originalPath2_
+java.nio.file.PathTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaF F(ü
+÷org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesService	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaG G(1"
+typePreferencesService"
+isFinalfalse":
+declarationString%PreferencesService preferencesService*preferencesService2v
+)org.jabref.preferences.PreferencesServiceTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaG G(ò
+’org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!fileUpdateMonitor	PARAMETERC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaH H(/"
+typeFileUpdateMonitor"
+isFinalfalse"8
+declarationString#FileUpdateMonitor fileUpdateMonitor*fileUpdateMonitor2t
+'org.jabref.model.util.FileUpdateMonitorTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javaH H(’
+”org.jabref.gui.dialogs.BackupUIManager.showReviewBackupDialog(org.jabref.gui.DialogService, java.nio.file.Path, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?e@101.29:101.30VARIABLEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javae e("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2`
+java.io.IOExceptionTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.javae e(ú
+9org.jabref.gui.dialogs.BackupUIManager?LOGGER@35.32:35.38VALUEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java#  #(&"
+isFinaltrue"
+typeLogger"Â
+declarationStringœ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(BackupUIManager.class);"
+isStatictrue"
+accessprivate*LOGGER2]
+org.slf4j.LoggerTYPEC
+9src\main\java\org\jabref\gui\dialogs\BackupUIManager.java# #(

@@ -1,0 +1,1590 @@
+
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaﬂ
+*org.jabref.gui.exporter.SaveDatabaseActionCLASSG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java9 9(""
+packageorg.jabref.gui.exporter"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"p
+declarationString[<mark class="modifier">public </mark><mark class="modifier">class </mark>SaveDatabaseAction"
+accesspublic*SaveDatabaseAction2ß
+Œorg.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseAction(org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager)DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaE E(2â
+1org.jabref.gui.exporter.SaveDatabaseAction.save()DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaO O(2ƒ
+lorg.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaS S(2ã
+3org.jabref.gui.exporter.SaveDatabaseAction.saveAs()DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaZ Z(2ù
+Eorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path)DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java^ ^(2ë
+9org.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javab# b(/2ò
+@org.jabref.gui.exporter.SaveDatabaseAction.saveSelectedAsPlain()DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaw w(#2›
+Çorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaâ â(2ï
+;org.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¥ ¥()2ı
+öorg.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÃ Ã(2€
+Äorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java÷ ÷(2±
+÷org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛ ˛( 2‚
+áorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java° °(*2ï
+=org.jabref.gui.exporter.SaveDatabaseAction?LOGGER@58.32:58.38DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java:  :(&2ô
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java< <('2ú
+Dorg.jabref.gui.exporter.SaveDatabaseAction?dialogService@61.32:61.45DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java=  =(-2ö
+Borg.jabref.gui.exporter.SaveDatabaseAction?preferences@62.37:62.48DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java>% >(02†
+Horg.jabref.gui.exporter.SaveDatabaseAction?entryTypesManager@63.39:63.56DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java?' ?(82ì
+;org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseModeDECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaA A( ’
+Œorg.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseAction(org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager)CONSTRUCTORG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaE E("ô
+declarationStringÉ<mark class="modifier">public </mark><mark class="method">SaveDatabaseAction</mark>(LibraryTab libraryTab<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferences<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntryTypesManager entryTypesManager)*SaveDatabaseAction2´
+Ÿorg.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseAction(org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager)!libraryTabCALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaI I($2Æ
+‹org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseAction(org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager)!dialogServiceCALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaJ J(*2¨
+⁄org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseAction(org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager)!preferencesCALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaK K(&2≤
+‡org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseAction(org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager)!entryTypesManagerCALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaL! L(22í
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaI I(2ï
+Dorg.jabref.gui.exporter.SaveDatabaseAction?dialogService@61.32:61.45CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaJ J(2ì
+Borg.jabref.gui.exporter.SaveDatabaseAction?preferences@62.37:62.48CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaK K(2ô
+Horg.jabref.gui.exporter.SaveDatabaseAction?entryTypesManager@63.39:63.56CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaL L(2∞
+Ÿorg.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseAction(org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager)!libraryTab	PARAMETERG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaE) E(32≥
+‹org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseAction(org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager)!dialogService	PARAMETERG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaF, F(92±
+⁄org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseAction(org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager)!preferences	PARAMETERG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaG1 G(<2∑
+‡org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseAction(org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager)!entryTypesManager	PARAMETERG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaH3 H(D2Ç
+*org.jabref.gui.exporter.SaveDatabaseActionRETURN_TYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaE E(˙
+Ÿorg.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseAction(org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager)!libraryTab	PARAMETERG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaE) E(3"
+type
+LibraryTab"
+isFinalfalse"*
+declarationStringLibraryTab libraryTab*
+libraryTab2j
+org.jabref.gui.LibraryTabTYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaE E((å
+‹org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseAction(org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager)!dialogService	PARAMETERG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaF, F(9"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2m
+org.jabref.gui.DialogServiceTYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaF F(+ù
+⁄org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseAction(org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager)!preferences	PARAMETERG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaG1 G(<"
+typePreferencesService"
+isFinalfalse"3
+declarationStringPreferencesService preferences*preferences2z
+)org.jabref.preferences.PreferencesServiceTYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaG G(0µ
+‡org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseAction(org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager)!entryTypesManager	PARAMETERG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaH3 H(D"
+typeBibEntryTypesManager"
+isFinalfalse";
+declarationString&BibEntryTypesManager entryTypesManager*entryTypesManager2|
++org.jabref.model.entry.BibEntryTypesManagerTYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaH H(2Ï
+1org.jabref.gui.exporter.SaveDatabaseAction.save()METHODG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaO O("
+isFinalfalse"Ç
+declarationStringm<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">save</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*save2Ï
+öorg.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaP P(2Ç
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaP P(42í
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaP P(2ì
+Borg.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode?NORMALCALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaPI P(O2_
+booleanRETURN_TYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaO O(∂
+lorg.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)METHODG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaS S("
+isFinalfalse"ò
+declarationStringÇ<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">save</mark>(SaveDatabaseMode mode)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*save2Ï
+öorg.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaT T(2Ç
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaT T(42í
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaT T(2¬
+qorg.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!modeCALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaT8 T(<2«
+qorg.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!mode	PARAMETERG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaS) S(-2_
+booleanRETURN_TYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaS S(¥
+qorg.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!mode	PARAMETERG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaS) S(-"
+typeSaveDatabaseMode"
+isFinalfalse"*
+declarationStringSaveDatabaseMode mode*mode2å
+;org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseModeTYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaS S((ä
+3org.jabref.gui.exporter.SaveDatabaseAction.saveAs()METHODG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaZ Z("
+isFinalfalse"Å
+declarationStringl<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">saveAs</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*saveAs2ï
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java[ [("2å
+;org.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java[ [(2ñ
+Eorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java[# [(/2\
+voidRETURN_TYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaZ Z(ú	
+Eorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path)METHODG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java^ ^("
+isFinalfalse"ç
+declarationStringx<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">saveAs</mark>(Path file)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*saveAs2‘
+Çorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java_ _(2õ
+Jorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path)!fileCALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java_ _(2ì
+Borg.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode?NORMALCALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java_2 _(82†
+Jorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path)!file	PARAMETERG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java^ ^(#2_
+booleanRETURN_TYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java^ ^(À
+Jorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path)!file	PARAMETERG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java^ ^(#"
+typePath"
+isFinalfalse"
+declarationString	Path file*file2c
+java.nio.file.PathTYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java^ ^(≤)
+9org.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()METHODG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javab# b(/"
+isFinalfalse"|
+declarationStringg<mark class="modifier">private </mark>SelfContainedSaveOrder <mark class="method">getSaveOrder</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeSelfContainedSaveOrder*getSaveOrder2m
+java.util.Optional.orElse(T)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javat t(2ú
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javae e(2Ç
+1org.jabref.model.metadata.MetaData.getSaveOrder()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javad d(+2ã
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javad d(2Ç
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javac c(/2É
+2org.jabref.model.metadata.SaveOrder.getOrderType()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaf f('2y
+(org.jabref.gui.LibraryTab.getMainTable()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javah\ h(h2q
+ java.util.stream.Stream.toList()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javao* o(02»
+wjava.util.stream.Stream.flatMap(java.util.function.Function<? super T, ? extends java.util.stream.Stream<? extends R>>)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javan* n(12°
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javam* m(-2ò
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javal* l(02n
+java.util.Collection.stream()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javak* k(02å
+;org.jabref.gui.maintable.columns.MainTableColumn.getModel()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javamV m(^2n
+java.util.Collection.stream()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javanS n(Y2ê
+?org.jabref.gui.maintable.MainTableColumnModel.getSortCriteria()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javanA n(P2©
+Xorg.jabref.model.metadata.SelfContainedSaveOrder.of(org.jabref.model.metadata.SaveOrder)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaq6 q(82ä
+9org.jabref.model.metadata.SaveOrder.getDefaultSaveOrder()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javat" t(52ã
+πorg.jabref.model.metadata.SelfContainedSaveOrder.SelfContainedSaveOrder(org.jabref.model.metadata.SaveOrder.OrderType, java.util.List<org.jabref.model.metadata.SaveOrder.SortCriterion>)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javai# i(92í
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javac c(2õ
+Jorg.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()?so@101.21:101.23CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaf f(2í
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javahQ h([2¢
+Qorg.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()?sortOrder@104.69:104.78CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javak  k()2ú
+Korg.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()?col@108.49:108.52CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javal8 l(;2ü
+Norg.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()?column@109.46:109.52CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javamN m(T2û
+Morg.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()?model@110.50:110.55CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javan; n(@2õ
+Jorg.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()?so@101.21:101.23CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaq9 q(;2©
+Qorg.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()?sortOrder@104.69:104.78DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javahE h(N2¢
+Jorg.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()?so@101.21:101.23DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javae e(2£
+Korg.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()?col@108.49:108.52DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javal1 l(42¶
+Norg.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()?column@109.46:109.52DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javam. m(42•
+Morg.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()?model@110.50:110.55DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javan2 n(72à
+0org.jabref.model.metadata.SelfContainedSaveOrderRETURN_TYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javab b("¨
+Qorg.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()?sortOrder@104.69:104.78VARIABLEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javahE h(N"4
+type,List<TableColumn<BibEntryTableViewModel, ?>>"
+isFinalfalse"∑
+declarationString°<mark class="modifier"> </mark>List<TableColumn<BibEntryTableViewModel, ?>> <mark class="class-field">sortOrder</mark> = libraryTab.getMainTable().getSortOrder()*	sortOrder2_
+java.util.ListTYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javah h(2z
+ javafx.scene.control.TableColumnTYPE_ARGUMENTG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javah h((2â
+/org.jabref.gui.maintable.BibEntryTableViewModelTYPE_ARGUMENTG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javah) h(?2y
+(org.jabref.gui.LibraryTab.getMainTable()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javah\ h(h2í
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javahQ h([ﬂ
+Jorg.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()?so@101.21:101.23VARIABLEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javae e("
+type"
+isFinalfalse"
+declarationString so*so2TYPE‚
+Korg.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()?col@108.49:108.52VARIABLEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javal1 l(4"
+type"
+isFinalfalse"
+declarationString col*col2TYPEÎ
+Norg.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()?column@109.46:109.52VARIABLEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javam. m(4"
+type"
+isFinalfalse"
+declarationString column*column2TYPEË
+Morg.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()?model@110.50:110.55VARIABLEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javan2 n(7"
+type"
+isFinalfalse"
+declarationString model*model2TYPEê"
+@org.jabref.gui.exporter.SaveDatabaseAction.saveSelectedAsPlain()METHODG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaw w(#"
+isFinalfalse"é
+declarationStringy<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">saveSelectedAsPlain</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*saveSelectedAsPlain2ï
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javax x("2å
+;org.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javax x(2®
+÷org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaz z(2ä
+9org.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javazj z(v2ë
+@org.jabref.logic.util.io.FileHistory.newFile(java.nio.file.Path)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java{A {(H2á
+6org.jabref.preferences.GuiPreferences.getFileHistory()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java{0 {(>2é
+=org.jabref.preferences.PreferencesService.getGuiPreferences()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java{ {(-2Ü
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java| |($2ü
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java|2 |(62n
+java.nio.file.Path.toString()CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java|W |(_2Ω
+lorg.jabref.gui.DialogService.showErrorDialogAndWait(java.lang.String, java.lang.String, java.lang.Throwable)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java (42ü
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaB (F2ü
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javae (i2§
+Sorg.jabref.gui.exporter.SaveDatabaseAction.saveSelectedAsPlain()?path@120.35:120.39CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaz z(!2ì
+Borg.jabref.gui.exporter.SaveDatabaseAction?preferences@62.37:62.48CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java{ {(2§
+Sorg.jabref.gui.exporter.SaveDatabaseAction.saveSelectedAsPlain()?path@120.35:120.39CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java{I {(M2ï
+Dorg.jabref.gui.exporter.SaveDatabaseAction?dialogService@61.32:61.45CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java| |(2§
+Sorg.jabref.gui.exporter.SaveDatabaseAction.saveSelectedAsPlain()?path@120.35:120.39CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java|R |(V2é
+=org.jabref.gui.exporter.SaveDatabaseAction?LOGGER@58.32:58.38CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java~ ~(2¢
+Qorg.jabref.gui.exporter.SaveDatabaseAction.saveSelectedAsPlain()?ex@125.35:125.37CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java~P ~(R2ï
+Dorg.jabref.gui.exporter.SaveDatabaseAction?dialogService@61.32:61.45CALLG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java (2§
+Qorg.jabref.gui.exporter.SaveDatabaseAction.saveSelectedAsPlain()?ex@125.35:125.37CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÉ (Ö2´
+Sorg.jabref.gui.exporter.SaveDatabaseAction.saveSelectedAsPlain()?path@120.35:120.39DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javax# x('2©
+Qorg.jabref.gui.exporter.SaveDatabaseAction.saveSelectedAsPlain()?ex@125.35:125.37DECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java}# }(%2\
+voidRETURN_TYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaw w(Ï
+Sorg.jabref.gui.exporter.SaveDatabaseAction.saveSelectedAsPlain()?path@120.35:120.39VARIABLEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javax# x('"
+type"
+isFinalfalse"
+declarationString path*path2TYPEÙ
+Qorg.jabref.gui.exporter.SaveDatabaseAction.saveSelectedAsPlain()?ex@125.35:125.37VARIABLEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java}# }(%"
+typeSaveException"
+isFinalfalse"%
+declarationStringSaveException ex*ex2x
+'org.jabref.logic.exporter.SaveExceptionTYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java} }("∞Q
+Çorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)METHODI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaâ â("
+isFinalfalse"€
+declarationString≈<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="method">saveAs</mark>(Path file<mark class="modifier"><mark class="modifier">,</mark></mark> SaveDatabaseMode mode)"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typeboolean*saveAs2Ñ
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaä0 ä(E2ë
+>org.jabref.model.database.BibDatabaseContext.getDatabasePath()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaå. å(=2q
+java.util.Optional.isPresent()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaç ç("2∫
+gorg.jabref.gui.autosaveandbackup.AutosaveManager.shutdown(org.jabref.model.database.BibDatabaseContext)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaè è($2÷
+Çorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaê ê("2é
+;org.jabref.preferences.FilePreferences.getBackupDirectory()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaêR ê(d2ë
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaê= ê(O2ê
+;org.jabref.preferences.FilePreferences.shouldCreateBackup()CALLK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaêâ ê(õ2í
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLJ
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaêt ê(Ü2æ
+korg.jabref.logic.pdf.search.PdfIndexerManager.shutdownIndexer(org.jabref.model.database.BibDatabaseContext)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaë ë(-2ç
+:org.jabref.model.database.BibDatabaseContext.getLocation()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaï ï(2‡
+åorg.jabref.logic.shared.prefs.SharedDatabasePreferences.putAllDBMSConnectionProperties(org.jabref.logic.shared.DatabaseConnectionProperties)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaò ò(32ì
+@org.jabref.model.database.BibDatabase.generateSharedDatabaseID()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaó@ ó(X2ç
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaó2 ó(=2ô
+Forg.jabref.logic.shared.DatabaseSynchronizer.getConnectionProperties()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaòR ò(i2ï
+Borg.jabref.model.database.BibDatabaseContext.getDBMSSynchronizer()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaò< ò(O2‘
+Äorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaõ õ(!2£
+Porg.jabref.model.database.BibDatabaseContext.setDatabasePath(java.nio.file.Path)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java† †(#2Ñ
+1org.jabref.gui.LibraryTab.updateTabTitle(boolean)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java° °(%2Å
+.org.jabref.gui.LibraryTab.resetChangeMonitor()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java§ §()2ï
+Borg.jabref.gui.LibraryTab.installAutosaveManagerAndBackupManager()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java• •(=2ì
+@org.jabref.logic.util.io.FileHistory.newFile(java.nio.file.Path)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java®= ®(D2â
+6org.jabref.preferences.GuiPreferences.getFileHistory()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java®, ®(:2ê
+=org.jabref.preferences.PreferencesService.getGuiPreferences()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java® ®()2∂
+corg.jabref.logic.shared.prefs.SharedDatabasePreferences.SharedDatabasePreferences(java.lang.String)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaó ó()2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaä% ä(/2Ï
+òorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?context@138.27:138.34CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaå& å(-2Ò
+ùorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?databasePath@140.23:140.35CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaç ç(2Ï
+òorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?context@138.27:138.34CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaè% è(,2Ï
+òorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?context@138.27:138.34CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaê# ê(*2ï
+Borg.jabref.gui.exporter.SaveDatabaseAction?preferences@62.37:62.48CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaêh ê(s2Ï
+òorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?context@138.27:138.34CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaë. ë(52Ï
+òorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?context@138.27:138.34CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaï ï(2Ï
+òorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?context@138.27:138.34CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaó* ó(12Ï
+òorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?context@138.27:138.34CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaò4 ò(;2€
+áorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!fileCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaõ" õ(&2€
+áorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!modeCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaõ( õ(,2Ô
+õorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?saveResult@155.16:155.26CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaù ù(2Ï
+òorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?context@138.27:138.34CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java† †(2€
+áorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!fileCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java†$ †((2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java° °(2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java§ §(2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java• •(2ï
+Borg.jabref.gui.exporter.SaveDatabaseAction?preferences@62.37:62.48CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java® ®(2€
+áorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!fileCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java®E ®(I2Ô
+õorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?saveResult@155.16:155.26CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java´ ´(2ï
+Borg.jabref.gui.exporter.SaveDatabaseAction?preferences@62.37:62.48CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaê1 ê(<2‡
+áorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!file	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaâ â(2‡
+áorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!mode	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaâ/ â(32Û
+òorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?context@138.27:138.34DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaä ä("2¯
+ùorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?databasePath@140.23:140.35DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaå å(#2ˆ
+õorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?saveResult@155.16:155.26DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaõ õ(2a
+booleanRETURN_TYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaâ â(›
+òorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?context@138.27:138.34VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaä ä(""
+typeBibDatabaseContext"
+isFinalfalse"î
+declarationString<mark class="modifier"> </mark>BibDatabaseContext <mark class="class-field">context</mark> = libraryTab.getBibDatabaseContext()*context2
+,org.jabref.model.database.BibDatabaseContextTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaä ä(2Ñ
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaä0 ä(E2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaä% ä(/ñ
+ùorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?databasePath@140.23:140.35VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaå å(#"
+typeOptional<Path>"
+isFinalfalse"å
+declarationStringw<mark class="modifier"> </mark>Optional<Path> <mark class="class-field">databasePath</mark> = context.getDatabasePath()*databasePath2e
+java.util.OptionalTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaå å(2n
+java.nio.file.PathTYPE_ARGUMENTI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaå å(2ë
+>org.jabref.model.database.BibDatabaseContext.getDatabasePath()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaå. å(=2Ï
+òorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?context@138.27:138.34CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaå& å(-≠	
+õorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?saveResult@155.16:155.26VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaõ õ("
+typeboolean"
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">saveResult</mark> = save(file, mode)*
+saveResult2Z
+booleanTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaõ õ(2‘
+Äorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaõ õ(!2€
+áorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!fileCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaõ" õ(&2€
+áorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!modeCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaõ( õ(,ç
+áorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!file	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaâ â("
+typePath"
+isFinalfalse"
+declarationString	Path file*file2e
+java.nio.file.PathTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaâ â(œ
+áorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!mode	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaâ/ â(3"
+typeSaveDatabaseMode"
+isFinalfalse"*
+declarationStringSaveDatabaseMode mode*mode2é
+;org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseModeTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaâ â(.·>
+;org.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()METHODI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¥ ¥()"
+isFinalfalse"|
+declarationStringg<mark class="modifier">private </mark>Optional&lt;Path&gt; <mark class="method">askForSavePath</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeOptional<Path>*askForSavePath2é
+;org.jabref.gui.util.FileDialogConfiguration.Builder.build()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaπ π(2Ø
+\org.jabref.gui.util.FileDialogConfiguration.Builder.withInitialDirectory(java.nio.file.Path)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∏ ∏(%2ª
+horg.jabref.gui.util.FileDialogConfiguration.Builder.withDefaultExtension(org.jabref.logic.util.FileType)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∑ ∑(%2º
+iorg.jabref.gui.util.FileDialogConfiguration.Builder.addExtensionFilter(org.jabref.logic.util.FileType...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∂ ∂(#2è
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∏G ∏(Z2ë
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∏2 ∏(D2Ø
+\org.jabref.gui.DialogService.showFileSaveDialog(org.jabref.gui.util.FileDialogConfiguration)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∫4 ∫(F2ó
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaª ª(2°
+Norg.jabref.preferences.FilePreferences.setWorkingDirectory(java.nio.file.Path)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaªH ª([2ë
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaª3 ª(E2q
+java.nio.file.Path.getParent()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaªa ª(j2q
+java.util.Optional.isPresent()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaº º("2k
+java.util.Optional.get()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaΩ) Ω(,2~
++java.lang.String.endsWith(java.lang.String)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaøA ø(I2q
+java.lang.String.toLowerCase()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaø3 ø(>2p
+java.nio.file.Path.toString()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaø( ø(02s
+ java.nio.file.Path.getFileName()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaø ø(%2è
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¿  ¿("2p
+java.nio.file.Path.toString()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¿, ¿(42°
+Njava.nio.file.Files.notExists(java.nio.file.Path, java.nio.file.LinkOption...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¡ ¡($2±
+^org.jabref.gui.DialogService.showConfirmationDialogAndWait(java.lang.String, java.lang.String)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¬' ¬(D2°
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¬R ¬(V2°
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¬w ¬({2u
+ java.nio.file.Path.getFileName()CALLK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¬• ¬(∞2m
+java.util.Optional.empty()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java√( √(-2k
+java.util.Optional.of(T)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∆( ∆(*2ê
+=org.jabref.gui.util.FileDialogConfiguration.Builder.Builder()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaµ> µ(]2ï
+Borg.jabref.gui.exporter.SaveDatabaseAction?preferences@62.37:62.48CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∏& ∏(12ó
+Dorg.jabref.gui.exporter.SaveDatabaseAction?dialogService@61.32:61.45CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∫& ∫(32¥
+aorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?fileDialogConfiguration@181.32:181.55CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∫G ∫(^2©
+Vorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?selectedPath@186.23:186.35CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaª ª(2ï
+Borg.jabref.gui.exporter.SaveDatabaseAction?preferences@62.37:62.48CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaª' ª(22°
+Norg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?path@187.31:187.35CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaª\ ª(`2©
+Vorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?selectedPath@186.23:186.35CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaº º(2©
+Vorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?selectedPath@186.23:186.35CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaΩ Ω((2•
+Rorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?savePath@189.17:189.25CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaø ø(2•
+Rorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?savePath@189.17:189.25CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¿ ¿(2•
+Rorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?savePath@189.17:189.25CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¿# ¿(+2•
+Rorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?savePath@189.17:189.25CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¡% ¡(-2ó
+Dorg.jabref.gui.exporter.SaveDatabaseAction?dialogService@61.32:61.45CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¬ ¬(&2ß
+Rorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?savePath@189.17:189.25CALLK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¬ú ¬(§2©
+Vorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?selectedPath@186.23:186.35CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∆ ∆(2•
+Rorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?savePath@189.17:189.25CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∆+ ∆(32©
+Vorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?selectedPath@186.23:186.35CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java… …(2ª
+aorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?fileDialogConfiguration@181.32:181.55DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaµ  µ(72∞
+Vorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?selectedPath@186.23:186.35DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∫ ∫(#2¨
+Rorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?savePath@189.17:189.25DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaΩ Ω(2®
+Norg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?path@187.31:187.35DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaª ª(#2l
+java.util.OptionalRETURN_TYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¥ ¥(2u
+java.nio.file.PathRETURN_TYPE_ARGUMENTI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¥ ¥(˙
+aorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?fileDialogConfiguration@181.32:181.55VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaµ  µ(7"
+typeFileDialogConfiguration"
+isFinalfalse"‚
+declarationStringÃ<mark class="modifier"> </mark>FileDialogConfiguration <mark class="class-field">fileDialogConfiguration</mark> = new FileDialogConfiguration.Builder().addExtensionFilter(StandardFileType.BIBTEX_DB).withDefaultExtension(StandardFileType.BIBTEX_DB).withInitialDirectory(preferences.getFilePreferences().getWorkingDirectory()).build()*fileDialogConfiguration2~
++org.jabref.gui.util.FileDialogConfigurationTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaµ µ(2é
+;org.jabref.gui.util.FileDialogConfiguration.Builder.build()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaπ π(2Ø
+\org.jabref.gui.util.FileDialogConfiguration.Builder.withInitialDirectory(java.nio.file.Path)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∏ ∏(%2ª
+horg.jabref.gui.util.FileDialogConfiguration.Builder.withDefaultExtension(org.jabref.logic.util.FileType)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∑ ∑(%2º
+iorg.jabref.gui.util.FileDialogConfiguration.Builder.addExtensionFilter(org.jabref.logic.util.FileType...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∂ ∂(#2è
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∏G ∏(Z2ë
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∏2 ∏(D2ê
+=org.jabref.gui.util.FileDialogConfiguration.Builder.Builder()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaµ> µ(]2ï
+Borg.jabref.gui.exporter.SaveDatabaseAction?preferences@62.37:62.48CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∏& ∏(1Ô
+Vorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?selectedPath@186.23:186.35VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∫ ∫(#"
+typeOptional<Path>"
+isFinalfalse"≠
+declarationStringó<mark class="modifier"> </mark>Optional<Path> <mark class="class-field">selectedPath</mark> = dialogService.showFileSaveDialog(fileDialogConfiguration)*selectedPath2e
+java.util.OptionalTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∫ ∫(2n
+java.nio.file.PathTYPE_ARGUMENTI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∫ ∫(2Ø
+\org.jabref.gui.DialogService.showFileSaveDialog(org.jabref.gui.util.FileDialogConfiguration)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∫4 ∫(F2ó
+Dorg.jabref.gui.exporter.SaveDatabaseAction?dialogService@61.32:61.45CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∫& ∫(32¥
+aorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?fileDialogConfiguration@181.32:181.55CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∫G ∫(^Ã
+Rorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?savePath@189.17:189.25VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaΩ Ω("
+typePath"
+isFinalfalse"w
+declarationStringb<mark class="modifier"> </mark>Path <mark class="class-field">savePath</mark> = selectedPath.get()*savePath2e
+java.nio.file.PathTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaΩ Ω(2k
+java.util.Optional.get()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaΩ) Ω(,2©
+Vorg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?selectedPath@186.23:186.35CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaΩ Ω((È
+Norg.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()?path@187.31:187.35VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaª ª(#"
+type"
+isFinalfalse"
+declarationString path*path2TYPEπ'
+öorg.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)METHODI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÃ Ã("
+isFinalfalse"¸
+declarationStringÊ<mark class="modifier">private </mark><mark class="modifier">boolean</mark> <mark class="method">save</mark>(BibDatabaseContext bibDatabaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> SaveDatabaseMode mode)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeboolean*save2ë
+>org.jabref.model.database.BibDatabaseContext.getDatabasePath()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÕ9 Õ(H2o
+java.util.Optional.isEmpty()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaŒ Œ( 2é
+;org.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaœ& œ(42q
+java.util.Optional.isPresent()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java–? –(H2ï
+Bjava.util.Optional.filter(java.util.function.Predicate<? super T>)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java– –("2÷
+Çorg.jabref.gui.exporter.SaveDatabaseAction.saveAs(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java–+ –(12‘
+Äorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java” ”(2k
+java.util.Optional.get()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java”! ”($2Å
+≠org.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!bibDatabaseContextCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÕ& Õ(82â
+µorg.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?databasePath@205.23:205.35CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaŒ Œ(2Ö
+±org.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?savePath@207.27:207.35CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java– –(2Å
+≠org.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?path@208.35:208.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java–2 –(62Û
+üorg.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!modeCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java–8 –(<2â
+µorg.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?databasePath@205.23:205.35CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java” ”( 2Û
+üorg.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!modeCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java”( ”(,2Ü
+≠org.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!bibDatabaseContext	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÃ, Ã(>2¯
+üorg.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!mode	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÃQ Ã(U2ê
+µorg.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?databasePath@205.23:205.35DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÕ Õ(#2å
+±org.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?savePath@207.27:207.35DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaœ œ(#2à
+≠org.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?path@208.35:208.39DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java–# –('2a
+booleanRETURN_TYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÃ Ã(œ
+µorg.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?databasePath@205.23:205.35VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÕ Õ(#"
+typeOptional<Path>"
+isFinalfalse"ò
+declarationStringÇ<mark class="modifier"> </mark>Optional<Path> <mark class="class-field">databasePath</mark> = bibDatabaseContext.getDatabasePath()*databasePath2e
+java.util.OptionalTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÕ Õ(2n
+java.nio.file.PathTYPE_ARGUMENTI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÕ Õ(2ë
+>org.jabref.model.database.BibDatabaseContext.getDatabasePath()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÕ9 Õ(H2Å
+≠org.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!bibDatabaseContextCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÕ& Õ(8¶
+±org.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?savePath@207.27:207.35VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaœ œ(#"
+typeOptional<Path>"
+isFinalfalse"
+declarationStringj<mark class="modifier"> </mark>Optional<Path> <mark class="class-field">savePath</mark> = askForSavePath()*savePath2e
+java.util.OptionalTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaœ œ(2n
+java.nio.file.PathTYPE_ARGUMENTI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaœ œ(2é
+;org.jabref.gui.exporter.SaveDatabaseAction.askForSavePath()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaœ& œ(4Ö
+≠org.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!bibDatabaseContext	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÃ, Ã(>"
+typeBibDatabaseContext"
+isFinalfalse":
+declarationString%BibDatabaseContext bibDatabaseContext*bibDatabaseContext2
+,org.jabref.model.database.BibDatabaseContextTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÃ Ã(+Á
+üorg.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!mode	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÃQ Ã(U"
+typeSaveDatabaseMode"
+isFinalfalse"*
+declarationStringSaveDatabaseMode mode*mode2é
+;org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseModeTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÃ@ Ã(P…
+≠org.jabref.gui.exporter.SaveDatabaseAction.save(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?path@208.35:208.39VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java–# –('"
+type"
+isFinalfalse"
+declarationString path*path2TYPE…N
+Äorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)METHODI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java÷ ÷("
+isFinalfalse"Ê
+declarationString–<mark class="modifier">private </mark><mark class="modifier">boolean</mark> <mark class="method">save</mark>(Path targetPath<mark class="modifier"><mark class="modifier">,</mark></mark> SaveDatabaseMode mode)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeboolean*save2h
+java.util.List.size()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java◊_ ◊(c2å
+9org.jabref.model.database.BibDatabaseContext.getEntries()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java◊R ◊(\2Ñ
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java◊: ◊(O2à
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÿ ÿ( 2Ç
+/java.lang.String.formatted(java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÿ) ÿ(22°
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÿ@ ÿ(D2w
+$org.jabref.gui.LibraryTab.isSaving()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java‹ ‹(#2
+,org.jabref.gui.LibraryTab.setSaving(boolean)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java‡ ‡( 2o
+java.util.Optional.orElse(T)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÁ* Á(02É
+0org.jabref.model.metadata.MetaData.getEncoding()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÊ* Ê(52ç
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÂ* Â(52Ñ
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java‰* ‰(?2Œ
+{org.jabref.model.metadata.MetaData.setEncoding(java.nio.charset.Charset, org.jabref.model.database.event.ChangePropagation)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÍ= Í(H2ç
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÍ/ Í(:2Ñ
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÍ Í(,2™
+÷org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÏ Ï(*2ç
+9org.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()CALLJ
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÏz Ï(Ü2ä
+7org.jabref.gui.undo.CountingUndoManager.markUnchanged()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÔ, Ô(92}
+*org.jabref.gui.LibraryTab.getUndoManager()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÔ Ô()2Ö
+2org.jabref.gui.LibraryTab.resetChangedProperties()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java (12à
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÚ Ú( 2°
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÚ. Ú(22Ç
+/java.lang.String.formatted(java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaıN ı(W2ø
+lorg.jabref.gui.DialogService.showErrorDialogAndWait(java.lang.String, java.lang.String, java.lang.Throwable)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaˆ ˆ(02°
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaˆ> ˆ(B2°
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaˆa ˆ(e2
+,org.jabref.gui.LibraryTab.setSaving(boolean)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˙ ˙( 2Ÿ
+Öorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!modeCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java◊ ◊(2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java◊/ ◊(92ó
+Dorg.jabref.gui.exporter.SaveDatabaseAction?dialogService@61.32:61.45CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÿ ÿ(2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java€ €( 2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java‹ ‹(2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java‡ ‡(2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java‰ ‰()2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÍ Í(2Î
+óorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?encoding@228.20:228.28CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÍI Í(Q2ﬂ
+ãorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!targetPathCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÏ+ Ï(52Î
+óorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?encoding@228.20:228.28CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÏ> Ï(F2Í
+ñorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?success@236.20:236.27CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÓ Ó(2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÔ Ô(2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java (2ó
+Dorg.jabref.gui.exporter.SaveDatabaseAction?dialogService@61.32:61.45CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÚ Ú(2Í
+ñorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?success@236.20:236.27CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÛ Û(2ê
+=org.jabref.gui.exporter.SaveDatabaseAction?LOGGER@58.32:58.38CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaı ı(2ﬂ
+ãorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!targetPathCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaıX ı(b2Â
+ëorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?ex@244.31:244.33CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaıe ı(g2ó
+Dorg.jabref.gui.exporter.SaveDatabaseAction?dialogService@61.32:61.45CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaˆ ˆ(2Ê
+ëorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?ex@244.31:244.33CALLJ
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaˆ ˆ(Å2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˙ ˙(2ï
+Borg.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode?NORMALCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java◊% ◊(+2‰
+ãorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!targetPath	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java÷ ÷((2ﬁ
+Öorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!mode	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java÷; ÷(?2Ú
+óorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?encoding@228.20:228.28DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java‰ ‰(2Ò
+ñorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?success@236.20:236.27DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÏ Ï(2Ï
+ëorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?ex@244.31:244.33DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÙ Ù(!2a
+booleanRETURN_TYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java÷ ÷(˜	
+óorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?encoding@228.20:228.28VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java‰ ‰("
+typeCharset"
+isFinalfalse"∆
+declarationString∞<mark class="modifier"> </mark>Charset <mark class="class-field">encoding</mark> = libraryTab.getBibDatabaseContext().getMetaData().getEncoding().orElse(StandardCharsets.UTF_8)*encoding2k
+java.nio.charset.CharsetTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java‰ ‰(2o
+java.util.Optional.orElse(T)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÁ* Á(02É
+0org.jabref.model.metadata.MetaData.getEncoding()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÊ* Ê(52ç
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÂ* Â(52Ñ
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java‰* ‰(?2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java‰ ‰()≥
+ñorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?success@236.20:236.27VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÏ Ï("
+typeboolean"
+isFinalfalse"≠
+declarationStringó<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">success</mark> = saveDatabase(targetPath, <mark class="modifier">false</mark><mark class="modifier">,</mark> encoding, BibDatabaseWriter.SaveType.WITH_JABREF_META_DATA, getSaveOrder())*success2Z
+booleanTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÏ Ï(2™
+÷org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÏ Ï(*2ç
+9org.jabref.gui.exporter.SaveDatabaseAction.getSaveOrder()CALLJ
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÏz Ï(Ü2ﬂ
+ãorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!targetPathCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÏ+ Ï(52Î
+óorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?encoding@228.20:228.28CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÏ> Ï(Fù
+ãorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!targetPath	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java÷ ÷(("
+typePath"
+isFinalfalse"$
+declarationStringPath targetPath*
+targetPath2e
+java.nio.file.PathTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java÷ ÷(Õ
+Öorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)!mode	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java÷; ÷(?"
+typeSaveDatabaseMode"
+isFinalfalse"*
+declarationStringSaveDatabaseMode mode*mode2é
+;org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseModeTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java÷* ÷(:π
+ëorg.jabref.gui.exporter.SaveDatabaseAction.save(java.nio.file.Path, org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode)?ex@244.31:244.33VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÙ Ù(!"
+typeSaveException"
+isFinalfalse"%
+declarationStringSaveException ex*ex2z
+'org.jabref.logic.exporter.SaveExceptionTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÙ Ù(¢ñ
+÷org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)METHODI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛ ˛( "
+isFinalfalse"„
+declarationStringÕ<mark class="modifier">private </mark><mark class="modifier">boolean</mark> <mark class="method">saveDatabase</mark>(Path file<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">boolean</mark> selectedOnly<mark class="modifier"><mark class="modifier">,</mark></mark> Charset encoding<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseWriter.SaveType saveType<mark class="modifier"><mark class="modifier">,</mark></mark> SelfContainedSaveOrder saveOrder)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>SaveException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeboolean*saveDatabase2ö
+Forg.jabref.preferences.LibraryPreferences.shouldAlwaysReformatOnSave()CALLJ
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÅu Å(è2î
+Aorg.jabref.preferences.PreferencesService.getLibraryPreferences()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÅ] Å(r2Ñ
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÇ; Ç(P2ë
+>org.jabref.logic.exporter.SaveConfiguration.shouldMakeBackup()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÑf Ñ(v2é
+;org.jabref.model.database.BibDatabase.getNewLineSeparator()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÖa Ö(t2ç
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÖS Ö(^2í
+?org.jabref.preferences.PreferencesService.getFieldPreferences()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaâ$ â(72ü
+Lorg.jabref.preferences.PreferencesService.getCitationKeyPatternPreferences()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaä$ ä(D2Ò
+ùorg.jabref.logic.exporter.BibDatabaseWriter.savePartOfDatabase(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaé# é(52Å
+.org.jabref.gui.LibraryTab.getSelectedEntries()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaéU é(g2π
+forg.jabref.logic.exporter.BibDatabaseWriter.saveDatabase(org.jabref.model.database.BibDatabaseContext)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaê# ê(/2≤
+_org.jabref.gui.LibraryTab.registerUndoableChanges(java.util.List<org.jabref.model.FieldChange>)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaì ì(22õ
+Horg.jabref.logic.exporter.BibDatabaseWriter.getSaveActionsFieldChanges()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaìB ì(\2ì
+@org.jabref.logic.exporter.AtomicFileWriter.hasEncodingProblems()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaï ï(22€
+áorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javañ ñ(-2ì
+@org.jabref.logic.exporter.AtomicFileWriter.getEncodingProblems()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javañW ñ(j2°
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaô5 ô(92y
+&java.nio.charset.Charset.displayName()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaôp ô({2π
+Âorg.jabref.logic.exporter.SelfContainedSaveConfiguration.SelfContainedSaveConfiguration(org.jabref.model.metadata.SelfContainedSaveOrder, java.lang.Boolean, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, java.lang.Boolean)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÅ Å(42≈
+rorg.jabref.logic.exporter.AtomicFileWriter.AtomicFileWriter(java.nio.file.Path, java.nio.charset.Charset, boolean)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÑ3 Ñ(C2¢
+Oorg.jabref.logic.exporter.BibWriter.BibWriter(java.io.Writer, java.lang.String)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÖ* Ö(32ê
+ºorg.jabref.logic.exporter.BibtexDatabaseWriter.BibtexDatabaseWriter(org.jabref.logic.exporter.BibWriter, org.jabref.logic.exporter.SelfContainedSaveConfiguration, org.jabref.logic.bibtex.FieldPreferences, org.jabref.logic.citationkeypattern.CitationKeyPatternPreferences, org.jabref.model.entry.BibEntryTypesManager)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÜ: Ü(N2Ø
+\org.jabref.logic.exporter.SaveException.SaveException(java.lang.String, java.lang.Throwable)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaô ô('2Ø
+\org.jabref.logic.exporter.SaveException.SaveException(java.lang.String, java.lang.Throwable)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaõ õ('2¥
+‡org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!saveOrderCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÅ5 Å(>2≥
+ﬂorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!saveTypeCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÅG Å(O2ï
+Borg.jabref.gui.exporter.SaveDatabaseAction?preferences@62.37:62.48CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÅQ Å(\2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÇ0 Ç(:2À
+˜org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?bibDatabaseContext@258.27:258.45CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÉ É((2Ø
+€org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!fileCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÑD Ñ(H2≥
+ﬂorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!encodingCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÑJ Ñ(R2 
+ˆorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?saveConfiguration@256.39:256.56CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÑT Ñ(e2√
+Ôorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?fileWriter@260.34:260.44CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÖ4 Ö(>2À
+˜org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?bibDatabaseContext@258.27:258.45CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÖ@ Ö(R2¬
+Óorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?bibWriter@261.26:261.35CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaá á(!2 
+ˆorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?saveConfiguration@256.39:256.56CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaà à()2ï
+Borg.jabref.gui.exporter.SaveDatabaseAction?preferences@62.37:62.48CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaâ â(#2ï
+Borg.jabref.gui.exporter.SaveDatabaseAction?preferences@62.37:62.48CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaä ä(#2õ
+Horg.jabref.gui.exporter.SaveDatabaseAction?entryTypesManager@63.39:63.56CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaã ã()2∑
+„org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!selectedOnlyCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaç ç( 2«
+Ûorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?databaseWriter@262.37:262.51CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaé é("2À
+˜org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?bibDatabaseContext@258.27:258.45CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaé6 é(H2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaéJ é(T2«
+Ûorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?databaseWriter@262.37:262.51CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaê ê("2À
+˜org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?bibDatabaseContext@258.27:258.45CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaê0 ê(B2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaì ì(2«
+Ûorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?databaseWriter@262.37:262.51CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaì3 ì(A2√
+Ôorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?fileWriter@260.34:260.44CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaï ï(2Ø
+€org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!fileCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javañ. ñ(22∑
+„org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!selectedOnlyCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javañ4 ñ(@2≥
+ﬂorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!encodingCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javañB ñ(J2√
+Ôorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?fileWriter@260.34:260.44CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javañL ñ(V2≥
+ﬂorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!saveTypeCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javañn ñ(v2µ
+‡org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!saveOrderCALLJ
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javañx ñ(Å2≥
+ﬂorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!encodingCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaôg ô(o2Ω
+Áorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?ex@280.49:280.51CALLK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaôÄ ô(Ç2ª
+Áorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?ex@282.33:282.35CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaõ> õ(@2ª
+Áorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?ex@282.33:282.35CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaõB õ(D2¥
+€org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!file	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛& ˛(*2º
+„org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!selectedOnly	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛4 ˛(@2∏
+ﬂorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!encoding	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛J ˛(R2∏
+ﬂorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!saveType	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛o ˛(w2ª
+‡org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!saveOrder	PARAMETERK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛ê ˛(ô2—
+ˆorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?saveConfiguration@256.39:256.56DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÄ' Ä(82“
+˜org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?bibDatabaseContext@258.27:258.45DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÇ Ç(-2 
+Ôorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?fileWriter@260.34:260.44DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÑ" Ñ(,2…
+Óorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?bibWriter@261.26:261.35DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÖ Ö(#2Œ
+Ûorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?databaseWriter@262.37:262.51DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÜ% Ü(32¬
+Áorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?ex@280.49:280.51DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaò1 ò(32¬
+Áorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?ex@282.33:282.35DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaö! ö(#2a
+booleanRETURN_TYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛ ˛(Ê
+ˆorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?saveConfiguration@256.39:256.56VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÄ' Ä(8"&
+typeSelfContainedSaveConfiguration"
+isFinalfalse"≈
+declarationStringØ<mark class="modifier"> </mark>SelfContainedSaveConfiguration <mark class="class-field">saveConfiguration</mark> = new SelfContainedSaveConfiguration(saveOrder, <mark class="modifier">false</mark><mark class="modifier">,</mark> saveType, preferences.getLibraryPreferences().shouldAlwaysReformatOnSave())*saveConfiguration2ã
+8org.jabref.logic.exporter.SelfContainedSaveConfigurationTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÄ Ä(&2ö
+Forg.jabref.preferences.LibraryPreferences.shouldAlwaysReformatOnSave()CALLJ
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÅu Å(è2î
+Aorg.jabref.preferences.PreferencesService.getLibraryPreferences()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÅ] Å(r2π
+Âorg.jabref.logic.exporter.SelfContainedSaveConfiguration.SelfContainedSaveConfiguration(org.jabref.model.metadata.SelfContainedSaveOrder, java.lang.Boolean, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, java.lang.Boolean)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÅ Å(42¥
+‡org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!saveOrderCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÅ5 Å(>2≥
+ﬂorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!saveTypeCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÅG Å(O2ï
+Borg.jabref.gui.exporter.SaveDatabaseAction?preferences@62.37:62.48CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÅQ Å(\”
+˜org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?bibDatabaseContext@258.27:258.45VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÇ Ç(-"
+typeBibDatabaseContext"
+isFinalfalse"†
+declarationStringä<mark class="modifier"> </mark>BibDatabaseContext <mark class="class-field">bibDatabaseContext</mark> = libraryTab.getBibDatabaseContext()*bibDatabaseContext2
+,org.jabref.model.database.BibDatabaseContextTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÇ Ç(2Ñ
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÇ; Ç(P2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÇ0 Ç(:–
+Ôorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?fileWriter@260.34:260.44VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÑ" Ñ(,"
+typeAtomicFileWriter"
+isFinalfalse"æ
+declarationString®<mark class="modifier"> </mark>AtomicFileWriter <mark class="class-field">fileWriter</mark> = new AtomicFileWriter(file, encoding, saveConfiguration.shouldMakeBackup())*
+fileWriter2}
+*org.jabref.logic.exporter.AtomicFileWriterTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÑ Ñ(!2ë
+>org.jabref.logic.exporter.SaveConfiguration.shouldMakeBackup()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÑf Ñ(v2≈
+rorg.jabref.logic.exporter.AtomicFileWriter.AtomicFileWriter(java.nio.file.Path, java.nio.charset.Charset, boolean)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÑ3 Ñ(C2Ø
+€org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!fileCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÑD Ñ(H2≥
+ﬂorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!encodingCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÑJ Ñ(R2 
+ˆorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?saveConfiguration@256.39:256.56CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÑT Ñ(eà
+Óorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?bibWriter@261.26:261.35VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÖ Ö(#"
+type	BibWriter"
+isFinalfalse"Ω
+declarationStringß<mark class="modifier"> </mark>BibWriter <mark class="class-field">bibWriter</mark> = new BibWriter(fileWriter, bibDatabaseContext.getDatabase().getNewLineSeparator())*	bibWriter2v
+#org.jabref.logic.exporter.BibWriterTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÖ Ö(2é
+;org.jabref.model.database.BibDatabase.getNewLineSeparator()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÖa Ö(t2ç
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÖS Ö(^2¢
+Oorg.jabref.logic.exporter.BibWriter.BibWriter(java.io.Writer, java.lang.String)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÖ* Ö(32√
+Ôorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?fileWriter@260.34:260.44CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÖ4 Ö(>2À
+˜org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?bibDatabaseContext@258.27:258.45CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÖ@ Ö(Rê
+Ûorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?databaseWriter@262.37:262.51VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÜ% Ü(3"
+typeBibtexDatabaseWriter"
+isFinalfalse"‘
+declarationStringæ<mark class="modifier"> </mark>BibtexDatabaseWriter <mark class="class-field">databaseWriter</mark> = new BibtexDatabaseWriter(bibWriter, saveConfiguration, preferences.getFieldPreferences()<mark class="modifier">,</mark> preferences.getCitationKeyPatternPreferences()<mark class="modifier">,</mark> entryTypesManager)*databaseWriter2Å
+.org.jabref.logic.exporter.BibtexDatabaseWriterTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÜ Ü($2í
+?org.jabref.preferences.PreferencesService.getFieldPreferences()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaâ$ â(72ü
+Lorg.jabref.preferences.PreferencesService.getCitationKeyPatternPreferences()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaä$ ä(D2ê
+ºorg.jabref.logic.exporter.BibtexDatabaseWriter.BibtexDatabaseWriter(org.jabref.logic.exporter.BibWriter, org.jabref.logic.exporter.SelfContainedSaveConfiguration, org.jabref.logic.bibtex.FieldPreferences, org.jabref.logic.citationkeypattern.CitationKeyPatternPreferences, org.jabref.model.entry.BibEntryTypesManager)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÜ: Ü(N2¬
+Óorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?bibWriter@261.26:261.35CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaá á(!2 
+ˆorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?saveConfiguration@256.39:256.56CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaà à()2ï
+Borg.jabref.gui.exporter.SaveDatabaseAction?preferences@62.37:62.48CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaâ â(#2ï
+Borg.jabref.gui.exporter.SaveDatabaseAction?preferences@62.37:62.48CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaä ä(#2õ
+Horg.jabref.gui.exporter.SaveDatabaseAction?entryTypesManager@63.39:63.56CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaã ã()·
+€org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!file	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛& ˛(*"
+typePath"
+isFinalfalse"
+declarationString	Path file*file2e
+java.nio.file.PathTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛! ˛(%í
+„org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!selectedOnly	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛4 ˛(@"
+typeboolean"
+isFinalfalse"G
+declarationString2<mark class="modifier">boolean</mark> selectedOnly*selectedOnly2Z
+booleanTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛, ˛(3˘
+ﬂorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!encoding	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛J ˛(R"
+typeCharset"
+isFinalfalse"%
+declarationStringCharset encoding*encoding2k
+java.nio.charset.CharsetTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛B ˛(Iº
+ﬂorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!saveType	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛o ˛(w""
+typeBibDatabaseWriter.SaveType"
+isFinalfalse"8
+declarationString#BibDatabaseWriter.SaveType saveType*saveType2á
+4org.jabref.logic.exporter.BibDatabaseWriter.SaveTypeTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛f ˛(n∂
+‡org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!saveOrder	PARAMETERK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛ê ˛(ô"
+typeSelfContainedSaveOrder"
+isFinalfalse"5
+declarationString SelfContainedSaveOrder saveOrder*	saveOrder2Ñ
+0org.jabref.model.metadata.SelfContainedSaveOrderTYPEJ
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java˛y ˛(è∞
+Áorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?ex@280.49:280.51VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaò1 ò(3"#
+typeUnsupportedCharsetException"
+isFinalfalse"3
+declarationStringUnsupportedCharsetException ex*ex2
+,java.nio.charset.UnsupportedCharsetExceptionTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaò ò(0˜
+Áorg.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?ex@282.33:282.35VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaö! ö(#"
+typeIOException"
+isFinalfalse"#
+declarationStringIOException ex*ex2f
+java.io.IOExceptionTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaö ö( ıâ
+áorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)METHODI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java° °(*"
+isFinalfalse"–
+declarationString∫<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">saveWithDifferentEncoding</mark>(Path file<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">boolean</mark> selectedOnly<mark class="modifier"><mark class="modifier">,</mark></mark> Charset encoding<mark class="modifier"><mark class="modifier">,</mark></mark> Set&lt;Character&gt; encodingProblems<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseWriter.SaveType saveType<mark class="modifier"><mark class="modifier">,</mark></mark> SelfContainedSaveOrder saveOrder)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>SaveException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*saveWithDifferentEncoding2°
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java•& •(*2z
+&java.nio.charset.Charset.displayName()CALLJ
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java•{ •(Ü2ü
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¶I ¶(P2£
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¶3 ¶(62p
+java.util.Collection.stream()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¶* ¶(02é
+;java.util.stream.Collectors.joining(java.lang.CharSequence)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¶\ ¶(c2°
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaß& ß(*2°
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java´F ´(J2°
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¨8 ¨(<2ï
+Bjava.util.Optional.filter(java.util.function.Predicate<? super T>)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaØ Ø(2ﬂ
+ãorg.jabref.gui.DialogService.showCustomDialogAndWait(java.lang.String, javafx.scene.control.DialogPane, javafx.scene.control.ButtonType...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÆ Æ((2°
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÆ6 Æ(:2⁄
+Üorg.jabref.gui.DialogService.showChoiceDialogAndWait(java.lang.String, java.lang.String, java.lang.String, T, java.util.Collection<T>)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤: ≤(Q2°
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤_ ≤(c2£
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤Ç ≤(Ü2£
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤¨ ≤(∞2Ç
+-org.jabref.logic.l10n.Encodings.getCharsets()CALLK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤÷ ≤(·2q
+java.util.Optional.isPresent()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≥ ≥(%2Œ
+{org.jabref.model.metadata.MetaData.setEncoding(java.nio.charset.Charset, org.jabref.model.database.event.ChangePropagation)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaµA µ(L2ç
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaµ3 µ(>2Ñ
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaµ µ(02k
+java.util.Optional.get()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaµY µ(\2™
+÷org.jabref.gui.exporter.SaveDatabaseAction.saveDatabase(java.nio.file.Path, boolean, java.nio.charset.Charset, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∑ ∑(2k
+java.util.Optional.get()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∑= ∑(@2Ó
+öorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?vbox@291.13:291.17CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java§ §(2‰
+êorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!encodingCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java•r •(z2Ï
+òorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!encodingProblemsCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¶ ¶()2Ó
+öorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?pane@290.19:290.23CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java© ©(2Ó
+öorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?vbox@291.13:291.17CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java© ©(2ó
+Dorg.jabref.gui.exporter.SaveDatabaseAction?dialogService@61.32:61.45CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≠, ≠(92Ó
+öorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?pane@290.19:290.23CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÆL Æ(P2
+úorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?ignore@300.19:300.25CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÆR Æ(X2˛
+™org.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?tryDifferentEncoding@299.19:299.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÆZ Æ(n2Ù
+†org.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?buttonType@303.24:303.34CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaØ& Ø(02˛
+™org.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?tryDifferentEncoding@299.19:299.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaØ8 Ø(L2É
+Øorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?saveWithDifferentEncoding@301.16:301.41CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java± ±(%2ó
+Dorg.jabref.gui.exporter.SaveDatabaseAction?dialogService@61.32:61.45CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤, ≤(92Ê
+êorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!encodingCALLK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤¬ ≤( 2ı
+°org.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?newEncoding@306.30:306.41CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≥ ≥(2î
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaµ µ(2ı
+°org.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?newEncoding@306.30:306.41CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaµM µ(X2‡
+åorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!fileCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∑ ∑(!2Ë
+îorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!selectedOnlyCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∑# ∑(/2ı
+°org.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?newEncoding@306.30:306.41CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∑1 ∑(<2‰
+êorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!saveTypeCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∑D ∑(L2Â
+ëorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!saveOrderCALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∑N ∑(W2n
+java.lang.Object.toString()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¶7 ¶(G2Â
+åorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!file	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°0 °(42Ì
+îorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!selectedOnly	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°> °(J2È
+êorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!encoding	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°T °(\2Ò
+òorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!encodingProblems	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°m °(}2Î
+êorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!saveType	PARAMETERK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°ö °(¢2Ï
+ëorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!saveOrder	PARAMETERK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°ª °(ƒ2ı
+öorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?pane@290.19:290.23DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¢ ¢(2ı
+öorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?vbox@291.13:291.17DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java£ £(2Ö
+™org.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?tryDifferentEncoding@299.19:299.39DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java´ ´('2˜
+úorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?ignore@300.19:300.25DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¨ ¨(2ä
+Øorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?saveWithDifferentEncoding@301.16:301.41DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≠ ≠()2¸
+°org.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?newEncoding@306.30:306.41DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤ ≤()2˚
+†org.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?buttonType@303.24:303.34DECLARATIONI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaØ Ø("2^
+voidRETURN_TYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java° °(ã
+öorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?pane@290.19:290.23VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¢ ¢("
+type
+DialogPane"
+isFinalfalse"w
+declarationStringb<mark class="modifier"> </mark>DialogPane <mark class="class-field">pane</mark> = new DialogPane()*pane2r
+javafx.scene.control.DialogPaneTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¢ ¢(Ú
+öorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?vbox@291.13:291.17VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java£ £("
+typeVBox"
+isFinalfalse"k
+declarationStringV<mark class="modifier"> </mark>VBox <mark class="class-field">vbox</mark> = new VBox()*vbox2k
+javafx.scene.layout.VBoxTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java£ £(∆
+™org.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?tryDifferentEncoding@299.19:299.39VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java´ ´('"
+type
+ButtonType"
+isFinalfalse"Ì
+declarationString◊<mark class="modifier"> </mark>ButtonType <mark class="class-field">tryDifferentEncoding</mark> = new ButtonType(Localization.lang("Try different encoding")<mark class="modifier">,</mark> ButtonBar.ButtonData.OTHER)*tryDifferentEncoding2r
+javafx.scene.control.ButtonTypeTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java´ ´(2°
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java´F ´(Jå
+úorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?ignore@300.19:300.25VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¨ ¨("
+type
+ButtonType"
+isFinalfalse"œ
+declarationStringπ<mark class="modifier"> </mark>ButtonType <mark class="class-field">ignore</mark> = new ButtonType(Localization.lang("Ignore")<mark class="modifier">,</mark> ButtonBar.ButtonData.APPLY)*ignore2r
+javafx.scene.control.ButtonTypeTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¨ ¨(2°
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java¨8 ¨(<ò
+Øorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?saveWithDifferentEncoding@301.16:301.41VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≠ ≠()"
+typeboolean"
+isFinalfalse"Ï
+declarationString÷<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">saveWithDifferentEncoding</mark> = dialogService.showCustomDialogAndWait(Localization.lang("Save library")<mark class="modifier">,</mark> pane, ignore, tryDifferentEncoding).filter(buttonType -> buttonType.equals(tryDifferentEncoding)).isPresent()*saveWithDifferentEncoding2Z
+booleanTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≠ ≠(2q
+java.util.Optional.isPresent()CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java∞ ∞(2ï
+Bjava.util.Optional.filter(java.util.function.Predicate<? super T>)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaØ Ø(2ﬂ
+ãorg.jabref.gui.DialogService.showCustomDialogAndWait(java.lang.String, javafx.scene.control.DialogPane, javafx.scene.control.ButtonType...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÆ Æ((2°
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÆ6 Æ(:2ó
+Dorg.jabref.gui.exporter.SaveDatabaseAction?dialogService@61.32:61.45CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≠, ≠(92Ó
+öorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?pane@290.19:290.23CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÆL Æ(P2
+úorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?ignore@300.19:300.25CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÆR Æ(X2˛
+™org.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?tryDifferentEncoding@299.19:299.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaÆZ Æ(n2Ù
+†org.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?buttonType@303.24:303.34CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaØ& Ø(02˛
+™org.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?tryDifferentEncoding@299.19:299.39CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaØ8 Ø(L
+°org.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?newEncoding@306.30:306.41VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤ ≤()"
+typeOptional<Charset>"
+isFinalfalse"à
+declarationStringÚ<mark class="modifier"> </mark>Optional<Charset> <mark class="class-field">newEncoding</mark> = dialogService.showChoiceDialogAndWait(Localization.lang("Save library")<mark class="modifier">,</mark> Localization.lang("Select new encoding")<mark class="modifier">,</mark> Localization.lang("Save library")<mark class="modifier">,</mark> encoding, Encodings.getCharsets())*newEncoding2e
+java.util.OptionalTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤ ≤(2t
+java.nio.charset.CharsetTYPE_ARGUMENTI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤ ≤(2⁄
+Üorg.jabref.gui.DialogService.showChoiceDialogAndWait(java.lang.String, java.lang.String, java.lang.String, T, java.util.Collection<T>)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤: ≤(Q2°
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤_ ≤(c2£
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤Ç ≤(Ü2£
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤¨ ≤(∞2Ç
+-org.jabref.logic.l10n.Encodings.getCharsets()CALLK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤÷ ≤(·2ó
+Dorg.jabref.gui.exporter.SaveDatabaseAction?dialogService@61.32:61.45CALLI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤, ≤(92Ê
+êorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!encodingCALLK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java≤¬ ≤( í
+åorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!file	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°0 °(4"
+typePath"
+isFinalfalse"
+declarationString	Path file*file2e
+java.nio.file.PathTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°+ °(/√
+îorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!selectedOnly	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°> °(J"
+typeboolean"
+isFinalfalse"G
+declarationString2<mark class="modifier">boolean</mark> selectedOnly*selectedOnly2Z
+booleanTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°6 °(=™
+êorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!encoding	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°T °(\"
+typeCharset"
+isFinalfalse"%
+declarationStringCharset encoding*encoding2k
+java.nio.charset.CharsetTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°L °(S∂
+òorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!encodingProblems	PARAMETERI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°m °(}"
+typeSet<Character>"
+isFinalfalse"4
+declarationStringSet<Character> encodingProblems*encodingProblems2`
+java.util.SetTYPEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°^ °(a2o
+java.lang.CharacterTYPE_ARGUMENTI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°b °(kÒ
+êorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!saveType	PARAMETERK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°ö °(¢""
+typeBibDatabaseWriter.SaveType"
+isFinalfalse"8
+declarationString#BibDatabaseWriter.SaveType saveType*saveType2â
+4org.jabref.logic.exporter.BibDatabaseWriter.SaveTypeTYPEK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°ë °(ôË
+ëorg.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)!saveOrder	PARAMETERK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°ª °(ƒ"
+typeSelfContainedSaveOrder"
+isFinalfalse"5
+declarationString SelfContainedSaveOrder saveOrder*	saveOrder2Ö
+0org.jabref.model.metadata.SelfContainedSaveOrderTYPEK
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java°§ °(∫»
+†org.jabref.gui.exporter.SaveDatabaseAction.saveWithDifferentEncoding(java.nio.file.Path, boolean, java.nio.charset.Charset, java.util.Set<java.lang.Character>, org.jabref.logic.exporter.BibDatabaseWriter.SaveType, org.jabref.model.metadata.SelfContainedSaveOrder)?buttonType@303.24:303.34VARIABLEI
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaØ Ø(""
+type"
+isFinalfalse" 
+declarationString buttonType*
+buttonType2TYPE´
+=org.jabref.gui.exporter.SaveDatabaseAction?LOGGER@58.32:58.38VALUEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java:  :(&"
+isFinaltrue"
+typeLogger"Ë
+declarationString“<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(SaveDatabaseAction.class);"
+isStatictrue"
+accessprivate*LOGGER2a
+org.slf4j.LoggerTYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java: :(Ô
+Aorg.jabref.gui.exporter.SaveDatabaseAction?libraryTab@60.29:60.39VALUEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java< <('"
+isFinaltrue"
+type
+LibraryTab"ñ
+declarationStringÄ<mark class="modifier">private </mark><mark class="modifier">final </mark>LibraryTab <mark class="class-field">libraryTab</mark>"
+isStaticfalse"
+accessprivate*
+libraryTab2j
+org.jabref.gui.LibraryTabTYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java< <(Å
+Dorg.jabref.gui.exporter.SaveDatabaseAction?dialogService@61.32:61.45VALUEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java=  =(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2m
+org.jabref.gui.DialogServiceTYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java= =(í
+Borg.jabref.gui.exporter.SaveDatabaseAction?preferences@62.37:62.48VALUEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java>% >(0"
+isFinaltrue"
+typePreferencesService"ü
+declarationStringâ<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferences</mark>"
+isStaticfalse"
+accessprivate*preferences2z
+)org.jabref.preferences.PreferencesServiceTYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java> >($™
+Horg.jabref.gui.exporter.SaveDatabaseAction?entryTypesManager@63.39:63.56VALUEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java?' ?(8"
+isFinaltrue"
+typeBibEntryTypesManager"ß
+declarationStringë<mark class="modifier">private </mark><mark class="modifier">final </mark>BibEntryTypesManager <mark class="class-field">entryTypesManager</mark>"
+isStaticfalse"
+accessprivate*entryTypesManager2|
++org.jabref.model.entry.BibEntryTypesManagerTYPEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.java? ?(&¢
+;org.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseModeENUMG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaA A( "H
+declarationString3<mark class="modifier">enum </mark>SaveDatabaseMode*SaveDatabaseMode2ö
+Borg.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode?SILENTDECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaB B(2ö
+Borg.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode?NORMALDECLARATIONG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaB B(™
+Borg.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode?SILENTVALUEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaB B("
+enumtrue*SILENT™
+Borg.jabref.gui.exporter.SaveDatabaseAction.SaveDatabaseMode?NORMALVALUEG
+=src\main\java\org\jabref\gui\exporter\SaveDatabaseAction.javaB B("
+enumtrue*NORMAL

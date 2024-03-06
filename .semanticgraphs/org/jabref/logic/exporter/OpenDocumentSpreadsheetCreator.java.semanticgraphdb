@@ -1,0 +1,761 @@
+
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÖ
+8org.jabref.logic.exporter.OpenDocumentSpreadsheetCreatorCLASSU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java% %(+"$
+packageorg.jabref.logic.exporter"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"¨
+declarationStringñ<mark class="modifier">public </mark><mark class="modifier">class </mark>OpenDocumentSpreadsheetCreator<mark class="modifier"> extends </mark>Exporter"
+accesspublic*OpenDocumentSpreadsheetCreator2ø
+Yorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.OpenDocumentSpreadsheetCreator()DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java, ,()2È
+Çorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java0 0(82©
+¬org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaR R(52ô
+≤org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.export(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, java.util.List<org.jabref.model.entry.BibEntry>)DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javad d(2¶
+øorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javam m(82Ú
+ãorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java{ {('2ÿ
+porg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)DECLARATIONW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÇ Ç('2±
+Korg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator?LOGGER@39.32:39.38DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java'  '(&2É
+"org.jabref.logic.exporter.ExporterEXTENDU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java%4 %(<˘
+Yorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.OpenDocumentSpreadsheetCreator()CONSTRUCTORU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java, ,()"v
+declarationStringa<mark class="modifier">public </mark><mark class="method">OpenDocumentSpreadsheetCreator</mark>()*OpenDocumentSpreadsheetCreator2≠
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java-" -(&2Œ
+oorg.jabref.logic.exporter.Exporter.Exporter(java.lang.String, java.lang.String, org.jabref.logic.util.FileType)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java- -(2û
+8org.jabref.logic.exporter.OpenDocumentSpreadsheetCreatorRETURN_TYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java, ,()«e
+Çorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)METHODU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java0 0(8"
+isFinalfalse"Í
+declarationString‘<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">storeOpenDocumentSpreadsheetFile</mark>(Path file<mark class="modifier"><mark class="modifier">,</mark></mark> InputStream source)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typevoid* storeOpenDocumentSpreadsheetFile2≥
+Tjava.nio.file.Files.newOutputStream(java.nio.file.Path, java.nio.file.OpenOption...)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java2V 2(e2Ñ
+%java.util.zip.ZipEntry.setMethod(int)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java6 6(2É
+$java.util.zip.ZipEntry.setSize(long)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java7 7(2x
+java.lang.String.length()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java7 7("2Ñ
+%java.util.zip.Checksum.update(byte[])CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java9 9(2z
+java.lang.String.getBytes()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java9 9($2Ç
+#java.util.zip.ZipEntry.setCrc(long)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java: :(2}
+java.util.zip.CRC32.getValue()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java: :("2°
+Bjava.util.zip.ZipOutputStream.putNextEntry(java.util.zip.ZipEntry)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java; ;(2x
+java.lang.String.length()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java<% <(+2å
+-java.util.zip.DeflaterOutputStream.write(int)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java= =(2{
+java.lang.String.charAt(int)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java= =(%2â
+*java.util.zip.ZipOutputStream.closeEntry()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java? ?(2°
+Bjava.util.zip.ZipOutputStream.putNextEntry(java.util.zip.ZipEntry)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaC C(2y
+java.io.InputStream.read()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaE E(#2å
+-java.util.zip.DeflaterOutputStream.write(int)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaF F(2â
+*java.util.zip.ZipOutputStream.closeEntry()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaH H(2Î
+ãorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaL+ L(:2Î
+ãorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaN+ N(:2¢
+Cjava.util.zip.ZipOutputStream.ZipOutputStream(java.io.OutputStream)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java2' 2(62¶
+Gjava.io.BufferedOutputStream.BufferedOutputStream(java.io.OutputStream)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java2; 2(O2ê
+1java.util.zip.ZipEntry.ZipEntry(java.lang.String)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java4 4(&2z
+java.util.zip.CRC32.CRC32()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java8 8(!2ê
+1java.util.zip.ZipEntry.ZipEntry(java.lang.String)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaA$ A(,2Á
+áorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)!fileCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java2f 2(j2Ò
+ëorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?ze@52.21:52.23CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java6 6(2Ò
+ëorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?ze@52.21:52.23CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java7 7(2Û
+ìorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?mime@53.19:53.23CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java7 7(2Ú
+íorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?crc@56.18:56.21CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java9 9(2Û
+ìorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?mime@53.19:53.23CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java9 9(2Ò
+ëorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?ze@52.21:52.23CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java: :(2Ú
+íorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?crc@56.18:56.21CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java: :(2Ú
+íorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?out@50.29:50.32CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java; ;(2Ò
+ëorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?ze@52.21:52.23CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java; ;(2
+êorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?i@60.21:60.22CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java< <(2Û
+ìorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?mime@53.19:53.23CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java<  <($2
+êorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?i@60.21:60.22CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java</ <(02Ú
+íorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?out@50.29:50.32CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java= =(2Û
+ìorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?mime@53.19:53.23CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java= =(2
+êorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?i@60.21:60.22CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java=& =('2Ú
+íorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?out@50.29:50.32CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java? ?(2Ú
+íorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?out@50.29:50.32CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaC C(2˜
+óorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?zipEntry@65.21:65.29CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaC C(%2
+êorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?c@68.16:68.17CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaE E(2È
+âorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)!sourceCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaE E(2Ú
+íorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?out@50.29:50.32CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaF F(2
+êorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?c@68.16:68.17CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaF F(2Ú
+íorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?out@50.29:50.32CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaH H(2Ú
+íorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?out@50.29:50.32CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaLa L(d2Ú
+íorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?out@50.29:50.32CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaNr N(u2Ï
+áorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)!file	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java0> 0(B2Ó
+âorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)!source	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java0P 0(V2˘
+íorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?out@50.29:50.32DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java2 2( 2¯
+ëorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?ze@52.21:52.23DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java4 4(2˙
+ìorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?mime@53.19:53.23DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java5 5(2˘
+íorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?crc@56.18:56.21DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java8 8(2˜
+êorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?i@60.21:60.22DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java< <(2˛
+óorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?zipEntry@65.21:65.29DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaA A(2˜
+êorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?c@68.16:68.17DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaD D(2j
+voidRETURN_TYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java0 0(À
+
+íorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?out@50.29:50.32VARIABLEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java2 2( "
+typeZipOutputStream"
+isFinalfalse"∂
+declarationString†<mark class="modifier"> </mark>ZipOutputStream <mark class="class-field">out</mark> = new ZipOutputStream(new BufferedOutputStream(Files.newOutputStream(file)))*out2|
+java.util.zip.ZipOutputStreamTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java2 2(2≥
+Tjava.nio.file.Files.newOutputStream(java.nio.file.Path, java.nio.file.OpenOption...)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java2V 2(e2¢
+Cjava.util.zip.ZipOutputStream.ZipOutputStream(java.io.OutputStream)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java2' 2(62¶
+Gjava.io.BufferedOutputStream.BufferedOutputStream(java.io.OutputStream)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java2; 2(O2Á
+áorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)!fileCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java2f 2(j§
+ëorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?ze@52.21:52.23VARIABLEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java4 4("
+typeZipEntry"
+isFinalfalse"{
+declarationStringf<mark class="modifier"> </mark>ZipEntry <mark class="class-field">ze</mark> = new ZipEntry("mimetype")*ze2u
+java.util.zip.ZipEntryTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java4 4(2ê
+1java.util.zip.ZipEntry.ZipEntry(java.lang.String)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java4 4(&¶
+ìorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?mime@53.19:53.23VARIABLEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java5 5("
+typeString"
+isFinalfalse"ì
+declarationString~<mark class="modifier"> </mark>String <mark class="class-field">mime</mark> = "application/vnd.oasis.opendocument.spreadsheet"*mime2o
+java.lang.StringTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java5 5(˙
+íorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?crc@56.18:56.21VARIABLEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java8 8("
+typeCRC32"
+isFinalfalse"l
+declarationStringW<mark class="modifier"> </mark>CRC32 <mark class="class-field">crc</mark> = new CRC32()*crc2r
+java.util.zip.CRC32TYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java8 8(2z
+java.util.zip.CRC32.CRC32()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java8 8(!¯
+êorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?i@60.21:60.22VARIABLEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java< <("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 0*i2b
+intTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java< <(∫
+óorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?zipEntry@65.21:65.29VARIABLEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaA A("
+typeZipEntry"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier"> </mark>ZipEntry <mark class="class-field">zipEntry</mark> = new ZipEntry("content.xml")*zipEntry2u
+java.util.zip.ZipEntryTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaA A(2ê
+1java.util.zip.ZipEntry.ZipEntry(java.lang.String)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaA$ A(,Ù
+êorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)?c@68.16:68.17VARIABLEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaD D("
+typeint"
+isFinalfalse"x
+declarationStringc<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">c</mark>*c2b
+intTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaD D(•
+áorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)!file	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java0> 0(B"
+typePath"
+isFinalfalse"
+declarationString	Path file*file2q
+java.nio.file.PathTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java09 0(=∫
+âorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)!source	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java0P 0(V"
+typeInputStream"
+isFinalfalse"'
+declarationStringInputStream source*source2r
+java.io.InputStreamTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java0D 0(O .
+¬org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)METHODU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaR R(5"
+isFinalfalse"√
+declarationString≠<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">exportOpenDocumentSpreadsheet</mark>(Path file<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabase database<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;BibEntry&gt; entries)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typevoid*exportOpenDocumentSpreadsheet2û
+?java.io.File.createTempFile(java.lang.String, java.lang.String)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaV V(*2ü
+øorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaW' W(G2‚
+Çorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.storeOpenDocumentSpreadsheetFile(java.nio.file.Path, java.io.InputStream)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java[+ [(K2t
+java.io.File.delete()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java^ ^(2£
+Djava.io.BufferedInputStream.BufferedInputStream(java.io.InputStream)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaZ* Z(=2î
+5java.io.FileInputStream.FileInputStream(java.io.File)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaZB Z(Q2∂
+÷org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?tmpFile@86.13:86.20CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaWH W(O2´
+Àorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!databaseCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaWQ W(Y2™
+ org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!entriesCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaW[ W(b2∂
+÷org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?tmpFile@86.13:86.20CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaZR Z(Y2ß
+«org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!fileCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java[L [(P2±
+—org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?in@90.33:90.35CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java[R [(T2∂
+÷org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?tmpFile@86.13:86.20CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java^ ^(2™
+Korg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator?LOGGER@39.32:39.38CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java_ _(2¨
+«org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!file	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaR; R(?2∞
+Àorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!database	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaRM R(U2Ø
+ org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaRf R(m2Ω
+÷org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?tmpFile@86.13:86.20DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaV V(2∏
+—org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?in@90.33:90.35DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaZ! Z(#2j
+voidRETURN_TYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaR R(æ
+÷org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?tmpFile@86.13:86.20VARIABLEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaV V("
+typeFile"
+isFinalfalse" 
+declarationString¥<mark class="modifier"> </mark>File <mark class="class-field">tmpFile</mark> = File.createTempFile("opendocument"<mark class="modifier">,</mark> <mark class="modifier">null</mark>)*tmpFile2k
+java.io.FileTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaV V(2û
+?java.io.File.createTempFile(java.lang.String, java.lang.String)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaV V(*Å
+
+—org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?in@90.33:90.35VARIABLEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaZ! Z(#"
+typeBufferedInputStream"
+isFinalfalse"§
+declarationStringé<mark class="modifier"> </mark>BufferedInputStream <mark class="class-field">in</mark> = new BufferedInputStream(new FileInputStream(tmpFile))*in2z
+java.io.BufferedInputStreamTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaZ Z( 2£
+Djava.io.BufferedInputStream.BufferedInputStream(java.io.InputStream)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaZ* Z(=2î
+5java.io.FileInputStream.FileInputStream(java.io.File)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaZB Z(Q2∂
+÷org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?tmpFile@86.13:86.20CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaZR Z(YÂ
+«org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!file	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaR; R(?"
+typePath"
+isFinalfalse"
+declarationString	Path file*file2q
+java.nio.file.PathTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaR6 R(:ì
+Àorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!database	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaRM R(U"
+typeBibDatabase"
+isFinalfalse")
+declarationStringBibDatabase database*database2Ñ
+%org.jabref.model.database.BibDatabaseTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaRA R(Là
+ org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaRf R(m"
+typeList<BibEntry>"
+isFinalfalse"+
+declarationStringList<BibEntry> entries*entries2m
+java.util.ListTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaRW R([2á
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaR\ R(d†$
+≤org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.export(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, java.util.List<org.jabref.model.entry.BibEntry>)METHODU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javad d("
+isFinalfalse"Œ
+declarationString∏<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">export</mark>(final BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> final Path file<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;BibEntry&gt; entries)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*export2Ç
+#java.util.Objects.requireNonNull(T)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaf f(2Ç
+#java.util.Objects.requireNonNull(T)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javag g(2w
+java.util.List.isEmpty()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javah h(2¢
+¬org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheet(java.nio.file.Path, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javai+ i(H2ô
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javai_ i(j2¢
+¬org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.export(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, java.util.List<org.jabref.model.entry.BibEntry>)!databaseContextCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaf f(.2ö
+∫org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.export(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, java.util.List<org.jabref.model.entry.BibEntry>)!entriesCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javag g(&2ö
+∫org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.export(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, java.util.List<org.jabref.model.entry.BibEntry>)!entriesCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javah h(2ó
+∑org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.export(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, java.util.List<org.jabref.model.entry.BibEntry>)!fileCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaiI i(M2¢
+¬org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.export(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, java.util.List<org.jabref.model.entry.BibEntry>)!databaseContextCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaiO i(^2ö
+∫org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.export(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, java.util.List<org.jabref.model.entry.BibEntry>)!entriesCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javain i(u2Ä
+úorg.jabref.logic.exporter.Exporter.export(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, java.util.List<org.jabref.model.entry.BibEntry>)OVERRIDEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javad d(2ß
+¬org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.export(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, java.util.List<org.jabref.model.entry.BibEntry>)!databaseContext	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javad0 d(?2ú
+∑org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.export(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, java.util.List<org.jabref.model.entry.BibEntry>)!file	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javadL d(P2ü
+∫org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.export(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javae& e(-2j
+voidRETURN_TYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javad d(¨
+¬org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.export(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, java.util.List<org.jabref.model.entry.BibEntry>)!databaseContext	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javad0 d(?"
+typeBibDatabaseContext"
+isFinaltrue"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2ã
+,org.jabref.model.database.BibDatabaseContextTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javad d(/‘
+∑org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.export(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, java.util.List<org.jabref.model.entry.BibEntry>)!file	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javadL d(P"
+typePath"
+isFinaltrue"
+declarationString	Path file*file2q
+java.nio.file.PathTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javadG d(K¯
+∫org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.export(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javae& e(-"
+typeList<BibEntry>"
+isFinalfalse"+
+declarationStringList<BibEntry> entries*entries2m
+java.util.ListTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javae e(2á
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javae e($’B
+øorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)METHODU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javam m(8"
+isFinalfalse"˙
+declarationString‰<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">exportOpenDocumentSpreadsheetXML</mark>(File tmpFile<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabase database<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;BibEntry&gt; entries)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typevoid* exportOpenDocumentSpreadsheetXML2™
+Korg.jabref.logic.exporter.OpenDocumentRepresentation.getDOMrepresentation()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaq0 q(D2ñ
+7javax.xml.transform.TransformerFactory.newTransformer()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javasA s(O2ì
+4javax.xml.transform.TransformerFactory.newInstance()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javas3 s(>2¥
+Ujavax.xml.transform.Transformer.setOutputProperty(java.lang.String, java.lang.String)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javat t(#2¿
+ajavax.xml.transform.Transformer.transform(javax.xml.transform.Source, javax.xml.transform.Result)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javau u(2á
+ßorg.jabref.logic.exporter.OpenDocumentRepresentation.OpenDocumentRepresentation(org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javan, n(F2º
+]java.io.OutputStreamWriter.OutputStreamWriter(java.io.OutputStream, java.nio.charset.Charset)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javap p(/2ñ
+7java.io.FileOutputStream.FileOutputStream(java.io.File)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javap4 p(D2£
+Djavax.xml.transform.stream.StreamResult.StreamResult(java.io.Writer)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javar& r(22â
+*java.lang.Error.Error(java.lang.Throwable)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaw w(2®
+»org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!databaseCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javanG n(O2ß
+«org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!entriesCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javanQ n(X2ß
+«org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!tmpFileCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javapE p(L2∞
+–org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?od@110.35:110.37CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaq- q(/2∞
+–org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?ps@112.20:112.22CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javar3 r(52≥
+”org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?trans@115.24:115.29CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javat t(2≥
+”org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?trans@115.24:115.29CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javau u(2¥
+‘org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?source@113.22:113.28CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javau u("2¥
+‘org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?result@114.25:114.31CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javau$ u(*2Ø
+œorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?e@118.27:118.28CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaw w(2¨
+«org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!tmpFile	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javam> m(E2≠
+»org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!database	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javamS m([2¨
+«org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaml m(s2∑
+–org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?od@110.35:110.37DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javan# n(%2∑
+–org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?ps@112.20:112.22DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javap p(2ª
+‘org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?source@113.22:113.28DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaq q(2ª
+‘org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?result@114.25:114.31DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javar r(2∫
+”org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?trans@115.24:115.29DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javas s(2∂
+œorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?e@118.27:118.28DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javav v(2j
+voidRETURN_TYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javam m(ç
+–org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?od@110.35:110.37VARIABLEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javan# n(%""
+typeOpenDocumentRepresentation"
+isFinalfalse"ß
+declarationStringë<mark class="modifier"> </mark>OpenDocumentRepresentation <mark class="class-field">od</mark> = new OpenDocumentRepresentation(database, entries)*od2ì
+4org.jabref.logic.exporter.OpenDocumentRepresentationTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javan n("2á
+ßorg.jabref.logic.exporter.OpenDocumentRepresentation.OpenDocumentRepresentation(org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javan, n(F2®
+»org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!databaseCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javanG n(O2ß
+«org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!entriesCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javanQ n(Xõ
+
+–org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?ps@112.20:112.22VARIABLEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javap p("
+typeWriter"
+isFinalfalse"Õ
+declarationString∑<mark class="modifier"> </mark>Writer <mark class="class-field">ps</mark> = new OutputStreamWriter(new FileOutputStream(tmpFile)<mark class="modifier">,</mark> StandardCharsets.UTF_8)*ps2m
+java.io.WriterTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javap p(2º
+]java.io.OutputStreamWriter.OutputStreamWriter(java.io.OutputStream, java.nio.charset.Charset)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javap p(/2ñ
+7java.io.FileOutputStream.FileOutputStream(java.io.File)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javap4 p(D2ß
+«org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!tmpFileCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javapE p(L€
+‘org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?source@113.22:113.28VARIABLEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaq q("
+type	DOMSource"
+isFinalfalse"ê
+declarationString{<mark class="modifier"> </mark>DOMSource <mark class="class-field">source</mark> = new DOMSource(od.getDOMrepresentation())*source2Ä
+!javax.xml.transform.dom.DOMSourceTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaq q(2™
+Korg.jabref.logic.exporter.OpenDocumentRepresentation.getDOMrepresentation()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaq0 q(D2∞
+–org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?od@110.35:110.37CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaq- q(/À
+‘org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?result@114.25:114.31VARIABLEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javar r("
+typeStreamResult"
+isFinalfalse"
+declarationStringj<mark class="modifier"> </mark>StreamResult <mark class="class-field">result</mark> = new StreamResult(ps)*result2Ü
+'javax.xml.transform.stream.StreamResultTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javar r(2£
+Djavax.xml.transform.stream.StreamResult.StreamResult(java.io.Writer)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javar& r(22∞
+–org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?ps@112.20:112.22CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javar3 r(5≤
+”org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?trans@115.24:115.29VARIABLEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javas s("
+typeTransformer"
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier"> </mark>Transformer <mark class="class-field">trans</mark> = TransformerFactory.newInstance().newTransformer()*trans2~
+javax.xml.transform.TransformerTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javas s(2ñ
+7javax.xml.transform.TransformerFactory.newTransformer()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javasA s(O2ì
+4javax.xml.transform.TransformerFactory.newInstance()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javas3 s(>Â
+«org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!tmpFile	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javam> m(E"
+typeFile"
+isFinalfalse"!
+declarationStringFile tmpFile*tmpFile2k
+java.io.FileTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javam9 m(=ê
+»org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!database	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javamS m(["
+typeBibDatabase"
+isFinalfalse")
+declarationStringBibDatabase database*database2Ñ
+%org.jabref.model.database.BibDatabaseTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javamG m(RÖ
+«org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaml m(s"
+typeList<BibEntry>"
+isFinalfalse"+
+declarationStringList<BibEntry> entries*entries2m
+java.util.ListTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javam] m(a2á
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javamb m(jÒ
+œorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.exportOpenDocumentSpreadsheetXML(java.io.File, org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)?e@118.27:118.28VARIABLEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javav v("
+type	Exception"
+isFinalfalse" 
+declarationStringException e*e2r
+java.lang.ExceptionTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javav v(¡
+ãorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)METHODU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java{ {('"
+isFinalfalse"©
+declarationStringì<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">addResourceFile</mark>(String name<mark class="modifier"><mark class="modifier">,</mark></mark> String resource<mark class="modifier"><mark class="modifier">,</mark></mark> ZipOutputStream out)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typevoid*addResourceFile2°
+Bjava.util.zip.ZipOutputStream.putNextEntry(java.util.zip.ZipEntry)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java} }(2œ
+porg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java~' ~(62â
+*java.util.zip.ZipOutputStream.closeEntry()CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java (2ê
+1java.util.zip.ZipEntry.ZipEntry(java.lang.String)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java|  |((2
+êorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)!nameCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java|) |(-2Ô
+èorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)!outCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java} }(2Ç
+¢org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)?zipEntry@124.17:124.25CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java} }(!2Ù
+îorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)!resourceCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java~7 ~(?2Ô
+èorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)!outCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java~A ~(D2Ô
+èorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)!outCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java (2ı
+êorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)!name	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java{/ {(32˘
+îorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)!resource	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java{< {(D2Ù
+èorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)!out	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java{V {(Y2â
+¢org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)?zipEntry@124.17:124.25DECLARATIONU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java| |(2j
+voidRETURN_TYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java{ {(Æ
+¢org.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)?zipEntry@124.17:124.25VARIABLEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java| |("
+typeZipEntry"
+isFinalfalse"{
+declarationStringf<mark class="modifier"> </mark>ZipEntry <mark class="class-field">zipEntry</mark> = new ZipEntry(name)*zipEntry2u
+java.util.zip.ZipEntryTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java| |(2ê
+1java.util.zip.ZipEntry.ZipEntry(java.lang.String)CALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java|  |((2
+êorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)!nameCALLU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java|) |(-∞
+êorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)!name	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java{/ {(3"
+typeString"
+isFinalfalse" 
+declarationStringString name*name2o
+java.lang.StringTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java{( {(.º
+îorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)!resource	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java{< {(D"
+typeString"
+isFinalfalse"$
+declarationStringString resource*resource2o
+java.lang.StringTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java{5 {(;Ã
+èorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addResourceFile(java.lang.String, java.lang.String, java.util.zip.ZipOutputStream)!out	PARAMETERU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java{V {(Y"
+typeZipOutputStream"
+isFinalfalse"(
+declarationStringZipOutputStream out*out2|
+java.util.zip.ZipOutputStreamTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java{F {(UÂ)
+porg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)METHODW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÇ Ç('"
+isFinalfalse"é
+declarationString¯<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">addFromResource</mark>(String resource<mark class="modifier"><mark class="modifier">,</mark></mark> OutputStream out)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typevoid*addFromResource2é
+-java.lang.Class.getResource(java.lang.String)CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÉ7 É(B2z
+java.net.URL.openStream()CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÑ" Ñ(,2Å
+ java.io.InputStream.read(byte[])CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaà' à(+2ç
+,java.io.OutputStream.write(byte[], int, int)CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaå å(2⁄
+yorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)!resourceCALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÉC É(K2‰
+Çorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?url@131.12:131.15CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÑ Ñ(!2’
+torg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)!outCALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÜ Ü(2„
+Åorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?in@132.25:132.27CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaà$ à(&2Á
+Öorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?buffer@133.19:133.25CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaà, à(22Í
+àorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?bytesRead@136.24:136.33CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaâ â(!2’
+torg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)!outCALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaå å(2Á
+Öorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?buffer@133.19:133.25CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaå å($2Í
+àorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?bytesRead@136.24:136.33CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaå) å(22¨
+Korg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator?LOGGER@39.32:39.38CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaê ê(2‚
+Äorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?e@143.29:143.30CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaê/ ê(02ﬂ
+yorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)!resource	PARAMETERW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÇ/ Ç(72⁄
+torg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)!out	PARAMETERW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÇF Ç(I2Î
+Çorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?url@131.12:131.15DECLARATIONW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÉ É(2Í
+Åorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?in@132.25:132.27DECLARATIONW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÑ Ñ(2Ó
+Öorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?buffer@133.19:133.25DECLARATIONW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÖ Ö(2Ò
+àorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?bytesRead@136.24:136.33DECLARATIONW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaà à(!2È
+Äorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?e@143.29:143.30DECLARATIONW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaè è(2l
+voidRETURN_TYPEW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÇ Ç(Ü
+Çorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?url@131.12:131.15VARIABLEW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÉ É("
+typeURL"
+isFinalfalse"ö
+declarationStringÑ<mark class="modifier"> </mark>URL <mark class="class-field">url</mark> = OpenDocumentSpreadsheetCreator.class.getResource(resource)*url2m
+java.net.URLTYPEW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÉ É(2é
+-java.lang.Class.getResource(java.lang.String)CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÉ7 É(B2⁄
+yorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)!resourceCALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÉC É(K„
+Åorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?in@132.25:132.27VARIABLEW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÑ Ñ("
+typeInputStream"
+isFinalfalse"v
+declarationStringa<mark class="modifier"> </mark>InputStream <mark class="class-field">in</mark> = url.openStream()*in2t
+java.io.InputStreamTYPEW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÑ Ñ(2z
+java.net.URL.openStream()CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÑ" Ñ(,2‰
+Çorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?url@131.12:131.15CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÑ Ñ(!
+Öorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?buffer@133.19:133.25VARIABLEW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÖ Ö("
+typebyte"
+isFinalfalse"r
+declarationString]<mark class="modifier"> </mark>byte[] <mark class="class-field">buffer</mark> = new byte[256]*buffer2g
+byte[]TYPEW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÖ Ö(Á
+àorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?bytesRead@136.24:136.33VARIABLEW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaà à(!"
+typeint"
+isFinalfalse"í
+declarationString}<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">bytesRead</mark> = in.read(buffer)*	bytesRead2d
+intTYPEW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaà à(2Å
+ java.io.InputStream.read(byte[])CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaà' à(+2„
+Åorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?in@132.25:132.27CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaà$ à(&2Á
+Öorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?buffer@133.19:133.25CALLW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaà, à(2§
+yorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)!resource	PARAMETERW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÇ/ Ç(7"
+typeString"
+isFinalfalse"$
+declarationStringString resource*resource2q
+java.lang.StringTYPEW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÇ( Ç(.•
+torg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)!out	PARAMETERW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÇF Ç(I"
+typeOutputStream"
+isFinalfalse"%
+declarationStringOutputStream out*out2u
+java.io.OutputStreamTYPEW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaÇ9 Ç(E™
+Äorg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator.addFromResource(java.lang.String, java.io.OutputStream)?e@143.29:143.30VARIABLEW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaè è("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2t
+java.io.IOExceptionTYPEW
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.javaè è(·
+Korg.jabref.logic.exporter.OpenDocumentSpreadsheetCreator?LOGGER@39.32:39.38VALUEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java'  '(&"
+isFinaltrue"
+typeLogger"Ù
+declarationStringﬁ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(OpenDocumentSpreadsheetCreator.class);"
+isStatictrue"
+accessprivate*LOGGER2o
+org.slf4j.LoggerTYPEU
+Ksrc\main\java\org\jabref\logic\exporter\OpenDocumentSpreadsheetCreator.java' '(

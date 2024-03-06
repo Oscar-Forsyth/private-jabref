@@ -1,0 +1,636 @@
+
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java∞
+Aorg.jabref.logic.quality.consistency.BibliographyConsistencyCheckCLASS^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java ()"/
+package$org.jabref.logic.quality.consistency"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"z
+declarationStringe<mark class="modifier">public </mark><mark class="modifier">class </mark>BibliographyConsistencyCheck"
+accesspublic*BibliographyConsistencyCheck2Á
+xorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java& &(2»
+Yorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaI( I(=2¥
+ƒorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\ \(.¶\
+xorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)METHOD^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java& &("
+isFinalfalse"Ä
+declarationStringk<mark class="modifier">public </mark>Result <mark class="method">check</mark>(List&lt;BibEntry&gt; entries)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeResult*check2≠
+ƒorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java. .(2≤
+Jjava.util.Map.forEach(java.util.function.BiConsumer<? super K, ? super V>)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java2' 2(.2ã
+#java.util.Map.get(java.lang.Object)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java3G 3(J2±
+Ijava.util.Set.removeAll(java.util.Collection<? extends java.lang.Object>)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java6 6("2
+java.util.Set.isEmpty()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java8 8($2à
+ java.util.stream.Stream.toList()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java?5 ?(;2ß
+?java.util.stream.Stream.sorted(java.util.Comparator<? super T>)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java? ?(2Ø
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java> >(2Ö
+java.util.Collection.stream()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java=$ =(*2ã
+#java.util.Map.get(java.lang.Object)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java= =(2ì
++org.jabref.model.entry.BibEntry.getFields()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java>, >(52¡
+Yorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java? ?(12É
+java.util.HashMap.HashMap()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java(H ((Q2É
+java.util.HashMap.HashMap()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java*J *(S2É
+java.util.HashMap.HashMap()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java,B ,(K2É
+java.util.HashMap.HashMap()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java08 0(A2§
+<java.util.HashSet.HashSet(java.util.Collection<? extends E>)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java5* 5(32È
+Äorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)!entriesCALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java. .(&2å
+£org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryTypeToFieldsInAnyEntryMap@40.35:40.65CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java.( .(F2é
+•org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryTypeToFieldsInAllEntriesMap@42.35:42.67CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java.H .(h2É
+öorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryTypeToEntriesMap@44.38:44.59CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java.j .(2å
+£org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryTypeToFieldsInAnyEntryMap@40.35:40.65CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java2 2(&2é
+•org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryTypeToFieldsInAllEntriesMap@42.35:42.67CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java3& 3(F2˜
+éorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryType@50.48:50.57CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java3K 3(T2˙
+ëorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?commonFields@51.23:51.35CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java4 4(2Ù
+ãorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?fields@50.59:50.65CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java54 5(:2˙
+ëorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?uniqueFields@53.23:53.35CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java6 6(2˙
+ëorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?commonFields@51.23:51.35CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java6# 6(/2˙
+ëorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?uniqueFields@53.23:53.35CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java8 8(2É
+öorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryTypeToEntriesMap@44.38:44.59CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java<+ <(@2˜
+éorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryType@50.48:50.57CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java= =("2Û
+äorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entry@62.28:62.33CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java>& >(+2˙
+ëorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?commonFields@51.23:51.35CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java>? >(K2˜
+éorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?resultMap@48.40:48.49CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java@ @(2˜
+éorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryType@50.48:50.57CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java@ @(#2˙
+ëorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?uniqueFields@53.23:53.35CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java@9 @(E2˚
+íorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?sortedEntries@60.27:60.40CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java@G @(T2˜
+éorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?resultMap@48.40:48.49CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaC C(#2Ó
+Äorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETER^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java&' &(.2ì
+£org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryTypeToFieldsInAnyEntryMap@40.35:40.65DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java(# ((A2ï
+•org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryTypeToFieldsInAllEntriesMap@42.35:42.67DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java*# *(C2ä
+öorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryTypeToEntriesMap@44.38:44.59DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java,& ,(;2˛
+éorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?resultMap@48.40:48.49DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java0( 0(12Å
+ëorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?commonFields@51.23:51.35DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java3 3(#2Å
+ëorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?uniqueFields@53.23:53.35DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java5 5(#2Ç
+íorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?sortedEntries@60.27:60.40DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java< <((2˛
+éorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryType@50.48:50.57DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java20 2(92˚
+ãorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?fields@50.59:50.65DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java2; 2(A2˙
+äorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entry@62.28:62.33DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java> >(!2u
+ResultRETURN_TYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java& &(∑	
+£org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryTypeToFieldsInAnyEntryMap@40.35:40.65VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java(# ((A""
+typeMap<EntryType, Set<Field>>"
+isFinalfalse"°
+declarationStringã<mark class="modifier"> </mark>Map<EntryType, Set<Field>> <mark class="class-field">entryTypeToFieldsInAnyEntryMap</mark> = new HashMap<>()*entryTypeToFieldsInAnyEntryMap2u
+java.util.MapTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java( ((2ó
+&org.jabref.model.entry.types.EntryTypeTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java( ((2~
+java.util.SetTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java( ((2ì
+"org.jabref.model.entry.field.FieldTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java( (( 2É
+java.util.HashMap.HashMap()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java(H ((QΩ	
+•org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryTypeToFieldsInAllEntriesMap@42.35:42.67VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java*# *(C""
+typeMap<EntryType, Set<Field>>"
+isFinalfalse"£
+declarationStringç<mark class="modifier"> </mark>Map<EntryType, Set<Field>> <mark class="class-field">entryTypeToFieldsInAllEntriesMap</mark> = new HashMap<>()* entryTypeToFieldsInAllEntriesMap2u
+java.util.MapTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java* *(2ó
+&org.jabref.model.entry.types.EntryTypeTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java* *(2~
+java.util.SetTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java* *(2ì
+"org.jabref.model.entry.field.FieldTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java* *( 2É
+java.util.HashMap.HashMap()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java*J *(Sü	
+öorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryTypeToEntriesMap@44.38:44.59VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java,& ,(;"%
+typeMap<EntryType, Set<BibEntry>>"
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier"> </mark>Map<EntryType, Set<BibEntry>> <mark class="class-field">entryTypeToEntriesMap</mark> = new HashMap<>()*entryTypeToEntriesMap2u
+java.util.MapTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java, ,(2ó
+&org.jabref.model.entry.types.EntryTypeTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java, ,(2~
+java.util.SetTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java, ,(2ê
+org.jabref.model.entry.BibEntryTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java, ,(#2É
+java.util.HashMap.HashMap()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java,B ,(K«
+éorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?resultMap@48.40:48.49VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java0( 0(1"'
+typeMap<EntryType, EntryTypeResult>"
+isFinalfalse"ê
+declarationString{<mark class="modifier"> </mark>Map<EntryType, EntryTypeResult> <mark class="class-field">resultMap</mark> = new HashMap<>()*	resultMap2k
+MapTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java0 0(2É
+java.util.HashMap.HashMap()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java08 0(A˙
+
+ëorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?commonFields@51.23:51.35VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java3 3(#"
+type
+Set<Field>"
+isFinalfalse"ü
+declarationStringâ<mark class="modifier"> </mark>Set<Field> <mark class="class-field">commonFields</mark> = entryTypeToFieldsInAllEntriesMap.get(entryType)*commonFields2u
+java.util.SetTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java3 3(2ì
+"org.jabref.model.entry.field.FieldTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java3 3(2ã
+#java.util.Map.get(java.lang.Object)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java3G 3(J2é
+•org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryTypeToFieldsInAllEntriesMap@42.35:42.67CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java3& 3(F2˜
+éorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryType@50.48:50.57CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java3K 3(T‰
+ëorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?uniqueFields@53.23:53.35VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java5 5(#"
+type
+Set<Field>"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier"> </mark>Set<Field> <mark class="class-field">uniqueFields</mark> = new HashSet<>(fields)*uniqueFields2u
+java.util.SetTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java5 5(2ì
+"org.jabref.model.entry.field.FieldTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java5 5(2§
+<java.util.HashSet.HashSet(java.util.Collection<? extends E>)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java5* 5(32Ù
+ãorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?fields@50.59:50.65CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java54 5(:î
+íorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?sortedEntries@60.27:60.40VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java< <(("
+typeList<BibEntry>"
+isFinalfalse"Ñ
+declarationStringÓ<mark class="modifier"> </mark>List<BibEntry> <mark class="class-field">sortedEntries</mark> = entryTypeToEntriesMap.get(entryType).stream().filter(entry -> !entry.getFields().equals(commonFields)).sorted(getBibEntryComparator()).toList()*sortedEntries2v
+java.util.ListTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java< <(2ê
+org.jabref.model.entry.BibEntryTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java< <(2à
+ java.util.stream.Stream.toList()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java?5 ?(;2ß
+?java.util.stream.Stream.sorted(java.util.Comparator<? super T>)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java? ?(2Ø
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java> >(2Ö
+java.util.Collection.stream()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java=$ =(*2ã
+#java.util.Map.get(java.lang.Object)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java= =(2ì
++org.jabref.model.entry.BibEntry.getFields()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java>, >(52¡
+Yorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java? ?(12É
+öorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryTypeToEntriesMap@44.38:44.59CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java<+ <(@2˜
+éorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryType@50.48:50.57CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java= =("2Û
+äorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entry@62.28:62.33CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java>& >(+2˙
+ëorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?commonFields@51.23:51.35CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java>? >(KŸ
+Äorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETER^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java&' &(."
+typeList<BibEntry>"
+isFinalfalse"+
+declarationStringList<BibEntry> entries*entries2v
+java.util.ListTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java& &(2ê
+org.jabref.model.entry.BibEntryTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java& &(%…
+éorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entryType@50.48:50.57VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java20 2(9"
+type"
+isFinalfalse"
+declarationString
+ entryType*	entryType2TYPE¿
+ãorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?fields@50.59:50.65VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java2; 2(A"
+type"
+isFinalfalse"
+declarationString fields*fields2TYPEΩ
+äorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.check(java.util.List<org.jabref.model.entry.BibEntry>)?entry@62.28:62.33VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java> >(!"
+type"
+isFinalfalse"
+declarationString entry*entry2TYPE¢4
+Yorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()METHOD^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaI( I(="
+isFinalfalse"Ø
+declarationStringô<mark class="modifier">private </mark><mark class="modifier">static </mark>Comparator&lt;BibEntry&gt; <mark class="method">getBibEntryComparator</mark>()"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeComparator<BibEntry>*getBibEntryComparator2ì
++org.jabref.model.entry.BibEntry.getFields()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaK$ K(-2ì
++org.jabref.model.entry.BibEntry.getFields()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaK< K(E2ì
++org.jabref.model.entry.BibEntry.getFields()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaO& O(/2ì
++org.jabref.model.entry.BibEntry.getFields()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaP& P(/2Ñ
+java.util.Iterator.hasNext()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaQ Q(2Ñ
+java.util.Iterator.hasNext()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaQ( Q(/2î
+,java.lang.String.compareTo(java.lang.String)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaR1 R(:2Å
+java.util.Iterator.next()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaR* R(.2Å
+java.util.Iterator.next()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaR? R(C2Ñ
+java.util.Iterator.hasNext()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaW W(2Ñ
+java.util.Iterator.hasNext()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaW* W(12–
+horg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?e1@74.16:74.18CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaK! K(#2–
+horg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?e2@74.20:74.22CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaK9 K(;2‹
+torg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?sizeComparison@75.16:75.30CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaL L(2‹
+torg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?sizeComparison@75.16:75.30CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaM M(%2–
+horg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?e1@74.16:74.18CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaO# O(%2–
+horg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?e2@74.20:74.22CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaP# P(%2—
+iorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?it1@79.29:79.32CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaQ Q(2—
+iorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?it2@80.29:80.32CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaQ$ Q('2—
+iorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?it1@79.29:79.32CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaR& R()2—
+iorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?it2@80.29:80.32CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaR; R(>2›
+uorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?fieldComparison@82.20:82.35CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaS S(#2›
+uorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?fieldComparison@82.20:82.35CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaT T(*2—
+iorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?it1@79.29:79.32CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaW W(2—
+iorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?it2@80.29:80.32CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaW& W()2„
+torg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?sizeComparison@75.16:75.30DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaK K(2ÿ
+iorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?it1@79.29:79.32DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaO O( 2ÿ
+iorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?it2@80.29:80.32DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaP P( 2‰
+uorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?fieldComparison@82.20:82.35DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaR R(#2◊
+horg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?e1@74.16:74.18DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaJ J(2◊
+horg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?e2@74.20:74.22DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaJ J(2É
+java.util.ComparatorRETURN_TYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaI I(2ó
+org.jabref.model.entry.BibEntryRETURN_TYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaI I(&á
+
+torg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?sizeComparison@75.16:75.30VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaK K("
+typeint"
+isFinalfalse"∂
+declarationString†<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">sizeComparison</mark> = e1.getFields().size() - e2.getFields().size()*sizeComparison2k
+intTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaK K(2ì
++org.jabref.model.entry.BibEntry.getFields()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaK$ K(-2ì
++org.jabref.model.entry.BibEntry.getFields()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaK< K(E2–
+horg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?e1@74.16:74.18CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaK! K(#2–
+horg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?e2@74.20:74.22CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaK9 K(;û
+iorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?it1@79.29:79.32VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaO O( "
+typeIterator<String>"
+isFinalfalse"¨
+declarationStringñ<mark class="modifier"> </mark>Iterator<String> <mark class="class-field">it1</mark> = e1.getFields().stream().map(Field::getName).sorted().iterator()*it12z
+java.util.IteratorTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaO O(2Å
+java.lang.StringTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaO O(2ì
++org.jabref.model.entry.BibEntry.getFields()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaO& O(/2–
+horg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?e1@74.16:74.18CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaO# O(%û
+iorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?it2@80.29:80.32VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaP P( "
+typeIterator<String>"
+isFinalfalse"¨
+declarationStringñ<mark class="modifier"> </mark>Iterator<String> <mark class="class-field">it2</mark> = e2.getFields().stream().map(Field::getName).sorted().iterator()*it22z
+java.util.IteratorTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaP P(2Å
+java.lang.StringTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaP P(2ì
++org.jabref.model.entry.BibEntry.getFields()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaP& P(/2–
+horg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?e2@74.20:74.22CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaP# P(%Ú
+
+uorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?fieldComparison@82.20:82.35VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaR R(#"
+typeint"
+isFinalfalse"™
+declarationStringî<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">fieldComparison</mark> = it1.next().compareTo(it2.next())*fieldComparison2k
+intTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaR R(2î
+,java.lang.String.compareTo(java.lang.String)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaR1 R(:2Å
+java.util.Iterator.next()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaR* R(.2Å
+java.util.Iterator.next()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaR? R(C2—
+iorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?it1@79.29:79.32CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaR& R()2—
+iorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?it2@80.29:80.32CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaR; R(>î
+horg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?e1@74.16:74.18VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaJ J("
+type"
+isFinalfalse"
+declarationString e1*e12TYPEî
+horg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.getBibEntryComparator()?e2@74.20:74.22VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaJ J("
+type"
+isFinalfalse"
+declarationString e2*e22TYPE∑ï
+ƒorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)METHOD^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\ \(."
+isFinalfalse"ç
+declarationString˜<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">collectEntriesIntoMaps</mark>(List&lt;BibEntry&gt; entries<mark class="modifier"><mark class="modifier">,</mark></mark> Map&lt;EntryType<mark class="modifier"><mark class="modifier">,</mark></mark> Set&lt;Field&gt;&gt; entryTypeToFieldsInAnyEntryMap<mark class="modifier"><mark class="modifier">,</mark></mark> Map&lt;EntryType<mark class="modifier"><mark class="modifier">,</mark></mark> Set&lt;Field&gt;&gt; entryTypeToFieldsInAllEntriesMap<mark class="modifier"><mark class="modifier">,</mark></mark> Map&lt;EntryType<mark class="modifier"><mark class="modifier">,</mark></mark> Set&lt;BibEntry&gt;&gt; entryTypeToEntriesMap)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typevoid*collectEntriesIntoMaps2™
+Bjava.lang.Iterable.forEach(java.util.function.Consumer<? super T>)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java] ](2ë
+)org.jabref.model.entry.BibEntry.getType()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java^( ^(/2Ω
+Ujava.util.Map.computeIfAbsent(K, java.util.function.Function<? super K, ? extends V>)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java`I `(X2ì
++org.jabref.model.entry.BibEntry.getFields()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaa* a(32Ω
+Ujava.util.Map.computeIfAbsent(K, java.util.function.Function<? super K, ? extends V>)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javacM c(\2ï
++org.jabref.model.entry.BibEntry.getFields()CALL`
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javacÅ c(ä2ì
++org.jabref.model.entry.BibEntry.getFields()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javad/ d(82Ω
+Ujava.util.Map.computeIfAbsent(K, java.util.function.Function<? super K, ? extends V>)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaf@ f(O2|
+java.util.Set.add(E)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javag g(2É
+java.util.HashSet.HashSet()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java`m `(v2É
+java.util.HashSet.HashSet()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javafd f(m2µ
+Ãorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)!entriesCALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java] ](2ø
+÷org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entry@93.24:93.29CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java^" ^('2Ã
+„org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)!entryTypeToFieldsInAnyEntryMapCALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java`* `(H2√
+⁄org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entryType@94.22:94.31CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java`Y `(b2 
+·org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?fieldsInAnyEntry@96.23:96.39CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaa a(2ø
+÷org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entry@93.24:93.29CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaa$ a()2Œ
+Âorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)!entryTypeToFieldsInAllEntriesMapCALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javac, c(L2√
+⁄org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entryType@94.22:94.31CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javac] c(f2¿
+÷org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entry@93.24:93.29CALL_
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javac{ c(Ä2Ã
+„org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?fieldsInAllEntries@99.23:99.41CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javad d(2ø
+÷org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entry@93.24:93.29CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javad) d(.2√
+⁄org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)!entryTypeToEntriesMapCALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaf* f(?2√
+⁄org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entryType@94.22:94.31CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javafP f(Y2…
+‡org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entriesOfType@102.26:102.39CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javag g(2ø
+÷org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entry@93.24:93.29CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javag g(#2∫
+Ãorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)!entries	PARAMETER^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\> \(E2“
+„org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)!entryTypeToFieldsInAnyEntryMap	PARAMETER_
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\b \(Ä2’
+Âorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)!entryTypeToFieldsInAllEntriesMap	PARAMETER`
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\ù \(Ω2 
+⁄org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)!entryTypeToEntriesMap	PARAMETER`
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\› \(Ú2 
+⁄org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entryType@94.22:94.31DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java^ ^(2—
+·org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?fieldsInAnyEntry@96.23:96.39DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java` `('2”
+„org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?fieldsInAllEntries@99.23:99.41DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javac c()2–
+‡org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entriesOfType@102.26:102.39DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaf f('2∆
+÷org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entry@93.24:93.29DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java] ](2ƒ
+‘org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?k@96.100:96.101DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java`d `(e2ƒ
+‘org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?k@99.104:99.105DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javach c(i2ƒ
+‘org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?k@102.91:102.92DECLARATION^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaf[ f(\2s
+voidRETURN_TYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\ \(⁄
+⁄org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entryType@94.22:94.31VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java^ ^("
+type	EntryType"
+isFinalfalse"z
+declarationStringe<mark class="modifier"> </mark>EntryType <mark class="class-field">entryType</mark> = entry.getType()*	entryType2é
+&org.jabref.model.entry.types.EntryTypeTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java^ ^(2ë
+)org.jabref.model.entry.BibEntry.getType()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java^( ^(/2ø
+÷org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entry@93.24:93.29CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java^" ^('¥
+·org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?fieldsInAnyEntry@96.23:96.39VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java` `('"
+type
+Set<Field>"
+isFinalfalse"√
+declarationString≠<mark class="modifier"> </mark>Set<Field> <mark class="class-field">fieldsInAnyEntry</mark> = entryTypeToFieldsInAnyEntryMap.computeIfAbsent(entryType, k -> new HashSet<>())*fieldsInAnyEntry2u
+java.util.SetTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java` `(2ì
+"org.jabref.model.entry.field.FieldTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java` `(2Ω
+Ujava.util.Map.computeIfAbsent(K, java.util.function.Function<? super K, ? extends V>)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java`I `(X2É
+java.util.HashSet.HashSet()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java`m `(v2Ã
+„org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)!entryTypeToFieldsInAnyEntryMapCALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java`* `(H2√
+⁄org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entryType@94.22:94.31CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java`Y `(b§
+„org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?fieldsInAllEntries@99.23:99.41VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javac c()"
+type
+Set<Field>"
+isFinalfalse"ÿ
+declarationString¬<mark class="modifier"> </mark>Set<Field> <mark class="class-field">fieldsInAllEntries</mark> = entryTypeToFieldsInAllEntriesMap.computeIfAbsent(entryType, k -> new HashSet<>(entry.getFields()))*fieldsInAllEntries2u
+java.util.SetTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javac c(2ì
+"org.jabref.model.entry.field.FieldTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javac c(2Ω
+Ujava.util.Map.computeIfAbsent(K, java.util.function.Function<? super K, ? extends V>)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javacM c(\2ï
++org.jabref.model.entry.BibEntry.getFields()CALL`
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javacÅ c(ä2Œ
+Âorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)!entryTypeToFieldsInAllEntriesMapCALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javac, c(L2√
+⁄org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entryType@94.22:94.31CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javac] c(f2¿
+÷org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entry@93.24:93.29CALL_
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javac{ c(Äû
+‡org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entriesOfType@102.26:102.39VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaf f('"
+typeSet<BibEntry>"
+isFinalfalse"∫
+declarationString§<mark class="modifier"> </mark>Set<BibEntry> <mark class="class-field">entriesOfType</mark> = entryTypeToEntriesMap.computeIfAbsent(entryType, k -> new HashSet<>())*entriesOfType2u
+java.util.SetTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaf f(2ê
+org.jabref.model.entry.BibEntryTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaf f(2Ω
+Ujava.util.Map.computeIfAbsent(K, java.util.function.Function<? super K, ? extends V>)CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaf@ f(O2É
+java.util.HashSet.HashSet()CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javafd f(m2√
+⁄org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)!entryTypeToEntriesMapCALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaf* f(?2√
+⁄org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entryType@94.22:94.31CALL^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javafP f(Y•
+Ãorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)!entries	PARAMETER^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\> \(E"
+typeList<BibEntry>"
+isFinalfalse"+
+declarationStringList<BibEntry> entries*entries2v
+java.util.ListTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\/ \(32ê
+org.jabref.model.entry.BibEntryTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\4 \(<ü
+
+„org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)!entryTypeToFieldsInAnyEntryMap	PARAMETER_
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\b \(Ä""
+typeMap<EntryType, Set<Field>>"
+isFinalfalse"N
+declarationString9Map<EntryType, Set<Field>> entryTypeToFieldsInAnyEntryMap*entryTypeToFieldsInAnyEntryMap2u
+java.util.MapTYPE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\G \(J2ó
+&org.jabref.model.entry.types.EntryTypeTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\K \(T2~
+java.util.SetTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\V \(Y2ì
+"org.jabref.model.entry.field.FieldTYPE_ARGUMENT^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\Z \(_Ø
+
+Âorg.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)!entryTypeToFieldsInAllEntriesMap	PARAMETER`
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\ù \(Ω""
+typeMap<EntryType, Set<Field>>"
+isFinalfalse"P
+declarationString;Map<EntryType, Set<Field>> entryTypeToFieldsInAllEntriesMap* entryTypeToFieldsInAllEntriesMap2w
+java.util.MapTYPE`
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\Ç \(Ö2ô
+&org.jabref.model.entry.types.EntryTypeTYPE_ARGUMENT`
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\Ü \(è2Ä
+java.util.SetTYPE_ARGUMENT`
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\ë \(î2ï
+"org.jabref.model.entry.field.FieldTYPE_ARGUMENT`
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\ï \(öë
+
+⁄org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)!entryTypeToEntriesMap	PARAMETER`
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\› \(Ú"%
+typeMap<EntryType, Set<BibEntry>>"
+isFinalfalse"H
+declarationString3Map<EntryType, Set<BibEntry>> entryTypeToEntriesMap*entryTypeToEntriesMap2w
+java.util.MapTYPE`
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\ø \(¬2ô
+&org.jabref.model.entry.types.EntryTypeTYPE_ARGUMENT`
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\√ \(Ã2Ä
+java.util.SetTYPE_ARGUMENT`
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\Œ \(—2í
+org.jabref.model.entry.BibEntryTYPE_ARGUMENT`
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java\“ \(⁄â
+÷org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?entry@93.24:93.29VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java] ]("
+type"
+isFinalfalse"
+declarationString entry*entry2TYPEˇ
+‘org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?k@96.100:96.101VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.java`d `(e"
+type"
+isFinalfalse"
+declarationString k*k2TYPEˇ
+‘org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?k@99.104:99.105VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javach c(i"
+type"
+isFinalfalse"
+declarationString k*k2TYPEˇ
+‘org.jabref.logic.quality.consistency.BibliographyConsistencyCheck.collectEntriesIntoMaps(java.util.List<org.jabref.model.entry.BibEntry>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.field.Field>>, java.util.Map<org.jabref.model.entry.types.EntryType, java.util.Set<org.jabref.model.entry.BibEntry>>)?k@102.91:102.92VARIABLE^
+Tsrc\main\java\org\jabref\logic\quality\consistency\BibliographyConsistencyCheck.javaf[ f(\"
+type"
+isFinalfalse"
+declarationString k*k2TYPE

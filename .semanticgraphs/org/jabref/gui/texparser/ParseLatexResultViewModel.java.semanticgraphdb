@@ -1,0 +1,361 @@
+
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaÈ
+2org.jabref.gui.texparser.ParseLatexResultViewModelCLASSO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java (&"#
+packageorg.jabref.gui.texparser"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"∞
+declarationStringö<mark class="modifier">public </mark><mark class="modifier">class </mark>ParseLatexResultViewModel<mark class="modifier"> extends </mark>AbstractViewModel"
+accesspublic*ParseLatexResultViewModel2ï
+¥org.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java! !($2•
+Eorg.jabref.gui.texparser.ParseLatexResultViewModel.getReferenceList()DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java0. 0(>2Ø
+Oorg.jabref.gui.texparser.ParseLatexResultViewModel.getCitationListByReference()DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java4$ 4(>2±
+Qorg.jabref.gui.texparser.ParseLatexResultViewModel.importButtonDisabledProperty()DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java8 8(72÷
+vorg.jabref.gui.texparser.ParseLatexResultViewModel.activeReferenceChanged(org.jabref.gui.texparser.ReferenceViewModel)DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java? ?(&2®
+Horg.jabref.gui.texparser.ParseLatexResultViewModel.importButtonClicked()DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaJ J(#2≠
+Morg.jabref.gui.texparser.ParseLatexResultViewModel?resolverResult@27.48:27.62DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java0 (>2Æ
+Norg.jabref.gui.texparser.ParseLatexResultViewModel?databaseContext@28.37:28.52DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java% (42¨
+Lorg.jabref.gui.texparser.ParseLatexResultViewModel?referenceList@29.53:29.66DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java5 (B2´
+Korg.jabref.gui.texparser.ParseLatexResultViewModel?citationList@30.43:30.55DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java+ (72≥
+Sorg.jabref.gui.texparser.ParseLatexResultViewModel?importButtonDisabled@31.34:31.54DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java" (62{
+ org.jabref.gui.AbstractViewModelEXTENDO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java/ (@±A
+¥org.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)CONSTRUCTORO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java! !($"˛
+declarationStringË<mark class="modifier">public </mark><mark class="method">ParseLatexResultViewModel</mark>(LatexBibEntriesResolverResult resolverResult<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseContext databaseContext)*ParseLatexResultViewModel2¶
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLP
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'{ '(Ç2©
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'K '(N2v
+java.util.Collection.stream()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'B '(H2°
+Horg.jabref.model.texparser.LatexBibEntriesResolverResult.getNewEntries()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'2 '(?2u
+java.util.Optional.orElse(T)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'o '(u2â
+0org.jabref.model.entry.BibEntry.getCitationKey()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'^ '(l2~
+#java.util.stream.Collectors.toSet()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'é '(ì2†
+Gorg.jabref.model.texparser.LatexBibEntriesResolverResult.getCitations()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java(L ((X2u
+java.util.Map.Entry.getKey()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java) )(%2Å
+(java.util.Set.contains(java.lang.Object)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java*G *(O2w
+java.util.Map.Entry.getValue()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java*\ *(d2Ó
+îorg.jabref.gui.texparser.ReferenceViewModel.ReferenceViewModel(java.lang.String, boolean, java.util.Collection<org.jabref.model.texparser.Citation>)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java*" *(42ù
+√org.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)!resolverResultCALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java" "(,2û
+ƒorg.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)!databaseContextCALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java# #(.2ù
+√org.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)!resolverResultCALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'# '(12†
+∆org.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)?entry@39.79:39.84CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'X '(]2ù
+√org.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)!resolverResultCALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java(= ((K2†
+∆org.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)?entry@40.53:40.58CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java) )(2•
+Lorg.jabref.gui.texparser.ParseLatexResultViewModel?referenceList@29.53:29.66CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java* *(2û
+ƒorg.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)?key@41.19:41.22CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java*5 *(82ß
+Õorg.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)?newEntryKeys@39.20:39.32CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java*: *(F2û
+ƒorg.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)?key@41.19:41.22CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java*P *(S2†
+∆org.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)?entry@40.53:40.58CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java*V *([2•
+Lorg.jabref.gui.texparser.ParseLatexResultViewModel?referenceList@29.53:29.66CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java-> -(K2¶
+Morg.jabref.gui.texparser.ParseLatexResultViewModel?resolverResult@27.48:27.62CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java" "(2ß
+Norg.jabref.gui.texparser.ParseLatexResultViewModel?databaseContext@28.37:28.52CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java# #(2•
+Lorg.jabref.gui.texparser.ParseLatexResultViewModel?referenceList@29.53:29.66CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java$ $(2§
+Korg.jabref.gui.texparser.ParseLatexResultViewModel?citationList@30.43:30.55CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java% %(2¨
+Sorg.jabref.gui.texparser.ParseLatexResultViewModel?importButtonDisabled@31.34:31.54CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java- -(!2¢
+√org.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)!resolverResult	PARAMETERO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java!C !(Q2£
+ƒorg.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)!databaseContext	PARAMETERO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java!f !(u2Æ
+Õorg.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)?newEntryKeys@39.20:39.32DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java' '( 2ß
+∆org.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)?entry@40.53:40.58DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java(5 ((:2•
+ƒorg.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)?key@41.19:41.22DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java) )(2ß
+∆org.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)?entry@39.79:39.84DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'O '(T2í
+2org.jabref.gui.texparser.ParseLatexResultViewModelRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java! !($⁄
+Õorg.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)?newEntryKeys@39.20:39.32VARIABLEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java' '( "
+typeSet<String>"
+isFinalfalse"‰
+declarationStringŒ<mark class="modifier"> </mark>Set<String> <mark class="class-field">newEntryKeys</mark> = resolverResult.getNewEntries().stream().map(entry -> entry.getCitationKey().orElse("")).collect(Collectors.toSet())*newEntryKeys2f
+java.util.SetTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java' '(2r
+java.lang.StringTYPE_ARGUMENTO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java' '(2¶
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLP
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'{ '(Ç2©
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'K '(N2v
+java.util.Collection.stream()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'B '(H2°
+Horg.jabref.model.texparser.LatexBibEntriesResolverResult.getNewEntries()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'2 '(?2u
+java.util.Optional.orElse(T)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'o '(u2â
+0org.jabref.model.entry.BibEntry.getCitationKey()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'^ '(l2~
+#java.util.stream.Collectors.toSet()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'é '(ì2ù
+√org.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)!resolverResultCALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'# '(12†
+∆org.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)?entry@39.79:39.84CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'X '(]’
+∆org.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)?entry@40.53:40.58VARIABLEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java(5 ((:"/
+type'Map.Entry<String, Collection<Citation>>"
+isFinalfalse"Ç
+declarationStringm<mark class="modifier"> </mark>Map.Entry<String, Collection<Citation>> <mark class="class-field">entry</mark>*entry2l
+java.util.Map.EntryTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java( ((2r
+java.lang.StringTYPE_ARGUMENTO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java( ((2v
+java.util.CollectionTYPE_ARGUMENTO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java( ((2Ö
+#org.jabref.model.texparser.CitationTYPE_ARGUMENTO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java( (()¿
+ƒorg.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)?key@41.19:41.22VARIABLEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java) )("
+typeString"
+isFinalfalse"p
+declarationString[<mark class="modifier"> </mark>String <mark class="class-field">key</mark> = entry.getKey()*key2i
+java.lang.StringTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java) )(2u
+java.util.Map.Entry.getKey()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java) )(%2†
+∆org.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)?entry@40.53:40.58CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java) )(¬
+√org.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)!resolverResult	PARAMETERO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java!C !(Q"%
+typeLatexBibEntriesResolverResult"
+isFinalfalse"A
+declarationString,LatexBibEntriesResolverResult resolverResult*resolverResult2ë
+8org.jabref.model.texparser.LatexBibEntriesResolverResultTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java!% !(B£
+ƒorg.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)!databaseContext	PARAMETERO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java!f !(u"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2Ö
+,org.jabref.model.database.BibDatabaseContextTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java!S !(eÍ
+∆org.jabref.gui.texparser.ParseLatexResultViewModel.ParseLatexResultViewModel(org.jabref.model.texparser.LatexBibEntriesResolverResult, org.jabref.model.database.BibDatabaseContext)?entry@39.79:39.84VARIABLEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java'O '(T"
+type"
+isFinalfalse"
+declarationString entry*entry2TYPEÅ
+Eorg.jabref.gui.texparser.ParseLatexResultViewModel.getReferenceList()METHODO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java0. 0(>"
+isFinalfalse"ë
+declarationString|<mark class="modifier">public </mark>ObservableList&lt;ReferenceViewModel&gt; <mark class="method">getReferenceList</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"*
+type"ObservableList<ReferenceViewModel>*getReferenceList2•
+Lorg.jabref.gui.texparser.ParseLatexResultViewModel?referenceList@29.53:29.66CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java1) 1(62Å
+!javafx.collections.ObservableListRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java0 0(2î
++org.jabref.gui.texparser.ReferenceViewModelRETURN_TYPE_ARGUMENTO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java0 0(,Ç
+Oorg.jabref.gui.texparser.ParseLatexResultViewModel.getCitationListByReference()METHODO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java4$ 4(>"
+isFinalfalse"ë
+declarationString|<mark class="modifier">public </mark>ObservableList&lt;Citation&gt; <mark class="method">getCitationListByReference</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse" 
+typeObservableList<Citation>*getCitationListByReference2§
+Korg.jabref.gui.texparser.ParseLatexResultViewModel?citationList@30.43:30.55CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java5) 5(52Å
+!javafx.collections.ObservableListRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java4 4(2å
+#org.jabref.model.texparser.CitationRETURN_TYPE_ARGUMENTO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java4 4("Ì
+Qorg.jabref.gui.texparser.ParseLatexResultViewModel.importButtonDisabledProperty()METHODO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java8 8(7"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier">public </mark>BooleanProperty <mark class="method">importButtonDisabledProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeBooleanProperty*importButtonDisabledProperty2¨
+Sorg.jabref.gui.texparser.ParseLatexResultViewModel?importButtonDisabled@31.34:31.54CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java9 9(#2Ö
+%javafx.beans.property.BooleanPropertyRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java8 8(›
+vorg.jabref.gui.texparser.ParseLatexResultViewModel.activeReferenceChanged(org.jabref.gui.texparser.ReferenceViewModel)METHODO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java? ?(&"
+isFinalfalse"Æ
+declarationStringò<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">activeReferenceChanged</mark>(ReferenceViewModel reference)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*activeReferenceChanged2ñ
+=org.jabref.gui.texparser.ReferenceViewModel.getCitationList()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaC* C(92⁄
+Äorg.jabref.gui.texparser.ParseLatexResultViewModel.activeReferenceChanged(org.jabref.gui.texparser.ReferenceViewModel)!referenceCALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java@ @(2§
+Korg.jabref.gui.texparser.ParseLatexResultViewModel?citationList@30.43:30.55CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaA A(2§
+Korg.jabref.gui.texparser.ParseLatexResultViewModel?citationList@30.43:30.55CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaC C(2⁄
+Äorg.jabref.gui.texparser.ParseLatexResultViewModel.activeReferenceChanged(org.jabref.gui.texparser.ReferenceViewModel)!referenceCALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaC  C()2ﬂ
+Äorg.jabref.gui.texparser.ParseLatexResultViewModel.activeReferenceChanged(org.jabref.gui.texparser.ReferenceViewModel)!reference	PARAMETERO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java?: ?(C2d
+voidRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java? ?(“
+Äorg.jabref.gui.texparser.ParseLatexResultViewModel.activeReferenceChanged(org.jabref.gui.texparser.ReferenceViewModel)!reference	PARAMETERO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java?: ?(C"
+typeReferenceViewModel"
+isFinalfalse"1
+declarationStringReferenceViewModel reference*	reference2Ñ
++org.jabref.gui.texparser.ReferenceViewModelTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java?' ?(9È
+Horg.jabref.gui.texparser.ParseLatexResultViewModel.importButtonClicked()METHODO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaJ J(#"
+isFinalfalse"é
+declarationStringy<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">importButtonClicked</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*importButtonClicked2î
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaL] L(a2£
+Horg.jabref.model.texparser.LatexBibEntriesResolverResult.getNewEntries()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaLà L(ï2ß
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaM% M()2≠
+Torg.jabref.gui.DialogService.showCustomDialogAndWait(javafx.scene.control.Dialog<R>)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaN N(-2√
+jorg.jabref.logic.importer.ParserResult.ParserResult(java.util.Collection<org.jabref.model.entry.BibEntry>)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaLl L(x2ß
+Norg.jabref.gui.texparser.ParseLatexResultViewModel?databaseContext@28.37:28.52CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaL= L(L2ß
+Morg.jabref.gui.texparser.ParseLatexResultViewModel?resolverResult@27.48:27.62CALLP
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaLy L(á2¥
+[org.jabref.gui.texparser.ParseLatexResultViewModel.importButtonClicked()?dialog@76.28:76.34CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaM M(2ª
+borg.jabref.gui.texparser.ParseLatexResultViewModel.importButtonClicked()?dialogService@75.22:75.35CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaN N(2¥
+[org.jabref.gui.texparser.ParseLatexResultViewModel.importButtonClicked()?dialog@76.28:76.34CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaN. N(42¬
+borg.jabref.gui.texparser.ParseLatexResultViewModel.importButtonClicked()?dialogService@75.22:75.35DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaK K(#2ª
+[org.jabref.gui.texparser.ParseLatexResultViewModel.importButtonClicked()?dialog@76.28:76.34DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaL L("2d
+voidRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaJ J(ú
+borg.jabref.gui.texparser.ParseLatexResultViewModel.importButtonClicked()?dialogService@75.22:75.35VARIABLEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaK K(#"
+typeDialogService"
+isFinalfalse"´
+declarationStringï<mark class="modifier"> </mark>DialogService <mark class="class-field">dialogService</mark> = Injector.instantiateModelOrService(DialogService.class)*dialogService2u
+org.jabref.gui.DialogServiceTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaK K(∏
+[org.jabref.gui.texparser.ParseLatexResultViewModel.importButtonClicked()?dialog@76.28:76.34VARIABLEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaL L(""
+typeImportEntriesDialog"
+isFinalfalse"Ë
+declarationString“<mark class="modifier"> </mark>ImportEntriesDialog <mark class="class-field">dialog</mark> = new ImportEntriesDialog(databaseContext, BackgroundTask.wrap(() -> new ParserResult(resolverResult.getNewEntries())))*dialog2Ñ
++org.jabref.gui.importer.ImportEntriesDialogTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaL L(2î
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaL] L(a2£
+Horg.jabref.model.texparser.LatexBibEntriesResolverResult.getNewEntries()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaLà L(ï2√
+jorg.jabref.logic.importer.ParserResult.ParserResult(java.util.Collection<org.jabref.model.entry.BibEntry>)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaLl L(x2ß
+Norg.jabref.gui.texparser.ParseLatexResultViewModel?databaseContext@28.37:28.52CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaL= L(L2ß
+Morg.jabref.gui.texparser.ParseLatexResultViewModel?resolverResult@27.48:27.62CALLP
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.javaLy L(áŸ
+Morg.jabref.gui.texparser.ParseLatexResultViewModel?resolverResult@27.48:27.62VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java0 (>"
+isFinaltrue"%
+typeLatexBibEntriesResolverResult"≠
+declarationStringó<mark class="modifier">private </mark><mark class="modifier">final </mark>LatexBibEntriesResolverResult <mark class="class-field">resolverResult</mark>"
+isStaticfalse"
+accessprivate*resolverResult2ë
+8org.jabref.model.texparser.LatexBibEntriesResolverResultTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java (/∫
+Norg.jabref.gui.texparser.ParseLatexResultViewModel?databaseContext@28.37:28.52VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java% (4"
+isFinaltrue"
+typeBibDatabaseContext"£
+declarationStringç<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">databaseContext</mark>"
+isStaticfalse"
+accessprivate*databaseContext2Ö
+,org.jabref.model.database.BibDatabaseContextTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java ($ÿ
+Lorg.jabref.gui.texparser.ParseLatexResultViewModel?referenceList@29.53:29.66VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java5 (B"
+isFinaltrue"*
+type"ObservableList<ReferenceViewModel>"±
+declarationStringõ<mark class="modifier">private </mark><mark class="modifier">final </mark>ObservableList<ReferenceViewModel> <mark class="class-field">referenceList</mark>"
+isStaticfalse"
+accessprivate*referenceList2z
+!javafx.collections.ObservableListTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java ( 2ç
++org.jabref.gui.texparser.ReferenceViewModelTYPE_ARGUMENTO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java! (3π
+Korg.jabref.gui.texparser.ParseLatexResultViewModel?citationList@30.43:30.55VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java+ (7"
+isFinaltrue" 
+typeObservableList<Citation>"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>ObservableList<Citation> <mark class="class-field">citationList</mark>"
+isStaticfalse"
+accessprivate*citationList2z
+!javafx.collections.ObservableListTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java ( 2Ö
+#org.jabref.model.texparser.CitationTYPE_ARGUMENTO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java! ()ª
+Sorg.jabref.gui.texparser.ParseLatexResultViewModel?importButtonDisabled@31.34:31.54VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java" (6"
+isFinaltrue"
+typeBooleanProperty"•
+declarationStringè<mark class="modifier">private </mark><mark class="modifier">final </mark>BooleanProperty <mark class="class-field">importButtonDisabled</mark>"
+isStaticfalse"
+accessprivate*importButtonDisabled2~
+%javafx.beans.property.BooleanPropertyTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexResultViewModel.java (!

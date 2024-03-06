@@ -1,0 +1,1224 @@
+
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∆*
+$org.jabref.gui.preview.PreviewViewerCLASSA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java/ /("!
+packageorg.jabref.gui.preview"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"ﬁ
+declarationString»<mark class="modifier">public </mark><mark class="modifier">class </mark>PreviewViewer<mark class="modifier"> extends </mark>ScrollPane<mark class="modifier"><br>implements </mark>InvalidationListener"
+accesspublic*PreviewViewer2‡
+ãorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaì ì(2ë
+=org.jabref.gui.preview.PreviewViewer.highlightSearchPattern()DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java   ('2ß
+Sorg.jabref.gui.preview.PreviewViewer.createJavaScriptRegex(java.util.regex.Pattern)DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java⁄ ⁄(/2™
+Vorg.jabref.gui.preview.PreviewViewer.setLayout(org.jabref.logic.preview.PreviewLayout)DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java‚ ‚(2¢
+Norg.jabref.gui.preview.PreviewViewer.setEntry(org.jabref.model.entry.BibEntry)DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÎ Î(2Å
+-org.jabref.gui.preview.PreviewViewer.update()DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java¸ ¸(2ô
+Eorg.jabref.gui.preview.PreviewViewer.setPreviewText(java.lang.String)DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaô ô(2Ä
+,org.jabref.gui.preview.PreviewViewer.print()DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java® ®(2ë
+=org.jabref.gui.preview.PreviewViewer.copyPreviewToClipBoard()DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaπ π(&2ì
+?org.jabref.gui.preview.PreviewViewer.copySelectionToClipBoard()DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java√ √((2ù
+Iorg.jabref.gui.preview.PreviewViewer.invalidated(javafx.beans.Observable)DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÃ Ã(2í
+>org.jabref.gui.preview.PreviewViewer.getSelectionTextContent()DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java– –()2í
+>org.jabref.gui.preview.PreviewViewer.getSelectionHtmlContent()DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java‘ ‘()2â
+7org.jabref.gui.preview.PreviewViewer?LOGGER@49.32:49.38DECLARATIONA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java1  1(&2ü
+Morg.jabref.gui.preview.PreviewViewer?JS_GET_SELECTION_HTML_SCRIPT@52.32:52.60DECLARATIONA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java4  4(<2ò
+Forg.jabref.gui.preview.PreviewViewer?JS_HIGHLIGHT_FUNCTION@73.32:73.53DECLARATIONA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaI  I(52ù
+Korg.jabref.gui.preview.PreviewViewer?JS_MARK_REG_EXP_CALLBACK@109.32:109.56DECLARATIONA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javam  m(82ú
+Jorg.jabref.gui.preview.PreviewViewer?JS_UNMARK_WITH_CALLBACK@116.32:116.55DECLARATIONA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javat  t(72ú
+Jorg.jabref.gui.preview.PreviewViewer?UNESCAPED_FORWARD_SLASH@120.33:120.56DECLARATIONA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javax! x(82ï
+Corg.jabref.gui.preview.PreviewViewer?clipBoardManager@122.35:122.51DECLARATIONA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaz# z(32í
+@org.jabref.gui.preview.PreviewViewer?dialogService@123.32:123.45DECLARATIONA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java{  {(-2ó
+Eorg.jabref.gui.preview.PreviewViewer?preferencesService@124.37:124.55DECLARATIONA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java|% |(72ë
+?org.jabref.gui.preview.PreviewViewer?taskExecutor@126.31:126.43DECLARATIONA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java~ ~(+2ê
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37DECLARATIONA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java (%2ç
+9org.jabref.gui.preview.PreviewViewer?layout@128.26:128.32DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÄ Ä( 2å
+8org.jabref.gui.preview.PreviewViewer?entry@133.31:133.36DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÖ Ö($2ù
+Iorg.jabref.gui.preview.PreviewViewer?searchHighlightPattern@134.30:134.52DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÜ Ü(42è
+;org.jabref.gui.preview.PreviewViewer?database@136.37:136.45DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaà% à(-2ë
+=org.jabref.gui.preview.PreviewViewer?registered@137.20:137.30DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaâ â(2è
+;org.jabref.gui.preview.PreviewViewer?listener@139.56:139.64DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaã8 ã(@2n
+!javafx.beans.InvalidationListenerEXTENDA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java/9 /(M2l
+javafx.scene.control.ScrollPaneEXTENDA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java/# /(-…ô
+ãorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)CONSTRUCTORC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaì ì("¬
+declarationString¨<mark class="modifier">public </mark><mark class="method">PreviewViewer</mark>(BibDatabaseContext database<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferencesService<mark class="modifier"><mark class="modifier">,</mark></mark> StateManager stateManager<mark class="modifier"><mark class="modifier">,</mark></mark> ThemeManager themeManager<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor)*PreviewViewer2p
+#java.util.Objects.requireNonNull(T)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaô  ô(.2y
+,org.jabref.gui.Globals.getClipboardManager()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaú( ú(;2u
+(org.jabref.logic.util.WebViewStore.get()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java°# °(&2Ñ
+7org.jabref.gui.StateManager.activeSearchQueryProperty()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java´ ´(62ä
+=org.jabref.gui.preview.PreviewViewer.highlightSearchPattern()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÆ Æ("2ã
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaªO ª(a2‚
+îorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!databaseCALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaô/ ô(72Á
+ôorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!dialogServiceCALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaö ö(*2Ï
+ûorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!preferencesServiceCALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaõ" õ(42Ê
+òorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!taskExecutorCALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaù ù((2ã
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java° °(2ã
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java¢ ¢(2ã
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java£ £(2ã
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java• •(2Ò
+£org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?newValue@165.99:165.107CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaß ß(2ä
+=org.jabref.gui.preview.PreviewViewer?registered@137.20:137.30CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java™ ™(2Ê
+òorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!stateManagerCALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java´ ´(2à
+;org.jabref.gui.preview.PreviewViewer?listener@139.56:139.64CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java´E ´(M2ä
+=org.jabref.gui.preview.PreviewViewer?registered@137.20:137.30CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java¨ ¨(2ã
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java±" ±(-2È
+õorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?i@178.21:178.22CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≤ ≤(2Ú
+§org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?anchorList@177.21:177.31CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≤  ≤(*2È
+õorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?i@178.21:178.22CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≤8 ≤(92Ú
+§org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?anchorList@177.21:177.31CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≥ ≥(&2È
+õorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?i@178.21:178.22CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≥, ≥(-2Ï
+ûorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?node@179.21:179.25CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java¥8 ¥(<2Û
+•org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?eventTarget@180.28:180.39CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaµ µ(2Î
+ùorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?evt@181.54:181.57CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∂) ∂(,2Ó
+†org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?target@182.32:182.38CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∑J ∑(P2ı
+ßorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?anchorElement@183.38:183.51CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∏" ∏(/2Ï
+ûorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?href@184.27:184.31CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaπ π(2Ï
+ûorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?href@184.27:184.31CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaª6 ª(:2Ï
+ûorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!preferencesServiceCALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaª< ª(N2Ñ
+7org.jabref.gui.preview.PreviewViewer?LOGGER@49.32:49.38CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaΩ Ω("2Ò
+£org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?exception@188.55:188.64CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaΩ8 Ω(A2Ñ
+7org.jabref.gui.preview.PreviewViewer?LOGGER@49.32:49.38CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaø ø("2Ò
+£org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?exception@190.45:190.54CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaø> ø(G2Î
+ùorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?evt@181.54:181.57CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java¬ ¬(2Ê
+òorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!themeManagerCALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java« «(2ã
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java«  «(+2à
+;org.jabref.gui.preview.PreviewViewer?database@136.37:136.45CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaô ô(2ç
+@org.jabref.gui.preview.PreviewViewer?dialogService@123.32:123.45CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaö ö(2í
+Eorg.jabref.gui.preview.PreviewViewer?preferencesService@124.37:124.55CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaõ õ(2ê
+Corg.jabref.gui.preview.PreviewViewer?clipBoardManager@122.35:122.51CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaú ú(2å
+?org.jabref.gui.preview.PreviewViewer?taskExecutor@126.31:126.43CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaù ù(2Á
+îorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!database	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaì, ì(42Ï
+ôorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaî' î(42Ò
+ûorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!preferencesService	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaï, ï(>2Î
+òorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!stateManager	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javañ& ñ(22Î
+òorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!themeManager	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaó& ó(22Î
+òorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaò& ò(22˘
+§org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?anchorList@177.21:177.31DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java± ±(2
+õorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?i@178.21:178.22DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≤ ≤(2Û
+ûorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?node@179.21:179.25DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≥ ≥(2˙
+•org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?eventTarget@180.28:180.39DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java¥ ¥('2ı
+†org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?target@182.32:182.38DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∂  ∂(&2¸
+ßorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?anchorElement@183.38:183.51DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∑& ∑(32Û
+ûorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?href@184.27:184.31DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∏ ∏(2˘
+§org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?observable@165.77:165.87DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java•M •(W2˜
+¢org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?oldValue@165.89:165.97DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java•Y •(a2¯
+£org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?newValue@165.99:165.107DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java•c •(k2Ú
+ùorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?evt@181.54:181.57DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaµ6 µ(92¯
+£org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?exception@188.55:188.64DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaº7 º(@2¯
+£org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?exception@190.45:190.54DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaæ- æ(62x
+$org.jabref.gui.preview.PreviewViewerRETURN_TYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaì ì(≈
+§org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?anchorList@177.21:177.31VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java± ±("
+typeNodeList"
+isFinalfalse"´
+declarationStringï<mark class="modifier"> </mark>NodeList <mark class="class-field">anchorList</mark> = previewView.getEngine().getDocument().getElementsByTagName("a")*
+anchorList2a
+org.w3c.dom.NodeListTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java± ±(2ã
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java±" ±(-ﬂ
+õorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?i@178.21:178.22VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≤ ≤("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 0*i2P
+intTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≤ ≤(À
+
+ûorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?node@179.21:179.25VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≥ ≥("
+typeNode"
+isFinalfalse"s
+declarationString^<mark class="modifier"> </mark>Node <mark class="class-field">node</mark> = anchorList.item(i)*node2]
+org.w3c.dom.NodeTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≥ ≥(2Ú
+§org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?anchorList@177.21:177.31CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≥ ≥(&2È
+õorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?i@178.21:178.22CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≥, ≥(-ã
+•org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?eventTarget@180.28:180.39VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java¥ ¥('"
+typeEventTarget"
+isFinalfalse"Å
+declarationStringl<mark class="modifier"> </mark>EventTarget <mark class="class-field">eventTarget</mark> = (EventTarget) node*eventTarget2k
+org.w3c.dom.events.EventTargetTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java¥ ¥(2Ï
+ûorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?node@179.21:179.25CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java¥8 ¥(<ˇ
+†org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?target@182.32:182.38VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∂  ∂(&"
+typeEventTarget"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier"> </mark>EventTarget <mark class="class-field">target</mark> = evt.getCurrentTarget()*target2k
+org.w3c.dom.events.EventTargetTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∂ ∂(2Î
+ùorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?evt@181.54:181.57CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∂) ∂(,´
+ßorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?anchorElement@183.38:183.51VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∑& ∑(3"
+typeHTMLAnchorElement"
+isFinalfalse"ë
+declarationString|<mark class="modifier"> </mark>HTMLAnchorElement <mark class="class-field">anchorElement</mark> = (HTMLAnchorElement) target*anchorElement2o
+"org.w3c.dom.html.HTMLAnchorElementTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∑ ∑(%2Ó
+†org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?target@182.32:182.38CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∑J ∑(PÎ
+ûorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?href@184.27:184.31VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∏ ∏("
+typeString"
+isFinalfalse"z
+declarationStringe<mark class="modifier"> </mark>String <mark class="class-field">href</mark> = anchorElement.getHref()*href2]
+java.lang.StringTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∏ ∏(2ı
+ßorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?anchorElement@183.38:183.51CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∏" ∏(/Ã
+îorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!database	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaì, ì(4"
+typeBibDatabaseContext"
+isFinalfalse"0
+declarationStringBibDatabaseContext database*database2y
+,org.jabref.model.database.BibDatabaseContextTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaì ì(+¡
+ôorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaî' î(4"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2i
+org.jabref.gui.DialogServiceTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaî î(&Á
+ûorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!preferencesService	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaï, ï(>"
+typePreferencesService"
+isFinalfalse":
+declarationString%PreferencesService preferencesService*preferencesService2v
+)org.jabref.preferences.PreferencesServiceTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaï ï(+ª
+òorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!stateManager	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javañ& ñ(2"
+typeStateManager"
+isFinalfalse".
+declarationStringStateManager stateManager*stateManager2h
+org.jabref.gui.StateManagerTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javañ ñ(%¡
+òorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!themeManager	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaó& ó(2"
+typeThemeManager"
+isFinalfalse".
+declarationStringThemeManager themeManager*themeManager2n
+!org.jabref.gui.theme.ThemeManagerTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaó ó(%¿
+òorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaò& ò(2"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2m
+ org.jabref.gui.util.TaskExecutorTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaò ò(%∆
+§org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?observable@165.77:165.87VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java•M •(W"
+type"
+isFinalfalse" 
+declarationString observable*
+observable2TYPE¿
+¢org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?oldValue@165.89:165.97VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java•Y •(a"
+type"
+isFinalfalse"
+declarationString	 oldValue*oldValue2TYPE¡
+£org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?newValue@165.99:165.107VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java•c •(k"
+type"
+isFinalfalse"
+declarationString	 newValue*newValue2TYPE±
+ùorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?evt@181.54:181.57VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaµ6 µ(9"
+type"
+isFinalfalse"
+declarationString evt*evt2TYPE‘
+£org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?exception@188.55:188.64VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaº7 º(@"
+typeMalformedURLException"
+isFinalfalse"4
+declarationStringMalformedURLException exception*	exception2k
+java.net.MalformedURLExceptionTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaº! º(6µ
+£org.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)?exception@190.45:190.54VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaæ- æ(6"
+typeIOException"
+isFinalfalse"*
+declarationStringIOException exception*	exception2`
+java.io.IOExceptionTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaæ! æ(,ú
+=org.jabref.gui.preview.PreviewViewer.highlightSearchPattern()METHODC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java   ('"
+isFinalfalse"í
+declarationString}<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">highlightSearchPattern</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*highlightSearchPattern2k
+java.util.Optional.isPresent()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÃ# Ã(,2†
+Sorg.jabref.gui.preview.PreviewViewer.createJavaScriptRegex(java.util.regex.Pattern)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÕ% Õ(:2e
+java.util.Optional.get()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÕR Õ(U2|
+/java.lang.String.formatted(java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaŒ9 Œ(B2|
+/java.lang.String.formatted(java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java–8 –(A2ñ
+Iorg.jabref.gui.preview.PreviewViewer?searchHighlightPattern@134.30:134.52CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÃ Ã("2ñ
+Iorg.jabref.gui.preview.PreviewViewer?searchHighlightPattern@134.30:134.52CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÕ; Õ(Q2™
+]org.jabref.gui.preview.PreviewViewer.highlightSearchPattern()?callbackForUnmark@203.15:203.32CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaŒ Œ(2ò
+Korg.jabref.gui.preview.PreviewViewer?JS_MARK_REG_EXP_CALLBACK@109.32:109.56CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaŒ  Œ(82®
+[org.jabref.gui.preview.PreviewViewer.highlightSearchPattern()?javaScriptRegex@205.19:205.34CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaŒC Œ(R2ó
+Jorg.jabref.gui.preview.PreviewViewer?JS_UNMARK_WITH_CALLBACK@116.32:116.55CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java–  –(72™
+]org.jabref.gui.preview.PreviewViewer.highlightSearchPattern()?callbackForUnmark@203.15:203.32CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java–B –(S2ã
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java— —(2ß
+Zorg.jabref.gui.preview.PreviewViewer.highlightSearchPattern()?unmarkInstance@208.15:208.29CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java—. —(<2±
+]org.jabref.gui.preview.PreviewViewer.highlightSearchPattern()?callbackForUnmark@203.15:203.32DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÀ À( 2Ø
+[org.jabref.gui.preview.PreviewViewer.highlightSearchPattern()?javaScriptRegex@205.19:205.34DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÕ Õ("2Æ
+Zorg.jabref.gui.preview.PreviewViewer.highlightSearchPattern()?unmarkInstance@208.15:208.29DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java– –(2X
+voidRETURN_TYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java   (∂
+]org.jabref.gui.preview.PreviewViewer.highlightSearchPattern()?callbackForUnmark@203.15:203.32VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÀ À( "
+typeString"
+isFinalfalse"r
+declarationString]<mark class="modifier"> </mark>String <mark class="class-field">callbackForUnmark</mark> = ""*callbackForUnmark2]
+java.lang.StringTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÀ À(Ü
+[org.jabref.gui.preview.PreviewViewer.highlightSearchPattern()?javaScriptRegex@205.19:205.34VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÕ Õ(""
+typeString"
+isFinalfalse"¢
+declarationStringå<mark class="modifier"> </mark>String <mark class="class-field">javaScriptRegex</mark> = createJavaScriptRegex(searchHighlightPattern.get())*javaScriptRegex2]
+java.lang.StringTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÕ Õ(2†
+Sorg.jabref.gui.preview.PreviewViewer.createJavaScriptRegex(java.util.regex.Pattern)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÕ% Õ(:2e
+java.util.Optional.get()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÕR Õ(U2ñ
+Iorg.jabref.gui.preview.PreviewViewer?searchHighlightPattern@134.30:134.52CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÕ; Õ(Q¶
+Zorg.jabref.gui.preview.PreviewViewer.highlightSearchPattern()?unmarkInstance@208.15:208.29VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java– –("
+typeString"
+isFinalfalse"¢
+declarationStringå<mark class="modifier"> </mark>String <mark class="class-field">unmarkInstance</mark> = JS_UNMARK_WITH_CALLBACK.formatted(callbackForUnmark)*unmarkInstance2]
+java.lang.StringTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java– –(2|
+/java.lang.String.formatted(java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java–8 –(A2ó
+Jorg.jabref.gui.preview.PreviewViewer?JS_UNMARK_WITH_CALLBACK@116.32:116.55CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java–  –(72™
+]org.jabref.gui.preview.PreviewViewer.highlightSearchPattern()?callbackForUnmark@203.15:203.32CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java–B –(S˝
+Sorg.jabref.gui.preview.PreviewViewer.createJavaScriptRegex(java.util.regex.Pattern)METHODC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java⁄ ⁄(/"
+isFinalfalse"®
+declarationStringí<mark class="modifier">private </mark><mark class="modifier">static </mark>String <mark class="method">createJavaScriptRegex</mark>(Pattern regex)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeString*createJavaScriptRegex2n
+!java.util.regex.Pattern.pattern()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java€ €(&2Å
+4java.util.regex.Matcher.replaceAll(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaﬁ; ﬁ(E2Ñ
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaﬁ* ﬁ(12¶
+Yorg.jabref.gui.preview.PreviewViewer.createJavaScriptRegex(java.util.regex.Pattern)!regexCALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java€ €(2∂
+iorg.jabref.gui.preview.PreviewViewer.createJavaScriptRegex(java.util.regex.Pattern)?pattern@219.15:219.22CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaﬁ ﬁ(2ó
+Jorg.jabref.gui.preview.PreviewViewer?UNESCAPED_FORWARD_SLASH@120.33:120.56CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaﬁ ﬁ()2∂
+iorg.jabref.gui.preview.PreviewViewer.createJavaScriptRegex(java.util.regex.Pattern)?pattern@219.15:219.22CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaﬁ2 ﬁ(92∂
+iorg.jabref.gui.preview.PreviewViewer.createJavaScriptRegex(java.util.regex.Pattern)?pattern@219.15:219.22CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaﬂ ﬂ(2´
+Yorg.jabref.gui.preview.PreviewViewer.createJavaScriptRegex(java.util.regex.Pattern)!regex	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java⁄8 ⁄(=2Ω
+iorg.jabref.gui.preview.PreviewViewer.createJavaScriptRegex(java.util.regex.Pattern)?pattern@219.15:219.22DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java€ €(2d
+java.lang.StringRETURN_TYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java⁄ ⁄(‘
+iorg.jabref.gui.preview.PreviewViewer.createJavaScriptRegex(java.util.regex.Pattern)?pattern@219.15:219.22VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java€ €("
+typeString"
+isFinalfalse"u
+declarationString`<mark class="modifier"> </mark>String <mark class="class-field">pattern</mark> = regex.pattern()*pattern2]
+java.lang.StringTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java€ €(2n
+!java.util.regex.Pattern.pattern()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java€ €(&2¶
+Yorg.jabref.gui.preview.PreviewViewer.createJavaScriptRegex(java.util.regex.Pattern)!regexCALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java€ €(ﬂ
+Yorg.jabref.gui.preview.PreviewViewer.createJavaScriptRegex(java.util.regex.Pattern)!regex	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java⁄8 ⁄(="
+typePattern"
+isFinalfalse""
+declarationStringPattern regex*regex2d
+java.util.regex.PatternTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java⁄0 ⁄(7ù
+
+Vorg.jabref.gui.preview.PreviewViewer.setLayout(org.jabref.logic.preview.PreviewLayout)METHODC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java‚ ‚("
+isFinalfalse"ú
+declarationStringÜ<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">setLayout</mark>(PreviewLayout newLayout)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*	setLayout2z
+-org.jabref.gui.preview.PreviewViewer.update()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaË Ë(2≠
+`org.jabref.gui.preview.PreviewViewer.setLayout(org.jabref.logic.preview.PreviewLayout)!newLayoutCALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java‰ ‰(2Ü
+9org.jabref.gui.preview.PreviewViewer?layout@128.26:128.32CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÁ Á(2≠
+`org.jabref.gui.preview.PreviewViewer.setLayout(org.jabref.logic.preview.PreviewLayout)!newLayoutCALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÁ Á(2≤
+`org.jabref.gui.preview.PreviewViewer.setLayout(org.jabref.logic.preview.PreviewLayout)!newLayout	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java‚( ‚(12X
+voidRETURN_TYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java‚ ‚(â
+`org.jabref.gui.preview.PreviewViewer.setLayout(org.jabref.logic.preview.PreviewLayout)!newLayout	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java‚( ‚(1"
+typePreviewLayout"
+isFinalfalse",
+declarationStringPreviewLayout newLayout*	newLayout2s
+&org.jabref.logic.preview.PreviewLayoutTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java‚ ‚('Ã
+Norg.jabref.gui.preview.PreviewViewer.setEntry(org.jabref.model.entry.BibEntry)METHODC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÎ Î("
+isFinalfalse"î
+declarationString<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">setEntry</mark>(BibEntry newEntry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*setEntry2ë
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÌ Ì(2}
+0org.jabref.model.entry.BibEntry.getObservables()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÓ2 Ó(@2e
+java.util.Optional.of(T)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÛ Û(2}
+0org.jabref.model.entry.BibEntry.getObservables()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaˆ. ˆ(<2z
+-org.jabref.gui.preview.PreviewViewer.update()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java˘ ˘(2Ö
+8org.jabref.gui.preview.PreviewViewer?entry@133.31:133.36CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÌ Ì(2≤
+eorg.jabref.gui.preview.PreviewViewer.setEntry(org.jabref.model.entry.BibEntry)?oldEntry@237.24:237.32CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÓ) Ó(12¥
+gorg.jabref.gui.preview.PreviewViewer.setEntry(org.jabref.model.entry.BibEntry)?observable@238.28:238.38CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÔ Ô(2Ö
+8org.jabref.gui.preview.PreviewViewer?entry@133.31:133.36CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÛ Û(2§
+Worg.jabref.gui.preview.PreviewViewer.setEntry(org.jabref.model.entry.BibEntry)!newEntryCALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÛ Û($2§
+Worg.jabref.gui.preview.PreviewViewer.setEntry(org.jabref.model.entry.BibEntry)!newEntryCALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaˆ% ˆ(-2¥
+gorg.jabref.gui.preview.PreviewViewer.setEntry(org.jabref.model.entry.BibEntry)?observable@246.24:246.34CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java˜ ˜(2©
+Worg.jabref.gui.preview.PreviewViewer.setEntry(org.jabref.model.entry.BibEntry)!newEntry	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÎ" Î(*2ª
+gorg.jabref.gui.preview.PreviewViewer.setEntry(org.jabref.model.entry.BibEntry)?observable@238.28:238.38DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÓ Ó(&2ª
+gorg.jabref.gui.preview.PreviewViewer.setEntry(org.jabref.model.entry.BibEntry)?observable@246.24:246.34DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaˆ ˆ("2π
+eorg.jabref.gui.preview.PreviewViewer.setEntry(org.jabref.model.entry.BibEntry)?oldEntry@237.24:237.32DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÌ Ì( 2X
+voidRETURN_TYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÎ Î(º
+gorg.jabref.gui.preview.PreviewViewer.setEntry(org.jabref.model.entry.BibEntry)?observable@238.28:238.38VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÓ Ó(&"
+type
+Observable"
+isFinalfalse"j
+declarationStringU<mark class="modifier"> </mark>Observable <mark class="class-field">observable</mark>*
+observable2d
+javafx.beans.ObservableTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÓ Ó(º
+gorg.jabref.gui.preview.PreviewViewer.setEntry(org.jabref.model.entry.BibEntry)?observable@246.24:246.34VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaˆ ˆ(""
+type
+Observable"
+isFinalfalse"j
+declarationStringU<mark class="modifier"> </mark>Observable <mark class="class-field">observable</mark>*
+observable2d
+javafx.beans.ObservableTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaˆ ˆ(Ì
+Worg.jabref.gui.preview.PreviewViewer.setEntry(org.jabref.model.entry.BibEntry)!newEntry	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÎ" Î(*"
+typeBibEntry"
+isFinalfalse"&
+declarationStringBibEntry newEntry*newEntry2l
+org.jabref.model.entry.BibEntryTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÎ Î(!Ç
+eorg.jabref.gui.preview.PreviewViewer.setEntry(org.jabref.model.entry.BibEntry)?oldEntry@237.24:237.32VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÌ Ì( "
+type"
+isFinalfalse"
+declarationString	 oldEntry*oldEntry2TYPEˇ1
+-org.jabref.gui.preview.PreviewViewer.update()METHODC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java¸ ¸("
+isFinalfalse"Ç
+declarationStringm<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">update</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*update2i
+java.util.Optional.isEmpty()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java˝ ˝(2í
+Eorg.jabref.gui.preview.PreviewViewer.setPreviewText(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaˇ ˇ(2e
+java.util.Optional.get()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÖ( Ö(+2´
+^org.jabref.gui.util.BackgroundTask.onFailure(java.util.function.Consumer<java.lang.Exception>)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaä ä(2ô
+Lorg.jabref.gui.util.BackgroundTask.onSuccess(java.util.function.Consumer<V>)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaâ â(2ç
+@org.jabref.gui.util.BackgroundTask.onRunning(java.lang.Runnable)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaà à(2à
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaá á(2”
+Öorg.jabref.logic.preview.PreviewLayout.generatePreview(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaá# á(22í
+Eorg.jabref.gui.preview.PreviewViewer.setPreviewText(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaà! à(/2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaàE à(I2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaàh à(l2Ü
+7org.jabref.logic.preview.PreviewLayout.getDisplayName()CALLE
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaàê à(û2Ö
+8java.lang.Throwable.printStackTrace(java.io.PrintWriter)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaê ê(-2l
+java.io.StringWriter.toString()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaë; ë(C2í
+Eorg.jabref.gui.preview.PreviewViewer.setPreviewText(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaî î("2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaî0 î(42w
+)java.lang.Throwable.getLocalizedMessage()CALLD
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaîs î(Ü2p
+#java.io.StringWriter.StringWriter()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaé4 é(@2|
+/java.io.PrintWriter.PrintWriter(java.io.Writer)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaè2 è(=2Ö
+8org.jabref.gui.preview.PreviewViewer?entry@133.31:133.36CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java˝ ˝(2Ü
+9org.jabref.gui.preview.PreviewViewer?layout@128.26:128.32CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java˝  ˝(&2Ö
+8org.jabref.gui.preview.PreviewViewer?entry@133.31:133.36CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÖ" Ö('2Ü
+9org.jabref.gui.preview.PreviewViewer?layout@128.26:128.32CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaá á("2ë
+Dorg.jabref.gui.preview.PreviewViewer.update()?theEntry@261.23:261.31CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaá3 á(;2à
+;org.jabref.gui.preview.PreviewViewer?database@136.37:136.45CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaá= á(E2à
+9org.jabref.gui.preview.PreviewViewer?layout@128.26:128.32CALLE
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaàâ à(è2Ñ
+7org.jabref.gui.preview.PreviewViewer?LOGGER@49.32:49.38CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaã ã(2í
+Eorg.jabref.gui.preview.PreviewViewer.update()?exception@266.27:266.36CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaãJ ã(S2ï
+Horg.jabref.gui.preview.PreviewViewer.update()?stringWriter@270.33:270.45CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaè> è(J2í
+Eorg.jabref.gui.preview.PreviewViewer.update()?exception@266.27:266.36CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaê ê(2î
+Gorg.jabref.gui.preview.PreviewViewer.update()?printWriter@271.32:271.43CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaê. ê(92ï
+Horg.jabref.gui.preview.PreviewViewer.update()?stringWriter@270.33:270.45CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaë. ë(:2í
+Eorg.jabref.gui.preview.PreviewViewer.update()?exception@266.27:266.36CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaîi î(r2ì
+Dorg.jabref.gui.preview.PreviewViewer.update()?theEntry@261.23:261.31CALLE
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaî® î(∞2õ
+Lorg.jabref.gui.preview.PreviewViewer.update()?stackTraceString@273.27:273.43CALLE
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaî  î(⁄2å
+?org.jabref.gui.preview.PreviewViewer?taskExecutor@126.31:126.43CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javañ ñ()2ò
+Dorg.jabref.gui.preview.PreviewViewer.update()?theEntry@261.23:261.31DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÖ Ö(2ú
+Horg.jabref.gui.preview.PreviewViewer.update()?stringWriter@270.33:270.45DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaé! é(-2õ
+Gorg.jabref.gui.preview.PreviewViewer.update()?printWriter@271.32:271.43DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaè  è(+2†
+Lorg.jabref.gui.preview.PreviewViewer.update()?stackTraceString@273.27:273.43DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaë ë(+2ô
+Eorg.jabref.gui.preview.PreviewViewer.update()?exception@266.27:266.36DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaä ä($2X
+voidRETURN_TYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java¸ ¸(∏
+Dorg.jabref.gui.preview.PreviewViewer.update()?theEntry@261.23:261.31VALUEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÖ Ö("
+typeBibEntry"
+isFinaltrue"ô
+declarationStringÉ<mark class="modifier"> </mark><mark class="modifier">final </mark>BibEntry <mark class="class-field">theEntry</mark> = entry.get()*theEntry2l
+org.jabref.model.entry.BibEntryTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÖ Ö(2e
+java.util.Optional.get()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÖ( Ö(+2Ö
+8org.jabref.gui.preview.PreviewViewer?entry@133.31:133.36CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÖ" Ö('™
+Horg.jabref.gui.preview.PreviewViewer.update()?stringWriter@270.33:270.45VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaé! é(-"
+typeStringWriter"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark>StringWriter <mark class="class-field">stringWriter</mark> = new StringWriter()*stringWriter2a
+java.io.StringWriterTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaé é( 2p
+#java.io.StringWriter.StringWriter()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaé4 é(@”
+Gorg.jabref.gui.preview.PreviewViewer.update()?printWriter@271.32:271.43VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaè  è(+"
+typePrintWriter"
+isFinalfalse"å
+declarationStringw<mark class="modifier"> </mark>PrintWriter <mark class="class-field">printWriter</mark> = new PrintWriter(stringWriter)*printWriter2`
+java.io.PrintWriterTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaè è(2|
+/java.io.PrintWriter.PrintWriter(java.io.Writer)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaè2 è(=2ï
+Horg.jabref.gui.preview.PreviewViewer.update()?stringWriter@270.33:270.45CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaè> è(Jø
+Lorg.jabref.gui.preview.PreviewViewer.update()?stackTraceString@273.27:273.43VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaë ë(+"
+typeString"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>String <mark class="class-field">stackTraceString</mark> = stringWriter.toString()*stackTraceString2]
+java.lang.StringTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaë ë(2l
+java.io.StringWriter.toString()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaë; ë(C2ï
+Horg.jabref.gui.preview.PreviewViewer.update()?stringWriter@270.33:270.45CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaë. ë(:‰
+Eorg.jabref.gui.preview.PreviewViewer.update()?exception@266.27:266.36VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaä ä($"
+type"
+isFinalfalse"
+declarationString
+ exception*	exception2TYPE∏
+Eorg.jabref.gui.preview.PreviewViewer.setPreviewText(java.lang.String)METHODC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaô ô("
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">setPreviewText</mark>(String text)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*setPreviewText2ì
+Forg.jabref.gui.preview.PreviewViewer?JS_HIGHLIGHT_FUNCTION@73.32:73.53CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java° °(32ó
+Jorg.jabref.gui.preview.PreviewViewer.setPreviewText(java.lang.String)!textCALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java°5 °(92ã
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java¢ ¢(2ã
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java£ £(2ß
+Zorg.jabref.gui.preview.PreviewViewer.setPreviewText(java.lang.String)?myText@282.15:282.21CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java£, £(22ú
+Jorg.jabref.gui.preview.PreviewViewer.setPreviewText(java.lang.String)!text	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaô' ô(+2Æ
+Zorg.jabref.gui.preview.PreviewViewer.setPreviewText(java.lang.String)?myText@282.15:282.21DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaö ö(2X
+voidRETURN_TYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaô ô(Å
+Zorg.jabref.gui.preview.PreviewViewer.setPreviewText(java.lang.String)?myText@282.15:282.21VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaö ö("
+typeString"
+isFinalfalse"ö
+declarationStringÑ<mark class="modifier"> </mark>String <mark class="class-field">myText</mark> = """
+    <html>
+        %s
+        <body id="previewBody">
+            <div id="content"> %s </div>
+        </body>
+    </html>
+    """.formatted(JS_HIGHLIGHT_FUNCTION, text)*myText2]
+java.lang.StringTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaö ö(2ì
+Forg.jabref.gui.preview.PreviewViewer?JS_HIGHLIGHT_FUNCTION@73.32:73.53CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java° °(32ó
+Jorg.jabref.gui.preview.PreviewViewer.setPreviewText(java.lang.String)!textCALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java°5 °(9≈
+Jorg.jabref.gui.preview.PreviewViewer.setPreviewText(java.lang.String)!text	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaô' ô(+"
+typeString"
+isFinalfalse" 
+declarationStringString text*text2]
+java.lang.StringTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaô  ô(&É
+,org.jabref.gui.preview.PreviewViewer.print()METHODC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java® ®("
+isFinalfalse"Ä
+declarationStringk<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">print</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*print2í
+Eorg.jabref.gui.DialogService.showPrintDialog(javafx.print.PrinterJob)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java™( ™(72ù
+Porg.jabref.gui.util.BackgroundTask.executeWith(org.jabref.gui.util.TaskExecutor)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∂ ∂(2´
+^org.jabref.gui.util.BackgroundTask.onFailure(java.util.function.Consumer<java.lang.Exception>)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaµ µ(2à
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∞ ∞(2i
+java.util.Optional.orElse(T)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java±\ ±(b2∫
+mjava.util.Optional.flatMap(java.util.function.Function<? super T, ? extends java.util.Optional<? extends U>>)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java±: ±(A2ß
+Zorg.jabref.gui.DialogService.showErrorDialogAndWait(java.lang.String, java.lang.Throwable)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaµ6 µ(L2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaµZ µ(^2ç
+@org.jabref.gui.preview.PreviewViewer?dialogService@123.32:123.45CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java™ ™('2ã
+>org.jabref.gui.preview.PreviewViewer.print()?job@297.19:297.22CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java™8 ™(;2è
+Borg.jabref.gui.preview.PreviewViewer.print()?proceed@298.16:298.23CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java´ ´(2ã
+>org.jabref.gui.preview.PreviewViewer.print()?job@297.19:297.22CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java± ±(2Ö
+8org.jabref.gui.preview.PreviewViewer?entry@133.31:133.36CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java±4 ±(92ã
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≤ ≤(2ã
+>org.jabref.gui.preview.PreviewViewer.print()?job@297.19:297.22CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≤2 ≤(52ã
+>org.jabref.gui.preview.PreviewViewer.print()?job@297.19:297.22CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≥ ≥(2ç
+@org.jabref.gui.preview.PreviewViewer?dialogService@123.32:123.45CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaµ( µ(52í
+Dorg.jabref.gui.preview.PreviewViewer.print()?exception@309.27:309.36CALLD
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaµ{ µ(Ñ2å
+?org.jabref.gui.preview.PreviewViewer?taskExecutor@126.31:126.43CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∂ ∂()2}
+0org.jabref.model.entry.BibEntry.getCitationKey()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java±B ±(Z2í
+>org.jabref.gui.preview.PreviewViewer.print()?job@297.19:297.22DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java© ©(2ñ
+Borg.jabref.gui.preview.PreviewViewer.print()?proceed@298.16:298.23DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java™ ™(2ò
+Dorg.jabref.gui.preview.PreviewViewer.print()?exception@309.27:309.36DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaµ µ($2X
+voidRETURN_TYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java® ®(¶
+>org.jabref.gui.preview.PreviewViewer.print()?job@297.19:297.22VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java© ©("
+type
+PrinterJob"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark>PrinterJob <mark class="class-field">job</mark> = PrinterJob.createPrinterJob()*job2d
+javafx.print.PrinterJobTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java© ©(Û
+Borg.jabref.gui.preview.PreviewViewer.print()?proceed@298.16:298.23VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java™ ™("
+typeboolean"
+isFinalfalse"®
+declarationStringí<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">proceed</mark> = dialogService.showPrintDialog(job)*proceed2T
+booleanTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java™ ™(2í
+Eorg.jabref.gui.DialogService.showPrintDialog(javafx.print.PrinterJob)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java™( ™(72ç
+@org.jabref.gui.preview.PreviewViewer?dialogService@123.32:123.45CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java™ ™('2ã
+>org.jabref.gui.preview.PreviewViewer.print()?job@297.19:297.22CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java™8 ™(;„
+Dorg.jabref.gui.preview.PreviewViewer.print()?exception@309.27:309.36VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaµ µ($"
+type"
+isFinalfalse"
+declarationString
+ exception*	exception2TYPEú
+=org.jabref.gui.preview.PreviewViewer.copyPreviewToClipBoard()METHODC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaπ π(&"
+isFinalfalse"ë
+declarationString|<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">copyPreviewToClipBoard</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*copyPreviewToClipBoard2ú
+Oorg.jabref.gui.ClipBoardManager.setContent(javafx.scene.input.ClipboardContent)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java¿ ¿(#2ã
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∫ ∫('2†
+Sorg.jabref.gui.preview.PreviewViewer.copyPreviewToClipBoard()?content@316.25:316.32CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaΩ Ω(2°
+Torg.jabref.gui.preview.PreviewViewer.copyPreviewToClipBoard()?document@314.17:314.25CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaΩ Ω("2†
+Sorg.jabref.gui.preview.PreviewViewer.copyPreviewToClipBoard()?content@316.25:316.32CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaæ æ(2ã
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaæ! æ(,2ê
+Corg.jabref.gui.preview.PreviewViewer?clipBoardManager@122.35:122.51CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java¿ ¿(2†
+Sorg.jabref.gui.preview.PreviewViewer.copyPreviewToClipBoard()?content@316.25:316.32CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java¿$ ¿(+2®
+Torg.jabref.gui.preview.PreviewViewer.copyPreviewToClipBoard()?document@314.17:314.25DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∫ ∫(2ß
+Sorg.jabref.gui.preview.PreviewViewer.copyPreviewToClipBoard()?content@316.25:316.32DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaº º( 2X
+voidRETURN_TYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaπ π(’
+Torg.jabref.gui.preview.PreviewViewer.copyPreviewToClipBoard()?document@314.17:314.25VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∫ ∫("
+typeDocument"
+isFinalfalse"é
+declarationStringy<mark class="modifier"> </mark>Document <mark class="class-field">document</mark> = previewView.getEngine().getDocument()*document2a
+org.w3c.dom.DocumentTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∫ ∫(2ã
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∫ ∫('‘
+Sorg.jabref.gui.preview.PreviewViewer.copyPreviewToClipBoard()?content@316.25:316.32VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaº º( "
+typeClipboardContent"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>ClipboardContent <mark class="class-field">content</mark> = new ClipboardContent()*content2p
+#javafx.scene.input.ClipboardContentTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaº º(€
+?org.jabref.gui.preview.PreviewViewer.copySelectionToClipBoard()METHODC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java√ √(("
+isFinalfalse"ì
+declarationString~<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">copySelectionToClipBoard</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*copySelectionToClipBoard2ã
+>org.jabref.gui.preview.PreviewViewer.getSelectionTextContent()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≈ ≈(12ã
+>org.jabref.gui.preview.PreviewViewer.getSelectionHtmlContent()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∆ ∆(/2ú
+Oorg.jabref.gui.ClipBoardManager.setContent(javafx.scene.input.ClipboardContent)CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java» »(#2¢
+Uorg.jabref.gui.preview.PreviewViewer.copySelectionToClipBoard()?content@324.25:324.32CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java≈ ≈(2¢
+Uorg.jabref.gui.preview.PreviewViewer.copySelectionToClipBoard()?content@324.25:324.32CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java∆ ∆(2ê
+Corg.jabref.gui.preview.PreviewViewer?clipBoardManager@122.35:122.51CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java» »(2¢
+Uorg.jabref.gui.preview.PreviewViewer.copySelectionToClipBoard()?content@324.25:324.32CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java»$ »(+2©
+Uorg.jabref.gui.preview.PreviewViewer.copySelectionToClipBoard()?content@324.25:324.32DECLARATIONC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaƒ ƒ( 2X
+voidRETURN_TYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java√ √(÷
+Uorg.jabref.gui.preview.PreviewViewer.copySelectionToClipBoard()?content@324.25:324.32VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaƒ ƒ( "
+typeClipboardContent"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>ClipboardContent <mark class="class-field">content</mark> = new ClipboardContent()*content2p
+#javafx.scene.input.ClipboardContentTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaƒ ƒ(À
+Iorg.jabref.gui.preview.PreviewViewer.invalidated(javafx.beans.Observable)METHODC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÃ Ã("
+isFinalfalse" 
+declarationString¥<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">invalidated</mark>(Observable observable)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*invalidated2z
+-org.jabref.gui.preview.PreviewViewer.update()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÕ Õ(2¶
+Torg.jabref.gui.preview.PreviewViewer.invalidated(javafx.beans.Observable)!observable	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÃ' Ã(12X
+voidRETURN_TYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÃ Ã(Í
+Torg.jabref.gui.preview.PreviewViewer.invalidated(javafx.beans.Observable)!observable	PARAMETERC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÃ' Ã(1"
+type
+Observable"
+isFinalfalse"*
+declarationStringObservable observable*
+observable2d
+javafx.beans.ObservableTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÃ Ã(&Ó
+>org.jabref.gui.preview.PreviewViewer.getSelectionTextContent()METHODC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java– –()"
+isFinalfalse"v
+declarationStringa<mark class="modifier">public </mark>String <mark class="method">getSelectionTextContent</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*getSelectionTextContent2ã
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java— —(#2d
+java.lang.StringRETURN_TYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java– –(ã
+>org.jabref.gui.preview.PreviewViewer.getSelectionHtmlContent()METHODC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java‘ ‘()"
+isFinalfalse"v
+declarationStringa<mark class="modifier">public </mark>String <mark class="method">getSelectionHtmlContent</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*getSelectionHtmlContent2ã
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java’ ’(#2ö
+Morg.jabref.gui.preview.PreviewViewer?JS_GET_SELECTION_HTML_SCRIPT@52.32:52.60CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java’> ’(Z2d
+java.lang.StringRETURN_TYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java‘ ‘(î
+7org.jabref.gui.preview.PreviewViewer?LOGGER@49.32:49.38VALUEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java1  1(&"
+isFinaltrue"
+typeLogger"„
+declarationStringÕ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(PreviewViewer.class);"
+isStatictrue"
+accessprivate*LOGGER2[
+org.slf4j.LoggerTYPEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java1 1(≤
+
+Morg.jabref.gui.preview.PreviewViewer?JS_GET_SELECTION_HTML_SCRIPT@52.32:52.60VALUEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java4  4(<"
+isFinaltrue"
+typeString"’
+declarationStringø<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">JS_GET_SELECTION_HTML_SCRIPT</mark> = """
+        function getSelectionHtml() {
+        var html = "";
+        if (typeof window.getSelection != "undefined") {
+            var sel = window.getSelection();
+            if (sel.rangeCount) {
+                var container = document.createElement("div");
+                for (var i = 0, len = sel.rangeCount; i < len; ++i) {
+                    container.appendChild(sel.getRangeAt(i).cloneContents());
+                }
+                html = container.innerHTML;
+            }
+        } else if (typeof document.selection != "undefined") {
+            if (document.selection.type == "Text") {
+                html = document.selection.createRange().htmlText;
+            }
+        }
+        return html;
+        }
+    getSelectionHtml();
+    """;"
+isStatictrue"
+accessprivate*JS_GET_SELECTION_HTML_SCRIPT2[
+java.lang.StringTYPEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java4 4(˝€
+Forg.jabref.gui.preview.PreviewViewer?JS_HIGHLIGHT_FUNCTION@73.32:73.53VALUEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaI  I(5"
+isFinaltrue"
+typeString"≠Ÿ
+declarationStringñŸ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">JS_HIGHLIGHT_FUNCTION</mark> = """
+    <head>
+       <meta charset="UTF-8">
+       <style>
+           mark{
+               background: orange;
+               color: black;
+           }
+       </style>
+       <script type="text/javascript">
+    /*!***************************************************
+    * mark.js v9.0.0
+    * https://markjs.io/
+    * Copyright (c) 2014‚Äì2018, Julian K√ºhnel
+    * Released under the MIT license https://git.io/vwTVl
+    *****************************************************/
+    
+    !function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):e.Mark=t()}(<mark class="modifier">this</mark>,function(){"use strict";function e(t){return(e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(t)}function t(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function n(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function r(e,t,r){return t&&n(e.prototype,t),r&&n(e,r),e}function o(){return(o=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e}).apply(<mark class="modifier">this</mark>,arguments)}var i=
+    
+    /* */
+    
+    function(){function e(n){var r=!(arguments.length>1&&<mark class="modifier">void</mark> 0!==arguments[1])||arguments[1],o=arguments.length>2&&<mark class="modifier">void</mark> 0!==arguments[2]?arguments[2]:[],i=arguments.length>3&&<mark class="modifier">void</mark> 0!==arguments[3]?arguments[3]:5e3;t(<mark class="modifier">this</mark>,e)<mark class="modifier">,</mark><mark class="modifier">this</mark>.ctx=n,<mark class="modifier">this</mark>.iframes=r,<mark class="modifier">this</mark>.exclude=o,<mark class="modifier">this</mark>.iframesTimeout=i}return r(e,[{key:"getContexts",value:function(){var e=[];return(<mark class="modifier">void</mark> 0!==<mark class="modifier">this</mark>.ctx&&<mark class="modifier">this</mark>.ctx?NodeList.prototype.isPrototypeOf(<mark class="modifier">this</mark>.ctx)?Array.prototype.slice.call(<mark class="modifier">this</mark>.ctx):Array.isArray(<mark class="modifier">this</mark>.ctx)?<mark class="modifier">this</mark>.ctx:"<mark class="modifier">string</mark>"==typeof <mark class="modifier">this</mark>.ctx?Array.prototype.slice.call(document.querySelectorAll(<mark class="modifier">this</mark>.ctx)):[<mark class="modifier">this</mark>.ctx]:[]).forEach(function(t){var n=e.filter(function(e){return e.contains(t)}).length>0;-1!==e.indexOf(t)||n||e.push(t)}),e}}<mark class="modifier">,</mark>{key:"getIframeContents",value:function(e,t){var n,r=arguments.length>2&&<mark class="modifier">void</mark> 0!==arguments[2]?arguments[2]:function(){};try{var o=e.contentWindow;if(n=o.document,!o||!n)throw new Error("iframe inaccessible")}catch(e){r()}n&&t(n)}}<mark class="modifier">,</mark>{key:"isIframeBlank",value:function(e){var t="about:blank",n=e.getAttribute("src").trim();return e.contentWindow.location.href===t&&n!==t&&n}}<mark class="modifier">,</mark>{key:"observeIframeLoad",value:function(e,t,n){var r=<mark class="modifier">this</mark>,o=!1,i=<mark class="modifier">null</mark>,a=function a(){if(!o){o=!0,clearTimeout(i);try{r.isIframeBlank(e)||(e.removeEventListener("load",a),r.getIframeContents(e,t,n))}catch(e){n()}}};e.addEventListener("load",a),i=setTimeout(a,<mark class="modifier">this</mark>.iframesTimeout)}}<mark class="modifier">,</mark>{key:"onIframeReady",value:function(e,t,n){try{"complete"===e.contentWindow.document.readyState?<mark class="modifier">this</mark>.isIframeBlank(e)?<mark class="modifier">this</mark>.observeIframeLoad(e,t,n):<mark class="modifier">this</mark>.getIframeContents(e,t,n):<mark class="modifier">this</mark>.observeIframeLoad(e,t,n)}catch(e){n()}}}<mark class="modifier">,</mark>{key:"waitForIframes",value:function(e,t){var n=<mark class="modifier">this</mark>,r=0;<mark class="modifier">this</mark>.forEachIframe(e,function(){return!0},function(e){r++,n.waitForIframes(e.querySelector("html"),function(){--r||t()})},function(e){e||t()})}}<mark class="modifier">,</mark>{key:"forEachIframe",value:function(t,n,r){var o=<mark class="modifier">this</mark>,i=arguments.length>3&&<mark class="modifier">void</mark> 0!==arguments[3]?arguments[3]:function(){},a=t.querySelectorAll("iframe"),s=a.length,c=0;a=Array.prototype.slice.call(a);var u=function(){--s<=0&&i(c)};s||u(),a.forEach(function(t){e.matches(t,o.exclude)?u():o.onIframeReady(t,function(e){n(t)&&(c++,r(e)),u()},u)})}}<mark class="modifier">,</mark>{key:"createIterator",value:function(e,t,n){return document.createNodeIterator(e,t,n,!1)}}<mark class="modifier">,</mark>{key:"createInstanceOnIframe",value:function(t){return new e(t.querySelector("html")<mark class="modifier">,</mark><mark class="modifier">this</mark>.iframes)}}<mark class="modifier">,</mark>{key:"compareNodeIframe",value:function(e,t,n){if(e.compareDocumentPosition(n)&Node.DOCUMENT_POSITION_PRECEDING){if(<mark class="modifier">null</mark>===t)return!0;if(t.compareDocumentPosition(n)&Node.DOCUMENT_POSITION_FOLLOWING)return!0}return!1}}<mark class="modifier">,</mark>{key:"getIteratorNode",value:function(e){var t=e.previousNode();return{prevNode:t,node:<mark class="modifier">null</mark>===t?e.nextNode():e.nextNode()&&e.nextNode()}}}<mark class="modifier">,</mark>{key:"checkIframeFilter",value:function(e,t,n,r){var o=!1,i=!1;return r.forEach(function(e,t){e.val===n&&(o=t,i=e.handled)})<mark class="modifier">,</mark><mark class="modifier">this</mark>.compareNodeIframe(e,t,n)?(!1!==o||i?!1===o||i||(r[o].handled=!0):r.push({val:n,handled:!0})<mark class="modifier">,</mark>!0):(!1===o&&r.push({val:n,handled:!1})<mark class="modifier">,</mark>!1)}}<mark class="modifier">,</mark>{key:"handleOpenIframes",value:function(e,t,n,r){var o=<mark class="modifier">this</mark>;e.forEach(function(e){e.handled||o.getIframeContents(e.val,function(e){o.createInstanceOnIframe(e).forEachNode(t,n,r)})})}}<mark class="modifier">,</mark>{key:"iterateThroughNodes",value:function(e,t,n,r,o){for(var i,a,s,c=<mark class="modifier">this</mark>,u=<mark class="modifier">this</mark>.createIterator(t,e,r),l=[],h=[];s=<mark class="modifier">void</mark> 0,s=c.getIteratorNode(u),a=s.prevNode,i=s.node;)<mark class="modifier">this</mark>.iframes&&<mark class="modifier">this</mark>.forEachIframe(t,function(e){return c.checkIframeFilter(i,a,e,l)},function(t){c.createInstanceOnIframe(t).forEachNode(e,function(e){return h.push(e)},r)}),h.push(i);h.forEach(function(e){n(e)})<mark class="modifier">,</mark><mark class="modifier">this</mark>.iframes&&<mark class="modifier">this</mark>.handleOpenIframes(l,e,n,r),o()}}<mark class="modifier">,</mark>{key:"forEachNode",value:function(e,t,n){var r=<mark class="modifier">this</mark>,o=arguments.length>3&&<mark class="modifier">void</mark> 0!==arguments[3]?arguments[3]:function(){},i=<mark class="modifier">this</mark>.getContexts(),a=i.length;a||o(),i.forEach(function(i){var s=function(){r.iterateThroughNodes(e,i,t,n,function(){--a<=0&&o()})};r.iframes?r.waitForIframes(i,s):s()})}}]<mark class="modifier">,</mark>[{key:"matches",value:function(e,t){var n="<mark class="modifier">string</mark>"==typeof t?[t]:t,r=e.matches||e.matchesSelector||e.msMatchesSelector||e.mozMatchesSelector||e.oMatchesSelector||e.webkitMatchesSelector;if(r){var o=!1;return n.every(function(t){return!r.call(e,t)||(o=!0,!1)}),o}return!1}}]),e}(),a=
+    
+    /* */
+    
+    function(){function e(n){t(<mark class="modifier">this</mark>,e)<mark class="modifier">,</mark><mark class="modifier">this</mark>.opt=o({}<mark class="modifier">,</mark>{diacritics:!0,synonyms:{},accuracy:"partially",caseSensitive:!1,ignoreJoiners:!1,ignorePunctuation:[],wildcards:"disabled"},n)}return r(e,[{key:"create",value:function(e){return"disabled"!==<mark class="modifier">this</mark>.opt.wildcards&&(e=<mark class="modifier">this</mark>.setupWildcardsRegExp(e)),e=<mark class="modifier">this</mark>.escapeStr(e),Object.keys(<mark class="modifier">this</mark>.opt.synonyms).length&&(e=<mark class="modifier">this</mark>.createSynonymsRegExp(e))<mark class="modifier">,</mark>(<mark class="modifier">this</mark>.opt.ignoreJoiners||<mark class="modifier">this</mark>.opt.ignorePunctuation.length)&&(e=<mark class="modifier">this</mark>.setupIgnoreJoinersRegExp(e))<mark class="modifier">,</mark><mark class="modifier">this</mark>.opt.diacritics&&(e=<mark class="modifier">this</mark>.createDiacriticsRegExp(e)),e=<mark class="modifier">this</mark>.createMergedBlanksRegExp(e)<mark class="modifier">,</mark>(<mark class="modifier">this</mark>.opt.ignoreJoiners||<mark class="modifier">this</mark>.opt.ignorePunctuation.length)&&(e=<mark class="modifier">this</mark>.createJoinersRegExp(e))<mark class="modifier">,</mark>"disabled"!==<mark class="modifier">this</mark>.opt.wildcards&&(e=<mark class="modifier">this</mark>.createWildcardsRegExp(e)),e=<mark class="modifier">this</mark>.createAccuracyRegExp(e),new RegExp(e,"gm".concat(<mark class="modifier">this</mark>.opt.caseSensitive?"":"i"))}}<mark class="modifier">,</mark>{key:"sortByLength",value:function(e){return e.sort(function(e,t){return e.length===t.length?e>t?1:-1:t.length-e.length})}}<mark class="modifier">,</mark>{key:"escapeStr",value:function(e){return e.replace(/[\\-\\[\\]\\/\\{\\}\\(\\)\\*\\+\\?\\.\\\\\\^\\$\\|]/g,"\\\\$&")}}<mark class="modifier">,</mark>{key:"createSynonymsRegExp",value:function(e){var t=<mark class="modifier">this</mark>,n=<mark class="modifier">this</mark>.opt.synonyms,r=<mark class="modifier">this</mark>.opt.caseSensitive?"":"i",o=<mark class="modifier">this</mark>.opt.ignoreJoiners||<mark class="modifier">this</mark>.opt.ignorePunctuation.length?"\\0":"";for(var i in n)if(n.hasOwnProperty(i)){var a=Array.isArray(n[i])?n[i]:[n[i]];a.unshift(i)<mark class="modifier">,</mark>(a=<mark class="modifier">this</mark>.sortByLength(a).map(function(e){return"disabled"!==t.opt.wildcards&&(e=t.setupWildcardsRegExp(e)),e=t.escapeStr(e)}).filter(function(e){return""!==e})).length>1&&(e=e.replace(new RegExp("(".concat(a.map(function(e){return t.escapeStr(e)}).join("|")<mark class="modifier">,</mark>")")<mark class="modifier">,</mark>"gm".concat(r)),o+"(".concat(a.map(function(e){return t.processSynonyms(e)}).join("|")<mark class="modifier">,</mark>")")+o))}return e}}<mark class="modifier">,</mark>{key:"processSynonyms",value:function(e){return(<mark class="modifier">this</mark>.opt.ignoreJoiners||<mark class="modifier">this</mark>.opt.ignorePunctuation.length)&&(e=<mark class="modifier">this</mark>.setupIgnoreJoinersRegExp(e)),e}}<mark class="modifier">,</mark>{key:"setupWildcardsRegExp",value:function(e){return(e=e.replace(/(?:\\\\)*\\?/g,function(e){return"\\\\"===e.charAt(0)?"?":"\u0001"})).replace(/(?:\\\\)*\\*/g,function(e){return"\\\\"===e.charAt(0)?"*":"\u0002"})}}<mark class="modifier">,</mark>{key:"createWildcardsRegExp",value:function(e){var t="withSpaces"===<mark class="modifier">this</mark>.opt.wildcards;return e.replace(/\\u0001/g,t?"[\\\\S\\\\s]?":"\\\\S?").replace(/\\u0002/g,t?"[\\\\S\\\\s]*?":"\\\\S*")}}<mark class="modifier">,</mark>{key:"setupIgnoreJoinersRegExp",value:function(e){return e.replace(/[^(|)\\\\]/g,function(e,t,n){var r=n.charAt(t+1);return/[(|)\\\\]/.test(r)||""===r?e:e+"\\0"})}}<mark class="modifier">,</mark>{key:"createJoinersRegExp",value:function(e){var t=[],n=<mark class="modifier">this</mark>.opt.ignorePunctuation;return Array.isArray(n)&&n.length&&t.push(<mark class="modifier">this</mark>.escapeStr(n.join("")))<mark class="modifier">,</mark><mark class="modifier">this</mark>.opt.ignoreJoiners&&t.push("\\\\u00ad\\\\u200b\\\\u200c\\\\u200d"),t.length?e.split(/\\u0000+/).join("[".concat(t.join("")<mark class="modifier">,</mark>"]*")):e}}<mark class="modifier">,</mark>{key:"createDiacriticsRegExp",value:function(e){var t=<mark class="modifier">this</mark>.opt.caseSensitive?"":"i",n=<mark class="modifier">this</mark>.opt.caseSensitive?["a√†√°·∫£√£·∫°ƒÉ·∫±·∫Ø·∫≥·∫µ·∫∑√¢·∫ß·∫•·∫©·∫´·∫≠√§√•ƒÅƒÖ"<mark class="modifier">,</mark>"A√Ä√Å·∫¢√É·∫†ƒÇ·∫∞·∫Æ·∫≤·∫¥·∫∂√Ç·∫¶·∫§·∫®·∫™·∫¨√Ñ√ÖƒÄƒÑ"<mark class="modifier">,</mark>"c√ßƒáƒç"<mark class="modifier">,</mark>"C√áƒÜƒå"<mark class="modifier">,</mark>"dƒëƒè"<mark class="modifier">,</mark>"Dƒêƒé"<mark class="modifier">,</mark>"e√®√©·∫ª·∫Ω·∫π√™·ªÅ·∫ø·ªÉ·ªÖ·ªá√´ƒõƒìƒô"<mark class="modifier">,</mark>"E√à√â·∫∫·∫º·∫∏√ä·ªÄ·∫æ·ªÇ·ªÑ·ªÜ√ãƒöƒíƒò"<mark class="modifier">,</mark>"i√¨√≠·ªâƒ©·ªã√Æ√Øƒ´"<mark class="modifier">,</mark>"I√å√ç·ªàƒ®·ªä√é√èƒ™"<mark class="modifier">,</mark>"l≈Ç"<mark class="modifier">,</mark>"L≈Å"<mark class="modifier">,</mark>"n√±≈à≈Ñ"<mark class="modifier">,</mark>"N√ë≈á≈É"<mark class="modifier">,</mark>"o√≤√≥·ªè√µ·ªç√¥·ªì·ªë·ªï·ªó·ªô∆°·ªü·ª°·ªõ·ªù·ª£√∂√∏≈ç"<mark class="modifier">,</mark>"O√í√ì·ªé√ï·ªå√î·ªí·ªê·ªî·ªñ·ªò∆†·ªû·ª†·ªö·ªú·ª¢√ñ√ò≈å"<mark class="modifier">,</mark>"r≈ô"<mark class="modifier">,</mark>"R≈ò"<mark class="modifier">,</mark>"s≈°≈õ»ô≈ü"<mark class="modifier">,</mark>"S≈†≈ö»ò≈û"<mark class="modifier">,</mark>"t≈•»õ≈£"<mark class="modifier">,</mark>"T≈§»ö≈¢"<mark class="modifier">,</mark>"u√π√∫·ªß≈©·ª•∆∞·ª´·ª©·ª≠·ªØ·ª±√ª√º≈Ø≈´"<mark class="modifier">,</mark>"U√ô√ö·ª¶≈®·ª§∆Ø·ª™·ª®·ª¨·ªÆ·ª∞√õ√ú≈Æ≈™"<mark class="modifier">,</mark>"y√Ω·ª≥·ª∑·ªπ·ªµ√ø"<mark class="modifier">,</mark>"Y√ù·ª≤·ª∂·ª∏·ª¥≈∏"<mark class="modifier">,</mark>"z≈æ≈º≈∫"<mark class="modifier">,</mark>"Z≈Ω≈ª≈π"]:["a√†√°·∫£√£·∫°ƒÉ·∫±·∫Ø·∫≥·∫µ·∫∑√¢·∫ß·∫•·∫©·∫´·∫≠√§√•ƒÅƒÖA√Ä√Å·∫¢√É·∫†ƒÇ·∫∞·∫Æ·∫≤·∫¥·∫∂√Ç·∫¶·∫§·∫®·∫™·∫¨√Ñ√ÖƒÄƒÑ"<mark class="modifier">,</mark>"c√ßƒáƒçC√áƒÜƒå"<mark class="modifier">,</mark>"dƒëƒèDƒêƒé"<mark class="modifier">,</mark>"e√®√©·∫ª·∫Ω·∫π√™·ªÅ·∫ø·ªÉ·ªÖ·ªá√´ƒõƒìƒôE√à√â·∫∫·∫º·∫∏√ä·ªÄ·∫æ·ªÇ·ªÑ·ªÜ√ãƒöƒíƒò"<mark class="modifier">,</mark>"i√¨√≠·ªâƒ©·ªã√Æ√Øƒ´I√å√ç·ªàƒ®·ªä√é√èƒ™"<mark class="modifier">,</mark>"l≈ÇL≈Å"<mark class="modifier">,</mark>"n√±≈à≈ÑN√ë≈á≈É"<mark class="modifier">,</mark>"o√≤√≥·ªè√µ·ªç√¥·ªì·ªë·ªï·ªó·ªô∆°·ªü·ª°·ªõ·ªù·ª£√∂√∏≈çO√í√ì·ªé√ï·ªå√î·ªí·ªê·ªî·ªñ·ªò∆†·ªû·ª†·ªö·ªú·ª¢√ñ√ò≈å"<mark class="modifier">,</mark>"r≈ôR≈ò"<mark class="modifier">,</mark>"s≈°≈õ»ô≈üS≈†≈ö»ò≈û"<mark class="modifier">,</mark>"t≈•»õ≈£T≈§»ö≈¢"<mark class="modifier">,</mark>"u√π√∫·ªß≈©·ª•∆∞·ª´·ª©·ª≠·ªØ·ª±√ª√º≈Ø≈´U√ô√ö·ª¶≈®·ª§∆Ø·ª™·ª®·ª¨·ªÆ·ª∞√õ√ú≈Æ≈™"<mark class="modifier">,</mark>"y√Ω·ª≥·ª∑·ªπ·ªµ√øY√ù·ª≤·ª∂·ª∏·ª¥≈∏"<mark class="modifier">,</mark>"z≈æ≈º≈∫Z≈Ω≈ª≈π"],r=[];return e.split("").forEach(function(o){n.every(function(n){if(-1!==n.indexOf(o)){if(r.indexOf(n)>-1)return!1;e=e.replace(new RegExp("[".concat(n,"]")<mark class="modifier">,</mark>"gm".concat(t))<mark class="modifier">,</mark>"[".concat(n,"]")),r.push(n)}return!0})}),e}}<mark class="modifier">,</mark>{key:"createMergedBlanksRegExp",value:function(e){return e.replace(/[\\s]+/gim,"[\\\\s]+")}}<mark class="modifier">,</mark>{key:"createAccuracyRegExp",value:function(e){var t=<mark class="modifier">this</mark>,n=<mark class="modifier">this</mark>.opt.accuracy,r="<mark class="modifier">string</mark>"==typeof n?n:n.value,o="<mark class="modifier">string</mark>"==typeof n?[]:n.limiters,i="";switch(o.forEach(function(e){i+="|".concat(t.escapeStr(e))}),r){case"partially":<mark class="modifier">default</mark>:return"()(".concat(e,")");case"complementary":return i="\\\\s"+(i||<mark class="modifier">this</mark>.escapeStr("!\\"#$%&'()*+<mark class="modifier">,</mark>-./:;<=>?@[\\\\]^_`{|}~¬°¬ø"))<mark class="modifier">,</mark>"()([^".concat(i,"]*").concat(e,"[^").concat(i,"]*)");case"exactly":return"(^|\\\\s".concat(i,")(").concat(e,")(?=$|\\\\s").concat(i,")")}}}]),e}(),s=
+    
+    /* */
+    
+    function(){function n(e){t(<mark class="modifier">this</mark>,n)<mark class="modifier">,</mark><mark class="modifier">this</mark>.ctx=e,<mark class="modifier">this</mark>.ie=!1;var r=window.navigator.userAgent;(r.indexOf("MSIE")>-1||r.indexOf("Trident")>-1)&&(<mark class="modifier">this</mark>.ie=!0)}return r(n,[{key:"log",value:function(t){var n=arguments.length>1&&<mark class="modifier">void</mark> 0!==arguments[1]?arguments[1]:"debug",r=<mark class="modifier">this</mark>.opt.log;<mark class="modifier">this</mark>.opt.debug&&"object"===e(r)&&"function"==typeof r[n]&&r[n]("mark.js: ".concat(t))}}<mark class="modifier">,</mark>{key:"getSeparatedKeywords",value:function(e){var t=<mark class="modifier">this</mark>,n=[];return e.forEach(function(e){t.opt.separateWordSearch?e.split(" ").forEach(function(e){e.trim()&&-1===n.indexOf(e)&&n.push(e)}):e.trim()&&-1===n.indexOf(e)&&n.push(e)})<mark class="modifier">,</mark>{keywords:n.sort(function(e,t){return t.length-e.length}),length:n.length}}}<mark class="modifier">,</mark>{key:"isNumeric",value:function(e){return Number(parseFloat(e))==e}}<mark class="modifier">,</mark>{key:"checkRanges",value:function(e){var t=<mark class="modifier">this</mark>;if(!Array.isArray(e)||"[object Object]"!==Object.prototype.toString.call(e[0]))return <mark class="modifier">this</mark>.log("markRanges() will only accept an array of objects")<mark class="modifier">,</mark><mark class="modifier">this</mark>.opt.noMatch(e)<mark class="modifier">,</mark>[];var n=[],r=0;return e.sort(function(e,t){return e.start-t.start}).forEach(function(e){var o=t.callNoMatchOnInvalidRanges(e,r),i=o.start,a=o.end;o.valid&&(e.start=i,e.length=a-i,n.push(e),r=a)}),n}}<mark class="modifier">,</mark>{key:"callNoMatchOnInvalidRanges",value:function(e,t){var n,r,o=!1;return e&&<mark class="modifier">void</mark> 0!==e.start?(r=(n=parseInt(e.start,10))+parseInt(e.length,10)<mark class="modifier">,</mark><mark class="modifier">this</mark>.isNumeric(e.start)&&<mark class="modifier">this</mark>.isNumeric(e.length)&&r-t>0&&r-n>0?o=!0:(<mark class="modifier">this</mark>.log("Ignoring invalid or overlapping range: "+"".concat(JSON.stringify(e)))<mark class="modifier">,</mark><mark class="modifier">this</mark>.opt.noMatch(e))):(<mark class="modifier">this</mark>.log("Ignoring invalid range: ".concat(JSON.stringify(e)))<mark class="modifier">,</mark><mark class="modifier">this</mark>.opt.noMatch(e))<mark class="modifier">,</mark>{start:n,end:r,valid:o}}}<mark class="modifier">,</mark>{key:"checkWhitespaceRanges",value:function(e,t,n){var r,o=!0,i=n.length,a=t-i,s=parseInt(e.start,10)-a;return(r=(s=s>i?i:s)+parseInt(e.length,10))>i&&(r=i,<mark class="modifier">this</mark>.log("End range automatically set to the max value of ".concat(i))),s<0||r-s<0||s>i||r>i?(o=!1,<mark class="modifier">this</mark>.log("Invalid range: ".concat(JSON.stringify(e)))<mark class="modifier">,</mark><mark class="modifier">this</mark>.opt.noMatch(e)):""===n.substring(s,r).replace(/\\s+/g,"")&&(o=!1,<mark class="modifier">this</mark>.log("Skipping whitespace only range: "+JSON.stringify(e))<mark class="modifier">,</mark><mark class="modifier">this</mark>.opt.noMatch(e))<mark class="modifier">,</mark>{start:s,end:r,valid:o}}}<mark class="modifier">,</mark>{key:"getTextNodes",value:function(e){var t=<mark class="modifier">this</mark>,n="",r=[];<mark class="modifier">this</mark>.iterator.forEachNode(NodeFilter.SHOW_TEXT,function(e){r.push({start:n.length,end:(n+=e.textContent).length,node:e})},function(e){return t.matchesExclude(e.parentNode)?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT},function(){e({value:n,nodes:r})})}}<mark class="modifier">,</mark>{key:"matchesExclude",value:function(e){return i.matches(e,<mark class="modifier">this</mark>.opt.exclude.concat(["script"<mark class="modifier">,</mark>"style"<mark class="modifier">,</mark>"title"<mark class="modifier">,</mark>"head"<mark class="modifier">,</mark>"html"]))}}<mark class="modifier">,</mark>{key:"wrapRangeInTextNode",value:function(e,t,n){var r=<mark class="modifier">this</mark>.opt.element?<mark class="modifier">this</mark>.opt.element:"mark",o=e.splitText(t),i=o.splitText(n-t),a=document.createElement(r);return a.setAttribute("data-markjs"<mark class="modifier">,</mark>"true")<mark class="modifier">,</mark><mark class="modifier">this</mark>.opt.className&&a.setAttribute("class"<mark class="modifier">,</mark><mark class="modifier">this</mark>.opt.className),a.textContent=o.textContent,o.parentNode.replaceChild(a,o),i}}<mark class="modifier">,</mark>{key:"wrapRangeInMappedTextNode",value:function(e,t,n,r,o){var i=<mark class="modifier">this</mark>;e.nodes.every(function(a,s){var c=e.nodes[s+1];if(<mark class="modifier">void</mark> 0===c||c.start>t){if(!r(a.node))return!1;var u=t-a.start,l=(n>a.end?a.end:n)-a.start,h=e.value.substr(0,a.start),f=e.value.substr(l+a.start);if(a.node=i.wrapRangeInTextNode(a.node,u,l),e.value=h+f,e.nodes.forEach(function(t,n){n>=s&&(e.nodes[n].start>0&&n!==s&&(e.nodes[n].start-=l),e.nodes[n].end-=l)}),n-=l,o(a.node.previousSibling,a.start)<mark class="modifier">,</mark>!(n>a.end))return!1;t=a.end}return!0})}}<mark class="modifier">,</mark>{key:"wrapGroups",value:function(e,t,n,r){return r((e=<mark class="modifier">this</mark>.wrapRangeInTextNode(e,t,t+n)).previousSibling),e}}<mark class="modifier">,</mark>{key:"separateGroups",value:function(e,t,n,r,o){for(var i=t.length,a=1;a<i;a++){var s=e.textContent.indexOf(t[a]);t[a]&&s>-1&&r(t[a],e)&&(e=<mark class="modifier">this</mark>.wrapGroups(e,s,t[a].length,o))}return e}}<mark class="modifier">,</mark>{key:"wrapMatches",value:function(e,t,n,r,o){var i=<mark class="modifier">this</mark>,a=0===t?0:t+1;<mark class="modifier">this</mark>.getTextNodes(function(t){t.nodes.forEach(function(t){var o;for(t=t.node;<mark class="modifier">null</mark>!==(o=e.exec(t.textContent))&&""!==o[a];){if(i.opt.separateGroups)t=i.separateGroups(t,o,a,n,r);else{if(!n(o[a],t))continue;var s=o.index;if(0!==a)for(var c=1;c<a;c++)s+=o[c].length;t=i.wrapGroups(t,s,o[a].length,r)}e.lastIndex=0}}),o()})}}<mark class="modifier">,</mark>{key:"wrapMatchesAcrossElements",value:function(e,t,n,r,o){var i=<mark class="modifier">this</mark>,a=0===t?0:t+1;<mark class="modifier">this</mark>.getTextNodes(function(t){for(var s;<mark class="modifier">null</mark>!==(s=e.exec(t.value))&&""!==s[a];){var c=s.index;if(0!==a)for(var u=1;u<a;u++)c+=s[u].length;var l=c+s[a].length;i.wrapRangeInMappedTextNode(t,c,l,function(e){return n(s[a],e)},function(t,n){e.lastIndex=n,r(t)})}o()})}}<mark class="modifier">,</mark>{key:"wrapRangeFromIndex",value:function(e,t,n,r){var o=<mark class="modifier">this</mark>;<mark class="modifier">this</mark>.getTextNodes(function(i){var a=i.value.length;e.forEach(function(e,r){var s=o.checkWhitespaceRanges(e,a,i.value),c=s.start,u=s.end;s.valid&&o.wrapRangeInMappedTextNode(i,c,u,function(n){return t(n,e,i.value.substring(c,u),r)},function(t){n(t,e)})}),r()})}}<mark class="modifier">,</mark>{key:"unwrapMatches",value:function(e){for(var t=e.parentNode,n=document.createDocumentFragment();e.firstChild;)n.appendChild(e.removeChild(e.firstChild));t.replaceChild(n,e)<mark class="modifier">,</mark><mark class="modifier">this</mark>.ie?<mark class="modifier">this</mark>.normalizeTextNode(t):t.normalize()}}<mark class="modifier">,</mark>{key:"normalizeTextNode",value:function(e){if(e){if(3===e.nodeType)for(;e.nextSibling&&3===e.nextSibling.nodeType;)e.nodeValue+=e.nextSibling.nodeValue,e.parentNode.removeChild(e.nextSibling);else <mark class="modifier">this</mark>.normalizeTextNode(e.firstChild);<mark class="modifier">this</mark>.normalizeTextNode(e.nextSibling)}}}<mark class="modifier">,</mark>{key:"markRegExp",value:function(e,t){var n=<mark class="modifier">this</mark>;<mark class="modifier">this</mark>.opt=t,<mark class="modifier">this</mark>.log('Searching with expression "'.concat(e,'"'));var r=0,o="wrapMatches";<mark class="modifier">this</mark>.opt.acrossElements&&(o="wrapMatchesAcrossElements")<mark class="modifier">,</mark><mark class="modifier">this</mark>[o](e,<mark class="modifier">this</mark>.opt.ignoreGroups,function(e,t){return n.opt.filter(t,e,r)},function(e){r++,n.opt.each(e)},function(){0===r&&n.opt.noMatch(e),n.opt.done(r)})}}<mark class="modifier">,</mark>{key:"mark",value:function(e,t){var n=<mark class="modifier">this</mark>;<mark class="modifier">this</mark>.opt=t;var r=0,o="wrapMatches",i=<mark class="modifier">this</mark>.getSeparatedKeywords("<mark class="modifier">string</mark>"==typeof e?[e]:e),s=i.keywords,c=i.length;<mark class="modifier">this</mark>.opt.acrossElements&&(o="wrapMatchesAcrossElements"),0===c?<mark class="modifier">this</mark>.opt.done(r):function e(t){var i=new a(n.opt).create(t),u=0;n.log('Searching with expression "'.concat(i,'"')),n[o](i,1,function(e,o){return n.opt.filter(o,t,r,u)},function(e){u++,r++,n.opt.each(e)},function(){0===u&&n.opt.noMatch(t),s[c-1]===t?n.opt.done(r):e(s[s.indexOf(t)+1])})}(s[0])}}<mark class="modifier">,</mark>{key:"markRanges",value:function(e,t){var n=<mark class="modifier">this</mark>;<mark class="modifier">this</mark>.opt=t;var r=0,o=<mark class="modifier">this</mark>.checkRanges(e);o&&o.length?(<mark class="modifier">this</mark>.log("Starting to mark with the following ranges: "+JSON.stringify(o))<mark class="modifier">,</mark><mark class="modifier">this</mark>.wrapRangeFromIndex(o,function(e,t,r,o){return n.opt.filter(e,t,r,o)},function(e,t){r++,n.opt.each(e,t)},function(){n.opt.done(r)})):<mark class="modifier">this</mark>.opt.done(r)}}<mark class="modifier">,</mark>{key:"unmark",value:function(e){var t=<mark class="modifier">this</mark>;<mark class="modifier">this</mark>.opt=e;var n=<mark class="modifier">this</mark>.opt.element?<mark class="modifier">this</mark>.opt.element:"*";n+="[data-markjs]"<mark class="modifier">,</mark><mark class="modifier">this</mark>.opt.className&&(n+=".".concat(<mark class="modifier">this</mark>.opt.className))<mark class="modifier">,</mark><mark class="modifier">this</mark>.log('Removal selector "'.concat(n,'"'))<mark class="modifier">,</mark><mark class="modifier">this</mark>.iterator.forEachNode(NodeFilter.SHOW_ELEMENT,function(e){t.unwrapMatches(e)},function(e){var r=i.matches(e,n),o=t.matchesExclude(e);return!r||o?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}<mark class="modifier">,</mark><mark class="modifier">this</mark>.opt.done)}}<mark class="modifier">,</mark>{key:"opt",set:function(e){<mark class="modifier">this</mark>._opt=o({}<mark class="modifier">,</mark>{element:"",className:"",exclude:[],iframes:!1,iframesTimeout:5e3,separateWordSearch:!0,acrossElements:!1,ignoreGroups:0,each:function(){},noMatch:function(){},filter:function(){return!0},done:function(){},debug:!1,log:window.console},e)},get:function(){return <mark class="modifier">this</mark>._opt}}<mark class="modifier">,</mark>{key:"iterator",get:function(){return new i(<mark class="modifier">this</mark>.ctx,<mark class="modifier">this</mark>.opt.iframes,<mark class="modifier">this</mark>.opt.exclude,<mark class="modifier">this</mark>.opt.iframesTimeout)}}]),n}();return function(e){var t=<mark class="modifier">this</mark>,n=new s(e);return <mark class="modifier">this</mark>.mark=function(e,r){return n.mark(e,r),t}<mark class="modifier">,</mark><mark class="modifier">this</mark>.markRegExp=function(e,r){return n.markRegExp(e,r),t}<mark class="modifier">,</mark><mark class="modifier">this</mark>.markRanges=function(e,r){return n.markRanges(e,r),t}<mark class="modifier">,</mark><mark class="modifier">this</mark>.unmark=function(e){return n.unmark(e),t}<mark class="modifier">,</mark><mark class="modifier">this</mark>}});
+    
+       </script>
+    
+    </head>""";"
+isStatictrue"
+accessprivate*JS_HIGHLIGHT_FUNCTION2[
+java.lang.StringTYPEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaI I(Ï
+Korg.jabref.gui.preview.PreviewViewer?JS_MARK_REG_EXP_CALLBACK@109.32:109.56VALUEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javam  m(8"
+isFinaltrue"
+typeString"ï
+declarationStringˇ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">JS_MARK_REG_EXP_CALLBACK</mark> = """
+    {done: function(){
+        markInstance.markRegExp(%s);}
+    }""";"
+isStatictrue"
+accessprivate*JS_MARK_REG_EXP_CALLBACK2[
+java.lang.StringTYPEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javam m(á
+Jorg.jabref.gui.preview.PreviewViewer?JS_UNMARK_WITH_CALLBACK@116.32:116.55VALUEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javat  t(7"
+isFinaltrue"
+typeString"≤
+declarationStringú<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">JS_UNMARK_WITH_CALLBACK</mark> = """
+    var markInstance = new Mark(document.getElementById("content"));
+    markInstance.unmark(%s);""";"
+isStatictrue"
+accessprivate*JS_UNMARK_WITH_CALLBACK2[
+java.lang.StringTYPEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javat t(¡
+Jorg.jabref.gui.preview.PreviewViewer?UNESCAPED_FORWARD_SLASH@120.33:120.56VALUEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javax! x(8"
+isFinaltrue"
+typePattern"Ê
+declarationString–<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Pattern <mark class="class-field">UNESCAPED_FORWARD_SLASH</mark> = Pattern.compile("(?<!\\\\)/");"
+isStatictrue"
+accessprivate*UNESCAPED_FORWARD_SLASH2b
+java.util.regex.PatternTYPEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javax x( 2|
+1java.util.regex.Pattern.compile(java.lang.String)CALLA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaxC x(JÉ
+Corg.jabref.gui.preview.PreviewViewer?clipBoardManager@122.35:122.51VALUEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaz# z(3"
+isFinaltrue"
+typeClipBoardManager"¢
+declarationStringå<mark class="modifier">private </mark><mark class="modifier">final </mark>ClipBoardManager <mark class="class-field">clipBoardManager</mark>"
+isStaticfalse"
+accessprivate*clipBoardManager2j
+org.jabref.gui.ClipBoardManagerTYPEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaz z("Ò
+@org.jabref.gui.preview.PreviewViewer?dialogService@123.32:123.45VALUEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java{  {(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2g
+org.jabref.gui.DialogServiceTYPEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java{ {(ó
+Eorg.jabref.gui.preview.PreviewViewer?preferencesService@124.37:124.55VALUEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java|% |(7"
+isFinaltrue"
+typePreferencesService"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferencesService</mark>"
+isStaticfalse"
+accessprivate*preferencesService2t
+)org.jabref.preferences.PreferencesServiceTYPEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java| |($
+?org.jabref.gui.preview.PreviewViewer?taskExecutor@126.31:126.43VALUEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java~ ~(+"
+isFinaltrue"
+typeTaskExecutor"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2k
+ org.jabref.gui.util.TaskExecutorTYPEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java~ ~(⁄
+>org.jabref.gui.preview.PreviewViewer?previewView@127.26:127.37VALUEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java (%"
+isFinaltrue"
+typeWebView"ì
+declarationString~<mark class="modifier">private </mark><mark class="modifier">final </mark>WebView <mark class="class-field">previewView</mark>"
+isStaticfalse"
+accessprivate*previewView2c
+javafx.scene.web.WebViewTYPEA
+7src\main\java\org\jabref\gui\preview\PreviewViewer.java (»
+9org.jabref.gui.preview.PreviewViewer?layout@128.26:128.32VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÄ Ä( "
+isFinalfalse"
+typePreviewLayout"p
+declarationString[<mark class="modifier">private </mark>PreviewLayout <mark class="class-field">layout</mark>"
+isStaticfalse"
+accessprivate*layout2s
+&org.jabref.logic.preview.PreviewLayoutTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÄ Ä(∞
+8org.jabref.gui.preview.PreviewViewer?entry@133.31:133.36VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÖ Ö($"
+isFinalfalse"
+typeOptional<BibEntry>"à
+declarationStrings<mark class="modifier">private </mark>Optional<BibEntry> <mark class="class-field">entry</mark> = Optional.empty();"
+isStaticfalse"
+accessprivate*entry2_
+java.util.OptionalTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÖ Ö(2u
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÖ Ö(2g
+java.util.Optional.empty()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÖ0 Ö(5⁄
+Iorg.jabref.gui.preview.PreviewViewer?searchHighlightPattern@134.30:134.52VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÜ Ü(4"
+isFinalfalse"
+typeOptional<Pattern>"ô
+declarationStringÉ<mark class="modifier">private </mark>Optional<Pattern> <mark class="class-field">searchHighlightPattern</mark> = Optional.empty();"
+isStaticfalse"
+accessprivate*searchHighlightPattern2_
+java.util.OptionalTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÜ Ü(2m
+java.util.regex.PatternTYPE_ARGUMENTC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÜ Ü(2g
+java.util.Optional.empty()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaÜ@ Ü(EÄ
+;org.jabref.gui.preview.PreviewViewer?database@136.37:136.45VALUEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaà% à(-"
+isFinaltrue"
+typeBibDatabaseContext"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">database</mark>"
+isStaticfalse"
+accessprivate*database2y
+,org.jabref.model.database.BibDatabaseContextTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaà à($»
+=org.jabref.gui.preview.PreviewViewer?registered@137.20:137.30VARIABLEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaâ â("
+isFinalfalse"
+typeboolean"å
+declarationStringw<mark class="modifier">private </mark><mark class="modifier">boolean</mark> <mark class="class-field">registered</mark>"
+isStaticfalse"
+accessprivate*
+registered2T
+booleanTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaâ â(Ú
+
+;org.jabref.gui.preview.PreviewViewer?listener@139.56:139.64VALUEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaã8 ã(@"
+isFinaltrue"-
+type%ChangeListener<Optional<SearchQuery>>"È
+declarationString”<mark class="modifier">private </mark><mark class="modifier">final </mark>ChangeListener<Optional<SearchQuery>> <mark class="class-field">listener</mark> = (queryObservable, queryOldValue, queryNewValue) -> {
+    searchHighlightPattern = queryNewValue.flatMap(SearchQuery::getJavaScriptPatternForWords);
+    highlightSearchPattern();
+};"
+isStaticfalse"
+accessprivate*listener2n
+!javafx.beans.value.ChangeListenerTYPEC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaã ã( 2h
+java.util.OptionalTYPE_ARGUMENTC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaã! ã()2y
+#org.jabref.logic.search.SearchQueryTYPE_ARGUMENTC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaã* ã(52ä
+=org.jabref.gui.preview.PreviewViewer.highlightSearchPattern()CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaç ç(2ñ
+Iorg.jabref.gui.preview.PreviewViewer?searchHighlightPattern@134.30:134.52CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaå å(2è
+Borg.jabref.gui.preview.PreviewViewer?queryNewValue@139.100:139.113CALLC
+7src\main\java\org\jabref\gui\preview\PreviewViewer.javaå! å(.

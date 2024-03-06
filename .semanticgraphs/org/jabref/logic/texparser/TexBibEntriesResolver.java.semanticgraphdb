@@ -1,0 +1,509 @@
+
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java©
+0org.jabref.logic.texparser.TexBibEntriesResolverCLASSM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java (""%
+packageorg.jabref.logic.texparser"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"s
+declarationString^<mark class="modifier">public </mark><mark class="modifier">class </mark>TexBibEntriesResolver"
+accesspublic*TexBibEntriesResolver2s
+TexBibEntriesResolverDECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java! !( 2ƒ
+forg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java+) +(02Ÿ
+˙org.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaD' D(,2¶
+«org.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaN N(,2°
+Corg.jabref.logic.texparser.TexBibEntriesResolver?LOGGER@26.32:26.38DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java  (&2©
+Korg.jabref.logic.texparser.TexBibEntriesResolver?masterDatabase@28.30:28.44DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java (,2≠
+Oorg.jabref.logic.texparser.TexBibEntriesResolver?libraryPreferences@29.37:29.55DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java% (72≤
+Torg.jabref.logic.texparser.TexBibEntriesResolver?importFormatPreferences@30.42:30.65DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java* (A2¶
+Horg.jabref.logic.texparser.TexBibEntriesResolver?fileMonitor@31.36:31.47DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java$ (/Ô
+
+TexBibEntriesResolverCONSTRUCTORM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java! !( "≥
+declarationStringù<mark class="modifier">public </mark><mark class="method">TexBibEntriesResolver</mark>(BibDatabase masterDatabase<mark class="modifier"><mark class="modifier">,</mark></mark> LibraryPreferences libraryPreferences<mark class="modifier"><mark class="modifier">,</mark></mark> ImportFormatPreferences importFormatPreferences<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileMonitor)*TexBibEntriesResolver2¢
+Korg.jabref.logic.texparser.TexBibEntriesResolver?masterDatabase@28.30:28.44CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java" "(2¶
+Oorg.jabref.logic.texparser.TexBibEntriesResolver?libraryPreferences@29.37:29.55CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java# #(2´
+Torg.jabref.logic.texparser.TexBibEntriesResolver?importFormatPreferences@30.42:30.65CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java$ $($2ü
+Horg.jabref.logic.texparser.TexBibEntriesResolver?fileMonitor@31.36:31.47CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java% %(2é
+0org.jabref.logic.texparser.TexBibEntriesResolverRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java! !( –
+masterDatabase	PARAMETERM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java!- !(;"
+typeBibDatabase"
+isFinalfalse"/
+declarationStringBibDatabase masterDatabase*masterDatabase2|
+%org.jabref.model.database.BibDatabaseTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java!! !(,Ô
+libraryPreferences	PARAMETERM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java!P !(b"
+typeLibraryPreferences"
+isFinalfalse":
+declarationString%LibraryPreferences libraryPreferences*libraryPreferences2Ä
+)org.jabref.preferences.LibraryPreferencesTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java!= !(Oˆ
+importFormatPreferences	PARAMETERN
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java!| !(ì"
+typeImportFormatPreferences"
+isFinalfalse"D
+declarationString/ImportFormatPreferences importFormatPreferences*importFormatPreferences2n
+ImportFormatPreferencesTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java!d !({⁄
+fileMonitor	PARAMETERO
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java!ß !(≤"
+typeFileUpdateMonitor"
+isFinalfalse"2
+declarationStringFileUpdateMonitor fileMonitor*fileMonitor2Ä
+'org.jabref.model.util.FileUpdateMonitorTYPEO
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java!ï !(¶ô@
+forg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)METHODM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java+) +(0"
+isFinalfalse"°
+declarationStringã<mark class="modifier">public </mark>LatexBibEntriesResolverResult <mark class="method">resolve</mark>(LatexParserResult latexParserResult)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"%
+typeLatexBibEntriesResolverResult*resolve2ù
+Forg.jabref.model.texparser.LatexBibEntriesResolverResult.getBibFiles()CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java/= /(H2‰
+ãjava.util.stream.Collectors.toMap(java.util.function.Function<? super T, ? extends K>, java.util.function.Function<? super T, ? extends U>)CALLN
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java/{ /(Ä2}
+&java.util.function.Function.identity()CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java0 0(!2ã
+4org.jabref.logic.importer.ParserResult.getDatabase()CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java59 5(D2ú
+Eorg.jabref.logic.importer.ParserResult.fromError(java.lang.Exception)CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java5, 5(52í
+;org.jabref.model.texparser.LatexParserResult.getCitations()CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java:P :(\2§
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLN
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<y <(Ä2Œ
+wjava.util.stream.Stream.flatMap(java.util.function.Function<? super T, ? extends java.util.stream.Stream<? extends R>>)CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<3 <(:2“
+˙org.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<G <(L2|
+#java.util.stream.Collectors.toSet()CALLO
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<å <(ë2é
+7java.util.Set.addAll(java.util.Collection<? extends E>)CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java?' ?(-2ü
+Horg.jabref.model.texparser.LatexBibEntriesResolverResult.getNewEntries()CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java? ?($2‹
+Ñorg.jabref.model.texparser.LatexBibEntriesResolverResult.LatexBibEntriesResolverResult(org.jabref.model.texparser.LatexParserResult)CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java,; ,(X2œ
+xorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)!latexParserResultCALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java,Y ,(j2Ÿ
+Åorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?resolverResult@44.38:44.52CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java/. /(<2Œ
+worg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?path@48.37:48.41CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java29 2(=2´
+Torg.jabref.logic.texparser.TexBibEntriesResolver?importFormatPreferences@30.42:30.65CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java2? 2(V2ü
+Horg.jabref.logic.texparser.TexBibEntriesResolver?fileMonitor@31.36:31.47CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java2X 2(c2ö
+Corg.jabref.logic.texparser.TexBibEntriesResolver?LOGGER@26.32:26.38CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java4 4(2Œ
+worg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?path@48.37:48.41CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java4@ 4(D2À
+torg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?e@51.41:51.42CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java4F 4(G2À
+torg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?e@51.41:51.42CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java56 5(72œ
+xorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)!latexParserResultCALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java:> :(O2⁄
+Çorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?citationsStream@58.44:58.59CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<# <(22“
+{org.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?mapEntry@60.59:60.67CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<M <(U2œ
+xorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)!latexParserResultCALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<W <(h2÷
+org.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?bibDatabases@47.31:47.43CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<j <(v2Ÿ
+Åorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?resolverResult@44.38:44.52CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java? ?(2‘
+}org.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?newEntries@60.22:60.32CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java?. ?(82Ÿ
+Åorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?resolverResult@44.38:44.52CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaA A(2‘
+xorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)!latexParserResult	PARAMETERM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java+C +(T2‡
+Åorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?resolverResult@44.38:44.52DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java,& ,(42›
+org.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?bibDatabases@47.31:47.43DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java/ /(+2·
+Çorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?citationsStream@58.44:58.59DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java:, :(;2€
+}org.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?newEntries@60.22:60.32DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java< <( 2’
+worg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?path@48.37:48.41DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java0% 0()2“
+torg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?e@51.41:51.42DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java3) 3(*2Ÿ
+{org.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?mapEntry@60.59:60.67DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<; <(C2ñ
+8org.jabref.model.texparser.LatexBibEntriesResolverResultRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java+ +((•
+Åorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?resolverResult@44.38:44.52VARIABLEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java,& ,(4"%
+typeLatexBibEntriesResolverResult"
+isFinalfalse"π
+declarationString£<mark class="modifier"> </mark>LatexBibEntriesResolverResult <mark class="class-field">resolverResult</mark> = new LatexBibEntriesResolverResult(latexParserResult)*resolverResult2è
+8org.jabref.model.texparser.LatexBibEntriesResolverResultTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java, ,(%2‹
+Ñorg.jabref.model.texparser.LatexBibEntriesResolverResult.LatexBibEntriesResolverResult(org.jabref.model.texparser.LatexParserResult)CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java,; ,(X2œ
+xorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)!latexParserResultCALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java,Y ,(jÒ
+org.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?bibDatabases@47.31:47.43VARIABLEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java/ /(+"
+typeMap<Path, BibDatabase>"
+isFinalfalse"∏
+declarationString¢<mark class="modifier"> </mark>Map<Path, BibDatabase> <mark class="class-field">bibDatabases</mark> = resolverResult.getBibFiles().values().stream().distinct().collect(Collectors.toMap(Function.identity()<mark class="modifier">,</mark> path -> {
+    try {
+        return OpenDatabase.loadDatabase(path, importFormatPreferences, fileMonitor).getDatabase();
+    } catch (IOException e) {
+        LOGGER.error("Error opening file '{}'"<mark class="modifier">,</mark> path, e);
+        return ParserResult.fromError(e).getDatabase();
+    }
+}))*bibDatabases2d
+java.util.MapTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java/ /(2r
+java.nio.file.PathTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java/ /(2Ö
+%org.jabref.model.database.BibDatabaseTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java/ /(2ù
+Forg.jabref.model.texparser.LatexBibEntriesResolverResult.getBibFiles()CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java/= /(H2‰
+ãjava.util.stream.Collectors.toMap(java.util.function.Function<? super T, ? extends K>, java.util.function.Function<? super T, ? extends U>)CALLN
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java/{ /(Ä2}
+&java.util.function.Function.identity()CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java0 0(!2ã
+4org.jabref.logic.importer.ParserResult.getDatabase()CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java59 5(D2ú
+Eorg.jabref.logic.importer.ParserResult.fromError(java.lang.Exception)CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java5, 5(52Ÿ
+Åorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?resolverResult@44.38:44.52CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java/. /(<2Œ
+worg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?path@48.37:48.41CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java29 2(=2´
+Torg.jabref.logic.texparser.TexBibEntriesResolver?importFormatPreferences@30.42:30.65CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java2? 2(V2ü
+Horg.jabref.logic.texparser.TexBibEntriesResolver?fileMonitor@31.36:31.47CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java2X 2(c2ö
+Corg.jabref.logic.texparser.TexBibEntriesResolver?LOGGER@26.32:26.38CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java4 4(2Œ
+worg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?path@48.37:48.41CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java4@ 4(D2À
+torg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?e@51.41:51.42CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java4F 4(G2À
+torg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?e@51.41:51.42CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java56 5(7ø
+
+Çorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?citationsStream@58.44:58.59VARIABLEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java:, :(;"+
+type#Stream<Map.Entry<String, Citation>>"
+isFinalfalse" 
+declarationString¥<mark class="modifier"> </mark>Stream<Map.Entry<String, Citation>> <mark class="class-field">citationsStream</mark> = latexParserResult.getCitations().entries().stream().distinct()*citationsStream2n
+java.util.stream.StreamTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java: :(2s
+java.util.Map.EntryTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java: :(2p
+java.lang.StringTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java: :(2É
+#org.jabref.model.texparser.CitationTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java: :(2í
+;org.jabref.model.texparser.LatexParserResult.getCitations()CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java:P :(\2œ
+xorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)!latexParserResultCALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java:> :(OÅ
+}org.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?newEntries@60.22:60.32VARIABLEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java< <( "
+typeSet<BibEntry>"
+isFinalfalse"‚
+declarationStringÃ<mark class="modifier"> </mark>Set<BibEntry> <mark class="class-field">newEntries</mark> = citationsStream.flatMap(mapEntry -> apply(mapEntry, latexParserResult, bibDatabases)).collect(Collectors.toSet())*
+newEntries2d
+java.util.SetTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java< <(2
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java< <(2§
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLN
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<y <(Ä2Œ
+wjava.util.stream.Stream.flatMap(java.util.function.Function<? super T, ? extends java.util.stream.Stream<? extends R>>)CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<3 <(:2“
+˙org.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<G <(L2|
+#java.util.stream.Collectors.toSet()CALLO
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<å <(ë2⁄
+Çorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?citationsStream@58.44:58.59CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<# <(22“
+{org.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?mapEntry@60.59:60.67CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<M <(U2œ
+xorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)!latexParserResultCALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<W <(h2÷
+org.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?bibDatabases@47.31:47.43CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<j <(v‘
+xorg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)!latexParserResult	PARAMETERM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java+C +(T"
+typeLatexParserResult"
+isFinalfalse"8
+declarationString#LatexParserResult latexParserResult*latexParserResult2É
+,org.jabref.model.texparser.LatexParserResultTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java+1 +(Bñ
+worg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?path@48.37:48.41VARIABLEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java0% 0()"
+type"
+isFinalfalse"
+declarationString path*path2TYPEâ
+torg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?e@51.41:51.42VARIABLEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java3) 3(*"
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2j
+java.io.IOExceptionTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java3 3((¢
+{org.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)?mapEntry@60.59:60.67VARIABLEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java<; <(C"
+type"
+isFinalfalse"
+declarationString	 mapEntry*mapEntry2TYPE⁄;
+˙org.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)METHODM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaD' D(,"
+isFinalfalse"Í
+declarationString‘<mark class="modifier">private </mark>Stream&lt;? extends BibEntry&gt; <mark class="method">apply</mark>(Map.Entry&lt;String<mark class="modifier"><mark class="modifier">,</mark></mark> Citation&gt; mapEntry<mark class="modifier"><mark class="modifier">,</mark></mark> LatexParserResult latexParserResult<mark class="modifier"><mark class="modifier">,</mark></mark> Map&lt;Path<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabase&gt; bibDatabases)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse""
+typeStream<? extends BibEntry>*apply2ë
+:org.jabref.model.texparser.LatexParserResult.getBibFiles()CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaE! E(,2Ñ
+-org.jabref.model.texparser.Citation.getPath()CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaEG E(N2u
+java.util.Map.Entry.getValue()CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaE< E(D2s
+java.util.Map.Entry.getKey()CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaGK G(Q2É
+*org.jabref.model.entry.BibEntry.BibEntry()CALLO
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaIé I(ñ2‰
+åorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!latexParserResultCALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaE E( 2€
+Éorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!mapEntryCALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaE3 E(;2ﬂ
+áorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!bibDatabasesCALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaG G(2Ë
+êorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?bibFile@69.110:69.117CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaG! G((2€
+Éorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!mapEntryCALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaGB G(J2‰
+åorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?entry@73.36:73.41CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaI. I(32¢
+Korg.jabref.logic.texparser.TexBibEntriesResolver?masterDatabase@28.30:28.44CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaI; I(I2‰
+åorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?entry@73.36:73.41CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaI` I(e2‰
+åorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?entry@75.33:75.38CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaKB K(G2Ë
+êorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?bibFile@69.110:69.117CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaKI K(P2ﬂ
+áorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!bibDatabasesCALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaKR K(^2‡
+Éorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!mapEntry	PARAMETERM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaDI D(Q2È
+åorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!latexParserResult	PARAMETERM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaDe D(v2Ê
+áorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!bibDatabases	PARAMETERO
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaDè D(õ2Ô
+êorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?bibFile@69.110:69.117DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaEn E(u2Î
+åorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?entry@73.36:73.41DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaI$ I()2Î
+åorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?entry@75.33:75.38DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaK! K(&2u
+java.util.stream.StreamRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaD D(¿
+Éorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!mapEntry	PARAMETERM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaDI D(Q"#
+typeMap.Entry<String, Citation>"
+isFinalfalse"9
+declarationString$Map.Entry<String, Citation> mapEntry*mapEntry2j
+java.util.Map.EntryTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaD1 D(62p
+java.lang.StringTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaD- D(02É
+#org.jabref.model.texparser.CitationTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaD7 D(=È
+åorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!latexParserResult	PARAMETERM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaDe D(v"
+typeLatexParserResult"
+isFinalfalse"8
+declarationString#LatexParserResult latexParserResult*latexParserResult2É
+,org.jabref.model.texparser.LatexParserResultTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaDS D(d≈
+áorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!bibDatabases	PARAMETERO
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaDè D(õ"
+typeMap<Path, BibDatabase>"
+isFinalfalse"8
+declarationString#Map<Path, BibDatabase> bibDatabases*bibDatabases2d
+java.util.MapTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaDx D({2s
+java.nio.file.PathTYPE_ARGUMENTN
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaD| D(Ä2á
+%org.jabref.model.database.BibDatabaseTYPE_ARGUMENTO
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaDÇ D(ç∂
+êorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?bibFile@69.110:69.117VARIABLEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaEn E(u"
+type"
+isFinalfalse"
+declarationString bibFile*bibFile2TYPEÆ
+åorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?entry@73.36:73.41VARIABLEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaI$ I()"
+type"
+isFinalfalse"
+declarationString entry*entry2TYPEÆ
+åorg.jabref.logic.texparser.TexBibEntriesResolver.apply(java.util.Map.Entry<java.lang.String, org.jabref.model.texparser.Citation>, org.jabref.model.texparser.LatexParserResult, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?entry@75.33:75.38VARIABLEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaK! K(&"
+type"
+isFinalfalse"
+declarationString entry*entry2TYPEô.
+«org.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)METHODM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaN N(,"
+isFinalfalse"ı
+declarationStringﬂ<mark class="modifier">private </mark>BibEntry <mark class="method">addCrossReferencingData</mark>(BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> Path bibFile<mark class="modifier"><mark class="modifier">,</mark></mark> Map&lt;Path<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabase&gt; bibDatabases)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeBibEntry*addCrossReferencingData2õ
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaO< O(E2∞
+Yorg.jabref.model.database.BibDatabase.getReferencedEntry(org.jabref.model.entry.BibEntry)CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaO" O(42z
+#java.util.Map.get(java.lang.Object)CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaO O(2Ç
++org.jabref.model.entry.BibEntry.getFields()CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaP P("2Ñ
+-org.jabref.model.entry.BibEntry.getFieldMap()CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaP< P(G2¨
+‘org.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!bibDatabasesCALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaO O(2ß
+œorg.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!bibFileCALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaO O( 2•
+Õorg.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!entryCALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaO5 O(:2¥
+‹org.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?refEntry@79.70:79.78CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaP P(2•
+Õorg.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!entryCALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaP6 P(;2±
+Ÿorg.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?field@80.45:80.50CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaPV P([2¥
+‹org.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?refEntry@79.70:79.78CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaP] P(e2±
+Ÿorg.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?field@80.45:80.50CALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaPv P({2•
+Õorg.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!entryCALLM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaR R(2™
+Õorg.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!entry	PARAMETERM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaN6 N(;2¨
+œorg.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!bibFile	PARAMETERM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaNB N(I2±
+‘org.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!bibDatabases	PARAMETERM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaNb N(n2ª
+‹org.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?refEntry@79.70:79.78DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaOF O(N2∏
+Ÿorg.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?field@80.45:80.50DECLARATIONM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaP- P(22}
+org.jabref.model.entry.BibEntryRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaN N(Ú
+Õorg.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!entry	PARAMETERM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaN6 N(;"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2v
+org.jabref.model.entry.BibEntryTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaN- N(5„
+œorg.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!bibFile	PARAMETERM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaNB N(I"
+typePath"
+isFinalfalse"!
+declarationStringPath bibFile*bibFile2i
+java.nio.file.PathTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaN= N(Aç
+‘org.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)!bibDatabases	PARAMETERM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaNb N(n"
+typeMap<Path, BibDatabase>"
+isFinalfalse"8
+declarationString#Map<Path, BibDatabase> bibDatabases*bibDatabases2d
+java.util.MapTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaNK N(N2r
+java.nio.file.PathTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaNO N(S2Ö
+%org.jabref.model.database.BibDatabaseTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaNU N(`Ñ
+‹org.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?refEntry@79.70:79.78VARIABLEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaOF O(N"
+type"
+isFinalfalse"
+declarationString	 refEntry*refEntry2TYPE˚
+Ÿorg.jabref.logic.texparser.TexBibEntriesResolver.addCrossReferencingData(org.jabref.model.entry.BibEntry, java.nio.file.Path, java.util.Map<java.nio.file.Path, org.jabref.model.database.BibDatabase>)?field@80.45:80.50VARIABLEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.javaP- P(2"
+type"
+isFinalfalse"
+declarationString field*field2TYPE¿
+Corg.jabref.logic.texparser.TexBibEntriesResolver?LOGGER@26.32:26.38VALUEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java  (&"
+isFinaltrue"
+typeLogger"Î
+declarationString’<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(TexBibEntriesResolver.class);"
+isStatictrue"
+accessprivate*LOGGER2g
+org.slf4j.LoggerTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java (õ
+Korg.jabref.logic.texparser.TexBibEntriesResolver?masterDatabase@28.30:28.44VALUEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java (,"
+isFinaltrue"
+typeBibDatabase"õ
+declarationStringÖ<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabase <mark class="class-field">masterDatabase</mark>"
+isStaticfalse"
+accessprivate*masterDatabase2|
+%org.jabref.model.database.BibDatabaseTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java (∫
+Oorg.jabref.logic.texparser.TexBibEntriesResolver?libraryPreferences@29.37:29.55VALUEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java% (7"
+isFinaltrue"
+typeLibraryPreferences"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>LibraryPreferences <mark class="class-field">libraryPreferences</mark>"
+isStaticfalse"
+accessprivate*libraryPreferences2Ä
+)org.jabref.preferences.LibraryPreferencesTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java ($¿
+Torg.jabref.logic.texparser.TexBibEntriesResolver?importFormatPreferences@30.42:30.65VALUEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java* (A"
+isFinaltrue"
+typeImportFormatPreferences"∞
+declarationStringö<mark class="modifier">private </mark><mark class="modifier">final </mark>ImportFormatPreferences <mark class="class-field">importFormatPreferences</mark>"
+isStaticfalse"
+accessprivate*importFormatPreferences2n
+ImportFormatPreferencesTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java ()†
+Horg.jabref.logic.texparser.TexBibEntriesResolver?fileMonitor@31.36:31.47VALUEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java$ (/"
+isFinaltrue"
+typeFileUpdateMonitor"û
+declarationStringà<mark class="modifier">private </mark><mark class="modifier">final </mark>FileUpdateMonitor <mark class="class-field">fileMonitor</mark>"
+isStaticfalse"
+accessprivate*fileMonitor2~
+'org.jabref.model.util.FileUpdateMonitorTYPEM
+Csrc\main\java\org\jabref\logic\texparser\TexBibEntriesResolver.java (#

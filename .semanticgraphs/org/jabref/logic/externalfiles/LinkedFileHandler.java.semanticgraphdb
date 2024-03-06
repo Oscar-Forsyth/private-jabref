@@ -1,0 +1,918 @@
+
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java•
+0org.jabref.logic.externalfiles.LinkedFileHandlerCLASSM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java (")
+packageorg.jabref.logic.externalfiles"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"o
+declarationStringZ<mark class="modifier">public </mark><mark class="modifier">class </mark>LinkedFileHandler"
+accesspublic*LinkedFileHandler2ª
+‹org.jabref.logic.externalfiles.LinkedFileHandler.LinkedFileHandler(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java (2ß
+Iorg.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java( (()2¶
+Horg.jabref.logic.externalfiles.LinkedFileHandler.renameToSuggestedName()DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaN N((2∂
+Xorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaR R(2≠
+Oorg.jabref.logic.externalfiles.LinkedFileHandler.relativize(java.nio.file.Path)DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javau u(2•
+Gorg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName()DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaz z(&2∑
+Worg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName(java.lang.String)DECLARATIONO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÅ Å(&2¯
+óorg.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)DECLARATIONO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaê ê(*2°
+Corg.jabref.logic.externalfiles.LinkedFileHandler?LOGGER@22.32:22.38DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java  (&2™
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java% (42™
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java" (12†
+Borg.jabref.logic.externalfiles.LinkedFileHandler?entry@26.27:26.32DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java ( 2§
+Forg.jabref.logic.externalfiles.LinkedFileHandler?fileEntry@28.29:28.38DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java (&ï"
+‹org.jabref.logic.externalfiles.LinkedFileHandler.LinkedFileHandler(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CONSTRUCTORM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java ("á
+declarationStringÒ<mark class="modifier">public </mark><mark class="method">LinkedFileHandler</mark>(LinkedFile fileEntry<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> FilePreferences filePreferences)*LinkedFileHandler2z
+#java.util.Objects.requireNonNull(T)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java$' $(52z
+#java.util.Objects.requireNonNull(T)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java%' %(52æ
+Êorg.jabref.logic.externalfiles.LinkedFileHandler.LinkedFileHandler(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!fileEntryCALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java" "("2∫
+‚org.jabref.logic.externalfiles.LinkedFileHandler.LinkedFileHandler(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!entryCALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java# #(2ƒ
+Ïorg.jabref.logic.externalfiles.LinkedFileHandler.LinkedFileHandler(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!databaseContextCALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java$6 $(E2ƒ
+Ïorg.jabref.logic.externalfiles.LinkedFileHandler.LinkedFileHandler(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!filePreferencesCALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java%6 %(E2ù
+Forg.jabref.logic.externalfiles.LinkedFileHandler?fileEntry@28.29:28.38CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java" "(2ô
+Borg.jabref.logic.externalfiles.LinkedFileHandler?entry@26.27:26.32CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java# #(2£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java$ $(2£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java% %(2√
+Êorg.jabref.logic.externalfiles.LinkedFileHandler.LinkedFileHandler(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!fileEntry	PARAMETERM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java( (12ø
+‚org.jabref.logic.externalfiles.LinkedFileHandler.LinkedFileHandler(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!entry	PARAMETERM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java& (+2…
+Ïorg.jabref.logic.externalfiles.LinkedFileHandler.LinkedFileHandler(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!databaseContext	PARAMETERM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java 0  (?2…
+Ïorg.jabref.logic.externalfiles.LinkedFileHandler.LinkedFileHandler(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!filePreferences	PARAMETERM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java!- !(<2é
+0org.jabref.logic.externalfiles.LinkedFileHandlerRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java (ô
+Êorg.jabref.logic.externalfiles.LinkedFileHandler.LinkedFileHandler(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!fileEntry	PARAMETERM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java( (1"
+type
+LinkedFile"
+isFinalfalse")
+declarationStringLinkedFile fileEntry*	fileEntry2x
+!org.jabref.model.entry.LinkedFileTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java ('á
+‚org.jabref.logic.externalfiles.LinkedFileHandler.LinkedFileHandler(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!entry	PARAMETERM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java& (+"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2v
+org.jabref.model.entry.BibEntryTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java (%«
+Ïorg.jabref.logic.externalfiles.LinkedFileHandler.LinkedFileHandler(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!databaseContext	PARAMETERM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java 0  (?"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2É
+,org.jabref.model.database.BibDatabaseContextTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java   (/∫
+Ïorg.jabref.logic.externalfiles.LinkedFileHandler.LinkedFileHandler(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!filePreferences	PARAMETERM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java!- !(<"
+typeFilePreferences"
+isFinalfalse"4
+declarationStringFilePreferences filePreferences*filePreferences2}
+&org.jabref.preferences.FilePreferencesTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java! !(,ÊE
+Iorg.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()METHODM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java( (()"
+isFinalfalse"‰
+declarationStringŒ<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">moveToDefaultDirectory</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*moveToDefaultDirectory2√
+lorg.jabref.model.database.BibDatabaseContext.getFirstExistingFileDir(org.jabref.preferences.FilePreferences)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java)9 )(P2s
+java.util.Optional.isEmpty()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java* *(#2’
+~org.jabref.model.entry.LinkedFile.findIn(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java.+ .(12s
+java.util.Optional.isEmpty()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java/ /(2q
+java.lang.String.isEmpty()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java57 5(>2ó
+@org.jabref.preferences.FilePreferences.getFileDirectoryPattern()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java5 5(42Ï
+îorg.jabref.logic.util.io.FileUtil.createDirNameFromPattern(org.jabref.model.database.BibDatabase, org.jabref.model.entry.BibEntry, java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java6+ 6(C2ë
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java7$ 7(/2ó
+@org.jabref.preferences.FilePreferences.getFileDirectoryPattern()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java9$ 9(;2Ö
+.java.nio.file.Path.resolve(java.nio.file.Path)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java<M <(T2É
+,java.nio.file.Path.resolve(java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java<0 <(72o
+java.util.Optional.get()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java<* <(-2w
+ java.nio.file.Path.getFileName()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java<c <(n2o
+java.util.Optional.get()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java<] <(`2¢
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java= =(2q
+java.util.Optional.get()CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java?ì ?(ñ2÷
+java.nio.file.Files.createDirectories(java.nio.file.Path, java.nio.file.attribute.FileAttribute<? extends java.lang.Object>...)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaC C(#2u
+java.nio.file.Path.getParent()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaC/ C(82¥
+]java.nio.file.Files.move(java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption...)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaG G(2o
+java.util.Optional.get()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaG G(2í
+;org.jabref.model.entry.LinkedFile.setLink(java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaJ J(2¶
+Oorg.jabref.logic.externalfiles.LinkedFileHandler.relativize(java.nio.file.Path)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaJ J($2£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java)) )(82£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java)Q )(`2º
+eorg.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?targetDirectory@41.23:41.38CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java* *(2ù
+Forg.jabref.logic.externalfiles.LinkedFileHandler?fileEntry@28.29:28.38CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java.! .(*2£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java.2 .(A2£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java.C .(R2¥
+]org.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?oldFile@46.23:46.30CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java/ /(2£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java5 5(2¿
+iorg.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?targetDirectoryName@52.15:52.34CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java6 6(2£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java7 7(#2ô
+Borg.jabref.logic.externalfiles.LinkedFileHandler?entry@26.27:26.32CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java8 8(2£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java9 9(#2º
+eorg.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?targetDirectory@41.23:41.38CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java< <()2¿
+iorg.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?targetDirectoryName@52.15:52.34CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java<8 <(K2¥
+]org.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?oldFile@46.23:46.30CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java<U <(\2∑
+`org.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?targetPath@60.13:60.23CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java= =(#2ö
+Corg.jabref.logic.externalfiles.LinkedFileHandler?LOGGER@22.32:22.38CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java? ?(2∂
+]org.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?oldFile@46.23:46.30CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java?ã ?(í2π
+`org.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?targetPath@60.13:60.23CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java?ö ?(§2∑
+`org.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?targetPath@60.13:60.23CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaC$ C(.2¥
+]org.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?oldFile@46.23:46.30CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaG G(2∑
+`org.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?targetPath@60.13:60.23CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaG" G(,2ù
+Forg.jabref.logic.externalfiles.LinkedFileHandler?fileEntry@28.29:28.38CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaJ J(2∑
+`org.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?targetPath@60.13:60.23CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaJ% J(/2√
+eorg.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?targetDirectory@41.23:41.38DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java) )(&2ª
+]org.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?oldFile@46.23:46.30DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java. .(2«
+iorg.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?targetDirectoryName@52.15:52.34DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java4 4("2æ
+`org.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?targetPath@60.13:60.23DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java< <(2e
+booleanRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java( ((û	
+eorg.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?targetDirectory@41.23:41.38VARIABLEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java) )(&"
+typeOptional<Path>"
+isFinalfalse"Ø
+declarationStringô<mark class="modifier"> </mark>Optional<Path> <mark class="class-field">targetDirectory</mark> = databaseContext.getFirstExistingFileDir(filePreferences)*targetDirectory2i
+java.util.OptionalTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java) )(2r
+java.nio.file.PathTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java) )(2√
+lorg.jabref.model.database.BibDatabaseContext.getFirstExistingFileDir(org.jabref.preferences.FilePreferences)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java)9 )(P2£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java)) )(82£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java)Q )(`≤
+
+]org.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?oldFile@46.23:46.30VARIABLEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java. .("
+typeOptional<Path>"
+isFinalfalse"°
+declarationStringã<mark class="modifier"> </mark>Optional<Path> <mark class="class-field">oldFile</mark> = fileEntry.findIn(databaseContext, filePreferences)*oldFile2i
+java.util.OptionalTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java. .(2r
+java.nio.file.PathTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java. .(2’
+~org.jabref.model.entry.LinkedFile.findIn(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java.+ .(12ù
+Forg.jabref.logic.externalfiles.LinkedFileHandler?fileEntry@28.29:28.38CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java.! .(*2£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java.2 .(A2£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java.C .(R⁄
+iorg.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?targetDirectoryName@52.15:52.34VARIABLEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java4 4(""
+typeString"
+isFinalfalse"t
+declarationString_<mark class="modifier"> </mark>String <mark class="class-field">targetDirectoryName</mark> = ""*targetDirectoryName2g
+java.lang.StringTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java4 4(∂
+`org.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?targetPath@60.13:60.23VARIABLEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java< <("
+typePath"
+isFinalfalse"ø
+declarationString©<mark class="modifier"> </mark>Path <mark class="class-field">targetPath</mark> = targetDirectory.get().resolve(targetDirectoryName).resolve(oldFile.get().getFileName())*
+targetPath2i
+java.nio.file.PathTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java< <(2Ö
+.java.nio.file.Path.resolve(java.nio.file.Path)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java<M <(T2É
+,java.nio.file.Path.resolve(java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java<0 <(72o
+java.util.Optional.get()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java<* <(-2w
+ java.nio.file.Path.getFileName()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java<c <(n2o
+java.util.Optional.get()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java<] <(`2º
+eorg.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?targetDirectory@41.23:41.38CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java< <()2¿
+iorg.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?targetDirectoryName@52.15:52.34CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java<8 <(K2¥
+]org.jabref.logic.externalfiles.LinkedFileHandler.moveToDefaultDirectory()?oldFile@46.23:46.30CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java<U <(\µ
+Horg.jabref.logic.externalfiles.LinkedFileHandler.renameToSuggestedName()METHODM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaN N(("
+isFinalfalse"„
+declarationStringÕ<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">renameToSuggestedName</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*renameToSuggestedName2Ø
+Xorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaO O(2û
+Gorg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaO O(02e
+booleanRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaN N(¬V
+Xorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)METHODM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaR R("
+isFinalfalse"Ë
+declarationString“<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">renameToName</mark>(String targetFileName<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">boolean</mark> overwriteExistingFile)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*renameToName2’
+~org.jabref.model.entry.LinkedFile.findIn(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaS+ S(12s
+java.util.Optional.isEmpty()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaT T(2o
+java.util.Optional.get()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaX% X((2ä
+3java.nio.file.Path.resolveSibling(java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaY% Y(32t
+java.nio.file.Path.toString()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java[- [(52ä
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java\; \(K2t
+java.nio.file.Path.toString()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java\0 \(82Ä
+)java.lang.String.equals(java.lang.Object)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java]' ](-2t
+java.nio.file.Path.toString()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java] ]($2¢
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaa a(2¢
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaf f(2÷
+java.nio.file.Files.createDirectories(java.nio.file.Path, java.nio.file.attribute.FileAttribute<? extends java.lang.Object>...)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javag g(#2u
+java.nio.file.Path.getParent()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javag, g(52¥
+]java.nio.file.Files.move(java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption...)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javai i(2÷
+java.nio.file.Files.createDirectories(java.nio.file.Path, java.nio.file.attribute.FileAttribute<? extends java.lang.Object>...)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javak k(#2u
+java.nio.file.Path.getParent()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javak, k(52¥
+]java.nio.file.Files.move(java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption...)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javal l(2í
+;org.jabref.model.entry.LinkedFile.setLink(java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javap p(2¶
+Oorg.jabref.logic.externalfiles.LinkedFileHandler.relativize(java.nio.file.Path)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javap p($2ù
+Forg.jabref.logic.externalfiles.LinkedFileHandler?fileEntry@28.29:28.38CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaS! S(*2£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaS2 S(A2£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaSC S(R2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?oldFile@83.23:83.30CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaT T(2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?oldFile@83.23:83.30CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaX X($2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?oldPath@88.19:88.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaY Y($2æ
+gorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)!targetFileNameCALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaY4 Y(B2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?oldPath@88.19:88.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java[% [(,2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?newPath@89.19:89.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java\( \(/2œ
+xorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?expandedOldFilePath@91.15:91.34CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java\L \(_2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?newPath@89.19:89.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java] ](2œ
+xorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?expandedOldFilePath@91.15:91.34CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java]. ](A2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?newPath@89.19:89.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaa a( 2—
+zorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?pathsDifferOnlyByCase@92.16:92.37CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaa& a(;2≈
+norg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)!overwriteExistingFileCALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaa@ a(U2ö
+Corg.jabref.logic.externalfiles.LinkedFileHandler?LOGGER@22.32:22.38CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javab b(2≈
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?oldPath@88.19:88.26CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javabã b(í2≈
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?newPath@89.19:89.26CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javabî b(õ2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?newPath@89.19:89.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaf f( 2—
+zorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?pathsDifferOnlyByCase@92.16:92.37CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaf& f(;2≈
+norg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)!overwriteExistingFileCALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaf? f(T2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?newPath@89.19:89.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javag$ g(+2ö
+Corg.jabref.logic.externalfiles.LinkedFileHandler?LOGGER@22.32:22.38CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javah h(2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?newPath@89.19:89.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javah9 h(@2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?oldPath@88.19:88.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javai i(2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?newPath@89.19:89.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javai  i('2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?newPath@89.19:89.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javak$ k(+2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?oldPath@88.19:88.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javal l(2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?newPath@89.19:89.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javal  l('2ù
+Forg.jabref.logic.externalfiles.LinkedFileHandler?fileEntry@28.29:28.38CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javap p(2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?newPath@89.19:89.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javap% p(,2√
+gorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)!targetFileName	PARAMETERM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaR' R(52 
+norg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)!overwriteExistingFile	PARAMETERM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaR? R(T2 
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?oldFile@83.23:83.30DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaS S(2 
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?oldPath@88.19:88.26DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaX X(2 
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?newPath@89.19:89.26DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaY Y(2÷
+xorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?expandedOldFilePath@91.15:91.34DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java[ [("2ÿ
+zorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?pathsDifferOnlyByCase@92.16:92.37DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java\ \(%2e
+booleanRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaR R(¡
+
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?oldFile@83.23:83.30VARIABLEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaS S("
+typeOptional<Path>"
+isFinalfalse"°
+declarationStringã<mark class="modifier"> </mark>Optional<Path> <mark class="class-field">oldFile</mark> = fileEntry.findIn(databaseContext, filePreferences)*oldFile2i
+java.util.OptionalTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaS S(2r
+java.nio.file.PathTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaS S(2’
+~org.jabref.model.entry.LinkedFile.findIn(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaS+ S(12ù
+Forg.jabref.logic.externalfiles.LinkedFileHandler?fileEntry@28.29:28.38CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaS! S(*2£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaS2 S(A2£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaSC S(Rß
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?oldPath@88.19:88.26VALUEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaX X("
+typePath"
+isFinaltrue"ñ
+declarationStringÄ<mark class="modifier"> </mark><mark class="modifier">final </mark>Path <mark class="class-field">oldPath</mark> = oldFile.get()*oldPath2i
+java.nio.file.PathTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaX X(2o
+java.util.Optional.get()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaX% X((2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?oldFile@83.23:83.30CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaX X($ù
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?newPath@89.19:89.26VALUEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaY Y("
+typePath"
+isFinaltrue"Ø
+declarationStringô<mark class="modifier"> </mark><mark class="modifier">final </mark>Path <mark class="class-field">newPath</mark> = oldPath.resolveSibling(targetFileName)*newPath2i
+java.nio.file.PathTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaY Y(2ä
+3java.nio.file.Path.resolveSibling(java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaY% Y(32√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?oldPath@88.19:88.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaY Y($2æ
+gorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)!targetFileNameCALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaY4 Y(B∂
+xorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?expandedOldFilePath@91.15:91.34VARIABLEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java[ [(""
+typeString"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier"> </mark>String <mark class="class-field">expandedOldFilePath</mark> = oldPath.toString()*expandedOldFilePath2g
+java.lang.StringTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java[ [(2t
+java.nio.file.Path.toString()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java[- [(52√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?oldPath@88.19:88.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java[% [(,ù
+zorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?pathsDifferOnlyByCase@92.16:92.37VARIABLEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java\ \(%"
+typeboolean"
+isFinalfalse"ˇ
+declarationStringÈ<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">pathsDifferOnlyByCase</mark> = newPath.toString().equalsIgnoreCase(expandedOldFilePath) && !newPath.toString().equals(expandedOldFilePath)*pathsDifferOnlyByCase2^
+booleanTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java\ \(2ä
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java\; \(K2t
+java.nio.file.Path.toString()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java\0 \(82Ä
+)java.lang.String.equals(java.lang.Object)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java]' ](-2t
+java.nio.file.Path.toString()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java] ]($2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?newPath@89.19:89.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java\( \(/2œ
+xorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?expandedOldFilePath@91.15:91.34CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java\L \(_2√
+lorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?newPath@89.19:89.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java] ](2œ
+xorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)?expandedOldFilePath@91.15:91.34CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java]. ](Aä
+gorg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)!targetFileName	PARAMETERM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaR' R(5"
+typeString"
+isFinalfalse"*
+declarationStringString targetFileName*targetFileName2g
+java.lang.StringTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaR  R(&∂
+norg.jabref.logic.externalfiles.LinkedFileHandler.renameToName(java.lang.String, boolean)!overwriteExistingFile	PARAMETERM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaR? R(T"
+typeboolean"
+isFinalfalse"P
+declarationString;<mark class="modifier">boolean</mark> overwriteExistingFile*overwriteExistingFile2^
+booleanTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaR7 R(>≠
+Oorg.jabref.logic.externalfiles.LinkedFileHandler.relativize(java.nio.file.Path)METHODM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javau u("
+isFinalfalse"s
+declarationString^<mark class="modifier">private </mark>String <mark class="method">relativize</mark>(Path path)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*
+relativize2æ
+gorg.jabref.model.database.BibDatabaseContext.getFileDirectories(org.jabref.preferences.FilePreferences)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javav5 v(G2t
+java.nio.file.Path.toString()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaw: w(B2ª
+dorg.jabref.logic.util.io.FileUtil.relativize(java.nio.file.Path, java.util.List<java.nio.file.Path>)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaw w("2£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javav% v(42£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javavH v(W2´
+Torg.jabref.logic.externalfiles.LinkedFileHandler.relativize(java.nio.file.Path)!pathCALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaw# w('2ƒ
+morg.jabref.logic.externalfiles.LinkedFileHandler.relativize(java.nio.file.Path)?fileDirectories@118.19:118.34CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaw) w(82∞
+Torg.jabref.logic.externalfiles.LinkedFileHandler.relativize(java.nio.file.Path)!path	PARAMETERM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javau# u('2À
+morg.jabref.logic.externalfiles.LinkedFileHandler.relativize(java.nio.file.Path)?fileDirectories@118.19:118.34DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javav v("2n
+java.lang.StringRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javau u(ê	
+morg.jabref.logic.externalfiles.LinkedFileHandler.relativize(java.nio.file.Path)?fileDirectories@118.19:118.34VARIABLEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javav v(""
+type
+List<Path>"
+isFinalfalse"¶
+declarationStringê<mark class="modifier"> </mark>List<Path> <mark class="class-field">fileDirectories</mark> = databaseContext.getFileDirectories(filePreferences)*fileDirectories2e
+java.util.ListTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javav v(2r
+java.nio.file.PathTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javav v(2æ
+gorg.jabref.model.database.BibDatabaseContext.getFileDirectories(org.jabref.preferences.FilePreferences)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javav5 v(G2£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javav% v(42£
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javavH v(W·
+Torg.jabref.logic.externalfiles.LinkedFileHandler.relativize(java.nio.file.Path)!path	PARAMETERM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javau# u('"
+typePath"
+isFinalfalse"
+declarationString	Path path*path2i
+java.nio.file.PathTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javau u("ˇ
+Gorg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName()METHODM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaz z(&"
+isFinalfalse"s
+declarationString^<mark class="modifier">public </mark>String <mark class="method">getSuggestedFileName</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*getSuggestedFileName2Ç
++org.jabref.model.entry.LinkedFile.getLink()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java{' {(.2s
+java.util.Optional.orElse(T)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java}B }(H2õ
+Dorg.jabref.logic.util.io.FileUtil.getFileExtension(java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java}$ }(42Ü
+/org.jabref.model.entry.LinkedFile.getFileType()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java}S }(^2Æ
+Worg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName(java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java~ ~(#2ù
+Forg.jabref.logic.externalfiles.LinkedFileHandler?fileEntry@28.29:28.38CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java{ {(&2∏
+aorg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName()?oldFileName@123.15:123.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java}5 }(@2ù
+Forg.jabref.logic.externalfiles.LinkedFileHandler?fileEntry@28.29:28.38CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java}I }(R2∂
+_org.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName()?extension@125.15:125.24CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java~$ ~(-2ø
+aorg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName()?oldFileName@123.15:123.26DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java{ {(2Ω
+_org.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName()?extension@125.15:125.24DECLARATIONM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java} }(2n
+java.lang.StringRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaz z(¯
+aorg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName()?oldFileName@123.15:123.26VARIABLEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java{ {("
+typeString"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>String <mark class="class-field">oldFileName</mark> = fileEntry.getLink()*oldFileName2g
+java.lang.StringTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java{ {(2Ç
++org.jabref.model.entry.LinkedFile.getLink()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java{' {(.2ù
+Forg.jabref.logic.externalfiles.LinkedFileHandler?fileEntry@28.29:28.38CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java{ {(&˘	
+_org.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName()?extension@125.15:125.24VARIABLEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java} }("
+typeString"
+isFinalfalse"Ø
+declarationStringô<mark class="modifier"> </mark>String <mark class="class-field">extension</mark> = FileUtil.getFileExtension(oldFileName).orElse(fileEntry.getFileType())*	extension2g
+java.lang.StringTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java} }(2s
+java.util.Optional.orElse(T)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java}B }(H2õ
+Dorg.jabref.logic.util.io.FileUtil.getFileExtension(java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java}$ }(42Ü
+/org.jabref.model.entry.LinkedFile.getFileType()CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java}S }(^2∏
+aorg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName()?oldFileName@123.15:123.26CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java}5 }(@2ù
+Forg.jabref.logic.externalfiles.LinkedFileHandler?fileEntry@28.29:28.38CALLM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java}I }(R‰
+Worg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName(java.lang.String)METHODO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÅ Å(&"
+isFinalfalse"É
+declarationStringn<mark class="modifier">public </mark>String <mark class="method">getSuggestedFileName</mark>(String extension)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*getSuggestedFileName2r
+java.lang.String.trim()CALLQ
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÇè Ç(ì2Ô
+ïorg.jabref.logic.util.io.FileUtil.createFileNameFromPattern(org.jabref.model.database.BibDatabase, org.jabref.model.entry.BibEntry, java.lang.String)CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÇ) Ç(B2ì
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÇS Ç(^2ï
+;org.jabref.preferences.FilePreferences.getFileNamePattern()CALLP
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÇy Ç(ã2ù
+Dorg.jabref.logic.util.io.FileUtil.getValidFileName(java.lang.String)CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaá á((2•
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÇC Ç(R2õ
+Borg.jabref.logic.externalfiles.LinkedFileHandler?entry@26.27:26.32CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÇb Ç(g2•
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÇi Ç(x2∫
+aorg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName(java.lang.String)!extensionCALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÑ Ñ(2Õ
+torg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName(java.lang.String)?targetFileName@130.15:130.29CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaá) á(72ø
+aorg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName(java.lang.String)!extension	PARAMETERO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÅ. Å(72‘
+torg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName(java.lang.String)?targetFileName@130.15:130.29DECLARATIONO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÇ Ç(2p
+java.lang.StringRETURN_TYPEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÅ Å(√
+torg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName(java.lang.String)?targetFileName@130.15:130.29VARIABLEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÇ Ç("
+typeString"
+isFinalfalse"ì
+declarationString˝<mark class="modifier"> </mark>String <mark class="class-field">targetFileName</mark> = FileUtil.createFileNameFromPattern(databaseContext.getDatabase()<mark class="modifier">,</mark> entry, filePreferences.getFileNamePattern()).trim() + '.' + extension*targetFileName2i
+java.lang.StringTYPEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÇ Ç(2r
+java.lang.String.trim()CALLQ
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÇè Ç(ì2Ô
+ïorg.jabref.logic.util.io.FileUtil.createFileNameFromPattern(org.jabref.model.database.BibDatabase, org.jabref.model.entry.BibEntry, java.lang.String)CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÇ) Ç(B2ì
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÇS Ç(^2ï
+;org.jabref.preferences.FilePreferences.getFileNamePattern()CALLP
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÇy Ç(ã2•
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÇC Ç(R2õ
+Borg.jabref.logic.externalfiles.LinkedFileHandler?entry@26.27:26.32CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÇb Ç(g2•
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÇi Ç(x2∫
+aorg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName(java.lang.String)!extensionCALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÑ Ñ(˛
+aorg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName(java.lang.String)!extension	PARAMETERO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÅ. Å(7"
+typeString"
+isFinalfalse"%
+declarationStringString extension*	extension2i
+java.lang.StringTYPEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaÅ' Å(-ÀD
+óorg.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)METHODO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaê ê(*"
+isFinalfalse"Ø
+declarationStringô<mark class="modifier">public </mark>Optional&lt;Path&gt; <mark class="method">findExistingFile</mark>(LinkedFile flEntry<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> String targetFileName)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<Path>*findExistingFile2Ö
+,java.nio.file.Path.resolve(java.lang.String)CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaì8 ì(?2w
+java.nio.file.Path.getParent()CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaì, ì(52q
+java.util.Optional.get()CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaì& ì()2◊
+~org.jabref.model.entry.LinkedFile.findIn(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaí& í(,2q
+java.util.Optional.get()CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaîL î(O2◊
+~org.jabref.model.entry.LinkedFile.findIn(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaî# î()2s
+java.util.Optional.empty()CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaó4 ó(92Ö
+,java.nio.file.Files.list(java.nio.file.Path)CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaò) ò(-2w
+java.nio.file.Path.getParent()CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaò: ò(C2|
+#java.util.stream.Stream.findFirst()CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaö' ö(02†
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaô' ô(-2å
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaôF ô(V2v
+java.nio.file.Path.toString()CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaô; ô(C2v
+java.nio.file.Path.toString()CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaôf ô(n2˘
+üorg.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)!flEntryCALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaí í(%2•
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaí- í(<2•
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaí> í(M2Ä
+¶org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)!targetFileNameCALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaì@ ì(N2˘
+üorg.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)!flEntryCALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaî î("2•
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaî* î(92•
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaî; î(J2ã
+±org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?oldFilePath@148.13:148.24CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaò. ò(92ë
+∑org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?matchedByDiffCase@151.23:151.40CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaô ô(2Ü
+¨org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?stream@152.26:152.32CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaô  ô(&2Ñ
+™org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?name@153.46:153.50CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaô6 ô(:2é
+¥org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?targetFilePath@146.13:146.27CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaôW ô(e2ú
+Corg.jabref.logic.externalfiles.LinkedFileHandler?LOGGER@22.32:22.38CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaú ú(2Å
+ßorg.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?e@155.29:155.30CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaúP ú(Q2ë
+∑org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?matchedByDiffCase@151.23:151.40CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaû û( 2˛
+üorg.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)!flEntry	PARAMETERO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaê6 ê(=2¸
+ùorg.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)!entry	PARAMETERO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaêH ê(M2Ö
+¶org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)!targetFileName	PARAMETERO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaêV ê(d2ï
+¥org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?targetFilePath@146.13:146.27DECLARATIONO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaí í(2í
+±org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?oldFilePath@148.13:148.24DECLARATIONO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaî î(2ò
+∑org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?matchedByDiffCase@151.23:151.40DECLARATIONO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaó ó((2ç
+¨org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?stream@152.26:152.32DECLARATIONO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaò ò( 2ã
+™org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?name@153.46:153.50DECLARATIONO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaô. ô(22à
+ßorg.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?e@155.29:155.30DECLARATIONO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaõ õ(2r
+java.util.OptionalRETURN_TYPEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaê ê(2{
+java.nio.file.PathRETURN_TYPE_ARGUMENTO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaê ê(ï
+¥org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?targetFilePath@146.13:146.27VARIABLEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaí í("
+typePath"
+isFinalfalse"∆
+declarationString∞<mark class="modifier"> </mark>Path <mark class="class-field">targetFilePath</mark> = flEntry.findIn(databaseContext, filePreferences).get().getParent().resolve(targetFileName)*targetFilePath2k
+java.nio.file.PathTYPEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaí í(2Ö
+,java.nio.file.Path.resolve(java.lang.String)CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaì8 ì(?2w
+java.nio.file.Path.getParent()CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaì, ì(52q
+java.util.Optional.get()CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaì& ì()2◊
+~org.jabref.model.entry.LinkedFile.findIn(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaí& í(,2˘
+üorg.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)!flEntryCALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaí í(%2•
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaí- í(<2•
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaí> í(M2Ä
+¶org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)!targetFileNameCALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaì@ ì(N‰
+±org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?oldFilePath@148.13:148.24VARIABLEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaî î("
+typePath"
+isFinalfalse"ü
+declarationStringâ<mark class="modifier"> </mark>Path <mark class="class-field">oldFilePath</mark> = flEntry.findIn(databaseContext, filePreferences).get()*oldFilePath2k
+java.nio.file.PathTYPEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaî î(2q
+java.util.Optional.get()CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaîL î(O2◊
+~org.jabref.model.entry.LinkedFile.findIn(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaî# î()2˘
+üorg.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)!flEntryCALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaî î("2•
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaî* î(92•
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaî; î(Jµ
+∑org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?matchedByDiffCase@151.23:151.40VARIABLEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaó ó(("
+typeOptional<Path>"
+isFinalfalse"à
+declarationStrings<mark class="modifier"> </mark>Optional<Path> <mark class="class-field">matchedByDiffCase</mark> = Optional.empty()*matchedByDiffCase2k
+java.util.OptionalTYPEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaó ó(2t
+java.nio.file.PathTYPE_ARGUMENTO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaó ó(2s
+java.util.Optional.empty()CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaó4 ó(9¬	
+¨org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?stream@152.26:152.32VARIABLEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaò ò( "
+typeStream<Path>"
+isFinalfalse"é
+declarationStringy<mark class="modifier"> </mark>Stream<Path> <mark class="class-field">stream</mark> = Files.list(oldFilePath.getParent())*stream2p
+java.util.stream.StreamTYPEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaò ò(2t
+java.nio.file.PathTYPE_ARGUMENTO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaò ò(2Ö
+,java.nio.file.Files.list(java.nio.file.Path)CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaò) ò(-2w
+java.nio.file.Path.getParent()CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaò: ò(C2ã
+±org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?oldFilePath@148.13:148.24CALLO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaò. ò(9“
+üorg.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)!flEntry	PARAMETERO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaê6 ê(="
+type
+LinkedFile"
+isFinalfalse"'
+declarationStringLinkedFile flEntry*flEntry2z
+!org.jabref.model.entry.LinkedFileTYPEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaê+ ê(5∆
+ùorg.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)!entry	PARAMETERO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaêH ê(M"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2x
+org.jabref.model.entry.BibEntryTYPEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaê? ê(GŒ
+¶org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)!targetFileName	PARAMETERO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaêV ê(d"
+typeString"
+isFinalfalse"*
+declarationStringString targetFileName*targetFileName2i
+java.lang.StringTYPEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaêO ê(UÃ
+™org.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?name@153.46:153.50VARIABLEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaô. ô(2"
+type"
+isFinalfalse"
+declarationString name*name2TYPE¡
+ßorg.jabref.logic.externalfiles.LinkedFileHandler.findExistingFile(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, java.lang.String)?e@155.29:155.30VARIABLEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaõ õ("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2l
+java.io.IOExceptionTYPEO
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.javaõ õ(º
+Corg.jabref.logic.externalfiles.LinkedFileHandler?LOGGER@22.32:22.38VALUEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java  (&"
+isFinaltrue"
+typeLogger"Á
+declarationString—<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(LinkedFileHandler.class);"
+isStatictrue"
+accessprivate*LOGGER2g
+org.slf4j.LoggerTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java (¥
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?databaseContext@24.37:24.52VALUEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java% (4"
+isFinaltrue"
+typeBibDatabaseContext"£
+declarationStringç<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">databaseContext</mark>"
+isStaticfalse"
+accessprivate*databaseContext2É
+,org.jabref.model.database.BibDatabaseContextTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java ($ß
+Lorg.jabref.logic.externalfiles.LinkedFileHandler?filePreferences@25.34:25.49VALUEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java" (1"
+isFinaltrue"
+typeFilePreferences"†
+declarationStringä<mark class="modifier">private </mark><mark class="modifier">final </mark>FilePreferences <mark class="class-field">filePreferences</mark>"
+isStaticfalse"
+accessprivate*filePreferences2}
+&org.jabref.preferences.FilePreferencesTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java (!Û
+Borg.jabref.logic.externalfiles.LinkedFileHandler?entry@26.27:26.32VALUEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java ( "
+isFinaltrue"
+typeBibEntry"é
+declarationStringy<mark class="modifier">private </mark><mark class="modifier">final </mark>BibEntry <mark class="class-field">entry</mark>"
+isStaticfalse"
+accessprivate*entry2v
+org.jabref.model.entry.BibEntryTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java (Ö
+Forg.jabref.logic.externalfiles.LinkedFileHandler?fileEntry@28.29:28.38VALUEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java (&"
+isFinaltrue"
+type
+LinkedFile"î
+declarationString<mark class="modifier">private </mark><mark class="modifier">final </mark>LinkedFile <mark class="class-field">fileEntry</mark>"
+isStaticfalse"
+accessprivate*	fileEntry2x
+!org.jabref.model.entry.LinkedFileTYPEM
+Csrc\main\java\org\jabref\logic\externalfiles\LinkedFileHandler.java (

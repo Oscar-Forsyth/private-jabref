@@ -1,0 +1,740 @@
+
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaë%
+8org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModelCLASSU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java (+"$
+packageorg.jabref.gui.linkedfile"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"µ
+declarationStringü<mark class="modifier">public </mark><mark class="modifier">class </mark>LinkedFilesEditDialogViewModel<mark class="modifier"> extends </mark>AbstractViewModel"
+accesspublic*LinkedFilesEditDialogViewModel2’
+Óorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.LinkedFilesEditDialogViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences)DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java, ,()2œ
+iorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setExternalFileTypeByExtension(java.lang.String)DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java9 9(/2±
+Korg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaH H( 2À
+eorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java^ ^(2≠
+Gorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.linkProperty()DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javas s(&2¥
+Norg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.descriptionProperty()DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaw w(-2≤
+Lorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.sourceUrlProperty()DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java{ {(+2π
+Sorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.externalFileTypeProperty()DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java* (B2√
+[org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.selectedExternalFileTypeProperty()DECLARATIONW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaÉ, É(L2≥
+Korg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.getNewLinkedFile()DECLARATIONW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaá á(&2ø
+Worg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.relativize(java.nio.file.Path)DECLARATIONW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaî î(2æ
+Xorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?REMOTE_LINK_PATTERN@33.33:33.52DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java!! !(42Ø
+Iorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?link@34.33:34.37DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java"! "(%2∂
+Porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?description@35.33:35.44DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java#! #(,2¥
+Norg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?sourceUrl@36.33:36.42DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java$! $(*2ø
+Yorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?allExternalFileTypes@37.49:37.69DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java%1 %(E2√
+]org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?selectedExternalFileType@38.51:38.75DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java&3 &(K2 
+dorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?monadicSelectedExternalFileType@39.60:39.91DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java'< '([2≥
+Morg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?database@40.37:40.45DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java(% ((-2∏
+Rorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?dialogService@41.32:41.45DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java)  )(-2∫
+Torg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?filePreferences@42.34:42.49DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java*" *(12Å
+ org.jabref.gui.AbstractViewModelEXTENDU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java4 (E‘+
+Óorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.LinkedFilesEditDialogViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences)CONSTRUCTORU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java, ,()"õ
+declarationStringÖ<mark class="modifier">public </mark><mark class="method">LinkedFilesEditDialogViewModel</mark>(LinkedFile linkedFile<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseContext database<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> FilePreferences filePreferences)*LinkedFilesEditDialogViewModel2ú
+=org.jabref.preferences.FilePreferences.getExternalFileTypes()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java3S 3(g2ƒ
+eorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java6 6(2◊
+˜org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.LinkedFilesEditDialogViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences)!databaseCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java0 0( 2‹
+¸org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.LinkedFilesEditDialogViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences)!dialogServiceCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java1 1(*2ﬁ
+˛org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.LinkedFilesEditDialogViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences)!filePreferencesCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java2 2(.2∏
+Yorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?allExternalFileTypes@37.49:37.69CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java3 3(2ﬁ
+˛org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.LinkedFilesEditDialogViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences)!filePreferencesCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java3C 3(R2√
+dorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?monadicSelectedExternalFileType@39.60:39.91CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java5 5('2º
+]org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?selectedExternalFileType@38.51:38.75CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java5@ 5(X2Ÿ
+˘org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.LinkedFilesEditDialogViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences)!linkedFileCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java6 6(2¨
+Morg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?database@40.37:40.45CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java0 0(2±
+Rorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?dialogService@41.32:41.45CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java1 1(2≥
+Torg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?filePreferences@42.34:42.49CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java2 2(2ﬁ
+˘org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.LinkedFilesEditDialogViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences)!linkedFile	PARAMETERU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java,5 ,(?2‹
+˜org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.LinkedFilesEditDialogViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences)!database	PARAMETERU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java-= -(E2·
+¸org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.LinkedFilesEditDialogViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences)!dialogService	PARAMETERU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java.8 .(E2„
+˛org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.LinkedFilesEditDialogViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences)!filePreferences	PARAMETERU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java/: /(I2û
+8org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModelRETURN_TYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java, ,()ø
+˘org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.LinkedFilesEditDialogViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences)!linkedFile	PARAMETERU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java,5 ,(?"
+type
+LinkedFile"
+isFinalfalse"*
+declarationStringLinkedFile linkedFile*
+linkedFile2Ä
+!org.jabref.model.entry.LinkedFileTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java,* ,(4‘
+˜org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.LinkedFilesEditDialogViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences)!database	PARAMETERU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java-= -(E"
+typeBibDatabaseContext"
+isFinalfalse"0
+declarationStringBibDatabaseContext database*database2ã
+,org.jabref.model.database.BibDatabaseContextTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java-* -(<»
+¸org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.LinkedFilesEditDialogViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences)!dialogService	PARAMETERU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java.8 .(E"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2{
+org.jabref.gui.DialogServiceTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java.* .(7›
+˛org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.LinkedFilesEditDialogViewModel(org.jabref.model.entry.LinkedFile, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences)!filePreferences	PARAMETERU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java/: /(I"
+typeFilePreferences"
+isFinalfalse"4
+declarationStringFilePreferences filePreferences*filePreferences2Ö
+&org.jabref.preferences.FilePreferencesTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java/* /(9µ
+iorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setExternalFileTypeByExtension(java.lang.String)METHODU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java9 9(/"
+isFinalfalse"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">setExternalFileTypeByExtension</mark>(String link)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*setExternalFileTypeByExtension2y
+java.lang.String.isEmpty()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java: :(2Ä
+!java.util.regex.Matcher.matches()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java<2 <(92ñ
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java<$ <(+2£
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java>" >(+2‰
+Ñorg.jabref.gui.externalfiletype.ExternalFileTypes.getExternalFileTypeByExt(java.lang.String, org.jabref.preferences.FilePreferences)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java=" =(:2v
+java.lang.String.trim()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaB" B(&2£
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaD D('2Ê
+Üorg.jabref.gui.externalfiletype.ExternalFileTypes.getExternalFileTypeForName(java.lang.String, org.jabref.preferences.FilePreferences)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaC C(82Õ
+norg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setExternalFileTypeByExtension(java.lang.String)!linkCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java: :(2∑
+Xorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?REMOTE_LINK_PATTERN@33.33:33.52CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java< <(#2Õ
+norg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setExternalFileTypeByExtension(java.lang.String)!linkCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java<, <(02≥
+Torg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?filePreferences@42.34:42.49CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java=C =(R2Õ
+norg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setExternalFileTypeByExtension(java.lang.String)!linkCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaB B(!2‹
+}org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setExternalFileTypeByExtension(java.lang.String)?theLink@66.19:66.26CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaC9 C(@2≥
+Torg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?filePreferences@42.34:42.49CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaCB C(Q2“
+norg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setExternalFileTypeByExtension(java.lang.String)!link	PARAMETERU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java97 9(;2„
+}org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setExternalFileTypeByExtension(java.lang.String)?theLink@66.19:66.26DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaB B(2j
+voidRETURN_TYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java9 9(∑
+}org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setExternalFileTypeByExtension(java.lang.String)?theLink@66.19:66.26VARIABLEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaB B("
+typeString"
+isFinalfalse"q
+declarationString\<mark class="modifier"> </mark>String <mark class="class-field">theLink</mark> = link.trim()*theLink2o
+java.lang.StringTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaB B(2v
+java.lang.String.trim()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaB" B(&2Õ
+norg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setExternalFileTypeByExtension(java.lang.String)!linkCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaB B(!ç
+norg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setExternalFileTypeByExtension(java.lang.String)!link	PARAMETERU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java97 9(;"
+typeString"
+isFinalfalse" 
+declarationStringString link*link2o
+java.lang.StringTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java90 9(6ó7
+Korg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()METHODU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaH H( "
+isFinalfalse"ã
+declarationStringv<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">openBrowseDialog</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*openBrowseDialog2Ó
+éorg.jabref.logic.util.io.FileUtil.find(org.jabref.model.database.BibDatabaseContext, java.lang.String, org.jabref.preferences.FilePreferences)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaK' K(+2{
+java.util.Optional.orElse(T)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaM M(%2õ
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaM6 M(I2|
+java.nio.file.Path.toString()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaN: N(B2
+ java.nio.file.Path.getFileName()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaN, N(72õ
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaN N(!2ö
+;org.jabref.gui.util.FileDialogConfiguration.Builder.build()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaS S(2∏
+Yorg.jabref.gui.util.FileDialogConfiguration.Builder.withInitialFileName(java.lang.String)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaR R($2ª
+\org.jabref.gui.util.FileDialogConfiguration.Builder.withInitialDirectory(java.nio.file.Path)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaQ Q(%2£
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaUB U(K2ª
+\org.jabref.gui.DialogService.showFileOpenDialog(org.jabref.gui.util.FileDialogConfiguration)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaU U((2≠
+Norg.jabref.preferences.FilePreferences.setWorkingDirectory(java.nio.file.Path)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaW W(/2∂
+Worg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.relativize(java.nio.file.Path)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaX X(2ú
+=org.jabref.gui.util.FileDialogConfiguration.Builder.Builder()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaP> P(]2®
+Iorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?link@34.33:34.37CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaI I(2¨
+Morg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?database@40.37:40.45CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaK, K(42ø
+`org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?fileText@73.15:73.23CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaK6 K(>2≥
+Torg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?filePreferences@42.34:42.49CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaK@ K(O2ª
+\org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?file@75.23:75.27CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaM M(2≥
+Torg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?filePreferences@42.34:42.49CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaM& M(52ø
+`org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?fileText@73.15:73.23CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaN" N(*2¡
+borg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?workingDir@77.13:77.23CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaQ& Q(02ø
+`org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?fileName@78.15:78.23CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaR% R(-2±
+Rorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?dialogService@41.32:41.45CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaU U(2Œ
+oorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?fileDialogConfiguration@80.32:80.55CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaU) U(@2≥
+Torg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?filePreferences@42.34:42.49CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaW W(2ª
+\org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?path@85.76:85.80CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaW0 W(42®
+Iorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?link@34.33:34.37CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaX X(2ª
+\org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?path@85.76:85.80CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaX  X($2®
+Iorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?link@34.33:34.37CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaZ+ Z(/2∆
+`org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?fileText@73.15:73.23DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaI I(2¬
+\org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?file@75.23:75.27DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaK K(2»
+borg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?workingDir@77.13:77.23DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaM M(2∆
+`org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?fileName@78.15:78.23DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaN N(2’
+oorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?fileDialogConfiguration@80.32:80.55DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaP  P(72¬
+\org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?path@85.76:85.80DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaUL U(P2j
+voidRETURN_TYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaH H(˛
+`org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?fileText@73.15:73.23VARIABLEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaI I("
+typeString"
+isFinalfalse"q
+declarationString\<mark class="modifier"> </mark>String <mark class="class-field">fileText</mark> = link.get()*fileText2o
+java.lang.StringTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaI I(2®
+Iorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?link@34.33:34.37CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaI I(ó
+\org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?file@75.23:75.27VARIABLEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaK K("
+typeOptional<Path>"
+isFinalfalse"û
+declarationStringà<mark class="modifier"> </mark>Optional<Path> <mark class="class-field">file</mark> = FileUtil.find(database, fileText, filePreferences)*file2q
+java.util.OptionalTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaK K(2z
+java.nio.file.PathTYPE_ARGUMENTU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaK K(2Ó
+éorg.jabref.logic.util.io.FileUtil.find(org.jabref.model.database.BibDatabaseContext, java.lang.String, org.jabref.preferences.FilePreferences)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaK' K(+2¨
+Morg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?database@40.37:40.45CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaK, K(42ø
+`org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?fileText@73.15:73.23CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaK6 K(>2≥
+Torg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?filePreferences@42.34:42.49CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaK@ K(Oê	
+borg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?workingDir@77.13:77.23VARIABLEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaM M("
+typePath"
+isFinalfalse"ö
+declarationStringÑ<mark class="modifier"> </mark>Path <mark class="class-field">workingDir</mark> = file.orElse(filePreferences.getWorkingDirectory())*
+workingDir2q
+java.nio.file.PathTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaM M(2{
+java.util.Optional.orElse(T)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaM M(%2õ
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaM6 M(I2ª
+\org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?file@75.23:75.27CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaM M(2≥
+Torg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?filePreferences@42.34:42.49CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaM& M(5”
+`org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?fileName@78.15:78.23VARIABLEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaN N("
+typeString"
+isFinalfalse"ë
+declarationString|<mark class="modifier"> </mark>String <mark class="class-field">fileName</mark> = Path.of(fileText).getFileName().toString()*fileName2o
+java.lang.StringTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaN N(2|
+java.nio.file.Path.toString()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaN: N(B2
+ java.nio.file.Path.getFileName()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaN, N(72õ
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaN N(!2ø
+`org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?fileText@73.15:73.23CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaN" N(*›
+oorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?fileDialogConfiguration@80.32:80.55VARIABLEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaP  P(7"
+typeFileDialogConfiguration"
+isFinalfalse"Ù
+declarationStringﬁ<mark class="modifier"> </mark>FileDialogConfiguration <mark class="class-field">fileDialogConfiguration</mark> = new FileDialogConfiguration.Builder().withInitialDirectory(workingDir).withInitialFileName(fileName).build()*fileDialogConfiguration2ä
++org.jabref.gui.util.FileDialogConfigurationTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaP P(2ö
+;org.jabref.gui.util.FileDialogConfiguration.Builder.build()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaS S(2∏
+Yorg.jabref.gui.util.FileDialogConfiguration.Builder.withInitialFileName(java.lang.String)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaR R($2ª
+\org.jabref.gui.util.FileDialogConfiguration.Builder.withInitialDirectory(java.nio.file.Path)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaQ Q(%2ú
+=org.jabref.gui.util.FileDialogConfiguration.Builder.Builder()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaP> P(]2¡
+borg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?workingDir@77.13:77.23CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaQ& Q(02ø
+`org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?fileName@78.15:78.23CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaR% R(-É
+\org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.openBrowseDialog()?path@85.76:85.80VARIABLEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaUL U(P"
+type"
+isFinalfalse"
+declarationString path*path2TYPEË8
+eorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)METHODU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java^ ^("
+isFinalfalse"ö
+declarationStringÑ<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">setValues</mark>(LinkedFile linkedFile)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*	setValues2ë
+2org.jabref.model.entry.LinkedFile.getDescription()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java_# _(12è
+0org.jabref.model.entry.LinkedFile.getSourceUrl()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java`! `(-2è
+0org.jabref.model.entry.LinkedFile.isOnlineLink()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javab b(#2ä
++org.jabref.model.entry.LinkedFile.getLink()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javac% c(,2∂
+Worg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.relativize(java.nio.file.Path)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javae e($2õ
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javae* e(,2ä
++org.jabref.model.entry.LinkedFile.getLink()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javae8 e(?2Ö
+•org.jabref.gui.externalfiletype.ExternalFileTypes.getExternalFileTypeByLinkedFile(org.jabref.model.entry.LinkedFile, boolean, org.jabref.preferences.FilePreferences)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javak@ k(_2}
+java.util.Optional.isPresent()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javal l(2w
+java.util.Optional.get()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javal/ l(22w
+java.util.Optional.get()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javam7 m(:2ä
++org.jabref.model.entry.LinkedFile.getLink()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javan n(&2y
+java.lang.String.isEmpty()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javanL n(S2ä
++org.jabref.model.entry.LinkedFile.getLink()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javanB n(I2»
+iorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setExternalFileTypeByExtension(java.lang.String)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javao o(*2ä
++org.jabref.model.entry.LinkedFile.getLink()CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javao6 o(=2Ø
+Porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?description@35.33:35.44CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java_ _(2œ
+porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)!linkedFileCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java_ _("2≠
+Norg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?sourceUrl@36.33:36.42CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java` `(2œ
+porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)!linkedFileCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java` `( 2œ
+porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)!linkedFileCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javab b(2®
+Iorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?link@34.33:34.37CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javac c(2œ
+porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)!linkedFileCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javac c($2®
+Iorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?link@34.33:34.37CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javae e(2œ
+porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)!linkedFileCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javae- e(72º
+]org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?selectedExternalFileType@38.51:38.75CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javah h( 2œ
+porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)!linkedFileCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javak` k(j2¥
+Torg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?filePreferences@42.34:42.49CALLV
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaks k(Ç2€
+|org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)?fileType@107.35:107.43CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javal l(2€
+|org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)?fileType@107.35:107.43CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javal& l(.2º
+]org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?selectedExternalFileType@38.51:38.75CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javam m($2€
+|org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)?fileType@107.35:107.43CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javam. m(62œ
+porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)!linkedFileCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javan n(2œ
+porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)!linkedFileCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javan7 n(A2œ
+porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)!linkedFileCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javao+ o(52‘
+porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)!linkedFile	PARAMETERU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java^% ^(/2‚
+|org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)?fileType@107.35:107.43DECLARATIONU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javak# k(+2j
+voidRETURN_TYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java^ ^(Œ
+|org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)?fileType@107.35:107.43VARIABLEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javak# k(+""
+typeOptional<ExternalFileType>"
+isFinalfalse"ç
+declarationString˜<mark class="modifier"> </mark>Optional<ExternalFileType> <mark class="class-field">fileType</mark> = ExternalFileTypes.getExternalFileTypeByLinkedFile(linkedFile, <mark class="modifier">false</mark><mark class="modifier">,</mark> filePreferences)*fileType2q
+java.util.OptionalTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javak k(2ò
+0org.jabref.gui.externalfiletype.ExternalFileTypeTYPE_ARGUMENTU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javak k(!2Ö
+•org.jabref.gui.externalfiletype.ExternalFileTypes.getExternalFileTypeByLinkedFile(org.jabref.model.entry.LinkedFile, boolean, org.jabref.preferences.FilePreferences)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javak@ k(_2œ
+porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)!linkedFileCALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javak` k(j2¥
+Torg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?filePreferences@42.34:42.49CALLV
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaks k(Çµ
+porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.setValues(org.jabref.model.entry.LinkedFile)!linkedFile	PARAMETERU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java^% ^(/"
+type
+LinkedFile"
+isFinalfalse"*
+declarationStringLinkedFile linkedFile*
+linkedFile2Ä
+!org.jabref.model.entry.LinkedFileTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java^ ^($«
+Gorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.linkProperty()METHODU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javas s(&"
+isFinalfalse"s
+declarationString^<mark class="modifier">public </mark>StringProperty <mark class="method">linkProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeStringProperty*linkProperty2®
+Iorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?link@34.33:34.37CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javat t(2ä
+$javafx.beans.property.StringPropertyRETURN_TYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javas s(„
+Norg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.descriptionProperty()METHODU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaw w(-"
+isFinalfalse"z
+declarationStringe<mark class="modifier">public </mark>StringProperty <mark class="method">descriptionProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeStringProperty*descriptionProperty2Ø
+Porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?description@35.33:35.44CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javax x(2ä
+$javafx.beans.property.StringPropertyRETURN_TYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaw w(€
+Lorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.sourceUrlProperty()METHODU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java{ {(+"
+isFinalfalse"x
+declarationStringc<mark class="modifier">public </mark>StringProperty <mark class="method">sourceUrlProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeStringProperty*sourceUrlProperty2≠
+Norg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?sourceUrl@36.33:36.42CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java| |(2ä
+$javafx.beans.property.StringPropertyRETURN_TYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java{ {(≈
+Sorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.externalFileTypeProperty()METHODU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java* (B"
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier">public </mark>ListProperty&lt;ExternalFileType&gt; <mark class="method">externalFileTypeProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"&
+typeListProperty<ExternalFileType>*externalFileTypeProperty2∫
+Yorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?allExternalFileTypes@37.49:37.69CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaÄ Ä(#2à
+"javafx.beans.property.ListPropertyRETURN_TYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java (2ü
+0org.jabref.gui.externalfiletype.ExternalFileTypeRETURN_TYPE_ARGUMENTU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java ((Ì
+[org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.selectedExternalFileTypeProperty()METHODW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaÉ, É(L"
+isFinalfalse"†
+declarationStringä<mark class="modifier">public </mark>ObjectProperty&lt;ExternalFileType&gt; <mark class="method">selectedExternalFileTypeProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"(
+type ObjectProperty<ExternalFileType>* selectedExternalFileTypeProperty2æ
+]org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?selectedExternalFileType@38.51:38.75CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaÑ Ñ('2å
+$javafx.beans.property.ObjectPropertyRETURN_TYPEW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaÉ É(2°
+0org.jabref.gui.externalfiletype.ExternalFileTypeRETURN_TYPE_ARGUMENTW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaÉ É(*¥
+Korg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.getNewLinkedFile()METHODW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaá á(&"
+isFinalfalse"s
+declarationString^<mark class="modifier">public </mark>LinkedFile <mark class="method">getNewLinkedFile</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+type
+LinkedFile*getNewLinkedFile2≈
+dorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?monadicSelectedExternalFileType@39.60:39.91CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaà à(92™
+Iorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?link@34.33:34.37CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaä$ ä((2±
+Porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?description@35.33:35.44CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaå& å(12™
+Iorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?link@34.33:34.37CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaåF å(J2√
+borg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.getNewLinkedFile()?fileType@136.15:136.23CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaåX å(`2Ø
+Norg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?sourceUrl@36.33:36.42CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaåb å(k2±
+Porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?description@35.33:35.44CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaé& é(12™
+Iorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?link@34.33:34.37CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaé> é(B2√
+borg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.getNewLinkedFile()?fileType@136.15:136.23CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaéO é(W2Ø
+Norg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?sourceUrl@36.33:36.42CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaéY é(b2±
+Porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?description@35.33:35.44CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaë ë()2™
+Iorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?link@34.33:34.37CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaë> ë(B2√
+borg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.getNewLinkedFile()?fileType@136.15:136.23CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaëP ë(X2Ø
+Norg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?sourceUrl@36.33:36.42CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaëZ ë(c2 
+borg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.getNewLinkedFile()?fileType@136.15:136.23DECLARATIONW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaà à(2√
+[org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.getNewLinkedFile()?e@141.43:141.44DECLARATIONW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaç+ ç(,2â
+!org.jabref.model.entry.LinkedFileRETURN_TYPEW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaá á(Ó
+borg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.getNewLinkedFile()?fileType@136.15:136.23VARIABLEW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaà à("
+typeString"
+isFinalfalse"Ω
+declarationStringß<mark class="modifier"> </mark>String <mark class="class-field">fileType</mark> = monadicSelectedExternalFileType.getValue().map(ExternalFileType::toString).orElse("")*fileType2q
+java.lang.StringTYPEW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaà à(2≈
+dorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?monadicSelectedExternalFileType@39.60:39.91CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaà à(9£
+[org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.getNewLinkedFile()?e@141.43:141.44VARIABLEW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaç+ ç(,"
+typeMalformedURLException"
+isFinalfalse",
+declarationStringMalformedURLException e*e2
+java.net.MalformedURLExceptionTYPEW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaç ç(*ÿ
+Worg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.relativize(java.nio.file.Path)METHODW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaî î("
+isFinalfalse"w
+declarationStringb<mark class="modifier">private </mark>String <mark class="method">relativize</mark>(Path filePath)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*
+relativize2»
+gorg.jabref.model.database.BibDatabaseContext.getFileDirectories(org.jabref.preferences.FilePreferences)CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaï. ï(@2~
+java.nio.file.Path.toString()CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javañ> ñ(F2≈
+dorg.jabref.logic.util.io.FileUtil.relativize(java.nio.file.Path, java.util.List<java.nio.file.Path>)CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javañ ñ("2Æ
+Morg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?database@40.37:40.45CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaï% ï(-2µ
+Torg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?filePreferences@42.34:42.49CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaïA ï(P2¡
+`org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.relativize(java.nio.file.Path)!filePathCALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javañ# ñ(+2÷
+uorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.relativize(java.nio.file.Path)?fileDirectories@149.19:149.34CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javañ- ñ(<2∆
+`org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.relativize(java.nio.file.Path)!filePath	PARAMETERW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaî# î(+2›
+uorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.relativize(java.nio.file.Path)?fileDirectories@149.19:149.34DECLARATIONW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaï ï("2x
+java.lang.StringRETURN_TYPEW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaî î(÷	
+uorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.relativize(java.nio.file.Path)?fileDirectories@149.19:149.34VARIABLEW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaï ï(""
+type
+List<Path>"
+isFinalfalse"ü
+declarationStringâ<mark class="modifier"> </mark>List<Path> <mark class="class-field">fileDirectories</mark> = database.getFileDirectories(filePreferences)*fileDirectories2o
+java.util.ListTYPEW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaï ï(2|
+java.nio.file.PathTYPE_ARGUMENTW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaï ï(2»
+gorg.jabref.model.database.BibDatabaseContext.getFileDirectories(org.jabref.preferences.FilePreferences)CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaï. ï(@2Æ
+Morg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?database@40.37:40.45CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaï% ï(-2µ
+Torg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?filePreferences@42.34:42.49CALLW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaïA ï(Pâ
+`org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel.relativize(java.nio.file.Path)!filePath	PARAMETERW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaî# î(+"
+typePath"
+isFinalfalse""
+declarationStringPath filePath*filePath2s
+java.nio.file.PathTYPEW
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.javaî î("Ö
+Xorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?REMOTE_LINK_PATTERN@33.33:33.52VALUEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java!! !(4"
+isFinaltrue"
+typePattern"„
+declarationStringÕ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Pattern <mark class="class-field">REMOTE_LINK_PATTERN</mark> = Pattern.compile("[a-z]+://.*");"
+isStatictrue"
+accessprivate*REMOTE_LINK_PATTERN2v
+java.util.regex.PatternTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java! !( 2ê
+1java.util.regex.Pattern.compile(java.lang.String)CALLU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java!? !(Fª
+Iorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?link@34.33:34.37VALUEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java"! "(%"
+isFinaltrue"
+typeStringProperty"¥
+declarationStringû<mark class="modifier">private </mark><mark class="modifier">final </mark>StringProperty <mark class="class-field">link</mark> = new SimpleStringProperty("");"
+isStaticfalse"
+accessprivate*link2É
+$javafx.beans.property.StringPropertyTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java" "( –
+Porg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?description@35.33:35.44VALUEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java#! #(,"
+isFinaltrue"
+typeStringProperty"ª
+declarationString•<mark class="modifier">private </mark><mark class="modifier">final </mark>StringProperty <mark class="class-field">description</mark> = new SimpleStringProperty("");"
+isStaticfalse"
+accessprivate*description2É
+$javafx.beans.property.StringPropertyTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java# #(  
+Norg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?sourceUrl@36.33:36.42VALUEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java$! $(*"
+isFinaltrue"
+typeStringProperty"π
+declarationString£<mark class="modifier">private </mark><mark class="modifier">final </mark>StringProperty <mark class="class-field">sourceUrl</mark> = new SimpleStringProperty("");"
+isStaticfalse"
+accessprivate*	sourceUrl2É
+$javafx.beans.property.StringPropertyTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java$ $( ≈
+Yorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?allExternalFileTypes@37.49:37.69VALUEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java%1 %(E"
+isFinaltrue"&
+typeListProperty<ExternalFileType>"ı
+declarationStringﬂ<mark class="modifier">private </mark><mark class="modifier">final </mark>ListProperty<ExternalFileType> <mark class="class-field">allExternalFileTypes</mark> = new SimpleListProperty<>(FXCollections.emptyObservableList());"
+isStaticfalse"
+accessprivate*allExternalFileTypes2Å
+"javafx.beans.property.ListPropertyTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java% %(2ò
+0org.jabref.gui.externalfiletype.ExternalFileTypeTYPE_ARGUMENTU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java% %(/∂
+]org.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?selectedExternalFileType@38.51:38.75VALUEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java&3 &(K"
+isFinaltrue"(
+type ObjectProperty<ExternalFileType>"⁄
+declarationStringƒ<mark class="modifier">private </mark><mark class="modifier">final </mark>ObjectProperty<ExternalFileType> <mark class="class-field">selectedExternalFileType</mark> = new SimpleObjectProperty<>();"
+isStaticfalse"
+accessprivate*selectedExternalFileType2É
+$javafx.beans.property.ObjectPropertyTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java& &( 2ò
+0org.jabref.gui.externalfiletype.ExternalFileTypeTYPE_ARGUMENTU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java&! &(1—
+dorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?monadicSelectedExternalFileType@39.60:39.91VALUEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java'< '(["
+isFinaltrue"1
+type)ObservableOptionalValue<ExternalFileType>" 
+declarationString¥<mark class="modifier">private </mark><mark class="modifier">final </mark>ObservableOptionalValue<ExternalFileType> <mark class="class-field">monadicSelectedExternalFileType</mark>"
+isStaticfalse"
+accessprivate*monadicSelectedExternalFileType2ó
+8com.tobiasdiez.easybind.optional.ObservableOptionalValueTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java' '()2ò
+0org.jabref.gui.externalfiletype.ExternalFileTypeTYPE_ARGUMENTU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java'* '(:∑
+Morg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?database@40.37:40.45VALUEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java(% ((-"
+isFinaltrue"
+typeBibDatabaseContext"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">database</mark>"
+isStaticfalse"
+accessprivate*database2ã
+,org.jabref.model.database.BibDatabaseContextTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java( (($´
+Rorg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?dialogService@41.32:41.45VALUEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java)  )(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2{
+org.jabref.gui.DialogServiceTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java) )(¿
+Torg.jabref.gui.linkedfile.LinkedFilesEditDialogViewModel?filePreferences@42.34:42.49VALUEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java*" *(1"
+isFinaltrue"
+typeFilePreferences"†
+declarationStringä<mark class="modifier">private </mark><mark class="modifier">final </mark>FilePreferences <mark class="class-field">filePreferences</mark>"
+isStaticfalse"
+accessprivate*filePreferences2Ö
+&org.jabref.preferences.FilePreferencesTYPEU
+Ksrc\main\java\org\jabref\gui\linkedfile\LinkedFilesEditDialogViewModel.java* *(!

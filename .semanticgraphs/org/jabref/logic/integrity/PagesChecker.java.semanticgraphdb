@@ -1,0 +1,160 @@
+
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java«
+
+'org.jabref.logic.integrity.PagesCheckerCLASSD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java ("%
+packageorg.jabref.logic.integrity"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"§
+declarationStringé<mark class="modifier">public </mark><mark class="modifier">class </mark>PagesChecker<mark class="modifier"><br>implements </mark>ValueChecker"
+accesspublic*PagesChecker2∑
+borg.jabref.logic.integrity.PagesChecker.PagesChecker(org.jabref.model.database.BibDatabaseContext)DECLARATIOND
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java" "(2ô
+Dorg.jabref.logic.integrity.PagesChecker.checkValue(java.lang.String)DECLARATIOND
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java4 4(&2ô
+Dorg.jabref.logic.integrity.PagesChecker?PAGES_EXP_BIBTEX@13.32:13.48DECLARATIOND
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java  (02õ
+Forg.jabref.logic.integrity.PagesChecker?PAGES_EXP_BIBLATEX@23.32:23.50DECLARATIOND
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java  (22ö
+Eorg.jabref.logic.integrity.PagesChecker?isValidPageNumber@32.36:32.53DECLARATIOND
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java $  (52w
+'org.jabref.logic.integrity.ValueCheckerEXTENDD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java% (1©
+borg.jabref.logic.integrity.PagesChecker.PagesChecker(org.jabref.model.database.BibDatabaseContext)CONSTRUCTORD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java" "("Ü
+declarationStringq<mark class="modifier">public </mark><mark class="method">PagesChecker</mark>(BibDatabaseContext databaseContext)*PagesChecker2ã
+=org.jabref.model.database.BibDatabaseContext.isBiblatexMode()CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java# #(*2s
+%java.util.regex.Pattern.asPredicate()CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java$D $(O2
+1java.util.regex.Pattern.compile(java.lang.String)CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java$( $(/2s
+%java.util.regex.Pattern.asPredicate()CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java&B &(M2
+1java.util.regex.Pattern.compile(java.lang.String)CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java&( &(/2¿
+rorg.jabref.logic.integrity.PagesChecker.PagesChecker(org.jabref.model.database.BibDatabaseContext)!databaseContextCALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java# #(2ì
+Eorg.jabref.logic.integrity.PagesChecker?isValidPageNumber@32.36:32.53CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java$ $(2î
+Forg.jabref.logic.integrity.PagesChecker?PAGES_EXP_BIBLATEX@23.32:23.50CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java$0 $(B2ì
+Eorg.jabref.logic.integrity.PagesChecker?isValidPageNumber@32.36:32.53CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java& &(2í
+Dorg.jabref.logic.integrity.PagesChecker?PAGES_EXP_BIBTEX@13.32:13.48CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java&0 &(@2≈
+rorg.jabref.logic.integrity.PagesChecker.PagesChecker(org.jabref.model.database.BibDatabaseContext)!databaseContext	PARAMETERD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java"+ "(:2|
+'org.jabref.logic.integrity.PagesCheckerRETURN_TYPED
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java" "(π
+rorg.jabref.logic.integrity.PagesChecker.PagesChecker(org.jabref.model.database.BibDatabaseContext)!databaseContext	PARAMETERD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java"+ "(:"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2z
+,org.jabref.model.database.BibDatabaseContextTYPED
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java" "(*€
+Dorg.jabref.logic.integrity.PagesChecker.checkValue(java.lang.String)METHODD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java4 4(&"
+isFinalfalse"¥
+declarationStringû<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>Optional&lt;String&gt; <mark class="method">checkValue</mark>(String value)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<String>*
+checkValue2ã
+=org.jabref.model.strings.StringUtil.isBlank(java.lang.String)CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java5 5(2h
+java.util.Optional.empty()CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java6 6(!2ó
+Ijava.util.stream.Stream.anyMatch(java.util.function.Predicate<? super T>)CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java; ;(2û
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java: :(2j
+java.util.Arrays.stream(T[])CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java9 9(2v
+(java.lang.String.split(java.lang.String)CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java9  9(%2r
+$java.util.function.Predicate.test(T)CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java;: ;(>2f
+java.util.Optional.of(T)CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java< <(2ú
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java<, <(02h
+java.util.Optional.empty()CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java> >(2ò
+Jorg.jabref.logic.integrity.PagesChecker.checkValue(java.lang.String)!valueCALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java5 5($2ò
+Jorg.jabref.logic.integrity.PagesChecker.checkValue(java.lang.String)!valueCALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java9 9(2ì
+Eorg.jabref.logic.integrity.PagesChecker?isValidPageNumber@32.36:32.53CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java;( ;(92®
+Zorg.jabref.logic.integrity.PagesChecker.checkValue(java.lang.String)?pageRange@59.26:59.35CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java;? ;(H2e
+java.lang.String.trim()CALLD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java: :(!2ñ
+Dorg.jabref.logic.integrity.ValueChecker.checkValue(java.lang.String)OVERRIDED
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java4 4(&2ù
+Jorg.jabref.logic.integrity.PagesChecker.checkValue(java.lang.String)!value	PARAMETERD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java4. 4(32Ø
+Zorg.jabref.logic.integrity.PagesChecker.checkValue(java.lang.String)?pageRange@59.26:59.35DECLARATIOND
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java; ;(#2g
+java.util.OptionalRETURN_TYPED
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java4 4(2n
+java.lang.StringRETURN_TYPE_ARGUMENTD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java4 4(…
+Jorg.jabref.logic.integrity.PagesChecker.checkValue(java.lang.String)!value	PARAMETERD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java4. 4(3"
+typeString"
+isFinalfalse"!
+declarationStringString value*value2^
+java.lang.StringTYPED
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java4' 4(-˙
+Zorg.jabref.logic.integrity.PagesChecker.checkValue(java.lang.String)?pageRange@59.26:59.35VARIABLED
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java; ;(#"
+type"
+isFinalfalse"
+declarationString
+ pageRange*	pageRange2TYPEı
+Dorg.jabref.logic.integrity.PagesChecker?PAGES_EXP_BIBTEX@13.32:13.48VALUED
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java  (0"
+isFinaltrue"
+typeString"ß
+declarationStringë<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">PAGES_EXP_BIBTEX</mark> = "" + // begin String
+"\\A" + // optional prefix and number
+"[A-Za-z]?\\d*" + "(" + // separator, must contain exactly two dashes
+"(\\+|-{2}|\u2013)" + // optional prefix and number
+"[A-Za-z]?\\d*" + ")?" + // end String
+"\\z";"
+isStatictrue"
+accessprivate*PAGES_EXP_BIBTEX2^
+java.lang.StringTYPED
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java (‹
+Forg.jabref.logic.integrity.PagesChecker?PAGES_EXP_BIBLATEX@23.32:23.50VALUED
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java  (2"
+isFinaltrue"
+typeString"ä
+declarationStringÙ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">PAGES_EXP_BIBLATEX</mark> = "" + // begin String
+"\\A" + // optional prefix and number
+"[A-Za-z]?\\d*" + "(" + // separator
+"(\\+|-{1,2}|\u2013)" + // optional prefix and number
+"[A-Za-z]?\\d*" + ")?" + // end String
+"\\z";"
+isStatictrue"
+accessprivate*PAGES_EXP_BIBLATEX2^
+java.lang.StringTYPED
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java (ı
+Eorg.jabref.logic.integrity.PagesChecker?isValidPageNumber@32.36:32.53VALUED
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java $  (5"
+isFinaltrue"
+typePredicate<String>"§
+declarationStringé<mark class="modifier">private </mark><mark class="modifier">final </mark>Predicate<String> <mark class="class-field">isValidPageNumber</mark>"
+isStaticfalse"
+accessprivate*isValidPageNumber2j
+java.util.function.PredicateTYPED
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java   (2g
+java.lang.StringTYPE_ARGUMENTD
+:src\main\java\org\jabref\logic\integrity\PagesChecker.java   ("

@@ -1,0 +1,588 @@
+
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaƒ
+,org.jabref.logic.importer.fetcher.MathSciNetCLASSI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java- -(",
+package!org.jabref.logic.importer.fetcher"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"›
+declarationString«<mark class="modifier">public </mark><mark class="modifier">class </mark>MathSciNet<mark class="modifier"><br>implements </mark>SearchBasedParserFetcher, EntryBasedParserFetcher, IdBasedParserFetcher"
+accesspublic*
+MathSciNet2d
+
+MathSciNetDECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java1 1(2ê
+6org.jabref.logic.importer.fetcher.MathSciNet.getName()DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java6 6(2∂
+\org.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java? ?(2“
+xorg.jabref.logic.importer.fetcher.MathSciNet.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaS S(2¨
+Rorg.jabref.logic.importer.fetcher.MathSciNet.getUrlForIdentifier(java.lang.String)DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java\ \("2í
+8org.jabref.logic.importer.fetcher.MathSciNet.getParser()DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javae e(2∑
+[org.jabref.logic.importer.fetcher.MathSciNet.doPostCleanup(org.jabref.model.entry.BibEntry)DECLARATIONK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaÖ Ö(2ô
+?org.jabref.logic.importer.fetcher.MathSciNet?LOGGER@46.32:46.38DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java.  .(&2û
+Dorg.jabref.logic.importer.fetcher.MathSciNet?preferences@47.42:47.53DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java/* /(52á
+2org.jabref.logic.importer.SearchBasedParserFetcherEXTENDI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java-# -(;2Ü
+1org.jabref.logic.importer.EntryBasedParserFetcherEXTENDI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java-= -(T2É
+.org.jabref.logic.importer.IdBasedParserFetcherEXTENDI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java-V -(jõ
+
+MathSciNetCONSTRUCTORI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java1 1("Ö
+declarationStringp<mark class="modifier">public </mark><mark class="method">MathSciNet</mark>(ImportFormatPreferences preferences)*
+MathSciNet2ó
+Dorg.jabref.logic.importer.fetcher.MathSciNet?preferences@47.42:47.53CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java2 2(2Ü
+,org.jabref.logic.importer.fetcher.MathSciNetRETURN_TYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java1 1(…
+preferences	PARAMETERI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java1. 1(9"
+typeImportFormatPreferences"
+isFinalfalse"8
+declarationString#ImportFormatPreferences preferences*preferences2j
+ImportFormatPreferencesTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java1 1(-ã
+6org.jabref.logic.importer.fetcher.MathSciNet.getName()METHODI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java6 6("
+isFinalfalse"î
+declarationString<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>String <mark class="method">getName</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*getName2Ö
+.org.jabref.logic.importer.WebFetcher.getName()OVERRIDEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java6 6(2Ö
+.org.jabref.logic.importer.WebFetcher.getName()OVERRIDEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java6 6(2Ö
+.org.jabref.logic.importer.WebFetcher.getName()OVERRIDEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java6 6(2j
+java.lang.StringRETURN_TYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java6 6(Ö/
+\org.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)METHODI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java? ?("
+isFinalfalse"û
+declarationStringà<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>URL <mark class="method">getURLForEntry</mark>(BibEntry entry)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>URISyntaxException<mark class="modifier"><mark class="modifier">,</mark></mark> MalformedURLException<mark class="modifier"><mark class="modifier">,</mark></mark> FetcherException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeURL*getURLForEntry2ü
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java@1 @(92q
+java.util.Optional.isPresent()CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaA A(%2•
+Rorg.jabref.logic.importer.fetcher.MathSciNet.getUrlForIdentifier(java.lang.String)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaC C(&2k
+java.util.Optional.get()CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaC7 C(:2o
+java.util.Optional.orElse(T)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaHV H(\2¶
+Sorg.jabref.model.entry.BibEntry.getFieldOrAlias(org.jabref.model.entry.field.Field)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaH0 H(?2o
+java.util.Optional.orElse(T)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaIT I(Z2¶
+Sorg.jabref.model.entry.BibEntry.getFieldOrAlias(org.jabref.model.entry.field.Field)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaI/ I(>2o
+java.util.Optional.orElse(T)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaJX J(^2¶
+Sorg.jabref.model.entry.BibEntry.getFieldOrAlias(org.jabref.model.entry.field.Field)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaJ1 J(@2o
+java.util.Optional.orElse(T)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaKR K(X2¶
+Sorg.jabref.model.entry.BibEntry.getFieldOrAlias(org.jabref.model.entry.field.Field)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaK. K(=2µ
+borg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)!entryCALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java@+ @(02À
+xorg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)?mrNumberInEntry@64.25:64.40CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaA A(2À
+xorg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)?mrNumberInEntry@64.25:64.40CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaC' C(62∆
+sorg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)?uriBuilder@70.19:70.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaH H(2µ
+borg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)!entryCALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaH* H(/2∆
+sorg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)?uriBuilder@70.19:70.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaI I(2µ
+borg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)!entryCALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaI) I(.2∆
+sorg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)?uriBuilder@70.19:70.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaJ J(2µ
+borg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)!entryCALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaJ+ J(02∆
+sorg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)?uriBuilder@70.19:70.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaK K(2µ
+borg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)!entryCALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaK( K(-2∆
+sorg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)?uriBuilder@70.19:70.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaL L(2∆
+sorg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)?uriBuilder@70.19:70.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaM M(2∆
+sorg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)?uriBuilder@70.19:70.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaO O(2∏
+aorg.jabref.logic.importer.EntryBasedParserFetcher.getURLForEntry(org.jabref.model.entry.BibEntry)OVERRIDEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java? ?(2∫
+borg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)!entry	PARAMETERI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java?' ?(,2“
+xorg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)?mrNumberInEntry@64.25:64.40DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java@ @((2Õ
+sorg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)?uriBuilder@70.19:70.29DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaF F(2f
+java.net.URLRETURN_TYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java? ?(ﬁ
+xorg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)?mrNumberInEntry@64.25:64.40VARIABLEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java@ @(("
+typeOptional<String>"
+isFinalfalse"†
+declarationStringä<mark class="modifier"> </mark>Optional<String> <mark class="class-field">mrNumberInEntry</mark> = entry.getField(StandardField.MR_NUMBER)*mrNumberInEntry2e
+java.util.OptionalTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java@ @(2l
+java.lang.StringTYPE_ARGUMENTI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java@ @(2ü
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java@1 @(92µ
+borg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)!entryCALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java@+ @(0∑
+sorg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)?uriBuilder@70.19:70.29VARIABLEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaF F("
+type
+URIBuilder"
+isFinalfalse"º
+declarationString¶<mark class="modifier"> </mark>URIBuilder <mark class="class-field">uriBuilder</mark> = new URIBuilder("https://mathscinet.ams.org/mathscinet/api/freetools/mrlookup")*
+uriBuilder2z
+'org.apache.http.client.utils.URIBuilderTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaF F(˛
+borg.jabref.logic.importer.fetcher.MathSciNet.getURLForEntry(org.jabref.model.entry.BibEntry)!entry	PARAMETERI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java?' ?(,"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2r
+org.jabref.model.entry.BibEntryTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java? ?(&î
+xorg.jabref.logic.importer.fetcher.MathSciNet.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)METHODI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaS S("
+isFinalfalse"•
+declarationStringè<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>URL <mark class="method">getURLForQuery</mark>(QueryNode luceneQuery)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>URISyntaxException<mark class="modifier"><mark class="modifier">,</mark></mark> MalformedURLException<mark class="modifier"><mark class="modifier">,</mark></mark> FetcherException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeURL*getURLForQuery2≥
+`org.jabref.logic.importer.fetcher.transformers.DefaultQueryTransformer.DefaultQueryTransformer()CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaU- U(D2„
+èorg.jabref.logic.importer.fetcher.MathSciNet.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?uriBuilder@84.19:84.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaU U(2ÿ
+Ñorg.jabref.logic.importer.fetcher.MathSciNet.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)!luceneQueryCALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaU\ U(g2„
+èorg.jabref.logic.importer.fetcher.MathSciNet.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?uriBuilder@84.19:84.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaV V(2„
+èorg.jabref.logic.importer.fetcher.MathSciNet.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?uriBuilder@84.19:84.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaW W(2„
+èorg.jabref.logic.importer.fetcher.MathSciNet.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?uriBuilder@84.19:84.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaX X(2’
+~org.jabref.logic.importer.SearchBasedParserFetcher.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)OVERRIDEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaS S(2›
+Ñorg.jabref.logic.importer.fetcher.MathSciNet.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)!luceneQuery	PARAMETERI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaS( S(32Í
+èorg.jabref.logic.importer.fetcher.MathSciNet.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?uriBuilder@84.19:84.29DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaT T(2f
+java.net.URLRETURN_TYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaS S(’
+èorg.jabref.logic.importer.fetcher.MathSciNet.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?uriBuilder@84.19:84.29VARIABLEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaT T("
+type
+URIBuilder"
+isFinalfalse"Ω
+declarationStringß<mark class="modifier"> </mark>URIBuilder <mark class="class-field">uriBuilder</mark> = new URIBuilder("https://mathscinet.ams.org/mathscinet/api/publications/search")*
+uriBuilder2z
+'org.apache.http.client.utils.URIBuilderTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaT T(Ã
+Ñorg.jabref.logic.importer.fetcher.MathSciNet.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)!luceneQuery	PARAMETERI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaS( S(3"
+type	QueryNode"
+isFinalfalse"*
+declarationStringQueryNode luceneQuery*luceneQuery2é
+;org.apache.lucene.queryparser.flexible.core.nodes.QueryNodeTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaS S('¬
+Rorg.jabref.logic.importer.fetcher.MathSciNet.getUrlForIdentifier(java.lang.String)METHODI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java\ \(""
+isFinalfalse"¶
+declarationStringê<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>URL <mark class="method">getUrlForIdentifier</mark>(String identifier)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>URISyntaxException<mark class="modifier"><mark class="modifier">,</mark></mark> MalformedURLException<mark class="modifier"><mark class="modifier">,</mark></mark> FetcherException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeURL*getUrlForIdentifier2º
+iorg.jabref.logic.importer.fetcher.MathSciNet.getUrlForIdentifier(java.lang.String)?uriBuilder@93.19:93.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java^ ^(2º
+iorg.jabref.logic.importer.fetcher.MathSciNet.getUrlForIdentifier(java.lang.String)?uriBuilder@93.19:93.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java_ _(2∞
+]org.jabref.logic.importer.fetcher.MathSciNet.getUrlForIdentifier(java.lang.String)!identifierCALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java_' _(12º
+iorg.jabref.logic.importer.fetcher.MathSciNet.getUrlForIdentifier(java.lang.String)?uriBuilder@93.19:93.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaa a(2´
+Torg.jabref.logic.importer.IdBasedParserFetcher.getUrlForIdentifier(java.lang.String)OVERRIDEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java\ \("2µ
+]org.jabref.logic.importer.fetcher.MathSciNet.getUrlForIdentifier(java.lang.String)!identifier	PARAMETERI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java\* \(42√
+iorg.jabref.logic.importer.fetcher.MathSciNet.getUrlForIdentifier(java.lang.String)?uriBuilder@93.19:93.29DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java] ](2f
+java.net.URLRETURN_TYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java\ \(Æ
+iorg.jabref.logic.importer.fetcher.MathSciNet.getUrlForIdentifier(java.lang.String)?uriBuilder@93.19:93.29VARIABLEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java] ]("
+type
+URIBuilder"
+isFinalfalse"Ω
+declarationStringß<mark class="modifier"> </mark>URIBuilder <mark class="class-field">uriBuilder</mark> = new URIBuilder("https://mathscinet.ams.org/mathscinet/api/publications/format")*
+uriBuilder2z
+'org.apache.http.client.utils.URIBuilderTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java] ](
+]org.jabref.logic.importer.fetcher.MathSciNet.getUrlForIdentifier(java.lang.String)!identifier	PARAMETERI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java\* \(4"
+typeString"
+isFinalfalse"&
+declarationStringString identifier*
+identifier2c
+java.lang.StringTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java\# \() G
+8org.jabref.logic.importer.fetcher.MathSciNet.getParser()METHODI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javae e("
+isFinalfalse"ó
+declarationStringÅ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>Parser <mark class="method">getParser</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeParser*	getParser2ü
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javag] g(d2q
+java.io.BufferedReader.lines()CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javagU g(Z2é
+;java.util.stream.Collectors.joining(java.lang.CharSequence)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javagp g(w2ã
+8java.util.List.addAll(java.util.Collection<? extends E>)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javar  r(&2í
+?org.jabref.logic.importer.Parser.parseEntries(java.lang.String)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javar4 r(@2ã
+8java.util.List.addAll(java.util.Collection<? extends E>)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javay  y(&2í
+?org.jabref.logic.importer.Parser.parseEntries(java.lang.String)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javay4 y(@2à
+5java.io.BufferedReader.BufferedReader(java.io.Reader)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javag" g(02ì
+@java.io.InputStreamReader.InputStreamReader(java.io.InputStream)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javag5 g(F2ò
+Eorg.jabref.model.util.DummyFileUpdateMonitor.DummyFileUpdateMonitor()CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javahJ h(`2r
+java.util.ArrayList.ArrayList()CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaj) j(42•
+Rorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?inputStream@102.15:102.26CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javagG g(R2ó
+Dorg.jabref.logic.importer.fetcher.MathSciNet?preferences@47.42:47.53CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javah9 h(D2¢
+Oorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?response@103.19:103.27CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javam- m(52û
+Korg.jabref.logic.importer.fetcher.MathSciNet.getParser()?node@109.25:109.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javan n(2û
+Korg.jabref.logic.importer.fetcher.MathSciNet.getParser()?node@109.25:109.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javao- o(12õ
+Horg.jabref.logic.importer.fetcher.MathSciNet.getParser()?i@112.29:112.30CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javap$ p(%2¶
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?entriesArray@111.30:111.42CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javap( p(42õ
+Horg.jabref.logic.importer.fetcher.MathSciNet.getParser()?i@112.29:112.30CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javap? p(@2¶
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?entriesArray@111.30:111.42CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaq. q(:2õ
+Horg.jabref.logic.importer.fetcher.MathSciNet.getParser()?i@112.29:112.30CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaqI q(J2°
+Norg.jabref.logic.importer.fetcher.MathSciNet.getParser()?entries@106.27:106.34CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javar r(2¶
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?bibtexParser@104.25:104.37CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javar' r(32¶
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?bibTexFormat@113.31:113.43CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javarA r(M2û
+Korg.jabref.logic.importer.fetcher.MathSciNet.getParser()?node@109.25:109.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javau" u(&2°
+Norg.jabref.logic.importer.fetcher.MathSciNet.getParser()?element@117.24:117.31CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javav- v(42õ
+Horg.jabref.logic.importer.fetcher.MathSciNet.getParser()?i@119.29:119.30CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaw$ w(%2¶
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?entriesArray@118.30:118.42CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaw( w(42õ
+Horg.jabref.logic.importer.fetcher.MathSciNet.getParser()?i@119.29:119.30CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaw? w(@2¶
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?entriesArray@118.30:118.42CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javax. x(:2õ
+Horg.jabref.logic.importer.fetcher.MathSciNet.getParser()?i@119.29:119.30CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaxI x(J2°
+Norg.jabref.logic.importer.fetcher.MathSciNet.getParser()?entries@106.27:106.34CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javay y(2¶
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?bibtexParser@104.25:104.37CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javay' y(32¶
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?bibTexFormat@120.31:120.43CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javayA y(M2í
+?org.jabref.logic.importer.fetcher.MathSciNet?LOGGER@46.32:46.38CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java} }(2õ
+Horg.jabref.logic.importer.fetcher.MathSciNet.getParser()?e@124.55:124.56CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java}M }(N2õ
+Horg.jabref.logic.importer.fetcher.MathSciNet.getParser()?e@124.55:124.56CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java~E ~(F2£
+Norg.jabref.logic.importer.fetcher.MathSciNet.getParser()?entries@106.27:106.34CALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaÄ Ä(2ï
+>org.jabref.logic.importer.SearchBasedParserFetcher.getParser()OVERRIDEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javae e(2î
+=org.jabref.logic.importer.EntryBasedParserFetcher.getParser()OVERRIDEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javae e(2ë
+:org.jabref.logic.importer.IdBasedParserFetcher.getParser()OVERRIDEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javae e(2©
+Oorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?response@103.19:103.27DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javag g(2≠
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?bibtexParser@104.25:104.37DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javah h(%2®
+Norg.jabref.logic.importer.fetcher.MathSciNet.getParser()?entries@106.27:106.34DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaj j("2•
+Korg.jabref.logic.importer.fetcher.MathSciNet.getParser()?node@109.25:109.29DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javam m(2≠
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?entriesArray@111.30:111.42DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javao o(*2¢
+Horg.jabref.logic.importer.fetcher.MathSciNet.getParser()?i@112.29:112.30DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javap p(2≠
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?bibTexFormat@113.31:113.43DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaq q(+2®
+Norg.jabref.logic.importer.fetcher.MathSciNet.getParser()?element@117.24:117.31DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javau u(2≠
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?entriesArray@118.30:118.42DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javav v(*2¢
+Horg.jabref.logic.importer.fetcher.MathSciNet.getParser()?i@119.29:119.30DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaw w(2≠
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?bibTexFormat@120.31:120.43DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javax x(+2¨
+Rorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?inputStream@102.15:102.26DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaf f(2¢
+Horg.jabref.logic.importer.fetcher.MathSciNet.getParser()?e@124.55:124.56DECLARATIONI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java|7 |(82z
+ org.jabref.logic.importer.ParserRETURN_TYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javae e(˜
+
+Oorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?response@103.19:103.27VARIABLEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javag g("
+typeString"
+isFinalfalse"Œ
+declarationString∏<mark class="modifier"> </mark>String <mark class="class-field">response</mark> = new BufferedReader(new InputStreamReader(inputStream)).lines().collect(Collectors.joining(OS.NEWLINE))*response2c
+java.lang.StringTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javag g(2ü
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javag] g(d2q
+java.io.BufferedReader.lines()CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javagU g(Z2é
+;java.util.stream.Collectors.joining(java.lang.CharSequence)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javagp g(w2à
+5java.io.BufferedReader.BufferedReader(java.io.Reader)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javag" g(02ì
+@java.io.InputStreamReader.InputStreamReader(java.io.InputStream)CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javag5 g(F2•
+Rorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?inputStream@102.15:102.26CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javagG g(RÃ
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?bibtexParser@104.25:104.37VARIABLEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javah h(%"
+typeBibtexParser"
+isFinalfalse"≠
+declarationStringó<mark class="modifier"> </mark>BibtexParser <mark class="class-field">bibtexParser</mark> = new BibtexParser(preferences, new DummyFileUpdateMonitor())*bibtexParser2Ñ
+1org.jabref.logic.importer.fileformat.BibtexParserTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javah h(2ò
+Eorg.jabref.model.util.DummyFileUpdateMonitor.DummyFileUpdateMonitor()CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javahJ h(`2ó
+Dorg.jabref.logic.importer.fetcher.MathSciNet?preferences@47.42:47.53CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javah9 h(D≠
+Norg.jabref.logic.importer.fetcher.MathSciNet.getParser()?entries@106.27:106.34VARIABLEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaj j(""
+typeList<BibEntry>"
+isFinalfalse"
+declarationStringj<mark class="modifier"> </mark>List<BibEntry> <mark class="class-field">entries</mark> = new ArrayList<>()*entries2a
+java.util.ListTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaj j(2{
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaj j(2r
+java.util.ArrayList.ArrayList()CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaj) j(4ÿ
+Korg.jabref.logic.importer.fetcher.MathSciNet.getParser()?node@109.25:109.29VARIABLEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javam m("
+typeJsonNode"
+isFinalfalse"{
+declarationStringf<mark class="modifier"> </mark>JsonNode <mark class="class-field">node</mark> = new JsonNode(response)*node2h
+kong.unirest.JsonNodeTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javam m(2¢
+Oorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?response@103.19:103.27CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javam- m(5Ì
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?entriesArray@111.30:111.42VARIABLEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javao o(*"
+type	JSONArray"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>JSONArray <mark class="class-field">entriesArray</mark> = node.getArray()*entriesArray2n
+kong.unirest.json.JSONArrayTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javao o(2û
+Korg.jabref.logic.importer.fetcher.MathSciNet.getParser()?node@109.25:109.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javao- o(1ó
+Horg.jabref.logic.importer.fetcher.MathSciNet.getParser()?i@112.29:112.30VARIABLEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javap p("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 0*i2V
+intTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javap p(£
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?bibTexFormat@113.31:113.43VARIABLEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaq q(+"
+typeString"
+isFinalfalse"ö
+declarationStringÑ<mark class="modifier"> </mark>String <mark class="class-field">bibTexFormat</mark> = entriesArray.getJSONObject(i).getString("bib")*bibTexFormat2c
+java.lang.StringTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaq q(2¶
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?entriesArray@111.30:111.42CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaq. q(:2õ
+Horg.jabref.logic.importer.fetcher.MathSciNet.getParser()?i@112.29:112.30CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaqI q(Jª
+Norg.jabref.logic.importer.fetcher.MathSciNet.getParser()?element@117.24:117.31VARIABLEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javau u("
+typevar"
+isFinalfalse"s
+declarationString^<mark class="modifier"> </mark>var <mark class="class-field">element</mark> = node.getObject()*element2V
+varTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javau u(2û
+Korg.jabref.logic.importer.fetcher.MathSciNet.getParser()?node@109.25:109.29CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javau" u(&ó
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?entriesArray@118.30:118.42VARIABLEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javav v(*"
+type	JSONArray"
+isFinalfalse"£
+declarationStringç<mark class="modifier"> </mark>JSONArray <mark class="class-field">entriesArray</mark> = element.getJSONObject("all").getJSONArray("results")*entriesArray2n
+kong.unirest.json.JSONArrayTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javav v(2°
+Norg.jabref.logic.importer.fetcher.MathSciNet.getParser()?element@117.24:117.31CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javav- v(4ó
+Horg.jabref.logic.importer.fetcher.MathSciNet.getParser()?i@119.29:119.30VARIABLEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaw w("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 0*i2V
+intTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaw w(¨
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?bibTexFormat@120.31:120.43VARIABLEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javax x(+"
+typeString"
+isFinalfalse"£
+declarationStringç<mark class="modifier"> </mark>String <mark class="class-field">bibTexFormat</mark> = entriesArray.getJSONObject(i).getString("bibTexFormat")*bibTexFormat2c
+java.lang.StringTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javax x(2¶
+Sorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?entriesArray@118.30:118.42CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javax. x(:2õ
+Horg.jabref.logic.importer.fetcher.MathSciNet.getParser()?i@119.29:119.30CALLI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaxI x(J˚
+Rorg.jabref.logic.importer.fetcher.MathSciNet.getParser()?inputStream@102.15:102.26VARIABLEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaf f("
+type"
+isFinalfalse"!
+declarationString inputStream*inputStream2TYPEÆ
+Horg.jabref.logic.importer.fetcher.MathSciNet.getParser()?e@124.55:124.56VARIABLEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java|7 |(8")
+type!JSONException | TokenMgrException"
+isFinalfalse"8
+declarationString#JSONException | TokenMgrException e*e2í
+?kong.unirest.json.JSONException | org.jbibtex.TokenMgrExceptionTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java| |(6á(
+[org.jabref.logic.importer.fetcher.MathSciNet.doPostCleanup(org.jabref.model.entry.BibEntry)METHODK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaÖ Ö("
+isFinalfalse"≈
+declarationStringØ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">doPostCleanup</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*doPostCleanup2ß
+Rorg.jabref.logic.cleanup.MoveFieldCleanup.cleanup(org.jabref.model.entry.BibEntry)CALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaÜG Ü(N2ß
+Rorg.jabref.logic.cleanup.MoveFieldCleanup.cleanup(org.jabref.model.entry.BibEntry)CALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaáR á(Y2¨
+Worg.jabref.logic.cleanup.FieldFormatterCleanup.cleanup(org.jabref.model.entry.BibEntry)CALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaàX à(_2°
+Lorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)CALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaâ â( 2¨
+Worg.jabref.logic.cleanup.FieldFormatterCleanup.cleanup(org.jabref.model.entry.BibEntry)CALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaäK ä(R2ù
+Horg.jabref.model.entry.BibEntry.setCommentsBeforeEntry(java.lang.String)CALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaç ç($2ÿ
+Çorg.jabref.logic.cleanup.MoveFieldCleanup.MoveFieldCleanup(org.jabref.model.entry.field.Field, org.jabref.model.entry.field.Field)CALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaÜ Ü(2ÿ
+Çorg.jabref.logic.cleanup.MoveFieldCleanup.MoveFieldCleanup(org.jabref.model.entry.field.Field, org.jabref.model.entry.field.Field)CALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaá á(2ù
+Horg.jabref.model.entry.field.UnknownField.UnknownField(java.lang.String)CALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaá! á(-2‚
+åorg.jabref.logic.cleanup.FieldFormatterCleanup.FieldFormatterCleanup(org.jabref.model.entry.field.Field, org.jabref.logic.cleanup.Formatter)CALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaà à(!2ù
+Horg.jabref.model.entry.field.UnknownField.UnknownField(java.lang.String)CALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaà& à(22ú
+Gorg.jabref.logic.formatter.bibtexfields.ClearFormatter.ClearFormatter()CALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaàF à(T2Ö
+0org.jabref.logic.cleanup.DoiCleanup.DoiCleanup()CALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaâ â(2‚
+åorg.jabref.logic.cleanup.FieldFormatterCleanup.FieldFormatterCleanup(org.jabref.model.entry.field.Field, org.jabref.logic.cleanup.Formatter)CALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaä ä(!2ú
+Gorg.jabref.logic.formatter.bibtexfields.ClearFormatter.ClearFormatter()CALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaä9 ä(G2∂
+aorg.jabref.logic.importer.fetcher.MathSciNet.doPostCleanup(org.jabref.model.entry.BibEntry)!entryCALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaÜO Ü(T2∂
+aorg.jabref.logic.importer.fetcher.MathSciNet.doPostCleanup(org.jabref.model.entry.BibEntry)!entryCALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaáZ á(_2∂
+aorg.jabref.logic.importer.fetcher.MathSciNet.doPostCleanup(org.jabref.model.entry.BibEntry)!entryCALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaà` à(e2∂
+aorg.jabref.logic.importer.fetcher.MathSciNet.doPostCleanup(org.jabref.model.entry.BibEntry)!entryCALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaâ! â(&2∂
+aorg.jabref.logic.importer.fetcher.MathSciNet.doPostCleanup(org.jabref.model.entry.BibEntry)!entryCALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaäS ä(X2∂
+aorg.jabref.logic.importer.fetcher.MathSciNet.doPostCleanup(org.jabref.model.entry.BibEntry)!entryCALLK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaç ç(2∫
+aorg.jabref.logic.importer.SearchBasedParserFetcher.doPostCleanup(org.jabref.model.entry.BibEntry)OVERRIDEK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaÖ Ö(2π
+`org.jabref.logic.importer.EntryBasedParserFetcher.doPostCleanup(org.jabref.model.entry.BibEntry)OVERRIDEK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaÖ Ö(2∂
+]org.jabref.logic.importer.IdBasedParserFetcher.doPostCleanup(org.jabref.model.entry.BibEntry)OVERRIDEK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaÖ Ö(2ª
+aorg.jabref.logic.importer.fetcher.MathSciNet.doPostCleanup(org.jabref.model.entry.BibEntry)!entry	PARAMETERK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaÖ' Ö(,2`
+voidRETURN_TYPEK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaÖ Ö(Å
+aorg.jabref.logic.importer.fetcher.MathSciNet.doPostCleanup(org.jabref.model.entry.BibEntry)!entry	PARAMETERK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaÖ' Ö(,"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2t
+org.jabref.model.entry.BibEntryTYPEK
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.javaÖ Ö(&©
+?org.jabref.logic.importer.fetcher.MathSciNet?LOGGER@46.32:46.38VALUEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java.  .(&"
+isFinaltrue"
+typeLogger"‡
+declarationString <mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(MathSciNet.class);"
+isStatictrue"
+accessprivate*LOGGER2c
+org.slf4j.LoggerTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java. .(ê
+Dorg.jabref.logic.importer.fetcher.MathSciNet?preferences@47.42:47.53VALUEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java/* /(5"
+isFinaltrue"
+typeImportFormatPreferences"§
+declarationStringé<mark class="modifier">private </mark><mark class="modifier">final </mark>ImportFormatPreferences <mark class="class-field">preferences</mark>"
+isStaticfalse"
+accessprivate*preferences2j
+ImportFormatPreferencesTYPEI
+?src\main\java\org\jabref\logic\importer\fetcher\MathSciNet.java/ /()

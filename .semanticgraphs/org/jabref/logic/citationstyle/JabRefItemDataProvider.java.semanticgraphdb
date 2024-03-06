@@ -1,0 +1,806 @@
+
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java…
+5org.jabref.logic.citationstyle.JabRefItemDataProviderCLASSR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java$ $(#")
+packageorg.jabref.logic.citationstyle"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"≤
+declarationStringú<mark class="modifier">public </mark><mark class="modifier">class </mark>JabRefItemDataProvider<mark class="modifier"><br>implements </mark>ItemDataProvider"
+accesspublic*JabRefItemDataProvider2±
+Norg.jabref.logic.citationstyle.JabRefItemDataProvider.JabRefItemDataProvider()DECLARATIONR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java0 0(!2´
+«org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)DECLARATIONR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javac c(-2˛
+òorg.jabref.logic.citationstyle.JabRefItemDataProvider.setData(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∞ ∞(2Ø
+…org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¥ ¥(2π
+Torg.jabref.logic.citationstyle.JabRefItemDataProvider.retrieveItem(java.lang.String)DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¬ ¬(#2£
+>org.jabref.logic.citationstyle.JabRefItemDataProvider.getIds()DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java   ($2£
+>org.jabref.logic.citationstyle.JabRefItemDataProvider.toJson()DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java– –(2µ
+Rorg.jabref.logic.citationstyle.JabRefItemDataProvider?BIBTEX_CONVERTER@38.41:38.57DECLARATIONR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java&) &(92Ω
+Zorg.jabref.logic.citationstyle.JabRefItemDataProvider?stringJsonBuilderFactory@40.43:40.67DECLARATIONR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java(+ ((C2©
+Forg.jabref.logic.citationstyle.JabRefItemDataProvider?data@42.33:42.37DECLARATIONR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java*! *(%2∑
+Torg.jabref.logic.citationstyle.JabRefItemDataProvider?bibDatabaseContext@44.31:44.49DECLARATIONR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java, ,(12∂
+Sorg.jabref.logic.citationstyle.JabRefItemDataProvider?entryTypesManager@45.33:45.50DECLARATIONR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java-! -(22±
+Norg.jabref.logic.citationstyle.JabRefItemDataProvider?pagesChecker@46.25:46.37DECLARATIONR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java. .(%2Ö
+'de.undercouch.citeproc.ItemDataProviderEXTENDR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java$/ $(?ç
+Norg.jabref.logic.citationstyle.JabRefItemDataProvider.JabRefItemDataProvider()CONSTRUCTORR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java0 0(!"n
+declarationStringY<mark class="modifier">public </mark><mark class="method">JabRefItemDataProvider</mark>()*JabRefItemDataProvider2∂
+Zorg.jabref.logic.citationstyle.JabRefItemDataProvider?stringJsonBuilderFactory@40.43:40.67CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java1 1( 2ò
+5org.jabref.logic.citationstyle.JabRefItemDataProviderRETURN_TYPER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java0 0(!Ú¯
+«org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)METHODR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javac c(-"
+isFinalfalse"€
+declarationString≈<mark class="modifier">private </mark>CSLItemData <mark class="method">bibEntryToCSLItemData</mark>(BibEntry originalBibEntry<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseContext bibDatabaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntryTypesManager entryTypesManager)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeCSLItemData*bibEntryToCSLItemData2É
+'org.jabref.model.entry.BibEntry.clone()CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaf8 f(=2x
+java.util.Optional.orElse(T)CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javag3 g(92å
+0org.jabref.model.entry.BibEntry.getCitationKey()CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javag" g(02å
+0org.jabref.model.entry.types.EntryType.getName()CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javahM h(T2Ö
+)org.jabref.model.entry.BibEntry.getType()CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javahC h(J2‚
+Öorg.jabref.model.entry.BibEntryTypesManager.enrich(org.jabref.model.entry.types.EntryType, org.jabref.model.database.BibDatabaseMode)CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javam= m(C2Ö
+)org.jabref.model.entry.BibEntry.getType()CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javamM m(T2í
+6org.jabref.model.database.BibDatabaseContext.getMode()CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javamk m(r2Ö
+)java.lang.Object.equals(java.lang.Object)CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javao o(%2Ö
+)org.jabref.model.entry.BibEntry.getType()CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javao o(2ô
+=org.jabref.model.database.BibDatabaseContext.isBiblatexMode()CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javas# s(12®
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javau8 u(@2†
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javav v(%2∫
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaw% w(-2™
+Norg.jabref.model.entry.BibEntry.clearField(org.jabref.model.entry.field.Field)CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javax% x(/2†
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java|5 |(>2®
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java| |(!2®
+Lorg.jabref.model.entry.BibEntry.hasField(org.jabref.model.entry.field.Field)CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java}" }(*2∫
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java~! ~()2™
+Norg.jabref.model.entry.BibEntry.clearField(org.jabref.model.entry.field.Field)CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java! (+2¢
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÑ8 Ñ(A2™
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÑ Ñ(!2º
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÖ Ö(%2¨
+Norg.jabref.model.entry.BibEntry.clearField(org.jabref.model.entry.field.Field)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÜ Ü('2¢
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaà7 à(@2™
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaà à(!2ã
+-java.lang.String.startsWith(java.lang.String)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaâ7 â(A2å
+.java.lang.String.toLowerCase(java.util.Locale)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaâ â()2}
+java.lang.String.substring(int)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaä& ä(/2w
+java.lang.String.length()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaä; ä(A2º
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaã! ã()2¢
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaé5 é(>2™
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaé é(!2™
+Lorg.jabref.model.entry.BibEntry.hasField(org.jabref.model.entry.field.Field)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaè" è(*2º
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaê! ê()2¨
+Norg.jabref.model.entry.BibEntry.clearField(org.jabref.model.entry.field.Field)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaë! ë(+2|
+java.util.Optional.isPresent()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaò ò(2©
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaô? ô(B2©
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaô ô("2â
++org.jabref.model.entry.BibEntry.getFields()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaö# ö(,2â
++org.jabref.model.entry.BibEntry.getFields()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaú ú('2©
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java° °(2©
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java† †(2·
+Çorg.jabref.model.entry.BibEntry.getResolvedFieldOrAlias(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabase)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaü ü(,2ò
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaüE ü(P2©
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java•8 •(;2à
+*org.jabref.model.entry.BibEntry.getMonth()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java•- •(52ä
+,org.jabref.model.entry.field.Field.getName()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaß9 ß(@2µ
+Yorg.jabref.logic.formatter.bibtexfields.RemoveNewlinesFormatter.RemoveNewlinesFormatter()CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javak> k(U2µ
+ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!originalBibEntryCALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaf' f(72ª
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javag g(!2ª
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javah: h(B2∫
+›org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?citeKey@103.15:103.22CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaha h(h2∂
+Ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!entryTypesManagerCALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javam+ m(<2ª
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javamD m(L2∑
+⁄org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!bibDatabaseContextCALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javamX m(j2ª
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javao o(2∑
+⁄org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!bibDatabaseContextCALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javas s("2ª
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javau/ u(72æ
+·org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?numberField@117.33:117.44CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javav v(2ª
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaw w($2π
+‹org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?number@118.38:118.44CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javawC w(I2ª
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javax x($2ª
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java| |(2ª
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java} }(!2ª
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java~ ~( 2∂
+Ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?eid@124.63:124.66CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java~@ ~(C2ª
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java ( 2Ω
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÑ Ñ(2Ω
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÖ Ö(2ª
+‹org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?number@132.66:132.72CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÖ; Ö(A2Ω
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÜ Ü(2Ω
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaà à(2∫
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?pages@136.65:136.70CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaâ â(2∫
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?pages@136.65:136.70CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaä ä(2∫
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?pages@136.65:136.70CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaä  ä(%2Ω
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaã ã( 2∫
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?pages@136.65:136.70CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaã@ ã(E2Ω
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaé é(2Ω
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaè è(!2Ω
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaê ê( 2∏
+Ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?eid@142.63:142.66CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaê? ê(B2Ω
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaë ë( 2æ
+ﬂorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?entryType@109.31:109.40CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaò ò(2ª
+‹org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?fields@151.35:151.41CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaô ô(2æ
+ﬂorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?entryType@109.31:109.40CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaô ô(2ª
+‹org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?fields@151.35:151.41CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaö ö(2Ω
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaö ö("2ª
+‹org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?fields@151.35:151.41CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaú ú(2Ω
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaú ú(2ª
+‹org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?fields@151.35:151.41CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaû û(2Ω
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaü ü(2∏
+Ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?key@158.19:158.22CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaü- ü(02π
+⁄org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!bibDatabaseContextCALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaü2 ü(D2∏
+Ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?key@158.19:158.22CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java£3 £(62∫
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?value@162.31:162.36CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java• •(!2Ω
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java•$ •(,2∫
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?value@162.31:162.36CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java•X •(]2¿
+·org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibTeXEntry@104.20:104.31CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaß ß(#2∏
+Ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?key@158.19:158.22CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaß5 ß(82∫
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?value@162.31:162.36CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaßZ ß(_2∞
+Rorg.jabref.logic.citationstyle.JabRefItemDataProvider?BIBTEX_CONVERTER@38.41:38.57CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java™ ™(2¿
+·org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibTeXEntry@104.20:104.31CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java™+ ™(62ê
+2org.jabref.model.entry.BibEntryType.getAllFields()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaô# ô(=2∂
+Xorg.jabref.logic.formatter.bibtexfields.RemoveNewlinesFormatter.format(java.lang.String)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java† †(82â
++org.jabref.model.entry.Month.getShortName()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java•< •(O2∫
+ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!originalBibEntry	PARAMETERR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javac7 c(G2º
+⁄org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!bibDatabaseContext	PARAMETERR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javac\ c(n2Ω
+Ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!entryTypesManager	PARAMETERT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javacÖ c(ñ2¬
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25DECLARATIONR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaf f(2¡
+›org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?citeKey@103.15:103.22DECLARATIONR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javag g(2≈
+·org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibTeXEntry@104.20:104.31DECLARATIONR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javah h(2—
+Ìorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?removeNewlinesFormatter@107.32:107.55DECLARATIONR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javak  k(72√
+ﬂorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?entryType@109.31:109.40DECLARATIONR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javam m((2≈
+·org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?numberField@117.33:117.44DECLARATIONR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javau! u(,2¬
+‹org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?fields@151.35:151.41DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaó# ó()2ø
+Ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?key@158.19:158.22DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaû û(2¿
+‹org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?number@118.38:118.44DECLARATIONR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javav& v(,2Ω
+Ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?eid@124.63:124.66DECLARATIONR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java|? |(B2¬
+‹org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?number@132.66:132.72DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÑB Ñ(H2¡
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?pages@136.65:136.70DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaàA à(F2ø
+Ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?eid@142.63:142.66DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaé? é(B2¡
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?value@162.31:162.36DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¢ ¢($2â
+&de.undercouch.citeproc.csl.CSLItemDataRETURN_TYPER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javac c(∑
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25VARIABLER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaf f("
+typeBibEntry"
+isFinalfalse"å
+declarationStringw<mark class="modifier"> </mark>BibEntry <mark class="class-field">bibEntry</mark> = (BibEntry) originalBibEntry.clone()*bibEntry2{
+org.jabref.model.entry.BibEntryTYPER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaf f(2É
+'org.jabref.model.entry.BibEntry.clone()CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaf8 f(=2µ
+ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!originalBibEntryCALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaf' f(7´	
+›org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?citeKey@103.15:103.22VARIABLER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javag g("
+typeString"
+isFinalfalse"ä
+declarationStringu<mark class="modifier"> </mark>String <mark class="class-field">citeKey</mark> = bibEntry.getCitationKey().orElse("")*citeKey2l
+java.lang.StringTYPER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javag g(2x
+java.util.Optional.orElse(T)CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javag3 g(92å
+0org.jabref.model.entry.BibEntry.getCitationKey()CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javag" g(02ª
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javag g(!÷
+·org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibTeXEntry@104.20:104.31VARIABLER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javah h("
+typeBibTeXEntry"
+isFinalfalse"÷
+declarationString¿<mark class="modifier"> </mark>BibTeXEntry <mark class="class-field">bibTeXEntry</mark> = new BibTeXEntry(new Key(bibEntry.getType().getName())<mark class="modifier">,</mark> new Key(citeKey))*bibTeXEntry2s
+org.jbibtex.BibTeXEntryTYPER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javah h(2å
+0org.jabref.model.entry.types.EntryType.getName()CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javahM h(T2Ö
+)org.jabref.model.entry.BibEntry.getType()CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javahC h(J2ª
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javah: h(B2∫
+›org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?citeKey@103.15:103.22CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaha h(hò
+Ìorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?removeNewlinesFormatter@107.32:107.55VARIABLER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javak  k(7"
+typeRemoveNewlinesFormatter"
+isFinalfalse"•
+declarationStringè<mark class="modifier"> </mark>RemoveNewlinesFormatter <mark class="class-field">removeNewlinesFormatter</mark> = new RemoveNewlinesFormatter()*removeNewlinesFormatter2õ
+?org.jabref.logic.formatter.bibtexfields.RemoveNewlinesFormatterTYPER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javak k(2µ
+Yorg.jabref.logic.formatter.bibtexfields.RemoveNewlinesFormatter.RemoveNewlinesFormatter()CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javak> k(Uè
+ﬂorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?entryType@109.31:109.40VARIABLER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javam m(("
+typeOptional<BibEntryType>"
+isFinalfalse"·
+declarationStringÀ<mark class="modifier"> </mark>Optional<BibEntryType> <mark class="class-field">entryType</mark> = entryTypesManager.enrich(bibEntry.getType()<mark class="modifier">,</mark> bibDatabaseContext.getMode())*	entryType2n
+java.util.OptionalTYPER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javam m(2à
+#org.jabref.model.entry.BibEntryTypeTYPE_ARGUMENTR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javam m(2‚
+Öorg.jabref.model.entry.BibEntryTypesManager.enrich(org.jabref.model.entry.types.EntryType, org.jabref.model.database.BibDatabaseMode)CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javam= m(C2Ö
+)org.jabref.model.entry.BibEntry.getType()CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javamM m(T2í
+6org.jabref.model.database.BibDatabaseContext.getMode()CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javamk m(r2∂
+Ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!entryTypesManagerCALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javam+ m(<2ª
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javamD m(L2∑
+⁄org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!bibDatabaseContextCALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javamX m(jÍ	
+·org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?numberField@117.33:117.44VARIABLER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javau! u(,"
+typeOptional<String>"
+isFinalfalse"ú
+declarationStringÜ<mark class="modifier"> </mark>Optional<String> <mark class="class-field">numberField</mark> = bibEntry.getField(StandardField.NUMBER)*numberField2n
+java.util.OptionalTYPER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javau u(2u
+java.lang.StringTYPE_ARGUMENTR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javau u(2®
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javau8 u(@2ª
+ﬁorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?bibEntry@102.17:102.25CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javau/ u(7˛
+‹org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?fields@151.35:151.41VARIABLET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaó# ó()""
+typeSequencedCollection<Field>"
+isFinalfalse"v
+declarationStringa<mark class="modifier"> </mark>SequencedCollection<Field> <mark class="class-field">fields</mark>*fields2{
+java.util.SequencedCollectionTYPET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaó ó(2â
+"org.jabref.model.entry.field.FieldTYPE_ARGUMENTT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaó ó(!≈
+Ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?key@158.19:158.22VARIABLET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaû û("
+typeField"
+isFinalfalse"^
+declarationStringI<mark class="modifier"> </mark>Field <mark class="class-field">key</mark>*key2Ä
+"org.jabref.model.entry.field.FieldTYPET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaû û(ù
+ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!originalBibEntry	PARAMETERR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javac7 c(G"
+typeBibEntry"
+isFinalfalse".
+declarationStringBibEntry originalBibEntry*originalBibEntry2{
+org.jabref.model.entry.BibEntryTYPER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javac. c(6≈
+⁄org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!bibDatabaseContext	PARAMETERR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javac\ c(n"
+typeBibDatabaseContext"
+isFinalfalse":
+declarationString%BibDatabaseContext bibDatabaseContext*bibDatabaseContext2à
+,org.jabref.model.database.BibDatabaseContextTYPER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javacI c([»
+Ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!entryTypesManager	PARAMETERT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javacÖ c(ñ"
+typeBibEntryTypesManager"
+isFinalfalse";
+declarationString&BibEntryTypesManager entryTypesManager*entryTypesManager2à
++org.jabref.model.entry.BibEntryTypesManagerTYPES
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javacp c(ÑÖ
+‹org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?number@118.38:118.44VARIABLER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javav& v(,"
+type"
+isFinalfalse"
+declarationString number*number2TYPE¸
+Ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?eid@124.63:124.66VARIABLER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java|? |(B"
+type"
+isFinalfalse"
+declarationString eid*eid2TYPEá
+‹org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?number@132.66:132.72VARIABLET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÑB Ñ(H"
+type"
+isFinalfalse"
+declarationString number*number2TYPEÑ
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?pages@136.65:136.70VARIABLET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaàA à(F"
+type"
+isFinalfalse"
+declarationString pages*pages2TYPE˛
+Ÿorg.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?eid@142.63:142.66VARIABLET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaé? é(B"
+type"
+isFinalfalse"
+declarationString eid*eid2TYPEÑ
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?value@162.31:162.36VARIABLET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¢ ¢($"
+type"
+isFinalfalse"
+declarationString value*value2TYPE‰
+òorg.jabref.logic.citationstyle.JabRefItemDataProvider.setData(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)METHODT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∞ ∞("
+isFinalfalse"å
+declarationStringˆ<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">setData</mark>(BibDatabaseContext bibDatabaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntryTypesManager entryTypesManager)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*setData2®
+…org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java± ±(2ó
+9org.jabref.model.database.BibDatabaseContext.getEntries()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java±( ±(22ä
+´org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!bibDatabaseContextCALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java± ±('2ä
+´org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!bibDatabaseContextCALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java±6 ±(H2â
+™org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!entryTypesManagerCALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java±J ±([2è
+´org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!bibDatabaseContext	PARAMETERT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∞+ ∞(=2é
+™org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!entryTypesManager	PARAMETERT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∞T ∞(e2i
+voidRETURN_TYPET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∞ ∞(ö
+´org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!bibDatabaseContext	PARAMETERT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∞+ ∞(="
+typeBibDatabaseContext"
+isFinalfalse":
+declarationString%BibDatabaseContext bibDatabaseContext*bibDatabaseContext2ä
+,org.jabref.model.database.BibDatabaseContextTYPET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∞ ∞(*ö
+™org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!entryTypesManager	PARAMETERT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∞T ∞(e"
+typeBibEntryTypesManager"
+isFinalfalse";
+declarationString&BibEntryTypesManager entryTypesManager*entryTypesManager2â
++org.jabref.model.entry.BibEntryTypesManagerTYPET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∞? ∞(Sõ*
+…org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)METHODT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¥ ¥("
+isFinalfalse"„
+declarationStringÕ<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">setData</mark>(List&lt;BibEntry&gt; data<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseContext bibDatabaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntryTypesManager entryTypesManager)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*setData2t
+java.util.List.clear()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaµ µ(2ñ
+8java.util.List.addAll(java.util.Collection<? extends E>)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∂ ∂(2Ω
+_org.jabref.model.database.BibDatabaseContext.setMode(org.jabref.model.database.BibDatabaseMode)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaΩ Ω(2ü
+Aorg.jabref.model.database.BibDatabaseContext.BibDatabaseContext()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaº% º(72¿
+borg.jabref.logic.integrity.PagesChecker.PagesChecker(org.jabref.model.database.BibDatabaseContext)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaæ  æ(,2≠
+Œorg.jabref.logic.citationstyle.JabRefItemDataProvider.setData(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!dataCALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∂ ∂(2ª
+‹org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!bibDatabaseContextCALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∑" ∑(42∫
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!entryTypesManagerCALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∏! ∏(22∫
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?ctx@188.27:188.30CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaΩ Ω(2∫
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?ctx@188.27:188.30CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaæ- æ(02§
+Forg.jabref.logic.citationstyle.JabRefItemDataProvider?data@42.33:42.37CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaµ µ(2§
+Forg.jabref.logic.citationstyle.JabRefItemDataProvider?data@42.33:42.37CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∂ ∂(2≤
+Torg.jabref.logic.citationstyle.JabRefItemDataProvider?bibDatabaseContext@44.31:44.49CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∑ ∑(2±
+Sorg.jabref.logic.citationstyle.JabRefItemDataProvider?entryTypesManager@45.33:45.50CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∏ ∏(2¨
+Norg.jabref.logic.citationstyle.JabRefItemDataProvider?pagesChecker@46.25:46.37CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaæ æ(2≤
+Œorg.jabref.logic.citationstyle.JabRefItemDataProvider.setData(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!data	PARAMETERT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¥' ¥(+2¿
+‹org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!bibDatabaseContext	PARAMETERT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¥@ ¥(R2ø
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!entryTypesManager	PARAMETERT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¥i ¥(z2¡
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?ctx@188.27:188.30DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaº º(2i
+voidRETURN_TYPET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¥ ¥(©
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)?ctx@188.27:188.30VARIABLET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaº º("
+typeBibDatabaseContext"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>BibDatabaseContext <mark class="class-field">ctx</mark> = new BibDatabaseContext()*ctx2ä
+,org.jabref.model.database.BibDatabaseContextTYPET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaº º(2ü
+Aorg.jabref.model.database.BibDatabaseContext.BibDatabaseContext()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaº% º(7É
+Œorg.jabref.logic.citationstyle.JabRefItemDataProvider.setData(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!data	PARAMETERT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¥' ¥(+"
+typeList<BibEntry>"
+isFinalfalse"(
+declarationStringList<BibEntry> data*data2l
+java.util.ListTYPET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¥ ¥(2Ü
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¥ ¥(%À
+‹org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!bibDatabaseContext	PARAMETERT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¥@ ¥(R"
+typeBibDatabaseContext"
+isFinalfalse":
+declarationString%BibDatabaseContext bibDatabaseContext*bibDatabaseContext2ä
+,org.jabref.model.database.BibDatabaseContextTYPET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¥- ¥(?À
+€org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)!entryTypesManager	PARAMETERT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¥i ¥(z"
+typeBibEntryTypesManager"
+isFinalfalse";
+declarationString&BibEntryTypesManager entryTypesManager*entryTypesManager2â
++org.jabref.model.entry.BibEntryTypesManagerTYPET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¥T ¥(h©
+Torg.jabref.logic.citationstyle.JabRefItemDataProvider.retrieveItem(java.lang.String)METHODT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¬ ¬(#"
+isFinalfalse"®
+declarationStringí<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>CSLItemData <mark class="method">retrieveItem</mark>(String id)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeCSLItemData*retrieveItem2z
+java.util.Optional.orElse(T)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∆  ∆(&2Å
+#java.util.stream.Stream.findFirst()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java∆ ∆(2Æ
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java≈ ≈(2•
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaƒ ƒ(2{
+java.util.Collection.stream()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java√ √(2á
+)java.lang.String.equals(java.lang.Object)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaƒF ƒ(L2z
+java.util.Optional.orElse(T)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaƒ; ƒ(A2é
+0org.jabref.model.entry.BibEntry.getCitationKey()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaƒ* ƒ(82¶
+«org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java≈! ≈(62§
+Forg.jabref.logic.citationstyle.JabRefItemDataProvider?data@42.33:42.37CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java√ √(2∆
+horg.jabref.logic.citationstyle.JabRefItemDataProvider.retrieveItem(java.lang.String)?entry@196.27:196.32CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaƒ$ ƒ()2µ
+Worg.jabref.logic.citationstyle.JabRefItemDataProvider.retrieveItem(java.lang.String)!idCALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaƒM ƒ(O2∆
+horg.jabref.logic.citationstyle.JabRefItemDataProvider.retrieveItem(java.lang.String)?entry@197.24:197.29CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java≈7 ≈(<2≤
+Torg.jabref.logic.citationstyle.JabRefItemDataProvider?bibDatabaseContext@44.31:44.49CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java≈> ≈(P2±
+Sorg.jabref.logic.citationstyle.JabRefItemDataProvider?entryTypesManager@45.33:45.50CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java≈R ≈(c2∫
+Worg.jabref.logic.citationstyle.JabRefItemDataProvider.retrieveItem(java.lang.String)!id	PARAMETERT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¬+ ¬(-2Õ
+horg.jabref.logic.citationstyle.JabRefItemDataProvider.retrieveItem(java.lang.String)?entry@196.27:196.32DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaƒ ƒ( 2Õ
+horg.jabref.logic.citationstyle.JabRefItemDataProvider.retrieveItem(java.lang.String)?entry@197.24:197.29DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java≈ ≈(2ã
+&de.undercouch.citeproc.csl.CSLItemDataRETURN_TYPET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¬ ¬(
+Worg.jabref.logic.citationstyle.JabRefItemDataProvider.retrieveItem(java.lang.String)!id	PARAMETERT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¬+ ¬(-"
+typeString"
+isFinalfalse"
+declarationString	String id*id2n
+java.lang.StringTYPET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java¬$ ¬(*ê
+horg.jabref.logic.citationstyle.JabRefItemDataProvider.retrieveItem(java.lang.String)?entry@196.27:196.32VARIABLET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaƒ ƒ( "
+type"
+isFinalfalse"
+declarationString entry*entry2TYPEê
+horg.jabref.logic.citationstyle.JabRefItemDataProvider.retrieveItem(java.lang.String)?entry@197.24:197.29VARIABLET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java≈ ≈("
+type"
+isFinalfalse"
+declarationString entry*entry2TYPEÅ
+>org.jabref.logic.citationstyle.JabRefItemDataProvider.getIds()METHODT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java   ($"
+isFinalfalse"¶
+declarationStringê<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>Collection&lt;String&gt; <mark class="method">getIds</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeCollection<String>*getIds2~
+ java.util.stream.Stream.toList()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÕ Õ(2Æ
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÃ Ã(2{
+java.util.Collection.stream()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÀ À(2z
+java.util.Optional.orElse(T)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÃ8 Ã(>2é
+0org.jabref.model.entry.BibEntry.getCitationKey()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÃ' Ã(52§
+Forg.jabref.logic.citationstyle.JabRefItemDataProvider?data@42.33:42.37CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÀ À(2∞
+Rorg.jabref.logic.citationstyle.JabRefItemDataProvider.getIds()?entry@204.24:204.29CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÃ! Ã(&2∑
+Rorg.jabref.logic.citationstyle.JabRefItemDataProvider.getIds()?entry@204.24:204.29DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÃ Ã(2y
+java.util.CollectionRETURN_TYPET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java   (2~
+java.lang.StringRETURN_TYPE_ARGUMENTT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java   (˙
+Rorg.jabref.logic.citationstyle.JabRefItemDataProvider.getIds()?entry@204.24:204.29VARIABLET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.javaÃ Ã("
+type"
+isFinalfalse"
+declarationString entry*entry2TYPEÒ#
+>org.jabref.logic.citationstyle.JabRefItemDataProvider.toJson()METHODT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java– –("
+isFinalfalse"e
+declarationStringP<mark class="modifier">public </mark>String <mark class="method">toJson</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*toJson2ó
+9org.jabref.model.database.BibDatabaseContext.getEntries()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java—4 —(>2®
+…org.jabref.logic.citationstyle.JabRefItemDataProvider.setData(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java“ “(2Æ
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java÷ ÷(2Æ
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java’ ’(2Æ
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java‘ ‘(2{
+java.util.Collection.stream()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java” ”(2¶
+«org.jabref.logic.citationstyle.JabRefItemDataProvider.bibEntryToCSLItemData(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java‘$ ‘(92…
+kjava.util.stream.Collectors.joining(java.lang.CharSequence, java.lang.CharSequence, java.lang.CharSequence)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java◊* ◊(12≤
+Torg.jabref.logic.citationstyle.JabRefItemDataProvider?bibDatabaseContext@44.31:44.49CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java—! —(32≤
+Torg.jabref.logic.citationstyle.JabRefItemDataProvider.toJson()?entries@209.23:209.30CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java“ “(2≤
+Torg.jabref.logic.citationstyle.JabRefItemDataProvider?bibDatabaseContext@44.31:44.49CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java“ “(02±
+Sorg.jabref.logic.citationstyle.JabRefItemDataProvider?entryTypesManager@45.33:45.50CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java“2 “(C2≤
+Torg.jabref.logic.citationstyle.JabRefItemDataProvider.toJson()?entries@209.23:209.30CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java” ”(2∞
+Rorg.jabref.logic.citationstyle.JabRefItemDataProvider.toJson()?entry@212.27:212.32CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java‘: ‘(?2≤
+Torg.jabref.logic.citationstyle.JabRefItemDataProvider?bibDatabaseContext@44.31:44.49CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java‘A ‘(S2±
+Sorg.jabref.logic.citationstyle.JabRefItemDataProvider?entryTypesManager@45.33:45.50CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java‘U ‘(f2Ø
+Qorg.jabref.logic.citationstyle.JabRefItemDataProvider.toJson()?item@213.27:213.31CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java’# ’('2∏
+Zorg.jabref.logic.citationstyle.JabRefItemDataProvider?stringJsonBuilderFactory@40.43:40.67CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java’/ ’(G2Ñ
+&java.lang.Class.cast(java.lang.Object)CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java÷ ÷(-2π
+Torg.jabref.logic.citationstyle.JabRefItemDataProvider.toJson()?entries@209.23:209.30DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java— —(2∑
+Rorg.jabref.logic.citationstyle.JabRefItemDataProvider.toJson()?entry@212.27:212.32DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java‘ ‘( 2∂
+Qorg.jabref.logic.citationstyle.JabRefItemDataProvider.toJson()?item@213.27:213.31DECLARATIONT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java’ ’(2u
+java.lang.StringRETURN_TYPET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java– –(ø
+Torg.jabref.logic.citationstyle.JabRefItemDataProvider.toJson()?entries@209.23:209.30VARIABLET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java— —("
+typeList<BibEntry>"
+isFinalfalse"ç
+declarationStringx<mark class="modifier"> </mark>List<BibEntry> <mark class="class-field">entries</mark> = bibDatabaseContext.getEntries()*entries2l
+java.util.ListTYPET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java— —(2Ü
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java— —(2ó
+9org.jabref.model.database.BibDatabaseContext.getEntries()CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java—4 —(>2≤
+Torg.jabref.logic.citationstyle.JabRefItemDataProvider?bibDatabaseContext@44.31:44.49CALLT
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java—! —(3˙
+Rorg.jabref.logic.citationstyle.JabRefItemDataProvider.toJson()?entry@212.27:212.32VARIABLET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java‘ ‘( "
+type"
+isFinalfalse"
+declarationString entry*entry2TYPE˜
+Qorg.jabref.logic.citationstyle.JabRefItemDataProvider.toJson()?item@213.27:213.31VARIABLET
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java’ ’("
+type"
+isFinalfalse"
+declarationString item*item2TYPE˛
+Rorg.jabref.logic.citationstyle.JabRefItemDataProvider?BIBTEX_CONVERTER@38.41:38.57VALUER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java&) &(9"
+isFinaltrue"
+typeBibTeXConverter"ﬂ
+declarationString…<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>BibTeXConverter <mark class="class-field">BIBTEX_CONVERTER</mark> = new BibTeXConverter();"
+isStatictrue"
+accessprivate*BIBTEX_CONVERTER2â
+-de.undercouch.citeproc.bibtex.BibTeXConverterTYPER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java& &((˘
+Zorg.jabref.logic.citationstyle.JabRefItemDataProvider?stringJsonBuilderFactory@40.43:40.67VALUER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java(+ ((C"
+isFinaltrue" 
+typeStringJsonBuilderFactory"≤
+declarationStringú<mark class="modifier">private </mark><mark class="modifier">final </mark>StringJsonBuilderFactory <mark class="class-field">stringJsonBuilderFactory</mark>"
+isStaticfalse"
+accessprivate*stringJsonBuilderFactory2ó
+;de.undercouch.citeproc.helper.json.StringJsonBuilderFactoryTYPER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java( ((*î
+Forg.jabref.logic.citationstyle.JabRefItemDataProvider?data@42.33:42.37VALUER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java*! *(%"
+isFinaltrue"
+typeList<BibEntry>"©
+declarationStringì<mark class="modifier">private </mark><mark class="modifier">final </mark>List<BibEntry> <mark class="class-field">data</mark> = new ArrayList<>();"
+isStaticfalse"
+accessprivate*data2j
+java.util.ListTYPER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java* *(2Ñ
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java* *(2{
+java.util.ArrayList.ArrayList()CALLR
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java*, *(7´
+Torg.jabref.logic.citationstyle.JabRefItemDataProvider?bibDatabaseContext@44.31:44.49VARIABLER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java, ,(1"
+isFinalfalse"
+typeBibDatabaseContext"Å
+declarationStringl<mark class="modifier">private </mark>BibDatabaseContext <mark class="class-field">bibDatabaseContext</mark>"
+isStaticfalse"
+accessprivate*bibDatabaseContext2à
+,org.jabref.model.database.BibDatabaseContextTYPER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java, ,(´
+Sorg.jabref.logic.citationstyle.JabRefItemDataProvider?entryTypesManager@45.33:45.50VARIABLER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java-! -(2"
+isFinalfalse"
+typeBibEntryTypesManager"Ç
+declarationStringm<mark class="modifier">private </mark>BibEntryTypesManager <mark class="class-field">entryTypesManager</mark>"
+isStaticfalse"
+accessprivate*entryTypesManager2á
++org.jabref.model.entry.BibEntryTypesManagerTYPER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java- -( á
+Norg.jabref.logic.citationstyle.JabRefItemDataProvider?pagesChecker@46.25:46.37VARIABLER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java. .(%"
+isFinalfalse"
+typePagesChecker"u
+declarationString`<mark class="modifier">private </mark>PagesChecker <mark class="class-field">pagesChecker</mark>"
+isStaticfalse"
+accessprivate*pagesChecker2É
+'org.jabref.logic.integrity.PagesCheckerTYPER
+Hsrc\main\java\org\jabref\logic\citationstyle\JabRefItemDataProvider.java. .(

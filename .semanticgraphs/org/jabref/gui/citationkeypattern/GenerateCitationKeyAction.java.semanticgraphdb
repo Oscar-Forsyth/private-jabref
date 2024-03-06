@@ -1,0 +1,584 @@
+
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaù
+;org.jabref.gui.citationkeypattern.GenerateCitationKeyActionCLASSX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java (&",
+package!org.jabref.gui.citationkeypattern"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"¨
+declarationStringñ<mark class="modifier">public </mark><mark class="modifier">class </mark>GenerateCitationKeyAction<mark class="modifier"> extends </mark>SimpleCommand"
+accesspublic*GenerateCitationKeyAction2ù
+≥org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java$ $($2Æ
+Eorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.execute()DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java5 5(2É
+ôorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.confirmOverwriteKeys(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaK K(.2ø
+Vorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.checkOverwriteKeysChosen()DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaZ Z()2ø
+Vorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.generateKeysInBackground()DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javai! i(92—
+forg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.formatOutputMessage(java.lang.String, int)DECLARATIONZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaô ô(&2º
+Sorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?tabSupplier@25.39:25.50DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java' (22æ
+Uorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?dialogService@26.32:26.45DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java  (-2Ω
+Torg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?stateManager@27.31:27.43DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java (+2∏
+Oorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?entries@29.27:29.34DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java ("2ª
+Rorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?isCanceled@30.20:30.30DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java (2Ω
+Torg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?taskExecutor@32.31:32.43DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java   (+2√
+Zorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?preferencesService@33.37:33.55DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java!% !(72º
+Sorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?undoManager@34.30:34.41DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java" "()2à
+$org.jabref.gui.actions.SimpleCommandEXTENDX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java/ (<‰>
+≥org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)CONSTRUCTORX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java$ $($"◊
+declarationString¡<mark class="modifier">public </mark><mark class="method">GenerateCitationKeyAction</mark>(Supplier&lt;LibraryTab&gt; tabSupplier<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> StateManager stateManager<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferencesService<mark class="modifier"><mark class="modifier">,</mark></mark> UndoManager undoManager)*GenerateCitationKeyAction2∑
+Uorg.jabref.gui.actions.ActionHelper.needsEntriesSelected(org.jabref.gui.StateManager)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java1* 1(>2¢
+øorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!tabSupplierCALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java* *(&2§
+¡org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!dialogServiceCALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java+ +(*2£
+¿org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!stateManagerCALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java, ,((2£
+¿org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!taskExecutorCALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java- -((2©
+∆org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!preferencesServiceCALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java." .(42¢
+øorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!undoManagerCALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java/ /(&2£
+¿org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!stateManagerCALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java1? 1(K2µ
+Sorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?tabSupplier@25.39:25.50CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java* *(2∑
+Uorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?dialogService@26.32:26.45CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java+ +(2∂
+Torg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?stateManager@27.31:27.43CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java, ,(2∂
+Torg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?taskExecutor@32.31:32.43CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java- -(2º
+Zorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?preferencesService@33.37:33.55CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java. .(2µ
+Sorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?undoManager@34.30:34.41CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java/ /(2ß
+øorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!tabSupplier	PARAMETERX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java$: $(E2©
+¡org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!dialogService	PARAMETERX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java%3 %(@2®
+¿org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!stateManager	PARAMETERX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java&2 &(>2®
+¿org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!taskExecutor	PARAMETERX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java'2 '(>2Æ
+∆org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!preferencesService	PARAMETERX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java(8 ((J2ß
+øorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!undoManager	PARAMETERX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java)1 )(<2§
+;org.jabref.gui.citationkeypattern.GenerateCitationKeyActionRETURN_TYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java$ $($°
+øorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!tabSupplier	PARAMETERX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java$: $(E"
+typeSupplier<LibraryTab>"
+isFinalfalse"5
+declarationString Supplier<LibraryTab> tabSupplier*tabSupplier2}
+java.util.function.SupplierTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java$% $(-2Ñ
+org.jabref.gui.LibraryTabTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java$. $(8ì
+¡org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!dialogService	PARAMETERX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java%3 %(@"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2~
+org.jabref.gui.DialogServiceTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java%% %(2ç
+¿org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!stateManager	PARAMETERX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java&2 &(>"
+typeStateManager"
+isFinalfalse".
+declarationStringStateManager stateManager*stateManager2}
+org.jabref.gui.StateManagerTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java&% &(1ì
+¿org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!taskExecutor	PARAMETERX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java'2 '(>"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2Ç
+ org.jabref.gui.util.TaskExecutorTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java'% '(1∫
+∆org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!preferencesService	PARAMETERX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java(8 ((J"
+typePreferencesService"
+isFinalfalse":
+declarationString%PreferencesService preferencesService*preferencesService2ã
+)org.jabref.preferences.PreferencesServiceTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java(% ((7â
+øorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.GenerateCitationKeyAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)!undoManager	PARAMETERX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java)1 )(<"
+typeUndoManager"
+isFinalfalse",
+declarationStringUndoManager undoManager*undoManager2~
+javax.swing.undo.UndoManagerTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java)% )(0ó0
+Eorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.execute()METHODX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java5 5("
+isFinalfalse"±
+declarationStringõ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">execute</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*execute2í
+0org.jabref.gui.StateManager.getSelectedEntries()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java6 6(12z
+java.util.List.isEmpty()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java8 8(2ª
+Yorg.jabref.gui.DialogService.showWarningDialogAndWait(java.lang.String, java.lang.String)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java9 9(22∞
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java9@ 9(D2∞
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java:! :(%2ó
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java= =(2»
+forg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.formatOutputMessage(java.lang.String, int)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java= =(02∞
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java=> =(B2w
+java.util.List.size()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java=k =(o2∏
+Vorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.checkOverwriteKeysChosen()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java? ?( 2∏
+Vorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.generateKeysInBackground()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaB7 B(O2ò
+6org.jabref.gui.util.BackgroundTask.showToUser(boolean)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaC C(%2î
+2org.jabref.gui.util.BackgroundTask.titleProperty()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaD D((2∞
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaD< D(@2ñ
+4org.jabref.gui.util.BackgroundTask.messageProperty()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaE E(*2∞
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaE> E(B2w
+java.util.List.size()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaE_ E(c2≤
+Porg.jabref.gui.util.BackgroundTask.executeWith(org.jabref.gui.util.TaskExecutor)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaG G(&2±
+Oorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?entries@29.27:29.34CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java6 6(2∂
+Torg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?stateManager@27.31:27.43CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java6 6(2±
+Oorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?entries@29.27:29.34CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java8 8(2∑
+Uorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?dialogService@26.32:26.45CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java9 9(2∑
+Uorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?dialogService@26.32:26.45CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java= =(2±
+Oorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?entries@29.27:29.34CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java=c =(j2¬
+`org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.execute()?backgroundTask@66.33:66.47CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaC C(2¬
+`org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.execute()?backgroundTask@66.33:66.47CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaD D(2¬
+`org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.execute()?backgroundTask@66.33:66.47CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaE E(2±
+Oorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?entries@29.27:29.34CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaEW E(^2¬
+`org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.execute()?backgroundTask@66.33:66.47CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaG G(2¥
+Rorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?isCanceled@30.20:30.30CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaA A(2∂
+Torg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?taskExecutor@32.31:32.43CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaG, G(82…
+`org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.execute()?backgroundTask@66.33:66.47DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaB! B(/2m
+voidRETURN_TYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java5 5(ˇ
+`org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.execute()?backgroundTask@66.33:66.47VARIABLEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaB! B(/"
+typeBackgroundTask<Void>"
+isFinalfalse"π
+declarationString£<mark class="modifier"> </mark>BackgroundTask<Void> <mark class="class-field">backgroundTask</mark> = <mark class="modifier">this</mark>.generateKeysInBackground()*backgroundTask2Ñ
+"org.jabref.gui.util.BackgroundTaskTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaB B(2y
+java.lang.VoidTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaB B(2∏
+Vorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.generateKeysInBackground()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaB7 B(OÀ$
+ôorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.confirmOverwriteKeys(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)METHODX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaK K(."
+isFinalfalse"∂
+declarationString†<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">boolean</mark> <mark class="method">confirmOverwriteKeys</mark>(DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferencesService)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*confirmOverwriteKeys2∆
+dorg.jabref.logic.citationkeypattern.CitationKeyPatternPreferences.shouldWarnBeforeOverwriteCiteKey()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaLB L(b2Æ
+Lorg.jabref.preferences.PreferencesService.getCitationKeyPatternPreferences()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaL L(?2±
+Œorg.jabref.gui.DialogService.showConfirmationDialogWithOptOutAndWait(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.function.Consumer<java.lang.Boolean>)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaM! M(H2∞
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaN! N(%2∞
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaO! O(%2∞
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaP! P(%2∞
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaQ! Q(%2∞
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaR! R(%2 
+horg.jabref.logic.citationkeypattern.CitationKeyPatternPreferences.setWarnBeforeOverwriteCiteKey(boolean)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaST S(q2Æ
+Lorg.jabref.preferences.PreferencesService.getCitationKeyPatternPreferences()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaS1 S(Q2è
+¨org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.confirmOverwriteKeys(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)!preferencesServiceCALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaL L(2ä
+ßorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.confirmOverwriteKeys(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)!dialogServiceCALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaM M( 2è
+¨org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.confirmOverwriteKeys(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)!preferencesServiceCALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaS S(02è
+¨org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.confirmOverwriteKeys(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)?optOut@83.20:83.26CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaSs S(y2è
+ßorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.confirmOverwriteKeys(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)!dialogService	PARAMETERX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaK= K(J2î
+¨org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.confirmOverwriteKeys(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)!preferencesService	PARAMETERX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaK_ K(q2ñ
+¨org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.confirmOverwriteKeys(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)?optOut@83.20:83.26DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaS S(2p
+booleanRETURN_TYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaK K(˘
+ßorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.confirmOverwriteKeys(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)!dialogService	PARAMETERX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaK= K(J"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2~
+org.jabref.gui.DialogServiceTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaK/ K(<†
+¨org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.confirmOverwriteKeys(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)!preferencesService	PARAMETERX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaK_ K(q"
+typePreferencesService"
+isFinalfalse":
+declarationString%PreferencesService preferencesService*preferencesService2ã
+)org.jabref.preferences.PreferencesServiceTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaKL K(^€
+¨org.jabref.gui.citationkeypattern.GenerateCitationKeyAction.confirmOverwriteKeys(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)?optOut@83.20:83.26VARIABLEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaS S("
+type"
+isFinalfalse"
+declarationString optOut*optOut2TYPEæ
+Vorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.checkOverwriteKeysChosen()METHODX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaZ Z()"
+isFinalfalse"î
+declarationString<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">checkOverwriteKeysChosen</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*checkOverwriteKeysChosen2¡
+_org.jabref.logic.citationkeypattern.CitationKeyPatternPreferences.shouldAvoidOverwriteCiteKey()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java\G \(b2Æ
+Lorg.jabref.preferences.PreferencesService.getCitationKeyPatternPreferences()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java\$ \(D2®
+Fjava.util.Collection.removeIf(java.util.function.Predicate<? super E>)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java] ](2´
+Ijava.util.stream.Stream.anyMatch(java.util.function.Predicate<? super T>)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java_, _(42á
+%java.util.Collection.parallelStream()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java_ _()2¸
+ôorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.confirmOverwriteKeys(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java`$ `(82±
+Oorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?entries@29.27:29.34CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java] ](2±
+Oorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?entries@29.27:29.34CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java_ _(2∑
+Uorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?dialogService@26.32:26.45CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java`9 `(F2“
+porg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.checkOverwriteKeysChosen()?overwriteKeys@96.20:96.33CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javac c(2¥
+Rorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?isCanceled@30.20:30.30CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javad d(2º
+Zorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?preferencesService@33.37:33.55CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java\ \(#2º
+Zorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?preferencesService@33.37:33.55CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java`M `(_2í
+0org.jabref.model.entry.BibEntry.hasCitationKey()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java] ](52í
+0org.jabref.model.entry.BibEntry.hasCitationKey()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java_5 _(M2Ÿ
+porg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.checkOverwriteKeysChosen()?overwriteKeys@96.20:96.33DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java` `(!2m
+voidRETURN_TYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaZ Z(‘	
+porg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.checkOverwriteKeysChosen()?overwriteKeys@96.20:96.33VARIABLEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java` `(!"
+typeboolean"
+isFinalfalse"Ê
+declarationString–<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">overwriteKeys</mark> = confirmOverwriteKeys(dialogService, <mark class="modifier">this</mark>.preferencesService)*overwriteKeys2i
+booleanTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java` `(2¸
+ôorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.confirmOverwriteKeys(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java`$ `(82∑
+Uorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?dialogService@26.32:26.45CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java`9 `(F2º
+Zorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?preferencesService@33.37:33.55CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java`M `(_û<
+Vorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.generateKeysInBackground()METHODX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javai! i(9"
+isFinalfalse"å
+declarationStringw<mark class="modifier">private </mark>BackgroundTask&lt;Void&gt; <mark class="method">generateKeysInBackground</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeBackgroundTask<Void>*generateKeysInBackground2ñ
+4org.jabref.gui.util.BackgroundTask.messageProperty()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javat t('2ò
+4org.jabref.gui.util.BackgroundTask.messageProperty()CALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaÉ  É(/2ï
+3org.jabref.gui.util.BackgroundTask.BackgroundTask()CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaj j(#2±
+Oorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?entries@29.27:29.34CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javas* s(12±
+Oorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?entries@29.27:29.34CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javatT t([2∂
+Torg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?stateManager@27.31:27.43CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javav v( 2œ
+morg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.generateKeysInBackground()?compound@107.34:107.42CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javax x( 2Ú
+èorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-1cd6f0f1-38cc-4a16-862a-449d8663e7b2.call()?databaseContext@118.63:118.78CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaz9 z(H2º
+Zorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?preferencesService@33.37:33.55CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javazJ z(\2±
+Oorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?entries@29.27:29.34CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java|. |(52Ô
+åorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-95c099c6-8344-44e2-8e62-18a0d5f3ad1b.call()?keyGenerator@121.45:121.57CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java} }((2Ë
+Öorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-812a7ab3-be26-493d-81d7-5120b606dde5.call()?entry@124.38:124.43CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java}; }(@2œ
+morg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.generateKeysInBackground()?compound@107.34:107.42CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java~B ~(J2Ó
+ãorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-9f6971e1-2be0-45ad-9ccb-51a24ca5abaa.call()?fieldChange@126.51:126.62CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java~i ~(t2Ó
+ãorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-df78ba16-b487-45d5-92eb-ff353aac30ec.call()?entriesDone@123.28:123.39CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java ('2
+ãorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-ec631a7d-95a0-4efe-a1df-a97b035f189b.call()?entriesDone@123.28:123.39CALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaÄ3 Ä(>2ı
+êorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-a112fa51-04ad-44f9-b65d-c511b9a09c84.call()?finalEntriesDone@128.32:128.48CALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaÇ/ Ç(?2≥
+Oorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?entries@29.27:29.34CALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaÇA Ç(H2ı
+êorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-09ba6ab9-0e53-44a2-bd9f-018103385fa5.call()?finalEntriesDone@128.32:128.48CALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaÉY É(i2≥
+Oorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?entries@29.27:29.34CALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaÉk É(r2—
+morg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.generateKeysInBackground()?compound@107.34:107.42CALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaÜ Ü( 2—
+morg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.generateKeysInBackground()?compound@107.34:107.42CALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaé é(2∑
+Sorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?undoManager@34.30:34.41CALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaè è(2—
+morg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.generateKeysInBackground()?compound@107.34:107.42CALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaè( è(02∑
+Sorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?tabSupplier@25.39:25.50CALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaí í(2π
+Uorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?dialogService@26.32:26.45CALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaì ì(2≥
+Oorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?entries@29.27:29.34CALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaìj ì(q2ˆ
+åorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-25cb1d20-389d-4258-a5ee-4fc7bb53eeb4.call()?keyGenerator@121.45:121.57DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javay- y(92ı
+ãorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-15d95e7d-770b-41da-bbe7-5b8ac2111a5d.call()?entriesDone@123.28:123.39DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java{ {('2Ô
+Öorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-bce27e7a-c3b7-48d7-a45c-8270d27f6a97.call()?entry@124.38:124.43DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java|& |(+2¸
+êorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-6f1e5974-a29d-490b-8bd4-97e7fd488d1a.call()?finalEntriesDone@128.32:128.48DECLARATIONZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaÄ  Ä(02˘
+èorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-cc8c8211-a5aa-4df2-81a3-d69644a79e0b.call()?databaseContext@118.63:118.78DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javav? v(N2ı
+ãorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-dbcbe55c-65e8-4f07-9c12-a785ce15d37b.call()?fieldChange@126.51:126.62DECLARATIONX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java~3 ~(>2ã
+"org.jabref.gui.util.BackgroundTaskRETURN_TYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javai i(2Ä
+java.lang.VoidRETURN_TYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javai i(∫
+åorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-22d6ddc4-4256-44e5-916a-d4d0b6b85cca.call()?keyGenerator@121.45:121.57VARIABLEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javay- y(9"
+typeCitationKeyGenerator"
+isFinalfalse"⁄
+declarationStringƒ<mark class="modifier"> </mark>CitationKeyGenerator <mark class="class-field">keyGenerator</mark> = new CitationKeyGenerator(databaseContext, preferencesService.getCitationKeyPatternPreferences())*keyGenerator2v
+CitationKeyGeneratorTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javay y(,2Ú
+èorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-51aa6f1e-7d99-4f24-8544-12ff5257b173.call()?databaseContext@118.63:118.78CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaz9 z(H2º
+Zorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?preferencesService@33.37:33.55CALLX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javazJ z(\é
+ãorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-00e84480-328a-475d-9688-ee673ad9e7d4.call()?entriesDone@123.28:123.39VARIABLEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java{ {('"
+typeint"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">entriesDone</mark> = 0*entriesDone2e
+intTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java{ {(Ë
+Öorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-194a5ace-5a42-457e-a439-3a5aa7e0efbd.call()?entry@124.38:124.43VARIABLEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java|& |(+"
+typeBibEntry"
+isFinalfalse"c
+declarationStringN<mark class="modifier"> </mark>BibEntry <mark class="class-field">entry</mark>*entry2j
+BibEntryTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java| |(%ü
+êorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-f1518173-65a8-49c8-a49d-63f3e0d0f8d2.call()?finalEntriesDone@128.32:128.48VARIABLEZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaÄ  Ä(0"
+typeint"
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">finalEntriesDone</mark> = entriesDone*finalEntriesDone2g
+intTYPEZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaÄ Ä(2
+ãorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-34892635-c902-4bd6-9833-2d1d7f17b5ba.call()?entriesDone@123.28:123.39CALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaÄ3 Ä(>–
+èorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-6f27dd17-95fa-48d0-acad-8db80671845f.call()?databaseContext@118.63:118.78VARIABLEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javav? v(N"
+type"
+isFinalfalse"%
+declarationString databaseContext*databaseContext2TYPEƒ
+ãorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.Anonymous-1ee4b1b1-d3ee-41d5-be2a-37ae997679d0.call()?fieldChange@126.51:126.62VARIABLEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java~3 ~(>"
+type"
+isFinalfalse"!
+declarationString fieldChange*fieldChange2TYPEƒ
+	onSuccess	PARAMETERZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaåA å(J"
+typeConsumer<Void>"
+isFinalfalse"-
+declarationStringConsumer<Void> onSuccess*	onSuccess2l
+ConsumerTYPEZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaå2 å(:Ã
+forg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.formatOutputMessage(java.lang.String, int)METHODZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaô ô(&"
+isFinalfalse"Â
+declarationStringœ<mark class="modifier">private </mark>String <mark class="method">formatOutputMessage</mark>(String start<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">int</mark> count)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*formatOutputMessage2ì
+/java.lang.String.formatted(java.lang.Object...)CALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaö ö($2≤
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaõ* õ(.2≤
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaõI õ(M2–
+lorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.formatOutputMessage(java.lang.String, int)!startCALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaö% ö(*2–
+lorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.formatOutputMessage(java.lang.String, int)!countCALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaö, ö(12–
+lorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.formatOutputMessage(java.lang.String, int)!countCALLZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaõ õ(2’
+lorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.formatOutputMessage(java.lang.String, int)!start	PARAMETERZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaô. ô(32’
+lorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.formatOutputMessage(java.lang.String, int)!count	PARAMETERZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaô9 ô(>2{
+java.lang.StringRETURN_TYPEZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaô ô(ó
+lorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.formatOutputMessage(java.lang.String, int)!start	PARAMETERZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaô. ô(3"
+typeString"
+isFinalfalse"!
+declarationStringString start*start2t
+java.lang.StringTYPEZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaô' ô(-¢
+lorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction.formatOutputMessage(java.lang.String, int)!count	PARAMETERZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaô9 ô(>"
+typeint"
+isFinalfalse"<
+declarationString'<mark class="modifier">int</mark> count*count2g
+intTYPEZ
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.javaô5 ô(8¬
+Sorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?tabSupplier@25.39:25.50VALUEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java' (2"
+isFinaltrue"
+typeSupplier<LibraryTab>"°
+declarationStringã<mark class="modifier">private </mark><mark class="modifier">final </mark>Supplier<LibraryTab> <mark class="class-field">tabSupplier</mark>"
+isStaticfalse"
+accessprivate*tabSupplier2}
+java.util.function.SupplierTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java (2Ñ
+org.jabref.gui.LibraryTabTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java (%¥
+Uorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?dialogService@26.32:26.45VALUEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java  (-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2~
+org.jabref.gui.DialogServiceTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java (Æ
+Torg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?stateManager@27.31:27.43VALUEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java (+"
+isFinaltrue"
+typeStateManager"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>StateManager <mark class="class-field">stateManager</mark>"
+isStaticfalse"
+accessprivate*stateManager2}
+org.jabref.gui.StateManagerTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java (Å
+Oorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?entries@29.27:29.34VARIABLEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java (""
+isFinalfalse"
+typeList<BibEntry>"r
+declarationString]<mark class="modifier">private </mark>List<BibEntry> <mark class="class-field">entries</mark>"
+isStaticfalse"
+accessprivate*entries2p
+java.util.ListTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java (2ä
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java (á
+Rorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?isCanceled@30.20:30.30VARIABLEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java ("
+isFinalfalse"
+typeboolean"å
+declarationStringw<mark class="modifier">private </mark><mark class="modifier">boolean</mark> <mark class="class-field">isCanceled</mark>"
+isStaticfalse"
+accessprivate*
+isCanceled2i
+booleanTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java (¥
+Torg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?taskExecutor@32.31:32.43VALUEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java   (+"
+isFinaltrue"
+typeTaskExecutor"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2Ç
+ org.jabref.gui.util.TaskExecutorTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java   (€
+Zorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?preferencesService@33.37:33.55VALUEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java!% !(7"
+isFinaltrue"
+typePreferencesService"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferencesService</mark>"
+isStaticfalse"
+accessprivate*preferencesService2ã
+)org.jabref.preferences.PreferencesServiceTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java! !($™
+Sorg.jabref.gui.citationkeypattern.GenerateCitationKeyAction?undoManager@34.30:34.41VALUEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java" "()"
+isFinaltrue"
+typeUndoManager"ò
+declarationStringÇ<mark class="modifier">private </mark><mark class="modifier">final </mark>UndoManager <mark class="class-field">undoManager</mark>"
+isStaticfalse"
+accessprivate*undoManager2~
+javax.swing.undo.UndoManagerTYPEX
+Nsrc\main\java\org\jabref\gui\citationkeypattern\GenerateCitationKeyAction.java" "(

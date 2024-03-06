@@ -1,0 +1,392 @@
+
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java±
+4org.jabref.logic.cleanup.TimeStampToModificationDateCLASSQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java (("#
+packageorg.jabref.logic.cleanup"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"±
+declarationStringõ<mark class="modifier">public </mark><mark class="modifier">class </mark>TimeStampToModificationDate<mark class="modifier"><br>implements </mark>CleanupJob"
+accesspublic*TimeStampToModificationDate2Ê
+Éorg.jabref.logic.cleanup.TimeStampToModificationDate.TimeStampToModificationDate(org.jabref.logic.preferences.TimestampPreferences)DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java (&2∏
+Vorg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java% %(,2º
+Zorg.jabref.logic.cleanup.TimeStampToModificationDate.getMonth(org.jabref.model.entry.Date)DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java: :(2ø
+]org.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaB B($2±
+Oorg.jabref.logic.cleanup.TimeStampToModificationDate?timeStampField@26.24:26.38DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java (&2Ä
+#org.jabref.logic.cleanup.CleanupJobEXTENDQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java4 (>ˇ
+
+Éorg.jabref.logic.cleanup.TimeStampToModificationDate.TimeStampToModificationDate(org.jabref.logic.preferences.TimestampPreferences)CONSTRUCTORQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java (&"ù
+declarationStringá<mark class="modifier">public </mark><mark class="method">TimeStampToModificationDate</mark>(TimestampPreferences timestampPreferences)*TimeStampToModificationDate2†
+Eorg.jabref.logic.preferences.TimestampPreferences.getTimestampField()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java. (?2™
+Oorg.jabref.logic.cleanup.TimeStampToModificationDate?timeStampField@26.24:26.38CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java (2Ù
+òorg.jabref.logic.cleanup.TimeStampToModificationDate.TimeStampToModificationDate(org.jabref.logic.preferences.TimestampPreferences)!timestampPreferencesCALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java (-2˘
+òorg.jabref.logic.cleanup.TimeStampToModificationDate.TimeStampToModificationDate(org.jabref.logic.preferences.TimestampPreferences)!timestampPreferences	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java< (P2ñ
+4org.jabref.logic.cleanup.TimeStampToModificationDateRETURN_TYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java (&é
+òorg.jabref.logic.cleanup.TimeStampToModificationDate.TimeStampToModificationDate(org.jabref.logic.preferences.TimestampPreferences)!timestampPreferences	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java< (P"
+typeTimestampPreferences"
+isFinalfalse">
+declarationString)TimestampPreferences timestampPreferences*timestampPreferences2å
+1org.jabref.logic.preferences.TimestampPreferencesTYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java' (;ƒ/
+Vorg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)METHODQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java% %(,"
+isFinalfalse"è
+declarationStringz<mark class="modifier">private </mark>Optional&lt;String&gt; <mark class="method">formatTimeStamp</mark>(String timeStamp)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeOptional<String>*formatTimeStamp2é
+3org.jabref.model.entry.Date.parse(java.lang.String)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java&) &(.2w
+java.util.Optional.isEmpty()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java' '(2u
+java.util.Optional.empty()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java) )(!2s
+java.util.Optional.get()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java+# +(&2w
+java.util.Optional.orElse(T)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java,& ,(,2Ä
+%org.jabref.model.entry.Date.getYear()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java, ,(#2µ
+Zorg.jabref.logic.cleanup.TimeStampToModificationDate.getMonth(org.jabref.model.entry.Date)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java- -( 2w
+java.util.Optional.orElse(T)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java.$ .(*2
+$org.jabref.model.entry.Date.getDay()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java. .(!2é
+3java.time.LocalDateTime.of(int, int, int, int, int)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java/8 /(:2ü
+Djava.time.LocalDateTime.truncatedTo(java.time.temporal.TemporalUnit)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java1 1(%2s
+java.util.Optional.of(T)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java2 2(2ù
+Bjava.time.LocalDateTime.format(java.time.format.DateTimeFormatter)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java2- 2(32ª
+`org.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)!timeStampCALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java&/ &(82»
+morg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?parsedDate@38.23:38.33CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java' '(2»
+morg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?parsedDate@38.23:38.33CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java+ +("2¬
+gorg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?date@43.17:43.21CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java, ,(2¬
+gorg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?date@43.17:43.21CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java-! -(%2¬
+gorg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?date@43.17:43.21CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java. .(2¬
+gorg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?year@44.16:44.20CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java/; /(?2√
+horg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?month@45.16:45.21CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java/A /(F2¡
+forg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?day@46.16:46.19CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java/H /(K2À
+porg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?localDateTime@47.26:47.39CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java1 1(2À
+porg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?localDateTime@47.26:47.39CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java2 2(,2¿
+`org.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)!timeStamp	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java%4 %(=2œ
+morg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?parsedDate@38.23:38.33DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java& &(!2…
+gorg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?date@43.17:43.21DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java+ +(2…
+gorg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?year@44.16:44.20DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java, ,(2 
+horg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?month@45.16:45.21DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java- -(2»
+forg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?day@46.16:46.19DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java. .(2“
+porg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?localDateTime@47.26:47.39DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java/ /('2t
+java.util.OptionalRETURN_TYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java% %(2{
+java.lang.StringRETURN_TYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java% %( 
+morg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?parsedDate@38.23:38.33VARIABLEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java& &(!"
+typeOptional<Date>"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>Optional<Date> <mark class="class-field">parsedDate</mark> = Date.parse(timeStamp)*
+parsedDate2m
+java.util.OptionalTYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java& &(2
+org.jabref.model.entry.DateTYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java& &(2é
+3org.jabref.model.entry.Date.parse(java.lang.String)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java&) &(.2ª
+`org.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)!timeStampCALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java&/ &(8ó
+gorg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?date@43.17:43.21VARIABLEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java+ +("
+typeDate"
+isFinalfalse"q
+declarationString\<mark class="modifier"> </mark>Date <mark class="class-field">date</mark> = parsedDate.get()*date2v
+org.jabref.model.entry.DateTYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java+ +(2s
+java.util.Optional.get()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java+# +(&2»
+morg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?parsedDate@38.23:38.33CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java+ +("¶
+gorg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?year@44.16:44.20VARIABLEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java, ,("
+typeint"
+isFinalfalse"ó
+declarationStringÅ<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">year</mark> = date.getYear().orElse(1)*year2^
+intTYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java, ,(2w
+java.util.Optional.orElse(T)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java,& ,(,2Ä
+%org.jabref.model.entry.Date.getYear()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java, ,(#2¬
+gorg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?date@43.17:43.21CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java, ,(⁄
+horg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?month@45.16:45.21VARIABLEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java- -("
+typeint"
+isFinalfalse"ç
+declarationStringx<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">month</mark> = getMonth(date)*month2^
+intTYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java- -(2µ
+Zorg.jabref.logic.cleanup.TimeStampToModificationDate.getMonth(org.jabref.model.entry.Date)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java- -( 2¬
+gorg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?date@43.17:43.21CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java-! -(%ü
+forg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?day@46.16:46.19VARIABLEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java. .("
+typeint"
+isFinalfalse"î
+declarationString<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">day</mark> = date.getDay().orElse(1)*day2^
+intTYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java. .(2w
+java.util.Optional.orElse(T)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java.$ .(*2
+$org.jabref.model.entry.Date.getDay()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java. .(!2¬
+gorg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?date@43.17:43.21CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java. .(˙	
+porg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?localDateTime@47.26:47.39VARIABLEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java/ /('"
+typeLocalDateTime"
+isFinalfalse"ú
+declarationStringÜ<mark class="modifier"> </mark>LocalDateTime <mark class="class-field">localDateTime</mark> = LocalDateTime.of(year, month, day, 0, 0)*localDateTime2r
+java.time.LocalDateTimeTYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java/ /(2é
+3java.time.LocalDateTime.of(int, int, int, int, int)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java/8 /(:2¬
+gorg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?year@44.16:44.20CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java/; /(?2√
+horg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?month@45.16:45.21CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java/A /(F2¡
+forg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)?day@46.16:46.19CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java/H /(KÅ
+`org.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)!timeStamp	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java%4 %(="
+typeString"
+isFinalfalse"%
+declarationStringString timeStamp*	timeStamp2k
+java.lang.StringTYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java%- %(3À
+Zorg.jabref.logic.cleanup.TimeStampToModificationDate.getMonth(org.jabref.model.entry.Date)METHODQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java: :("
+isFinalfalse"å
+declarationStringw<mark class="modifier">private </mark><mark class="modifier">int</mark> <mark class="method">getMonth</mark>(Date date)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeint*getMonth2y
+java.util.Optional.isPresent()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java; ;(%2Å
+&org.jabref.model.entry.Date.getMonth()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java; ;(2É
+(org.jabref.model.entry.Month.getNumber()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java<) <(22s
+java.util.Optional.get()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java<# <(&2Å
+&org.jabref.model.entry.Date.getMonth()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java< <( 2∫
+_org.jabref.logic.cleanup.TimeStampToModificationDate.getMonth(org.jabref.model.entry.Date)!dateCALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java; ;(2∫
+_org.jabref.logic.cleanup.TimeStampToModificationDate.getMonth(org.jabref.model.entry.Date)!dateCALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java< <(2ø
+_org.jabref.logic.cleanup.TimeStampToModificationDate.getMonth(org.jabref.model.entry.Date)!date	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java: :("2e
+intRETURN_TYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java: :(˝
+_org.jabref.logic.cleanup.TimeStampToModificationDate.getMonth(org.jabref.model.entry.Date)!date	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java: :(""
+typeDate"
+isFinalfalse"
+declarationString	Date date*date2v
+org.jabref.model.entry.DateTYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java: :(≠C
+]org.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)METHODQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaB B($"
+isFinalfalse"¥
+declarationStringû<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>List&lt;FieldChange&gt; <mark class="method">cleanup</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<FieldChange>*cleanup2y
+java.util.Optional.isPresent()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaD+ D(42ß
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaD D(2±
+Vorg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaE2 E(A2s
+java.util.Optional.get()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaEa E(d2ß
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaEH E(P2w
+java.util.Optional.isEmpty()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaF# F(*2|
+!java.util.Collections.emptyList()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaH# H(,2⁄
+org.jabref.model.entry.BibEntry.clearField(org.jabref.model.entry.field.Field, org.jabref.model.entry.event.EntriesEventSource)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaK K(2p
+java.util.List.add(E)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaO O(2s
+java.util.Optional.get()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaO^ O(a2Î
+èorg.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String, org.jabref.model.entry.event.EntriesEventSource)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaP P(2s
+java.util.Optional.get()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaPN P(Q2x
+java.util.Optional.orElse(T)CALLR
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaQ} Q(É2ß
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaQT Q(\2u
+java.util.Optional.get()CALLS
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaQú Q(ü2p
+java.util.List.add(E)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaR R(2|
+!java.util.Collections.emptyList()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaU U($2z
+java.util.ArrayList.ArrayList()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaL/ L(:2Ì
+ëorg.jabref.model.FieldChange.FieldChange(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.lang.String, java.lang.String)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaO O(*2Ì
+ëorg.jabref.model.FieldChange.FieldChange(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.lang.String, java.lang.String)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaQ Q(&2æ
+corg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)!entryCALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaD D(2™
+Oorg.jabref.logic.cleanup.TimeStampToModificationDate?timeStampField@26.24:26.38CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaD D()2æ
+corg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)!entryCALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaEB E(G2™
+Oorg.jabref.logic.cleanup.TimeStampToModificationDate?timeStampField@26.24:26.38CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaEQ E(_2◊
+|org.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)?formattedTimeStamp@69.29:69.47CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaF F("2æ
+corg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)!entryCALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaK K(2™
+Oorg.jabref.logic.cleanup.TimeStampToModificationDate?timeStampField@26.24:26.38CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaK K(+2œ
+torg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)?changeList@76.30:76.40CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaO O(2æ
+corg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)!entryCALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaO+ O(02◊
+|org.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)?formattedTimeStamp@69.29:69.47CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaOK O(]2æ
+corg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)!entryCALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaP P(2◊
+|org.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)?formattedTimeStamp@69.29:69.47CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaP; P(M2Õ
+rorg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)?changeTo@77.24:77.32CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaQ Q(2æ
+corg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)!entryCALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaQ' Q(,2æ
+corg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)!entryCALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaQN Q(S2Ÿ
+|org.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)?formattedTimeStamp@69.29:69.47CALLS
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaQâ Q(õ2œ
+torg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)?changeList@76.30:76.40CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaR R(2Õ
+rorg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)?changeTo@77.24:77.32CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaR R(#2œ
+torg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)?changeList@76.30:76.40CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaS S(2´
+Lorg.jabref.logic.cleanup.CleanupJob.cleanup(org.jabref.model.entry.BibEntry)OVERRIDEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaB B($2√
+corg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)!entry	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaB. B(32ﬁ
+|org.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)?formattedTimeStamp@69.29:69.47DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaE E(/2÷
+torg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)?changeList@76.30:76.40DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaL L((2‘
+rorg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)?changeTo@77.24:77.32DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaM M( 2p
+java.util.ListRETURN_TYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaB B(2á
+org.jabref.model.FieldChangeRETURN_TYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaB B(ı
+|org.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)?formattedTimeStamp@69.29:69.47VARIABLEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaE E(/"
+typeOptional<String>"
+isFinalfalse"±
+declarationStringõ<mark class="modifier"> </mark>Optional<String> <mark class="class-field">formattedTimeStamp</mark> = formatTimeStamp(entry.getField(timeStampField).get())*formattedTimeStamp2m
+java.util.OptionalTYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaE E(2t
+java.lang.StringTYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaE E(2±
+Vorg.jabref.logic.cleanup.TimeStampToModificationDate.formatTimeStamp(java.lang.String)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaE2 E(A2s
+java.util.Optional.get()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaEa E(d2ß
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaEH E(P2æ
+corg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)!entryCALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaEB E(G2™
+Oorg.jabref.logic.cleanup.TimeStampToModificationDate?timeStampField@26.24:26.38CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaEQ E(_˛
+torg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)?changeList@76.30:76.40VARIABLEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaL L(("
+typeList<FieldChange>"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark>List<FieldChange> <mark class="class-field">changeList</mark> = new ArrayList<>()*
+changeList2i
+java.util.ListTYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaL L(2Ä
+org.jabref.model.FieldChangeTYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaL L(2z
+java.util.ArrayList.ArrayList()CALLQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaL/ L(:Ê
+rorg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)?changeTo@77.24:77.32VARIABLEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaM M( "
+typeFieldChange"
+isFinalfalse"i
+declarationStringT<mark class="modifier"> </mark>FieldChange <mark class="class-field">changeTo</mark>*changeTo2w
+org.jabref.model.FieldChangeTYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaM M(è
+corg.jabref.logic.cleanup.TimeStampToModificationDate.cleanup(org.jabref.model.entry.BibEntry)!entry	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaB. B(3"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2z
+org.jabref.model.entry.BibEntryTYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.javaB% B(-ó
+Oorg.jabref.logic.cleanup.TimeStampToModificationDate?timeStampField@26.24:26.38VALUEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java (&"
+isFinaltrue"
+typeField"î
+declarationString<mark class="modifier">private </mark><mark class="modifier">final </mark>Field <mark class="class-field">timeStampField</mark>"
+isStaticfalse"
+accessprivate*timeStampField2}
+"org.jabref.model.entry.field.FieldTYPEQ
+Gsrc\main\java\org\jabref\logic\cleanup\TimeStampToModificationDate.java (

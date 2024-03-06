@@ -1,0 +1,1415 @@
+
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java´4
+Corg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTabCLASS`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java5 5(!"9
+package.org.jabref.gui.entryeditor.citationrelationtab"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"®
+declarationStringí<mark class="modifier">public </mark><mark class="modifier">class </mark>CitationRelationsTab<mark class="modifier"> extends </mark>EntryEditorTab"
+accesspublic*CitationRelationsTab2ï
+£org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaH H(2Î
+zorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javac c(+2á
+styleFetchedListViewDECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaø ø(%2›
+jorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleLabel(javafx.scene.control.Label)DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¯ ¯(2·
+norg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleTopBarNode(javafx.scene.Node, double)DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÜ Ü( 2‚
+oorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.shouldShow(org.jabref.model.entry.BibEntry)DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaì ì(2„
+porg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.bindToEntry(org.jabref.model.entry.BibEntry)DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaô ô(2Ö
+searchForRelationsDECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¶ ¶(#2é
+onSearchForRelationsSucceedDECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaﬂ ﬂ(,2ß
+≥org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaı ı(,2÷
+corg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.hideNodes(javafx.scene.Node...)DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÇ Ç(2÷
+corg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.showNodes(javafx.scene.Node...)DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÜ Ü(2Ä
+importEntriesDECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaë ë(2«
+Vorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?LOGGER@55.32:55.38DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java7  7(&2À
+Zorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citingTask@58.50:58.60DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java:2 :(<2Ã
+[org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citedByTask@59.50:59.61DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java;2 ;(=2Ã
+[org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?preferences@60.41:60.52DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java<) <(42Œ
+]org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?dialogService@61.32:61.45DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java=  =(-2–
+_org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?databaseContext@62.37:62.52DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java>% >(42Ã
+[org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?undoManager@63.30:63.41DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java? ?()2Õ
+\org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?stateManager@64.31:64.43DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java@ @(+2“
+aorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?fileUpdateMonitor@65.36:65.53DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaA$ A(52”
+borg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?preferencesService@66.37:66.55DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaB% B(72À
+Zorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?libraryTab@67.29:67.39DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaC C('2Õ
+\org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?taskExecutor@68.31:68.43DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaD D(+2‹
+korg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?bibEntryRelationsRepository@69.46:69.73DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaE. E(I2ﬂ
+norg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citationsRelationsTabViewModel@70.49:70.79DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaF1 F(O2ï
+)org.jabref.gui.entryeditor.EntryEditorTabEXTEND`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java5* 5(8ëó
+£org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)CONSTRUCTOR`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaH H("‹
+declarationString∆<mark class="modifier">public </mark><mark class="method">CitationRelationsTab</mark>(EntryEditorPreferences preferences<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> UndoManager undoManager<mark class="modifier"><mark class="modifier">,</mark></mark> StateManager stateManager<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileUpdateMonitor<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferencesService<mark class="modifier"><mark class="modifier">,</mark></mark> LibraryTab lTab<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor)*CitationRelationsTab2∏
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaU U(!2∏
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaV, V(02≠
+Borg.jabref.preferences.PreferencesService.getImporterPreferences()CALLa
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaXy X(è2Ô
+Ñorg.jabref.gui.entryeditor.citationrelationtab.BibEntryRelationsRepository.BibEntryRelationsRepository(org.jabref.gui.entryeditor.citationrelationtab.semanticscholar.SemanticScholarFetcher, org.jabref.gui.entryeditor.citationrelationtab.BibEntryRelationsCache)CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaX/ X(J2Ü
+õorg.jabref.gui.entryeditor.citationrelationtab.semanticscholar.SemanticScholarFetcher.SemanticScholarFetcher(org.jabref.logic.importer.ImporterPreferences)CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaXO X(e2»
+^org.jabref.gui.entryeditor.citationrelationtab.BibEntryRelationsCache.BibEntryRelationsCache()CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaY Y(*2‘
+Èorg.jabref.gui.entryeditor.citationrelationtab.CitationsRelationsTabViewModel.CitationsRelationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor)CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaZ- Z(K2ö
+Øorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!preferencesCALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaL L(&2ú
+±org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!dialogServiceCALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaM M(*2û
+≥org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!databaseContextCALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaN N(.2ö
+Øorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!undoManagerCALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaO O(&2õ
+∞org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!stateManagerCALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaP P((2†
+µorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!fileUpdateMonitorCALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaQ! Q(22°
+∂org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!preferencesServiceCALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaR" R(42ì
+®org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!lTabCALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaS S(2õ
+∞org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!taskExecutorCALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaT T((2°
+∂org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!preferencesServiceCALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaXf X(x2ÿ
+norg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citationsRelationsTabViewModel@70.49:70.79CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaZ Z(&2û
+≥org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!databaseContextCALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaZL Z([2°
+∂org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!preferencesServiceCALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaZ] Z(o2ö
+Øorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!undoManagerCALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaZq Z(|2ú
+∞org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!stateManagerCALLa
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaZ~ Z(ä2û
+±org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!dialogServiceCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaZå Z(ô2¢
+µorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!fileUpdateMonitorCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaZõ Z(¨2≈
+[org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?preferences@60.41:60.52CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaL L(2«
+]org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?dialogService@61.32:61.45CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaM M(2…
+_org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?databaseContext@62.37:62.52CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaN N(2≈
+[org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?undoManager@63.30:63.41CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaO O(2∆
+\org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?stateManager@64.31:64.43CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaP P(2À
+aorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?fileUpdateMonitor@65.36:65.53CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaQ Q(2Ã
+borg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?preferencesService@66.37:66.55CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaR R(2ƒ
+Zorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?libraryTab@67.29:67.39CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaS S(2∆
+\org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?taskExecutor@68.31:68.43CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaT T(2’
+korg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?bibEntryRelationsRepository@69.46:69.73CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaX X((2ü
+Øorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!preferences	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaH7 H(B2°
+±org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaHR H(_2£
+≥org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!databaseContext	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaI3 I(B2ü
+Øorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!undoManager	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaIP I([2†
+∞org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!stateManager	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaJ- J(92•
+µorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!fileUpdateMonitor	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaJM J(^2¶
+∂org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!preferencesService	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaK3 K(E2ò
+®org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!lTab	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaKR K(V2†
+∞org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaKe K(q2¥
+Corg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTabRETURN_TYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaH H(µ
+Øorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!preferences	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaH7 H(B"
+typeEntryEditorPreferences"
+isFinalfalse"7
+declarationString"EntryEditorPreferences preferences*preferences2õ
+1org.jabref.gui.entryeditor.EntryEditorPreferencesTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaH  H(6î
+±org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaHR H(_"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2Ü
+org.jabref.gui.DialogServiceTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaHD H(Q¥
+≥org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!databaseContext	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaI3 I(B"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2ñ
+,org.jabref.model.database.BibDatabaseContextTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaI  I(2ä
+Øorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!undoManager	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaIP I(["
+typeUndoManager"
+isFinalfalse",
+declarationStringUndoManager undoManager*undoManager2Ü
+javax.swing.undo.UndoManagerTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaID I(Oé
+∞org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!stateManager	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaJ- J(9"
+typeStateManager"
+isFinalfalse".
+declarationStringStateManager stateManager*stateManager2Ö
+org.jabref.gui.StateManagerTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaJ  J(,≥
+µorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!fileUpdateMonitor	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaJM J(^"
+typeFileUpdateMonitor"
+isFinalfalse"8
+declarationString#FileUpdateMonitor fileUpdateMonitor*fileUpdateMonitor2ë
+'org.jabref.model.util.FileUpdateMonitorTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaJ; J(L∫
+∂org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!preferencesService	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaK3 K(E"
+typePreferencesService"
+isFinalfalse":
+declarationString%PreferencesService preferencesService*preferencesService2ì
+)org.jabref.preferences.PreferencesServiceTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaK  K(2
+®org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!lTab	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaKR K(V"
+type
+LibraryTab"
+isFinalfalse"$
+declarationStringLibraryTab lTab*lTab2É
+org.jabref.gui.LibraryTabTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaKG K(Qì
+∞org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaKe K(q"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2ä
+ org.jabref.gui.util.TaskExecutorTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaKX K(d∆Á
+zorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)METHOD`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javac c(+"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier">private </mark>SplitPane <mark class="method">getPaneAndStartSearch</mark>(BibEntry entry)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+type	SplitPane*getPaneAndStartSearch2∏
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaq3 q(72‘
+jorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleLabel(javafx.scene.control.Label)CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javar r(2∏
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javas4 s(82‘
+jorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleLabel(javafx.scene.control.Label)CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javat t(2û
+4org.jabref.gui.icon.IconTheme.JabRefIcons.asButton()CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java{C {(K2∏
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java|@ |(D2û
+4org.jabref.gui.icon.IconTheme.JabRefIcons.asButton()CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java~D ~(L2∏
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaA (E2†
+4org.jabref.gui.icon.IconTheme.JabRefIcons.asButton()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÉ? É(G2∫
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÖ> Ö(B2†
+4org.jabref.gui.icon.IconTheme.JabRefIcons.asButton()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaá> á(F2∫
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaâ= â(A2†
+4org.jabref.gui.icon.IconTheme.JabRefIcons.asButton()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaîD î(L2∫
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaï? ï(C2†
+4org.jabref.gui.icon.IconTheme.JabRefIcons.asButton()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaóE ó(M2∫
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaò@ ò(D2˛
+ìorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingVBox@101.13:101.23CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javag g(2ˇ
+îorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByVBox@102.13:102.24CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javah h(2˛
+ìorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingVBox@101.13:101.23CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javai i(2ˇ
+îorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByVBox@102.13:102.24CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaj j(2˛
+ìorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingHBox@107.19:107.29CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javal l(2ˇ
+îorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByHBox@109.19:109.30CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javan n(2ˇ
+îorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingLabel@113.14:113.25CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javar r(2Ä
+ïorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByLabel@115.14:115.26CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javat t(2á
+úorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?refreshCitingButton@123.15:123.34CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java| |(2á
+úorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?refreshCitingButton@123.15:123.34CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java} }(+2à
+ùorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?refreshCitedByButton@126.15:126.35CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java (2ä
+ùorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?refreshCitedByButton@126.15:126.35CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÄ Ä(,2á
+öorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?abortCitingButton@131.15:131.32CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÑ Ñ(2á
+öorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?abortCitingButton@131.15:131.32CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÖ Ö(2á
+öorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?abortCitingButton@131.15:131.32CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÜ Ü()2Ü
+ôorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?abortCitedButton@135.15:135.31CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaà à(2Ü
+ôorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?abortCitedButton@135.15:135.31CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaâ â(2Ü
+ôorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?abortCitedButton@135.15:135.31CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaä ä((2Ñ
+óorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingProgress@140.26:140.40CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaç ç(2Ñ
+óorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingProgress@140.26:140.40CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaé é(&2Ö
+òorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByProgress@143.26:143.41CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaê ê(2Ö
+òorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByProgress@143.26:143.41CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaë ë('2à
+õorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?importCitingButton@148.15:148.33CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaï ï(2à
+õorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?importCitingButton@148.15:148.33CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javañ ñ(*2â
+úorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?importCitedByButton@151.15:151.34CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaò ò(2â
+úorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?importCitedByButton@151.15:151.34CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaô ô(+2à
+õorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?importCitingButton@148.15:148.33CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaö ö($2â
+úorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?importCitedByButton@151.15:151.34CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaö& ö(92Ä
+ìorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingHBox@107.19:107.29CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaú ú(2Å
+îorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingLabel@113.14:113.25CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaú( ú(32â
+úorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?refreshCitingButton@123.15:123.34CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaú5 ú(H2à
+õorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?importCitingButton@148.15:148.33CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaúJ ú(\2Ñ
+óorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingProgress@140.26:140.40CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaú^ ú(l2á
+öorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?abortCitingButton@131.15:131.32CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaún ú(2Å
+îorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByHBox@109.19:109.30CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaù ù(2Ç
+ïorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByLabel@115.14:115.26CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaù) ù(52ä
+ùorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?refreshCitedByButton@126.15:126.35CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaù7 ù(K2â
+úorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?importCitedByButton@151.15:151.34CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaùM ù(`2Ö
+òorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByProgress@143.26:143.41CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaùb ù(q2á
+ôorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?abortCitedButton@135.15:135.31CALLc
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaùs ù(É2Ñ
+óorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingListView@119.44:119.58CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaü ü($2Ö
+òorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByListView@120.44:120.59CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java† †(%2Ä
+ìorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingVBox@101.13:101.23CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java° °(2Ä
+ìorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingHBox@107.19:107.29CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java°( °(22Ñ
+óorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingListView@119.44:119.58CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java°4 °(B2Å
+îorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByVBox@102.13:102.24CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¢ ¢(2Å
+îorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByHBox@109.19:109.30CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¢) ¢(42Ö
+òorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByListView@120.44:120.59CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¢6 ¢(E2â
+úorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?refreshCitingButton@123.15:123.34CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java§ §(2Ì
+Äorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)!entryCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java• •($2Ñ
+óorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingListView@119.44:119.58CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java•& •(42á
+öorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?abortCitingButton@131.15:131.32CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java•6 •(G2â
+úorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?refreshCitingButton@123.15:123.34CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¶ ¶('2à
+õorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?importCitingButton@148.15:148.33CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¶K ¶(]2Ñ
+óorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingProgress@140.26:140.40CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¶_ ¶(m2ä
+ùorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?refreshCitedByButton@126.15:126.35CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java© ©(2Ì
+Äorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)!entryCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java©K ©(P2Ö
+òorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByListView@120.44:120.59CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java©R ©(a2Ü
+ôorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?abortCitedButton@135.15:135.31CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java©c ©(s2ä
+ùorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?refreshCitedByButton@126.15:126.35CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java™ ™($2â
+úorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?importCitedByButton@151.15:151.34CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java™K ™(^2Ö
+òorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByProgress@143.26:143.41CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java™` ™(o2Ä
+ìorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingVBox@101.13:101.23CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java≠, ≠(62Å
+îorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByVBox@102.13:102.24CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java≠8 ≠(C2Ö
+òorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByListView@120.44:120.59CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÆ Æ(,2Ñ
+óorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingListView@119.44:119.58CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaØ Ø(+2Ì
+Äorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)!entryCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java± ±( 2Ñ
+óorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingListView@119.44:119.58CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java±" ±(02á
+öorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?abortCitingButton@131.15:131.32CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java±2 ±(C2â
+úorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?refreshCitingButton@123.15:123.34CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java±E ±(X2à
+õorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?importCitingButton@148.15:148.33CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java≤2 ≤(D2Ñ
+óorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingProgress@140.26:140.40CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java≤F ≤(T2Ì
+Äorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)!entryCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¥ ¥( 2Ö
+òorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByListView@120.44:120.59CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¥" ¥(12Ü
+ôorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?abortCitedButton@135.15:135.31CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¥3 ¥(C2ä
+ùorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?refreshCitedByButton@126.15:126.35CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¥E ¥(Y2â
+úorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?importCitedByButton@151.15:151.34CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaµ5 µ(H2Ö
+òorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByProgress@143.26:143.41CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaµJ µ(Y2ˇ
+íorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?container@173.18:173.27CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java∑ ∑(2
+Äorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)!entry	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javac5 c(:2Ö
+ìorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingVBox@101.13:101.23DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javae e(2Ü
+îorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByVBox@102.13:102.24DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaf f(2Ö
+ìorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingHBox@107.19:107.29DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javak k(2Ü
+îorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByHBox@109.19:109.30DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javam m(2Ü
+îorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingLabel@113.14:113.25DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaq q(2á
+ïorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByLabel@115.14:115.26DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javas s(2â
+óorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingListView@119.44:119.58DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaw, w(:2ä
+òorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByListView@120.44:120.59DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javax, x(;2é
+úorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?refreshCitingButton@123.15:123.34DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java{ {("2è
+ùorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?refreshCitedByButton@126.15:126.35DECLARATION`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java~ ~(#2é
+öorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?abortCitingButton@131.15:131.32DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÉ É( 2ç
+ôorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?abortCitedButton@135.15:135.31DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaá á(2ã
+óorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingProgress@140.26:140.40DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaå å((2å
+òorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByProgress@143.26:143.41DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaè è()2è
+õorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?importCitingButton@148.15:148.33DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaî î(!2ê
+úorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?importCitedByButton@151.15:151.34DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaó ó("2Ü
+íorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?container@173.18:173.27DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java≠ ≠(2Ç
+éorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?event@164.46:164.51DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java§. §(32Ç
+éorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?event@169.47:169.52DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java©/ ©(42è
+javafx.scene.control.SplitPaneRETURN_TYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javac c(¶
+ìorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingVBox@101.13:101.23VARIABLE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javae e("
+typeVBox"
+isFinalfalse"q
+declarationString\<mark class="modifier"> </mark>VBox <mark class="class-field">citingVBox</mark> = new VBox()*
+citingVBox2Ç
+javafx.scene.layout.VBoxTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javae e(©
+îorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByVBox@102.13:102.24VARIABLE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaf f("
+typeVBox"
+isFinalfalse"r
+declarationString]<mark class="modifier"> </mark>VBox <mark class="class-field">citedByVBox</mark> = new VBox()*citedByVBox2Ç
+javafx.scene.layout.VBoxTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaf f(æ
+ìorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingHBox@107.19:107.29VARIABLE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javak k("
+type
+AnchorPane"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>AnchorPane <mark class="class-field">citingHBox</mark> = new AnchorPane()*
+citingHBox2à
+javafx.scene.layout.AnchorPaneTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javak k(¡
+îorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByHBox@109.19:109.30VARIABLE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javam m("
+type
+AnchorPane"
+isFinalfalse"~
+declarationStringi<mark class="modifier"> </mark>AnchorPane <mark class="class-field">citedByHBox</mark> = new AnchorPane()*citedByHBox2à
+javafx.scene.layout.AnchorPaneTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javam m(Ñ
+îorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingLabel@113.14:113.25VARIABLE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaq q("
+typeLabel"
+isFinalfalse"é
+declarationStringy<mark class="modifier"> </mark>Label <mark class="class-field">citingLabel</mark> = new Label(Localization.lang("Cites"))*citingLabel2Ñ
+javafx.scene.control.LabelTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaq q(2∏
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaq3 q(7ä
+ïorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByLabel@115.14:115.26VARIABLE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javas s("
+typeLabel"
+isFinalfalse"í
+declarationString}<mark class="modifier"> </mark>Label <mark class="class-field">citedByLabel</mark> = new Label(Localization.lang("Cited By"))*citedByLabel2Ñ
+javafx.scene.control.LabelTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javas s(2∏
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javas4 s(8Ò
+óorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingListView@119.44:119.58VARIABLE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaw, w(:"+
+type#CheckListView<CitationRelationItem>"
+isFinalfalse"†
+declarationStringä<mark class="modifier"> </mark>CheckListView<CitationRelationItem> <mark class="class-field">citingListView</mark> = new CheckListView<>()*citingListView2w
+CheckListViewTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaw w(Ù
+òorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByListView@120.44:120.59VARIABLE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javax, x(;"+
+type#CheckListView<CitationRelationItem>"
+isFinalfalse"°
+declarationStringã<mark class="modifier"> </mark>CheckListView<CitationRelationItem> <mark class="class-field">citedByListView</mark> = new CheckListView<>()*citedByListView2w
+CheckListViewTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javax x(â
+úorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?refreshCitingButton@123.15:123.34VARIABLE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java{ {(""
+typeButton"
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier"> </mark>Button <mark class="class-field">refreshCitingButton</mark> = IconTheme.JabRefIcons.REFRESH.asButton()*refreshCitingButton2Ö
+javafx.scene.control.ButtonTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java{ {(2û
+4org.jabref.gui.icon.IconTheme.JabRefIcons.asButton()CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java{C {(Kå
+ùorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?refreshCitedByButton@126.15:126.35VARIABLE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java~ ~(#"
+typeButton"
+isFinalfalse"ú
+declarationStringÜ<mark class="modifier"> </mark>Button <mark class="class-field">refreshCitedByButton</mark> = IconTheme.JabRefIcons.REFRESH.asButton()*refreshCitedByButton2Ö
+javafx.scene.control.ButtonTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java~ ~(2û
+4org.jabref.gui.icon.IconTheme.JabRefIcons.asButton()CALL`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java~D ~(Lá
+öorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?abortCitingButton@131.15:131.32VARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÉ É( "
+typeButton"
+isFinalfalse"ó
+declarationStringÅ<mark class="modifier"> </mark>Button <mark class="class-field">abortCitingButton</mark> = IconTheme.JabRefIcons.CLOSE.asButton()*abortCitingButton2á
+javafx.scene.control.ButtonTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÉ É(2†
+4org.jabref.gui.icon.IconTheme.JabRefIcons.asButton()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÉ? É(GÑ
+ôorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?abortCitedButton@135.15:135.31VARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaá á("
+typeButton"
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier"> </mark>Button <mark class="class-field">abortCitedButton</mark> = IconTheme.JabRefIcons.CLOSE.asButton()*abortCitedButton2á
+javafx.scene.control.ButtonTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaá á(2†
+4org.jabref.gui.icon.IconTheme.JabRefIcons.asButton()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaá> á(FÏ
+óorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingProgress@140.26:140.40VARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaå å(("
+typeProgressIndicator"
+isFinalfalse"è
+declarationStringz<mark class="modifier"> </mark>ProgressIndicator <mark class="class-field">citingProgress</mark> = new ProgressIndicator()*citingProgress2í
+&javafx.scene.control.ProgressIndicatorTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaå å(Ô
+òorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByProgress@143.26:143.41VARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaè è()"
+typeProgressIndicator"
+isFinalfalse"ê
+declarationString{<mark class="modifier"> </mark>ProgressIndicator <mark class="class-field">citedByProgress</mark> = new ProgressIndicator()*citedByProgress2í
+&javafx.scene.control.ProgressIndicatorTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaè è(é
+õorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?importCitingButton@148.15:148.33VARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaî î(!"
+typeButton"
+isFinalfalse"ú
+declarationStringÜ<mark class="modifier"> </mark>Button <mark class="class-field">importCitingButton</mark> = IconTheme.JabRefIcons.ADD_ENTRY.asButton()*importCitingButton2á
+javafx.scene.control.ButtonTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaî î(2†
+4org.jabref.gui.icon.IconTheme.JabRefIcons.asButton()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaîD î(Lë
+úorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?importCitedByButton@151.15:151.34VARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaó ó(""
+typeButton"
+isFinalfalse"ù
+declarationStringá<mark class="modifier"> </mark>Button <mark class="class-field">importCitedByButton</mark> = IconTheme.JabRefIcons.ADD_ENTRY.asButton()*importCitedByButton2á
+javafx.scene.control.ButtonTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaó ó(2†
+4org.jabref.gui.icon.IconTheme.JabRefIcons.asButton()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaóE ó(M€
+íorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?container@173.18:173.27VARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java≠ ≠("
+type	SplitPane"
+isFinalfalse"ë
+declarationString|<mark class="modifier"> </mark>SplitPane <mark class="class-field">container</mark> = new SplitPane(citingVBox, citedByVBox)*	container2ä
+javafx.scene.control.SplitPaneTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java≠ ≠(2Ä
+ìorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citingVBox@101.13:101.23CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java≠, ≠(62Å
+îorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?citedByVBox@102.13:102.24CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java≠8 ≠(CÃ
+Äorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)!entry	PARAMETER`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javac5 c(:"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2â
+org.jabref.model.entry.BibEntryTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javac, c(4≈
+éorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?event@164.46:164.51VARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java§. §(3"
+type"
+isFinalfalse"
+declarationString event*event2TYPE≈
+éorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)?event@169.47:169.52VARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java©/ ©(4"
+type"
+isFinalfalse"
+declarationString event*event2TYPE˚
+styleFetchedListViewMETHODb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaø ø(%"
+isFinalfalse"√
+declarationString≠<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">styleFetchedListView</mark>(CheckListView&lt;CitationRelationItem&gt; listView)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*styleFetchedListView2†
+4org.jabref.gui.icon.IconTheme.JabRefIcons.asButton()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÃC Ã(K2∫
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÕC Õ(G2ó
++org.jabref.gui.util.BackgroundTask.cancel()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java“' “(-2ó
++org.jabref.gui.util.BackgroundTask.cancel()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java”( ”(.2¶
+:org.jabref.gui.icon.IconTheme.JabRefIcons.asToggleButton()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java◊K ◊(Y2∫
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÿF ÿ(J2ú
+/org.jabref.gui.icon.JabRefIcon.getGraphicNode()CALLc
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java€z €(à2π
+Morg.jabref.gui.icon.IconTheme.JabRefIcons.withColor(javafx.scene.paint.Color)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java€V €(_2¶
+:org.jabref.gui.icon.IconTheme.JabRefIcons.getGraphicNode()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java›O ›(]2£
+7org.jabref.gui.util.NoSelectionModel.NoSelectionModel()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java' (92∆
+Zorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?libraryTab@67.29:67.39CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java– –(&2∆
+Zorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?libraryTab@67.29:67.39CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java— —(&2∆
+Zorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citingTask@58.50:58.60CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java“ “(&2«
+[org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citedByTask@59.50:59.61CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java” ”('2w
+voidRETURN_TYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaø ø(Ä
+listView	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaøJ ø(R"+
+type#CheckListView<CitationRelationItem>"
+isFinalfalse"A
+declarationString,CheckListView<CitationRelationItem> listView*listView2y
+CheckListViewTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaø& ø(3ª
+entryVARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¬ ¬(""
+type"
+isFinalfalse"
+declarationString entry*entry2TYPEª
+eventVARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaœ1 œ(6"
+type"
+isFinalfalse"
+declarationString event*event2TYPEƒ
+selectedVARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaŸI Ÿ(Q"
+type"
+isFinalfalse"
+declarationString	 selected*selected2TYPE≤
+eeVARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaË* Ë(,"
+type"
+isFinalfalse"
+declarationString ee*ee2TYPEª
+eventVARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaË. Ë(3"
+type"
+isFinalfalse"
+declarationString event*event2TYPEÍ
+jorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleLabel(javafx.scene.control.Label)METHODb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¯ ¯("
+isFinalfalse"ë
+declarationString|<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">styleLabel</mark>(Label label)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*
+styleLabel2‹
+porg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleLabel(javafx.scene.control.Label)!labelCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˘ ˘(2‹
+porg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleLabel(javafx.scene.control.Label)!labelCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˙ ˙(2‹
+porg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleLabel(javafx.scene.control.Label)!labelCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˚  ˚(%2‹
+porg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleLabel(javafx.scene.control.Label)!labelCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¸! ¸(&2‹
+porg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleLabel(javafx.scene.control.Label)!labelCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˝# ˝((2‹
+porg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleLabel(javafx.scene.control.Label)!labelCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˛" ˛('2·
+porg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleLabel(javafx.scene.control.Label)!label	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¯" ¯('2w
+voidRETURN_TYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¯ ¯(¥
+porg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleLabel(javafx.scene.control.Label)!label	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¯" ¯('"
+typeLabel"
+isFinalfalse" 
+declarationStringLabel label*label2Ü
+javafx.scene.control.LabelTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¯ ¯(!ú
+norg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleTopBarNode(javafx.scene.Node, double)METHODb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÜ Ü( "
+isFinalfalse"˛
+declarationStringË<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">styleTopBarNode</mark>(Node node<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">double</mark> offset)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*styleTopBarNode2ﬂ
+sorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleTopBarNode(javafx.scene.Node, double)!nodeCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaá  á($2ﬂ
+sorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleTopBarNode(javafx.scene.Node, double)!nodeCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaà# à('2ﬂ
+sorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleTopBarNode(javafx.scene.Node, double)!nodeCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaâ" â(&2·
+uorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleTopBarNode(javafx.scene.Node, double)!offsetCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaâ( â(.2‰
+sorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleTopBarNode(javafx.scene.Node, double)!node	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÜ& Ü(*2Ê
+uorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleTopBarNode(javafx.scene.Node, double)!offset	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÜ3 Ü(92w
+voidRETURN_TYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÜ Ü(©
+sorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleTopBarNode(javafx.scene.Node, double)!node	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÜ& Ü(*"
+typeNode"
+isFinalfalse"
+declarationString	Node node*node2}
+javafx.scene.NodeTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÜ! Ü(%∆
+uorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.styleTopBarNode(javafx.scene.Node, double)!offset	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÜ3 Ü(9"
+typedouble"
+isFinalfalse"@
+declarationString+<mark class="modifier">double</mark> offset*offset2r
+doubleTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÜ, Ü(2ª
+oorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.shouldShow(org.jabref.model.entry.BibEntry)METHODb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaì ì("
+isFinalfalse"≈
+declarationStringØ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">shouldShow</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*
+shouldShow2≈
+Uorg.jabref.gui.entryeditor.EntryEditorTab.shouldShow(org.jabref.model.entry.BibEntry)OVERRIDEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaì ì(2Ê
+uorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.shouldShow(org.jabref.model.entry.BibEntry)!entry	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaì' ì(,2z
+booleanRETURN_TYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaì ì(ƒ
+uorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.shouldShow(org.jabref.model.entry.BibEntry)!entry	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaì' ì(,"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2ã
+org.jabref.model.entry.BibEntryTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaì ì(&ã
+porg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.bindToEntry(org.jabref.model.entry.BibEntry)METHODb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaô ô("
+isFinalfalse"∆
+declarationString∞<mark class="annotation">@Override</mark> <br><mark class="modifier">protected </mark><mark class="modifier">void</mark> <mark class="method">bindToEntry</mark>(BibEntry entry)"
+isStaticfalse"
+access	protected"
+
+isAbstractfalse"
+typevoid*bindToEntry2Ê
+zorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.getPaneAndStartSearch(org.jabref.model.entry.BibEntry)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaö ö((2‚
+vorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.bindToEntry(org.jabref.model.entry.BibEntry)!entryCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaö) ö(.2∆
+Vorg.jabref.gui.entryeditor.EntryEditorTab.bindToEntry(org.jabref.model.entry.BibEntry)OVERRIDEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaô ô(2Á
+vorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.bindToEntry(org.jabref.model.entry.BibEntry)!entry	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaô( ô(-2w
+voidRETURN_TYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaô ô(≈
+vorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.bindToEntry(org.jabref.model.entry.BibEntry)!entry	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaô( ô(-"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2ã
+org.jabref.model.entry.BibEntryTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaô ô('’@
+searchForRelationsMETHODb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¶ ¶(#"
+isFinalfalse"¨
+declarationStringñ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">searchForRelations</mark>(BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> CheckListView&lt;CitationRelationItem&gt; listView<mark class="modifier"><mark class="modifier">,</mark></mark> Button abortButton<mark class="modifier"><mark class="modifier">,</mark></mark> Button refreshButton<mark class="modifier"><mark class="modifier">,</mark></mark> CitationFetcher.SearchType searchType<mark class="modifier"><mark class="modifier">,</mark></mark> Button importButton<mark class="modifier"><mark class="modifier">,</mark></mark> ProgressIndicator progress<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">boolean</mark> shouldRefresh)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*searchForRelations2à
+java.util.Optional.isEmpty()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java© ©("2î
+(org.jabref.model.entry.BibEntry.getDOI()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java© ©(2∫
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÆ+ Æ(/2õ
+/org.jabref.gui.util.BackgroundTask.isCanceled()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java∂. ∂(82ó
++org.jabref.gui.util.BackgroundTask.cancel()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java∑ ∑(2õ
+/org.jabref.gui.util.BackgroundTask.isCanceled()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java∏7 ∏(A2ó
++org.jabref.gui.util.BackgroundTask.cancel()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaπ π(2ß
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaø" ø(&2Ô
+Çorg.jabref.gui.entryeditor.citationrelationtab.BibEntryRelationsRepository.forceRefreshReferences(org.jabref.model.entry.BibEntry)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¡0 ¡(F2Â
+yorg.jabref.gui.entryeditor.citationrelationtab.BibEntryRelationsRepository.getReferences(org.jabref.model.entry.BibEntry)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java√3 √(@2ß
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java«" «(&2Ó
+Åorg.jabref.gui.entryeditor.citationrelationtab.BibEntryRelationsRepository.forceRefreshCitations(org.jabref.model.entry.BibEntry)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java…0 …(E2‰
+xorg.jabref.gui.entryeditor.citationrelationtab.BibEntryRelationsRepository.getCitations(org.jabref.model.entry.BibEntry)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÀ3 À(?2 
+^org.jabref.gui.util.BackgroundTask.onFailure(java.util.function.Consumer<java.lang.Exception>)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java” ”(2∏
+Lorg.jabref.gui.util.BackgroundTask.onSuccess(java.util.function.Consumer<V>)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java— —(2¨
+@org.jabref.gui.util.BackgroundTask.onRunning(java.lang.Runnable)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java– –(2†
+≥org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java– –(82∫
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java÷? ÷(C2å
+ java.lang.Throwable.getMessage()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java◊" ◊(,2°
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java⁄ ⁄($2å
+ java.lang.Throwable.getMessage()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java⁄/ ⁄(92∆
+Zorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citingTask@58.50:58.60CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java∂ ∂(2∆
+Zorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citingTask@58.50:58.60CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java∂# ∂(-2∆
+Zorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citingTask@58.50:58.60CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java∑ ∑(2«
+[org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citedByTask@59.50:59.61CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java∏ ∏(2«
+[org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citedByTask@59.50:59.61CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java∏+ ∏(62«
+[org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citedByTask@59.50:59.61CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaπ π(2◊
+korg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?bibEntryRelationsRepository@69.46:69.73CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¡ ¡(/2◊
+korg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?bibEntryRelationsRepository@69.46:69.73CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java√ √(22∆
+Zorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citingTask@58.50:58.60CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java≈ ≈(2◊
+korg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?bibEntryRelationsRepository@69.46:69.73CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java… …(/2◊
+korg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?bibEntryRelationsRepository@69.46:69.73CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÀ À(22«
+[org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citedByTask@59.50:59.61CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÕ Õ(2¬
+Vorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?LOGGER@55.32:55.38CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java‘ ‘(2…
+]org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?dialogService@61.32:61.45CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java⁄ ⁄(2»
+\org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?taskExecutor@68.31:68.43CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java‹ ‹(%2w
+voidRETURN_TYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¶ ¶(‘
+entry	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¶- ¶(2"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2ã
+org.jabref.model.entry.BibEntryTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¶$ ¶(,Ä
+listView	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¶X ¶(`"+
+type#CheckListView<CitationRelationItem>"
+isFinalfalse"A
+declarationString,CheckListView<CitationRelationItem> listView*listView2y
+CheckListViewTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¶4 ¶(Aﬁ
+abortButton	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¶i ¶(t"
+typeButton"
+isFinalfalse"'
+declarationStringButton abortButton*abortButton2á
+javafx.scene.control.ButtonTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¶b ¶(h‰
+refreshButton	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaß+ ß(8"
+typeButton"
+isFinalfalse")
+declarationStringButton refreshButton*refreshButton2á
+javafx.scene.control.ButtonTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaß$ ß(*¡
+
+searchType	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaßU ß(_""
+typeCitationFetcher.SearchType"
+isFinalfalse":
+declarationString%CitationFetcher.SearchType searchType*
+searchType2≈
+Yorg.jabref.gui.entryeditor.citationrelationtab.semanticscholar.CitationFetcher.SearchTypeTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaßJ ß(T·
+importButton	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaßh ß(t"
+typeButton"
+isFinalfalse"(
+declarationStringButton importButton*importButton2á
+javafx.scene.control.ButtonTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaßa ß(gˆ
+progress	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java®6 ®(>"
+typeProgressIndicator"
+isFinalfalse"/
+declarationStringProgressIndicator progress*progress2í
+&javafx.scene.control.ProgressIndicatorTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java®$ ®(5Ô
+shouldRefresh	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java®H ®(U"
+typeboolean"
+isFinalfalse"H
+declarationString3<mark class="modifier">boolean</mark> shouldRefresh*shouldRefresh2s
+booleanTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java®@ ®(GÕ
+fetchedListVARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java— —(""
+type"
+isFinalfalse"!
+declarationString fetchedList*fetchedList2TYPE«
+	exceptionVARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java” ”( "
+type"
+isFinalfalse"
+declarationString
+ exception*	exception2TYPEÏ
+onSearchForRelationsSucceedMETHODb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaﬂ ﬂ(,"
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">onSearchForRelationsSucceed</mark>(BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> CheckListView&lt;CitationRelationItem&gt; listView<mark class="modifier"><mark class="modifier">,</mark></mark> Button abortButton<mark class="modifier"><mark class="modifier">,</mark></mark> Button refreshButton<mark class="modifier"><mark class="modifier">,</mark></mark> CitationFetcher.SearchType searchType<mark class="modifier"><mark class="modifier">,</mark></mark> Button importButton<mark class="modifier"><mark class="modifier">,</mark></mark> ProgressIndicator progress<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;BibEntry&gt; fetchedList<mark class="modifier"><mark class="modifier">,</mark></mark> ObservableList&lt;CitationRelationItem&gt; observableList)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*onSearchForRelationsSucceed2∏
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÁ* Á(12º
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÊ3 Ê(62â
+java.util.Collection.stream()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÊ* Ê(02ê
+$java.util.stream.Collectors.toList()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÁ= Á(C2∫
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÏ7 Ï(;2w
+voidRETURN_TYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaﬂ ﬂ(‘
+entry	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaﬂ6 ﬂ(;"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2ã
+org.jabref.model.entry.BibEntryTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaﬂ- ﬂ(5Ä
+listView	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaﬂa ﬂ(i"+
+type#CheckListView<CitationRelationItem>"
+isFinalfalse"A
+declarationString,CheckListView<CitationRelationItem> listView*listView2y
+CheckListViewTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaﬂ= ﬂ(Jﬁ
+abortButton	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java‡4 ‡(?"
+typeButton"
+isFinalfalse"'
+declarationStringButton abortButton*abortButton2á
+javafx.scene.control.ButtonTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java‡- ‡(3‰
+refreshButton	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java‡H ‡(U"
+typeButton"
+isFinalfalse")
+declarationStringButton refreshButton*refreshButton2á
+javafx.scene.control.ButtonTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java‡A ‡(G¡
+
+searchType	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java·H ·(R""
+typeCitationFetcher.SearchType"
+isFinalfalse":
+declarationString%CitationFetcher.SearchType searchType*
+searchType2≈
+Yorg.jabref.gui.entryeditor.citationrelationtab.semanticscholar.CitationFetcher.SearchTypeTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java·= ·(G·
+importButton	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java·[ ·(g"
+typeButton"
+isFinalfalse"(
+declarationStringButton importButton*importButton2á
+javafx.scene.control.ButtonTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java·T ·(Zˆ
+progress	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java‚? ‚(G"
+typeProgressIndicator"
+isFinalfalse"/
+declarationStringProgressIndicator progress*progress2í
+&javafx.scene.control.ProgressIndicatorTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java‚- ‚(>˜
+fetchedList	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java‚X ‚(c"
+typeList<BibEntry>"
+isFinalfalse"/
+declarationStringList<BibEntry> fetchedList*fetchedList2z
+java.util.ListTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java‚I ‚(M2î
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java‚N ‚(Vï
+observableList	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java„R „(`",
+type$ObservableList<CitationRelationItem>"
+isFinalfalse"H
+declarationString3ObservableList<CitationRelationItem> observableList*observableList2z
+ObservableListTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java„- „(;∏
+entrVARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÊ7 Ê(;"
+type"
+isFinalfalse"
+declarationString entr*entr2TYPEª
+eventVARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÒ' Ò(,"
+type"
+isFinalfalse"
+declarationString event*event2TYPE˘D
+≥org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)METHODb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaı ı(,"
+isFinalfalse"í
+declarationString¸<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">prepareToSearchForRelations</mark>(Button abortButton<mark class="modifier"><mark class="modifier">,</mark></mark> Button refreshButton<mark class="modifier"><mark class="modifier">,</mark></mark> Button importButton<mark class="modifier"><mark class="modifier">,</mark></mark> ProgressIndicator progress<mark class="modifier"><mark class="modifier">,</mark></mark> BackgroundTask&lt;List&lt;BibEntry&gt;&gt; task)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*prepareToSearchForRelations2ó
++org.jabref.gui.util.BackgroundTask.cancel()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˝ ˝(2°
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˛ ˛( 2∫
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˛. ˛(22¨
+øorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!abortButtonCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˜ ˜(2©
+ºorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!progressCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˜ ˜('2Æ
+¡org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!refreshButtonCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¯ ¯(2≠
+¿org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!importButtonCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¯! ¯(-2¨
+øorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!abortButtonCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˙ ˙(2¨
+øorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!abortButtonCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˚ ˚(!2©
+ºorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!progressCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˚# ˚(+2≠
+¿org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!importButtonCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˚- ˚(92Æ
+¡org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!refreshButtonCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java¸ ¸(#2•
+∏org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!taskCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˝ ˝(2…
+]org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?dialogService@61.32:61.45CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˛ ˛(2±
+øorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!abortButton	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaı4 ı(?2≥
+¡org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!refreshButton	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaıH ı(U2≤
+¿org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!importButton	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaı^ ı(j2Æ
+ºorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!progress	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaˆ? ˆ(G2™
+∏org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!task	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaˆh ˆ(l2ª
+«org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)?event@378.32:378.37DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˙  ˙(%2w
+voidRETURN_TYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaı ı(ì
+øorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!abortButton	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaı4 ı(?"
+typeButton"
+isFinalfalse"'
+declarationStringButton abortButton*abortButton2á
+javafx.scene.control.ButtonTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaı- ı(3ô
+¡org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!refreshButton	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaıH ı(U"
+typeButton"
+isFinalfalse")
+declarationStringButton refreshButton*refreshButton2á
+javafx.scene.control.ButtonTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaıA ı(Gñ
+¿org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!importButton	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaı^ ı(j"
+typeButton"
+isFinalfalse"(
+declarationStringButton importButton*importButton2á
+javafx.scene.control.ButtonTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaıW ı(]´
+ºorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!progress	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaˆ? ˆ(G"
+typeProgressIndicator"
+isFinalfalse"/
+declarationStringProgressIndicator progress*progress2í
+&javafx.scene.control.ProgressIndicatorTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaˆ- ˆ(>“
+∏org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)!task	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaˆh ˆ(l"&
+typeBackgroundTask<List<BibEntry>>"
+isFinalfalse"8
+declarationString#BackgroundTask<List<BibEntry>> task*task2é
+"org.jabref.gui.util.BackgroundTaskTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaˆI ˆ(W2É
+java.util.ListTYPE_ARGUMENTb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaˆX ˆ(\2î
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaˆ] ˆ(e˛
+«org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.prepareToSearchForRelations(javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.Button, javafx.scene.control.ProgressIndicator, org.jabref.gui.util.BackgroundTask<java.util.List<org.jabref.model.entry.BibEntry>>)?event@378.32:378.37VARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java˙  ˙(%"
+type"
+isFinalfalse"
+declarationString event*event2TYPEå
+corg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.hideNodes(javafx.scene.Node...)METHODb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÇ Ç("
+isFinalfalse"í
+declarationString}<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">hideNodes</mark>(Node... nodes)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*	hideNodes2≥
+Gjava.util.stream.Stream.forEach(java.util.function.Consumer<? super T>)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÉ É($2à
+java.util.Arrays.stream(T[])CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÉ É(2’
+iorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.hideNodes(javafx.scene.Node...)!nodesCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÉ É(2‚
+vorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.hideNodes(javafx.scene.Node...)?node@387.37:387.41CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÉ- É(12⁄
+iorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.hideNodes(javafx.scene.Node...)!nodes	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÇ# Ç((2È
+vorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.hideNodes(javafx.scene.Node...)?node@387.37:387.41DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÉ% É()2w
+voidRETURN_TYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÇ Ç(£
+iorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.hideNodes(javafx.scene.Node...)!nodes	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÇ# Ç(("
+typeNode"
+isFinalfalse"
+declarationString
+Node nodes*nodes2
+javafx.scene.Node[]TYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÇ Ç(™
+vorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.hideNodes(javafx.scene.Node...)?node@387.37:387.41VARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÉ% É()"
+type"
+isFinalfalse"
+declarationString node*node2TYPEå
+corg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.showNodes(javafx.scene.Node...)METHODb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÜ Ü("
+isFinalfalse"í
+declarationString}<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">showNodes</mark>(Node... nodes)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*	showNodes2≥
+Gjava.util.stream.Stream.forEach(java.util.function.Consumer<? super T>)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaá á($2à
+java.util.Arrays.stream(T[])CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaá á(2’
+iorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.showNodes(javafx.scene.Node...)!nodesCALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaá á(2‚
+vorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.showNodes(javafx.scene.Node...)?node@391.37:391.41CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaá- á(12⁄
+iorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.showNodes(javafx.scene.Node...)!nodes	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÜ# Ü((2È
+vorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.showNodes(javafx.scene.Node...)?node@391.37:391.41DECLARATIONb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaá% á()2w
+voidRETURN_TYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÜ Ü(£
+iorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.showNodes(javafx.scene.Node...)!nodes	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÜ# Ü(("
+typeNode"
+isFinalfalse"
+declarationString
+Node nodes*nodes2
+javafx.scene.Node[]TYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaÜ Ü(™
+vorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.showNodes(javafx.scene.Node...)?node@391.37:391.41VARIABLEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaá% á()"
+type"
+isFinalfalse"
+declarationString node*node2TYPEˇ
+importEntriesMETHODb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaë ë("
+isFinalfalse"Ò
+declarationString€<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">importEntries</mark>(List&lt;CitationRelationItem&gt; entriesToImport<mark class="modifier"><mark class="modifier">,</mark></mark> CitationFetcher.SearchType searchType<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntry existingEntry)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*importEntries2ó
++org.jabref.gui.util.BackgroundTask.cancel()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaí í(2ó
++org.jabref.gui.util.BackgroundTask.cancel()CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaì ì(2∫
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaó* ó(.2∆
+Zorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citingTask@58.50:58.60CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaí í(2«
+[org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citedByTask@59.50:59.61CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaì ì(2⁄
+norg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citationsRelationsTabViewModel@70.49:70.79CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaï ï(&2…
+]org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?dialogService@61.32:61.45CALLb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaó ó(2w
+voidRETURN_TYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaë ë(˙
+entriesToImport	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaë: ë(I""
+typeList<CitationRelationItem>"
+isFinalfalse"?
+declarationString*List<CitationRelationItem> entriesToImport*entriesToImport2p
+ListTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaë ë(#¡
+
+searchType	PARAMETERb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaëf ë(p""
+typeCitationFetcher.SearchType"
+isFinalfalse":
+declarationString%CitationFetcher.SearchType searchType*
+searchType2≈
+Yorg.jabref.gui.entryeditor.citationrelationtab.semanticscholar.CitationFetcher.SearchTypeTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaë[ ë(eÌ
+existingEntry	PARAMETERc
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaë{ ë(à"
+typeBibEntry"
+isFinalfalse"+
+declarationStringBibEntry existingEntry*existingEntry2ã
+org.jabref.model.entry.BibEntryTYPEb
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaër ë(z¯
+Vorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?LOGGER@55.32:55.38VALUE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java7  7(&"
+isFinaltrue"
+typeLogger"Í
+declarationString‘<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(CitationRelationsTab.class);"
+isStatictrue"
+accessprivate*LOGGER2z
+org.slf4j.LoggerTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java7 7(â
+Zorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citingTask@58.50:58.60VARIABLE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java:2 :(<"
+isFinalfalse"&
+typeBackgroundTask<List<BibEntry>>"´
+declarationStringï<mark class="modifier">private </mark><mark class="modifier">static </mark>BackgroundTask<List<BibEntry>> <mark class="class-field">citingTask</mark>"
+isStatictrue"
+accessprivate*
+citingTask2å
+"org.jabref.gui.util.BackgroundTaskTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java: :(!2Å
+java.util.ListTYPE_ARGUMENT`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java:" :(&2í
+org.jabref.model.entry.BibEntryTYPE_ARGUMENT`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java:' :(/å
+[org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citedByTask@59.50:59.61VARIABLE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java;2 ;(="
+isFinalfalse"&
+typeBackgroundTask<List<BibEntry>>"¨
+declarationStringñ<mark class="modifier">private </mark><mark class="modifier">static </mark>BackgroundTask<List<BibEntry>> <mark class="class-field">citedByTask</mark>"
+isStatictrue"
+accessprivate*citedByTask2å
+"org.jabref.gui.util.BackgroundTaskTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java; ;(!2Å
+java.util.ListTYPE_ARGUMENT`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java;" ;(&2í
+org.jabref.model.entry.BibEntryTYPE_ARGUMENT`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java;' ;(/Ó
+[org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?preferences@60.41:60.52VALUE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java<) <(4"
+isFinaltrue"
+typeEntryEditorPreferences"£
+declarationStringç<mark class="modifier">private </mark><mark class="modifier">final </mark>EntryEditorPreferences <mark class="class-field">preferences</mark>"
+isStaticfalse"
+accessprivate*preferences2õ
+1org.jabref.gui.entryeditor.EntryEditorPreferencesTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java< <((Õ
+]org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?dialogService@61.32:61.45VALUE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java=  =(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2Ü
+org.jabref.gui.DialogServiceTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java= =(Ì
+_org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?databaseContext@62.37:62.52VALUE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java>% >(4"
+isFinaltrue"
+typeBibDatabaseContext"£
+declarationStringç<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">databaseContext</mark>"
+isStaticfalse"
+accessprivate*databaseContext2ñ
+,org.jabref.model.database.BibDatabaseContextTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java> >($√
+[org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?undoManager@63.30:63.41VALUE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java? ?()"
+isFinaltrue"
+typeUndoManager"ò
+declarationStringÇ<mark class="modifier">private </mark><mark class="modifier">final </mark>UndoManager <mark class="class-field">undoManager</mark>"
+isStaticfalse"
+accessprivate*undoManager2Ü
+javax.swing.undo.UndoManagerTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java? ?(«
+\org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?stateManager@64.31:64.43VALUE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java@ @(+"
+isFinaltrue"
+typeStateManager"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>StateManager <mark class="class-field">stateManager</mark>"
+isStaticfalse"
+accessprivate*stateManager2Ö
+org.jabref.gui.StateManagerTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.java@ @(Ï
+aorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?fileUpdateMonitor@65.36:65.53VALUE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaA$ A(5"
+isFinaltrue"
+typeFileUpdateMonitor"§
+declarationStringé<mark class="modifier">private </mark><mark class="modifier">final </mark>FileUpdateMonitor <mark class="class-field">fileUpdateMonitor</mark>"
+isStaticfalse"
+accessprivate*fileUpdateMonitor2ë
+'org.jabref.model.util.FileUpdateMonitorTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaA A(#Û
+borg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?preferencesService@66.37:66.55VALUE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaB% B(7"
+isFinaltrue"
+typePreferencesService"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferencesService</mark>"
+isStaticfalse"
+accessprivate*preferencesService2ì
+)org.jabref.preferences.PreferencesServiceTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaB B($ª
+Zorg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?libraryTab@67.29:67.39VALUE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaC C('"
+isFinaltrue"
+type
+LibraryTab"ñ
+declarationStringÄ<mark class="modifier">private </mark><mark class="modifier">final </mark>LibraryTab <mark class="class-field">libraryTab</mark>"
+isStaticfalse"
+accessprivate*
+libraryTab2É
+org.jabref.gui.LibraryTabTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaC C(Ã
+\org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?taskExecutor@68.31:68.43VALUE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaD D(+"
+isFinaltrue"
+typeTaskExecutor"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2ä
+ org.jabref.gui.util.TaskExecutorTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaD D(¡
+korg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?bibEntryRelationsRepository@69.46:69.73VALUE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaE. E(I"
+isFinaltrue"#
+typeBibEntryRelationsRepository"∏
+declarationString¢<mark class="modifier">private </mark><mark class="modifier">final </mark>BibEntryRelationsRepository <mark class="class-field">bibEntryRelationsRepository</mark>"
+isStaticfalse"
+accessprivate*bibEntryRelationsRepository2¥
+Jorg.jabref.gui.entryeditor.citationrelationtab.BibEntryRelationsRepositoryTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaE E(-”
+norg.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab?citationsRelationsTabViewModel@70.49:70.79VALUE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaF1 F(O"
+isFinaltrue"&
+typeCitationsRelationsTabViewModel"æ
+declarationString®<mark class="modifier">private </mark><mark class="modifier">final </mark>CitationsRelationsTabViewModel <mark class="class-field">citationsRelationsTabViewModel</mark>"
+isStaticfalse"
+accessprivate*citationsRelationsTabViewModel2∑
+Morg.jabref.gui.entryeditor.citationrelationtab.CitationsRelationsTabViewModelTYPE`
+Vsrc\main\java\org\jabref\gui\entryeditor\citationrelationtab\CitationRelationsTab.javaF F(0

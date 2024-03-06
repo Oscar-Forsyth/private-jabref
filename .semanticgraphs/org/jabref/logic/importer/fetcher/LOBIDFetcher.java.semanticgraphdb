@@ -1,0 +1,886 @@
+
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaë
+.org.jabref.logic.importer.fetcher.LOBIDFetcherCLASSK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java& &(",
+package!org.jabref.logic.importer.fetcher"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"µ
+declarationStringü<mark class="modifier">public </mark><mark class="modifier">class </mark>LOBIDFetcher<mark class="modifier"><br>implements </mark>PagedSearchBasedParserFetcher"
+accesspublic*LOBIDFetcher2∆
+jorg.jabref.logic.importer.fetcher.LOBIDFetcher.LOBIDFetcher(org.jabref.logic.importer.ImporterPreferences)DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java0 0(2€
+org.jabref.logic.importer.fetcher.LOBIDFetcher.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java< <(2ñ
+:org.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaF F(2∫
+^org.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaY Y(&2∏
+Zorg.jabref.logic.importer.fetcher.LOBIDFetcher.getAuthorNames(kong.unirest.json.JSONArray)DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java∑  ∑(.2—
+sorg.jabref.logic.importer.fetcher.LOBIDFetcher.getFirstArrayElement(kong.unirest.json.JSONObject, java.lang.String)DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¿ ¿(.2ñ
+8org.jabref.logic.importer.fetcher.LOBIDFetcher.getName()DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java« «(2£
+Gorg.jabref.logic.importer.fetcher.LOBIDFetcher?FETCHER_NAME@40.31:40.43DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java( ((+2ù
+Aorg.jabref.logic.importer.fetcher.LOBIDFetcher?LOGGER@42.32:42.38DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java*  *(&2û
+Borg.jabref.logic.importer.fetcher.LOBIDFetcher?API_URL@44.32:44.39DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java,  ,('2™
+Norg.jabref.logic.importer.fetcher.LOBIDFetcher?importerPreferences@46.38:46.57DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java.& .(92é
+7org.jabref.logic.importer.PagedSearchBasedParserFetcherEXTENDK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java&% &(B∆
+jorg.jabref.logic.importer.fetcher.LOBIDFetcher.LOBIDFetcher(org.jabref.logic.importer.ImporterPreferences)CONSTRUCTORK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java0 0("ã
+declarationStringv<mark class="modifier">public </mark><mark class="method">LOBIDFetcher</mark>(ImporterPreferences importerPreferences)*LOBIDFetcher2”
+~org.jabref.logic.importer.fetcher.LOBIDFetcher.LOBIDFetcher(org.jabref.logic.importer.ImporterPreferences)!importerPreferencesCALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java1# 1(62£
+Norg.jabref.logic.importer.fetcher.LOBIDFetcher?importerPreferences@46.38:46.57CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java1 1( 2ÿ
+~org.jabref.logic.importer.fetcher.LOBIDFetcher.LOBIDFetcher(org.jabref.logic.importer.ImporterPreferences)!importerPreferences	PARAMETERK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java0, 0(?2ä
+.org.jabref.logic.importer.fetcher.LOBIDFetcherRETURN_TYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java0 0(ﬂ
+~org.jabref.logic.importer.fetcher.LOBIDFetcher.LOBIDFetcher(org.jabref.logic.importer.ImporterPreferences)!importerPreferences	PARAMETERK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java0, 0(?"
+typeImporterPreferences"
+isFinalfalse"<
+declarationString'ImporterPreferences importerPreferences*importerPreferences2Ç
+-org.jabref.logic.importer.ImporterPreferencesTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java0 0(+Ω"
+org.jabref.logic.importer.fetcher.LOBIDFetcher.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)METHODK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java< <("
+isFinalfalse"è
+declarationString˘<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>URL <mark class="method">getURLForQuery</mark>(QueryNode luceneQuery<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">int</mark> pageNumber)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>URISyntaxException<mark class="modifier"><mark class="modifier">,</mark></mark> MalformedURLException<mark class="modifier"><mark class="modifier">,</mark></mark> FetcherException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeURL*getURLForQuery2r
+java.lang.String.valueOf(int)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java?/ ?(62î
+?org.jabref.logic.importer.PagedSearchBasedFetcher.getPageSize()CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java?7 ?(B2r
+java.lang.String.valueOf(int)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java@/ @(62î
+?org.jabref.logic.importer.PagedSearchBasedFetcher.getPageSize()CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java@7 @(B2±
+\org.jabref.logic.importer.fetcher.transformers.LOBIDQueryTransformer.LOBIDQueryTransformer()CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java>) >(>2ó
+Borg.jabref.logic.importer.fetcher.LOBIDFetcher?API_URL@44.32:44.39CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java=/ =(62Ï
+ñorg.jabref.logic.importer.fetcher.LOBIDFetcher.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@61.19:61.29CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java> >(2·
+ãorg.jabref.logic.importer.fetcher.LOBIDFetcher.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)!luceneQueryCALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java>V >(a2Ï
+ñorg.jabref.logic.importer.fetcher.LOBIDFetcher.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@61.19:61.29CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java? ?(2‡
+äorg.jabref.logic.importer.fetcher.LOBIDFetcher.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)!pageNumberCALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java?G ?(Q2Ï
+ñorg.jabref.logic.importer.fetcher.LOBIDFetcher.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@61.19:61.29CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java@ @(2Ï
+ñorg.jabref.logic.importer.fetcher.LOBIDFetcher.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@61.19:61.29CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaA A(2Ï
+ñorg.jabref.logic.importer.fetcher.LOBIDFetcher.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@61.19:61.29CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaB B(2‚
+àorg.jabref.logic.importer.PagedSearchBasedParserFetcher.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)OVERRIDEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java< <(2Ê
+ãorg.jabref.logic.importer.fetcher.LOBIDFetcher.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)!luceneQuery	PARAMETERK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java<( <(32Â
+äorg.jabref.logic.importer.fetcher.LOBIDFetcher.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)!pageNumber	PARAMETERK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java<9 <(C2Û
+ñorg.jabref.logic.importer.fetcher.LOBIDFetcher.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@61.19:61.29DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java= =(2h
+java.net.URLRETURN_TYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java< <(¡
+ñorg.jabref.logic.importer.fetcher.LOBIDFetcher.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)?uriBuilder@61.19:61.29VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java= =("
+type
+URIBuilder"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier"> </mark>URIBuilder <mark class="class-field">uriBuilder</mark> = new URIBuilder(API_URL)*
+uriBuilder2|
+'org.apache.http.client.utils.URIBuilderTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java= =(2ó
+Borg.jabref.logic.importer.fetcher.LOBIDFetcher?API_URL@44.32:44.39CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java=/ =(6◊
+ãorg.jabref.logic.importer.fetcher.LOBIDFetcher.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)!luceneQuery	PARAMETERK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java<( <(3"
+type	QueryNode"
+isFinalfalse"*
+declarationStringQueryNode luceneQuery*luceneQuery2ê
+;org.apache.lucene.queryparser.flexible.core.nodes.QueryNodeTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java< <('≠
+äorg.jabref.logic.importer.fetcher.LOBIDFetcher.getURLForQuery(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode, int)!pageNumber	PARAMETERK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java<9 <(C"
+typeint"
+isFinalfalse"A
+declarationString,<mark class="modifier">int</mark> pageNumber*
+pageNumber2X
+intTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java<5 <(8‰)
+:org.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()METHODK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaF F("
+isFinalfalse"ó
+declarationStringÅ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>Parser <mark class="method">getParser</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeParser*	getParser2°
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaH] H(d2s
+java.io.BufferedReader.lines()CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaHU H(Z2ê
+;java.util.stream.Collectors.joining(java.lang.CharSequence)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaHp H(w2≥
+^org.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaP% P(62j
+java.util.List.add(E)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaQ Q(2ä
+5java.io.BufferedReader.BufferedReader(java.io.Reader)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaH" H(02ï
+@java.io.InputStreamReader.InputStreamReader(java.io.InputStream)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaH5 H(F2t
+java.util.ArrayList.ArrayList()CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaK) K(42ß
+Rorg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?inputStream@71.15:71.26CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaHG H(R2§
+Oorg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?response@72.19:72.27CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaI3 I(;2¶
+Qorg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?jsonObject@73.23:73.33CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaL L(2¶
+Qorg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?jsonObject@73.23:73.33CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaM$ M(.2ù
+Horg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?i@78.25:78.26CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaN  N(!2£
+Norg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?results@77.26:77.33CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaN$ N(+2ù
+Horg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?i@78.25:78.26CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaN6 N(72£
+Norg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?results@77.26:77.33CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaO+ O(22ù
+Horg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?i@78.25:78.26CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaOA O(B2•
+Porg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?jsonEntry@79.31:79.40CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaP7 P(@2£
+Norg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?entries@75.27:75.34CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaQ Q(2°
+Lorg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?entry@80.29:80.34CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaQ  Q(%2£
+Norg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?entries@75.27:75.34CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaU U(2ó
+>org.jabref.logic.importer.SearchBasedParserFetcher.getParser()OVERRIDEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaF F(2´
+Oorg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?response@72.19:72.27DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaH H(2≠
+Qorg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?jsonObject@73.23:73.33DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaI I(!2™
+Norg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?entries@75.27:75.34DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaK K("2™
+Norg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?results@77.26:77.33DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaM M(!2§
+Horg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?i@78.25:78.26DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaN N(2¨
+Porg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?jsonEntry@79.31:79.40DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaO O((2®
+Lorg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?entry@80.29:80.34DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaP P("2Æ
+Rorg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?inputStream@71.15:71.26DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaG G(2|
+ org.jabref.logic.importer.ParserRETURN_TYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaF F(á
+Oorg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?response@72.19:72.27VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaH H("
+typeString"
+isFinalfalse"Œ
+declarationString∏<mark class="modifier"> </mark>String <mark class="class-field">response</mark> = new BufferedReader(new InputStreamReader(inputStream)).lines().collect(Collectors.joining(OS.NEWLINE))*response2e
+java.lang.StringTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaH H(2°
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaH] H(d2s
+java.io.BufferedReader.lines()CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaHU H(Z2ê
+;java.util.stream.Collectors.joining(java.lang.CharSequence)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaHp H(w2ä
+5java.io.BufferedReader.BufferedReader(java.io.Reader)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaH" H(02ï
+@java.io.InputStreamReader.InputStreamReader(java.io.InputStream)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaH5 H(F2ß
+Rorg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?inputStream@71.15:71.26CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaHG H(R˛
+Qorg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?jsonObject@73.23:73.33VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaI I(!"
+type
+JSONObject"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark>JSONObject <mark class="class-field">jsonObject</mark> = new JSONObject(response)*
+jsonObject2q
+kong.unirest.json.JSONObjectTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaI I(2§
+Oorg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?response@72.19:72.27CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaI3 I(;µ
+Norg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?entries@75.27:75.34VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaK K(""
+typeList<BibEntry>"
+isFinalfalse"
+declarationStringj<mark class="modifier"> </mark>List<BibEntry> <mark class="class-field">entries</mark> = new ArrayList<>()*entries2c
+java.util.ListTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaK K(2}
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaK K(2t
+java.util.ArrayList.ArrayList()CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaK) K(4˝
+Norg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?results@77.26:77.33VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaM M(!"
+type	JSONArray"
+isFinalfalse"ä
+declarationStringu<mark class="modifier"> </mark>JSONArray <mark class="class-field">results</mark> = jsonObject.getJSONArray("member")*results2p
+kong.unirest.json.JSONArrayTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaM M(2¶
+Qorg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?jsonObject@73.23:73.33CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaM$ M(.õ
+Horg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?i@78.25:78.26VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaN N("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 0*i2X
+intTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaN N(ö
+Porg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?jsonEntry@79.31:79.40VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaO O(("
+type
+JSONObject"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier"> </mark>JSONObject <mark class="class-field">jsonEntry</mark> = results.getJSONObject(i)*	jsonEntry2q
+kong.unirest.json.JSONObjectTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaO O(2£
+Norg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?results@77.26:77.33CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaO+ O(22ù
+Horg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?i@78.25:78.26CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaOA O(B©
+Lorg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?entry@80.29:80.34VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaP P(""
+typeBibEntry"
+isFinalfalse"Ç
+declarationStringm<mark class="modifier"> </mark>BibEntry <mark class="class-field">entry</mark> = parseJSONtoBibtex(jsonEntry)*entry2t
+org.jabref.model.entry.BibEntryTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaP P(2≥
+^org.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaP% P(62•
+Porg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?jsonEntry@79.31:79.40CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaP7 P(@˝
+Rorg.jabref.logic.importer.fetcher.LOBIDFetcher.getParser()?inputStream@71.15:71.26VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaG G("
+type"
+isFinalfalse"!
+declarationString inputStream*inputStream2TYPE›√
+^org.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)METHODK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaY Y(&"
+isFinalfalse"á
+declarationStringr<mark class="modifier">private </mark>BibEntry <mark class="method">parseJSONtoBibtex</mark>(JSONObject jsonEntry)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeBibEntry*parseJSONtoBibtex2∏
+cjava.lang.String.join(java.lang.CharSequence, java.lang.Iterable<? extends java.lang.CharSequence>)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaf f(2≥
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javag g(2Ü
+1java.lang.String.contains(java.lang.CharSequence)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaj  j((2s
+java.lang.String.toLowerCase()CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaj j(2Ü
+1java.lang.String.contains(java.lang.CharSequence)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javam' m(/2s
+java.lang.String.toLowerCase()CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javam m($2§
+Oorg.jabref.model.entry.BibEntry.setType(org.jabref.model.entry.types.EntryType)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javap p(2»
+sorg.jabref.logic.importer.fetcher.LOBIDFetcher.getFirstArrayElement(kong.unirest.json.JSONObject, java.lang.String)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javas s(*2≥
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javat t(2}
+(java.lang.String.split(java.lang.String)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javax2 x(72l
+java.lang.String.trim()CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java{) {(-2≥
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java| |(2≥
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java (2»
+sorg.jabref.logic.importer.fetcher.LOBIDFetcher.getFirstArrayElement(kong.unirest.json.JSONObject, java.lang.String)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java+ (?2µ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÅ Å(2 
+sorg.jabref.logic.importer.fetcher.LOBIDFetcher.getFirstArrayElement(kong.unirest.json.JSONObject, java.lang.String)CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÅ/ Å(C2µ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÇ Ç(2 
+sorg.jabref.logic.importer.fetcher.LOBIDFetcher.getFirstArrayElement(kong.unirest.json.JSONObject, java.lang.String)CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÇ1 Ç(E2µ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÉ É(2 
+sorg.jabref.logic.importer.fetcher.LOBIDFetcher.getFirstArrayElement(kong.unirest.json.JSONObject, java.lang.String)CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÉ. É(B2±
+Zorg.jabref.logic.importer.fetcher.LOBIDFetcher.getAuthorNames(kong.unirest.json.JSONArray)CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaà' à(52µ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaä ä(2∫
+cjava.lang.String.join(java.lang.CharSequence, java.lang.Iterable<? extends java.lang.CharSequence>)CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaä< ä(@2µ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaï ï("2µ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javañ ñ("2µ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaß ß(2∫
+cjava.lang.String.join(java.lang.CharSequence, java.lang.Iterable<? extends java.lang.CharSequence>)CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaß: ß(>2µ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java± ±(2∫
+cjava.lang.String.join(java.lang.CharSequence, java.lang.Iterable<? extends java.lang.CharSequence>)CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java±: ±(>2
+*org.jabref.model.entry.BibEntry.BibEntry()CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaZ Z(%2Ω
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java_ _('2…
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?typeArray@95.18:95.27CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaa a(2…
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?typeArray@95.18:95.27CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javab7 b(@2∆
+qorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?type@100.53:100.57CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javad> d(B2≈
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?types@96.15:96.20CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaf f(2»
+sorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?typeList@98.25:98.33CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaf& f(.2≈
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javag g(2≈
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?types@96.15:96.20CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javag/ g(42≈
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?types@96.15:96.20CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaj j(2…
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entryType@92.18:92.27CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javak k(2»
+sorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?nametype@91.14:91.22CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javal l(2≈
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?types@96.15:96.20CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javam m(2…
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entryType@92.18:92.27CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javan n(2≈
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javap p(2…
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entryType@92.18:92.27CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javap p(2Ω
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javas+ s(42≈
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javat t(2∆
+qorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?isbn@115.15:115.19CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javat+ t(/2Ω
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaw' w(02ÿ
+Çorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?bibliographicCitation@119.15:119.36CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javax x(12 
+uorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?bibSplit@120.17:120.25CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaz z(2–
+{org.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?parentResource@121.15:121.29CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java{ {(2 
+uorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?bibSplit@120.17:120.25CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java{ {(%2≈
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java| |(2»
+sorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?nametype@91.14:91.22CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java| |(#2–
+{org.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?parentResource@121.15:121.29CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java|% |(32≈
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java (2Ω
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java@ (I2«
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÄ Ä(2ø
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÄ, Ä(52«
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÅ Å(2ø
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÅD Å(M2«
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÇ Ç(2ø
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÇF Ç(O2«
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÉ É(2ø
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÉC É(L2ø
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÜ Ü(%2À
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?authors@134.18:134.25CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaá á(2À
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?authors@134.18:134.25CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaà6 à(=2À
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?authors@134.18:134.25CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaâ â(2«
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaä ä(2œ
+xorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?authorNames@136.25:136.36CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaäJ ä(U2ø
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaè è(%2…
+rorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?array@144.21:144.26CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaê ê(#2«
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaí í(2œ
+xorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?publication@145.27:145.38CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaíQ í(\2«
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaì ì(2œ
+xorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?publication@145.27:145.38CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaìP ì([2œ
+xorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?publication@145.27:145.38CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaî" î(-2«
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaï ï(2»
+qorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?date@148.27:148.31CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaï7 ï(;2«
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javañ ñ(2»
+qorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?date@148.27:148.31CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javañ7 ñ(;2ø
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaö! ö(*2œ
+xorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?describedBy@154.19:154.30CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaõ õ(2«
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaú ú(2œ
+xorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?describedBy@154.19:154.30CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaú. ú(92ø
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java†" †(+2—
+zorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?languageArray@160.18:160.31CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java° °(2—
+zorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?languageArray@160.18:160.31CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¢; ¢(H2Ã
+uorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?language@165.54:165.62CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java•B •(J2«
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaß ß(2–
+yorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?languageList@162.25:162.37CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaßH ß(T2ø
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java´! ´(*2–
+yorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?keywordArray@171.18:171.30CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¨ ¨(2–
+yorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?keywordArray@171.18:171.30CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java≠: ≠(F2À
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?keyword@175.53:175.60CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaØA Ø(H2«
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java± ±(2œ
+xorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?keywordList@173.25:173.36CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java±E ±(P2«
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¥ ¥(2¬
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntry	PARAMETERK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaY2 Y(;2Ã
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaZ Z(2œ
+sorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?nametype@91.14:91.22DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java[ [(2–
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entryType@92.18:92.27DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java\ \(2–
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?typeArray@95.18:95.27DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java_ _(2Ã
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?types@96.15:96.20DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java` `(2œ
+sorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?typeList@98.25:98.33DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javab b(!2Õ
+qorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?isbn@115.15:115.19DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javas s(2ﬂ
+Çorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?bibliographicCitation@119.15:119.36DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaw w($2—
+uorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?bibSplit@120.17:120.25DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javax x(2◊
+{org.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?parentResource@121.15:121.29DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javay y(2“
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?authors@134.18:134.25DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÜ Ü(2÷
+xorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?authorNames@136.25:136.36DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaà à($2œ
+qorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?date@148.27:148.31DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaî î(2÷
+xorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?describedBy@154.19:154.30DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaö ö(2ÿ
+zorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?languageArray@160.18:160.31DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java† †(2◊
+yorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?languageList@162.25:162.37DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¢ ¢(%2◊
+yorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?keywordArray@171.18:171.30DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java´ ´(2÷
+xorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?keywordList@173.25:173.36DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java≠ ≠($2Õ
+qorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?type@100.53:100.57DECLARATIONK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javad5 d(92–
+rorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?array@144.21:144.26DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaê ê(2÷
+xorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?publication@145.27:145.38DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaë ë(&2”
+uorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?language@165.54:165.62DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java•6 •(>2“
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?keyword@175.53:175.60DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaØ5 Ø(<2{
+org.jabref.model.entry.BibEntryRETURN_TYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaY Y(·
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entry@90.17:90.22VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaZ Z("
+typeBibEntry"
+isFinalfalse"t
+declarationString_<mark class="modifier"> </mark>BibEntry <mark class="class-field">entry</mark> = new BibEntry()*entry2t
+org.jabref.model.entry.BibEntryTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaZ Z(2
+*org.jabref.model.entry.BibEntry.BibEntry()CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaZ Z(%Ì
+sorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?nametype@91.14:91.22VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java[ [("
+typeField"
+isFinalfalse"{
+declarationStringf<mark class="modifier"> </mark>Field <mark class="class-field">nametype</mark> = StandardField.JOURNAL*nametype2w
+"org.jabref.model.entry.field.FieldTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java[ [(Ü
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?entryType@92.18:92.27VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java\ \("
+type	EntryType"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark>EntryType <mark class="class-field">entryType</mark> = StandardEntryType.InCollection*	entryType2{
+&org.jabref.model.entry.types.EntryTypeTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java\ \(ª
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?typeArray@95.18:95.27VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java_ _("
+type	JSONArray"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark>JSONArray <mark class="class-field">typeArray</mark> = jsonEntry.optJSONArray("type")*	typeArray2p
+kong.unirest.json.JSONArrayTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java_ _(2Ω
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java_ _('¡
+porg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?types@96.15:96.20VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java` `("
+typeString"
+isFinalfalse"f
+declarationStringQ<mark class="modifier"> </mark>String <mark class="class-field">types</mark> = ""*types2e
+java.lang.StringTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java` `(«
+sorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?typeList@98.25:98.33VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javab b(!"
+typeList<String>"
+isFinalfalse"‹
+declarationString∆<mark class="modifier"> </mark>List<String> <mark class="class-field">typeList</mark> = IntStream.range(0, typeArray.length()).mapToObj(typeArray::optString).filter(type -> !type.isEmpty()).toList()*typeList2c
+java.util.ListTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javab b(2n
+java.lang.StringTYPE_ARGUMENTK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javab b(2…
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?typeArray@95.18:95.27CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javab7 b(@2∆
+qorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?type@100.53:100.57CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javad> d(BÒ
+qorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?isbn@115.15:115.19VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javas s("
+typeString"
+isFinalfalse"ä
+declarationStringu<mark class="modifier"> </mark>String <mark class="class-field">isbn</mark> = getFirstArrayElement(jsonEntry, "isbn")*isbn2e
+java.lang.StringTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javas s(2»
+sorg.jabref.logic.importer.fetcher.LOBIDFetcher.getFirstArrayElement(kong.unirest.json.JSONObject, java.lang.String)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javas s(*2Ω
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javas+ s(4Ç
+Çorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?bibliographicCitation@119.15:119.36VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaw w($"
+typeString"
+isFinalfalse"√
+declarationString≠<mark class="modifier"> </mark>String <mark class="class-field">bibliographicCitation</mark> = jsonEntry.optString("bibliographicCitation"<mark class="modifier">,</mark> "")*bibliographicCitation2e
+java.lang.StringTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaw w(2Ω
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaw' w(0…
+uorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?bibSplit@120.17:120.25VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javax x("
+typeString"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark>String[] <mark class="class-field">bibSplit</mark> = bibliographicCitation.split("/")*bibSplit2g
+java.lang.String[]TYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javax x(2}
+(java.lang.String.split(java.lang.String)CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javax2 x(72ÿ
+Çorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?bibliographicCitation@119.15:119.36CALLK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javax x(1ﬁ
+{org.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?parentResource@121.15:121.29VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javay y("
+typeString"
+isFinalfalse"o
+declarationStringZ<mark class="modifier"> </mark>String <mark class="class-field">parentResource</mark> = ""*parentResource2e
+java.lang.StringTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javay y(≈
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?authors@134.18:134.25VARIABLEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÜ Ü("
+type	JSONArray"
+isFinalfalse"è
+declarationStringz<mark class="modifier"> </mark>JSONArray <mark class="class-field">authors</mark> = jsonEntry.optJSONArray("contribution")*authors2r
+kong.unirest.json.JSONArrayTYPEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÜ Ü(2ø
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaÜ Ü(%Ì
+xorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?authorNames@136.25:136.36VARIABLEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaà à($"
+typeList<String>"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>List<String> <mark class="class-field">authorNames</mark> = getAuthorNames(authors)*authorNames2e
+java.util.ListTYPEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaà à(2p
+java.lang.StringTYPE_ARGUMENTM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaà à(2±
+Zorg.jabref.logic.importer.fetcher.LOBIDFetcher.getAuthorNames(kong.unirest.json.JSONArray)CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaà' à(52À
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?authors@134.18:134.25CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaà6 à(=∑
+qorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?date@148.27:148.31VARIABLEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaî î("
+typeString"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark>String <mark class="class-field">date</mark> = publication.optString("startDate")*date2g
+java.lang.StringTYPEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaî î(2œ
+xorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?publication@145.27:145.38CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaî" î(-‘
+xorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?describedBy@154.19:154.30VARIABLEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaö ö("
+type
+JSONObject"
+isFinalfalse"î
+declarationString<mark class="modifier"> </mark>JSONObject <mark class="class-field">describedBy</mark> = jsonEntry.optJSONObject("describedBy")*describedBy2s
+kong.unirest.json.JSONObjectTYPEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaö ö(2ø
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaö! ö(*”
+zorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?languageArray@160.18:160.31VARIABLEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java† †("
+type	JSONArray"
+isFinalfalse"ë
+declarationString|<mark class="modifier"> </mark>JSONArray <mark class="class-field">languageArray</mark> = jsonEntry.optJSONArray("language")*languageArray2r
+kong.unirest.json.JSONArrayTYPEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java† †(2ø
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java†" †(+õ	
+yorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?languageList@162.25:162.37VARIABLEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¢ ¢(%"
+typeList<String>"
+isFinalfalse"í
+declarationString¸<mark class="modifier"> </mark>List<String> <mark class="class-field">languageList</mark> = IntStream.range(0, languageArray.length()).mapToObj(languageArray::getJSONObject).filter(Objects::nonNull).map(language -> language.optString("label")).toList()*languageList2e
+java.util.ListTYPEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¢ ¢(2p
+java.lang.StringTYPE_ARGUMENTM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¢ ¢(2—
+zorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?languageArray@160.18:160.31CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¢; ¢(H2Ã
+uorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?language@165.54:165.62CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java•B •(J◊
+yorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?keywordArray@171.18:171.30VARIABLEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java´ ´("
+type	JSONArray"
+isFinalfalse"ó
+declarationStringÅ<mark class="modifier"> </mark>JSONArray <mark class="class-field">keywordArray</mark> = jsonEntry.optJSONArray("subjectslabels")*keywordArray2r
+kong.unirest.json.JSONArrayTYPEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java´ ´(2ø
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntryCALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java´! ´(*
+xorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?keywordList@173.25:173.36VARIABLEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java≠ ≠($"
+typeList<String>"
+isFinalfalse"Î
+declarationString’<mark class="modifier"> </mark>List<String> <mark class="class-field">keywordList</mark> = IntStream.range(0, keywordArray.length()).mapToObj(keywordArray::optString).filter(keyword -> !keyword.isEmpty()).toList()*keywordList2e
+java.util.ListTYPEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java≠ ≠(2p
+java.lang.StringTYPE_ARGUMENTM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java≠ ≠(2–
+yorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?keywordArray@171.18:171.30CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java≠: ≠(F2À
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?keyword@175.53:175.60CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaØA Ø(Hë
+horg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)!jsonEntry	PARAMETERK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaY2 Y(;"
+type
+JSONObject"
+isFinalfalse")
+declarationStringJSONObject jsonEntry*	jsonEntry2q
+kong.unirest.json.JSONObjectTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaY' Y(1é
+qorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?type@100.53:100.57VARIABLEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javad5 d(9"
+type"
+isFinalfalse"
+declarationString type*type2TYPEì
+rorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?array@144.21:144.26VARIABLEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaê ê("
+type"
+isFinalfalse"
+declarationString array*array2TYPE•
+xorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?publication@145.27:145.38VARIABLEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaë ë(&"
+type"
+isFinalfalse"!
+declarationString publication*publication2TYPEú
+uorg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?language@165.54:165.62VARIABLEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java•6 •(>"
+type"
+isFinalfalse"
+declarationString	 language*language2TYPEô
+torg.jabref.logic.importer.fetcher.LOBIDFetcher.parseJSONtoBibtex(kong.unirest.json.JSONObject)?keyword@175.53:175.60VARIABLEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaØ5 Ø(<"
+type"
+isFinalfalse"
+declarationString keyword*keyword2TYPEÌ
+Zorg.jabref.logic.importer.fetcher.LOBIDFetcher.getAuthorNames(kong.unirest.json.JSONArray)METHODM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java∑  ∑(."
+isFinalfalse"±
+declarationStringõ<mark class="modifier">private </mark><mark class="modifier">static </mark>List&lt;String&gt; <mark class="method">getAuthorNames</mark>(JSONArray authors)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeList<String>*getAuthorNames2π
+borg.jabref.logic.importer.fetcher.LOBIDFetcher.getAuthorNames(kong.unirest.json.JSONArray)!authorsCALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java∏" ∏()2∆
+oorg.jabref.logic.importer.fetcher.LOBIDFetcher.getAuthorNames(kong.unirest.json.JSONArray)?author@186.29:186.35CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java∫' ∫(-2≈
+norg.jabref.logic.importer.fetcher.LOBIDFetcher.getAuthorNames(kong.unirest.json.JSONArray)?agent@188.29:188.34CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaº& º(+2æ
+borg.jabref.logic.importer.fetcher.LOBIDFetcher.getAuthorNames(kong.unirest.json.JSONArray)!authors	PARAMETERM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java∑9 ∑(@2Õ
+oorg.jabref.logic.importer.fetcher.LOBIDFetcher.getAuthorNames(kong.unirest.json.JSONArray)?author@186.29:186.35DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java∫ ∫(#2Ã
+norg.jabref.logic.importer.fetcher.LOBIDFetcher.getAuthorNames(kong.unirest.json.JSONArray)?agent@188.29:188.34DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaº º("2l
+java.util.ListRETURN_TYPEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java∑ ∑(2w
+java.lang.StringRETURN_TYPE_ARGUMENTM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java∑ ∑(à
+borg.jabref.logic.importer.fetcher.LOBIDFetcher.getAuthorNames(kong.unirest.json.JSONArray)!authors	PARAMETERM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java∑9 ∑(@"
+type	JSONArray"
+isFinalfalse"&
+declarationStringJSONArray authors*authors2r
+kong.unirest.json.JSONArrayTYPEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java∑/ ∑(8í
+oorg.jabref.logic.importer.fetcher.LOBIDFetcher.getAuthorNames(kong.unirest.json.JSONArray)?author@186.29:186.35VARIABLEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java∫ ∫(#"
+type"
+isFinalfalse"
+declarationString author*author2TYPEè
+norg.jabref.logic.importer.fetcher.LOBIDFetcher.getAuthorNames(kong.unirest.json.JSONArray)?agent@188.29:188.34VARIABLEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.javaº º(""
+type"
+isFinalfalse"
+declarationString agent*agent2TYPEÃ
+sorg.jabref.logic.importer.fetcher.LOBIDFetcher.getFirstArrayElement(kong.unirest.json.JSONObject, java.lang.String)METHODM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¿ ¿(."
+isFinalfalse"ˆ
+declarationString‡<mark class="modifier">private </mark><mark class="modifier">static </mark>String <mark class="method">getFirstArrayElement</mark>(JSONObject jsonEntry<mark class="modifier"><mark class="modifier">,</mark></mark> String key)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeString*getFirstArrayElement2‘
+}org.jabref.logic.importer.fetcher.LOBIDFetcher.getFirstArrayElement(kong.unirest.json.JSONObject, java.lang.String)!jsonEntryCALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¡# ¡(,2Œ
+worg.jabref.logic.importer.fetcher.LOBIDFetcher.getFirstArrayElement(kong.unirest.json.JSONObject, java.lang.String)!keyCALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¡: ¡(=2ﬂ
+áorg.jabref.logic.importer.fetcher.LOBIDFetcher.getFirstArrayElement(kong.unirest.json.JSONObject, java.lang.String)?array@194.28:194.33CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¬% ¬(*2Ÿ
+}org.jabref.logic.importer.fetcher.LOBIDFetcher.getFirstArrayElement(kong.unirest.json.JSONObject, java.lang.String)!jsonEntry	PARAMETERM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¿: ¿(C2”
+worg.jabref.logic.importer.fetcher.LOBIDFetcher.getFirstArrayElement(kong.unirest.json.JSONObject, java.lang.String)!key	PARAMETERM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¿L ¿(O2Ê
+áorg.jabref.logic.importer.fetcher.LOBIDFetcher.getFirstArrayElement(kong.unirest.json.JSONObject, java.lang.String)?array@194.28:194.33DECLARATIONM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¬ ¬(!2n
+java.lang.StringRETURN_TYPEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¿ ¿(™
+}org.jabref.logic.importer.fetcher.LOBIDFetcher.getFirstArrayElement(kong.unirest.json.JSONObject, java.lang.String)!jsonEntry	PARAMETERM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¿: ¿(C"
+type
+JSONObject"
+isFinalfalse")
+declarationStringJSONObject jsonEntry*	jsonEntry2s
+kong.unirest.json.JSONObjectTYPEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¿/ ¿(9Ñ
+worg.jabref.logic.importer.fetcher.LOBIDFetcher.getFirstArrayElement(kong.unirest.json.JSONObject, java.lang.String)!key	PARAMETERM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¿L ¿(O"
+typeString"
+isFinalfalse"
+declarationString
+String key*key2g
+java.lang.StringTYPEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¿E ¿(K©
+áorg.jabref.logic.importer.fetcher.LOBIDFetcher.getFirstArrayElement(kong.unirest.json.JSONObject, java.lang.String)?array@194.28:194.33VARIABLEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java¬ ¬(!"
+type"
+isFinalfalse"
+declarationString array*array2TYPE∂
+8org.jabref.logic.importer.fetcher.LOBIDFetcher.getName()METHODM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java« «("
+isFinalfalse"î
+declarationString<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>String <mark class="method">getName</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*getName2û
+Gorg.jabref.logic.importer.fetcher.LOBIDFetcher?FETCHER_NAME@40.31:40.43CALLM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java» »(2â
+.org.jabref.logic.importer.WebFetcher.getName()OVERRIDEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java« «(2â
+.org.jabref.logic.importer.WebFetcher.getName()OVERRIDEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java« «(2n
+java.lang.StringRETURN_TYPEM
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java« «(ù
+Gorg.jabref.logic.importer.fetcher.LOBIDFetcher?FETCHER_NAME@40.31:40.43VALUEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java( ((+"
+isFinaltrue"
+typeString"√
+declarationString≠<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">FETCHER_NAME</mark> = "LOBID";"
+isStatictrue"
+accesspublic*FETCHER_NAME2e
+java.lang.StringTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java( ((±
+Aorg.jabref.logic.importer.fetcher.LOBIDFetcher?LOGGER@42.32:42.38VALUEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java*  *(&"
+isFinaltrue"
+typeLogger"‚
+declarationStringÃ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(LOBIDFetcher.class);"
+isStatictrue"
+accessprivate*LOGGER2e
+org.slf4j.LoggerTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java* *(≠
+Borg.jabref.logic.importer.fetcher.LOBIDFetcher?API_URL@44.32:44.39VALUEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java,  ,('"
+isFinaltrue"
+typeString"‹
+declarationString∆<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">API_URL</mark> = "https://lobid.org/resources/search";"
+isStatictrue"
+accessprivate*API_URL2e
+java.lang.StringTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java, ,(Ω
+Norg.jabref.logic.importer.fetcher.LOBIDFetcher?importerPreferences@46.38:46.57VALUEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java.& .(9"
+isFinaltrue"
+typeImporterPreferences"®
+declarationStringí<mark class="modifier">private </mark><mark class="modifier">final </mark>ImporterPreferences <mark class="class-field">importerPreferences</mark>"
+isStaticfalse"
+accessprivate*importerPreferences2Ç
+-org.jabref.logic.importer.ImporterPreferencesTYPEK
+Asrc\main\java\org\jabref\logic\importer\fetcher\LOBIDFetcher.java. .(%

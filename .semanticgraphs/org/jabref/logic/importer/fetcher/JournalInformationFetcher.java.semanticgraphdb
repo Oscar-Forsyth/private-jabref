@@ -1,0 +1,1106 @@
+
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaÑ
+;org.jabref.logic.importer.fetcher.JournalInformationFetcherCLASSX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java (&",
+package!org.jabref.logic.importer.fetcher"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"Ø
+declarationStringô<mark class="modifier">public </mark><mark class="modifier">class </mark>JournalInformationFetcher<mark class="modifier"><br>implements </mark>WebFetcher"
+accesspublic*JournalInformationFetcher2Æ
+Eorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getName()DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java& &(2ﬁ
+uorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java*( *(=2–
+gorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaE E(,2Ì
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getConcatenatedString(kong.unirest.json.JSONObject, java.lang.String)DECLARATIONZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java¢ ¢(/2ÿ
+morg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)DECLARATIONZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java´ ´($2Á
+|org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)DECLARATIONZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java“( “(92µ
+Lorg.jabref.logic.importer.fetcher.JournalInformationFetcher?NAME@31.31:31.35DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java (#2∑
+Norg.jabref.logic.importer.fetcher.JournalInformationFetcher?LOGGER@32.32:32.38DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java    (&2∏
+Oorg.jabref.logic.importer.fetcher.JournalInformationFetcher?API_URL@34.32:34.39DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java"  "('2«
+^org.jabref.logic.importer.fetcher.JournalInformationFetcher?QUOTES_BRACKET_PATTERN@35.33:35.55DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java#! #(72à
+$org.jabref.logic.importer.WebFetcherEXTENDX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java2 (<Ë
+Eorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getName()METHODX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java& &("
+isFinalfalse"î
+declarationString<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>String <mark class="method">getName</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*getName2Æ
+Lorg.jabref.logic.importer.fetcher.JournalInformationFetcher?NAME@31.31:31.35CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java') '(-2î
+.org.jabref.logic.importer.WebFetcher.getName()OVERRIDEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java& &(2y
+java.lang.StringRETURN_TYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java& &(÷;
+uorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)METHODX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java*( *(="
+isFinalfalse"∆
+declarationString∞<mark class="modifier">public </mark>Optional&lt;JournalInformation&gt; <mark class="method">getJournalInformation</mark>(String issnString<mark class="modifier"><mark class="modifier">,</mark></mark> String journalName)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>FetcherException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"$
+typeOptional<JournalInformation>*getJournalInformation2ò
+6org.jabref.model.entry.identifier.ISSN.isValidFormat()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java. .(2ô
+7org.jabref.model.entry.identifier.ISSN.isCanBeCleaned()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java.) .(72ô
+7org.jabref.model.entry.identifier.ISSN.getCleanedISSN()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java/ /(-2∞
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java1% 1()2|
+java.util.Optional.empty()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java4K 4(P2œ
+morg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java6 6(+2…
+gorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java?5 ?(B2ü
+=org.jabref.model.entry.identifier.ISSN.ISSN(java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java+ +(2„
+Äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)!issnStringCALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java+ +('2È
+Üorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?issn@43.13:43.17CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java. .(2È
+Üorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?issn@43.13:43.17CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java.$ .((2
+çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?cleanedISSN@44.15:44.26CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java/ /(2È
+Üorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?issn@43.13:43.17CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java/ /(2∞
+Norg.jabref.logic.importer.fetcher.JournalInformationFetcher?LOGGER@32.32:32.38CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java1 1(2
+çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?cleanedISSN@44.15:44.26CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java6, 6(72‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)!journalNameCALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java69 6(D2±
+Oorg.jabref.logic.importer.fetcher.JournalInformationFetcher?API_URL@34.32:34.39CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java8; 8(B2Ì
+äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?postData@54.19:54.27CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java:; :(C2Ò
+éorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?httpResponse@56.31:56.43CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java= =(2Ò
+éorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?httpResponse@56.31:56.43CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java>, >(82ˇ
+úorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?journalInformationOptional@52.37:52.63CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java? ?(&2˜
+îorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?responseJsonObject@62.23:62.41CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java?C ?(U2ˇ
+úorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?journalInformationOptional@52.37:52.63CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaB B()2Ë
+Äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)!issnString	PARAMETERX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java*E *(O2È
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)!journalName	PARAMETERX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java*X *(c2
+Üorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?issn@43.13:43.17DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java+ +(2˜
+çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?cleanedISSN@44.15:44.26DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java, ,(2Ü
+úorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?journalInformationOptional@52.37:52.63DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java4% 4(?2Ù
+äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?postData@54.19:54.27DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java6 6(2¯
+éorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?httpResponse@56.31:56.43DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java8 8(+2˛
+îorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?responseJsonObject@62.23:62.41DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java> >()2q
+OptionalRETURN_TYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java* *(ù
+Üorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?issn@43.13:43.17VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java+ +("
+typeISSN"
+isFinalfalse"u
+declarationString`<mark class="modifier"> </mark>ISSN <mark class="class-field">issn</mark> = new ISSN(issnString)*issn2à
+&org.jabref.model.entry.identifier.ISSNTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java+ +(2ü
+=org.jabref.model.entry.identifier.ISSN.ISSN(java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java+ +(2„
+Äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)!issnStringCALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java+ +('Ö
+çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?cleanedISSN@44.15:44.26VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java, ,("
+typeString"
+isFinalfalse"l
+declarationStringW<mark class="modifier"> </mark>String <mark class="class-field">cleanedISSN</mark> = ""*cleanedISSN2r
+java.lang.StringTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java, ,(‰
+úorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?journalInformationOptional@52.37:52.63VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java4% 4(?"$
+typeOptional<JournalInformation>"
+isFinalfalse"†
+declarationStringä<mark class="modifier"> </mark>Optional<JournalInformation> <mark class="class-field">journalInformationOptional</mark> = Optional.empty()*journalInformationOptional2j
+OptionalTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java4 4(2|
+java.util.Optional.empty()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java4K 4(P‚	
+äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?postData@54.19:54.27VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java6 6("
+type
+JSONObject"
+isFinalfalse"í
+declarationString}<mark class="modifier"> </mark>JSONObject <mark class="class-field">postData</mark> = buildPostData(cleanedISSN, journalName)*postData2~
+kong.unirest.json.JSONObjectTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java6 6(2œ
+morg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java6 6(+2
+çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?cleanedISSN@44.15:44.26CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java6, 6(72‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)!journalNameCALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java69 6(DŒ	
+éorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?httpResponse@56.31:56.43VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java8 8(+"
+typeHttpResponse<JsonNode>"
+isFinalfalse"Ú
+declarationString‹<mark class="modifier"> </mark>HttpResponse<JsonNode> <mark class="class-field">httpResponse</mark> = Unirest.post(API_URL).header("Content-Type"<mark class="modifier">,</mark> "application/json").body(postData).asJson()*httpResponse2{
+kong.unirest.HttpResponseTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java8 8(2Ä
+kong.unirest.JsonNodeTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java8 8(2±
+Oorg.jabref.logic.importer.fetcher.JournalInformationFetcher?API_URL@34.32:34.39CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java8; 8(B2Ì
+äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?postData@54.19:54.27CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java:; :(Cƒ
+îorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?responseJsonObject@62.23:62.41VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java> >()"
+type
+JSONObject"
+isFinalfalse"ò
+declarationStringÇ<mark class="modifier"> </mark>JSONObject <mark class="class-field">responseJsonObject</mark> = httpResponse.getBody().getObject()*responseJsonObject2~
+kong.unirest.json.JSONObjectTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java> >(2Ò
+éorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)?httpResponse@56.31:56.43CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java>, >(8≤
+Äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)!issnString	PARAMETERX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java*E *(O"
+typeString"
+isFinalfalse"&
+declarationStringString issnString*
+issnString2r
+java.lang.StringTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java*> *(Dµ
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getJournalInformation(java.lang.String, java.lang.String)!journalName	PARAMETERX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java*X *(c"
+typeString"
+isFinalfalse"'
+declarationStringString journalName*journalName2r
+java.lang.StringTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java*Q *(W‡‚
+gorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)METHODX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaE E(,"
+isFinalfalse"Î
+declarationString’<mark class="modifier">private </mark>JournalInformation <mark class="method">parseResponse</mark>(JSONObject responseJsonObject)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>FetcherException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeJournalInformation*parseResponse2∞
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javab8 b(<2‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getConcatenatedString(kong.unirest.json.JSONObject, java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javap p(02‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getConcatenatedString(kong.unirest.json.JSONObject, java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaq" q(72‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getConcatenatedString(kong.unirest.json.JSONObject, java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javar! r(62ﬁ
+|org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaw' w(82ﬁ
+|org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javax- x(>2ﬁ
+|org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javay4 y(E2ﬁ
+|org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaz( z(92ﬁ
+|org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java{. {(?2ﬁ
+|org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java|; |(L2ﬁ
+|org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java}A }(R2ﬁ
+|org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java~# ~(42ﬁ
+|org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java$ (52≤
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaÇ< Ç(@2≤
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaÖ8 Ö(<2≤
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaà4 à(82Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaP3 P(>2Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaQ4 Q(?2Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaR7 R(B2Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaS= S(H2Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaTD T(O2Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaU8 U(C2Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaV> V(I2Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaWK W(V2Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaXQ X(\2Ø
+Morg.jabref.logic.importer.FetcherException.FetcherException(java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javab b(*2±
+Morg.jabref.logic.importer.FetcherException.FetcherException(java.lang.String)CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaÇ Ç(.2±
+Morg.jabref.logic.importer.FetcherException.FetcherException(java.lang.String)CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaÖ Ö(*2‹
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)!responseJsonObjectCALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java[ [("2‹
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)!responseJsonObjectCALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java\# \(52‹
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?errors@92.26:92.32CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java] ](2‹
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?errors@92.26:92.32CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java]' ](-2‹
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?errors@92.26:92.32CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java^' ^(-2€
+yorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?error@94.31:94.36CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java_* _(/2∞
+Norg.jabref.logic.importer.fetcher.JournalInformationFetcher?LOGGER@32.32:32.38CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java` `(2„
+Äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?errorMessage@95.27:95.39CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java`@ `(L2‹
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)!responseJsonObjectCALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javae e("2‹
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)!responseJsonObjectCALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaf" f(42‹
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?data@102.27:102.31CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javag g(2‹
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?data@102.27:102.31CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javag+ g(/2‹
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?data@102.27:102.31CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javah- h(12€
+yorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?title@70.15:70.20CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaj j(2‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?journalData@104.31:104.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaj j('2ﬂ
+}org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?publisher@71.15:71.24CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javak k(2‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?journalData@104.31:104.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javak  k(+2Ë
+Öorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?coverageStartYear@72.15:72.32CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javal l(%2‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?journalData@104.31:104.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javal( l(32Ê
+Éorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?coverageEndYear@73.15:73.30CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javam m(#2‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?journalData@104.31:104.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javam& m(12ﬂ
+}org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?scimagoId@77.15:77.24CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javan n(2‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?journalData@104.31:104.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javan  n(+2›
+{org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?country@75.15:75.22CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javao o(2‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?journalData@104.31:104.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javao o()2⁄
+xorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?issn@79.15:79.19CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javap p(2‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?journalData@104.31:104.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javap1 p(<2·
+org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?subjectArea@74.15:74.26CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaq q(2‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?journalData@104.31:104.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaq8 q(C2‡
+~org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?categories@76.15:76.25CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javar r(2‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?journalData@104.31:104.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javar7 r(B2‹
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?hIndex@78.15:78.21CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javas s(2‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?journalData@104.31:104.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javas s((2‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?journalData@104.31:104.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javau- u(82Â
+Çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citationInfo@117.30:117.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javav v($2„
+Äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?docsThisYear@82.36:82.48CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaw w($2Â
+Çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citationInfo@117.30:117.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaw9 w(E2È
+Üorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?docsPrevious3Years@83.36:83.54CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javax x(*2Â
+Çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citationInfo@117.30:117.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javax? x(K2
+çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citableDocsPrevious3Years@84.36:84.61CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javay y(12Â
+Çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citationInfo@117.30:117.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javayF y(R2‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citesOutgoing@85.36:85.49CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaz z(%2Â
+Çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citationInfo@117.30:117.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaz: z(F2Í
+áorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citesOutgoingPerDoc@86.36:86.55CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java{ {(+2Â
+Çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citationInfo@117.30:117.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java{@ {(L2˜
+îorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citesIncomingByRecentlyPublished@87.36:87.68CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java| |(82Â
+Çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citationInfo@117.30:117.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java|M |(Y2˝
+öorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citesIncomingPerDocByRecentlyPublished@88.36:88.74CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java} }(>2Â
+Çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citationInfo@117.30:117.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java}S }(_2ﬁ
+|org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?sjrArray@80.36:80.44CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java~ ~( 2Â
+Çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citationInfo@117.30:117.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java~5 ~(A2ﬂ
+}org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?snipArray@81.36:81.45CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java (!2Â
+Çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citationInfo@117.30:117.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java6 (B2€
+worg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?e@135.31:135.32CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaàK à(L2›
+yorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?title@70.15:70.20CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaå å(2·
+}org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?publisher@71.15:71.24CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaç ç(2Í
+Öorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?coverageStartYear@72.15:72.32CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaé é(!2Ë
+Éorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?coverageEndYear@73.15:73.30CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaè è(2„
+org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?subjectArea@74.15:74.26CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaê ê(2ﬂ
+{org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?country@75.15:75.22CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaë ë(2‚
+~org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?categories@76.15:76.25CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaí í(2·
+}org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?scimagoId@77.15:77.24CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaì ì(2ﬁ
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?hIndex@78.15:78.21CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaî î(2‹
+xorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?issn@79.15:79.19CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaï ï(2‡
+|org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?sjrArray@80.36:80.44CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javañ ñ(2·
+}org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?snipArray@81.36:81.45CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaó ó(2Â
+Äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?docsThisYear@82.36:82.48CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaò ò(2Î
+Üorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?docsPrevious3Years@83.36:83.54CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaô ô("2Ú
+çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citableDocsPrevious3Years@84.36:84.61CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaö ö()2Ê
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citesOutgoing@85.36:85.49CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaõ õ(2Ï
+áorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citesOutgoingPerDoc@86.36:86.55CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaú ú(#2˘
+îorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citesIncomingByRecentlyPublished@87.36:87.68CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaù ù(02ˇ
+öorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citesIncomingPerDocByRecentlyPublished@88.36:88.74CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaû û(62·
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)!responseJsonObject	PARAMETERX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaE8 E(J2‚
+yorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?title@70.15:70.20DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaF F(2Ê
+}org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?publisher@71.15:71.24DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaG G(2Ô
+Öorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?coverageStartYear@72.15:72.32DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaH H( 2Ì
+Éorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?coverageEndYear@73.15:73.30DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaI I(2Ë
+org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?subjectArea@74.15:74.26DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaJ J(2‰
+{org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?country@75.15:75.22DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaK K(2Á
+~org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?categories@76.15:76.25DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaL L(2Ê
+}org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?scimagoId@77.15:77.24DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaM M(2„
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?hIndex@78.15:78.21DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaN N(2·
+xorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?issn@79.15:79.19DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaO O(2Â
+|org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?sjrArray@80.36:80.44DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaP$ P(,2Ê
+}org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?snipArray@81.36:81.45DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaQ$ Q(-2Í
+Äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?docsThisYear@82.36:82.48DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaR$ R(02
+Üorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?docsPrevious3Years@83.36:83.54DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaS$ S(62˜
+çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citableDocsPrevious3Years@84.36:84.61DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaT$ T(=2Î
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citesOutgoing@85.36:85.49DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaU$ U(12Ò
+áorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citesOutgoingPerDoc@86.36:86.55DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaV$ V(72˛
+îorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citesIncomingByRecentlyPublished@87.36:87.68DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaW$ W(D2Ñ
+öorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citesIncomingPerDocByRecentlyPublished@88.36:88.74DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaX$ X(J2„
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?errors@92.26:92.32DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java\ \( 2‚
+yorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?error@94.31:94.36DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java^ ^($2Í
+Äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?errorMessage@95.27:95.39DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java_ _('2„
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?data@102.27:102.31DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaf f(2Î
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?journalData@104.31:104.42DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javah h(*2Ï
+Çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citationInfo@117.30:117.42DECLARATIONX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javau u(*2‚
+worg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?e@135.31:135.32DECLARATIONZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaá á( 2{
+JournalInformationRETURN_TYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaE E(‰
+yorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?title@70.15:70.20VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaF F("
+typeString"
+isFinalfalse"f
+declarationStringQ<mark class="modifier"> </mark>String <mark class="class-field">title</mark> = ""*title2r
+java.lang.StringTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaF F(
+}org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?publisher@71.15:71.24VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaG G("
+typeString"
+isFinalfalse"j
+declarationStringU<mark class="modifier"> </mark>String <mark class="class-field">publisher</mark> = ""*	publisher2r
+java.lang.StringTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaG G(â
+Öorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?coverageStartYear@72.15:72.32VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaH H( "
+typeString"
+isFinalfalse"r
+declarationString]<mark class="modifier"> </mark>String <mark class="class-field">coverageStartYear</mark> = ""*coverageStartYear2r
+java.lang.StringTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaH H(É
+Éorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?coverageEndYear@73.15:73.30VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaI I("
+typeString"
+isFinalfalse"p
+declarationString[<mark class="modifier"> </mark>String <mark class="class-field">coverageEndYear</mark> = ""*coverageEndYear2r
+java.lang.StringTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaI I(ˆ
+org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?subjectArea@74.15:74.26VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaJ J("
+typeString"
+isFinalfalse"l
+declarationStringW<mark class="modifier"> </mark>String <mark class="class-field">subjectArea</mark> = ""*subjectArea2r
+java.lang.StringTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaJ J(Í
+{org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?country@75.15:75.22VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaK K("
+typeString"
+isFinalfalse"h
+declarationStringS<mark class="modifier"> </mark>String <mark class="class-field">country</mark> = ""*country2r
+java.lang.StringTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaK K(Û
+~org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?categories@76.15:76.25VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaL L("
+typeString"
+isFinalfalse"k
+declarationStringV<mark class="modifier"> </mark>String <mark class="class-field">categories</mark> = ""*
+categories2r
+java.lang.StringTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaL L(
+}org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?scimagoId@77.15:77.24VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaM M("
+typeString"
+isFinalfalse"j
+declarationStringU<mark class="modifier"> </mark>String <mark class="class-field">scimagoId</mark> = ""*	scimagoId2r
+java.lang.StringTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaM M(Á
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?hIndex@78.15:78.21VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaN N("
+typeString"
+isFinalfalse"g
+declarationStringR<mark class="modifier"> </mark>String <mark class="class-field">hIndex</mark> = ""*hIndex2r
+java.lang.StringTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaN N(·
+xorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?issn@79.15:79.19VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaO O("
+typeString"
+isFinalfalse"e
+declarationStringP<mark class="modifier"> </mark>String <mark class="class-field">issn</mark> = ""*issn2r
+java.lang.StringTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaO O(°
+|org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?sjrArray@80.36:80.44VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaP$ P(,"#
+typeList<Pair<Integer, Double>>"
+isFinalfalse"ç
+declarationStringx<mark class="modifier"> </mark>List<Pair<Integer, Double>> <mark class="class-field">sjrArray</mark> = new ArrayList<>()*sjrArray2p
+java.util.ListTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaP P(2{
+javafx.util.PairTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaP P(2|
+java.lang.IntegerTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaP P(2{
+java.lang.DoubleTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaP P(!2Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaP3 P(>§
+}org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?snipArray@81.36:81.45VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaQ$ Q(-"#
+typeList<Pair<Integer, Double>>"
+isFinalfalse"é
+declarationStringy<mark class="modifier"> </mark>List<Pair<Integer, Double>> <mark class="class-field">snipArray</mark> = new ArrayList<>()*	snipArray2p
+java.util.ListTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaQ Q(2{
+javafx.util.PairTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaQ Q(2|
+java.lang.IntegerTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaQ Q(2{
+java.lang.DoubleTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaQ Q(!2Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaQ4 Q(?Æ
+Äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?docsThisYear@82.36:82.48VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaR$ R(0"#
+typeList<Pair<Integer, Double>>"
+isFinalfalse"ë
+declarationString|<mark class="modifier"> </mark>List<Pair<Integer, Double>> <mark class="class-field">docsThisYear</mark> = new ArrayList<>()*docsThisYear2p
+java.util.ListTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaR R(2{
+javafx.util.PairTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaR R(2|
+java.lang.IntegerTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaR R(2{
+java.lang.DoubleTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaR R(!2Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaR7 R(B¡
+Üorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?docsPrevious3Years@83.36:83.54VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaS$ S(6"#
+typeList<Pair<Integer, Double>>"
+isFinalfalse"ò
+declarationStringÇ<mark class="modifier"> </mark>List<Pair<Integer, Double>> <mark class="class-field">docsPrevious3Years</mark> = new ArrayList<>()*docsPrevious3Years2p
+java.util.ListTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaS S(2{
+javafx.util.PairTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaS S(2|
+java.lang.IntegerTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaS S(2{
+java.lang.DoubleTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaS S(!2Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaS= S(H÷
+çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citableDocsPrevious3Years@84.36:84.61VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaT$ T(="#
+typeList<Pair<Integer, Double>>"
+isFinalfalse"ü
+declarationStringâ<mark class="modifier"> </mark>List<Pair<Integer, Double>> <mark class="class-field">citableDocsPrevious3Years</mark> = new ArrayList<>()*citableDocsPrevious3Years2p
+java.util.ListTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaT T(2{
+javafx.util.PairTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaT T(2|
+java.lang.IntegerTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaT T(2{
+java.lang.DoubleTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaT T(!2Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaTD T(O±
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citesOutgoing@85.36:85.49VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaU$ U(1"#
+typeList<Pair<Integer, Double>>"
+isFinalfalse"í
+declarationString}<mark class="modifier"> </mark>List<Pair<Integer, Double>> <mark class="class-field">citesOutgoing</mark> = new ArrayList<>()*citesOutgoing2p
+java.util.ListTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaU U(2{
+javafx.util.PairTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaU U(2|
+java.lang.IntegerTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaU U(2{
+java.lang.DoubleTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaU U(!2Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaU8 U(Cƒ
+áorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citesOutgoingPerDoc@86.36:86.55VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaV$ V(7"#
+typeList<Pair<Integer, Double>>"
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier"> </mark>List<Pair<Integer, Double>> <mark class="class-field">citesOutgoingPerDoc</mark> = new ArrayList<>()*citesOutgoingPerDoc2p
+java.util.ListTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaV V(2{
+javafx.util.PairTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaV V(2|
+java.lang.IntegerTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaV V(2{
+java.lang.DoubleTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaV V(!2Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaV> V(IÎ
+îorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citesIncomingByRecentlyPublished@87.36:87.68VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaW$ W(D"#
+typeList<Pair<Integer, Double>>"
+isFinalfalse"¶
+declarationStringê<mark class="modifier"> </mark>List<Pair<Integer, Double>> <mark class="class-field">citesIncomingByRecentlyPublished</mark> = new ArrayList<>()* citesIncomingByRecentlyPublished2p
+java.util.ListTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaW W(2{
+javafx.util.PairTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaW W(2|
+java.lang.IntegerTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaW W(2{
+java.lang.DoubleTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaW W(!2Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaWK W(V˝
+öorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citesIncomingPerDocByRecentlyPublished@88.36:88.74VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaX$ X(J"#
+typeList<Pair<Integer, Double>>"
+isFinalfalse"¨
+declarationStringñ<mark class="modifier"> </mark>List<Pair<Integer, Double>> <mark class="class-field">citesIncomingPerDocByRecentlyPublished</mark> = new ArrayList<>()*&citesIncomingPerDocByRecentlyPublished2p
+java.util.ListTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaX X(2{
+javafx.util.PairTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaX X(2|
+java.lang.IntegerTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaX X(2{
+java.lang.DoubleTYPE_ARGUMENTX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaX X(!2Å
+java.util.ArrayList.ArrayList()CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaXQ X(\ˇ
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?errors@92.26:92.32VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java\ \( "
+type	JSONArray"
+isFinalfalse"ë
+declarationString|<mark class="modifier"> </mark>JSONArray <mark class="class-field">errors</mark> = responseJsonObject.optJSONArray("errors")*errors2}
+kong.unirest.json.JSONArrayTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java\ \(2‹
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)!responseJsonObjectCALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java\# \(5Ï
+yorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?error@94.31:94.36VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java^ ^($"
+type
+JSONObject"
+isFinalfalse"
+declarationStringj<mark class="modifier"> </mark>JSONObject <mark class="class-field">error</mark> = errors.getJSONObject(0)*error2~
+kong.unirest.json.JSONObjectTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java^ ^(2‹
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?errors@92.26:92.32CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java^' ^(-î
+Äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?errorMessage@95.27:95.39VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java_ _('"
+typeString"
+isFinalfalse"®
+declarationStringí<mark class="modifier"> </mark>String <mark class="class-field">errorMessage</mark> = error.optString("message"<mark class="modifier">,</mark> "")*errorMessage2r
+java.lang.StringTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java_ _(2€
+yorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?error@94.31:94.36CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java_* _(/˝
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?data@102.27:102.31VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaf f("
+type
+JSONObject"
+isFinalfalse"è
+declarationStringz<mark class="modifier"> </mark>JSONObject <mark class="class-field">data</mark> = responseJsonObject.getJSONObject("data")*data2~
+kong.unirest.json.JSONObjectTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaf f(2‹
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)!responseJsonObjectCALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaf" f(4à
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?journalData@104.31:104.42VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javah h(*"
+type
+JSONObject"
+isFinalfalse"ã
+declarationStringv<mark class="modifier"> </mark>JSONObject <mark class="class-field">journalData</mark> = data.getJSONObject("journal")*journalData2~
+kong.unirest.json.JSONObjectTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javah h(2‹
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?data@102.27:102.31CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javah- h(1ú
+Çorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?citationInfo@117.30:117.42VARIABLEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javau u(*"
+type	JSONArray"
+isFinalfalse"ó
+declarationStringÅ<mark class="modifier"> </mark>JSONArray <mark class="class-field">citationInfo</mark> = journalData.optJSONArray("citationInfo")*citationInfo2}
+kong.unirest.json.JSONArrayTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javau u(2‰
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?journalData@104.31:104.42CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javau- u(8œ
+zorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)!responseJsonObject	PARAMETERX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaE8 E(J"
+type
+JSONObject"
+isFinalfalse"2
+declarationStringJSONObject responseJsonObject*responseJsonObject2~
+kong.unirest.json.JSONObjectTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaE- E(7∑
+worg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseResponse(kong.unirest.json.JSONObject)?e@135.31:135.32VARIABLEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaá á( "
+typeJSONException"
+isFinalfalse"$
+declarationStringJSONException e*e2É
+kong.unirest.json.JSONExceptionTYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaá á(Ó
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getConcatenatedString(kong.unirest.json.JSONObject, java.lang.String)METHODZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java¢ ¢(/"
+isFinalfalse"¯
+declarationString‚<mark class="modifier">private </mark><mark class="modifier">static </mark>String <mark class="method">getConcatenatedString</mark>(JSONObject jsonObject<mark class="modifier"><mark class="modifier">,</mark></mark> String key)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeString*getConcatenatedString2Ò
+åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getConcatenatedString(kong.unirest.json.JSONObject, java.lang.String)!jsonObjectCALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java£ £((2Í
+Öorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getConcatenatedString(kong.unirest.json.JSONObject, java.lang.String)!keyCALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java£6 £(92˛
+ôorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getConcatenatedString(kong.unirest.json.JSONObject, java.lang.String)?jsonArray@163.18:163.27CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java§ §(2¬
+^org.jabref.logic.importer.fetcher.JournalInformationFetcher?QUOTES_BRACKET_PATTERN@35.33:35.55CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java• •()2˛
+ôorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getConcatenatedString(kong.unirest.json.JSONObject, java.lang.String)?jsonArray@163.18:163.27CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java•2 •(;2ˆ
+åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getConcatenatedString(kong.unirest.json.JSONObject, java.lang.String)!jsonObject	PARAMETERZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java¢; ¢(E2Ô
+Öorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getConcatenatedString(kong.unirest.json.JSONObject, java.lang.String)!key	PARAMETERZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java¢N ¢(Q2Ö
+ôorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getConcatenatedString(kong.unirest.json.JSONObject, java.lang.String)?jsonArray@163.18:163.27DECLARATIONZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java£ £(2{
+java.lang.StringRETURN_TYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java¢ ¢(û
+ôorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getConcatenatedString(kong.unirest.json.JSONObject, java.lang.String)?jsonArray@163.18:163.27VARIABLEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java£ £("
+type	JSONArray"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>JSONArray <mark class="class-field">jsonArray</mark> = jsonObject.optJSONArray(key)*	jsonArray2
+kong.unirest.json.JSONArrayTYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java£ £(2Ò
+åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getConcatenatedString(kong.unirest.json.JSONObject, java.lang.String)!jsonObjectCALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java£ £((2Í
+Öorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getConcatenatedString(kong.unirest.json.JSONObject, java.lang.String)!keyCALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java£6 £(9◊
+åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getConcatenatedString(kong.unirest.json.JSONObject, java.lang.String)!jsonObject	PARAMETERZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java¢; ¢(E"
+type
+JSONObject"
+isFinalfalse"*
+declarationStringJSONObject jsonObject*
+jsonObject2Ä
+kong.unirest.json.JSONObjectTYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java¢0 ¢(:≠
+Öorg.jabref.logic.importer.fetcher.JournalInformationFetcher.getConcatenatedString(kong.unirest.json.JSONObject, java.lang.String)!key	PARAMETERZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java¢N ¢(Q"
+typeString"
+isFinalfalse"
+declarationString
+String key*key2t
+java.lang.StringTYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java¢G ¢(M– 
+morg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)METHODZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java´ ´($"
+isFinalfalse"Õ
+declarationString∑<mark class="modifier">private </mark>JSONObject <mark class="method">buildPostData</mark>(String issn<mark class="modifier"><mark class="modifier">,</mark></mark> String journalName)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+type
+JSONObject*buildPostData2È
+Ñorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)?postData@198.19:198.27CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java« «(2Ê
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)?query@172.15:172.20CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java« «(#2È
+Ñorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)?postData@198.19:198.27CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java» »(2Í
+Öorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)?variables@202.19:202.28CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaÀ À(2÷
+rorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)!issnCALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaÀ À("2Í
+Öorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)?variables@202.19:202.28CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaÃ Ã(2›
+yorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)!journalNameCALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaÃ Ã()2È
+Ñorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)?postData@198.19:198.27CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaÕ Õ(2Í
+Öorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)?variables@202.19:202.28CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaÕ" Õ(+2È
+Ñorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)?postData@198.19:198.27CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaœ œ(2€
+rorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)!issn	PARAMETERZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java´, ´(02‚
+yorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)!journalName	PARAMETERZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java´9 ´(D2Ì
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)?query@172.15:172.20DECLARATIONZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java¨ ¨(2
+Ñorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)?postData@198.19:198.27DECLARATIONZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java∆ ∆(2Ò
+Öorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)?variables@202.19:202.28DECLARATIONZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java   (2á
+kong.unirest.json.JSONObjectRETURN_TYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java´ ´(≤
+Åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)?query@172.15:172.20VARIABLEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java¨ ¨("
+typeString"
+isFinalfalse"¶
+declarationStringê<mark class="modifier"> </mark>String <mark class="class-field">query</mark> = """
+    query GetJournal($issn: String, $name: String) {
+      journal(issn: $issn, name: $name) {
+        id
+        name
+        issn
+        scimagoId
+        country
+        publisher
+        areas
+        categories
+        citationInfo {
+          year
+          docsThisYear
+          docsPrevious3Years
+          citableDocsPrevious3Years
+          citesOutgoing
+          citesOutgoingPerDoc
+          citesIncomingByRecentlyPublished
+          citesIncomingPerDocByRecentlyPublished
+          sjrIndex
+        }
+        hIndex
+      }
+    }"""*query2t
+java.lang.StringTYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java¨ ¨(ù
+Ñorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)?postData@198.19:198.27VARIABLEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java∆ ∆("
+type
+JSONObject"
+isFinalfalse"{
+declarationStringf<mark class="modifier"> </mark>JSONObject <mark class="class-field">postData</mark> = new JSONObject()*postData2Ä
+kong.unirest.json.JSONObjectTYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java∆ ∆(†
+Öorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)?variables@202.19:202.28VARIABLEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java   ("
+type
+JSONObject"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark>JSONObject <mark class="class-field">variables</mark> = new JSONObject()*	variables2Ä
+kong.unirest.json.JSONObjectTYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java   (õ
+rorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)!issn	PARAMETERZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java´, ´(0"
+typeString"
+isFinalfalse" 
+declarationStringString issn*issn2t
+java.lang.StringTYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java´% ´(+∞
+yorg.jabref.logic.importer.fetcher.JournalInformationFetcher.buildPostData(java.lang.String, java.lang.String)!journalName	PARAMETERZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java´9 ´(D"
+typeString"
+isFinalfalse"'
+declarationStringString journalName*journalName2t
+java.lang.StringTYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java´2 ´(8ÙE
+|org.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)METHODZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java“( “(9"
+isFinalfalse"©
+declarationStringì<mark class="modifier">private </mark>List&lt;Pair&lt;Integer<mark class="modifier"><mark class="modifier">,</mark></mark>Double&gt;&gt; <mark class="method">parseCitationInfo</mark>(JSONArray jsonArray<mark class="modifier"><mark class="modifier">,</mark></mark> String key)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"#
+typeList<Pair<Integer, Double>>*parseCitationInfo2å
+(java.util.Set.contains(java.lang.Object)CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java‹ ‹(%2y
+java.util.List.add(E)CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java›  ›(#2x
+java.util.Set.add(E)CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaﬁ ﬁ(2∑
+Sjava.util.Comparator.comparing(java.util.function.Function<? super T, ? extends U>)CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java„$ „(-2É
+java.util.ArrayList.ArrayList()CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java”6 ”(A2
+java.util.HashSet.HashSet()CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java‘# ‘(,2Ò
+åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?i@214.17:214.18CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java÷ ÷(2Î
+Üorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)!jsonArrayCALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java÷ ÷(%2Ò
+åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?i@214.17:214.18CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java÷0 ÷(12Î
+Üorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)!jsonArrayCALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java◊ ◊('2Ò
+åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?i@214.17:214.18CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java◊6 ◊(72Ù
+èorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?item@215.23:215.27CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaŸ Ÿ(2Ù
+èorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?item@215.23:215.27CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaŸ$ Ÿ((2Â
+Äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)!keyCALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaŸ- Ÿ(02Ù
+èorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?item@215.23:215.27CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java⁄ ⁄(2Ù
+èorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?item@215.23:215.27CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java€ €(#2Â
+Äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)!keyCALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java€. €(12˜
+íorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?yearSet@212.21:212.28CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java‹ ‹(2Ù
+èorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?year@218.20:218.24CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java‹& ‹(*2˚
+ñorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?parsedArray@211.36:211.47CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java› ›(2Ù
+èorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?year@218.20:218.24CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java›/ ›(32ı
+êorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?value@219.23:219.28CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java›5 ›(:2˜
+íorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?yearSet@212.21:212.28CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaﬁ ﬁ(2Ù
+èorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?year@218.20:218.24CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.javaﬁ  ﬁ($2˚
+ñorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?parsedArray@211.36:211.47CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java„ „(2˚
+ñorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?parsedArray@211.36:211.47CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java‰ ‰(2
+Üorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)!jsonArray	PARAMETERZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java“D “(M2Í
+Äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)!key	PARAMETERZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java“V “(Y2Ç
+ñorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?parsedArray@211.36:211.47DECLARATIONZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java”$ ”(/2˛
+íorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?yearSet@212.21:212.28DECLARATIONZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java‘ ‘(2¯
+åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?i@214.17:214.18DECLARATIONZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java÷ ÷(2˚
+èorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?item@215.23:215.27DECLARATIONZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java◊ ◊(2˚
+èorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?year@218.20:218.24DECLARATIONZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java⁄ ⁄(2¸
+êorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?value@219.23:219.28DECLARATIONZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java€ €(2y
+java.util.ListRETURN_TYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java“ “(2Ñ
+javafx.util.PairRETURN_TYPE_ARGUMENTZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java“ “(2Ö
+java.lang.IntegerRETURN_TYPE_ARGUMENTZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java“ “(2Ñ
+java.lang.DoubleRETURN_TYPE_ARGUMENTZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java“ “(%Œ
+ñorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?parsedArray@211.36:211.47VARIABLEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java”$ ”(/"#
+typeList<Pair<Integer, Double>>"
+isFinalfalse"ê
+declarationString{<mark class="modifier"> </mark>List<Pair<Integer, Double>> <mark class="class-field">parsedArray</mark> = new ArrayList<>()*parsedArray2r
+java.util.ListTYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java” ”(2}
+javafx.util.PairTYPE_ARGUMENTZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java” ”(2~
+java.lang.IntegerTYPE_ARGUMENTZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java” ”(2}
+java.lang.DoubleTYPE_ARGUMENTZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java” ”(!2É
+java.util.ArrayList.ArrayList()CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java”6 ”(Aù
+íorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?yearSet@212.21:212.28VARIABLEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java‘ ‘("
+typeSet<Integer>"
+isFinalfalse"{
+declarationStringf<mark class="modifier"> </mark>Set<Integer> <mark class="class-field">yearSet</mark> = new HashSet<>()*yearSet2q
+java.util.SetTYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java‘ ‘(2~
+java.lang.IntegerTYPE_ARGUMENTZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java‘ ‘(2
+java.util.HashSet.HashSet()CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java‘# ‘(,˛
+åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?i@214.17:214.18VARIABLEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java÷ ÷("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 0*i2g
+intTYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java÷ ÷(ç
+èorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?item@215.23:215.27VARIABLEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java◊ ◊("
+type
+JSONObject"
+isFinalfalse"Å
+declarationStringl<mark class="modifier"> </mark>JSONObject <mark class="class-field">item</mark> = jsonArray.getJSONObject(i)*item2Ä
+kong.unirest.json.JSONObjectTYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java◊ ◊(2Î
+Üorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)!jsonArrayCALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java◊ ◊('2Ò
+åorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?i@214.17:214.18CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java◊6 ◊(7ë
+èorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?year@218.20:218.24VARIABLEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java⁄ ⁄("
+typeint"
+isFinalfalse"ë
+declarationString|<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">year</mark> = item.getInt("year")*year2g
+intTYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java⁄ ⁄(2Ù
+èorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?item@215.23:215.27CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java⁄ ⁄(Ü
+êorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?value@219.23:219.28VARIABLEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java€ €("
+typedouble"
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier"> </mark><mark class="modifier">double</mark> <mark class="class-field">value</mark> = item.getDouble(key)*value2j
+doubleTYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java€ €(2Ù
+èorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)?item@215.23:215.27CALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java€ €(#2Â
+Äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)!keyCALLZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java€. €(1À
+Üorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)!jsonArray	PARAMETERZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java“D “(M"
+type	JSONArray"
+isFinalfalse"(
+declarationStringJSONArray jsonArray*	jsonArray2
+kong.unirest.json.JSONArrayTYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java“: “(C®
+Äorg.jabref.logic.importer.fetcher.JournalInformationFetcher.parseCitationInfo(kong.unirest.json.JSONArray, java.lang.String)!key	PARAMETERZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java“V “(Y"
+typeString"
+isFinalfalse"
+declarationString
+String key*key2t
+java.lang.StringTYPEZ
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java“O “(U∫
+Lorg.jabref.logic.importer.fetcher.JournalInformationFetcher?NAME@31.31:31.35VALUEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java (#"
+isFinaltrue"
+typeString"…
+declarationString≥<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">NAME</mark> = "Journal Information";"
+isStatictrue"
+accesspublic*NAME2r
+java.lang.StringTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java (Â
+Norg.jabref.logic.importer.fetcher.JournalInformationFetcher?LOGGER@32.32:32.38VALUEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java    (&"
+isFinaltrue"
+typeLogger"Ô
+declarationStringŸ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(JournalInformationFetcher.class);"
+isStatictrue"
+accessprivate*LOGGER2r
+org.slf4j.LoggerTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java   (»
+Oorg.jabref.logic.importer.fetcher.JournalInformationFetcher?API_URL@34.32:34.39VALUEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java"  "('"
+isFinaltrue"
+typeString"–
+declarationString∫<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">API_URL</mark> = "https://jabref.org/api";"
+isStatictrue"
+accessprivate*API_URL2r
+java.lang.StringTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java" "(ô
+^org.jabref.logic.importer.fetcher.JournalInformationFetcher?QUOTES_BRACKET_PATTERN@35.33:35.55VALUEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java#! #(7"
+isFinaltrue"
+typePattern"Â
+declarationStringœ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Pattern <mark class="class-field">QUOTES_BRACKET_PATTERN</mark> = Pattern.compile("[\"\\[\\]]");"
+isStatictrue"
+accessprivate*QUOTES_BRACKET_PATTERN2y
+java.util.regex.PatternTYPEX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java# #( 2ì
+1java.util.regex.Pattern.compile(java.lang.String)CALLX
+Nsrc\main\java\org\jabref\logic\importer\fetcher\JournalInformationFetcher.java#B #(I

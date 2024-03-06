@@ -1,0 +1,1541 @@
+
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java—)
+2org.jabref.gui.linkedfile.DownloadLinkedFileActionCLASSO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java. .(%"$
+packageorg.jabref.gui.linkedfile"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"´
+declarationStringï<mark class="modifier">public </mark><mark class="modifier">class </mark>DownloadLinkedFileAction<mark class="modifier"> extends </mark>SimpleCommand"
+accesspublic*DownloadLinkedFileAction2™
+…org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java? ?(#2ò
+∑org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaS S(#2ú
+<org.jabref.gui.linkedfile.DownloadLinkedFileAction.execute()DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java^ ^(2”
+sorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javav v(2∆
+dorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÜ Ü(2’
+sorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÆ Æ(2»
+forg.jabref.gui.linkedfile.DownloadLinkedFileAction.checkSSLHandshake(org.jabref.logic.net.URLDownload)DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java≈ ≈(%2ﬁ
+|org.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java€! €(42ƒ
+borg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileType(org.jabref.logic.net.URLDownload)DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaˆ' ˆ(42–
+norg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromMimeType(org.jabref.logic.net.URLDownload)DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÄ' Ä(@2ª
+Yorg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromURL(java.lang.String)DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaã' ã(;2ß
+Eorg.jabref.gui.linkedfile.DownloadLinkedFileAction.downloadProgress()DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaê" ê(22•
+Eorg.jabref.gui.linkedfile.DownloadLinkedFileAction?LOGGER@48.32:48.38DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java0  0(&2¨
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?dialogService@50.32:50.45DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java2  2(-2§
+Dorg.jabref.gui.linkedfile.DownloadLinkedFileAction?entry@51.27:51.32DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java3 3( 2©
+Iorg.jabref.gui.linkedfile.DownloadLinkedFileAction?linkedFile@52.29:52.39DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java4 4('2¨
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?suggestedName@53.25:53.38DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java5 5(&2™
+Jorg.jabref.gui.linkedfile.DownloadLinkedFileAction?downloadUrl@54.25:54.36DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java6 6($2Æ
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?filePreferences@55.34:55.49DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java7" 7(12´
+Korg.jabref.gui.linkedfile.DownloadLinkedFileAction?taskExecutor@56.31:56.43DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java8 8(+2Æ
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?databaseContext@58.37:58.52DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java:% :(42Ø
+Oorg.jabref.gui.linkedfile.DownloadLinkedFileAction?downloadProgress@60.33:60.49DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java<! <(12∞
+Porg.jabref.gui.linkedfile.DownloadLinkedFileAction?linkedFileHandler@61.36:61.53DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java=$ =(52
+$org.jabref.gui.actions.SimpleCommandEXTENDO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java.. .(;ı\
+…org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)CONSTRUCTORO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java? ?(#"·
+declarationStringÀ<mark class="modifier">public </mark><mark class="method">DownloadLinkedFileAction</mark>(BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> LinkedFile linkedFile<mark class="modifier"><mark class="modifier">,</mark></mark> String downloadUrl<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> FilePreferences filePreferences<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor<mark class="modifier"><mark class="modifier">,</mark></mark> String suggestedName)*DownloadLinkedFileAction2∂
+‹org.jabref.logic.externalfiles.LinkedFileHandler.LinkedFileHandler(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaP% P(62≥
+Ÿorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!databaseContextCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaG G(.2©
+œorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!entryCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaH H(2Æ
+‘org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!linkedFileCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaI I($2±
+◊org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!suggestedNameCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaJ J(*2Ø
+’org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!downloadUrlCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaK K(&2±
+◊org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!dialogServiceCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaL L(*2≥
+Ÿorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!filePreferencesCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaM M(.2∞
+÷org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!taskExecutorCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaN N((2Æ
+‘org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!linkedFileCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaP7 P(A2©
+œorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!entryCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaPC P(H2≥
+Ÿorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!databaseContextCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaPJ P(Y2≥
+Ÿorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!filePreferencesCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaP[ P(j2ß
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?databaseContext@58.37:58.52CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaG G(2ù
+Dorg.jabref.gui.linkedfile.DownloadLinkedFileAction?entry@51.27:51.32CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaH H(2¢
+Iorg.jabref.gui.linkedfile.DownloadLinkedFileAction?linkedFile@52.29:52.39CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaI I(2•
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?suggestedName@53.25:53.38CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaJ J(2£
+Jorg.jabref.gui.linkedfile.DownloadLinkedFileAction?downloadUrl@54.25:54.36CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaK K(2•
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?dialogService@50.32:50.45CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaL L(2ß
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?filePreferences@55.34:55.49CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaM M(2§
+Korg.jabref.gui.linkedfile.DownloadLinkedFileAction?taskExecutor@56.31:56.43CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaN N(2©
+Porg.jabref.gui.linkedfile.DownloadLinkedFileAction?linkedFileHandler@61.36:61.53CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaP P(2∏
+Ÿorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!databaseContext	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java?7 ?(F2Æ
+œorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!entry	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java@- @(22≥
+‘org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!linkedFile	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaA/ A(92¥
+’org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!downloadUrl	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaB+ B(62∂
+◊org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!dialogService	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaC2 C(?2∏
+Ÿorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!filePreferences	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaD4 D(C2µ
+÷org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!taskExecutor	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaE1 E(=2∂
+◊org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!suggestedName	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaF+ F(82í
+2org.jabref.gui.linkedfile.DownloadLinkedFileActionRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java? ?(#∏
+Ÿorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!databaseContext	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java?7 ?(F"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2Ö
+,org.jabref.model.database.BibDatabaseContextTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java?$ ?(6¯
+œorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!entry	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java@- @(2"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2x
+org.jabref.model.entry.BibEntryTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java@$ @(,ç
+‘org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!linkedFile	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaA/ A(9"
+type
+LinkedFile"
+isFinalfalse"*
+declarationStringLinkedFile linkedFile*
+linkedFile2z
+!org.jabref.model.entry.LinkedFileTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaA$ A(.˜
+’org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!downloadUrl	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaB+ B(6"
+typeString"
+isFinalfalse"'
+declarationStringString downloadUrl*downloadUrl2i
+java.lang.StringTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaB$ B(*ó
+◊org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!dialogService	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaC2 C(?"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2u
+org.jabref.gui.DialogServiceTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaC$ C(1´
+Ÿorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!filePreferences	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaD4 D(C"
+typeFilePreferences"
+isFinalfalse"4
+declarationStringFilePreferences filePreferences*filePreferences2
+&org.jabref.preferences.FilePreferencesTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaD$ D(3ñ
+÷org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!taskExecutor	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaE1 E(="
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2y
+ org.jabref.gui.util.TaskExecutorTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaE$ E(0˝
+◊org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor, java.lang.String)!suggestedName	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaF+ F(8"
+typeString"
+isFinalfalse")
+declarationStringString suggestedName*suggestedName2i
+java.lang.StringTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaF$ F(*ƒ7
+∑org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)CONSTRUCTORO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaS S(#"è
+declarationString˘<mark class="modifier">public </mark><mark class="method">DownloadLinkedFileAction</mark>(BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> LinkedFile linkedFile<mark class="modifier"><mark class="modifier">,</mark></mark> String downloadUrl<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> FilePreferences filePreferences<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor)*DownloadLinkedFileAction2°
+«org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!databaseContextCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaZ Z(2ó
+Ωorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!entryCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaZ Z(#2ú
+¬org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!linkedFileCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaZ% Z(/2ù
+√org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!downloadUrlCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaZ1 Z(<2ü
+≈org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!dialogServiceCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaZ> Z(K2°
+«org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!filePreferencesCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaZM Z(\2û
+ƒorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!taskExecutorCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaZ^ Z(j2¶
+«org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!databaseContext	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaS7 S(F2ú
+Ωorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!entry	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaT- T(22°
+¬org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!linkedFile	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaU/ U(92¢
+√org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!downloadUrl	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaV+ V(62§
+≈org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaW2 W(?2¶
+«org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!filePreferences	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaX4 X(C2£
+ƒorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaY1 Y(=2í
+2org.jabref.gui.linkedfile.DownloadLinkedFileActionRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaS S(#¶
+«org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!databaseContext	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaS7 S(F"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2Ö
+,org.jabref.model.database.BibDatabaseContextTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaS$ S(6Ê
+Ωorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!entry	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaT- T(2"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2x
+org.jabref.model.entry.BibEntryTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaT$ T(,˚
+¬org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!linkedFile	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaU/ U(9"
+type
+LinkedFile"
+isFinalfalse"*
+declarationStringLinkedFile linkedFile*
+linkedFile2z
+!org.jabref.model.entry.LinkedFileTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaU$ U(.Â
+√org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!downloadUrl	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaV+ V(6"
+typeString"
+isFinalfalse"'
+declarationStringString downloadUrl*downloadUrl2i
+java.lang.StringTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaV$ V(*Ö
+≈org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaW2 W(?"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2u
+org.jabref.gui.DialogServiceTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaW$ W(1ô
+«org.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!filePreferences	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaX4 X(C"
+typeFilePreferences"
+isFinalfalse"4
+declarationStringFilePreferences filePreferences*filePreferences2
+&org.jabref.preferences.FilePreferencesTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaX$ X(3Ñ
+ƒorg.jabref.gui.linkedfile.DownloadLinkedFileAction.DownloadLinkedFileAction(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, java.lang.String, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaY1 Y(="
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2y
+ org.jabref.gui.util.TaskExecutorTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaY$ Y(0¶-
+<org.jabref.gui.linkedfile.DownloadLinkedFileAction.execute()METHODO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java^ ^("
+isFinalfalse"±
+declarationStringõ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">execute</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*execute2s
+java.lang.String.isEmpty()CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java` `(2ô
+@org.jabref.model.entry.LinkedFile.isOnlineLink(java.lang.String)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java`1 `(=2≈
+lorg.jabref.model.database.BibDatabaseContext.getFirstExistingFileDir(org.jabref.preferences.FilePreferences)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javad9 d(P2u
+java.util.Optional.isEmpty()CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javae e(#2∞
+Worg.jabref.gui.DialogService.showErrorDialogAndWait(java.lang.String, java.lang.String)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaf f(02ß
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaf> f(B2ß
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javafb f(f2ø
+forg.jabref.gui.linkedfile.DownloadLinkedFileAction.checkSSLHandshake(org.jabref.logic.net.URLDownload)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javal l("2Ã
+sorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javap p(2q
+java.util.Optional.get()CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javap' p(*2≥
+Zorg.jabref.gui.DialogService.showErrorDialogAndWait(java.lang.String, java.lang.Throwable)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javar r(02ß
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javar> r(B2∞
+Wjava.lang.UnsupportedOperationException.UnsupportedOperationException(java.lang.String)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaa a(32ó
+>org.jabref.logic.net.URLDownload.URLDownload(java.lang.String)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javak* k(52û
+Eorg.jabref.gui.linkedfile.DownloadLinkedFileAction?LOGGER@48.32:48.38CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java_ _(2£
+Jorg.jabref.gui.linkedfile.DownloadLinkedFileAction?downloadUrl@54.25:54.36CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java_/ _(:2£
+Jorg.jabref.gui.linkedfile.DownloadLinkedFileAction?downloadUrl@54.25:54.36CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java` `(2£
+Jorg.jabref.gui.linkedfile.DownloadLinkedFileAction?downloadUrl@54.25:54.36CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java`> `(I2ß
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?databaseContext@58.37:58.52CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javad) d(82ß
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?filePreferences@55.34:55.49CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javadQ d(`2≥
+Zorg.jabref.gui.linkedfile.DownloadLinkedFileAction.execute()?targetDirectory@100.23:100.38CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javae e(2•
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?dialogService@50.32:50.45CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaf f(2£
+Jorg.jabref.gui.linkedfile.DownloadLinkedFileAction?downloadUrl@54.25:54.36CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javak6 k(A2Ø
+Vorg.jabref.gui.linkedfile.DownloadLinkedFileAction.execute()?urlDownload@107.24:107.35CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javal# l(.2≥
+Zorg.jabref.gui.linkedfile.DownloadLinkedFileAction.execute()?targetDirectory@100.23:100.38CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javap p(&2Ø
+Vorg.jabref.gui.linkedfile.DownloadLinkedFileAction.execute()?urlDownload@107.24:107.35CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javap. p(92•
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?dialogService@50.32:50.45CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javar r(2≠
+Torg.jabref.gui.linkedfile.DownloadLinkedFileAction.execute()?exception@113.39:113.48CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javarS r(\2∫
+Zorg.jabref.gui.linkedfile.DownloadLinkedFileAction.execute()?targetDirectory@100.23:100.38DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javad d(&2∂
+Vorg.jabref.gui.linkedfile.DownloadLinkedFileAction.execute()?urlDownload@107.24:107.35DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javak k(#2¥
+Torg.jabref.gui.linkedfile.DownloadLinkedFileAction.execute()?exception@113.39:113.48DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaq' q(02d
+voidRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java^ ^(£	
+Zorg.jabref.gui.linkedfile.DownloadLinkedFileAction.execute()?targetDirectory@100.23:100.38VARIABLEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javad d(&"
+typeOptional<Path>"
+isFinalfalse"Ø
+declarationStringô<mark class="modifier"> </mark>Optional<Path> <mark class="class-field">targetDirectory</mark> = databaseContext.getFirstExistingFileDir(filePreferences)*targetDirectory2k
+java.util.OptionalTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javad d(2t
+java.nio.file.PathTYPE_ARGUMENTO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javad d(2≈
+lorg.jabref.model.database.BibDatabaseContext.getFirstExistingFileDir(org.jabref.preferences.FilePreferences)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javad9 d(P2ß
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?databaseContext@58.37:58.52CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javad) d(82ß
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?filePreferences@55.34:55.49CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javadQ d(`∞
+Vorg.jabref.gui.linkedfile.DownloadLinkedFileAction.execute()?urlDownload@107.24:107.35VARIABLEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javak k(#"
+typeURLDownload"
+isFinalfalse"ã
+declarationStringv<mark class="modifier"> </mark>URLDownload <mark class="class-field">urlDownload</mark> = new URLDownload(downloadUrl)*urlDownload2y
+ org.jabref.logic.net.URLDownloadTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javak k(2ó
+>org.jabref.logic.net.URLDownload.URLDownload(java.lang.String)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javak* k(52£
+Jorg.jabref.gui.linkedfile.DownloadLinkedFileAction?downloadUrl@54.25:54.36CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javak6 k(Aú
+Torg.jabref.gui.linkedfile.DownloadLinkedFileAction.execute()?exception@113.39:113.48VARIABLEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaq' q(0"
+typeMalformedURLException"
+isFinalfalse"4
+declarationStringMalformedURLException exception*	exception2w
+java.net.MalformedURLExceptionTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaq q(&µD
+sorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)METHODO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javav v("
+isFinalfalse"
+declarationString⁄<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">doDownload</mark>(Path targetDirectory<mark class="modifier"><mark class="modifier">,</mark></mark> URLDownload urlDownload)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*
+doDownload2’
+|org.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaw, w(?2ò
+?org.jabref.gui.util.BackgroundTask.workDonePercentageProperty()CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javax+ x(E2ã
+2org.jabref.gui.util.BackgroundTask.titleProperty()CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaz z("2ß
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaz6 z(:2∑
+^java.util.Optional.ifPresentOrElse(java.util.function.Consumer<? super T>, java.lang.Runnable)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java{ {(.2â
+0org.jabref.model.entry.BibEntry.getCitationKey()CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java{ {(2ç
+4org.jabref.gui.util.BackgroundTask.messageProperty()CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java|, |(;2ß
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java|O |(S2ç
+4org.jabref.gui.util.BackgroundTask.messageProperty()CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java}# }(22ß
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java}F }(J2è
+6org.jabref.gui.util.BackgroundTask.showToUser(boolean)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java~ ~(2π
+^org.jabref.gui.util.BackgroundTask.onFailure(java.util.function.Consumer<java.lang.Exception>)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÄ Ä(2Œ
+sorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÄ% Ä(.2ß
+Lorg.jabref.gui.util.BackgroundTask.onSuccess(java.util.function.Consumer<V>)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÅ Å(2ø
+dorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÅ. Å(72™
+Oorg.jabref.gui.util.TaskExecutor.execute(org.jabref.gui.util.BackgroundTask<V>)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÉ É(2›
+Éorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)!targetDirectoryCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaw@ w(O2ÿ
+org.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)!urlDownloadCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javawQ w(\2®
+Oorg.jabref.gui.linkedfile.DownloadLinkedFileAction?downloadProgress@60.33:60.49CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javax x(2Ë
+éorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?downloadTask@119.29:119.41CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javax x(*2Ë
+éorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?downloadTask@119.29:119.41CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaz z(2ù
+Dorg.jabref.gui.linkedfile.DownloadLinkedFileAction?entry@51.27:51.32CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java{ {(2Ë
+éorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?downloadTask@119.29:119.41CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java| |(+2Á
+çorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?citationkey@124.16:124.27CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java|g |(r2Ë
+éorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?downloadTask@119.29:119.41CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java} }("2Ë
+éorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?downloadTask@119.29:119.41CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java~ ~(2Í
+éorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?downloadTask@119.29:119.41CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÄ Ä(2⁄
+org.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)!urlDownloadCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÄ/ Ä(:2‡
+Ñorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?ex@128.31:128.33CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÄ< Ä(>2Í
+éorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?downloadTask@119.29:119.41CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÅ Å(2ﬂ
+Éorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)!targetDirectoryCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÅ8 Å(G2È
+çorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?destination@129.31:129.42CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÅI Å(T2¶
+Korg.jabref.gui.linkedfile.DownloadLinkedFileAction?taskExecutor@56.31:56.43CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÉ É(2Í
+éorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?downloadTask@119.29:119.41CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÉ É()2‚
+Éorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)!targetDirectory	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javav! v(02›
+org.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)!urlDownload	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javav> v(I2Ô
+éorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?downloadTask@119.29:119.41DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaw w()2Ó
+çorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?citationkey@124.16:124.27DECLARATIONO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java| |(2Á
+Ñorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?ex@128.31:128.33DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÄ Ä(!2
+çorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?destination@129.31:129.42DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÅ Å(*2d
+voidRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javav v(ﬁ
+
+éorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?downloadTask@119.29:119.41VARIABLEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaw w()"
+typeBackgroundTask<Path>"
+isFinalfalse"´
+declarationStringï<mark class="modifier"> </mark>BackgroundTask<Path> <mark class="class-field">downloadTask</mark> = prepareDownloadTask(targetDirectory, urlDownload)*downloadTask2{
+"org.jabref.gui.util.BackgroundTaskTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaw w(2t
+java.nio.file.PathTYPE_ARGUMENTO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaw w(2’
+|org.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)CALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaw, w(?2›
+Éorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)!targetDirectoryCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaw@ w(O2ÿ
+org.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)!urlDownloadCALLO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javawQ w(\´
+Éorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)!targetDirectory	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javav! v(0"
+typePath"
+isFinalfalse")
+declarationStringPath targetDirectory*targetDirectory2k
+java.nio.file.PathTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javav v( ∫
+org.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)!urlDownload	PARAMETERO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javav> v(I"
+typeURLDownload"
+isFinalfalse",
+declarationStringURLDownload urlDownload*urlDownload2y
+ org.jabref.logic.net.URLDownloadTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javav2 v(=Ω
+çorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?citationkey@124.16:124.27VARIABLEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java| |("
+type"
+isFinalfalse"!
+declarationString citationkey*citationkey2TYPE§
+Ñorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?ex@128.31:128.33VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÄ Ä(!"
+type"
+isFinalfalse"
+declarationString ex*ex2TYPEø
+çorg.jabref.gui.linkedfile.DownloadLinkedFileAction.doDownload(java.nio.file.Path, org.jabref.logic.net.URLDownload)?destination@129.31:129.42VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÅ Å(*"
+type"
+isFinalfalse"!
+declarationString destination*destination2TYPEäj
+dorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)METHODQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÜ Ü("
+isFinalfalse"Ë
+declarationString“<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">onSuccess</mark>(Path targetDirectory<mark class="modifier"><mark class="modifier">,</mark></mark> Path destination)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*	onSuccess2ﬁ
+Çorg.jabref.logic.util.io.FileNameUniqueness.isDuplicatedFile(java.nio.file.Path, java.nio.file.Path, org.jabref.gui.DialogService)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaä- ä(=2{
+ java.nio.file.Path.getFileName()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaä[ ä(f2â
+.java.nio.file.Path.resolve(java.nio.file.Path)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaí* í(12Æ
+Sorg.jabref.logic.util.io.FileNameUniqueness.eraseDuplicateMarks(java.nio.file.Path)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaì' ì(:2{
+ java.nio.file.Path.getFileName()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaìG ì(R2ñ
+;org.jabref.model.entry.LinkedFile.setLink(java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaï ï(2x
+java.nio.file.Path.toString()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javañI ñ(Q2ø
+dorg.jabref.logic.util.io.FileUtil.relativize(java.nio.file.Path, java.util.List<java.nio.file.Path>)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaï( ï(22¬
+gorg.jabref.model.database.BibDatabaseContext.getFileDirectories(org.jabref.preferences.FilePreferences)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javañ$ ñ(62Ñ
+)java.lang.String.equals(java.lang.Object)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaò. ò(42ä
+/org.jabref.model.entry.LinkedFile.getFileType()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaò  ò(+2ù
+Borg.jabref.gui.externalfiletype.StandardExternalFileType.getName()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaòR ò(Y2˚
+üorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaõB õ(J2¬
+gorg.jabref.model.database.BibDatabaseContext.getFileDirectories(org.jabref.preferences.FilePreferences)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaù$ ù(62u
+java.lang.String.isEmpty()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaü/ ü(62ç
+2org.jabref.model.entry.LinkedFile.getDescription()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaü ü(,2u
+java.lang.String.isEmpty()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaüY ü(`2ç
+2org.jabref.model.entry.LinkedFile.getDescription()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaüH ü(V2ù
+Borg.jabref.model.entry.LinkedFile.setDescription(java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java† †(,2ç
+2org.jabref.model.entry.LinkedFile.getDescription()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java†9 †(G2õ
+@org.jabref.model.entry.LinkedFile.setSourceURL(java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java¢ ¢(&2Ü
++org.jabref.model.entry.LinkedFile.getLink()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java¢2 ¢(92≈
+jorg.jabref.model.entry.BibEntry.replaceDownloadedFile(java.lang.String, org.jabref.model.entry.LinkedFile)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java£ £('2Ü
++org.jabref.model.entry.LinkedFile.getLink()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java£3 £(:2Ñ
+)java.lang.String.equals(java.lang.Object)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java§1 §(72ä
+/org.jabref.model.entry.LinkedFile.getFileType()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java§# §(.2ù
+Borg.jabref.gui.externalfiletype.StandardExternalFileType.getName()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java§U §(\2ê
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java© ©( 2©
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java©. ©(22Ü
++org.jabref.model.entry.LinkedFile.getLink()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java™S ™(Z2Ÿ
+~org.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?isDuplicate@135.16:135.27CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaä ä(2œ
+torg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)!targetDirectoryCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaä> ä(M2À
+porg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)!destinationCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaäO ä(Z2ß
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?dialogService@50.32:50.45CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaäj ä(w2†
+Eorg.jabref.gui.linkedfile.DownloadLinkedFileAction?LOGGER@48.32:48.38CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaç ç(2œ
+torg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?e@140.28:140.29CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaçG ç(H2Ÿ
+~org.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?isDuplicate@135.16:135.27CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaë ë(2À
+porg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)!destinationCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaí í(2œ
+torg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)!targetDirectoryCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaí í()2À
+porg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)!destinationCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaì; ì(F2§
+Iorg.jabref.gui.linkedfile.DownloadLinkedFileAction?linkedFile@52.29:52.39CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaï ï(2À
+porg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)!destinationCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaï3 ï(>2©
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?databaseContext@58.37:58.52CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javañ ñ(#2©
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?filePreferences@55.34:55.49CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javañ7 ñ(F2‘
+yorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?isHtml@136.16:136.22CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaò ò(2§
+Iorg.jabref.gui.linkedfile.DownloadLinkedFileAction?linkedFile@52.29:52.39CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaò ò(2À
+porg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)!destinationCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaú ú(2©
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?databaseContext@58.37:58.52CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaù ù(#2©
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?filePreferences@55.34:55.49CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaù7 ù(F2©
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?filePreferences@55.34:55.49CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaû û(#2‹
+Äorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?newLinkedFile@155.23:155.36CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaü ü(2§
+Iorg.jabref.gui.linkedfile.DownloadLinkedFileAction?linkedFile@52.29:52.39CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaü= ü(G2‹
+Äorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?newLinkedFile@155.23:155.36CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java† †(2§
+Iorg.jabref.gui.linkedfile.DownloadLinkedFileAction?linkedFile@52.29:52.39CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java†. †(82‹
+Äorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?newLinkedFile@155.23:155.36CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java¢ ¢(2§
+Iorg.jabref.gui.linkedfile.DownloadLinkedFileAction?linkedFile@52.29:52.39CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java¢' ¢(12ü
+Dorg.jabref.gui.linkedfile.DownloadLinkedFileAction?entry@51.27:51.32CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java£ £(2§
+Iorg.jabref.gui.linkedfile.DownloadLinkedFileAction?linkedFile@52.29:52.39CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java£( £(22‹
+Äorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?newLinkedFile@155.23:155.36CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java£> £(K2‘
+yorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?isHtml@136.16:136.22CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java§ §(2‹
+Äorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?newLinkedFile@155.23:155.36CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java§ §("2‘
+yorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?isHtml@136.16:136.22CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java® ®(2ß
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?dialogService@50.32:50.45CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java© ©(2†
+Eorg.jabref.gui.linkedfile.DownloadLinkedFileAction?LOGGER@48.32:48.38CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java™ ™(2§
+Iorg.jabref.gui.linkedfile.DownloadLinkedFileAction?linkedFile@52.29:52.39CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java™H ™(R2À
+porg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)!destinationCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java™^ ™(i2‘
+torg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)!targetDirectory	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÜ  Ü(/2–
+porg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)!destination	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÜ6 Ü(A2‡
+~org.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?isDuplicate@135.16:135.27DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaá á(2€
+yorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?isHtml@136.16:136.22DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaà à(2„
+Äorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?newLinkedFile@155.23:155.36DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaõ õ($2÷
+torg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?e@140.28:140.29DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaå å(2f
+voidRETURN_TYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÜ Ü(˙
+~org.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?isDuplicate@135.16:135.27VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaá á("
+typeboolean"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">isDuplicate</mark>*isDuplicate2b
+booleanTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaá á(Î
+yorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?isHtml@136.16:136.22VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaà à("
+typeboolean"
+isFinalfalse"Å
+declarationStringl<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">isHtml</mark>*isHtml2b
+booleanTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaà à(∞
+Äorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?newLinkedFile@155.23:155.36VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaõ õ($"
+type
+LinkedFile"
+isFinalfalse"Ö
+declarationStringÔ<mark class="modifier"> </mark>LinkedFile <mark class="class-field">newLinkedFile</mark> = LinkedFilesEditorViewModel.fromFile(destination, databaseContext.getFileDirectories(filePreferences)<mark class="modifier">,</mark> filePreferences)*newLinkedFile2|
+!org.jabref.model.entry.LinkedFileTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaõ õ(2˚
+üorg.jabref.gui.fieldeditors.LinkedFilesEditorViewModel.fromFile(java.nio.file.Path, java.util.List<java.nio.file.Path>, org.jabref.preferences.FilePreferences)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaõB õ(J2¬
+gorg.jabref.model.database.BibDatabaseContext.getFileDirectories(org.jabref.preferences.FilePreferences)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaù$ ù(62À
+porg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)!destinationCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaú ú(2©
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?databaseContext@58.37:58.52CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaù ù(#2©
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?filePreferences@55.34:55.49CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaù7 ù(F2©
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?filePreferences@55.34:55.49CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaû û(#ü
+torg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)!targetDirectory	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÜ  Ü(/"
+typePath"
+isFinalfalse")
+declarationStringPath targetDirectory*targetDirectory2m
+java.nio.file.PathTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÜ Ü(ì
+porg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)!destination	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÜ6 Ü(A"
+typePath"
+isFinalfalse"%
+declarationStringPath destination*destination2m
+java.nio.file.PathTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÜ1 Ü(5ë
+torg.jabref.gui.linkedfile.DownloadLinkedFileAction.onSuccess(java.nio.file.Path, java.nio.file.Path)?e@140.28:140.29VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaå å("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2n
+java.io.IOExceptionTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaå å(ƒ]
+sorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)METHODQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÆ Æ("
+isFinalfalse"Á
+declarationString—<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">onFailure</mark>(URLDownload urlDownload<mark class="modifier"><mark class="modifier">,</mark></mark> Exception ex)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*	onFailure2{
+ java.lang.Throwable.getMessage()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∞, ∞(62©
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java±* ±(.2õ
+@org.jabref.logic.importer.FetcherClientException.getStatusCode()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java¥) ¥(62∏
+]org.jabref.gui.DialogService.showInformationDialogAndWait(java.lang.String, java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∂ ∂(:2©
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∂U ∂(Y2â
+,org.jabref.logic.net.URLDownload.getSource()CALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∂Œ ∂(◊2∏
+]org.jabref.gui.DialogService.showInformationDialogAndWait(java.lang.String, java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∏ ∏(:2©
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∏U ∏(Y2â
+,org.jabref.logic.net.URLDownload.getSource()CALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∏ï ∏(û2∏
+]org.jabref.gui.DialogService.showInformationDialogAndWait(java.lang.String, java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∫ ∫(:2©
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∫U ∫(Y2â
+,org.jabref.logic.net.URLDownload.getSource()CALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∫ç ∫(ñ2õ
+@org.jabref.logic.importer.FetcherServerException.getStatusCode()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaΩ) Ω(62∏
+]org.jabref.gui.DialogService.showInformationDialogAndWait(java.lang.String, java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaæ æ(62©
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaø! ø(%2â
+,org.jabref.logic.net.URLDownload.getSource()CALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaøÛ ø(¸2≤
+Worg.jabref.gui.DialogService.showErrorDialogAndWait(java.lang.String, java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java¡ ¡(02©
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java¡K ¡(O2â
+,org.jabref.logic.net.URLDownload.getSource()CALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java¡∫ ¡(√2†
+Eorg.jabref.gui.linkedfile.DownloadLinkedFileAction?LOGGER@48.32:48.38CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaØ Ø(2⁄
+org.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)!urlDownloadCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaØ6 Ø(A2—
+vorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)!exCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaØC Ø(E2—
+vorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)!exCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∞) ∞(+2—
+vorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)!exCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java≥ ≥(2Ë
+åorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?statusCode@178.12:178.22CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java¥ ¥(2Ë
+åorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?statusCode@178.12:178.22CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaµ µ(2ß
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?dialogService@50.32:50.45CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∂ ∂(2È
+çorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?failedTitle@177.15:177.26CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∂; ∂(F2‹
+org.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)!urlDownloadCALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∂¬ ∂(Õ2˜
+ôorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?fetcherExceptionMessage@176.15:176.38CALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∂€ ∂(Ú2Ë
+åorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?statusCode@178.12:178.22CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∑ ∑(!2ß
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?dialogService@50.32:50.45CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∏ ∏(2È
+çorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?failedTitle@177.15:177.26CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∏; ∏(F2‹
+org.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)!urlDownloadCALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∏â ∏(î2˜
+ôorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?fetcherExceptionMessage@176.15:176.38CALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∏¢ ∏(π2Ë
+åorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?statusCode@178.12:178.22CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaπ π(!2ß
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?dialogService@50.32:50.45CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∫ ∫(2È
+çorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?failedTitle@177.15:177.26CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∫; ∫(F2‹
+org.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)!urlDownloadCALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∫Å ∫(å2˜
+ôorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?fetcherExceptionMessage@176.15:176.38CALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∫ö ∫(±2—
+vorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)!exCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaº º(2Ë
+åorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?statusCode@178.12:178.22CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaΩ Ω(2ß
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?dialogService@50.32:50.45CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaæ æ(2È
+çorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?failedTitle@177.15:177.26CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaæ7 æ(B2Í
+åorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?statusCode@178.12:178.22CALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaø¬ ø(Ã2˜
+ôorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?fetcherExceptionMessage@176.15:176.38CALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaøŒ ø(Â2‹
+org.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)!urlDownloadCALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaøÁ ø(Ú2ß
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?dialogService@50.32:50.45CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java¡ ¡(2È
+çorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?failedTitle@177.15:177.26CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java¡1 ¡(<2˜
+ôorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?fetcherExceptionMessage@176.15:176.38CALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java¡ï ¡(¨2‹
+org.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)!urlDownloadCALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java¡Æ ¡(π2ﬂ
+org.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)!urlDownload	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÆ' Æ(22÷
+vorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)!ex	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÆ> Æ(@2¸
+ôorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?fetcherExceptionMessage@176.15:176.38DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∞ ∞(&2
+çorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?failedTitle@177.15:177.26DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java± ±(2Ô
+åorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?statusCode@178.12:178.22DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java≤ ≤(2f
+voidRETURN_TYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÆ Æ(˙
+ôorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?fetcherExceptionMessage@176.15:176.38VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∞ ∞(&"
+typeString"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark>String <mark class="class-field">fetcherExceptionMessage</mark> = ex.getMessage()*fetcherExceptionMessage2k
+java.lang.StringTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∞ ∞(2{
+ java.lang.Throwable.getMessage()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∞, ∞(62—
+vorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)!exCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java∞) ∞(+”
+çorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?failedTitle@177.15:177.26VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java± ±("
+typeString"
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier"> </mark>String <mark class="class-field">failedTitle</mark> = Localization.lang("Failed to download from URL")*failedTitle2k
+java.lang.StringTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java± ±(2©
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java±* ±(.˚
+åorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)?statusCode@178.12:178.22VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java≤ ≤("
+typeint"
+isFinalfalse"Å
+declarationStringl<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">statusCode</mark>*
+statusCode2^
+intTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java≤ ≤(æ
+org.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)!urlDownload	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÆ' Æ(2"
+typeURLDownload"
+isFinalfalse",
+declarationStringURLDownload urlDownload*urlDownload2{
+ org.jabref.logic.net.URLDownloadTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÆ Æ(&í
+vorg.jabref.gui.linkedfile.DownloadLinkedFileAction.onFailure(org.jabref.logic.net.URLDownload, java.lang.Exception)!ex	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÆ> Æ(@"
+type	Exception"
+isFinalfalse"!
+declarationStringException ex*ex2n
+java.lang.ExceptionTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÆ4 Æ(=É 
+forg.jabref.gui.linkedfile.DownloadLinkedFileAction.checkSSLHandshake(org.jabref.logic.net.URLDownload)METHODQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java≈ ≈(%"
+isFinalfalse"®
+declarationStringí<mark class="modifier">private </mark><mark class="modifier">boolean</mark> <mark class="method">checkSSLHandshake</mark>(URLDownload urlDownload)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeboolean*checkSSLHandshake2ä
+/org.jabref.logic.net.URLDownload.canBeReached()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java« «($2π
+^org.jabref.gui.DialogService.showConfirmationDialogAndWait(java.lang.String, java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java "  (?2©
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java M  (Q2©
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÀ% À()2r
+java.net.URL.toString()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÃ8 Ã(@2á
+,org.jabref.logic.net.URLDownload.getSource()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÃ, Ã(52ê
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaœ" œ((2©
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaœ6 œ(:2ê
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‘ ‘($2©
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‘2 ‘(62Õ
+rorg.jabref.gui.linkedfile.DownloadLinkedFileAction.checkSSLHandshake(org.jabref.logic.net.URLDownload)!urlDownloadCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java« «(2“
+worg.jabref.gui.linkedfile.DownloadLinkedFileAction.checkSSLHandshake(org.jabref.logic.net.URLDownload)?ex@200.47:200.49CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java… …(2ß
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?dialogService@50.32:50.45CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java   (!2Õ
+rorg.jabref.gui.linkedfile.DownloadLinkedFileAction.checkSSLHandshake(org.jabref.logic.net.URLDownload)!urlDownloadCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÃ  Ã(+2ß
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?dialogService@50.32:50.45CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaœ œ(!2†
+Eorg.jabref.gui.linkedfile.DownloadLinkedFileAction?LOGGER@48.32:48.38CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java” ”(2“
+worg.jabref.gui.linkedfile.DownloadLinkedFileAction.checkSSLHandshake(org.jabref.logic.net.URLDownload)?ex@200.47:200.49CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java”S ”(U2ß
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?dialogService@50.32:50.45CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‘ ‘(2“
+rorg.jabref.gui.linkedfile.DownloadLinkedFileAction.checkSSLHandshake(org.jabref.logic.net.URLDownload)!urlDownload	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java≈2 ≈(=2Ÿ
+worg.jabref.gui.linkedfile.DownloadLinkedFileAction.checkSSLHandshake(org.jabref.logic.net.URLDownload)?ex@200.47:200.49DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java»/ »(12i
+booleanRETURN_TYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java≈ ≈(±
+rorg.jabref.gui.linkedfile.DownloadLinkedFileAction.checkSSLHandshake(org.jabref.logic.net.URLDownload)!urlDownload	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java≈2 ≈(="
+typeURLDownload"
+isFinalfalse",
+declarationStringURLDownload urlDownload*urlDownload2{
+ org.jabref.logic.net.URLDownloadTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java≈& ≈(1ƒ
+worg.jabref.gui.linkedfile.DownloadLinkedFileAction.checkSSLHandshake(org.jabref.logic.net.URLDownload)?ex@200.47:200.49VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java»/ »(1"%
+typekong.unirest.UnirestException"
+isFinalfalse"5
+declarationString kong.unirest.UnirestException ex*ex2x
+kong.unirest.UnirestExceptionTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java» »(.ù_
+|org.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)METHODQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java€! €(4"
+isFinalfalse"Ò
+declarationString€<mark class="modifier">private </mark>BackgroundTask&lt;Path&gt; <mark class="method">prepareDownloadTask</mark>(Path targetDirectory<mark class="modifier"><mark class="modifier">,</mark></mark> URLDownload urlDownload)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeBackgroundTask<Path>*prepareDownloadTask2ò
+=javax.net.ssl.HttpsURLConnection.getDefaultSSLSocketFactory()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‹F ‹(`2ò
+=javax.net.ssl.HttpsURLConnection.getDefaultHostnameVerifier()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java›F ›(`2π
+^org.jabref.gui.util.BackgroundTask.onFailure(java.util.function.Consumer<java.lang.Exception>)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÓ Ó(2…
+norg.jabref.gui.util.BackgroundTask.then(java.util.function.Function<V, org.jabref.gui.util.BackgroundTask<T>>)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÌ Ì(2ñ
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaﬂ ﬂ(2u
+java.lang.String.isEmpty()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java·+ ·(22Ω
+borg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileType(org.jabref.logic.net.URLDownload)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‚C ‚(P2w
+java.util.Optional.orElse(T)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java„J „(P2≤
+Worg.jabref.logic.externalfiles.LinkedFileHandler.getSuggestedFileName(java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‰: ‰(N2ö
+?org.jabref.gui.externalfiletype.ExternalFileType.getExtension()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‰` ‰(l2
+îorg.jabref.logic.util.io.FileUtil.createDirNameFromPattern(org.jabref.model.database.BibDatabase, org.jabref.model.entry.BibEntry, java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaË2 Ë(J2ï
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaË[ Ë(f2ù
+@org.jabref.preferences.FilePreferences.getFileDirectoryPattern()CALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaËÅ Ë(ò2∆
+korg.jabref.logic.util.io.FileNameUniqueness.getNonOverWritingFileName(java.nio.file.Path, java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÈ7 È(P2á
+,java.nio.file.Path.resolve(java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÈa È(h2á
+,java.nio.file.Path.resolve(java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÎ@ Î(G2á
+,java.nio.file.Path.resolve(java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÎ+ Î(22á
+,org.jabref.logic.net.URLDownload.getSource()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÌF Ì(O2Œ
+sorg.jabref.logic.net.URLDownload.setSSLVerification(javax.net.ssl.SSLSocketFactory, javax.net.ssl.HostnameVerifier)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java  (22‰
+àorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)!urlDownloadCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‚Q ‚(\2Ù
+òorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?suggestedType@226.51:226.64CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java„< „(I2Ù
+òorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?suggestedName@224.27:224.40CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‰ ‰(%2´
+Porg.jabref.gui.linkedfile.DownloadLinkedFileAction?linkedFileHandler@61.36:61.53CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‰( ‰(92˜
+õorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?externalFileType@227.41:227.57CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‰O ‰(_2Ù
+òorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?suggestedName@224.27:224.40CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÊ Ê(%2©
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?databaseContext@58.37:58.52CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaËK Ë(Z2ü
+Dorg.jabref.gui.linkedfile.DownloadLinkedFileAction?entry@51.27:51.32CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaËj Ë(o2™
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?filePreferences@55.34:55.49CALLR
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaËq Ë(Ä2Ù
+òorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?suggestedName@224.27:224.40CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÈ È(!2Ë
+åorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)!targetDirectoryCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÈQ È(`2Ú
+ñorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?fulltextDir@232.27:232.38CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÈi È(t2ı
+òorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?suggestedName@224.27:224.40CALLR
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÈw È(Ñ2Ë
+åorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)!targetDirectoryCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÎ Î(*2Ú
+ñorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?fulltextDir@232.27:232.38CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÎ3 Î(>2Ù
+òorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?suggestedName@224.27:224.40CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÎH Î(U2‰
+àorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)!urlDownloadCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÌ: Ì(E2Ú
+ñorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?destination@237.22:237.33CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÌS Ì(^2†
+Eorg.jabref.gui.linkedfile.DownloadLinkedFileAction?LOGGER@48.32:48.38CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÓ! Ó('2È
+çorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?ex@238.27:238.29CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÓC Ó(E2˛
+¢org.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?defaultSSLSocketFactory@220.25:220.48CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java3 (J2˛
+¢org.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?defaultHostnameVerifier@221.25:221.48CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaL (c2™
+Oorg.jabref.gui.linkedfile.DownloadLinkedFileAction?downloadProgress@60.33:60.49CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÒ Ò($2™
+Oorg.jabref.gui.linkedfile.DownloadLinkedFileAction?downloadProgress@60.33:60.49CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÚ Ú($2ß
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?suggestedName@53.25:53.38CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java· ·(*2ß
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?suggestedName@53.25:53.38CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÊ- Ê(:2Ì
+åorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)!targetDirectory	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java€: €(I2È
+àorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)!urlDownload	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java€W €(b2Ö
+¢org.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?defaultSSLSocketFactory@220.25:220.48DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‹ ‹(02Ö
+¢org.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?defaultHostnameVerifier@221.25:221.48DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java› ›(02˚
+òorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?suggestedName@224.27:224.40DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‡ ‡((2˚
+òorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?suggestedType@226.51:226.64DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‚3 ‚(@2˛
+õorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?externalFileType@227.41:227.57DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java„) „(92˘
+ñorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?fulltextDir@232.27:232.38DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaË Ë(&2˘
+ñorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?destination@237.22:237.33DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÌ Ì(!2
+çorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?ex@238.27:238.29DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÓ Ó(2Ñ
+"org.jabref.gui.util.BackgroundTaskRETURN_TYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java€ €(2}
+java.nio.file.PathRETURN_TYPE_ARGUMENTQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java€ €(ê
+¢org.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?defaultSSLSocketFactory@220.25:220.48VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‹ ‹(0"
+typeSSLSocketFactory"
+isFinalfalse"∞
+declarationStringö<mark class="modifier"> </mark>SSLSocketFactory <mark class="class-field">defaultSSLSocketFactory</mark> = HttpsURLConnection.getDefaultSSLSocketFactory()*defaultSSLSocketFactory2y
+javax.net.ssl.SSLSocketFactoryTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‹ ‹(2ò
+=javax.net.ssl.HttpsURLConnection.getDefaultSSLSocketFactory()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‹F ‹(`ê
+¢org.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?defaultHostnameVerifier@221.25:221.48VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java› ›(0"
+typeHostnameVerifier"
+isFinalfalse"∞
+declarationStringö<mark class="modifier"> </mark>HostnameVerifier <mark class="class-field">defaultHostnameVerifier</mark> = HttpsURLConnection.getDefaultHostnameVerifier()*defaultHostnameVerifier2y
+javax.net.ssl.HostnameVerifierTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java› ›(2ò
+=javax.net.ssl.HttpsURLConnection.getDefaultHostnameVerifier()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java›F ›(`Å
+òorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?suggestedName@224.27:224.40VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‡ ‡(("
+typeString"
+isFinalfalse"i
+declarationStringT<mark class="modifier"> </mark>String <mark class="class-field">suggestedName</mark>*suggestedName2k
+java.lang.StringTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‡ ‡(à	
+òorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?suggestedType@226.51:226.64VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‚3 ‚(@""
+typeOptional<ExternalFileType>"
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier"> </mark>Optional<ExternalFileType> <mark class="class-field">suggestedType</mark> = inferFileType(urlDownload)*suggestedType2m
+java.util.OptionalTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‚ ‚( 2î
+0org.jabref.gui.externalfiletype.ExternalFileTypeTYPE_ARGUMENTQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‚! ‚(12Ω
+borg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileType(org.jabref.logic.net.URLDownload)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‚C ‚(P2‰
+àorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)!urlDownloadCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java‚Q ‚(\Ê
+õorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?externalFileType@227.41:227.57VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java„) „(9"
+typeExternalFileType"
+isFinalfalse"¨
+declarationStringñ<mark class="modifier"> </mark>ExternalFileType <mark class="class-field">externalFileType</mark> = suggestedType.orElse(StandardExternalFileType.PDF)*externalFileType2ã
+0org.jabref.gui.externalfiletype.ExternalFileTypeTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java„ „((2w
+java.util.Optional.orElse(T)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java„J „(P2Ù
+òorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?suggestedType@226.51:226.64CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java„< „(I∂
+ñorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?fulltextDir@232.27:232.38VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaË Ë(&"
+typeString"
+isFinalfalse"˚
+declarationStringÂ<mark class="modifier"> </mark>String <mark class="class-field">fulltextDir</mark> = FileUtil.createDirNameFromPattern(databaseContext.getDatabase()<mark class="modifier">,</mark> entry, filePreferences.getFileDirectoryPattern())*fulltextDir2k
+java.lang.StringTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaË Ë(2
+îorg.jabref.logic.util.io.FileUtil.createDirNameFromPattern(org.jabref.model.database.BibDatabase, org.jabref.model.entry.BibEntry, java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaË2 Ë(J2ï
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaË[ Ë(f2ù
+@org.jabref.preferences.FilePreferences.getFileDirectoryPattern()CALLS
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaËÅ Ë(ò2©
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?databaseContext@58.37:58.52CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaËK Ë(Z2ü
+Dorg.jabref.gui.linkedfile.DownloadLinkedFileAction?entry@51.27:51.32CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaËj Ë(o2™
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?filePreferences@55.34:55.49CALLR
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaËq Ë(Ä∏
+åorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)!targetDirectory	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java€: €(I"
+typePath"
+isFinalfalse")
+declarationStringPath targetDirectory*targetDirectory2m
+java.nio.file.PathTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java€5 €(9»
+àorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)!urlDownload	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java€W €(b"
+typeURLDownload"
+isFinalfalse",
+declarationStringURLDownload urlDownload*urlDownload2{
+ org.jabref.logic.net.URLDownloadTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java€K €(V»
+ñorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?destination@237.22:237.33VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÌ Ì(!"
+type"
+isFinalfalse"!
+declarationString destination*destination2TYPE≠
+çorg.jabref.gui.linkedfile.DownloadLinkedFileAction.prepareDownloadTask(java.nio.file.Path, org.jabref.logic.net.URLDownload)?ex@238.27:238.29VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÓ Ó("
+type"
+isFinalfalse"
+declarationString ex*ex2TYPE’
+borg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileType(org.jabref.logic.net.URLDownload)METHODQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaˆ' ˆ(4"
+isFinalfalse"ü
+declarationStringâ<mark class="modifier">private </mark>Optional&lt;ExternalFileType&gt; <mark class="method">inferFileType</mark>(URLDownload urlDownload)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse""
+typeOptional<ExternalFileType>*inferFileType2…
+norg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromMimeType(org.jabref.logic.net.URLDownload)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java˜3 ˜(L2w
+java.util.Optional.isEmpty()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java˙ ˙(!2¥
+Yorg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromURL(java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java˚ ˚(02x
+java.net.URL.toExternalForm()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java˚I ˚(W2á
+,org.jabref.logic.net.URLDownload.getSource()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java˚= ˚(F2…
+norg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileType(org.jabref.logic.net.URLDownload)!urlDownloadCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java˜M ˜(X2Ÿ
+~org.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileType(org.jabref.logic.net.URLDownload)?suggestedType@247.35:247.48CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java˙ ˙(2Ÿ
+~org.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileType(org.jabref.logic.net.URLDownload)?suggestedType@247.35:247.48CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java˚ ˚(2…
+norg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileType(org.jabref.logic.net.URLDownload)!urlDownloadCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java˚1 ˚(<2Ÿ
+~org.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileType(org.jabref.logic.net.URLDownload)?suggestedType@247.35:247.48CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java˝ ˝(2Œ
+norg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileType(org.jabref.logic.net.URLDownload)!urlDownload	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaˆA ˆ(L2‡
+~org.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileType(org.jabref.logic.net.URLDownload)?suggestedType@247.35:247.48DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java˜# ˜(02t
+java.util.OptionalRETURN_TYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaˆ ˆ(2õ
+0org.jabref.gui.externalfiletype.ExternalFileTypeRETURN_TYPE_ARGUMENTQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaˆ ˆ(%Í
+~org.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileType(org.jabref.logic.net.URLDownload)?suggestedType@247.35:247.48VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java˜# ˜(0""
+typeOptional<ExternalFileType>"
+isFinalfalse"ß
+declarationStringë<mark class="modifier"> </mark>Optional<ExternalFileType> <mark class="class-field">suggestedType</mark> = inferFileTypeFromMimeType(urlDownload)*suggestedType2m
+java.util.OptionalTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java˜ ˜(2î
+0org.jabref.gui.externalfiletype.ExternalFileTypeTYPE_ARGUMENTQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java˜ ˜(!2…
+norg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromMimeType(org.jabref.logic.net.URLDownload)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java˜3 ˜(L2…
+norg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileType(org.jabref.logic.net.URLDownload)!urlDownloadCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java˜M ˜(X≠
+norg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileType(org.jabref.logic.net.URLDownload)!urlDownload	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaˆA ˆ(L"
+typeURLDownload"
+isFinalfalse",
+declarationStringURLDownload urlDownload*urlDownload2{
+ org.jabref.logic.net.URLDownloadTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaˆ5 ˆ(@ü
+norg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromMimeType(org.jabref.logic.net.URLDownload)METHODQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÄ' Ä(@"
+isFinalfalse"´
+declarationStringï<mark class="modifier">private </mark>Optional&lt;ExternalFileType&gt; <mark class="method">inferFileTypeFromMimeType</mark>(URLDownload urlDownload)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse""
+typeOptional<ExternalFileType>*inferFileTypeFromMimeType2â
+.org.jabref.logic.net.URLDownload.getMimeType()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÅ& Å(12Â
+âorg.jabref.gui.externalfiletype.ExternalFileTypes.getExternalFileTypeByMimeType(java.lang.String, org.jabref.preferences.FilePreferences)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÖ% Ö(B2u
+java.util.Optional.empty()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaá á(!2’
+zorg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromMimeType(org.jabref.logic.net.URLDownload)!urlDownloadCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÅ Å(%2·
+Öorg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromMimeType(org.jabref.logic.net.URLDownload)?mimeType@257.15:257.23CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÉ É(2†
+Eorg.jabref.gui.linkedfile.DownloadLinkedFileAction?LOGGER@48.32:48.38CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÑ Ñ(2·
+Öorg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromMimeType(org.jabref.logic.net.URLDownload)?mimeType@257.15:257.23CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÑ3 Ñ(;2·
+Öorg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromMimeType(org.jabref.logic.net.URLDownload)?mimeType@257.15:257.23CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÖC Ö(K2©
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?filePreferences@55.34:55.49CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÖM Ö(\2⁄
+zorg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromMimeType(org.jabref.logic.net.URLDownload)!urlDownload	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÄM Ä(X2Ë
+Öorg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromMimeType(org.jabref.logic.net.URLDownload)?mimeType@257.15:257.23DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÅ Å(2t
+java.util.OptionalRETURN_TYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÄ Ä(2õ
+0org.jabref.gui.externalfiletype.ExternalFileTypeRETURN_TYPE_ARGUMENTQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÄ Ä(%Â
+Öorg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromMimeType(org.jabref.logic.net.URLDownload)?mimeType@257.15:257.23VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÅ Å("
+typeString"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier"> </mark>String <mark class="class-field">mimeType</mark> = urlDownload.getMimeType()*mimeType2k
+java.lang.StringTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÅ Å(2â
+.org.jabref.logic.net.URLDownload.getMimeType()CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÅ& Å(12’
+zorg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromMimeType(org.jabref.logic.net.URLDownload)!urlDownloadCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÅ Å(%π
+zorg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromMimeType(org.jabref.logic.net.URLDownload)!urlDownload	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÄM Ä(X"
+typeURLDownload"
+isFinalfalse",
+declarationStringURLDownload urlDownload*urlDownload2{
+ org.jabref.logic.net.URLDownloadTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaÄA Ä(Lÿ
+Yorg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromURL(java.lang.String)METHODQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaã' ã(;"
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier">private </mark>Optional&lt;ExternalFileType&gt; <mark class="method">inferFileTypeFromURL</mark>(String url)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse""
+typeOptional<ExternalFileType>*inferFileTypeFromURL2»
+mjava.util.Optional.flatMap(java.util.function.Function<? super T, ? extends java.util.Optional<? extends U>>)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaç ç(2¬
+gorg.jabref.gui.fieldeditors.URLUtil.getSuffix(java.lang.String, org.jabref.preferences.FilePreferences)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaå å( 2‡
+Ñorg.jabref.gui.externalfiletype.ExternalFileTypes.getExternalFileTypeByExt(java.lang.String, org.jabref.preferences.FilePreferences)CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaç> ç(V2∏
+]org.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromURL(java.lang.String)!urlCALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaå! å($2©
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?filePreferences@55.34:55.49CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaå& å(52Ã
+qorg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromURL(java.lang.String)?extension@269.31:269.40CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaçW ç(`2©
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?filePreferences@55.34:55.49CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaçb ç(q2Ω
+]org.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromURL(java.lang.String)!url	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaãC ã(F2”
+qorg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromURL(java.lang.String)?extension@269.31:269.40DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaç ç((2t
+java.util.OptionalRETURN_TYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaã ã(2õ
+0org.jabref.gui.externalfiletype.ExternalFileTypeRETURN_TYPE_ARGUMENTQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaã ã(%Ú
+]org.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromURL(java.lang.String)!url	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaãC ã(F"
+typeString"
+isFinalfalse"
+declarationString
+String url*url2k
+java.lang.StringTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaã< ã(Bû
+qorg.jabref.gui.linkedfile.DownloadLinkedFileAction.inferFileTypeFromURL(java.lang.String)?extension@269.31:269.40VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaç ç(("
+type"
+isFinalfalse"
+declarationString
+ extension*	extension2TYPEﬂ
+Eorg.jabref.gui.linkedfile.DownloadLinkedFileAction.downloadProgress()METHODQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaê" ê(2"
+isFinalfalse"
+declarationStringj<mark class="modifier">public </mark>ReadOnlyDoubleProperty <mark class="method">downloadProgress</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeReadOnlyDoubleProperty*downloadProgress2™
+Oorg.jabref.gui.linkedfile.DownloadLinkedFileAction?downloadProgress@60.33:60.49CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaë ë(2é
+,javafx.beans.property.ReadOnlyDoublePropertyRETURN_TYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaê ê(!ª
+Eorg.jabref.gui.linkedfile.DownloadLinkedFileAction?LOGGER@48.32:48.38VALUEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java0  0(&"
+isFinaltrue"
+typeLogger"‡
+declarationString <mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(LibraryTab.class);"
+isStatictrue"
+accessprivate*LOGGER2i
+org.slf4j.LoggerTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java0 0(ô
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?dialogService@50.32:50.45VALUEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java2  2(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2u
+org.jabref.gui.DialogServiceTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java2 2(˘
+Dorg.jabref.gui.linkedfile.DownloadLinkedFileAction?entry@51.27:51.32VALUEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java3 3( "
+isFinaltrue"
+typeBibEntry"é
+declarationStringy<mark class="modifier">private </mark><mark class="modifier">final </mark>BibEntry <mark class="class-field">entry</mark>"
+isStaticfalse"
+accessprivate*entry2x
+org.jabref.model.entry.BibEntryTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java3 3(è
+Iorg.jabref.gui.linkedfile.DownloadLinkedFileAction?linkedFile@52.29:52.39VALUEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java4 4('"
+isFinaltrue"
+type
+LinkedFile"ñ
+declarationStringÄ<mark class="modifier">private </mark><mark class="modifier">final </mark>LinkedFile <mark class="class-field">linkedFile</mark>"
+isStaticfalse"
+accessprivate*
+linkedFile2z
+!org.jabref.model.entry.LinkedFileTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java4 4(˛
+Lorg.jabref.gui.linkedfile.DownloadLinkedFileAction?suggestedName@53.25:53.38VALUEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java5 5(&"
+isFinaltrue"
+typeString"î
+declarationString<mark class="modifier">private </mark><mark class="modifier">final </mark>String <mark class="class-field">suggestedName</mark>"
+isStaticfalse"
+accessprivate*suggestedName2i
+java.lang.StringTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java5 5(¯
+Jorg.jabref.gui.linkedfile.DownloadLinkedFileAction?downloadUrl@54.25:54.36VALUEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java6 6($"
+isFinaltrue"
+typeString"í
+declarationString}<mark class="modifier">private </mark><mark class="modifier">final </mark>String <mark class="class-field">downloadUrl</mark>"
+isStaticfalse"
+accessprivate*downloadUrl2i
+java.lang.StringTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java6 6(≠
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?filePreferences@55.34:55.49VALUEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java7" 7(1"
+isFinaltrue"
+typeFilePreferences"†
+declarationStringä<mark class="modifier">private </mark><mark class="modifier">final </mark>FilePreferences <mark class="class-field">filePreferences</mark>"
+isStaticfalse"
+accessprivate*filePreferences2
+&org.jabref.preferences.FilePreferencesTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java7 7(!ò
+Korg.jabref.gui.linkedfile.DownloadLinkedFileAction?taskExecutor@56.31:56.43VALUEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java8 8(+"
+isFinaltrue"
+typeTaskExecutor"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2y
+ org.jabref.gui.util.TaskExecutorTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java8 8(∫
+Norg.jabref.gui.linkedfile.DownloadLinkedFileAction?databaseContext@58.37:58.52VALUEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java:% :(4"
+isFinaltrue"
+typeBibDatabaseContext"£
+declarationStringç<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">databaseContext</mark>"
+isStaticfalse"
+accessprivate*databaseContext2Ö
+,org.jabref.model.database.BibDatabaseContextTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java: :($ 
+Oorg.jabref.gui.linkedfile.DownloadLinkedFileAction?downloadProgress@60.33:60.49VALUEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java<! <(1"
+isFinaltrue"
+typeDoubleProperty"æ
+declarationString®<mark class="modifier">private </mark><mark class="modifier">final </mark>DoubleProperty <mark class="class-field">downloadProgress</mark> = new SimpleDoubleProperty();"
+isStaticfalse"
+accessprivate*downloadProgress2}
+$javafx.beans.property.DoublePropertyTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java< <( ¬
+Porg.jabref.gui.linkedfile.DownloadLinkedFileAction?linkedFileHandler@61.36:61.53VALUEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java=$ =(5"
+isFinaltrue"
+typeLinkedFileHandler"§
+declarationStringé<mark class="modifier">private </mark><mark class="modifier">final </mark>LinkedFileHandler <mark class="class-field">linkedFileHandler</mark>"
+isStaticfalse"
+accessprivate*linkedFileHandler2â
+0org.jabref.logic.externalfiles.LinkedFileHandlerTYPEO
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java= =(#ê
+Corg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTaskCLASSQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaî î()"=
+package2org.jabref.gui.linkedfile.DownloadLinkedFileAction"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"´
+declarationStringï<mark class="modifier">private </mark><mark class="modifier">class </mark>FileDownloadTask<mark class="modifier"> extends </mark>BackgroundTask<Path>"
+accessprivate*FileDownloadTask2r
+FileDownloadTaskDECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaò ò(2¨
+Jorg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask.call()DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaû û(2∫
+Xorg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask?source@277.26:277.32DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaï ï( 2ø
+]org.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask?destination@278.27:278.38DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javañ ñ(&2
+"org.jabref.gui.util.BackgroundTaskEXTENDQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaî2 î(@2}
+java.nio.file.PathEXTEND_TYPE_ARGUMENTQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaîA î(E
+FileDownloadTaskCONSTRUCTORQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaò ò("¡
+declarationString´<mark class="modifier">public </mark><mark class="method">FileDownloadTask</mark>(URL source<mark class="modifier"><mark class="modifier">,</mark></mark> Path destination)*FileDownloadTask2•
+Corg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTaskRETURN_TYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaò ò(é
+source	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaò$ ò(*"
+typeURL"
+isFinalfalse"
+declarationString
+URL source*source2^
+URLTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaò  ò(#†
+destination	PARAMETERQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaò1 ò(<"
+typePath"
+isFinalfalse"%
+declarationStringPath destination*destination2_
+PathTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaò, ò(0
+Jorg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask.call()METHODQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaû û("
+isFinalfalse"‡
+declarationString <mark class="annotation">@Override</mark> <br><mark class="modifier">protected </mark>Path <mark class="method">call</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>Exception"
+isStaticfalse"
+access	protected"
+
+isAbstractfalse"
+typePath*call2º
+aorg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask.call()?download@287.24:287.32CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java†3 †(;2ø
+dorg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask.call()?inputStream@288.37:288.48CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java¢ ¢(#2Ω
+borg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask.call()?bytesRead@291.24:291.33CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java£4 £(=2ø
+dorg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask.call()?inputStream@288.37:288.48CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java£K £(V2ø
+dorg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask.call()?inputStream@288.37:288.48CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java¶ ¶(&2√
+aorg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask.call()?download@287.24:287.32DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaü ü( 2∆
+dorg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask.call()?inputStream@288.37:288.48DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java†% †(02ƒ
+borg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask.call()?bytesRead@291.24:291.33DECLARATIONQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java£ £(!2f
+PathRETURN_TYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaû û(ﬂ
+aorg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask.call()?download@287.24:287.32VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaü ü( "
+typeURLDownload"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark>URLDownload <mark class="class-field">download</mark> = new URLDownload(source)*download2f
+URLDownloadTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaü ü(¿
+dorg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask.call()?inputStream@288.37:288.48VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java†% †(0"
+typeProgressInputStream"
+isFinalfalse"è
+declarationStringz<mark class="modifier"> </mark>ProgressInputStream <mark class="class-field">inputStream</mark> = download.asInputStream()*inputStream2n
+ProgressInputStreamTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java† †($2º
+aorg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask.call()?download@287.24:287.32CALLQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java†3 †(;è
+borg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask.call()?bytesRead@291.24:291.33VARIABLEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.java£ £(!"
+type"
+isFinalfalse"
+declarationString
+ bytesRead*	bytesRead2TYPEÌ
+Xorg.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask?source@277.26:277.32VALUEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaï ï( "
+isFinaltrue"
+typeURL"ä
+declarationStringu<mark class="modifier">private </mark><mark class="modifier">final </mark>URL <mark class="class-field">source</mark>"
+isStaticfalse"
+accessprivate*source2^
+URLTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javaï ï(ˇ
+]org.jabref.gui.linkedfile.DownloadLinkedFileAction.FileDownloadTask?destination@278.27:278.38VALUEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javañ ñ(&"
+isFinaltrue"
+typePath"ê
+declarationString{<mark class="modifier">private </mark><mark class="modifier">final </mark>Path <mark class="class-field">destination</mark>"
+isStaticfalse"
+accessprivate*destination2_
+PathTYPEQ
+Esrc\main\java\org\jabref\gui\linkedfile\DownloadLinkedFileAction.javañ ñ(

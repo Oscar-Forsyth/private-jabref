@@ -1,0 +1,722 @@
+
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaÕ#
+#org.jabref.model.pdf.FileAnnotationCLASS@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java ("
+packageorg.jabref.model.pdf"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"l
+declarationStringW<mark class="modifier">public </mark><mark class="modifier">class </mark>FileAnnotation"
+accesspublic*FileAnnotation2®
+÷org.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java% %(2«
+vorg.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int)DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java5 5(2Ì
+õorg.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int, org.jabref.model.pdf.FileAnnotation)DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaC C(2ö
+Iorg.jabref.model.pdf.FileAnnotation.extractModifiedTime(java.lang.String)DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaN  N(32ì
+Borg.jabref.model.pdf.FileAnnotation.parseContent(java.lang.String)DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaa a(2ü
+Norg.jabref.model.pdf.FileAnnotation.abbreviateAnnotationName(java.lang.String)DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javat t(+2
+.org.jabref.model.pdf.FileAnnotation.toString()DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java| |(2è
+<org.jabref.model.pdf.FileAnnotation.equals(java.lang.Object)DECLARATIONB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaÅ Å(2Å
+.org.jabref.model.pdf.FileAnnotation.hashCode()DECLARATIONB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaì ì(2Ç
+/org.jabref.model.pdf.FileAnnotation.getAuthor()DECLARATIONB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaó ó(2à
+5org.jabref.model.pdf.FileAnnotation.getTimeModified()DECLARATIONB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaõ õ((2Ä
+-org.jabref.model.pdf.FileAnnotation.getPage()DECLARATIONB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaü ü(2É
+0org.jabref.model.pdf.FileAnnotation.getContent()DECLARATIONB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java£ £(2ä
+7org.jabref.model.pdf.FileAnnotation.getAnnotationType()DECLARATIONB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaß ß(/2å
+9org.jabref.model.pdf.FileAnnotation.hasLinkedAnnotation()DECLARATIONB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java´ ´(&2ê
+=org.jabref.model.pdf.FileAnnotation.getLinkedFileAnnotation()DECLARATIONB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java¥ ¥(12á
+6org.jabref.model.pdf.FileAnnotation?LOGGER@14.32:14.38DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java  (&2£
+Rorg.jabref.model.pdf.FileAnnotation?ABBREVIATED_ANNOTATION_NAME_LENGTH@16.29:16.63DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java (?2ë
+@org.jabref.model.pdf.FileAnnotation?DATE_TIME_STRING@17.32:17.48DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java  (02†
+Oorg.jabref.model.pdf.FileAnnotation?DATE_TIME_STRING_WITH_TIME_ZONE@18.32:18.63DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java  (?2ó
+Forg.jabref.model.pdf.FileAnnotation?ANNOTATION_DATE_FORMAT@19.32:19.54DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java  (62á
+6org.jabref.model.pdf.FileAnnotation?author@21.25:21.31DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java (2ç
+<org.jabref.model.pdf.FileAnnotation?timeModified@22.32:22.44DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java  (,2Ö
+4org.jabref.model.pdf.FileAnnotation?page@23.22:23.26DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java (2à
+7org.jabref.model.pdf.FileAnnotation?content@24.25:24.32DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java ( 2è
+>org.jabref.model.pdf.FileAnnotation?annotationType@25.37:25.51DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java% (32ï
+Dorg.jabref.model.pdf.FileAnnotation?linkedFileAnnotation@26.43:26.63DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java+ (?«,
+÷org.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)CONSTRUCTOR@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java% %("ˆ
+declarationString‡<mark class="modifier">public </mark><mark class="method">FileAnnotation</mark>(final String author<mark class="modifier"><mark class="modifier">,</mark></mark> final LocalDateTime timeModified<mark class="modifier"><mark class="modifier">,</mark></mark> final <mark class="modifier">int</mark> pageNumber<mark class="modifier"><mark class="modifier">,</mark></mark> final String content<mark class="modifier"><mark class="modifier">,</mark></mark> final FileAnnotationType annotationType<mark class="modifier"><mark class="modifier">,</mark></mark> final Optional&lt;FileAnnotation&gt; linkedFileAnnotation)*FileAnnotation2å
+Borg.jabref.model.pdf.FileAnnotation.parseContent(java.lang.String)CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java* *(#2®
+›org.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!authorCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java' '(2Æ
+„org.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!timeModifiedCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java( (((2¨
+·org.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!pageNumberCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java) )(2©
+ﬁorg.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!contentCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java*$ *(+2∞
+Âorg.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!annotationTypeCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java+ +(,2∂
+Îorg.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!linkedFileAnnotationCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java,$ ,(82Ä
+6org.jabref.model.pdf.FileAnnotation?author@21.25:21.31CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java' '(2Ü
+<org.jabref.model.pdf.FileAnnotation?timeModified@22.32:22.44CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java( ((2~
+4org.jabref.model.pdf.FileAnnotation?page@23.22:23.26CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java) )(2Å
+7org.jabref.model.pdf.FileAnnotation?content@24.25:24.32CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java* *(2à
+>org.jabref.model.pdf.FileAnnotation?annotationType@25.37:25.51CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java+ +(2é
+Dorg.jabref.model.pdf.FileAnnotation?linkedFileAnnotation@26.43:26.63CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java, ,(!2≠
+›org.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!author	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java%' %(-2≥
+„org.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!timeModified	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java%C %(O2±
+·org.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!pageNumber	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java%[ %(e2Æ
+ﬁorg.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!content	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java&' &(.2µ
+Âorg.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!annotationType	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java&I &(W2º
+Îorg.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!linkedFileAnnotation	PARAMETERA
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java&x &(å2t
+#org.jabref.model.pdf.FileAnnotationRETURN_TYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java% %(÷
+›org.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!author	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java%' %(-"
+typeString"
+isFinaltrue""
+declarationStringString author*author2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java%  %(&˝
+„org.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!timeModified	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java%C %(O"
+typeLocalDateTime"
+isFinaltrue"/
+declarationStringLocalDateTime timeModified*timeModified2a
+java.time.LocalDateTimeTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java%5 %(BÌ
+·org.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!pageNumber	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java%[ %(e"
+typeint"
+isFinaltrue"A
+declarationString,<mark class="modifier">int</mark> pageNumber*
+pageNumber2M
+intTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java%W %(ZŸ
+ﬁorg.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!content	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java&' &(."
+typeString"
+isFinaltrue"#
+declarationStringString content*content2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java&  &(&ù
+Âorg.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!annotationType	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java&I &(W"
+typeFileAnnotationType"
+isFinaltrue"6
+declarationString!FileAnnotationType annotationType*annotationType2q
+'org.jabref.model.pdf.FileAnnotationTypeTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java&6 &(Hü
+Îorg.jabref.model.pdf.FileAnnotation.FileAnnotation(java.lang.String, java.time.LocalDateTime, int, java.lang.String, org.jabref.model.pdf.FileAnnotationType, java.util.Optional<org.jabref.model.pdf.FileAnnotation>)!linkedFileAnnotation	PARAMETERA
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java&x &(å" 
+typeOptional<FileAnnotation>"
+isFinaltrue"B
+declarationString-Optional<FileAnnotation> linkedFileAnnotation*linkedFileAnnotation2\
+java.util.OptionalTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java&_ &(g2v
+#org.jabref.model.pdf.FileAnnotationTYPE_ARGUMENT@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java&h &(vñ
+vorg.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int)CONSTRUCTOR@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java5 5("Ù
+declarationStringﬁ<mark class="modifier">public </mark><mark class="method">FileAnnotation</mark>(final PDAnnotation annotation<mark class="modifier"><mark class="modifier">,</mark></mark> final <mark class="modifier">int</mark> pageNumber)*FileAnnotation2∂
+lorg.jabref.model.pdf.FileAnnotationType.parse(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation)CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java8I 8(N2d
+java.util.Optional.empty()CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java8e 8(j2Ã
+Åorg.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int)!annotationCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java6 6(2Ã
+Åorg.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int)!annotationCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java7$ 7(.2Ã
+Åorg.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int)!pageNumberCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java8 8(2Ã
+Åorg.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int)!annotationCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java8 8(&2Ã
+Åorg.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int)!annotationCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java8O 8(Y2—
+Åorg.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int)!annotation	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java5- 5(72—
+Åorg.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int)!pageNumber	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java5C 5(M2t
+#org.jabref.model.pdf.FileAnnotationRETURN_TYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java5 5(º
+Åorg.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int)!annotation	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java5- 5(7"
+typePDAnnotation"
+isFinaltrue",
+declarationStringPDAnnotation annotation*
+annotation2á
+=org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java5  5(,ç
+Åorg.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int)!pageNumber	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java5C 5(M"
+typeint"
+isFinaltrue"A
+declarationString,<mark class="modifier">int</mark> pageNumber*
+pageNumber2M
+intTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java5? 5(Bü
+õorg.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int, org.jabref.model.pdf.FileAnnotation)CONSTRUCTOR@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaC C("’
+declarationStringø<mark class="modifier">public </mark><mark class="method">FileAnnotation</mark>(final PDAnnotation annotation<mark class="modifier"><mark class="modifier">,</mark></mark> final <mark class="modifier">int</mark> pageNumber<mark class="modifier"><mark class="modifier">,</mark></mark> FileAnnotation linkedFileAnnotation)*FileAnnotation2∂
+lorg.jabref.model.pdf.FileAnnotationType.parse(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation)CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaEI E(N2b
+java.util.Optional.of(T)CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaEe E(g2Ò
+¶org.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int, org.jabref.model.pdf.FileAnnotation)!annotationCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaD D(2Ò
+¶org.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int, org.jabref.model.pdf.FileAnnotation)!annotationCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaDQ D([2Ò
+¶org.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int, org.jabref.model.pdf.FileAnnotation)!pageNumberCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaE E(2Ò
+¶org.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int, org.jabref.model.pdf.FileAnnotation)!annotationCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaE E(&2Ò
+¶org.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int, org.jabref.model.pdf.FileAnnotation)!annotationCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaEO E(Y2˚
+∞org.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int, org.jabref.model.pdf.FileAnnotation)!linkedFileAnnotationCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaEh E(|2ˆ
+¶org.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int, org.jabref.model.pdf.FileAnnotation)!annotation	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaC- C(72ˆ
+¶org.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int, org.jabref.model.pdf.FileAnnotation)!pageNumber	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaCC C(M2Ä
+∞org.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int, org.jabref.model.pdf.FileAnnotation)!linkedFileAnnotation	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaC^ C(r2t
+#org.jabref.model.pdf.FileAnnotationRETURN_TYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaC C(·
+¶org.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int, org.jabref.model.pdf.FileAnnotation)!annotation	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaC- C(7"
+typePDAnnotation"
+isFinaltrue",
+declarationStringPDAnnotation annotation*
+annotation2á
+=org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaC  C(,≤
+¶org.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int, org.jabref.model.pdf.FileAnnotation)!pageNumber	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaCC C(M"
+typeint"
+isFinaltrue"A
+declarationString,<mark class="modifier">int</mark> pageNumber*
+pageNumber2M
+intTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaC? C(BÈ
+∞org.jabref.model.pdf.FileAnnotation.FileAnnotation(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation, int, org.jabref.model.pdf.FileAnnotation)!linkedFileAnnotation	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaC^ C(r"
+typeFileAnnotation"
+isFinalfalse"8
+declarationString#FileAnnotation linkedFileAnnotation*linkedFileAnnotation2m
+#org.jabref.model.pdf.FileAnnotationTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaCO C(]‘
+Iorg.jabref.model.pdf.FileAnnotation.extractModifiedTime(java.lang.String)METHOD@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaN  N(3"
+isFinalfalse"¥
+declarationStringû<mark class="modifier">public </mark><mark class="modifier">static </mark>LocalDateTime <mark class="method">extractModifiedTime</mark>(String dateTimeString)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeLocalDateTime*extractModifiedTime2g
+java.time.LocalDateTime.now()CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaP! P($2t
+*java.lang.String.matches(java.lang.String)CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaS S("2n
+$java.lang.String.substring(int, int)CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaT, T(52t
+*java.lang.String.matches(java.lang.String)CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaU" U()2i
+java.lang.String.substring(int)CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaV, V(52£
+Yjava.time.LocalDateTime.parse(java.lang.CharSequence, java.time.format.DateTimeFormatter)CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaZ! Z(&2à
+>java.time.format.DateTimeFormatter.ofPattern(java.lang.String)CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaZI Z(R2y
+/java.lang.String.formatted(java.lang.Object...)CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java\i \(r2g
+java.time.LocalDateTime.now()CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java]! ]($2¢
+Xorg.jabref.model.pdf.FileAnnotation.extractModifiedTime(java.lang.String)!dateTimeStringCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaO O(2¢
+Xorg.jabref.model.pdf.FileAnnotation.extractModifiedTime(java.lang.String)!dateTimeStringCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaS S(2ô
+Oorg.jabref.model.pdf.FileAnnotation?DATE_TIME_STRING_WITH_TIME_ZONE@18.32:18.63CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaS# S(B2¢
+Xorg.jabref.model.pdf.FileAnnotation.extractModifiedTime(java.lang.String)!dateTimeStringCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaT T(2¢
+Xorg.jabref.model.pdf.FileAnnotation.extractModifiedTime(java.lang.String)!dateTimeStringCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaT T(+2¢
+Xorg.jabref.model.pdf.FileAnnotation.extractModifiedTime(java.lang.String)!dateTimeStringCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaU U(!2ä
+@org.jabref.model.pdf.FileAnnotation?DATE_TIME_STRING@17.32:17.48CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaU* U(:2¢
+Xorg.jabref.model.pdf.FileAnnotation.extractModifiedTime(java.lang.String)!dateTimeStringCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaV V(2¢
+Xorg.jabref.model.pdf.FileAnnotation.extractModifiedTime(java.lang.String)!dateTimeStringCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaV V(+2¢
+Xorg.jabref.model.pdf.FileAnnotation.extractModifiedTime(java.lang.String)!dateTimeStringCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaZ' Z(52ê
+Forg.jabref.model.pdf.FileAnnotation?ANNOTATION_DATE_FORMAT@19.32:19.54CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaZS Z(i2Ä
+6org.jabref.model.pdf.FileAnnotation?LOGGER@14.32:14.38CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java\ \(2£
+Xorg.jabref.model.pdf.FileAnnotation.extractModifiedTime(java.lang.String)!dateTimeStringCALLA
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java\s \(Å2ß
+Xorg.jabref.model.pdf.FileAnnotation.extractModifiedTime(java.lang.String)!dateTimeString	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaN; N(I2®
+Worg.jabref.model.pdf.FileAnnotation.extractModifiedTime(java.lang.String)?e@91.40:91.41DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java[( [()2h
+java.time.LocalDateTimeRETURN_TYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaN N(·
+Xorg.jabref.model.pdf.FileAnnotation.extractModifiedTime(java.lang.String)!dateTimeString	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaN; N(I"
+typeString"
+isFinalfalse"*
+declarationStringString dateTimeString*dateTimeString2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaN4 N(:¸
+Worg.jabref.model.pdf.FileAnnotation.extractModifiedTime(java.lang.String)?e@91.40:91.41VARIABLE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java[( [()"
+typeDateTimeParseException"
+isFinalfalse"-
+declarationStringDateTimeParseException e*e2q
+'java.time.format.DateTimeParseExceptionTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java[ [('‡
+Borg.jabref.model.pdf.FileAnnotation.parseContent(java.lang.String)METHOD@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaa a("
+isFinalfalse"Ä
+declarationStringk<mark class="modifier">private </mark>String <mark class="method">parseContent</mark>(final String content)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*parseContent2s
+)java.lang.String.equals(java.lang.Object)CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javag g(!2a
+java.lang.String.trim()CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javag g(2a
+java.lang.String.trim()CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javak k(2î
+Jorg.jabref.model.pdf.FileAnnotation.parseContent(java.lang.String)!contentCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javab b(2î
+Jorg.jabref.model.pdf.FileAnnotation.parseContent(java.lang.String)!contentCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javag g(2¨
+borg.jabref.model.pdf.FileAnnotation.parseContent(java.lang.String)?unreadableContent@102.21:102.38CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javag" g(32î
+Jorg.jabref.model.pdf.FileAnnotation.parseContent(java.lang.String)!contentCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javak k(2ô
+Jorg.jabref.model.pdf.FileAnnotation.parseContent(java.lang.String)!content	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaa- a(42≥
+borg.jabref.model.pdf.FileAnnotation.parseContent(java.lang.String)?unreadableContent@102.21:102.38DECLARATION@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaf f(&2a
+java.lang.StringRETURN_TYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaa a(€
+borg.jabref.model.pdf.FileAnnotation.parseContent(java.lang.String)?unreadableContent@102.21:102.38VALUE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaf f(&"
+typeString"
+isFinaltrue"õ
+declarationStringÖ<mark class="modifier"> </mark><mark class="modifier">final </mark>String <mark class="class-field">unreadableContent</mark> = "√æ√ø"*unreadableContent2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaf f(ƒ
+Jorg.jabref.model.pdf.FileAnnotation.parseContent(java.lang.String)!content	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaa- a(4"
+typeString"
+isFinaltrue"#
+declarationStringString content*content2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaa& a(,π
+Norg.jabref.model.pdf.FileAnnotation.abbreviateAnnotationName(java.lang.String)METHOD@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javat t(+"
+isFinalfalse"ì
+declarationString~<mark class="modifier">private </mark>String <mark class="method">abbreviateAnnotationName</mark>(final String annotationName)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*abbreviateAnnotationName2c
+java.lang.String.length()CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javau u(!2k
+!java.lang.CharSequence.toString()CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javavU v(]2p
+&java.lang.String.subSequence(int, int)CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javav" v(-2ß
+]org.jabref.model.pdf.FileAnnotation.abbreviateAnnotationName(java.lang.String)!annotationNameCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javau u(2ú
+Rorg.jabref.model.pdf.FileAnnotation?ABBREVIATED_ANNOTATION_NAME_LENGTH@16.29:16.63CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javau& u(H2ß
+]org.jabref.model.pdf.FileAnnotation.abbreviateAnnotationName(java.lang.String)!annotationNameCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javav v(!2ú
+Rorg.jabref.model.pdf.FileAnnotation?ABBREVIATED_ANNOTATION_NAME_LENGTH@16.29:16.63CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javav1 v(S2ß
+]org.jabref.model.pdf.FileAnnotation.abbreviateAnnotationName(java.lang.String)!annotationNameCALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javax x(2¨
+]org.jabref.model.pdf.FileAnnotation.abbreviateAnnotationName(java.lang.String)!annotationName	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javat9 t(G2a
+java.lang.StringRETURN_TYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javat t(Â
+]org.jabref.model.pdf.FileAnnotation.abbreviateAnnotationName(java.lang.String)!annotationName	PARAMETER@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javat9 t(G"
+typeString"
+isFinaltrue"*
+declarationStringString annotationName*annotationName2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javat2 t(8˚
+.org.jabref.model.pdf.FileAnnotation.toString()METHOD@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java| |("
+isFinalfalse"ñ
+declarationStringÄ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>String <mark class="method">toString</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*toString2ò
+Norg.jabref.model.pdf.FileAnnotation.abbreviateAnnotationName(java.lang.String)CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java} }('2Å
+7org.jabref.model.pdf.FileAnnotation?content@24.25:24.32CALL@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java}( }(/2a
+java.lang.StringRETURN_TYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java| |(∆'
+<org.jabref.model.pdf.FileAnnotation.equals(java.lang.Object)METHODB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaÅ Å("
+isFinalfalse"ø
+declarationString©<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">equals</mark>(Object other)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*equals2g
+java.lang.Object.getClass()CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaÖ  Ö((2g
+java.lang.Object.getClass()CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaÖ4 Ö(<2à
+<java.util.Objects.equals(java.lang.Object, java.lang.Object)CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaä ä(2à
+<java.util.Objects.equals(java.lang.Object, java.lang.Object)CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaã ã(!2à
+<java.util.Objects.equals(java.lang.Object, java.lang.Object)CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaå å(!2à
+<java.util.Objects.equals(java.lang.Object, java.lang.Object)CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaç ç(!2à
+<java.util.Objects.equals(java.lang.Object, java.lang.Object)CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaé é(!2à
+<java.util.Objects.equals(java.lang.Object, java.lang.Object)CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaè è(!2é
+Borg.jabref.model.pdf.FileAnnotation.equals(java.lang.Object)!otherCALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaÇ Ç(2é
+Borg.jabref.model.pdf.FileAnnotation.equals(java.lang.Object)!otherCALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaÖ Ö(2é
+Borg.jabref.model.pdf.FileAnnotation.equals(java.lang.Object)!otherCALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaÖ. Ö(32é
+Borg.jabref.model.pdf.FileAnnotation.equals(java.lang.Object)!otherCALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaâ/ â(42õ
+Oorg.jabref.model.pdf.FileAnnotation.equals(java.lang.Object)?that@137.23:137.27CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaä3 ä(72õ
+Oorg.jabref.model.pdf.FileAnnotation.equals(java.lang.Object)?that@137.23:137.27CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaã/ ã(32õ
+Oorg.jabref.model.pdf.FileAnnotation.equals(java.lang.Object)?that@137.23:137.27CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaå0 å(42õ
+Oorg.jabref.model.pdf.FileAnnotation.equals(java.lang.Object)?that@137.23:137.27CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaç- ç(12õ
+Oorg.jabref.model.pdf.FileAnnotation.equals(java.lang.Object)?that@137.23:137.27CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaé= é(A2õ
+Oorg.jabref.model.pdf.FileAnnotation.equals(java.lang.Object)?that@137.23:137.27CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaè5 è(92ä
+>org.jabref.model.pdf.FileAnnotation?annotationType@25.37:25.51CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaä# ä(12ä
+>org.jabref.model.pdf.FileAnnotation?annotationType@25.37:25.51CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaä8 ä(F2Ç
+6org.jabref.model.pdf.FileAnnotation?author@21.25:21.31CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaã' ã(-2Ç
+6org.jabref.model.pdf.FileAnnotation?author@21.25:21.31CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaã4 ã(:2É
+7org.jabref.model.pdf.FileAnnotation?content@24.25:24.32CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaå' å(.2É
+7org.jabref.model.pdf.FileAnnotation?content@24.25:24.32CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaå5 å(<2Ä
+4org.jabref.model.pdf.FileAnnotation?page@23.22:23.26CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaç' ç(+2Ä
+4org.jabref.model.pdf.FileAnnotation?page@23.22:23.26CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaç2 ç(62ê
+Dorg.jabref.model.pdf.FileAnnotation?linkedFileAnnotation@26.43:26.63CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaé' é(;2ê
+Dorg.jabref.model.pdf.FileAnnotation?linkedFileAnnotation@26.43:26.63CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaéB é(V2à
+<org.jabref.model.pdf.FileAnnotation?timeModified@22.32:22.44CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaè' è(32à
+<org.jabref.model.pdf.FileAnnotation?timeModified@22.32:22.44CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaè: è(F2ì
+Borg.jabref.model.pdf.FileAnnotation.equals(java.lang.Object)!other	PARAMETERB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaÅ! Å(&2¢
+Oorg.jabref.model.pdf.FileAnnotation.equals(java.lang.Object)?that@137.23:137.27DECLARATIONB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaâ â(2Z
+booleanRETURN_TYPEB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaÅ Å(’
+Oorg.jabref.model.pdf.FileAnnotation.equals(java.lang.Object)?that@137.23:137.27VARIABLEB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaâ â("
+typeFileAnnotation"
+isFinalfalse"Å
+declarationStringl<mark class="modifier"> </mark>FileAnnotation <mark class="class-field">that</mark> = (FileAnnotation) other*that2o
+#org.jabref.model.pdf.FileAnnotationTYPEB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaâ â(2é
+Borg.jabref.model.pdf.FileAnnotation.equals(java.lang.Object)!otherCALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaâ/ â(4Ω
+Borg.jabref.model.pdf.FileAnnotation.equals(java.lang.Object)!other	PARAMETERB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaÅ! Å(&"
+typeObject"
+isFinalfalse"!
+declarationStringObject other*other2\
+java.lang.ObjectTYPEB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaÅ Å( ù
+.org.jabref.model.pdf.FileAnnotation.hashCode()METHODB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaì ì("
+isFinalfalse"±
+declarationStringõ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">int</mark> <mark class="method">hashCode</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeint*hashCode2w
++java.util.Objects.hash(java.lang.Object...)CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaî î(2ä
+>org.jabref.model.pdf.FileAnnotation?annotationType@25.37:25.51CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaî î(*2Ç
+6org.jabref.model.pdf.FileAnnotation?author@21.25:21.31CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaî, î(22É
+7org.jabref.model.pdf.FileAnnotation?content@24.25:24.32CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaî4 î(;2Ä
+4org.jabref.model.pdf.FileAnnotation?page@23.22:23.26CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaî= î(A2ê
+Dorg.jabref.model.pdf.FileAnnotation?linkedFileAnnotation@26.43:26.63CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaîC î(W2à
+<org.jabref.model.pdf.FileAnnotation?timeModified@22.32:22.44CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaîY î(e2V
+intRETURN_TYPEB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaì ì(∏
+/org.jabref.model.pdf.FileAnnotation.getAuthor()METHODB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaó ó("
+isFinalfalse"h
+declarationStringS<mark class="modifier">public </mark>String <mark class="method">getAuthor</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*	getAuthor2Ç
+6org.jabref.model.pdf.FileAnnotation?author@21.25:21.31CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaò ò(2c
+java.lang.StringRETURN_TYPEB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaó ó(Â
+5org.jabref.model.pdf.FileAnnotation.getTimeModified()METHODB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaõ õ(("
+isFinalfalse"u
+declarationString`<mark class="modifier">public </mark>LocalDateTime <mark class="method">getTimeModified</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeLocalDateTime*getTimeModified2à
+<org.jabref.model.pdf.FileAnnotation?timeModified@22.32:22.44CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaú ú(2j
+java.time.LocalDateTimeRETURN_TYPEB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaõ õ(º
+-org.jabref.model.pdf.FileAnnotation.getPage()METHODB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaü ü("
+isFinalfalse"Å
+declarationStringl<mark class="modifier">public </mark><mark class="modifier">int</mark> <mark class="method">getPage</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeint*getPage2Ä
+4org.jabref.model.pdf.FileAnnotation?page@23.22:23.26CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java† †(2V
+intRETURN_TYPEB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaü ü(º
+0org.jabref.model.pdf.FileAnnotation.getContent()METHODB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java£ £("
+isFinalfalse"i
+declarationStringT<mark class="modifier">public </mark>String <mark class="method">getContent</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*
+getContent2É
+7org.jabref.model.pdf.FileAnnotation?content@24.25:24.32CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java§ §(2c
+java.lang.StringRETURN_TYPEB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java£ £(á
+7org.jabref.model.pdf.FileAnnotation.getAnnotationType()METHODB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaß ß(/"
+isFinalfalse"|
+declarationStringg<mark class="modifier">public </mark>FileAnnotationType <mark class="method">getAnnotationType</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeFileAnnotationType*getAnnotationType2ä
+>org.jabref.model.pdf.FileAnnotation?annotationType@25.37:25.51CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java® ®(2z
+'org.jabref.model.pdf.FileAnnotationTypeRETURN_TYPEB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaß ß(Ë
+9org.jabref.model.pdf.FileAnnotation.hasLinkedAnnotation()METHODB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java´ ´(&"
+isFinalfalse"ë
+declarationString|<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">hasLinkedAnnotation</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*hasLinkedAnnotation2j
+java.util.Optional.isPresent()CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java¨) ¨(22ê
+Dorg.jabref.model.pdf.FileAnnotation?linkedFileAnnotation@26.43:26.63CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java¨ ¨((2Z
+booleanRETURN_TYPEB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java´ ´(˘
+=org.jabref.model.pdf.FileAnnotation.getLinkedFileAnnotation()METHODB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java¥ ¥(1"
+isFinalfalse"~
+declarationStringi<mark class="modifier">public </mark>FileAnnotation <mark class="method">getLinkedFileAnnotation</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeFileAnnotation*getLinkedFileAnnotation2d
+java.util.Optional.get()CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaµ$ µ('2ê
+Dorg.jabref.model.pdf.FileAnnotation?linkedFileAnnotation@26.43:26.63CALLB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.javaµ µ(#2v
+#org.jabref.model.pdf.FileAnnotationRETURN_TYPEB
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java¥ ¥(í
+6org.jabref.model.pdf.FileAnnotation?LOGGER@14.32:14.38VALUE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java  (&"
+isFinaltrue"
+typeLogger"‰
+declarationStringŒ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(FileAnnotation.class);"
+isStatictrue"
+accessprivate*LOGGER2Z
+org.slf4j.LoggerTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java (∆
+Rorg.jabref.model.pdf.FileAnnotation?ABBREVIATED_ANNOTATION_NAME_LENGTH@16.29:16.63VALUE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java (?"
+isFinaltrue"
+typeint"
+declarationString⁄<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark><mark class="modifier">int</mark> <mark class="class-field">ABBREVIATED_ANNOTATION_NAME_LENGTH</mark> = 45;"
+isStatictrue"
+accessprivate*"ABBREVIATED_ANNOTATION_NAME_LENGTH2M
+intTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java (ê
+@org.jabref.model.pdf.FileAnnotation?DATE_TIME_STRING@17.32:17.48VALUE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java  (0"
+isFinaltrue"
+typeString"Œ
+declarationString∏<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">DATE_TIME_STRING</mark> = "^D:\\d{14}$";"
+isStatictrue"
+accessprivate*DATE_TIME_STRING2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java (æ
+Oorg.jabref.model.pdf.FileAnnotation?DATE_TIME_STRING_WITH_TIME_ZONE@18.32:18.63VALUE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java  (?"
+isFinaltrue"
+typeString"ﬁ
+declarationString»<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">DATE_TIME_STRING_WITH_TIME_ZONE</mark> = "^D:\\d{14}.+";"
+isStatictrue"
+accessprivate*DATE_TIME_STRING_WITH_TIME_ZONE2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java (•
+Forg.jabref.model.pdf.FileAnnotation?ANNOTATION_DATE_FORMAT@19.32:19.54VALUE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java  (6"
+isFinaltrue"
+typeString"◊
+declarationString¡<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">ANNOTATION_DATE_FORMAT</mark> = "yyyyMMddHHmmss";"
+isStatictrue"
+accessprivate*ANNOTATION_DATE_FORMAT2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java (º
+6org.jabref.model.pdf.FileAnnotation?author@21.25:21.31VALUE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java ("
+isFinaltrue"
+typeString"ç
+declarationStringx<mark class="modifier">private </mark><mark class="modifier">final </mark>String <mark class="class-field">author</mark>"
+isStaticfalse"
+accessprivate*author2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java (‰
+<org.jabref.model.pdf.FileAnnotation?timeModified@22.32:22.44VALUE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java  (,"
+isFinaltrue"
+typeLocalDateTime"õ
+declarationStringÖ<mark class="modifier">private </mark><mark class="modifier">final </mark>LocalDateTime <mark class="class-field">timeModified</mark>"
+isStaticfalse"
+accessprivate*timeModified2a
+java.time.LocalDateTimeTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java (¬
+4org.jabref.model.pdf.FileAnnotation?page@23.22:23.26VALUE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java ("
+isFinaltrue"
+typeint"ß
+declarationStringë<mark class="modifier">private </mark><mark class="modifier">final </mark><mark class="modifier">int</mark> <mark class="class-field">page</mark>"
+isStaticfalse"
+accessprivate*page2M
+intTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java (ø
+7org.jabref.model.pdf.FileAnnotation?content@24.25:24.32VALUE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java ( "
+isFinaltrue"
+typeString"é
+declarationStringy<mark class="modifier">private </mark><mark class="modifier">final </mark>String <mark class="class-field">content</mark>"
+isStaticfalse"
+accessprivate*content2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java (Ñ
+>org.jabref.model.pdf.FileAnnotation?annotationType@25.37:25.51VALUE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java% (3"
+isFinaltrue"
+typeFileAnnotationType"¢
+declarationStringå<mark class="modifier">private </mark><mark class="modifier">final </mark>FileAnnotationType <mark class="class-field">annotationType</mark>"
+isStaticfalse"
+accessprivate*annotationType2q
+'org.jabref.model.pdf.FileAnnotationTypeTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java ($Ö
+Dorg.jabref.model.pdf.FileAnnotation?linkedFileAnnotation@26.43:26.63VALUE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java+ (?"
+isFinaltrue" 
+typeOptional<FileAnnotation>"Æ
+declarationStringò<mark class="modifier">private </mark><mark class="modifier">final </mark>Optional<FileAnnotation> <mark class="class-field">linkedFileAnnotation</mark>"
+isStaticfalse"
+accessprivate*linkedFileAnnotation2\
+java.util.OptionalTYPE@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java (2v
+#org.jabref.model.pdf.FileAnnotationTYPE_ARGUMENT@
+6src\main\java\org\jabref\model\pdf\FileAnnotation.java ()

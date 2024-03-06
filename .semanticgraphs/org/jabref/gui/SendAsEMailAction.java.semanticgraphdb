@@ -1,0 +1,588 @@
+
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaÜ
+ org.jabref.gui.SendAsEMailActionCLASS=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java# #('"
+packageorg.jabref.gui"
+isFinalfalse"
+inner classfalse"
+
+isAbstracttrue"°
+declarationStringã<mark class="annotation">@AllowedToUseAwt("Requires AWT to send an email")</mark> <br><mark class="modifier">public </mark><mark class="modifier">abstract </mark><mark class="modifier">class </mark>SendAsEMailAction<mark class="modifier"> extends </mark>SimpleCommand"
+accesspublic*SendAsEMailAction2â
+∫org.jabref.gui.SendAsEMailAction.SendAsEMailAction(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java+ +(2x
+*org.jabref.gui.SendAsEMailAction.execute()DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java6 6(2z
+,org.jabref.gui.SendAsEMailAction.sendEmail()DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaA A(2¨
+^org.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaS S(2Æ
+`org.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javac c('2Ä
+2org.jabref.gui.SendAsEMailAction.getEmailAddress()DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javay y(-2{
+-org.jabref.gui.SendAsEMailAction.getSubject()DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java{ {((2x
+*org.jabref.gui.SendAsEMailAction.getBody()DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java} }(%2Å
+3org.jabref.gui.SendAsEMailAction?LOGGER@37.32:37.38DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java%  %(&2à
+:org.jabref.gui.SendAsEMailAction?dialogService@38.32:38.45DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java&  &(-2ç
+?org.jabref.gui.SendAsEMailAction?preferencesService@39.37:39.55DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java'% '(72á
+9org.jabref.gui.SendAsEMailAction?stateManager@40.31:40.43DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java( ((+2á
+9org.jabref.gui.SendAsEMailAction?taskExecutor@41.31:41.43DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java) )(+2m
+$org.jabref.gui.actions.SimpleCommandEXTEND=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java#0 #(=Í
+∫org.jabref.gui.SendAsEMailAction.SendAsEMailAction(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)CONSTRUCTOR=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java+ +("ñ
+declarationStringÄ<mark class="modifier">public </mark><mark class="method">SendAsEMailAction</mark>(DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferencesService<mark class="modifier"><mark class="modifier">,</mark></mark> StateManager stateManager<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor)*SendAsEMailAction2ê
+»org.jabref.gui.SendAsEMailAction.SendAsEMailAction(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!dialogServiceCALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java/ /(*2ï
+Õorg.jabref.gui.SendAsEMailAction.SendAsEMailAction(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!preferencesServiceCALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java0" 0(42è
+«org.jabref.gui.SendAsEMailAction.SendAsEMailAction(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!stateManagerCALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java1 1((2è
+«org.jabref.gui.SendAsEMailAction.SendAsEMailAction(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!taskExecutorCALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java2 2((2Å
+:org.jabref.gui.SendAsEMailAction?dialogService@38.32:38.45CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java/ /(2Ü
+?org.jabref.gui.SendAsEMailAction?preferencesService@39.37:39.55CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java0 0(2Ä
+9org.jabref.gui.SendAsEMailAction?stateManager@40.31:40.43CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java1 1(2Ä
+9org.jabref.gui.SendAsEMailAction?taskExecutor@41.31:41.43CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java2 2(2ï
+»org.jabref.gui.SendAsEMailAction.SendAsEMailAction(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETER=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java++ +(82ö
+Õorg.jabref.gui.SendAsEMailAction.SendAsEMailAction(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!preferencesService	PARAMETER=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java,0 ,(B2î
+«org.jabref.gui.SendAsEMailAction.SendAsEMailAction(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!stateManager	PARAMETER=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java-* -(62î
+«org.jabref.gui.SendAsEMailAction.SendAsEMailAction(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETER=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java.* .(62n
+ org.jabref.gui.SendAsEMailActionRETURN_TYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java+ +(‰
+»org.jabref.gui.SendAsEMailAction.SendAsEMailAction(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETER=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java++ +(8"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2c
+org.jabref.gui.DialogServiceTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java+ +(*ä
+Õorg.jabref.gui.SendAsEMailAction.SendAsEMailAction(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!preferencesService	PARAMETER=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java,0 ,(B"
+typePreferencesService"
+isFinalfalse":
+declarationString%PreferencesService preferencesService*preferencesService2p
+)org.jabref.preferences.PreferencesServiceTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java, ,(/ﬁ
+«org.jabref.gui.SendAsEMailAction.SendAsEMailAction(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!stateManager	PARAMETER=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java-* -(6"
+typeStateManager"
+isFinalfalse".
+declarationStringStateManager stateManager*stateManager2b
+org.jabref.gui.StateManagerTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java- -()„
+«org.jabref.gui.SendAsEMailAction.SendAsEMailAction(org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETER=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java.* .(6"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2g
+ org.jabref.gui.util.TaskExecutorTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java. .()ÿ
+*org.jabref.gui.SendAsEMailAction.execute()METHOD=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java6 6("
+isFinalfalse"±
+declarationStringõ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">execute</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*execute2•
+^org.jabref.gui.util.BackgroundTask.onFailure(java.util.function.Consumer<java.lang.Exception>)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java9 9( 2ì
+Lorg.jabref.gui.util.BackgroundTask.onSuccess(java.util.function.Consumer<V>)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java8 8( 2Ç
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java7 7(2ï
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java:8 :(<2|
+5org.jabref.gui.DialogService.notify(java.lang.String)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java<( <(.2z
+3org.jabref.gui.SendAsEMailAction?LOGGER@37.32:37.38CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java; ;( 2Ö
+>org.jabref.gui.SendAsEMailAction.execute()?message@58.33:58.40CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java;& ;(-2
+8org.jabref.gui.SendAsEMailAction.execute()?e@57.33:57.34CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java;/ ;(02Å
+:org.jabref.gui.SendAsEMailAction?dialogService@38.32:38.45CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java< <('2Ö
+>org.jabref.gui.SendAsEMailAction.execute()?message@58.33:58.40CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java</ <(62Ä
+9org.jabref.gui.SendAsEMailAction?taskExecutor@41.31:41.43CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java># >(/2s
+,org.jabref.gui.SendAsEMailAction.sendEmail()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java7 7(+2å
+>org.jabref.gui.SendAsEMailAction.execute()?message@58.33:58.40DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java:! :((2Ü
+8org.jabref.gui.SendAsEMailAction.execute()?e@57.33:57.34DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java9! 9("2R
+voidRETURN_TYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java6 6(∑
+>org.jabref.gui.SendAsEMailAction.execute()?message@58.33:58.40VARIABLE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java:! :(("
+typeString"
+isFinalfalse"è
+declarationStringz<mark class="modifier"> </mark>String <mark class="class-field">message</mark> = Localization.lang("Error creating email")*message2W
+java.lang.StringTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java: :( 2ï
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java:8 :(<¡
+8org.jabref.gui.SendAsEMailAction.execute()?e@57.33:57.34VARIABLE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java9! 9(""
+type"
+isFinalfalse"
+declarationString e*e2TYPE¥
+,org.jabref.gui.SendAsEMailAction.sendEmail()METHOD=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaA A("
+isFinalfalse"∑
+declarationString°<mark class="modifier">private </mark>String <mark class="method">sendEmail</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>Exception"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*	sendEmail2l
+%java.awt.Desktop.isDesktopSupported()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaB B('2c
+java.util.Optional.isEmpty()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaBN B(U2v
+/org.jabref.gui.StateManager.getActiveDatabase()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaB: B(K2ï
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaC  C($2w
+0org.jabref.gui.StateManager.getSelectedEntries()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaF F(+2ï
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaG  G($2w
+0org.jabref.gui.StateManager.getSelectedEntries()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaJ. J(@2•
+^org.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaK K($2d
+java.awt.Desktop.getDesktop()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaM" M(,2j
+#java.awt.Desktop.mail(java.net.URI)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaN N(2v
+/java.lang.String.formatted(java.lang.Object...)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaP P(!2ï
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaP/ P(32\
+java.util.List.size()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaPZ P(^2Ä
+9org.jabref.gui.SendAsEMailAction?stateManager@40.31:40.43CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaB- B(92Ä
+9org.jabref.gui.SendAsEMailAction?stateManager@40.31:40.43CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaF F(2Ä
+9org.jabref.gui.SendAsEMailAction?stateManager@40.31:40.43CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaJ! J(-2á
+@org.jabref.gui.SendAsEMailAction.sendEmail()?entries@74.23:74.30CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaK% K(,2á
+@org.jabref.gui.SendAsEMailAction.sendEmail()?desktop@77.16:77.23CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaN N(2â
+Borg.jabref.gui.SendAsEMailAction.sendEmail()?uriMailTo@75.12:75.21CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaN N(2á
+@org.jabref.gui.SendAsEMailAction.sendEmail()?entries@74.23:74.30CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaPR P(Y2é
+@org.jabref.gui.SendAsEMailAction.sendEmail()?entries@74.23:74.30DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaJ J(2ê
+Borg.jabref.gui.SendAsEMailAction.sendEmail()?uriMailTo@75.12:75.21DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaK K(2é
+@org.jabref.gui.SendAsEMailAction.sendEmail()?desktop@77.16:77.23DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaM M(2^
+java.lang.StringRETURN_TYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaA A(î
+@org.jabref.gui.SendAsEMailAction.sendEmail()?entries@74.23:74.30VARIABLE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaJ J("
+typeList<BibEntry>"
+isFinalfalse"è
+declarationStringz<mark class="modifier"> </mark>List<BibEntry> <mark class="class-field">entries</mark> = stateManager.getSelectedEntries()*entries2U
+java.util.ListTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaJ J(2o
+org.jabref.model.entry.BibEntryTYPE_ARGUMENT=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaJ J(2w
+0org.jabref.gui.StateManager.getSelectedEntries()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaJ. J(@2Ä
+9org.jabref.gui.SendAsEMailAction?stateManager@40.31:40.43CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaJ! J(-∫
+Borg.jabref.gui.SendAsEMailAction.sendEmail()?uriMailTo@75.12:75.21VARIABLE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaK K("
+typeURI"
+isFinalfalse"z
+declarationStringe<mark class="modifier"> </mark>URI <mark class="class-field">uriMailTo</mark> = getUriMailTo(entries)*	uriMailTo2S
+java.net.URITYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaK K(2•
+^org.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaK K($2á
+@org.jabref.gui.SendAsEMailAction.sendEmail()?entries@74.23:74.30CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaK% K(,Û
+@org.jabref.gui.SendAsEMailAction.sendEmail()?desktop@77.16:77.23VARIABLE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaM M("
+typeDesktop"
+isFinalfalse"{
+declarationStringf<mark class="modifier"> </mark>Desktop <mark class="class-field">desktop</mark> = Desktop.getDesktop()*desktop2W
+java.awt.DesktopTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaM M(2d
+java.awt.Desktop.getDesktop()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaM" M(,î&
+^org.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)METHOD=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaS S("
+isFinalfalse"‹
+declarationString∆<mark class="modifier">private </mark>URI <mark class="method">getUriMailTo</mark>(List&lt;BibEntry&gt; entries)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>URISyntaxException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeURI*getUriMailTo2w
+0java.lang.StringBuilder.append(java.lang.String)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaV V(2y
+2org.jabref.gui.SendAsEMailAction.getEmailAddress()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaV V(%2w
+0java.lang.StringBuilder.append(java.lang.String)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaW  W(&2w
+0java.lang.StringBuilder.append(java.lang.String)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaW W(2q
+*org.jabref.gui.SendAsEMailAction.getBody()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaW' W(.2w
+0java.lang.StringBuilder.append(java.lang.String)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaX# X()2w
+0java.lang.StringBuilder.append(java.lang.String)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaX X(2t
+-org.jabref.gui.SendAsEMailAction.getSubject()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaX* X(42ß
+`org.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaZ# Z(12w
+0java.lang.StringBuilder.append(java.lang.String)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java\, \(22w
+0java.lang.StringBuilder.append(java.lang.String)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java\ \(2w
+0java.lang.StringBuilder.append(java.lang.String)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java] ](2i
+"java.lang.StringBuilder.toString()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java`( `(02n
+'java.lang.StringBuilder.StringBuilder()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaT# T(02ç
+Fjava.net.URI.URI(java.lang.String, java.lang.String, java.lang.String)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java` `(2∏
+qorg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)?mailTo@84.22:84.28CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaV V(2∏
+qorg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)?mailTo@84.22:84.28CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaW W(2∏
+qorg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)?mailTo@84.22:84.28CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaX X(2≠
+forg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)!entriesCALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaZ2 Z(92Ω
+vorg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)?attachments@90.21:90.32CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java[ [(&2∏
+qorg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)?mailTo@84.22:84.28CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java\ \(2∂
+oorg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)?path@91.20:91.24CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java\3 \(72∏
+qorg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)?mailTo@84.22:84.28CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java] ](2∏
+qorg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)?mailTo@84.22:84.28CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java`! `('2≤
+forg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETER=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaS, S(32ø
+qorg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)?mailTo@84.22:84.28DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaT T(2ƒ
+vorg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)?attachments@90.21:90.32DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaZ Z( 2Ω
+oorg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)?path@91.20:91.24DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java[ [(2Z
+java.net.URIRETURN_TYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaS S(æ
+qorg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)?mailTo@84.22:84.28VARIABLE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaT T("
+typeStringBuilder"
+isFinalfalse"
+declarationStringj<mark class="modifier"> </mark>StringBuilder <mark class="class-field">mailTo</mark> = new StringBuilder()*mailTo2^
+java.lang.StringBuilderTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaT T(2n
+'java.lang.StringBuilder.StringBuilder()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaT# T(0ì
+vorg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)?attachments@90.21:90.32VARIABLE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaZ Z( "
+typeList<String>"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>List<String> <mark class="class-field">attachments</mark> = getAttachments(entries)*attachments2U
+java.util.ListTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaZ Z(2`
+java.lang.StringTYPE_ARGUMENT=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaZ Z(2ß
+`org.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaZ# Z(12≠
+forg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)!entriesCALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaZ2 Z(9ù
+oorg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)?path@91.20:91.24VARIABLE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java[ [("
+typeString"
+isFinalfalse"`
+declarationStringK<mark class="modifier"> </mark>String <mark class="class-field">path</mark>*path2W
+java.lang.StringTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java[ [(⁄
+forg.jabref.gui.SendAsEMailAction.getUriMailTo(java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETER=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaS, S(3"
+typeList<BibEntry>"
+isFinalfalse"+
+declarationStringList<BibEntry> entries*entries2U
+java.util.ListTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaS S(!2o
+org.jabref.model.entry.BibEntryTYPE_ARGUMENT=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaS" S(*Ü1
+`org.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)METHOD=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javac c('"
+isFinalfalse"ó
+declarationStringÅ<mark class="modifier">private </mark>List&lt;String&gt; <mark class="method">getAttachments</mark>(List&lt;BibEntry&gt; entries)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeList<String>*getAttachments2§
+]org.jabref.preferences.ExternalApplicationsPreferences.shouldAutoOpenEmailAttachmentsFolder()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javafV f(z2ï
+Norg.jabref.preferences.PreferencesService.getExternalApplicationsPreferences()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaf1 f(S2_
+java.util.Optional.get()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javahN h(Q2v
+/org.jabref.gui.StateManager.getActiveDatabase()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javah: h(K2”
+ãorg.jabref.logic.util.io.FileUtil.getListOfLinkedFiles(java.util.List<org.jabref.model.entry.BibEntry>, java.util.List<java.nio.file.Path>)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javai' i(;2Æ
+gorg.jabref.model.database.BibDatabaseContext.getFileDirectories(org.jabref.preferences.FilePreferences)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaiU i(g2Ü
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALL>
+3src\main\java\org\jabref\gui\SendAsEMailAction.javai{ i(ç2\
+java.util.List.add(E)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javam m(2d
+java.nio.file.Path.toString()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javam2 m(:2j
+#java.nio.file.Path.toAbsolutePath()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javam! m(/2j
+#java.nio.file.Path.toAbsolutePath()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javap? p(M2ñ
+Norg.jabref.preferences.PreferencesService.getExternalApplicationsPreferences()CALL>
+3src\main\java\org\jabref\gui\SendAsEMailAction.javapd p(Ü2f
+java.util.ArrayList.ArrayList()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javak' k(22Ü
+?org.jabref.gui.SendAsEMailAction?preferencesService@39.37:39.55CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaf f(02Ä
+9org.jabref.gui.SendAsEMailAction?stateManager@40.31:40.43CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javah- h(92Ø
+horg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)!entriesCALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javai< i(C2≈
+~org.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?databaseContext@104.27:104.42CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaiE i(T2Ü
+?org.jabref.gui.SendAsEMailAction?preferencesService@39.37:39.55CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaih i(z2æ
+worg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?fileList@105.19:105.27CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javal l(!2¡
+zorg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?attachments@107.21:107.32CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javam m(2∫
+sorg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?path@108.18:108.22CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javam m( 2¡
+zorg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?openFolders@102.16:102.27CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javan n(2∫
+sorg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?path@108.18:108.22CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javap: p(>2Ü
+?org.jabref.gui.SendAsEMailAction?preferencesService@39.37:39.55CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javapQ p(c2É
+:org.jabref.gui.SendAsEMailAction?dialogService@38.32:38.45CALL?
+3src\main\java\org\jabref\gui\SendAsEMailAction.javapä p(ó2z
+3org.jabref.gui.SendAsEMailAction?LOGGER@37.32:37.38CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javar r(2∑
+porg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?e@113.37:113.38CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javar5 r(62¡
+zorg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?attachments@107.21:107.32CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javav v(2¥
+horg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETER=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javac7 c(>2»
+zorg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?openFolders@102.16:102.27DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaf f(2Ã
+~org.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?databaseContext@104.27:104.42DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javah h(*2≈
+worg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?fileList@105.19:105.27DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javai i(2»
+zorg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?attachments@107.21:107.32DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javak k( 2¡
+sorg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?path@108.18:108.22DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javal l(2æ
+porg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?e@113.37:113.38DECLARATION=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaq% q(&2\
+java.util.ListRETURN_TYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javac c(2g
+java.lang.StringRETURN_TYPE_ARGUMENT=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javac c(¯
+zorg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?openFolders@102.16:102.27VARIABLE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaf f("
+typeboolean"
+isFinalfalse"Ë
+declarationString“<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">openFolders</mark> = preferencesService.getExternalApplicationsPreferences().shouldAutoOpenEmailAttachmentsFolder()*openFolders2N
+booleanTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaf f(2§
+]org.jabref.preferences.ExternalApplicationsPreferences.shouldAutoOpenEmailAttachmentsFolder()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javafV f(z2ï
+Norg.jabref.preferences.PreferencesService.getExternalApplicationsPreferences()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaf1 f(S2Ü
+?org.jabref.gui.SendAsEMailAction?preferencesService@39.37:39.55CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaf f(0˝
+~org.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?databaseContext@104.27:104.42VARIABLE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javah h(*"
+typeBibDatabaseContext"
+isFinalfalse"°
+declarationStringã<mark class="modifier"> </mark>BibDatabaseContext <mark class="class-field">databaseContext</mark> = stateManager.getActiveDatabase().get()*databaseContext2s
+,org.jabref.model.database.BibDatabaseContextTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javah h(2_
+java.util.Optional.get()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javahN h(Q2v
+/org.jabref.gui.StateManager.getActiveDatabase()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javah: h(K2Ä
+9org.jabref.gui.SendAsEMailAction?stateManager@40.31:40.43CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javah- h(9¢
+worg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?fileList@105.19:105.27VARIABLE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javai i("
+type
+List<Path>"
+isFinalfalse"ﬂ
+declarationString…<mark class="modifier"> </mark>List<Path> <mark class="class-field">fileList</mark> = FileUtil.getListOfLinkedFiles(entries, databaseContext.getFileDirectories(preferencesService.getFilePreferences()))*fileList2U
+java.util.ListTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javai i(2b
+java.nio.file.PathTYPE_ARGUMENT=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javai i(2”
+ãorg.jabref.logic.util.io.FileUtil.getListOfLinkedFiles(java.util.List<org.jabref.model.entry.BibEntry>, java.util.List<java.nio.file.Path>)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javai' i(;2Æ
+gorg.jabref.model.database.BibDatabaseContext.getFileDirectories(org.jabref.preferences.FilePreferences)CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaiU i(g2Ü
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALL>
+3src\main\java\org\jabref\gui\SendAsEMailAction.javai{ i(ç2Ø
+horg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)!entriesCALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javai< i(C2≈
+~org.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?databaseContext@104.27:104.42CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaiE i(T2Ü
+?org.jabref.gui.SendAsEMailAction?preferencesService@39.37:39.55CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaih i(zü
+zorg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?attachments@107.21:107.32VARIABLE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javak k( "
+typeList<String>"
+isFinalfalse"Å
+declarationStringl<mark class="modifier"> </mark>List<String> <mark class="class-field">attachments</mark> = new ArrayList<>()*attachments2U
+java.util.ListTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javak k(2`
+java.lang.StringTYPE_ARGUMENT=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javak k(2f
+java.util.ArrayList.ArrayList()CALL=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javak' k(2ü
+sorg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?path@108.18:108.22VARIABLE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javal l("
+typePath"
+isFinalfalse"^
+declarationStringI<mark class="modifier"> </mark>Path <mark class="class-field">path</mark>*path2Y
+java.nio.file.PathTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javal l(‹
+horg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETER=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javac7 c(>"
+typeList<BibEntry>"
+isFinalfalse"+
+declarationStringList<BibEntry> entries*entries2U
+java.util.ListTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javac( c(,2o
+org.jabref.model.entry.BibEntryTYPE_ARGUMENT=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javac- c(5Â
+porg.jabref.gui.SendAsEMailAction.getAttachments(java.util.List<org.jabref.model.entry.BibEntry>)?e@113.37:113.38VARIABLE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaq% q(&"
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2Z
+java.io.IOExceptionTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javaq q($Ê
+2org.jabref.gui.SendAsEMailAction.getEmailAddress()METHOD=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javay y(-"
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier">protected </mark><mark class="modifier">abstract </mark>String <mark class="method">getEmailAddress</mark>()"
+isStaticfalse"
+access	protected"
+
+isAbstracttrue"
+typeString*getEmailAddress2^
+java.lang.StringRETURN_TYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.javay y(÷
+-org.jabref.gui.SendAsEMailAction.getSubject()METHOD=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java{ {(("
+isFinalfalse"ì
+declarationString~<mark class="modifier">protected </mark><mark class="modifier">abstract </mark>String <mark class="method">getSubject</mark>()"
+isStaticfalse"
+access	protected"
+
+isAbstracttrue"
+typeString*
+getSubject2^
+java.lang.StringRETURN_TYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java{ {(Õ
+*org.jabref.gui.SendAsEMailAction.getBody()METHOD=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java} }(%"
+isFinalfalse"ê
+declarationString{<mark class="modifier">protected </mark><mark class="modifier">abstract </mark>String <mark class="method">getBody</mark>()"
+isStaticfalse"
+access	protected"
+
+isAbstracttrue"
+typeString*getBody2^
+java.lang.StringRETURN_TYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java} }(å
+3org.jabref.gui.SendAsEMailAction?LOGGER@37.32:37.38VALUE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java%  %(&"
+isFinaltrue"
+typeLogger"Á
+declarationString—<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(SendAsEMailAction.class);"
+isStatictrue"
+accessprivate*LOGGER2W
+org.slf4j.LoggerTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java% %(„
+:org.jabref.gui.SendAsEMailAction?dialogService@38.32:38.45VALUE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java&  &(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2c
+org.jabref.gui.DialogServiceTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java& &(â
+?org.jabref.gui.SendAsEMailAction?preferencesService@39.37:39.55VALUE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java'% '(7"
+isFinaltrue"
+typePreferencesService"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferencesService</mark>"
+isStaticfalse"
+accessprivate*preferencesService2p
+)org.jabref.preferences.PreferencesServiceTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java' '($›
+9org.jabref.gui.SendAsEMailAction?stateManager@40.31:40.43VALUE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java( ((+"
+isFinaltrue"
+typeStateManager"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>StateManager <mark class="class-field">stateManager</mark>"
+isStaticfalse"
+accessprivate*stateManager2b
+org.jabref.gui.StateManagerTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java( ((‚
+9org.jabref.gui.SendAsEMailAction?taskExecutor@41.31:41.43VALUE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java) )(+"
+isFinaltrue"
+typeTaskExecutor"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2g
+ org.jabref.gui.util.TaskExecutorTYPE=
+3src\main\java\org\jabref\gui\SendAsEMailAction.java) )(

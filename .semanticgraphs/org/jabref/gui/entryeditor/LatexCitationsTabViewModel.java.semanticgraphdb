@@ -1,0 +1,838 @@
+
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java–+
+5org.jabref.gui.entryeditor.LatexCitationsTabViewModelCLASSR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java# #('"%
+packageorg.jabref.gui.entryeditor"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"±
+declarationStringõ<mark class="modifier">public </mark><mark class="modifier">class </mark>LatexCitationsTabViewModel<mark class="modifier"> extends </mark>AbstractViewModel"
+accesspublic*LatexCitationsTabViewModel2Õ
+Èorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java: :(%2æ
+[org.jabref.gui.entryeditor.LatexCitationsTabViewModel.init(org.jabref.model.entry.BibEntry)DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaI I(2¨
+Iorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.directoryProperty()DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaW  W(12™
+Gorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.getCitationList()DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java[$ [(32©
+Forg.jabref.gui.entryeditor.LatexCitationsTabViewModel.statusProperty()DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java_" _(02Æ
+Korg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchErrorProperty()DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javac c(-2∂
+Sorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.startSearch(java.lang.String)DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javag g(2ß
+Dorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.cancelSearch()DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javau u(2π
+Vorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java~! ~(/2æ
+Yorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchDirectory(java.nio.file.Path)DECLARATIONT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaï ï(&2Æ
+Iorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.setLatexDirectory()DECLARATIONT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java¢ ¢(!2≤
+Morg.jabref.gui.entryeditor.LatexCitationsTabViewModel.refreshLatexDirectory()DECLARATIONT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java¨ ¨(%2ß
+Borg.jabref.gui.entryeditor.LatexCitationsTabViewModel.shouldShow()DECLARATIONT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java± ±(2´
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel?LOGGER@44.32:44.38DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java,  ,(&2¨
+Iorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?TEX_EXT@45.32:45.39DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java-  -('2¥
+Qorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?databaseContext@46.37:46.52DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java.% .(42∑
+Torg.jabref.gui.entryeditor.LatexCitationsTabViewModel?preferencesService@47.37:47.55DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java/% /(72±
+Norg.jabref.gui.entryeditor.LatexCitationsTabViewModel?taskExecutor@48.31:48.43DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java0 0(+2≤
+Oorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?dialogService@49.32:49.45DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java1  1(-2Æ
+Korg.jabref.gui.entryeditor.LatexCitationsTabViewModel?directory@50.39:50.48DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java2' 2(02±
+Norg.jabref.gui.entryeditor.LatexCitationsTabViewModel?citationList@51.43:51.55DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java3+ 3(72´
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel?status@52.41:52.47DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java4) 4(/2∞
+Morg.jabref.gui.entryeditor.LatexCitationsTabViewModel?searchError@53.33:53.44DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java5! 5(,2Ø
+Lorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?searchTask@54.22:54.32DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java6 6( 2∂
+Sorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?latexParserResult@55.30:55.47DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java7 7(/2±
+Norg.jabref.gui.entryeditor.LatexCitationsTabViewModel?currentEntry@56.21:56.33DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java8 8(!2ü
+<org.jabref.gui.entryeditor.LatexCitationsTabViewModel.StatusDECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java%	 %(2~
+ org.jabref.gui.AbstractViewModelEXTENDR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java#0 #(AÖ>
+Èorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)CONSTRUCTORR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java: :(%"®
+declarationStringí<mark class="modifier">public </mark><mark class="method">LatexCitationsTabViewModel</mark>(BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferencesService<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService)*LatexCitationsTabViewModel2x
+java.util.Optional.orElse(T)CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaCD C(J2¶
+Jorg.jabref.model.metadata.MetaData.getLatexFileDirectory(java.lang.String)CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaBR B(g2ñ
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaBD B(O2ï
+7org.jabref.preferences.FilePreferences.getUserAndHost()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaBê B(û2õ
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLS
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaB{ B(ç2”
+worg.jabref.logic.util.io.FileUtil.getInitialDirectory(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaCT C(g2ö
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaC° C(¥2ú
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaCå C(û2÷
+˘org.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!databaseContextCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java> >(.2Ÿ
+¸org.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!preferencesServiceCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java?" ?(42”
+ˆorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!taskExecutorCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java@ @((2‘
+˜org.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!dialogServiceCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaA A(*2÷
+˘org.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!databaseContextCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaB4 B(C2Ÿ
+¸org.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!preferencesServiceCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaBh B(z2÷
+˘org.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!databaseContextCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaCh C(w2⁄
+¸org.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!preferencesServiceCALLS
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaCy C(ã2≠
+Qorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?databaseContext@46.37:46.52CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java> >(2∞
+Torg.jabref.gui.entryeditor.LatexCitationsTabViewModel?preferencesService@47.37:47.55CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java? ?(2™
+Norg.jabref.gui.entryeditor.LatexCitationsTabViewModel?taskExecutor@48.31:48.43CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java@ @(2´
+Oorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?dialogService@49.32:49.45CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaA A(2ß
+Korg.jabref.gui.entryeditor.LatexCitationsTabViewModel?directory@50.39:50.48CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaB B(2™
+Norg.jabref.gui.entryeditor.LatexCitationsTabViewModel?citationList@51.43:51.55CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaD D(2§
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel?status@52.41:52.47CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaE E(2§
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel.Status?IN_PROGRESSCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaE8 E(C2©
+Morg.jabref.gui.entryeditor.LatexCitationsTabViewModel?searchError@53.33:53.44CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaF F(2€
+˘org.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!databaseContext	PARAMETERR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java:9 :(H2ﬁ
+¸org.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!preferencesService	PARAMETERR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java;9 ;(K2ÿ
+ˆorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!taskExecutor	PARAMETERR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java<3 <(?2Ÿ
+˜org.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!dialogService	PARAMETERR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java=4 =(A2ò
+5org.jabref.gui.entryeditor.LatexCitationsTabViewModelRETURN_TYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java: :(%ﬁ
+˘org.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!databaseContext	PARAMETERR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java:9 :(H"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2à
+,org.jabref.model.database.BibDatabaseContextTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java:& :(8‰
+¸org.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!preferencesService	PARAMETERR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java;9 ;(K"
+typePreferencesService"
+isFinalfalse":
+declarationString%PreferencesService preferencesService*preferencesService2Ö
+)org.jabref.preferences.PreferencesServiceTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java;& ;(8º
+ˆorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!taskExecutor	PARAMETERR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java<3 <(?"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2|
+ org.jabref.gui.util.TaskExecutorTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java<& <(2Ω
+˜org.jabref.gui.entryeditor.LatexCitationsTabViewModel.LatexCitationsTabViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!dialogService	PARAMETERR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java=4 =(A"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2x
+org.jabref.gui.DialogServiceTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java=& =(3Ï
+[org.jabref.gui.entryeditor.LatexCitationsTabViewModel.init(org.jabref.model.entry.BibEntry)METHODR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaI I("
+isFinalfalse"ç
+declarationStringx<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">init</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*init2†
+Dorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.cancelSearch()CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaJ J(2å
+0org.jabref.model.entry.BibEntry.getCitationKey()CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaM) M(72z
+java.util.Optional.isPresent()CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaO O(2Ø
+Sorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.startSearch(java.lang.String)CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaP P(2t
+java.util.Optional.get()CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaP  P(#2™
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaR) R(-2™
+Norg.jabref.gui.entryeditor.LatexCitationsTabViewModel?currentEntry@56.21:56.33CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaL L(2Ω
+aorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.init(org.jabref.model.entry.BibEntry)!entryCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaL L(2Ω
+aorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.init(org.jabref.model.entry.BibEntry)!entryCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaM# M((2À
+oorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.init(org.jabref.model.entry.BibEntry)?citeKey@77.25:77.32CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaO O(2À
+oorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.init(org.jabref.model.entry.BibEntry)?citeKey@77.25:77.32CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaP P(2©
+Morg.jabref.gui.entryeditor.LatexCitationsTabViewModel?searchError@53.33:53.44CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaR R(2§
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel?status@52.41:52.47CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaS S(2û
+Borg.jabref.gui.entryeditor.LatexCitationsTabViewModel.Status?ERRORCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaS S(#2¬
+aorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.init(org.jabref.model.entry.BibEntry)!entry	PARAMETERR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaI I(#2“
+oorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.init(org.jabref.model.entry.BibEntry)?citeKey@77.25:77.32DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaM M( 2g
+voidRETURN_TYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaI I(√
+oorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.init(org.jabref.model.entry.BibEntry)?citeKey@77.25:77.32VARIABLER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaM M( "
+typeOptional<String>"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>Optional<String> <mark class="class-field">citeKey</mark> = entry.getCitationKey()*citeKey2n
+java.util.OptionalTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaM M(2u
+java.lang.StringTYPE_ARGUMENTR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaM M(2å
+0org.jabref.model.entry.BibEntry.getCitationKey()CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaM) M(72Ω
+aorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.init(org.jabref.model.entry.BibEntry)!entryCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaM# M((è
+aorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.init(org.jabref.model.entry.BibEntry)!entry	PARAMETERR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaI I(#"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2{
+org.jabref.model.entry.BibEntryTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaI I(ﬂ
+Iorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.directoryProperty()METHODR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaW  W(1"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier">public </mark>ObjectProperty&lt;Path&gt; <mark class="method">directoryProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeObjectProperty<Path>*directoryProperty2ß
+Korg.jabref.gui.entryeditor.LatexCitationsTabViewModel?directory@50.39:50.48CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaX X(2á
+$javafx.beans.property.ObjectPropertyRETURN_TYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaW W(2~
+java.nio.file.PathRETURN_TYPE_ARGUMENTR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaW W(Û
+Gorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.getCitationList()METHODR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java[$ [(3"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier">public </mark>ObservableList&lt;Citation&gt; <mark class="method">getCitationList</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse" 
+typeObservableList<Citation>*getCitationList2™
+Norg.jabref.gui.entryeditor.LatexCitationsTabViewModel?citationList@51.43:51.55CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java\) \(52Ñ
+!javafx.collections.ObservableListRETURN_TYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java[ [(2è
+#org.jabref.model.texparser.CitationRETURN_TYPE_ARGUMENTR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java[ [("Ç
+Forg.jabref.gui.entryeditor.LatexCitationsTabViewModel.statusProperty()METHODR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java_" _(0"
+isFinalfalse"É
+declarationStringn<mark class="modifier">public </mark>ObjectProperty&lt;Status&gt; <mark class="method">statusProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeObjectProperty<Status>*statusProperty2§
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel?status@52.41:52.47CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java` `(2á
+$javafx.beans.property.ObjectPropertyRETURN_TYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java_ _(2®
+<org.jabref.gui.entryeditor.LatexCitationsTabViewModel.StatusRETURN_TYPE_ARGUMENTR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java_ _( ‘
+Korg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchErrorProperty()METHODR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javac c(-"
+isFinalfalse"z
+declarationStringe<mark class="modifier">public </mark>StringProperty <mark class="method">searchErrorProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeStringProperty*searchErrorProperty2©
+Morg.jabref.gui.entryeditor.LatexCitationsTabViewModel?searchError@53.33:53.44CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javad d(2á
+$javafx.beans.property.StringPropertyRETURN_TYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javac c(¸$
+Sorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.startSearch(java.lang.String)METHODR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javag g("
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">startSearch</mark>(String citeKey)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*startSearch2∫
+^org.jabref.gui.util.BackgroundTask.onFailure(java.util.function.Consumer<java.lang.Exception>)CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javan$ n(-2®
+Lorg.jabref.gui.util.BackgroundTask.onSuccess(java.util.function.Consumer<V>)CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaj$ j(-2ú
+@org.jabref.gui.util.BackgroundTask.onRunning(java.lang.Runnable)CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javai$ i(-2ó
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javah$ h((2≤
+Vorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javah/ h(=2|
+ java.lang.Throwable.getMessage()CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javao= o(G2®
+Lorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?searchTask@54.22:54.32CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javah h(2∑
+[org.jabref.gui.entryeditor.LatexCitationsTabViewModel.startSearch(java.lang.String)!citeKeyCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javah> h(E2§
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel?status@52.41:52.47CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javai4 i(:2™
+Norg.jabref.gui.entryeditor.LatexCitationsTabViewModel?citationList@51.43:51.55CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javak' k(32ƒ
+horg.jabref.gui.entryeditor.LatexCitationsTabViewModel.startSearch(java.lang.String)?result@106.46:106.52CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javak; k(A2§
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel?status@52.41:52.47CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javal' l(-2™
+Norg.jabref.gui.entryeditor.LatexCitationsTabViewModel?citationList@51.43:51.55CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javal2 l(>2©
+Morg.jabref.gui.entryeditor.LatexCitationsTabViewModel?searchError@53.33:53.44CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javao' o(22√
+gorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.startSearch(java.lang.String)?error@110.46:110.51CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javao7 o(<2§
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel?status@52.41:52.47CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javap' p(-2™
+Norg.jabref.gui.entryeditor.LatexCitationsTabViewModel?taskExecutor@48.31:48.43CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javar0 r(<2§
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel.Status?IN_PROGRESSCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaiF i(Q2£
+Gorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.Status?NO_RESULTSCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javalR l(\2®
+Lorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.Status?CITATIONS_FOUNDCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javalf l(u2û
+Borg.jabref.gui.entryeditor.LatexCitationsTabViewModel.Status?ERRORCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javap9 p(>2º
+[org.jabref.gui.entryeditor.LatexCitationsTabViewModel.startSearch(java.lang.String)!citeKey	PARAMETERR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javag$ g(+2À
+horg.jabref.gui.entryeditor.LatexCitationsTabViewModel.startSearch(java.lang.String)?result@106.46:106.52DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaj. j(42 
+gorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.startSearch(java.lang.String)?error@110.46:110.51DECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javan. n(32g
+voidRETURN_TYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javag g(˙
+[org.jabref.gui.entryeditor.LatexCitationsTabViewModel.startSearch(java.lang.String)!citeKey	PARAMETERR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javag$ g(+"
+typeString"
+isFinalfalse"#
+declarationStringString citeKey*citeKey2l
+java.lang.StringTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javag g(#ê
+horg.jabref.gui.entryeditor.LatexCitationsTabViewModel.startSearch(java.lang.String)?result@106.46:106.52VARIABLER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaj. j(4"
+type"
+isFinalfalse"
+declarationString result*result2TYPEç
+gorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.startSearch(java.lang.String)?error@110.46:110.51VARIABLER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javan. n(3"
+type"
+isFinalfalse"
+declarationString error*error2TYPEé
+Dorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.cancelSearch()METHODR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javau u("
+isFinalfalse"à
+declarationStrings<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">cancelSearch</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*cancelSearch2Ö
+)java.util.concurrent.Future.isCancelled()CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javav- v(82Ä
+$java.util.concurrent.Future.isDone()CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javavI v(O2á
++java.util.concurrent.Future.cancel(boolean)CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java{ {(2®
+Lorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?searchTask@54.22:54.32CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javav v(2®
+Lorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?searchTask@54.22:54.32CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javav" v(,2®
+Lorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?searchTask@54.22:54.32CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javav> v(H2§
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel?status@52.41:52.47CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaz z(2®
+Lorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?searchTask@54.22:54.32CALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java{ {(2§
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel.Status?IN_PROGRESSCALLR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaz z(%2g
+voidRETURN_TYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javau u(÷9
+Vorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)METHODR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java~! ~(/"
+isFinalfalse"‡
+declarationString <mark class="modifier">private </mark>Collection&lt;Citation&gt; <mark class="method">searchAndParse</mark>(String citeKey)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeCollection<Citation>*searchAndParse2z
+java.util.Optional.orElse(T)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÅ, Å(22®
+Jorg.jabref.model.metadata.MetaData.getLatexFileDirectory(java.lang.String)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÄ: Ä(O2ò
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÄ, Ä(72ñ
+7org.jabref.preferences.FilePreferences.getUserAndHost()CALLU
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÄx Ä(Ü2ú
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÄc Ä(u2’
+worg.jabref.logic.util.io.FileUtil.getInitialDirectory(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÅ< Å(O2ú
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLV
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÅâ Å(ú2ù
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLU
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÅt Å(Ü2s
+java.io.File.exists()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÜ' Ü(-2y
+java.nio.file.Path.toFile()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÜ Ü($2ç
+/java.lang.String.formatted(java.lang.Object...)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaáT á(]2∑
+Yorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchDirectory(java.nio.file.Path)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaä" ä(12µ
+Worg.jabref.logic.texparser.DefaultLatexParser.parse(java.util.List<java.nio.file.Path>)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaå9 å(>2Æ
+Porg.jabref.model.texparser.LatexParserResult.getCitationsByKey(java.lang.String)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaè! è(22è
+1java.io.IOException.IOException(java.lang.String)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaá á(%2†
+Borg.jabref.logic.texparser.DefaultLatexParser.DefaultLatexParser()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaå$ å(62Ø
+Qorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?databaseContext@46.37:46.52CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÄ Ä(+2≤
+Torg.jabref.gui.entryeditor.LatexCitationsTabViewModel?preferencesService@47.37:47.55CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÄP Ä(b2Ø
+Qorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?databaseContext@46.37:46.52CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÅP Å(_2≤
+Torg.jabref.gui.entryeditor.LatexCitationsTabViewModel?preferencesService@47.37:47.55CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÅa Å(s2±
+Sorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?latexParserResult@55.30:55.47CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÉ É(2œ
+qorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)?newDirectory@128.13:128.25CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÉ* É(62©
+Korg.jabref.gui.entryeditor.LatexCitationsTabViewModel?directory@50.39:50.48CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÉ> É(G2©
+Korg.jabref.gui.entryeditor.LatexCitationsTabViewModel?directory@50.39:50.48CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÑ Ñ(2œ
+qorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)?newDirectory@128.13:128.25CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÑ Ñ(&2œ
+qorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)?newDirectory@128.13:128.25CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÜ Ü(2œ
+qorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)?newDirectory@128.13:128.25CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaá^ á(j2œ
+qorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)?newDirectory@128.13:128.25CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaä2 ä(>2¶
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel?LOGGER@44.32:44.38CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaã ã(2À
+morg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)?texFiles@138.23:138.31CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaã0 ã(82±
+Sorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?latexParserResult@55.30:55.47CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaå å(2À
+morg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)?texFiles@138.23:138.31CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaå? å(G2±
+Sorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?latexParserResult@55.30:55.47CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaè è( 2º
+^org.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)!citeKeyCALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaè3 è(:2ø
+^org.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)!citeKey	PARAMETERR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java~7 ~(>2÷
+qorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)?newDirectory@128.13:128.25DECLARATIONT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÄ Ä(2“
+morg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)?texFiles@138.23:138.31DECLARATIONT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaä ä(2w
+java.util.CollectionRETURN_TYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java~ ~(2è
+#org.jabref.model.texparser.CitationRETURN_TYPE_ARGUMENTR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java~ ~(°
+qorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)?newDirectory@128.13:128.25VARIABLET
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÄ Ä("
+typePath"
+isFinalfalse"Ã
+declarationString∂<mark class="modifier"> </mark>Path <mark class="class-field">newDirectory</mark> = databaseContext.getMetaData().getLatexFileDirectory(preferencesService.getFilePreferences().getUserAndHost()).orElse(FileUtil.getInitialDirectory(databaseContext, preferencesService.getFilePreferences().getWorkingDirectory()))*newDirectory2p
+java.nio.file.PathTYPET
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÄ Ä(2z
+java.util.Optional.orElse(T)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÅ, Å(22®
+Jorg.jabref.model.metadata.MetaData.getLatexFileDirectory(java.lang.String)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÄ: Ä(O2ò
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÄ, Ä(72ñ
+7org.jabref.preferences.FilePreferences.getUserAndHost()CALLU
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÄx Ä(Ü2ú
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÄc Ä(u2’
+worg.jabref.logic.util.io.FileUtil.getInitialDirectory(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÅ< Å(O2ú
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLV
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÅâ Å(ú2ù
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLU
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÅt Å(Ü2Ø
+Qorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?databaseContext@46.37:46.52CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÄ Ä(+2≤
+Torg.jabref.gui.entryeditor.LatexCitationsTabViewModel?preferencesService@47.37:47.55CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÄP Ä(b2Ø
+Qorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?databaseContext@46.37:46.52CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÅP Å(_2≤
+Torg.jabref.gui.entryeditor.LatexCitationsTabViewModel?preferencesService@47.37:47.55CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÅa Å(sˇ
+morg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)?texFiles@138.23:138.31VARIABLET
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaä ä("
+type
+List<Path>"
+isFinalfalse"à
+declarationStrings<mark class="modifier"> </mark>List<Path> <mark class="class-field">texFiles</mark> = searchDirectory(newDirectory)*texFiles2l
+java.util.ListTYPET
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaä ä(2y
+java.nio.file.PathTYPE_ARGUMENTT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaä ä(2∑
+Yorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchDirectory(java.nio.file.Path)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaä" ä(12œ
+qorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)?newDirectory@128.13:128.25CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaä2 ä(>˝
+^org.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchAndParse(java.lang.String)!citeKey	PARAMETERR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java~7 ~(>"
+typeString"
+isFinalfalse"#
+declarationStringString citeKey*citeKey2l
+java.lang.StringTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java~0 ~(6‰
+Yorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchDirectory(java.nio.file.Path)METHODT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaï ï(&"
+isFinalfalse"á
+declarationStringr<mark class="modifier">private </mark>List&lt;Path&gt; <mark class="method">searchDirectory</mark>(Path directory)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+type
+List<Path>*searchDirectory2~
+ java.util.stream.Stream.toList()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaõ õ(2•
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaö ö(2•
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaô ô(2¨
+Njava.nio.file.Files.walk(java.nio.file.Path, java.nio.file.FileVisitOption...)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaò ò(2â
++java.lang.String.endsWith(java.lang.String)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaö8 ö(@2{
+java.nio.file.Path.toString()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaö- ö(52q
+java.util.List.of()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaû û(2¶
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel?LOGGER@44.32:44.38CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javañ ñ(2¡
+corg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchDirectory(java.nio.file.Path)!directoryCALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javañ/ ñ(82¡
+corg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchDirectory(java.nio.file.Path)!directoryCALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaò ò('2 
+lorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchDirectory(java.nio.file.Path)?path@154.32:154.36CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaö( ö(,2ß
+Iorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?TEX_EXT@45.32:45.39CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaöA ö(H2¶
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel?LOGGER@44.32:44.38CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaù ù(2«
+iorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchDirectory(java.nio.file.Path)?e@156.29:156.30CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaù8 ù(92∞
+Rjava.nio.file.Files.isRegularFile(java.nio.file.Path, java.nio.file.LinkOption...)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaô  ô(42∆
+corg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchDirectory(java.nio.file.Path)!directory	PARAMETERT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaï, ï(52—
+lorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchDirectory(java.nio.file.Path)?path@154.32:154.36DECLARATIONT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaö  ö($2Œ
+iorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchDirectory(java.nio.file.Path)?e@156.29:156.30DECLARATIONT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaú ú(2s
+java.util.ListRETURN_TYPET
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaï ï(2Ä
+java.nio.file.PathRETURN_TYPE_ARGUMENTT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaï ï(à
+corg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchDirectory(java.nio.file.Path)!directory	PARAMETERT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaï, ï(5"
+typePath"
+isFinalfalse"#
+declarationStringPath directory*	directory2p
+java.nio.file.PathTYPET
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaï' ï(+í
+lorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchDirectory(java.nio.file.Path)?path@154.32:154.36VARIABLET
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaö  ö($"
+type"
+isFinalfalse"
+declarationString path*path2TYPEå
+iorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.searchDirectory(java.nio.file.Path)?e@156.29:156.30VARIABLET
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaú ú("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2q
+java.io.IOExceptionTYPET
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaú ú(∏
+Iorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.setLatexDirectory()METHODT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java¢ ¢(!"
+isFinalfalse"å
+declarationStringw<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">setLatexDirectory</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*setLatexDirectory2¢
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java¶Q ¶(Z2…
+korg.jabref.gui.DialogService.showDirectorySelectionDialog(org.jabref.gui.util.DirectoryDialogConfiguration)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java¶ ¶(22º
+^org.jabref.model.metadata.MetaData.setLatexFileDirectory(java.lang.String, java.nio.file.Path)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaß. ß(C2ò
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaß  ß(+2ï
+7org.jabref.preferences.FilePreferences.getUserAndHost()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaßl ß(z2ú
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaßW ß(i2É
+#java.nio.file.Path.toAbsolutePath()CALLV
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaßê ß(û2π
+[org.jabref.gui.entryeditor.LatexCitationsTabViewModel.init(org.jabref.model.entry.BibEntry)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java© ©(2†
+Borg.jabref.gui.util.DirectoryDialogConfiguration.Builder.Builder()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java£H £(l2©
+Korg.jabref.gui.entryeditor.LatexCitationsTabViewModel?directory@50.39:50.48CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java§& §(/2≠
+Oorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?dialogService@49.32:49.45CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java¶ ¶(2“
+torg.jabref.gui.entryeditor.LatexCitationsTabViewModel.setLatexDirectory()?directoryDialogConfiguration@163.37:163.65CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java¶3 ¶(O2Ø
+Qorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?databaseContext@46.37:46.52CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaß ß(2≤
+Torg.jabref.gui.entryeditor.LatexCitationsTabViewModel?preferencesService@47.37:47.55CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaßD ß(V2…
+jorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.setLatexDirectory()?selectedDirectory@166.91:166.108CALLU
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaß~ ß(è2¨
+Norg.jabref.gui.entryeditor.LatexCitationsTabViewModel?currentEntry@56.21:56.33CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java© ©(2Ÿ
+torg.jabref.gui.entryeditor.LatexCitationsTabViewModel.setLatexDirectory()?directoryDialogConfiguration@163.37:163.65DECLARATIONT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java£% £(A2œ
+jorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.setLatexDirectory()?selectedDirectory@166.91:166.108DECLARATIONT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java¶[ ¶(l2i
+voidRETURN_TYPET
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java¢ ¢(˘
+torg.jabref.gui.entryeditor.LatexCitationsTabViewModel.setLatexDirectory()?directoryDialogConfiguration@163.37:163.65VARIABLET
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java£% £(A"$
+typeDirectoryDialogConfiguration"
+isFinalfalse"Í
+declarationString‘<mark class="modifier"> </mark>DirectoryDialogConfiguration <mark class="class-field">directoryDialogConfiguration</mark> = new DirectoryDialogConfiguration.Builder().withInitialDirectory(directory.get()).build()*directoryDialogConfiguration2é
+0org.jabref.gui.util.DirectoryDialogConfigurationTYPET
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java£ £($2†
+Borg.jabref.gui.util.DirectoryDialogConfiguration.Builder.Builder()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java£H £(l2©
+Korg.jabref.gui.entryeditor.LatexCitationsTabViewModel?directory@50.39:50.48CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java§& §(/™
+jorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.setLatexDirectory()?selectedDirectory@166.91:166.108VARIABLET
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java¶[ ¶(l"
+type"
+isFinalfalse"'
+declarationString selectedDirectory*selectedDirectory2TYPEª
+Morg.jabref.gui.entryeditor.LatexCitationsTabViewModel.refreshLatexDirectory()METHODT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java¨ ¨(%"
+isFinalfalse"ê
+declarationString{<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">refreshLatexDirectory</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*refreshLatexDirectory2π
+[org.jabref.gui.entryeditor.LatexCitationsTabViewModel.init(org.jabref.model.entry.BibEntry)CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÆ Æ(2±
+Sorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?latexParserResult@55.30:55.47CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java≠ ≠(2¨
+Norg.jabref.gui.entryeditor.LatexCitationsTabViewModel?currentEntry@56.21:56.33CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.javaÆ Æ(2i
+voidRETURN_TYPET
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java¨ ¨(è
+Borg.jabref.gui.entryeditor.LatexCitationsTabViewModel.shouldShow()METHODT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java± ±("
+isFinalfalse"à
+declarationStrings<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">shouldShow</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*
+shouldShow2≠
+Oorg.jabref.gui.entryeditor.EntryEditorPreferences.shouldShowLatexCitationsTab()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java≤> ≤(Y2£
+Eorg.jabref.preferences.PreferencesService.getEntryEditorPreferences()CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java≤" ≤(;2≤
+Torg.jabref.gui.entryeditor.LatexCitationsTabViewModel?preferencesService@47.37:47.55CALLT
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java≤ ≤(!2l
+booleanRETURN_TYPET
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java± ±(‘
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel?LOGGER@44.32:44.38VALUER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java,  ,(&"
+isFinaltrue"
+typeLogger"
+declarationString⁄<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(LatexCitationsTabViewModel.class);"
+isStatictrue"
+accessprivate*LOGGER2l
+org.slf4j.LoggerTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java, ,(§
+Iorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?TEX_EXT@45.32:45.39VALUER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java-  -('"
+isFinaltrue"
+typeString"æ
+declarationString®<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">TEX_EXT</mark> = ".tex";"
+isStatictrue"
+accessprivate*TEX_EXT2l
+java.lang.StringTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java- -(√
+Qorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?databaseContext@46.37:46.52VALUER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java.% .(4"
+isFinaltrue"
+typeBibDatabaseContext"£
+declarationStringç<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">databaseContext</mark>"
+isStaticfalse"
+accessprivate*databaseContext2à
+,org.jabref.model.database.BibDatabaseContextTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java. .($…
+Torg.jabref.gui.entryeditor.LatexCitationsTabViewModel?preferencesService@47.37:47.55VALUER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java/% /(7"
+isFinaltrue"
+typePreferencesService"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferencesService</mark>"
+isStaticfalse"
+accessprivate*preferencesService2Ö
+)org.jabref.preferences.PreferencesServiceTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java/ /($°
+Norg.jabref.gui.entryeditor.LatexCitationsTabViewModel?taskExecutor@48.31:48.43VALUER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java0 0(+"
+isFinaltrue"
+typeTaskExecutor"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2|
+ org.jabref.gui.util.TaskExecutorTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java0 0(¢
+Oorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?dialogService@49.32:49.45VALUER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java1  1(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2x
+org.jabref.gui.DialogServiceTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java1 1(¶
+Korg.jabref.gui.entryeditor.LatexCitationsTabViewModel?directory@50.39:50.48VALUER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java2' 2(0"
+isFinaltrue"
+typeObjectProperty<Path>"ü
+declarationStringâ<mark class="modifier">private </mark><mark class="modifier">final </mark>ObjectProperty<Path> <mark class="class-field">directory</mark>"
+isStaticfalse"
+accessprivate*	directory2Ä
+$javafx.beans.property.ObjectPropertyTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java2 2( 2w
+java.nio.file.PathTYPE_ARGUMENTR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java2! 2(%≈
+Norg.jabref.gui.entryeditor.LatexCitationsTabViewModel?citationList@51.43:51.55VALUER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java3+ 3(7"
+isFinaltrue" 
+typeObservableList<Citation>"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>ObservableList<Citation> <mark class="class-field">citationList</mark>"
+isStaticfalse"
+accessprivate*citationList2}
+!javafx.collections.ObservableListTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java3 3( 2à
+#org.jabref.model.texparser.CitationTYPE_ARGUMENTR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java3! 3()Ã
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel?status@52.41:52.47VALUER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java4) 4(/"
+isFinaltrue"
+typeObjectProperty<Status>"û
+declarationStringà<mark class="modifier">private </mark><mark class="modifier">final </mark>ObjectProperty<Status> <mark class="class-field">status</mark>"
+isStaticfalse"
+accessprivate*status2Ä
+$javafx.beans.property.ObjectPropertyTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java4 4( 2°
+<org.jabref.gui.entryeditor.LatexCitationsTabViewModel.StatusTYPE_ARGUMENTR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java4! 4('ß
+Morg.jabref.gui.entryeditor.LatexCitationsTabViewModel?searchError@53.33:53.44VALUER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java5! 5(,"
+isFinaltrue"
+typeStringProperty"õ
+declarationStringÖ<mark class="modifier">private </mark><mark class="modifier">final </mark>StringProperty <mark class="class-field">searchError</mark>"
+isStaticfalse"
+accessprivate*searchError2Ä
+$javafx.beans.property.StringPropertyTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java5 5( Ó
+Lorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?searchTask@54.22:54.32VARIABLER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java6 6( "
+isFinalfalse"
+type	Future<?>"p
+declarationString[<mark class="modifier">private </mark>Future<?> <mark class="class-field">searchTask</mark>"
+isStaticfalse"
+accessprivate*
+searchTask2w
+java.util.concurrent.FutureTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java6 6(•
+Sorg.jabref.gui.entryeditor.LatexCitationsTabViewModel?latexParserResult@55.30:55.47VARIABLER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java7 7(/"
+isFinalfalse"
+typeLatexParserResult"
+declarationStringj<mark class="modifier">private </mark>LatexParserResult <mark class="class-field">latexParserResult</mark>"
+isStaticfalse"
+accessprivate*latexParserResult2à
+,org.jabref.model.texparser.LatexParserResultTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java7 7(ˆ
+Norg.jabref.gui.entryeditor.LatexCitationsTabViewModel?currentEntry@56.21:56.33VARIABLER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java8 8(!"
+isFinalfalse"
+typeBibEntry"q
+declarationString\<mark class="modifier">private </mark>BibEntry <mark class="class-field">currentEntry</mark>"
+isStaticfalse"
+accessprivate*currentEntry2{
+org.jabref.model.entry.BibEntryTYPER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java8 8(ï
+<org.jabref.gui.entryeditor.LatexCitationsTabViewModel.StatusENUMR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java%	 %(">
+declarationString)<mark class="modifier">enum </mark>Status*Status2´
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel.Status?IN_PROGRESSDECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java& &(2Ø
+Lorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.Status?CITATIONS_FOUNDDECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java' '(2™
+Gorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.Status?NO_RESULTSDECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java( ((2•
+Borg.jabref.gui.entryeditor.LatexCitationsTabViewModel.Status?ERRORDECLARATIONR
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java) )(¿
+Horg.jabref.gui.entryeditor.LatexCitationsTabViewModel.Status?IN_PROGRESSVALUER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java& &("
+enumtrue*IN_PROGRESS»
+Lorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.Status?CITATIONS_FOUNDVALUER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java' '("
+enumtrue*CITATIONS_FOUNDæ
+Gorg.jabref.gui.entryeditor.LatexCitationsTabViewModel.Status?NO_RESULTSVALUER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java( (("
+enumtrue*
+NO_RESULTS¥
+Borg.jabref.gui.entryeditor.LatexCitationsTabViewModel.Status?ERRORVALUER
+Hsrc\main\java\org\jabref\gui\entryeditor\LatexCitationsTabViewModel.java) )("
+enumtrue*ERROR

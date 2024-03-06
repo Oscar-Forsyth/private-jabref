@@ -1,0 +1,1164 @@
+
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÏ
+,org.jabref.logic.openoffice.action.EditMergeCLASSI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java ("-
+package"org.jabref.logic.openoffice.action"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"g
+declarationStringR<mark class="modifier">public </mark><mark class="modifier">class </mark>EditMerge"
+accesspublic*	EditMerge2í
+8org.jabref.logic.openoffice.action.EditMerge.EditMerge()DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java# #(2õ
+¿org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java) )(-2†
+√org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaö ö(*2¢
+≈org.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¯ ¯()2‡
+Éorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaû+ û(/2ô
+?org.jabref.logic.openoffice.action.EditMerge?LOGGER@33.32:33.38DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java!  !(&ä
+8org.jabref.logic.openoffice.action.EditMerge.EditMerge()CONSTRUCTORI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java# #("b
+declarationStringM<mark class="modifier">private </mark><mark class="method">EditMerge</mark>()*	EditMerge2Ü
+,org.jabref.logic.openoffice.action.EditMergeRETURN_TYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java# #(äá
+¿org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)METHODI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java) )(-"
+isFinalfalse"∞
+declarationStringö<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">boolean</mark> <mark class="method">mergeCitationGroups</mark>(XTextDocument doc<mark class="modifier"><mark class="modifier">,</mark></mark> OOFrontend frontend<mark class="modifier"><mark class="modifier">,</mark></mark> OOBibStyle style)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>CreationException<mark class="modifier"><mark class="modifier">,</mark></mark> IllegalArgumentException<mark class="modifier"><mark class="modifier">,</mark></mark> IllegalTypeException<mark class="modifier"><mark class="modifier">,</mark></mark> NoDocumentException<mark class="modifier"><mark class="modifier">,</mark></mark> NotRemoveableException<mark class="modifier"><mark class="modifier">,</mark></mark> PropertyVetoException<mark class="modifier"><mark class="modifier">,</mark></mark> WrappedTargetException"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*mergeCitationGroups2¥
+aorg.jabref.model.openoffice.uno.UnoScreenRefresh.lockControllers(com.sun.star.text.XTextDocument)CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java6 6(,2◊
+Éorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java8? 8(C2ü
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java?6 ?(=2 
+wjava.util.stream.Stream.flatMap(java.util.function.Function<? super T, ? extends java.util.stream.Stream<? extends R>>)CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java>6 >(=2p
+java.util.Collection.stream()CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java=5 =(;2p
+java.util.Collection.stream()CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java>e >(k2w
+$java.util.stream.Collectors.toList()CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java?I ?(O2“
+org.jabref.logic.openoffice.backend.Backend52.combinePageInfos(java.util.List<org.jabref.model.openoffice.style.CitationGroup>)CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaBD B(T2˙
+¶org.jabref.logic.openoffice.frontend.OOFrontend.removeCitationGroups(java.util.List<org.jabref.model.openoffice.style.CitationGroup>, com.sun.star.text.XTextDocument)CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaD D(-2∏
+eorg.jabref.model.openoffice.util.OOListUtil.map(java.util.List<T>, java.util.function.Function<T, U>)CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaH7 H(:2ù
+…org.jabref.logic.openoffice.frontend.UpdateCitationMarkers.createAndFillCitationGroup(org.jabref.logic.openoffice.frontend.OOFrontend, com.sun.star.text.XTextDocument, java.util.List<java.lang.String>, java.util.List<java.util.Optional<org.jabref.model.openoffice.ootext.OOText>>, org.jabref.model.openoffice.style.CitationType, org.jabref.model.openoffice.ootext.OOText, com.sun.star.text.XTextCursor, org.jabref.logic.openoffice.style.OOBibStyle, boolean)CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaL& L(@2ô
+Forg.jabref.model.openoffice.ootext.OOText.fromString(java.lang.String)CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaQ Q()2k
+java.util.List.isEmpty()CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaW0 W(72∂
+corg.jabref.model.openoffice.uno.UnoScreenRefresh.unlockControllers(com.sun.star.text.XTextDocument)CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaY Y(.2ò
+ƒorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!docCALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java6- 6(02ò
+ƒorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!docCALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java8D 8(G2ù
+…org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!frontendCALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java8I 8(Q2Ø
+€org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?joinableGroups@56.36:56.50CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java:7 :(E2≤
+ﬁorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?joinableGroupData@58.35:58.52CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java;- ;(>2ß
+”org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?groups@59.36:59.42CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java=. =(42¶
+“org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?group@62.62:62.67CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java>G >(L2ß
+”org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?groups@59.36:59.42CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaA, A(22ù
+…org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!frontendCALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaB3 B(;2ß
+”org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?groups@59.36:59.42CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaBU B([2ù
+…org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!frontendCALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaD D(2ß
+”org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?groups@59.36:59.42CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaD. D(42ò
+ƒorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!docCALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaD6 D(92≤
+ﬁorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?joinableGroupData@58.35:58.52CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaE) E(:2´
+◊org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?textCursor@69.28:69.38CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaF F(2≠
+Ÿorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?newCitations@61.31:61.43CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaH; H(G2ù
+…org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!frontendCALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaLA L(I2ò
+ƒorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!docCALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaM M(2≠
+Ÿorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?citationKeys@72.29:72.41CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaN N($2™
+÷org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?pageInfos@66.39:66.48CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaO O(!2≠
+Ÿorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?citationType@65.29:65.41CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaP P($2´
+◊org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?textCursor@69.28:69.38CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaR R("2ö
+∆org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!styleCALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaS S(2±
+›org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?insertSpaceAfter@75.24:75.40CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaT T((2≤
+ﬁorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?madeModifications@51.16:51.33CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaW W(2Ø
+€org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?joinableGroups@56.36:56.50CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaW! W(/2ò
+ƒorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!docCALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaY/ Y(22≤
+ﬁorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?madeModifications@51.16:51.33CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java\ \( 2£
+Porg.jabref.logic.openoffice.action.EditMerge.JoinableGroupData?group@99.28:99.33CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java;? ;(D2´
+Xorg.jabref.logic.openoffice.action.EditMerge.JoinableGroupData?groupCursor@104.20:104.31CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaE; E(F2é
+;org.jabref.model.openoffice.style.Citation.getCitationKey()CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaHI H(a2ù
+ƒorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!doc	PARAMETERI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java)< )(?2¢
+…org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!frontend	PARAMETERI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java)L )(T2ü
+∆org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!style	PARAMETERI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java)a )(f2π
+ﬁorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?madeModifications@51.16:51.33DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java3 3(!2∂
+€org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?joinableGroups@56.36:56.50DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java8$ 8(22π
+ﬁorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?joinableGroupData@58.35:58.52DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java:# :(42Æ
+”org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?groups@59.36:59.42DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java;$ ;(*2¥
+Ÿorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?newCitations@61.31:61.43DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java= =(+2¥
+Ÿorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?citationType@65.29:65.41DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaA A()2±
+÷org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?pageInfos@66.39:66.48DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaB' B(02≤
+◊org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?textCursor@69.28:69.38DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaE E(&2¥
+Ÿorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?citationKeys@72.29:72.41DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaH H()2∏
+›org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?insertSpaceAfter@75.24:75.40DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaK K((2≠
+“org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?group@62.62:62.67DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java>> >(C2a
+booleanRETURN_TYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java) )(◊
+ﬁorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?madeModifications@51.16:51.33VARIABLEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java3 3(!"
+typeboolean"
+isFinalfalse"å
+declarationStringw<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">madeModifications</mark>*madeModifications2Z
+booleanTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java3 3(™
+€org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?joinableGroups@56.36:56.50VARIABLEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java8$ 8(2"
+typeList<JoinableGroupData>"
+isFinalfalse"ú
+declarationStringÜ<mark class="modifier"> </mark>List<JoinableGroupData> <mark class="class-field">joinableGroups</mark> = EditMerge.scan(doc, frontend)*joinableGroups2a
+java.util.ListTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java8 8(2ö
+>org.jabref.logic.openoffice.action.EditMerge.JoinableGroupDataTYPE_ARGUMENTI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java8 8("2◊
+Éorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java8? 8(C2ò
+ƒorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!docCALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java8D 8(G2ù
+…org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!frontendCALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java8I 8(QÑ
+ﬁorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?joinableGroupData@58.35:58.52VARIABLEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java:# :(4"
+typeJoinableGroupData"
+isFinalfalse"x
+declarationStringc<mark class="modifier"> </mark>JoinableGroupData <mark class="class-field">joinableGroupData</mark>*joinableGroupData2ë
+>org.jabref.logic.openoffice.action.EditMerge.JoinableGroupDataTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java: :("∫	
+”org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?groups@59.36:59.42VARIABLEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java;$ ;(*"
+typeList<CitationGroup>"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark>List<CitationGroup> <mark class="class-field">groups</mark> = joinableGroupData.group*groups2a
+java.util.ListTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java; ;(2ã
+/org.jabref.model.openoffice.style.CitationGroupTYPE_ARGUMENTI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java; ;("2≤
+ﬁorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?joinableGroupData@58.35:58.52CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java;- ;(>2£
+Porg.jabref.logic.openoffice.action.EditMerge.JoinableGroupData?group@99.28:99.33CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java;? ;(D–
+Ÿorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?newCitations@61.31:61.43VARIABLEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java= =(+"
+typeList<Citation>"
+isFinalfalse"Ÿ
+declarationString√<mark class="modifier"> </mark>List<Citation> <mark class="class-field">newCitations</mark> = groups.stream().flatMap(group -> group.citationsInStorageOrder.stream()).collect(Collectors.toList())*newCitations2a
+java.util.ListTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java= =(2Ü
+*org.jabref.model.openoffice.style.CitationTYPE_ARGUMENTI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java= =(2ü
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java?6 ?(=2 
+wjava.util.stream.Stream.flatMap(java.util.function.Function<? super T, ? extends java.util.stream.Stream<? extends R>>)CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java>6 >(=2p
+java.util.Collection.stream()CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java=5 =(;2p
+java.util.Collection.stream()CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java>e >(k2w
+$java.util.stream.Collectors.toList()CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java?I ?(O2ß
+”org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?groups@59.36:59.42CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java=. =(42¶
+“org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?group@62.62:62.67CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java>G >(Lß
+Ÿorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?citationType@65.29:65.41VARIABLEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaA A()"
+typeCitationType"
+isFinalfalse"è
+declarationStringz<mark class="modifier"> </mark>CitationType <mark class="class-field">citationType</mark> = groups.getFirst().citationType*citationType2Å
+.org.jabref.model.openoffice.style.CitationTypeTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaA A(2ß
+”org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?groups@59.36:59.42CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaA, A(2ä
+÷org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?pageInfos@66.39:66.48VARIABLEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaB' B(0"
+typeList<Optional<OOText>>"
+isFinalfalse"¢
+declarationStringå<mark class="modifier"> </mark>List<Optional<OOText>> <mark class="class-field">pageInfos</mark> = frontend.backend.combinePageInfos(groups)*	pageInfos2a
+java.util.ListTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaB B(2n
+java.util.OptionalTYPE_ARGUMENTI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaB B(2Ö
+)org.jabref.model.openoffice.ootext.OOTextTYPE_ARGUMENTI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaB B($2“
+org.jabref.logic.openoffice.backend.Backend52.combinePageInfos(java.util.List<org.jabref.model.openoffice.style.CitationGroup>)CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaBD B(T2ù
+…org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!frontendCALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaB3 B(;2ß
+”org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?groups@59.36:59.42CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaBU B([≈
+◊org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?textCursor@69.28:69.38VARIABLEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaE E(&"
+typeXTextCursor"
+isFinalfalse"ã
+declarationStringv<mark class="modifier"> </mark>XTextCursor <mark class="class-field">textCursor</mark> = joinableGroupData.groupCursor*
+textCursor2p
+com.sun.star.text.XTextCursorTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaE E(2≤
+ﬁorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?joinableGroupData@58.35:58.52CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaE) E(:2´
+Xorg.jabref.logic.openoffice.action.EditMerge.JoinableGroupData?groupCursor@104.20:104.31CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaE; E(Fﬂ
+
+Ÿorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?citationKeys@72.29:72.41VARIABLEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaH H()"
+typeList<String>"
+isFinalfalse"®
+declarationStringí<mark class="modifier"> </mark>List<String> <mark class="class-field">citationKeys</mark> = OOListUtil.map(newCitations, Citation::getCitationKey)*citationKeys2a
+java.util.ListTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaH H(2l
+java.lang.StringTYPE_ARGUMENTI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaH H(2∏
+eorg.jabref.model.openoffice.util.OOListUtil.map(java.util.List<T>, java.util.function.Function<T, U>)CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaH7 H(:2≠
+Ÿorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?newCitations@61.31:61.43CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaH; H(G2é
+;org.jabref.model.openoffice.style.Citation.getCitationKey()CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaHI H(a˚
+›org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?insertSpaceAfter@75.24:75.40VARIABLEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaK K(("
+typeboolean"
+isFinalfalse"≤
+declarationStringú<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">insertSpaceAfter</mark> = <mark class="modifier">false</mark>*insertSpaceAfter2Z
+booleanTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaK K(Á
+ƒorg.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!doc	PARAMETERI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java)< )(?"
+typeXTextDocument"
+isFinalfalse"&
+declarationStringXTextDocument doc*doc2r
+com.sun.star.text.XTextDocumentTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java). )(;Å
+…org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!frontend	PARAMETERI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java)L )(T"
+type
+OOFrontend"
+isFinalfalse"(
+declarationStringOOFrontend frontend*frontend2Ç
+/org.jabref.logic.openoffice.frontend.OOFrontendTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java)A )(KÙ
+∆org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)!style	PARAMETERI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java)a )(f"
+type
+OOBibStyle"
+isFinalfalse"%
+declarationStringOOBibStyle style*style2
+,org.jabref.logic.openoffice.style.OOBibStyleTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java)V )(`
+“org.jabref.logic.openoffice.action.EditMerge.mergeCitationGroups(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend, org.jabref.logic.openoffice.style.OOBibStyle)?group@62.62:62.67VARIABLEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java>> >(C"
+type"
+isFinalfalse"
+declarationString group*group2TYPEÔ≤
+√org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)METHODK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaö ö(*"
+isFinalfalse"È
+declarationString”<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">boolean</mark> <mark class="method">checkAddToGroup</mark>(ScanState state<mark class="modifier"><mark class="modifier">,</mark></mark> CitationGroup group<mark class="modifier"><mark class="modifier">,</mark></mark> XTextRange currentRange)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeboolean*checkAddToGroup2m
+java.util.List.isEmpty()CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaõ õ(&2x
+#java.util.Objects.requireNonNull(T)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaü ü(2x
+#java.util.Objects.requireNonNull(T)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java† †(2x
+#java.util.Objects.requireNonNull(T)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java° °(2x
+#java.util.Objects.requireNonNull(T)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¢ ¢(2…
+torg.jabref.model.openoffice.uno.UnoTextRange.comparables(com.sun.star.text.XTextRange, com.sun.star.text.XTextRange)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaØ Ø()2À
+vorg.jabref.model.openoffice.uno.UnoTextRange.compareStarts(com.sun.star.text.XTextRange, com.sun.star.text.XTextRange)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¥) ¥(62x
+#java.util.Objects.requireNonNull(T)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java» »(2x
+#java.util.Objects.requireNonNull(T)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java… …(2o
+java.lang.String.isEmpty()CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java· ·( 2~
+)java.lang.String.equals(java.lang.Object)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java·+ ·(12o
+java.lang.String.isEmpty()CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java·P ·(W2l
+java.lang.String.trim()CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java·I ·(M2o
+java.lang.String.isEmpty()CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java„ „(%2ú
+Gjava.lang.IllegalStateException.IllegalStateException(java.lang.String)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaŒ Œ(+2ú
+Gjava.lang.IllegalStateException.IllegalStateException(java.lang.String)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÓ Ó(/2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaõ õ(2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaü ü($2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java† †($2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java° °($2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¢ ¢($2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!groupCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java• •(2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java© ©(2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!groupCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java´ ´(2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java´& ´(+2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaØ* Ø(/2¶
+–org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRangeCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaØ; Ø(G2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¥7 ¥(<2¶
+–org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRangeCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¥H ¥(T2±
+€org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?textOrder@180.16:180.25CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaµ µ(2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java∫  ∫(%2¶
+–org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRangeCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaª  ª(,2±
+€org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?textOrder@180.16:180.25CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaº! º(*2î
+?org.jabref.logic.openoffice.action.EditMerge?LOGGER@33.32:33.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaø ø(2´
+’org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?msg@182.23:182.26CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaø ø(2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaƒ ƒ(2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java» »($2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java… …($2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÃ% Ã(*2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÃ: Ã(?2î
+?org.jabref.logic.openoffice.action.EditMerge?LOGGER@33.32:33.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÕ Õ(2¶
+–org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRangeCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java’  ’(,2¶
+–org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRangeCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÿ ÿ(2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÿ? ÿ(D2≥
+›org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?couldExpand@214.16:214.27CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java⁄ ⁄(2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java⁄8 ⁄(=2≤
+‹org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?rangeStart@213.19:213.29CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java⁄M ⁄(W2≥
+›org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?couldExpand@214.16:214.27CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaﬁ ﬁ(2∂
+‡org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?thisCharCursor@215.20:215.34CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaﬁ ﬁ((2∂
+‡org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?thisCharCursor@215.20:215.34CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaﬂ ﬂ(,2∂
+‡org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?thisCharCursor@215.20:215.34CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java‡ ‡(2∞
+⁄org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?thisChar@223.19:223.27CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java· ·(2∞
+⁄org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?thisChar@223.19:223.27CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java·2 ·(:2∞
+⁄org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?thisChar@223.19:223.27CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java·@ ·(H2≥
+›org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?couldExpand@214.16:214.27CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java‚ ‚(2∞
+⁄org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?thisChar@223.19:223.27CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java„ „(2∂
+‡org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?thisCharCursor@215.20:215.34CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java‰ ‰("2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaË Ë(2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÈ È(2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÏ) Ï(.2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÏ> Ï(C2î
+?org.jabref.logic.openoffice.action.EditMerge?LOGGER@33.32:33.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÌ Ì(2≥
+›org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?couldExpand@214.16:214.27CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÚ Ú(2¶
+Qorg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroup@115.28:115.40CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaõ õ(2¨
+Worg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroupCursor@120.20:120.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaü% ü(72ß
+Rorg.jabref.logic.openoffice.action.EditMerge.ScanState?cursorBetween@124.20:124.33CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java†% †(22û
+Iorg.jabref.logic.openoffice.action.EditMerge.ScanState?prev@128.22:128.26CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java°% °()2£
+Norg.jabref.logic.openoffice.action.EditMerge.ScanState?prevRange@132.19:132.28CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¢% ¢(.2û
+Iorg.jabref.logic.openoffice.action.EditMerge.ScanState?prev@128.22:128.26CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java© ©(2û
+Iorg.jabref.logic.openoffice.action.EditMerge.ScanState?prev@128.22:128.26CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java´, ´(02£
+Norg.jabref.logic.openoffice.action.EditMerge.ScanState?prevRange@132.19:132.28CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaØ0 Ø(92£
+Norg.jabref.logic.openoffice.action.EditMerge.ScanState?prevRange@132.19:132.28CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¥= ¥(F2£
+Norg.jabref.logic.openoffice.action.EditMerge.ScanState?prevRange@132.19:132.28CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java∫& ∫(/2ß
+Rorg.jabref.logic.openoffice.action.EditMerge.ScanState?cursorBetween@124.20:124.33CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaƒ ƒ(2ß
+Rorg.jabref.logic.openoffice.action.EditMerge.ScanState?cursorBetween@124.20:124.33CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java»% »(22¨
+Worg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroupCursor@120.20:120.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java…% …(72ß
+Rorg.jabref.logic.openoffice.action.EditMerge.ScanState?cursorBetween@124.20:124.33CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÃ+ Ã(82¨
+Worg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroupCursor@120.20:120.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÃ@ Ã(R2ß
+Rorg.jabref.logic.openoffice.action.EditMerge.ScanState?cursorBetween@124.20:124.33CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÿE ÿ(R2ß
+Rorg.jabref.logic.openoffice.action.EditMerge.ScanState?cursorBetween@124.20:124.33CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java⁄> ⁄(K2ß
+Rorg.jabref.logic.openoffice.action.EditMerge.ScanState?cursorBetween@124.20:124.33CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaË Ë(2¨
+Worg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroupCursor@120.20:120.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÈ È($2ß
+Rorg.jabref.logic.openoffice.action.EditMerge.ScanState?cursorBetween@124.20:124.33CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÏ/ Ï(<2¨
+Worg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroupCursor@120.20:120.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÏD Ï(V2§
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!state	PARAMETERK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaö5 ö(:2§
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!group	PARAMETERK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaöJ ö(O2´
+–org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRange	PARAMETERK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaö\ ö(h2∏
+€org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?textOrder@180.16:180.25DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¥ ¥(2≤
+’org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?msg@182.23:182.26DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java∂ ∂(2π
+‹org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?rangeStart@213.19:213.29DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java’ ’(2∫
+›org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?couldExpand@214.16:214.27DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java÷ ÷(2Ω
+‡org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?thisCharCursor@215.20:215.34DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java◊ ◊("2∑
+⁄org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?thisChar@223.19:223.27DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaﬂ ﬂ(2c
+booleanRETURN_TYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaö ö(∏
+€org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?textOrder@180.16:180.25VARIABLEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¥ ¥("
+typeint"
+isFinalfalse"Ω
+declarationStringß<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">textOrder</mark> = UnoTextRange.compareStarts(state.prevRange, currentRange)*	textOrder2X
+intTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¥ ¥(2À
+vorg.jabref.model.openoffice.uno.UnoTextRange.compareStarts(com.sun.star.text.XTextRange, com.sun.star.text.XTextRange)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¥) ¥(62ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¥7 ¥(<2¶
+–org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRangeCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¥H ¥(T2£
+Norg.jabref.logic.openoffice.action.EditMerge.ScanState?prevRange@132.19:132.28CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¥= ¥(F…
+’org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?msg@182.23:182.26VARIABLEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java∂ ∂("
+typeString"
+isFinalfalse"‰
+declarationStringŒ<mark class="modifier"> </mark>String <mark class="class-field">msg</mark> = String.format("MergeCitationGroups:" + " \"%s\" supposed to be followed by \"%s\"<mark class="modifier">,</mark>" + " but %s"<mark class="modifier">,</mark> state.prevRange.getString()<mark class="modifier">,</mark> currentRange.getString()<mark class="modifier">,</mark> (textOrder == 0 ? "they start at the same position" : "the start of the latter precedes the start of the first"))*msg2e
+java.lang.StringTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java∂ ∂(2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java∫  ∫(%2¶
+–org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRangeCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaª  ª(,2±
+€org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?textOrder@180.16:180.25CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaº! º(*2£
+Norg.jabref.logic.openoffice.action.EditMerge.ScanState?prevRange@132.19:132.28CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java∫& ∫(/ã
+‹org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?rangeStart@213.19:213.29VARIABLEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java’ ’("
+type
+XTextRange"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier"> </mark>XTextRange <mark class="class-field">rangeStart</mark> = currentRange.getStart()*
+rangeStart2q
+com.sun.star.text.XTextRangeTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java’ ’(2¶
+–org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRangeCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java’  ’(,’
+›org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?couldExpand@214.16:214.27VARIABLEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java÷ ÷("
+typeboolean"
+isFinalfalse"ç
+declarationStringx<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">couldExpand</mark> = true*couldExpand2\
+booleanTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java÷ ÷(ú
+‡org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?thisCharCursor@215.20:215.34VARIABLEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java◊ ◊(""
+typeXTextCursor"
+isFinalfalse"ø
+declarationString©<mark class="modifier"> </mark>XTextCursor <mark class="class-field">thisCharCursor</mark> = currentRange.getText().createTextCursorByRange(state.cursorBetween.getEnd())*thisCharCursor2r
+com.sun.star.text.XTextCursorTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java◊ ◊(2¶
+–org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRangeCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÿ ÿ(2ü
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÿ? ÿ(D2ß
+Rorg.jabref.logic.openoffice.action.EditMerge.ScanState?cursorBetween@124.20:124.33CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÿE ÿ(RÑ
+⁄org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?thisChar@223.19:223.27VARIABLEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaﬂ ﬂ("
+typeString"
+isFinalfalse"Å
+declarationStringl<mark class="modifier"> </mark>String <mark class="class-field">thisChar</mark> = thisCharCursor.getString()*thisChar2e
+java.lang.StringTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaﬂ ﬂ(2∂
+‡org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?thisCharCursor@215.20:215.34CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaﬂ ﬂ(,Ñ
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!state	PARAMETERK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaö5 ö(:"
+type	ScanState"
+isFinalfalse"$
+declarationStringScanState state*state2ã
+6org.jabref.logic.openoffice.action.EditMerge.ScanStateTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaö+ ö(4Ö
+…org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!group	PARAMETERK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaöJ ö(O"
+typeCitationGroup"
+isFinalfalse"(
+declarationStringCitationGroup group*group2Ñ
+/org.jabref.model.openoffice.style.CitationGroupTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaö< ö(IÄ
+–org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRange	PARAMETERK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaö\ ö(h"
+type
+XTextRange"
+isFinalfalse",
+declarationStringXTextRange currentRange*currentRange2q
+com.sun.star.text.XTextRangeTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaöQ ö([ßc
+≈org.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)METHODK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¯ ¯()"
+isFinalfalse"Ë
+declarationString“<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">addToCurrentGroup</mark>(ScanState state<mark class="modifier"><mark class="modifier">,</mark></mark> CitationGroup group<mark class="modifier"><mark class="modifier">,</mark></mark> XTextRange currentRange)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typevoid*addToCurrentGroup2m
+java.util.List.isEmpty()CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˘6 ˘(=2x
+#java.util.Objects.requireNonNull(T)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˚ ˚("2x
+#java.util.Objects.requireNonNull(T)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¸ ¸("2x
+#java.util.Objects.requireNonNull(T)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˝ ˝("2x
+#java.util.Objects.requireNonNull(T)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˛ ˛("2j
+java.util.List.add(E)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÇ Ç(2ú
+Gjava.lang.IllegalStateException.IllegalStateException(java.lang.String)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaì ì(+2°
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˘# ˘((2¥
+ﬁorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?isNewGroup@249.22:249.32CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˙ ˙(2°
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˚# ˚((2°
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¸# ¸((2°
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˝# ˝((2°
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˛# ˛((2°
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÇ Ç(2°
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!groupCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÇ Ç($2®
+“org.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRangeCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÖ Ö(*2°
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÜ Ü(2®
+“org.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRangeCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÜ Ü(*2≤
+‹org.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?rangeEnd@261.19:261.27CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÜM Ü(U2¥
+ﬁorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?isNewGroup@249.22:249.32CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaâ â(2°
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaä ä(2®
+“org.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRangeCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaä' ä(32®
+“org.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRangeCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaãM ã(Y2°
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaè è(2®
+“org.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRangeCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaè2 è(>2°
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaë% ë(*2°
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaë: ë(?2î
+?org.jabref.logic.openoffice.action.EditMerge?LOGGER@33.32:33.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaí í(2°
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaó ó(2°
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!groupCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaó ó(2°
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaò ò(2®
+“org.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRangeCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaò ò(&2¶
+Qorg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroup@115.28:115.40CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˘) ˘(52¨
+Worg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroupCursor@120.20:120.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˚) ˚(;2ß
+Rorg.jabref.logic.openoffice.action.EditMerge.ScanState?cursorBetween@124.20:124.33CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¸) ¸(62û
+Iorg.jabref.logic.openoffice.action.EditMerge.ScanState?prev@128.22:128.26CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˝) ˝(-2£
+Norg.jabref.logic.openoffice.action.EditMerge.ScanState?prevRange@132.19:132.28CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˛) ˛(22¶
+Qorg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroup@115.28:115.40CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÇ Ç(2ß
+Rorg.jabref.logic.openoffice.action.EditMerge.ScanState?cursorBetween@124.20:124.33CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÜ Ü(2¨
+Worg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroupCursor@120.20:120.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaä ä($2¨
+Worg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroupCursor@120.20:120.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaè è( 2ß
+Rorg.jabref.logic.openoffice.action.EditMerge.ScanState?cursorBetween@124.20:124.33CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaë+ ë(82¨
+Worg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroupCursor@120.20:120.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaë@ ë(R2û
+Iorg.jabref.logic.openoffice.action.EditMerge.ScanState?prev@128.22:128.26CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaó ó(2£
+Norg.jabref.logic.openoffice.action.EditMerge.ScanState?prevRange@132.19:132.28CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaò ò(2¶
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!state	PARAMETERK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¯4 ¯(92¶
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!group	PARAMETERK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¯I ¯(N2≠
+“org.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRange	PARAMETERK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¯[ ¯(g2ª
+ﬁorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?isNewGroup@249.22:249.32DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˘ ˘( 2π
+‹org.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?rangeEnd@261.19:261.27DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÖ Ö(2`
+voidRETURN_TYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¯ ¯(…	
+ﬁorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?isNewGroup@249.22:249.32VALUEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˘ ˘( "
+typeboolean"
+isFinaltrue"…
+declarationString≥<mark class="modifier"> </mark><mark class="modifier">final </mark><mark class="modifier">boolean</mark> <mark class="class-field">isNewGroup</mark> = state.currentGroup.isEmpty()*
+isNewGroup2\
+booleanTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˘ ˘(2m
+java.util.List.isEmpty()CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˘6 ˘(=2°
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!stateCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˘# ˘((2¶
+Qorg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroup@115.28:115.40CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java˘) ˘(5á
+‹org.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)?rangeEnd@261.19:261.27VARIABLEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÖ Ö("
+type
+XTextRange"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier"> </mark>XTextRange <mark class="class-field">rangeEnd</mark> = currentRange.getEnd()*rangeEnd2q
+com.sun.star.text.XTextRangeTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÖ Ö(2®
+“org.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRangeCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÖ Ö(*Ü
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!state	PARAMETERK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¯4 ¯(9"
+type	ScanState"
+isFinalfalse"$
+declarationStringScanState state*state2ã
+6org.jabref.logic.openoffice.action.EditMerge.ScanStateTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¯* ¯(3á
+Àorg.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!group	PARAMETERK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¯I ¯(N"
+typeCitationGroup"
+isFinalfalse"(
+declarationStringCitationGroup group*group2Ñ
+/org.jabref.model.openoffice.style.CitationGroupTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¯; ¯(HÇ
+“org.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)!currentRange	PARAMETERK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¯[ ¯(g"
+type
+XTextRange"
+isFinalfalse",
+declarationStringXTextRange currentRange*currentRange2q
+com.sun.star.text.XTextRangeTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¯P ¯(Z€j
+Éorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)METHODK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaû+ û(/"
+isFinalfalse"Æ
+declarationStringò<mark class="modifier">private </mark><mark class="modifier">static </mark>List&lt;JoinableGroupData&gt; <mark class="method">scan</mark>(XTextDocument doc<mark class="modifier"><mark class="modifier">,</mark></mark> OOFrontend frontend)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>NoDocumentException<mark class="modifier"><mark class="modifier">,</mark></mark> WrappedTargetException"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeList<JoinableGroupData>*scan2◊
+Åorg.jabref.logic.openoffice.frontend.OOFrontend.getCitationGroupsSortedWithinPartitions(com.sun.star.text.XTextDocument, boolean)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java§. §(U2m
+java.util.List.isEmpty()CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java• •(2ù
+Hjava.util.Optional.orElseThrow(java.util.function.Supplier<? extends X>)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java≠0 ≠(;2‰
+éorg.jabref.logic.openoffice.frontend.OOFrontend.getMarkRange(com.sun.star.text.XTextDocument, org.jabref.model.openoffice.style.CitationGroup)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¨/ ¨(;2ô
+√org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java≤! ≤(02j
+java.util.List.size()CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaΩ' Ω(+2j
+java.util.List.add(E)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaæ æ(2ì
+>org.jabref.logic.openoffice.action.EditMerge.ScanState.reset()CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¡ ¡(2õ
+≈org.jabref.logic.openoffice.action.EditMerge.addToCurrentGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java≈ ≈(!2j
+java.util.List.size()CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java   (#2j
+java.util.List.add(E)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÀ À(2t
+java.util.ArrayList.ArrayList()CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¢- ¢(82ó
+Borg.jabref.logic.openoffice.action.EditMerge.ScanState.ScanState()CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java© ©('2Ü
+∞org.jabref.logic.openoffice.action.EditMerge.JoinableGroupData.JoinableGroupData(java.util.List<org.jabref.model.openoffice.style.CitationGroup>, com.sun.star.text.XTextCursor)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaæ# æ(42Ü
+∞org.jabref.logic.openoffice.action.EditMerge.JoinableGroupData.JoinableGroupData(java.util.List<org.jabref.model.openoffice.style.CitationGroup>, com.sun.star.text.XTextCursor)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÀ À(,2‚
+åorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)!frontendCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java§% §(-2›
+áorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)!docCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java§V §(Y2Ó
+òorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?groups@292.28:292.34CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java• •(2Ó
+òorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?result@290.32:290.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¶ ¶(2Ó
+òorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?groups@292.28:292.34CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java´# ´()2‚
+åorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)!frontendCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¨& ¨(.2›
+áorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)!docCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¨< ¨(?2Ì
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?group@299.27:299.32CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¨A ¨(F2Ì
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?state@297.18:297.23CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java≤1 ≤(62Ì
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?group@299.27:299.32CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java≤8 ≤(=2Ù
+ûorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?currentRange@300.23:300.35CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java≤? ≤(K2Ì
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?group@299.27:299.32CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaπ$ π()2Ú
+úorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?addToGroup@306.20:306.30CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaª ª(2Ì
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?state@297.18:297.23CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaΩ Ω(2Ó
+òorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?result@290.32:290.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaæ æ(2Ì
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?state@297.18:297.23CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaæ5 æ(:2Ì
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?state@297.18:297.23CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaæI æ(N2Ì
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?state@297.18:297.23CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¡ ¡(2Ú
+úorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?addToGroup@306.20:306.30CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaƒ ƒ(2ı
+üorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?canStartGroup@313.20:313.33CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaƒ ƒ(+2Ì
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?state@297.18:297.23CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java≈" ≈('2Ì
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?group@299.27:299.32CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java≈) ≈(.2Ù
+ûorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?currentRange@300.23:300.35CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java≈0 ≈(<2Ì
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?state@297.18:297.23CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java   (2Ó
+òorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?result@290.32:290.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÀ À(2Ì
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?state@297.18:297.23CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÀ- À(22Ì
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?state@297.18:297.23CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÀA À(F2Ó
+òorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?result@290.32:290.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÕ Õ(2¶
+Qorg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroup@115.28:115.40CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaΩ Ω(&2¶
+Qorg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroup@115.28:115.40CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaæ; æ(G2¨
+Worg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroupCursor@120.20:120.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaæO æ(a2¶
+Qorg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroup@115.28:115.40CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java   (2¶
+Qorg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroup@115.28:115.40CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÀ3 À(?2¨
+Worg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroupCursor@120.20:120.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÀG À(Y2‚
+áorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)!doc	PARAMETERK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaû> û(A2Á
+åorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)!frontend	PARAMETERK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaûN û(V2ı
+òorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?result@290.32:290.38DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¢  ¢(&2ı
+òorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?groups@292.28:292.34DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java§ §("2Ù
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?state@297.18:297.23DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java© ©(2Ù
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?group@299.27:299.32DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java´ ´( 2˚
+ûorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?currentRange@300.23:300.35DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¨ ¨(#2˘
+úorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?addToGroup@306.20:306.30DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java≤ ≤(2¸
+üorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?canStartGroup@313.20:313.33DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaπ π(!2j
+java.util.ListRETURN_TYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaû û(2£
+>org.jabref.logic.openoffice.action.EditMerge.JoinableGroupDataRETURN_TYPE_ARGUMENTK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaû û()±
+òorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?result@290.32:290.38VARIABLEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¢  ¢(&"
+typeList<JoinableGroupData>"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>List<JoinableGroupData> <mark class="class-field">result</mark> = new ArrayList<>()*result2c
+java.util.ListTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¢ ¢(2ú
+>org.jabref.logic.openoffice.action.EditMerge.JoinableGroupDataTYPE_ARGUMENTK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¢ ¢(2t
+java.util.ArrayList.ArrayList()CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¢- ¢(8ç
+òorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?groups@292.28:292.34VARIABLEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java§ §(""
+typeList<CitationGroup>"
+isFinalfalse"Õ
+declarationString∑<mark class="modifier"> </mark>List<CitationGroup> <mark class="class-field">groups</mark> = frontend.getCitationGroupsSortedWithinPartitions(doc, <mark class="modifier">false</mark>)*groups2c
+java.util.ListTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java§ §(2ç
+/org.jabref.model.openoffice.style.CitationGroupTYPE_ARGUMENTK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java§ §(2◊
+Åorg.jabref.logic.openoffice.frontend.OOFrontend.getCitationGroupsSortedWithinPartitions(com.sun.star.text.XTextDocument, boolean)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java§. §(U2‚
+åorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)!frontendCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java§% §(-2›
+áorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)!docCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java§V §(YΩ
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?state@297.18:297.23VARIABLEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java© ©("
+type	ScanState"
+isFinalfalse"v
+declarationStringa<mark class="modifier"> </mark>ScanState <mark class="class-field">state</mark> = new ScanState()*state2ã
+6org.jabref.logic.openoffice.action.EditMerge.ScanStateTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java© ©(2ó
+Borg.jabref.logic.openoffice.action.EditMerge.ScanState.ScanState()CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java© ©('í
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?group@299.27:299.32VARIABLEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java´ ´( "
+typeCitationGroup"
+isFinalfalse"h
+declarationStringS<mark class="modifier"> </mark>CitationGroup <mark class="class-field">group</mark>*group2Ñ
+/org.jabref.model.openoffice.style.CitationGroupTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java´ ´(ó
+ûorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?currentRange@300.23:300.35VARIABLEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¨ ¨(#"
+type
+XTextRange"
+isFinalfalse"π
+declarationString£<mark class="modifier"> </mark>XTextRange <mark class="class-field">currentRange</mark> = frontend.getMarkRange(doc, group).orElseThrow(IllegalStateException::new)*currentRange2q
+com.sun.star.text.XTextRangeTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¨ ¨(2ù
+Hjava.util.Optional.orElseThrow(java.util.function.Supplier<? extends X>)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java≠0 ≠(;2‰
+éorg.jabref.logic.openoffice.frontend.OOFrontend.getMarkRange(com.sun.star.text.XTextDocument, org.jabref.model.openoffice.style.CitationGroup)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¨/ ¨(;2‚
+åorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)!frontendCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¨& ¨(.2›
+áorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)!docCALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¨< ¨(?2Ì
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?group@299.27:299.32CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java¨A ¨(F≠
+úorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?addToGroup@306.20:306.30VARIABLEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java≤ ≤("
+typeboolean"
+isFinalfalse"¥
+declarationStringû<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">addToGroup</mark> = checkAddToGroup(state, group, currentRange)*
+addToGroup2\
+booleanTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java≤ ≤(2ô
+√org.jabref.logic.openoffice.action.EditMerge.checkAddToGroup(org.jabref.logic.openoffice.action.EditMerge.ScanState, org.jabref.model.openoffice.style.CitationGroup, com.sun.star.text.XTextRange)CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java≤! ≤(02Ì
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?state@297.18:297.23CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java≤1 ≤(62Ì
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?group@299.27:299.32CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java≤8 ≤(=2Ù
+ûorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?currentRange@300.23:300.35CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java≤? ≤(Kπ
+üorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?canStartGroup@313.20:313.33VARIABLEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaπ π(!"
+typeboolean"
+isFinalfalse"Ω
+declarationStringß<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">canStartGroup</mark> = group.citationType == CitationType.AUTHORYEAR_PAR*canStartGroup2\
+booleanTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaπ π(2Ì
+óorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)?group@299.27:299.32CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaπ$ π()Æ
+áorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)!doc	PARAMETERK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaû> û(A"
+typeXTextDocument"
+isFinalfalse"&
+declarationStringXTextDocument doc*doc2t
+com.sun.star.text.XTextDocumentTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaû0 û(=»
+åorg.jabref.logic.openoffice.action.EditMerge.scan(com.sun.star.text.XTextDocument, org.jabref.logic.openoffice.frontend.OOFrontend)!frontend	PARAMETERK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaûN û(V"
+type
+OOFrontend"
+isFinalfalse"(
+declarationStringOOFrontend frontend*frontend2Ñ
+/org.jabref.logic.openoffice.frontend.OOFrontendTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaûC û(M®
+?org.jabref.logic.openoffice.action.EditMerge?LOGGER@33.32:33.38VALUEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java!  !(&"
+isFinaltrue"
+typeLogger"ﬂ
+declarationString…<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(EditMerge.class);"
+isStatictrue"
+accessprivate*LOGGER2c
+org.slf4j.LoggerTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java! !(ê
+>org.jabref.logic.openoffice.action.EditMerge.JoinableGroupDataCLASSI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java_ _(*"7
+package,org.jabref.logic.openoffice.action.EditMerge"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"p
+declarationString[<mark class="modifier">private </mark><mark class="modifier">class </mark>JoinableGroupData"
+accessprivate*JoinableGroupData2ã
+∞org.jabref.logic.openoffice.action.EditMerge.JoinableGroupData.JoinableGroupData(java.util.List<org.jabref.model.openoffice.style.CitationGroup>, com.sun.star.text.XTextCursor)DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaj j(2™
+Porg.jabref.logic.openoffice.action.EditMerge.JoinableGroupData?group@99.28:99.33DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javac c(!2≤
+Xorg.jabref.logic.openoffice.action.EditMerge.JoinableGroupData?groupCursor@104.20:104.31DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javah h(≤
+∞org.jabref.logic.openoffice.action.EditMerge.JoinableGroupData.JoinableGroupData(java.util.List<org.jabref.model.openoffice.style.CitationGroup>, com.sun.star.text.XTextCursor)CONSTRUCTORI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaj j("ÿ
+declarationString¬<mark class="modifier"> </mark><mark class="method">JoinableGroupData</mark>(List&lt;CitationGroup&gt; group<mark class="modifier"><mark class="modifier">,</mark></mark> XTextCursor groupCursor)*JoinableGroupData2ä
+∂org.jabref.logic.openoffice.action.EditMerge.JoinableGroupData.JoinableGroupData(java.util.List<org.jabref.model.openoffice.style.CitationGroup>, com.sun.star.text.XTextCursor)!groupCALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javak k(2ê
+ºorg.jabref.logic.openoffice.action.EditMerge.JoinableGroupData.JoinableGroupData(java.util.List<org.jabref.model.openoffice.style.CitationGroup>, com.sun.star.text.XTextCursor)!groupCursorCALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javal l(*2£
+Porg.jabref.logic.openoffice.action.EditMerge.JoinableGroupData?group@99.28:99.33CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javak k(2´
+Xorg.jabref.logic.openoffice.action.EditMerge.JoinableGroupData?groupCursor@104.20:104.31CALLI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javal l(2è
+∂org.jabref.logic.openoffice.action.EditMerge.JoinableGroupData.JoinableGroupData(java.util.List<org.jabref.model.openoffice.style.CitationGroup>, com.sun.star.text.XTextCursor)!group	PARAMETERI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaj. j(32ï
+ºorg.jabref.logic.openoffice.action.EditMerge.JoinableGroupData.JoinableGroupData(java.util.List<org.jabref.model.openoffice.style.CitationGroup>, com.sun.star.text.XTextCursor)!groupCursor	PARAMETERI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javajA j(L2ò
+>org.jabref.logic.openoffice.action.EditMerge.JoinableGroupDataRETURN_TYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaj j(Ê
+∂org.jabref.logic.openoffice.action.EditMerge.JoinableGroupData.JoinableGroupData(java.util.List<org.jabref.model.openoffice.style.CitationGroup>, com.sun.star.text.XTextCursor)!group	PARAMETERI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaj. j(3"
+typeList<CitationGroup>"
+isFinalfalse".
+declarationStringList<CitationGroup> group*group2a
+java.util.ListTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaj j(2ã
+/org.jabref.model.openoffice.style.CitationGroupTYPE_ARGUMENTI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaj j(,È
+ºorg.jabref.logic.openoffice.action.EditMerge.JoinableGroupData.JoinableGroupData(java.util.List<org.jabref.model.openoffice.style.CitationGroup>, com.sun.star.text.XTextCursor)!groupCursor	PARAMETERI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javajA j(L"
+typeXTextCursor"
+isFinalfalse",
+declarationStringXTextCursor groupCursor*groupCursor2p
+com.sun.star.text.XTextCursorTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaj5 j(@Ï
+Porg.jabref.logic.openoffice.action.EditMerge.JoinableGroupData?group@99.28:99.33VARIABLEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javac c(!"
+isFinalfalse"
+typeList<CitationGroup>"n
+declarationStringY<mark class="modifier"> </mark>List<CitationGroup> <mark class="class-field">group</mark>"
+isStaticfalse"
+accesspackage_private*group2a
+java.util.ListTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javac c(2ã
+/org.jabref.model.openoffice.style.CitationGroupTYPE_ARGUMENTI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javac c(Ò
+Xorg.jabref.logic.openoffice.action.EditMerge.JoinableGroupData?groupCursor@104.20:104.31VARIABLEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javah h("
+isFinalfalse"
+typeXTextCursor"l
+declarationStringW<mark class="modifier"> </mark>XTextCursor <mark class="class-field">groupCursor</mark>"
+isStaticfalse"
+accesspackage_private*groupCursor2p
+com.sun.star.text.XTextCursorTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javah h(¨
+6org.jabref.logic.openoffice.action.EditMerge.ScanStateCLASSI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javap p(""7
+package,org.jabref.logic.openoffice.action.EditMerge"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"h
+declarationStringS<mark class="modifier">private </mark><mark class="modifier">class </mark>ScanState"
+accessprivate*	ScanState2û
+Borg.jabref.logic.openoffice.action.EditMerge.ScanState.ScanState()DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÜ Ü(2ö
+>org.jabref.logic.openoffice.action.EditMerge.ScanState.reset()DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaä ä(2´
+Qorg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroup@115.28:115.40DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javas s((2±
+Worg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroupCursor@120.20:120.38DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javax x(&2¨
+Rorg.jabref.logic.openoffice.action.EditMerge.ScanState?cursorBetween@124.20:124.33DECLARATIONI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java| |(!2•
+Iorg.jabref.logic.openoffice.action.EditMerge.ScanState?prev@128.22:128.26DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÄ Ä(2™
+Norg.jabref.logic.openoffice.action.EditMerge.ScanState?prevRange@132.19:132.28DECLARATIONK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÑ Ñ(±
+Borg.jabref.logic.openoffice.action.EditMerge.ScanState.ScanState()CONSTRUCTORK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÜ Ü("[
+declarationStringF<mark class="modifier"> </mark><mark class="method">ScanState</mark>()*	ScanState2ì
+>org.jabref.logic.openoffice.action.EditMerge.ScanState.reset()CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaá á(2í
+6org.jabref.logic.openoffice.action.EditMerge.ScanStateRETURN_TYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÜ Ü(ú
+>org.jabref.logic.openoffice.action.EditMerge.ScanState.reset()METHODK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaä ä("
+isFinalfalse"z
+declarationStringe<mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">reset</mark>()"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*reset2t
+java.util.ArrayList.ArrayList()CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaã ã(*2¶
+Qorg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroup@115.28:115.40CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaã ã(2¨
+Worg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroupCursor@120.20:120.38CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaå å(2ß
+Rorg.jabref.logic.openoffice.action.EditMerge.ScanState?cursorBetween@124.20:124.33CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaç ç(2û
+Iorg.jabref.logic.openoffice.action.EditMerge.ScanState?prev@128.22:128.26CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaé é(2£
+Norg.jabref.logic.openoffice.action.EditMerge.ScanState?prevRange@132.19:132.28CALLK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaè è(2`
+voidRETURN_TYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaä ä(˚
+Qorg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroup@115.28:115.40VARIABLEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javas s(("
+isFinalfalse"
+typeList<CitationGroup>"u
+declarationString`<mark class="modifier"> </mark>List<CitationGroup> <mark class="class-field">currentGroup</mark>"
+isStaticfalse"
+accesspackage_private*currentGroup2a
+java.util.ListTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javas s(2ã
+/org.jabref.model.openoffice.style.CitationGroupTYPE_ARGUMENTI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javas s(˛
+Worg.jabref.logic.openoffice.action.EditMerge.ScanState?currentGroupCursor@120.20:120.38VARIABLEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javax x(&"
+isFinalfalse"
+typeXTextCursor"s
+declarationString^<mark class="modifier"> </mark>XTextCursor <mark class="class-field">currentGroupCursor</mark>"
+isStaticfalse"
+accesspackage_private*currentGroupCursor2p
+com.sun.star.text.XTextCursorTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javax x(Ô
+Rorg.jabref.logic.openoffice.action.EditMerge.ScanState?cursorBetween@124.20:124.33VARIABLEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java| |(!"
+isFinalfalse"
+typeXTextCursor"n
+declarationStringY<mark class="modifier"> </mark>XTextCursor <mark class="class-field">cursorBetween</mark>"
+isStaticfalse"
+accesspackage_private*cursorBetween2p
+com.sun.star.text.XTextCursorTYPEI
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.java| |(Ô
+Iorg.jabref.logic.openoffice.action.EditMerge.ScanState?prev@128.22:128.26VARIABLEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÄ Ä("
+isFinalfalse"
+typeCitationGroup"g
+declarationStringR<mark class="modifier"> </mark>CitationGroup <mark class="class-field">prev</mark>"
+isStaticfalse"
+accesspackage_private*prev2Ñ
+/org.jabref.model.openoffice.style.CitationGroupTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÄ Ä(‰
+Norg.jabref.logic.openoffice.action.EditMerge.ScanState?prevRange@132.19:132.28VARIABLEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÑ Ñ("
+isFinalfalse"
+type
+XTextRange"i
+declarationStringT<mark class="modifier"> </mark>XTextRange <mark class="class-field">prevRange</mark>"
+isStaticfalse"
+accesspackage_private*	prevRange2q
+com.sun.star.text.XTextRangeTYPEK
+?src\main\java\org\jabref\logic\openoffice\action\EditMerge.javaÑ Ñ(

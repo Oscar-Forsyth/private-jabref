@@ -1,0 +1,539 @@
+
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaπ
+*org.jabref.logic.importer.FulltextFetchersCLASSG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java   ("$
+packageorg.jabref.logic.importer"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"n
+declarationStringY<mark class="modifier">public </mark><mark class="modifier">class </mark>FulltextFetchers"
+accesspublic*FulltextFetchers2h
+FulltextFetchersDECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java1 1(2Õ
+uorg.jabref.logic.importer.FulltextFetchers.FulltextFetchers(java.util.Set<org.jabref.logic.importer.FulltextFetcher>)DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java5 5(2≥
+[org.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java9 9((2≥
+[org.jabref.logic.importer.FulltextFetchers.findDoiForEntry(org.jabref.model.entry.BibEntry)DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaN N( 2Ë
+èorg.jabref.logic.importer.FulltextFetchers.getResults(java.util.concurrent.Future<java.util.Optional<org.jabref.logic.importer.FetcherResult>>)DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaX+ X(52€
+Çorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javac. c(92Î
+íorg.jabref.logic.importer.FulltextFetchers.getCallables(org.jabref.model.entry.BibEntry, java.util.Set<org.jabref.logic.importer.FulltextFetcher>)DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javap4 p(@2ï
+=org.jabref.logic.importer.FulltextFetchers?LOGGER@33.32:33.38DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java!  !(&2û
+Forg.jabref.logic.importer.FulltextFetchers?FETCHER_TIMEOUT@36.29:36.44DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java$ $(,2ñ
+>org.jabref.logic.importer.FulltextFetchers?finders@38.39:38.46DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java&' &(.2î
+<org.jabref.logic.importer.FulltextFetchers?isPDF@40.36:40.41DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java($ (()ˇ
+FulltextFetchersCONSTRUCTORG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java1 1("˝
+declarationStringÁ<mark class="modifier">public </mark><mark class="method">FulltextFetchers</mark>(ImportFormatPreferences importFormatPreferences<mark class="modifier"><mark class="modifier">,</mark></mark> ImporterPreferences importerPreferences)*FulltextFetchers2Ç
+*org.jabref.logic.importer.FulltextFetchersRETURN_TYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java1 1(È
+importFormatPreferences	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java14 1(K"
+typeImportFormatPreferences"
+isFinalfalse"D
+declarationString/ImportFormatPreferences importFormatPreferences*importFormatPreferences2h
+ImportFormatPreferencesTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java1 1(3Î
+importerPreferences	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java1a 1(t"
+typeImporterPreferences"
+isFinalfalse"<
+declarationString'ImporterPreferences importerPreferences*importerPreferences2~
+-org.jabref.logic.importer.ImporterPreferencesTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java1M 1(`Ø	
+uorg.jabref.logic.importer.FulltextFetchers.FulltextFetchers(java.util.Set<org.jabref.logic.importer.FulltextFetcher>)CONSTRUCTORG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java5 5("Ñ
+declarationStringo<mark class="modifier"> </mark><mark class="method">FulltextFetchers</mark>(Set&lt;FulltextFetcher&gt; fetcher)*FulltextFetchers2à
+7java.util.Set.addAll(java.util.Collection<? extends E>)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java6 6(2è
+>org.jabref.logic.importer.FulltextFetchers?finders@38.39:38.46CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java6 6(2Œ
+}org.jabref.logic.importer.FulltextFetchers.FulltextFetchers(java.util.Set<org.jabref.logic.importer.FulltextFetcher>)!fetcherCALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java6 6(2”
+}org.jabref.logic.importer.FulltextFetchers.FulltextFetchers(java.util.Set<org.jabref.logic.importer.FulltextFetcher>)!fetcher	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java5* 5(12Ç
+*org.jabref.logic.importer.FulltextFetchersRETURN_TYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java5 5(•
+}org.jabref.logic.importer.FulltextFetchers.FulltextFetchers(java.util.Set<org.jabref.logic.importer.FulltextFetcher>)!fetcher	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java5* 5(1"
+typeSet<FulltextFetcher>"
+isFinalfalse"1
+declarationStringSet<FulltextFetcher> fetcher*fetcher2^
+java.util.SetTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java5 5(2É
+)org.jabref.logic.importer.FulltextFetcherTYPE_ARGUMENTG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java5 5((ƒ7
+[org.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)METHODG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java9 9(("
+isFinalfalse"â
+declarationStringt<mark class="modifier">public </mark>Optional&lt;URL&gt; <mark class="method">findFullTextPDF</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<URL>*findFullTextPDF2x
+'org.jabref.model.entry.BibEntry.clone()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java;0 ;(52æ
+mjava.util.Optional.flatMap(java.util.function.Function<? super T, ? extends java.util.Optional<? extends U>>)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java<D <(K2ù
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java<( <(02m
+java.util.Optional.isEmpty()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java> >(2¨
+[org.jabref.logic.importer.FulltextFetchers.findDoiForEntry(org.jabref.model.entry.BibEntry)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java? ?(2›
+ãorg.jabref.gui.JabRefExecutorService.executeAll(java.util.Collection<java.util.concurrent.Callable<T>>, int, java.util.concurrent.TimeUnit)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaBV B(`2‰
+íorg.jabref.logic.importer.FulltextFetchers.getCallables(org.jabref.model.entry.BibEntry, java.util.Set<org.jabref.logic.importer.FulltextFetcher>)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaBa B(m2°
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaJ J(2ê
+?java.util.stream.Stream.sorted(java.util.Comparator<? super T>)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaI I(2ò
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaH H(2°
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaG G(2ò
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaF F(2°
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaE E(2n
+java.util.Collection.stream()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaD D(2p
+java.util.Comparator.reversed()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaIl I(t2ü
+Njava.util.Comparator.comparingInt(java.util.function.ToIntFunction<? super T>)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaI( I(42ç
+<org.jabref.logic.importer.fetcher.TrustLevel.getTrustScore()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaI[ I(h2É
+2org.jabref.logic.importer.FetcherResult.getTrust()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaIP I(X2≤
+aorg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)!entryCALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java;* ;(/2ƒ
+sorg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?clonedEntry@59.17:59.28CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java< <('2º
+korg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?doi@60.22:60.25CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java> >(2ƒ
+sorg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?clonedEntry@59.17:59.28CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java? ?('2ƒ
+sorg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?clonedEntry@59.17:59.28CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaBn B(y2ê
+>org.jabref.logic.importer.FulltextFetchers?finders@38.39:38.46CALLH
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaB{ B(Ç2ô
+Forg.jabref.logic.importer.FulltextFetchers?FETCHER_TIMEOUT@36.29:36.44CALLI
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaBÖ B(î2ø
+norg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?result@66.46:66.52CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaD D(2º
+korg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?res@72.29:72.32CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaH% H((2º
+korg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?res@73.68:73.71CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaIL I(O2é
+=org.jabref.model.entry.identifier.DOI.parse(java.lang.String)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java<L <(V2·
+èorg.jabref.logic.importer.FulltextFetchers.getResults(java.util.concurrent.Future<java.util.Optional<org.jabref.logic.importer.FetcherResult>>)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaE E(62o
+java.util.Optional.isPresent()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaF F(02i
+java.util.Optional.get()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaG G('2∑
+aorg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)!entry	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java92 9(72À
+sorg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?clonedEntry@59.17:59.28DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java; ;(2√
+korg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?doi@60.22:60.25DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java< <(2∆
+norg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?result@66.46:66.52DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaB. B(42√
+korg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?res@72.29:72.32DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaH H( 2√
+korg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?res@73.68:73.71DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaID I(G2j
+java.util.OptionalRETURN_TYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java9 9(2m
+java.net.URLRETURN_TYPE_ARGUMENTG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java9 9(°
+sorg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?clonedEntry@59.17:59.28VARIABLEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java; ;("
+typeBibEntry"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier"> </mark>BibEntry <mark class="class-field">clonedEntry</mark> = (BibEntry) entry.clone()*clonedEntry2p
+org.jabref.model.entry.BibEntryTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java; ;(2x
+'org.jabref.model.entry.BibEntry.clone()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java;0 ;(52≤
+aorg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)!entryCALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java;* ;(/µ
+
+korg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?doi@60.22:60.25VARIABLEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java< <("
+typeOptional<DOI>"
+isFinalfalse"•
+declarationStringè<mark class="modifier"> </mark>Optional<DOI> <mark class="class-field">doi</mark> = clonedEntry.getField(StandardField.DOI).flatMap(DOI::parse)*doi2c
+java.util.OptionalTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java< <(2
+%org.jabref.model.entry.identifier.DOITYPE_ARGUMENTG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java< <(2æ
+mjava.util.Optional.flatMap(java.util.function.Function<? super T, ? extends java.util.Optional<? extends U>>)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java<D <(K2ù
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java<( <(02ƒ
+sorg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?clonedEntry@59.17:59.28CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java< <('2é
+=org.jabref.model.entry.identifier.DOI.parse(java.lang.String)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java<L <(V©
+norg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?result@66.46:66.52VARIABLEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaB. B(4"-
+type%List<Future<Optional<FetcherResult>>>"
+isFinalfalse"ì
+declarationString˝<mark class="modifier"> </mark>List<Future<Optional<FetcherResult>>> <mark class="class-field">result</mark> = JabRefExecutorService.INSTANCE.executeAll(getCallables(clonedEntry, finders)<mark class="modifier">,</mark> FETCHER_TIMEOUT, TimeUnit.SECONDS)*result2_
+java.util.ListTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaB B(2u
+java.util.concurrent.FutureTYPE_ARGUMENTG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaB B(2l
+java.util.OptionalTYPE_ARGUMENTG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaB B(2Å
+'org.jabref.logic.importer.FetcherResultTYPE_ARGUMENTG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaB B(*2›
+ãorg.jabref.gui.JabRefExecutorService.executeAll(java.util.Collection<java.util.concurrent.Callable<T>>, int, java.util.concurrent.TimeUnit)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaBV B(`2‰
+íorg.jabref.logic.importer.FulltextFetchers.getCallables(org.jabref.model.entry.BibEntry, java.util.Set<org.jabref.logic.importer.FulltextFetcher>)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaBa B(m2ƒ
+sorg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?clonedEntry@59.17:59.28CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaBn B(y2ê
+>org.jabref.logic.importer.FulltextFetchers?finders@38.39:38.46CALLH
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaB{ B(Ç2ô
+Forg.jabref.logic.importer.FulltextFetchers?FETCHER_TIMEOUT@36.29:36.44CALLI
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaBÖ B(î˘
+aorg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)!entry	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java92 9(7"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2p
+org.jabref.model.entry.BibEntryTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java9) 9(1Ç
+korg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?res@72.29:72.32VARIABLEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaH H( "
+type"
+isFinalfalse"
+declarationString res*res2TYPEê
+korg.jabref.logic.importer.FulltextFetchers.findFullTextPDF(org.jabref.model.entry.BibEntry)?res@73.68:73.71VARIABLEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaID I(G"
+typeFetcherResult"
+isFinalfalse"&
+declarationStringFetcherResult res*res2x
+'org.jabref.logic.importer.FetcherResultTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaI6 I(C‰
+[org.jabref.logic.importer.FulltextFetchers.findDoiForEntry(org.jabref.model.entry.BibEntry)METHODG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaN N( "
+isFinalfalse"†
+declarationStringä<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">findDoiForEntry</mark>(BibEntry clonedEntry)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*findDoiForEntry2∏
+gorg.jabref.logic.importer.FulltextFetchers.findDoiForEntry(org.jabref.model.entry.BibEntry)!clonedEntryCALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaQ' Q(22∏
+gorg.jabref.logic.importer.FulltextFetchers.findDoiForEntry(org.jabref.model.entry.BibEntry)!clonedEntryCALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaR' R(22∫
+iorg.jabref.logic.importer.FulltextFetchers.findDoiForEntry(org.jabref.model.entry.BibEntry)?e@82.34:82.35CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaRO R(P2é
+=org.jabref.logic.importer.FulltextFetchers?LOGGER@33.32:33.38CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaT T(2∫
+iorg.jabref.logic.importer.FulltextFetchers.findDoiForEntry(org.jabref.model.entry.BibEntry)?e@83.34:83.35CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaT/ T(02Ω
+gorg.jabref.logic.importer.FulltextFetchers.findDoiForEntry(org.jabref.model.entry.BibEntry)!clonedEntry	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaN* N(52¡
+iorg.jabref.logic.importer.FulltextFetchers.findDoiForEntry(org.jabref.model.entry.BibEntry)?e@82.34:82.35DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaR" R(#2¡
+iorg.jabref.logic.importer.FulltextFetchers.findDoiForEntry(org.jabref.model.entry.BibEntry)?e@83.34:83.35DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaS" S(#2\
+voidRETURN_TYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaN N(ã
+gorg.jabref.logic.importer.FulltextFetchers.findDoiForEntry(org.jabref.model.entry.BibEntry)!clonedEntry	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaN* N(5"
+typeBibEntry"
+isFinalfalse")
+declarationStringBibEntry clonedEntry*clonedEntry2p
+org.jabref.model.entry.BibEntryTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaN! N()¸
+iorg.jabref.logic.importer.FulltextFetchers.findDoiForEntry(org.jabref.model.entry.BibEntry)?e@82.34:82.35VARIABLEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaR" R(#"
+type"
+isFinalfalse"
+declarationString e*e2TYPEì
+iorg.jabref.logic.importer.FulltextFetchers.findDoiForEntry(org.jabref.model.entry.BibEntry)?e@83.34:83.35VARIABLEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaS" S(#"
+typeFetcherException"
+isFinalfalse"'
+declarationStringFetcherException e*e2{
+*org.jabref.logic.importer.FetcherExceptionTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaS S(!Û
+èorg.jabref.logic.importer.FulltextFetchers.getResults(java.util.concurrent.Future<java.util.Optional<org.jabref.logic.importer.FetcherResult>>)METHODG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaX+ X(5"
+isFinalfalse"Ÿ
+declarationString√<mark class="modifier">private </mark><mark class="modifier">static </mark>Optional&lt;FetcherResult&gt; <mark class="method">getResults</mark>(Future&lt;Optional&lt;FetcherResult&gt;&gt; future)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeOptional<FetcherResult>*
+getResults2r
+!java.util.concurrent.Future.get()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaZ Z(2k
+java.util.Optional.empty()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java` `(2Ë
+ñorg.jabref.logic.importer.FulltextFetchers.getResults(java.util.concurrent.Future<java.util.Optional<org.jabref.logic.importer.FetcherResult>>)!futureCALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaZ Z(2é
+=org.jabref.logic.importer.FulltextFetchers?LOGGER@33.32:33.38CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java^ ^(2Ì
+ñorg.jabref.logic.importer.FulltextFetchers.getResults(java.util.concurrent.Future<java.util.Optional<org.jabref.logic.importer.FetcherResult>>)!future	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaXV X(\2˚
+¢org.jabref.logic.importer.FulltextFetchers.getResults(java.util.concurrent.Future<java.util.Optional<org.jabref.logic.importer.FetcherResult>>)?ignore@91.38:91.44DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java[& [(,2ˆ
+ùorg.jabref.logic.importer.FulltextFetchers.getResults(java.util.concurrent.Future<java.util.Optional<org.jabref.logic.importer.FetcherResult>>)?e@93.60:93.61DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java]< ](=2j
+java.util.OptionalRETURN_TYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaX X(2à
+'org.jabref.logic.importer.FetcherResultRETURN_TYPE_ARGUMENTG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaX X()Õ
+ñorg.jabref.logic.importer.FulltextFetchers.getResults(java.util.concurrent.Future<java.util.Optional<org.jabref.logic.importer.FetcherResult>>)!future	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaXV X(\"'
+typeFuture<Optional<FetcherResult>>"
+isFinalfalse";
+declarationString&Future<Optional<FetcherResult>> future*future2l
+java.util.concurrent.FutureTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaX6 X(<2l
+java.util.OptionalTYPE_ARGUMENTG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaX= X(E2Å
+'org.jabref.logic.importer.FetcherResultTYPE_ARGUMENTG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaXF X(S”
+¢org.jabref.logic.importer.FulltextFetchers.getResults(java.util.concurrent.Future<java.util.Optional<org.jabref.logic.importer.FetcherResult>>)?ignore@91.38:91.44VARIABLEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java[& [(,"
+typeInterruptedException"
+isFinalfalse"0
+declarationStringInterruptedException ignore*ignore2o
+java.lang.InterruptedExceptionTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java[ [(%ß
+ùorg.jabref.logic.importer.FulltextFetchers.getResults(java.util.concurrent.Future<java.util.Optional<org.jabref.logic.importer.FetcherResult>>)?e@93.60:93.61VARIABLEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java]< ](="2
+type*ExecutionException | CancellationException"
+isFinalfalse"A
+declarationString,ExecutionException | CancellationException e*e2•
+Tjava.util.concurrent.ExecutionException | java.util.concurrent.CancellationExceptionTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java] ](;‘&
+Çorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)METHODG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javac. c(9"
+isFinalfalse"ˆ
+declarationString‡<mark class="modifier">private </mark>Callable&lt;Optional&lt;FetcherResult&gt;&gt; <mark class="method">getCallable</mark>(BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> FulltextFetcher fetcher)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse")
+type!Callable<Optional<FetcherResult>>*getCallable2ú
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javah h("2ì
+Bjava.util.Optional.filter(java.util.function.Predicate<? super T>)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javag g(%2®
+Worg.jabref.logic.importer.FulltextFetcher.findFullText(org.jabref.model.entry.BibEntry)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaf f(+2u
+$java.util.function.Predicate.test(T)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javag3 g(72h
+java.net.URL.toString()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javag< g(D2ä
+9org.jabref.logic.importer.FulltextFetcher.getTrustLevel()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javahD h(Q2k
+java.util.Optional.empty()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javal l(!2¬
+qorg.jabref.logic.importer.FetcherResult.FetcherResult(org.jabref.logic.importer.fetcher.TrustLevel, java.net.URL)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javah. h(;2‹
+äorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)!fetcherCALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaf f(2⁄
+àorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)!entryCALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaf, f(12ç
+<org.jabref.logic.importer.FulltextFetchers?isPDF@40.36:40.41CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javag- g(22Ê
+îorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)?url@103.38:103.41CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javag8 g(;2‹
+äorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)!fetcherCALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javah< h(C2Ê
+îorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)?url@104.35:104.38CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javahU h(X2é
+=org.jabref.logic.importer.FulltextFetchers?LOGGER@33.32:33.38CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaj j(2‰
+íorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)?e@105.52:105.53CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javajI j(J2ﬂ
+àorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)!entry	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javacC c(H2·
+äorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)!fetcher	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javacZ c(a2Ì
+îorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)?url@103.38:103.41DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javag& g()2Ì
+îorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)?url@104.35:104.38DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javah# h(&2Î
+íorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)?e@105.52:105.53DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javai4 i(52u
+java.util.concurrent.CallableRETURN_TYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javac c(2s
+java.util.OptionalRETURN_TYPE_ARGUMENTG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javac c(2à
+'org.jabref.logic.importer.FetcherResultRETURN_TYPE_ARGUMENTG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javac c(+°
+àorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)!entry	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javacC c(H"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2p
+org.jabref.model.entry.BibEntryTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javac: c(Bø
+äorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)!fetcher	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javacZ c(a"
+typeFulltextFetcher"
+isFinalfalse",
+declarationStringFulltextFetcher fetcher*fetcher2z
+)org.jabref.logic.importer.FulltextFetcherTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javacJ c(Y¨
+îorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)?url@103.38:103.41VARIABLEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javag& g()"
+type"
+isFinalfalse"
+declarationString url*url2TYPE¨
+îorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)?url@104.35:104.38VARIABLEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javah# h(&"
+type"
+isFinalfalse"
+declarationString url*url2TYPE
+íorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)?e@105.52:105.53VARIABLEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javai4 i(5"&
+typeIOException | FetcherException"
+isFinalfalse"5
+declarationString IOException | FetcherException e*e2ë
+@java.io.IOException | org.jabref.logic.importer.FetcherExceptionTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javai i(3ß
+íorg.jabref.logic.importer.FulltextFetchers.getCallables(org.jabref.model.entry.BibEntry, java.util.Set<org.jabref.logic.importer.FulltextFetcher>)METHODG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javap4 p(@"
+isFinalfalse"è
+declarationString˘<mark class="modifier">private </mark>List&lt;Callable&lt;Optional&lt;FetcherResult&gt;&gt;&gt; <mark class="method">getCallables</mark>(BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> Set&lt;FulltextFetcher&gt; fetchers)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"/
+type'List<Callable<Optional<FetcherResult>>>*getCallables2ù
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javas s(2°
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javar r(2n
+java.util.Collection.stream()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaq q(2‘
+Çorg.jabref.logic.importer.FulltextFetchers.getCallable(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.FulltextFetcher)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javar! r(,2u
+$java.util.stream.Collectors.toList()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javas+ s(12Ì
+õorg.jabref.logic.importer.FulltextFetchers.getCallables(org.jabref.model.entry.BibEntry, java.util.Set<org.jabref.logic.importer.FulltextFetcher>)!fetchersCALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javaq q(2Í
+òorg.jabref.logic.importer.FulltextFetchers.getCallables(org.jabref.model.entry.BibEntry, java.util.Set<org.jabref.logic.importer.FulltextFetcher>)!entryCALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javar- r(22Ù
+¢org.jabref.logic.importer.FulltextFetchers.getCallables(org.jabref.model.entry.BibEntry, java.util.Set<org.jabref.logic.importer.FulltextFetcher>)?f@114.28:114.29CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javar4 r(52Ô
+òorg.jabref.logic.importer.FulltextFetchers.getCallables(org.jabref.model.entry.BibEntry, java.util.Set<org.jabref.logic.importer.FulltextFetcher>)!entry	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javapJ p(O2Ú
+õorg.jabref.logic.importer.FulltextFetchers.getCallables(org.jabref.model.entry.BibEntry, java.util.Set<org.jabref.logic.importer.FulltextFetcher>)!fetchers	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javapf p(n2˚
+¢org.jabref.logic.importer.FulltextFetchers.getCallables(org.jabref.model.entry.BibEntry, java.util.Set<org.jabref.logic.importer.FulltextFetcher>)?f@114.28:114.29DECLARATIONG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javar r(2f
+java.util.ListRETURN_TYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javap p(2~
+java.util.concurrent.CallableRETURN_TYPE_ARGUMENTG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javap p(2s
+java.util.OptionalRETURN_TYPE_ARGUMENTG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javap p("2à
+'org.jabref.logic.importer.FetcherResultRETURN_TYPE_ARGUMENTG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javap# p(0±
+òorg.jabref.logic.importer.FulltextFetchers.getCallables(org.jabref.model.entry.BibEntry, java.util.Set<org.jabref.logic.importer.FulltextFetcher>)!entry	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javapJ p(O"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2p
+org.jabref.model.entry.BibEntryTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javapA p(I∆
+õorg.jabref.logic.importer.FulltextFetchers.getCallables(org.jabref.model.entry.BibEntry, java.util.Set<org.jabref.logic.importer.FulltextFetcher>)!fetchers	PARAMETERG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javapf p(n"
+typeSet<FulltextFetcher>"
+isFinalfalse"2
+declarationStringSet<FulltextFetcher> fetchers*fetchers2^
+java.util.SetTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javapQ p(T2É
+)org.jabref.logic.importer.FulltextFetcherTYPE_ARGUMENTG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javapU p(d∂
+¢org.jabref.logic.importer.FulltextFetchers.getCallables(org.jabref.model.entry.BibEntry, java.util.Set<org.jabref.logic.importer.FulltextFetcher>)?f@114.28:114.29VARIABLEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.javar r("
+type"
+isFinalfalse"
+declarationString f*f2TYPE©
+=org.jabref.logic.importer.FulltextFetchers?LOGGER@33.32:33.38VALUEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java!  !(&"
+isFinaltrue"
+typeLogger"Ê
+declarationString–<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(FulltextFetchers.class);"
+isStatictrue"
+accessprivate*LOGGER2a
+org.slf4j.LoggerTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java! !(¢
+Forg.jabref.logic.importer.FulltextFetchers?FETCHER_TIMEOUT@36.29:36.44VALUEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java$ $(,"
+isFinaltrue"
+typeint"›
+declarationString«<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark><mark class="modifier">int</mark> <mark class="class-field">FETCHER_TIMEOUT</mark> = 10;"
+isStatictrue"
+accessprivate*FETCHER_TIMEOUT2T
+intTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java$ $(ı
+>org.jabref.logic.importer.FulltextFetchers?finders@38.39:38.46VALUEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java&' &(."
+isFinaltrue"
+typeSet<FulltextFetcher>"∞
+declarationStringö<mark class="modifier">private </mark><mark class="modifier">final </mark>Set<FulltextFetcher> <mark class="class-field">finders</mark> = new HashSet<>();"
+isStaticfalse"
+accessprivate*finders2^
+java.util.SetTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java& &(2É
+)org.jabref.logic.importer.FulltextFetcherTYPE_ARGUMENTG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java& &(%2l
+java.util.HashSet.HashSet()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java&5 &(>˜
+
+<org.jabref.logic.importer.FulltextFetchers?isPDF@40.36:40.41VALUEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java($ (()"
+isFinaltrue"
+typePredicate<String>"Ü
+declarationString<mark class="modifier">private </mark><mark class="modifier">final </mark>Predicate<String> <mark class="class-field">isPDF</mark> = url -> {
+    try {
+        return new URLDownload(url).isPdf();
+    } catch (MalformedURLException e) {
+        LOGGER.warn("URL returned by fulltext fetcher is invalid");
+    }
+    return <mark class="modifier">false</mark>;
+};"
+isStaticfalse"
+accessprivate*isPDF2m
+java.util.function.PredicateTYPEG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java( ((2j
+java.lang.StringTYPE_ARGUMENTG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java( (("2y
+(org.jabref.logic.net.URLDownload.isPdf()CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java*( *(-2è
+>org.jabref.logic.net.URLDownload.URLDownload(java.lang.String)CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java* *("2ã
+:org.jabref.logic.importer.FulltextFetchers?url@40.44:40.47CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java*# *(&2é
+=org.jabref.logic.importer.FulltextFetchers?LOGGER@33.32:33.38CALLG
+=src\main\java\org\jabref\logic\importer\FulltextFetchers.java, ,(

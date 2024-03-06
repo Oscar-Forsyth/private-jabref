@@ -1,0 +1,1903 @@
+
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˙5
+&org.jabref.gui.entryeditor.EntryEditorCLASSC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaL L("%
+packageorg.jabref.gui.entryeditor"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"õ
+declarationStringÖ<mark class="modifier">public </mark><mark class="modifier">class </mark>EntryEditor<mark class="modifier"> extends </mark>BorderPane"
+accesspublic*EntryEditor2°
+Morg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javat t(2è
+9org.jabref.gui.entryeditor.EntryEditor.setupKeyBindings()DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∞ ∞(!2Ñ
+.org.jabref.gui.entryeditor.EntryEditor.close()DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÿ ÿ(2ä
+4org.jabref.gui.entryeditor.EntryEditor.deleteEntry()DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java› ›(2î
+>org.jabref.gui.entryeditor.EntryEditor.generateCiteKeyButton()DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java‚	 ‚(2î
+>org.jabref.gui.entryeditor.EntryEditor.generateCleanupButton()DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÈ	 È(2ñ
+@org.jabref.gui.entryeditor.EntryEditor.navigateToPreviousEntry()DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÔ Ô((2í
+<org.jabref.gui.entryeditor.EntryEditor.navigateToNextEntry()DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÙ Ù($2â
+3org.jabref.gui.entryeditor.EntryEditor.createTabs()DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¯! ¯(+2ï
+?org.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaµ µ('2á
+1org.jabref.gui.entryeditor.EntryEditor.getEntry()DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java‘ ‘(2¶
+Porg.jabref.gui.entryeditor.EntryEditor.setEntry(org.jabref.model.entry.BibEntry)DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java€ €(2ç
+7org.jabref.gui.entryeditor.EntryEditor.getSelectedTab()DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˙ ˙()2ã
+5org.jabref.gui.entryeditor.EntryEditor.setupToolBar()DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛ ˛(2∑
+aorg.jabref.gui.entryeditor.EntryEditor.fetchAndMerge(org.jabref.logic.importer.EntryBasedFetcher)DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java• •(2∞
+Zorg.jabref.gui.entryeditor.EntryEditor.setFocusToField(org.jabref.model.entry.field.Field)DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java© ©(2è
+9org.jabref.gui.entryeditor.EntryEditor.nextPreviewStyle()DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaµ µ( 2ì
+=org.jabref.gui.entryeditor.EntryEditor.previousPreviewStyle()DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaπ π($2ç
+9org.jabref.gui.entryeditor.EntryEditor?LOGGER@78.32:78.38DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaN  N(&2ë
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaP P('2ñ
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaQ% Q(42ù
+Iorg.jabref.gui.entryeditor.EntryEditor?entryEditorPreferences@82.41:82.63DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaR) R(?2ë
+=org.jabref.gui.entryeditor.EntryEditor?fileLinker@83.43:83.53DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaS+ S(52ã
+7org.jabref.gui.entryeditor.EntryEditor?tabs@87.39:87.43DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaW' W(+2ó
+Corg.jabref.gui.entryeditor.EntryEditor?typeSubscription@88.25:88.41DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaX X()2å
+8org.jabref.gui.entryeditor.EntryEditor?entry@92.21:92.26DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java\ \(2ê
+<org.jabref.gui.entryeditor.EntryEditor?sourceTab@93.22:93.31DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java] ](2ç
+9org.jabref.gui.entryeditor.EntryEditor?tabbed@98.26:98.32DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javab b( 2ô
+Eorg.jabref.gui.entryeditor.EntryEditor?typeChangeButton@100.25:100.41DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javad d()2ñ
+Borg.jabref.gui.entryeditor.EntryEditor?fetcherButton@101.25:101.38DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javae e(&2í
+>org.jabref.gui.entryeditor.EntryEditor?typeLabel@102.24:102.33DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaf f(!2ñ
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javag" g(/2ï
+Aorg.jabref.gui.entryeditor.EntryEditor?taskExecutor@104.33:104.45DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javah! h(-2õ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javai' i(92ï
+Aorg.jabref.gui.entryeditor.EntryEditor?stateManager@106.33:106.45DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaj! j(-2ï
+Aorg.jabref.gui.entryeditor.EntryEditor?themeManager@107.33:107.45DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javak! k(-2î
+@org.jabref.gui.entryeditor.EntryEditor?fileMonitor@108.38:108.49DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javal& l(12î
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javam( m(32ù
+Iorg.jabref.gui.entryeditor.EntryEditor?bibEntryTypesManager@110.41:110.61DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javan) n(=2ù
+Iorg.jabref.gui.entryeditor.EntryEditor?keyBindingRepository@111.41:111.61DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javao) o(=2¶
+Rorg.jabref.gui.entryeditor.EntryEditor?journalAbbreviationRepository@112.50:112.79DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javap2 p(O2ò
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javar' r(62m
+javafx.scene.layout.BorderPaneEXTENDC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaL! L(+ˇ:
+Morg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)CONSTRUCTORC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javat t("x
+declarationStringc<mark class="modifier">public </mark><mark class="method">EntryEditor</mark>(LibraryTab libraryTab)*EntryEditor2~
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javav* v(?2í
+Eorg.jabref.preferences.PreferencesService.getEntryEditorPreferences()CALLC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java|9 |(R2ã
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java}J }(\2™
+[org.jabref.gui.entryeditor.EntryEditorTab.notifyAboutFocus(org.jabref.model.entry.BibEntry)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÇ Ç(*2à
+9org.jabref.gui.entryeditor.EntryEditor.setupKeyBindings()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÜ Ü(2Ç
+3org.jabref.gui.entryeditor.EntryEditor.createTabs()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaà à(2Ä
+1org.jabref.gui.entryeditor.EntryEditor.getEntry()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaí" í(*2s
+$java.util.stream.Collectors.toList()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javañx ñ(~2ê
+¬org.jabref.gui.externalfiles.ExternalFilesEntryLinker.ExternalFilesEntryLinker(org.jabref.preferences.FilePreferences, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService)CALLC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java} }(62•
+Xorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)!libraryTabCALLC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javau u($2•
+Xorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)!libraryTabCALLC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javav v()2î
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java|& |(82î
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java}7 }(I2è
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java}` }(o2è
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java}q }(~2Ü
+9org.jabref.gui.entryeditor.EntryEditor?tabbed@98.26:98.32CALLC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java (!2Æ
+_org.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?tab@127.78:127.81CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ8 Ä(;2¥
+eorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?activeTab@128.27:128.36CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÅ Å(2¥
+eorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?activeTab@128.27:128.36CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÇ Ç(2á
+8org.jabref.gui.entryeditor.EntryEditor?entry@92.21:92.26CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÇ+ Ç(02∞
+aorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?event@138.27:138.32CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaã ã(2∞
+aorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?event@138.27:138.32CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaå å(2∞
+aorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?event@138.27:138.32CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaé é(2∞
+aorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?event@145.30:145.35CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaï ï(2∞
+aorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?event@145.30:145.35CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javañ* ñ(/2∞
+aorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?event@145.30:145.35CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaó ó(2≤
+corg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?success@147.20:147.27CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java• •(2∞
+aorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?event@145.30:145.35CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java® ®(2≤
+corg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?success@147.20:147.27CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java®# ®(*2∞
+aorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?event@145.30:145.35CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java© ©(2ä
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javau u(2è
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javav v(2ñ
+Iorg.jabref.gui.entryeditor.EntryEditor?entryEditorPreferences@82.41:82.63CALLC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java| |(#2ä
+=org.jabref.gui.entryeditor.EntryEditor?fileLinker@83.43:83.53CALLC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java} }(2Ü
+7org.jabref.gui.entryeditor.EntryEditor?tabs@87.39:87.43CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaà à(2™
+Xorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)!libraryTab	PARAMETERC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javat" t(,2ª
+eorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?activeTab@128.27:128.36DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ Ä($2∑
+aorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?entry@146.21:146.26DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaí í(2π
+corg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?success@147.20:147.27DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaì ì(2æ
+horg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?draggedFiles@150.27:150.39DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javañ ñ('2≥
+_org.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?tab@127.78:127.81DECLARATIONC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaN (Q2∑
+aorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?event@138.27:138.32DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaä ä( 2∑
+aorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?event@145.30:145.35DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaë ë(#2z
+&org.jabref.gui.entryeditor.EntryEditorRETURN_TYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javat t(ü
+eorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?activeTab@128.27:128.36VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ Ä($"
+typeEntryEditorTab"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier"> </mark>EntryEditorTab <mark class="class-field">activeTab</mark> = (EntryEditorTab) tab*	activeTab2x
+)org.jabref.gui.entryeditor.EntryEditorTabTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ Ä(2Æ
+_org.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?tab@127.78:127.81CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ8 Ä(;Ë
+aorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?entry@146.21:146.26VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaí í("
+typeBibEntry"
+isFinalfalse"ì
+declarationString~<mark class="modifier"> </mark>BibEntry <mark class="class-field">entry</mark> = <mark class="modifier">this</mark>.getEntry()*entry2n
+org.jabref.model.entry.BibEntryTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaí í(2Ä
+1org.jabref.gui.entryeditor.EntryEditor.getEntry()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaí" í(*Ê
+corg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?success@147.20:147.27VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaì ì("
+typeboolean"
+isFinalfalse"©
+declarationStringì<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">success</mark> = <mark class="modifier">false</mark>*success2V
+booleanTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaì ì(¨
+horg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?draggedFiles@150.27:150.39VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javañ ñ('"
+type
+List<Path>"
+isFinalfalse"«
+declarationString±<mark class="modifier"> </mark>List<Path> <mark class="class-field">draggedFiles</mark> = event.getDragboard().getFiles().stream().map(File::toPath).collect(Collectors.toList())*draggedFiles2]
+java.util.ListTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javañ ñ(2j
+java.nio.file.PathTYPE_ARGUMENTE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javañ ñ(2s
+$java.util.stream.Collectors.toList()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javañx ñ(~2∞
+aorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?event@145.30:145.35CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javañ* ñ(/
+Xorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)!libraryTab	PARAMETERC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javat" t(,"
+type
+LibraryTab"
+isFinalfalse"*
+declarationStringLibraryTab libraryTab*
+libraryTab2f
+org.jabref.gui.LibraryTabTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javat t(!Ú
+_org.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?tab@127.78:127.81VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaN (Q"
+type"
+isFinalfalse"
+declarationString tab*tab2TYPE˙
+aorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?event@138.27:138.32VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaä ä( "
+type"
+isFinalfalse"
+declarationString event*event2TYPE˙
+aorg.jabref.gui.entryeditor.EntryEditor.EntryEditor(org.jabref.gui.LibraryTab)?event@145.30:145.35VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaë ë(#"
+type"
+isFinalfalse"
+declarationString event*event2TYPEé"
+9org.jabref.gui.entryeditor.EntryEditor.setupKeyBindings()METHODE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∞ ∞(!"
+isFinalfalse"å
+declarationStringw<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">setupKeyBindings</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*setupKeyBindings2m
+java.util.Optional.isPresent()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java≥ ≥($2g
+java.util.Optional.get()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¥# ¥(&2z
++org.jabref.gui.LibraryTab.selectNextEntry()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¿# ¿(22~
+/org.jabref.gui.LibraryTab.selectPreviousEntry()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaƒ# ƒ(62w
+(org.jabref.gui.help.HelpAction.execute()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java»v »(}2ç
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java»` »(r2}
+.org.jabref.gui.entryeditor.EntryEditor.close()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÕ Õ(2ﬂ
+èorg.jabref.gui.help.HelpAction.HelpAction(org.jabref.logic.help.HelpFile, org.jabref.gui.DialogService, org.jabref.preferences.FilePreferences)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java» »(&2ò
+Iorg.jabref.gui.entryeditor.EntryEditor?keyBindingRepository@111.41:111.61CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java≤. ≤(B2ú
+Morg.jabref.gui.entryeditor.EntryEditor.setupKeyBindings()?event@177.51:177.56CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java≤S ≤(X2°
+Rorg.jabref.gui.entryeditor.EntryEditor.setupKeyBindings()?keyBinding@178.33:178.43CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java≥ ≥(2°
+Rorg.jabref.gui.entryeditor.EntryEditor.setupKeyBindings()?keyBinding@178.33:178.43CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¥ ¥("2à
+9org.jabref.gui.entryeditor.EntryEditor?tabbed@98.26:98.32CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∑ ∑(2ú
+Morg.jabref.gui.entryeditor.EntryEditor.setupKeyBindings()?event@177.51:177.56CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∏ ∏(2à
+9org.jabref.gui.entryeditor.EntryEditor?tabbed@98.26:98.32CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaº º(2ú
+Morg.jabref.gui.entryeditor.EntryEditor.setupKeyBindings()?event@177.51:177.56CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaΩ Ω(2å
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¿ ¿("2ú
+Morg.jabref.gui.entryeditor.EntryEditor.setupKeyBindings()?event@177.51:177.56CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¡ ¡(2å
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaƒ ƒ("2ú
+Morg.jabref.gui.entryeditor.EntryEditor.setupKeyBindings()?event@177.51:177.56CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java≈ ≈(2ë
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java»> »(K2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java»M »(_2ú
+Morg.jabref.gui.entryeditor.EntryEditor.setupKeyBindings()?event@177.51:177.56CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java… …(2ú
+Morg.jabref.gui.entryeditor.EntryEditor.setupKeyBindings()?event@177.51:177.56CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaŒ Œ(2®
+Rorg.jabref.gui.entryeditor.EntryEditor.setupKeyBindings()?keyBinding@178.33:178.43DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java≤! ≤(+2£
+Morg.jabref.gui.entryeditor.EntryEditor.setupKeyBindings()?event@177.51:177.56DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java±3 ±(82Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∞ ∞(†
+Rorg.jabref.gui.entryeditor.EntryEditor.setupKeyBindings()?keyBinding@178.33:178.43VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java≤! ≤(+"
+typeOptional<KeyBinding>"
+isFinalfalse"£
+declarationStringç<mark class="modifier"> </mark>Optional<KeyBinding> <mark class="class-field">keyBinding</mark> = keyBindingRepository.mapToKeyBinding(event)*
+keyBinding2a
+java.util.OptionalTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java≤ ≤(2z
+"org.jabref.gui.keyboard.KeyBindingTYPE_ARGUMENTE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java≤ ≤(2ò
+Iorg.jabref.gui.entryeditor.EntryEditor?keyBindingRepository@111.41:111.61CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java≤. ≤(B2ú
+Morg.jabref.gui.entryeditor.EntryEditor.setupKeyBindings()?event@177.51:177.56CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java≤S ≤(XÊ
+Morg.jabref.gui.entryeditor.EntryEditor.setupKeyBindings()?event@177.51:177.56VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java±3 ±(8"
+type"
+isFinalfalse"
+declarationString event*event2TYPE¯
+.org.jabref.gui.entryeditor.EntryEditor.close()METHODE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÿ ÿ("
+isFinalfalse"´
+declarationStringï<mark class="annotation">@FXML</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">close</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*close2}
+.org.jabref.gui.LibraryTab.entryEditorClosing()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaŸ Ÿ(%2å
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaŸ Ÿ(2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÿ ÿ(™
+4org.jabref.gui.entryeditor.EntryEditor.deleteEntry()METHODE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java› ›("
+isFinalfalse"≤
+declarationStringú<mark class="annotation">@FXML</mark> <br><mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">deleteEntry</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*deleteEntry2ê
+Aorg.jabref.gui.LibraryTab.delete(org.jabref.model.entry.BibEntry)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaﬁ ﬁ(2å
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaﬁ ﬁ(2á
+8org.jabref.gui.entryeditor.EntryEditor?entry@92.21:92.26CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaﬁ ﬁ(2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java› ›(À
+>org.jabref.gui.entryeditor.EntryEditor.generateCiteKeyButton()METHODE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java‚	 ‚("
+isFinalfalse"µ
+declarationStringü<mark class="annotation">@FXML</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">generateCiteKeyButton</mark>()"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*generateCiteKeyButton2Ä
+1org.jabref.gui.entryeditor.EntryEditor.getEntry()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java„U „(]2ö
+Korg.jabref.gui.citationkeypattern.GenerateCitationKeySingleAction.execute()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÂ Â(2Á
+óorg.jabref.gui.citationkeypattern.GenerateCitationKeySingleAction.GenerateCitationKeySingleAction(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java„5 „(T2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java„a „(p2ë
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java‰ ‰(2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java‰ ‰(12è
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java‰3 ‰(>2¢
+Sorg.jabref.gui.entryeditor.EntryEditor.generateCiteKeyButton()?action@227.40:227.46CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÂ Â(2©
+Sorg.jabref.gui.entryeditor.EntryEditor.generateCiteKeyButton()?action@227.40:227.46DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java„( „(.2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java‚ ‚(Ã
+Sorg.jabref.gui.entryeditor.EntryEditor.generateCiteKeyButton()?action@227.40:227.46VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java„( „(."'
+typeGenerateCitationKeySingleAction"
+isFinalfalse"ç
+declarationString˜<mark class="modifier"> </mark>GenerateCitationKeySingleAction <mark class="class-field">action</mark> = new GenerateCitationKeySingleAction(getEntry()<mark class="modifier">,</mark> databaseContext, dialogService, preferencesService, undoManager)*action2ê
+Aorg.jabref.gui.citationkeypattern.GenerateCitationKeySingleActionTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java„ „('2Ä
+1org.jabref.gui.entryeditor.EntryEditor.getEntry()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java„U „(]2Á
+óorg.jabref.gui.citationkeypattern.GenerateCitationKeySingleAction.GenerateCitationKeySingleAction(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java„5 „(T2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java„a „(p2ë
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java‰ ‰(2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java‰ ‰(12è
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java‰3 ‰(>Ä
+>org.jabref.gui.entryeditor.EntryEditor.generateCleanupButton()METHODE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÈ	 È("
+isFinalfalse"µ
+declarationStringü<mark class="annotation">@FXML</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">generateCleanupButton</mark>()"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*generateCleanupButton2Ä
+1org.jabref.gui.entryeditor.EntryEditor.getEntry()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÍ= Í(E2É
+4org.jabref.gui.cleanup.CleanupSingleAction.execute()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÎ Î(2≥
+„org.jabref.gui.cleanup.CleanupSingleAction.CleanupSingleAction(org.jabref.model.entry.BibEntry, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, javax.swing.undo.UndoManager)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÍ) Í(<2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÍI Í([2ë
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÍ] Í(j2ê
+Aorg.jabref.gui.entryeditor.EntryEditor?stateManager@106.33:106.45CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÍl Í(x2ê
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51CALLF
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÍz Í(Ö2¢
+Sorg.jabref.gui.entryeditor.EntryEditor.generateCleanupButton()?action@234.28:234.34CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÎ Î(2©
+Sorg.jabref.gui.entryeditor.EntryEditor.generateCleanupButton()?action@234.28:234.34DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÍ Í("2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÈ È(Ÿ
+Sorg.jabref.gui.entryeditor.EntryEditor.generateCleanupButton()?action@234.28:234.34VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÍ Í(""
+typeCleanupSingleAction"
+isFinalfalse"Ú
+declarationString‹<mark class="modifier"> </mark>CleanupSingleAction <mark class="class-field">action</mark> = new CleanupSingleAction(getEntry()<mark class="modifier">,</mark> preferencesService, dialogService, stateManager, undoManager)*action2y
+*org.jabref.gui.cleanup.CleanupSingleActionTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÍ Í(2Ä
+1org.jabref.gui.entryeditor.EntryEditor.getEntry()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÍ= Í(E2≥
+„org.jabref.gui.cleanup.CleanupSingleAction.CleanupSingleAction(org.jabref.model.entry.BibEntry, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, javax.swing.undo.UndoManager)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÍ) Í(<2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÍI Í([2ë
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÍ] Í(j2ê
+Aorg.jabref.gui.entryeditor.EntryEditor?stateManager@106.33:106.45CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÍl Í(x2ê
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51CALLF
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÍz Í(Ö±
+@org.jabref.gui.entryeditor.EntryEditor.navigateToPreviousEntry()METHODE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÔ Ô(("
+isFinalfalse"æ
+declarationString®<mark class="annotation">@FXML</mark> <br><mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">navigateToPreviousEntry</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*navigateToPreviousEntry2~
+/org.jabref.gui.LibraryTab.selectPreviousEntry()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java (&2å
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java (2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÔ Ô(°
+<org.jabref.gui.entryeditor.EntryEditor.navigateToNextEntry()METHODE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÙ Ù($"
+isFinalfalse"∫
+declarationString§<mark class="annotation">@FXML</mark> <br><mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">navigateToNextEntry</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*navigateToNextEntry2z
++org.jabref.gui.LibraryTab.selectNextEntry()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaı ı("2å
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaı ı(2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÙ Ù(øù
+3org.jabref.gui.entryeditor.EntryEditor.createTabs()METHODE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¯! ¯(+"
+isFinalfalse"~
+declarationStringi<mark class="modifier">private </mark>List&lt;EntryEditorTab&gt; <mark class="method">createTabs</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeList<EntryEditorTab>*
+createTabs2d
+java.util.List.add(E)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˘ ˘(2É
+2org.jabref.gui.LibraryTab.getIndexingTaskManager()CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˘Ü ˘(ú2d
+java.util.List.add(E)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¸ ¸(2Å
+2org.jabref.gui.LibraryTab.getSuggestionProviders()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¸N ¸(d2É
+2org.jabref.gui.LibraryTab.getIndexingTaskManager()CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¸ø ¸(’2d
+java.util.List.add(E)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˝ ˝(2Å
+2org.jabref.gui.LibraryTab.getSuggestionProviders()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˝N ˝(d2É
+2org.jabref.gui.LibraryTab.getIndexingTaskManager()CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˝ø ˝(’2d
+java.util.List.add(E)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛ ˛(2Å
+2org.jabref.gui.LibraryTab.getSuggestionProviders()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛O ˛(e2É
+2org.jabref.gui.LibraryTab.getIndexingTaskManager()CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛¿ ˛(÷2d
+java.util.List.add(E)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˇ ˇ(2Å
+2org.jabref.gui.LibraryTab.getSuggestionProviders()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˇP ˇ(f2É
+2org.jabref.gui.LibraryTab.getIndexingTaskManager()CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˇ¡ ˇ(◊2d
+java.util.List.add(E)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ Ä(2Å
+2org.jabref.gui.LibraryTab.getSuggestionProviders()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄK Ä(a2É
+2org.jabref.gui.LibraryTab.getIndexingTaskManager()CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄº Ä(“2d
+java.util.List.add(E)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÉ É(2Å
+2org.jabref.gui.LibraryTab.getSuggestionProviders()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÉ\ É(r2É
+2org.jabref.gui.LibraryTab.getIndexingTaskManager()CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÉπ É(œ2ï
+Forg.jabref.gui.entryeditor.EntryEditorPreferences.getEntryEditorTabs()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaáZ á(l2u
+&java.util.Map.remove(java.lang.Object)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaà à(!2u
+&java.util.Map.remove(java.lang.Object)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaâ â(!2u
+&java.util.Map.remove(java.lang.Object)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaä ä(!2u
+&java.util.Map.remove(java.lang.Object)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaã ã(!2u
+&java.util.Map.remove(java.lang.Object)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaå å(!2u
+&java.util.Map.remove(java.lang.Object)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaç ç(!2u
+&java.util.Map.remove(java.lang.Object)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaé é(!2u
+&java.util.Map.remove(java.lang.Object)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaè è(!2u
+&java.util.Map.remove(java.lang.Object)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaê ê(!2u
+&java.util.Map.remove(java.lang.Object)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaë ë(!2u
+&java.util.Map.remove(java.lang.Object)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaí í(!2u
+&java.util.Map.remove(java.lang.Object)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaì ì(!2u
+&java.util.Map.remove(java.lang.Object)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaî î(!2g
+java.util.Map.entrySet()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javañD ñ(L2d
+java.util.List.add(E)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaó ó(2k
+java.util.Map.Entry.getKey()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaó= ó(C2m
+java.util.Map.Entry.getValue()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaóK ó(S2Ç
+2org.jabref.gui.LibraryTab.getSuggestionProviders()CALLF
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaós ó(â2É
+2org.jabref.gui.LibraryTab.getIndexingTaskManager()CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaó‰ ó(˙2d
+java.util.List.add(E)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaõ õ(2d
+java.util.List.add(E)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaú ú(2}
+.org.jabref.gui.LibraryTab.getAnnotationCache()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaú= ú(O2d
+java.util.List.add(E)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaù ù(2d
+java.util.List.add(E)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaû û(2d
+java.util.List.add(E)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java† †(2é
+?org.jabref.preferences.PreferencesService.getFieldPreferences()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java•# •(62ï
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¶# ¶(=2d
+java.util.List.add(E)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¨ ¨(2d
+java.util.List.add(E)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÆ Æ(2d
+java.util.List.add(E)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∞ ∞(2ä
+∫org.jabref.gui.entryeditor.PreviewTab.PreviewTab(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˘  ˘(*2Œ
+˛org.jabref.gui.entryeditor.RequiredFieldsTab.RequiredFieldsTab(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor, org.jabref.logic.journals.JournalAbbreviationRepository)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¸  ¸(12Œ
+˛org.jabref.gui.entryeditor.OptionalFieldsTab.OptionalFieldsTab(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor, org.jabref.logic.journals.JournalAbbreviationRepository)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˝  ˝(12–
+Äorg.jabref.gui.entryeditor.OptionalFields2Tab.OptionalFields2Tab(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor, org.jabref.logic.journals.JournalAbbreviationRepository)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛  ˛(22“
+Çorg.jabref.gui.entryeditor.DeprecatedFieldsTab.DeprecatedFieldsTab(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor, org.jabref.logic.journals.JournalAbbreviationRepository)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˇ  ˇ(32»
+¯org.jabref.gui.entryeditor.OtherFieldsTab.OtherFieldsTab(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor, org.jabref.logic.journals.JournalAbbreviationRepository)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ  Ä(.2ï
+≈org.jabref.gui.entryeditor.CommentsTab.CommentsTab(org.jabref.preferences.PreferencesService, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor, org.jabref.logic.journals.JournalAbbreviationRepository)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÉ  É(+2Ï
+úorg.jabref.gui.entryeditor.UserDefinedFieldsTab.UserDefinedFieldsTab(java.lang.String, java.util.Set<org.jabref.model.entry.field.Field>, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.autocompleter.SuggestionProviders, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor, org.jabref.logic.journals.JournalAbbreviationRepository)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaó$ ó(82á
+8org.jabref.gui.entryeditor.MathSciNetTab.MathSciNetTab()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaõ  õ(-2…
+zorg.jabref.gui.entryeditor.fileannotationtab.FileAnnotationTab.FileAnnotationTab(org.jabref.logic.pdf.FileAnnotationCache)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaú  ú(12Á
+óorg.jabref.gui.entryeditor.SciteTab.SciteTab(org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaù  ù((2Û
+£org.jabref.gui.entryeditor.citationrelationtab.CitationRelationsTab.CitationRelationsTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.gui.DialogService, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.util.TaskExecutor)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaû  û(42Æ
+ﬁorg.jabref.gui.entryeditor.RelatedArticlesTab.RelatedArticlesTab(org.jabref.gui.entryeditor.EntryEditorPreferences, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java†  †(22ß
+◊org.jabref.gui.entryeditor.LatexCitationsTab.LatexCitationsTab(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÆ  Æ(12∂
+Êorg.jabref.gui.entryeditor.fileannotationtab.FulltextSearchResultsTab.FulltextSearchResultsTab(org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∞  ∞(82ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˘ ˘(2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˘+ ˘(:2ë
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˘< ˘(I2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˘K ˘(]2ê
+Aorg.jabref.gui.entryeditor.EntryEditor?stateManager@106.33:106.45CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˘_ ˘(k2ê
+Aorg.jabref.gui.entryeditor.EntryEditor?themeManager@107.33:107.45CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˘m ˘(y2ç
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLF
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˘{ ˘(Ö2í
+Aorg.jabref.gui.entryeditor.EntryEditor?taskExecutor@104.33:104.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˘† ˘(¨2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¸ ¸(2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¸2 ¸(A2å
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¸C ¸(M2è
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¸h ¸(s2í
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLF
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¸u ¸(Ç2ò
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¸Ñ ¸(ñ2í
+Aorg.jabref.gui.entryeditor.EntryEditor?stateManager@106.33:106.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¸ò ¸(§2í
+Aorg.jabref.gui.entryeditor.EntryEditor?themeManager@107.33:107.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¸¶ ¸(≤2é
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¸¥ ¸(æ2ö
+Iorg.jabref.gui.entryeditor.EntryEditor?bibEntryTypesManager@110.41:110.61CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¸Ÿ ¸(Ì2í
+Aorg.jabref.gui.entryeditor.EntryEditor?taskExecutor@104.33:104.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¸Ô ¸(˚2£
+Rorg.jabref.gui.entryeditor.EntryEditor?journalAbbreviationRepository@112.50:112.79CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¸˝ ¸(ö2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˝ ˝(2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˝2 ˝(A2å
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˝C ˝(M2è
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˝h ˝(s2í
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLF
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˝u ˝(Ç2ò
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˝Ñ ˝(ñ2í
+Aorg.jabref.gui.entryeditor.EntryEditor?stateManager@106.33:106.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˝ò ˝(§2í
+Aorg.jabref.gui.entryeditor.EntryEditor?themeManager@107.33:107.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˝¶ ˝(≤2é
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˝¥ ˝(æ2ö
+Iorg.jabref.gui.entryeditor.EntryEditor?bibEntryTypesManager@110.41:110.61CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˝Ÿ ˝(Ì2í
+Aorg.jabref.gui.entryeditor.EntryEditor?taskExecutor@104.33:104.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˝Ô ˝(˚2£
+Rorg.jabref.gui.entryeditor.EntryEditor?journalAbbreviationRepository@112.50:112.79CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˝˝ ˝(ö2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛ ˛(2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛3 ˛(B2å
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛D ˛(N2è
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛i ˛(t2í
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLF
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛v ˛(É2ò
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛Ö ˛(ó2í
+Aorg.jabref.gui.entryeditor.EntryEditor?stateManager@106.33:106.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛ô ˛(•2í
+Aorg.jabref.gui.entryeditor.EntryEditor?themeManager@107.33:107.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛ß ˛(≥2é
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛µ ˛(ø2ö
+Iorg.jabref.gui.entryeditor.EntryEditor?bibEntryTypesManager@110.41:110.61CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛⁄ ˛(Ó2í
+Aorg.jabref.gui.entryeditor.EntryEditor?taskExecutor@104.33:104.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛ ˛(¸2£
+Rorg.jabref.gui.entryeditor.EntryEditor?journalAbbreviationRepository@112.50:112.79CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛˛ ˛(õ2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˇ ˇ(2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˇ4 ˇ(C2å
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˇE ˇ(O2è
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˇj ˇ(u2í
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLF
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˇw ˇ(Ñ2ò
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˇÜ ˇ(ò2í
+Aorg.jabref.gui.entryeditor.EntryEditor?stateManager@106.33:106.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˇö ˇ(¶2í
+Aorg.jabref.gui.entryeditor.EntryEditor?themeManager@107.33:107.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˇ® ˇ(¥2é
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˇ∂ ˇ(¿2ö
+Iorg.jabref.gui.entryeditor.EntryEditor?bibEntryTypesManager@110.41:110.61CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˇ€ ˇ(Ô2í
+Aorg.jabref.gui.entryeditor.EntryEditor?taskExecutor@104.33:104.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˇÒ ˇ(˝2£
+Rorg.jabref.gui.entryeditor.EntryEditor?journalAbbreviationRepository@112.50:112.79CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˇˇ ˇ(ú2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ Ä(2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ/ Ä(>2å
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ@ Ä(J2è
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄe Ä(p2ë
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄr Ä(2ò
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄÅ Ä(ì2í
+Aorg.jabref.gui.entryeditor.EntryEditor?stateManager@106.33:106.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄï Ä(°2í
+Aorg.jabref.gui.entryeditor.EntryEditor?themeManager@107.33:107.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ£ Ä(Ø2é
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ± Ä(ª2ö
+Iorg.jabref.gui.entryeditor.EntryEditor?bibEntryTypesManager@110.41:110.61CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ÷ Ä(Í2í
+Aorg.jabref.gui.entryeditor.EntryEditor?taskExecutor@104.33:104.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄÏ Ä(¯2£
+Rorg.jabref.gui.entryeditor.EntryEditor?journalAbbreviationRepository@112.50:112.79CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ˙ Ä(ó2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÉ É(2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÉ, É(>2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÉ@ É(O2å
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÉQ É([2ê
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51CALLF
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÉv É(Å2ì
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÉÉ É(ê2í
+Aorg.jabref.gui.entryeditor.EntryEditor?stateManager@106.33:106.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÉí É(û2í
+Aorg.jabref.gui.entryeditor.EntryEditor?themeManager@107.33:107.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÉ† É(¨2é
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÉÆ É(∏2í
+Aorg.jabref.gui.entryeditor.EntryEditor?taskExecutor@104.33:104.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÉ” É(ﬂ2£
+Rorg.jabref.gui.entryeditor.EntryEditor?journalAbbreviationRepository@112.50:112.79CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÉ· É(˛2ò
+Iorg.jabref.gui.entryeditor.EntryEditor?entryEditorPreferences@82.41:82.63CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaáC á(Y2£
+Torg.jabref.gui.entryeditor.EntryEditor.createTabs()?entryEditorTabList@263.32:263.50CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaà à(2£
+Torg.jabref.gui.entryeditor.EntryEditor.createTabs()?entryEditorTabList@263.32:263.50CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaâ â(2£
+Torg.jabref.gui.entryeditor.EntryEditor.createTabs()?entryEditorTabList@263.32:263.50CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaä ä(2£
+Torg.jabref.gui.entryeditor.EntryEditor.createTabs()?entryEditorTabList@263.32:263.50CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaã ã(2£
+Torg.jabref.gui.entryeditor.EntryEditor.createTabs()?entryEditorTabList@263.32:263.50CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaå å(2£
+Torg.jabref.gui.entryeditor.EntryEditor.createTabs()?entryEditorTabList@263.32:263.50CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaç ç(2£
+Torg.jabref.gui.entryeditor.EntryEditor.createTabs()?entryEditorTabList@263.32:263.50CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaé é(2£
+Torg.jabref.gui.entryeditor.EntryEditor.createTabs()?entryEditorTabList@263.32:263.50CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaè è(2£
+Torg.jabref.gui.entryeditor.EntryEditor.createTabs()?entryEditorTabList@263.32:263.50CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaê ê(2£
+Torg.jabref.gui.entryeditor.EntryEditor.createTabs()?entryEditorTabList@263.32:263.50CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaë ë(2£
+Torg.jabref.gui.entryeditor.EntryEditor.createTabs()?entryEditorTabList@263.32:263.50CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaí í(2£
+Torg.jabref.gui.entryeditor.EntryEditor.createTabs()?entryEditorTabList@263.32:263.50CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaì ì(2£
+Torg.jabref.gui.entryeditor.EntryEditor.createTabs()?entryEditorTabList@263.32:263.50CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaî î(2£
+Torg.jabref.gui.entryeditor.EntryEditor.createTabs()?entryEditorTabList@263.32:263.50CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javañ1 ñ(C2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaó ó(2î
+Eorg.jabref.gui.entryeditor.EntryEditor.createTabs()?tab@278.43:278.46CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaó9 ó(<2î
+Eorg.jabref.gui.entryeditor.EntryEditor.createTabs()?tab@278.43:278.46CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaóG ó(J2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaóW ó(f2å
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaóh ó(r2ë
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaóç ó(ò2ì
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaóö ó(ß2ò
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaó© ó(ª2í
+Aorg.jabref.gui.entryeditor.EntryEditor?stateManager@106.33:106.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaóΩ ó(…2í
+Aorg.jabref.gui.entryeditor.EntryEditor?themeManager@107.33:107.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaóÀ ó(◊2é
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaóŸ ó(„2í
+Aorg.jabref.gui.entryeditor.EntryEditor?taskExecutor@104.33:104.45CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaó˛ ó(ä2£
+Rorg.jabref.gui.entryeditor.EntryEditor?journalAbbreviationRepository@112.50:112.79CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaóå ó(©2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaõ õ(2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaú ú(2å
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaú2 ú(<2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaù ù(2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaù) ù(;2ê
+Aorg.jabref.gui.entryeditor.EntryEditor?taskExecutor@104.33:104.45CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaù= ù(I2ë
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaùK ù(X2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaû û(2ò
+Iorg.jabref.gui.entryeditor.EntryEditor?entryEditorPreferences@82.41:82.63CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaû5 û(K2ë
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaûM û(Z2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaû\ û(k2è
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaü ü(2ê
+Aorg.jabref.gui.entryeditor.EntryEditor?stateManager@106.33:106.45CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaü ü()2è
+@org.jabref.gui.entryeditor.EntryEditor?fileMonitor@108.38:108.49CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaü+ ü(62ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaü8 ü(J2å
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaüL ü(V2ê
+Aorg.jabref.gui.entryeditor.EntryEditor?taskExecutor@104.33:104.45CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaüX ü(d2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java† †(2ò
+Iorg.jabref.gui.entryeditor.EntryEditor?entryEditorPreferences@82.41:82.63CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java†3 †(I2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java†K †(]2ë
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java†_ †(l2ê
+Aorg.jabref.gui.entryeditor.EntryEditor?taskExecutor@104.33:104.45CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java†n †(z2ã
+<org.jabref.gui.entryeditor.EntryEditor?sourceTab@93.22:93.31CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¢ ¢(2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java£ £(2è
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java§ §(2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java• •("2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¶ ¶("2è
+@org.jabref.gui.entryeditor.EntryEditor?fileMonitor@108.38:108.49CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaß ß(2ë
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java® ®(2ê
+Aorg.jabref.gui.entryeditor.EntryEditor?stateManager@106.33:106.45CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java© ©(2ò
+Iorg.jabref.gui.entryeditor.EntryEditor?bibEntryTypesManager@110.41:110.61CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java™ ™($2ò
+Iorg.jabref.gui.entryeditor.EntryEditor?keyBindingRepository@111.41:111.61CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java´ ´($2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¨ ¨(2ã
+<org.jabref.gui.entryeditor.EntryEditor?sourceTab@93.22:93.31CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¨ ¨(%2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÆ Æ(2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÆ2 Æ(A2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÆC Æ(U2ê
+Aorg.jabref.gui.entryeditor.EntryEditor?taskExecutor@104.33:104.45CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÆW Æ(c2ë
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÆe Æ(r2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∞ ∞(2ê
+Aorg.jabref.gui.entryeditor.EntryEditor?stateManager@106.33:106.45CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∞9 ∞(E2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∞G ∞(Y2ë
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∞[ ∞(h2ê
+Aorg.jabref.gui.entryeditor.EntryEditor?taskExecutor@104.33:104.45CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∞j ∞(v2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java≤ ≤(2™
+Torg.jabref.gui.entryeditor.EntryEditor.createTabs()?entryEditorTabList@263.32:263.50DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaá  á(22õ
+Eorg.jabref.gui.entryeditor.EntryEditor.createTabs()?tab@278.43:278.46DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javañ+ ñ(.2d
+java.util.ListRETURN_TYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¯ ¯(2à
+)org.jabref.gui.entryeditor.EntryEditorTabRETURN_TYPE_ARGUMENTE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¯ ¯(å	
+Torg.jabref.gui.entryeditor.EntryEditor.createTabs()?entryEditorTabList@263.32:263.50VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaá  á(2"
+typeMap<String, Set<Field>>"
+isFinalfalse"Ω
+declarationStringß<mark class="modifier"> </mark>Map<String, Set<Field>> <mark class="class-field">entryEditorTabList</mark> = new HashMap<>(entryEditorPreferences.getEntryEditorTabs())*entryEditorTabList2\
+java.util.MapTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaá á(2h
+java.lang.StringTYPE_ARGUMENTE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaá á(2e
+java.util.SetTYPE_ARGUMENTE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaá á(2z
+"org.jabref.model.entry.field.FieldTYPE_ARGUMENTE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaá á(2ï
+Forg.jabref.gui.entryeditor.EntryEditorPreferences.getEntryEditorTabs()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaáZ á(l2ò
+Iorg.jabref.gui.entryeditor.EntryEditor?entryEditorPreferences@82.41:82.63CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaáC á(Yˇ
+Eorg.jabref.gui.entryeditor.EntryEditor.createTabs()?tab@278.43:278.46VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javañ+ ñ(."%
+typeMap.Entry<String, Set<Field>>"
+isFinalfalse"v
+declarationStringa<mark class="modifier"> </mark>Map.Entry<String, Set<Field>> <mark class="class-field">tab</mark>*tab2b
+java.util.Map.EntryTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javañ ñ(2h
+java.lang.StringTYPE_ARGUMENTE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javañ ñ(2e
+java.util.SetTYPE_ARGUMENTE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javañ ñ(2z
+"org.jabref.model.entry.field.FieldTYPE_ARGUMENTE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javañ ñ("Ÿ4
+?org.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()METHODE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaµ µ('"
+isFinalfalse"í
+declarationString}<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">recalculateVisibleTabs</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*recalculateVisibleTabs2õ
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂S ∂(Z2ñ
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂. ∂(42l
+java.util.Collection.stream()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂% ∂(+2§
+Uorg.jabref.gui.entryeditor.EntryEditorTab.shouldShow(org.jabref.model.entry.BibEntry)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂@ ∂(J2s
+$java.util.stream.Collectors.toList()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂f ∂(l2o
+ java.util.stream.Stream.toList()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaø_ ø(e2ñ
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaø9 ø(?2l
+java.util.Collection.stream()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaø0 ø(62§
+Uorg.jabref.gui.entryeditor.EntryEditorTab.shouldShow(org.jabref.model.entry.BibEntry)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaøL ø(V2d
+java.util.List.size()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java√( √(,2f
+java.util.List.get(int)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaƒ( ƒ(+2Ü
+7org.jabref.gui.entryeditor.EntryEditor?tabs@87.39:87.43CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂  ∂($2†
+Qorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?tab@310.53:310.56CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂< ∂(?2á
+8org.jabref.gui.entryeditor.EntryEditor?entry@92.21:92.26CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂K ∂(P2Ü
+7org.jabref.gui.entryeditor.EntryEditor?tabs@87.39:87.43CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaø+ ø(/2†
+Qorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?tab@319.64:319.67CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaøH ø(K2á
+8org.jabref.gui.entryeditor.EntryEditor?entry@92.21:92.26CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaøW ø(\2à
+9org.jabref.gui.entryeditor.EntryEditor?tabbed@98.26:98.32CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¿ ¿(2®
+Yorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?toBeRemoved@319.29:319.40CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¿# ¿(.2û
+Oorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?i@323.17:323.18CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java√ √(2®
+Yorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?visibleTabs@310.18:310.29CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java√ √('2û
+Oorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?i@323.17:323.18CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java√0 √(12®
+Yorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?visibleTabs@310.18:310.29CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaƒ ƒ('2û
+Oorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?i@323.17:323.18CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaƒ, ƒ(-2û
+Oorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?i@323.17:323.18CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java« «(2à
+9org.jabref.gui.entryeditor.EntryEditor?tabbed@98.26:98.32CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java« «(2¢
+Sorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?shown@325.16:325.21CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java» »(2à
+9org.jabref.gui.entryeditor.EntryEditor?tabbed@98.26:98.32CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java» »(2û
+Oorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?i@323.17:323.18CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java»- »(.2¶
+Worg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?toBeAdded@324.16:324.25CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÀ À(2¢
+Sorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?shown@325.16:325.21CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÀ" À('2à
+9org.jabref.gui.entryeditor.EntryEditor?tabbed@98.26:98.32CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÃ Ã(2û
+Oorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?i@323.17:323.18CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÃ% Ã(&2¶
+Worg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?toBeAdded@324.16:324.25CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÃ( Ã(12Ø
+Yorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?visibleTabs@310.18:310.29DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂ ∂(2Ø
+Yorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?toBeRemoved@319.29:319.40DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaø ø((2•
+Oorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?i@323.17:323.18DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java√ √(2≠
+Worg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?toBeAdded@324.16:324.25DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaƒ ƒ(2©
+Sorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?shown@325.16:325.21DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java≈ ≈(2ß
+Qorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?tab@310.53:310.56DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂5 ∂(82ß
+Qorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?tab@319.64:319.67DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaø@ ø(C2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaµ µ(Ê
+Yorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?visibleTabs@310.18:310.29VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂ ∂("
+type	List<Tab>"
+isFinalfalse"Ω
+declarationStringß<mark class="modifier"> </mark>List<Tab> <mark class="class-field">visibleTabs</mark> = tabs.stream().filter(tab -> tab.shouldShow(entry)).collect(Collectors.toList())*visibleTabs2]
+java.util.ListTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂ ∂(2p
+javafx.scene.control.TabTYPE_ARGUMENTE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂ ∂(2õ
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂S ∂(Z2ñ
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂. ∂(42l
+java.util.Collection.stream()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂% ∂(+2§
+Uorg.jabref.gui.entryeditor.EntryEditorTab.shouldShow(org.jabref.model.entry.BibEntry)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂@ ∂(J2s
+$java.util.stream.Collectors.toList()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂f ∂(l2Ü
+7org.jabref.gui.entryeditor.EntryEditor?tabs@87.39:87.43CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂  ∂($2†
+Qorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?tab@310.53:310.56CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂< ∂(?2á
+8org.jabref.gui.entryeditor.EntryEditor?entry@92.21:92.26CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂K ∂(PŸ
+Yorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?toBeRemoved@319.29:319.40VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaø ø(("
+typeList<EntryEditorTab>"
+isFinalfalse"µ
+declarationStringü<mark class="modifier"> </mark>List<EntryEditorTab> <mark class="class-field">toBeRemoved</mark> = tabs.stream().filter(tab -> !tab.shouldShow(entry)).toList()*toBeRemoved2]
+java.util.ListTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaø ø(2Å
+)org.jabref.gui.entryeditor.EntryEditorTabTYPE_ARGUMENTE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaø ø(2o
+ java.util.stream.Stream.toList()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaø_ ø(e2ñ
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaø9 ø(?2l
+java.util.Collection.stream()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaø0 ø(62§
+Uorg.jabref.gui.entryeditor.EntryEditorTab.shouldShow(org.jabref.model.entry.BibEntry)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaøL ø(V2Ü
+7org.jabref.gui.entryeditor.EntryEditor?tabs@87.39:87.43CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaø+ ø(/2†
+Qorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?tab@319.64:319.67CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaøH ø(K2á
+8org.jabref.gui.entryeditor.EntryEditor?entry@92.21:92.26CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaøW ø(\ñ
+Oorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?i@323.17:323.18VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java√ √("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 0*i2R
+intTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java√ √(Í
+Worg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?toBeAdded@324.16:324.25VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaƒ ƒ("
+typeTab"
+isFinalfalse"w
+declarationStringb<mark class="modifier"> </mark>Tab <mark class="class-field">toBeAdded</mark> = visibleTabs.get(i)*	toBeAdded2g
+javafx.scene.control.TabTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaƒ ƒ(2f
+java.util.List.get(int)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaƒ( ƒ(+2®
+Yorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?visibleTabs@310.18:310.29CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaƒ ƒ('2û
+Oorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?i@323.17:323.18CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaƒ, ƒ(-ª
+Sorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?shown@325.16:325.21VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java≈ ≈("
+typeTab"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark>Tab <mark class="class-field">shown</mark> = <mark class="modifier">null</mark>*shown2g
+javafx.scene.control.TabTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java≈ ≈(Ê
+Qorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?tab@310.53:310.56VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂5 ∂(8"
+type"
+isFinalfalse"
+declarationString tab*tab2TYPEÊ
+Qorg.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()?tab@319.64:319.67VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaø@ ø(C"
+type"
+isFinalfalse"
+declarationString tab*tab2TYPE÷
+1org.jabref.gui.entryeditor.EntryEditor.getEntry()METHODE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java‘ ‘("
+isFinalfalse"i
+declarationStringT<mark class="modifier">public </mark>BibEntry <mark class="method">getEntry</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeBibEntry*getEntry2á
+8org.jabref.gui.entryeditor.EntryEditor?entry@92.21:92.26CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java’ ’(2u
+org.jabref.model.entry.BibEntryRETURN_TYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java‘ ‘(Ï0
+Porg.jabref.gui.entryeditor.EntryEditor.setEntry(org.jabref.model.entry.BibEntry)METHODE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java€ €("
+isFinalfalse"ë
+declarationString|<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">setEntry</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*setEntry2r
+#java.util.Objects.requireNonNull(T)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java‹ ‹(2é
+?org.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÂ Â(2ò
+Iorg.jabref.preferences.PreviewPreferences.showPreviewAsExtraTabProperty()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÊC Ê(`2ê
+Aorg.jabref.preferences.PreferencesService.getPreviewPreferences()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÊ+ Ê(@2é
+?org.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÁ- Á(C2ô
+Jorg.jabref.gui.entryeditor.EntryEditorPreferences.showSourceTabByDefault()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÈ# È(92™
+[org.jabref.gui.entryeditor.EntryEditorTab.notifyAboutFocus(org.jabref.model.entry.BibEntry)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÓ Ó()2Ü
+7org.jabref.gui.entryeditor.EntryEditor.getSelectedTab()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÓ Ó(2Ñ
+5org.jabref.gui.entryeditor.EntryEditor.setupToolBar()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java (2}
+.org.jabref.model.entry.BibEntry.typeProperty()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÛ9 Û(E2à
+9org.jabref.logic.bibtex.TypedBibEntry.getTypeForDisplay()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÙR Ù(c2Ö
+6org.jabref.model.database.BibDatabaseContext.getMode()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÙG Ù(N2é
+?org.jabref.gui.entryeditor.EntryEditor.recalculateVisibleTabs()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaı ı("2™
+[org.jabref.gui.entryeditor.EntryEditorTab.notifyAboutFocus(org.jabref.model.entry.BibEntry)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˆ ˆ(-2Ü
+7org.jabref.gui.entryeditor.EntryEditor.getSelectedTab()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˆ ˆ(2Œ
+org.jabref.logic.bibtex.TypedBibEntry.TypedBibEntry(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÙ" Ù(/2•
+Vorg.jabref.gui.entryeditor.EntryEditor.setEntry(org.jabref.model.entry.BibEntry)!entryCALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java‹ ‹($2í
+Corg.jabref.gui.entryeditor.EntryEditor?typeSubscription@88.25:88.41CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaﬂ ﬂ(2í
+Corg.jabref.gui.entryeditor.EntryEditor?typeSubscription@88.25:88.41CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java‡ ‡(2•
+Vorg.jabref.gui.entryeditor.EntryEditor.setEntry(org.jabref.model.entry.BibEntry)!entryCALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java„ „(2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÊ Ê(*2ò
+Iorg.jabref.gui.entryeditor.EntryEditor?entryEditorPreferences@82.41:82.63CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÈ È("2à
+9org.jabref.gui.entryeditor.EntryEditor?tabbed@98.26:98.32CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÍ Í(2ã
+<org.jabref.gui.entryeditor.EntryEditor?sourceTab@93.22:93.31CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÍ. Í(72•
+Vorg.jabref.gui.entryeditor.EntryEditor.setEntry(org.jabref.model.entry.BibEntry)!entryCALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÓ* Ó(/2í
+Corg.jabref.gui.entryeditor.EntryEditor?typeSubscription@88.25:88.41CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÛ Û(2ç
+>org.jabref.gui.entryeditor.EntryEditor?typeLabel@102.24:102.33CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÙ Ù(2•
+Vorg.jabref.gui.entryeditor.EntryEditor.setEntry(org.jabref.model.entry.BibEntry)!entryCALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÙ0 Ù(52ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÙ7 Ù(F2•
+Vorg.jabref.gui.entryeditor.EntryEditor.setEntry(org.jabref.model.entry.BibEntry)!entryCALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaˆ. ˆ(32á
+8org.jabref.gui.entryeditor.EntryEditor?entry@92.21:92.26CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java„ „(2á
+8org.jabref.gui.entryeditor.EntryEditor?entry@92.21:92.26CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÛ3 Û(82™
+Vorg.jabref.gui.entryeditor.EntryEditor.setEntry(org.jabref.model.entry.BibEntry)!entry	PARAMETERE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java€" €('2∏
+borg.jabref.gui.entryeditor.EntryEditor.setEntry(org.jabref.model.entry.BibEntry)?obs@359.17:359.20DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÁ Á(2Ω
+gorg.jabref.gui.entryeditor.EntryEditor.setEntry(org.jabref.model.entry.BibEntry)?oldValue@359.22:359.30DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÁ Á(2Ω
+gorg.jabref.gui.entryeditor.EntryEditor.setEntry(org.jabref.model.entry.BibEntry)?newValue@359.32:359.40DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÁ  Á((2π
+corg.jabref.gui.entryeditor.EntryEditor.setEntry(org.jabref.model.entry.BibEntry)?type@371.73:371.77DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÛI Û(M2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java€ €(Í
+Vorg.jabref.gui.entryeditor.EntryEditor.setEntry(org.jabref.model.entry.BibEntry)!entry	PARAMETERE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java€" €('"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2n
+org.jabref.model.entry.BibEntryTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java€ €(!˜
+borg.jabref.gui.entryeditor.EntryEditor.setEntry(org.jabref.model.entry.BibEntry)?obs@359.17:359.20VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÁ Á("
+type"
+isFinalfalse"
+declarationString obs*obs2TYPEÜ
+gorg.jabref.gui.entryeditor.EntryEditor.setEntry(org.jabref.model.entry.BibEntry)?oldValue@359.22:359.30VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÁ Á("
+type"
+isFinalfalse"
+declarationString	 oldValue*oldValue2TYPEÜ
+gorg.jabref.gui.entryeditor.EntryEditor.setEntry(org.jabref.model.entry.BibEntry)?newValue@359.32:359.40VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÁ  Á(("
+type"
+isFinalfalse"
+declarationString	 newValue*newValue2TYPE˙
+corg.jabref.gui.entryeditor.EntryEditor.setEntry(org.jabref.model.entry.BibEntry)?type@371.73:371.77VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÛI Û(M"
+type"
+isFinalfalse"
+declarationString type*type2TYPEÅ
+7org.jabref.gui.entryeditor.EntryEditor.getSelectedTab()METHODE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˙ ˙()"
+isFinalfalse"v
+declarationStringa<mark class="modifier">private </mark>EntryEditorTab <mark class="method">getSelectedTab</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeEntryEditorTab*getSelectedTab2à
+9org.jabref.gui.entryeditor.EntryEditor?tabbed@98.26:98.32CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˚  ˚(&2
+)org.jabref.gui.entryeditor.EntryEditorTabRETURN_TYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˙ ˙(‹S
+5org.jabref.gui.entryeditor.EntryEditor.setupToolBar()METHODE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛ ˛("
+isFinalfalse"à
+declarationStrings<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">setupToolBar</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*setupToolBar2Ö
+6org.jabref.model.database.BibDatabaseContext.getMode()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄL Ä(S2à
+9org.jabref.logic.bibtex.TypedBibEntry.getTypeForDisplay()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÅ% Å(62â
+8org.jabref.gui.menus.ChangeEntryTypeMenu.asContextMenu()CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑ£ Ñ(∞2u
+&java.util.Collections.singletonList(T)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑC Ñ(P2ë
+Borg.jabref.preferences.PreferencesService.getImporterPreferences()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaã# ã(92ï
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaå# å(=2ç
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaç# ç(52}
+.org.jabref.logic.importer.WebFetcher.getName()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaê< ê(C2Ô
+üorg.jabref.gui.importer.GrobidOptInDialogHelper.showAndWaitIfUserIsUndecided(org.jabref.gui.DialogService, org.jabref.logic.importer.fetcher.GrobidPreferences)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaî, î(H2è
+@org.jabref.preferences.PreferencesService.getGrobidPreferences()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaîk î(2ï
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaó7 ó(Q2ç
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaò7 ò(I2∞
+aorg.jabref.gui.entryeditor.EntryEditor.fetchAndMerge(org.jabref.logic.importer.EntryBasedFetcher)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaö ö(!2∞
+aorg.jabref.gui.entryeditor.EntryEditor.fetchAndMerge(org.jabref.logic.importer.EntryBasedFetcher)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaù5 ù(B2Œ
+org.jabref.logic.bibtex.TypedBibEntry.TypedBibEntry(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ' Ä(42‰
+îorg.jabref.gui.menus.ChangeEntryTypeMenu.ChangeEntryTypeMenu(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.model.entry.BibEntryTypesManager)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑ# Ñ(62á
+8org.jabref.gui.entryeditor.EntryEditor?entry@92.21:92.26CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ5 Ä(:2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ< Ä(K2ç
+>org.jabref.gui.entryeditor.EntryEditor?typeLabel@102.24:102.33CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÅ Å(2ù
+Norg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?typedEntry@384.22:384.32CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÅ Å($2á
+8org.jabref.gui.entryeditor.EntryEditor?entry@92.21:92.26CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑQ Ñ(V2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑY Ñ(h2è
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑj Ñ(u2ô
+Iorg.jabref.gui.entryeditor.EntryEditor?keyBindingRepository@111.41:111.61CALLF
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑw Ñ(ã2ö
+Iorg.jabref.gui.entryeditor.EntryEditor?bibEntryTypesManager@110.41:110.61CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑç Ñ(°2ç
+>org.jabref.gui.entryeditor.EntryEditor?typeLabel@102.24:102.33CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÖ Ö(2õ
+Lorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?typeMenu@388.20:388.28CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÖ- Ö(52ç
+>org.jabref.gui.entryeditor.EntryEditor?typeLabel@102.24:102.33CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÖ; Ö(D2î
+Eorg.jabref.gui.entryeditor.EntryEditor?typeChangeButton@100.25:100.41CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÜ Ü(2õ
+Lorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?typeMenu@388.20:388.28CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÜ4 Ü(<2î
+Eorg.jabref.gui.entryeditor.EntryEditor?typeChangeButton@100.25:100.41CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÜB Ü(R2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaã ã("2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaå å("2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaç ç("2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaé é(2•
+Vorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?entryBasedFetchers@394.37:394.55CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaè) è(;2ö
+Korg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?fetcher@399.31:399.38CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaê4 ê(;2ö
+Korg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?fetcher@399.31:399.38CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaë ë(2¢
+Sorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?fetcherMenuItem@400.21:400.36CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaì ì(2ë
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaîI î(V2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaîX î(j2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaó$ ó(62ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaò$ ò(62ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaô$ ô(32´
+\org.jabref.gui.entryeditor.EntryEditor.setupToolBar()?pdfMergeMetadataImporter@405.70:405.94CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaö" ö(:2¢
+Sorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?fetcherMenuItem@400.21:400.36CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaù ù(2ö
+Korg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?fetcher@399.31:399.38CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaùC ù(J2û
+Oorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?fetcherMenu@393.20:393.31CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaü ü(2¢
+Sorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?fetcherMenuItem@400.21:400.36CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaü' ü(62ë
+Borg.jabref.gui.entryeditor.EntryEditor?fetcherButton@101.25:101.38CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¢ ¢(2û
+Oorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?fetcherMenu@393.20:393.31CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¢1 ¢(<2ë
+Borg.jabref.gui.entryeditor.EntryEditor?fetcherButton@101.25:101.38CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¢B ¢(O2§
+Norg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?typedEntry@384.22:384.32DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ Ä( 2¢
+Lorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?typeMenu@388.20:388.28DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑ Ñ(2•
+Oorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?fetcherMenu@393.20:393.31DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaâ â(2¨
+Vorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?entryBasedFetchers@394.37:394.55DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaä% ä(72°
+Korg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?fetcher@399.31:399.38DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaè è(&2©
+Sorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?fetcherMenuItem@400.21:400.36DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaê ê($2≤
+\org.jabref.gui.entryeditor.EntryEditor.setupToolBar()?pdfMergeMetadataImporter@405.70:405.94DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaïF ï(^2ü
+Iorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?event@389.36:389.41DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÖ$ Ö()2ü
+Iorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?event@390.43:390.48DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÜ+ Ü(02ü
+Iorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?event@403.44:403.49DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaì, ì(12ü
+Iorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?event@413.44:413.49DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaù, ù(12ü
+Iorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?event@418.40:418.45DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¢( ¢(-2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java˛ ˛(Í
+Norg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?typedEntry@384.22:384.32VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ Ä( "
+typeTypedBibEntry"
+isFinalfalse"§
+declarationStringé<mark class="modifier"> </mark>TypedBibEntry <mark class="class-field">typedEntry</mark> = new TypedBibEntry(entry, databaseContext.getMode())*
+typedEntry2t
+%org.jabref.logic.bibtex.TypedBibEntryTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ Ä(2Ö
+6org.jabref.model.database.BibDatabaseContext.getMode()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄL Ä(S2Œ
+org.jabref.logic.bibtex.TypedBibEntry.TypedBibEntry(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ' Ä(42á
+8org.jabref.gui.entryeditor.EntryEditor?entry@92.21:92.26CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ5 Ä(:2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÄ< Ä(Kµ
+Lorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?typeMenu@388.20:388.28VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑ Ñ("
+typeContextMenu"
+isFinalfalse"û
+declarationStringà<mark class="modifier"> </mark>ContextMenu <mark class="class-field">typeMenu</mark> = new ChangeEntryTypeMenu(Collections.singletonList(entry)<mark class="modifier">,</mark> databaseContext, undoManager, keyBindingRepository, bibEntryTypesManager).asContextMenu()*typeMenu2o
+ javafx.scene.control.ContextMenuTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑ Ñ(2â
+8org.jabref.gui.menus.ChangeEntryTypeMenu.asContextMenu()CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑ£ Ñ(∞2u
+&java.util.Collections.singletonList(T)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑC Ñ(P2‰
+îorg.jabref.gui.menus.ChangeEntryTypeMenu.ChangeEntryTypeMenu(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseContext, javax.swing.undo.UndoManager, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.model.entry.BibEntryTypesManager)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑ# Ñ(62á
+8org.jabref.gui.entryeditor.EntryEditor?entry@92.21:92.26CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑQ Ñ(V2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑY Ñ(h2è
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑj Ñ(u2ô
+Iorg.jabref.gui.entryeditor.EntryEditor?keyBindingRepository@111.41:111.61CALLF
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑw Ñ(ã2ö
+Iorg.jabref.gui.entryeditor.EntryEditor?bibEntryTypesManager@110.41:110.61CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÑç Ñ(° 
+Oorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?fetcherMenu@393.20:393.31VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaâ â("
+typeContextMenu"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier"> </mark>ContextMenu <mark class="class-field">fetcherMenu</mark> = new ContextMenu()*fetcherMenu2o
+ javafx.scene.control.ContextMenuTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaâ â(ò
+Vorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?entryBasedFetchers@394.37:394.55VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaä% ä(7"$
+typeSortedSet<EntryBasedFetcher>"
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier"> </mark>SortedSet<EntryBasedFetcher> <mark class="class-field">entryBasedFetchers</mark> = WebFetchers.getEntryBasedFetchers(preferencesService.getImporterPreferences()<mark class="modifier">,</mark> preferencesService.getImportFormatPreferences()<mark class="modifier">,</mark> preferencesService.getFilePreferences()<mark class="modifier">,</mark> databaseContext)*entryBasedFetchers2b
+java.util.SortedSetTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaä ä(2É
++org.jabref.logic.importer.EntryBasedFetcherTYPE_ARGUMENTE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaä ä(#2ë
+Borg.jabref.preferences.PreferencesService.getImporterPreferences()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaã# ã(92ï
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaå# å(=2ç
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaç# ç(52ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaã ã("2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaå å("2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaç ç("2ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaé é(¿
+Korg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?fetcher@399.31:399.38VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaè è(&"
+typeEntryBasedFetcher"
+isFinalfalse"n
+declarationStringY<mark class="modifier"> </mark>EntryBasedFetcher <mark class="class-field">fetcher</mark>*fetcher2z
++org.jabref.logic.importer.EntryBasedFetcherTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaè è(˜
+Sorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?fetcherMenuItem@400.21:400.36VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaê ê($"
+typeMenuItem"
+isFinalfalse"è
+declarationStringz<mark class="modifier"> </mark>MenuItem <mark class="class-field">fetcherMenuItem</mark> = new MenuItem(fetcher.getName())*fetcherMenuItem2l
+javafx.scene.control.MenuItemTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaê ê(2}
+.org.jabref.logic.importer.WebFetcher.getName()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaê< ê(C2ö
+Korg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?fetcher@399.31:399.38CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaê4 ê(;Æ
+\org.jabref.gui.entryeditor.EntryEditor.setupToolBar()?pdfMergeMetadataImporter@405.70:405.94VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaïF ï(^"9
+type1PdfMergeMetadataImporter.EntryBasedFetcherWrapper"
+isFinalfalse"ˇ
+declarationStringÈ<mark class="modifier"> </mark>PdfMergeMetadataImporter.EntryBasedFetcherWrapper <mark class="class-field">pdfMergeMetadataImporter</mark> = new PdfMergeMetadataImporter.EntryBasedFetcherWrapper(preferencesService.getImportFormatPreferences()<mark class="modifier">,</mark> preferencesService.getFilePreferences()<mark class="modifier">,</mark> databaseContext)*pdfMergeMetadataImporter2•
+Vorg.jabref.logic.importer.fileformat.PdfMergeMetadataImporter.EntryBasedFetcherWrapperTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaï- ï(E2ï
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaó7 ó(Q2ç
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaò7 ò(I2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaó$ ó(62ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaò$ ò(62ë
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaô$ ô(3‚
+Iorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?event@389.36:389.41VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÖ$ Ö()"
+type"
+isFinalfalse"
+declarationString event*event2TYPE‚
+Iorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?event@390.43:390.48VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÜ+ Ü(0"
+type"
+isFinalfalse"
+declarationString event*event2TYPE‚
+Iorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?event@403.44:403.49VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaì, ì(1"
+type"
+isFinalfalse"
+declarationString event*event2TYPE‚
+Iorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?event@413.44:413.49VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaù, ù(1"
+type"
+isFinalfalse"
+declarationString event*event2TYPE‚
+Iorg.jabref.gui.entryeditor.EntryEditor.setupToolBar()?event@418.40:418.45VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¢( ¢(-"
+type"
+isFinalfalse"
+declarationString event*event2TYPEµ
+aorg.jabref.gui.entryeditor.EntryEditor.fetchAndMerge(org.jabref.logic.importer.EntryBasedFetcher)METHODE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java• •("
+isFinalfalse"£
+declarationStringç<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">fetchAndMerge</mark>(EntryBasedFetcher fetcher)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*fetchAndMerge2‹
+äorg.jabref.gui.mergeentries.FetchAndMergeEntry.fetchAndMerge(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.EntryBasedFetcher)CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¶Å ¶(é2Ä
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¶* ¶(?2»
+¯org.jabref.gui.mergeentries.FetchAndMergeEntry.FetchAndMergeEntry(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, javax.swing.undo.UndoManager)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¶ ¶(2å
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¶ ¶()2ê
+Aorg.jabref.gui.entryeditor.EntryEditor?taskExecutor@104.33:104.45CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¶C ¶(O2ñ
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¶Q ¶(c2ë
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¶e ¶(r2è
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¶t ¶(2â
+8org.jabref.gui.entryeditor.EntryEditor?entry@92.21:92.26CALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¶è ¶(î2∫
+iorg.jabref.gui.entryeditor.EntryEditor.fetchAndMerge(org.jabref.logic.importer.EntryBasedFetcher)!fetcherCALLG
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¶ñ ¶(ù2Ω
+iorg.jabref.gui.entryeditor.EntryEditor.fetchAndMerge(org.jabref.logic.importer.EntryBasedFetcher)!fetcher	PARAMETERE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java•1 •(82Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java• •(ü
+iorg.jabref.gui.entryeditor.EntryEditor.fetchAndMerge(org.jabref.logic.importer.EntryBasedFetcher)!fetcher	PARAMETERE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java•1 •(8"
+typeEntryBasedFetcher"
+isFinalfalse".
+declarationStringEntryBasedFetcher fetcher*fetcher2z
++org.jabref.logic.importer.EntryBasedFetcherTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java• •(0…
+Zorg.jabref.gui.entryeditor.EntryEditor.setFocusToField(org.jabref.model.entry.field.Field)METHODE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java© ©("
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">setFocusToField</mark>(Field field)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*setFocusToField2ú
+Morg.jabref.gui.util.DefaultTaskExecutor.runInJavaFXThread(java.lang.Runnable)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java™ ™(-2™
+[org.jabref.gui.entryeditor.FieldsEditorTab.requestFocus(org.jabref.model.entry.field.Field)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaØ$ Ø(02à
+9org.jabref.gui.entryeditor.EntryEditor?tabbed@98.26:98.32CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java´ ´(!2ª
+lorg.jabref.gui.entryeditor.EntryEditor.setFocusToField(org.jabref.model.entry.field.Field)?tab@427.21:427.24CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java¨ ¨(2Ø
+`org.jabref.gui.entryeditor.EntryEditor.setFocusToField(org.jabref.model.entry.field.Field)!fieldCALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java≠E ≠(J2à
+9org.jabref.gui.entryeditor.EntryEditor?tabbed@98.26:98.32CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÆ Æ(2ª
+lorg.jabref.gui.entryeditor.EntryEditor.setFocusToField(org.jabref.model.entry.field.Field)?tab@427.21:427.24CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaÆ6 Æ(92Ø
+`org.jabref.gui.entryeditor.EntryEditor.setFocusToField(org.jabref.model.entry.field.Field)!fieldCALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaØ1 Ø(62¥
+`org.jabref.gui.entryeditor.EntryEditor.setFocusToField(org.jabref.model.entry.field.Field)!field	PARAMETERE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java©& ©(+2¬
+lorg.jabref.gui.entryeditor.EntryEditor.setFocusToField(org.jabref.model.entry.field.Field)?tab@427.21:427.24DECLARATIONE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java´ ´(2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java© ©(™
+lorg.jabref.gui.entryeditor.EntryEditor.setFocusToField(org.jabref.model.entry.field.Field)?tab@427.21:427.24VARIABLEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java´ ´("
+typeTab"
+isFinalfalse"\
+declarationStringG<mark class="modifier"> </mark>Tab <mark class="class-field">tab</mark>*tab2g
+javafx.scene.control.TabTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java´ ´(Ò
+`org.jabref.gui.entryeditor.EntryEditor.setFocusToField(org.jabref.model.entry.field.Field)!field	PARAMETERE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java©& ©(+"
+typeField"
+isFinalfalse" 
+declarationStringField field*field2q
+"org.jabref.model.entry.field.FieldTYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java©  ©(%ò
+9org.jabref.gui.entryeditor.EntryEditor.nextPreviewStyle()METHODE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaµ µ( "
+isFinalfalse"ã
+declarationStringv<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">nextPreviewStyle</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*nextPreviewStyle2ë
+Bjava.lang.Iterable.forEach(java.util.function.Consumer<? super T>)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂ ∂($2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂ ∂(2ã
+<org.jabref.gui.entryeditor.EntryEditorTab.nextPreviewStyle()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∂% ∂(E2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaµ µ(®
+=org.jabref.gui.entryeditor.EntryEditor.previousPreviewStyle()METHODE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaπ π($"
+isFinalfalse"è
+declarationStringz<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">previousPreviewStyle</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*previousPreviewStyle2ë
+Bjava.lang.Iterable.forEach(java.util.function.Consumer<? super T>)CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∫ ∫($2ì
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∫ ∫(2è
+@org.jabref.gui.entryeditor.EntryEditorTab.previousPreviewStyle()CALLE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java∫% ∫(I2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaπ π(ò
+9org.jabref.gui.entryeditor.EntryEditor?LOGGER@78.32:78.38VALUEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaN  N(&"
+isFinaltrue"
+typeLogger"·
+declarationStringÀ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(EntryEditor.class);"
+isStatictrue"
+accessprivate*LOGGER2]
+org.slf4j.LoggerTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaN N(„
+=org.jabref.gui.entryeditor.EntryEditor?libraryTab@80.29:80.39VALUEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaP P('"
+isFinaltrue"
+type
+LibraryTab"ñ
+declarationStringÄ<mark class="modifier">private </mark><mark class="modifier">final </mark>LibraryTab <mark class="class-field">libraryTab</mark>"
+isStaticfalse"
+accessprivate*
+libraryTab2f
+org.jabref.gui.LibraryTabTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaP P(ï
+Borg.jabref.gui.entryeditor.EntryEditor?databaseContext@81.37:81.52VALUEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaQ% Q(4"
+isFinaltrue"
+typeBibDatabaseContext"£
+declarationStringç<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">databaseContext</mark>"
+isStaticfalse"
+accessprivate*databaseContext2y
+,org.jabref.model.database.BibDatabaseContextTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaQ Q($∑
+Iorg.jabref.gui.entryeditor.EntryEditor?entryEditorPreferences@82.41:82.63VALUEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaR) R(?"
+isFinaltrue"
+typeEntryEditorPreferences"Æ
+declarationStringò<mark class="modifier">private </mark><mark class="modifier">final </mark>EntryEditorPreferences <mark class="class-field">entryEditorPreferences</mark>"
+isStaticfalse"
+accessprivate*entryEditorPreferences2~
+1org.jabref.gui.entryeditor.EntryEditorPreferencesTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaR R((ú
+=org.jabref.gui.entryeditor.EntryEditor?fileLinker@83.43:83.53VALUEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaS+ S(5"
+isFinaltrue" 
+typeExternalFilesEntryLinker"§
+declarationStringé<mark class="modifier">private </mark><mark class="modifier">final </mark>ExternalFilesEntryLinker <mark class="class-field">fileLinker</mark>"
+isStaticfalse"
+accessprivate*
+fileLinker2Ç
+5org.jabref.gui.externalfiles.ExternalFilesEntryLinkerTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaS S(*€
+7org.jabref.gui.entryeditor.EntryEditor?tabs@87.39:87.43VALUEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaW' W(+"
+isFinaltrue"
+typeList<EntryEditorTab>"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>List<EntryEditorTab> <mark class="class-field">tabs</mark>"
+isStaticfalse"
+accessprivate*tabs2[
+java.util.ListTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaW W(2
+)org.jabref.gui.entryeditor.EntryEditorTabTYPE_ARGUMENTC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaW W(%‚
+Corg.jabref.gui.entryeditor.EntryEditor?typeSubscription@88.25:88.41VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaX X()"
+isFinalfalse"
+typeSubscription"y
+declarationStringd<mark class="modifier">private </mark>Subscription <mark class="class-field">typeSubscription</mark>"
+isStaticfalse"
+accessprivate*typeSubscription2q
+$com.tobiasdiez.easybind.SubscriptionTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaX X(¥
+8org.jabref.gui.entryeditor.EntryEditor?entry@92.21:92.26VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java\ \("
+isFinalfalse"
+typeBibEntry"j
+declarationStringU<mark class="modifier">private </mark>BibEntry <mark class="class-field">entry</mark>"
+isStaticfalse"
+accessprivate*entry2l
+org.jabref.model.entry.BibEntryTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java\ \(«
+<org.jabref.gui.entryeditor.EntryEditor?sourceTab@93.22:93.31VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java] ]("
+isFinalfalse"
+type	SourceTab"o
+declarationStringZ<mark class="modifier">private </mark>SourceTab <mark class="class-field">sourceTab</mark>"
+isStaticfalse"
+accessprivate*	sourceTab2q
+$org.jabref.gui.entryeditor.SourceTabTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.java] ](≤
+9org.jabref.gui.entryeditor.EntryEditor?tabbed@98.26:98.32VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javab b( "
+isFinalfalse"
+typeTabPane"j
+declarationStringU<mark class="modifier">private </mark>TabPane <mark class="class-field">tabbed</mark>"
+isStaticfalse"
+accessprivate*tabbed2i
+javafx.scene.control.TabPaneTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javab b(œ
+Eorg.jabref.gui.entryeditor.EntryEditor?typeChangeButton@100.25:100.41VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javad d()"
+isFinalfalse"
+typeButton"s
+declarationString^<mark class="modifier">private </mark>Button <mark class="class-field">typeChangeButton</mark>"
+isStaticfalse"
+accessprivate*typeChangeButton2h
+javafx.scene.control.ButtonTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javad d(∆
+Borg.jabref.gui.entryeditor.EntryEditor?fetcherButton@101.25:101.38VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javae e(&"
+isFinalfalse"
+typeButton"p
+declarationString[<mark class="modifier">private </mark>Button <mark class="class-field">fetcherButton</mark>"
+isStaticfalse"
+accessprivate*fetcherButton2h
+javafx.scene.control.ButtonTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javae e(∑
+>org.jabref.gui.entryeditor.EntryEditor?typeLabel@102.24:102.33VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaf f(!"
+isFinalfalse"
+typeLabel"k
+declarationStringV<mark class="modifier">private </mark>Label <mark class="class-field">typeLabel</mark>"
+isStaticfalse"
+accessprivate*	typeLabel2g
+javafx.scene.control.LabelTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaf f(’
+Borg.jabref.gui.entryeditor.EntryEditor?dialogService@103.34:103.47VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javag" g(/"
+isFinalfalse"
+typeDialogService"w
+declarationStringb<mark class="modifier">private </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2i
+org.jabref.gui.DialogServiceTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javag g(!‘
+Aorg.jabref.gui.entryeditor.EntryEditor?taskExecutor@104.33:104.45VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javah! h(-"
+isFinalfalse"
+typeTaskExecutor"u
+declarationString`<mark class="modifier">private </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2m
+ org.jabref.gui.util.TaskExecutorTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javah h( ¸
+Gorg.jabref.gui.entryeditor.EntryEditor?preferencesService@105.39:105.57VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javai' i(9"
+isFinalfalse"
+typePreferencesService"Å
+declarationStringl<mark class="modifier">private </mark>PreferencesService <mark class="class-field">preferencesService</mark>"
+isStaticfalse"
+accessprivate*preferencesService2v
+)org.jabref.preferences.PreferencesServiceTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javai i(&œ
+Aorg.jabref.gui.entryeditor.EntryEditor?stateManager@106.33:106.45VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaj! j(-"
+isFinalfalse"
+typeStateManager"u
+declarationString`<mark class="modifier">private </mark>StateManager <mark class="class-field">stateManager</mark>"
+isStaticfalse"
+accessprivate*stateManager2h
+org.jabref.gui.StateManagerTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javaj j( ’
+Aorg.jabref.gui.entryeditor.EntryEditor?themeManager@107.33:107.45VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javak! k(-"
+isFinalfalse"
+typeThemeManager"u
+declarationString`<mark class="modifier">private </mark>ThemeManager <mark class="class-field">themeManager</mark>"
+isStaticfalse"
+accessprivate*themeManager2n
+!org.jabref.gui.theme.ThemeManagerTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javak k( ‚
+@org.jabref.gui.entryeditor.EntryEditor?fileMonitor@108.38:108.49VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javal& l(1"
+isFinalfalse"
+typeFileUpdateMonitor"y
+declarationStringd<mark class="modifier">private </mark>FileUpdateMonitor <mark class="class-field">fileMonitor</mark>"
+isStaticfalse"
+accessprivate*fileMonitor2t
+'org.jabref.model.util.FileUpdateMonitorTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javal l(%Ê
+@org.jabref.gui.entryeditor.EntryEditor?undoManager@109.40:109.51VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javam( m(3"
+isFinalfalse"
+typeCountingUndoManager"{
+declarationStringf<mark class="modifier">private </mark>CountingUndoManager <mark class="class-field">undoManager</mark>"
+isStaticfalse"
+accessprivate*undoManager2t
+'org.jabref.gui.undo.CountingUndoManagerTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javam m('à
+Iorg.jabref.gui.entryeditor.EntryEditor?bibEntryTypesManager@110.41:110.61VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javan) n(="
+isFinalfalse"
+typeBibEntryTypesManager"Ö
+declarationStringp<mark class="modifier">private </mark>BibEntryTypesManager <mark class="class-field">bibEntryTypesManager</mark>"
+isStaticfalse"
+accessprivate*bibEntryTypesManager2x
++org.jabref.model.entry.BibEntryTypesManagerTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javan n((â
+Iorg.jabref.gui.entryeditor.EntryEditor?keyBindingRepository@111.41:111.61VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javao) o(="
+isFinalfalse"
+typeKeyBindingRepository"Ö
+declarationStringp<mark class="modifier">private </mark>KeyBindingRepository <mark class="class-field">keyBindingRepository</mark>"
+isStaticfalse"
+accessprivate*keyBindingRepository2y
+,org.jabref.gui.keyboard.KeyBindingRepositoryTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javao o((√
+Rorg.jabref.gui.entryeditor.EntryEditor?journalAbbreviationRepository@112.50:112.79VARIABLEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javap2 p(O"
+isFinalfalse"%
+typeJournalAbbreviationRepository"ò
+declarationStringÇ<mark class="modifier">private </mark>JournalAbbreviationRepository <mark class="class-field">journalAbbreviationRepository</mark>"
+isStaticfalse"
+accessprivate*journalAbbreviationRepository2Ñ
+7org.jabref.logic.journals.JournalAbbreviationRepositoryTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javap p(1Ñ
+Dorg.jabref.gui.entryeditor.EntryEditor?entryEditorTabs@114.39:114.54VALUEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javar' r(6"
+isFinaltrue"
+typeList<EntryEditorTab>"ª
+declarationString•<mark class="modifier">private </mark><mark class="modifier">final </mark>List<EntryEditorTab> <mark class="class-field">entryEditorTabs</mark> = new LinkedList<>();"
+isStaticfalse"
+accessprivate*entryEditorTabs2[
+java.util.ListTYPEC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javar r(2
+)org.jabref.gui.entryeditor.EntryEditorTabTYPE_ARGUMENTC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javar r(%2n
+!java.util.LinkedList.LinkedList()CALLC
+9src\main\java\org\jabref\gui\entryeditor\EntryEditor.javar= r(I

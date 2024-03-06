@@ -1,0 +1,135 @@
+
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java™
+&org.jabref.logic.importer.OpenDatabaseCLASSC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java ("$
+packageorg.jabref.logic.importer"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"j
+declarationStringU<mark class="modifier">public </mark><mark class="modifier">class </mark>OpenDatabase"
+accesspublic*OpenDatabase2â
+5org.jabref.logic.importer.OpenDatabase.OpenDatabase()DECLARATIONC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java (2`
+loadDatabaseDECLARATIONC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java (+2÷
+Åorg.jabref.logic.importer.OpenDatabase.performLoadDatabaseMigrations(org.jabref.logic.importer.ParserResult, java.lang.Character)DECLARATIONC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java   (5˙
+5org.jabref.logic.importer.OpenDatabase.OpenDatabase()CONSTRUCTORC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java ("e
+declarationStringP<mark class="modifier">private </mark><mark class="method">OpenDatabase</mark>()*OpenDatabase2z
+&org.jabref.logic.importer.OpenDatabaseRETURN_TYPEC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java (¨
+loadDatabaseMETHODC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java (+"
+isFinalfalse"Ω
+declarationStringß<mark class="modifier">public </mark><mark class="modifier">static </mark>ParserResult <mark class="method">loadDatabase</mark>(Path fileToOpen<mark class="modifier"><mark class="modifier">,</mark></mark> ImportFormatPreferences importFormatPreferences<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileMonitor)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeParserResult*loadDatabase2£
+Vorg.jabref.logic.importer.fileformat.BibtexImporter.importDatabase(java.nio.file.Path)CALLC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.javaW (e2z
+&org.jabref.logic.importer.ParserResultRETURN_TYPEC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java (è
+
+fileToOpen	PARAMETERC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java1 (;"
+typePath"
+isFinalfalse"$
+declarationStringPath fileToOpen*
+fileToOpen2_
+java.nio.file.PathTYPEC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java, (0·
+importFormatPreferences	PARAMETERC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.javaU (l"
+typeImportFormatPreferences"
+isFinalfalse"D
+declarationString/ImportFormatPreferences importFormatPreferences*importFormatPreferences2d
+ImportFormatPreferencesTYPEC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java= (T√
+fileMonitor	PARAMETERE
+9src\main\java\org\jabref\logic\importer\OpenDatabase.javaÄ (ã"
+typeFileUpdateMonitor"
+isFinalfalse"2
+declarationStringFileUpdateMonitor fileMonitor*fileMonitor2t
+'org.jabref.model.util.FileUpdateMonitorTYPEC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.javan (´
+Åorg.jabref.logic.importer.OpenDatabase.performLoadDatabaseMigrations(org.jabref.logic.importer.ParserResult, java.lang.Character)METHODC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java   (5"
+isFinalfalse"∞
+declarationStringö<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">performLoadDatabaseMigrations</mark>(ParserResult parserResult<mark class="modifier"><mark class="modifier">,</mark></mark> Character keywordDelimited)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typevoid*performLoadDatabaseMigrations2j
+java.util.Arrays.asList(T...)CALLC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java"< "(B2≠
+`org.jabref.migrations.PostOpenMigration.performMigration(org.jabref.logic.importer.ParserResult)CALLC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java) )(&2ú
+Oorg.jabref.migrations.ConvertLegacyExplicitGroups.ConvertLegacyExplicitGroups()CALLC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java# #(/2í
+Eorg.jabref.migrations.ConvertMarkingToGroups.ConvertMarkingToGroups()CALLC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java$ $(*2≥
+forg.jabref.migrations.SpecialFieldsToSeparateFields.SpecialFieldsToSeparateFields(java.lang.Character)CALLC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java% %(12‡
+íorg.jabref.logic.importer.OpenDatabase.performLoadDatabaseMigrations(org.jabref.logic.importer.ParserResult, java.lang.Character)!keywordDelimitedCALLC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java%2 %(B2Ó
+†org.jabref.logic.importer.OpenDatabase.performLoadDatabaseMigrations(org.jabref.logic.importer.ParserResult, java.lang.Character)?postOpenMigrations@34.32:34.50CALLC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java(+ ((=2Â
+óorg.jabref.logic.importer.OpenDatabase.performLoadDatabaseMigrations(org.jabref.logic.importer.ParserResult, java.lang.Character)?migration@40.31:40.40CALLC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java) )(2‹
+éorg.jabref.logic.importer.OpenDatabase.performLoadDatabaseMigrations(org.jabref.logic.importer.ParserResult, java.lang.Character)!parserResultCALLC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java)' )(32·
+éorg.jabref.logic.importer.OpenDatabase.performLoadDatabaseMigrations(org.jabref.logic.importer.ParserResult, java.lang.Character)!parserResult	PARAMETERC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java C  (O2Â
+íorg.jabref.logic.importer.OpenDatabase.performLoadDatabaseMigrations(org.jabref.logic.importer.ParserResult, java.lang.Character)!keywordDelimited	PARAMETERC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java!@ !(P2ı
+†org.jabref.logic.importer.OpenDatabase.performLoadDatabaseMigrations(org.jabref.logic.importer.ParserResult, java.lang.Character)?postOpenMigrations@34.32:34.50DECLARATIONC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java"  "(22Ï
+óorg.jabref.logic.importer.OpenDatabase.performLoadDatabaseMigrations(org.jabref.logic.importer.ParserResult, java.lang.Character)?migration@40.31:40.40DECLARATIONC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java( (((2X
+voidRETURN_TYPEC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java   (ì
+†org.jabref.logic.importer.OpenDatabase.performLoadDatabaseMigrations(org.jabref.logic.importer.ParserResult, java.lang.Character)?postOpenMigrations@34.32:34.50VARIABLEC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java"  "(2"
+typeList<PostOpenMigration>"
+isFinalfalse"¬
+declarationString¨<mark class="modifier"> </mark>List<PostOpenMigration> <mark class="class-field">postOpenMigrations</mark> = Arrays.asList(new ConvertLegacyExplicitGroups()<mark class="modifier">,</mark> new ConvertMarkingToGroups()<mark class="modifier">,</mark> new SpecialFieldsToSeparateFields(keywordDelimited))*postOpenMigrations2[
+java.util.ListTYPEC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java" "(2}
+'org.jabref.migrations.PostOpenMigrationTYPE_ARGUMENTC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java" "(2j
+java.util.Arrays.asList(T...)CALLC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java"< "(B2ú
+Oorg.jabref.migrations.ConvertLegacyExplicitGroups.ConvertLegacyExplicitGroups()CALLC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java# #(/2í
+Eorg.jabref.migrations.ConvertMarkingToGroups.ConvertMarkingToGroups()CALLC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java$ $(*2≥
+forg.jabref.migrations.SpecialFieldsToSeparateFields.SpecialFieldsToSeparateFields(java.lang.Character)CALLC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java% %(12‡
+íorg.jabref.logic.importer.OpenDatabase.performLoadDatabaseMigrations(org.jabref.logic.importer.ParserResult, java.lang.Character)!keywordDelimitedCALLC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java%2 %(Bâ
+óorg.jabref.logic.importer.OpenDatabase.performLoadDatabaseMigrations(org.jabref.logic.importer.ParserResult, java.lang.Character)?migration@40.31:40.40VARIABLEC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java( ((("
+typePostOpenMigration"
+isFinalfalse"p
+declarationString[<mark class="modifier"> </mark>PostOpenMigration <mark class="class-field">migration</mark>*	migration2t
+'org.jabref.migrations.PostOpenMigrationTYPEC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java( ((º
+éorg.jabref.logic.importer.OpenDatabase.performLoadDatabaseMigrations(org.jabref.logic.importer.ParserResult, java.lang.Character)!parserResult	PARAMETERC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java C  (O"
+typeParserResult"
+isFinalfalse".
+declarationStringParserResult parserResult*parserResult2s
+&org.jabref.logic.importer.ParserResultTYPEC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java 6  (BØ
+íorg.jabref.logic.importer.OpenDatabase.performLoadDatabaseMigrations(org.jabref.logic.importer.ParserResult, java.lang.Character)!keywordDelimited	PARAMETERC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java!@ !(P"
+type	Character"
+isFinalfalse"/
+declarationStringCharacter keywordDelimited*keywordDelimited2`
+java.lang.CharacterTYPEC
+9src\main\java\org\jabref\logic\importer\OpenDatabase.java!6 !(?

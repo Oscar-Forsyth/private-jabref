@@ -1,0 +1,1596 @@
+
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java´%
+4org.jabref.logic.importer.fetcher.ComplexSearchQueryCLASSQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (",
+package!org.jabref.logic.importer.fetcher"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"p
+declarationString[<mark class="modifier">public </mark><mark class="modifier">class </mark>ComplexSearchQuery"
+accesspublic*ComplexSearchQuery2è
+¨org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (2Œ
+lorg.jabref.logic.importer.fetcher.ComplexSearchQuery.fromTerms(java.util.List<org.apache.lucene.index.Term>)DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java&% &(.2Ø
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery.getDefaultFieldPhrases()DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java: :(.2£
+Aorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getAuthors()DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java> >("2®
+Forg.jabref.logic.importer.fetcher.ComplexSearchQuery.getTitlePhrases()DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaB B('2´
+Iorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getAbstractPhrases()DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaF F(*2§
+Borg.jabref.logic.importer.fetcher.ComplexSearchQuery.getFromYear()DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaJ J((2¢
+@org.jabref.logic.importer.fetcher.ComplexSearchQuery.getToYear()DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaN N(&2¶
+Dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getSingleYear()DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaR R(*2£
+Aorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getJournal()DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaV V(&2ü
+=org.jabref.logic.importer.fetcher.ComplexSearchQuery.getDOI()DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaZ Z("2†
+>org.jabref.logic.importer.fetcher.ComplexSearchQuery.builder()DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java^, ^(32Ø
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javac c(2£
+?org.jabref.logic.importer.fetcher.ComplexSearchQuery.hashCode()DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaä ä(2£
+?org.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaè è(2Ø
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery?defaultField@15.31:15.43DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (+2™
+Horg.jabref.logic.importer.fetcher.ComplexSearchQuery?authors@16.31:16.38DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (&2Ø
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery?titlePhrases@17.31:17.43DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (+2≤
+Porg.jabref.logic.importer.fetcher.ComplexSearchQuery?abstractPhrases@18.31:18.46DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (.2´
+Iorg.jabref.logic.importer.fetcher.ComplexSearchQuery?fromYear@19.26:19.34DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java ("2©
+Gorg.jabref.logic.importer.fetcher.ComplexSearchQuery?toYear@20.26:20.32DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java ( 2≠
+Korg.jabref.logic.importer.fetcher.ComplexSearchQuery?singleYear@21.26:21.36DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java ($2™
+Horg.jabref.logic.importer.fetcher.ComplexSearchQuery?journal@22.25:22.32DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java ( 2¶
+Dorg.jabref.logic.importer.fetcher.ComplexSearchQuery?doi@23.25:23.28DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (ÙO
+¨org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)CONSTRUCTORQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java ("û
+declarationStringà<mark class="modifier">private </mark><mark class="method">ComplexSearchQuery</mark>(List&lt;String&gt; defaultField<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;String&gt; authors<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;String&gt; titlePhrases<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;String&gt; abstractPhrases<mark class="modifier"><mark class="modifier">,</mark></mark> Integer fromYear<mark class="modifier"><mark class="modifier">,</mark></mark> Integer toYear<mark class="modifier"><mark class="modifier">,</mark></mark> Integer singleYear<mark class="modifier"><mark class="modifier">,</mark></mark> String journal<mark class="modifier"><mark class="modifier">,</mark></mark> String doi)*ComplexSearchQuery2ï
+πorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!defaultFieldCALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java ((2ê
+¥org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!authorsCALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (2ï
+πorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!titlePhrasesCALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java ((2ò
+ºorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!abstractPhrasesCALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (.2ë
+µorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!fromYearCALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java ( 2è
+≥org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!toYearCALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java   (2ê
+¥org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!journalCALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java! !(2ì
+∑org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!singleYearCALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java" "($2å
+∞org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!doiCALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java# #(2®
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery?defaultField@15.31:15.43CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (2£
+Horg.jabref.logic.importer.fetcher.ComplexSearchQuery?authors@16.31:16.38CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (2®
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery?titlePhrases@17.31:17.43CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (2´
+Porg.jabref.logic.importer.fetcher.ComplexSearchQuery?abstractPhrases@18.31:18.46CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (2§
+Iorg.jabref.logic.importer.fetcher.ComplexSearchQuery?fromYear@19.26:19.34CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (2¢
+Gorg.jabref.logic.importer.fetcher.ComplexSearchQuery?toYear@20.26:20.32CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java   (2£
+Horg.jabref.logic.importer.fetcher.ComplexSearchQuery?journal@22.25:22.32CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java! !(2¶
+Korg.jabref.logic.importer.fetcher.ComplexSearchQuery?singleYear@21.26:21.36CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java" "(2ü
+Dorg.jabref.logic.importer.fetcher.ComplexSearchQuery?doi@23.25:23.28CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java# #(2ö
+πorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!defaultField	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java, (82ï
+¥org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!authors	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaG (N2ö
+πorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!titlePhrases	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java] (i2û
+ºorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!abstractPhrases	PARAMETERR
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javax (á2ò
+µorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!fromYear	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaë (ô2ñ
+≥org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!toYear	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java£ (©2ö
+∑org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!singleYear	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≥ (Ω2ó
+¥org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!journal	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∆ (Õ2ì
+∞org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!doi	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java÷ (Ÿ2ñ
+4org.jabref.logic.importer.fetcher.ComplexSearchQueryRETURN_TYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (·
+πorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!defaultField	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java, (8"
+typeList<String>"
+isFinalfalse".
+declarationStringList<String> defaultField*defaultField2i
+java.util.ListTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (#2t
+java.lang.StringTYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java$ (*“
+¥org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!authors	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaG (N"
+typeList<String>"
+isFinalfalse")
+declarationStringList<String> authors*authors2i
+java.util.ListTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java: (>2t
+java.lang.StringTYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java? (E·
+πorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!titlePhrases	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java] (i"
+typeList<String>"
+isFinalfalse".
+declarationStringList<String> titlePhrases*titlePhrases2i
+java.util.ListTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaP (T2t
+java.lang.StringTYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaU ([Î
+ºorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!abstractPhrases	PARAMETERR
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javax (á"
+typeList<String>"
+isFinalfalse"1
+declarationStringList<String> abstractPhrases*abstractPhrases2i
+java.util.ListTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javak (o2t
+java.lang.StringTYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javap (v‹
+µorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!fromYear	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaë (ô"
+typeInteger"
+isFinalfalse"%
+declarationStringInteger fromYear*fromYear2n
+java.lang.IntegerTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaâ (ê÷
+≥org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!toYear	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java£ (©"
+typeInteger"
+isFinalfalse"#
+declarationStringInteger toYear*toYear2n
+java.lang.IntegerTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaõ (¢‚
+∑org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!singleYear	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≥ (Ω"
+typeInteger"
+isFinalfalse"'
+declarationStringInteger singleYear*
+singleYear2n
+java.lang.IntegerTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java´ (≤÷
+¥org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!journal	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∆ (Õ"
+typeString"
+isFinalfalse"#
+declarationStringString journal*journal2m
+java.lang.StringTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaø (≈ 
+∞org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)!doi	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java÷ (Ÿ"
+typeString"
+isFinalfalse"
+declarationString
+String doi*doi2m
+java.lang.StringTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaœ (’‡
+lorg.jabref.logic.importer.fetcher.ComplexSearchQuery.fromTerms(java.util.List<org.apache.lucene.index.Term>)METHODQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java&% &(."
+isFinalfalse"∞
+declarationStringö<mark class="modifier">public </mark><mark class="modifier">static </mark>ComplexSearchQuery <mark class="method">fromTerms</mark>(List&lt;Term&gt; terms)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeComplexSearchQuery*	fromTerms2ô
+>org.jabref.logic.importer.fetcher.ComplexSearchQuery.builder()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java'? '(F2ù
+Bjava.lang.Iterable.forEach(java.util.function.Consumer<? super T>)CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java( ((2±
+Vorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.build()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java7 7(2Õ
+rorg.jabref.logic.importer.fetcher.ComplexSearchQuery.fromTerms(java.util.List<org.apache.lucene.index.Term>)!termsCALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java( ((2ÿ
+}org.jabref.logic.importer.fetcher.ComplexSearchQuery.fromTerms(java.util.List<org.apache.lucene.index.Term>)?term@40.22:40.26CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java) )("2ÿ
+}org.jabref.logic.importer.fetcher.ComplexSearchQuery.fromTerms(java.util.List<org.apache.lucene.index.Term>)?term@40.22:40.26CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java* *(2‹
+Äorg.jabref.logic.importer.fetcher.ComplexSearchQuery.fromTerms(java.util.List<org.apache.lucene.index.Term>)?builder@39.34:39.41CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java7 7(2“
+rorg.jabref.logic.importer.fetcher.ComplexSearchQuery.fromTerms(java.util.List<org.apache.lucene.index.Term>)!terms	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java&: &(?2„
+Äorg.jabref.logic.importer.fetcher.ComplexSearchQuery.fromTerms(java.util.List<org.apache.lucene.index.Term>)?builder@39.34:39.41DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java'" '()2‰
+Åorg.jabref.logic.importer.fetcher.ComplexSearchQuery.fromTerms(java.util.List<org.apache.lucene.index.Term>)?termText@41.19:41.27DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java) )(2ﬂ
+}org.jabref.logic.importer.fetcher.ComplexSearchQuery.fromTerms(java.util.List<org.apache.lucene.index.Term>)?term@40.22:40.26DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java( ((2ñ
+4org.jabref.logic.importer.fetcher.ComplexSearchQueryRETURN_TYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java& &($ˇ
+Äorg.jabref.logic.importer.fetcher.ComplexSearchQuery.fromTerms(java.util.List<org.apache.lucene.index.Term>)?builder@39.34:39.41VARIABLEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java'" '()"!
+typeComplexSearchQueryBuilder"
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier"> </mark>ComplexSearchQueryBuilder <mark class="class-field">builder</mark> = ComplexSearchQuery.builder()*builder2©
+Norg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilderTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java' '(!2ô
+>org.jabref.logic.importer.fetcher.ComplexSearchQuery.builder()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java'? '(F…
+Åorg.jabref.logic.importer.fetcher.ComplexSearchQuery.fromTerms(java.util.List<org.apache.lucene.index.Term>)?termText@41.19:41.27VARIABLEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java) )("
+typeString"
+isFinalfalse"r
+declarationString]<mark class="modifier"> </mark>String <mark class="class-field">termText</mark> = term.text()*termText2k
+java.lang.StringTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java) )(2ÿ
+}org.jabref.logic.importer.fetcher.ComplexSearchQuery.fromTerms(java.util.List<org.apache.lucene.index.Term>)?term@40.22:40.26CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java) )("î
+rorg.jabref.logic.importer.fetcher.ComplexSearchQuery.fromTerms(java.util.List<org.apache.lucene.index.Term>)!terms	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java&: &(?"
+type
+List<Term>"
+isFinalfalse"%
+declarationStringList<Term> terms*terms2i
+java.util.ListTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java&/ &(32Ä
+org.apache.lucene.index.TermTYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java&4 &(8†
+}org.jabref.logic.importer.fetcher.ComplexSearchQuery.fromTerms(java.util.List<org.apache.lucene.index.Term>)?term@40.22:40.26VARIABLEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java( (("
+type"
+isFinalfalse"
+declarationString term*term2TYPE¬
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery.getDefaultFieldPhrases()METHODQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java: :(."
+isFinalfalse"Å
+declarationStringl<mark class="modifier">public </mark>List&lt;String&gt; <mark class="method">getDefaultFieldPhrases</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<String>*getDefaultFieldPhrases2®
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery?defaultField@15.31:15.43CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java; ;(2p
+java.util.ListRETURN_TYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java: :(2{
+java.lang.StringRETURN_TYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java: :(ò
+Aorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getAuthors()METHODQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java> >(""
+isFinalfalse"u
+declarationString`<mark class="modifier">public </mark>List&lt;String&gt; <mark class="method">getAuthors</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<String>*
+getAuthors2£
+Horg.jabref.logic.importer.fetcher.ComplexSearchQuery?authors@16.31:16.38CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java? ?(2p
+java.util.ListRETURN_TYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java> >(2{
+java.lang.StringRETURN_TYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java> >(¨
+Forg.jabref.logic.importer.fetcher.ComplexSearchQuery.getTitlePhrases()METHODQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaB B('"
+isFinalfalse"z
+declarationStringe<mark class="modifier">public </mark>List&lt;String&gt; <mark class="method">getTitlePhrases</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<String>*getTitlePhrases2®
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery?titlePhrases@17.31:17.43CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaC C(2p
+java.util.ListRETURN_TYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaB B(2{
+java.lang.StringRETURN_TYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaB B(∏
+Iorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getAbstractPhrases()METHODQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaF F(*"
+isFinalfalse"}
+declarationStringh<mark class="modifier">public </mark>List&lt;String&gt; <mark class="method">getAbstractPhrases</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<String>*getAbstractPhrases2´
+Porg.jabref.logic.importer.fetcher.ComplexSearchQuery?abstractPhrases@18.31:18.46CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaG G(2p
+java.util.ListRETURN_TYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaF F(2{
+java.lang.StringRETURN_TYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaF F(®
+Borg.jabref.logic.importer.fetcher.ComplexSearchQuery.getFromYear()METHODQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaJ J(("
+isFinalfalse"{
+declarationStringf<mark class="modifier">public </mark>Optional&lt;Integer&gt; <mark class="method">getFromYear</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<Integer>*getFromYear2{
+ java.util.Optional.ofNullable(T)CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaK K("2§
+Iorg.jabref.logic.importer.fetcher.ComplexSearchQuery?fromYear@19.26:19.34CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaK# K(+2t
+java.util.OptionalRETURN_TYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaJ J(2|
+java.lang.IntegerRETURN_TYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaJ J(†
+@org.jabref.logic.importer.fetcher.ComplexSearchQuery.getToYear()METHODQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaN N(&"
+isFinalfalse"y
+declarationStringd<mark class="modifier">public </mark>Optional&lt;Integer&gt; <mark class="method">getToYear</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<Integer>*	getToYear2{
+ java.util.Optional.ofNullable(T)CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaO O("2¢
+Gorg.jabref.logic.importer.fetcher.ComplexSearchQuery?toYear@20.26:20.32CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaO# O()2t
+java.util.OptionalRETURN_TYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaN N(2|
+java.lang.IntegerRETURN_TYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaN N(∞
+Dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getSingleYear()METHODQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaR R(*"
+isFinalfalse"}
+declarationStringh<mark class="modifier">public </mark>Optional&lt;Integer&gt; <mark class="method">getSingleYear</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<Integer>*getSingleYear2{
+ java.util.Optional.ofNullable(T)CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaS S("2¶
+Korg.jabref.logic.importer.fetcher.ComplexSearchQuery?singleYear@21.26:21.36CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaS# S(-2t
+java.util.OptionalRETURN_TYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaR R(2|
+java.lang.IntegerRETURN_TYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaR R(°
+Aorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getJournal()METHODQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaV V(&"
+isFinalfalse"y
+declarationStringd<mark class="modifier">public </mark>Optional&lt;String&gt; <mark class="method">getJournal</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<String>*
+getJournal2{
+ java.util.Optional.ofNullable(T)CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaW W("2£
+Horg.jabref.logic.importer.fetcher.ComplexSearchQuery?journal@22.25:22.32CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaW# W(*2t
+java.util.OptionalRETURN_TYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaV V(2{
+java.lang.StringRETURN_TYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaV V(ë
+=org.jabref.logic.importer.fetcher.ComplexSearchQuery.getDOI()METHODQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaZ Z(""
+isFinalfalse"u
+declarationString`<mark class="modifier">public </mark>Optional&lt;String&gt; <mark class="method">getDOI</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<String>*getDOI2{
+ java.util.Optional.ofNullable(T)CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java[ [("2ü
+Dorg.jabref.logic.importer.fetcher.ComplexSearchQuery?doi@23.25:23.28CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java[# [(&2t
+java.util.OptionalRETURN_TYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaZ Z(2{
+java.lang.StringRETURN_TYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaZ Z(Ø
+>org.jabref.logic.importer.fetcher.ComplexSearchQuery.builder()METHODQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java^, ^(3"
+isFinalfalse"ü
+declarationStringâ<mark class="modifier">public </mark><mark class="modifier">static </mark>ComplexSearchQueryBuilder <mark class="method">builder</mark>()"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"!
+typeComplexSearchQueryBuilder*builder2≈
+jorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.ComplexSearchQueryBuilder()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java_ _(,2∞
+Norg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilderRETURN_TYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java^ ^(+Ïp
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)METHODQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javac c("
+isFinalfalse"ª
+declarationString•<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">equals</mark>(Object o)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*equals2v
+java.lang.Object.getClass()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javag g(!2v
+java.lang.Object.getClass()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javag) g(12ß
+Ljava.util.List.containsAll(java.util.Collection<? extends java.lang.Object>)CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javan' n(22®
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery.getDefaultFieldPhrases()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javan n($2®
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery.getDefaultFieldPhrases()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javan8 n(N2ß
+Ljava.util.List.containsAll(java.util.Collection<? extends java.lang.Object>)CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javans n(~2®
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery.getDefaultFieldPhrases()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javanZ n(p2©
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery.getDefaultFieldPhrases()CALLR
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javan n(ï2ß
+Ljava.util.List.containsAll(java.util.Collection<? extends java.lang.Object>)CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaq q(&2ú
+Aorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getAuthors()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaq q(2ú
+Aorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getAuthors()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaq, q(62ß
+Ljava.util.List.containsAll(java.util.Collection<? extends java.lang.Object>)CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaqO q(Z2ú
+Aorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getAuthors()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaqB q(L2ú
+Aorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getAuthors()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaq[ q(e2ß
+Ljava.util.List.containsAll(java.util.Collection<? extends java.lang.Object>)CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javat  t(+2°
+Forg.jabref.logic.importer.fetcher.ComplexSearchQuery.getTitlePhrases()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javat t(2°
+Forg.jabref.logic.importer.fetcher.ComplexSearchQuery.getTitlePhrases()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javat1 t(@2ß
+Ljava.util.List.containsAll(java.util.Collection<? extends java.lang.Object>)CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javat^ t(i2°
+Forg.jabref.logic.importer.fetcher.ComplexSearchQuery.getTitlePhrases()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javatL t([2°
+Forg.jabref.logic.importer.fetcher.ComplexSearchQuery.getTitlePhrases()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javatj t(y2ß
+Ljava.util.List.containsAll(java.util.Collection<? extends java.lang.Object>)CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaw# w(.2§
+Iorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getAbstractPhrases()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaw w( 2§
+Iorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getAbstractPhrases()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaw4 w(F2ß
+Ljava.util.List.containsAll(java.util.Collection<? extends java.lang.Object>)CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javawg w(r2§
+Iorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getAbstractPhrases()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javawR w(d2•
+Iorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getAbstractPhrases()CALLR
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaws w(Ö2y
+java.util.Optional.isPresent()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaz z(#2ù
+Borg.jabref.logic.importer.fetcher.ComplexSearchQuery.getFromYear()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaz z(2Ü
++java.util.Optional.equals(java.lang.Object)CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaz7 z(=2ù
+Borg.jabref.logic.importer.fetcher.ComplexSearchQuery.getFromYear()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaz) z(42ù
+Borg.jabref.logic.importer.fetcher.ComplexSearchQuery.getFromYear()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javazC z(N2y
+java.util.Optional.isPresent()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javazg z(p2ù
+Borg.jabref.logic.importer.fetcher.ComplexSearchQuery.getFromYear()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javazY z(d2y
+java.util.Optional.isPresent()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java} }(!2õ
+@org.jabref.logic.importer.fetcher.ComplexSearchQuery.getToYear()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java} }(2Ü
++java.util.Optional.equals(java.lang.Object)CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java}3 }(92õ
+@org.jabref.logic.importer.fetcher.ComplexSearchQuery.getToYear()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java}' }(02õ
+@org.jabref.logic.importer.fetcher.ComplexSearchQuery.getToYear()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java}? }(H2y
+java.util.Optional.isPresent()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java}_ }(h2õ
+@org.jabref.logic.importer.fetcher.ComplexSearchQuery.getToYear()CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java}S }(\2{
+java.util.Optional.isPresent()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÄ Ä(%2°
+Dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getSingleYear()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÄ Ä(2à
++java.util.Optional.equals(java.lang.Object)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÄ; Ä(A2°
+Dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getSingleYear()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÄ+ Ä(82°
+Dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getSingleYear()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÄG Ä(T2{
+java.util.Optional.isPresent()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÄo Ä(x2°
+Dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getSingleYear()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÄ_ Ä(l2{
+java.util.Optional.isPresent()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÉ É(2ö
+=org.jabref.logic.importer.fetcher.ComplexSearchQuery.getDOI()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÉ É(2à
++java.util.Optional.equals(java.lang.Object)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÉ- É(32ö
+=org.jabref.logic.importer.fetcher.ComplexSearchQuery.getDOI()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÉ$ É(*2ö
+=org.jabref.logic.importer.fetcher.ComplexSearchQuery.getDOI()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÉ9 É(?2{
+java.util.Optional.isPresent()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÉS É(\2ö
+=org.jabref.logic.importer.fetcher.ComplexSearchQuery.getDOI()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÉJ É(P2{
+java.util.Optional.isPresent()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÜ Ü(%2û
+Aorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getJournal()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÜ Ü(2à
++java.util.Optional.equals(java.lang.Object)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÜ7 Ü(=2û
+Aorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getJournal()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÜ* Ü(42û
+Aorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getJournal()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÜC Ü(M2y
+java.util.Optional.isEmpty()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÜe Ü(l2û
+Aorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getJournal()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÜX Ü(b2™
+Oorg.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)!oCALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javad d(2™
+Oorg.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)!oCALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javag g(2™
+Oorg.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)!oCALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javag' g((2™
+Oorg.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)!oCALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javak7 k(82ª
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javan3 n(72ª
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javanU n(Y2ª
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaq' q(+2ª
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaq= q(A2ª
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javat, t(02ª
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javatG t(K2ª
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaw/ w(32ª
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javawM w(Q2ª
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaz> z(B2ª
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javazT z(X2ª
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java}: }(>2ª
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java}N }(R2Ω
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÄB Ä(F2Ω
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÄZ Ä(^2Ω
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÉ4 É(82Ω
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÉE É(I2Ω
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÜ> Ü(B2Ω
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÜS Ü(W2Ø
+Oorg.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)!o	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javac! c("2¬
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31DECLARATIONQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javak k(2i
+booleanRETURN_TYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javac c(∫
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)?that@107.27:107.31VARIABLEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javak k("
+typeComplexSearchQuery"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark>ComplexSearchQuery <mark class="class-field">that</mark> = (ComplexSearchQuery) o*that2è
+4org.jabref.logic.importer.fetcher.ComplexSearchQueryTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javak k(2™
+Oorg.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)!oCALLQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javak7 k(8‡
+Oorg.jabref.logic.importer.fetcher.ComplexSearchQuery.equals(java.lang.Object)!o	PARAMETERQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javac! c(""
+typeObject"
+isFinalfalse"
+declarationStringObject o*o2k
+java.lang.ObjectTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javac c( Ô
+?org.jabref.logic.importer.fetcher.ComplexSearchQuery.hashCode()METHODS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaä ä("
+isFinalfalse"±
+declarationStringõ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">int</mark> <mark class="method">hashCode</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeint*hashCode2à
++java.util.Objects.hash(java.lang.Object...)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaã ã(2û
+Aorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getAuthors()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaã* ã(42°
+Dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getSingleYear()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaã8 ã(E2¶
+Iorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getAbstractPhrases()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaãI ã([2ü
+Borg.jabref.logic.importer.fetcher.ComplexSearchQuery.getFromYear()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaã_ ã(j2ù
+@org.jabref.logic.importer.fetcher.ComplexSearchQuery.getToYear()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaãn ã(w2§
+Forg.jabref.logic.importer.fetcher.ComplexSearchQuery.getTitlePhrases()CALLT
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaã{ ã(ä2†
+Aorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getJournal()CALLU
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaãé ã(ò2ú
+=org.jabref.logic.importer.fetcher.ComplexSearchQuery.getDOI()CALLU
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaãú ã(¢2™
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery?defaultField@15.31:15.43CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaã ã((2g
+intRETURN_TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaä ä(ØA
+?org.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()METHODS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaè è("
+isFinalfalse"ñ
+declarationStringÄ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>String <mark class="method">toString</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*toString2°
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaí í(!2°
+Dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getSingleYear()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaí í(2è
+2java.util.StringJoiner.add(java.lang.CharSequence)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaí= í(@2y
+java.lang.Integer.toString()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaíL í(T2°
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaì ì(2ü
+Borg.jabref.logic.importer.fetcher.ComplexSearchQuery.getFromYear()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaì ì(2è
+2java.util.StringJoiner.add(java.lang.CharSequence)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaì9 ì(<2y
+java.lang.Integer.toString()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaìF ì(N2°
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaî î(2ù
+@org.jabref.logic.importer.fetcher.ComplexSearchQuery.getToYear()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaî î(2è
+2java.util.StringJoiner.add(java.lang.CharSequence)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaî5 î(82y
+java.lang.Integer.toString()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaî@ î(H2°
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaï ï(2û
+Aorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getJournal()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaï ï(2°
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javañ ñ(2ö
+=org.jabref.logic.importer.fetcher.ComplexSearchQuery.getDOI()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javañ ñ(2è
+2java.util.StringJoiner.add(java.lang.CharSequence)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javañ6 ñ(92è
+2java.util.StringJoiner.add(java.lang.CharSequence)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaö ö(2è
+2java.util.StringJoiner.add(java.lang.CharSequence)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaô ô(2è
+2java.util.StringJoiner.add(java.lang.CharSequence)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaò ò(2è
+2java.util.StringJoiner.add(java.lang.CharSequence)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaó ó(2¿
+cjava.lang.String.join(java.lang.CharSequence, java.lang.Iterable<? extends java.lang.CharSequence>)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaó  ó($2£
+Forg.jabref.logic.importer.fetcher.ComplexSearchQuery.getTitlePhrases()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaó* ó(92¿
+cjava.lang.String.join(java.lang.CharSequence, java.lang.Iterable<? extends java.lang.CharSequence>)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaò  ò($2™
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery.getDefaultFieldPhrases()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaò* ò(@2¿
+cjava.lang.String.join(java.lang.CharSequence, java.lang.Iterable<? extends java.lang.CharSequence>)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaô  ô($2û
+Aorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getAuthors()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaô* ô(42¿
+cjava.lang.String.join(java.lang.CharSequence, java.lang.Iterable<? extends java.lang.CharSequence>)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaö  ö($2¶
+Iorg.jabref.logic.importer.fetcher.ComplexSearchQuery.getAbstractPhrases()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaö* ö(<2~
+!java.util.StringJoiner.toString()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaú ú($2ò
+;java.util.StringJoiner.StringJoiner(java.lang.CharSequence)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaê( ê(42∑
+Zorg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?stringJoiner@144.21:144.33CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaí0 í(<2µ
+Xorg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?singleYear@146.34:146.44CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaíA í(K2∑
+Zorg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?stringJoiner@144.21:144.33CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaì, ì(82≥
+Vorg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?fromYear@147.32:147.40CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaì= ì(E2∑
+Zorg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?stringJoiner@144.21:144.33CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaî( î(42±
+Torg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?toYear@148.30:148.36CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaî9 î(?2∑
+Zorg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?stringJoiner@144.21:144.33CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javañ) ñ(52µ
+Xorg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?newElement@150.27:150.37CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javañC ñ(M2∑
+Zorg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?stringJoiner@144.21:144.33CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaó ó(2∑
+Zorg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?stringJoiner@144.21:144.33CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaú ú(2è
+2java.util.StringJoiner.add(java.lang.CharSequence)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaï ï(02æ
+Zorg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?stringJoiner@144.21:144.33DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaê ê(!2º
+Xorg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?singleYear@146.34:146.44DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaí" í(,2∫
+Vorg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?fromYear@147.32:147.40DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaì  ì((2∏
+Torg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?toYear@148.30:148.36DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaî î($2º
+Xorg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?newElement@150.27:150.37DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javañ ñ(%2t
+java.lang.StringRETURN_TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaè è(ä
+Zorg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?stringJoiner@144.21:144.33VARIABLES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaê ê(!"
+typeStringJoiner"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>StringJoiner <mark class="class-field">stringJoiner</mark> = new StringJoiner(" ")*stringJoiner2s
+java.util.StringJoinerTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaê ê(2ò
+;java.util.StringJoiner.StringJoiner(java.lang.CharSequence)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaê( ê(4â
+Xorg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?singleYear@146.34:146.44VARIABLES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaí" í(,"
+type"
+isFinalfalse" 
+declarationString singleYear*
+singleYear2TYPEÉ
+Vorg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?fromYear@147.32:147.40VARIABLES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaì  ì(("
+type"
+isFinalfalse"
+declarationString	 fromYear*fromYear2TYPE˝
+Torg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?toYear@148.30:148.36VARIABLES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaî î($"
+type"
+isFinalfalse"
+declarationString toYear*toYear2TYPEâ
+Xorg.jabref.logic.importer.fetcher.ComplexSearchQuery.toString()?newElement@150.27:150.37VARIABLES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javañ ñ(%"
+type"
+isFinalfalse" 
+declarationString newElement*
+newElement2TYPEÇ
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery?defaultField@15.31:15.43VALUEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (+"
+isFinaltrue"
+typeList<String>"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>List<String> <mark class="class-field">defaultField</mark>"
+isStaticfalse"
+accessprivate*defaultField2i
+java.util.ListTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (2t
+java.lang.StringTYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (Ú
+Horg.jabref.logic.importer.fetcher.ComplexSearchQuery?authors@16.31:16.38VALUEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (&"
+isFinaltrue"
+typeList<String>"î
+declarationString<mark class="modifier">private </mark><mark class="modifier">final </mark>List<String> <mark class="class-field">authors</mark>"
+isStaticfalse"
+accessprivate*authors2i
+java.util.ListTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (2t
+java.lang.StringTYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (Ç
+Morg.jabref.logic.importer.fetcher.ComplexSearchQuery?titlePhrases@17.31:17.43VALUEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (+"
+isFinaltrue"
+typeList<String>"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>List<String> <mark class="class-field">titlePhrases</mark>"
+isStaticfalse"
+accessprivate*titlePhrases2i
+java.util.ListTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (2t
+java.lang.StringTYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (ã
+Porg.jabref.logic.importer.fetcher.ComplexSearchQuery?abstractPhrases@18.31:18.46VALUEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (."
+isFinaltrue"
+typeList<String>"ù
+declarationStringá<mark class="modifier">private </mark><mark class="modifier">final </mark>List<String> <mark class="class-field">abstractPhrases</mark>"
+isStaticfalse"
+accessprivate*abstractPhrases2i
+java.util.ListTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (2t
+java.lang.StringTYPE_ARGUMENTQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (¯
+Iorg.jabref.logic.importer.fetcher.ComplexSearchQuery?fromYear@19.26:19.34VALUEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (""
+isFinaltrue"
+typeInteger"ê
+declarationString{<mark class="modifier">private </mark><mark class="modifier">final </mark>Integer <mark class="class-field">fromYear</mark>"
+isStaticfalse"
+accessprivate*fromYear2l
+java.lang.IntegerTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (Ú
+Gorg.jabref.logic.importer.fetcher.ComplexSearchQuery?toYear@20.26:20.32VALUEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java ( "
+isFinaltrue"
+typeInteger"é
+declarationStringy<mark class="modifier">private </mark><mark class="modifier">final </mark>Integer <mark class="class-field">toYear</mark>"
+isStaticfalse"
+accessprivate*toYear2l
+java.lang.IntegerTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (˛
+Korg.jabref.logic.importer.fetcher.ComplexSearchQuery?singleYear@21.26:21.36VALUEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java ($"
+isFinaltrue"
+typeInteger"í
+declarationString}<mark class="modifier">private </mark><mark class="modifier">final </mark>Integer <mark class="class-field">singleYear</mark>"
+isStaticfalse"
+accessprivate*
+singleYear2l
+java.lang.IntegerTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (Ú
+Horg.jabref.logic.importer.fetcher.ComplexSearchQuery?journal@22.25:22.32VALUEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java ( "
+isFinaltrue"
+typeString"é
+declarationStringy<mark class="modifier">private </mark><mark class="modifier">final </mark>String <mark class="class-field">journal</mark>"
+isStaticfalse"
+accessprivate*journal2k
+java.lang.StringTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (Ê
+Dorg.jabref.logic.importer.fetcher.ComplexSearchQuery?doi@23.25:23.28VALUEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java ("
+isFinaltrue"
+typeString"ä
+declarationStringu<mark class="modifier">private </mark><mark class="modifier">final </mark>String <mark class="class-field">doi</mark>"
+isStaticfalse"
+accessprivate*doi2k
+java.lang.StringTYPEQ
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java (ú+
+Norg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilderCLASSS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaü ü(1"?
+package4org.jabref.logic.importer.fetcher.ComplexSearchQuery"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"w
+declarationStringb<mark class="modifier">public </mark><mark class="modifier">class </mark>ComplexSearchQueryBuilder"
+accesspublic*ComplexSearchQueryBuilder2Œ
+jorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.ComplexSearchQueryBuilder()DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java™ ™()2◊
+sorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.defaultFieldPhrase(java.lang.String)DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≠) ≠(;2À
+gorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.author(java.lang.String)DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaπ) π(/2–
+lorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.titlePhrase(java.lang.String)DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≈) ≈(42”
+oorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.abstractPhrase(java.lang.String)DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java—) —(72Î
+Üorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.fromYearAndToYear(java.lang.Integer, java.lang.Integer)DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java⁄) ⁄(:2–
+lorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.singleYear(java.lang.Integer)DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java„) „(32Ã
+horg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.journal(java.lang.String)DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÎ) Î(02»
+dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.DOI(java.lang.String)DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÛ) Û(,2Ì
+àorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.terms(java.util.Collection<org.apache.lucene.index.Term>)DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java˚) ˚(.2∫
+Vorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.build()DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaî" î('2”
+oorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaõ õ(2⁄
+vorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.textSearchFieldsAndYearFieldsAreEmpty()DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÆ Æ(=2«
+corg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.yearFieldsAreEmpty()DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≥ ≥(*2Á
+Çorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.stringListIsBlank(java.util.List<java.lang.String>)DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∑ ∑()2‘
+porg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?defaultFieldPhrases@160.35:160.54DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java†# †(62»
+dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?authors@161.35:161.42DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java°# °(*2Õ
+iorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?titlePhrases@162.35:162.47DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¢# ¢(/2–
+lorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?abstractPhrases@163.35:163.50DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java£# £(22»
+dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?journal@164.23:164.30DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java§ §(2ƒ
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?doi@165.23:165.26DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java• •(2…
+eorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?fromYear@166.24:166.32DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¶ ¶( 2«
+corg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?toYear@167.24:167.30DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaß ß(2À
+gorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?singleYear@168.24:168.34DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java® ®("í
+jorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.ComplexSearchQueryBuilder()CONSTRUCTORS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java™ ™()"r
+declarationString]<mark class="modifier">private </mark><mark class="method">ComplexSearchQueryBuilder</mark>()*ComplexSearchQueryBuilder2≤
+Norg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilderRETURN_TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java™ ™()â
+sorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.defaultFieldPhrase(java.lang.String)METHODS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≠) ≠(;"
+isFinalfalse"û
+declarationStringà<mark class="modifier">public </mark>ComplexSearchQueryBuilder <mark class="method">defaultFieldPhrase</mark>(String defaultFieldPhrase)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"!
+typeComplexSearchQueryBuilder*defaultFieldPhrase2w
+java.lang.String.isBlank()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÆ; Æ(B2Ä
+#java.util.Objects.requireNonNull(T)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÆ Æ(&2r
+java.util.List.add(E)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≤% ≤((2å
+/java.lang.String.formatted(java.lang.Object...)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≤2 ≤(;2•
+Hjava.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≤O ≤(V2™
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaØ Ø(22‰
+Üorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.defaultFieldPhrase(java.lang.String)!defaultFieldPhraseCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÆ' Æ(92‰
+Üorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.defaultFieldPhrase(java.lang.String)!defaultFieldPhraseCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≤< ≤(N2Õ
+porg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?defaultFieldPhrases@160.35:160.54CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≤ ≤($2È
+Üorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.defaultFieldPhrase(java.lang.String)!defaultFieldPhrase	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≠C ≠(U2≤
+Norg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilderRETURN_TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≠ ≠((æ
+Üorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.defaultFieldPhrase(java.lang.String)!defaultFieldPhrase	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≠C ≠(U"
+typeString"
+isFinalfalse".
+declarationStringString defaultFieldPhrase*defaultFieldPhrase2m
+java.lang.StringTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≠< ≠(BÅ
+gorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.author(java.lang.String)METHODS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaπ) π(/"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier">public </mark>ComplexSearchQueryBuilder <mark class="method">author</mark>(String author)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"!
+typeComplexSearchQueryBuilder*author2w
+java.lang.String.isBlank()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∫/ ∫(62Ä
+#java.util.Objects.requireNonNull(T)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∫ ∫(&2r
+java.util.List.add(E)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaæ æ(2å
+/java.lang.String.formatted(java.lang.Object...)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaæ& æ(/2•
+Hjava.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaæ7 æ(>2™
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaª ª(22À
+norg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.author(java.lang.String)!authorCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∫' ∫(-2À
+norg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.author(java.lang.String)!authorCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaæ0 æ(62¡
+dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?authors@161.35:161.42CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaæ æ(2–
+norg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.author(java.lang.String)!author	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaπ7 π(=2≤
+Norg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilderRETURN_TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaπ π((ç
+norg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.author(java.lang.String)!author	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaπ7 π(="
+typeString"
+isFinalfalse""
+declarationStringString author*author2m
+java.lang.StringTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaπ0 π(6∏
+lorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.titlePhrase(java.lang.String)METHODS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≈) ≈(4"
+isFinalfalse"è
+declarationStringz<mark class="modifier">public </mark>ComplexSearchQueryBuilder <mark class="method">titlePhrase</mark>(String titlePhrase)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"!
+typeComplexSearchQueryBuilder*titlePhrase2w
+java.lang.String.isBlank()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∆4 ∆(;2Ä
+#java.util.Objects.requireNonNull(T)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∆ ∆(&2r
+java.util.List.add(E)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java   (!2å
+/java.lang.String.formatted(java.lang.Object...)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java +  (42•
+Hjava.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java A  (H2™
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java« «(22’
+xorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.titlePhrase(java.lang.String)!titlePhraseCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∆' ∆(22’
+xorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.titlePhrase(java.lang.String)!titlePhraseCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java 5  (@2∆
+iorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?titlePhrases@162.35:162.47CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java   (2⁄
+xorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.titlePhrase(java.lang.String)!titlePhrase	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≈< ≈(G2≤
+Norg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilderRETURN_TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≈ ≈((°
+xorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.titlePhrase(java.lang.String)!titlePhrase	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≈< ≈(G"
+typeString"
+isFinalfalse"'
+declarationStringString titlePhrase*titlePhrase2m
+java.lang.StringTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≈5 ≈(;◊
+oorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.abstractPhrase(java.lang.String)METHODS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java—) —(7"
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier">public </mark>ComplexSearchQueryBuilder <mark class="method">abstractPhrase</mark>(String abstractPhrase)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"!
+typeComplexSearchQueryBuilder*abstractPhrase2w
+java.lang.String.isBlank()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java“7 “(>2Ä
+#java.util.Objects.requireNonNull(T)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java“ “(&2r
+java.util.List.add(E)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java÷ ÷(!2å
+/java.lang.String.formatted(java.lang.Object...)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java÷+ ÷(42•
+Hjava.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java÷D ÷(K2™
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java” ”(22€
+~org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.abstractPhrase(java.lang.String)!abstractPhraseCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java“' “(52€
+~org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.abstractPhrase(java.lang.String)!abstractPhraseCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java÷5 ÷(C2∆
+iorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?titlePhrases@162.35:162.47CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java÷ ÷(2‡
+~org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.abstractPhrase(java.lang.String)!abstractPhrase	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java—? —(M2≤
+Norg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilderRETURN_TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java— —((≠
+~org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.abstractPhrase(java.lang.String)!abstractPhrase	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java—? —(M"
+typeString"
+isFinalfalse"*
+declarationStringString abstractPhrase*abstractPhrase2m
+java.lang.StringTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java—8 —(>»
+Üorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.fromYearAndToYear(java.lang.Integer, java.lang.Integer)METHODS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java⁄) ⁄(:"
+isFinalfalse"‡
+declarationString <mark class="modifier">public </mark>ComplexSearchQueryBuilder <mark class="method">fromYearAndToYear</mark>(Integer fromYear<mark class="modifier"><mark class="modifier">,</mark></mark> Integer toYear)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"!
+typeComplexSearchQueryBuilder*fromYearAndToYear2Ä
+#java.util.Objects.requireNonNull(T)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaﬁ$ ﬁ(22Ä
+#java.util.Objects.requireNonNull(T)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaﬂ" ﬂ(02™
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java‹ ‹(22ƒ
+gorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?singleYear@168.24:168.34CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java€ €(2Ì
+èorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.fromYearAndToYear(java.lang.Integer, java.lang.Integer)!fromYearCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaﬁ3 ﬁ(;2Î
+çorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.fromYearAndToYear(java.lang.Integer, java.lang.Integer)!toYearCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaﬂ1 ﬂ(72¬
+eorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?fromYear@166.24:166.32CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaﬁ ﬁ(2¿
+corg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?toYear@167.24:167.30CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaﬂ ﬂ(2Ú
+èorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.fromYearAndToYear(java.lang.Integer, java.lang.Integer)!fromYear	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java⁄C ⁄(K2
+çorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.fromYearAndToYear(java.lang.Integer, java.lang.Integer)!toYear	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java⁄U ⁄([2≤
+Norg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilderRETURN_TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java⁄ ⁄((∂
+èorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.fromYearAndToYear(java.lang.Integer, java.lang.Integer)!fromYear	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java⁄C ⁄(K"
+typeInteger"
+isFinalfalse"%
+declarationStringInteger fromYear*fromYear2n
+java.lang.IntegerTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java⁄; ⁄(B∞
+çorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.fromYearAndToYear(java.lang.Integer, java.lang.Integer)!toYear	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java⁄U ⁄(["
+typeInteger"
+isFinalfalse"#
+declarationStringInteger toYear*toYear2n
+java.lang.IntegerTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java⁄M ⁄(Tæ
+lorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.singleYear(java.lang.Integer)METHODS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java„) „(3"
+isFinalfalse"é
+declarationStringy<mark class="modifier">public </mark>ComplexSearchQueryBuilder <mark class="method">singleYear</mark>(Integer singleYear)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"!
+typeComplexSearchQueryBuilder*
+singleYear2Ä
+#java.util.Objects.requireNonNull(T)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÁ& Á(42™
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÂ Â(22¬
+eorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?fromYear@166.24:166.32CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java‰ ‰(2¿
+corg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?toYear@167.24:167.30CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java‰$ ‰(*2‘
+worg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.singleYear(java.lang.Integer)!singleYearCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÁ5 Á(?2ƒ
+gorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?singleYear@168.24:168.34CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÁ Á(2Ÿ
+worg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.singleYear(java.lang.Integer)!singleYear	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java„< „(F2≤
+Norg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilderRETURN_TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java„ „((°
+worg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.singleYear(java.lang.Integer)!singleYear	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java„< „(F"
+typeInteger"
+isFinalfalse"'
+declarationStringInteger singleYear*
+singleYear2n
+java.lang.IntegerTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java„4 „(;ó
+horg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.journal(java.lang.String)METHODS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÎ) Î(0"
+isFinalfalse"á
+declarationStringr<mark class="modifier">public </mark>ComplexSearchQueryBuilder <mark class="method">journal</mark>(String journal)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"!
+typeComplexSearchQueryBuilder*journal2w
+java.lang.String.isBlank()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÏ0 Ï(72Ä
+#java.util.Objects.requireNonNull(T)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÏ Ï(&2å
+/java.lang.String.formatted(java.lang.Object...)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÔ$ Ô(-2•
+Hjava.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÔ6 Ô(=2™
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÌ Ì(22Õ
+porg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.journal(java.lang.String)!journalCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÏ' Ï(.2Õ
+porg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.journal(java.lang.String)!journalCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÔ. Ô(52¡
+dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?journal@164.23:164.30CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÔ Ô(2“
+porg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.journal(java.lang.String)!journal	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÎ8 Î(?2≤
+Norg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilderRETURN_TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÎ Î((ë
+porg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.journal(java.lang.String)!journal	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÎ8 Î(?"
+typeString"
+isFinalfalse"#
+declarationStringString journal*journal2m
+java.lang.StringTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÎ1 Î(7€
+dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.DOI(java.lang.String)METHODS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÛ) Û(,"
+isFinalfalse"
+declarationStringj<mark class="modifier">public </mark>ComplexSearchQueryBuilder <mark class="method">DOI</mark>(String doi)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"!
+typeComplexSearchQueryBuilder*DOI2w
+java.lang.String.isBlank()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÙ, Ù(32Ä
+#java.util.Objects.requireNonNull(T)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÙ Ù(&2•
+Hjava.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java˜ ˜("2™
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaı ı(22≈
+horg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.DOI(java.lang.String)!doiCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÙ' Ù(*2≈
+horg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.DOI(java.lang.String)!doiCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java˜ ˜(2Ω
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?doi@165.23:165.26CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java˜ ˜(2 
+horg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.DOI(java.lang.String)!doi	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÛ4 Û(72≤
+Norg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilderRETURN_TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÛ Û((Å
+horg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.DOI(java.lang.String)!doi	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÛ4 Û(7"
+typeString"
+isFinalfalse"
+declarationString
+String doi*doi2m
+java.lang.StringTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÛ- Û(3∞
+àorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.terms(java.util.Collection<org.apache.lucene.index.Term>)METHODS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java˚) ˚(."
+isFinalfalse"ì
+declarationString~<mark class="modifier">public </mark>ComplexSearchQueryBuilder <mark class="method">terms</mark>(Collection&lt;Term&gt; terms)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"!
+typeComplexSearchQueryBuilder*terms2ü
+Bjava.lang.Iterable.forEach(java.util.function.Consumer<? super T>)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¸ ¸(2Ï
+éorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.terms(java.util.Collection<org.apache.lucene.index.Term>)!termsCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¸ ¸(2˘
+õorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.terms(java.util.Collection<org.apache.lucene.index.Term>)?term@252.26:252.30CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java˝" ˝(&2˘
+õorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.terms(java.util.Collection<org.apache.lucene.index.Term>)?term@252.26:252.30CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java˛ ˛(2Ò
+éorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.terms(java.util.Collection<org.apache.lucene.index.Term>)!terms	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java˚@ ˚(E2Ñ
+üorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.terms(java.util.Collection<org.apache.lucene.index.Term>)?termText@253.23:253.31DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java˝ ˝(2Ä
+õorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.terms(java.util.Collection<org.apache.lucene.index.Term>)?term@252.26:252.30DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¸ ¸(2≤
+Norg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilderRETURN_TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java˚ ˚((å
+üorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.terms(java.util.Collection<org.apache.lucene.index.Term>)?termText@253.23:253.31VARIABLES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java˝ ˝("
+typeString"
+isFinalfalse"r
+declarationString]<mark class="modifier"> </mark>String <mark class="class-field">termText</mark> = term.text()*termText2m
+java.lang.StringTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java˝ ˝(2˘
+õorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.terms(java.util.Collection<org.apache.lucene.index.Term>)?term@252.26:252.30CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java˝" ˝(&…
+éorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.terms(java.util.Collection<org.apache.lucene.index.Term>)!terms	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java˚@ ˚(E"
+typeCollection<Term>"
+isFinalfalse"+
+declarationStringCollection<Term> terms*terms2q
+java.util.CollectionTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java˚/ ˚(92Ç
+org.apache.lucene.index.TermTYPE_ARGUMENTS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java˚: ˚(>¡
+õorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.terms(java.util.Collection<org.apache.lucene.index.Term>)?term@252.26:252.30VARIABLES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¸ ¸("
+type"
+isFinalfalse"
+declarationString term*term2TYPEó
+Vorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.build()METHODS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaî" î('"
+isFinalfalse" 
+declarationString¥<mark class="modifier">public </mark>ComplexSearchQuery <mark class="method">build</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IllegalStateException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeComplexSearchQuery*build2”
+vorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.textSearchFieldsAndYearFieldsAreEmpty()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaï ï(52§
+Gjava.lang.IllegalStateException.IllegalStateException(java.lang.String)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javañ ñ(/2ä
+¨org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQuery(java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaò ò()2Õ
+porg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?defaultFieldPhrases@160.35:160.54CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaò* ò(=2¡
+dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?authors@161.35:161.42CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaò? ò(F2∆
+iorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?titlePhrases@162.35:162.47CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaòH ò(T2…
+lorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?abstractPhrases@163.35:163.50CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaòV ò(e2¬
+eorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?fromYear@166.24:166.32CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaòg ò(o2¿
+corg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?toYear@167.24:167.30CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaòq ò(w2≈
+gorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?singleYear@168.24:168.34CALLT
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaòy ò(É2√
+dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?journal@164.23:164.30CALLU
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaòÖ ò(å2ø
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?doi@165.23:165.26CALLU
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaòé ò(ë2ò
+4org.jabref.logic.importer.fetcher.ComplexSearchQueryRETURN_TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaî î(!—"
+oorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)METHODS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaõ õ("
+isFinalfalse"í
+declarationString}<mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">parseYearRange</mark>(String termText)"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*parseYearRange2Ö
+(java.lang.String.split(java.lang.String)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaú& ú(+2â
+,java.lang.Integer.parseInt(java.lang.String)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java†# †(+2â
+,java.lang.Integer.parseInt(java.lang.String)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¶% ¶(-2‰
+Üorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.fromYearAndToYear(java.lang.Integer, java.lang.Integer)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java´ ´("2’
+xorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)!termTextCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaú ú(%2‰
+Üorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)?fromYear@285.16:285.24CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java† †(2·
+Éorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)?split@284.21:284.26CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java†, †(12·
+Éorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)?split@284.21:284.26CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java§ §(2‚
+Ñorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)?toYear@286.16:286.22CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¶ ¶(2·
+Éorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)?split@284.21:284.26CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¶. ¶(32‰
+Üorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)?fromYear@285.16:285.24CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java´# ´(+2‚
+Ñorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)?toYear@286.16:286.22CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java´- ´(32⁄
+xorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)!termText	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaõ# õ(+2Ë
+Éorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)?split@284.21:284.26DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaú ú(2Î
+Üorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)?fromYear@285.16:285.24DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaù ù(2È
+Ñorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)?toYear@286.16:286.22DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaû û(2„
+org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)?e@289.43:289.44DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java°+ °(,2„
+org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)?e@295.47:295.48DECLARATIONS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaß/ ß(02h
+voidRETURN_TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaõ õ(⁄
+Éorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)?split@284.21:284.26VARIABLES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaú ú("
+typeString"
+isFinalfalse"y
+declarationStringd<mark class="modifier"> </mark>String[] <mark class="class-field">split</mark> = termText.split("-")*split2o
+java.lang.String[]TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaú ú(2Ö
+(java.lang.String.split(java.lang.String)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaú& ú(+2’
+xorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)!termTextCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaú ú(%˘
+Üorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)?fromYear@285.16:285.24VARIABLES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaù ù("
+typeint"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">fromYear</mark> = 0*fromYear2`
+intTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaù ù(ˆ
+Ñorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)?toYear@286.16:286.22VARIABLES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaû û("
+typeint"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">toYear</mark> = 9999*toYear2`
+intTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaû û(õ
+xorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)!termText	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaõ# õ(+"
+typeString"
+isFinalfalse"$
+declarationStringString termText*termText2m
+java.lang.StringTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaõ õ("¿
+org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)?e@289.43:289.44VARIABLES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java°+ °(,"
+typeNumberFormatException"
+isFinalfalse",
+declarationStringNumberFormatException e*e2|
+java.lang.NumberFormatExceptionTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java° °(*¿
+org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.parseYearRange(java.lang.String)?e@295.47:295.48VARIABLES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaß/ ß(0"
+typeNumberFormatException"
+isFinalfalse",
+declarationStringNumberFormatException e*e2|
+java.lang.NumberFormatExceptionTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaß ß(.´
+vorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.textSearchFieldsAndYearFieldsAreEmpty()METHODS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÆ Æ(="
+isFinalfalse"•
+declarationStringè<mark class="modifier">private </mark><mark class="modifier">boolean</mark> <mark class="method">textSearchFieldsAndYearFieldsAreEmpty</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeboolean*%textSearchFieldsAndYearFieldsAreEmpty2‡
+Çorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.stringListIsBlank(java.util.List<java.lang.String>)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaØ Ø()2‡
+Çorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.stringListIsBlank(java.util.List<java.lang.String>)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaØG Ø(X2‡
+Çorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.stringListIsBlank(java.util.List<java.lang.String>)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∞ ∞(*2‡
+Çorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.stringListIsBlank(java.util.List<java.lang.String>)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∞< ∞(M2ö
+=org.jabref.model.strings.StringUtil.isBlank(java.lang.String)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∞m ∞(t2ú
+=org.jabref.model.strings.StringUtil.isBlank(java.lang.String)CALLU
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∞å ∞(ì2¬
+corg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.yearFieldsAreEmpty()CALLU
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∞ú ∞(Æ2Õ
+porg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?defaultFieldPhrases@160.35:160.54CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaØ* Ø(=2∆
+iorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?titlePhrases@162.35:162.47CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaØY Ø(e2¡
+dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?authors@161.35:161.42CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∞+ ∞(22…
+lorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?abstractPhrases@163.35:163.50CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∞N ∞(]2¡
+dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?journal@164.23:164.30CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∞u ∞(|2ø
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?doi@165.23:165.26CALLU
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∞î ∞(ó2k
+booleanRETURN_TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaÆ Æ(Ñ	
+corg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.yearFieldsAreEmpty()METHODS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≥ ≥(*"
+isFinalfalse"ë
+declarationString|<mark class="modifier">private </mark><mark class="modifier">boolean</mark> <mark class="method">yearFieldsAreEmpty</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeboolean*yearFieldsAreEmpty2ƒ
+gorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?singleYear@168.24:168.34CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¥ ¥(2¬
+eorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?fromYear@166.24:166.32CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¥) ¥(12¿
+corg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?toYear@167.24:167.30CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¥= ¥(C2k
+booleanRETURN_TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java≥ ≥(ﬁ
+Çorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.stringListIsBlank(java.util.List<java.lang.String>)METHODS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∑ ∑()"
+isFinalfalse"Æ
+declarationStringò<mark class="modifier">private </mark><mark class="modifier">boolean</mark> <mark class="method">stringListIsBlank</mark>(List&lt;String&gt; stringList)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeboolean*stringListIsBlank2¶
+Ijava.util.stream.Stream.allMatch(java.util.function.Predicate<? super T>)CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∏= ∏(E2z
+java.util.Collection.stream()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∏4 ∏(:2Î
+çorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.stringListIsBlank(java.util.List<java.lang.String>)!stringListCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∏ ∏(2Î
+çorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.stringListIsBlank(java.util.List<java.lang.String>)!stringListCALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∏) ∏(32w
+java.lang.String.isBlank()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∏F ∏(U2
+çorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.stringListIsBlank(java.util.List<java.lang.String>)!stringList	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∑7 ∑(A2k
+booleanRETURN_TYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∑ ∑(∑
+çorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder.stringListIsBlank(java.util.List<java.lang.String>)!stringList	PARAMETERS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∑7 ∑(A"
+typeList<String>"
+isFinalfalse",
+declarationStringList<String> stringList*
+stringList2k
+java.util.ListTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∑* ∑(.2v
+java.lang.StringTYPE_ARGUMENTS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java∑/ ∑(5Ã
+porg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?defaultFieldPhrases@160.35:160.54VALUES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java†# †(6"
+isFinaltrue"
+typeList<String>"∂
+declarationString†<mark class="modifier">private </mark><mark class="modifier">final </mark>List<String> <mark class="class-field">defaultFieldPhrases</mark> = new ArrayList<>();"
+isStaticfalse"
+accessprivate*defaultFieldPhrases2k
+java.util.ListTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java† †(2v
+java.lang.StringTYPE_ARGUMENTS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java† †(!2|
+java.util.ArrayList.ArrayList()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java†= †(H®
+dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?authors@161.35:161.42VALUES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java°# °(*"
+isFinaltrue"
+typeList<String>"™
+declarationStringî<mark class="modifier">private </mark><mark class="modifier">final </mark>List<String> <mark class="class-field">authors</mark> = new ArrayList<>();"
+isStaticfalse"
+accessprivate*authors2k
+java.util.ListTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java° °(2v
+java.lang.StringTYPE_ARGUMENTS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java° °(!2|
+java.util.ArrayList.ArrayList()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java°1 °(<∑
+iorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?titlePhrases@162.35:162.47VALUES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¢# ¢(/"
+isFinaltrue"
+typeList<String>"Ø
+declarationStringô<mark class="modifier">private </mark><mark class="modifier">final </mark>List<String> <mark class="class-field">titlePhrases</mark> = new ArrayList<>();"
+isStaticfalse"
+accessprivate*titlePhrases2k
+java.util.ListTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¢ ¢(2v
+java.lang.StringTYPE_ARGUMENTS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¢ ¢(!2|
+java.util.ArrayList.ArrayList()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¢6 ¢(A¿
+lorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?abstractPhrases@163.35:163.50VALUES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java£# £(2"
+isFinaltrue"
+typeList<String>"≤
+declarationStringú<mark class="modifier">private </mark><mark class="modifier">final </mark>List<String> <mark class="class-field">abstractPhrases</mark> = new ArrayList<>();"
+isStaticfalse"
+accessprivate*abstractPhrases2k
+java.util.ListTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java£ £(2v
+java.lang.StringTYPE_ARGUMENTS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java£ £(!2|
+java.util.ArrayList.ArrayList()CALLS
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java£9 £(DÒ
+dorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?journal@164.23:164.30VARIABLES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java§ §("
+isFinalfalse"
+typeString"j
+declarationStringU<mark class="modifier">private </mark>String <mark class="class-field">journal</mark>"
+isStaticfalse"
+accessprivate*journal2m
+java.lang.StringTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java§ §(Â
+`org.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?doi@165.23:165.26VARIABLES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java• •("
+isFinalfalse"
+typeString"f
+declarationStringQ<mark class="modifier">private </mark>String <mark class="class-field">doi</mark>"
+isStaticfalse"
+accessprivate*doi2m
+java.lang.StringTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java• •(˜
+eorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?fromYear@166.24:166.32VARIABLES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¶ ¶( "
+isFinalfalse"
+typeInteger"l
+declarationStringW<mark class="modifier">private </mark>Integer <mark class="class-field">fromYear</mark>"
+isStaticfalse"
+accessprivate*fromYear2n
+java.lang.IntegerTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java¶ ¶(Ò
+corg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?toYear@167.24:167.30VARIABLES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaß ß("
+isFinalfalse"
+typeInteger"j
+declarationStringU<mark class="modifier">private </mark>Integer <mark class="class-field">toYear</mark>"
+isStaticfalse"
+accessprivate*toYear2n
+java.lang.IntegerTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.javaß ß(˝
+gorg.jabref.logic.importer.fetcher.ComplexSearchQuery.ComplexSearchQueryBuilder?singleYear@168.24:168.34VARIABLES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java® ®(""
+isFinalfalse"
+typeInteger"n
+declarationStringY<mark class="modifier">private </mark>Integer <mark class="class-field">singleYear</mark>"
+isStaticfalse"
+accessprivate*
+singleYear2n
+java.lang.IntegerTYPES
+Gsrc\main\java\org\jabref\logic\importer\fetcher\ComplexSearchQuery.java® ®(

@@ -1,0 +1,688 @@
+
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaÃ
+/org.jabref.logic.importer.util.GroupsParserTestCLASSL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java! !(")
+packageorg.jabref.logic.importer.util"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"h
+declarationStringS<mark class="modifier"> </mark><mark class="modifier">class </mark>GroupsParserTest"
+accesspackage_private*GroupsParserTest2î
+7org.jabref.logic.importer.util.GroupsParserTest.setUp()DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java&	 &(2∆
+iorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithEscapedCharacterInName()DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java-	 -(@2≥
+Vorg.jabref.logic.importer.util.GroupsParserTest.keywordDelimiterThatNeedsToBeEscaped()DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java5	 5(-2∏
+[org.jabref.logic.importer.util.GroupsParserTest.hierarchicalDelimiterThatNeedsToBeEscaped()DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java<	 <(22√
+forg.jabref.logic.importer.util.GroupsParserTest.fromStringThrowsParseExceptionForNotEscapedGroupName()DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaC	 C(=2û
+Aorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaH	 H(2¬
+eorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithIconAndDescription()DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javac	 c(<2¥
+Worg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesAutomaticKeywordGroup()DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javao	 o(.2≥
+Vorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesAutomaticPersonGroup()DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javav	 v(-2ß
+Jorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesTexGroup()DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java}	 }(!2∂
+Worg.jabref.logic.importer.util.GroupsParserTest.fromStringUnknownGroupThrowsException()DECLARATIONN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaÑ	 Ñ(.2¨
+Morg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesSearchGroup()DECLARATIONN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaâ	 â($2§
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java" "()2°
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java# #(∏	
+7org.jabref.logic.importer.util.GroupsParserTest.setUp()METHODL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java&	 &("
+isFinalfalse"¯
+declarationString‚<mark class="annotation">@BeforeEach</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">setUp</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>Exception"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*setUp2õ
+Eorg.jabref.model.util.DummyFileUpdateMonitor.DummyFileUpdateMonitor()CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java' '(02É
+-org.jabref.model.metadata.MetaData.MetaData()CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java( ((2ù
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java' '(2ö
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java( ((2a
+voidRETURN_TYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java& &(£
+iorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithEscapedCharacterInName()METHODL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java-	 -(@"
+isFinalfalse"§
+declarationStringé<mark class="annotation">@Test</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">fromStringParsesExplicitGroupWithEscapedCharacterInName</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>Exception"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"A
+type9// For https://github.com/JabRef/jabref/issues/1681
+void*7fromStringParsesExplicitGroupWithEscapedCharacterInName2Å
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java/, /(62›
+Üorg.jabref.model.groups.ExplicitGroup.ExplicitGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java.% .(22ù
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java/a /(l2ö
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java/n /(v2‘
+~org.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithEscapedCharacterInName()?expected@46.22:46.30CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java1 1(2“
+|org.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithEscapedCharacterInName()?parsed@47.22:47.28CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java1 1(%2€
+~org.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithEscapedCharacterInName()?expected@46.22:46.30DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java. .(2Ÿ
+|org.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithEscapedCharacterInName()?parsed@47.22:47.28DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java/ /(2a
+voidRETURN_TYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java- -(ﬁ
+~org.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithEscapedCharacterInName()?expected@46.22:46.30VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java. .("
+typeExplicitGroup"
+isFinalfalse"Û
+declarationString›<mark class="modifier"> </mark>ExplicitGroup <mark class="class-field">expected</mark> = new ExplicitGroup("B{\\\"{o}}hmer"<mark class="modifier">,</mark> GroupHierarchyType.INDEPENDENT, '<mark class="modifier">,</mark>')*expected2{
+%org.jabref.model.groups.ExplicitGroupTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java. .(2›
+Üorg.jabref.model.groups.ExplicitGroup.ExplicitGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java.% .(2Á	
+|org.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithEscapedCharacterInName()?parsed@47.22:47.28VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java/ /("
+typeAbstractGroup"
+isFinalfalse"ü
+declarationStringâ<mark class="modifier"> </mark>AbstractGroup <mark class="class-field">parsed</mark> = GroupsParser.fromString("ExplicitGroup:B{\\\\\"{o}}hmer;0;"<mark class="modifier">,</mark> '<mark class="modifier">,</mark>'<mark class="modifier">,</mark> fileMonitor, metaData)*parsed2{
+%org.jabref.model.groups.AbstractGroupTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java/ /(2Å
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java/, /(62ù
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java/a /(l2ö
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java/n /(v¥
+Vorg.jabref.logic.importer.util.GroupsParserTest.keywordDelimiterThatNeedsToBeEscaped()METHODL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java5	 5(-"
+isFinalfalse"ë
+declarationString˚<mark class="annotation">@Test</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">keywordDelimiterThatNeedsToBeEscaped</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>Exception"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*$keywordDelimiterThatNeedsToBeEscaped2Å
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java7, 7(62¶
+œorg.jabref.model.groups.AutomaticKeywordGroup.AutomaticKeywordGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, org.jabref.model.entry.field.Field, java.lang.Character, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java6& 6(;2ù
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java7t 7(2ú
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java7Å 7(â2¡
+korg.jabref.logic.importer.util.GroupsParserTest.keywordDelimiterThatNeedsToBeEscaped()?expected@54.23:54.31CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java8 8(2ø
+iorg.jabref.logic.importer.util.GroupsParserTest.keywordDelimiterThatNeedsToBeEscaped()?parsed@55.22:55.28CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java8 8(%2»
+korg.jabref.logic.importer.util.GroupsParserTest.keywordDelimiterThatNeedsToBeEscaped()?expected@54.23:54.31DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java6 6(2∆
+iorg.jabref.logic.importer.util.GroupsParserTest.keywordDelimiterThatNeedsToBeEscaped()?parsed@55.22:55.28DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java7 7(2a
+voidRETURN_TYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java5 5(¥
+korg.jabref.logic.importer.util.GroupsParserTest.keywordDelimiterThatNeedsToBeEscaped()?expected@54.23:54.31VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java6 6("
+typeAutomaticGroup"
+isFinalfalse"ë
+declarationString˚<mark class="modifier"> </mark>AutomaticGroup <mark class="class-field">expected</mark> = new AutomaticKeywordGroup("group1"<mark class="modifier">,</mark> GroupHierarchyType.INDEPENDENT, StandardField.KEYWORDS, ';'<mark class="modifier">,</mark> '>')*expected2|
+&org.jabref.model.groups.AutomaticGroupTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java6 6(2¶
+œorg.jabref.model.groups.AutomaticKeywordGroup.AutomaticKeywordGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, org.jabref.model.entry.field.Field, java.lang.Character, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java6& 6(;À	
+iorg.jabref.logic.importer.util.GroupsParserTest.keywordDelimiterThatNeedsToBeEscaped()?parsed@55.22:55.28VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java7 7("
+typeAbstractGroup"
+isFinalfalse"î
+declarationString˛<mark class="modifier"> </mark>AbstractGroup <mark class="class-field">parsed</mark> = GroupsParser.fromString("AutomaticKeywordGroup:group1;0;keywords;\\;;>;1;;;;;"<mark class="modifier">,</mark> ';'<mark class="modifier">,</mark> fileMonitor, metaData)*parsed2{
+%org.jabref.model.groups.AbstractGroupTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java7 7(2Å
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java7, 7(62ù
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java7t 7(2ú
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java7Å 7(â◊
+[org.jabref.logic.importer.util.GroupsParserTest.hierarchicalDelimiterThatNeedsToBeEscaped()METHODL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java<	 <(2"
+isFinalfalse"ñ
+declarationStringÄ<mark class="annotation">@Test</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">hierarchicalDelimiterThatNeedsToBeEscaped</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>Exception"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*)hierarchicalDelimiterThatNeedsToBeEscaped2Å
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java>, >(62¶
+œorg.jabref.model.groups.AutomaticKeywordGroup.AutomaticKeywordGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, org.jabref.model.entry.field.Field, java.lang.Character, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java=& =(;2ù
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java>t >(2ú
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java>Å >(â2∆
+porg.jabref.logic.importer.util.GroupsParserTest.hierarchicalDelimiterThatNeedsToBeEscaped()?expected@61.23:61.31CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java? ?(2ƒ
+norg.jabref.logic.importer.util.GroupsParserTest.hierarchicalDelimiterThatNeedsToBeEscaped()?parsed@62.22:62.28CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java? ?(%2Õ
+porg.jabref.logic.importer.util.GroupsParserTest.hierarchicalDelimiterThatNeedsToBeEscaped()?expected@61.23:61.31DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java= =(2À
+norg.jabref.logic.importer.util.GroupsParserTest.hierarchicalDelimiterThatNeedsToBeEscaped()?parsed@62.22:62.28DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java> >(2a
+voidRETURN_TYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java< <(◊
+porg.jabref.logic.importer.util.GroupsParserTest.hierarchicalDelimiterThatNeedsToBeEscaped()?expected@61.23:61.31VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java= =("
+typeAutomaticGroup"
+isFinalfalse"Ø
+declarationStringô<mark class="modifier"> </mark>AutomaticGroup <mark class="class-field">expected</mark> = new AutomaticKeywordGroup("group1"<mark class="modifier">,</mark> GroupHierarchyType.INDEPENDENT, StandardField.KEYWORDS, '<mark class="modifier">,</mark>'<mark class="modifier">,</mark> ';')*expected2|
+&org.jabref.model.groups.AutomaticGroupTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java= =(2¶
+œorg.jabref.model.groups.AutomaticKeywordGroup.AutomaticKeywordGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, org.jabref.model.entry.field.Field, java.lang.Character, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java=& =(;Ó	
+norg.jabref.logic.importer.util.GroupsParserTest.hierarchicalDelimiterThatNeedsToBeEscaped()?parsed@62.22:62.28VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java> >("
+typeAbstractGroup"
+isFinalfalse"≤
+declarationStringú<mark class="modifier"> </mark>AbstractGroup <mark class="class-field">parsed</mark> = GroupsParser.fromString("AutomaticKeywordGroup:group1;0;keywords;<mark class="modifier">,</mark>;\\;;1;;;;;"<mark class="modifier">,</mark> ';'<mark class="modifier">,</mark> fileMonitor, metaData)*parsed2{
+%org.jabref.model.groups.AbstractGroupTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java> >(2Å
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java>, >(62ù
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java>t >(2ú
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java>Å >(â£
+
+forg.jabref.logic.importer.util.GroupsParserTest.fromStringThrowsParseExceptionForNotEscapedGroupName()METHODL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaC	 C(="
+isFinalfalse"°
+declarationStringã<mark class="annotation">@Test</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">fromStringThrowsParseExceptionForNotEscapedGroupName</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>Exception"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*4fromStringThrowsParseExceptionForNotEscapedGroupName2Å
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaD> D(H2ü
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaDÉ D(é2ú
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaDê D(ò2a
+voidRETURN_TYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaC C(ˇ2
+Aorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()METHODL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaH	 H("
+isFinalfalse"¸
+declarationStringÊ<mark class="annotation">@Test</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">importSubGroups</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>Exception"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*importSubGroups2s
+java.util.Arrays.asList(T...)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaJ* J(02Æ
+Xorg.jabref.model.groups.GroupTreeNode.addSubgroup(org.jabref.model.groups.AbstractGroup)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaV V(2ö
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaY! Y(*2
+)org.jabref.model.TreeNode.getFirstChild()CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaY Y(2Æ
+Xorg.jabref.model.groups.GroupTreeNode.addSubgroup(org.jabref.model.groups.AbstractGroup)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaY2 Y(=2Æ
+Xorg.jabref.model.groups.GroupTreeNode.addSubgroup(org.jabref.model.groups.AbstractGroup)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java\ \(2ì
+ºorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java^0 ^(<2}
+'org.jabref.model.TreeNode.getChildren()CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java_ _()2}
+'org.jabref.model.TreeNode.getChildren()CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java_8 _(C2∞
+Zorg.jabref.model.groups.GroupTreeNode.GroupTreeNode(org.jabref.model.groups.AbstractGroup)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaR% R(22›
+Üorg.jabref.model.groups.ExplicitGroup.ExplicitGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaS S(!2›
+Üorg.jabref.model.groups.ExplicitGroup.ExplicitGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaU, U(92›
+Üorg.jabref.model.groups.ExplicitGroup.ExplicitGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaX$ X(12›
+Üorg.jabref.model.groups.ExplicitGroup.ExplicitGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java[, [(92¨
+Vorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?rootNode@82.22:82.30CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaV V(2≥
+]org.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?firstSubGrpLvl1@85.22:85.37CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaV V(,2¨
+Vorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?rootNode@82.22:82.30CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaY Y(2•
+Oorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?c@89.43:89.44CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaY0 Y(12´
+Uorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?subLvl2@88.22:88.29CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaY> Y(E2¨
+Vorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?rootNode@82.22:82.30CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java\ \(2≥
+]org.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?thirdSubGrpLvl1@91.22:91.37CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java\ \(,2Ø
+Yorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?orderedData@74.21:74.32CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java^= ^(H2ù
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java^O ^(Z2ö
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java^\ ^(d2¨
+Vorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?rootNode@82.22:82.30CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java_ _(2Æ
+Xorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?parsedNode@94.22:94.32CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java_- _(72∂
+Yorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?orderedData@74.21:74.32DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaJ J( 2≥
+Vorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?rootNode@82.22:82.30DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaR R(2∫
+]org.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?firstSubGrpLvl1@85.22:85.37DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaU U(%2≤
+Uorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?subLvl2@88.22:88.29DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaX X(2∫
+]org.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?thirdSubGrpLvl1@91.22:91.37DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java[ [(%2µ
+Xorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?parsedNode@94.22:94.32DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java^ ^( 2¨
+Oorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?c@89.43:89.44DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaY+ Y(,2a
+voidRETURN_TYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaH H(Ì
+Yorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?orderedData@74.21:74.32VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaJ J( "
+typeList<String>"
+isFinalfalse"∂
+declarationString†<mark class="modifier"> </mark>List<String> <mark class="class-field">orderedData</mark> = Arrays.asList("0 AllEntriesGroup:"<mark class="modifier">,</mark> "1 ExplicitGroup:1;0;"<mark class="modifier">,</mark> "2 ExplicitGroup:2;0;"<mark class="modifier">,</mark> "0 ExplicitGroup:3;0;")*orderedData2d
+java.util.ListTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaJ J(2o
+java.lang.StringTYPE_ARGUMENTL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaJ J(2s
+java.util.Arrays.asList(T...)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaJ* J(0˘
+Vorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?rootNode@82.22:82.30VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaR R("
+typeGroupTreeNode"
+isFinalfalse"É
+declarationStringÌ<mark class="modifier"> </mark>GroupTreeNode <mark class="class-field">rootNode</mark> = new GroupTreeNode(new ExplicitGroup("All entries"<mark class="modifier">,</mark> GroupHierarchyType.INDEPENDENT, '<mark class="modifier">,</mark>'))*rootNode2{
+%org.jabref.model.groups.GroupTreeNodeTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaR R(2∞
+Zorg.jabref.model.groups.GroupTreeNode.GroupTreeNode(org.jabref.model.groups.AbstractGroup)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaR% R(22›
+Üorg.jabref.model.groups.ExplicitGroup.ExplicitGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaS S(!æ
+]org.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?firstSubGrpLvl1@85.22:85.37VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaU U(%"
+typeAbstractGroup"
+isFinalfalse"Ì
+declarationString◊<mark class="modifier"> </mark>AbstractGroup <mark class="class-field">firstSubGrpLvl1</mark> = new ExplicitGroup("1"<mark class="modifier">,</mark> GroupHierarchyType.INDEPENDENT, '<mark class="modifier">,</mark>')*firstSubGrpLvl12{
+%org.jabref.model.groups.AbstractGroupTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaU U(2›
+Üorg.jabref.model.groups.ExplicitGroup.ExplicitGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaU, U(9¶
+Uorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?subLvl2@88.22:88.29VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaX X("
+typeAbstractGroup"
+isFinalfalse"Â
+declarationStringœ<mark class="modifier"> </mark>AbstractGroup <mark class="class-field">subLvl2</mark> = new ExplicitGroup("2"<mark class="modifier">,</mark> GroupHierarchyType.INDEPENDENT, '<mark class="modifier">,</mark>')*subLvl22{
+%org.jabref.model.groups.AbstractGroupTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaX X(2›
+Üorg.jabref.model.groups.ExplicitGroup.ExplicitGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaX$ X(1æ
+]org.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?thirdSubGrpLvl1@91.22:91.37VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java[ [(%"
+typeAbstractGroup"
+isFinalfalse"Ì
+declarationString◊<mark class="modifier"> </mark>AbstractGroup <mark class="class-field">thirdSubGrpLvl1</mark> = new ExplicitGroup("3"<mark class="modifier">,</mark> GroupHierarchyType.INDEPENDENT, '<mark class="modifier">,</mark>')*thirdSubGrpLvl12{
+%org.jabref.model.groups.AbstractGroupTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java[ [(2›
+Üorg.jabref.model.groups.ExplicitGroup.ExplicitGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java[, [(9€
+
+Xorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?parsedNode@94.22:94.32VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java^ ^( "
+typeGroupTreeNode"
+isFinalfalse"Ô
+declarationStringŸ<mark class="modifier"> </mark>GroupTreeNode <mark class="class-field">parsedNode</mark> = GroupsParser.importGroups(orderedData, '<mark class="modifier">,</mark>'<mark class="modifier">,</mark> fileMonitor, metaData)*
+parsedNode2{
+%org.jabref.model.groups.GroupTreeNodeTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java^ ^(2ì
+ºorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java^0 ^(<2Ø
+Yorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?orderedData@74.21:74.32CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java^= ^(H2ù
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java^O ^(Z2ö
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java^\ ^(dÁ
+Oorg.jabref.logic.importer.util.GroupsParserTest.importSubGroups()?c@89.43:89.44VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaY+ Y(,"
+type"
+isFinalfalse"
+declarationString c*c2TYPEÄ
+eorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithIconAndDescription()METHODL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javac	 c(<"
+isFinalfalse"†
+declarationStringä<mark class="annotation">@Test</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">fromStringParsesExplicitGroupWithIconAndDescription</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>Exception"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*3fromStringParsesExplicitGroupWithIconAndDescription2ô
+Corg.jabref.model.groups.AbstractGroup.setIconName(java.lang.String)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javae e(2ê
+:org.jabref.model.groups.AbstractGroup.setExpanded(boolean)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaf f(2ú
+Forg.jabref.model.groups.AbstractGroup.setDescription(java.lang.String)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javah h(2Å
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javai, i(62›
+Üorg.jabref.model.groups.ExplicitGroup.ExplicitGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javad% d(22“
+|org.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithIconAndDescription()?expected@100.22:100.30CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javae e(2“
+|org.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithIconAndDescription()?expected@100.22:100.30CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaf f(2“
+|org.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithIconAndDescription()?expected@100.22:100.30CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javag g(2“
+|org.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithIconAndDescription()?expected@100.22:100.30CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javah h(2ü
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaiÜ i(ë2ú
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaiì i(õ2“
+|org.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithIconAndDescription()?expected@100.22:100.30CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javak k(2–
+zorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithIconAndDescription()?parsed@105.22:105.28CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javak k(%2Ÿ
+|org.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithIconAndDescription()?expected@100.22:100.30DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javad d(2◊
+zorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithIconAndDescription()?parsed@105.22:105.28DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javai i(2a
+voidRETURN_TYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javac c(›
+|org.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithIconAndDescription()?expected@100.22:100.30VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javad d("
+typeExplicitGroup"
+isFinalfalse"Ù
+declarationStringﬁ<mark class="modifier"> </mark>ExplicitGroup <mark class="class-field">expected</mark> = new ExplicitGroup("myExplicitGroup"<mark class="modifier">,</mark> GroupHierarchyType.INDEPENDENT, '<mark class="modifier">,</mark>')*expected2{
+%org.jabref.model.groups.ExplicitGroupTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javad d(2›
+Üorg.jabref.model.groups.ExplicitGroup.ExplicitGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javad% d(2é
+
+zorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesExplicitGroupWithIconAndDescription()?parsed@105.22:105.28VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javai i("
+typeAbstractGroup"
+isFinalfalse"ƒ
+declarationStringÆ<mark class="modifier"> </mark>AbstractGroup <mark class="class-field">parsed</mark> = GroupsParser.fromString("StaticGroup:myExplicitGroup;0;1;0xf0f8ffff;test icon;test description;"<mark class="modifier">,</mark> '<mark class="modifier">,</mark>'<mark class="modifier">,</mark> fileMonitor, metaData)*parsed2{
+%org.jabref.model.groups.AbstractGroupTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javai i(2Å
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javai, i(62ü
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaiÜ i(ë2ú
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaiì i(õƒ
+Worg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesAutomaticKeywordGroup()METHODL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javao	 o(."
+isFinalfalse"í
+declarationString¸<mark class="annotation">@Test</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">fromStringParsesAutomaticKeywordGroup</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>Exception"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*%fromStringParsesAutomaticKeywordGroup2Å
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaq, q(62¶
+œorg.jabref.model.groups.AutomaticKeywordGroup.AutomaticKeywordGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, org.jabref.model.entry.field.Field, java.lang.Character, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javap& p(;2û
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLM
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaq{ q(Ü2ú
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaqà q(ê2ƒ
+norg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesAutomaticKeywordGroup()?expected@112.23:112.31CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javar r(2¬
+lorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesAutomaticKeywordGroup()?parsed@113.22:113.28CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javar r(%2À
+norg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesAutomaticKeywordGroup()?expected@112.23:112.31DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javap p(2…
+lorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesAutomaticKeywordGroup()?parsed@113.22:113.28DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaq q(2a
+voidRETURN_TYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javao o(ﬂ
+norg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesAutomaticKeywordGroup()?expected@112.23:112.31VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javap p("
+typeAutomaticGroup"
+isFinalfalse"π
+declarationString£<mark class="modifier"> </mark>AutomaticGroup <mark class="class-field">expected</mark> = new AutomaticKeywordGroup("myAutomaticGroup"<mark class="modifier">,</mark> GroupHierarchyType.INDEPENDENT, StandardField.KEYWORDS, '<mark class="modifier">,</mark>'<mark class="modifier">,</mark> '>')*expected2|
+&org.jabref.model.groups.AutomaticGroupTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javap p(2¶
+œorg.jabref.model.groups.AutomaticKeywordGroup.AutomaticKeywordGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, org.jabref.model.entry.field.Field, java.lang.Character, java.lang.Character)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javap& p(;í
+
+lorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesAutomaticKeywordGroup()?parsed@113.22:113.28VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaq q("
+typeAbstractGroup"
+isFinalfalse"◊
+declarationString¡<mark class="modifier"> </mark>AbstractGroup <mark class="class-field">parsed</mark> = GroupsParser.fromString("AutomaticKeywordGroup:myAutomaticGroup;0;keywords;<mark class="modifier">,</mark>;>;1;;;;"<mark class="modifier">,</mark> '<mark class="modifier">,</mark>'<mark class="modifier">,</mark> fileMonitor, metaData)*parsed2{
+%org.jabref.model.groups.AbstractGroupTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaq q(2Å
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaq, q(62û
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLM
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaq{ q(Ü2ú
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaqà q(êì
+Vorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesAutomaticPersonGroup()METHODL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javav	 v(-"
+isFinalfalse"ë
+declarationString˚<mark class="annotation">@Test</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">fromStringParsesAutomaticPersonGroup</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>Exception"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*$fromStringParsesAutomaticPersonGroup2Å
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javax, x(62¸
+•org.jabref.model.groups.AutomaticPersonsGroup.AutomaticPersonsGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, org.jabref.model.entry.field.Field)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaw- w(B2û
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLM
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaxu x(Ä2ú
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaxÇ x(ä2√
+morg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesAutomaticPersonGroup()?expected@119.30:119.38CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javay y(2¡
+korg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesAutomaticPersonGroup()?parsed@120.22:120.28CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javay y(%2 
+morg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesAutomaticPersonGroup()?expected@119.30:119.38DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaw w(&2»
+korg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesAutomaticPersonGroup()?parsed@120.22:120.28DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javax x(2a
+voidRETURN_TYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javav v(Ç
+morg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesAutomaticPersonGroup()?expected@119.30:119.38VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaw w(&"
+typeAutomaticPersonsGroup"
+isFinalfalse"¯
+declarationString‚<mark class="modifier"> </mark>AutomaticPersonsGroup <mark class="class-field">expected</mark> = new AutomaticPersonsGroup("myAutomaticGroup"<mark class="modifier">,</mark> GroupHierarchyType.INDEPENDENT, StandardField.AUTHOR)*expected2É
+-org.jabref.model.groups.AutomaticPersonsGroupTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaw w(2¸
+•org.jabref.model.groups.AutomaticPersonsGroup.AutomaticPersonsGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, org.jabref.model.entry.field.Field)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaw- w(BÌ	
+korg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesAutomaticPersonGroup()?parsed@120.22:120.28VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javax x("
+typeAbstractGroup"
+isFinalfalse"≥
+declarationStringù<mark class="modifier"> </mark>AbstractGroup <mark class="class-field">parsed</mark> = GroupsParser.fromString("AutomaticPersonsGroup:myAutomaticGroup;0;author;1;;;;"<mark class="modifier">,</mark> '<mark class="modifier">,</mark>'<mark class="modifier">,</mark> fileMonitor, metaData)*parsed2{
+%org.jabref.model.groups.AbstractGroupTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javax x(2Å
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javax, x(62û
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLM
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaxu x(Ä2ú
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaxÇ x(ä›
+Jorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesTexGroup()METHODL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java}	 }(!"
+isFinalfalse"Ö
+declarationStringÔ<mark class="annotation">@Test</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">fromStringParsesTexGroup</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>Exception"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*fromStringParsesTexGroup2ö
+√org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java~% ~(+2í
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java~_ ~(a2Å
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java, (62∫
+corg.jabref.logic.auxparser.DefaultAuxParser.DefaultAuxParser(org.jabref.model.database.BibDatabase)CALLM
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java~} ~(ç2ã
+3org.jabref.model.database.BibDatabase.BibDatabase()CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java~í ~(ù2ú
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java~¢ ~(™2ù
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javah (s2ö
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javau (}2π
+aorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesTexGroup()?expected@126.17:126.25CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaÄ Ä(2∑
+_org.jabref.logic.importer.util.GroupsParserTest.fromStringParsesTexGroup()?parsed@127.22:127.28CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaÄ Ä(%2æ
+aorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesTexGroup()?expected@126.17:126.25DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java~ ~(2º
+_org.jabref.logic.importer.util.GroupsParserTest.fromStringParsesTexGroup()?parsed@127.22:127.28DECLARATIONL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java (2a
+voidRETURN_TYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java} }(è
+aorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesTexGroup()?expected@126.17:126.25VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java~ ~("
+typeTexGroup"
+isFinalfalse"è
+declarationString˘<mark class="modifier"> </mark>TexGroup <mark class="class-field">expected</mark> = TexGroup.create("myTexGroup"<mark class="modifier">,</mark> GroupHierarchyType.INDEPENDENT, Path.of("path"<mark class="modifier">,</mark> "To"<mark class="modifier">,</mark> "File")<mark class="modifier">,</mark> new DefaultAuxParser(new BibDatabase())<mark class="modifier">,</mark> metaData)*expected2v
+ org.jabref.model.groups.TexGroupTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java~ ~(2ö
+√org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java~% ~(+2í
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java~_ ~(a2∫
+corg.jabref.logic.auxparser.DefaultAuxParser.DefaultAuxParser(org.jabref.model.database.BibDatabase)CALLM
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java~} ~(ç2ã
+3org.jabref.model.database.BibDatabase.BibDatabase()CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java~í ~(ù2ú
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java~¢ ~(™—	
+_org.jabref.logic.importer.util.GroupsParserTest.fromStringParsesTexGroup()?parsed@127.22:127.28VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java ("
+typeAbstractGroup"
+isFinalfalse"¶
+declarationStringê<mark class="modifier"> </mark>AbstractGroup <mark class="class-field">parsed</mark> = GroupsParser.fromString("TexGroup:myTexGroup;0;path/To/File;1;;;;"<mark class="modifier">,</mark> '<mark class="modifier">,</mark>'<mark class="modifier">,</mark> fileMonitor, metaData)*parsed2{
+%org.jabref.model.groups.AbstractGroupTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java (2Å
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java, (62ù
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javah (s2ö
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javau (}ˇ	
+Worg.jabref.logic.importer.util.GroupsParserTest.fromStringUnknownGroupThrowsException()METHODN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaÑ	 Ñ(."
+isFinalfalse"í
+declarationString¸<mark class="annotation">@Test</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">fromStringUnknownGroupThrowsException</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>Exception"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*%fromStringUnknownGroupThrowsException2É
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaÖ> Ö(H2†
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLO
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaÖx Ö(É2û
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLP
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaÖÖ Ö(ç2c
+voidRETURN_TYPEN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaÑ Ñ(˝
+Morg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesSearchGroup()METHODN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaâ	 â($"
+isFinalfalse"à
+declarationStringÚ<mark class="annotation">@Test</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">fromStringParsesSearchGroup</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>Exception"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*fromStringParsesSearchGroup2o
+java.util.EnumSet.of(E)CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaä{ ä(}2É
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaã, ã(62¢
+…org.jabref.model.groups.SearchGroup.SearchGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.String, java.util.EnumSet<org.jabref.model.search.rules.SearchRules.SearchFlags>)CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaä# ä(.2†
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLO
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaãx ã(É2û
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLP
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaãÖ ã(ç2º
+dorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesSearchGroup()?expected@138.20:138.28CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaå å(2∫
+borg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesSearchGroup()?parsed@139.22:139.28CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaå å(%2√
+dorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesSearchGroup()?expected@138.20:138.28DECLARATIONN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaä ä(2¡
+borg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesSearchGroup()?parsed@139.22:139.28DECLARATIONN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaã ã(2c
+voidRETURN_TYPEN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaâ â(ª
+dorg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesSearchGroup()?expected@138.20:138.28VARIABLEN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaä ä("
+typeSearchGroup"
+isFinalfalse"¥
+declarationStringû<mark class="modifier"> </mark>SearchGroup <mark class="class-field">expected</mark> = new SearchGroup("Data"<mark class="modifier">,</mark> GroupHierarchyType.INCLUDING, "project=data|number|quant*"<mark class="modifier">,</mark> EnumSet.of(SearchRules.SearchFlags.REGULAR_EXPRESSION))*expected2{
+#org.jabref.model.groups.SearchGroupTYPEN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaä ä(2o
+java.util.EnumSet.of(E)CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaä{ ä(}2¢
+…org.jabref.model.groups.SearchGroup.SearchGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.String, java.util.EnumSet<org.jabref.model.search.rules.SearchRules.SearchFlags>)CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaä# ä(.Ò	
+borg.jabref.logic.importer.util.GroupsParserTest.fromStringParsesSearchGroup()?parsed@139.22:139.28VARIABLEN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaã ã("
+typeAbstractGroup"
+isFinalfalse"∂
+declarationString†<mark class="modifier"> </mark>AbstractGroup <mark class="class-field">parsed</mark> = GroupsParser.fromString("SearchGroup:Data;2;project=data|number|quant*;0;1;1;;;;;"<mark class="modifier">,</mark> '<mark class="modifier">,</mark>'<mark class="modifier">,</mark> fileMonitor, metaData)*parsed2}
+%org.jabref.model.groups.AbstractGroupTYPEN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaã ã(2É
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLN
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaã, ã(62†
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41CALLO
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaãx ã(É2û
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29CALLP
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.javaãÖ ã(ç˚
+Gorg.jabref.logic.importer.util.GroupsParserTest?fileMonitor@34.30:34.41VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java" "()"
+isFinalfalse"
+typeFileUpdateMonitor"y
+declarationStringd<mark class="modifier">private </mark>FileUpdateMonitor <mark class="class-field">fileMonitor</mark>"
+isStaticfalse"
+accessprivate*fileMonitor2}
+'org.jabref.model.util.FileUpdateMonitorTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java" "(€
+Dorg.jabref.logic.importer.util.GroupsParserTest?metaData@35.21:35.29VARIABLEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java# #("
+isFinalfalse"
+typeMetaData"m
+declarationStringX<mark class="modifier">private </mark>MetaData <mark class="class-field">metaData</mark>"
+isStaticfalse"
+accessprivate*metaData2x
+"org.jabref.model.metadata.MetaDataTYPEL
+Bsrc\test\java\org\jabref\logic\importer\util\GroupsParserTest.java# #(

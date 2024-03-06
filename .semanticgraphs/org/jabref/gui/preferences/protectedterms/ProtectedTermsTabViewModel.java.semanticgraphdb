@@ -1,0 +1,833 @@
+
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaù"
+Dorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModelCLASSa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java# #('"4
+package)org.jabref.gui.preferences.protectedterms"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"º
+declarationString¶<mark class="modifier">public </mark><mark class="modifier">class </mark>ProtectedTermsTabViewModel<mark class="modifier"><br>implements </mark>PreferenceTabViewModel"
+accesspublic*ProtectedTermsTabViewModel2—
+ﬁorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.ProtectedTermsTabViewModel(org.jabref.logic.protectedterms.ProtectedTermsLoader, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java, ,(%2¬
+Porg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.setValues()DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java6 6(2∆
+Torg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java< <(2¿
+Norg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.addFile()DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java[ [(2â
+ñorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.removeList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javai i(2∆
+Torg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.createNewFile()DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javav v(2É
+êorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.edit(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaz z(2è
+öorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)DECLARATIONc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaà à(2ã
+ñorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)DECLARATIONc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaò ò(2Õ
+Yorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.termsFilesProperty()DECLARATIONc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java£5 £(G2…
+Worg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?LOGGER@36.32:36.38DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java$  $(&2Œ
+\org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?termsLoader@38.39:38.50DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java&' &(22’
+corg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?termsFilesProperty@39.60:39.78DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java'< '(N2“
+`org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?filePreferences@40.34:40.49DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java(" ((12–
+^org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?dialogService@41.32:41.45DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java)  )(-2‹
+jorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?protectedTermsPreferences@42.44:42.69DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java*, *(E2û
+1org.jabref.gui.preferences.PreferenceTabViewModelEXTENDa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java#3 #(I≠#
+ﬁorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.ProtectedTermsTabViewModel(org.jabref.logic.protectedterms.ProtectedTermsLoader, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)CONSTRUCTORa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java, ,(%"œ
+declarationStringπ<mark class="modifier">public </mark><mark class="method">ProtectedTermsTabViewModel</mark>(ProtectedTermsLoader termsLoader<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferencesService)*ProtectedTermsTabViewModel2©
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java12 1(D2≥
+Horg.jabref.preferences.PreferencesService.getProtectedTermsPreferences()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java2< 2(X2÷
+Íorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.ProtectedTermsTabViewModel(org.jabref.logic.protectedterms.ProtectedTermsLoader, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)!termsLoaderCALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java/ /(&2ÿ
+Ïorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.ProtectedTermsTabViewModel(org.jabref.logic.protectedterms.ProtectedTermsLoader, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)!dialogServiceCALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java0 0(*2›
+Òorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.ProtectedTermsTabViewModel(org.jabref.logic.protectedterms.ProtectedTermsLoader, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)!preferencesServiceCALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java1 1(12›
+Òorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.ProtectedTermsTabViewModel(org.jabref.logic.protectedterms.ProtectedTermsLoader, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)!preferencesServiceCALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java2) 2(;2«
+\org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?termsLoader@38.39:38.50CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java/ /(2…
+^org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?dialogService@41.32:41.45CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java0 0(2À
+`org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?filePreferences@40.34:40.49CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java1 1(2’
+jorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?protectedTermsPreferences@42.44:42.69CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java2 2(&2€
+Íorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.ProtectedTermsTabViewModel(org.jabref.logic.protectedterms.ProtectedTermsLoader, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)!termsLoader	PARAMETERa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java,; ,(F2›
+Ïorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.ProtectedTermsTabViewModel(org.jabref.logic.protectedterms.ProtectedTermsLoader, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)!dialogService	PARAMETERa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java-4 -(A2‚
+Òorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.ProtectedTermsTabViewModel(org.jabref.logic.protectedterms.ProtectedTermsLoader, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)!preferencesService	PARAMETERa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java.9 .(K2∂
+Dorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModelRETURN_TYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java, ,(%Ò
+Íorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.ProtectedTermsTabViewModel(org.jabref.logic.protectedterms.ProtectedTermsLoader, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)!termsLoader	PARAMETERa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java,; ,(F"
+typeProtectedTermsLoader"
+isFinalfalse"5
+declarationString ProtectedTermsLoader termsLoader*termsLoader2ü
+4org.jabref.logic.protectedterms.ProtectedTermsLoaderTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java,& ,(:—
+Ïorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.ProtectedTermsTabViewModel(org.jabref.logic.protectedterms.ProtectedTermsLoader, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)!dialogService	PARAMETERa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java-4 -(A"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2á
+org.jabref.gui.DialogServiceTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java-& -(3˜
+Òorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.ProtectedTermsTabViewModel(org.jabref.logic.protectedterms.ProtectedTermsLoader, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)!preferencesService	PARAMETERa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java.9 .(K"
+typePreferencesService"
+isFinalfalse":
+declarationString%PreferencesService preferencesService*preferencesService2î
+)org.jabref.preferences.PreferencesServiceTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java.& .(8˝
+Porg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.setValues()METHODa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java6 6("
+isFinalfalse"≥
+declarationStringù<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">setValues</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*	setValues2ã
+ java.util.stream.Stream.toList()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java8v 8(|2ª
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java8P 8(S2à
+java.util.Collection.stream()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java8G 8(M2∏
+Morg.jabref.logic.protectedterms.ProtectedTermsLoader.getProtectedTermsLists()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java8. 8(D2Œ
+corg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?termsFilesProperty@39.60:39.78CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java7 7(2Œ
+corg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?termsFilesProperty@39.60:39.78CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java8 8(2«
+\org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?termsLoader@38.39:38.50CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java8" 8(-2¨
+=org.jabref.gui.preferences.PreferenceTabViewModel.setValues()OVERRIDEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java6 6(2v
+voidRETURN_TYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java6 6(∂O
+Torg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()METHODa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java< <("
+isFinalfalse"∑
+declarationString°<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">storeSettings</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*storeSettings2Æ
+Corg.jabref.logic.protectedterms.ProtectedTermsList.isInternalList()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaD D(#2©
+>org.jabref.logic.protectedterms.ProtectedTermsList.isEnabled()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaE E("2Ä
+java.util.List.add(E)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaF( F(+2´
+@org.jabref.logic.protectedterms.ProtectedTermsList.getLocation()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaF1 F(<2Ä
+java.util.List.add(E)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaH) H(,2´
+@org.jabref.logic.protectedterms.ProtectedTermsList.getLocation()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaH2 H(=2©
+>org.jabref.logic.protectedterms.ProtectedTermsList.isEnabled()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaK K("2Ä
+java.util.List.add(E)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaL( L(+2´
+@org.jabref.logic.protectedterms.ProtectedTermsList.getLocation()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaL1 L(<2Ä
+java.util.List.add(E)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaN) N(,2´
+@org.jabref.logic.protectedterms.ProtectedTermsList.getLocation()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaN2 N(=2‚
+worg.jabref.logic.protectedterms.ProtectedTermsPreferences.setEnabledInternalTermLists(java.util.List<java.lang.String>)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaS" S(=2‚
+worg.jabref.logic.protectedterms.ProtectedTermsPreferences.setEnabledExternalTermLists(java.util.List<java.lang.String>)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaT" T(=2„
+xorg.jabref.logic.protectedterms.ProtectedTermsPreferences.setDisabledInternalTermLists(java.util.List<java.lang.String>)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaU" U(>2„
+xorg.jabref.logic.protectedterms.ProtectedTermsPreferences.setDisabledExternalTermLists(java.util.List<java.lang.String>)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaV" V(>2·
+vorg.jabref.logic.protectedterms.ProtectedTermsLoader.update(org.jabref.logic.protectedterms.ProtectedTermsPreferences)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaX X(2ä
+java.util.ArrayList.ArrayList()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java=/ =(:2ä
+java.util.ArrayList.ArrayList()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java>0 >(;2ä
+java.util.ArrayList.ArrayList()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java?/ ?(:2ä
+java.util.ArrayList.ArrayList()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java@0 @(;2Œ
+corg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?termsFilesProperty@39.60:39.78CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaB' B(92–
+eorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?list@66.32:66.36CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaD D(2–
+eorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?list@66.32:66.36CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaE E(2ﬂ
+torg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?enabledInternalList@63.21:63.40CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaF F('2–
+eorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?list@66.32:66.36CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaF, F(02‡
+uorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?disabledInternalList@64.21:64.41CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaH H((2–
+eorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?list@66.32:66.36CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaH- H(12–
+eorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?list@66.32:66.36CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaK K(2ﬂ
+torg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?enabledExternalList@61.21:61.40CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaL L('2–
+eorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?list@66.32:66.36CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaL, L(02‡
+uorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?disabledExternalList@62.21:62.41CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaN N((2–
+eorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?list@66.32:66.36CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaN- N(12’
+jorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?protectedTermsPreferences@42.44:42.69CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaS S(!2ﬂ
+torg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?enabledInternalList@63.21:63.40CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaS> S(Q2’
+jorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?protectedTermsPreferences@42.44:42.69CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaT T(!2ﬂ
+torg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?enabledExternalList@61.21:61.40CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaT> T(Q2’
+jorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?protectedTermsPreferences@42.44:42.69CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaU U(!2‡
+uorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?disabledInternalList@64.21:64.41CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaU? U(S2’
+jorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?protectedTermsPreferences@42.44:42.69CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaV V(!2‡
+uorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?disabledExternalList@62.21:62.41CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaV? V(S2«
+\org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?termsLoader@38.39:38.50CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaX X(2’
+jorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?protectedTermsPreferences@42.44:42.69CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaX X(42∞
+Aorg.jabref.gui.preferences.PreferenceTabViewModel.storeSettings()OVERRIDEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java< <(2Ê
+torg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?enabledExternalList@61.21:61.40DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java= =((2Á
+uorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?disabledExternalList@62.21:62.41DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java> >()2Ê
+torg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?enabledInternalList@63.21:63.40DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java? ?((2Á
+uorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?disabledInternalList@64.21:64.41DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java@ @()2◊
+eorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?list@66.32:66.36DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaB  B($2v
+voidRETURN_TYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java< <(ª
+torg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?enabledExternalList@61.21:61.40VARIABLEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java= =(("
+typeList<String>"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark>List<String> <mark class="class-field">enabledExternalList</mark> = new ArrayList<>()*enabledExternalList2y
+java.util.ListTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java= =(2Ñ
+java.lang.StringTYPE_ARGUMENTa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java= =(2ä
+java.util.ArrayList.ArrayList()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java=/ =(:æ
+uorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?disabledExternalList@62.21:62.41VARIABLEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java> >()"
+typeList<String>"
+isFinalfalse"ä
+declarationStringu<mark class="modifier"> </mark>List<String> <mark class="class-field">disabledExternalList</mark> = new ArrayList<>()*disabledExternalList2y
+java.util.ListTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java> >(2Ñ
+java.lang.StringTYPE_ARGUMENTa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java> >(2ä
+java.util.ArrayList.ArrayList()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java>0 >(;ª
+torg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?enabledInternalList@63.21:63.40VARIABLEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java? ?(("
+typeList<String>"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark>List<String> <mark class="class-field">enabledInternalList</mark> = new ArrayList<>()*enabledInternalList2y
+java.util.ListTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java? ?(2Ñ
+java.lang.StringTYPE_ARGUMENTa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java? ?(2ä
+java.util.ArrayList.ArrayList()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java?/ ?(:æ
+uorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?disabledInternalList@64.21:64.41VARIABLEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java@ @()"
+typeList<String>"
+isFinalfalse"ä
+declarationStringu<mark class="modifier"> </mark>List<String> <mark class="class-field">disabledInternalList</mark> = new ArrayList<>()*disabledInternalList2y
+java.util.ListTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java@ @(2Ñ
+java.lang.StringTYPE_ARGUMENTa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java@ @(2ä
+java.util.ArrayList.ArrayList()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java@0 @(;ñ
+eorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.storeSettings()?list@66.32:66.36VARIABLEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaB  B($"
+typeProtectedTermsList"
+isFinalfalse"l
+declarationStringW<mark class="modifier"> </mark>ProtectedTermsList <mark class="class-field">list</mark>*list2ù
+2org.jabref.logic.protectedterms.ProtectedTermsListTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaB B(õ'
+Norg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.addFile()METHODa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java[ [("
+isFinalfalse"Ç
+declarationStringm<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">addFile</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*addFile2¶
+;org.jabref.gui.util.FileDialogConfiguration.Builder.build()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java` `(2«
+\org.jabref.gui.util.FileDialogConfiguration.Builder.withInitialDirectory(java.nio.file.Path)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java_ _(%2Â
+zorg.jabref.gui.util.FileDialogConfiguration.Builder.withDefaultExtension(java.lang.String, org.jabref.logic.util.FileType)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java^ ^(%2„
+xorg.jabref.gui.util.FileDialogConfiguration.Builder.addExtensionFilter(java.lang.String, org.jabref.logic.util.FileType)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java] ](#2π
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java]1 ](52π
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java^3 ^(72ß
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java_6 _(I2Ø
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javac c(2«
+\org.jabref.gui.DialogService.showFileOpenDialog(org.jabref.gui.util.FileDialogConfiguration)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javab b((2é
+#java.nio.file.Path.toAbsolutePath()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javad. d(<2‹
+porg.jabref.logic.protectedterms.ProtectedTermsLoader.readProtectedTermsListFromFile(java.nio.file.Path, boolean)CALLb
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaee e(É2®
+=org.jabref.gui.util.FileDialogConfiguration.Builder.Builder()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java\> \(]2Å
+ïorg.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel.ProtectedTermsListItemModel(org.jabref.logic.protectedterms.ProtectedTermsList)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javae4 e(O2À
+`org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?filePreferences@40.34:40.49CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java_& _(52…
+^org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?dialogService@41.32:41.45CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javab b(2›
+rorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.addFile()?fileDialogConfiguration@92.32:92.55CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javab) b(@2 
+_org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.addFile()?file@99.32:99.36CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javad) d(-2Œ
+corg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?termsFilesProperty@39.60:39.78CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javae e(+2“
+eorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.addFile()?fileName@100.30:100.38CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaeÑ e(å2‰
+rorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.addFile()?fileDialogConfiguration@92.32:92.55DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java\  \(72◊
+eorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.addFile()?fileName@100.30:100.38DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javad d(&2—
+_org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.addFile()?file@99.32:99.36DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javac  c($2v
+voidRETURN_TYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java[ [(Ä
+rorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.addFile()?fileDialogConfiguration@92.32:92.55VARIABLEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java\  \(7"
+typeFileDialogConfiguration"
+isFinalfalse"€
+declarationString≈<mark class="modifier"> </mark>FileDialogConfiguration <mark class="class-field">fileDialogConfiguration</mark> = new FileDialogConfiguration.Builder().addExtensionFilter(Localization.lang("Protected terms file")<mark class="modifier">,</mark> StandardFileType.TERMS).withDefaultExtension(Localization.lang("Protected terms file")<mark class="modifier">,</mark> StandardFileType.TERMS).withInitialDirectory(filePreferences.getWorkingDirectory()).build()*fileDialogConfiguration2ñ
++org.jabref.gui.util.FileDialogConfigurationTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java\ \(2¶
+;org.jabref.gui.util.FileDialogConfiguration.Builder.build()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java` `(2«
+\org.jabref.gui.util.FileDialogConfiguration.Builder.withInitialDirectory(java.nio.file.Path)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java_ _(%2Â
+zorg.jabref.gui.util.FileDialogConfiguration.Builder.withDefaultExtension(java.lang.String, org.jabref.logic.util.FileType)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java^ ^(%2„
+xorg.jabref.gui.util.FileDialogConfiguration.Builder.addExtensionFilter(java.lang.String, org.jabref.logic.util.FileType)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java] ](#2π
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java]1 ](52π
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java^3 ^(72ß
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java_6 _(I2®
+=org.jabref.gui.util.FileDialogConfiguration.Builder.Builder()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java\> \(]2À
+`org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?filePreferences@40.34:40.49CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java_& _(5◊
+eorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.addFile()?fileName@100.30:100.38VARIABLEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javad d(&"
+typePath"
+isFinalfalse"z
+declarationStringe<mark class="modifier"> </mark>Path <mark class="class-field">fileName</mark> = file.toAbsolutePath()*fileName2}
+java.nio.file.PathTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javad d(2é
+#java.nio.file.Path.toAbsolutePath()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javad. d(<2 
+_org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.addFile()?file@99.32:99.36CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javad) d(-í
+_org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.addFile()?file@99.32:99.36VARIABLEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javac  c($"
+type"
+isFinalfalse"
+declarationString file*file2TYPEÉ#
+ñorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.removeList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)METHODa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javai i("
+isFinalfalse"´
+declarationStringï<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">removeList</mark>(ProtectedTermsListItemModel itemModel)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*
+removeList2ø
+Torg.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel.getTermsList()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaj, j(82Æ
+Corg.jabref.logic.protectedterms.ProtectedTermsList.isInternalList()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javak k( 2Ó
+Çorg.jabref.gui.DialogService.showConfirmationDialogAndWait(java.lang.String, java.lang.String, java.lang.String, java.lang.String)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javak4 k(Q2π
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javak_ k(c2π
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javal l(!2π
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javam m(!2π
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javan n(!2¬
+Worg.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel.enabledProperty()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javao o(%2å
+†org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.removeList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!itemModelCALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaj" j(+2ï
+©org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.removeList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?list@106.27:106.31CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javak k(2…
+^org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?dialogService@41.32:41.45CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javak& k(32å
+†org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.removeList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!itemModelCALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javao o(2Œ
+corg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?termsFilesProperty@39.60:39.78CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javap p(#2å
+†org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.removeList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!itemModelCALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javap+ p(42¬
+Worg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?LOGGER@36.32:36.38CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaq q(2ë
+†org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.removeList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!itemModel	PARAMETERa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javai7 i(@2ú
+©org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.removeList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?list@106.27:106.31DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaj j(2v
+voidRETURN_TYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javai i(»
+©org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.removeList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?list@106.27:106.31VARIABLEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaj j("
+typeProtectedTermsList"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>ProtectedTermsList <mark class="class-field">list</mark> = itemModel.getTermsList()*list2ù
+2org.jabref.logic.protectedterms.ProtectedTermsListTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaj j(2ø
+Torg.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel.getTermsList()CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaj, j(82å
+†org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.removeList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!itemModelCALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaj" j(+¬
+†org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.removeList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!itemModel	PARAMETERa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javai7 i(@"#
+typeProtectedTermsListItemModel"
+isFinalfalse":
+declarationString%ProtectedTermsListItemModel itemModel*	itemModel2∞
+Eorg.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModelTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javai i(6ß
+Torg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.createNewFile()METHODa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javav v("
+isFinalfalse"à
+declarationStrings<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">createNewFile</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*createNewFile2ø
+Torg.jabref.gui.DialogService.showCustomDialogAndWait(javafx.scene.control.Dialog<R>)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaw w(-2…
+^org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?dialogService@41.32:41.45CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaw w(2Œ
+corg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?termsFilesProperty@39.60:39.78CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javawN w(`2…
+^org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?dialogService@41.32:41.45CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javawb w(o2Ã
+`org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?filePreferences@40.34:40.49CALLb
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javawq w(Ä2v
+voidRETURN_TYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javav v(æ&
+êorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.edit(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)METHODa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaz z("
+isFinalfalse"†
+declarationStringä<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">edit</mark>(ProtectedTermsListItemModel file)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*edit2÷
+korg.jabref.model.util.OptionalUtil.orElse(java.util.Optional<? extends T>, java.util.Optional<? extends T>)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java{R {(X2
+Ñorg.jabref.gui.externalfiletype.ExternalFileTypes.getExternalFileTypeByExt(java.lang.String, org.jabref.preferences.FilePreferences)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java|" |(:2
+Ñorg.jabref.gui.externalfiletype.ExternalFileTypes.getExternalFileTypeByExt(java.lang.String, org.jabref.preferences.FilePreferences)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java}" }(:2≠
+@org.jabref.logic.protectedterms.ProtectedTermsList.getLocation()CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÄ. Ä(92¡
+Torg.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel.getTermsList()CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÄ Ä(+2Æ
+Aorg.jabref.model.database.BibDatabaseContext.BibDatabaseContext()CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÇ8 Ç(J2À
+`org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?filePreferences@40.34:40.49CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java|D |(S2À
+`org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?filePreferences@40.34:40.49CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java}B }(Q2É
+ïorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.edit(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!fileCALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÄ Ä(2Õ
+`org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?filePreferences@40.34:40.49CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÇN Ç(]2ï
+ßorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.edit(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?fileName@128.15:128.23CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÇ_ Ç(g2ö
+¨org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.edit(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?termsFileType@123.35:123.48CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÇi Ç(v2ƒ
+Worg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?LOGGER@36.32:36.38CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÑ Ñ(2é
+†org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.edit(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?e@131.29:131.30CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÑD Ñ(E2Ü
+ïorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.edit(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!file	PARAMETERa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaz1 z(52ü
+¨org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.edit(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?termsFileType@123.35:123.48DECLARATIONa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java{# {(02ú
+ßorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.edit(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?fileName@128.15:128.23DECLARATIONc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÄ Ä(2ï
+†org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.edit(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?e@131.29:131.30DECLARATIONc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÉ É(2v
+voidRETURN_TYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaz z(Ô
+¨org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.edit(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?termsFileType@123.35:123.48VARIABLEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java{# {(0""
+typeOptional<ExternalFileType>"
+isFinalfalse"ä
+declarationStringÙ<mark class="modifier"> </mark>Optional<ExternalFileType> <mark class="class-field">termsFileType</mark> = OptionalUtil.<ExternalFileType>orElse(ExternalFileTypes.getExternalFileTypeByExt("terms"<mark class="modifier">,</mark> filePreferences)<mark class="modifier">,</mark> ExternalFileTypes.getExternalFileTypeByExt("txt"<mark class="modifier">,</mark> filePreferences))*termsFileType2}
+java.util.OptionalTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java{ {(2§
+0org.jabref.gui.externalfiletype.ExternalFileTypeTYPE_ARGUMENTa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java{ {(!2÷
+korg.jabref.model.util.OptionalUtil.orElse(java.util.Optional<? extends T>, java.util.Optional<? extends T>)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java{R {(X2
+Ñorg.jabref.gui.externalfiletype.ExternalFileTypes.getExternalFileTypeByExt(java.lang.String, org.jabref.preferences.FilePreferences)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java|" |(:2
+Ñorg.jabref.gui.externalfiletype.ExternalFileTypes.getExternalFileTypeByExt(java.lang.String, org.jabref.preferences.FilePreferences)CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java}" }(:2À
+`org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?filePreferences@40.34:40.49CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java|D |(S2À
+`org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?filePreferences@40.34:40.49CALLa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java}B }(Q…	
+ßorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.edit(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?fileName@128.15:128.23VARIABLEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÄ Ä("
+typeString"
+isFinalfalse"à
+declarationStrings<mark class="modifier"> </mark>String <mark class="class-field">fileName</mark> = file.getTermsList().getLocation()*fileName2}
+java.lang.StringTYPEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÄ Ä(2≠
+@org.jabref.logic.protectedterms.ProtectedTermsList.getLocation()CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÄ. Ä(92¡
+Torg.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel.getTermsList()CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÄ Ä(+2É
+ïorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.edit(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!fileCALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÄ Ä(≠
+ïorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.edit(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!file	PARAMETERa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaz1 z(5"#
+typeProtectedTermsListItemModel"
+isFinalfalse"5
+declarationString ProtectedTermsListItemModel file*file2∞
+Eorg.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModelTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaz z(0„
+†org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.edit(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?e@131.29:131.30VARIABLEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÉ É("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2Ä
+java.io.IOExceptionTYPEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaÉ É(ö3
+öorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)METHODc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaà à("
+isFinalfalse"Ø
+declarationStringô<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">displayContent</mark>(ProtectedTermsListItemModel itemModel)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*displayContent2¡
+Torg.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel.getTermsList()CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaâ, â(82∞
+Corg.jabref.logic.protectedterms.ProtectedTermsList.getTermListing()CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaä1 ä(?2∞
+Corg.jabref.logic.protectedterms.ProtectedTermsList.getDescription()CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaï3 ï(A2≠
+@org.jabref.logic.protectedterms.ProtectedTermsList.getLocation()CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaïS ï(^2í
+§org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!itemModelCALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaâ" â(+2õ
+≠org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?list@137.27:137.31CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaä, ä(02¢
+¥org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?listingView@138.17:138.28CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaã ã(2°
+≥org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?scrollPane@141.19:141.29CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaé é(2°
+≥org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?scrollPane@141.19:141.29CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaè è(2°
+≥org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?scrollPane@141.19:141.29CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaê ê(2¢
+¥org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?listingView@138.17:138.28CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaê ê()2°
+≥org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?dialogPane@146.19:146.29CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaì ì(2°
+≥org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?scrollPane@141.19:141.29CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaì ì((2À
+^org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?dialogService@41.32:41.45CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaï ï(2õ
+≠org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?list@137.27:137.31CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaï. ï(22õ
+≠org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?list@137.27:137.31CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaïN ï(R2°
+≥org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?dialogPane@146.19:146.29CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaïb ï(l2ó
+§org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!itemModel	PARAMETERc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaà; à(D2¢
+≠org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?list@137.27:137.31DECLARATIONc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaâ â(2©
+¥org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?listingView@138.17:138.28DECLARATIONc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaä ä(2®
+≥org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?scrollPane@141.19:141.29DECLARATIONc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaç ç(2®
+≥org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?dialogPane@146.19:146.29DECLARATIONc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaí í(2x
+voidRETURN_TYPEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaà à(ÿ
+≠org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?list@137.27:137.31VARIABLEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaâ â("
+typeProtectedTermsList"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>ProtectedTermsList <mark class="class-field">list</mark> = itemModel.getTermsList()*list2ü
+2org.jabref.logic.protectedterms.ProtectedTermsListTYPEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaâ â(2¡
+Torg.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel.getTermsList()CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaâ, â(82í
+§org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!itemModelCALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaâ" â(+«
+¥org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?listingView@138.17:138.28VARIABLEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaä ä("
+typeTextArea"
+isFinalfalse"è
+declarationStringz<mark class="modifier"> </mark>TextArea <mark class="class-field">listingView</mark> = new TextArea(list.getTermListing())*listingView2ä
+javafx.scene.control.TextAreaTYPEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaä ä(2∞
+Corg.jabref.logic.protectedterms.ProtectedTermsList.getTermListing()CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaä1 ä(?2õ
+≠org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?list@137.27:137.31CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaä, ä(0Â
+≥org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?scrollPane@141.19:141.29VARIABLEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaç ç("
+type
+ScrollPane"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>ScrollPane <mark class="class-field">scrollPane</mark> = new ScrollPane()*
+scrollPane2å
+javafx.scene.control.ScrollPaneTYPEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaç ç(Â
+≥org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?dialogPane@146.19:146.29VARIABLEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaí í("
+type
+DialogPane"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>DialogPane <mark class="class-field">dialogPane</mark> = new DialogPane()*
+dialogPane2å
+javafx.scene.control.DialogPaneTYPEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaí í( 
+§org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.displayContent(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!itemModel	PARAMETERc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaà; à(D"#
+typeProtectedTermsListItemModel"
+isFinalfalse":
+declarationString%ProtectedTermsListItemModel itemModel*	itemModel2≤
+Eorg.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModelTYPEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaà à(:¿/
+ñorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)METHODc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaò ò("
+isFinalfalse"Æ
+declarationStringò<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">reloadList</mark>(ProtectedTermsListItemModel oldItemModel)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*
+reloadList2¡
+Torg.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel.getTermsList()CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaô2 ô(>2›
+porg.jabref.logic.protectedterms.ProtectedTermsLoader.readProtectedTermsListFromFile(java.nio.file.Path, boolean)CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaö: ö(X2©
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaö^ ö(`2≠
+@org.jabref.logic.protectedterms.ProtectedTermsList.getLocation()CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaöi ö(t2≠
+>org.jabref.logic.protectedterms.ProtectedTermsList.isEnabled()CALLe
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaöÅ ö(ä2≠
+@org.jabref.logic.protectedterms.ProtectedTermsList.getLocation()CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaüN ü(Y2É
+ïorg.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel.ProtectedTermsListItemModel(org.jabref.logic.protectedterms.ProtectedTermsList)CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaù. ù(I2ë
+£org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!oldItemModelCALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaô% ô(12ö
+¨org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?oldList@153.27:153.34CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaöa ö(h2õ
+¨org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?oldList@153.27:153.34CALLd
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaöy ö(Ä2–
+corg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?termsFilesProperty@39.60:39.78CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaõ õ(&2ë
+£org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!oldItemModelCALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaõ/ õ(;2ò
+™org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?index@155.12:155.17CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaú ú(2–
+corg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?termsFilesProperty@39.60:39.78CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaù ù(2ò
+™org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?index@155.12:155.17CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaù# ù((2ö
+¨org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?newList@154.27:154.34CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaùJ ù(Q2ƒ
+Worg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?LOGGER@36.32:36.38CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaü ü(2ö
+¨org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?oldList@153.27:153.34CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaüF ü(M2ñ
+£org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!oldItemModel	PARAMETERc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaò7 ò(C2°
+¨org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?oldList@153.27:153.34DECLARATIONc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaô ô("2°
+¨org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?newList@154.27:154.34DECLARATIONc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaö ö("2ü
+™org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?index@155.12:155.17DECLARATIONc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaõ õ(2x
+voidRETURN_TYPEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaò ò(ﬂ
+¨org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?oldList@153.27:153.34VARIABLEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaô ô(""
+typeProtectedTermsList"
+isFinalfalse"ç
+declarationStringx<mark class="modifier"> </mark>ProtectedTermsList <mark class="class-field">oldList</mark> = oldItemModel.getTermsList()*oldList2ü
+2org.jabref.logic.protectedterms.ProtectedTermsListTYPEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaô ô(2¡
+Torg.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel.getTermsList()CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaô2 ô(>2ë
+£org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!oldItemModelCALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaô% ô(1ö
+¨org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?newList@154.27:154.34VARIABLEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaö ö(""
+typeProtectedTermsList"
+isFinalfalse"˘
+declarationString„<mark class="modifier"> </mark>ProtectedTermsList <mark class="class-field">newList</mark> = ProtectedTermsLoader.readProtectedTermsListFromFile(Path.of(oldList.getLocation())<mark class="modifier">,</mark> oldList.isEnabled())*newList2ü
+2org.jabref.logic.protectedterms.ProtectedTermsListTYPEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaö ö(2›
+porg.jabref.logic.protectedterms.ProtectedTermsLoader.readProtectedTermsListFromFile(java.nio.file.Path, boolean)CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaö: ö(X2©
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaö^ ö(`2≠
+@org.jabref.logic.protectedterms.ProtectedTermsList.getLocation()CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaöi ö(t2≠
+>org.jabref.logic.protectedterms.ProtectedTermsList.isEnabled()CALLe
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaöÅ ö(ä2ö
+¨org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?oldList@153.27:153.34CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaöa ö(h2õ
+¨org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?oldList@153.27:153.34CALLd
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaöy ö(Ä∆
+™org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)?index@155.12:155.17VARIABLEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaõ õ("
+typeint"
+isFinalfalse"®
+declarationStringí<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">index</mark> = termsFilesProperty.indexOf(oldItemModel)*index2p
+intTYPEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaõ õ(2–
+corg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?termsFilesProperty@39.60:39.78CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaõ õ(&2ë
+£org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!oldItemModelCALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaõ/ õ(;œ
+£org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.reloadList(org.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModel)!oldItemModel	PARAMETERc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaò7 ò(C"#
+typeProtectedTermsListItemModel"
+isFinalfalse"=
+declarationString(ProtectedTermsListItemModel oldItemModel*oldItemModel2≤
+Eorg.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModelTYPEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.javaò ò(6™
+Yorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel.termsFilesProperty()METHODc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java£5 £(G"
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier">public </mark>ListProperty&lt;ProtectedTermsListItemModel&gt; <mark class="method">termsFilesProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"1
+type)ListProperty<ProtectedTermsListItemModel>*termsFilesProperty2–
+corg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?termsFilesProperty@39.60:39.78CALLc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java§ §(!2ñ
+"javafx.beans.property.ListPropertyRETURN_TYPEc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java£ £(2¬
+Eorg.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModelRETURN_TYPE_ARGUMENTc
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java£ £(3Å
+Worg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?LOGGER@36.32:36.38VALUEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java$  $(&"
+isFinaltrue"
+typeLogger"
+declarationString⁄<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(ProtectedTermsTabViewModel.class);"
+isStatictrue"
+accessprivate*LOGGER2{
+org.slf4j.LoggerTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java$ $(
+\org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?termsLoader@38.39:38.50VALUEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java&' &(2"
+isFinaltrue"
+typeProtectedTermsLoader"°
+declarationStringã<mark class="modifier">private </mark><mark class="modifier">final </mark>ProtectedTermsLoader <mark class="class-field">termsLoader</mark>"
+isStaticfalse"
+accessprivate*termsLoader2ü
+4org.jabref.logic.protectedterms.ProtectedTermsLoaderTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java& &(&ö
+corg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?termsFilesProperty@39.60:39.78VALUEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java'< '(N"
+isFinaltrue"1
+type)ListProperty<ProtectedTermsListItemModel>"˛
+declarationStringË<mark class="modifier">private </mark><mark class="modifier">final </mark>ListProperty<ProtectedTermsListItemModel> <mark class="class-field">termsFilesProperty</mark> = new SimpleListProperty<>(FXCollections.observableArrayList());"
+isStaticfalse"
+accessprivate*termsFilesProperty2ç
+"javafx.beans.property.ListPropertyTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java' '(2π
+Eorg.jabref.gui.preferences.protectedterms.ProtectedTermsListItemModelTYPE_ARGUMENTa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java' '(:‰
+`org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?filePreferences@40.34:40.49VALUEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java(" ((1"
+isFinaltrue"
+typeFilePreferences"†
+declarationStringä<mark class="modifier">private </mark><mark class="modifier">final </mark>FilePreferences <mark class="class-field">filePreferences</mark>"
+isStaticfalse"
+accessprivate*filePreferences2ë
+&org.jabref.preferences.FilePreferencesTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java( ((!–
+^org.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?dialogService@41.32:41.45VALUEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java)  )(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2á
+org.jabref.gui.DialogServiceTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java) )(©
+jorg.jabref.gui.preferences.protectedterms.ProtectedTermsTabViewModel?protectedTermsPreferences@42.44:42.69VALUEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java*, *(E"
+isFinaltrue"!
+typeProtectedTermsPreferences"¥
+declarationStringû<mark class="modifier">private </mark><mark class="modifier">final </mark>ProtectedTermsPreferences <mark class="class-field">protectedTermsPreferences</mark>"
+isStaticfalse"
+accessprivate*protectedTermsPreferences2§
+9org.jabref.logic.protectedterms.ProtectedTermsPreferencesTYPEa
+Wsrc\main\java\org\jabref\gui\preferences\protectedterms\ProtectedTermsTabViewModel.java* *(+

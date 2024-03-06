@@ -1,0 +1,1061 @@
+
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaÜ+
+2org.jabref.gui.texparser.ParseLatexDialogViewModelCLASSO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java, ,(&"#
+packageorg.jabref.gui.texparser"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"∞
+declarationStringö<mark class="modifier">public </mark><mark class="modifier">class </mark>ParseLatexDialogViewModel<mark class="modifier"> extends </mark>AbstractViewModel"
+accesspublic*ParseLatexDialogViewModel2Ô
+éorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java= =($2Ø
+Oorg.jabref.gui.texparser.ParseLatexDialogViewModel.latexFileDirectoryProperty()DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaU U(42≠
+Morg.jabref.gui.texparser.ParseLatexDialogViewModel.latexDirectoryValidation()DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaY Y(42°
+Aorg.jabref.gui.texparser.ParseLatexDialogViewModel.rootProperty()DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java]- ](92ß
+Gorg.jabref.gui.texparser.ParseLatexDialogViewModel.getCheckedFileList()DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaa7 a(I2©
+Iorg.jabref.gui.texparser.ParseLatexDialogViewModel.noFilesFoundProperty()DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javae e(/2≠
+Morg.jabref.gui.texparser.ParseLatexDialogViewModel.searchInProgressProperty()DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javai i(32≠
+Morg.jabref.gui.texparser.ParseLatexDialogViewModel.successfulSearchProperty()DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javam m(32®
+Horg.jabref.gui.texparser.ParseLatexDialogViewModel.browseButtonClicked()DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaq q(#2®
+Horg.jabref.gui.texparser.ParseLatexDialogViewModel.searchButtonClicked()DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java~ ~(#2∑
+Uorg.jabref.gui.texparser.ParseLatexDialogViewModel.handleFailure(java.lang.Exception)DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaê ê(2∏
+Vorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaô ô(-2©
+Gorg.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java¬ ¬("2•
+Eorg.jabref.gui.texparser.ParseLatexDialogViewModel?LOGGER@46.32:46.38DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java.  .(&2¶
+Forg.jabref.gui.texparser.ParseLatexDialogViewModel?TEX_EXT@47.32:47.39DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java/  /('2Æ
+Norg.jabref.gui.texparser.ParseLatexDialogViewModel?databaseContext@48.37:48.52DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java0% 0(42¨
+Lorg.jabref.gui.texparser.ParseLatexDialogViewModel?dialogService@49.32:49.45DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java1  1(-2´
+Korg.jabref.gui.texparser.ParseLatexDialogViewModel?taskExecutor@50.31:50.43DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java2 2(+2±
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?preferencesService@51.37:51.55DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java3% 3(72™
+Jorg.jabref.gui.texparser.ParseLatexDialogViewModel?fileMonitor@52.36:52.47DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java4$ 4(/2±
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?latexFileDirectory@53.33:53.51DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java5! 5(32∂
+Vorg.jabref.gui.texparser.ParseLatexDialogViewModel?latexDirectoryValidator@54.28:54.51DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java6 6(32£
+Corg.jabref.gui.texparser.ParseLatexDialogViewModel?root@55.52:55.56DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java74 7(82Æ
+Norg.jabref.gui.texparser.ParseLatexDialogViewModel?checkedFileList@56.62:56.77DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java8> 8(M2´
+Korg.jabref.gui.texparser.ParseLatexDialogViewModel?noFilesFound@57.34:57.46DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java9" 9(.2Ø
+Oorg.jabref.gui.texparser.ParseLatexDialogViewModel?searchInProgress@58.34:58.50DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java:" :(22Ø
+Oorg.jabref.gui.texparser.ParseLatexDialogViewModel?successfulSearch@59.34:59.50DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java;" ;(22{
+ org.jabref.gui.AbstractViewModelEXTENDO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java,/ ,(@Æ_
+éorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)CONSTRUCTORO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java= =($"Ç
+declarationStringÏ<mark class="modifier">public </mark><mark class="method">ParseLatexDialogViewModel</mark>(BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferencesService<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileMonitor)*ParseLatexDialogViewModel2v
+java.nio.file.Path.toString()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaI\ I(d2|
+#java.nio.file.Path.toAbsolutePath()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaIK I(Y2u
+java.util.Optional.orElse(T)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaHK H(Q2£
+Jorg.jabref.model.metadata.MetaData.getLatexFileDirectory(java.lang.String)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaGY G(n2ì
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaGK G(V2í
+7org.jabref.preferences.FilePreferences.getUserAndHost()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaGó G(•2ô
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaGÇ G(î2–
+worg.jabref.logic.util.io.FileUtil.getInitialDirectory(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaH[ H(n2ó
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaH® H(ª2ô
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaHì H(•2s
+java.io.File.isDirectory()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaPG P(R2t
+java.nio.file.Path.toFile()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaP> P(D2ï
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaP5 P(72ß
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaR5 R(92¯
+ûorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!databaseContextCALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaB B(.2ˆ
+úorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!dialogServiceCALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaC C(*2ı
+õorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!taskExecutorCALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaD D((2˚
+°org.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesServiceCALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaE" E(42Ù
+öorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!fileMonitorCALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaF F(&2¯
+ûorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!databaseContextCALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaG; G(J2¸
+°org.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesServiceCALLP
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaGo G(Å2¯
+ûorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!databaseContextCALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaHo H(~2˝
+°org.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesServiceCALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaHÄ H(í2˘
+üorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?path@80.40:80.44CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaP8 P(<2Ø
+Vorg.jabref.gui.texparser.ParseLatexDialogViewModel?latexDirectoryValidator@54.28:54.51CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaQ Q(2™
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?latexFileDirectory@53.33:53.51CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaQ? Q(Q2Ä
+¶org.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?isDirectory@80.26:80.37CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaQS Q(^2ß
+Norg.jabref.gui.texparser.ParseLatexDialogViewModel?databaseContext@48.37:48.52CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaB B(2•
+Lorg.jabref.gui.texparser.ParseLatexDialogViewModel?dialogService@49.32:49.45CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaC C(2§
+Korg.jabref.gui.texparser.ParseLatexDialogViewModel?taskExecutor@50.31:50.43CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaD D(2™
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?preferencesService@51.37:51.55CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaE E(2£
+Jorg.jabref.gui.texparser.ParseLatexDialogViewModel?fileMonitor@52.36:52.47CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaF F(2™
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?latexFileDirectory@53.33:53.51CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaG G(2ú
+Corg.jabref.gui.texparser.ParseLatexDialogViewModel?root@55.52:55.56CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaJ J(2ß
+Norg.jabref.gui.texparser.ParseLatexDialogViewModel?checkedFileList@56.62:56.77CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaK K(2§
+Korg.jabref.gui.texparser.ParseLatexDialogViewModel?noFilesFound@57.34:57.46CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaL L(2®
+Oorg.jabref.gui.texparser.ParseLatexDialogViewModel?searchInProgress@58.34:58.50CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaM M(2®
+Oorg.jabref.gui.texparser.ParseLatexDialogViewModel?successfulSearch@59.34:59.50CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaN N(2˝
+ûorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!databaseContext	PARAMETERO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java=8 =(G2˚
+úorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!dialogService	PARAMETERO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java>3 >(@2˙
+õorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!taskExecutor	PARAMETERO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java?2 ?(>2Ä
+°org.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesService	PARAMETERO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java@8 @(J2˘
+öorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!fileMonitor	PARAMETERO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaA7 A(B2á
+¶org.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?isDirectory@80.26:80.37DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaP P(%2Ä
+üorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?path@80.40:80.44DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaP( P(,2í
+2org.jabref.gui.texparser.ParseLatexDialogViewModelRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java= =($Õ
+¶org.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?isDirectory@80.26:80.37VARIABLEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaP P(%"
+typePredicate<String>"
+isFinalfalse"¢
+declarationStringå<mark class="modifier"> </mark>Predicate<String> <mark class="class-field">isDirectory</mark> = path -> Path.of(path).toFile().isDirectory()*isDirectory2u
+java.util.function.PredicateTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaP P(2r
+java.lang.StringTYPE_ARGUMENTO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaP P(2s
+java.io.File.isDirectory()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaPG P(R2t
+java.nio.file.Path.toFile()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaP> P(D2ï
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaP5 P(72˘
+üorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?path@80.40:80.44CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaP8 P(<˝
+ûorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!databaseContext	PARAMETERO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java=8 =(G"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2Ö
+,org.jabref.model.database.BibDatabaseContextTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java=% =(7‹
+úorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!dialogService	PARAMETERO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java>3 >(@"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2u
+org.jabref.gui.DialogServiceTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java>% >(2€
+õorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!taskExecutor	PARAMETERO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java?2 ?(>"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2y
+ org.jabref.gui.util.TaskExecutorTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java?% ?(1É
+°org.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!preferencesService	PARAMETERO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java@8 @(J"
+typePreferencesService"
+isFinalfalse":
+declarationString%PreferencesService preferencesService*preferencesService2Ç
+)org.jabref.preferences.PreferencesServiceTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java@% @(7Í
+öorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)!fileMonitor	PARAMETERO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaA7 A(B"
+typeFileUpdateMonitor"
+isFinalfalse"2
+declarationStringFileUpdateMonitor fileMonitor*fileMonitor2Ä
+'org.jabref.model.util.FileUpdateMonitorTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaA% A(6¡
+üorg.jabref.gui.texparser.ParseLatexDialogViewModel.ParseLatexDialogViewModel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor)?path@80.40:80.44VARIABLEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaP( P(,"
+type"
+isFinalfalse"
+declarationString path*path2TYPE‚
+Oorg.jabref.gui.texparser.ParseLatexDialogViewModel.latexFileDirectoryProperty()METHODO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaU U(4"
+isFinalfalse"Å
+declarationStringl<mark class="modifier">public </mark>StringProperty <mark class="method">latexFileDirectoryProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeStringProperty*latexFileDirectoryProperty2™
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?latexFileDirectory@53.33:53.51CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaV V(!2Ñ
+$javafx.beans.property.StringPropertyRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaU U(Û
+Morg.jabref.gui.texparser.ParseLatexDialogViewModel.latexDirectoryValidation()METHODO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaY Y(4"
+isFinalfalse"Å
+declarationStringl<mark class="modifier">public </mark>ValidationStatus <mark class="method">latexDirectoryValidation</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeValidationStatus*latexDirectoryValidation2Ø
+Vorg.jabref.gui.texparser.ParseLatexDialogViewModel?latexDirectoryValidator@54.28:54.51CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaZ Z(&2í
+2de.saxsys.mvvmfx.utils.validation.ValidationStatusRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaY Y(Á
+Aorg.jabref.gui.texparser.ParseLatexDialogViewModel.rootProperty()METHODO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java]- ](9"
+isFinalfalse"å
+declarationStringw<mark class="modifier">public </mark>ObjectProperty&lt;FileNodeViewModel&gt; <mark class="method">rootProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse")
+type!ObjectProperty<FileNodeViewModel>*rootProperty2ú
+Corg.jabref.gui.texparser.ParseLatexDialogViewModel?root@55.52:55.56CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java^ ^(2Ñ
+$javafx.beans.property.ObjectPropertyRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java] ](2é
+%org.jabref.gui.util.FileNodeViewModelRETURN_TYPE_ARGUMENTO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java] ](+•
+Gorg.jabref.gui.texparser.ParseLatexDialogViewModel.getCheckedFileList()METHODO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaa7 a(I"
+isFinalfalse"£
+declarationStringç<mark class="modifier">public </mark>ObservableList&lt;TreeItem&lt;FileNodeViewModel&gt;&gt; <mark class="method">getCheckedFileList</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"3
+type+ObservableList<TreeItem<FileNodeViewModel>>*getCheckedFileList2ß
+Norg.jabref.gui.texparser.ParseLatexDialogViewModel?checkedFileList@56.62:56.77CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javab) b(82Å
+!javafx.collections.ObservableListRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaa a(2Ü
+javafx.scene.control.TreeItemRETURN_TYPE_ARGUMENTO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaa a("2é
+%org.jabref.gui.util.FileNodeViewModelRETURN_TYPE_ARGUMENTO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaa# a(4Ã
+Iorg.jabref.gui.texparser.ParseLatexDialogViewModel.noFilesFoundProperty()METHODO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javae e(/"
+isFinalfalse"|
+declarationStringg<mark class="modifier">public </mark>BooleanProperty <mark class="method">noFilesFoundProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeBooleanProperty*noFilesFoundProperty2§
+Korg.jabref.gui.texparser.ParseLatexDialogViewModel?noFilesFound@57.34:57.46CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaf f(2Ö
+%javafx.beans.property.BooleanPropertyRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javae e(›
+Morg.jabref.gui.texparser.ParseLatexDialogViewModel.searchInProgressProperty()METHODO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javai i(3"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier">public </mark>BooleanProperty <mark class="method">searchInProgressProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeBooleanProperty*searchInProgressProperty2®
+Oorg.jabref.gui.texparser.ParseLatexDialogViewModel?searchInProgress@58.34:58.50CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaj j(2Ö
+%javafx.beans.property.BooleanPropertyRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javai i(›
+Morg.jabref.gui.texparser.ParseLatexDialogViewModel.successfulSearchProperty()METHODO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javam m(3"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier">public </mark>BooleanProperty <mark class="method">successfulSearchProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeBooleanProperty*successfulSearchProperty2®
+Oorg.jabref.gui.texparser.ParseLatexDialogViewModel?successfulSearch@59.34:59.50CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javan n(2Ö
+%javafx.beans.property.BooleanPropertyRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javam m(
+Horg.jabref.gui.texparser.ParseLatexDialogViewModel.browseButtonClicked()METHODO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaq q(#"
+isFinalfalse"é
+declarationStringy<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">browseButtonClicked</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*browseButtonClicked2ù
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javauQ u(Z2ƒ
+korg.jabref.gui.DialogService.showDirectorySelectionDialog(org.jabref.gui.util.DirectoryDialogConfiguration)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javau u(22v
+java.nio.file.Path.toString()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javavF v(N2|
+#java.nio.file.Path.toAbsolutePath()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javav5 v(C2ß
+Norg.jabref.preferences.FilePreferences.setWorkingDirectory(java.nio.file.Path)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaw4 w(G2ó
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaw w(12|
+#java.nio.file.Path.toAbsolutePath()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javawZ w(h2õ
+Borg.jabref.gui.util.DirectoryDialogConfiguration.Builder.Builder()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javarH r(l2™
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?latexFileDirectory@53.33:53.51CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javas. s(@2•
+Lorg.jabref.gui.texparser.ParseLatexDialogViewModel?dialogService@49.32:49.45CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javau u(2Ã
+sorg.jabref.gui.texparser.ParseLatexDialogViewModel.browseButtonClicked()?directoryDialogConfiguration@114.37:114.65CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javau3 u(O2™
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?latexFileDirectory@53.33:53.51CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javav v(2¬
+iorg.jabref.gui.texparser.ParseLatexDialogViewModel.browseButtonClicked()?selectedDirectory@117.91:117.108CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javav# v(42™
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?preferencesService@51.37:51.55CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaw w(2¬
+iorg.jabref.gui.texparser.ParseLatexDialogViewModel.browseButtonClicked()?selectedDirectory@117.91:117.108CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javawH w(Y2”
+sorg.jabref.gui.texparser.ParseLatexDialogViewModel.browseButtonClicked()?directoryDialogConfiguration@114.37:114.65DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javar% r(A2…
+iorg.jabref.gui.texparser.ParseLatexDialogViewModel.browseButtonClicked()?selectedDirectory@117.91:117.108DECLARATIONO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javau[ u(l2d
+voidRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaq q(¸
+sorg.jabref.gui.texparser.ParseLatexDialogViewModel.browseButtonClicked()?directoryDialogConfiguration@114.37:114.65VARIABLEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javar% r(A"$
+typeDirectoryDialogConfiguration"
+isFinalfalse"¸
+declarationStringÊ<mark class="modifier"> </mark>DirectoryDialogConfiguration <mark class="class-field">directoryDialogConfiguration</mark> = new DirectoryDialogConfiguration.Builder().withInitialDirectory(Path.of(latexFileDirectory.get())).build()*directoryDialogConfiguration2â
+0org.jabref.gui.util.DirectoryDialogConfigurationTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javar r($2õ
+Borg.jabref.gui.util.DirectoryDialogConfiguration.Builder.Builder()CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javarH r(l2™
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?latexFileDirectory@53.33:53.51CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javas. s(@§
+iorg.jabref.gui.texparser.ParseLatexDialogViewModel.browseButtonClicked()?selectedDirectory@117.91:117.108VARIABLEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javau[ u(l"
+type"
+isFinalfalse"'
+declarationString selectedDirectory*selectedDirectory2TYPE◊
+Horg.jabref.gui.texparser.ParseLatexDialogViewModel.searchButtonClicked()METHODO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java~ ~(#"
+isFinalfalse"é
+declarationStringy<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">searchButtonClicked</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*searchButtonClicked2ß
+Lorg.jabref.gui.util.BackgroundTask.onSuccess(java.util.function.Consumer<V>)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaá á( 2ú
+Aorg.jabref.gui.util.BackgroundTask.onFinished(java.lang.Runnable)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaÜ Ü(!2õ
+@org.jabref.gui.util.BackgroundTask.onRunning(java.lang.Runnable)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaÄ Ä( 2î
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java (2™
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?latexFileDirectory@53.33:53.51CALLO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java: (L2û
+Corg.jabref.gui.texparser.ParseLatexDialogViewModel?root@55.52:55.56CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaÅ Å(2¶
+Korg.jabref.gui.texparser.ParseLatexDialogViewModel?noFilesFound@57.34:57.46CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaÇ Ç(&2™
+Oorg.jabref.gui.texparser.ParseLatexDialogViewModel?searchInProgress@58.34:58.50CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaÉ É(*2™
+Oorg.jabref.gui.texparser.ParseLatexDialogViewModel?successfulSearch@59.34:59.50CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaÑ Ñ(*2™
+Oorg.jabref.gui.texparser.ParseLatexDialogViewModel?searchInProgress@58.34:58.50CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaÜ( Ü(82û
+Corg.jabref.gui.texparser.ParseLatexDialogViewModel?root@55.52:55.56CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaà à(2π
+^org.jabref.gui.texparser.ParseLatexDialogViewModel.searchButtonClicked()?newRoot@135.33:135.40CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaà# à(*2¶
+Korg.jabref.gui.texparser.ParseLatexDialogViewModel?noFilesFound@57.34:57.46CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaâ â(&2™
+Oorg.jabref.gui.texparser.ParseLatexDialogViewModel?successfulSearch@59.34:59.50CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaä ä(*2¶
+Korg.jabref.gui.texparser.ParseLatexDialogViewModel?taskExecutor@50.31:50.43CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaç# ç(/2∞
+Uorg.jabref.gui.texparser.ParseLatexDialogViewModel.handleFailure(java.lang.Exception)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaå! å(42¿
+^org.jabref.gui.texparser.ParseLatexDialogViewModel.searchButtonClicked()?newRoot@135.33:135.40DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaá! á((2d
+voidRETURN_TYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java~ ~(á
+^org.jabref.gui.texparser.ParseLatexDialogViewModel.searchButtonClicked()?newRoot@135.33:135.40VARIABLEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaá! á(("
+type"
+isFinalfalse"
+declarationString newRoot*newRoot2TYPEõ
+Uorg.jabref.gui.texparser.ParseLatexDialogViewModel.handleFailure(java.lang.Exception)METHODQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaê ê("
+isFinalfalse"ù
+declarationStringá<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">handleFailure</mark>(Exception exception)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*handleFailure2y
+java.lang.Throwable.getCause()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaë[ ë(c2à
++java.lang.String.endsWith(java.lang.String)CALLS
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaë´ ë(≥2}
+ java.lang.Throwable.getMessage()CALLS
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaëû ë(®2{
+java.lang.Throwable.getCause()CALLS
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaëì ë(õ2†
+Eorg.jabref.gui.DialogService.showErrorDialogAndWait(java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaì ì(02ä
+/java.lang.String.formatted(java.lang.Object...)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaìs ì(|2©
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaì> ì(B2}
+ java.lang.Throwable.getMessage()CALLS
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaìí ì(ú2{
+java.lang.Throwable.getCause()CALLS
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaìá ì(è2£
+Horg.jabref.gui.DialogService.showErrorDialogAndWait(java.lang.Exception)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaï ï(02∫
+_org.jabref.gui.texparser.ParseLatexDialogViewModel.handleFailure(java.lang.Exception)!exceptionCALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaë+ ë(42∫
+_org.jabref.gui.texparser.ParseLatexDialogViewModel.handleFailure(java.lang.Exception)!exceptionCALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaëQ ë(Z2º
+_org.jabref.gui.texparser.ParseLatexDialogViewModel.handleFailure(java.lang.Exception)!exceptionCALLS
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaëâ ë(í2–
+uorg.jabref.gui.texparser.ParseLatexDialogViewModel.handleFailure(java.lang.Exception)?permissionProblem@145.22:145.39CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaí í(2ß
+Lorg.jabref.gui.texparser.ParseLatexDialogViewModel?dialogService@49.32:49.45CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaì ì(2ª
+_org.jabref.gui.texparser.ParseLatexDialogViewModel.handleFailure(java.lang.Exception)!exceptionCALLR
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaì} ì(Ü2ß
+Lorg.jabref.gui.texparser.ParseLatexDialogViewModel?dialogService@49.32:49.45CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaï ï(2∫
+_org.jabref.gui.texparser.ParseLatexDialogViewModel.handleFailure(java.lang.Exception)!exceptionCALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaï1 ï(:2ø
+_org.jabref.gui.texparser.ParseLatexDialogViewModel.handleFailure(java.lang.Exception)!exception	PARAMETERQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaê) ê(22◊
+uorg.jabref.gui.texparser.ParseLatexDialogViewModel.handleFailure(java.lang.Exception)?permissionProblem@145.22:145.39DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaë ë('2f
+voidRETURN_TYPEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaê ê(Ä
+uorg.jabref.gui.texparser.ParseLatexDialogViewModel.handleFailure(java.lang.Exception)?permissionProblem@145.22:145.39VALUEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaë ë('"
+typeboolean"
+isFinaltrue"ÿ
+declarationString¬<mark class="modifier"> </mark><mark class="modifier">final </mark><mark class="modifier">boolean</mark> <mark class="class-field">permissionProblem</mark> = (exception instanceof IOException) && (exception.getCause() instanceof FileSystemException) && exception.getCause().getMessage().endsWith("Operation not permitted")*permissionProblem2b
+booleanTYPEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaë ë(2y
+java.lang.Throwable.getCause()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaë[ ë(c2à
++java.lang.String.endsWith(java.lang.String)CALLS
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaë´ ë(≥2}
+ java.lang.Throwable.getMessage()CALLS
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaëû ë(®2{
+java.lang.Throwable.getCause()CALLS
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaëì ë(õ2∫
+_org.jabref.gui.texparser.ParseLatexDialogViewModel.handleFailure(java.lang.Exception)!exceptionCALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaë+ ë(42∫
+_org.jabref.gui.texparser.ParseLatexDialogViewModel.handleFailure(java.lang.Exception)!exceptionCALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaëQ ë(Z2º
+_org.jabref.gui.texparser.ParseLatexDialogViewModel.handleFailure(java.lang.Exception)!exceptionCALLS
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaëâ ë(íâ
+_org.jabref.gui.texparser.ParseLatexDialogViewModel.handleFailure(java.lang.Exception)!exception	PARAMETERQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaê) ê(2"
+type	Exception"
+isFinalfalse"(
+declarationStringException exception*	exception2n
+java.lang.ExceptionTYPEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaê ê((”f
+Vorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)METHODQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaô ô(-"
+isFinalfalse"ÿ
+declarationString¬<mark class="modifier">private </mark>FileNodeViewModel <mark class="method">searchDirectory</mark>(Path directory)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeFileNodeViewModel*searchDirectory2u
+java.io.File.isDirectory()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaö7 ö(B2v
+java.nio.file.Path.toFile()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaö. ö(42ä
+/java.lang.String.formatted(java.lang.Object...)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaõH õ(Q2á
+,java.nio.file.Files.list(java.nio.file.Path)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java°. °(22Æ
+Sjava.util.stream.Collectors.partitioningBy(java.util.function.Predicate<? super T>)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java¢? ¢(M2ä
+/java.lang.String.formatted(java.lang.Object...)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java§8 §(A2t
+java.lang.Class.getName()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java§O §(V2v
+java.lang.Object.getClass()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java§D §(L2{
+ java.lang.Throwable.getMessage()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java§\ §(f2~
+#java.util.Map.get(java.lang.Object)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java®6 ®(92ß
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java¨- ¨(42¢
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java´- ´(32x
+java.util.Collection.stream()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java™- ™(32~
+#java.util.Map.get(java.lang.Object)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java©- ©(02Ü
++java.lang.String.endsWith(java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java´L ´(T2x
+java.nio.file.Path.toString()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java´A ´(I2
+$java.util.stream.Collectors.toList()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java¨@ ¨(F2±
+Vorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java∞( ∞(72é
+3org.jabref.gui.util.FileNodeViewModel.getChildren()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java≤ ≤($2è
+4org.jabref.gui.util.FileNodeViewModel.getFileCount()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java≥% ≥(12é
+3org.jabref.gui.util.FileNodeViewModel.getChildren()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java¥ ¥("2í
+7org.jabref.gui.util.FileNodeViewModel.setFileCount(int)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java∏ ∏(2p
+java.util.List.size()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java∏" ∏(&2é
+3org.jabref.gui.util.FileNodeViewModel.getChildren()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaπ π(2ß
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaª* ª(12´
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java∫* ∫(-2x
+java.util.Collection.stream()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaπ* π(02
+$java.util.stream.Collectors.toList()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaª= ª(C2å
+1java.io.IOException.IOException(java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaõ õ(!2¶
+Korg.jabref.gui.util.FileNodeViewModel.FileNodeViewModel(java.nio.file.Path)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaû' û(82ª
+`org.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)!directoryCALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaö ö(2ª
+`org.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)!directoryCALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaö$ ö(-2ª
+`org.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)!directoryCALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaõR õ([2ª
+`org.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)!directoryCALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaû9 û(B2ª
+`org.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)!directoryCALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java°3 °(<2—
+vorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?fileListPartition@159.33:159.50CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java¢ ¢(2À
+porg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?filesStream@161.26:161.37CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java¢  ¢(+2ƒ
+iorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?path@162.78:162.82CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java¢V ¢(Z2†
+Eorg.jabref.gui.texparser.ParseLatexDialogViewModel?LOGGER@46.32:46.38CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java§ §(2¡
+forg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?e@163.29:163.30CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java§B §(C2¡
+forg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?e@163.29:163.30CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java§Z §([2∆
+korg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?parent@158.26:158.32CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java• •(2—
+vorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?fileListPartition@159.33:159.50CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java®$ ®(52—
+vorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?fileListPartition@159.33:159.50CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java© ©(,2ƒ
+iorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?path@171.52:171.56CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java´< ´(@2°
+Forg.jabref.gui.texparser.ParseLatexDialogViewModel?TEX_EXT@47.32:47.39CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java´U ´(\2Œ
+sorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?subDirectories@168.19:168.33CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaØ! Ø(/2Ã
+qorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?subDirectory@175.18:175.30CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java∞8 ∞(D2«
+lorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?subRoot@176.30:176.37CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java≤ ≤(2…
+norg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?fileCount@173.12:173.21CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java≥ ≥(2«
+lorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?subRoot@176.30:176.37CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java≥ ≥($2∆
+korg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?parent@158.26:158.32CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java¥ ¥(2«
+lorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?subRoot@176.30:176.37CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java¥) ¥(02∆
+korg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?parent@158.26:158.32CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java∏ ∏(2≈
+jorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?files@169.19:169.24CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java∏ ∏(!2…
+norg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?fileCount@173.12:173.21CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java∏+ ∏(42∆
+korg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?parent@158.26:158.32CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaπ π(2≈
+jorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?files@169.19:169.24CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaπ$ π()2∆
+korg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?parent@158.26:158.32CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaº º(2¿
+`org.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)!directory	PARAMETERQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaô3 ô(<2Õ
+korg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?parent@158.26:158.32DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaû û( 2ÿ
+vorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?fileListPartition@159.33:159.50DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaü! ü(22“
+porg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?filesStream@161.26:161.37DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java° °(%2’
+sorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?subDirectories@168.19:168.33DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java® ®(!2Ã
+jorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?files@169.19:169.24DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java© ©(2–
+norg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?fileCount@173.12:173.21DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java≠ ≠(2”
+qorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?subDirectory@175.18:175.30DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaØ Ø(2Œ
+lorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?subRoot@176.30:176.37DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java∞ ∞(%2À
+iorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?path@162.78:162.82DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java¢N ¢(R2»
+forg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?e@163.29:163.30DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java£ £(2À
+iorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?path@171.52:171.56DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java´4 ´(82á
+%org.jabref.gui.util.FileNodeViewModelRETURN_TYPEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaô ô(¸
+korg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?parent@158.26:158.32VARIABLEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaû û( "
+typeFileNodeViewModel"
+isFinalfalse"ê
+declarationString{<mark class="modifier"> </mark>FileNodeViewModel <mark class="class-field">parent</mark> = new FileNodeViewModel(directory)*parent2Ä
+%org.jabref.gui.util.FileNodeViewModelTYPEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaû û(2¶
+Korg.jabref.gui.util.FileNodeViewModel.FileNodeViewModel(java.nio.file.Path)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaû' û(82ª
+`org.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)!directoryCALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaû9 û(BÍ
+vorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?fileListPartition@159.33:159.50VARIABLEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaü! ü(2" 
+typeMap<Boolean, List<Path>>"
+isFinalfalse"
+declarationStringj<mark class="modifier"> </mark>Map<Boolean, List<Path>> <mark class="class-field">fileListPartition</mark>*fileListPartition2h
+java.util.MapTYPEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaü ü(2u
+java.lang.BooleanTYPE_ARGUMENTQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaü ü(2r
+java.util.ListTYPE_ARGUMENTQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaü ü(2v
+java.nio.file.PathTYPE_ARGUMENTQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaü ü(¿
+porg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?filesStream@161.26:161.37VARIABLEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java° °(%"
+typeStream<Path>"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark>Stream<Path> <mark class="class-field">filesStream</mark> = Files.list(directory)*filesStream2r
+java.util.stream.StreamTYPEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java° °(2v
+java.nio.file.PathTYPE_ARGUMENTQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java° °(2á
+,java.nio.file.Files.list(java.nio.file.Path)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java°. °(22ª
+`org.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)!directoryCALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java°3 °(<Œ
+sorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?subDirectories@168.19:168.33VARIABLEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java® ®(!"
+type
+List<Path>"
+isFinalfalse"å
+declarationStringw<mark class="modifier"> </mark>List<Path> <mark class="class-field">subDirectories</mark> = fileListPartition.get(true)*subDirectories2i
+java.util.ListTYPEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java® ®(2v
+java.nio.file.PathTYPE_ARGUMENTQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java® ®(2~
+#java.util.Map.get(java.lang.Object)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java®6 ®(92—
+vorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?fileListPartition@159.33:159.50CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java®$ ®(5„
+jorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?files@169.19:169.24VARIABLEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java© ©("
+type
+List<Path>"
+isFinalfalse"˚
+declarationStringÂ<mark class="modifier"> </mark>List<Path> <mark class="class-field">files</mark> = fileListPartition.get(<mark class="modifier">false</mark>).stream().filter(path -> path.toString().endsWith(TEX_EXT)).collect(Collectors.toList())*files2i
+java.util.ListTYPEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java© ©(2v
+java.nio.file.PathTYPE_ARGUMENTQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java© ©(2ß
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java¨- ¨(42¢
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java´- ´(32x
+java.util.Collection.stream()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java™- ™(32~
+#java.util.Map.get(java.lang.Object)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java©- ©(02Ü
++java.lang.String.endsWith(java.lang.String)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java´L ´(T2x
+java.nio.file.Path.toString()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java´A ´(I2
+$java.util.stream.Collectors.toList()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java¨@ ¨(F2—
+vorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?fileListPartition@159.33:159.50CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java© ©(,2ƒ
+iorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?path@171.52:171.56CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java´< ´(@2°
+Forg.jabref.gui.texparser.ParseLatexDialogViewModel?TEX_EXT@47.32:47.39CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java´U ´(\ﬁ
+norg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?fileCount@173.12:173.21VARIABLEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java≠ ≠("
+typeint"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">fileCount</mark> = 0*	fileCount2^
+intTYPEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java≠ ≠(’
+qorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?subDirectory@175.18:175.30VARIABLEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaØ Ø("
+typePath"
+isFinalfalse"f
+declarationStringQ<mark class="modifier"> </mark>Path <mark class="class-field">subDirectory</mark>*subDirectory2m
+java.nio.file.PathTYPEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaØ Ø(ò
+lorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?subRoot@176.30:176.37VARIABLEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java∞ ∞(%"
+typeFileNodeViewModel"
+isFinalfalse"é
+declarationStringy<mark class="modifier"> </mark>FileNodeViewModel <mark class="class-field">subRoot</mark> = searchDirectory(subDirectory)*subRoot2Ä
+%org.jabref.gui.util.FileNodeViewModelTYPEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java∞ ∞(2±
+Vorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java∞( ∞(72Ã
+qorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?subDirectory@175.18:175.30CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java∞8 ∞(Dˇ
+`org.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)!directory	PARAMETERQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaô3 ô(<"
+typePath"
+isFinalfalse"#
+declarationStringPath directory*	directory2m
+java.nio.file.PathTYPEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaô. ô(2å
+iorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?path@162.78:162.82VARIABLEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java¢N ¢(R"
+type"
+isFinalfalse"
+declarationString path*path2TYPEÉ
+forg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?e@163.29:163.30VARIABLEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java£ £("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2n
+java.io.IOExceptionTYPEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java£ £(å
+iorg.jabref.gui.texparser.ParseLatexDialogViewModel.searchDirectory(java.nio.file.Path)?path@171.52:171.56VARIABLEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java´4 ´(8"
+type"
+isFinalfalse"
+declarationString path*path2TYPEÜ6
+Gorg.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()METHODQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java¬ ¬(""
+isFinalfalse"ç
+declarationStringx<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">parseButtonClicked</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*parseButtonClicked2
+$java.util.stream.Collectors.toList()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java∆A ∆(G2s
+java.util.List.isEmpty()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java« «(2ï
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaÕ  Õ(+2ú
+Aorg.jabref.preferences.PreferencesService.getLibraryPreferences()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaŒ# Œ(82°
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaœ# œ(=2ß
+Lorg.jabref.gui.util.BackgroundTask.onSuccess(java.util.function.Consumer<V>)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java’ ’( 2ú
+Aorg.jabref.gui.util.BackgroundTask.onFinished(java.lang.Runnable)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java‘ ‘(!2õ
+@org.jabref.gui.util.BackgroundTask.onRunning(java.lang.Runnable)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java” ”( 2ñ
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java“ “(2¡
+forg.jabref.logic.texparser.TexBibEntriesResolver.resolve(org.jabref.model.texparser.LatexParserResult)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java“2 “(92≤
+Worg.jabref.logic.texparser.DefaultLatexParser.parse(java.util.List<java.nio.file.Path>)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java“S “(X2Ø
+Torg.jabref.gui.DialogService.showCustomDialogAndWait(javafx.scene.control.Dialog<R>)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java’9 ’(P2ù
+Borg.jabref.logic.texparser.DefaultLatexParser.DefaultLatexParser()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java“> “(P2©
+Norg.jabref.gui.texparser.ParseLatexDialogViewModel?checkedFileList@56.62:56.77CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java√ √(-2µ
+Zorg.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?item@196.50:196.54CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaƒ: ƒ(>2µ
+Zorg.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?path@197.53:197.57CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java≈= ≈(A2π
+^org.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?fileList@195.19:195.27CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java« «(2†
+Eorg.jabref.gui.texparser.ParseLatexDialogViewModel?LOGGER@46.32:46.38CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java» »(2©
+Norg.jabref.gui.texparser.ParseLatexDialogViewModel?databaseContext@48.37:48.52CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaÕ Õ(2¨
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?preferencesService@51.37:51.55CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaŒ Œ("2¨
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?preferencesService@51.37:51.55CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaœ œ("2•
+Jorg.jabref.gui.texparser.ParseLatexDialogViewModel?fileMonitor@52.36:52.47CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java– –(2¿
+eorg.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?entriesResolver@204.30:204.45CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java“" “(12π
+^org.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?fileList@195.19:195.27CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java“Y “(a2™
+Oorg.jabref.gui.texparser.ParseLatexDialogViewModel?searchInProgress@58.34:58.50CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java”' ”(72™
+Oorg.jabref.gui.texparser.ParseLatexDialogViewModel?searchInProgress@58.34:58.50CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java‘( ‘(82ß
+Lorg.jabref.gui.texparser.ParseLatexDialogViewModel?dialogService@49.32:49.45CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java’+ ’(82∑
+\org.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?result@213.33:213.39CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java÷7 ÷(=2©
+Norg.jabref.gui.texparser.ParseLatexDialogViewModel?databaseContext@48.37:48.52CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java÷? ÷(N2¨
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?latexFileDirectory@53.33:53.51CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java÷X ÷(j2¶
+Korg.jabref.gui.texparser.ParseLatexDialogViewModel?taskExecutor@50.31:50.43CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaÿ# ÿ(/2£
+Horg.jabref.gui.DialogService.showErrorDialogAndWait(java.lang.Exception)CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java◊! ◊(F2¿
+^org.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?fileList@195.19:195.27DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java√ √(2«
+eorg.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?entriesResolver@204.30:204.45DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaÃ Ã(-2º
+Zorg.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?item@196.50:196.54DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaƒ2 ƒ(62º
+Zorg.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?path@197.53:197.57DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java≈5 ≈(92æ
+\org.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?result@213.33:213.39DECLARATIONQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java’! ’('2f
+voidRETURN_TYPEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java¬ ¬(ﬂ
+
+^org.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?fileList@195.19:195.27VARIABLEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java√ √("
+type
+List<Path>"
+isFinalfalse"Ô
+declarationStringŸ<mark class="modifier"> </mark>List<Path> <mark class="class-field">fileList</mark> = checkedFileList.stream().map(item -> item.getValue().getPath()).filter(path -> path.toFile().isFile()).collect(Collectors.toList())*fileList2i
+java.util.ListTYPEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java√ √(2v
+java.nio.file.PathTYPE_ARGUMENTQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java√ √(2
+$java.util.stream.Collectors.toList()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java∆A ∆(G2©
+Norg.jabref.gui.texparser.ParseLatexDialogViewModel?checkedFileList@56.62:56.77CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java√ √(-2µ
+Zorg.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?item@196.50:196.54CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaƒ: ƒ(>2µ
+Zorg.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?path@197.53:197.57CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java≈= ≈(Aû
+eorg.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?entriesResolver@204.30:204.45VARIABLEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaÃ Ã(-"
+typeTexBibEntriesResolver"
+isFinalfalse"˙
+declarationString‰<mark class="modifier"> </mark>TexBibEntriesResolver <mark class="class-field">entriesResolver</mark> = new TexBibEntriesResolver(databaseContext.getDatabase()<mark class="modifier">,</mark> preferencesService.getLibraryPreferences()<mark class="modifier">,</mark> preferencesService.getImportFormatPreferences()<mark class="modifier">,</mark> fileMonitor)*entriesResolver2ã
+0org.jabref.logic.texparser.TexBibEntriesResolverTYPEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaÃ Ã(2ï
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaÕ  Õ(+2ú
+Aorg.jabref.preferences.PreferencesService.getLibraryPreferences()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaŒ# Œ(82°
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaœ# œ(=2©
+Norg.jabref.gui.texparser.ParseLatexDialogViewModel?databaseContext@48.37:48.52CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaÕ Õ(2¨
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?preferencesService@51.37:51.55CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaŒ Œ("2¨
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?preferencesService@51.37:51.55CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaœ œ("2•
+Jorg.jabref.gui.texparser.ParseLatexDialogViewModel?fileMonitor@52.36:52.47CALLQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java– –(˝
+Zorg.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?item@196.50:196.54VARIABLEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.javaƒ2 ƒ(6"
+type"
+isFinalfalse"
+declarationString item*item2TYPE˝
+Zorg.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?path@197.53:197.57VARIABLEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java≈5 ≈(9"
+type"
+isFinalfalse"
+declarationString path*path2TYPEÉ
+\org.jabref.gui.texparser.ParseLatexDialogViewModel.parseButtonClicked()?result@213.33:213.39VARIABLEQ
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java’! ’('"
+type"
+isFinalfalse"
+declarationString result*result2TYPE 
+Eorg.jabref.gui.texparser.ParseLatexDialogViewModel?LOGGER@46.32:46.38VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java.  .(&"
+isFinaltrue"
+typeLogger"Ô
+declarationStringŸ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(ParseLatexDialogViewModel.class);"
+isStatictrue"
+accessprivate*LOGGER2i
+org.slf4j.LoggerTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java. .(õ
+Forg.jabref.gui.texparser.ParseLatexDialogViewModel?TEX_EXT@47.32:47.39VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java/  /('"
+isFinaltrue"
+typeString"æ
+declarationString®<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">TEX_EXT</mark> = ".tex";"
+isStatictrue"
+accessprivate*TEX_EXT2i
+java.lang.StringTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java/ /(∫
+Norg.jabref.gui.texparser.ParseLatexDialogViewModel?databaseContext@48.37:48.52VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java0% 0(4"
+isFinaltrue"
+typeBibDatabaseContext"£
+declarationStringç<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">databaseContext</mark>"
+isStaticfalse"
+accessprivate*databaseContext2Ö
+,org.jabref.model.database.BibDatabaseContextTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java0 0($ô
+Lorg.jabref.gui.texparser.ParseLatexDialogViewModel?dialogService@49.32:49.45VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java1  1(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2u
+org.jabref.gui.DialogServiceTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java1 1(ò
+Korg.jabref.gui.texparser.ParseLatexDialogViewModel?taskExecutor@50.31:50.43VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java2 2(+"
+isFinaltrue"
+typeTaskExecutor"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2y
+ org.jabref.gui.util.TaskExecutorTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java2 2(¿
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?preferencesService@51.37:51.55VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java3% 3(7"
+isFinaltrue"
+typePreferencesService"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferencesService</mark>"
+isStaticfalse"
+accessprivate*preferencesService2Ç
+)org.jabref.preferences.PreferencesServiceTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java3 3($ß
+Jorg.jabref.gui.texparser.ParseLatexDialogViewModel?fileMonitor@52.36:52.47VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java4$ 4(/"
+isFinaltrue"
+typeFileUpdateMonitor"û
+declarationStringà<mark class="modifier">private </mark><mark class="modifier">final </mark>FileUpdateMonitor <mark class="class-field">fileMonitor</mark>"
+isStaticfalse"
+accessprivate*fileMonitor2Ä
+'org.jabref.model.util.FileUpdateMonitorTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java4 4(#≤
+Qorg.jabref.gui.texparser.ParseLatexDialogViewModel?latexFileDirectory@53.33:53.51VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java5! 5(3"
+isFinaltrue"
+typeStringProperty"¢
+declarationStringå<mark class="modifier">private </mark><mark class="modifier">final </mark>StringProperty <mark class="class-field">latexFileDirectory</mark>"
+isStaticfalse"
+accessprivate*latexFileDirectory2}
+$javafx.beans.property.StringPropertyTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java5 5( ø
+Vorg.jabref.gui.texparser.ParseLatexDialogViewModel?latexDirectoryValidator@54.28:54.51VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java6 6(3"
+isFinaltrue"
+type	Validator"¢
+declarationStringå<mark class="modifier">private </mark><mark class="modifier">final </mark>Validator <mark class="class-field">latexDirectoryValidator</mark>"
+isStaticfalse"
+accessprivate*latexDirectoryValidator2Ñ
++de.saxsys.mvvmfx.utils.validation.ValidatorTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java6 6(∏
+Corg.jabref.gui.texparser.ParseLatexDialogViewModel?root@55.52:55.56VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java74 7(8"
+isFinaltrue")
+type!ObjectProperty<FileNodeViewModel>"ß
+declarationStringë<mark class="modifier">private </mark><mark class="modifier">final </mark>ObjectProperty<FileNodeViewModel> <mark class="class-field">root</mark>"
+isStaticfalse"
+accessprivate*root2}
+$javafx.beans.property.ObjectPropertyTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java7 7( 2á
+%org.jabref.gui.util.FileNodeViewModelTYPE_ARGUMENTO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java7! 7(2Î
+Norg.jabref.gui.texparser.ParseLatexDialogViewModel?checkedFileList@56.62:56.77VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java8> 8(M"
+isFinaltrue"3
+type+ObservableList<TreeItem<FileNodeViewModel>>"º
+declarationString¶<mark class="modifier">private </mark><mark class="modifier">final </mark>ObservableList<TreeItem<FileNodeViewModel>> <mark class="class-field">checkedFileList</mark>"
+isStaticfalse"
+accessprivate*checkedFileList2z
+!javafx.collections.ObservableListTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java8 8( 2
+javafx.scene.control.TreeItemTYPE_ARGUMENTO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java8! 8()2á
+%org.jabref.gui.util.FileNodeViewModelTYPE_ARGUMENTO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java8* 8(;£
+Korg.jabref.gui.texparser.ParseLatexDialogViewModel?noFilesFound@57.34:57.46VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java9" 9(."
+isFinaltrue"
+typeBooleanProperty"ù
+declarationStringá<mark class="modifier">private </mark><mark class="modifier">final </mark>BooleanProperty <mark class="class-field">noFilesFound</mark>"
+isStaticfalse"
+accessprivate*noFilesFound2~
+%javafx.beans.property.BooleanPropertyTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java9 9(!Ø
+Oorg.jabref.gui.texparser.ParseLatexDialogViewModel?searchInProgress@58.34:58.50VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java:" :(2"
+isFinaltrue"
+typeBooleanProperty"°
+declarationStringã<mark class="modifier">private </mark><mark class="modifier">final </mark>BooleanProperty <mark class="class-field">searchInProgress</mark>"
+isStaticfalse"
+accessprivate*searchInProgress2~
+%javafx.beans.property.BooleanPropertyTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java: :(!Ø
+Oorg.jabref.gui.texparser.ParseLatexDialogViewModel?successfulSearch@59.34:59.50VALUEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java;" ;(2"
+isFinaltrue"
+typeBooleanProperty"°
+declarationStringã<mark class="modifier">private </mark><mark class="modifier">final </mark>BooleanProperty <mark class="class-field">successfulSearch</mark>"
+isStaticfalse"
+accessprivate*successfulSearch2~
+%javafx.beans.property.BooleanPropertyTYPEO
+Esrc\main\java\org\jabref\gui\texparser\ParseLatexDialogViewModel.java; ;(!

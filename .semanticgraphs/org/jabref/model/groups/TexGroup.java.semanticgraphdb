@@ -1,0 +1,858 @@
+
+3src\main\java\org\jabref\model\groups\TexGroup.javaﬁ#
+ org.jabref.model.groups.TexGroupCLASS=
+3src\main\java\org\jabref\model\groups\TexGroup.java (""
+packageorg.jabref.model.groups"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"∫
+declarationString§<mark class="annotation">@AllowedToUseLogic("because it needs access to aux parser")</mark> <br><mark class="modifier">public </mark><mark class="modifier">class </mark>TexGroup<mark class="modifier"> extends </mark>AbstractGroup<mark class="modifier"><br>implements </mark>FileUpdateListener"
+accesspublic*TexGroup2œ
+Äorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.java# #(2Ω
+Óorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.java, ,(2ª
+Ïorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.java0 0(!2í
+√org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.java7 7(!2Ñ
+6org.jabref.model.groups.TexGroup.getFilePathResolved()DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.java; ;(#2ò
+Jorg.jabref.model.groups.TexGroup.contains(org.jabref.model.entry.BibEntry)DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.java@ @(2z
+,org.jabref.model.groups.TexGroup.isDynamic()DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.javaJ J(2y
++org.jabref.model.groups.TexGroup.deepCopy()DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.javaO O(!2á
+9org.jabref.model.groups.TexGroup.equals(java.lang.Object)DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.javaZ Z(2y
++org.jabref.model.groups.TexGroup.toString()DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.javai i(2y
++org.jabref.model.groups.TexGroup.hashCode()DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.javas s(2|
+.org.jabref.model.groups.TexGroup.getFilePath()DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.javaw w(2|
+.org.jabref.model.groups.TexGroup.fileUpdated()DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.java| |(2è
+?org.jabref.model.groups.TexGroup.relativize(java.nio.file.Path)DECLARATION?
+3src\main\java\org\jabref\model\groups\TexGroup.javaÇ Ç(2è
+?org.jabref.model.groups.TexGroup.expandPath(java.nio.file.Path)DECLARATION?
+3src\main\java\org\jabref\model\groups\TexGroup.javaá á(2å
+<org.jabref.model.groups.TexGroup.getFileDirectoriesAsPaths()DECLARATION?
+3src\main\java\org\jabref\model\groups\TexGroup.javaå å(02Å
+3org.jabref.model.groups.TexGroup?LOGGER@26.32:26.38DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.java  (&2É
+5org.jabref.model.groups.TexGroup?filePath@28.23:28.31DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.java (2à
+:org.jabref.model.groups.TexGroup?keysUsedInAux@29.24:29.37DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.java (%2Ü
+8org.jabref.model.groups.TexGroup?fileMonitor@30.36:30.47DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.java$ (/2Ñ
+6org.jabref.model.groups.TexGroup?auxParser@31.28:31.37DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.java (%2É
+5org.jabref.model.groups.TexGroup?metaData@32.27:32.35DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.java   (#2
+1org.jabref.model.groups.TexGroup?user@33.25:33.29DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.java! !(2q
+(org.jabref.model.util.FileUpdateListenerEXTEND=
+3src\main\java\org\jabref\model\groups\TexGroup.java7 (I2n
+%org.jabref.model.groups.AbstractGroupEXTEND=
+3src\main\java\org\jabref\model\groups\TexGroup.java (+Ù5
+Äorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)CONSTRUCTOR=
+3src\main\java\org\jabref\model\groups\TexGroup.java# #("Õ
+declarationString∑<mark class="modifier"> </mark><mark class="method">TexGroup</mark>(String name<mark class="modifier"><mark class="modifier">,</mark></mark> GroupHierarchyType context<mark class="modifier"><mark class="modifier">,</mark></mark> Path filePath<mark class="modifier"><mark class="modifier">,</mark></mark> AuxParser auxParser<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileMonitor<mark class="modifier"><mark class="modifier">,</mark></mark> MetaData metaData<mark class="modifier"><mark class="modifier">,</mark></mark> String user)*TexGroup2Ü
+?org.jabref.model.groups.TexGroup.expandPath(java.nio.file.Path)CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java' '("2j
+#java.util.Objects.requireNonNull(T)CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java'+ '(92∏
+qorg.jabref.model.groups.AbstractGroup.AbstractGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType)CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java$ $(2Õ
+Öorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!nameCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java$ $(2–
+àorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!contextCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java$ $(2—
+âorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!metaDataCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java% %( 2Õ
+Öorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!userCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java& &(2—
+âorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!filePathCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java': '(B2“
+äorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!auxParserCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java( (("2‘
+åorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!fileMonitorCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java) )(&2|
+5org.jabref.model.groups.TexGroup?metaData@32.27:32.35CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java% %(2x
+1org.jabref.model.groups.TexGroup?user@33.25:33.29CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java& &(2|
+5org.jabref.model.groups.TexGroup?filePath@28.23:28.31CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java' '(2}
+6org.jabref.model.groups.TexGroup?auxParser@31.28:31.37CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java( ((2
+8org.jabref.model.groups.TexGroup?fileMonitor@30.36:30.47CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java) )(2“
+Öorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!name	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java# #(2’
+àorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!context	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java#- #(42÷
+âorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!filePath	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java#; #(C2◊
+äorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!auxParser	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java#O #(X2Ÿ
+åorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!fileMonitor	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java#l #(w2ÿ
+âorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!metaData	PARAMETER?
+3src\main\java\org\jabref\model\groups\TexGroup.java#Ç #(ä2‘
+Öorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!user	PARAMETER?
+3src\main\java\org\jabref\model\groups\TexGroup.java#ì #(ó2n
+ org.jabref.model.groups.TexGroupRETURN_TYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java# #(ı
+Öorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!name	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java# #("
+typeString"
+isFinalfalse" 
+declarationStringString name*name2W
+java.lang.StringTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java# #(∞
+àorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!context	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java#- #(4"
+typeGroupHierarchyType"
+isFinalfalse"/
+declarationStringGroupHierarchyType context*context2q
+*org.jabref.model.groups.GroupHierarchyTypeTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java# #(,ˇ
+âorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!filePath	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java#; #(C"
+typePath"
+isFinalfalse""
+declarationStringPath filePath*filePath2Y
+java.nio.file.PathTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java#6 #(:û
+äorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!auxParser	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java#O #(X"
+type	AuxParser"
+isFinalfalse"(
+declarationStringAuxParser auxParser*	auxParser2k
+$org.jabref.logic.auxparser.AuxParserTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java#E #(N∑
+åorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!fileMonitor	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java#l #(w"
+typeFileUpdateMonitor"
+isFinalfalse"2
+declarationStringFileUpdateMonitor fileMonitor*fileMonitor2n
+'org.jabref.model.util.FileUpdateMonitorTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java#Z #(kö
+âorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!metaData	PARAMETER?
+3src\main\java\org\jabref\model\groups\TexGroup.java#Ç #(ä"
+typeMetaData"
+isFinalfalse"&
+declarationStringMetaData metaData*metaData2j
+"org.jabref.model.metadata.MetaDataTYPE>
+3src\main\java\org\jabref\model\groups\TexGroup.java#y #(Å˘
+Öorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData, java.lang.String)!user	PARAMETER?
+3src\main\java\org\jabref\model\groups\TexGroup.java#ì #(ó"
+typeString"
+isFinalfalse" 
+declarationStringString user*user2Y
+java.lang.StringTYPE?
+3src\main\java\org\jabref\model\groups\TexGroup.java#å #(íñ)
+Óorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CONSTRUCTOR=
+3src\main\java\org\jabref\model\groups\TexGroup.java, ,("”
+declarationStringΩ<mark class="modifier"> </mark><mark class="method">TexGroup</mark>(String name<mark class="modifier"><mark class="modifier">,</mark></mark> GroupHierarchyType context<mark class="modifier"><mark class="modifier">,</mark></mark> Path filePath<mark class="modifier"><mark class="modifier">,</mark></mark> AuxParser auxParser<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileMonitor<mark class="modifier"><mark class="modifier">,</mark></mark> MetaData metaData)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException*TexGroup2u
+.java.lang.System.getProperty(java.lang.String)CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java-O -(Z2k
+"java.net.InetAddress.getHostName()CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.java-ã -(ñ2k
+#java.net.InetAddress.getLocalHost()CALL>
+3src\main\java\org\jabref\model\groups\TexGroup.java-| -(à2ª
+Ûorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!nameCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java- -(2æ
+ˆorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!contextCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java- -(2ø
+˜org.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!filePathCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java- -($2¿
+¯org.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!auxParserCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java-& -(/2¬
+˙org.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitorCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java-1 -(<2ø
+˜org.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaDataCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java-> -(F2¿
+Ûorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!name	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java, ,(2√
+ˆorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!context	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java,- ,(42ƒ
+˜org.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!filePath	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java,; ,(C2≈
+¯org.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!auxParser	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java,O ,(X2«
+˙org.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitor	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java,l ,(w2∆
+˜org.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaData	PARAMETER?
+3src\main\java\org\jabref\model\groups\TexGroup.java,Ç ,(ä2p
+ org.jabref.model.groups.TexGroupRETURN_TYPE?
+3src\main\java\org\jabref\model\groups\TexGroup.java,ì ,(û„
+Ûorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!name	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java, ,("
+typeString"
+isFinalfalse" 
+declarationStringString name*name2W
+java.lang.StringTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java, ,(û
+ˆorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!context	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java,- ,(4"
+typeGroupHierarchyType"
+isFinalfalse"/
+declarationStringGroupHierarchyType context*context2q
+*org.jabref.model.groups.GroupHierarchyTypeTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java, ,(,Ì
+˜org.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!filePath	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java,; ,(C"
+typePath"
+isFinalfalse""
+declarationStringPath filePath*filePath2Y
+java.nio.file.PathTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java,6 ,(:å
+¯org.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!auxParser	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java,O ,(X"
+type	AuxParser"
+isFinalfalse"(
+declarationStringAuxParser auxParser*	auxParser2k
+$org.jabref.logic.auxparser.AuxParserTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java,E ,(N•
+˙org.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitor	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java,l ,(w"
+typeFileUpdateMonitor"
+isFinalfalse"2
+declarationStringFileUpdateMonitor fileMonitor*fileMonitor2n
+'org.jabref.model.util.FileUpdateMonitorTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java,Z ,(kà
+˜org.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaData	PARAMETER?
+3src\main\java\org\jabref\model\groups\TexGroup.java,Ç ,(ä"
+typeMetaData"
+isFinalfalse"&
+declarationStringMetaData metaData*metaData2j
+"org.jabref.model.metadata.MetaDataTYPE>
+3src\main\java\org\jabref\model\groups\TexGroup.java,y ,(Åõ9
+Ïorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)METHOD=
+3src\main\java\org\jabref\model\groups\TexGroup.java0 0(!"
+isFinalfalse"Ö
+declarationStringÔ<mark class="modifier">public </mark><mark class="modifier">static </mark>TexGroup <mark class="method">create</mark>(String name<mark class="modifier"><mark class="modifier">,</mark></mark> GroupHierarchyType context<mark class="modifier"><mark class="modifier">,</mark></mark> Path filePath<mark class="modifier"><mark class="modifier">,</mark></mark> AuxParser auxParser<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileMonitor<mark class="modifier"><mark class="modifier">,</mark></mark> MetaData metaData)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeTexGroup*create2ø
+xorg.jabref.model.util.FileUpdateMonitor.addListenerForFile(java.nio.file.Path, org.jabref.model.util.FileUpdateListener)CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java2 2(&2}
+6org.jabref.model.groups.TexGroup.getFilePathResolved()CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java2- 2(@2∂
+Óorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java1 1(%2π
+Òorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!nameCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java1& 1(*2º
+Ùorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!contextCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java1, 1(32Ω
+ıorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!filePathCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java15 1(=2æ
+ˆorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!auxParserCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java1? 1(H2¿
+¯org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitorCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java1J 1(U2Ω
+ıorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaDataCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java1W 1(_2¿
+¯org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitorCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java2 2(2∆
+˛org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?group@49.17:49.22CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java2' 2(,2∆
+˛org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?group@49.17:49.22CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java2D 2(I2∆
+˛org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?group@49.17:49.22CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java3 3(2æ
+Òorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!name	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java0) 0(-2¡
+Ùorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!context	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java0B 0(I2¬
+ıorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!filePath	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java0P 0(X2√
+ˆorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!auxParser	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java0d 0(m2«
+¯org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitor	PARAMETER?
+3src\main\java\org\jabref\model\groups\TexGroup.java0Å 0(å2ƒ
+ıorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaData	PARAMETER?
+3src\main\java\org\jabref\model\groups\TexGroup.java0ó 0(ü2Õ
+˛org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?group@49.17:49.22DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.java1 1(2n
+ org.jabref.model.groups.TexGroupRETURN_TYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java0 0(«
+˛org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?group@49.17:49.22VARIABLE=
+3src\main\java\org\jabref\model\groups\TexGroup.java1 1("
+typeTexGroup"
+isFinalfalse"Æ
+declarationStringò<mark class="modifier"> </mark>TexGroup <mark class="class-field">group</mark> = new TexGroup(name, context, filePath, auxParser, fileMonitor, metaData)*group2g
+ org.jabref.model.groups.TexGroupTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java1 1(2∂
+Óorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java1 1(%2π
+Òorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!nameCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java1& 1(*2º
+Ùorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!contextCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java1, 1(32Ω
+ıorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!filePathCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java15 1(=2æ
+ˆorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!auxParserCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java1? 1(H2¿
+¯org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitorCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java1J 1(U2Ω
+ıorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaDataCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java1W 1(_·
+Òorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!name	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java0) 0(-"
+typeString"
+isFinalfalse" 
+declarationStringString name*name2W
+java.lang.StringTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java0" 0((ú
+Ùorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!context	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java0B 0(I"
+typeGroupHierarchyType"
+isFinalfalse"/
+declarationStringGroupHierarchyType context*context2q
+*org.jabref.model.groups.GroupHierarchyTypeTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java0/ 0(AÎ
+ıorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!filePath	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java0P 0(X"
+typePath"
+isFinalfalse""
+declarationStringPath filePath*filePath2Y
+java.nio.file.PathTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java0K 0(Oä
+ˆorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!auxParser	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java0d 0(m"
+type	AuxParser"
+isFinalfalse"(
+declarationStringAuxParser auxParser*	auxParser2k
+$org.jabref.logic.auxparser.AuxParserTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java0Z 0(c¶
+¯org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitor	PARAMETER?
+3src\main\java\org\jabref\model\groups\TexGroup.java0Å 0(å"
+typeFileUpdateMonitor"
+isFinalfalse"2
+declarationStringFileUpdateMonitor fileMonitor*fileMonitor2o
+'org.jabref.model.util.FileUpdateMonitorTYPE>
+3src\main\java\org\jabref\model\groups\TexGroup.java0o 0(Äá
+ıorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaData	PARAMETER?
+3src\main\java\org\jabref\model\groups\TexGroup.java0ó 0(ü"
+typeMetaData"
+isFinalfalse"&
+declarationStringMetaData metaData*metaData2k
+"org.jabref.model.metadata.MetaDataTYPE?
+3src\main\java\org\jabref\model\groups\TexGroup.java0é 0(ñœ!
+√org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)METHOD=
+3src\main\java\org\jabref\model\groups\TexGroup.java7 7(!"
+isFinalfalse"™
+declarationStringî<mark class="modifier">public </mark><mark class="modifier">static </mark>TexGroup <mark class="method">create</mark>(String name<mark class="modifier"><mark class="modifier">,</mark></mark> GroupHierarchyType context<mark class="modifier"><mark class="modifier">,</mark></mark> Path filePath<mark class="modifier"><mark class="modifier">,</mark></mark> AuxParser auxParser<mark class="modifier"><mark class="modifier">,</mark></mark> MetaData metaData)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeTexGroup*create2∂
+Óorg.jabref.model.groups.TexGroup.TexGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java8 8(2å
+Eorg.jabref.model.util.DummyFileUpdateMonitor.DummyFileUpdateMonitor()CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java8D 8(Z2ê
+»org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)!nameCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java8 8( 2ì
+Àorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)!contextCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java8" 8()2î
+Ãorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)!filePathCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java8+ 8(32ï
+Õorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)!auxParserCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java85 8(>2î
+Ãorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)!metaDataCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java8^ 8(f2ï
+»org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)!name	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java7) 7(-2ò
+Àorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)!context	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java7B 7(I2ô
+Ãorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)!filePath	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java7P 7(X2ö
+Õorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)!auxParser	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java7d 7(m2ö
+Ãorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)!metaData	PARAMETER>
+3src\main\java\org\jabref\model\groups\TexGroup.java7x 7(Ä2n
+ org.jabref.model.groups.TexGroupRETURN_TYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java7 7(∏
+»org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)!name	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java7) 7(-"
+typeString"
+isFinalfalse" 
+declarationStringString name*name2W
+java.lang.StringTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java7" 7((Û
+Àorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)!context	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java7B 7(I"
+typeGroupHierarchyType"
+isFinalfalse"/
+declarationStringGroupHierarchyType context*context2q
+*org.jabref.model.groups.GroupHierarchyTypeTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java7/ 7(A¬
+Ãorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)!filePath	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java7P 7(X"
+typePath"
+isFinalfalse""
+declarationStringPath filePath*filePath2Y
+java.nio.file.PathTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java7K 7(O·
+Õorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)!auxParser	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java7d 7(m"
+type	AuxParser"
+isFinalfalse"(
+declarationStringAuxParser auxParser*	auxParser2k
+$org.jabref.logic.auxparser.AuxParserTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java7Z 7(c€
+Ãorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)!metaData	PARAMETER>
+3src\main\java\org\jabref\model\groups\TexGroup.java7x 7(Ä"
+typeMetaData"
+isFinalfalse"&
+declarationStringMetaData metaData*metaData2i
+"org.jabref.model.metadata.MetaDataTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java7o 7(w¿
+6org.jabref.model.groups.TexGroup.getFilePathResolved()METHOD=
+3src\main\java\org\jabref\model\groups\TexGroup.java; ;(#"
+isFinalfalse"p
+declarationString[<mark class="modifier">public </mark>Path <mark class="method">getFilePathResolved</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typePath*getFilePathResolved2|
+5org.jabref.model.groups.TexGroup?filePath@28.23:28.31CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java< <(2`
+java.nio.file.PathRETURN_TYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java; ;(ÿ
+Jorg.jabref.model.groups.TexGroup.contains(org.jabref.model.entry.BibEntry)METHOD=
+3src\main\java\org\jabref\model\groups\TexGroup.java@ @("
+isFinalfalse"√
+declarationString≠<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">contains</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*contains2Ö
+>org.jabref.logic.auxparser.AuxParser.parse(java.nio.file.Path)CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaB2 B(72Å
+:org.jabref.logic.auxparser.AuxParserResult.getUniqueKeys()CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaC& C(32í
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaF& F()2w
+0org.jabref.model.entry.BibEntry.getCitationKey()CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaF F(#2Å
+:org.jabref.model.groups.TexGroup?keysUsedInAux@29.24:29.37CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaA A(2}
+6org.jabref.model.groups.TexGroup?auxParser@31.28:31.37CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaB( B(12|
+5org.jabref.model.groups.TexGroup?filePath@28.23:28.31CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaB8 B(@2Å
+:org.jabref.model.groups.TexGroup?keysUsedInAux@29.24:29.37CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaC C(2ß
+`org.jabref.model.groups.TexGroup.contains(org.jabref.model.entry.BibEntry)?auxResult@66.28:66.37CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaC C(%2ó
+Porg.jabref.model.groups.TexGroup.contains(org.jabref.model.entry.BibEntry)!entryCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaF F(2o
+(java.util.Set.contains(java.lang.Object)CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaF* F(A2ö
+Oorg.jabref.model.groups.AbstractGroup.contains(org.jabref.model.entry.BibEntry)OVERRIDE=
+3src\main\java\org\jabref\model\groups\TexGroup.java@ @(2ú
+Porg.jabref.model.groups.TexGroup.contains(org.jabref.model.entry.BibEntry)!entry	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java@% @(*2Æ
+`org.jabref.model.groups.TexGroup.contains(org.jabref.model.entry.BibEntry)?auxResult@66.28:66.37DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.javaB B(%2U
+booleanRETURN_TYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java@ @(Ê
+`org.jabref.model.groups.TexGroup.contains(org.jabref.model.entry.BibEntry)?auxResult@66.28:66.37VARIABLE=
+3src\main\java\org\jabref\model\groups\TexGroup.javaB B(%"
+typeAuxParserResult"
+isFinalfalse"ä
+declarationStringu<mark class="modifier"> </mark>AuxParserResult <mark class="class-field">auxResult</mark> = auxParser.parse(filePath)*	auxResult2q
+*org.jabref.logic.auxparser.AuxParserResultTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.javaB B(2Ö
+>org.jabref.logic.auxparser.AuxParser.parse(java.nio.file.Path)CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaB2 B(72}
+6org.jabref.model.groups.TexGroup?auxParser@31.28:31.37CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaB( B(12|
+5org.jabref.model.groups.TexGroup?filePath@28.23:28.31CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaB8 B(@‘
+Porg.jabref.model.groups.TexGroup.contains(org.jabref.model.entry.BibEntry)!entry	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.java@% @(*"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2f
+org.jabref.model.entry.BibEntryTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java@ @($Î
+,org.jabref.model.groups.TexGroup.isDynamic()METHOD=
+3src\main\java\org\jabref\model\groups\TexGroup.javaJ J("
+isFinalfalse"∂
+declarationString†<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">isDynamic</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*	isDynamic2|
+1org.jabref.model.groups.AbstractGroup.isDynamic()OVERRIDE=
+3src\main\java\org\jabref\model\groups\TexGroup.javaJ J(2U
+booleanRETURN_TYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.javaJ J(˙
++org.jabref.model.groups.TexGroup.deepCopy()METHOD=
+3src\main\java\org\jabref\model\groups\TexGroup.javaO O(!"
+isFinalfalse"ù
+declarationStringá<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>AbstractGroup <mark class="method">deepCopy</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeAbstractGroup*deepCopy2|
+5org.jabref.model.groups.TexGroup?filePath@28.23:28.31CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaQ: Q(B2}
+6org.jabref.model.groups.TexGroup?auxParser@31.28:31.37CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaQD Q(M2
+8org.jabref.model.groups.TexGroup?fileMonitor@30.36:30.47CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaQO Q(Z2|
+5org.jabref.model.groups.TexGroup?metaData@32.27:32.35CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaQ\ Q(d2z
+3org.jabref.model.groups.TexGroup?LOGGER@26.32:26.38CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaT T(2Å
+:org.jabref.model.groups.TexGroup.deepCopy()?ex@82.29:82.31CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaT; T(=2{
+0org.jabref.model.groups.AbstractGroup.deepCopy()OVERRIDE=
+3src\main\java\org\jabref\model\groups\TexGroup.javaO O(!2à
+:org.jabref.model.groups.TexGroup.deepCopy()?ex@82.29:82.31DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.javaR R(2s
+%org.jabref.model.groups.AbstractGroupRETURN_TYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.javaO O(±
+:org.jabref.model.groups.TexGroup.deepCopy()?ex@82.29:82.31VARIABLE=
+3src\main\java\org\jabref\model\groups\TexGroup.javaR R("
+typeIOException"
+isFinalfalse"#
+declarationStringIOException ex*ex2Z
+java.io.IOExceptionTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.javaR R(≤
+9org.jabref.model.groups.TexGroup.equals(java.lang.Object)METHOD=
+3src\main\java\org\jabref\model\groups\TexGroup.javaZ Z("
+isFinalfalse"ª
+declarationString•<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">equals</mark>(Object o)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*equals2b
+java.lang.Object.getClass()CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java^ ^($2b
+java.lang.Object.getClass()CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java^, ^(42Ö
+>org.jabref.model.groups.AbstractGroup.equals(java.lang.Object)CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaa a(2É
+<java.util.Objects.equals(java.lang.Object, java.lang.Object)CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javae e(2Ç
+;org.jabref.model.groups.TexGroup.equals(java.lang.Object)!oCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java[ [(2Ç
+;org.jabref.model.groups.TexGroup.equals(java.lang.Object)!oCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java^ ^(2Ç
+;org.jabref.model.groups.TexGroup.equals(java.lang.Object)!oCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java^* ^(+2Ç
+;org.jabref.model.groups.TexGroup.equals(java.lang.Object)!oCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javaa a(2Ç
+;org.jabref.model.groups.TexGroup.equals(java.lang.Object)!oCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javad$ d(%2|
+5org.jabref.model.groups.TexGroup?filePath@28.23:28.31CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javae e(&2î
+Morg.jabref.model.groups.TexGroup.equals(java.lang.Object)?group@100.17:100.22CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javae( e(-2|
+5org.jabref.model.groups.TexGroup?filePath@28.23:28.31CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javae. e(62â
+>org.jabref.model.groups.AbstractGroup.equals(java.lang.Object)OVERRIDE=
+3src\main\java\org\jabref\model\groups\TexGroup.javaZ Z(2á
+;org.jabref.model.groups.TexGroup.equals(java.lang.Object)!o	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.javaZ! Z("2õ
+Morg.jabref.model.groups.TexGroup.equals(java.lang.Object)?group@100.17:100.22DECLARATION=
+3src\main\java\org\jabref\model\groups\TexGroup.javad d(2U
+booleanRETURN_TYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.javaZ Z(•
+Morg.jabref.model.groups.TexGroup.equals(java.lang.Object)?group@100.17:100.22VARIABLE=
+3src\main\java\org\jabref\model\groups\TexGroup.javad d("
+typeTexGroup"
+isFinalfalse"r
+declarationString]<mark class="modifier"> </mark>TexGroup <mark class="class-field">group</mark> = (TexGroup) o*group2g
+ org.jabref.model.groups.TexGroupTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.javad d(2Ç
+;org.jabref.model.groups.TexGroup.equals(java.lang.Object)!oCALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javad$ d(%§
+;org.jabref.model.groups.TexGroup.equals(java.lang.Object)!o	PARAMETER=
+3src\main\java\org\jabref\model\groups\TexGroup.javaZ! Z(""
+typeObject"
+isFinalfalse"
+declarationStringObject o*o2W
+java.lang.ObjectTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.javaZ Z( À	
++org.jabref.model.groups.TexGroup.toString()METHOD=
+3src\main\java\org\jabref\model\groups\TexGroup.javai i("
+isFinalfalse"ñ
+declarationStringÄ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>String <mark class="method">toString</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*toString2w
+0org.jabref.model.groups.AbstractGroup.toString()CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javao o(%2|
+5org.jabref.model.groups.TexGroup?filePath@28.23:28.31CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javak k(&2Å
+:org.jabref.model.groups.TexGroup?keysUsedInAux@29.24:29.37CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javal% l(22}
+6org.jabref.model.groups.TexGroup?auxParser@31.28:31.37CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javam! m(*2
+8org.jabref.model.groups.TexGroup?fileMonitor@30.36:30.47CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javan# n(.2{
+0org.jabref.model.groups.AbstractGroup.toString()OVERRIDE=
+3src\main\java\org\jabref\model\groups\TexGroup.javai i(2^
+java.lang.StringRETURN_TYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.javai i(∆
++org.jabref.model.groups.TexGroup.hashCode()METHOD=
+3src\main\java\org\jabref\model\groups\TexGroup.javas s("
+isFinalfalse"±
+declarationStringõ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">int</mark> <mark class="method">hashCode</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeint*hashCode2r
++java.util.Objects.hash(java.lang.Object...)CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javat t(2w
+0org.jabref.model.groups.AbstractGroup.hashCode()CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javat" t(*2|
+5org.jabref.model.groups.TexGroup?filePath@28.23:28.31CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javat. t(62{
+0org.jabref.model.groups.AbstractGroup.hashCode()OVERRIDE=
+3src\main\java\org\jabref\model\groups\TexGroup.javas s(2Q
+intRETURN_TYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.javas s(±
+.org.jabref.model.groups.TexGroup.getFilePath()METHOD=
+3src\main\java\org\jabref\model\groups\TexGroup.javaw w("
+isFinalfalse"h
+declarationStringS<mark class="modifier">public </mark>Path <mark class="method">getFilePath</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typePath*getFilePath2Ü
+?org.jabref.model.groups.TexGroup.relativize(java.nio.file.Path)CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javax x(2|
+5org.jabref.model.groups.TexGroup?filePath@28.23:28.31CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.javax x("2`
+java.nio.file.PathRETURN_TYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.javaw w(Î
+.org.jabref.model.groups.TexGroup.fileUpdated()METHOD=
+3src\main\java\org\jabref\model\groups\TexGroup.java| |("
+isFinalfalse"µ
+declarationStringü<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">fileUpdated</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*fileUpdated2y
+2org.jabref.model.metadata.MetaData.groupsBinding()CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java (2Å
+:org.jabref.model.groups.TexGroup?keysUsedInAux@29.24:29.37CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java~ ~(2|
+5org.jabref.model.groups.TexGroup?metaData@32.27:32.35CALL=
+3src\main\java\org\jabref\model\groups\TexGroup.java (2Å
+6org.jabref.model.util.FileUpdateListener.fileUpdated()OVERRIDE=
+3src\main\java\org\jabref\model\groups\TexGroup.java| |(2R
+voidRETURN_TYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java| |(˛
+
+?org.jabref.model.groups.TexGroup.relativize(java.nio.file.Path)METHOD?
+3src\main\java\org\jabref\model\groups\TexGroup.javaÇ Ç("
+isFinalfalse"q
+declarationString\<mark class="modifier">private </mark>Path <mark class="method">relativize</mark>(Path path)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typePath*
+relativize2Ö
+<org.jabref.model.groups.TexGroup.getFileDirectoriesAsPaths()CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaÉ% É(>2≠
+dorg.jabref.logic.util.io.FileUtil.relativize(java.nio.file.Path, java.util.List<java.nio.file.Path>)CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaÑ Ñ("2ç
+Dorg.jabref.model.groups.TexGroup.relativize(java.nio.file.Path)!pathCALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaÑ# Ñ('2¶
+]org.jabref.model.groups.TexGroup.relativize(java.nio.file.Path)?fileDirectories@131.19:131.34CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaÑ) Ñ(82í
+Dorg.jabref.model.groups.TexGroup.relativize(java.nio.file.Path)!path	PARAMETER?
+3src\main\java\org\jabref\model\groups\TexGroup.javaÇ! Ç(%2≠
+]org.jabref.model.groups.TexGroup.relativize(java.nio.file.Path)?fileDirectories@131.19:131.34DECLARATION?
+3src\main\java\org\jabref\model\groups\TexGroup.javaÉ É("2b
+java.nio.file.PathRETURN_TYPE?
+3src\main\java\org\jabref\model\groups\TexGroup.javaÇ Ç(∏
+]org.jabref.model.groups.TexGroup.relativize(java.nio.file.Path)?fileDirectories@131.19:131.34VARIABLE?
+3src\main\java\org\jabref\model\groups\TexGroup.javaÉ É(""
+type
+List<Path>"
+isFinalfalse"ç
+declarationStringx<mark class="modifier"> </mark>List<Path> <mark class="class-field">fileDirectories</mark> = getFileDirectoriesAsPaths()*fileDirectories2W
+java.util.ListTYPE?
+3src\main\java\org\jabref\model\groups\TexGroup.javaÉ É(2d
+java.nio.file.PathTYPE_ARGUMENT?
+3src\main\java\org\jabref\model\groups\TexGroup.javaÉ É(2Ö
+<org.jabref.model.groups.TexGroup.getFileDirectoriesAsPaths()CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaÉ% É(>µ
+Dorg.jabref.model.groups.TexGroup.relativize(java.nio.file.Path)!path	PARAMETER?
+3src\main\java\org\jabref\model\groups\TexGroup.javaÇ! Ç(%"
+typePath"
+isFinalfalse"
+declarationString	Path path*path2[
+java.nio.file.PathTYPE?
+3src\main\java\org\jabref\model\groups\TexGroup.javaÇ Ç( ’
+?org.jabref.model.groups.TexGroup.expandPath(java.nio.file.Path)METHOD?
+3src\main\java\org\jabref\model\groups\TexGroup.javaá á("
+isFinalfalse"q
+declarationString\<mark class="modifier">private </mark>Path <mark class="method">expandPath</mark>(Path path)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typePath*
+expandPath2Ö
+<org.jabref.model.groups.TexGroup.getFileDirectoriesAsPaths()CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaà% à(>2e
+java.util.Optional.orElse(T)CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaâ? â(E2•
+\org.jabref.logic.util.io.FileUtil.find(java.lang.String, java.util.List<java.nio.file.Path>)CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaâ â(2f
+java.nio.file.Path.toString()CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaâ" â(*2ç
+Dorg.jabref.model.groups.TexGroup.expandPath(java.nio.file.Path)!pathCALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaâ â(!2¶
+]org.jabref.model.groups.TexGroup.expandPath(java.nio.file.Path)?fileDirectories@136.19:136.34CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaâ. â(=2ç
+Dorg.jabref.model.groups.TexGroup.expandPath(java.nio.file.Path)!pathCALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaâF â(J2í
+Dorg.jabref.model.groups.TexGroup.expandPath(java.nio.file.Path)!path	PARAMETER?
+3src\main\java\org\jabref\model\groups\TexGroup.javaá! á(%2≠
+]org.jabref.model.groups.TexGroup.expandPath(java.nio.file.Path)?fileDirectories@136.19:136.34DECLARATION?
+3src\main\java\org\jabref\model\groups\TexGroup.javaà à("2b
+java.nio.file.PathRETURN_TYPE?
+3src\main\java\org\jabref\model\groups\TexGroup.javaá á(∏
+]org.jabref.model.groups.TexGroup.expandPath(java.nio.file.Path)?fileDirectories@136.19:136.34VARIABLE?
+3src\main\java\org\jabref\model\groups\TexGroup.javaà à(""
+type
+List<Path>"
+isFinalfalse"ç
+declarationStringx<mark class="modifier"> </mark>List<Path> <mark class="class-field">fileDirectories</mark> = getFileDirectoriesAsPaths()*fileDirectories2W
+java.util.ListTYPE?
+3src\main\java\org\jabref\model\groups\TexGroup.javaà à(2d
+java.nio.file.PathTYPE_ARGUMENT?
+3src\main\java\org\jabref\model\groups\TexGroup.javaà à(2Ö
+<org.jabref.model.groups.TexGroup.getFileDirectoriesAsPaths()CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaà% à(>µ
+Dorg.jabref.model.groups.TexGroup.expandPath(java.nio.file.Path)!path	PARAMETER?
+3src\main\java\org\jabref\model\groups\TexGroup.javaá! á(%"
+typePath"
+isFinalfalse"
+declarationString	Path path*path2[
+java.nio.file.PathTYPE?
+3src\main\java\org\jabref\model\groups\TexGroup.javaá á( ±
+<org.jabref.model.groups.TexGroup.getFileDirectoriesAsPaths()METHOD?
+3src\main\java\org\jabref\model\groups\TexGroup.javaå å(0"
+isFinalfalse"É
+declarationStringn<mark class="modifier">private </mark>List&lt;Path&gt; <mark class="method">getFileDirectoriesAsPaths</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+type
+List<Path>*getFileDirectoriesAsPaths2e
+java.util.Optional.orElse(T)CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaè è(2î
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaé é(2ì
+Jorg.jabref.model.metadata.MetaData.getLatexFileDirectory(java.lang.String)CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaç ç(-2j
+!java.util.Collections.emptyList()CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaè+ è(42~
+5org.jabref.model.groups.TexGroup?metaData@32.27:32.35CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaç ç(2z
+1org.jabref.model.groups.TexGroup?user@33.25:33.29CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaç. ç(22]
+java.util.List.of(E)CALL?
+3src\main\java\org\jabref\model\groups\TexGroup.javaé é($2^
+java.util.ListRETURN_TYPE?
+3src\main\java\org\jabref\model\groups\TexGroup.javaå å(2k
+java.nio.file.PathRETURN_TYPE_ARGUMENT?
+3src\main\java\org\jabref\model\groups\TexGroup.javaå å(É
+3org.jabref.model.groups.TexGroup?LOGGER@26.32:26.38VALUE=
+3src\main\java\org\jabref\model\groups\TexGroup.java  (&"
+isFinaltrue"
+typeLogger"ﬁ
+declarationString»<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(TexGroup.class);"
+isStatictrue"
+accessprivate*LOGGER2W
+org.slf4j.LoggerTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java (∑
+5org.jabref.model.groups.TexGroup?filePath@28.23:28.31VALUE=
+3src\main\java\org\jabref\model\groups\TexGroup.java ("
+isFinaltrue"
+typePath"ç
+declarationStringx<mark class="modifier">private </mark><mark class="modifier">final </mark>Path <mark class="class-field">filePath</mark>"
+isStaticfalse"
+accessprivate*filePath2Y
+java.nio.file.PathTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java (ê
+:org.jabref.model.groups.TexGroup?keysUsedInAux@29.24:29.37VARIABLE=
+3src\main\java\org\jabref\model\groups\TexGroup.java (%"
+isFinalfalse"
+typeSet<String>"u
+declarationString`<mark class="modifier">private </mark>Set<String> <mark class="class-field">keysUsedInAux</mark>"
+isStaticfalse"
+accessprivate*keysUsedInAux2T
+java.util.SetTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java (2`
+java.lang.StringTYPE_ARGUMENT=
+3src\main\java\org\jabref\model\groups\TexGroup.java (
+8org.jabref.model.groups.TexGroup?fileMonitor@30.36:30.47VALUE=
+3src\main\java\org\jabref\model\groups\TexGroup.java$ (/"
+isFinaltrue"
+typeFileUpdateMonitor"û
+declarationStringà<mark class="modifier">private </mark><mark class="modifier">final </mark>FileUpdateMonitor <mark class="class-field">fileMonitor</mark>"
+isStaticfalse"
+accessprivate*fileMonitor2n
+'org.jabref.model.util.FileUpdateMonitorTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java (#÷
+6org.jabref.model.groups.TexGroup?auxParser@31.28:31.37VALUE=
+3src\main\java\org\jabref\model\groups\TexGroup.java (%"
+isFinaltrue"
+type	AuxParser"ì
+declarationString~<mark class="modifier">private </mark><mark class="modifier">final </mark>AuxParser <mark class="class-field">auxParser</mark>"
+isStaticfalse"
+accessprivate*	auxParser2k
+$org.jabref.logic.auxparser.AuxParserTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java (œ
+5org.jabref.model.groups.TexGroup?metaData@32.27:32.35VALUE=
+3src\main\java\org\jabref\model\groups\TexGroup.java   (#"
+isFinaltrue"
+typeMetaData"ë
+declarationString|<mark class="modifier">private </mark><mark class="modifier">final </mark>MetaData <mark class="class-field">metaData</mark>"
+isStaticfalse"
+accessprivate*metaData2i
+"org.jabref.model.metadata.MetaDataTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java   (≠
+1org.jabref.model.groups.TexGroup?user@33.25:33.29VALUE=
+3src\main\java\org\jabref\model\groups\TexGroup.java! !("
+isFinaltrue"
+typeString"ã
+declarationStringv<mark class="modifier">private </mark><mark class="modifier">final </mark>String <mark class="class-field">user</mark>"
+isStaticfalse"
+accessprivate*user2W
+java.lang.StringTYPE=
+3src\main\java\org\jabref\model\groups\TexGroup.java! !(

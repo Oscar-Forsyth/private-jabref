@@ -1,0 +1,1741 @@
+
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÔ.
+.org.jabref.gui.autosaveandbackup.BackupManagerCLASSK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java3 3("+
+package org.jabref.gui.autosaveandbackup"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"k
+declarationStringV<mark class="modifier">public </mark><mark class="modifier">class </mark>BackupManager"
+accesspublic*BackupManager2∫
+›org.jabref.gui.autosaveandbackup.BackupManager.BackupManager(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaI I(2Ã
+porg.jabref.gui.autosaveandbackup.BackupManager.getBackupPathForNewBackup(java.nio.file.Path, java.nio.file.Path)DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaW W()2∆
+jorg.jabref.gui.autosaveandbackup.BackupManager.getLatestBackupPath(java.nio.file.Path, java.nio.file.Path)DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java^ ^(-2≤
+’org.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaj  j(%2⁄
+~org.jabref.gui.autosaveandbackup.BackupManager.discardBackup(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javav v($2·
+Çorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÅ Å(2∆
+horg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaí í(+2¬
+dorg.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∆ ∆($2¿
+borg.jabref.gui.autosaveandbackup.BackupManager.determineBackupPathForNewBackup(java.nio.file.Path)DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java” ”(22Æ
+Porg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaﬁ	 ﬁ(2À
+morg.jabref.gui.autosaveandbackup.BackupManager.determineDiscardedFile(java.nio.file.Path, java.nio.file.Path)DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaù ù(.2Æ
+Porg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(java.nio.file.Path)DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaß ß(2√
+eorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∞ ∞(2”
+uorg.jabref.gui.autosaveandbackup.BackupManager.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaæ æ(#2∞
+Rorg.jabref.gui.autosaveandbackup.BackupManager.startBackupTask(java.nio.file.Path)DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaƒ ƒ( 2™
+Lorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaœ œ(2≤
+Torg.jabref.gui.autosaveandbackup.BackupManager.shutdown(java.nio.file.Path, boolean)DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÈ È(2ù
+Aorg.jabref.gui.autosaveandbackup.BackupManager?LOGGER@53.32:53.38DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java5  5(&2∞
+Torg.jabref.gui.autosaveandbackup.BackupManager?MAXIMUM_BACKUP_FILE_COUNT@55.29:55.54DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java7 7(62ø
+corg.jabref.gui.autosaveandbackup.BackupManager?DELAY_BETWEEN_BACKUP_ATTEMPTS_IN_SECONDS@57.29:57.69DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java9 9(E2ß
+Korg.jabref.gui.autosaveandbackup.BackupManager?runningInstances@59.38:59.54DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java;& ;(62©
+Morg.jabref.gui.autosaveandbackup.BackupManager?bibDatabaseContext@61.37:61.55DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java=% =(72¢
+Forg.jabref.gui.autosaveandbackup.BackupManager?preferences@62.37:62.48DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java>% >(02ü
+Corg.jabref.gui.autosaveandbackup.BackupManager?executor@63.46:63.54DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java?. ?(62£
+Gorg.jabref.gui.autosaveandbackup.BackupManager?changeFilter@64.37:64.49DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java@% @(12®
+Lorg.jabref.gui.autosaveandbackup.BackupManager?entryTypesManager@65.39:65.56DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaA' A(82°
+Eorg.jabref.gui.autosaveandbackup.BackupManager?libraryTab@66.29:66.39DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaB B('2ß
+Korg.jabref.gui.autosaveandbackup.BackupManager?backupFilesQueue@70.30:70.46DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaF F(.2¢
+Forg.jabref.gui.autosaveandbackup.BackupManager?needsBackup@71.20:71.31DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaG G(‚*
+›org.jabref.gui.autosaveandbackup.BackupManager.BackupManager(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)CONSTRUCTORK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaI I("ò
+declarationStringÇ<mark class="modifier"> </mark><mark class="method">BackupManager</mark>(LibraryTab libraryTab<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseContext bibDatabaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntryTypesManager entryTypesManager<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferences)*BackupManager2†
+Korg.jabref.logic.util.CoarseChangeFilter.registerListener(java.lang.Object)CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaQ Q(%2¶
+Qjava.util.concurrent.ScheduledThreadPoolExecutor.ScheduledThreadPoolExecutor(int)CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaM M(72æ
+iorg.jabref.logic.util.CoarseChangeFilter.CoarseChangeFilter(org.jabref.model.database.BibDatabaseContext)CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaP P(-2∆
+org.jabref.gui.autosaveandbackup.BackupManager.BackupManager(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!bibDatabaseContextCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaJ" J(42≈
+Ôorg.jabref.gui.autosaveandbackup.BackupManager.BackupManager(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!entryTypesManagerCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaK! K(22ø
+Èorg.jabref.gui.autosaveandbackup.BackupManager.BackupManager(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!preferencesCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaL L(&2æ
+Ëorg.jabref.gui.autosaveandbackup.BackupManager.BackupManager(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!libraryTabCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaN N($2ú
+Gorg.jabref.gui.autosaveandbackup.BackupManager?changeFilter@64.37:64.49CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaP P(2∆
+org.jabref.gui.autosaveandbackup.BackupManager.BackupManager(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!bibDatabaseContextCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaP. P(@2ú
+Gorg.jabref.gui.autosaveandbackup.BackupManager?changeFilter@64.37:64.49CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaQ Q(2¢
+Morg.jabref.gui.autosaveandbackup.BackupManager?bibDatabaseContext@61.37:61.55CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaJ J(2°
+Lorg.jabref.gui.autosaveandbackup.BackupManager?entryTypesManager@65.39:65.56CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaK K(2õ
+Forg.jabref.gui.autosaveandbackup.BackupManager?preferences@62.37:62.48CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaL L(2ò
+Corg.jabref.gui.autosaveandbackup.BackupManager?executor@63.46:63.54CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaM M(2ö
+Eorg.jabref.gui.autosaveandbackup.BackupManager?libraryTab@66.29:66.39CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaN N(2√
+Ëorg.jabref.gui.autosaveandbackup.BackupManager.BackupManager(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!libraryTab	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaI I('2À
+org.jabref.gui.autosaveandbackup.BackupManager.BackupManager(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!bibDatabaseContext	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaI< I(N2 
+Ôorg.jabref.gui.autosaveandbackup.BackupManager.BackupManager(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!entryTypesManager	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaIe I(v2∆
+Èorg.jabref.gui.autosaveandbackup.BackupManager.BackupManager(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!preferences	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaIã I(ñ2ä
+.org.jabref.gui.autosaveandbackup.BackupManagerRETURN_TYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaI I(ë
+Ëorg.jabref.gui.autosaveandbackup.BackupManager.BackupManager(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!libraryTab	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaI I('"
+type
+LibraryTab"
+isFinalfalse"*
+declarationStringLibraryTab libraryTab*
+libraryTab2n
+org.jabref.gui.LibraryTabTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaI I(Õ
+org.jabref.gui.autosaveandbackup.BackupManager.BackupManager(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!bibDatabaseContext	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaI< I(N"
+typeBibDatabaseContext"
+isFinalfalse":
+declarationString%BibDatabaseContext bibDatabaseContext*bibDatabaseContext2Å
+,org.jabref.model.database.BibDatabaseContextTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaI) I(;Õ
+Ôorg.jabref.gui.autosaveandbackup.BackupManager.BackupManager(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!entryTypesManager	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaIe I(v"
+typeBibEntryTypesManager"
+isFinalfalse";
+declarationString&BibEntryTypesManager entryTypesManager*entryTypesManager2Ä
++org.jabref.model.entry.BibEntryTypesManagerTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaIP I(d∑
+Èorg.jabref.gui.autosaveandbackup.BackupManager.BackupManager(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!preferences	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaIã I(ñ"
+typePreferencesService"
+isFinalfalse"3
+declarationStringPreferencesService preferences*preferences2
+)org.jabref.preferences.PreferencesServiceTYPEL
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaIx I(ä˙
+porg.jabref.gui.autosaveandbackup.BackupManager.getBackupPathForNewBackup(java.nio.file.Path, java.nio.file.Path)METHODK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaW W()"
+isFinalfalse"Û
+declarationString›<mark class="modifier"> </mark><mark class="modifier">static </mark>Path <mark class="method">getBackupPathForNewBackup</mark>(Path originalPath<mark class="modifier"><mark class="modifier">,</mark></mark> Path backupDir)"
+isStatictrue"
+accesspackage_private"
+
+isAbstractfalse"
+typePath*getBackupPathForNewBackup2ı
+üorg.jabref.logic.util.io.BackupFileUtil.getPathForNewBackupFileAndCreateDirectory(java.nio.file.Path, org.jabref.logic.util.BackupFileType, java.nio.file.Path)CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaX X(G2“
+}org.jabref.gui.autosaveandbackup.BackupManager.getBackupPathForNewBackup(java.nio.file.Path, java.nio.file.Path)!originalPathCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaXH X(T2œ
+zorg.jabref.gui.autosaveandbackup.BackupManager.getBackupPathForNewBackup(java.nio.file.Path, java.nio.file.Path)!backupDirCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaXm X(v2◊
+}org.jabref.gui.autosaveandbackup.BackupManager.getBackupPathForNewBackup(java.nio.file.Path, java.nio.file.Path)!originalPath	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaW/ W(;2‘
+zorg.jabref.gui.autosaveandbackup.BackupManager.getBackupPathForNewBackup(java.nio.file.Path, java.nio.file.Path)!backupDir	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaWB W(K2n
+java.nio.file.PathRETURN_TYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaW W(ñ
+}org.jabref.gui.autosaveandbackup.BackupManager.getBackupPathForNewBackup(java.nio.file.Path, java.nio.file.Path)!originalPath	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaW/ W(;"
+typePath"
+isFinalfalse"&
+declarationStringPath originalPath*originalPath2g
+java.nio.file.PathTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaW* W(.ç
+zorg.jabref.gui.autosaveandbackup.BackupManager.getBackupPathForNewBackup(java.nio.file.Path, java.nio.file.Path)!backupDir	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaWB W(K"
+typePath"
+isFinalfalse"#
+declarationStringPath backupDir*	backupDir2g
+java.nio.file.PathTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaW= W(A€
+jorg.jabref.gui.autosaveandbackup.BackupManager.getLatestBackupPath(java.nio.file.Path, java.nio.file.Path)METHODK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java^ ^(-"
+isFinalfalse"˝
+declarationStringÁ<mark class="modifier"> </mark><mark class="modifier">static </mark>Optional&lt;Path&gt; <mark class="method">getLatestBackupPath</mark>(Path originalPath<mark class="modifier"><mark class="modifier">,</mark></mark> Path backupDir)"
+isStatictrue"
+accesspackage_private"
+
+isAbstractfalse"
+typeOptional<Path>*getLatestBackupPath2Ì
+óorg.jabref.logic.util.io.BackupFileUtil.getPathOfLatestExistingBackupFile(java.nio.file.Path, org.jabref.logic.util.BackupFileType, java.nio.file.Path)CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java_ _(?2Ã
+worg.jabref.gui.autosaveandbackup.BackupManager.getLatestBackupPath(java.nio.file.Path, java.nio.file.Path)!originalPathCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java_@ _(L2…
+torg.jabref.gui.autosaveandbackup.BackupManager.getLatestBackupPath(java.nio.file.Path, java.nio.file.Path)!backupDirCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java_e _(n2—
+worg.jabref.gui.autosaveandbackup.BackupManager.getLatestBackupPath(java.nio.file.Path, java.nio.file.Path)!originalPath	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java^3 ^(?2Œ
+torg.jabref.gui.autosaveandbackup.BackupManager.getLatestBackupPath(java.nio.file.Path, java.nio.file.Path)!backupDir	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java^F ^(O2n
+java.util.OptionalRETURN_TYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java^ ^(2w
+java.nio.file.PathRETURN_TYPE_ARGUMENTK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java^ ^(ê
+worg.jabref.gui.autosaveandbackup.BackupManager.getLatestBackupPath(java.nio.file.Path, java.nio.file.Path)!originalPath	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java^3 ^(?"
+typePath"
+isFinalfalse"&
+declarationStringPath originalPath*originalPath2g
+java.nio.file.PathTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java^. ^(2á
+torg.jabref.gui.autosaveandbackup.BackupManager.getLatestBackupPath(java.nio.file.Path, java.nio.file.Path)!backupDir	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java^F ^(O"
+typePath"
+isFinalfalse"#
+declarationStringPath backupDir*	backupDir2g
+java.nio.file.PathTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java^A ^(EÓ0
+’org.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)METHODK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaj  j(%"
+isFinalfalse"…
+declarationString≥<mark class="modifier">public </mark><mark class="modifier">static </mark>BackupManager <mark class="method">start</mark>(LibraryTab libraryTab<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseContext bibDatabaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntryTypesManager entryTypesManager<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferences)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeBackupManager*start2ß
+Rorg.jabref.gui.autosaveandbackup.BackupManager.startBackupTask(java.nio.file.Path)CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javal l(%2ê
+;org.jabref.preferences.FilePreferences.getBackupDirectory()CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javalG l(Y2ì
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javal2 l(D2i
+java.util.Set.add(E)CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javam m(2≥
+›org.jabref.gui.autosaveandbackup.BackupManager.BackupManager(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javak* k(72∂
+‡org.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!libraryTabCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javak8 k(B2æ
+Ëorg.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!bibDatabaseContextCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javakD k(V2Ω
+Áorg.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!entryTypesManagerCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javakX k(i2∑
+·org.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!preferencesCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javakk k(v2«
+Òorg.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)?backupManager@107.22:107.35CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javal l(2∑
+·org.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!preferencesCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javal& l(12†
+Korg.jabref.gui.autosaveandbackup.BackupManager?runningInstances@59.38:59.54CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javam m(2«
+Òorg.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)?backupManager@107.22:107.35CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javam m(*2«
+Òorg.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)?backupManager@107.22:107.35CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javan n(2ª
+‡org.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!libraryTab	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaj1 j(;2√
+Ëorg.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!bibDatabaseContext	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javajP j(b2√
+Áorg.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!entryTypesManager	PARAMETERL
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javajy j(ä2æ
+·org.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!preferences	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javajü j(™2Œ
+Òorg.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)?backupManager@107.22:107.35DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javak k(#2ä
+.org.jabref.gui.autosaveandbackup.BackupManagerRETURN_TYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaj j(˚
+Òorg.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)?backupManager@107.22:107.35VARIABLEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javak k(#"
+typeBackupManager"
+isFinalfalse"≈
+declarationStringØ<mark class="modifier"> </mark>BackupManager <mark class="class-field">backupManager</mark> = new BackupManager(libraryTab, bibDatabaseContext, entryTypesManager, preferences)*backupManager2É
+.org.jabref.gui.autosaveandbackup.BackupManagerTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javak k(2≥
+›org.jabref.gui.autosaveandbackup.BackupManager.BackupManager(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javak* k(72∂
+‡org.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!libraryTabCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javak8 k(B2æ
+Ëorg.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!bibDatabaseContextCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javakD k(V2Ω
+Áorg.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!entryTypesManagerCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javakX k(i2∑
+·org.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!preferencesCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javakk k(vâ
+‡org.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!libraryTab	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaj1 j(;"
+type
+LibraryTab"
+isFinalfalse"*
+declarationStringLibraryTab libraryTab*
+libraryTab2n
+org.jabref.gui.LibraryTabTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaj& j(0≈
+Ëorg.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!bibDatabaseContext	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javajP j(b"
+typeBibDatabaseContext"
+isFinalfalse":
+declarationString%BibDatabaseContext bibDatabaseContext*bibDatabaseContext2Å
+,org.jabref.model.database.BibDatabaseContextTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaj= j(O∆
+Áorg.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!entryTypesManager	PARAMETERL
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javajy j(ä"
+typeBibEntryTypesManager"
+isFinalfalse";
+declarationString&BibEntryTypesManager entryTypesManager*entryTypesManager2Ä
++org.jabref.model.entry.BibEntryTypesManagerTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javajd j(x±
+·org.jabref.gui.autosaveandbackup.BackupManager.start(org.jabref.gui.LibraryTab, org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntryTypesManager, org.jabref.preferences.PreferencesService)!preferences	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javajü j(™"
+typePreferencesService"
+isFinalfalse"3
+declarationStringPreferencesService preferences*preferences2Ä
+)org.jabref.preferences.PreferencesServiceTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javajå j(û›
+~org.jabref.gui.autosaveandbackup.BackupManager.discardBackup(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)METHODK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javav v($"
+isFinalfalse"ü
+declarationStringâ<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">discardBackup</mark>(BibDatabaseContext bibDatabaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> Path backupDir)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typevoid*discardBackup2ú
+Gjava.util.stream.Stream.forEach(java.util.function.Consumer<? super T>)CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javawh w(o2ú
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaw" w((2r
+java.util.Collection.stream()CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaw w(2ß
+Porg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javawè w(ú2†
+Korg.jabref.gui.autosaveandbackup.BackupManager?runningInstances@59.38:59.54CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaw w(2Î
+ïorg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)?instance@119.41:119.49CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaw5 w(=2Á
+ëorg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)!bibDatabaseContextCALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javawT w(f2Ù
+úorg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)?backupManager@119.112:119.125CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javawÅ w(é2‡
+àorg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)!backupDirCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javawù w(¶2¢
+Morg.jabref.gui.autosaveandbackup.BackupManager?bibDatabaseContext@61.37:61.55CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaw> w(P2Ï
+ëorg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)!bibDatabaseContext	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javav8 v(J2„
+àorg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)!backupDir	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javavQ v(Z2Ú
+ïorg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)?instance@119.41:119.49DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaw) w(12˘
+úorg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)?backupManager@119.112:119.125DECLARATIONK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javawp w(}2`
+voidRETURN_TYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javav v(Ó
+ëorg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)!bibDatabaseContext	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javav8 v(J"
+typeBibDatabaseContext"
+isFinalfalse":
+declarationString%BibDatabaseContext bibDatabaseContext*bibDatabaseContext2Å
+,org.jabref.model.database.BibDatabaseContextTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javav% v(7ú
+àorg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)!backupDir	PARAMETERK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javavQ v(Z"
+typePath"
+isFinalfalse"#
+declarationStringPath backupDir*	backupDir2g
+java.nio.file.PathTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javavL v(Pª
+ïorg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)?instance@119.41:119.49VARIABLEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaw) w(1"
+type"
+isFinalfalse"
+declarationString	 instance*instance2TYPEÃ
+úorg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path)?backupManager@119.112:119.125VARIABLEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javawp w(}"
+type"
+isFinalfalse"#
+declarationString backupManager*backupManager2TYPE≤*
+Çorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)METHODM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÅ Å("
+isFinalfalse"ä
+declarationStringÙ<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">shutdown</mark>(BibDatabaseContext bibDatabaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> Path backupDir<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">boolean</mark> createBackup)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typevoid*shutdown2û
+Gjava.util.stream.Stream.forEach(java.util.function.Consumer<? super T>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇh Ç(o2û
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇ" Ç((2t
+java.util.Collection.stream()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇ Ç(2≠
+Torg.jabref.gui.autosaveandbackup.BackupManager.shutdown(java.nio.file.Path, boolean)CALLO
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇè Ç(ó2ù
+Fjava.util.Collection.removeIf(java.util.function.Predicate<? super E>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÉ É(!2¢
+Korg.jabref.gui.autosaveandbackup.BackupManager?runningInstances@59.38:59.54CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇ Ç(2Ò
+ôorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)?instance@130.41:130.49CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇ5 Ç(=2Ì
+ïorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)!bibDatabaseContextCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇT Ç(f2˙
+†org.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)?backupManager@130.112:130.125CALLO
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇÅ Ç(é2Ê
+åorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)!backupDirCALLO
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇò Ç(°2È
+èorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)!createBackupCALLO
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇ£ Ç(Ø2¢
+Korg.jabref.gui.autosaveandbackup.BackupManager?runningInstances@59.38:59.54CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÉ É(2Ò
+ôorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)?instance@131.34:131.42CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÉ. É(62Ì
+ïorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)!bibDatabaseContextCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÉM É(_2§
+Morg.jabref.gui.autosaveandbackup.BackupManager?bibDatabaseContext@61.37:61.55CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇ> Ç(P2§
+Morg.jabref.gui.autosaveandbackup.BackupManager?bibDatabaseContext@61.37:61.55CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÉ7 É(I2Ú
+ïorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)!bibDatabaseContext	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÅ3 Å(E2È
+åorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÅL Å(U2Ï
+èorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)!createBackup	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÅ_ Å(k2¯
+ôorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)?instance@130.41:130.49DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇ) Ç(12ˇ
+†org.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)?backupManager@130.112:130.125DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇp Ç(}2¯
+ôorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)?instance@131.34:131.42DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÉ" É(*2b
+voidRETURN_TYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÅ Å(ˆ
+ïorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)!bibDatabaseContext	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÅ3 Å(E"
+typeBibDatabaseContext"
+isFinalfalse":
+declarationString%BibDatabaseContext bibDatabaseContext*bibDatabaseContext2É
+,org.jabref.model.database.BibDatabaseContextTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÅ  Å(2§
+åorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÅL Å(U"
+typePath"
+isFinalfalse"#
+declarationStringPath backupDir*	backupDir2i
+java.nio.file.PathTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÅG Å(K∆
+èorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)!createBackup	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÅ_ Å(k"
+typeboolean"
+isFinalfalse"G
+declarationString2<mark class="modifier">boolean</mark> createBackup*createBackup2^
+booleanTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÅW Å(^¡
+ôorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)?instance@130.41:130.49VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇ) Ç(1"
+type"
+isFinalfalse"
+declarationString	 instance*instance2TYPE“
+†org.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)?backupManager@130.112:130.125VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇp Ç(}"
+type"
+isFinalfalse"#
+declarationString backupManager*backupManager2TYPE¡
+ôorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, boolean)?instance@131.34:131.42VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÉ" É(*"
+type"
+isFinalfalse"
+declarationString	 instance*instance2TYPEõV
+horg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)METHODM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaí í(+"
+isFinalfalse"í
+declarationString¸<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">boolean</mark> <mark class="method">backupFileDiffers</mark>(Path originalPath<mark class="modifier"><mark class="modifier">,</mark></mark> Path backupDir)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*backupFileDiffers2ƒ
+morg.jabref.gui.autosaveandbackup.BackupManager.determineDiscardedFile(java.nio.file.Path, java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaì ì(32¢
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaî î(2Ö
+.java.nio.file.Files.delete(java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javañ ñ(2s
+java.util.Optional.orElse(T)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaæ æ(2¢
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaù< ù(?2¡
+jorg.jabref.gui.autosaveandbackup.BackupManager.getLatestBackupPath(java.nio.file.Path, java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaù ù("2Ø
+Xjava.nio.file.Files.getLastModifiedTime(java.nio.file.Path, java.nio.file.LinkOption...)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java†9 †(L2Ø
+Xjava.nio.file.Files.getLastModifiedTime(java.nio.file.Path, java.nio.file.LinkOption...)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java®4 ®(G2£
+Ljava.nio.file.attribute.FileTime.compareTo(java.nio.file.attribute.FileTime)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÆ1 Æ(:2õ
+Djava.nio.file.Files.mismatch(java.nio.file.Path, java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¥' ¥(/2Ã
+uorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)!originalPathCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaì4 ì(@2…
+rorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)!backupDirCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaìB ì(K2‹
+Ñorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?discardedFile@147.13:147.26CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaî î(&2‹
+Ñorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?discardedFile@147.13:147.26CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javañ ñ(*2ò
+Aorg.jabref.gui.autosaveandbackup.BackupManager?LOGGER@53.32:53.38CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaò ò(2‹
+Ñorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?discardedFile@147.13:147.26CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaòC ò(P2œ
+xorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?e@151.33:151.34CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaòR ò(S2Ã
+uorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)!originalPathCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaù# ù(/2…
+rorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)!backupDirCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaù1 ù(:2Ô
+óorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?latestBackupFileLastModifiedTime@158.21:158.53CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java† †(02ﬂ
+áorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?latestBackupPath@157.64:157.80CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java†M †(]2ò
+Aorg.jabref.gui.autosaveandbackup.BackupManager?LOGGER@53.32:53.38CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¢ ¢(2ﬂ
+áorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?latestBackupPath@157.64:157.80CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¢J ¢(Z2œ
+xorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?e@161.33:161.34CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¢\ ¢(]2Í
+íorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?currentFileLastModifiedTime@166.21:166.48CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java® ®(+2Ã
+uorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)!originalPathCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java®H ®(T2ò
+Aorg.jabref.gui.autosaveandbackup.BackupManager?LOGGER@53.32:53.38CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java™ ™(2Ã
+uorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)!originalPathCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java™P ™(\2œ
+xorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?e@169.33:169.34CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java™^ ™(_2Ô
+óorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?latestBackupFileLastModifiedTime@158.21:158.53CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÆ Æ(02Í
+íorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?currentFileLastModifiedTime@166.21:166.48CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÆ; Æ(V2Ã
+uorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)!originalPathCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¥0 ¥(<2ﬂ
+áorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?latestBackupPath@157.64:157.80CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¥> ¥(N2‘
+}org.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?result@180.24:180.30CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaµ µ(2ò
+Aorg.jabref.gui.autosaveandbackup.BackupManager?LOGGER@53.32:53.38CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∂ ∂(2ﬂ
+áorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?latestBackupPath@157.64:157.80CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∂O ∂(_2Ã
+uorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)!originalPathCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∂a ∂(m2‘
+}org.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?result@180.24:180.30CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∏ ∏(2ò
+Aorg.jabref.gui.autosaveandbackup.BackupManager?LOGGER@53.32:53.38CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∫ ∫(2œ
+xorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?e@185.33:185.34CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∫Q ∫(R2—
+uorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)!originalPath	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaí1 í(=2Œ
+rorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaíD í(M2„
+Ñorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?discardedFile@147.13:147.26DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaì ì(2ˆ
+óorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?latestBackupFileLastModifiedTime@158.21:158.53DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaû û(52Ò
+íorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?currentFileLastModifiedTime@166.21:166.48DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¶ ¶(02€
+}org.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?result@180.24:180.30DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¥ ¥(2÷
+xorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?e@151.33:151.34DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaó! ó("2Ê
+áorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?latestBackupPath@157.64:157.80DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaù@ ù(P2÷
+xorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?e@161.33:161.34DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java°! °("2÷
+xorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?e@169.33:169.34DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java©! ©("2÷
+xorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?e@185.33:185.34DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaπ! π("2e
+booleanRETURN_TYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaí í(˘
+Ñorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?discardedFile@147.13:147.26VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaì ì("
+typePath"
+isFinalfalse"ö
+declarationStringÑ<mark class="modifier"> </mark>Path <mark class="class-field">discardedFile</mark> = determineDiscardedFile(originalPath, backupDir)*discardedFile2i
+java.nio.file.PathTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaì ì(2ƒ
+morg.jabref.gui.autosaveandbackup.BackupManager.determineDiscardedFile(java.nio.file.Path, java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaì ì(32Ã
+uorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)!originalPathCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaì4 ì(@2…
+rorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)!backupDirCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaìB ì(K≤
+óorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?latestBackupFileLastModifiedTime@158.21:158.53VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaû û(5"
+typeFileTime"
+isFinalfalse"~
+declarationStringi<mark class="modifier"> </mark>FileTime <mark class="class-field">latestBackupFileLastModifiedTime</mark>* latestBackupFileLastModifiedTime2w
+ java.nio.file.attribute.FileTimeTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaû û(£
+íorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?currentFileLastModifiedTime@166.21:166.48VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¶ ¶(0"
+typeFileTime"
+isFinalfalse"y
+declarationStringd<mark class="modifier"> </mark>FileTime <mark class="class-field">currentFileLastModifiedTime</mark>*currentFileLastModifiedTime2w
+ java.nio.file.attribute.FileTimeTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¶ ¶(Ô
+}org.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?result@180.24:180.30VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¥ ¥("
+typeboolean"
+isFinalfalse"∫
+declarationString§<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">result</mark> = Files.mismatch(originalPath, latestBackupPath) != -1L*result2^
+booleanTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¥ ¥(2õ
+Djava.nio.file.Files.mismatch(java.nio.file.Path, java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¥' ¥(/2Ã
+uorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)!originalPathCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¥0 ¥(<2ﬂ
+áorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?latestBackupPath@157.64:157.80CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¥> ¥(Ní
+uorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)!originalPath	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaí1 í(="
+typePath"
+isFinalfalse"&
+declarationStringPath originalPath*originalPath2i
+java.nio.file.PathTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaí, í(0â
+rorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaíD í(M"
+typePath"
+isFinalfalse"#
+declarationStringPath backupDir*	backupDir2i
+java.nio.file.PathTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaí? í(Cç
+xorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?e@151.33:151.34VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaó! ó(""
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2j
+java.io.IOExceptionTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaó ó( ø
+áorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?latestBackupPath@157.64:157.80VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaù@ ù(P"
+type"
+isFinalfalse"&
+declarationString latestBackupPath*latestBackupPath2TYPEç
+xorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?e@161.33:161.34VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java°! °(""
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2j
+java.io.IOExceptionTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java° °( ç
+xorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?e@169.33:169.34VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java©! ©(""
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2j
+java.io.IOExceptionTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java© ©( ç
+xorg.jabref.gui.autosaveandbackup.BackupManager.backupFileDiffers(java.nio.file.Path, java.nio.file.Path)?e@185.33:185.34VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaπ! π(""
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2j
+java.io.IOExceptionTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaπ π( ÿ
+dorg.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)METHODM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∆ ∆($"
+isFinalfalse"ã
+declarationStringı<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">restoreBackup</mark>(Path originalPath<mark class="modifier"><mark class="modifier">,</mark></mark> Path backupDir)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typevoid*restoreBackup2¡
+jorg.jabref.gui.autosaveandbackup.BackupManager.getLatestBackupPath(java.nio.file.Path, java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java«$ «(72s
+java.util.Optional.isEmpty()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java» »(2¥
+]java.nio.file.Files.copy(java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption...)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÕ Õ(2o
+java.util.Optional.get()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÕ" Õ(%2»
+qorg.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)!originalPathCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java«8 «(D2≈
+norg.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)!backupDirCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java«F «(O2‘
+}org.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)?backupPath@199.23:199.33CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java» »(2ò
+Aorg.jabref.gui.autosaveandbackup.BackupManager?LOGGER@53.32:53.38CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java… …(2‘
+}org.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)?backupPath@199.23:199.33CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÕ Õ(!2»
+qorg.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)!originalPathCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÕ) Õ(52ò
+Aorg.jabref.gui.autosaveandbackup.BackupManager?LOGGER@53.32:53.38CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaœ œ(2À
+torg.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)?e@206.29:206.30CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaœC œ(D2Õ
+qorg.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)!originalPath	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∆* ∆(62 
+norg.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∆= ∆(F2€
+}org.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)?backupPath@199.23:199.33DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java« «(!2“
+torg.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)?e@206.29:206.30DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaŒ Œ(2b
+voidRETURN_TYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∆ ∆(Â	
+}org.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)?backupPath@199.23:199.33VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java« «(!"
+typeOptional<Path>"
+isFinalfalse"û
+declarationStringà<mark class="modifier"> </mark>Optional<Path> <mark class="class-field">backupPath</mark> = getLatestBackupPath(originalPath, backupDir)*
+backupPath2i
+java.util.OptionalTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java« «(2r
+java.nio.file.PathTYPE_ARGUMENTM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java« «(2¡
+jorg.jabref.gui.autosaveandbackup.BackupManager.getLatestBackupPath(java.nio.file.Path, java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java«$ «(72»
+qorg.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)!originalPathCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java«8 «(D2≈
+norg.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)!backupDirCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java«F «(Oé
+qorg.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)!originalPath	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∆* ∆(6"
+typePath"
+isFinalfalse"&
+declarationStringPath originalPath*originalPath2i
+java.nio.file.PathTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∆% ∆()Ö
+norg.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∆= ∆(F"
+typePath"
+isFinalfalse"#
+declarationStringPath backupDir*	backupDir2i
+java.nio.file.PathTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∆8 ∆(<â
+torg.jabref.gui.autosaveandbackup.BackupManager.restoreBackup(java.nio.file.Path, java.nio.file.Path)?e@206.29:206.30VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaŒ Œ("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2j
+java.io.IOExceptionTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaŒ Œ(±
+borg.jabref.gui.autosaveandbackup.BackupManager.determineBackupPathForNewBackup(java.nio.file.Path)METHODM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java” ”(2"
+isFinalfalse"î
+declarationString<mark class="modifier"> </mark>Optional&lt;Path&gt; <mark class="method">determineBackupPathForNewBackup</mark>(Path backupDir)"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typeOptional<Path>*determineBackupPathForNewBackup2¢
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java‘4 ‘(72ï
+>org.jabref.model.database.BibDatabaseContext.getDatabasePath()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java‘" ‘(12«
+porg.jabref.gui.autosaveandbackup.BackupManager.getBackupPathForNewBackup(java.nio.file.Path, java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java‘N ‘(g2§
+Morg.jabref.gui.autosaveandbackup.BackupManager?bibDatabaseContext@61.37:61.55CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java‘ ‘(!2Ã
+uorg.jabref.gui.autosaveandbackup.BackupManager.determineBackupPathForNewBackup(java.nio.file.Path)?path@212.56:212.60CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java‘h ‘(l2√
+lorg.jabref.gui.autosaveandbackup.BackupManager.determineBackupPathForNewBackup(java.nio.file.Path)!backupDirCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java‘n ‘(w2»
+lorg.jabref.gui.autosaveandbackup.BackupManager.determineBackupPathForNewBackup(java.nio.file.Path)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java”8 ”(A2”
+uorg.jabref.gui.autosaveandbackup.BackupManager.determineBackupPathForNewBackup(java.nio.file.Path)?path@212.56:212.60DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java‘8 ‘(<2p
+java.util.OptionalRETURN_TYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java” ”(2y
+java.nio.file.PathRETURN_TYPE_ARGUMENTM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java” ”(É
+lorg.jabref.gui.autosaveandbackup.BackupManager.determineBackupPathForNewBackup(java.nio.file.Path)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java”8 ”(A"
+typePath"
+isFinalfalse"#
+declarationStringPath backupDir*	backupDir2i
+java.nio.file.PathTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java”3 ”(7î
+uorg.jabref.gui.autosaveandbackup.BackupManager.determineBackupPathForNewBackup(java.nio.file.Path)?path@212.56:212.60VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java‘8 ‘(<"
+type"
+isFinalfalse"
+declarationString path*path2TYPE¢z
+Porg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)METHODM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaﬁ	 ﬁ("
+isFinalfalse"ë
+declarationString|<mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">performBackup</mark>(Path backupPath)"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*performBackup2r
+java.util.Collection.size()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java‰  ‰($2m
+java.util.Queue.poll()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÂ5 Â(92Ö
+.java.nio.file.Files.delete(java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÁ Á(2s
+java.util.Optional.orElse(T)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaˇ ˇ(2¢
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java (2à
+1org.jabref.model.metadata.MetaData.getSaveOrder()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÔ Ô(+2ë
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÔ Ô(2â
+2org.jabref.model.metadata.SaveOrder.getOrderType()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÒ Ò('2
+(org.jabref.gui.LibraryTab.getMainTable()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÛ\ Û(h2w
+ java.util.stream.Stream.toList()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˙* ˙(02Œ
+wjava.util.stream.Stream.flatMap(java.util.function.Function<? super T, ? extends java.util.stream.Stream<? extends R>>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˘* ˘(12ß
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¯* ¯(-2û
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˜* ˜(02t
+java.util.Collection.stream()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaˆ* ˆ(02í
+;org.jabref.gui.maintable.columns.MainTableColumn.getModel()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¯V ¯(^2t
+java.util.Collection.stream()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˘S ˘(Y2ñ
+?org.jabref.gui.maintable.MainTableColumnModel.getSortCriteria()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˘A ˘(P2Ø
+Xorg.jabref.model.metadata.SelfContainedSaveOrder.of(org.jabref.model.metadata.SaveOrder)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¸6 ¸(82ê
+9org.jabref.model.metadata.SaveOrder.getDefaultSaveOrder()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaˇ" ˇ(52û
+Gorg.jabref.logic.exporter.SaveConfiguration.withReformatOnSave(boolean)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÉ É(#2µ
+^org.jabref.logic.exporter.SaveConfiguration.withSaveOrder(org.jabref.model.metadata.SaveOrder)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇ Ç(2§
+Morg.jabref.logic.exporter.SaveConfiguration.withMakeBackup(java.lang.Boolean)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÅ Å(2ù
+Forg.jabref.preferences.LibraryPreferences.shouldAlwaysReformatOnSave()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÉH É(b2ò
+Aorg.jabref.preferences.PreferencesService.getLibraryPreferences()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÉ0 É(E2s
+java.util.Optional.orElse(T)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÖJ Ö(P2á
+0org.jabref.model.metadata.MetaData.getEncoding()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÖ< Ö(G2ë
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÖ. Ö(92í
+;org.jabref.model.database.BibDatabase.getNewLineSeparator()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaãY ã(l2ë
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaãK ã(V2Ω
+forg.jabref.logic.exporter.BibDatabaseWriter.saveDatabase(org.jabref.model.database.BibDatabaseContext)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaí í(!2ñ
+?org.jabref.preferences.PreferencesService.getFieldPreferences()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaè  è(32£
+Lorg.jabref.preferences.PreferencesService.getCitationKeyPatternPreferences()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaê  ê(@2m
+java.util.Queue.add(E)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaì ì( 2º
+eorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaô ô(2ë
+πorg.jabref.model.metadata.SelfContainedSaveOrder.SelfContainedSaveOrder(org.jabref.model.metadata.SaveOrder.OrderType, java.util.List<org.jabref.model.metadata.SaveOrder.SortCriterion>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÙ# Ù(92∞
+Yorg.jabref.logic.exporter.SelfContainedSaveConfiguration.SelfContainedSaveConfiguration()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÄ` Ä(~2…
+rorg.jabref.logic.exporter.AtomicFileWriter.AtomicFileWriter(java.nio.file.Path, java.nio.charset.Charset, boolean)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaä! ä(12¶
+Oorg.jabref.logic.exporter.BibWriter.BibWriter(java.io.Writer, java.lang.String)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaã& ã(/2î
+ºorg.jabref.logic.exporter.BibtexDatabaseWriter.BibtexDatabaseWriter(org.jabref.logic.exporter.BibWriter, org.jabref.logic.exporter.SelfContainedSaveConfiguration, org.jabref.logic.bibtex.FieldPreferences, org.jabref.logic.citationkeypattern.CitationKeyPatternPreferences, org.jabref.model.entry.BibEntryTypesManager)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaå å($2ù
+Forg.jabref.gui.autosaveandbackup.BackupManager?needsBackup@71.20:71.31CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaﬂ ﬂ(2¢
+Korg.jabref.gui.autosaveandbackup.BackupManager?backupFilesQueue@70.30:70.46CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java‰ ‰(2´
+Torg.jabref.gui.autosaveandbackup.BackupManager?MAXIMUM_BACKUP_FILE_COUNT@55.29:55.54CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java‰* ‰(C2¢
+Korg.jabref.gui.autosaveandbackup.BackupManager?backupFilesQueue@70.30:70.46CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÂ$ Â(42∆
+oorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?oldestBackupFile@229.17:229.33CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÁ Á(-2ò
+Aorg.jabref.gui.autosaveandbackup.BackupManager?LOGGER@53.32:53.38CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÈ È(2∆
+oorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?oldestBackupFile@229.17:229.33CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÈ@ È(P2∑
+`org.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?e@232.33:232.34CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÈR È(S2§
+Morg.jabref.gui.autosaveandbackup.BackupManager?bibDatabaseContext@61.37:61.55CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÓ+ Ó(=2∏
+aorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?so@240.21:240.23CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÒ Ò(2ú
+Eorg.jabref.gui.autosaveandbackup.BackupManager?libraryTab@66.29:66.39CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÛQ Û([2ø
+horg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?sortOrder@243.69:243.78CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaˆ  ˆ()2π
+borg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?col@247.49:247.52CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˜8 ˜(;2º
+eorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?column@248.46:248.52CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¯N ¯(T2ª
+dorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?model@249.50:249.55CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˘; ˘(@2∏
+aorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?so@240.21:240.23CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¸9 ¸(;2ø
+horg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?saveOrder@238.31:238.40CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇ Ç((2ù
+Forg.jabref.gui.autosaveandbackup.BackupManager?preferences@62.37:62.48CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÉ$ É(/2§
+Morg.jabref.gui.autosaveandbackup.BackupManager?bibDatabaseContext@61.37:61.55CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÖ Ö(-2≤
+[org.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)!backupPathCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaä2 ä(<2æ
+gorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?encoding@261.16:261.24CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaä> ä(F2º
+eorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?writer@266.20:266.26CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaã0 ã(62§
+Morg.jabref.gui.autosaveandbackup.BackupManager?bibDatabaseContext@61.37:61.55CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaã8 ã(J2ø
+horg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?bibWriter@267.22:267.31CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaç ç(2«
+porg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?saveConfiguration@256.39:256.56CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaé é(%2ù
+Forg.jabref.gui.autosaveandbackup.BackupManager?preferences@62.37:62.48CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaè è(2ù
+Forg.jabref.gui.autosaveandbackup.BackupManager?preferences@62.37:62.48CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaê ê(2£
+Lorg.jabref.gui.autosaveandbackup.BackupManager?entryTypesManager@65.39:65.56CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaë ë(%2§
+Morg.jabref.gui.autosaveandbackup.BackupManager?bibDatabaseContext@61.37:61.55CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaí" í(42¢
+Korg.jabref.gui.autosaveandbackup.BackupManager?backupFilesQueue@70.30:70.46CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaì ì(2≤
+[org.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)!backupPathCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaì! ì(+2≤
+[org.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)!backupPathCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaô ô($2∑
+`org.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?e@280.29:280.30CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaô& ô('2ù
+Forg.jabref.gui.autosaveandbackup.BackupManager?needsBackup@71.20:71.31CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaó ó(2∑
+[org.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)!backupPath	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaﬁ ﬁ(&2Õ
+oorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?oldestBackupFile@229.17:229.33DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÂ Â(!2∆
+horg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?saveOrder@238.31:238.40DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÓ Ó((2∆
+horg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?sortOrder@243.69:243.78DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÛE Û(N2Œ
+porg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?saveConfiguration@256.39:256.56DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÄ' Ä(82≈
+gorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?encoding@261.16:261.24DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÖ Ö(2√
+eorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?writer@266.20:266.26DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaä ä(2∆
+horg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?bibWriter@267.22:267.31DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaã ã(2æ
+`org.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?e@232.33:232.34DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaË! Ë("2ø
+aorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?so@240.21:240.23DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java (2¿
+borg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?col@247.49:247.52DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˜1 ˜(42√
+eorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?column@248.46:248.52DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¯. ¯(42¬
+dorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?model@249.50:249.55DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˘2 ˘(72æ
+`org.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?e@280.29:280.30DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaò ò(2b
+voidRETURN_TYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaﬁ ﬁ(Ç
+oorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?oldestBackupFile@229.17:229.33VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÂ Â(!"
+typePath"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier"> </mark>Path <mark class="class-field">oldestBackupFile</mark> = backupFilesQueue.poll()*oldestBackupFile2i
+java.nio.file.PathTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÂ Â(2m
+java.util.Queue.poll()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÂ5 Â(92¢
+Korg.jabref.gui.autosaveandbackup.BackupManager?backupFilesQueue@70.30:70.46CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÂ$ Â(4—)
+horg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?saveOrder@238.31:238.40VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÓ Ó(("
+typeSelfContainedSaveOrder"
+isFinalfalse"ø
+declarationString©<mark class="modifier"> </mark>SelfContainedSaveOrder <mark class="class-field">saveOrder</mark> = bibDatabaseContext.getMetaData().getSaveOrder().map(so -> {
+    if (so.getOrderType() == SaveOrder.OrderType.TABLE) {
+        // We need to "flatten out" SaveOrder.OrderType.TABLE as BibWriter does not have access to preferences
+        List<TableColumn<BibEntryTableViewModel, ?>> sortOrder = libraryTab.getMainTable().getSortOrder();
+        return new SelfContainedSaveOrder(SaveOrder.OrderType.SPECIFIED, sortOrder.stream().filter(col -> col instanceof MainTableColumn<?>).map(column -> ((MainTableColumn<?>) column).getModel()).flatMap(model -> model.getSortCriteria().stream()).toList());
+    } else {
+        return SelfContainedSaveOrder.of(so);
+    }
+}).orElse(SaveOrder.getDefaultSaveOrder())*	saveOrder2á
+0org.jabref.model.metadata.SelfContainedSaveOrderTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÓ Ó(2s
+java.util.Optional.orElse(T)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaˇ ˇ(2¢
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java (2à
+1org.jabref.model.metadata.MetaData.getSaveOrder()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÔ Ô(+2ë
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÔ Ô(2â
+2org.jabref.model.metadata.SaveOrder.getOrderType()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÒ Ò('2
+(org.jabref.gui.LibraryTab.getMainTable()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÛ\ Û(h2w
+ java.util.stream.Stream.toList()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˙* ˙(02Œ
+wjava.util.stream.Stream.flatMap(java.util.function.Function<? super T, ? extends java.util.stream.Stream<? extends R>>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˘* ˘(12ß
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¯* ¯(-2û
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˜* ˜(02t
+java.util.Collection.stream()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaˆ* ˆ(02í
+;org.jabref.gui.maintable.columns.MainTableColumn.getModel()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¯V ¯(^2t
+java.util.Collection.stream()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˘S ˘(Y2ñ
+?org.jabref.gui.maintable.MainTableColumnModel.getSortCriteria()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˘A ˘(P2Ø
+Xorg.jabref.model.metadata.SelfContainedSaveOrder.of(org.jabref.model.metadata.SaveOrder)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¸6 ¸(82ê
+9org.jabref.model.metadata.SaveOrder.getDefaultSaveOrder()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaˇ" ˇ(52ë
+πorg.jabref.model.metadata.SelfContainedSaveOrder.SelfContainedSaveOrder(org.jabref.model.metadata.SaveOrder.OrderType, java.util.List<org.jabref.model.metadata.SaveOrder.SortCriterion>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÙ# Ù(92§
+Morg.jabref.gui.autosaveandbackup.BackupManager?bibDatabaseContext@61.37:61.55CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÓ+ Ó(=2∏
+aorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?so@240.21:240.23CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÒ Ò(2ú
+Eorg.jabref.gui.autosaveandbackup.BackupManager?libraryTab@66.29:66.39CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÛQ Û([2ø
+horg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?sortOrder@243.69:243.78CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaˆ  ˆ()2π
+borg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?col@247.49:247.52CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˜8 ˜(;2º
+eorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?column@248.46:248.52CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¯N ¯(T2ª
+dorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?model@249.50:249.55CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˘; ˘(@2∏
+aorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?so@240.21:240.23CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¸9 ¸(;Ï
+horg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?sortOrder@243.69:243.78VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÛE Û(N"4
+type,List<TableColumn<BibEntryTableViewModel, ?>>"
+isFinalfalse"∑
+declarationString°<mark class="modifier"> </mark>List<TableColumn<BibEntryTableViewModel, ?>> <mark class="class-field">sortOrder</mark> = libraryTab.getMainTable().getSortOrder()*	sortOrder2e
+java.util.ListTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÛ Û(2Ä
+ javafx.scene.control.TableColumnTYPE_ARGUMENTM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÛ Û((2è
+/org.jabref.gui.maintable.BibEntryTableViewModelTYPE_ARGUMENTM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÛ) Û(?2
+(org.jabref.gui.LibraryTab.getMainTable()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÛ\ Û(h2ú
+Eorg.jabref.gui.autosaveandbackup.BackupManager?libraryTab@66.29:66.39CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÛQ Û([Ì
+porg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?saveConfiguration@256.39:256.56VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÄ' Ä(8"&
+typeSelfContainedSaveConfiguration"
+isFinalfalse"
+declarationString⁄<mark class="modifier"> </mark>SelfContainedSaveConfiguration <mark class="class-field">saveConfiguration</mark> = (SelfContainedSaveConfiguration) new SelfContainedSaveConfiguration().withMakeBackup(<mark class="modifier">false</mark>).withSaveOrder(saveOrder).withReformatOnSave(preferences.getLibraryPreferences().shouldAlwaysReformatOnSave())*saveConfiguration2è
+8org.jabref.logic.exporter.SelfContainedSaveConfigurationTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÄ Ä(&2û
+Gorg.jabref.logic.exporter.SaveConfiguration.withReformatOnSave(boolean)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÉ É(#2µ
+^org.jabref.logic.exporter.SaveConfiguration.withSaveOrder(org.jabref.model.metadata.SaveOrder)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇ Ç(2§
+Morg.jabref.logic.exporter.SaveConfiguration.withMakeBackup(java.lang.Boolean)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÅ Å(2ù
+Forg.jabref.preferences.LibraryPreferences.shouldAlwaysReformatOnSave()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÉH É(b2ò
+Aorg.jabref.preferences.PreferencesService.getLibraryPreferences()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÉ0 É(E2∞
+Yorg.jabref.logic.exporter.SelfContainedSaveConfiguration.SelfContainedSaveConfiguration()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÄ` Ä(~2ø
+horg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?saveOrder@238.31:238.40CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÇ Ç((2ù
+Forg.jabref.gui.autosaveandbackup.BackupManager?preferences@62.37:62.48CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÉ$ É(/”
+gorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?encoding@261.16:261.24VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÖ Ö("
+typeCharset"
+isFinalfalse"∂
+declarationString†<mark class="modifier"> </mark>Charset <mark class="class-field">encoding</mark> = bibDatabaseContext.getMetaData().getEncoding().orElse(StandardCharsets.UTF_8)*encoding2o
+java.nio.charset.CharsetTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÖ Ö(2s
+java.util.Optional.orElse(T)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÖJ Ö(P2á
+0org.jabref.model.metadata.MetaData.getEncoding()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÖ< Ö(G2ë
+:org.jabref.model.database.BibDatabaseContext.getMetaData()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÖ. Ö(92§
+Morg.jabref.gui.autosaveandbackup.BackupManager?bibDatabaseContext@61.37:61.55CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÖ Ö(-À
+eorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?writer@266.20:266.26VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaä ä("
+typeWriter"
+isFinalfalse"µ
+declarationStringü<mark class="modifier"> </mark>Writer <mark class="class-field">writer</mark> = new AtomicFileWriter(backupPath, encoding, <mark class="modifier">false</mark>)*writer2e
+java.io.WriterTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaä ä(2…
+rorg.jabref.logic.exporter.AtomicFileWriter.AtomicFileWriter(java.nio.file.Path, java.nio.charset.Charset, boolean)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaä! ä(12≤
+[org.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)!backupPathCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaä2 ä(<2æ
+gorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?encoding@261.16:261.24CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaä> ä(F„
+
+horg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?bibWriter@267.22:267.31VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaã ã("
+type	BibWriter"
+isFinalfalse"π
+declarationString£<mark class="modifier"> </mark>BibWriter <mark class="class-field">bibWriter</mark> = new BibWriter(writer, bibDatabaseContext.getDatabase().getNewLineSeparator())*	bibWriter2z
+#org.jabref.logic.exporter.BibWriterTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaã ã(2í
+;org.jabref.model.database.BibDatabase.getNewLineSeparator()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaãY ã(l2ë
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaãK ã(V2¶
+Oorg.jabref.logic.exporter.BibWriter.BibWriter(java.io.Writer, java.lang.String)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaã& ã(/2º
+eorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?writer@266.20:266.26CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaã0 ã(62§
+Morg.jabref.gui.autosaveandbackup.BackupManager?bibDatabaseContext@61.37:61.55CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaã8 ã(JÙ
+[org.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)!backupPath	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaﬁ ﬁ(&"
+typePath"
+isFinalfalse"$
+declarationStringPath backupPath*
+backupPath2i
+java.nio.file.PathTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaﬁ ﬁ(ı
+`org.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?e@232.33:232.34VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaË! Ë(""
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2j
+java.io.IOExceptionTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaË Ë( ¸
+aorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?so@240.21:240.23VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java ("
+type"
+isFinalfalse"
+declarationString so*so2TYPEˇ
+borg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?col@247.49:247.52VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˜1 ˜(4"
+type"
+isFinalfalse"
+declarationString col*col2TYPEà
+eorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?column@248.46:248.52VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¯. ¯(4"
+type"
+isFinalfalse"
+declarationString column*column2TYPEÖ
+dorg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?model@249.50:249.55VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java˘2 ˘(7"
+type"
+isFinalfalse"
+declarationString model*model2TYPEı
+`org.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)?e@280.29:280.30VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaò ò("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2j
+java.io.IOExceptionTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaò ò(‘
+morg.jabref.gui.autosaveandbackup.BackupManager.determineDiscardedFile(java.nio.file.Path, java.nio.file.Path)METHODM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaù ù(."
+isFinalfalse"Ô
+declarationStringŸ<mark class="modifier">private </mark><mark class="modifier">static </mark>Path <mark class="method">determineDiscardedFile</mark>(Path file<mark class="modifier"><mark class="modifier">,</mark></mark> Path backupDir)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typePath*determineDiscardedFile2É
+,java.nio.file.Path.resolve(java.lang.String)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaû û( 2¶
+Oorg.jabref.logic.util.io.BackupFileUtil.getUniqueFilePrefix(java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaû0 û(C2w
+ java.nio.file.Path.getFileName()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaûX û(c2Œ
+worg.jabref.gui.autosaveandbackup.BackupManager.determineDiscardedFile(java.nio.file.Path, java.nio.file.Path)!backupDirCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaû û(2…
+rorg.jabref.gui.autosaveandbackup.BackupManager.determineDiscardedFile(java.nio.file.Path, java.nio.file.Path)!fileCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaûD û(H2…
+rorg.jabref.gui.autosaveandbackup.BackupManager.determineDiscardedFile(java.nio.file.Path, java.nio.file.Path)!fileCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaûS û(W2Œ
+rorg.jabref.gui.autosaveandbackup.BackupManager.determineDiscardedFile(java.nio.file.Path, java.nio.file.Path)!file	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaù4 ù(82”
+worg.jabref.gui.autosaveandbackup.BackupManager.determineDiscardedFile(java.nio.file.Path, java.nio.file.Path)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaù? ù(H2p
+java.nio.file.PathRETURN_TYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaù ù(ˇ
+rorg.jabref.gui.autosaveandbackup.BackupManager.determineDiscardedFile(java.nio.file.Path, java.nio.file.Path)!file	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaù4 ù(8"
+typePath"
+isFinalfalse"
+declarationString	Path file*file2i
+java.nio.file.PathTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaù/ ù(3é
+worg.jabref.gui.autosaveandbackup.BackupManager.determineDiscardedFile(java.nio.file.Path, java.nio.file.Path)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaù? ù(H"
+typePath"
+isFinalfalse"#
+declarationStringPath backupDir*	backupDir2i
+java.nio.file.PathTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaù: ù(>ö
+Porg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(java.nio.file.Path)METHODM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaß ß("
+isFinalfalse"ó
+declarationStringÅ<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">discardBackup</mark>(Path backupDir)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*discardBackup2ƒ
+morg.jabref.gui.autosaveandbackup.BackupManager.determineDiscardedFile(java.nio.file.Path, java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java® ®(*2o
+java.util.Optional.get()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java®P ®(S2ï
+>org.jabref.model.database.BibDatabaseContext.getDatabasePath()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java®> ®(M2œ
+xjava.nio.file.Files.createFile(java.nio.file.Path, java.nio.file.attribute.FileAttribute<? extends java.lang.Object>...)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java™ ™(2§
+Morg.jabref.gui.autosaveandbackup.BackupManager?bibDatabaseContext@61.37:61.55CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java®+ ®(=2±
+Zorg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(java.nio.file.Path)!backupDirCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java®W ®(`2∫
+corg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(java.nio.file.Path)?path@296.13:296.17CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java™ ™(!2ò
+Aorg.jabref.gui.autosaveandbackup.BackupManager?LOGGER@53.32:53.38CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¨ ¨(2∫
+corg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(java.nio.file.Path)?path@296.13:296.17CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¨; ¨(?2∑
+`org.jabref.gui.autosaveandbackup.BackupManager.discardBackup(java.nio.file.Path)?e@299.29:299.30CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¨A ¨(B2∂
+Zorg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(java.nio.file.Path)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaß# ß(,2¡
+corg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(java.nio.file.Path)?path@296.13:296.17DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java® ®(2æ
+`org.jabref.gui.autosaveandbackup.BackupManager.discardBackup(java.nio.file.Path)?e@299.29:299.30DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java´ ´(2b
+voidRETURN_TYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaß ß( 
+
+corg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(java.nio.file.Path)?path@296.13:296.17VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java® ®("
+typePath"
+isFinalfalse"Õ
+declarationString∑<mark class="modifier"> </mark>Path <mark class="class-field">path</mark> = determineDiscardedFile(bibDatabaseContext.getDatabasePath().get()<mark class="modifier">,</mark> backupDir)*path2i
+java.nio.file.PathTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java® ®(2ƒ
+morg.jabref.gui.autosaveandbackup.BackupManager.determineDiscardedFile(java.nio.file.Path, java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java® ®(*2o
+java.util.Optional.get()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java®P ®(S2ï
+>org.jabref.model.database.BibDatabaseContext.getDatabasePath()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java®> ®(M2§
+Morg.jabref.gui.autosaveandbackup.BackupManager?bibDatabaseContext@61.37:61.55CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java®+ ®(=2±
+Zorg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(java.nio.file.Path)!backupDirCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java®W ®(`Ò
+Zorg.jabref.gui.autosaveandbackup.BackupManager.discardBackup(java.nio.file.Path)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaß# ß(,"
+typePath"
+isFinalfalse"#
+declarationStringPath backupDir*	backupDir2i
+java.nio.file.PathTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaß ß("ı
+`org.jabref.gui.autosaveandbackup.BackupManager.discardBackup(java.nio.file.Path)?e@299.29:299.30VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java´ ´("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2j
+java.io.IOExceptionTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java´ ´(ˆ
+eorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)METHODM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∞ ∞("
+isFinalfalse"‰
+declarationStringŒ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">logIfCritical</mark>(Path backupPath<mark class="modifier"><mark class="modifier">,</mark></mark> IOException e)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*logIfCritical2u
+java.lang.Throwable.getCause()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java≤ ≤(&2u
+java.lang.Throwable.getCause()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java≥, ≥(42æ
+gorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)!eCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java±# ±($2⁄
+Çorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)?innermostCause@305.18:305.32CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java≤ ≤(2⁄
+Çorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)?innermostCause@305.18:305.32CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java≥ ≥(2⁄
+Çorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)?innermostCause@305.18:305.32CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java≥ ≥(+2⁄
+Çorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)?innermostCause@305.18:305.32CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaµ! µ(/2⁄
+Çorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)?isErrorInField@309.16:309.30CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∏ ∏(2ò
+Aorg.jabref.gui.autosaveandbackup.BackupManager?LOGGER@53.32:53.38CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaπ π(2«
+porg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)!backupPathCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaπ: π(D2æ
+gorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)!eCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaπF π(G2Ã
+porg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)!backupPath	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∞$ ∞(.2√
+gorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)!e	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∞< ∞(=2·
+Çorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)?innermostCause@305.18:305.32DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java± ±( 2·
+Çorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)?isErrorInField@309.16:309.30DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaµ µ(2b
+voidRETURN_TYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∞ ∞(≥
+Çorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)?innermostCause@305.18:305.32VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java± ±( "
+type	Throwable"
+isFinalfalse"q
+declarationString\<mark class="modifier"> </mark>Throwable <mark class="class-field">innermostCause</mark> = e*innermostCause2j
+java.lang.ThrowableTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java± ±(2æ
+gorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)!eCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java±# ±($í
+Çorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)?isErrorInField@309.16:309.30VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaµ µ("
+typeboolean"
+isFinalfalse"¡
+declarationString´<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">isErrorInField</mark> = innermostCause instanceof InvalidFieldValueException*isErrorInField2^
+booleanTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaµ µ(2⁄
+Çorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)?innermostCause@305.18:305.32CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaµ! µ(/â
+porg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)!backupPath	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∞$ ∞(."
+typePath"
+isFinalfalse"$
+declarationStringPath backupPath*
+backupPath2i
+java.nio.file.PathTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∞ ∞(#˝
+gorg.jabref.gui.autosaveandbackup.BackupManager.logIfCritical(java.nio.file.Path, java.io.IOException)!e	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∞< ∞(="
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2j
+java.io.IOExceptionTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java∞0 ∞(;†
+uorg.jabref.gui.autosaveandbackup.BackupManager.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)METHODM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaæ æ(#"
+isFinalfalse"í
+declarationString¸ <br><mark class="modifier">public </mark><mark class="modifier">synchronized </mark><mark class="modifier">void</mark> <mark class="method">listen</mark>(<mark class="annotation">@SuppressWarnings("unused")</mark> BibDatabaseContextChangedEvent event)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*listen2•
+Norg.jabref.model.database.event.BibDatabaseContextChangedEvent.isFilteredOut()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaø ø( 2“
+{org.jabref.gui.autosaveandbackup.BackupManager.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)!eventCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaø ø(2ù
+Forg.jabref.gui.autosaveandbackup.BackupManager?needsBackup@71.20:71.31CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java¿ ¿(2◊
+{org.jabref.gui.autosaveandbackup.BackupManager.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)!event	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaæ_ æ(d2b
+voidRETURN_TYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaæ æ(ß
+{org.jabref.gui.autosaveandbackup.BackupManager.listen(org.jabref.model.database.event.BibDatabaseContextChangedEvent)!event	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaæ_ æ(d"&
+typeBibDatabaseContextChangedEvent"
+isFinalfalse"u
+declarationString`<mark class="annotation">@SuppressWarnings("unused")</mark> BibDatabaseContextChangedEvent event*event2ï
+>org.jabref.model.database.event.BibDatabaseContextChangedEventTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaæ@ æ(^Â
+Rorg.jabref.gui.autosaveandbackup.BackupManager.startBackupTask(java.nio.file.Path)METHODM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaƒ ƒ( "
+isFinalfalse"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">startBackupTask</mark>(Path backupDir)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*startBackupTask2£
+Lorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java≈ ≈(2€
+Éjava.util.concurrent.ScheduledThreadPoolExecutor.scheduleAtFixedRate(java.lang.Runnable, long, long, java.util.concurrent.TimeUnit)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java« «($2õ
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java…V …(_2π
+borg.jabref.gui.autosaveandbackup.BackupManager.determineBackupPathForNewBackup(java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java…+ …(J2ß
+Porg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java…m …(z2≥
+\org.jabref.gui.autosaveandbackup.BackupManager.startBackupTask(java.nio.file.Path)!backupDirCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java≈ ≈(2ö
+Corg.jabref.gui.autosaveandbackup.BackupManager?executor@63.46:63.54CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java« «(2≥
+\org.jabref.gui.autosaveandbackup.BackupManager.startBackupTask(java.nio.file.Path)!backupDirCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java…K …(T2Ω
+forg.jabref.gui.autosaveandbackup.BackupManager.startBackupTask(java.nio.file.Path)?path@329.96:329.100CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java…{ …(2∫
+corg.jabref.gui.autosaveandbackup.BackupManager?DELAY_BETWEEN_BACKUP_ATTEMPTS_IN_SECONDS@57.29:57.69CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java %  (M2∫
+corg.jabref.gui.autosaveandbackup.BackupManager?DELAY_BETWEEN_BACKUP_ATTEMPTS_IN_SECONDS@57.29:57.69CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÀ% À(M2∏
+\org.jabref.gui.autosaveandbackup.BackupManager.startBackupTask(java.nio.file.Path)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaƒ& ƒ(/2ƒ
+forg.jabref.gui.autosaveandbackup.BackupManager.startBackupTask(java.nio.file.Path)?path@329.96:329.100DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java…` …(d2b
+voidRETURN_TYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaƒ ƒ(Û
+\org.jabref.gui.autosaveandbackup.BackupManager.startBackupTask(java.nio.file.Path)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaƒ& ƒ(/"
+typePath"
+isFinalfalse"#
+declarationStringPath backupDir*	backupDir2i
+java.nio.file.PathTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaƒ! ƒ(%Ö
+forg.jabref.gui.autosaveandbackup.BackupManager.startBackupTask(java.nio.file.Path)?path@329.96:329.100VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java…` …(d"
+type"
+isFinalfalse"
+declarationString path*path2TYPEŸ*
+Lorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)METHODM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaœ œ("
+isFinalfalse"ì
+declarationString~<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">fillQueue</mark>(Path backupDir)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*	fillQueue2¢
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java– –(2õ
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java”- ”(62ï
+>org.jabref.model.database.BibDatabaseContext.getDatabasePath()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java” ”(*2¶
+Oorg.jabref.logic.util.io.BackupFileUtil.getUniqueFilePrefix(java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java’1 ’(D2w
+ java.nio.file.Path.getFileName()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java’i ’(t2w
+ java.util.stream.Stream.toList()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java⁄8 ⁄(>2w
+ java.util.stream.Stream.sorted()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java⁄/ ⁄(52û
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaŸ/ Ÿ(52É
+,java.nio.file.Files.list(java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java◊/ ◊(32Ñ
+-java.lang.String.startsWith(java.lang.String)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaŸV Ÿ(`2t
+java.nio.file.Path.toString()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaŸK Ÿ(S2w
+ java.nio.file.Path.getFileName()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaŸ= Ÿ(H2ï
+>java.util.Collection.addAll(java.util.Collection<? extends E>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java€! €('2≠
+Vorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)!backupDirCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java– –(#2§
+Morg.jabref.gui.autosaveandbackup.BackupManager?bibDatabaseContext@61.37:61.55CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java” ”(2æ
+gorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?databasePath@339.55:339.67CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java’E ’(Q2æ
+gorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?databasePath@339.55:339.67CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java’\ ’(h2≠
+Vorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)!backupDirCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java◊4 ◊(=2≥
+\org.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?p@345.54:345.55CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaŸ; Ÿ(<2∏
+aorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?prefix@341.25:341.31CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaŸa Ÿ(g2¢
+Korg.jabref.gui.autosaveandbackup.BackupManager?backupFilesQueue@70.30:70.46CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java€ €( 2Ω
+forg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?allSavFiles@343.27:343.38CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java€( €(32ò
+Aorg.jabref.gui.autosaveandbackup.BackupManager?LOGGER@53.32:53.38CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java› ›(2≥
+\org.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?e@348.33:348.34CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java›E ›(F2≤
+Vorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaœ  œ()2ø
+aorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?prefix@341.25:341.31DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java’ ’(2ƒ
+forg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?allSavFiles@343.27:343.38DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java◊ ◊(&2≈
+gorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?databasePath@339.55:339.67DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java”7 ”(C2∫
+\org.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?p@345.54:345.55DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaŸ6 Ÿ(72∫
+\org.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?e@348.33:348.34DECLARATIONM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java‹! ‹("2b
+voidRETURN_TYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaœ œ(–	
+aorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?prefix@341.25:341.31VALUEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java’ ’("
+typeString"
+isFinaltrue"ﬁ
+declarationString»<mark class="modifier"> </mark><mark class="modifier">final </mark>String <mark class="class-field">prefix</mark> = BackupFileUtil.getUniqueFilePrefix(databasePath) + "--" + databasePath.getFileName()*prefix2g
+java.lang.StringTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java’ ’(2¶
+Oorg.jabref.logic.util.io.BackupFileUtil.getUniqueFilePrefix(java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java’1 ’(D2w
+ java.nio.file.Path.getFileName()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java’i ’(t2æ
+gorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?databasePath@339.55:339.67CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java’E ’(Q2æ
+gorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?databasePath@339.55:339.67CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java’\ ’(hå
+forg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?allSavFiles@343.27:343.38VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java◊ ◊(&"
+type
+List<Path>"
+isFinalfalse"ä
+declarationStringÙ<mark class="modifier"> </mark>List<Path> <mark class="class-field">allSavFiles</mark> = Files.list(backupDir).// just list the .sav belonging to the given targetFile
+filter(p -> p.getFileName().toString().startsWith(prefix)).sorted().toList()*allSavFiles2e
+java.util.ListTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java◊ ◊(2r
+java.nio.file.PathTYPE_ARGUMENTM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java◊ ◊(2w
+ java.util.stream.Stream.toList()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java⁄8 ⁄(>2w
+ java.util.stream.Stream.sorted()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java⁄/ ⁄(52û
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaŸ/ Ÿ(52É
+,java.nio.file.Files.list(java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java◊/ ◊(32Ñ
+-java.lang.String.startsWith(java.lang.String)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaŸV Ÿ(`2t
+java.nio.file.Path.toString()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaŸK Ÿ(S2w
+ java.nio.file.Path.getFileName()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaŸ= Ÿ(H2≠
+Vorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)!backupDirCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java◊4 ◊(=2≥
+\org.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?p@345.54:345.55CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaŸ; Ÿ(<2∏
+aorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?prefix@341.25:341.31CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaŸa Ÿ(gÌ
+Vorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaœ  œ()"
+typePath"
+isFinalfalse"#
+declarationStringPath backupDir*	backupDir2i
+java.nio.file.PathTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaœ œ(ñ
+gorg.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?databasePath@339.55:339.67VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java”7 ”(C"
+type"
+isFinalfalse""
+declarationString databasePath*databasePath2TYPEı
+\org.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?p@345.54:345.55VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaŸ6 Ÿ(7"
+type"
+isFinalfalse"
+declarationString p*p2TYPEÒ
+\org.jabref.gui.autosaveandbackup.BackupManager.fillQueue(java.nio.file.Path)?e@348.33:348.34VARIABLEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java‹! ‹(""
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2j
+java.io.IOExceptionTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java‹ ‹( ò
+Torg.jabref.gui.autosaveandbackup.BackupManager.shutdown(java.nio.file.Path, boolean)METHODM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÈ È("
+isFinalfalse"É
+declarationStringÌ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">shutdown</mark>(Path backupDir<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">boolean</mark> createBackup)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*shutdown2§
+Morg.jabref.logic.util.CoarseChangeFilter.unregisterListener(java.lang.Object)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÍ Í('2ä
+3org.jabref.logic.util.CoarseChangeFilter.shutdown()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÎ Î(2í
+;java.util.concurrent.ScheduledThreadPoolExecutor.shutdown()CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÏ Ï(2õ
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java7 (@2π
+borg.jabref.gui.autosaveandbackup.BackupManager.determineBackupPathForNewBackup(java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java (+2û
+Gorg.jabref.gui.autosaveandbackup.BackupManager?changeFilter@64.37:64.49CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÍ Í(2û
+Gorg.jabref.gui.autosaveandbackup.BackupManager?changeFilter@64.37:64.49CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÎ Î(2ö
+Corg.jabref.gui.autosaveandbackup.BackupManager?executor@63.46:63.54CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÏ Ï(2∏
+aorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(java.nio.file.Path, boolean)!createBackupCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÓ Ó(2µ
+^org.jabref.gui.autosaveandbackup.BackupManager.shutdown(java.nio.file.Path, boolean)!backupDirCALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java, (52ß
+Porg.jabref.gui.autosaveandbackup.BackupManager.performBackup(java.nio.file.Path)CALLM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaA (T2∫
+^org.jabref.gui.autosaveandbackup.BackupManager.shutdown(java.nio.file.Path, boolean)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÈ È((2Ω
+aorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(java.nio.file.Path, boolean)!createBackup	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÈ2 È(>2b
+voidRETURN_TYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÈ È(ı
+^org.jabref.gui.autosaveandbackup.BackupManager.shutdown(java.nio.file.Path, boolean)!backupDir	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÈ È(("
+typePath"
+isFinalfalse"#
+declarationStringPath backupDir*	backupDir2i
+java.nio.file.PathTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÈ È(ó
+aorg.jabref.gui.autosaveandbackup.BackupManager.shutdown(java.nio.file.Path, boolean)!createBackup	PARAMETERM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÈ2 È(>"
+typeboolean"
+isFinalfalse"G
+declarationString2<mark class="modifier">boolean</mark> createBackup*createBackup2^
+booleanTYPEM
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaÈ* È(1≤
+Aorg.jabref.gui.autosaveandbackup.BackupManager?LOGGER@53.32:53.38VALUEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java5  5(&"
+isFinaltrue"
+typeLogger"„
+declarationStringÕ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(BackupManager.class);"
+isStatictrue"
+accessprivate*LOGGER2e
+org.slf4j.LoggerTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java5 5(Ã
+Torg.jabref.gui.autosaveandbackup.BackupManager?MAXIMUM_BACKUP_FILE_COUNT@55.29:55.54VALUEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java7 7(6"
+isFinaltrue"
+typeint"Á
+declarationString—<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark><mark class="modifier">int</mark> <mark class="class-field">MAXIMUM_BACKUP_FILE_COUNT</mark> = 10;"
+isStatictrue"
+accessprivate*MAXIMUM_BACKUP_FILE_COUNT2X
+intTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java7 7(˘
+corg.jabref.gui.autosaveandbackup.BackupManager?DELAY_BETWEEN_BACKUP_ATTEMPTS_IN_SECONDS@57.29:57.69VALUEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java9 9(E"
+isFinaltrue"
+typeint"ˆ
+declarationString‡<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark><mark class="modifier">int</mark> <mark class="class-field">DELAY_BETWEEN_BACKUP_ATTEMPTS_IN_SECONDS</mark> = 19;"
+isStatictrue"
+accessprivate*(DELAY_BETWEEN_BACKUP_ATTEMPTS_IN_SECONDS2X
+intTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java9 9(©
+Korg.jabref.gui.autosaveandbackup.BackupManager?runningInstances@59.38:59.54VARIABLEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java;& ;(6"
+isFinalfalse"
+typeSet<BackupManager>"∏
+declarationString¢<mark class="modifier">private </mark><mark class="modifier">static </mark>Set<BackupManager> <mark class="class-field">runningInstances</mark> = new HashSet<>();"
+isStatictrue"
+accessprivate*runningInstances2b
+java.util.SetTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java; ;(2å
+.org.jabref.gui.autosaveandbackup.BackupManagerTYPE_ARGUMENTK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java; ;($2p
+java.util.HashSet.HashSet()CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java;= ;(F∑
+Morg.jabref.gui.autosaveandbackup.BackupManager?bibDatabaseContext@61.37:61.55VALUEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java=% =(7"
+isFinaltrue"
+typeBibDatabaseContext"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">bibDatabaseContext</mark>"
+isStaticfalse"
+accessprivate*bibDatabaseContext2Å
+,org.jabref.model.database.BibDatabaseContextTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java= =($û
+Forg.jabref.gui.autosaveandbackup.BackupManager?preferences@62.37:62.48VALUEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java>% >(0"
+isFinaltrue"
+typePreferencesService"ü
+declarationStringâ<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferences</mark>"
+isStaticfalse"
+accessprivate*preferences2~
+)org.jabref.preferences.PreferencesServiceTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java> >($Ø
+Corg.jabref.gui.autosaveandbackup.BackupManager?executor@63.46:63.54VALUEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java?. ?(6"
+isFinaltrue"#
+typeScheduledThreadPoolExecutor"•
+declarationStringè<mark class="modifier">private </mark><mark class="modifier">final </mark>ScheduledThreadPoolExecutor <mark class="class-field">executor</mark>"
+isStaticfalse"
+accessprivate*executor2Ö
+0java.util.concurrent.ScheduledThreadPoolExecutorTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java? ?(-†
+Gorg.jabref.gui.autosaveandbackup.BackupManager?changeFilter@64.37:64.49VALUEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java@% @(1"
+isFinaltrue"
+typeCoarseChangeFilter"†
+declarationStringä<mark class="modifier">private </mark><mark class="modifier">final </mark>CoarseChangeFilter <mark class="class-field">changeFilter</mark>"
+isStaticfalse"
+accessprivate*changeFilter2}
+(org.jabref.logic.util.CoarseChangeFilterTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.java@ @($∑
+Lorg.jabref.gui.autosaveandbackup.BackupManager?entryTypesManager@65.39:65.56VALUEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaA' A(8"
+isFinaltrue"
+typeBibEntryTypesManager"ß
+declarationStringë<mark class="modifier">private </mark><mark class="modifier">final </mark>BibEntryTypesManager <mark class="class-field">entryTypesManager</mark>"
+isStaticfalse"
+accessprivate*entryTypesManager2Ä
++org.jabref.model.entry.BibEntryTypesManagerTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaA A(&˚
+Eorg.jabref.gui.autosaveandbackup.BackupManager?libraryTab@66.29:66.39VALUEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaB B('"
+isFinaltrue"
+type
+LibraryTab"ñ
+declarationStringÄ<mark class="modifier">private </mark><mark class="modifier">final </mark>LibraryTab <mark class="class-field">libraryTab</mark>"
+isStaticfalse"
+accessprivate*
+libraryTab2n
+org.jabref.gui.LibraryTabTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaB B(¨
+Korg.jabref.gui.autosaveandbackup.BackupManager?backupFilesQueue@70.30:70.46VALUEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaF F(."
+isFinaltrue"
+typeQueue<Path>"º
+declarationString¶<mark class="modifier">private </mark><mark class="modifier">final </mark>Queue<Path> <mark class="class-field">backupFilesQueue</mark> = new LinkedBlockingQueue<>();"
+isStaticfalse"
+accessprivate*backupFilesQueue2d
+java.util.QueueTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaF F(2p
+java.nio.file.PathTYPE_ARGUMENTK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaF F(2ì
+>java.util.concurrent.LinkedBlockingQueue.LinkedBlockingQueue()CALLK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaF5 F(Jã
+Forg.jabref.gui.autosaveandbackup.BackupManager?needsBackup@71.20:71.31VARIABLEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaG G("
+isFinalfalse"
+typeboolean"µ
+declarationStringü<mark class="modifier">private </mark><mark class="modifier">boolean</mark> <mark class="class-field">needsBackup</mark> = <mark class="modifier">false</mark>;"
+isStaticfalse"
+accessprivate*needsBackup2\
+booleanTYPEK
+Asrc\main\java\org\jabref\gui\autosaveandbackup\BackupManager.javaG G(

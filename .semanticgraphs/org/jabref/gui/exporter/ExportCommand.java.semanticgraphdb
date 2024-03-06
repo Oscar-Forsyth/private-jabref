@@ -1,0 +1,792 @@
+
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaÀ
+%org.jabref.gui.exporter.ExportCommandCLASSB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java) )(""
+packageorg.jabref.gui.exporter"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"†
+declarationStringä<mark class="modifier">public </mark><mark class="modifier">class </mark>ExportCommand<mark class="modifier"> extends </mark>SimpleCommand"
+accesspublic*ExportCommand2·
+çorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java8 8(2Ç
+/org.jabref.gui.exporter.ExportCommand.execute()DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaO O(2Ú
+ûorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaa a(2õ
+Forg.jabref.gui.exporter.ExportCommand.handleError(java.lang.Exception)DECLARATIOND
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaõ õ(2ã
+8org.jabref.gui.exporter.ExportCommand?LOGGER@45.32:45.38DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java-  -(&2ë
+>org.jabref.gui.exporter.ExportCommand?exportMethod@47.31:47.43DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java/ /(+2ê
+=org.jabref.gui.exporter.ExportCommand?tabSupplier@48.39:48.50DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java0' 0(22ë
+>org.jabref.gui.exporter.ExportCommand?stateManager@49.31:49.43DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java1 1(+2ê
+=org.jabref.gui.exporter.ExportCommand?preferences@50.37:50.48DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java2% 2(02í
+?org.jabref.gui.exporter.ExportCommand?dialogService@51.32:51.45DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java3  3(-2ñ
+Corg.jabref.gui.exporter.ExportCommand?entryTypesManager@52.39:52.56DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java4' 4(82õ
+Horg.jabref.gui.exporter.ExportCommand?abbreviationRepository@53.48:53.70DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java50 5(F2ë
+>org.jabref.gui.exporter.ExportCommand?taskExecutor@54.31:54.43DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java6 6(+2Ö
+2org.jabref.gui.exporter.ExportCommand.ExportMethodDECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java+ +(2r
+$org.jabref.gui.actions.SimpleCommandEXTENDB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java)# )(0Û`
+çorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)CONSTRUCTORB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java8 8("ú
+declarationStringÜ<mark class="modifier">public </mark><mark class="method">ExportCommand</mark>(ExportMethod exportMethod<mark class="modifier"><mark class="modifier">,</mark></mark> Supplier&lt;LibraryTab&gt; tabSupplier<mark class="modifier"><mark class="modifier">,</mark></mark> StateManager stateManager<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferences<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntryTypesManager entryTypesManager<mark class="modifier"><mark class="modifier">,</mark></mark> JournalAbbreviationRepository abbreviationRepository<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor)*ExportCommand2°
+Uorg.jabref.gui.actions.ActionHelper.needsEntriesSelected(org.jabref.gui.StateManager)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaJ J(32ö
+Norg.jabref.gui.actions.ActionHelper.needsDatabase(org.jabref.gui.StateManager)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaK K(,2Á
+öorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!exportMethodCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java@ @((2Ê
+ôorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!tabSupplierCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaA A(&2Á
+öorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!stateManagerCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaB B((2Ê
+ôorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!preferencesCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaC C(&2Ë
+õorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!dialogServiceCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaD D(*2Ï
+üorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!entryTypesManagerCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaE! E(22Ò
+§org.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!abbreviationRepositoryCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaF& F(<2Á
+öorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!taskExecutorCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaG G((2Á
+öorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!exportMethodCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaI I()2Á
+öorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!stateManagerCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaJ4 J(@2Á
+öorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!stateManagerCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaK- K(92ä
+>org.jabref.gui.exporter.ExportCommand?exportMethod@47.31:47.43CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java@ @(2â
+=org.jabref.gui.exporter.ExportCommand?tabSupplier@48.39:48.50CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaA A(2ä
+>org.jabref.gui.exporter.ExportCommand?stateManager@49.31:49.43CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaB B(2â
+=org.jabref.gui.exporter.ExportCommand?preferences@50.37:50.48CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaC C(2ã
+?org.jabref.gui.exporter.ExportCommand?dialogService@51.32:51.45CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaD D(2è
+Corg.jabref.gui.exporter.ExportCommand?entryTypesManager@52.39:52.56CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaE E(2î
+Horg.jabref.gui.exporter.ExportCommand?abbreviationRepository@53.48:53.70CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaF F(#2ä
+>org.jabref.gui.exporter.ExportCommand?taskExecutor@54.31:54.43CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaG G(2é
+Borg.jabref.gui.exporter.ExportCommand.ExportMethod?EXPORT_SELECTEDCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaI: I(I2Ï
+öorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!exportMethod	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java8& 8(22Î
+ôorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!tabSupplier	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java9. 9(92Ï
+öorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!stateManager	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java:& :(22Ì
+õorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java;' ;(42Î
+ôorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!preferences	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java<, <(72Ò
+üorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!entryTypesManager	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java=. =(?2ˆ
+§org.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!abbreviationRepository	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java>7 >(M2Ï
+öorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java?& ?(22x
+%org.jabref.gui.exporter.ExportCommandRETURN_TYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java8 8(“
+öorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!exportMethod	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java8& 8(2"
+typeExportMethod"
+isFinalfalse".
+declarationStringExportMethod exportMethod*exportMethod2~
+2org.jabref.gui.exporter.ExportCommand.ExportMethodTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java8 8(%∏
+ôorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!tabSupplier	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java9. 9(9"
+typeSupplier<LibraryTab>"
+isFinalfalse"5
+declarationString Supplier<LibraryTab> tabSupplier*tabSupplier2g
+java.util.function.SupplierTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java9 9(!2n
+org.jabref.gui.LibraryTabTYPE_ARGUMENTB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java9" 9(,ª
+öorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!stateManager	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java:& :(2"
+typeStateManager"
+isFinalfalse".
+declarationStringStateManager stateManager*stateManager2g
+org.jabref.gui.StateManagerTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java: :(%¡
+õorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java;' ;(4"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2h
+org.jabref.gui.DialogServiceTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java; ;(&“
+ôorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!preferences	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java<, <(7"
+typePreferencesService"
+isFinalfalse"3
+declarationStringPreferencesService preferences*preferences2u
+)org.jabref.preferences.PreferencesServiceTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java< <(+Í
+üorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!entryTypesManager	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java=. =(?"
+typeBibEntryTypesManager"
+isFinalfalse";
+declarationString&BibEntryTypesManager entryTypesManager*entryTypesManager2w
++org.jabref.model.entry.BibEntryTypesManagerTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java= =(-ò
+§org.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!abbreviationRepository	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java>7 >(M"%
+typeJournalAbbreviationRepository"
+isFinalfalse"I
+declarationString4JournalAbbreviationRepository abbreviationRepository*abbreviationRepository2É
+7org.jabref.logic.journals.JournalAbbreviationRepositoryTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java> >(6¿
+öorg.jabref.gui.exporter.ExportCommand.ExportCommand(org.jabref.gui.exporter.ExportCommand.ExportMethod, java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java?& ?(2"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2l
+ org.jabref.gui.util.TaskExecutorTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java? ?(% 0
+/org.jabref.gui.exporter.ExportCommand.execute()METHODB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaO O("
+isFinalfalse"±
+declarationStringõ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">execute</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*execute2’
+àorg.jabref.logic.exporter.ExporterFactory.create(org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaQ: Q(@2ò
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaV3 V(:2ã
+?java.util.stream.Stream.sorted(java.util.Comparator<? super T>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaU3 U(92i
+java.util.Collection.stream()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaTB T(H2Ñ
+8org.jabref.logic.exporter.ExporterFactory.getExporters()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaT3 T(?2ü
+Sjava.util.Comparator.comparing(java.util.function.Function<? super T, ? extends U>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaUE U(N2p
+$java.util.stream.Collectors.toList()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaVF V(L2á
+;org.jabref.gui.util.FileDialogConfiguration.Builder.build()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java\ \(2®
+\org.jabref.gui.util.FileDialogConfiguration.Builder.withInitialDirectory(java.nio.file.Path)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java[ [(%2¶
+Zorg.jabref.gui.util.FileDialogConfiguration.Builder.withDefaultExtension(java.lang.String)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaZ Z(%2Õ
+Äorg.jabref.gui.util.FileDialogConfiguration.Builder.addExtensionFilter(java.util.List<javafx.stage.FileChooser.ExtensionFilter>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaY Y(#2«
+{org.jabref.gui.util.FileFilterConverter.exporterToExtensionFilter(java.util.Collection<org.jabref.logic.exporter.Exporter>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaY8 Y(Q2ç
+Aorg.jabref.preferences.ExportPreferences.getLastExportExtension()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaZI Z(_2å
+@org.jabref.preferences.PreferencesService.getExportPreferences()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaZ2 Z(F2ê
+Dorg.jabref.preferences.ExportPreferences.getExportWorkingDirectory()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java[I [(b2å
+@org.jabref.preferences.PreferencesService.getExportPreferences()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java[2 [(F2ê
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java^ ^(2®
+\org.jabref.gui.DialogService.showFileSaveDialog(org.jabref.gui.util.FileDialogConfiguration)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java] ]((2Î
+ûorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java^( ^(.2î
+Horg.jabref.gui.util.FileDialogConfiguration.getSelectedExtensionFilter()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java^M ^(g2â
+=org.jabref.gui.util.FileDialogConfiguration.Builder.Builder()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaX> X(]2â
+=org.jabref.gui.exporter.ExportCommand?preferences@50.37:50.48CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaR R(2è
+Corg.jabref.gui.exporter.ExportCommand?entryTypesManager@52.39:52.56CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaS S(!2ó
+Korg.jabref.gui.exporter.ExportCommand.execute()?exporterFactory@81.24:81.39CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaT# T(22ë
+Eorg.jabref.gui.exporter.ExportCommand.execute()?exporters@84.23:84.32CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaYR Y([2â
+=org.jabref.gui.exporter.ExportCommand?preferences@50.37:50.48CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaZ& Z(12â
+=org.jabref.gui.exporter.ExportCommand?preferences@50.37:50.48CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java[& [(12ã
+?org.jabref.gui.exporter.ExportCommand?dialogService@51.32:51.45CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java] ](2ü
+Sorg.jabref.gui.exporter.ExportCommand.execute()?fileDialogConfiguration@88.32:88.55CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java]) ](@2å
+@org.jabref.gui.exporter.ExportCommand.execute()?path@94.32:94.36CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java^/ ^(32ü
+Sorg.jabref.gui.exporter.ExportCommand.execute()?fileDialogConfiguration@88.32:88.55CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java^5 ^(L2ë
+Eorg.jabref.gui.exporter.ExportCommand.execute()?exporters@84.23:84.32CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java^k ^(t2x
+,org.jabref.logic.exporter.Exporter.getName()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaUO U(`2û
+Korg.jabref.gui.exporter.ExportCommand.execute()?exporterFactory@81.24:81.39DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaQ Q('2ò
+Eorg.jabref.gui.exporter.ExportCommand.execute()?exporters@84.23:84.32DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaT T( 2¶
+Sorg.jabref.gui.exporter.ExportCommand.execute()?fileDialogConfiguration@88.32:88.55DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaX  X(72ì
+@org.jabref.gui.exporter.ExportCommand.execute()?path@94.32:94.36DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java^  ^($2W
+voidRETURN_TYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaO O(ı
+Korg.jabref.gui.exporter.ExportCommand.execute()?exporterFactory@81.24:81.39VARIABLEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaQ Q('"
+typeExporterFactory"
+isFinalfalse"Æ
+declarationStringò<mark class="modifier"> </mark>ExporterFactory <mark class="class-field">exporterFactory</mark> = ExporterFactory.create(preferences, entryTypesManager)*exporterFactory2u
+)org.jabref.logic.exporter.ExporterFactoryTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaQ Q(2’
+àorg.jabref.logic.exporter.ExporterFactory.create(org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaQ: Q(@2â
+=org.jabref.gui.exporter.ExportCommand?preferences@50.37:50.48CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaR R(2è
+Corg.jabref.gui.exporter.ExportCommand?entryTypesManager@52.39:52.56CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaS S(! 
+Eorg.jabref.gui.exporter.ExportCommand.execute()?exporters@84.23:84.32VARIABLEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaT T( "
+typeList<Exporter>"
+isFinalfalse"Â
+declarationStringœ<mark class="modifier"> </mark>List<Exporter> <mark class="class-field">exporters</mark> = exporterFactory.getExporters().stream().sorted(Comparator.comparing(Exporter::getName)).collect(Collectors.toList())*	exporters2Z
+java.util.ListTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaT T(2w
+"org.jabref.logic.exporter.ExporterTYPE_ARGUMENTB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaT T(2ò
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaV3 V(:2ã
+?java.util.stream.Stream.sorted(java.util.Comparator<? super T>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaU3 U(92i
+java.util.Collection.stream()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaTB T(H2Ñ
+8org.jabref.logic.exporter.ExporterFactory.getExporters()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaT3 T(?2ü
+Sjava.util.Comparator.comparing(java.util.function.Function<? super T, ? extends U>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaUE U(N2p
+$java.util.stream.Collectors.toList()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaVF V(L2ó
+Korg.jabref.gui.exporter.ExportCommand.execute()?exporterFactory@81.24:81.39CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaT# T(22x
+,org.jabref.logic.exporter.Exporter.getName()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaUO U(`Ö
+Sorg.jabref.gui.exporter.ExportCommand.execute()?fileDialogConfiguration@88.32:88.55VARIABLEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaX  X(7"
+typeFileDialogConfiguration"
+isFinalfalse"©
+declarationStringì<mark class="modifier"> </mark>FileDialogConfiguration <mark class="class-field">fileDialogConfiguration</mark> = new FileDialogConfiguration.Builder().addExtensionFilter(FileFilterConverter.exporterToExtensionFilter(exporters)).withDefaultExtension(preferences.getExportPreferences().getLastExportExtension()).withInitialDirectory(preferences.getExportPreferences().getExportWorkingDirectory()).build()*fileDialogConfiguration2w
++org.jabref.gui.util.FileDialogConfigurationTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaX X(2á
+;org.jabref.gui.util.FileDialogConfiguration.Builder.build()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java\ \(2®
+\org.jabref.gui.util.FileDialogConfiguration.Builder.withInitialDirectory(java.nio.file.Path)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java[ [(%2¶
+Zorg.jabref.gui.util.FileDialogConfiguration.Builder.withDefaultExtension(java.lang.String)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaZ Z(%2Õ
+Äorg.jabref.gui.util.FileDialogConfiguration.Builder.addExtensionFilter(java.util.List<javafx.stage.FileChooser.ExtensionFilter>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaY Y(#2«
+{org.jabref.gui.util.FileFilterConverter.exporterToExtensionFilter(java.util.Collection<org.jabref.logic.exporter.Exporter>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaY8 Y(Q2ç
+Aorg.jabref.preferences.ExportPreferences.getLastExportExtension()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaZI Z(_2å
+@org.jabref.preferences.PreferencesService.getExportPreferences()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaZ2 Z(F2ê
+Dorg.jabref.preferences.ExportPreferences.getExportWorkingDirectory()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java[I [(b2å
+@org.jabref.preferences.PreferencesService.getExportPreferences()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java[2 [(F2â
+=org.jabref.gui.util.FileDialogConfiguration.Builder.Builder()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaX> X(]2ë
+Eorg.jabref.gui.exporter.ExportCommand.execute()?exporters@84.23:84.32CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaYR Y([2â
+=org.jabref.gui.exporter.ExportCommand?preferences@50.37:50.48CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaZ& Z(12â
+=org.jabref.gui.exporter.ExportCommand?preferences@50.37:50.48CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java[& [(1‘
+@org.jabref.gui.exporter.ExportCommand.execute()?path@94.32:94.36VARIABLEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java^  ^($"
+type"
+isFinalfalse"
+declarationString path*path2TYPE√ä
+ûorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)METHODB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaa a("
+isFinalfalse"Ÿ
+declarationString√<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">export</mark>(Path file<mark class="modifier"><mark class="modifier">,</mark></mark> FileChooser.ExtensionFilter selectedExtensionFilter<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;Exporter&gt; exporters)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*export2y
+-java.nio.file.Path.endsWith(java.lang.String)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javac c(2†
+Torg.jabref.logic.util.io.FileUtil.addExtension(java.nio.file.Path, java.lang.String)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javad d(!2î
+Hjava.util.Optional.orElseThrow(java.util.function.Supplier<? extends X>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javah4 h(?2‰
+óorg.jabref.gui.util.FileFilterConverter.getExporter(javafx.stage.FileChooser.ExtensionFilter, java.util.Collection<org.jabref.logic.exporter.Exporter>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javag4 g(?2|
+0org.jabref.gui.StateManager.getSelectedEntries()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javal# l(52h
+java.util.Optional.orElse(T)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaq# q()2ó
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javap# p(&2{
+/org.jabref.gui.StateManager.getActiveDatabase()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javao# o(42m
+!java.util.Collections.emptyList()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaq6 q(?2h
+java.util.Optional.orElse(T)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javav8 v(>2ó
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javau8 u(;2{
+/org.jabref.gui.StateManager.getActiveDatabase()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javat5 t(F2≥
+gorg.jabref.model.database.BibDatabaseContext.getFileDirectories(org.jabref.preferences.FilePreferences)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javauE u(W2ä
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaud u(v2`
+java.util.List.of(E)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javavD v(F2à
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javavh v({2ä
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javavS v(e2ù
+Qorg.jabref.preferences.ExportPreferences.setLastExportExtension(java.lang.String)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaz+ z(A2å
+@org.jabref.preferences.PreferencesService.getExportPreferences()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaz z((2x
+,org.jabref.logic.exporter.Exporter.getName()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javazI z(P2¢
+Vorg.jabref.preferences.ExportPreferences.setExportWorkingDirectory(java.nio.file.Path)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java{+ {(D2å
+@org.jabref.preferences.PreferencesService.getExportPreferences()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java{ {((2j
+java.nio.file.Path.getParent()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java{J {(S2û
+Porg.jabref.gui.util.BackgroundTask.executeWith(org.jabref.gui.util.TaskExecutor)CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaò ò(2¨
+^org.jabref.gui.util.BackgroundTask.onFailure(java.util.function.Consumer<java.lang.Exception>)CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaó ó(2ö
+Lorg.jabref.gui.util.BackgroundTask.onSuccess(java.util.function.Consumer<V>)CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaà à(2â
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaÄ Ä(2»
+˘org.jabref.logic.exporter.Exporter.export(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, java.util.List<org.jabref.model.entry.BibEntry>, java.util.List<java.nio.file.Path>, org.jabref.logic.journals.JournalAbbreviationRepository)CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaÅ Å(!2f
+java.util.Optional.get()CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaÅC Å(F2}
+/org.jabref.gui.StateManager.getActiveDatabase()CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaÅ/ Å(@2}
+/org.jabref.gui.LibraryTab.getNotificationPane()CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaâY â(l2o
+!java.util.function.Supplier.get()CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaâS â(V2à
+:org.jabref.gui.icon.IconTheme.JabRefIcons.getGraphicNode()CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaã9 ã(G2ú
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaå) å(-2b
+java.util.List.of(E)CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaç! ç(#2ú
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaç< ç(@2ú
+Norg.jabref.preferences.PreferencesService.getExternalApplicationsPreferences()CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaè\ è(~2ì
+Gjava.lang.IllegalStateException.IllegalStateException(java.lang.String)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javahJ h(_2É
+∂org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)!selectedExtensionFilterCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javab# b(:2
+£org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)!fileCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javac c(2â
+ºorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?selectedExtension@98.15:98.32CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javac c(,2
+£org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)!fileCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javad" d(&2â
+ºorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?selectedExtension@98.15:98.32CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javad( d(92É
+∂org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)!selectedExtensionFilterCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javag@ g(W2ı
+®org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)!exportersCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javagY g(b2ä
+>org.jabref.gui.exporter.ExportCommand?exportMethod@47.31:47.43CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaj j(2Å
+¥org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?entries@105.23:105.30CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javal l(2ä
+>org.jabref.gui.exporter.ExportCommand?stateManager@49.31:49.43CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javal l("2Å
+¥org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?entries@105.23:105.30CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javao o(2ä
+>org.jabref.gui.exporter.ExportCommand?stateManager@49.31:49.43CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javao o("2ä
+>org.jabref.gui.exporter.ExportCommand?stateManager@49.31:49.43CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javat( t(42¸
+Øorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?db@117.60:117.62CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javauB u(D2â
+=org.jabref.gui.exporter.ExportCommand?preferences@50.37:50.48CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javauX u(c2â
+=org.jabref.gui.exporter.ExportCommand?preferences@50.37:50.48CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javavG v(R2â
+=org.jabref.gui.exporter.ExportCommand?preferences@50.37:50.48CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaz z(2Ä
+≥org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?format@103.23:103.29CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javazB z(H2â
+=org.jabref.gui.exporter.ExportCommand?preferences@50.37:50.48CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java{ {(2
+£org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)!fileCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java{E {(I2Å
+¥org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?entries@105.23:105.30CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java}* }(12Ç
+≥org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?format@103.23:103.29CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaÅ Å(2å
+>org.jabref.gui.exporter.ExportCommand?stateManager@49.31:49.43CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaÅ" Å(.2Ú
+£org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)!fileCALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaÇ Ç( 2Ü
+∑org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?finEntries@125.29:125.39CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaÉ É(&2é
+øorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?fileDirForDatabase@116.19:116.37CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaÑ Ñ(.2ñ
+Horg.jabref.gui.exporter.ExportCommand?abbreviationRepository@53.48:53.70CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaÖ Ö(22ã
+=org.jabref.gui.exporter.ExportCommand?tabSupplier@48.39:48.50CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaâG â(R2å
+Ωorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?notificationPane@137.52:137.68CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaä ä($2Ú
+£org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)!fileCALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaèJ è(N2ã
+=org.jabref.gui.exporter.ExportCommand?preferences@50.37:50.48CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaèP è([2è
+?org.jabref.gui.exporter.ExportCommand?dialogService@51.32:51.45CALLF
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaèÇ è(è2Ü
+8org.jabref.gui.exporter.ExportCommand?LOGGER@45.32:45.38CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaë$ ë(*2˝
+Æorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?e@144.53:144.54CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaëR ë(S2å
+Ωorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?notificationPane@137.52:137.68CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaì  ì(02å
+>org.jabref.gui.exporter.ExportCommand?taskExecutor@54.31:54.43CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaò ò()2é
+Borg.jabref.gui.exporter.ExportCommand.ExportMethod?EXPORT_SELECTEDCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaj) j(82Ö
+9org.jabref.model.database.BibDatabaseContext.getEntries()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javap' p(E2î
+Forg.jabref.gui.exporter.ExportCommand.handleError(java.lang.Exception)CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaó ó(,2ı
+£org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)!file	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaa a(!2à
+∂org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)!selectedExtensionFilter	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaa? a(V2˙
+®org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)!exporters	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaag a(p2ê
+ºorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?selectedExtension@98.15:98.32DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javab b( 2á
+≥org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?format@103.23:103.29DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javag g(2à
+¥org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?entries@105.23:105.30DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javai i(2ì
+øorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?fileDirForDatabase@116.19:116.37DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javat t(%2ã
+∑org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?finEntries@125.29:125.39DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java} }('2ì
+Ωorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?notificationPane@137.52:137.68DECLARATIOND
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaâ4 â(D2É
+Øorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?db@117.60:117.62DECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javau< u(>2á
+±org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?save@136.27:136.31DECLARATIOND
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaà à(2à
+≤org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?event@141.93:141.98DECLARATIOND
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaç] ç(b2Ñ
+Æorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?e@144.53:144.54DECLARATIOND
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaê5 ê(62W
+voidRETURN_TYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaa a(˚
+ºorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?selectedExtension@98.15:98.32VARIABLEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javab b( "
+typeString"
+isFinalfalse"“
+declarationStringº<mark class="modifier"> </mark>String <mark class="class-field">selectedExtension</mark> = selectedExtensionFilter.getExtensions().getFirst().replace("*"<mark class="modifier">,</mark> "")*selectedExtension2\
+java.lang.StringTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javab b(2É
+∂org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)!selectedExtensionFilterCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javab# b(:„
+≥org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?format@103.23:103.29VALUEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javag g("
+typeExporter"
+isFinaltrue"≤
+declarationStringú<mark class="modifier"> </mark><mark class="modifier">final </mark>Exporter <mark class="class-field">format</mark> = FileFilterConverter.getExporter(selectedExtensionFilter, exporters).orElseThrow(() -> new IllegalStateException("User didn't selected a file type for the extension"))*format2n
+"org.jabref.logic.exporter.ExporterTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javag g(2î
+Hjava.util.Optional.orElseThrow(java.util.function.Supplier<? extends X>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javah4 h(?2‰
+óorg.jabref.gui.util.FileFilterConverter.getExporter(javafx.stage.FileChooser.ExtensionFilter, java.util.Collection<org.jabref.logic.exporter.Exporter>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javag4 g(?2ì
+Gjava.lang.IllegalStateException.IllegalStateException(java.lang.String)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javahJ h(_2É
+∂org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)!selectedExtensionFilterCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javag@ g(W2ı
+®org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)!exportersCALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javagY g(b˜
+¥org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?entries@105.23:105.30VARIABLEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javai i("
+typeList<BibEntry>"
+isFinalfalse"k
+declarationStringV<mark class="modifier"> </mark>List<BibEntry> <mark class="class-field">entries</mark>*entries2Z
+java.util.ListTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javai i(2t
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javai i(ï
+øorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?fileDirForDatabase@116.19:116.37VARIABLEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javat t(%"
+type
+List<Path>"
+isFinalfalse"°
+declarationStringã<mark class="modifier"> </mark>List<Path> <mark class="class-field">fileDirForDatabase</mark> = stateManager.getActiveDatabase().map(db -> db.getFileDirectories(preferences.getFilePreferences())).orElse(List.of(preferences.getFilePreferences().getWorkingDirectory()))*fileDirForDatabase2Z
+java.util.ListTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javat t(2g
+java.nio.file.PathTYPE_ARGUMENTB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javat t(2h
+java.util.Optional.orElse(T)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javav8 v(>2ó
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javau8 u(;2{
+/org.jabref.gui.StateManager.getActiveDatabase()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javat5 t(F2≥
+gorg.jabref.model.database.BibDatabaseContext.getFileDirectories(org.jabref.preferences.FilePreferences)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javauE u(W2ä
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaud u(v2`
+java.util.List.of(E)CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javavD v(F2à
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javavh v({2ä
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javavS v(e2ä
+>org.jabref.gui.exporter.ExportCommand?stateManager@49.31:49.43CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javat( t(42¸
+Øorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?db@117.60:117.62CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javauB u(D2â
+=org.jabref.gui.exporter.ExportCommand?preferences@50.37:50.48CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javauX u(c2â
+=org.jabref.gui.exporter.ExportCommand?preferences@50.37:50.48CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javavG v(R∞
+∑org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?finEntries@125.29:125.39VALUEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java} }('"
+typeList<BibEntry>"
+isFinaltrue"ù
+declarationStringá<mark class="modifier"> </mark><mark class="modifier">final </mark>List<BibEntry> <mark class="class-field">finEntries</mark> = entries*
+finEntries2Z
+java.util.ListTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java} }(2t
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java} }(2Å
+¥org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?entries@105.23:105.30CALLB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java}* }(1å
+Ωorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?notificationPane@137.52:137.68VARIABLED
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaâ4 â(D"'
+typeLibraryTab.DatabaseNotification"
+isFinalfalse"∞
+declarationStringö<mark class="modifier"> </mark>LibraryTab.DatabaseNotification <mark class="class-field">notificationPane</mark> = tabSupplier.get().getNotificationPane()*notificationPane2|
+.org.jabref.gui.LibraryTab.DatabaseNotificationTYPED
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaâ â(32}
+/org.jabref.gui.LibraryTab.getNotificationPane()CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaâY â(l2o
+!java.util.function.Supplier.get()CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaâS â(V2ã
+=org.jabref.gui.exporter.ExportCommand?tabSupplier@48.39:48.50CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaâG â(Rõ
+£org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)!file	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaa a(!"
+typePath"
+isFinalfalse"
+declarationString	Path file*file2^
+java.nio.file.PathTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaa a(ò
+∂org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)!selectedExtensionFilter	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaa? a(V"#
+typeFileChooser.ExtensionFilter"
+isFinalfalse"H
+declarationString3FileChooser.ExtensionFilter selectedExtensionFilter*selectedExtensionFilter2t
+(javafx.stage.FileChooser.ExtensionFilterTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaa/ a(>≥
+®org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)!exporters	PARAMETERB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaag a(p"
+typeList<Exporter>"
+isFinalfalse"-
+declarationStringList<Exporter> exporters*	exporters2Z
+java.util.ListTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaaX a(\2w
+"org.jabref.logic.exporter.ExporterTYPE_ARGUMENTB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaa] a(e¿
+Øorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?db@117.60:117.62VARIABLEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javau< u(>"
+type"
+isFinalfalse"
+declarationString db*db2TYPE»
+±org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?save@136.27:136.31VARIABLED
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaà à("
+type"
+isFinalfalse"
+declarationString save*save2TYPEÀ
+≤org.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?event@141.93:141.98VARIABLED
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaç] ç(b"
+type"
+isFinalfalse"
+declarationString event*event2TYPE≤
+Æorg.jabref.gui.exporter.ExportCommand.export(java.nio.file.Path, javafx.stage.FileChooser.ExtensionFilter, java.util.List<org.jabref.logic.exporter.Exporter>)?e@144.53:144.54VARIABLED
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaê5 ê(6"
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2a
+java.io.IOExceptionTYPED
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaê) ê(4ã
+Forg.jabref.gui.exporter.ExportCommand.handleError(java.lang.Exception)METHODD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaõ õ("
+isFinalfalse"ì
+declarationString~<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">handleError</mark>(Exception ex)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*handleError2É
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaù ù(2ú
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaù* ù(.2∫
+lorg.jabref.gui.DialogService.showErrorDialogAndWait(java.lang.String, java.lang.String, java.lang.Throwable)CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaü ü(,2ú
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaü: ü(>2ú
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaü] ü(a2Ü
+8org.jabref.gui.exporter.ExportCommand?LOGGER@45.32:45.38CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaú ú(2ó
+Iorg.jabref.gui.exporter.ExportCommand.handleError(java.lang.Exception)!exCALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaú) ú(+2ç
+?org.jabref.gui.exporter.ExportCommand?dialogService@51.32:51.45CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaù ù(2ç
+?org.jabref.gui.exporter.ExportCommand?dialogService@51.32:51.45CALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaü ü(2ó
+Iorg.jabref.gui.exporter.ExportCommand.handleError(java.lang.Exception)!exCALLD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaü{ ü(}2ú
+Iorg.jabref.gui.exporter.ExportCommand.handleError(java.lang.Exception)!ex	PARAMETERD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaõ' õ()2Y
+voidRETURN_TYPED
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaõ õ(À
+Iorg.jabref.gui.exporter.ExportCommand.handleError(java.lang.Exception)!ex	PARAMETERD
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaõ' õ()"
+type	Exception"
+isFinalfalse"!
+declarationStringException ex*ex2a
+java.lang.ExceptionTYPED
+8src\main\java\org\jabref\gui\exporter\ExportCommand.javaõ õ(&ó
+8org.jabref.gui.exporter.ExportCommand?LOGGER@45.32:45.38VALUEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java-  -(&"
+isFinaltrue"
+typeLogger"„
+declarationStringÕ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(ExportCommand.class);"
+isStatictrue"
+accessprivate*LOGGER2\
+org.slf4j.LoggerTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java- -(É
+>org.jabref.gui.exporter.ExportCommand?exportMethod@47.31:47.43VALUEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java/ /(+"
+isFinaltrue"
+typeExportMethod"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>ExportMethod <mark class="class-field">exportMethod</mark>"
+isStaticfalse"
+accessprivate*exportMethod2~
+2org.jabref.gui.exporter.ExportCommand.ExportMethodTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java/ /(È
+=org.jabref.gui.exporter.ExportCommand?tabSupplier@48.39:48.50VALUEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java0' 0(2"
+isFinaltrue"
+typeSupplier<LibraryTab>"°
+declarationStringã<mark class="modifier">private </mark><mark class="modifier">final </mark>Supplier<LibraryTab> <mark class="class-field">tabSupplier</mark>"
+isStaticfalse"
+accessprivate*tabSupplier2g
+java.util.function.SupplierTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java0 0(2n
+org.jabref.gui.LibraryTabTYPE_ARGUMENTB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java0 0(%Ï
+>org.jabref.gui.exporter.ExportCommand?stateManager@49.31:49.43VALUEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java1 1(+"
+isFinaltrue"
+typeStateManager"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>StateManager <mark class="class-field">stateManager</mark>"
+isStaticfalse"
+accessprivate*stateManager2g
+org.jabref.gui.StateManagerTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java1 1(É
+=org.jabref.gui.exporter.ExportCommand?preferences@50.37:50.48VALUEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java2% 2(0"
+isFinaltrue"
+typePreferencesService"ü
+declarationStringâ<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferences</mark>"
+isStaticfalse"
+accessprivate*preferences2u
+)org.jabref.preferences.PreferencesServiceTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java2 2($Ú
+?org.jabref.gui.exporter.ExportCommand?dialogService@51.32:51.45VALUEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java3  3(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2h
+org.jabref.gui.DialogServiceTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java3 3(õ
+Corg.jabref.gui.exporter.ExportCommand?entryTypesManager@52.39:52.56VALUEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java4' 4(8"
+isFinaltrue"
+typeBibEntryTypesManager"ß
+declarationStringë<mark class="modifier">private </mark><mark class="modifier">final </mark>BibEntryTypesManager <mark class="class-field">entryTypesManager</mark>"
+isStaticfalse"
+accessprivate*entryTypesManager2w
++org.jabref.model.entry.BibEntryTypesManagerTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java4 4(&…
+Horg.jabref.gui.exporter.ExportCommand?abbreviationRepository@53.48:53.70VALUEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java50 5(F"
+isFinaltrue"%
+typeJournalAbbreviationRepository"µ
+declarationStringü<mark class="modifier">private </mark><mark class="modifier">final </mark>JournalAbbreviationRepository <mark class="class-field">abbreviationRepository</mark>"
+isStaticfalse"
+accessprivate*abbreviationRepository2É
+7org.jabref.logic.journals.JournalAbbreviationRepositoryTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java5 5(/Ò
+>org.jabref.gui.exporter.ExportCommand?taskExecutor@54.31:54.43VALUEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java6 6(+"
+isFinaltrue"
+typeTaskExecutor"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2l
+ org.jabref.gui.util.TaskExecutorTYPEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java6 6(˝
+2org.jabref.gui.exporter.ExportCommand.ExportMethodENUMB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java+ +("D
+declarationString/<mark class="modifier">enum </mark>ExportMethod*ExportMethod2ê
+=org.jabref.gui.exporter.ExportCommand.ExportMethod?EXPORT_ALLDECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java+ +()2ï
+Borg.jabref.gui.exporter.ExportCommand.ExportMethod?EXPORT_SELECTEDDECLARATIONB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java++ +(:§
+=org.jabref.gui.exporter.ExportCommand.ExportMethod?EXPORT_ALLVALUEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java+ +()"
+enumtrue*
+EXPORT_ALLÆ
+Borg.jabref.gui.exporter.ExportCommand.ExportMethod?EXPORT_SELECTEDVALUEB
+8src\main\java\org\jabref\gui\exporter\ExportCommand.java++ +(:"
+enumtrue*EXPORT_SELECTED

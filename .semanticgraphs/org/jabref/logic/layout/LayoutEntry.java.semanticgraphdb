@@ -1,0 +1,2183 @@
+
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaå"
+#org.jabref.logic.layout.LayoutEntryCLASS@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javab b(""
+packageorg.jabref.logic.layout"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"c
+declarationStringN<mark class="modifier"> </mark><mark class="modifier">class </mark>LayoutEntry"
+accesspackage_private*LayoutEntry2µ
+„org.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)DECLARATION@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javar r(2Ã
+¯org.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaà à(2∞
+]org.jabref.logic.layout.LayoutEntry.setPostFormatter(org.jabref.logic.layout.LayoutFormatter)DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∆ ∆( 2«
+torg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java   (2–
+}org.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaË Ë($2◊
+Éorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaâ â(*2«
+torg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java€ €(2ñ
+Corg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÜ Ü(2°
+Norg.jabref.logic.layout.LayoutEntry.getLayoutFormatterByName(java.lang.String)DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaö ö(42ö
+Gorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÔ" Ô(32ç
+:org.jabref.logic.layout.LayoutEntry.getInvalidFormatters()DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaô ô(,2ö
+Gorg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaù% ù(62Ä
+-org.jabref.logic.layout.LayoutEntry.getText()DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÌ Ì(2á
+6org.jabref.logic.layout.LayoutEntry?LOGGER@99.32:99.38DECLARATION@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javac  c(&2â
+8org.jabref.logic.layout.LayoutEntry?option@101.34:101.40DECLARATION@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javae" e((2ê
+?org.jabref.logic.layout.LayoutEntry?postFormatter@103.28:103.41DECLARATION@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javag g()2á
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23DECLARATION@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javai i(2ê
+?org.jabref.logic.layout.LayoutEntry?layoutEntries@106.30:106.43DECLARATION@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaj j(+2á
+6org.jabref.logic.layout.LayoutEntry?type@107.22:107.26DECLARATION@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javak k(2ì
+Borg.jabref.logic.layout.LayoutEntry?invalidFormatter@108.31:108.47DECLARATION@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javal l(/2ï
+Dorg.jabref.logic.layout.LayoutEntry?fileDirForDatabase@110.29:110.47DECLARATION@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javan n(/2é
+=org.jabref.logic.layout.LayoutEntry?preferences@111.45:111.56DECLARATION@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javao- o(82ô
+Horg.jabref.logic.layout.LayoutEntry?abbreviationRepository@112.48:112.70DECLARATION@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javap0 p(F¢-
+„org.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)CONSTRUCTOR@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javar r("ß
+declarationStringë<mark class="modifier">public </mark><mark class="method">LayoutEntry</mark>(StringInt si<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;Path&gt; fileDirForDatabase<mark class="modifier"><mark class="modifier">,</mark></mark> LayoutFormatterPreferences preferences<mark class="modifier"><mark class="modifier">,</mark></mark> JournalAbbreviationRepository abbreviationRepository)*LayoutEntry2t
+*java.util.Objects.requireNonNullElse(T, T)CALL@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javax* x(<2k
+!java.util.Collections.emptyList()CALL@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javax] x(f2a
+java.lang.String.trim()CALL@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java  ($2è
+Corg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÅ Å(!2∫
+Ôorg.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!preferencesCALL@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javav v(&2≈
+˙org.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!abbreviationRepositoryCALL@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaw& w(<2¡
+ˆorg.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!fileDirForDatabaseCALL@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javax= x(O2Ä
+6org.jabref.logic.layout.LayoutEntry?type@107.22:107.26CALL@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaz z(2±
+Êorg.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!siCALL@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaz z(2Ä
+6org.jabref.logic.layout.LayoutEntry?type@107.22:107.26CALL@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java{ {(2Ä
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALL@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java} }(2±
+Êorg.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!siCALL@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java} }(2Ä
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALL@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java (2±
+Êorg.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!siCALL@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java (2≥
+Êorg.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!siCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÅ" Å($2á
+=org.jabref.logic.layout.LayoutEntry?preferences@111.45:111.56CALL@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javav v(2í
+Horg.jabref.logic.layout.LayoutEntry?abbreviationRepository@112.48:112.70CALL@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaw w(#2é
+Dorg.jabref.logic.layout.LayoutEntry?fileDirForDatabase@110.29:110.47CALL@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javax x(2∂
+Êorg.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!si	PARAMETER@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javar! r(#2∆
+ˆorg.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!fileDirForDatabase	PARAMETER@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javas" s(42ø
+Ôorg.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!preferences	PARAMETER@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javat2 t(=2 
+˙org.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!abbreviationRepository	PARAMETER@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javau5 u(K2t
+#org.jabref.logic.layout.LayoutEntryRETURN_TYPE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javar r(Ô
+Êorg.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!si	PARAMETER@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javar! r(#"
+type	StringInt"
+isFinalfalse"!
+declarationStringStringInt si*si2k
+!org.jabref.logic.layout.StringIntTYPE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javar r( ı
+ˆorg.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!fileDirForDatabase	PARAMETER@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javas" s(4"
+type
+List<Path>"
+isFinalfalse"2
+declarationStringList<Path> fileDirForDatabase*fileDirForDatabase2X
+java.util.ListTYPE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javas s(2e
+java.nio.file.PathTYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javas s( Ω
+Ôorg.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!preferences	PARAMETER@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javat2 t(=""
+typeLayoutFormatterPreferences"
+isFinalfalse";
+declarationString&LayoutFormatterPreferences preferences*preferences2|
+2org.jabref.logic.layout.LayoutFormatterPreferencesTYPE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javat t(1Í
+˙org.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!abbreviationRepository	PARAMETER@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javau5 u(K"%
+typeJournalAbbreviationRepository"
+isFinalfalse"I
+declarationString4JournalAbbreviationRepository abbreviationRepository*abbreviationRepository2Å
+7org.jabref.logic.journals.JournalAbbreviationRepositoryTYPE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javau u(4ó±
+¯org.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)CONSTRUCTORB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaà à("®
+declarationStringí<mark class="modifier">public </mark><mark class="method">LayoutEntry</mark>(List&lt;StringInt&gt; parsedEntries<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">int</mark> layoutType<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;Path&gt; fileDirForDatabase<mark class="modifier"><mark class="modifier">,</mark></mark> LayoutFormatterPreferences preferences<mark class="modifier"><mark class="modifier">,</mark></mark> JournalAbbreviationRepository abbreviationRepository)*LayoutEntry2v
+*java.util.Objects.requireNonNullElse(T, T)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaè* è(<2m
+!java.util.Collections.emptyList()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaè] è(f2u
+)java.lang.String.equals(java.lang.Object)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaï ï(2l
+ java.util.List.subList(int, int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaú3 ú(:2a
+java.util.List.size()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaúL ú(P2u
+)java.lang.String.equals(java.lang.Object)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java•# •()2a
+java.util.List.add(E)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¶% ¶((2a
+java.util.List.add(E)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java™# ™(&2a
+java.util.List.add(E)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaπ π(2a
+java.util.List.add(E)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaª ª( 2Ñ
+8java.util.List.addAll(java.util.Collection<? extends E>)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¬ ¬(#2Ü
+:org.jabref.logic.layout.LayoutEntry.getInvalidFormatters()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¬0 ¬(D2k
+java.util.ArrayList.ArrayList()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaë+ ë(62k
+java.util.ArrayList.ArrayList()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java†' †(22≈
+¯org.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java©- ©(82∞
+„org.jabref.logic.layout.LayoutEntry.LayoutEntry(org.jabref.logic.layout.StringInt, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaπ# π(.2å
+@java.util.ArrayList.ArrayList(java.util.Collection<? extends E>)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaø ø('2—
+Ñorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!preferencesCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaç ç(&2‹
+èorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!abbreviationRepositoryCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaé& é(<2ÿ
+ãorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!fileDirForDatabaseCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaè= è(O2”
+Üorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!parsedEntriesCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaí í()2”
+Üorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!parsedEntriesCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaì ì('2ﬁ
+ëorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockStart@146.15:146.25CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaï ï(2‹
+èorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockEnd@147.15:147.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaï ï('2Ç
+6org.jabref.logic.layout.LayoutEntry?LOGGER@99.32:99.38CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javañ ñ(2Ç
+6org.jabref.logic.layout.LayoutEntry?type@107.22:107.26CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaô ô(2–
+Éorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!layoutTypeCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaô ô(2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaö ö(2‹
+èorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockEnd@147.15:147.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaö ö(2”
+Üorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!parsedEntriesCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaú% ú(22”
+Üorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!parsedEntriesCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaú> ú(K2ﬂ
+íorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?parsedEntry@156.23:156.34CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaù ù(2‡
+ìorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockEntries@155.24:155.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java† †( 2ﬁ
+ëorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockStart@146.15:146.25CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java° °(2ﬂ
+íorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?parsedEntry@156.23:156.34CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java°! °(,2ﬁ
+ëorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockStart@146.15:146.25CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java• •("2ﬂ
+íorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?parsedEntry@156.23:156.34CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java•* •(52‡
+ìorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockEntries@155.24:155.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¶ ¶($2ﬂ
+íorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?parsedEntry@156.23:156.34CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¶) ¶(42ﬂ
+íorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?parsedEntry@156.23:156.34CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaß( ß(32‡
+ìorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockEntries@155.24:155.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java©9 ©(E2›
+êorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?groupType@167.28:167.37CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java©G ©(P2ÿ
+ãorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!fileDirForDatabaseCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java©R ©(d2—
+Ñorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!preferencesCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java©f ©(q2›
+èorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!abbreviationRepositoryCALLC
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java©s ©(â2ﬁ
+ëorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?tmpEntries@145.26:145.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java™ ™("2÷
+âorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?le@169.36:169.38CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java™' ™()2‡
+ìorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockEntries@155.24:155.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java´ ´($2Ç
+6org.jabref.logic.layout.LayoutEntry?LOGGER@99.32:99.38CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≠ ≠(2‡
+ìorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockEntries@155.24:155.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∏ ∏(2ﬁ
+ëorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?tmpEntries@145.26:145.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaπ π(2ﬂ
+íorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?parsedEntry@156.23:156.34CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaπ/ π(:2ÿ
+ãorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!fileDirForDatabaseCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaπ< π(N2—
+Ñorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!preferencesCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaπP π([2‹
+èorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!abbreviationRepositoryCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaπ] π(s2‡
+ìorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockEntries@155.24:155.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaª ª(2ﬂ
+íorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?parsedEntry@156.23:156.34CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaª! ª(,2ã
+?org.jabref.logic.layout.LayoutEntry?layoutEntries@106.30:106.43CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaø ø(2ﬁ
+ëorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?tmpEntries@145.26:145.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaø( ø(22ã
+?org.jabref.logic.layout.LayoutEntry?layoutEntries@106.30:106.43CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¡' ¡(42é
+Borg.jabref.logic.layout.LayoutEntry?invalidFormatter@108.31:108.47CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¬ ¬(2ﬂ
+íorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?layoutEntry@193.25:193.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¬$ ¬(/2â
+=org.jabref.logic.layout.LayoutEntry?preferences@111.45:111.56CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaç ç(2î
+Horg.jabref.logic.layout.LayoutEntry?abbreviationRepository@112.48:112.70CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaé é(#2ê
+Dorg.jabref.logic.layout.LayoutEntry?fileDirForDatabase@110.29:110.47CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaè è(2ÿ
+Üorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!parsedEntries	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaà' à(42’
+Éorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!layoutType	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaâ â(%2›
+ãorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!fileDirForDatabase	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaä" ä(42÷
+Ñorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!preferences	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaã2 ã(=2·
+èorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!abbreviationRepository	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaå5 å(K2Â
+ëorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?tmpEntries@145.26:145.36DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaë ë($2Â
+ëorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockStart@146.15:146.25DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaí í(2„
+èorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockEnd@147.15:147.23DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaì ì(2Á
+ìorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockEntries@155.24:155.36DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaõ õ($2Ê
+íorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?parsedEntry@156.23:156.34DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaú ú("2‰
+êorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?groupType@167.28:167.37DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaß ß(%2›
+âorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?le@169.36:169.38DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java©$ ©(&2Ê
+íorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?layoutEntry@193.25:193.36DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¡ ¡($2v
+#org.jabref.logic.layout.LayoutEntryRETURN_TYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaà à(Ê
+ëorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?tmpEntries@145.26:145.36VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaë ë($"
+typeList<LayoutEntry>"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark>List<LayoutEntry> <mark class="class-field">tmpEntries</mark> = new ArrayList<>()*
+tmpEntries2Z
+java.util.ListTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaë ë(2x
+#org.jabref.logic.layout.LayoutEntryTYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaë ë(2k
+java.util.ArrayList.ArrayList()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaë+ ë(6 
+ëorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockStart@146.15:146.25VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaí í("
+typeString"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark>String <mark class="class-field">blockStart</mark> = parsedEntries.getFirst().s*
+blockStart2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaí í(2”
+Üorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!parsedEntriesCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaí í()√
+èorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockEnd@147.15:147.23VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaì ì("
+typeString"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier"> </mark>String <mark class="class-field">blockEnd</mark> = parsedEntries.getLast().s*blockEnd2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaì ì(2”
+Üorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!parsedEntriesCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaì ì('ã
+ìorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockEntries@155.24:155.36VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaõ õ($"
+typeList<StringInt>"
+isFinalfalse"ó
+declarationStringÅ<mark class="modifier"> </mark>List<StringInt> <mark class="class-field">blockEntries</mark> = <mark class="modifier">null</mark>*blockEntries2Z
+java.util.ListTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaõ õ(2v
+!org.jabref.logic.layout.StringIntTYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaõ õ(
+íorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?parsedEntry@156.23:156.34VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaú ú(""
+type	StringInt"
+isFinalfalse"j
+declarationStringU<mark class="modifier"> </mark>StringInt <mark class="class-field">parsedEntry</mark>*parsedEntry2m
+!org.jabref.logic.layout.StringIntTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaú ú(´
+êorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?groupType@167.28:167.37VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaß ß(%"
+typeint"
+isFinalfalse"Í
+declarationString‘<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">groupType</mark> = parsedEntry.i == LayoutHelper.IS_GROUP_END ? LayoutHelper.IS_GROUP_START : LayoutHelper.IS_FIELD_START*	groupType2O
+intTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaß ß(2ﬂ
+íorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?parsedEntry@156.23:156.34CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaß( ß(3€
+âorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?le@169.36:169.38VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java©$ ©(&"
+typeLayoutEntry"
+isFinalfalse"»
+declarationString≤<mark class="modifier"> </mark>LayoutEntry <mark class="class-field">le</mark> = new LayoutEntry(blockEntries, groupType, fileDirForDatabase, preferences, abbreviationRepository)*le2o
+#org.jabref.logic.layout.LayoutEntryTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java© ©(#2≈
+¯org.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java©- ©(82‡
+ìorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?blockEntries@155.24:155.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java©9 ©(E2›
+êorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?groupType@167.28:167.37CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java©G ©(P2ÿ
+ãorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!fileDirForDatabaseCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java©R ©(d2—
+Ñorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!preferencesCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java©f ©(q2›
+èorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!abbreviationRepositoryCALLC
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java©s ©(âˆ
+íorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)?layoutEntry@193.25:193.36VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¡ ¡($"
+typeLayoutEntry"
+isFinalfalse"l
+declarationStringW<mark class="modifier"> </mark>LayoutEntry <mark class="class-field">layoutEntry</mark>*layoutEntry2o
+#org.jabref.logic.layout.LayoutEntryTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¡ ¡(ö
+Üorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!parsedEntries	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaà' à(4"
+typeList<StringInt>"
+isFinalfalse"2
+declarationStringList<StringInt> parsedEntries*parsedEntries2Z
+java.util.ListTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaà à(2v
+!org.jabref.logic.layout.StringIntTYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaà à(%î
+Éorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!layoutType	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaâ â(%"
+typeint"
+isFinalfalse"A
+declarationString,<mark class="modifier">int</mark> layoutType*
+layoutType2O
+intTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaâ â(ê
+ãorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!fileDirForDatabase	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaä" ä(4"
+type
+List<Path>"
+isFinalfalse"2
+declarationStringList<Path> fileDirForDatabase*fileDirForDatabase2Z
+java.util.ListTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaä ä(2g
+java.nio.file.PathTYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaä ä( ÷
+Ñorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!preferences	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaã2 ã(=""
+typeLayoutFormatterPreferences"
+isFinalfalse";
+declarationString&LayoutFormatterPreferences preferences*preferences2~
+2org.jabref.logic.layout.LayoutFormatterPreferencesTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaã ã(1É
+èorg.jabref.logic.layout.LayoutEntry.LayoutEntry(java.util.List<org.jabref.logic.layout.StringInt>, int, java.util.List<java.nio.file.Path>, org.jabref.logic.layout.LayoutFormatterPreferences, org.jabref.logic.journals.JournalAbbreviationRepository)!abbreviationRepository	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaå5 å(K"%
+typeJournalAbbreviationRepository"
+isFinalfalse"I
+declarationString4JournalAbbreviationRepository abbreviationRepository*abbreviationRepository2É
+7org.jabref.logic.journals.JournalAbbreviationRepositoryTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaå å(4ó
+]org.jabref.logic.layout.LayoutEntry.setPostFormatter(org.jabref.logic.layout.LayoutFormatter)METHODB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∆ ∆( "
+isFinalfalse"•
+declarationStringè<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">setPostFormatter</mark>(LayoutFormatter formatter)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*setPostFormatter2≥
+gorg.jabref.logic.layout.LayoutEntry.setPostFormatter(org.jabref.logic.layout.LayoutFormatter)!formatterCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java« «(&2ã
+?org.jabref.logic.layout.LayoutEntry?postFormatter@103.28:103.41CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java« «(2∏
+gorg.jabref.logic.layout.LayoutEntry.setPostFormatter(org.jabref.logic.layout.LayoutFormatter)!formatter	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∆1 ∆(:2W
+voidRETURN_TYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∆ ∆(ì
+gorg.jabref.logic.layout.LayoutEntry.setPostFormatter(org.jabref.logic.layout.LayoutFormatter)!formatter	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∆1 ∆(:"
+typeLayoutFormatter"
+isFinalfalse".
+declarationStringLayoutFormatter formatter*	formatter2s
+'org.jabref.logic.layout.LayoutFormatterTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∆! ∆(0µ,
+torg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)METHODB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java   ("
+isFinalfalse"…
+declarationString≥<mark class="modifier">public </mark>String <mark class="method">doLayout</mark>(BibEntry bibtex<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabase database)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*doLayout2h
+java.util.Optional.orElse(T)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœg œ(m2œ
+Çorg.jabref.model.entry.BibEntry.getResolvedFieldOrAlias(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabase)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœ& œ(=2í
+Forg.jabref.model.entry.field.FieldFactory.parseField(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœK œ(U2å
+@org.jabref.logic.layout.LayoutFormatter.format(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java”* ”(02–
+Éorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÿ ÿ(.2…
+}org.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java› ›((2h
+java.util.Optional.orElse(T)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‚^ ‚(d2œ
+Çorg.jabref.model.entry.BibEntry.getResolvedFieldOrAlias(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabase)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‚ ‚(52î
+Horg.jabref.model.entry.field.UnknownField.UnknownField(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‚: ‚(F2Ç
+6org.jabref.logic.layout.LayoutEntry?type@107.22:107.26CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÀ À(2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÕ Õ(2«
+{org.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtexCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœ œ(%2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœV œ(Z2…
+}org.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!databaseCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœ] œ(e2ã
+?org.jabref.logic.layout.LayoutEntry?postFormatter@103.28:103.41CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java“ “(!2’
+àorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?value@207.23:207.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java” ”(2ã
+?org.jabref.logic.layout.LayoutEntry?postFormatter@103.28:103.41CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java” ”()2’
+àorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?value@207.23:207.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java”1 ”(62’
+àorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?value@207.23:207.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java’ ’(2«
+{org.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtexCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÿ/ ÿ(52…
+}org.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!databaseCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÿ7 ÿ(?2«
+{org.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtexCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java›) ›(/2…
+}org.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!databaseCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java›1 ›(92«
+{org.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtexCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‚ ‚(2…
+}org.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!databaseCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‚T ‚(\2Ã
+{org.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtex	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java $  (*2Œ
+}org.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!database	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java 8  (@2‹
+àorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?value@207.23:207.28DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœ œ(2c
+java.lang.StringRETURN_TYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java   (§
+àorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?value@207.23:207.28VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœ œ("
+typeString"
+isFinalfalse"’
+declarationStringø<mark class="modifier"> </mark>String <mark class="class-field">value</mark> = bibtex.getResolvedFieldOrAlias(FieldFactory.parseField(text)<mark class="modifier">,</mark> database).orElse("")*value2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœ œ(2h
+java.util.Optional.orElse(T)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœg œ(m2œ
+Çorg.jabref.model.entry.BibEntry.getResolvedFieldOrAlias(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabase)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœ& œ(=2í
+Forg.jabref.model.entry.field.FieldFactory.parseField(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœK œ(U2«
+{org.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtexCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœ œ(%2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœV œ(Z2…
+}org.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!databaseCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœ] œ(eã
+{org.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtex	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java $  (*"
+typeBibEntry"
+isFinalfalse"$
+declarationStringBibEntry bibtex*bibtex2k
+org.jabref.model.entry.BibEntryTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java   (#ù
+}org.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!database	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java 8  (@"
+typeBibDatabase"
+isFinalfalse")
+declarationStringBibDatabase database*database2q
+%org.jabref.model.database.BibDatabaseTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java ,  (7Ä@
+}org.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)METHODB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaË Ë($"
+isFinalfalse"”
+declarationStringΩ<mark class="modifier">private </mark>String <mark class="method">handleOptionField</mark>(BibEntry bibtex<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabase database)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*handleOptionField2u
+)java.lang.String.equals(java.lang.Object)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÎ0 Î(62Ä
+4org.jabref.model.entry.field.InternalField.getName()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÎ& Î(-2É
+7org.jabref.model.entry.types.EntryType.getDisplayName()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÏ* Ï(82u
+)org.jabref.model.entry.BibEntry.getType()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÏ  Ï('2u
+)java.lang.String.equals(java.lang.Object)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÌ@ Ì(F2Ä
+4org.jabref.model.entry.field.InternalField.getName()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÌ6 Ì(=2É
+7org.jabref.model.entry.types.EntryType.getDisplayName()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÒ* Ò(82u
+)org.jabref.model.entry.BibEntry.getType()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÒ  Ò('2y
+-java.lang.String.startsWith(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaı ı((2h
+java.util.Optional.orElse(T)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˜ ˜(2œ
+Çorg.jabref.model.entry.BibEntry.getResolvedFieldOrAlias(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabase)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaˆ ˆ(,2í
+Forg.jabref.model.entry.field.FieldFactory.parseField(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaˆ: ˆ(D2k
+java.lang.String.substring(int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaˆJ ˆ(S2≤
+forg.jabref.model.database.BibDatabase.getText(java.lang.String, org.jabref.model.database.BibDatabase)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˜. ˜(52å
+@org.jabref.logic.layout.LayoutFormatter.format(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˝& ˝(,2å
+@org.jabref.logic.layout.LayoutFormatter.format(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÉ' É(-2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÎ7 Î(;2„
+ñorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldEntry@233.15:233.25CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÏ Ï(2—
+Ñorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtexCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÏ Ï(2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÌG Ì(K2Ç
+6org.jabref.logic.layout.LayoutEntry?LOGGER@99.32:99.38CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÓ Ó(2„
+ñorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldEntry@233.15:233.25CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÒ Ò(2—
+Ñorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtexCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÒ Ò(2„
+ñorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldEntry@233.15:233.25CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaı ı(2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaı ı(2—
+Ñorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtexCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaı1 ı(72Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaˆE ˆ(I2”
+Üorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!databaseCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaˆY ˆ(a2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˜6 ˜(:2”
+Üorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!databaseCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˜< ˜(D2Ñ
+8org.jabref.logic.layout.LayoutEntry?option@101.34:101.40CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˚ ˚(2Ñ
+8org.jabref.logic.layout.LayoutEntry?option@101.34:101.40CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¸, ¸(22„
+ñorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldEntry@233.15:233.25CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˝ ˝(2·
+îorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?anOption@252.33:252.41CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˝ ˝(%2„
+ñorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldEntry@233.15:233.25CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˝- ˝(72ã
+?org.jabref.logic.layout.LayoutEntry?postFormatter@103.28:103.41CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÇ Ç(2„
+ñorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldEntry@233.15:233.25CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÉ É(2ã
+?org.jabref.logic.layout.LayoutEntry?postFormatter@103.28:103.41CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÉ É(&2„
+ñorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldEntry@233.15:233.25CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÉ. É(82„
+ñorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldEntry@233.15:233.25CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÜ Ü(2÷
+Ñorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtex	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaË. Ë(42ÿ
+Üorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!database	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaËB Ë(J2Í
+ñorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldEntry@233.15:233.25DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÈ È(2Ë
+îorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?anOption@252.33:252.41DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¸! ¸()2c
+java.lang.StringRETURN_TYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaË Ë(€
+ñorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldEntry@233.15:233.25VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÈ È("
+typeString"
+isFinalfalse"f
+declarationStringQ<mark class="modifier"> </mark>String <mark class="class-field">fieldEntry</mark>*
+fieldEntry2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÈ È(˛
+îorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?anOption@252.33:252.41VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¸! ¸()"
+typeLayoutFormatter"
+isFinalfalse"m
+declarationStringX<mark class="modifier"> </mark>LayoutFormatter <mark class="class-field">anOption</mark>*anOption2s
+'org.jabref.logic.layout.LayoutFormatterTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¸ ¸( ï
+Ñorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtex	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaË. Ë(4"
+typeBibEntry"
+isFinalfalse"$
+declarationStringBibEntry bibtex*bibtex2k
+org.jabref.model.entry.BibEntryTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaË% Ë(-ß
+Üorg.jabref.logic.layout.LayoutEntry.handleOptionField(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!database	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaËB Ë(J"
+typeBibDatabase"
+isFinalfalse")
+declarationStringBibDatabase database*database2q
+%org.jabref.model.database.BibDatabaseTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaË6 Ë(Aïø
+Éorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)METHODB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaâ â(*"
+isFinalfalse"Ÿ
+declarationString√<mark class="modifier">private </mark>String <mark class="method">handleFieldOrGroupStart</mark>(BibEntry bibtex<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabase database)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*handleFieldOrGroupStart2œ
+Çorg.jabref.model.entry.BibEntry.getResolvedFieldOrAlias(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabase)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaç ç(22í
+Forg.jabref.model.entry.field.FieldFactory.parseField(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaç@ ç(J2v
+*java.lang.String.matches(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaé é(2t
+(java.lang.String.split(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaê" ê('2f
+java.util.Optional.empty()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaë ë("2y
+-java.lang.String.startsWith(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaì ì()2œ
+Çorg.jabref.model.entry.BibEntry.getResolvedFieldOrAlias(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabase)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaî î(62í
+Forg.jabref.model.entry.field.FieldFactory.parseField(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaîD î(N2c
+java.lang.String.trim()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaîk î(o2k
+java.lang.String.substring(int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaî^ î(g2j
+java.util.Optional.isPresent()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaï ï(#2t
+(java.lang.String.split(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaõ" õ('2f
+java.util.Optional.empty()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaú ú("2y
+-java.lang.String.startsWith(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaû û()2œ
+Çorg.jabref.model.entry.BibEntry.getResolvedFieldOrAlias(org.jabref.model.entry.field.Field, org.jabref.model.database.BibDatabase)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaü ü(62í
+Forg.jabref.model.entry.field.FieldFactory.parseField(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaüD ü(N2c
+java.lang.String.trim()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaük ü(o2k
+java.lang.String.substring(int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaü^ ü(g2j
+java.util.Optional.isPresent()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java† †(#2j
+java.util.Optional.isPresent()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¶ ¶(2
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaß ß(/2d
+java.util.Optional.get()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaß ß(2Ç
+6org.jabref.logic.layout.LayoutHelper.getCurrentGroup()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaß= ß(L2í
+Forg.jabref.logic.layout.LayoutHelper.setCurrentGroup(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java´ ´(,2d
+java.util.Optional.get()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java´3 ´(62a
+java.util.List.size()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java±. ±(22¿
+torg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≤1 ≤(92c
+java.util.List.get(int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≤* ≤(-2a
+java.util.List.size()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaµ0 µ(42f
+java.lang.String.isEmpty()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∂W ∂(^2c
+java.lang.String.trim()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∂P ∂(T2¿
+torg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∂5 ∂(=2c
+java.util.List.get(int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∂* ∂(-2e
+java.lang.String.length()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¬0 ¬(62h
+java.lang.String.charAt(int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java√/ √(52h
+java.lang.String.charAt(int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java√R √(X2e
+java.lang.String.length()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java«, «(22|
+0java.lang.StringBuilder.append(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java» »(%2k
+java.lang.String.substring(int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java»0 »(92|
+0java.lang.StringBuilder.append(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÀ À(!2n
+"java.lang.StringBuilder.toString()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java“ “(2v
+*java.lang.StringBuilder.StringBuilder(int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≠# ≠(02Ç
+6org.jabref.logic.layout.LayoutEntry?type@107.22:107.26CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaå å(2‰
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?field@266.25:266.30CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaç ç(2◊
+äorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtexCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaç ç(2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaçK ç(O2Ÿ
+åorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!databaseCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaçR ç(Z2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaé é(2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaê ê(!2‰
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?field@266.25:266.30CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaë ë(2‰
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?parts@272.21:272.26CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaí í($2Ê
+ôorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?negated@267.16:267.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaì ì(2„
+ñorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?part@274.24:274.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaì ì(2‰
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?field@266.25:266.30CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaî î(2◊
+äorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtexCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaî î(2Ê
+ôorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?negated@267.16:267.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaîO î(V2„
+ñorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?part@274.24:274.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaîY î(]2„
+ñorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?part@274.24:274.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaît î(x2⁄
+åorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!databaseCALLC
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaî{ î(É2‰
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?field@266.25:266.30CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaï ï(2Ê
+ôorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?negated@267.16:267.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaï) ï(02Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaõ õ(!2‰
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?field@266.25:266.30CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaú ú(2‰
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?parts@283.21:283.26CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaù ù($2Ê
+ôorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?negated@267.16:267.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaû û(2„
+ñorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?part@285.24:285.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaû û(2‰
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?field@266.25:266.30CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaü ü(2◊
+äorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtexCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaü ü(2Ê
+ôorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?negated@267.16:267.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaüO ü(V2„
+ñorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?part@285.24:285.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaüY ü(]2„
+ñorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?part@285.24:285.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaüt ü(x2⁄
+åorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!databaseCALLC
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaü{ ü(É2‰
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?field@266.25:266.30CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java† †(2Ê
+ôorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?negated@267.16:267.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java†( †(/2‰
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?field@266.25:266.30CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¶ ¶(2Ê
+ôorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?negated@267.16:267.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¶" ¶()2Ç
+6org.jabref.logic.layout.LayoutEntry?type@107.22:107.26CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¶0 ¶(42‰
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?field@266.25:266.30CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaß ß(2Ç
+6org.jabref.logic.layout.LayoutEntry?type@107.22:107.26CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java™ ™(2‰
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?field@266.25:266.30CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java´- ´(22‡
+ìorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?i@305.21:305.22CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java± ±(2ã
+?org.jabref.logic.layout.LayoutEntry?layoutEntries@106.30:106.43CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java±  ±(-2‡
+ìorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?i@305.21:305.22CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java±6 ±(72Ë
+õorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldText@302.19:302.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≤ ≤(2ã
+?org.jabref.logic.layout.LayoutEntry?layoutEntries@106.30:106.43CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≤ ≤()2‡
+ìorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?i@305.21:305.22CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≤. ≤(/2◊
+äorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtexCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≤: ≤(@2Ÿ
+åorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!databaseCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≤B ≤(J2Ë
+õorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldText@302.19:302.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¥ ¥(2‡
+ìorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?i@305.21:305.22CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaµ µ(2ã
+?org.jabref.logic.layout.LayoutEntry?layoutEntries@106.30:106.43CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaµ" µ(/2ã
+?org.jabref.logic.layout.LayoutEntry?layoutEntries@106.30:106.43CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∂ ∂()2‡
+ìorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?i@305.21:305.22CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∂. ∂(/2◊
+äorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtexCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∂> ∂(D2Ÿ
+åorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!databaseCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∂F ∂(N2‡
+ìorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?i@305.21:305.22CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∑ ∑(2Ó
+°org.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?previousSkipped@303.20:303.35CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∏ ∏(+2Ó
+°org.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?previousSkipped@303.20:303.35CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaø ø('2‚
+ïorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?eol@320.28:320.31CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¬  ¬(#2Ë
+õorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldText@302.19:302.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¬& ¬(/2Ë
+õorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldText@302.19:302.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java√% √(.2‚
+ïorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?eol@320.28:320.31CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java√6 √(92Ë
+õorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldText@302.19:302.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java√H √(Q2‚
+ïorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?eol@320.28:320.31CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java√Y √(\2‚
+ïorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?eol@320.28:320.31CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaƒ ƒ(2‚
+ïorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?eol@320.28:320.31CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java« «(2Ë
+õorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldText@302.19:302.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java«" «(+2·
+îorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?sb@301.26:301.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java» »(2Ë
+õorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldText@302.19:302.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java»& »(/2‚
+ïorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?eol@320.28:320.31CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java»: »(=2·
+îorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?sb@301.26:301.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÀ À(2Ë
+õorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldText@302.19:302.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÀ" À(+2Ó
+°org.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?previousSkipped@303.20:303.35CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœ œ(2·
+îorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?sb@301.26:301.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java“ “(2‹
+äorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtex	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaâ4 â(:2ﬁ
+åorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!database	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaâH â(P2Î
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?field@266.25:266.30DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaä ä(2Ì
+ôorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?negated@267.16:267.23DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaã ã(2Î
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?parts@272.21:272.26DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaê ê(2Í
+ñorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?part@274.24:274.28DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaí í(2Î
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?parts@283.21:283.26DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaõ õ(2Í
+ñorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?part@285.24:285.28DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaù ù(2Ë
+îorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?sb@301.26:301.28DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≠ ≠(2Ô
+õorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldText@302.19:302.28DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÆ Æ(2ı
+°org.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?previousSkipped@303.20:303.35DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaØ Ø(#2Á
+ìorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?i@305.21:305.22DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java± ±(2È
+ïorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?eol@320.28:320.31DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¿ ¿(2c
+java.lang.StringRETURN_TYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaâ â(œ
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?field@266.25:266.30VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaä ä("
+typeOptional<String>"
+isFinalfalse"k
+declarationStringV<mark class="modifier"> </mark>Optional<String> <mark class="class-field">field</mark>*field2^
+java.util.OptionalTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaä ä(2e
+java.lang.StringTYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaä ä(ó
+ôorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?negated@267.16:267.23VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaã ã("
+typeboolean"
+isFinalfalse"©
+declarationStringì<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">negated</mark> = <mark class="modifier">false</mark>*negated2S
+booleanTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaã ã(ı
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?parts@272.21:272.26VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaê ê("
+typeString"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>String[] <mark class="class-field">parts</mark> = text.split("\\s*(;|(\\&+))\\s*")*parts2^
+java.lang.String[]TYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaê ê(2t
+(java.lang.String.split(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaê" ê('2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaê ê(!œ
+ñorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?part@274.24:274.28VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaí í("
+typeString"
+isFinalfalse"`
+declarationStringK<mark class="modifier"> </mark>String <mark class="class-field">part</mark>*part2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaí í(Ò
+óorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?parts@283.21:283.26VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaõ õ("
+typeString"
+isFinalfalse"Ç
+declarationStringm<mark class="modifier"> </mark>String[] <mark class="class-field">parts</mark> = text.split("\\s*(\\|+)\\s*")*parts2^
+java.lang.String[]TYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaõ õ(2t
+(java.lang.String.split(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaõ" õ('2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaõ õ(!œ
+ñorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?part@285.24:285.28VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaù ù("
+typeString"
+isFinalfalse"`
+declarationStringK<mark class="modifier"> </mark>String <mark class="class-field">part</mark>*part2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaù ù(Ô
+îorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?sb@301.26:301.28VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≠ ≠("
+typeStringBuilder"
+isFinalfalse"~
+declarationStringi<mark class="modifier"> </mark>StringBuilder <mark class="class-field">sb</mark> = new StringBuilder(100)*sb2c
+java.lang.StringBuilderTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≠ ≠(2v
+*java.lang.StringBuilder.StringBuilder(int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≠# ≠(0ﬁ
+õorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?fieldText@302.19:302.28VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÆ Æ("
+typeString"
+isFinalfalse"e
+declarationStringP<mark class="modifier"> </mark>String <mark class="class-field">fieldText</mark>*	fieldText2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÆ Æ(Ø
+°org.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?previousSkipped@303.20:303.35VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaØ Ø(#"
+typeboolean"
+isFinalfalse"±
+declarationStringõ<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">previousSkipped</mark> = <mark class="modifier">false</mark>*previousSkipped2S
+booleanTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaØ Ø(’
+ìorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?i@305.21:305.22VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java± ±("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 0*i2O
+intTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java± ±(€
+ïorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)?eol@320.28:320.31VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¿ ¿("
+typeint"
+isFinalfalse"~
+declarationStringi<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">eol</mark> = 0*eol2O
+intTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¿ ¿(õ
+äorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!bibtex	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaâ4 â(:"
+typeBibEntry"
+isFinalfalse"$
+declarationStringBibEntry bibtex*bibtex2k
+org.jabref.model.entry.BibEntryTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaâ+ â(3≠
+åorg.jabref.logic.layout.LayoutEntry.handleFieldOrGroupStart(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)!database	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaâH â(P"
+typeBibDatabase"
+isFinalfalse")
+declarationStringBibDatabase database*database2q
+%org.jabref.model.database.BibDatabaseTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaâ< â(G‹1
+torg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)METHODB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java€ €("
+isFinalfalse"ÿ
+declarationString¬<mark class="modifier">public </mark>String <mark class="method">doLayout</mark>(BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> Charset encoding)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*doLayout2≤
+forg.jabref.model.database.BibDatabase.getText(java.lang.String, org.jabref.model.database.BibDatabase)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÏ+ Ï(22Ü
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÏI Ï(T2å
+@org.jabref.logic.layout.LayoutFormatter.format(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÔ) Ô(/2å
+@org.jabref.logic.layout.LayoutFormatter.format(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÙ* Ù(02r
+&java.nio.charset.Charset.displayName()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˙  ˙(+2h
+java.util.Optional.orElse(T)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˛g ˛(m2ó
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˛S ˛(V2ó
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˛9 ˛(<2ä
+>org.jabref.model.database.BibDatabaseContext.getDatabasePath()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˛' ˛(62£
+Wjava.lang.UnsupportedOperationException.UnsupportedOperationException(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java· ·(72£
+Wjava.lang.UnsupportedOperationException.UnsupportedOperationException(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÂ Â(72£
+Wjava.lang.UnsupportedOperationException.UnsupportedOperationException(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÈ È(72Ç
+6org.jabref.logic.layout.LayoutEntry?type@107.22:107.26CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‹ ‹(2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaﬁ ﬁ(2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÏ3 Ï(72—
+Ñorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)!databaseContextCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÏ9 Ï(H2Ñ
+8org.jabref.logic.layout.LayoutEntry?option@101.34:101.40CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÌ Ì(2Ñ
+8org.jabref.logic.layout.LayoutEntry?option@101.34:101.40CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÓ4 Ó(:2’
+àorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)?field@364.23:364.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÔ Ô(2ÿ
+ãorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)?anOption@366.41:366.49CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÔ  Ô((2’
+àorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)?field@364.23:364.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÔ0 Ô(52ã
+?org.jabref.logic.layout.LayoutEntry?postFormatter@103.28:103.41CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÛ Û(!2’
+àorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)?field@364.23:364.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÙ Ù(2ã
+?org.jabref.logic.layout.LayoutEntry?postFormatter@103.28:103.41CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÙ Ù()2’
+àorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)?field@364.23:364.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÙ1 Ù(62’
+àorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)?field@364.23:364.28CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˜ ˜(2…
+}org.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)!encodingCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˙ ˙(2—
+Ñorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)!databaseContextCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˛ ˛(&2o
+#java.nio.file.Path.toAbsolutePath()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˛= ˛(Q2i
+java.nio.file.Path.toString()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˛W ˛(e2÷
+Ñorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)!databaseContext	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java€. €(=2Œ
+}org.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)!encoding	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java€G €(O2‹
+àorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)?field@364.23:364.28DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÏ Ï(2ﬂ
+ãorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)?anOption@366.41:366.49DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÓ) Ó(12c
+java.lang.StringRETURN_TYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java€ €(ó	
+àorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)?field@364.23:364.28VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÏ Ï("
+typeString"
+isFinalfalse"ù
+declarationStringá<mark class="modifier"> </mark>String <mark class="class-field">field</mark> = BibDatabase.getText(text, databaseContext.getDatabase())*field2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÏ Ï(2≤
+forg.jabref.model.database.BibDatabase.getText(java.lang.String, org.jabref.model.database.BibDatabase)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÏ+ Ï(22Ü
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÏI Ï(T2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÏ3 Ï(72—
+Ñorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)!databaseContextCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÏ9 Ï(Hı
+ãorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)?anOption@366.41:366.49VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÓ) Ó(1"
+typeLayoutFormatter"
+isFinalfalse"m
+declarationStringX<mark class="modifier"> </mark>LayoutFormatter <mark class="class-field">anOption</mark>*anOption2s
+'org.jabref.logic.layout.LayoutFormatterTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÓ Ó((»
+Ñorg.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)!databaseContext	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java€. €(="
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2x
+,org.jabref.model.database.BibDatabaseContextTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java€ €(-à
+}org.jabref.logic.layout.LayoutEntry.doLayout(org.jabref.model.database.BibDatabaseContext, java.nio.charset.Charset)!encoding	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java€G €(O"
+typeCharset"
+isFinalfalse"%
+declarationStringCharset encoding*encoding2d
+java.nio.charset.CharsetTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java€? €(Fî
+Corg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)METHODB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÜ Ü("
+isFinalfalse"ë
+declarationString|<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">doOptionField</mark>(String s)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*doOptionField2¢
+Vorg.jabref.model.strings.StringUtil.tokenizeToList(java.lang.String, java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaá$ á(22a
+java.util.List.size()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaâ â(2ì
+Gorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaé é(&2c
+java.util.List.get(int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaé) é(,2ä
+>org.jabref.logic.layout.format.NotFoundFormatter.getNotFound()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaí0 í(;2a
+java.util.List.add(E)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaî% î((2ë
+Eorg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)!sCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaá3 á(42ü
+Sorg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)?v@391.21:391.22CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaâ â(2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaä ä(2ü
+Sorg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)?v@391.21:391.22CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaä ä(2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaå å(2ü
+Sorg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)?v@391.21:391.22CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaå å(2Ñ
+8org.jabref.logic.layout.LayoutEntry?option@101.34:101.40CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaé é(2ü
+Sorg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)?v@391.21:391.22CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaé' é((2Ñ
+8org.jabref.logic.layout.LayoutEntry?option@101.34:101.40CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaê, ê(22¶
+Zorg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)?anOption@400.33:400.41CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaë ë(2é
+Borg.jabref.logic.layout.LayoutEntry?invalidFormatter@108.31:108.47CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaî î($2¶
+Zorg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)?notFound@402.27:402.35CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaî) î(12ñ
+Eorg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)!s	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÜ& Ü('2¶
+Sorg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)?v@391.21:391.22DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaá á(2≠
+Zorg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)?anOption@400.33:400.41DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaê! ê()2≠
+Zorg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)?notFound@402.27:402.35DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaí í(#2W
+voidRETURN_TYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÜ Ü(’
+Sorg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)?v@391.21:391.22VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaá á("
+typeList<String>"
+isFinalfalse"à
+declarationStrings<mark class="modifier"> </mark>List<String> <mark class="class-field">v</mark> = StringUtil.tokenizeToList(s, "\n")*v2Z
+java.util.ListTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaá á(2e
+java.lang.StringTYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaá á(2¢
+Vorg.jabref.model.strings.StringUtil.tokenizeToList(java.lang.String, java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaá$ á(22ë
+Eorg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)!sCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaá3 á(4√
+Zorg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)?anOption@400.33:400.41VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaê! ê()"
+typeLayoutFormatter"
+isFinalfalse"m
+declarationStringX<mark class="modifier"> </mark>LayoutFormatter <mark class="class-field">anOption</mark>*anOption2s
+'org.jabref.logic.layout.LayoutFormatterTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaê ê( ¡
+Zorg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)?notFound@402.27:402.35VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaí í(#"
+typeString"
+isFinalfalse"~
+declarationStringi<mark class="modifier"> </mark>String <mark class="class-field">notFound</mark> = formatter.getNotFound()*notFound2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaí í(2ä
+>org.jabref.logic.layout.format.NotFoundFormatter.getNotFound()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaí0 í(;∏
+Eorg.jabref.logic.layout.LayoutEntry.doOptionField(java.lang.String)!s	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÜ& Ü('"
+typeString"
+isFinalfalse"
+declarationStringString s*s2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÜ Ü(%ÃU
+Norg.jabref.logic.layout.LayoutEntry.getLayoutFormatterByName(java.lang.String)METHODB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaö ö(4"
+isFinalfalse"å
+declarationStringw<mark class="modifier">private </mark>LayoutFormatter <mark class="method">getLayoutFormatterByName</mark>(String name)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeLayoutFormatter*getLayoutFormatterByName2ü
+Sorg.jabref.logic.formatter.bibtexfields.HtmlToLatexFormatter.HtmlToLatexFormatter()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaù> ù(R2•
+Yorg.jabref.logic.formatter.bibtexfields.UnicodeToLatexFormatter.UnicodeToLatexFormatter()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaüD ü([2ç
+Aorg.jabref.logic.openoffice.style.OOPreFormatter.OOPreFormatter()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java†) †(72ê
+Dorg.jabref.logic.layout.format.AuthorAbbreviator.AuthorAbbreviator()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java°, °(=2¶
+Zorg.jabref.logic.layout.format.AuthorAndToSemicolonReplacer.AuthorAndToSemicolonReplacer()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¢7 ¢(S2ú
+Porg.jabref.logic.layout.format.AuthorAndsCommaReplacer.AuthorAndsCommaReplacer()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java£2 £(I2í
+Forg.jabref.logic.layout.format.AuthorAndsReplacer.AuthorAndsReplacer()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java§- §(?2†
+Torg.jabref.logic.layout.format.AuthorFirstAbbrLastCommas.AuthorFirstAbbrLastCommas()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java•4 •(M2¨
+`org.jabref.logic.layout.format.AuthorFirstAbbrLastOxfordCommas.AuthorFirstAbbrLastOxfordCommas()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¶: ¶(Y2é
+Borg.jabref.logic.layout.format.AuthorFirstFirst.AuthorFirstFirst()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaß+ ß(;2ö
+Norg.jabref.logic.layout.format.AuthorFirstFirstCommas.AuthorFirstFirstCommas()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java®1 ®(G2ò
+Lorg.jabref.logic.layout.format.AuthorFirstLastCommas.AuthorFirstLastCommas()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java©0 ©(E2§
+Xorg.jabref.logic.layout.format.AuthorFirstLastOxfordCommas.AuthorFirstLastOxfordCommas()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java™6 ™(Q2å
+@org.jabref.logic.layout.format.AuthorLastFirst.AuthorLastFirst()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java´* ´(92†
+Torg.jabref.logic.layout.format.AuthorLastFirstAbbrCommas.AuthorLastFirstAbbrCommas()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¨4 ¨(M2¢
+Vorg.jabref.logic.layout.format.AuthorLastFirstAbbreviator.AuthorLastFirstAbbreviator()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≠5 ≠(O2¨
+`org.jabref.logic.layout.format.AuthorLastFirstAbbrOxfordCommas.AuthorLastFirstAbbrOxfordCommas()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÆ: Æ(Y2ò
+Lorg.jabref.logic.layout.format.AuthorLastFirstCommas.AuthorLastFirstCommas()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaØ0 Ø(E2§
+Xorg.jabref.logic.layout.format.AuthorLastFirstOxfordCommas.AuthorLastFirstOxfordCommas()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∞6 ∞(Q2Ñ
+8org.jabref.logic.layout.format.AuthorLF_FF.AuthorLF_FF()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java±& ±(12å
+@org.jabref.logic.layout.format.AuthorLF_FFAbbr.AuthorLF_FFAbbr()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≤* ≤(92Ü
+:org.jabref.logic.layout.format.AuthorNatBib.AuthorNatBib()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≥' ≥(32Ü
+:org.jabref.logic.layout.format.AuthorOrgSci.AuthorOrgSci()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¥' ¥(32å
+@org.jabref.logic.layout.format.CompositeFormat.CompositeFormat()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaµ* µ(92ñ
+Jorg.jabref.logic.layout.format.CreateBibORDFAuthors.CreateBibORDFAuthors()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∂/ ∂(C2ò
+Lorg.jabref.logic.layout.format.CreateDocBook4Authors.CreateDocBook4Authors()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∑0 ∑(E2ò
+Lorg.jabref.logic.layout.format.CreateDocBook4Editors.CreateDocBook4Editors()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∏0 ∏(E2ò
+Lorg.jabref.logic.layout.format.CreateDocBook5Authors.CreateDocBook5Authors()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaπ0 π(E2ò
+Lorg.jabref.logic.layout.format.CreateDocBook5Editors.CreateDocBook5Editors()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∫0 ∫(E2Ñ
+8org.jabref.logic.layout.format.CurrentDate.CurrentDate()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaª& ª(12à
+<org.jabref.logic.layout.format.DateFormatter.DateFormatter()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaº( º(52~
+2org.jabref.logic.layout.format.DOIStrip.DOIStrip()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaæ# æ(+2í
+Forg.jabref.logic.layout.format.EntryTypeFormatter.EntryTypeFormatter()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaø- ø(?2Ä
+4org.jabref.logic.layout.format.FirstPage.FirstPage()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¿$ ¿(-2í
+Forg.jabref.logic.layout.format.FormatPagesForHTML.FormatPagesForHTML()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¡- ¡(?2ê
+Dorg.jabref.logic.layout.format.FormatPagesForXML.FormatPagesForXML()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¬, ¬(=2ê
+Dorg.jabref.logic.layout.format.GetOpenOfficeType.GetOpenOfficeType()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java√, √(=2Ä
+4org.jabref.logic.layout.format.HTMLChars.HTMLChars()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaƒ$ ƒ(-2ä
+>org.jabref.logic.layout.format.HTMLParagraphs.HTMLParagraphs()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≈) ≈(72é
+Borg.jabref.logic.layout.format.Iso690FormatDate.Iso690FormatDate()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∆+ ∆(;2í
+Forg.jabref.logic.layout.format.Iso690NamesAuthors.Iso690NamesAuthors()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java«- «(?2~
+2org.jabref.logic.layout.format.LastPage.LastPage()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java…# …(+2ú
+Porg.jabref.logic.layout.format.LatexToUnicodeFormatter.LatexToUnicodeFormatter()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÀ8 À(O2à
+<org.jabref.logic.layout.format.NameFormatter.NameFormatter()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÃ( Ã(52§
+Xorg.jabref.logic.layout.format.NoSpaceBetweenAbbreviations.NoSpaceBetweenAbbreviations()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÕ6 Õ(Q2|
+0org.jabref.logic.layout.format.Ordinal.Ordinal()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaŒ" Œ()2ä
+>org.jabref.logic.layout.format.RemoveBrackets.RemoveBrackets()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœ) œ(72ö
+Norg.jabref.logic.layout.format.RemoveBracketsAddComma.RemoveBracketsAddComma()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java–1 –(G2¶
+Zorg.jabref.logic.layout.format.RemoveLatexCommandsFormatter.RemoveLatexCommandsFormatter()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java—. —(J2Ñ
+8org.jabref.logic.layout.format.RemoveTilde.RemoveTilde()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java“& “(12é
+Borg.jabref.logic.layout.format.RemoveWhitespace.RemoveWhitespace()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java”+ ”(;2Ñ
+8org.jabref.logic.layout.format.RisKeywords.RisKeywords()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‘& ‘(12~
+2org.jabref.logic.layout.format.RisMonth.RisMonth()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java’# ’(+2~
+2org.jabref.logic.layout.format.RTFChars.RTFChars()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java÷# ÷(+2Ñ
+8org.jabref.logic.layout.format.ToLowerCase.ToLowerCase()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java◊& ◊(12Ñ
+8org.jabref.logic.layout.format.ToUpperCase.ToUpperCase()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÿ& ÿ(12~
+2org.jabref.logic.layout.format.XMLChars.XMLChars()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaŸ# Ÿ(+2|
+0org.jabref.logic.layout.format.Default.Default()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java⁄" ⁄()2z
+.org.jabref.logic.layout.format.Number.Number()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‹! ‹('2Ç
+6org.jabref.logic.layout.format.RisAuthors.RisAuthors()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java›% ›(/2|
+0org.jabref.logic.layout.format.Authors.Authors()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaﬁ" ﬁ()2~
+2org.jabref.logic.layout.format.IfPlural.IfPlural()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaﬂ# ﬂ(+2|
+0org.jabref.logic.layout.format.Replace.Replace()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‡" ‡()2Ñ
+8org.jabref.logic.layout.format.WrapContent.WrapContent()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java·& ·(12ê
+Dorg.jabref.logic.layout.format.MarkdownFormatter.MarkdownFormatter()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java„# „(42|
+0org.jabref.logic.layout.format.CSLType.CSLType()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‰" ‰()2î
+Horg.jabref.logic.layout.format.ShortMonthFormatter.ShortMonthFormatter()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÂ% Â(82™
+^org.jabref.logic.layout.format.ReplaceWithEscapedDoubleQuotes.ReplaceWithEscapedDoubleQuotes()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÊ9 Ê(W2à
+<org.jabref.logic.layout.format.HayagrivaType.HayagrivaType()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÁ( Á(52ü
+Sorg.jabref.logic.layout.LayoutEntry.getLayoutFormatterByName(java.lang.String)!nameCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaõ õ(2§
+Sorg.jabref.logic.layout.LayoutEntry.getLayoutFormatterByName(java.lang.String)!name	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaö< ö(@2z
+'org.jabref.logic.layout.LayoutFormatterRETURN_TYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaö ö(Ã
+Sorg.jabref.logic.layout.LayoutEntry.getLayoutFormatterByName(java.lang.String)!name	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaö< ö(@"
+typeString"
+isFinalfalse" 
+declarationStringString name*name2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaö5 ö(;ùR
+Gorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)METHODB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÔ" Ô(3"
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier">private </mark>List&lt;LayoutFormatter&gt; <mark class="method">getOptionalLayout</mark>(String formatterName)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeList<LayoutFormatter>*getOptionalLayout2ì
+Gorg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java. (?2a
+java.util.List.size()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÒI Ò(M2√
+worg.jabref.logic.layout.format.NameFormatter.getNameFormatters(org.jabref.logic.layout.format.NameFormatterPreferences)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÚ> Ú(O2ú
+Porg.jabref.logic.layout.LayoutFormatterPreferences.getNameFormatterPreferences()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÚ\ Ú(w2≠
+aorg.jabref.logic.layout.LayoutFormatterPreferences.getCustomExportNameFormatter(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˜4 ˜(P2j
+java.util.Optional.isPresent()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¯ ¯("2ó
+Korg.jabref.logic.layout.format.NameFormatter.setParameter(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˙ ˙(2d
+java.util.Optional.get()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˙) ˙(,2a
+java.util.List.add(E)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˚ ˚(2ö
+Norg.jabref.logic.layout.LayoutEntry.getLayoutFormatterByName(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÄ( Ä(@2a
+java.util.List.size()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÉ\ É(`2ñ
+Jorg.jabref.logic.layout.ParamLayoutFormatter.setArgument(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÑ$ Ñ(/2c
+java.util.List.get(int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÑ8 Ñ(;2a
+java.util.List.add(E)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÜ Ü(2o
+#java.util.Map.get(java.lang.Object)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaã: ã(=2ó
+Korg.jabref.logic.layout.format.NameFormatter.setParameter(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaé é(2a
+java.util.List.add(E)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaè è(2a
+java.util.List.add(E)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaì ì(2n
+"java.util.ArrayList.ArrayList(int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÒ, Ò(72à
+<org.jabref.logic.layout.format.NameFormatter.NameFormatter()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˘' ˘(42à
+<org.jabref.logic.layout.format.NameFormatter.NameFormatter()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaç' ç(42†
+Torg.jabref.logic.layout.format.NotFoundFormatter.NotFoundFormatter(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaì ì(-2°
+Uorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)!formatterNameCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java@ (M2≤
+forg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?formatterStrings@496.27:496.43CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÒ8 Ò(H2â
+=org.jabref.logic.layout.LayoutEntry?preferences@111.45:111.56CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÚP Ú([2≤
+forg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?formatterStrings@496.27:496.43CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÛ$ Û(42©
+]org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?strings@499.26:499.33CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÙ' Ù(.2â
+=org.jabref.logic.layout.LayoutEntry?preferences@111.45:111.56CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˜( ˜(32≥
+gorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?nameFormatterName@500.19:500.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˜Q ˜(b2™
+^org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?contents@503.29:503.37CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¯ ¯(2§
+Xorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?nf@505.30:505.32CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˙ ˙(2™
+^org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?contents@503.29:503.37CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˙  ˙((2©
+]org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?results@497.30:497.37CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˚ ˚(2§
+Xorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?nf@505.30:505.32CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˚ ˚(2≥
+gorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?nameFormatterName@500.19:500.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÄA Ä(R2´
+_org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?formatter@512.28:512.37CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÅ Å(2´
+_org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?formatter@512.28:512.37CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÉ É(2©
+]org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?strings@499.26:499.33CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÉT É([2©
+]org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?strings@499.26:499.33CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÑ0 Ñ(72©
+]org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?results@497.30:497.37CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÜ Ü(2´
+_org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?formatter@512.28:512.37CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÜ Ü(%2≥
+gorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?userNameFormatter@498.28:498.45CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaã( ã(92≥
+gorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?nameFormatterName@500.19:500.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaã> ã(O2¥
+horg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?formatterParameter@523.19:523.37CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaå å("2§
+Xorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?nf@525.30:525.32CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaé é(2¥
+horg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?formatterParameter@523.19:523.37CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaé  é(22©
+]org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?results@497.30:497.37CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaè è(2§
+Xorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?nf@525.30:525.32CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaè è(2©
+]org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?results@497.30:497.37CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaì ì(2≥
+gorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?nameFormatterName@500.19:500.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaì. ì(?2©
+]org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?results@497.30:497.37CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javañ ñ(2¶
+Uorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)!formatterName	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÔ; Ô(H2π
+forg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?formatterStrings@496.27:496.43DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java (+2∞
+]org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?results@497.30:497.37DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÒ Ò(%2∫
+gorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?userNameFormatter@498.28:498.45DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÚ Ú(-2∞
+]org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?strings@499.26:499.33DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÛ Û(!2∫
+gorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?nameFormatterName@500.19:500.36DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÙ Ù($2±
+^org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?contents@503.29:503.37DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˜ ˜(%2´
+Xorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?nf@505.30:505.32DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˘ ˘( 2≤
+_org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?formatter@512.28:512.37DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÄ Ä(%2ª
+horg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?formatterParameter@523.19:523.37DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaã ã(%2´
+Xorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?nf@525.30:525.32DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaç ç( 2a
+java.util.ListRETURN_TYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÔ Ô(2É
+'org.jabref.logic.layout.LayoutFormatterRETURN_TYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÔ Ô( ˜
+forg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?formatterStrings@496.27:496.43VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java (+"
+typeList<List<String>>"
+isFinalfalse"ú
+declarationStringÜ<mark class="modifier"> </mark>List<List<String>> <mark class="class-field">formatterStrings</mark> = parseMethodsCalls(formatterName)*formatterStrings2Z
+java.util.ListTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java (2c
+java.util.ListTYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java (2e
+java.lang.StringTYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java (2ì
+Gorg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java. (?2°
+Uorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)!formatterNameCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java@ (MÍ
+]org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?results@497.30:497.37VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÒ Ò(%"
+typeList<LayoutFormatter>"
+isFinalfalse"û
+declarationStringà<mark class="modifier"> </mark>List<LayoutFormatter> <mark class="class-field">results</mark> = new ArrayList<>(formatterStrings.size())*results2Z
+java.util.ListTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÒ Ò(2|
+'org.jabref.logic.layout.LayoutFormatterTYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÒ Ò(2a
+java.util.List.size()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÒI Ò(M2n
+"java.util.ArrayList.ArrayList(int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÒ, Ò(72≤
+forg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?formatterStrings@496.27:496.43CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÒ8 Ò(Hﬁ	
+gorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?userNameFormatter@498.28:498.45VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÚ Ú(-"
+typeMap<String, String>"
+isFinalfalse"»
+declarationString≤<mark class="modifier"> </mark>Map<String, String> <mark class="class-field">userNameFormatter</mark> = NameFormatter.getNameFormatters(preferences.getNameFormatterPreferences())*userNameFormatter2Y
+java.util.MapTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÚ Ú(2e
+java.lang.StringTYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÚ Ú(2e
+java.lang.StringTYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÚ Ú(2√
+worg.jabref.logic.layout.format.NameFormatter.getNameFormatters(org.jabref.logic.layout.format.NameFormatterPreferences)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÚ> Ú(O2ú
+Porg.jabref.logic.layout.LayoutFormatterPreferences.getNameFormatterPreferences()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÚ\ Ú(w2â
+=org.jabref.logic.layout.LayoutEntry?preferences@111.45:111.56CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÚP Ú([å
+]org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?strings@499.26:499.33VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÛ Û(!"
+typeList<String>"
+isFinalfalse"i
+declarationStringT<mark class="modifier"> </mark>List<String> <mark class="class-field">strings</mark>*strings2Z
+java.util.ListTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÛ Û(2e
+java.lang.StringTYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÛ Û(Ç
+gorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?nameFormatterName@500.19:500.36VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÙ Ù($"
+typeString"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark>String <mark class="class-field">nameFormatterName</mark> = strings.getFirst().trim()*nameFormatterName2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÙ Ù(2©
+]org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?strings@499.26:499.33CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÙ' Ù(.Õ
+^org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?contents@503.29:503.37VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˜ ˜(%"
+typeOptional<String>"
+isFinalfalse"≠
+declarationStringó<mark class="modifier"> </mark>Optional<String> <mark class="class-field">contents</mark> = preferences.getCustomExportNameFormatter(nameFormatterName)*contents2^
+java.util.OptionalTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˜ ˜(2e
+java.lang.StringTYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˜ ˜(2≠
+aorg.jabref.logic.layout.LayoutFormatterPreferences.getCustomExportNameFormatter(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˜4 ˜(P2â
+=org.jabref.logic.layout.LayoutEntry?preferences@111.45:111.56CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˜( ˜(32≥
+gorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?nameFormatterName@500.19:500.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˜Q ˜(b◊
+Xorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?nf@505.30:505.32VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˘ ˘( "
+typeNameFormatter"
+isFinalfalse"{
+declarationStringf<mark class="modifier"> </mark>NameFormatter <mark class="class-field">nf</mark> = new NameFormatter()*nf2x
+,org.jabref.logic.layout.format.NameFormatterTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˘ ˘(2à
+<org.jabref.logic.layout.format.NameFormatter.NameFormatter()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java˘' ˘(4Õ
+_org.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?formatter@512.28:512.37VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÄ Ä(%"
+typeLayoutFormatter"
+isFinalfalse"ù
+declarationStringá<mark class="modifier"> </mark>LayoutFormatter <mark class="class-field">formatter</mark> = getLayoutFormatterByName(nameFormatterName)*	formatter2s
+'org.jabref.logic.layout.LayoutFormatterTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÄ Ä(2ö
+Norg.jabref.logic.layout.LayoutEntry.getLayoutFormatterByName(java.lang.String)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÄ( Ä(@2≥
+gorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?nameFormatterName@500.19:500.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÄA Ä(R∆
+horg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?formatterParameter@523.19:523.37VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaã ã(%"
+typeString"
+isFinalfalse"ö
+declarationStringÑ<mark class="modifier"> </mark>String <mark class="class-field">formatterParameter</mark> = userNameFormatter.get(nameFormatterName)*formatterParameter2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaã ã(2o
+#java.util.Map.get(java.lang.Object)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaã: ã(=2≥
+gorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?userNameFormatter@498.28:498.45CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaã( ã(92≥
+gorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?nameFormatterName@500.19:500.36CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaã> ã(O◊
+Xorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)?nf@525.30:525.32VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaç ç( "
+typeNameFormatter"
+isFinalfalse"{
+declarationStringf<mark class="modifier"> </mark>NameFormatter <mark class="class-field">nf</mark> = new NameFormatter()*nf2x
+,org.jabref.logic.layout.format.NameFormatterTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaç ç(2à
+<org.jabref.logic.layout.format.NameFormatter.NameFormatter()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaç' ç(4‡
+Uorg.jabref.logic.layout.LayoutEntry.getOptionalLayout(java.lang.String)!formatterName	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÔ; Ô(H"
+typeString"
+isFinalfalse")
+declarationStringString formatterName*formatterName2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÔ4 Ô(:„
+:org.jabref.logic.layout.LayoutEntry.getInvalidFormatters()METHODB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaô ô(,"
+isFinalfalse"
+declarationStringj<mark class="modifier">public </mark>List&lt;String&gt; <mark class="method">getInvalidFormatters</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<String>*getInvalidFormatters2é
+Borg.jabref.logic.layout.LayoutEntry?invalidFormatter@108.31:108.47CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaö ö(2a
+java.util.ListRETURN_TYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaô ô(2l
+java.lang.StringRETURN_TYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaô ô(£í
+Gorg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)METHODB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaù% ù(6"
+isFinalfalse"∫
+declarationString§<mark class="modifier">public </mark><mark class="modifier">static </mark>List&lt;List&lt;String&gt;&gt; <mark class="method">parseMethodsCalls</mark>(String calls)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeList<List<String>>*parseMethodsCalls2j
+java.lang.String.toCharArray()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java† †($2{
+/java.lang.Character.isJavaIdentifierStart(char)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java• •(/2z
+.java.lang.Character.isJavaIdentifierPart(char)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaß4 ß(H2p
+$java.lang.String.substring(int, int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java´* ´(32p
+$java.lang.String.substring(int, int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java…1 …(:2a
+java.util.List.add(E)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÀ# À(&2i
+java.util.Arrays.asList(T...)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÀ. À(42p
+$java.lang.String.substring(int, int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java⁄1 ⁄(:2a
+java.util.List.add(E)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‹# ‹(&2i
+java.util.Arrays.asList(T...)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‹. ‹(42a
+java.util.List.add(E)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‡ ‡("2r
+&java.util.Collections.singletonList(T)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‡/ ‡(<2p
+$java.lang.String.substring(int, int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java„* „(32a
+java.util.List.add(E)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‰ ‰(2r
+&java.util.Collections.singletonList(T)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‰+ ‰(82k
+java.util.ArrayList.ArrayList()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaû( û(32ô
+Morg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)!callsCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java† †(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java£ £(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java£ £(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java§ §(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java•0 •(12£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java•2 •(32£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¶ ¶(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaß ß(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaß ß(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaßI ß(J2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaßK ß(L2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaßS ß(T2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaßU ß(V2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java® ®(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java™ ™(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java™ ™(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java™' ™((2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java™) ™(*2ô
+Morg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)!callsCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java´$ ´()2ß
+[org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?start@548.16:548.21CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java´4 ´(92£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java´; ´(<2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÆ Æ(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java± ±(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java± ±(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≤ ≤(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java≤ ≤(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∂ ∂(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∏- ∏(.2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaπ π(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaª% ª(&2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaª. ª(/2©
+]org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?escaped@570.36:570.43CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaº* º(12£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaº6 º(72£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaº8 º(92£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaºG º(H2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaºI º(J2¨
+`org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?bracelevel@559.24:559.34CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaº\ º(f2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaΩ$ Ω(%2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaΩ& Ω('2©
+]org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?escaped@570.36:570.43CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaæ$ æ(+2©
+]org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?escaped@570.36:570.43CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaæ/ æ(62£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaø+ ø(,2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaø- ø(.2¨
+`org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?bracelevel@559.24:559.34CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¿$ ¿(.2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¡+ ¡(,2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¡- ¡(.2¨
+`org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?bracelevel@559.24:559.34CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¬$ ¬(.2©
+]org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?escaped@570.36:570.43CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaƒ$ ƒ(+2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∆  ∆(!2ô
+Morg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)!callsCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java…+ …(02¨
+`org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?startParam@568.32:568.42CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java…; …(E2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java…G …(H2®
+\org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?result@542.27:542.33CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÀ À("2®
+\org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?method@555.27:555.33CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÀ5 À(;2ß
+[org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?param@585.35:585.40CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÀ= À(B2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœ- œ(.2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java—$ —(%2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java—( —()2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java—9 —(:2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java—; —(<2¨
+`org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?bracelevel@559.24:559.34CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java—J —(T2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java“$ “(%2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java“& “('2¨
+`org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?bracelevel@559.24:559.34CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java”$ ”(.2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‘+ ‘(,2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‘- ‘(.2¨
+`org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?bracelevel@559.24:559.34CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java’$ ’(.2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java◊  ◊(!2ô
+Morg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)!callsCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java⁄+ ⁄(02¨
+`org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?startParam@591.32:591.42CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java⁄; ⁄(E2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java⁄G ⁄(H2®
+\org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?result@542.27:542.33CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‹ ‹("2®
+\org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?method@555.27:555.33CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‹5 ‹(;2ß
+[org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?param@602.35:602.40CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‹= ‹(B2®
+\org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?result@542.27:542.33CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‡ ‡(2®
+\org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?method@555.27:555.33CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‡= ‡(C2ô
+Morg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)!callsCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java„$ „()2ß
+[org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?start@548.16:548.21CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java„4 „(92£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java„; „(<2®
+\org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?result@542.27:542.33CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‰ ‰(2®
+\org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?method@611.27:611.33CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java‰9 ‰(?2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÁ Á(2®
+\org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?result@542.27:542.33CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÍ Í(2û
+Morg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)!calls	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaù> ù(C2Ø
+\org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?result@542.27:542.33DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaû û(!2™
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java† †(2™
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¢ ¢(2Æ
+[org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?start@548.16:548.21DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java§ §(2Ø
+\org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?method@555.27:555.33DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java´ ´(!2≥
+`org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?bracelevel@559.24:559.34DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaØ Ø("2≥
+`org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?startParam@568.32:568.42DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∏  ∏(*2∞
+]org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?escaped@570.36:570.43DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∫$ ∫(+2Æ
+[org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?param@585.35:585.40DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java…# …((2≥
+`org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?startParam@591.32:591.42DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœ  œ(*2Æ
+[org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?param@602.35:602.40DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java⁄# ⁄((2Ø
+\org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?method@611.27:611.33DECLARATIONB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java„ „(!2a
+java.util.ListRETURN_TYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaù ù(2j
+java.util.ListRETURN_TYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaù ù(2l
+java.lang.StringRETURN_TYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaù ù("¸
+\org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?result@542.27:542.33VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaû û(!"
+typeList<List<String>>"
+isFinalfalse"Ç
+declarationStringm<mark class="modifier"> </mark>List<List<String>> <mark class="class-field">result</mark> = new ArrayList<>()*result2Z
+java.util.ListTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaû û(2c
+java.util.ListTYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaû û(2e
+java.lang.StringTYPE_ARGUMENTB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaû û(2k
+java.util.ArrayList.ArrayList()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaû( û(3õ
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?c@544.15:544.16VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java† †("
+typechar"
+isFinalfalse"s
+declarationString^<mark class="modifier"> </mark>char[] <mark class="class-field">c</mark> = calls.toCharArray()*c2R
+char[]TYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java† †(2j
+java.lang.String.toCharArray()CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java† †($2ô
+Morg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)!callsCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java† †(ò
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¢ ¢("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 0*i2O
+intTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java¢ ¢(À
+[org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?start@548.16:548.21VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java§ §("
+typeint"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">start</mark> = i*start2O
+intTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java§ §(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java§ §(í
+\org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?method@555.27:555.33VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java´ ´(!"
+typeString"
+isFinalfalse"~
+declarationStringi<mark class="modifier"> </mark>String <mark class="class-field">method</mark> = calls.substring(start, i)*method2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java´ ´(2p
+$java.lang.String.substring(int, int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java´* ´(32ô
+Morg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)!callsCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java´$ ´()2ß
+[org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?start@548.16:548.21CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java´4 ´(92£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java´; ´(<¥
+`org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?bracelevel@559.24:559.34VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaØ Ø(""
+typeint"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">bracelevel</mark> = 0*
+bracelevel2O
+intTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaØ Ø(⁄
+`org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?startParam@568.32:568.42VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∏  ∏(*"
+typeint"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">startParam</mark> = i*
+startParam2O
+intTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∏ ∏(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∏- ∏(.⁄
+]org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?escaped@570.36:570.43VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∫$ ∫(+"
+typeboolean"
+isFinalfalse"©
+declarationStringì<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">escaped</mark> = <mark class="modifier">false</mark>*escaped2S
+booleanTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java∫ ∫(#ö
+[org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?param@585.35:585.40VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java…# …(("
+typeString"
+isFinalfalse"Ç
+declarationStringm<mark class="modifier"> </mark>String <mark class="class-field">param</mark> = calls.substring(startParam, i)*param2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java… …("2p
+$java.lang.String.substring(int, int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java…1 …(:2ô
+Morg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)!callsCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java…+ …(02¨
+`org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?startParam@568.32:568.42CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java…; …(E2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java…G …(H⁄
+`org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?startParam@591.32:591.42VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœ  œ(*"
+typeint"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">startParam</mark> = i*
+startParam2O
+intTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœ œ(2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaœ- œ(.ö
+[org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?param@602.35:602.40VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java⁄# ⁄(("
+typeString"
+isFinalfalse"Ç
+declarationStringm<mark class="modifier"> </mark>String <mark class="class-field">param</mark> = calls.substring(startParam, i)*param2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java⁄ ⁄("2p
+$java.lang.String.substring(int, int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java⁄1 ⁄(:2ô
+Morg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)!callsCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java⁄+ ⁄(02¨
+`org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?startParam@591.32:591.42CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java⁄; ⁄(E2£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java⁄G ⁄(Hí
+\org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?method@611.27:611.33VARIABLEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java„ „(!"
+typeString"
+isFinalfalse"~
+declarationStringi<mark class="modifier"> </mark>String <mark class="class-field">method</mark> = calls.substring(start, i)*method2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java„ „(2p
+$java.lang.String.substring(int, int)CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java„* „(32ô
+Morg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)!callsCALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java„$ „()2ß
+[org.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?start@548.16:548.21CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java„4 „(92£
+Worg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)?i@546.12:546.13CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.java„; „(<»
+Morg.jabref.logic.layout.LayoutEntry.parseMethodsCalls(java.lang.String)!calls	PARAMETERB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaù> ù(C"
+typeString"
+isFinalfalse"!
+declarationStringString calls*calls2\
+java.lang.StringTYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaù7 ù(=≤
+-org.jabref.logic.layout.LayoutEntry.getText()METHODB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÌ Ì("
+isFinalfalse"f
+declarationStringQ<mark class="modifier">public </mark>String <mark class="method">getText</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*getText2Ç
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23CALLB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÓ Ó(2c
+java.lang.StringRETURN_TYPEB
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaÌ Ì(è
+6org.jabref.logic.layout.LayoutEntry?LOGGER@99.32:99.38VALUE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javac  c(&"
+isFinaltrue"
+typeLogger"·
+declarationStringÀ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(LayoutEntry.class);"
+isStatictrue"
+accessprivate*LOGGER2Z
+org.slf4j.LoggerTYPE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javac c(µ
+8org.jabref.logic.layout.LayoutEntry?option@101.34:101.40VARIABLE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javae" e(("
+isFinalfalse"
+typeList<LayoutFormatter>"x
+declarationStringc<mark class="modifier">private </mark>List<LayoutFormatter> <mark class="class-field">option</mark>"
+isStaticfalse"
+accessprivate*option2X
+java.util.ListTYPE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javae e(2z
+'org.jabref.logic.layout.LayoutFormatterTYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javae e( €
+?org.jabref.logic.layout.LayoutEntry?postFormatter@103.28:103.41VARIABLE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javag g()"
+isFinalfalse"
+typeLayoutFormatter"y
+declarationStringd<mark class="modifier">private </mark>LayoutFormatter <mark class="class-field">postFormatter</mark>"
+isStaticfalse"
+accessprivate*postFormatter2q
+'org.jabref.logic.layout.LayoutFormatterTYPE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javag g(ó
+6org.jabref.logic.layout.LayoutEntry?text@105.19:105.23VARIABLE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javai i("
+isFinalfalse"
+typeString"g
+declarationStringR<mark class="modifier">private </mark>String <mark class="class-field">text</mark>"
+isStaticfalse"
+accessprivate*text2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javai i(æ
+?org.jabref.logic.layout.LayoutEntry?layoutEntries@106.30:106.43VARIABLE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaj j(+"
+isFinalfalse"
+typeList<LayoutEntry>"{
+declarationStringf<mark class="modifier">private </mark>List<LayoutEntry> <mark class="class-field">layoutEntries</mark>"
+isStaticfalse"
+accessprivate*layoutEntries2X
+java.util.ListTYPE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaj j(2v
+#org.jabref.logic.layout.LayoutEntryTYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javaj j(ƒ
+6org.jabref.logic.layout.LayoutEntry?type@107.22:107.26VALUE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javak k("
+isFinaltrue"
+typeint"ß
+declarationStringë<mark class="modifier">private </mark><mark class="modifier">final </mark><mark class="modifier">int</mark> <mark class="class-field">type</mark>"
+isStaticfalse"
+accessprivate*type2M
+intTYPE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javak k(Ã
+Borg.jabref.logic.layout.LayoutEntry?invalidFormatter@108.31:108.47VALUE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javal l(/"
+isFinaltrue"
+typeList<String>"≥
+declarationStringù<mark class="modifier">private </mark><mark class="modifier">final </mark>List<String> <mark class="class-field">invalidFormatter</mark> = new ArrayList<>();"
+isStaticfalse"
+accessprivate*invalidFormatter2X
+java.util.ListTYPE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javal l(2c
+java.lang.StringTYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javal l(2i
+java.util.ArrayList.ArrayList()CALL@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javal6 l(A–
+Dorg.jabref.logic.layout.LayoutEntry?fileDirForDatabase@110.29:110.47VALUE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javan n(/"
+isFinaltrue"
+type
+List<Path>"û
+declarationStringà<mark class="modifier">private </mark><mark class="modifier">final </mark>List<Path> <mark class="class-field">fileDirForDatabase</mark>"
+isStaticfalse"
+accessprivate*fileDirForDatabase2X
+java.util.ListTYPE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javan n(2e
+java.nio.file.PathTYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javan n(ò
+=org.jabref.logic.layout.LayoutEntry?preferences@111.45:111.56VALUE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javao- o(8"
+isFinaltrue""
+typeLayoutFormatterPreferences"ß
+declarationStringë<mark class="modifier">private </mark><mark class="modifier">final </mark>LayoutFormatterPreferences <mark class="class-field">preferences</mark>"
+isStaticfalse"
+accessprivate*preferences2|
+2org.jabref.logic.layout.LayoutFormatterPreferencesTYPE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javao o(,≈
+Horg.jabref.logic.layout.LayoutEntry?abbreviationRepository@112.48:112.70VALUE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javap0 p(F"
+isFinaltrue"%
+typeJournalAbbreviationRepository"µ
+declarationStringü<mark class="modifier">private </mark><mark class="modifier">final </mark>JournalAbbreviationRepository <mark class="class-field">abbreviationRepository</mark>"
+isStaticfalse"
+accessprivate*abbreviationRepository2Å
+7org.jabref.logic.journals.JournalAbbreviationRepositoryTYPE@
+6src\main\java\org\jabref\logic\layout\LayoutEntry.javap p(/

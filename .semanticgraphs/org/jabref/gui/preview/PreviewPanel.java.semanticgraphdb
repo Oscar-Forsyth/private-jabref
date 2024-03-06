@@ -1,0 +1,841 @@
+
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java†
+#org.jabref.gui.preview.PreviewPanelCLASS@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java% %("!
+packageorg.jabref.gui.preview"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"ñ
+declarationStringÄ<mark class="modifier">public </mark><mark class="modifier">class </mark>PreviewPanel<mark class="modifier"> extends </mark>VBox"
+accesspublic*PreviewPanel2∫
+Ëorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java2 2(2à
+7org.jabref.gui.preview.PreviewPanel.createKeyBindings()DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javat t("2à
+5org.jabref.gui.preview.PreviewPanel.createPopupMenu()DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÉ É('2†
+Morg.jabref.gui.preview.PreviewPanel.setEntry(org.jabref.model.entry.BibEntry)DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaú ú(2~
++org.jabref.gui.preview.PreviewPanel.print()DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java¢ ¢(2â
+6org.jabref.gui.preview.PreviewPanel.nextPreviewStyle()DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java¶ ¶( 2ç
+:org.jabref.gui.preview.PreviewPanel.previousPreviewStyle()DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java™ ™($2à
+5org.jabref.gui.preview.PreviewPanel.cyclePreview(int)DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÆ Æ(2á
+6org.jabref.gui.preview.PreviewPanel?LOGGER@39.32:39.38DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java'  '(&2ã
+:org.jabref.gui.preview.PreviewPanel?fileLinker@41.43:41.53DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java)+ )(52ï
+Dorg.jabref.gui.preview.PreviewPanel?keyBindingRepository@42.39:42.59DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java*' *(;2å
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java+  +(+2ì
+Borg.jabref.gui.preview.PreviewPanel?previewPreferences@44.37:44.55DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java,% ,(72é
+=org.jabref.gui.preview.PreviewPanel?dialogService@45.32:45.45DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java-  -(-2ç
+<org.jabref.gui.preview.PreviewPanel?stateManager@46.31:46.43DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java. .(+2î
+Corg.jabref.gui.preview.PreviewPanel?indexingTaskManager@47.38:47.57DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java/& /(92Ü
+5org.jabref.gui.preview.PreviewPanel?entry@48.21:48.26DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java0 0(2d
+javafx.scene.layout.VBoxEXTEND@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java%" %(&©˛
+Ëorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)CONSTRUCTOR@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java2 2("ç
+declarationString˜<mark class="modifier">public </mark><mark class="method">PreviewPanel</mark>(BibDatabaseContext database<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> KeyBindingRepository keyBindingRepository<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferencesService<mark class="modifier"><mark class="modifier">,</mark></mark> StateManager stateManager<mark class="modifier"><mark class="modifier">,</mark></mark> ThemeManager themeManager<mark class="modifier"><mark class="modifier">,</mark></mark> IndexingTaskManager indexingTaskManager<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor)*PreviewPanel2ã
+Aorg.jabref.preferences.PreferencesService.getPreviewPreferences()CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java=5 =(J2à
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java?J ?(\2ã
+Aorg.jabref.preferences.PreferencesService.getPreviewPreferences()CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaAC A(X2†
+Vorg.jabref.gui.preview.PreviewViewer.setLayout(org.jabref.logic.preview.PreviewLayout)CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaC C(2é
+Dorg.jabref.preferences.PreviewPreferences.getSelectedPreviewLayout()CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaC1 C(I2
+5org.jabref.gui.preview.PreviewPanel.createPopupMenu()CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaD# D(22à
+>org.jabref.gui.preview.PreviewViewer.getSelectionHtmlContent()CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaJ( J(?2n
+$java.util.stream.Collectors.toList()CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaZq Z(w2ú
+—org.jabref.gui.externalfiles.ExternalFilesEntryLinker.moveFilesToFileDirRenameAndAddToEntry(org.jabref.model.entry.BibEntry, java.util.List<java.nio.file.Path>, org.jabref.logic.pdf.search.IndexingTaskManager)CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java^ ^(D2’
+äorg.jabref.gui.externalfiles.ExternalFilesEntryLinker.addFilesToEntry(org.jabref.model.entry.BibEntry, java.util.List<java.nio.file.Path>)CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javab b(.2ñ
+Àorg.jabref.gui.externalfiles.ExternalFilesEntryLinker.copyFilesToFileDirAndAddToEntry(org.jabref.model.entry.BibEntry, java.util.List<java.nio.file.Path>, org.jabref.logic.pdf.search.IndexingTaskManager)CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaf f(>2Å
+7org.jabref.gui.preview.PreviewPanel.createKeyBindings()CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javap p(2†
+Vorg.jabref.gui.preview.PreviewViewer.setLayout(org.jabref.logic.preview.PreviewLayout)CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaq q(2é
+Dorg.jabref.preferences.PreviewPreferences.getSelectedPreviewLayout()CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaq1 q(I2ç
+¬org.jabref.gui.externalfiles.ExternalFilesEntryLinker.ExternalFilesEntryLinker(org.jabref.preferences.FilePreferences, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService)CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java? ?(62÷
+ãorg.jabref.gui.preview.PreviewViewer.PreviewViewer(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.gui.util.TaskExecutor)CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaB B('2»
+˝org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!keyBindingRepositoryCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java:$ :(82¡
+ˆorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!dialogServiceCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java; ;(*2¿
+ıorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!stateManagerCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java< <((2∆
+˚org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!preferencesServiceCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java=" =(42«
+¸org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!indexingTaskManagerCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java># >(62∆
+˚org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!preferencesServiceCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java?7 ?(I2º
+Òorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!databaseCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java?` ?(h2¡
+ˆorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!dialogServiceCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java?j ?(w2∆
+˚org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!preferencesServiceCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaA0 A(B2Ö
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaB B(2º
+Òorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!databaseCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaB( B(02¡
+ˆorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!dialogServiceCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaB2 B(?2∆
+˚org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!preferencesServiceCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaBA B(S2¿
+ıorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!stateManagerCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaBU B(a2¿
+ıorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!themeManagerCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaBc B(o2¿
+ıorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!taskExecutorCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaBq B(}2Ö
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaC C(2“
+áorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?previewPreferences@65.27:65.45CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaC C(02Ö
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaD D(2Ö
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaE E(2Ö
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaF F(2Ö
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaH" H(-2«
+¸org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?content@73.29:73.36CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaJ J(2Ö
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaJ J('2…
+˛org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?dragboard@72.22:72.31CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaK K(2«
+¸org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?content@73.29:73.36CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaK! K((2≈
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@69.38:69.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaM M(2Ö
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaP P(2≈
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@80.34:80.39CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaQ Q(2≈
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@80.34:80.39CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaR R(2≈
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@80.34:80.39CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaT T(2Ö
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaW W(2≈
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@87.37:87.42CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaY Y(2≈
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@87.37:87.42CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaZ# Z((2≈
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@87.37:87.42CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java\ \(2Ä
+6org.jabref.gui.preview.PreviewPanel?LOGGER@39.32:39.38CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java] ](2Ñ
+:org.jabref.gui.preview.PreviewPanel?fileLinker@41.43:41.53CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java^ ^(2
+5org.jabref.gui.preview.PreviewPanel?entry@48.21:48.26CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java^E ^(J2≈
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?files@90.27:90.32CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java^L ^(Q2«
+¸org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!indexingTaskManagerCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java^S ^(f2≈
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@87.37:87.42CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java` `(2Ä
+6org.jabref.gui.preview.PreviewPanel?LOGGER@39.32:39.38CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaa a(2Ñ
+:org.jabref.gui.preview.PreviewPanel?fileLinker@41.43:41.53CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javab b(2
+5org.jabref.gui.preview.PreviewPanel?entry@48.21:48.26CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javab/ b(42≈
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?files@90.27:90.32CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javab6 b(;2≈
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@87.37:87.42CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javad d(2Ä
+6org.jabref.gui.preview.PreviewPanel?LOGGER@39.32:39.38CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javae e(2Ñ
+:org.jabref.gui.preview.PreviewPanel?fileLinker@41.43:41.53CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaf f(2
+5org.jabref.gui.preview.PreviewPanel?entry@48.21:48.26CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaf? f(D2≈
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?files@90.27:90.32CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javafF f(K2«
+¸org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!indexingTaskManagerCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javafM f(`2«
+¸org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?success@88.20:88.27CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javah h(2≈
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@87.37:87.42CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javak k(2«
+¸org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?success@88.20:88.27CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javak# k(*2≈
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@87.37:87.42CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javal l(2Ö
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javan n(*2Ö
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaq q(2“
+áorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?previewPreferences@65.27:65.45CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaq q(02é
+Dorg.jabref.gui.preview.PreviewPanel?keyBindingRepository@42.39:42.59CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java: :(!2á
+=org.jabref.gui.preview.PreviewPanel?dialogService@45.32:45.45CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java; ;(2Ü
+<org.jabref.gui.preview.PreviewPanel?stateManager@46.31:46.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java< <(2å
+Borg.jabref.gui.preview.PreviewPanel?previewPreferences@44.37:44.55CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java= =(2ç
+Corg.jabref.gui.preview.PreviewPanel?indexingTaskManager@47.38:47.57CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java> >( 2Ñ
+:org.jabref.gui.preview.PreviewPanel?fileLinker@41.43:41.53CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java? ?(2¡
+Òorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!database	PARAMETER@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java2+ 2(32∆
+ˆorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETER@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java3& 3(32Õ
+˝org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!keyBindingRepository	PARAMETER@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java4- 4(A2À
+˚org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!preferencesService	PARAMETER@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java5+ 5(=2≈
+ıorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!stateManager	PARAMETER@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java6% 6(12≈
+ıorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!themeManager	PARAMETER@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java7% 7(12Ã
+¸org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!indexingTaskManager	PARAMETER@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java8, 8(?2≈
+ıorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETER@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java9% 9(12Ÿ
+áorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?previewPreferences@65.27:65.45DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaA A(-2–
+˛org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?dragboard@72.22:72.31DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaH H(2Œ
+¸org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?content@73.29:73.36DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaI I($2Œ
+¸org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?success@88.20:88.27DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaX X(2Ã
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?files@90.27:90.32DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaZ Z( 2Ã
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@69.38:69.43DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaE& E(+2Ã
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@80.34:80.39DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaP" P('2Ã
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@87.37:87.42DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaW% W(*2t
+#org.jabref.gui.preview.PreviewPanelRETURN_TYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java2 2(è
+áorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?previewPreferences@65.27:65.45VARIABLE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaA A(-"
+typePreviewPreferences"
+isFinalfalse"®
+declarationStringí<mark class="modifier"> </mark>PreviewPreferences <mark class="class-field">previewPreferences</mark> = preferencesService.getPreviewPreferences()*previewPreferences2s
+)org.jabref.preferences.PreviewPreferencesTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaA A(2ã
+Aorg.jabref.preferences.PreferencesService.getPreviewPreferences()CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaAC A(X2∆
+˚org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!preferencesServiceCALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaA0 A(Bã
+˛org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?dragboard@72.22:72.31VARIABLE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaH H("
+type	Dragboard"
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier"> </mark>Dragboard <mark class="class-field">dragboard</mark> = previewView.startDragAndDrop(TransferMode.COPY)*	dragboard2f
+javafx.scene.input.DragboardTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaH H(2Ö
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaH" H(-¯
+¸org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?content@73.29:73.36VARIABLE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaI I($"
+typeClipboardContent"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>ClipboardContent <mark class="class-field">content</mark> = new ClipboardContent()*content2m
+#javafx.scene.input.ClipboardContentTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaI I(ˆ
+¸org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?success@88.20:88.27VARIABLE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaX X("
+typeboolean"
+isFinalfalse"©
+declarationStringì<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">success</mark> = <mark class="modifier">false</mark>*success2Q
+booleanTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaX X(≤
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?files@90.27:90.32VARIABLE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaZ Z( "
+type
+List<Path>"
+isFinalfalse"¿
+declarationString™<mark class="modifier"> </mark>List<Path> <mark class="class-field">files</mark> = event.getDragboard().getFiles().stream().map(File::toPath).collect(Collectors.toList())*files2X
+java.util.ListTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaZ Z(2e
+java.nio.file.PathTYPE_ARGUMENT@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaZ Z(2n
+$java.util.stream.Collectors.toList()CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaZq Z(w2≈
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@87.37:87.42CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaZ# Z((£
+Òorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!database	PARAMETER@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java2+ 2(3"
+typeBibDatabaseContext"
+isFinalfalse"0
+declarationStringBibDatabaseContext database*database2v
+,org.jabref.model.database.BibDatabaseContextTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java2 2(*ò
+ˆorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETER@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java3& 3(3"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2f
+org.jabref.gui.DialogServiceTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java3 3(%À
+˝org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!keyBindingRepository	PARAMETER@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java4- 4(A"
+typeKeyBindingRepository"
+isFinalfalse">
+declarationString)KeyBindingRepository keyBindingRepository*keyBindingRepository2v
+,org.jabref.gui.keyboard.KeyBindingRepositoryTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java4 4(,æ
+˚org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!preferencesService	PARAMETER@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java5+ 5(="
+typePreferencesService"
+isFinalfalse":
+declarationString%PreferencesService preferencesService*preferencesService2s
+)org.jabref.preferences.PreferencesServiceTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java5 5(*í
+ıorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!stateManager	PARAMETER@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java6% 6(1"
+typeStateManager"
+isFinalfalse".
+declarationStringStateManager stateManager*stateManager2e
+org.jabref.gui.StateManagerTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java6 6($ò
+ıorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!themeManager	PARAMETER@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java7% 7(1"
+typeThemeManager"
+isFinalfalse".
+declarationStringThemeManager themeManager*themeManager2k
+!org.jabref.gui.theme.ThemeManagerTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java7 7($…
+¸org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!indexingTaskManager	PARAMETER@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java8, 8(?"
+typeIndexingTaskManager"
+isFinalfalse"<
+declarationString'IndexingTaskManager indexingTaskManager*indexingTaskManager2y
+/org.jabref.logic.pdf.search.IndexingTaskManagerTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java8 8(+ó
+ıorg.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETER@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java9% 9(1"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2j
+ org.jabref.gui.util.TaskExecutorTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java9 9($è
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@69.38:69.43VARIABLE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaE& E(+"
+type"
+isFinalfalse"
+declarationString event*event2TYPEè
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@80.34:80.39VARIABLE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaP" P('"
+type"
+isFinalfalse"
+declarationString event*event2TYPEè
+˙org.jabref.gui.preview.PreviewPanel.PreviewPanel(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.gui.keyboard.KeyBindingRepository, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.theme.ThemeManager, org.jabref.logic.pdf.search.IndexingTaskManager, org.jabref.gui.util.TaskExecutor)?event@87.37:87.42VARIABLE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaW% W(*"
+type"
+isFinalfalse"
+declarationString event*event2TYPE˛
+7org.jabref.gui.preview.PreviewPanel.createKeyBindings()METHOD@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javat t(""
+isFinalfalse"ç
+declarationStringx<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">createKeyBindings</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*createKeyBindings2h
+java.util.Optional.isPresent()CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaw w($2b
+java.util.Optional.get()CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javax# x(&2á
+=org.jabref.gui.preview.PreviewViewer.copyPreviewToClipBoard()CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaz$ z(:2Ö
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javau u(2é
+Dorg.jabref.gui.preview.PreviewPanel?keyBindingRepository@42.39:42.59CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javav. v(B2ï
+Korg.jabref.gui.preview.PreviewPanel.createKeyBindings()?event@117.57:117.62CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javavS v(X2ö
+Porg.jabref.gui.preview.PreviewPanel.createKeyBindings()?keyBinding@118.33:118.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaw w(2ö
+Porg.jabref.gui.preview.PreviewPanel.createKeyBindings()?keyBinding@118.33:118.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javax x("2Ö
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaz z(#2ï
+Korg.jabref.gui.preview.PreviewPanel.createKeyBindings()?event@117.57:117.62CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java{ {(2°
+Porg.jabref.gui.preview.PreviewPanel.createKeyBindings()?keyBinding@118.33:118.43DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javav! v(+2ú
+Korg.jabref.gui.preview.PreviewPanel.createKeyBindings()?event@117.57:117.62DECLARATION@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javau9 u(>2U
+voidRETURN_TYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javat t(˛
+Porg.jabref.gui.preview.PreviewPanel.createKeyBindings()?keyBinding@118.33:118.43VARIABLE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javav! v(+"
+typeOptional<KeyBinding>"
+isFinalfalse"£
+declarationStringç<mark class="modifier"> </mark>Optional<KeyBinding> <mark class="class-field">keyBinding</mark> = keyBindingRepository.mapToKeyBinding(event)*
+keyBinding2\
+java.util.OptionalTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javav v(2u
+"org.jabref.gui.keyboard.KeyBindingTYPE_ARGUMENT@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javav v(2é
+Dorg.jabref.gui.preview.PreviewPanel?keyBindingRepository@42.39:42.59CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javav. v(B2ï
+Korg.jabref.gui.preview.PreviewPanel.createKeyBindings()?event@117.57:117.62CALL@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javavS v(Xﬂ
+Korg.jabref.gui.preview.PreviewPanel.createKeyBindings()?event@117.57:117.62VARIABLE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javau9 u(>"
+type"
+isFinalfalse"
+declarationString event*event2TYPE—B
+5org.jabref.gui.preview.PreviewPanel.createPopupMenu()METHODB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÉ É('"
+isFinalfalse"t
+declarationString_<mark class="modifier">private </mark>ContextMenu <mark class="method">createPopupMenu</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeContextMenu*createPopupMenu2ö
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÑ9 Ñ(=2Ü
+:org.jabref.gui.icon.IconTheme.JabRefIcons.getGraphicNode()CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÑj Ñ(x2ê
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÖH Ö(Q2Æ
+borg.jabref.gui.keyboard.KeyBindingRepository.getKeyCombination(org.jabref.gui.keyboard.KeyBinding)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÖ Ö(.2â
+=org.jabref.gui.preview.PreviewViewer.copyPreviewToClipBoard()CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÜ5 Ü(K2ö
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaá; á(?2ã
+?org.jabref.gui.preview.PreviewViewer.copySelectionToClipBoard()CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaà7 à(O2ö
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaâ? â(C2á
+:org.jabref.gui.icon.IconTheme.JabRefIcons.getGraphicNode()CALLC
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaâz â(à2x
+,org.jabref.gui.preview.PreviewViewer.print()CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaä; ä(@2ö
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaãC ã(G2ê
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaåS å(\2Æ
+borg.jabref.gui.keyboard.KeyBindingRepository.getKeyCombination(org.jabref.gui.keyboard.KeyBinding)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaå å(.2Ü
+:org.jabref.gui.preview.PreviewPanel.previousPreviewStyle()CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaç8 ç(L2ö
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaé? é(C2ê
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaèO è(X2Æ
+borg.jabref.gui.keyboard.KeyBindingRepository.getKeyCombination(org.jabref.gui.keyboard.KeyBinding)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaè è(.2Ç
+6org.jabref.gui.preview.PreviewPanel.nextPreviewStyle()CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaê4 ê(D2ê
+Dorg.jabref.gui.preview.PreviewPanel?keyBindingRepository@42.39:42.59CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÖ Ö(2õ
+Oorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?copyPreview@132.17:132.28CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÜ Ü(2á
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÜ) Ü(42ù
+Qorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?copySelection@135.17:135.30CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaà à(2á
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaà+ à(62°
+Uorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?printEntryPreview@137.17:137.34CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaä ä(2á
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaä/ ä(:2ê
+Dorg.jabref.gui.preview.PreviewPanel?keyBindingRepository@42.39:42.59CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaå å(2•
+Yorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?previousPreviewLayout@139.17:139.38CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaç ç(2ê
+Dorg.jabref.gui.preview.PreviewPanel?keyBindingRepository@42.39:42.59CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaè è(2°
+Uorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?nextPreviewLayout@142.17:142.34CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaê ê(2î
+Horg.jabref.gui.preview.PreviewPanel.createPopupMenu()?menu@146.20:146.24CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaì ì(2õ
+Oorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?copyPreview@132.17:132.28CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaì ì('2î
+Horg.jabref.gui.preview.PreviewPanel.createPopupMenu()?menu@146.20:146.24CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaî î(2ù
+Qorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?copySelection@135.17:135.30CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaî î()2î
+Horg.jabref.gui.preview.PreviewPanel.createPopupMenu()?menu@146.20:146.24CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaï ï(2°
+Uorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?printEntryPreview@137.17:137.34CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaï ï(-2î
+Horg.jabref.gui.preview.PreviewPanel.createPopupMenu()?menu@146.20:146.24CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javañ ñ(2î
+Horg.jabref.gui.preview.PreviewPanel.createPopupMenu()?menu@146.20:146.24CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaó ó(2°
+Uorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?nextPreviewLayout@142.17:142.34CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaó ó(-2î
+Horg.jabref.gui.preview.PreviewPanel.createPopupMenu()?menu@146.20:146.24CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaò ò(2•
+Yorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?previousPreviewLayout@139.17:139.38CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaò ò(12î
+Horg.jabref.gui.preview.PreviewPanel.createPopupMenu()?menu@146.20:146.24CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaô ô(2¢
+Oorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?copyPreview@132.17:132.28DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÑ Ñ(2§
+Qorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?copySelection@135.17:135.30DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaá á(2®
+Uorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?printEntryPreview@137.17:137.34DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaâ â("2¨
+Yorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?previousPreviewLayout@139.17:139.38DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaã ã(&2®
+Uorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?nextPreviewLayout@142.17:142.34DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaé é("2õ
+Horg.jabref.gui.preview.PreviewPanel.createPopupMenu()?menu@146.20:146.24DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaí í(2ú
+Iorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?event@134.32:134.37DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÜ  Ü(%2ú
+Iorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?event@136.34:136.39DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaà" à('2ú
+Iorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?event@138.38:138.43DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaä& ä(+2ú
+Iorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?event@141.42:141.47DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaç* ç(/2ú
+Iorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?event@144.38:144.43DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaê& ê(+2s
+ javafx.scene.control.ContextMenuRETURN_TYPEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÉ É(À
+Oorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?copyPreview@132.17:132.28VARIABLEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÑ Ñ("
+typeMenuItem"
+isFinalfalse"Á
+declarationString—<mark class="modifier"> </mark>MenuItem <mark class="class-field">copyPreview</mark> = new MenuItem(Localization.lang("Copy preview")<mark class="modifier">,</mark> IconTheme.JabRefIcons.COPY.getGraphicNode())*copyPreview2i
+javafx.scene.control.MenuItemTYPEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÑ Ñ(2ö
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÑ9 Ñ(=2Ü
+:org.jabref.gui.icon.IconTheme.JabRefIcons.getGraphicNode()CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÑj Ñ(xˇ
+Qorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?copySelection@135.17:135.30VARIABLEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaá á("
+typeMenuItem"
+isFinalfalse"†
+declarationStringä<mark class="modifier"> </mark>MenuItem <mark class="class-field">copySelection</mark> = new MenuItem(Localization.lang("Copy selection"))*copySelection2i
+javafx.scene.control.MenuItemTYPEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaá á(2ö
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaá; á(?Ë
+Uorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?printEntryPreview@137.17:137.34VARIABLEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaâ â(""
+typeMenuItem"
+isFinalfalse"˜
+declarationString·<mark class="modifier"> </mark>MenuItem <mark class="class-field">printEntryPreview</mark> = new MenuItem(Localization.lang("Print entry preview")<mark class="modifier">,</mark> IconTheme.JabRefIcons.PRINTED.getGraphicNode())*printEntryPreview2i
+javafx.scene.control.MenuItemTYPEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaâ â(2ö
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaâ? â(C2á
+:org.jabref.gui.icon.IconTheme.JabRefIcons.getGraphicNode()CALLC
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaâz â(à†
+Yorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?previousPreviewLayout@139.17:139.38VARIABLEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaã ã(&"
+typeMenuItem"
+isFinalfalse"±
+declarationStringõ<mark class="modifier"> </mark>MenuItem <mark class="class-field">previousPreviewLayout</mark> = new MenuItem(Localization.lang("Previous preview layout"))*previousPreviewLayout2i
+javafx.scene.control.MenuItemTYPEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaã ã(2ö
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaãC ã(Gê
+Uorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?nextPreviewLayout@142.17:142.34VARIABLEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaé é(""
+typeMenuItem"
+isFinalfalse"©
+declarationStringì<mark class="modifier"> </mark>MenuItem <mark class="class-field">nextPreviewLayout</mark> = new MenuItem(Localization.lang("Next preview layout"))*nextPreviewLayout2i
+javafx.scene.control.MenuItemTYPEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaé é(2ö
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaé? é(CÆ
+Horg.jabref.gui.preview.PreviewPanel.createPopupMenu()?menu@146.20:146.24VARIABLEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaí í("
+typeContextMenu"
+isFinalfalse"y
+declarationStringd<mark class="modifier"> </mark>ContextMenu <mark class="class-field">menu</mark> = new ContextMenu()*menu2l
+ javafx.scene.control.ContextMenuTYPEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaí í(ﬂ
+Iorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?event@134.32:134.37VARIABLEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÜ  Ü(%"
+type"
+isFinalfalse"
+declarationString event*event2TYPEﬂ
+Iorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?event@136.34:136.39VARIABLEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaà" à('"
+type"
+isFinalfalse"
+declarationString event*event2TYPEﬂ
+Iorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?event@138.38:138.43VARIABLEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaä& ä(+"
+type"
+isFinalfalse"
+declarationString event*event2TYPEﬂ
+Iorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?event@141.42:141.47VARIABLEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaç* ç(/"
+type"
+isFinalfalse"
+declarationString event*event2TYPEﬂ
+Iorg.jabref.gui.preview.PreviewPanel.createPopupMenu()?event@144.38:144.43VARIABLEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaê& ê(+"
+type"
+isFinalfalse"
+declarationString event*event2TYPE’
+Morg.jabref.gui.preview.PreviewPanel.setEntry(org.jabref.model.entry.BibEntry)METHODB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaú ú("
+isFinalfalse"ë
+declarationString|<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">setEntry</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*setEntry2ö
+Norg.jabref.gui.preview.PreviewViewer.setEntry(org.jabref.model.entry.BibEntry)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaû û(2¢
+Vorg.jabref.gui.preview.PreviewViewer.setLayout(org.jabref.logic.preview.PreviewLayout)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaü ü(2ê
+Dorg.jabref.preferences.PreviewPreferences.getSelectedPreviewLayout()CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaü1 ü(I2ü
+Sorg.jabref.gui.preview.PreviewPanel.setEntry(org.jabref.model.entry.BibEntry)!entryCALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaù ù(2á
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaû û(2ü
+Sorg.jabref.gui.preview.PreviewPanel.setEntry(org.jabref.model.entry.BibEntry)!entryCALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaû û("2á
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaü ü(2é
+Borg.jabref.gui.preview.PreviewPanel?previewPreferences@44.37:44.55CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaü ü(02Å
+5org.jabref.gui.preview.PreviewPanel?entry@48.21:48.26CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaù ù(2§
+Sorg.jabref.gui.preview.PreviewPanel.setEntry(org.jabref.model.entry.BibEntry)!entry	PARAMETERB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaú" ú('2W
+voidRETURN_TYPEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaú ú(·
+Sorg.jabref.gui.preview.PreviewPanel.setEntry(org.jabref.model.entry.BibEntry)!entry	PARAMETERB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaú" ú('"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2k
+org.jabref.model.entry.BibEntryTYPEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaú ú(!∫
++org.jabref.gui.preview.PreviewPanel.print()METHODB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java¢ ¢("
+isFinalfalse"Ä
+declarationStringk<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">print</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*print2x
+,org.jabref.gui.preview.PreviewViewer.print()CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java£ £(2á
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java£ £(2W
+voidRETURN_TYPEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java¢ ¢(˝
+6org.jabref.gui.preview.PreviewPanel.nextPreviewStyle()METHODB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java¶ ¶( "
+isFinalfalse"ã
+declarationStringv<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">nextPreviewStyle</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*nextPreviewStyle2Å
+5org.jabref.gui.preview.PreviewPanel.cyclePreview(int)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaß ß(2é
+Borg.jabref.preferences.PreviewPreferences.getLayoutCyclePosition()CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaß( ß(>2é
+Borg.jabref.gui.preview.PreviewPanel?previewPreferences@44.37:44.55CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaß ß('2W
+voidRETURN_TYPEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java¶ ¶(â
+:org.jabref.gui.preview.PreviewPanel.previousPreviewStyle()METHODB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java™ ™($"
+isFinalfalse"è
+declarationStringz<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">previousPreviewStyle</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*previousPreviewStyle2Å
+5org.jabref.gui.preview.PreviewPanel.cyclePreview(int)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java´ ´(2é
+Borg.jabref.preferences.PreviewPreferences.getLayoutCyclePosition()CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java´( ´(>2é
+Borg.jabref.gui.preview.PreviewPanel?previewPreferences@44.37:44.55CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java´ ´('2W
+voidRETURN_TYPEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java™ ™(†
+5org.jabref.gui.preview.PreviewPanel.cyclePreview(int)METHODB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÆ Æ("
+isFinalfalse"∂
+declarationString†<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">cyclePreview</mark>(<mark class="modifier">int</mark> newPosition)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*cyclePreview2ë
+Eorg.jabref.preferences.PreviewPreferences.setLayoutCyclePosition(int)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaØ Ø(12ê
+Dorg.jabref.preferences.PreviewPreferences.getSelectedPreviewLayout()CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java±2 ±(J2¢
+Vorg.jabref.gui.preview.PreviewViewer.setLayout(org.jabref.logic.preview.PreviewLayout)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java≤ ≤(2Å
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java≥ ≥(2ö
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java≥* ≥(.2É
+7org.jabref.logic.preview.PreviewLayout.getDisplayName()CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java≥V ≥(d2é
+Borg.jabref.gui.preview.PreviewPanel?previewPreferences@44.37:44.55CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaØ Ø(2ç
+Aorg.jabref.gui.preview.PreviewPanel.cyclePreview(int)!newPositionCALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaØ2 Ø(=2é
+Borg.jabref.gui.preview.PreviewPanel?previewPreferences@44.37:44.55CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java± ±(12á
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java≤ ≤(2ñ
+Jorg.jabref.gui.preview.PreviewPanel.cyclePreview(int)?layout@177.22:177.28CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java≤ ≤($2â
+=org.jabref.gui.preview.PreviewPanel?dialogService@45.32:45.45CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java≥ ≥(2ñ
+Jorg.jabref.gui.preview.PreviewPanel.cyclePreview(int)?layout@177.22:177.28CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java≥O ≥(U2í
+Aorg.jabref.gui.preview.PreviewPanel.cyclePreview(int)!newPosition	PARAMETERB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÆ" Æ(-2ù
+Jorg.jabref.gui.preview.PreviewPanel.cyclePreview(int)?layout@177.22:177.28DECLARATIONB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java± ±(2W
+voidRETURN_TYPEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÆ Æ(Ä
+Jorg.jabref.gui.preview.PreviewPanel.cyclePreview(int)?layout@177.22:177.28VARIABLEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java± ±("
+typePreviewLayout"
+isFinalfalse"ö
+declarationStringÑ<mark class="modifier"> </mark>PreviewLayout <mark class="class-field">layout</mark> = previewPreferences.getSelectedPreviewLayout()*layout2r
+&org.jabref.logic.preview.PreviewLayoutTYPEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java± ±(2ê
+Dorg.jabref.preferences.PreviewPreferences.getSelectedPreviewLayout()CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java±2 ±(J2é
+Borg.jabref.gui.preview.PreviewPanel?previewPreferences@44.37:44.55CALLB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java± ±(1”
+Aorg.jabref.gui.preview.PreviewPanel.cyclePreview(int)!newPosition	PARAMETERB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÆ" Æ(-"
+typeint"
+isFinalfalse"B
+declarationString-<mark class="modifier">int</mark> newPosition*newPosition2O
+intTYPEB
+6src\main\java\org\jabref\gui\preview\PreviewPanel.javaÆ Æ(!ê
+6org.jabref.gui.preview.PreviewPanel?LOGGER@39.32:39.38VALUE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java'  '(&"
+isFinaltrue"
+typeLogger"‚
+declarationStringÃ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(PreviewPanel.class);"
+isStatictrue"
+accessprivate*LOGGER2Z
+org.slf4j.LoggerTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java' '(í
+:org.jabref.gui.preview.PreviewPanel?fileLinker@41.43:41.53VALUE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java)+ )(5"
+isFinaltrue" 
+typeExternalFilesEntryLinker"§
+declarationStringé<mark class="modifier">private </mark><mark class="modifier">final </mark>ExternalFilesEntryLinker <mark class="class-field">fileLinker</mark>"
+isStaticfalse"
+accessprivate*
+fileLinker2
+5org.jabref.gui.externalfiles.ExternalFilesEntryLinkerTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java) )(*ü
+Dorg.jabref.gui.preview.PreviewPanel?keyBindingRepository@42.39:42.59VALUE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java*' *(;"
+isFinaltrue"
+typeKeyBindingRepository"™
+declarationStringî<mark class="modifier">private </mark><mark class="modifier">final </mark>KeyBindingRepository <mark class="class-field">keyBindingRepository</mark>"
+isStaticfalse"
+accessprivate*keyBindingRepository2v
+,org.jabref.gui.keyboard.KeyBindingRepositoryTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java* *(&Ó
+;org.jabref.gui.preview.PreviewPanel?previewView@43.32:43.43VALUE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java+  +(+"
+isFinaltrue"
+typePreviewViewer"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>PreviewViewer <mark class="class-field">previewView</mark>"
+isStaticfalse"
+accessprivate*previewView2n
+$org.jabref.gui.preview.PreviewViewerTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java+ +(í
+Borg.jabref.gui.preview.PreviewPanel?previewPreferences@44.37:44.55VALUE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java,% ,(7"
+isFinaltrue"
+typePreviewPreferences"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>PreviewPreferences <mark class="class-field">previewPreferences</mark>"
+isStaticfalse"
+accessprivate*previewPreferences2s
+)org.jabref.preferences.PreviewPreferencesTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java, ,($Ï
+=org.jabref.gui.preview.PreviewPanel?dialogService@45.32:45.45VALUE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java-  -(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2f
+org.jabref.gui.DialogServiceTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java- -(Ê
+<org.jabref.gui.preview.PreviewPanel?stateManager@46.31:46.43VALUE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java. .(+"
+isFinaltrue"
+typeStateManager"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>StateManager <mark class="class-field">stateManager</mark>"
+isStaticfalse"
+accessprivate*stateManager2e
+org.jabref.gui.StateManagerTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java. .(ù
+Corg.jabref.gui.preview.PreviewPanel?indexingTaskManager@47.38:47.57VALUE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java/& /(9"
+isFinaltrue"
+typeIndexingTaskManager"®
+declarationStringí<mark class="modifier">private </mark><mark class="modifier">final </mark>IndexingTaskManager <mark class="class-field">indexingTaskManager</mark>"
+isStaticfalse"
+accessprivate*indexingTaskManager2y
+/org.jabref.logic.pdf.search.IndexingTaskManagerTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java/ /(%´
+5org.jabref.gui.preview.PreviewPanel?entry@48.21:48.26VARIABLE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java0 0("
+isFinalfalse"
+typeBibEntry"j
+declarationStringU<mark class="modifier">private </mark>BibEntry <mark class="class-field">entry</mark>"
+isStaticfalse"
+accessprivate*entry2i
+org.jabref.model.entry.BibEntryTYPE@
+6src\main\java\org\jabref\gui\preview\PreviewPanel.java0 0(

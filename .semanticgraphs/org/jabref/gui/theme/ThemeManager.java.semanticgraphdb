@@ -1,0 +1,954 @@
+
+4src\main\java\org\jabref\gui\theme\ThemeManager.java„
+!org.jabref.gui.theme.ThemeManagerCLASS>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java' '("
+packageorg.jabref.gui.theme"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"j
+declarationStringU<mark class="modifier">public </mark><mark class="modifier">class </mark>ThemeManager"
+accesspublic*ThemeManager2Ö
+µorg.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java7 7(2Ü
+7org.jabref.gui.theme.ThemeManager.updateThemeSettings()DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaT T($2Ö
+6org.jabref.gui.theme.ThemeManager.updateFontSettings()DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javan n(#2Ø
+`org.jabref.gui.theme.ThemeManager.removeStylesheetFromWatchList(org.jabref.gui.theme.StyleSheet)DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javar r(.2’
+Öorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaz z()2Ü
+5org.jabref.gui.theme.ThemeManager.baseCssLiveUpdate()DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÜ Ü("2å
+;org.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaë ë((2Ç
+1org.jabref.gui.theme.ThemeManager.updateBaseCss()DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java® ®(2à
+7org.jabref.gui.theme.ThemeManager.updateAdditionalCss()DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java≥ ≥($2ë
+@org.jabref.gui.theme.ThemeManager.installCss(javafx.scene.Scene)DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java» »(2ô
+Horg.jabref.gui.theme.ThemeManager.installCss(javafx.scene.web.WebEngine)DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java◊ ◊(2ñ
+Eorg.jabref.gui.theme.ThemeManager.updateFontStyle(javafx.scene.Scene)DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÊ Ê(2É
+2org.jabref.gui.theme.ThemeManager.getActiveTheme()DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÒ Ò(2á
+6org.jabref.gui.theme.ThemeManager.getMainWindowScene()DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaı ı(-2É
+4org.jabref.gui.theme.ThemeManager?LOGGER@41.32:41.38DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java)  )(&2ë
+Borg.jabref.gui.theme.ThemeManager?workspacePreferences@43.39:43.59DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java+' +(;2é
+?org.jabref.gui.theme.ThemeManager?fileUpdateMonitor@44.36:44.53DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java,$ ,(52â
+:org.jabref.gui.theme.ThemeManager?updateRunner@45.37:45.49DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java-% -(12ã
+<org.jabref.gui.theme.ThemeManager?baseStyleSheet@47.29:47.43DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java/ /(+2Ç
+3org.jabref.gui.theme.ThemeManager?theme@48.18:48.23DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java0 0(2Ö
+6org.jabref.gui.theme.ThemeManager?detector@50.28:50.36DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java2 2($2å
+=org.jabref.gui.theme.ThemeManager?mainWindowScene@52.18:52.33DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java4 4(!2á
+8org.jabref.gui.theme.ThemeManager?webEngines@53.33:53.43DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java5! 5(+ÛK
+µorg.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)CONSTRUCTOR>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java7 7("“
+declarationStringº<mark class="modifier">public </mark><mark class="method">ThemeManager</mark>(WorkspacePreferences workspacePreferences<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileUpdateMonitor<mark class="modifier"><mark class="modifier">,</mark></mark> Consumer&lt;Runnable&gt; updateRunner)*ThemeManager2k
+#java.util.Objects.requireNonNull(T)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java:, :(:2k
+#java.util.Objects.requireNonNull(T)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java;) ;(72k
+#java.util.Objects.requireNonNull(T)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java<$ <(22`
+java.util.Optional.get()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java>@ >(C2Ä
+8org.jabref.gui.theme.StyleSheet.create(java.lang.String)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java>) >(/2~
+6org.jabref.preferences.WorkspacePreferences.getTheme()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java?* ?(22Œ
+Öorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaC C( 2}
+5org.jabref.gui.theme.ThemeManager.baseCssLiveUpdate()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaD D(2É
+;org.jabref.preferences.WorkspacePreferences.themeProperty()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaF0 F(=2
+7org.jabref.gui.theme.ThemeManager.updateThemeSettings()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaFJ F(]2â
+Aorg.jabref.preferences.WorkspacePreferences.themeSyncOsProperty()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaG0 G(C2
+7org.jabref.gui.theme.ThemeManager.updateThemeSettings()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaGP G(c2õ
+Sorg.jabref.preferences.WorkspacePreferences.shouldOverrideDefaultFontSizeProperty()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaH0 H(U2~
+6org.jabref.gui.theme.ThemeManager.updateFontSettings()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaHc H(u2ä
+Borg.jabref.preferences.WorkspacePreferences.mainFontSizeProperty()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaI0 I(D2~
+6org.jabref.gui.theme.ThemeManager.updateFontSettings()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaIP I(b2
+7org.jabref.gui.theme.ThemeManager.updateThemeSettings()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaM0 M(C2ã
+Corg.jabref.preferences.WorkspacePreferences.setThemeSyncOs(boolean)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaP! P(/2ì
+ org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)!workspacePreferencesCALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java:; :(O2ê
+«org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)!fileUpdateMonitorCALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java;8 ;(I2ã
+¬org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)!updateRunnerCALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java<3 <(?2ì
+ org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)!workspacePreferencesCALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java? ?()2ì
+ org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)!workspacePreferencesCALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaF F(/2ì
+ org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)!workspacePreferencesCALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaG G(/2ì
+ org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)!workspacePreferencesCALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaH H(/2ì
+ org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)!workspacePreferencesCALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaI I(/2~
+6org.jabref.gui.theme.ThemeManager?detector@50.28:50.36CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaL L(2~
+6org.jabref.gui.theme.ThemeManager?detector@50.28:50.36CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaM M(2|
+4org.jabref.gui.theme.ThemeManager?LOGGER@41.32:41.38CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaO O(2ç
+ƒorg.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)?ex@78.27:78.29CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaOA O(C2ì
+ org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)!workspacePreferencesCALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaP P( 2ä
+Borg.jabref.gui.theme.ThemeManager?workspacePreferences@43.39:43.59CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java: :(!2á
+?org.jabref.gui.theme.ThemeManager?fileUpdateMonitor@44.36:44.53CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java; ;(2Ç
+:org.jabref.gui.theme.ThemeManager?updateRunner@45.37:45.49CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java< <(2Ñ
+<org.jabref.gui.theme.ThemeManager?baseStyleSheet@47.29:47.43CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java> >(2{
+3org.jabref.gui.theme.ThemeManager?theme@48.18:48.23CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java? ?(2Ñ
+<org.jabref.gui.theme.ThemeManager?baseStyleSheet@47.29:47.43CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaC& C(42}
+5org.jabref.gui.theme.ThemeManager.baseCssLiveUpdate()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaC6 C(M2ò
+ org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)!workspacePreferences	PARAMETER>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java7- 7(A2ï
+«org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)!fileUpdateMonitor	PARAMETER>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java8* 8(;2ê
+¬org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)!updateRunner	PARAMETER>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java9+ 9(72ó
+«org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)?theme@70.65:70.70DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaFA F(F2ó
+«org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)?theme@71.71:71.76DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaGG G(L2ò
+»org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)?should@72.89:72.95DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaHY H(_2ñ
+∆org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)?size@73.72:73.76DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaIH I(L2ò
+»org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)?isDark@77.38:77.44DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaM& M(,2î
+ƒorg.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)?ex@78.27:78.29DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaN N(2p
+!org.jabref.gui.theme.ThemeManagerRETURN_TYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java7 7(ì
+ org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)!workspacePreferences	PARAMETER>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java7- 7(A"
+typeWorkspacePreferences"
+isFinalfalse">
+declarationString)WorkspacePreferences workspacePreferences*workspacePreferences2s
++org.jabref.preferences.WorkspacePreferencesTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java7 7(,Ä
+«org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)!fileUpdateMonitor	PARAMETER>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java8* 8(;"
+typeFileUpdateMonitor"
+isFinalfalse"8
+declarationString#FileUpdateMonitor fileUpdateMonitor*fileUpdateMonitor2o
+'org.jabref.model.util.FileUpdateMonitorTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java8 8()Ã
+¬org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)!updateRunner	PARAMETER>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java9+ 9(7"
+typeConsumer<Runnable>"
+isFinalfalse"4
+declarationStringConsumer<Runnable> updateRunner*updateRunner2c
+java.util.function.ConsumerTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java9 9( 2c
+java.lang.RunnableTYPE_ARGUMENT>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java9! 9()⁄
+«org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)?theme@70.65:70.70VARIABLE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaFA F(F"
+type"
+isFinalfalse"
+declarationString theme*theme2TYPE⁄
+«org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)?theme@71.71:71.76VARIABLE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaGG G(L"
+type"
+isFinalfalse"
+declarationString theme*theme2TYPE›
+»org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)?should@72.89:72.95VARIABLE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaHY H(_"
+type"
+isFinalfalse"
+declarationString should*should2TYPE◊
+∆org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)?size@73.72:73.76VARIABLE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaIH I(L"
+type"
+isFinalfalse"
+declarationString size*size2TYPE›
+»org.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)?isDark@77.38:77.44VARIABLE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaM& M(,"
+type"
+isFinalfalse"
+declarationString isDark*isDark2TYPE∫
+ƒorg.jabref.gui.theme.ThemeManager.ThemeManager(org.jabref.preferences.WorkspacePreferences, org.jabref.model.util.FileUpdateMonitor, java.util.function.Consumer<java.lang.Runnable>)?ex@78.27:78.29VARIABLE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaN N("
+type	Exception"
+isFinalfalse"!
+declarationStringException ex*ex2[
+java.lang.ExceptionTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaN N(¶'
+7org.jabref.gui.theme.ThemeManager.updateThemeSettings()METHOD>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaT T($"
+isFinalfalse"è
+declarationStringz<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">updateThemeSettings</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*updateThemeSettings2k
+#java.util.Objects.requireNonNull(T)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaU! U(/2~
+6org.jabref.preferences.WorkspacePreferences.getTheme()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaUE U(M2â
+Aorg.jabref.preferences.WorkspacePreferences.themeSyncOsProperty()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaW! W(42i
+!org.jabref.gui.theme.Theme.dark()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaY! Y(%2j
+"org.jabref.gui.theme.Theme.light()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java[! [(&2{
+3org.jabref.gui.theme.Theme.equals(java.lang.Object)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java_ _(2å
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javab, b(52|
+4org.jabref.gui.theme.Theme.getAdditionalStylesheet()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javab b()2å
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javah- h(62|
+4org.jabref.gui.theme.Theme.getAdditionalStylesheet()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javah h(*2Œ
+Öorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javai i(62É
+;org.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javak k(2ä
+Borg.jabref.gui.theme.ThemeManager?workspacePreferences@43.39:43.59CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaU0 U(D2ä
+Borg.jabref.gui.theme.ThemeManager?workspacePreferences@43.39:43.59CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaW W( 2~
+6org.jabref.gui.theme.ThemeManager?detector@50.28:50.36CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaWE W(M2~
+6org.jabref.gui.theme.ThemeManager?detector@50.28:50.36CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaX X(2î
+Lorg.jabref.gui.theme.ThemeManager.updateThemeSettings()?newTheme@85.14:85.22CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaY Y(2î
+Lorg.jabref.gui.theme.ThemeManager.updateThemeSettings()?newTheme@85.14:85.22CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java[ [(2î
+Lorg.jabref.gui.theme.ThemeManager.updateThemeSettings()?newTheme@85.14:85.22CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java_ _(2{
+3org.jabref.gui.theme.ThemeManager?theme@48.18:48.23CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java_ _(!2|
+4org.jabref.gui.theme.ThemeManager?LOGGER@41.32:41.38CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java` `(2{
+3org.jabref.gui.theme.ThemeManager?theme@48.18:48.23CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javab b(2î
+Lorg.jabref.gui.theme.ThemeManager.updateThemeSettings()?newTheme@85.14:85.22CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javae e(2|
+4org.jabref.gui.theme.ThemeManager?LOGGER@41.32:41.38CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaf f(2î
+Lorg.jabref.gui.theme.ThemeManager.updateThemeSettings()?newTheme@85.14:85.22CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaf8 f(@2Ñ
+<org.jabref.gui.theme.ThemeManager?baseStyleSheet@47.29:47.43CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javafB f(P2ò
+Porg.jabref.gui.theme.ThemeManager.updateThemeSettings()?styleSheet@105.16:105.26CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javai7 i(A2{
+3org.jabref.gui.theme.ThemeManager?theme@48.18:48.23CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javae e(2{
+3org.jabref.gui.theme.ThemeManager?theme@48.18:48.23CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javah h(2®
+`org.jabref.gui.theme.ThemeManager.removeStylesheetFromWatchList(org.jabref.gui.theme.StyleSheet)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javab6 b(Y2É
+;org.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaiC i(`2õ
+Lorg.jabref.gui.theme.ThemeManager.updateThemeSettings()?newTheme@85.14:85.22DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaU U(2ü
+Porg.jabref.gui.theme.ThemeManager.updateThemeSettings()?styleSheet@105.16:105.26DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javai i(2S
+voidRETURN_TYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaT T(¬
+Lorg.jabref.gui.theme.ThemeManager.updateThemeSettings()?newTheme@85.14:85.22VARIABLE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaU U("
+typeTheme"
+isFinalfalse"û
+declarationStringà<mark class="modifier"> </mark>Theme <mark class="class-field">newTheme</mark> = Objects.requireNonNull(workspacePreferences.getTheme())*newTheme2b
+org.jabref.gui.theme.ThemeTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaU U(2k
+#java.util.Objects.requireNonNull(T)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaU! U(/2~
+6org.jabref.preferences.WorkspacePreferences.getTheme()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaUE U(M2ä
+Borg.jabref.gui.theme.ThemeManager?workspacePreferences@43.39:43.59CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaU0 U(DÏ
+Porg.jabref.gui.theme.ThemeManager.updateThemeSettings()?styleSheet@105.16:105.26VARIABLE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javai i("
+type"
+isFinalfalse" 
+declarationString styleSheet*
+styleSheet2TYPEÅ
+
+6org.jabref.gui.theme.ThemeManager.updateFontSettings()METHOD>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javan n(#"
+isFinalfalse"é
+declarationStringy<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">updateFontSettings</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*updateFontSettings2ï
+Morg.jabref.gui.util.DefaultTaskExecutor.runInJavaFXThread(java.lang.Runnable)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javao o(-2m
+%java.util.function.Consumer.accept(T)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaoA o(G2å
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaoc o(l2~
+6org.jabref.gui.theme.ThemeManager.getMainWindowScene()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaoN o(`2Ç
+:org.jabref.gui.theme.ThemeManager?updateRunner@45.37:45.49CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javao4 o(@2é
+Eorg.jabref.gui.theme.ThemeManager.updateFontStyle(javafx.scene.Scene)CALL?
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaom o(Ç2S
+voidRETURN_TYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javan n(Ï
+`org.jabref.gui.theme.ThemeManager.removeStylesheetFromWatchList(org.jabref.gui.theme.StyleSheet)METHOD>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javar r(."
+isFinalfalse"Ø
+declarationStringô<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">removeStylesheetFromWatchList</mark>(StyleSheet styleSheet)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*removeStylesheetFromWatchList2v
+.org.jabref.gui.theme.StyleSheet.getWatchPath()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javas" s(.2º
+torg.jabref.model.util.FileUpdateMonitor.removeListener(java.nio.file.Path, org.jabref.model.util.FileUpdateListener)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javau u(,2≥
+korg.jabref.gui.theme.ThemeManager.removeStylesheetFromWatchList(org.jabref.gui.theme.StyleSheet)!styleSheetCALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javas s(!2æ
+vorg.jabref.gui.theme.ThemeManager.removeStylesheetFromWatchList(org.jabref.gui.theme.StyleSheet)?oldPath@115.13:115.20CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javat t(2á
+?org.jabref.gui.theme.ThemeManager?fileUpdateMonitor@44.36:44.53CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javau u(2æ
+vorg.jabref.gui.theme.ThemeManager.removeStylesheetFromWatchList(org.jabref.gui.theme.StyleSheet)?oldPath@115.13:115.20CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javau- u(42|
+4org.jabref.gui.theme.ThemeManager?LOGGER@41.32:41.38CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javav v(2æ
+vorg.jabref.gui.theme.ThemeManager.removeStylesheetFromWatchList(org.jabref.gui.theme.StyleSheet)?oldPath@115.13:115.20CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javavC v(J2É
+;org.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javau6 u(S2∏
+korg.jabref.gui.theme.ThemeManager.removeStylesheetFromWatchList(org.jabref.gui.theme.StyleSheet)!styleSheet	PARAMETER>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javar: r(D2≈
+vorg.jabref.gui.theme.ThemeManager.removeStylesheetFromWatchList(org.jabref.gui.theme.StyleSheet)?oldPath@115.13:115.20DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javas s(2S
+voidRETURN_TYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javar r(Ù
+vorg.jabref.gui.theme.ThemeManager.removeStylesheetFromWatchList(org.jabref.gui.theme.StyleSheet)?oldPath@115.13:115.20VARIABLE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javas s("
+typePath"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>Path <mark class="class-field">oldPath</mark> = styleSheet.getWatchPath()*oldPath2Z
+java.nio.file.PathTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javas s(2v
+.org.jabref.gui.theme.StyleSheet.getWatchPath()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javas" s(.2≥
+korg.jabref.gui.theme.ThemeManager.removeStylesheetFromWatchList(org.jabref.gui.theme.StyleSheet)!styleSheetCALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javas s(!ˇ
+korg.jabref.gui.theme.ThemeManager.removeStylesheetFromWatchList(org.jabref.gui.theme.StyleSheet)!styleSheet	PARAMETER>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javar: r(D"
+type
+StyleSheet"
+isFinalfalse"*
+declarationStringStyleSheet styleSheet*
+styleSheet2g
+org.jabref.gui.theme.StyleSheetTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javar/ r(9»
+Öorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)METHOD>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaz z()"
+isFinalfalse"á
+declarationStringÒ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">addStylesheetToWatchlist</mark>(StyleSheet styleSheet<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateListener updateMethod)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*addStylesheetToWatchlist2v
+.org.jabref.gui.theme.StyleSheet.getWatchPath()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java{$ {(02¿
+xorg.jabref.model.util.FileUpdateMonitor.addListenerForFile(java.nio.file.Path, org.jabref.model.util.FileUpdateListener)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java~" ~(42Ÿ
+êorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)!styleSheetCALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java{ {(#2Ê
+ùorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)?watchPath@123.13:123.22CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java| |(2á
+?org.jabref.gui.theme.ThemeManager?fileUpdateMonitor@44.36:44.53CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java~ ~(!2Ê
+ùorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)?watchPath@123.13:123.22CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java~5 ~(>2€
+íorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)!updateMethodCALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java~@ ~(L2|
+4org.jabref.gui.theme.ThemeManager?LOGGER@41.32:41.38CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java (2Ê
+ùorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)?watchPath@123.13:123.22CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java@ (I2~
+4org.jabref.gui.theme.ThemeManager?LOGGER@41.32:41.38CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÅ Å(2Ë
+ùorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)?watchPath@123.13:123.22CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÅI Å(R2‡
+ïorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)?e@128.33:128.34CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÅT Å(U2ﬁ
+êorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)!styleSheet	PARAMETER>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaz5 z(?2‡
+íorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)!updateMethod	PARAMETER>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javazT z(`2Ì
+ùorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)?watchPath@123.13:123.22DECLARATION>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java{ {(2Á
+ïorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)?e@128.33:128.34DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÄ! Ä("2S
+voidRETURN_TYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaz z(∆
+ùorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)?watchPath@123.13:123.22VARIABLE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java{ {("
+typePath"
+isFinalfalse"
+declarationStringj<mark class="modifier"> </mark>Path <mark class="class-field">watchPath</mark> = styleSheet.getWatchPath()*	watchPath2Z
+java.nio.file.PathTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java{ {(2v
+.org.jabref.gui.theme.StyleSheet.getWatchPath()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java{$ {(02Ÿ
+êorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)!styleSheetCALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java{ {(#•
+êorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)!styleSheet	PARAMETER>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaz5 z(?"
+type
+StyleSheet"
+isFinalfalse"*
+declarationStringStyleSheet styleSheet*
+styleSheet2g
+org.jabref.gui.theme.StyleSheetTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaz* z(4ƒ
+íorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)!updateMethod	PARAMETER>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javazT z(`"
+typeFileUpdateListener"
+isFinalfalse"4
+declarationStringFileUpdateListener updateMethod*updateMethod2p
+(org.jabref.model.util.FileUpdateListenerTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.javazA z(Së
+ïorg.jabref.gui.theme.ThemeManager.addStylesheetToWatchlist(org.jabref.gui.theme.StyleSheet, org.jabref.model.util.FileUpdateListener)?e@128.33:128.34VARIABLE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÄ! Ä(""
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2]
+java.io.IOExceptionTYPE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÄ Ä( Î
+5org.jabref.gui.theme.ThemeManager.baseCssLiveUpdate()METHOD@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÜ Ü(""
+isFinalfalse"ç
+declarationStringx<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">baseCssLiveUpdate</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*baseCssLiveUpdate2r
+(org.jabref.gui.theme.StyleSheet.reload()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaá á(2~
+4org.jabref.gui.theme.StyleSheet.getSceneStylesheet()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaà à(-2ó
+Morg.jabref.gui.util.DefaultTaskExecutor.runInJavaFXThread(java.lang.Runnable)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaé é(-2o
+%java.util.function.Consumer.accept(T)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaéA é(G2Ü
+<org.jabref.gui.theme.ThemeManager?baseStyleSheet@47.29:47.43CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaá á(2Ü
+<org.jabref.gui.theme.ThemeManager?baseStyleSheet@47.29:47.43CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaà à(2~
+4org.jabref.gui.theme.ThemeManager?LOGGER@41.32:41.38CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaâ â(2~
+4org.jabref.gui.theme.ThemeManager?LOGGER@41.32:41.38CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaã ã(2Ñ
+:org.jabref.gui.theme.ThemeManager?updateRunner@45.37:45.49CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaé4 é(@2{
+1org.jabref.gui.theme.ThemeManager.updateBaseCss()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaéH é([2U
+voidRETURN_TYPE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÜ Ü(Î
+;org.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()METHOD@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaë ë(("
+isFinalfalse"ì
+declarationString~<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">additionalCssLiveUpdate</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*additionalCssLiveUpdate2f
+java.util.Optional.orElse(T)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaï ï(2ï
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaíR í(U2~
+4org.jabref.gui.theme.Theme.getAdditionalStylesheet()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaí8 í(O2r
+(org.jabref.gui.theme.StyleSheet.reload()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaì ì(2Ç
+8org.jabref.gui.theme.StyleSheet.getWebEngineStylesheet()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaî î(42^
+java.util.Set.size()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaód ó(h2ó
+Morg.jabref.gui.util.DefaultTaskExecutor.runInJavaFXThread(java.lang.Runnable)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaô ô(-2o
+%java.util.function.Consumer.accept(T)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaö ö(#2Å
+7org.jabref.gui.theme.ThemeManager.updateAdditionalCss()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaõ õ('2å
+Bjava.lang.Iterable.forEach(java.util.function.Consumer<? super T>)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaù ù(&2û
+Torg.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()?styleSheet@146.86:146.96CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaì ì(2û
+Torg.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()?styleSheet@146.86:146.96CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaî î(2~
+4org.jabref.gui.theme.ThemeManager?LOGGER@41.32:41.38CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaó ó(2Ç
+8org.jabref.gui.theme.ThemeManager?webEngines@53.33:53.43CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaóY ó(c2Ñ
+:org.jabref.gui.theme.ThemeManager?updateRunner@45.37:45.49CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaö ö(2Ç
+8org.jabref.gui.theme.ThemeManager?webEngines@53.33:53.43CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaù ù(2©
+_org.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()?newStyleSheetLocation@146.21:146.42CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaü ü(12ù
+Sorg.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()?webEngine@157.39:157.48CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaü9 ü(B2ù
+Sorg.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()?webEngine@157.39:157.48CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java† †(%2ù
+Sorg.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()?webEngine@157.39:157.48CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java¢ ¢(!2©
+_org.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()?newStyleSheetLocation@146.21:146.42CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java¢< ¢(Q2}
+3org.jabref.gui.theme.ThemeManager?theme@48.18:48.23CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaí2 í(72∞
+_org.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()?newStyleSheetLocation@146.21:146.42DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaí í(*2•
+Torg.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()?styleSheet@146.86:146.96DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaíV í(`2§
+Sorg.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()?webEngine@157.39:157.48DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaù' ù(02U
+voidRETURN_TYPE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaë ë(ƒ
+_org.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()?newStyleSheetLocation@146.21:146.42VALUE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaí í(*"
+typeString"
+isFinaltrue"…
+declarationString≥<mark class="modifier"> </mark><mark class="modifier">final </mark>String <mark class="class-field">newStyleSheetLocation</mark> = <mark class="modifier">this</mark>.theme.getAdditionalStylesheet().map(styleSheet -> {
+    styleSheet.reload();
+    return styleSheet.getWebEngineStylesheet();
+}).orElse("")*newStyleSheetLocation2Z
+java.lang.StringTYPE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaí í(2f
+java.util.Optional.orElse(T)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaï ï(2ï
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaíR í(U2~
+4org.jabref.gui.theme.Theme.getAdditionalStylesheet()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaí8 í(O2r
+(org.jabref.gui.theme.StyleSheet.reload()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaì ì(2Ç
+8org.jabref.gui.theme.StyleSheet.getWebEngineStylesheet()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaî î(42û
+Torg.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()?styleSheet@146.86:146.96CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaì ì(2û
+Torg.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()?styleSheet@146.86:146.96CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaî î(2}
+3org.jabref.gui.theme.ThemeManager?theme@48.18:48.23CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaí2 í(7Ú
+Torg.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()?styleSheet@146.86:146.96VARIABLE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaíV í(`"
+type"
+isFinalfalse" 
+declarationString styleSheet*
+styleSheet2TYPEÔ
+Sorg.jabref.gui.theme.ThemeManager.additionalCssLiveUpdate()?webEngine@157.39:157.48VARIABLE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaù' ù(0"
+type"
+isFinalfalse"
+declarationString
+ webEngine*	webEngine2TYPE∆
+1org.jabref.gui.theme.ThemeManager.updateBaseCss()METHOD@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java® ®("
+isFinalfalse"â
+declarationStringt<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">updateBaseCss</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*updateBaseCss2é
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java© ©(&2Ä
+6org.jabref.gui.theme.ThemeManager.getMainWindowScene()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java© ©(2b
+java.util.List.isEmpty()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java´ ´($2g
+java.net.URL.toExternalForm()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaØE Ø(S2~
+4org.jabref.gui.theme.StyleSheet.getSceneStylesheet()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaØ0 Ø(B2è
+Eorg.jabref.gui.theme.ThemeManager.updateBaseCss()?scene@169.39:169.44CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java™' ™(,2ï
+Korg.jabref.gui.theme.ThemeManager.updateBaseCss()?stylesheets@170.25:170.36CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java´ ´(2ï
+Korg.jabref.gui.theme.ThemeManager.updateBaseCss()?stylesheets@170.25:170.36CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java¨ ¨(2ï
+Korg.jabref.gui.theme.ThemeManager.updateBaseCss()?stylesheets@170.25:170.36CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaØ Ø(2Ü
+<org.jabref.gui.theme.ThemeManager?baseStyleSheet@47.29:47.43CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaØ! Ø(/2ú
+Korg.jabref.gui.theme.ThemeManager.updateBaseCss()?stylesheets@170.25:170.36DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java™ ™($2ñ
+Eorg.jabref.gui.theme.ThemeManager.updateBaseCss()?scene@169.39:169.44DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java©' ©(,2U
+voidRETURN_TYPE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java® ®(®
+Korg.jabref.gui.theme.ThemeManager.updateBaseCss()?stylesheets@170.25:170.36VARIABLE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java™ ™($"
+typeList<String>"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>List<String> <mark class="class-field">stylesheets</mark> = scene.getStylesheets()*stylesheets2X
+java.util.ListTYPE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java™ ™(2c
+java.lang.StringTYPE_ARGUMENT@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java™ ™(2è
+Eorg.jabref.gui.theme.ThemeManager.updateBaseCss()?scene@169.39:169.44CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java™' ™(,Ÿ
+Eorg.jabref.gui.theme.ThemeManager.updateBaseCss()?scene@169.39:169.44VARIABLE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java©' ©(,"
+type"
+isFinalfalse"
+declarationString scene*scene2TYPEå
+7org.jabref.gui.theme.ThemeManager.updateAdditionalCss()METHOD@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java≥ ≥($"
+isFinalfalse"è
+declarationStringz<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">updateAdditionalCss</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*updateAdditionalCss2é
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java¥ ¥(&2Ä
+6org.jabref.gui.theme.ThemeManager.getMainWindowScene()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java¥ ¥(2a
+java.util.List.of(E, E)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java¥S ¥(U2g
+java.net.URL.toExternalForm()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaµ4 µ(B2~
+4org.jabref.gui.theme.StyleSheet.getSceneStylesheet()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaµ µ(12f
+java.util.Optional.orElse(T)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaæ æ(2ï
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java∂0 ∂(32~
+4org.jabref.gui.theme.Theme.getAdditionalStylesheet()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java∂ ∂(-2~
+4org.jabref.gui.theme.StyleSheet.getSceneStylesheet()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java∑8 ∑(J2g
+java.net.URL.toExternalForm()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaπ2 π(@2ï
+Korg.jabref.gui.theme.ThemeManager.updateAdditionalCss()?scene@180.39:180.44CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java¥0 ¥(52Ü
+<org.jabref.gui.theme.ThemeManager?baseStyleSheet@47.29:47.43CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaµ µ(2}
+3org.jabref.gui.theme.ThemeManager?theme@48.18:48.23CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java∂ ∂(2ö
+Porg.jabref.gui.theme.ThemeManager.updateAdditionalCss()?styleSheet@182.52:182.62CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java∑- ∑(72ù
+Sorg.jabref.gui.theme.ThemeManager.updateAdditionalCss()?stylesheetUrl@183.29:183.42CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java∏ ∏(*2ù
+Sorg.jabref.gui.theme.ThemeManager.updateAdditionalCss()?stylesheetUrl@183.29:183.42CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaπ$ π(12§
+Sorg.jabref.gui.theme.ThemeManager.updateAdditionalCss()?stylesheetUrl@183.29:183.42DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java∑ ∑(*2ú
+Korg.jabref.gui.theme.ThemeManager.updateAdditionalCss()?scene@180.39:180.44DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java¥' ¥(,2°
+Porg.jabref.gui.theme.ThemeManager.updateAdditionalCss()?styleSheet@182.52:182.62DECLARATION@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java∂4 ∂(>2U
+voidRETURN_TYPE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java≥ ≥(œ
+Sorg.jabref.gui.theme.ThemeManager.updateAdditionalCss()?stylesheetUrl@183.29:183.42VARIABLE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java∑ ∑(*"
+typeURL"
+isFinalfalse"à
+declarationStrings<mark class="modifier"> </mark>URL <mark class="class-field">stylesheetUrl</mark> = styleSheet.getSceneStylesheet()*stylesheetUrl2V
+java.net.URLTYPE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java∑ ∑(2~
+4org.jabref.gui.theme.StyleSheet.getSceneStylesheet()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java∑8 ∑(J2ö
+Porg.jabref.gui.theme.ThemeManager.updateAdditionalCss()?styleSheet@182.52:182.62CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java∑- ∑(7ﬂ
+Korg.jabref.gui.theme.ThemeManager.updateAdditionalCss()?scene@180.39:180.44VARIABLE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java¥' ¥(,"
+type"
+isFinalfalse"
+declarationString scene*scene2TYPEÓ
+Porg.jabref.gui.theme.ThemeManager.updateAdditionalCss()?styleSheet@182.52:182.62VARIABLE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java∂4 ∂(>"
+type"
+isFinalfalse" 
+declarationString styleSheet*
+styleSheet2TYPE«
+@org.jabref.gui.theme.ThemeManager.installCss(javafx.scene.Scene)METHOD@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java» »("
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">installCss</mark>(Scene mainWindowScene)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*
+installCss2
+5java.util.Objects.requireNonNull(T, java.lang.String)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java… …(2o
+%java.util.function.Consumer.accept(T)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java   (2{
+1org.jabref.gui.theme.ThemeManager.updateBaseCss()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÃ Ã(2Å
+7org.jabref.gui.theme.ThemeManager.updateAdditionalCss()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÕ Õ(2ö
+Porg.jabref.gui.theme.ThemeManager.installCss(javafx.scene.Scene)!mainWindowSceneCALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java… …(.2Ñ
+:org.jabref.gui.theme.ThemeManager?updateRunner@45.37:45.49CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java   (2ö
+Porg.jabref.gui.theme.ThemeManager.installCss(javafx.scene.Scene)!mainWindowSceneCALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÀ# À(22á
+=org.jabref.gui.theme.ThemeManager?mainWindowScene@52.18:52.33CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÀ À( 2ü
+Porg.jabref.gui.theme.ThemeManager.installCss(javafx.scene.Scene)!mainWindowScene	PARAMETER@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java»! »(02U
+voidRETURN_TYPE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java» »(€
+Porg.jabref.gui.theme.ThemeManager.installCss(javafx.scene.Scene)!mainWindowScene	PARAMETER@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java»! »(0"
+typeScene"
+isFinalfalse"*
+declarationStringScene mainWindowScene*mainWindowScene2\
+javafx.scene.SceneTYPE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java» »( ˝
+Horg.jabref.gui.theme.ThemeManager.installCss(javafx.scene.web.WebEngine)METHOD@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java◊ ◊("
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">installCss</mark>(WebEngine webEngine)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*
+installCss2o
+%java.util.function.Consumer.accept(T)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÿ ÿ(2^
+java.util.Set.add(E)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaŸ  Ÿ(#2h
+java.util.Optional.isPresent()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java⁄Y ⁄(b2~
+4org.jabref.gui.theme.Theme.getAdditionalStylesheet()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java⁄? ⁄(V2Ç
+8org.jabref.gui.theme.StyleSheet.getWebEngineStylesheet()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java€C €(Y2b
+java.util.Optional.get()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java€= €(@2~
+4org.jabref.gui.theme.Theme.getAdditionalStylesheet()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java€# €(:2Ñ
+:org.jabref.gui.theme.ThemeManager?updateRunner@45.37:45.49CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÿ ÿ(2ú
+Rorg.jabref.gui.theme.ThemeManager.installCss(javafx.scene.web.WebEngine)!webEngineCALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaŸ$ Ÿ(-2ú
+Rorg.jabref.gui.theme.ThemeManager.installCss(javafx.scene.web.WebEngine)!webEngineCALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java⁄ ⁄(2Ç
+8org.jabref.gui.theme.ThemeManager?webEngines@53.33:53.43CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaŸ Ÿ(2}
+3org.jabref.gui.theme.ThemeManager?theme@48.18:48.23CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java⁄9 ⁄(>2}
+3org.jabref.gui.theme.ThemeManager?theme@48.18:48.23CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java€ €("2°
+Rorg.jabref.gui.theme.ThemeManager.installCss(javafx.scene.web.WebEngine)!webEngine	PARAMETER@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java◊% ◊(.2U
+voidRETURN_TYPE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java◊ ◊(·
+Rorg.jabref.gui.theme.ThemeManager.installCss(javafx.scene.web.WebEngine)!webEngine	PARAMETER@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java◊% ◊(."
+type	WebEngine"
+isFinalfalse"(
+declarationStringWebEngine webEngine*	webEngine2d
+javafx.scene.web.WebEngineTYPE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.java◊ ◊($ï
+Eorg.jabref.gui.theme.ThemeManager.updateFontStyle(javafx.scene.Scene)METHOD@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÊ Ê("
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">updateFontStyle</mark>(Scene scene)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*updateFontStyle2ï
+Korg.jabref.preferences.WorkspacePreferences.shouldOverrideDefaultFontSize()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÁ! Á(>2á
+=org.jabref.preferences.WorkspacePreferences.getMainFontSize()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaËN Ë(]2ä
+@org.jabref.preferences.WorkspacePreferences.getDefaultFontSize()CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÍN Í(`2å
+Borg.jabref.gui.theme.ThemeManager?workspacePreferences@43.39:43.59CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÁ Á( 2ï
+Korg.jabref.gui.theme.ThemeManager.updateFontStyle(javafx.scene.Scene)!sceneCALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaË Ë(2å
+Borg.jabref.gui.theme.ThemeManager?workspacePreferences@43.39:43.59CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaË9 Ë(M2ï
+Korg.jabref.gui.theme.ThemeManager.updateFontStyle(javafx.scene.Scene)!sceneCALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÍ Í(2å
+Borg.jabref.gui.theme.ThemeManager?workspacePreferences@43.39:43.59CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÍ9 Í(M2ö
+Korg.jabref.gui.theme.ThemeManager.updateFontStyle(javafx.scene.Scene)!scene	PARAMETER@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÊ& Ê(+2U
+voidRETURN_TYPE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÊ Ê(¬
+Korg.jabref.gui.theme.ThemeManager.updateFontStyle(javafx.scene.Scene)!scene	PARAMETER@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÊ& Ê(+"
+typeScene"
+isFinalfalse" 
+declarationStringScene scene*scene2\
+javafx.scene.SceneTYPE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÊ  Ê(%√
+2org.jabref.gui.theme.ThemeManager.getActiveTheme()METHOD@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÒ Ò("
+isFinalfalse"l
+declarationStringW<mark class="modifier">public </mark>Theme <mark class="method">getActiveTheme</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeTheme*getActiveTheme2}
+3org.jabref.gui.theme.ThemeManager?theme@48.18:48.23CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÚ Ú(2k
+org.jabref.gui.theme.ThemeRETURN_TYPE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaÒ Ò(«
+6org.jabref.gui.theme.ThemeManager.getMainWindowScene()METHOD@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaı ı(-"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier">public </mark>Optional&lt;Scene&gt; <mark class="method">getMainWindowScene</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<Scene>*getMainWindowScene2j
+ java.util.Optional.ofNullable(T)CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaˆ ˆ("2á
+=org.jabref.gui.theme.ThemeManager?mainWindowScene@52.18:52.33CALL@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaˆ# ˆ(22c
+java.util.OptionalRETURN_TYPE@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaı ı(2l
+javafx.scene.SceneRETURN_TYPE_ARGUMENT@
+4src\main\java\org\jabref\gui\theme\ThemeManager.javaı ı(ä
+4org.jabref.gui.theme.ThemeManager?LOGGER@41.32:41.38VALUE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java)  )(&"
+isFinaltrue"
+typeLogger"‚
+declarationStringÃ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(ThemeManager.class);"
+isStatictrue"
+accessprivate*LOGGER2X
+org.slf4j.LoggerTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java) )(ò
+Borg.jabref.gui.theme.ThemeManager?workspacePreferences@43.39:43.59VALUE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java+' +(;"
+isFinaltrue"
+typeWorkspacePreferences"™
+declarationStringî<mark class="modifier">private </mark><mark class="modifier">final </mark>WorkspacePreferences <mark class="class-field">workspacePreferences</mark>"
+isStaticfalse"
+accessprivate*workspacePreferences2s
++org.jabref.preferences.WorkspacePreferencesTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java+ +(&Ö
+?org.jabref.gui.theme.ThemeManager?fileUpdateMonitor@44.36:44.53VALUE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java,$ ,(5"
+isFinaltrue"
+typeFileUpdateMonitor"§
+declarationStringé<mark class="modifier">private </mark><mark class="modifier">final </mark>FileUpdateMonitor <mark class="class-field">fileUpdateMonitor</mark>"
+isStaticfalse"
+accessprivate*fileUpdateMonitor2o
+'org.jabref.model.util.FileUpdateMonitorTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java, ,(#—
+:org.jabref.gui.theme.ThemeManager?updateRunner@45.37:45.49VALUE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java-% -(1"
+isFinaltrue"
+typeConsumer<Runnable>"†
+declarationStringä<mark class="modifier">private </mark><mark class="modifier">final </mark>Consumer<Runnable> <mark class="class-field">updateRunner</mark>"
+isStaticfalse"
+accessprivate*updateRunner2c
+java.util.function.ConsumerTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java- -(2c
+java.lang.RunnableTYPE_ARGUMENT>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java- -(#Ê
+<org.jabref.gui.theme.ThemeManager?baseStyleSheet@47.29:47.43VALUE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java/ /(+"
+isFinaltrue"
+type
+StyleSheet"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>StyleSheet <mark class="class-field">baseStyleSheet</mark>"
+isStaticfalse"
+accessprivate*baseStyleSheet2g
+org.jabref.gui.theme.StyleSheetTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java/ /(ö
+3org.jabref.gui.theme.ThemeManager?theme@48.18:48.23VARIABLE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java0 0("
+isFinalfalse"
+typeTheme"g
+declarationStringR<mark class="modifier">private </mark>Theme <mark class="class-field">theme</mark>"
+isStaticfalse"
+accessprivate*theme2b
+org.jabref.gui.theme.ThemeTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java0 0(æ
+6org.jabref.gui.theme.ThemeManager?detector@50.28:50.36VARIABLE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java2 2($"
+isFinalfalse"
+typeOsThemeDetector"t
+declarationString_<mark class="modifier">private </mark>OsThemeDetector <mark class="class-field">detector</mark>"
+isStaticfalse"
+accessprivate*detector2i
+!com.jthemedetecor.OsThemeDetectorTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java2 2(∞
+=org.jabref.gui.theme.ThemeManager?mainWindowScene@52.18:52.33VARIABLE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java4 4(!"
+isFinalfalse"
+typeScene"q
+declarationString\<mark class="modifier">private </mark>Scene <mark class="class-field">mainWindowScene</mark>"
+isStaticfalse"
+accessprivate*mainWindowScene2Z
+javafx.scene.SceneTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java4 4(Ô
+8org.jabref.gui.theme.ThemeManager?webEngines@53.33:53.43VALUE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java5! 5(+"
+isFinaltrue"
+typeSet<WebEngine>"Ã
+declarationString∂<mark class="modifier">private </mark><mark class="modifier">final </mark>Set<WebEngine> <mark class="class-field">webEngines</mark> = Collections.newSetFromMap(new WeakHashMap<>());"
+isStaticfalse"
+accessprivate*
+webEngines2U
+java.util.SetTYPE>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java5 5(2k
+javafx.scene.web.WebEngineTYPE_ARGUMENT>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java5 5(2ê
+Hjava.util.Collections.newSetFromMap(java.util.Map<E, java.lang.Boolean>)CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java5: 5(G2k
+#java.util.WeakHashMap.WeakHashMap()CALL>
+4src\main\java\org\jabref\gui\theme\ThemeManager.java5L 5(Y

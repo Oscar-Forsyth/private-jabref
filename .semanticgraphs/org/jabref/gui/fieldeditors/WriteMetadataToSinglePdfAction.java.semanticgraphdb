@@ -1,0 +1,641 @@
+
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java®
+:org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfActionCLASSW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java (+"&
+packageorg.jabref.gui.fieldeditors"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"±
+declarationStringõ<mark class="modifier">public </mark><mark class="modifier">class </mark>WriteMetadataToSinglePdfAction<mark class="modifier"> extends </mark>SimpleCommand"
+accesspublic*WriteMetadataToSinglePdfAction2—
+Ëorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java- -()2¨
+Dorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaD D(2˜
+éorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaZ$ Z(72µ
+Morg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?LOGGER@32.32:32.38DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java    (&2π
+Qorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?linkedFile@34.29:34.39DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java" "('2¥
+Lorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?entry@35.27:35.32DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java# #( 2ø
+Worg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?fieldPreferences@36.35:36.51DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java$# $(32æ
+Vorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?databaseContext@37.37:37.52DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java%% %(42º
+Torg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?dialogService@38.32:38.45DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java&  &(-2√
+[org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?bibEntryTypesManager@39.39:39.59DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java'' '(;2≈
+]org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?abbreviationRepository@40.48:40.70DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java(0 ((F2ª
+Sorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?taskExecutor@41.31:41.43DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java) )(+2æ
+Vorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?filePreferences@42.34:42.49DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java*" *(12Ω
+Uorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?xmpPreferences@43.33:43.47DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java+! +(/2á
+$org.jabref.gui.actions.SimpleCommandEXTENDW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java4 (Aì{
+Ëorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)CONSTRUCTORW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java- -()"ÿ
+declarationString¬<mark class="modifier">public </mark><mark class="method">WriteMetadataToSinglePdfAction</mark>(LinkedFile linkedFile<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> FieldPreferences fieldPreferences<mark class="modifier"><mark class="modifier">,</mark></mark> FilePreferences filePreferences<mark class="modifier"><mark class="modifier">,</mark></mark> XmpPreferences xmpPreferences<mark class="modifier"><mark class="modifier">,</mark></mark> JournalAbbreviationRepository abbreviationRepository<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntryTypesManager bibEntryTypesManager<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor)*WriteMetadataToSinglePdfAction2’
+Ûorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!linkedFileCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java7 7($2–
+Óorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!entryCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java8 8(2€
+˘org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!fieldPreferencesCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java9  9(02⁄
+¯org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!databaseContextCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java: :(.2ÿ
+ˆorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!dialogServiceCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java; ;(*2ﬂ
+˝org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!bibEntryTypesManagerCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java<$ <(82·
+ˇorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!abbreviationRepositoryCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java=& =(<2◊
+ıorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!taskExecutorCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java> >((2⁄
+¯org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!filePreferencesCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java? ?(.2Ÿ
+˜org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!xmpPreferencesCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java@ @(,2≤
+Qorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?linkedFile@34.29:34.39CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java7 7(2≠
+Lorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?entry@35.27:35.32CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java8 8(2∏
+Worg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?fieldPreferences@36.35:36.51CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java9 9(2∑
+Vorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?databaseContext@37.37:37.52CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java: :(2µ
+Torg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?dialogService@38.32:38.45CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java; ;(2º
+[org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?bibEntryTypesManager@39.39:39.59CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java< <(!2æ
+]org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?abbreviationRepository@40.48:40.70CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java= =(#2¥
+Sorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?taskExecutor@41.31:41.43CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java> >(2∑
+Vorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?filePreferences@42.34:42.49CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java? ?(2∂
+Uorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?xmpPreferences@43.33:43.47CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java@ @(2⁄
+Ûorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!linkedFile	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java-5 -(?2’
+Óorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!entry	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java.3 .(82ﬂ
+¯org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!databaseContext	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java/= /(L2›
+ˆorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java08 0(E2‡
+˘org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!fieldPreferences	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java1; 1(K2ﬂ
+¯org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!filePreferences	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java2: 2(I2ﬁ
+˜org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!xmpPreferences	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java39 3(G2Ê
+ˇorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!abbreviationRepository	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java4H 4(^2‰
+˝org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!bibEntryTypesManager	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java5? 5(S2‹
+ıorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java67 6(C2¢
+:org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfActionRETURN_TYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java- -()Ω
+Ûorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!linkedFile	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java-5 -(?"
+type
+LinkedFile"
+isFinalfalse"*
+declarationStringLinkedFile linkedFile*
+linkedFile2Ç
+!org.jabref.model.entry.LinkedFileTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java-* -(4®
+Óorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!entry	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java.3 .(8"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2Ä
+org.jabref.model.entry.BibEntryTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java.* .(2Á
+¯org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!databaseContext	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java/= /(L"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2ç
+,org.jabref.model.database.BibDatabaseContextTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java/* /(<∆
+ˆorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java08 0(E"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2}
+org.jabref.gui.DialogServiceTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java0* 0(7‚
+˘org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!fieldPreferences	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java1; 1(K"
+typeFieldPreferences"
+isFinalfalse"6
+declarationString!FieldPreferences fieldPreferences*fieldPreferences2â
+(org.jabref.logic.bibtex.FieldPreferencesTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java1* 1(:€
+¯org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!filePreferences	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java2: 2(I"
+typeFilePreferences"
+isFinalfalse"4
+declarationStringFilePreferences filePreferences*filePreferences2á
+&org.jabref.preferences.FilePreferencesTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java2* 2(9”
+˜org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!xmpPreferences	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java39 3(G"
+typeXmpPreferences"
+isFinalfalse"2
+declarationStringXmpPreferences xmpPreferences*xmpPreferences2Ñ
+#org.jabref.logic.xmp.XmpPreferencesTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java3* 3(8ù
+ˇorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!abbreviationRepository	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java4H 4(^"%
+typeJournalAbbreviationRepository"
+isFinalfalse"I
+declarationString4JournalAbbreviationRepository abbreviationRepository*abbreviationRepository2ò
+7org.jabref.logic.journals.JournalAbbreviationRepositoryTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java4* 4(G˘
+˝org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!bibEntryTypesManager	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java5? 5(S"
+typeBibEntryTypesManager"
+isFinalfalse">
+declarationString)BibEntryTypesManager bibEntryTypesManager*bibEntryTypesManager2å
++org.jabref.model.entry.BibEntryTypesManagerTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java5* 5(>∆
+ıorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.WriteMetadataToSinglePdfAction(org.jabref.model.entry.LinkedFile, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java67 6(C"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2Å
+ org.jabref.gui.util.TaskExecutorTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java6* 6(6√F
+Dorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()METHODW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaD D("
+isFinalfalse"±
+declarationStringõ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">execute</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*execute2ú
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaE8 E(<2ﬂ
+~org.jabref.model.entry.LinkedFile.findIn(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaF- F(32}
+java.util.Optional.isEmpty()CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaG G(2ñ
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaH H($2Ø
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaH2 H(62
+java.util.Optional.orElse(T)CALLY
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaHÄ H(Ü2¨
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaHl H(o2
+éorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaK K(+2y
+java.util.Optional.get()CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaK1 K(42ñ
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaL& L(,2Ø
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaL: L(>2ñ
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaN& N(,2Ø
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaN: N(>2}
+java.util.Optional.orElse(T)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaOd O(j2¨
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaOP O(S2¢
+Aorg.jabref.gui.util.BackgroundTask.onFinished(java.lang.Runnable)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaV V(2°
+@org.jabref.gui.util.BackgroundTask.onRunning(java.lang.Runnable)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaU U(2ú
+;org.jabref.gui.actions.SimpleCommand.setExecutable(boolean)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaU! U(.2ú
+;org.jabref.gui.actions.SimpleCommand.setExecutable(boolean)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaV" V(/2∞
+Oorg.jabref.gui.util.TaskExecutor.execute(org.jabref.gui.util.BackgroundTask<V>)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaW W(2≤
+Qorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?linkedFile@34.29:34.39CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaF" F(,2∑
+Vorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?databaseContext@37.37:37.52CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaF4 F(C2∑
+Vorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?filePreferences@42.34:42.49CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaFE F(T2∂
+Uorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?file@70.27:70.31CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaG G(2µ
+Torg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?dialogService@38.32:38.45CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaH H(2∂
+Uorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?file@70.27:70.31CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaHg H(k2∂
+Uorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?file@70.27:70.31CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaK, K(02≠
+Lorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?entry@35.27:35.32CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaK8 K(=2∑
+Vorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?databaseContext@37.37:37.52CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaK? K(N2æ
+]org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?abbreviationRepository@40.48:40.70CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaKP K(f2º
+[org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?bibEntryTypesManager@39.39:39.59CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaKh K(|2π
+Worg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?fieldPreferences@36.35:36.51CALLX
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaK~ K(é2π
+Vorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?filePreferences@42.34:42.49CALLY
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaKê K(ü2∏
+Uorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?xmpPreferences@43.33:43.47CALLY
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaK° K(Ø2µ
+Torg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?dialogService@38.32:38.45CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaL L(%2µ
+Torg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?dialogService@38.32:38.45CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaN N(%2Æ
+Morg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?LOGGER@32.32:32.38CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaO O(2∂
+Uorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?file@70.27:70.31CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaOK O(O2¥
+Sorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?ex@77.64:77.66CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaOp O(r2ª
+Zorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?writeTask@69.29:69.38CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaT T(2¥
+Sorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?taskExecutor@41.31:41.43CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaW W(2ª
+Zorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?writeTask@69.29:69.38CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaW W(&2~
+java.nio.file.Path.toString()CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaHp H(~2~
+java.nio.file.Path.toString()CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaOT O(b2¬
+Zorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?writeTask@69.29:69.38DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaE E(&2Ω
+Uorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?file@70.27:70.31DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaF F(2ª
+Sorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?ex@77.64:77.66DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaM@ M(B2l
+voidRETURN_TYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaD D(‚?
+Zorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?writeTask@69.29:69.38VARIABLEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaE E(&"
+typeBackgroundTask<Void>"
+isFinalfalse"˛
+declarationStringË<mark class="modifier"> </mark>BackgroundTask<Void> <mark class="class-field">writeTask</mark> = BackgroundTask.wrap(() -> {
+    Optional<Path> file = linkedFile.findIn(databaseContext, filePreferences);
+    if (file.isEmpty()) {
+        dialogService.notify(Localization.lang("Failed to write metadata, file %1 not found."<mark class="modifier">,</mark> file.map(Path::toString).orElse("")));
+    } else {
+        try {
+            writeMetadataToFile(file.get()<mark class="modifier">,</mark> entry, databaseContext, abbreviationRepository, bibEntryTypesManager, fieldPreferences, filePreferences, xmpPreferences);
+            dialogService.notify(Localization.lang("Success! Finished writing metadata."));
+        } catch (IOException | TransformerException ex) {
+            dialogService.notify(Localization.lang("Error while writing metadata. See the error log for details."));
+            LOGGER.error("Error while writing metadata to {}"<mark class="modifier">,</mark> file.map(Path::toString).orElse("")<mark class="modifier">,</mark> ex);
+        }
+    }
+    return <mark class="modifier">null</mark>;
+})*	writeTask2É
+"org.jabref.gui.util.BackgroundTaskTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaE E(2x
+java.lang.VoidTYPE_ARGUMENTW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaE E(2ú
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaE8 E(<2ﬂ
+~org.jabref.model.entry.LinkedFile.findIn(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaF- F(32}
+java.util.Optional.isEmpty()CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaG G(2ñ
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaH H($2Ø
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaH2 H(62
+java.util.Optional.orElse(T)CALLY
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaHÄ H(Ü2¨
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaHl H(o2
+éorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaK K(+2y
+java.util.Optional.get()CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaK1 K(42ñ
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaL& L(,2Ø
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaL: L(>2ñ
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaN& N(,2Ø
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaN: N(>2}
+java.util.Optional.orElse(T)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaOd O(j2¨
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaOP O(S2≤
+Qorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?linkedFile@34.29:34.39CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaF" F(,2∑
+Vorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?databaseContext@37.37:37.52CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaF4 F(C2∑
+Vorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?filePreferences@42.34:42.49CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaFE F(T2∂
+Uorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?file@70.27:70.31CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaG G(2µ
+Torg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?dialogService@38.32:38.45CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaH H(2∂
+Uorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?file@70.27:70.31CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaHg H(k2∂
+Uorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?file@70.27:70.31CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaK, K(02≠
+Lorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?entry@35.27:35.32CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaK8 K(=2∑
+Vorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?databaseContext@37.37:37.52CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaK? K(N2æ
+]org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?abbreviationRepository@40.48:40.70CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaKP K(f2º
+[org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?bibEntryTypesManager@39.39:39.59CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaKh K(|2π
+Worg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?fieldPreferences@36.35:36.51CALLX
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaK~ K(é2π
+Vorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?filePreferences@42.34:42.49CALLY
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaKê K(ü2∏
+Uorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?xmpPreferences@43.33:43.47CALLY
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaK° K(Ø2µ
+Torg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?dialogService@38.32:38.45CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaL L(%2µ
+Torg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?dialogService@38.32:38.45CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaN N(%2Æ
+Morg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?LOGGER@32.32:32.38CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaO O(2∂
+Uorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?file@70.27:70.31CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaOK O(O2¥
+Sorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?ex@77.64:77.66CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaOp O(r2~
+java.nio.file.Path.toString()CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaHp H(~2~
+java.nio.file.Path.toString()CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaOT O(bä
+Uorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?file@70.27:70.31VARIABLEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaF F("
+typeOptional<Path>"
+isFinalfalse"ü
+declarationStringâ<mark class="modifier"> </mark>Optional<Path> <mark class="class-field">file</mark> = linkedFile.findIn(databaseContext, filePreferences)*file2s
+java.util.OptionalTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaF F(2|
+java.nio.file.PathTYPE_ARGUMENTW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaF F(2ﬂ
+~org.jabref.model.entry.LinkedFile.findIn(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaF- F(32≤
+Qorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?linkedFile@34.29:34.39CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaF" F(,2∑
+Vorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?databaseContext@37.37:37.52CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaF4 F(C2∑
+Vorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?filePreferences@42.34:42.49CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaFE F(Tÿ
+Sorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.execute()?ex@77.64:77.66VARIABLEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaM@ M(B"*
+type"IOException | TransformerException"
+isFinalfalse":
+declarationString%IOException | TransformerException ex*ex2ü
+>java.io.IOException | javax.xml.transform.TransformerExceptionTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaM M(?Ál
+éorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)METHODW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaZ$ Z(7"
+isFinalfalse"—
+declarationStringª<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">synchronized </mark><mark class="modifier">void</mark> <mark class="method">writeMetadataToFile</mark>(Path file<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> JournalAbbreviationRepository abbreviationRepository<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntryTypesManager bibEntryTypesManager<mark class="modifier"><mark class="modifier">,</mark></mark> FieldPreferences fieldPreferences<mark class="modifier"><mark class="modifier">,</mark></mark> FilePreferences filePreferences<mark class="modifier"><mark class="modifier">,</mark></mark> XmpPreferences xmpPreferences)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>Exception"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typevoid*writeMetadataToFile2È
+áorg.jabref.logic.xmp.XmpUtilWriter.writeXmp(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabase)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javac* c(22õ
+:org.jabref.model.database.BibDatabaseContext.getDatabase()CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javacP c([2ó
+6org.jabref.model.database.BibDatabaseContext.getMode()CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaf  f('2∫
+ÿorg.jabref.logic.exporter.Exporter.exportToFileByPath(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences, java.nio.file.Path, org.jabref.logic.journals.JournalAbbreviationRepository)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javai i(.2∂
+Uorg.jabref.logic.xmp.XmpUtilWriter.XmpUtilWriter(org.jabref.logic.xmp.XmpPreferences)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javac c(2≥
+—org.jabref.logic.exporter.EmbeddedBibFilePdfExporter.EmbeddedBibFilePdfExporter(org.jabref.model.database.BibDatabaseMode, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javae= e(W2ˇ
+ùorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!xmpPreferencesCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javac c((2ı
+ìorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!fileCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javac3 c(72ˆ
+îorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!entryCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javac9 c(>2Ä
+ûorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!databaseContextCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javac@ c(O2Ä
+ûorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!databaseContextCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaf f(2Ö
+£org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!bibEntryTypesManagerCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javag g($2Å
+üorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!fieldPreferencesCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javah h( 2í
+∞org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)?embeddedBibExporter@101.35:101.54CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javai i(2Ä
+ûorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!databaseContextCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaj j(2Ä
+ûorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!filePreferencesCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javak k(2ı
+ìorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!fileCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javal l(2á
+•org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!abbreviationRepositoryCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javam m(&2˙
+ìorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!file	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaZ= Z(A2˚
+îorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!entry	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java[A [(F2Ö
+ûorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!databaseContext	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java\K \(Z2å
+•org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!abbreviationRepository	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java]V ](l2ä
+£org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!bibEntryTypesManager	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java^M ^(a2Ü
+üorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!fieldPreferences	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java_I _(Y2Ö
+ûorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!filePreferences	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java`H `(W2Ñ
+ùorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!xmpPreferences	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaaG a(U2ô
+∞org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)?embeddedBibExporter@101.35:101.54DECLARATIONW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javae# e(62l
+voidRETURN_TYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaZ Z(#·
+∞org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)?embeddedBibExporter@101.35:101.54VARIABLEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javae# e(6""
+typeEmbeddedBibFilePdfExporter"
+isFinalfalse"Ü
+declarationString<mark class="modifier"> </mark>EmbeddedBibFilePdfExporter <mark class="class-field">embeddedBibExporter</mark> = new EmbeddedBibFilePdfExporter(databaseContext.getMode()<mark class="modifier">,</mark> bibEntryTypesManager, fieldPreferences)*embeddedBibExporter2ï
+4org.jabref.logic.exporter.EmbeddedBibFilePdfExporterTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javae e("2ó
+6org.jabref.model.database.BibDatabaseContext.getMode()CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaf  f('2≥
+—org.jabref.logic.exporter.EmbeddedBibFilePdfExporter.EmbeddedBibFilePdfExporter(org.jabref.model.database.BibDatabaseMode, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences)CALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javae= e(W2Ä
+ûorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!databaseContextCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaf f(2Ö
+£org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!bibEntryTypesManagerCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javag g($2Å
+üorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!fieldPreferencesCALLW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javah h( µ
+ìorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!file	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaZ= Z(A"
+typePath"
+isFinalfalse"
+declarationString	Path file*file2s
+java.nio.file.PathTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaZ8 Z(<Œ
+îorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!entry	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java[A [(F"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2Ä
+org.jabref.model.entry.BibEntryTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java[8 [(@ç
+ûorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!databaseContext	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java\K \(Z"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2ç
+,org.jabref.model.database.BibDatabaseContextTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java\8 \(J√
+•org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!abbreviationRepository	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java]V ](l"%
+typeJournalAbbreviationRepository"
+isFinalfalse"I
+declarationString4JournalAbbreviationRepository abbreviationRepository*abbreviationRepository2ò
+7org.jabref.logic.journals.JournalAbbreviationRepositoryTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java]8 ](Uü
+£org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!bibEntryTypesManager	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java^M ^(a"
+typeBibEntryTypesManager"
+isFinalfalse">
+declarationString)BibEntryTypesManager bibEntryTypesManager*bibEntryTypesManager2å
++org.jabref.model.entry.BibEntryTypesManagerTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java^8 ^(Là
+üorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!fieldPreferences	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java_I _(Y"
+typeFieldPreferences"
+isFinalfalse"6
+declarationString!FieldPreferences fieldPreferences*fieldPreferences2â
+(org.jabref.logic.bibtex.FieldPreferencesTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java_8 _(HÅ
+ûorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!filePreferences	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java`H `(W"
+typeFilePreferences"
+isFinalfalse"4
+declarationStringFilePreferences filePreferences*filePreferences2á
+&org.jabref.preferences.FilePreferencesTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java`8 `(G˘
+ùorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction.writeMetadataToFile(java.nio.file.Path, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseContext, org.jabref.logic.journals.JournalAbbreviationRepository, org.jabref.model.entry.BibEntryTypesManager, org.jabref.logic.bibtex.FieldPreferences, org.jabref.preferences.FilePreferences, org.jabref.logic.xmp.XmpPreferences)!xmpPreferences	PARAMETERW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaaG a(U"
+typeXmpPreferences"
+isFinalfalse"2
+declarationStringXmpPreferences xmpPreferences*xmpPreferences2Ñ
+#org.jabref.logic.xmp.XmpPreferencesTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.javaa8 a(FÁ
+Morg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?LOGGER@32.32:32.38VALUEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java    (&"
+isFinaltrue"
+typeLogger"Ù
+declarationStringﬁ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(WriteMetadataToSinglePdfAction.class);"
+isStatictrue"
+accessprivate*LOGGER2q
+org.slf4j.LoggerTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java   (®
+Qorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?linkedFile@34.29:34.39VALUEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java" "('"
+isFinaltrue"
+type
+LinkedFile"ñ
+declarationStringÄ<mark class="modifier">private </mark><mark class="modifier">final </mark>LinkedFile <mark class="class-field">linkedFile</mark>"
+isStaticfalse"
+accessprivate*
+linkedFile2Ç
+!org.jabref.model.entry.LinkedFileTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java" "(í
+Lorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?entry@35.27:35.32VALUEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java# #( "
+isFinaltrue"
+typeBibEntry"é
+declarationStringy<mark class="modifier">private </mark><mark class="modifier">final </mark>BibEntry <mark class="class-field">entry</mark>"
+isStaticfalse"
+accessprivate*entry2Ä
+org.jabref.model.entry.BibEntryTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java# #(Õ
+Worg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?fieldPreferences@36.35:36.51VALUEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java$# $(3"
+isFinaltrue"
+typeFieldPreferences"¢
+declarationStringå<mark class="modifier">private </mark><mark class="modifier">final </mark>FieldPreferences <mark class="class-field">fieldPreferences</mark>"
+isStaticfalse"
+accessprivate*fieldPreferences2â
+(org.jabref.logic.bibtex.FieldPreferencesTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java$ $("“
+Vorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?databaseContext@37.37:37.52VALUEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java%% %(4"
+isFinaltrue"
+typeBibDatabaseContext"£
+declarationStringç<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">databaseContext</mark>"
+isStaticfalse"
+accessprivate*databaseContext2ç
+,org.jabref.model.database.BibDatabaseContextTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java% %($±
+Torg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?dialogService@38.32:38.45VALUEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java&  &(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2}
+org.jabref.gui.DialogServiceTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java& &(‰
+[org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?bibEntryTypesManager@39.39:39.59VALUEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java'' '(;"
+isFinaltrue"
+typeBibEntryTypesManager"™
+declarationStringî<mark class="modifier">private </mark><mark class="modifier">final </mark>BibEntryTypesManager <mark class="class-field">bibEntryTypesManager</mark>"
+isStaticfalse"
+accessprivate*bibEntryTypesManager2å
++org.jabref.model.entry.BibEntryTypesManagerTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java' '(&à
+]org.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?abbreviationRepository@40.48:40.70VALUEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java(0 ((F"
+isFinaltrue"%
+typeJournalAbbreviationRepository"µ
+declarationStringü<mark class="modifier">private </mark><mark class="modifier">final </mark>JournalAbbreviationRepository <mark class="class-field">abbreviationRepository</mark>"
+isStaticfalse"
+accessprivate*abbreviationRepository2ò
+7org.jabref.logic.journals.JournalAbbreviationRepositoryTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java( ((/±
+Sorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?taskExecutor@41.31:41.43VALUEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java) )(+"
+isFinaltrue"
+typeTaskExecutor"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2Å
+ org.jabref.gui.util.TaskExecutorTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java) )(∆
+Vorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?filePreferences@42.34:42.49VALUEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java*" *(1"
+isFinaltrue"
+typeFilePreferences"†
+declarationStringä<mark class="modifier">private </mark><mark class="modifier">final </mark>FilePreferences <mark class="class-field">filePreferences</mark>"
+isStaticfalse"
+accessprivate*filePreferences2á
+&org.jabref.preferences.FilePreferencesTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java* *(!æ
+Uorg.jabref.gui.fieldeditors.WriteMetadataToSinglePdfAction?xmpPreferences@43.33:43.47VALUEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java+! +(/"
+isFinaltrue"
+typeXmpPreferences"û
+declarationStringà<mark class="modifier">private </mark><mark class="modifier">final </mark>XmpPreferences <mark class="class-field">xmpPreferences</mark>"
+isStaticfalse"
+accessprivate*xmpPreferences2Ñ
+#org.jabref.logic.xmp.XmpPreferencesTYPEW
+Msrc\main\java\org\jabref\gui\fieldeditors\WriteMetadataToSinglePdfAction.java+ +( 

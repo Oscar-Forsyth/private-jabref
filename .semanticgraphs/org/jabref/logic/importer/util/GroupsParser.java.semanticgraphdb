@@ -1,0 +1,1962 @@
+
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‰
++org.jabref.logic.importer.util.GroupsParserCLASSH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java' '(")
+packageorg.jabref.logic.importer.util"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"j
+declarationStringU<mark class="modifier">public </mark><mark class="modifier">class </mark>GroupsParser"
+accesspublic*GroupsParser2ì
+:org.jabref.logic.importer.util.GroupsParser.GroupsParser()DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java+ +(2ñ
+ºorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java.  .(,2Ñ
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java]  ](*2˜
+ùorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java{! {(32∏
+]org.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaî! î(@2∏
+]org.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java£! £(@2ƒ
+iorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaπ  π(62≈
+jorg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java–! –(82À
+porg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‚! ‚(>2ˆ
+öorg.jabref.logic.importer.util.GroupsParser.addLegacyEntryKeys(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.ExplicitGroup)DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java˙ ˙(*2≤
+Worg.jabref.logic.importer.util.GroupsParser.allEntriesGroupFromString(java.lang.String)DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÅ! Å(:2Æ
+Sorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaç! ç(62Û
+óorg.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaß ß('2ó
+>org.jabref.logic.importer.util.GroupsParser?LOGGER@41.42:41.48DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java)* )(0è
+:org.jabref.logic.importer.util.GroupsParser.GroupsParser()CONSTRUCTORH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java+ +("e
+declarationStringP<mark class="modifier">private </mark><mark class="method">GroupsParser</mark>()*GroupsParser2Ñ
++org.jabref.logic.importer.util.GroupsParserRETURN_TYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java+ +(ˆ|
+ºorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)METHODH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java.  .(,"
+isFinalfalse"ä
+declarationStringÙ<mark class="modifier">public </mark><mark class="modifier">static </mark>GroupTreeNode <mark class="method">importGroups</mark>(List&lt;String&gt; orderedData<mark class="modifier"><mark class="modifier">,</mark></mark> Character keywordSeparator<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileMonitor<mark class="modifier"><mark class="modifier">,</mark></mark> MetaData metaData)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>ParseException"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeGroupTreeNode*importGroups2i
+java.lang.String.trim()CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java5  5($2l
+java.lang.String.isEmpty()CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java6 6("2o
+java.lang.String.indexOf(int)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java:( :(/2~
+,java.lang.Integer.parseInt(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java>$ >(,2v
+$java.lang.String.substring(int, int)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java>4 >(=2˝
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java?3 ?(=2q
+java.lang.String.substring(int)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java?E ?(N2®
+Vorg.jabref.model.groups.GroupTreeNode.fromGroup(org.jabref.model.groups.AbstractGroup)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java@6 @(?2v
+$org.jabref.model.TreeNode.getLevel()CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaG, G(42p
+java.util.Optional.isPresent()CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaGO G(X2w
+%org.jabref.model.TreeNode.getParent()CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaGC G(L2j
+java.util.Optional.get()CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaH4 H(72w
+%org.jabref.model.TreeNode.getParent()CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaH( H(12w
+%org.jabref.model.TreeNode.addChild(T)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaJ J(#2†
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaQ Q(2õ
+Iorg.jabref.logic.importer.ParseException.ParseException(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java< <(,2∞
+^org.jabref.logic.importer.ParseException.ParseException(java.lang.String, java.lang.Throwable)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaP P($2õ
+»org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!orderedDataCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java3! 3(,2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?string@51.24:51.30CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java5 5(2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?string@51.24:51.30CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java5 5(2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?string@51.24:51.30CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java6 6(2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?string@51.24:51.30CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java:! :('2¶
+”org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?spaceIndex@58.20:58.30CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java; ;(2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?string@51.24:51.30CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java<= <(C2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?string@51.24:51.30CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java>- >(32¶
+”org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?spaceIndex@58.20:58.30CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java>A >(K2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?string@51.24:51.30CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java?> ?(D2¶
+”org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?spaceIndex@58.20:58.30CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java?O ?(Y2†
+Õorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!keywordSeparatorCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java?` ?(p2õ
+»org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitorCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java?r ?(}2ô
+≈org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaDataCALLI
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java? ?(á2°
+Œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?group@63.30:63.35CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java@@ @(E2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?cursor@49.26:49.32CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaA A(2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?cursor@49.26:49.32CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaC C(2£
+–org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?newNode@64.30:64.37CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaC C($2†
+Õorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?root@50.26:50.30CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaD D(2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?cursor@49.26:49.32CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaD D(!2°
+Œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?level@62.20:62.25CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaG G(!2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?cursor@49.26:49.32CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaG% G(+2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?cursor@49.26:49.32CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaG< G(B2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?cursor@49.26:49.32CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaH H(2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?cursor@49.26:49.32CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaH! H('2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?cursor@49.26:49.32CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaJ J(2£
+–org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?newNode@64.30:64.37CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaJ$ J(+2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?cursor@49.26:49.32CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaK K(2£
+–org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?newNode@64.30:64.37CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaK K($2†
+Õorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?root@50.26:50.30CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaN N(2ù
+ org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?e@79.32:79.33CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaR R(2†
+»org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!orderedData	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java.: .(E2•
+Õorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!keywordSeparator	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java.Q .(a2°
+»org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitor	PARAMETERI
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java.u .(Ä2ü
+≈org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaData	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java.ã .(ì2©
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?cursor@49.26:49.32DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java1 1( 2ß
+Õorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?root@50.26:50.30DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java2 2(2©
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?string@51.24:51.30DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java3 3(2≠
+”org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?spaceIndex@58.20:58.30DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java: :(2®
+Œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?level@62.20:62.25DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java> >(2®
+Œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?group@63.30:63.35DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java? ?(#2™
+–org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?newNode@64.30:64.37DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java@ @(%2§
+ org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?e@79.32:79.33DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaO  O(!2~
+%org.jabref.model.groups.GroupTreeNodeRETURN_TYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java. .(·
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?cursor@49.26:49.32VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java1 1( "
+typeGroupTreeNode"
+isFinalfalse"é
+declarationStringy<mark class="modifier"> </mark>GroupTreeNode <mark class="class-field">cursor</mark> = <mark class="modifier">null</mark>*cursor2w
+%org.jabref.model.groups.GroupTreeNodeTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java1 1(€
+Õorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?root@50.26:50.30VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java2 2("
+typeGroupTreeNode"
+isFinalfalse"å
+declarationStringw<mark class="modifier"> </mark>GroupTreeNode <mark class="class-field">root</mark> = <mark class="modifier">null</mark>*root2w
+%org.jabref.model.groups.GroupTreeNodeTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java2 2(∑
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?string@51.24:51.30VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java3 3("
+typeString"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier"> </mark>String <mark class="class-field"><mark class="modifier">string</mark></mark>*string2b
+java.lang.StringTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java3 3(˚
+”org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?spaceIndex@58.20:58.30VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java: :("
+typeint"
+isFinalfalse"∂
+declarationString†<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">spaceIndex</mark> = <mark class="modifier">string</mark>.indexOf(' ')*
+spaceIndex2U
+intTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java: :(2o
+java.lang.String.indexOf(int)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java:( :(/2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?string@51.24:51.30CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java:! :('∫
+Œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?level@62.20:62.25VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java> >("
+typeint"
+isFinalfalse"œ
+declarationStringπ<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">level</mark> = Integer.parseInt(<mark class="modifier">string</mark>.substring(0, spaceIndex))*level2U
+intTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java> >(2~
+,java.lang.Integer.parseInt(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java>$ >(,2v
+$java.lang.String.substring(int, int)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java>4 >(=2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?string@51.24:51.30CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java>- >(32¶
+”org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?spaceIndex@58.20:58.30CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java>A >(K˘
+Œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?group@63.30:63.35VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java? ?(#"
+typeAbstractGroup"
+isFinalfalse"ä
+declarationStringÙ<mark class="modifier"> </mark>AbstractGroup <mark class="class-field">group</mark> = GroupsParser.fromString(<mark class="modifier">string</mark>.substring(spaceIndex + 1)<mark class="modifier">,</mark> keywordSeparator, fileMonitor, metaData)*group2w
+%org.jabref.model.groups.AbstractGroupTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java? ?(2˝
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java?3 ?(=2q
+java.lang.String.substring(int)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java?E ?(N2¢
+œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?string@51.24:51.30CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java?> ?(D2¶
+”org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?spaceIndex@58.20:58.30CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java?O ?(Y2†
+Õorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!keywordSeparatorCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java?` ?(p2õ
+»org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitorCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java?r ?(}2ô
+≈org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaDataCALLI
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java? ?(áØ
+–org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?newNode@64.30:64.37VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java@ @(%"
+typeGroupTreeNode"
+isFinalfalse"ã
+declarationStringv<mark class="modifier"> </mark>GroupTreeNode <mark class="class-field">newNode</mark> = GroupTreeNode.fromGroup(group)*newNode2w
+%org.jabref.model.groups.GroupTreeNodeTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java@ @(2®
+Vorg.jabref.model.groups.GroupTreeNode.fromGroup(org.jabref.model.groups.AbstractGroup)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java@6 @(?2°
+Œorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?group@63.30:63.35CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java@@ @(E”
+»org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!orderedData	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java.: .(E"
+typeList<String>"
+isFinalfalse"-
+declarationStringList<String> orderedData*orderedData2`
+java.util.ListTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java.- .(12k
+java.lang.StringTYPE_ARGUMENTH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java.2 .(8Ù
+Õorg.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!keywordSeparator	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java.Q .(a"
+type	Character"
+isFinalfalse"/
+declarationStringCharacter keywordSeparator*keywordSeparator2e
+java.lang.CharacterTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java.G .(Pä
+»org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitor	PARAMETERI
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java.u .(Ä"
+typeFileUpdateMonitor"
+isFinalfalse"2
+declarationStringFileUpdateMonitor fileMonitor*fileMonitor2y
+'org.jabref.model.util.FileUpdateMonitorTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java.c .(tÌ
+≈org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaData	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java.ã .(ì"
+typeMetaData"
+isFinalfalse"&
+declarationStringMetaData metaData*metaData2v
+"org.jabref.model.metadata.MetaDataTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java.Ç .(äÒ
+ org.jabref.logic.importer.util.GroupsParser.importGroups(java.util.List<java.lang.String>, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?e@79.32:79.33VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaO  O(!"
+typeParseException"
+isFinalfalse"%
+declarationStringParseException e*e2z
+(org.jabref.logic.importer.ParseExceptionTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaO O(úR
+™org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)METHODH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java]  ](*"
+isFinalfalse"Ú
+declarationString‹<mark class="modifier">public </mark><mark class="modifier">static </mark>AbstractGroup <mark class="method">fromString</mark>(String s<mark class="modifier"><mark class="modifier">,</mark></mark> Character keywordSeparator<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileMonitor<mark class="modifier"><mark class="modifier">,</mark></mark> MetaData metaData)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>ParseException"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeAbstractGroup*
+fromString2
+-java.lang.String.startsWith(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java_ _(2ª
+iorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java` `()2
+-java.lang.String.startsWith(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javab b(2©
+Worg.jabref.logic.importer.util.GroupsParser.allEntriesGroupFromString(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javac c(,2
+-java.lang.String.startsWith(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javae e(2•
+Sorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaf f((2
+-java.lang.String.startsWith(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javah h(2º
+jorg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javai i(*2
+-java.lang.String.startsWith(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javak k(2¬
+porg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javal l(02
+-java.lang.String.startsWith(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javan n(2Ø
+]org.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javao o(22
+-java.lang.String.startsWith(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaq q(2Ø
+]org.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javar r(22
+-java.lang.String.startsWith(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javat t(2
+ùorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javau u(%2õ
+Iorg.jabref.logic.importer.ParseException.ParseException(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javax x( 2ˇ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!sCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java_ _(2ˇ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!sCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java`* `(+2é
+ªorg.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!keywordSeparatorCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java`- `(=2ˇ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!sCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javab b(2ˇ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!sCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javac- c(.2ˇ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!sCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javae e(2ˇ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!sCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaf) f(*2ˇ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!sCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javah h(2ˇ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!sCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javai+ i(,2é
+ªorg.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!keywordSeparatorCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javai. i(>2ˇ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!sCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javak k(2ˇ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!sCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javal1 l(22é
+ªorg.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!keywordSeparatorCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javal4 l(D2ˇ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!sCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javan n(2ˇ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!sCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javao3 o(42ˇ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!sCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaq q(2ˇ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!sCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javar3 r(42ˇ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!sCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javat t(2ˇ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!sCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javau& u('2â
+∂org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitorCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javau) u(42Ü
+≥org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaDataCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javau6 u(>2ˇ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!sCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javax5 x(62Ñ
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!s	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java]2 ](32ì
+ªorg.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!keywordSeparator	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java]? ](O2é
+∂org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitor	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java]c ](n2å
+≥org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaData	PARAMETERI
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java]y ](Å2~
+%org.jabref.model.groups.AbstractGroupRETURN_TYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java] ](¨
+¨org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!s	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java]2 ](3"
+typeString"
+isFinalfalse"
+declarationStringString s*s2b
+java.lang.StringTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java]+ ](1‚
+ªorg.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!keywordSeparator	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java]? ](O"
+type	Character"
+isFinalfalse"/
+declarationStringCharacter keywordSeparator*keywordSeparator2e
+java.lang.CharacterTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java]5 ](>˜
+∂org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitor	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java]c ](n"
+typeFileUpdateMonitor"
+isFinalfalse"2
+declarationStringFileUpdateMonitor fileMonitor*fileMonitor2y
+'org.jabref.model.util.FileUpdateMonitorTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java]Q ](bÿ
+≥org.jabref.logic.importer.util.GroupsParser.fromString(java.lang.String, java.lang.Character, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaData	PARAMETERI
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java]y ](Å"
+typeMetaData"
+isFinalfalse"&
+declarationStringMetaData metaData*metaData2t
+"org.jabref.model.metadata.MetaDataTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java]p ](x˘h
+ùorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)METHODH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java{! {(3"
+isFinalfalse"∆
+declarationString∞<mark class="modifier">private </mark><mark class="modifier">static </mark>AbstractGroup <mark class="method">texGroupFromString</mark>(String <mark class="modifier">string</mark><mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileMonitor<mark class="modifier"><mark class="modifier">,</mark></mark> MetaData metaData)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>ParseException"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeAbstractGroup*texGroupFromString2q
+java.lang.String.substring(int)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java|E |(N2k
+java.lang.String.length()CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java} }(2ï
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java! ((2ë
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java- (62ò
+Dorg.jabref.model.groups.GroupHierarchyType.getByNumberOrDefault(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÄ8 Ä(L2Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÄU Ä(]2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÄb Ä(k2ê
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÇ Ç(2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÇ$ Ç(-2¡
+Ïorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑ- Ñ(32Ï
+óorg.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÖ Ö(2ò
+√org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaã- ã(32Ï
+óorg.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaå å(2≈
+sorg.jabref.logic.util.strings.QuotedStringTokenizer.QuotedStringTokenizer(java.lang.String, java.lang.String, char)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java|( |(=2∑
+corg.jabref.logic.auxparser.DefaultAuxParser.DefaultAuxParser(org.jabref.model.database.BibDatabase)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑM Ñ(]2á
+3org.jabref.model.database.BibDatabase.BibDatabase()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑb Ñ(m2∑
+corg.jabref.logic.auxparser.DefaultAuxParser.DefaultAuxParser(org.jabref.model.database.BibDatabase)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaãM ã(]2á
+3org.jabref.model.database.BibDatabase.BibDatabase()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaãb ã(m2†
+Lorg.jabref.logic.importer.ParseException.ParseException(java.lang.Throwable)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaê ê($2˜
+§org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!stringCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java|> |(D2Ç
+Øorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?tok@124.30:124.33CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java) (,2Ñ
+Øorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?tok@124.30:124.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÄ^ Ä(a2Ñ
+Øorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?tok@124.30:124.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÇ  Ç(#2Ö
+∞org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?name@127.15:127.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑ4 Ñ(82à
+≥org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?context@128.27:128.34CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑ: Ñ(A2Ö
+∞org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?path@130.17:130.21CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑC Ñ(G2˛
+©org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitorCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑr Ñ(}2¸
+¶org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaDataCALLK
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑ Ñ(á2Ñ
+Øorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?tok@124.30:124.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÖ  Ö(#2â
+¥org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?newGroup@132.25:132.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÖ% Ö(-2â
+¥org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?newGroup@132.25:132.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÜ Ü(2í
+>org.jabref.logic.importer.util.GroupsParser?LOGGER@41.42:41.48CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaâ â(2Ö
+∞org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?path@130.17:130.21CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaâp â(t2Ö
+∞org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?name@127.15:127.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaâv â(z2É
+Æorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?ex@135.33:135.35CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaâ| â(~2Ö
+∞org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?name@127.15:127.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaã4 ã(82à
+≥org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?context@128.27:128.34CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaã: ã(A2Ö
+∞org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?path@130.17:130.21CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaãC ã(G2˚
+¶org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaDataCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaãr ã(z2Ñ
+Øorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?tok@124.30:124.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaå  å(#2â
+¥org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?newGroup@139.25:139.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaå% å(-2â
+¥org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?newGroup@139.25:139.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaç ç(2É
+Æorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?ex@143.52:143.54CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaê% ê('2¸
+§org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!string	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java{; {(A2Å
+©org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitor	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java{U {(`2˛
+¶org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaData	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java{k {(s2â
+Øorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?tok@124.30:124.33DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java| |(!2ä
+∞org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?name@127.15:127.19DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java (2è
+≥org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?context@128.27:128.34DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÄ Ä("2å
+∞org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?path@130.17:130.21DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÇ Ç(2ê
+¥org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?newGroup@132.25:132.33DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑ Ñ(!2ê
+¥org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?newGroup@139.25:139.33DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaã ã(!2ä
+Æorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?ex@135.33:135.35DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaá! á(#2ä
+Æorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?ex@143.52:143.54DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaè4 è(62~
+%org.jabref.model.groups.AbstractGroupRETURN_TYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java{ {( Í
+Øorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?tok@124.30:124.33VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java| |(!"
+typeQuotedStringTokenizer"
+isFinalfalse"Å
+declarationStringÎ<mark class="modifier"> </mark>QuotedStringTokenizer <mark class="class-field">tok</mark> = new QuotedStringTokenizer(<mark class="modifier">string</mark>.substring(MetadataSerializationConfiguration.TEX_GROUP_ID.length())<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_UNIT_SEPARATOR, MetadataSerializationConfiguration.GROUP_QUOTE_CHAR)*tok2Ö
+3org.jabref.logic.util.strings.QuotedStringTokenizerTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java| |(2q
+java.lang.String.substring(int)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java|E |(N2k
+java.lang.String.length()CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java} }(2≈
+sorg.jabref.logic.util.strings.QuotedStringTokenizer.QuotedStringTokenizer(java.lang.String, java.lang.String, char)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java|( |(=2˜
+§org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!stringCALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java|> |(D°	
+∞org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?name@127.15:127.19VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java ("
+typeString"
+isFinalfalse"⁄
+declarationStringƒ<mark class="modifier"> </mark>String <mark class="class-field">name</mark> = StringUtil.unquote(tok.nextToken()<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_QUOTE_CHAR)*name2b
+java.lang.StringTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java (2ï
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java! ((2ë
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java- (62Ç
+Øorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?tok@124.30:124.33CALLH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java) (,æ
+
+≥org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?context@128.27:128.34VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÄ Ä(""
+typeGroupHierarchyType"
+isFinalfalse"Ω
+declarationStringß<mark class="modifier"> </mark>GroupHierarchyType <mark class="class-field">context</mark> = GroupHierarchyType.getByNumberOrDefault(Integer.parseInt(tok.nextToken()))*context2~
+*org.jabref.model.groups.GroupHierarchyTypeTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÄ Ä(2ò
+Dorg.jabref.model.groups.GroupHierarchyType.getByNumberOrDefault(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÄ8 Ä(L2Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÄU Ä(]2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÄb Ä(k2Ñ
+Øorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?tok@124.30:124.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÄ^ Ä(a¬
+∞org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?path@130.17:130.21VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÇ Ç("
+typePath"
+isFinalfalse"y
+declarationStringd<mark class="modifier"> </mark>Path <mark class="class-field">path</mark> = Path.of(tok.nextToken())*path2f
+java.nio.file.PathTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÇ Ç(2ê
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÇ Ç(2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÇ$ Ç(-2Ñ
+Øorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?tok@124.30:124.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÇ  Ç(#√
+¥org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?newGroup@132.25:132.33VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑ Ñ(!"
+typeTexGroup"
+isFinalfalse"Ï
+declarationString÷<mark class="modifier"> </mark>TexGroup <mark class="class-field">newGroup</mark> = TexGroup.create(name, context, path, new DefaultAuxParser(new BibDatabase())<mark class="modifier">,</mark> fileMonitor, metaData)*newGroup2t
+ org.jabref.model.groups.TexGroupTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑ Ñ(2¡
+Ïorg.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑ- Ñ(32∑
+corg.jabref.logic.auxparser.DefaultAuxParser.DefaultAuxParser(org.jabref.model.database.BibDatabase)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑM Ñ(]2á
+3org.jabref.model.database.BibDatabase.BibDatabase()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑb Ñ(m2Ö
+∞org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?name@127.15:127.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑ4 Ñ(82à
+≥org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?context@128.27:128.34CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑ: Ñ(A2Ö
+∞org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?path@130.17:130.21CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑC Ñ(G2˛
+©org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitorCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑr Ñ(}2¸
+¶org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaDataCALLK
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÑ Ñ(áã
+¥org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?newGroup@139.25:139.33VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaã ã(!"
+typeTexGroup"
+isFinalfalse"ﬂ
+declarationString…<mark class="modifier"> </mark>TexGroup <mark class="class-field">newGroup</mark> = TexGroup.create(name, context, path, new DefaultAuxParser(new BibDatabase())<mark class="modifier">,</mark> metaData)*newGroup2t
+ org.jabref.model.groups.TexGroupTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaã ã(2ò
+√org.jabref.model.groups.TexGroup.create(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.nio.file.Path, org.jabref.logic.auxparser.AuxParser, org.jabref.model.metadata.MetaData)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaã- ã(32∑
+corg.jabref.logic.auxparser.DefaultAuxParser.DefaultAuxParser(org.jabref.model.database.BibDatabase)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaãM ã(]2á
+3org.jabref.model.database.BibDatabase.BibDatabase()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaãb ã(m2Ö
+∞org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?name@127.15:127.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaã4 ã(82à
+≥org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?context@128.27:128.34CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaã: ã(A2Ö
+∞org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?path@130.17:130.21CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaãC ã(G2˚
+¶org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaDataCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaãr ã(zÃ
+§org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!string	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java{; {(A"
+typeString"
+isFinalfalse"@
+declarationString+String <mark class="modifier">string</mark>*string2b
+java.lang.StringTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java{4 {(:Í
+©org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!fileMonitor	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java{U {(`"
+typeFileUpdateMonitor"
+isFinalfalse"2
+declarationStringFileUpdateMonitor fileMonitor*fileMonitor2y
+'org.jabref.model.util.FileUpdateMonitorTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java{C {(T 
+¶org.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)!metaData	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java{k {(s"
+typeMetaData"
+isFinalfalse"&
+declarationStringMetaData metaData*metaData2t
+"org.jabref.model.metadata.MetaDataTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java{b {(j¿
+Æorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?ex@135.33:135.35VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaá! á(#"
+typeIOException"
+isFinalfalse"#
+declarationStringIOException ex*ex2g
+java.io.IOExceptionTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaá á( î
+Æorg.jabref.logic.importer.util.GroupsParser.texGroupFromString(java.lang.String, org.jabref.model.util.FileUpdateMonitor, org.jabref.model.metadata.MetaData)?ex@143.52:143.54VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaè4 è(6"*
+type"InvalidPathException | IOException"
+isFinalfalse":
+declarationString%InvalidPathException | IOException ex*ex2å
+8java.nio.file.InvalidPathException | java.io.IOExceptionTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaè è(3å4
+]org.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)METHODJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaî! î(@"
+isFinalfalse"◊
+declarationString¡<mark class="modifier">private </mark><mark class="modifier">static </mark>AbstractGroup <mark class="method">automaticPersonsGroupFromString</mark>(String <mark class="modifier">string</mark>)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeAbstractGroup*automaticPersonsGroupFromString2Å
+-java.lang.String.startsWith(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaï ï(2s
+java.lang.String.substring(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaòE ò(N2m
+java.lang.String.length()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaô ô(2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaõ! õ((2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaõ- õ(62ò
+Dorg.jabref.model.groups.GroupHierarchyType.getByNumberOrDefault(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaú8 ú(L2Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaúU ú(]2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaúb ú(k2ö
+Forg.jabref.model.entry.field.FieldFactory.parseField(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaù# ù(-2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaù9 ù(@2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaùE ù(N2Ï
+óorg.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaü ü(2°
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javañ ñ(.2«
+sorg.jabref.logic.util.strings.QuotedStringTokenizer.QuotedStringTokenizer(java.lang.String, java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaò( ò(=2˙
+•org.jabref.model.groups.AutomaticPersonsGroup.AutomaticPersonsGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, org.jabref.model.entry.field.Field)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaû- û(B2∏
+dorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)!stringCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaï ï(2∏
+dorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)!stringCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javañZ ñ(`2∏
+dorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)!stringCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaò> ò(D2√
+oorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?tok@152.30:152.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaõ) õ(,2√
+oorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?tok@152.30:152.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaú^ ú(a2√
+oorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?tok@152.30:152.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaùA ù(D2ƒ
+porg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?name@155.15:155.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaûC û(G2«
+sorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?context@156.27:156.34CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaûI û(P2≈
+qorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?field@157.14:157.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaûR û(W2√
+oorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?tok@152.30:152.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaü ü(2»
+torg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?newGroup@158.30:158.38CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaü ü(%2»
+torg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?newGroup@158.30:158.38CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java† †(2Ω
+dorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)!string	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaîH î(N2 
+oorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?tok@152.30:152.33DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaò ò(!2À
+porg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?name@155.15:155.19DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaõ õ(2Œ
+sorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?context@156.27:156.34DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaú ú("2Ã
+qorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?field@157.14:157.19DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaù ù(2œ
+torg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?newGroup@158.30:158.38DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaû û(&2Ä
+%org.jabref.model.groups.AbstractGroupRETURN_TYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaî î( Ç
+oorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?tok@152.30:152.33VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaò ò(!"
+typeQuotedStringTokenizer"
+isFinalfalse"è
+declarationString˘<mark class="modifier"> </mark>QuotedStringTokenizer <mark class="class-field">tok</mark> = new QuotedStringTokenizer(<mark class="modifier">string</mark>.substring(MetadataSerializationConfiguration.AUTOMATIC_PERSONS_GROUP_ID.length())<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_UNIT_SEPARATOR, MetadataSerializationConfiguration.GROUP_QUOTE_CHAR)*tok2á
+3org.jabref.logic.util.strings.QuotedStringTokenizerTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaò ò(2s
+java.lang.String.substring(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaòE ò(N2m
+java.lang.String.length()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaô ô(2«
+sorg.jabref.logic.util.strings.QuotedStringTokenizer.QuotedStringTokenizer(java.lang.String, java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaò( ò(=2∏
+dorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)!stringCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaò> ò(D©
+porg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?name@155.15:155.19VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaõ õ("
+typeString"
+isFinalfalse"⁄
+declarationStringƒ<mark class="modifier"> </mark>String <mark class="class-field">name</mark> = StringUtil.unquote(tok.nextToken()<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_QUOTE_CHAR)*name2d
+java.lang.StringTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaõ õ(2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaõ! õ((2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaõ- õ(62√
+oorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?tok@152.30:152.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaõ) õ(,º	
+sorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?context@156.27:156.34VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaú ú(""
+typeGroupHierarchyType"
+isFinalfalse"Ω
+declarationStringß<mark class="modifier"> </mark>GroupHierarchyType <mark class="class-field">context</mark> = GroupHierarchyType.getByNumberOrDefault(Integer.parseInt(tok.nextToken()))*context2~
+*org.jabref.model.groups.GroupHierarchyTypeTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaú ú(2ò
+Dorg.jabref.model.groups.GroupHierarchyType.getByNumberOrDefault(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaú8 ú(L2Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaúU ú(]2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaúb ú(k2√
+oorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?tok@152.30:152.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaú^ ú(aÚ	
+qorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?field@157.14:157.19VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaù ù("
+typeField"
+isFinalfalse"Û
+declarationString›<mark class="modifier"> </mark>Field <mark class="class-field">field</mark> = FieldFactory.parseField(StringUtil.unquote(tok.nextToken()<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_QUOTE_CHAR))*field2v
+"org.jabref.model.entry.field.FieldTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaù ù(2ö
+Forg.jabref.model.entry.field.FieldFactory.parseField(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaù# ù(-2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaù9 ù(@2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaùE ù(N2√
+oorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?tok@152.30:152.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaùA ù(Dä
+torg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?newGroup@158.30:158.38VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaû û(&"
+typeAutomaticPersonsGroup"
+isFinalfalse"¶
+declarationStringê<mark class="modifier"> </mark>AutomaticPersonsGroup <mark class="class-field">newGroup</mark> = new AutomaticPersonsGroup(name, context, field)*newGroup2Å
+-org.jabref.model.groups.AutomaticPersonsGroupTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaû û(2˙
+•org.jabref.model.groups.AutomaticPersonsGroup.AutomaticPersonsGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, org.jabref.model.entry.field.Field)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaû- û(B2ƒ
+porg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?name@155.15:155.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaûC û(G2«
+sorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?context@156.27:156.34CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaûI û(P2≈
+qorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)?field@157.14:157.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaûR û(Wè
+dorg.jabref.logic.importer.util.GroupsParser.automaticPersonsGroupFromString(java.lang.String)!string	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaîH î(N"
+typeString"
+isFinalfalse"@
+declarationString+String <mark class="modifier">string</mark>*string2d
+java.lang.StringTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaîA î(G‡D
+]org.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)METHODJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java£! £(@"
+isFinalfalse"◊
+declarationString¡<mark class="modifier">private </mark><mark class="modifier">static </mark>AbstractGroup <mark class="method">automaticKeywordGroupFromString</mark>(String <mark class="modifier">string</mark>)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeAbstractGroup*automaticKeywordGroupFromString2Å
+-java.lang.String.startsWith(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java§ §(2s
+java.lang.String.substring(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaßE ß(N2m
+java.lang.String.length()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java® ®(2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java™! ™((2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java™- ™(62ò
+Dorg.jabref.model.groups.GroupHierarchyType.getByNumberOrDefault(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java´8 ´(L2Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java´U ´(]2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java´b ´(k2ö
+Forg.jabref.model.entry.field.FieldFactory.parseField(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¨# ¨(-2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¨9 ¨(@2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¨E ¨(N2p
+java.lang.String.charAt(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≠w ≠(}2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≠) ≠(02ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≠5 ≠(>2r
+java.lang.String.charAt(int)CALLL
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÆÉ Æ(â2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÆ5 Æ(<2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÆA Æ(J2Ï
+óorg.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java∞ ∞(2°
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java• •(.2«
+sorg.jabref.logic.util.strings.QuotedStringTokenizer.QuotedStringTokenizer(java.lang.String, java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaß( ß(=2§
+œorg.jabref.model.groups.AutomaticKeywordGroup.AutomaticKeywordGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, org.jabref.model.entry.field.Field, java.lang.Character, java.lang.Character)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaØ- Ø(B2∏
+dorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)!stringCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java§ §(2∏
+dorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)!stringCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java•Z •(`2∏
+dorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)!stringCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaß> ß(D2√
+oorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?tok@167.30:167.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java™) ™(,2√
+oorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?tok@167.30:167.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java´^ ´(a2√
+oorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?tok@167.30:167.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¨A ¨(D2√
+oorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?tok@167.30:167.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≠1 ≠(42√
+oorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?tok@167.30:167.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÆ= Æ(@2ƒ
+porg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?name@170.15:170.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaØC Ø(G2«
+sorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?context@171.27:171.34CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaØI Ø(P2≈
+qorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?field@172.14:172.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaØR Ø(W2…
+uorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?delimiter@173.18:173.27CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaØY Ø(b2÷
+Åorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?hierarchicalDelimiter@174.18:174.39CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaØd Ø(y2√
+oorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?tok@167.30:167.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java∞ ∞(2»
+torg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?newGroup@175.30:175.38CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java∞ ∞(%2»
+torg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?newGroup@175.30:175.38CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java± ±(2Ω
+dorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)!string	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java£H £(N2 
+oorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?tok@167.30:167.33DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaß ß(!2À
+porg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?name@170.15:170.19DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java™ ™(2Œ
+sorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?context@171.27:171.34DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java´ ´("2Ã
+qorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?field@172.14:172.19DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¨ ¨(2–
+uorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?delimiter@173.18:173.27DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≠ ≠(2›
+Åorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?hierarchicalDelimiter@174.18:174.39DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÆ Æ('2œ
+torg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?newGroup@175.30:175.38DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaØ Ø(&2Ä
+%org.jabref.model.groups.AbstractGroupRETURN_TYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java£ £( Ç
+oorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?tok@167.30:167.33VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaß ß(!"
+typeQuotedStringTokenizer"
+isFinalfalse"è
+declarationString˘<mark class="modifier"> </mark>QuotedStringTokenizer <mark class="class-field">tok</mark> = new QuotedStringTokenizer(<mark class="modifier">string</mark>.substring(MetadataSerializationConfiguration.AUTOMATIC_KEYWORD_GROUP_ID.length())<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_UNIT_SEPARATOR, MetadataSerializationConfiguration.GROUP_QUOTE_CHAR)*tok2á
+3org.jabref.logic.util.strings.QuotedStringTokenizerTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaß ß(2s
+java.lang.String.substring(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaßE ß(N2m
+java.lang.String.length()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java® ®(2«
+sorg.jabref.logic.util.strings.QuotedStringTokenizer.QuotedStringTokenizer(java.lang.String, java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaß( ß(=2∏
+dorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)!stringCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaß> ß(D©
+porg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?name@170.15:170.19VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java™ ™("
+typeString"
+isFinalfalse"⁄
+declarationStringƒ<mark class="modifier"> </mark>String <mark class="class-field">name</mark> = StringUtil.unquote(tok.nextToken()<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_QUOTE_CHAR)*name2d
+java.lang.StringTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java™ ™(2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java™! ™((2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java™- ™(62√
+oorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?tok@167.30:167.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java™) ™(,º	
+sorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?context@171.27:171.34VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java´ ´(""
+typeGroupHierarchyType"
+isFinalfalse"Ω
+declarationStringß<mark class="modifier"> </mark>GroupHierarchyType <mark class="class-field">context</mark> = GroupHierarchyType.getByNumberOrDefault(Integer.parseInt(tok.nextToken()))*context2~
+*org.jabref.model.groups.GroupHierarchyTypeTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java´ ´(2ò
+Dorg.jabref.model.groups.GroupHierarchyType.getByNumberOrDefault(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java´8 ´(L2Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java´U ´(]2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java´b ´(k2√
+oorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?tok@167.30:167.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java´^ ´(aÚ	
+qorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?field@172.14:172.19VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¨ ¨("
+typeField"
+isFinalfalse"Û
+declarationString›<mark class="modifier"> </mark>Field <mark class="class-field">field</mark> = FieldFactory.parseField(StringUtil.unquote(tok.nextToken()<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_QUOTE_CHAR))*field2v
+"org.jabref.model.entry.field.FieldTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¨ ¨(2ö
+Forg.jabref.model.entry.field.FieldFactory.parseField(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¨# ¨(-2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¨9 ¨(@2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¨E ¨(N2√
+oorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?tok@167.30:167.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¨A ¨(DΩ	
+uorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?delimiter@173.18:173.27VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≠ ≠("
+type	Character"
+isFinalfalse"Ï
+declarationString÷<mark class="modifier"> </mark>Character <mark class="class-field">delimiter</mark> = StringUtil.unquote(tok.nextToken()<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_QUOTE_CHAR).charAt(0)*	delimiter2g
+java.lang.CharacterTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≠ ≠(2p
+java.lang.String.charAt(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≠w ≠(}2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≠) ≠(02ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≠5 ≠(>2√
+oorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?tok@167.30:167.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≠1 ≠(4‰	
+Åorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?hierarchicalDelimiter@174.18:174.39VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÆ Æ('"
+type	Character"
+isFinalfalse"¯
+declarationString‚<mark class="modifier"> </mark>Character <mark class="class-field">hierarchicalDelimiter</mark> = StringUtil.unquote(tok.nextToken()<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_QUOTE_CHAR).charAt(0)*hierarchicalDelimiter2g
+java.lang.CharacterTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÆ Æ(2r
+java.lang.String.charAt(int)CALLL
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÆÉ Æ(â2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÆ5 Æ(<2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÆA Æ(J2√
+oorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?tok@167.30:167.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÆ= Æ(@˚
+torg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?newGroup@175.30:175.38VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaØ Ø(&"
+typeAutomaticKeywordGroup"
+isFinalfalse"»
+declarationString≤<mark class="modifier"> </mark>AutomaticKeywordGroup <mark class="class-field">newGroup</mark> = new AutomaticKeywordGroup(name, context, field, delimiter, hierarchicalDelimiter)*newGroup2Å
+-org.jabref.model.groups.AutomaticKeywordGroupTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaØ Ø(2§
+œorg.jabref.model.groups.AutomaticKeywordGroup.AutomaticKeywordGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, org.jabref.model.entry.field.Field, java.lang.Character, java.lang.Character)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaØ- Ø(B2ƒ
+porg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?name@170.15:170.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaØC Ø(G2«
+sorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?context@171.27:171.34CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaØI Ø(P2≈
+qorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?field@172.14:172.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaØR Ø(W2…
+uorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?delimiter@173.18:173.27CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaØY Ø(b2÷
+Åorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)?hierarchicalDelimiter@174.18:174.39CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaØd Ø(yè
+dorg.jabref.logic.importer.util.GroupsParser.automaticKeywordGroupFromString(java.lang.String)!string	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java£H £(N"
+typeString"
+isFinalfalse"@
+declarationString+String <mark class="modifier">string</mark>*string2d
+java.lang.StringTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java£A £(Gü^
+iorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)METHODJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaπ  π(6"
+isFinalfalse"‘
+declarationStringæ<mark class="modifier">private </mark><mark class="modifier">static </mark>KeywordGroup <mark class="method">keywordGroupFromString</mark>(String s<mark class="modifier"><mark class="modifier">,</mark></mark> Character keywordSeparator)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>ParseException"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeKeywordGroup*keywordGroupFromString2Å
+-java.lang.String.startsWith(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java∫ ∫(2s
+java.lang.String.substring(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaΩ@ Ω(I2m
+java.lang.String.length()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaæ æ(2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¿! ¿((2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¿- ¿(62ò
+Dorg.jabref.model.groups.GroupHierarchyType.getByNumberOrDefault(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¡8 ¡(L2Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¡U ¡(]2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¡b ¡(k2ö
+Forg.jabref.model.entry.field.FieldFactory.parseField(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¬# ¬(-2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¬9 ¬(@2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¬E ¬(N2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java√' √(.2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java√3 √(<2Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaƒ( ƒ(02ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaƒ5 ƒ(>2Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≈! ≈()2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≈. ≈(72Ï
+óorg.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÃ Ã(2°
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaª ª(.2«
+sorg.jabref.logic.util.strings.QuotedStringTokenizer.QuotedStringTokenizer(java.lang.String, java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaΩ( Ω(=2ç
+∏org.jabref.model.groups.RegexKeywordGroup.RegexKeywordGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, org.jabref.model.entry.field.Field, java.lang.String, boolean)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java» »(,2©
+‘org.jabref.model.groups.WordKeywordGroup.WordKeywordGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, org.jabref.model.entry.field.Field, java.lang.String, boolean, java.lang.Character, boolean)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java   (+2ø
+korg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)!sCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java∫ ∫(2ø
+korg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)!sCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaªZ ª([2ø
+korg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)!sCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaΩ> Ω(?2œ
+{org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?tok@189.30:189.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¿) ¿(,2œ
+{org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?tok@189.30:189.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¡^ ¡(a2œ
+{org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?tok@189.30:189.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¬A ¬(D2œ
+{org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?tok@189.30:189.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java√/ √(22œ
+{org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?tok@189.30:189.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaƒ1 ƒ(42œ
+{org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?tok@189.30:189.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≈* ≈(-2“
+~org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?regExp@197.16:197.22CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java« «(2’
+Äorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?newGroup@198.21:198.29CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java» »(2–
+|org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?name@192.15:192.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java»- »(12”
+org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?context@193.27:193.34CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java»3 »(:2—
+}org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?field@194.14:194.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java»< »(A2◊
+Çorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?expression@195.15:195.25CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java»C »(M2⁄
+Öorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?caseSensitive@196.16:196.29CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java»O »(\2’
+Äorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?newGroup@198.21:198.29CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java   (2–
+|org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?name@192.15:192.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java ,  (02”
+org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?context@193.27:193.34CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java 2  (92—
+}org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?field@194.14:194.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java ;  (@2◊
+Çorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?expression@195.15:195.25CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java B  (L2⁄
+Öorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?caseSensitive@196.16:196.29CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java N  ([2Œ
+zorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)!keywordSeparatorCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java ]  (m2œ
+{org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?tok@189.30:189.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÃ Ã(2’
+Äorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?newGroup@198.21:198.29CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÃ Ã(%2’
+Äorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?newGroup@198.21:198.29CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÕ Õ(2ƒ
+korg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)!s	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaπ> π(?2”
+zorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)!keywordSeparator	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaπK π([2÷
+{org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?tok@189.30:189.33DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaΩ Ω(!2◊
+|org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?name@192.15:192.19DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¿ ¿(2⁄
+org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?context@193.27:193.34DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¡ ¡("2ÿ
+}org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?field@194.14:194.19DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¬ ¬(2ﬁ
+Çorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?expression@195.15:195.25DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java√ √(2·
+Öorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?caseSensitive@196.16:196.29DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaƒ ƒ(2Ÿ
+~org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?regExp@197.16:197.22DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≈ ≈(2‹
+Äorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?newGroup@198.21:198.29DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java∆ ∆(2
+$org.jabref.model.groups.KeywordGroupRETURN_TYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaπ π(Ë
+
+{org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?tok@189.30:189.33VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaΩ Ω(!"
+typeQuotedStringTokenizer"
+isFinalfalse"‚
+declarationStringÃ<mark class="modifier"> </mark>QuotedStringTokenizer <mark class="class-field">tok</mark> = new QuotedStringTokenizer(s.substring(MetadataSerializationConfiguration.KEYWORD_GROUP_ID.length())<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_UNIT_SEPARATOR, MetadataSerializationConfiguration.GROUP_QUOTE_CHAR)*tok2á
+3org.jabref.logic.util.strings.QuotedStringTokenizerTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaΩ Ω(2s
+java.lang.String.substring(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaΩ@ Ω(I2m
+java.lang.String.length()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaæ æ(2«
+sorg.jabref.logic.util.strings.QuotedStringTokenizer.QuotedStringTokenizer(java.lang.String, java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaΩ( Ω(=2ø
+korg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)!sCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaΩ> Ω(?¡
+|org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?name@192.15:192.19VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¿ ¿("
+typeString"
+isFinalfalse"⁄
+declarationStringƒ<mark class="modifier"> </mark>String <mark class="class-field">name</mark> = StringUtil.unquote(tok.nextToken()<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_QUOTE_CHAR)*name2d
+java.lang.StringTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¿ ¿(2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¿! ¿((2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¿- ¿(62œ
+{org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?tok@189.30:189.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¿) ¿(,‘	
+org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?context@193.27:193.34VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¡ ¡(""
+typeGroupHierarchyType"
+isFinalfalse"Ω
+declarationStringß<mark class="modifier"> </mark>GroupHierarchyType <mark class="class-field">context</mark> = GroupHierarchyType.getByNumberOrDefault(Integer.parseInt(tok.nextToken()))*context2~
+*org.jabref.model.groups.GroupHierarchyTypeTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¡ ¡(2ò
+Dorg.jabref.model.groups.GroupHierarchyType.getByNumberOrDefault(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¡8 ¡(L2Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¡U ¡(]2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¡b ¡(k2œ
+{org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?tok@189.30:189.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¡^ ¡(aä
+
+}org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?field@194.14:194.19VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¬ ¬("
+typeField"
+isFinalfalse"Û
+declarationString›<mark class="modifier"> </mark>Field <mark class="class-field">field</mark> = FieldFactory.parseField(StringUtil.unquote(tok.nextToken()<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_QUOTE_CHAR))*field2v
+"org.jabref.model.entry.field.FieldTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¬ ¬(2ö
+Forg.jabref.model.entry.field.FieldFactory.parseField(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¬# ¬(-2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¬9 ¬(@2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¬E ¬(N2œ
+{org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?tok@189.30:189.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¬A ¬(D‘
+Çorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?expression@195.15:195.25VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java√ √("
+typeString"
+isFinalfalse"‡
+declarationString <mark class="modifier"> </mark>String <mark class="class-field">expression</mark> = StringUtil.unquote(tok.nextToken()<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_QUOTE_CHAR)*
+expression2d
+java.lang.StringTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java√ √(2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java√' √(.2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java√3 √(<2œ
+{org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?tok@189.30:189.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java√/ √(2ç
+Öorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?caseSensitive@196.16:196.29VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaƒ ƒ("
+typeboolean"
+isFinalfalse"≤
+declarationStringú<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">caseSensitive</mark> = Integer.parseInt(tok.nextToken()) == 1*caseSensitive2[
+booleanTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaƒ ƒ(2Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaƒ( ƒ(02ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaƒ5 ƒ(>2œ
+{org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?tok@189.30:189.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaƒ1 ƒ(4˜
+~org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?regExp@197.16:197.22VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≈ ≈("
+typeboolean"
+isFinalfalse"´
+declarationStringï<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">regExp</mark> = Integer.parseInt(tok.nextToken()) == 1*regExp2[
+booleanTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≈ ≈(2Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≈! ≈()2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≈. ≈(72œ
+{org.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?tok@189.30:189.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java≈* ≈(-Ò
+Äorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)?newGroup@198.21:198.29VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java∆ ∆("
+typeKeywordGroup"
+isFinalfalse"j
+declarationStringU<mark class="modifier"> </mark>KeywordGroup <mark class="class-field">newGroup</mark>*newGroup2x
+$org.jabref.model.groups.KeywordGroupTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java∆ ∆(Ó
+korg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)!s	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaπ> π(?"
+typeString"
+isFinalfalse"
+declarationStringString s*s2d
+java.lang.StringTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaπ7 π(=§
+zorg.jabref.logic.importer.util.GroupsParser.keywordGroupFromString(java.lang.String, java.lang.Character)!keywordSeparator	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaπK π(["
+type	Character"
+isFinalfalse"/
+declarationStringCharacter keywordSeparator*keywordSeparator2g
+java.lang.CharacterTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaπA π(JÇ6
+jorg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)METHODJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java–! –(8"
+isFinalfalse"⁄
+declarationStringƒ<mark class="modifier">private </mark><mark class="modifier">static </mark>ExplicitGroup <mark class="method">explicitGroupFromString</mark>(String input<mark class="modifier"><mark class="modifier">,</mark></mark> Character keywordSeparator)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>ParseException"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeExplicitGroup*explicitGroupFromString2Å
+-java.lang.String.startsWith(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java— —(2s
+java.lang.String.substring(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‘D ‘(M2o
+java.lang.String.length()CALLL
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‘É ‘(â2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java◊! ◊((2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java◊- ◊(62Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaŸ" Ÿ(*2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaŸ/ Ÿ(82ò
+Dorg.jabref.model.groups.GroupHierarchyType.getByNumberOrDefault(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java⁄P ⁄(d2Ï
+óorg.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java€ €(2°
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java“ “(.2«
+sorg.jabref.logic.util.strings.QuotedStringTokenizer.QuotedStringTokenizer(java.lang.String, java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‘( ‘(=2€
+Üorg.jabref.model.groups.ExplicitGroup.ExplicitGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.Character)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java⁄) ⁄(62ù
+Iorg.jabref.logic.importer.ParseException.ParseException(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaﬁ ﬁ($2ƒ
+porg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)!inputCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java— —(2ƒ
+porg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)!inputCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java“[ “(`2ƒ
+porg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)!inputCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‘> ‘(C2–
+|org.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?tok@212.30:212.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java◊) ◊(,2–
+|org.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?tok@212.30:212.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaŸ+ Ÿ(.2—
+}org.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?name@215.15:215.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java⁄7 ⁄(;2’
+Äorg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?context@217.16:217.23CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java⁄e ⁄(l2œ
+{org.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)!keywordSeparatorCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java⁄o ⁄(2–
+|org.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?tok@212.30:212.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java€ €(2÷
+Åorg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?newGroup@218.26:218.34CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java€! €()2÷
+Åorg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?newGroup@218.26:218.34CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‹ ‹(2ƒ
+porg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)!inputCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaﬁE ﬁ(J2…
+porg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)!input	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java–@ –(E2‘
+{org.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)!keywordSeparator	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java–Q –(a2◊
+|org.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?tok@212.30:212.33DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‘ ‘(!2ÿ
+}org.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?name@215.15:215.19DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java◊ ◊(2‹
+Äorg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?context@217.16:217.23DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaŸ Ÿ(2›
+Åorg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?newGroup@218.26:218.34DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java⁄ ⁄("2ﬁ
+Çorg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?exception@221.39:221.48DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java›' ›(02Ä
+%org.jabref.model.groups.ExplicitGroupRETURN_TYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java– –( ı
+
+|org.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?tok@212.30:212.33VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‘ ‘(!"
+typeQuotedStringTokenizer"
+isFinalfalse"Á
+declarationString—<mark class="modifier"> </mark>QuotedStringTokenizer <mark class="class-field">tok</mark> = new QuotedStringTokenizer(input.substring(MetadataSerializationConfiguration.EXPLICIT_GROUP_ID.length())<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_UNIT_SEPARATOR, MetadataSerializationConfiguration.GROUP_QUOTE_CHAR)*tok2á
+3org.jabref.logic.util.strings.QuotedStringTokenizerTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‘ ‘(2s
+java.lang.String.substring(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‘D ‘(M2o
+java.lang.String.length()CALLL
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‘É ‘(â2«
+sorg.jabref.logic.util.strings.QuotedStringTokenizer.QuotedStringTokenizer(java.lang.String, java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‘( ‘(=2ƒ
+porg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)!inputCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‘> ‘(C√
+}org.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?name@215.15:215.19VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java◊ ◊("
+typeString"
+isFinalfalse"⁄
+declarationStringƒ<mark class="modifier"> </mark>String <mark class="class-field">name</mark> = StringUtil.unquote(tok.nextToken()<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_QUOTE_CHAR)*name2d
+java.lang.StringTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java◊ ◊(2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java◊! ◊((2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java◊- ◊(62–
+|org.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?tok@212.30:212.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java◊) ◊(,Ï
+Äorg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?context@217.16:217.23VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaŸ Ÿ("
+typeint"
+isFinalfalse"£
+declarationStringç<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">context</mark> = Integer.parseInt(tok.nextToken())*context2W
+intTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaŸ Ÿ(2Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaŸ" Ÿ(*2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaŸ/ Ÿ(82–
+|org.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?tok@212.30:212.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaŸ+ Ÿ(.Í
+Åorg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?newGroup@218.26:218.34VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java⁄ ⁄(""
+typeExplicitGroup"
+isFinalfalse"Ë
+declarationString“<mark class="modifier"> </mark>ExplicitGroup <mark class="class-field">newGroup</mark> = new ExplicitGroup(name, GroupHierarchyType.getByNumberOrDefault(context)<mark class="modifier">,</mark> keywordSeparator)*newGroup2y
+%org.jabref.model.groups.ExplicitGroupTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java⁄ ⁄(2ò
+Dorg.jabref.model.groups.GroupHierarchyType.getByNumberOrDefault(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java⁄P ⁄(d2€
+Üorg.jabref.model.groups.ExplicitGroup.ExplicitGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.Character)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java⁄) ⁄(62—
+}org.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?name@215.15:215.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java⁄7 ⁄(;2’
+Äorg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?context@217.16:217.23CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java⁄e ⁄(l2œ
+{org.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)!keywordSeparatorCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java⁄o ⁄(˚
+porg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)!input	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java–@ –(E"
+typeString"
+isFinalfalse"!
+declarationStringString input*input2d
+java.lang.StringTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java–9 –(?•
+{org.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)!keywordSeparator	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java–Q –(a"
+type	Character"
+isFinalfalse"/
+declarationStringCharacter keywordSeparator*keywordSeparator2g
+java.lang.CharacterTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java–G –(P¬
+Çorg.jabref.logic.importer.util.GroupsParser.explicitGroupFromString(java.lang.String, java.lang.Character)?exception@221.39:221.48VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java›' ›(0"
+typeNumberFormatException"
+isFinalfalse"4
+declarationStringNumberFormatException exception*	exception2s
+java.lang.NumberFormatExceptionTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java› ›(&ë7
+porg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)METHODJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‚! ‚(>"
+isFinalfalse"‡
+declarationString <mark class="modifier">private </mark><mark class="modifier">static </mark>ExplicitGroup <mark class="method">legacyExplicitGroupFromString</mark>(String input<mark class="modifier"><mark class="modifier">,</mark></mark> Character keywordSeparator)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>ParseException"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeExplicitGroup*legacyExplicitGroupFromString2Å
+-java.lang.String.startsWith(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java„ „(2s
+java.lang.String.substring(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÊD Ê(M2o
+java.lang.String.length()CALLL
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÊä Ê(ê2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÈ! È((2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÈ- È(62Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÎ" Î(*2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÎ/ Î(82ò
+Dorg.jabref.model.groups.GroupHierarchyType.getByNumberOrDefault(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÏP Ï(d2Ô
+öorg.jabref.logic.importer.util.GroupsParser.addLegacyEntryKeys(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.ExplicitGroup)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÌ Ì(+2°
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‰ ‰(.2«
+sorg.jabref.logic.util.strings.QuotedStringTokenizer.QuotedStringTokenizer(java.lang.String, java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÊ( Ê(=2€
+Üorg.jabref.model.groups.ExplicitGroup.ExplicitGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.Character)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÏ) Ï(62ù
+Iorg.jabref.logic.importer.ParseException.ParseException(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java ($2 
+vorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)!inputCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java„ „(2 
+vorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)!inputCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‰[ ‰(`2 
+vorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)!inputCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÊ> Ê(C2◊
+Çorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?tok@230.30:230.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÈ) È(,2◊
+Çorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?tok@230.30:230.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÎ+ Î(.2ÿ
+Éorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?name@233.15:233.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÏ7 Ï(;2€
+Üorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?context@235.16:235.23CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÏe Ï(l2÷
+Åorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)!keywordSeparatorCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÏo Ï(2◊
+Çorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?tok@230.30:230.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÌ, Ì(/2‹
+áorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?newGroup@236.26:236.34CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÌ1 Ì(92‹
+áorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?newGroup@236.26:236.34CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÓ Ó(2 
+vorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)!inputCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaE (J2œ
+vorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)!input	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‚F ‚(K2€
+Åorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)!keywordSeparator	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‚W ‚(g2ﬁ
+Çorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?tok@230.30:230.33DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÊ Ê(!2ﬂ
+Éorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?name@233.15:233.19DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÈ È(2‚
+Üorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?context@235.16:235.23DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÎ Î(2„
+áorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?newGroup@236.26:236.34DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÏ Ï("2‰
+àorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?exception@239.39:239.48DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÔ' Ô(02Ä
+%org.jabref.model.groups.ExplicitGroupRETURN_TYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‚ ‚( â
+Çorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?tok@230.30:230.33VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÊ Ê(!"
+typeQuotedStringTokenizer"
+isFinalfalse"Ó
+declarationStringÿ<mark class="modifier"> </mark>QuotedStringTokenizer <mark class="class-field">tok</mark> = new QuotedStringTokenizer(input.substring(MetadataSerializationConfiguration.LEGACY_EXPLICIT_GROUP_ID.length())<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_UNIT_SEPARATOR, MetadataSerializationConfiguration.GROUP_QUOTE_CHAR)*tok2á
+3org.jabref.logic.util.strings.QuotedStringTokenizerTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÊ Ê(2s
+java.lang.String.substring(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÊD Ê(M2o
+java.lang.String.length()CALLL
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÊä Ê(ê2«
+sorg.jabref.logic.util.strings.QuotedStringTokenizer.QuotedStringTokenizer(java.lang.String, java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÊ( Ê(=2 
+vorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)!inputCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÊ> Ê(C—
+Éorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?name@233.15:233.19VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÈ È("
+typeString"
+isFinalfalse"⁄
+declarationStringƒ<mark class="modifier"> </mark>String <mark class="class-field">name</mark> = StringUtil.unquote(tok.nextToken()<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_QUOTE_CHAR)*name2d
+java.lang.StringTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÈ È(2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÈ! È((2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÈ- È(62◊
+Çorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?tok@230.30:230.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÈ) È(,˘
+Üorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?context@235.16:235.23VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÎ Î("
+typeint"
+isFinalfalse"£
+declarationStringç<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">context</mark> = Integer.parseInt(tok.nextToken())*context2W
+intTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÎ Î(2Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÎ" Î(*2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÎ/ Î(82◊
+Çorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?tok@230.30:230.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÎ+ Î(.Ñ
+áorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?newGroup@236.26:236.34VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÏ Ï(""
+typeExplicitGroup"
+isFinalfalse"Ë
+declarationString“<mark class="modifier"> </mark>ExplicitGroup <mark class="class-field">newGroup</mark> = new ExplicitGroup(name, GroupHierarchyType.getByNumberOrDefault(context)<mark class="modifier">,</mark> keywordSeparator)*newGroup2y
+%org.jabref.model.groups.ExplicitGroupTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÏ Ï(2ò
+Dorg.jabref.model.groups.GroupHierarchyType.getByNumberOrDefault(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÏP Ï(d2€
+Üorg.jabref.model.groups.ExplicitGroup.ExplicitGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.Character)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÏ) Ï(62ÿ
+Éorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?name@233.15:233.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÏ7 Ï(;2€
+Üorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?context@235.16:235.23CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÏe Ï(l2÷
+Åorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)!keywordSeparatorCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÏo Ï(Å
+vorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)!input	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‚F ‚(K"
+typeString"
+isFinalfalse"!
+declarationStringString input*input2d
+java.lang.StringTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‚? ‚(E¨
+Åorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)!keywordSeparator	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‚W ‚(g"
+type	Character"
+isFinalfalse"/
+declarationStringCharacter keywordSeparator*keywordSeparator2g
+java.lang.CharacterTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java‚M ‚(V»
+àorg.jabref.logic.importer.util.GroupsParser.legacyExplicitGroupFromString(java.lang.String, java.lang.Character)?exception@239.39:239.48VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÔ' Ô(0"
+typeNumberFormatException"
+isFinalfalse"4
+declarationStringNumberFormatException exception*	exception2s
+java.lang.NumberFormatExceptionTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÔ Ô(&∂
+öorg.jabref.logic.importer.util.GroupsParser.addLegacyEntryKeys(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.ExplicitGroup)METHODJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java˙ ˙(*"
+isFinalfalse"û
+declarationStringà<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">addLegacyEntryKeys</mark>(QuotedStringTokenizer tok<mark class="modifier"><mark class="modifier">,</mark></mark> ExplicitGroup group)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typevoid*addLegacyEntryKeys2ó
+Corg.jabref.logic.util.strings.QuotedStringTokenizer.hasMoreTokens()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java˚ ˚( 2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¸$ ¸(+2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¸0 ¸(92ù
+Iorg.jabref.model.groups.ExplicitGroup.addLegacyEntryKey(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java˝ ˝(#2Û
+ûorg.jabref.logic.importer.util.GroupsParser.addLegacyEntryKeys(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.ExplicitGroup)!tokCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java˚ ˚(2Û
+ûorg.jabref.logic.importer.util.GroupsParser.addLegacyEntryKeys(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.ExplicitGroup)!tokCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¸, ¸(/2ı
+†org.jabref.logic.importer.util.GroupsParser.addLegacyEntryKeys(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.ExplicitGroup)!groupCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java˝ ˝(2Å
+¨org.jabref.logic.importer.util.GroupsParser.addLegacyEntryKeys(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.ExplicitGroup)?key@252.19:252.22CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java˝$ ˝('2¯
+ûorg.jabref.logic.importer.util.GroupsParser.addLegacyEntryKeys(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.ExplicitGroup)!tok	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java˙A ˙(D2˙
+†org.jabref.logic.importer.util.GroupsParser.addLegacyEntryKeys(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.ExplicitGroup)!group	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java˙T ˙(Y2à
+¨org.jabref.logic.importer.util.GroupsParser.addLegacyEntryKeys(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.ExplicitGroup)?key@252.19:252.22DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¸ ¸(2_
+voidRETURN_TYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java˙ ˙(î	
+¨org.jabref.logic.importer.util.GroupsParser.addLegacyEntryKeys(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.ExplicitGroup)?key@252.19:252.22VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¸ ¸("
+typeString"
+isFinalfalse"Ÿ
+declarationString√<mark class="modifier"> </mark>String <mark class="class-field">key</mark> = StringUtil.unquote(tok.nextToken()<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_QUOTE_CHAR)*key2d
+java.lang.StringTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¸ ¸(2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¸$ ¸(+2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¸0 ¸(92Û
+ûorg.jabref.logic.importer.util.GroupsParser.addLegacyEntryKeys(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.ExplicitGroup)!tokCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¸, ¸(/Ë
+ûorg.jabref.logic.importer.util.GroupsParser.addLegacyEntryKeys(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.ExplicitGroup)!tok	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java˙A ˙(D"
+typeQuotedStringTokenizer"
+isFinalfalse".
+declarationStringQuotedStringTokenizer tok*tok2á
+3org.jabref.logic.util.strings.QuotedStringTokenizerTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java˙+ ˙(@œ
+†org.jabref.logic.importer.util.GroupsParser.addLegacyEntryKeys(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.ExplicitGroup)!group	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java˙T ˙(Y"
+typeExplicitGroup"
+isFinalfalse"(
+declarationStringExplicitGroup group*group2y
+%org.jabref.model.groups.ExplicitGroupTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java˙F ˙(S¥
+Worg.jabref.logic.importer.util.GroupsParser.allEntriesGroupFromString(java.lang.String)METHODJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÅ! Å(:"
+isFinalfalse"Æ
+declarationStringò<mark class="modifier">private </mark><mark class="modifier">static </mark>AbstractGroup <mark class="method">allEntriesGroupFromString</mark>(String s)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeAbstractGroup*allEntriesGroupFromString2Å
+-java.lang.String.startsWith(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÇ Ç(2ï
+Aorg.jabref.logic.groups.DefaultGroupsFactory.getAllEntriesGroup()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÖ$ Ö(62°
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÉ É(.2≠
+Yorg.jabref.logic.importer.util.GroupsParser.allEntriesGroupFromString(java.lang.String)!sCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÇ Ç(2≠
+Yorg.jabref.logic.importer.util.GroupsParser.allEntriesGroupFromString(java.lang.String)!sCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÉ] É(^2≤
+Yorg.jabref.logic.importer.util.GroupsParser.allEntriesGroupFromString(java.lang.String)!s	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÅB Å(C2Ä
+%org.jabref.model.groups.AbstractGroupRETURN_TYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÅ Å( ‹
+Yorg.jabref.logic.importer.util.GroupsParser.allEntriesGroupFromString(java.lang.String)!s	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÅB Å(C"
+typeString"
+isFinalfalse"
+declarationStringString s*s2d
+java.lang.StringTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaÅ; Å(A‘A
+Sorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)METHODJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaç! ç(6"
+isFinalfalse"™
+declarationStringî<mark class="modifier">private </mark><mark class="modifier">static </mark>AbstractGroup <mark class="method">searchGroupFromString</mark>(String s)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeAbstractGroup*searchGroupFromString2Å
+-java.lang.String.startsWith(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaé é(2s
+java.lang.String.substring(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaë@ ë(I2n
+java.lang.String.length()CALLK
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaë} ë(É2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaî! î((2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaî- î(62Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaï ï(&2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaï+ ï(42ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javañ' ñ(.2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javañ3 ñ(<2Ä
+,java.util.EnumSet.noneOf(java.lang.Class<E>)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaó3 ó(92Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaò ò(2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaò! ò(*2w
+#java.util.AbstractCollection.add(E)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaô ô(2Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaõ õ(2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaõ! õ(*2w
+#java.util.AbstractCollection.add(E)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaú ú(2ò
+Dorg.jabref.model.groups.GroupHierarchyType.getByNumberOrDefault(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java°# °(72Ï
+óorg.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java£ £(2°
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaè è(.2«
+sorg.jabref.logic.util.strings.QuotedStringTokenizer.QuotedStringTokenizer(java.lang.String, java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaë( ë(=2û
+…org.jabref.model.groups.SearchGroup.SearchGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.String, java.util.EnumSet<org.jabref.model.search.rules.SearchRules.SearchFlags>)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java†& †(12©
+Uorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)!sCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaé é(2©
+Uorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)!sCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaèY è(Z2©
+Uorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)!sCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaë> ë(?2π
+eorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?tok@273.30:273.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaî) î(,2π
+eorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?tok@273.30:273.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaï' ï(*2π
+eorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?tok@273.30:273.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javañ/ ñ(22π
+eorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?tok@273.30:273.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaò ò( 2¡
+morg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?searchFlags@279.29:279.40CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaô ô(2π
+eorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?tok@273.30:273.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaõ õ( 2¡
+morg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?searchFlags@279.29:279.40CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaú ú(2∫
+forg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?name@276.15:276.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java†2 †(62Ω
+iorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?context@277.12:277.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java°8 °(?2¿
+lorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?expression@278.15:278.25CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java°B °(L2¡
+morg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?searchFlags@279.29:279.40CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java°N °(Y2π
+eorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?tok@273.30:273.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java£ £(2¡
+morg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?searchGroup@288.20:288.31CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java£ £((2¡
+morg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?searchGroup@288.20:288.31CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java§ §(2Æ
+Uorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)!s	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaç> ç(?2¿
+eorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?tok@273.30:273.33DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaë ë(!2¡
+forg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?name@276.15:276.19DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaî î(2ƒ
+iorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?context@277.12:277.19DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaï ï(2«
+lorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?expression@278.15:278.25DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javañ ñ(2»
+morg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?searchFlags@279.29:279.40DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaó ó((2»
+morg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?searchGroup@288.20:288.31DECLARATIONJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java† †(2Ä
+%org.jabref.model.groups.AbstractGroupRETURN_TYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaç ç( º
+
+eorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?tok@273.30:273.33VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaë ë(!"
+typeQuotedStringTokenizer"
+isFinalfalse"·
+declarationStringÀ<mark class="modifier"> </mark>QuotedStringTokenizer <mark class="class-field">tok</mark> = new QuotedStringTokenizer(s.substring(MetadataSerializationConfiguration.SEARCH_GROUP_ID.length())<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_UNIT_SEPARATOR, MetadataSerializationConfiguration.GROUP_QUOTE_CHAR)*tok2á
+3org.jabref.logic.util.strings.QuotedStringTokenizerTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaë ë(2s
+java.lang.String.substring(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaë@ ë(I2n
+java.lang.String.length()CALLK
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaë} ë(É2«
+sorg.jabref.logic.util.strings.QuotedStringTokenizer.QuotedStringTokenizer(java.lang.String, java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaë( ë(=2©
+Uorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)!sCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaë> ë(?ï
+forg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?name@276.15:276.19VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaî î("
+typeString"
+isFinalfalse"⁄
+declarationStringƒ<mark class="modifier"> </mark>String <mark class="class-field">name</mark> = StringUtil.unquote(tok.nextToken()<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_QUOTE_CHAR)*name2d
+java.lang.StringTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaî î(2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaî! î((2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaî- î(62π
+eorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?tok@273.30:273.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaî) î(,Ω
+iorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?context@277.12:277.19VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaï ï("
+typeint"
+isFinalfalse"£
+declarationStringç<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">context</mark> = Integer.parseInt(tok.nextToken())*context2W
+intTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaï ï(2Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaï ï(&2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaï+ ï(42π
+eorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?tok@273.30:273.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaï' ï(*ß
+lorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?expression@278.15:278.25VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javañ ñ("
+typeString"
+isFinalfalse"‡
+declarationString <mark class="modifier"> </mark>String <mark class="class-field">expression</mark> = StringUtil.unquote(tok.nextToken()<mark class="modifier">,</mark> MetadataSerializationConfiguration.GROUP_QUOTE_CHAR)*
+expression2d
+java.lang.StringTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javañ ñ(2ó
+Corg.jabref.model.strings.StringUtil.unquote(java.lang.String, char)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javañ' ñ(.2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javañ3 ñ(<2π
+eorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?tok@273.30:273.33CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javañ/ ñ(2û
+morg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?searchFlags@279.29:279.40VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaó ó(("
+typeEnumSet<SearchFlags>"
+isFinalfalse"ö
+declarationStringÑ<mark class="modifier"> </mark>EnumSet<SearchFlags> <mark class="class-field">searchFlags</mark> = EnumSet.noneOf(SearchFlags.class)*searchFlags2e
+java.util.EnumSetTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaó ó(2í
+5org.jabref.model.search.rules.SearchRules.SearchFlagsTYPE_ARGUMENTJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaó ó(2Ä
+,java.util.EnumSet.noneOf(java.lang.Class<E>)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaó3 ó(9£
+morg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?searchGroup@288.20:288.31VARIABLEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java† †("
+typeSearchGroup"
+isFinalfalse"Ó
+declarationStringÿ<mark class="modifier"> </mark>SearchGroup <mark class="class-field">searchGroup</mark> = new SearchGroup(name, GroupHierarchyType.getByNumberOrDefault(context)<mark class="modifier">,</mark> expression, searchFlags)*searchGroup2w
+#org.jabref.model.groups.SearchGroupTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java† †(2ò
+Dorg.jabref.model.groups.GroupHierarchyType.getByNumberOrDefault(int)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java°# °(72û
+…org.jabref.model.groups.SearchGroup.SearchGroup(java.lang.String, org.jabref.model.groups.GroupHierarchyType, java.lang.String, java.util.EnumSet<org.jabref.model.search.rules.SearchRules.SearchFlags>)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java†& †(12∫
+forg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?name@276.15:276.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java†2 †(62Ω
+iorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?context@277.12:277.19CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java°8 °(?2¿
+lorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?expression@278.15:278.25CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java°B °(L2¡
+morg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)?searchFlags@279.29:279.40CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java°N °(Yÿ
+Uorg.jabref.logic.importer.util.GroupsParser.searchGroupFromString(java.lang.String)!s	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaç> ç(?"
+typeString"
+isFinalfalse"
+declarationStringString s*s2d
+java.lang.StringTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaç7 ç(=€&
+óorg.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)METHODJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaß ß('"
+isFinalfalse"°
+declarationStringã<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">addGroupDetails</mark>(QuotedStringTokenizer tokenizer<mark class="modifier"><mark class="modifier">,</mark></mark> AbstractGroup group)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typevoid*addGroupDetails2ó
+Corg.jabref.logic.util.strings.QuotedStringTokenizer.hasMoreTokens()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java® ®(#2é
+:org.jabref.model.groups.AbstractGroup.setExpanded(boolean)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java© ©(2Ä
+,java.lang.Integer.parseInt(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java©& ©(.2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java©9 ©(B2î
+@org.jabref.model.groups.AbstractGroup.setColor(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java™ ™(2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java™% ™(.2ó
+Corg.jabref.model.groups.AbstractGroup.setIconName(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java´ ´(2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java´( ´(12ö
+Forg.jabref.model.groups.AbstractGroup.setDescription(java.lang.String)CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¨ ¨( 2ì
+?org.jabref.logic.util.strings.QuotedStringTokenizer.nextToken()CALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¨+ ¨(42ˆ
+°org.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)!tokenizerCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java® ®(2Ú
+ùorg.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)!groupCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java© ©(2ˆ
+°org.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)!tokenizerCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java©/ ©(82Ú
+ùorg.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)!groupCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java™ ™(2ˆ
+°org.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)!tokenizerCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java™ ™($2Ú
+ùorg.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)!groupCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java´ ´(2ˆ
+°org.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)!tokenizerCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java´ ´('2Ú
+ùorg.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)!groupCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¨ ¨(2ˆ
+°org.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)!tokenizerCALLJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java¨! ¨(*2˚
+°org.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)!tokenizer	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaß> ß(G2˜
+ùorg.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)!group	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaßW ß(\2_
+voidRETURN_TYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaß ß(˜
+°org.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)!tokenizer	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaß> ß(G"
+typeQuotedStringTokenizer"
+isFinalfalse"4
+declarationStringQuotedStringTokenizer tokenizer*	tokenizer2á
+3org.jabref.logic.util.strings.QuotedStringTokenizerTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaß( ß(=Ã
+ùorg.jabref.logic.importer.util.GroupsParser.addGroupDetails(org.jabref.logic.util.strings.QuotedStringTokenizer, org.jabref.model.groups.AbstractGroup)!group	PARAMETERJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaßW ß(\"
+typeAbstractGroup"
+isFinalfalse"(
+declarationStringAbstractGroup group*group2y
+%org.jabref.model.groups.AbstractGroupTYPEJ
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.javaßI ß(Vº
+>org.jabref.logic.importer.util.GroupsParser?LOGGER@41.42:41.48VALUEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java)* )(0"
+isFinaltrue"
+typeorg.slf4j.Logger"Ï
+declarationString÷<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>org.slf4j.Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(GroupsParser.class);"
+isStatictrue"
+accessprivate*LOGGER2b
+org.slf4j.LoggerTYPEH
+>src\main\java\org\jabref\logic\importer\util\GroupsParser.java)# )()

@@ -1,0 +1,1530 @@
+
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java˙!
+$org.jabref.gui.entryeditor.SourceTabCLASSA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java> >("%
+packageorg.jabref.gui.entryeditor"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"ù
+declarationStringá<mark class="modifier">public </mark><mark class="modifier">class </mark>SourceTab<mark class="modifier"> extends </mark>EntryEditorTab"
+accesspublic*	SourceTab2[
+	SourceTabDECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javae e(2ë
+=org.jabref.gui.entryeditor.SourceTab.highlightSearchPattern()DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÅ Å('2ˇ
+™org.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaç ç("2å
+8org.jabref.gui.entryeditor.SourceTab.setupSourceEditor()DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaØ Ø("2§
+Porg.jabref.gui.entryeditor.SourceTab.shouldShow(org.jabref.model.entry.BibEntry)DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java· ·(2â
+5org.jabref.gui.entryeditor.SourceTab.updateCodeArea()DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÂ Â(2•
+Qorg.jabref.gui.entryeditor.SourceTab.bindToEntry(org.jabref.model.entry.BibEntry)DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java˙ ˙(2∑
+corg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÜ Ü(2≠
+Yorg.jabref.gui.entryeditor.SourceTab.listenForSaveKeybinding(javafx.scene.input.KeyEvent)DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java‘ ‘((2â
+7org.jabref.gui.entryeditor.SourceTab?LOGGER@64.32:64.38DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java@  @(&2ì
+Aorg.jabref.gui.entryeditor.SourceTab?fieldPreferences@65.35:65.51DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaA# A(32á
+5org.jabref.gui.entryeditor.SourceTab?mode@66.34:66.38DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaB" B(&2é
+<org.jabref.gui.entryeditor.SourceTab?undoManager@67.30:67.41DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaC C()2ê
+>org.jabref.gui.entryeditor.SourceTab?sourceIsValid@68.52:68.65DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaD4 D(A2í
+@org.jabref.gui.entryeditor.SourceTab?sourceValidator@69.47:69.62DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaE/ E(>2ö
+Horg.jabref.gui.entryeditor.SourceTab?importFormatPreferences@70.42:70.65DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaF* F(A2é
+<org.jabref.gui.entryeditor.SourceTab?fileMonitor@71.36:71.47DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaG$ G(/2ê
+>org.jabref.gui.entryeditor.SourceTab?dialogService@72.32:72.45DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaH  H(-2è
+=org.jabref.gui.entryeditor.SourceTab?stateManager@73.31:73.43DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaI I(+2î
+Borg.jabref.gui.entryeditor.SourceTab?entryTypesManager@74.39:74.56DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaJ' J(82ó
+Eorg.jabref.gui.entryeditor.SourceTab?keyBindingRepository@75.39:75.59DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaK' K(;2ô
+Gorg.jabref.gui.entryeditor.SourceTab?searchHighlightPattern@76.30:76.52DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaL L(42ã
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaM M(2ê
+>org.jabref.gui.entryeditor.SourceTab?previousEntry@79.21:79.34DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaO O("2Å
+/org.jabref.gui.entryeditor.SourceTab.EditActionDECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaQ Q(2v
+)org.jabref.gui.entryeditor.EntryEditorTabEXTENDA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java> >(-‡
+	SourceTabCONSTRUCTORA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javae e("Ü
+declarationString<mark class="modifier">public </mark><mark class="method">SourceTab</mark>(BibDatabaseContext bibDatabaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> CountingUndoManager undoManager<mark class="modifier"><mark class="modifier">,</mark></mark> FieldPreferences fieldPreferences<mark class="modifier"><mark class="modifier">,</mark></mark> ImportFormatPreferences importFormatPreferences<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileMonitor<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> StateManager stateManager<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntryTypesManager entryTypesManager<mark class="modifier"><mark class="modifier">,</mark></mark> KeyBindingRepository keyBindingRepository)*	SourceTab2Å
+6org.jabref.model.database.BibDatabaseContext.getMode()CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javan' n(.2ô
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javao" o(&2á
+<org.jabref.model.database.BibDatabaseMode.getFormattedName()CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javao9 o(I2ô
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javap1 p(52á
+<org.jabref.model.database.BibDatabaseMode.getFormattedName()CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javapR p(b2Ö
+:org.jabref.gui.icon.IconTheme.JabRefIcons.getGraphicNode()CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaq5 q(C2Ç
+7org.jabref.gui.StateManager.activeSearchQueryProperty()CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java{ {(.2à
+=org.jabref.gui.entryeditor.SourceTab.highlightSearchPattern()CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java} }("2Ä
+5org.jabref.gui.entryeditor.SourceTab?mode@66.34:66.38CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javao4 o(82Ä
+5org.jabref.gui.entryeditor.SourceTab?mode@66.34:66.38CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javapM p(Q2í
+Gorg.jabref.gui.entryeditor.SourceTab?searchHighlightPattern@76.30:76.52CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java| |("2Ä
+5org.jabref.gui.entryeditor.SourceTab?mode@66.34:66.38CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javan n(2á
+<org.jabref.gui.entryeditor.SourceTab?undoManager@67.30:67.41CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javar r(2å
+Aorg.jabref.gui.entryeditor.SourceTab?fieldPreferences@65.35:65.51CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javas s(2ì
+Horg.jabref.gui.entryeditor.SourceTab?importFormatPreferences@70.42:70.65CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javat t($2á
+<org.jabref.gui.entryeditor.SourceTab?fileMonitor@71.36:71.47CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javau u(2â
+>org.jabref.gui.entryeditor.SourceTab?dialogService@72.32:72.45CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javav v(2à
+=org.jabref.gui.entryeditor.SourceTab?stateManager@73.31:73.43CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaw w(2ç
+Borg.jabref.gui.entryeditor.SourceTab?entryTypesManager@74.39:74.56CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javax x(2ê
+Eorg.jabref.gui.entryeditor.SourceTab?keyBindingRepository@75.39:75.59CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javay y(!2v
+$org.jabref.gui.entryeditor.SourceTabRETURN_TYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javae e(Ÿ
+bibDatabaseContext	PARAMETERA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javae( e(:"
+typeBibDatabaseContext"
+isFinalfalse":
+declarationString%BibDatabaseContext bibDatabaseContext*bibDatabaseContext2w
+,org.jabref.model.database.BibDatabaseContextTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javae e('¡
+undoManager	PARAMETERA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaf) f(4"
+typeCountingUndoManager"
+isFinalfalse"4
+declarationStringCountingUndoManager undoManager*undoManager2r
+'org.jabref.gui.undo.CountingUndoManagerTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaf f((À
+fieldPreferences	PARAMETERA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javag& g(6"
+typeFieldPreferences"
+isFinalfalse"6
+declarationString!FieldPreferences fieldPreferences*fieldPreferences2s
+(org.jabref.logic.bibtex.FieldPreferencesTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javag g(%›
+importFormatPreferences	PARAMETERA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javah- h(D"
+typeImportFormatPreferences"
+isFinalfalse"D
+declarationString/ImportFormatPreferences importFormatPreferences*importFormatPreferences2b
+ImportFormatPreferencesTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javah h(,Ω
+fileMonitor	PARAMETERA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javai' i(2"
+typeFileUpdateMonitor"
+isFinalfalse"2
+declarationStringFileUpdateMonitor fileMonitor*fileMonitor2r
+'org.jabref.model.util.FileUpdateMonitorTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javai i(&∞
+dialogService	PARAMETERA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaj# j(0"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2g
+org.jabref.gui.DialogServiceTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaj j("™
+stateManager	PARAMETERA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javak" k(."
+typeStateManager"
+isFinalfalse".
+declarationStringStateManager stateManager*stateManager2f
+org.jabref.gui.StateManagerTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javak k(!Ÿ
+entryTypesManager	PARAMETERA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javal* l(;"
+typeBibEntryTypesManager"
+isFinalfalse";
+declarationString&BibEntryTypesManager entryTypesManager*entryTypesManager2v
++org.jabref.model.entry.BibEntryTypesManagerTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javal l()„
+keyBindingRepository	PARAMETERA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javam* m(>"
+typeKeyBindingRepository"
+isFinalfalse">
+declarationString)KeyBindingRepository keyBindingRepository*keyBindingRepository2w
+,org.jabref.gui.keyboard.KeyBindingRepositoryTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javam m()©
+
+observableVARIABLEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java{> {(H"
+type"
+isFinalfalse" 
+declarationString observable*
+observable2TYPE£
+oldValueVARIABLEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java{J {(R"
+type"
+isFinalfalse"
+declarationString	 oldValue*oldValue2TYPE£
+newValueVARIABLEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java{T {(\"
+type"
+isFinalfalse"
+declarationString	 newValue*newValue2TYPEÎ
+=org.jabref.gui.entryeditor.SourceTab.highlightSearchPattern()METHODC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÅ Å('"
+isFinalfalse"í
+declarationString}<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">highlightSearchPattern</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*highlightSearchPattern2k
+java.util.Optional.isPresent()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÇ# Ç(,2e
+java.util.Optional.get()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÑ5 Ñ(82k
+java.util.regex.Matcher.find()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÖ Ö(2q
+$java.util.regex.Matcher.groupCount()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÜ- Ü(72l
+java.util.regex.Matcher.start()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaá3 á(82j
+java.util.regex.Matcher.end()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaáD á(G2î
+Gorg.jabref.gui.entryeditor.SourceTab?searchHighlightPattern@76.30:76.52CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÇ Ç("2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÇ3 Ç(;2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÉ É(2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÉ& É(.2î
+Gorg.jabref.gui.entryeditor.SourceTab?searchHighlightPattern@76.30:76.52CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÑ Ñ(42Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÑC Ñ(K2†
+Sorg.jabref.gui.entryeditor.SourceTab.highlightSearchPattern()?matcher@132.20:132.27CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÖ Ö(2ö
+Morg.jabref.gui.entryeditor.SourceTab.highlightSearchPattern()?i@134.25:134.26CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÜ  Ü(!2†
+Sorg.jabref.gui.entryeditor.SourceTab.highlightSearchPattern()?matcher@132.20:132.27CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÜ% Ü(,2ö
+Morg.jabref.gui.entryeditor.SourceTab.highlightSearchPattern()?i@134.25:134.26CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÜ; Ü(<2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaá á(2†
+Sorg.jabref.gui.entryeditor.SourceTab.highlightSearchPattern()?matcher@132.20:132.27CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaá+ á(22†
+Sorg.jabref.gui.entryeditor.SourceTab.highlightSearchPattern()?matcher@132.20:132.27CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaá< á(C2ß
+Sorg.jabref.gui.entryeditor.SourceTab.highlightSearchPattern()?matcher@132.20:132.27DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÑ Ñ(2°
+Morg.jabref.gui.entryeditor.SourceTab.highlightSearchPattern()?i@134.25:134.26DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÜ Ü(2X
+voidRETURN_TYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÅ Å(‡
+Sorg.jabref.gui.entryeditor.SourceTab.highlightSearchPattern()?matcher@132.20:132.27VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÑ Ñ("
+typeMatcher"
+isFinalfalse"†
+declarationStringä<mark class="modifier"> </mark>Matcher <mark class="class-field">matcher</mark> = searchHighlightPattern.get().matcher(codeArea.getText())*matcher2d
+java.util.regex.MatcherTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÑ Ñ(2e
+java.util.Optional.get()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÑ5 Ñ(82î
+Gorg.jabref.gui.entryeditor.SourceTab?searchHighlightPattern@76.30:76.52CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÑ Ñ(42Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÑC Ñ(Kê
+Morg.jabref.gui.entryeditor.SourceTab.highlightSearchPattern()?i@134.25:134.26VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÜ Ü("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 0*i2P
+intTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÜ Ü(ì+
+™org.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)METHODC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaç ç(""
+isFinalfalse"˛
+declarationStringË<mark class="modifier">private </mark>String <mark class="method">getSourceString</mark>(BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseMode type<mark class="modifier"><mark class="modifier">,</mark></mark> FieldPreferences fieldPreferences)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*getSourceString2¨
+_org.jabref.logic.bibtex.FieldWriter.buildIgnoreHashes(org.jabref.logic.bibtex.FieldPreferences)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaê. ê(?2Î
+ùorg.jabref.logic.bibtex.BibEntryWriter.write(org.jabref.model.entry.BibEntry, org.jabref.logic.exporter.BibWriter, org.jabref.model.database.BibDatabaseMode)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaë; ë(@2l
+java.io.StringWriter.toString()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaí í(2p
+#java.io.StringWriter.StringWriter()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaé" é(.2ú
+Oorg.jabref.logic.exporter.BibWriter.BibWriter(java.io.Writer, java.lang.String)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaè" è(+2’
+áorg.jabref.logic.bibtex.BibEntryWriter.BibEntryWriter(org.jabref.logic.bibtex.FieldWriter, org.jabref.model.entry.BibEntryTypesManager)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaë ë(2ç
+øorg.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)?writer@142.21:142.27CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaè, è(22â
+ªorg.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)!fieldPreferencesCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaê@ ê(P2í
+ƒorg.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)?fieldWriter@144.20:144.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaë ë(&2è
+Borg.jabref.gui.entryeditor.SourceTab?entryTypesManager@74.39:74.56CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaë( ë(92˛
+∞org.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)!entryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaëA ë(F2ê
+¬org.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)?bibWriter@143.18:143.27CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaëH ë(Q2˝
+Øorg.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)!typeCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaëS ë(W2ç
+øorg.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)?writer@142.21:142.27CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaí í(2É
+∞org.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)!entry	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaç, ç(12Ç
+Øorg.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)!type	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaçC ç(G2é
+ªorg.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)!fieldPreferences	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaçZ ç(j2î
+øorg.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)?writer@142.21:142.27DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaé é(2ó
+¬org.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)?bibWriter@143.18:143.27DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaè è(2ô
+ƒorg.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)?fieldWriter@144.20:144.31DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaê ê(2d
+java.lang.StringRETURN_TYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaç ç(ï
+øorg.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)?writer@142.21:142.27VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaé é("
+typeStringWriter"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>StringWriter <mark class="class-field">writer</mark> = new StringWriter()*writer2a
+java.io.StringWriterTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaé é(2p
+#java.io.StringWriter.StringWriter()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaé" é(.Ù
+¬org.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)?bibWriter@143.18:143.27VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaè è("
+type	BibWriter"
+isFinalfalse"å
+declarationStringw<mark class="modifier"> </mark>BibWriter <mark class="class-field">bibWriter</mark> = new BibWriter(writer, OS.NEWLINE)*	bibWriter2p
+#org.jabref.logic.exporter.BibWriterTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaè è(2ú
+Oorg.jabref.logic.exporter.BibWriter.BibWriter(java.io.Writer, java.lang.String)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaè" è(+2ç
+øorg.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)?writer@142.21:142.27CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaè, è(2ô
+ƒorg.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)?fieldWriter@144.20:144.31VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaê ê("
+typeFieldWriter"
+isFinalfalse"ü
+declarationStringâ<mark class="modifier"> </mark>FieldWriter <mark class="class-field">fieldWriter</mark> = FieldWriter.buildIgnoreHashes(fieldPreferences)*fieldWriter2p
+#org.jabref.logic.bibtex.FieldWriterTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaê ê(2¨
+_org.jabref.logic.bibtex.FieldWriter.buildIgnoreHashes(org.jabref.logic.bibtex.FieldPreferences)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaê. ê(?2â
+ªorg.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)!fieldPreferencesCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaê@ ê(P¡
+∞org.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)!entry	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaç, ç(1"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2l
+org.jabref.model.entry.BibEntryTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaç# ç(+÷
+Øorg.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)!type	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaçC ç(G"
+typeBibDatabaseMode"
+isFinalfalse")
+declarationStringBibDatabaseMode type*type2v
+)org.jabref.model.database.BibDatabaseModeTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaç3 ç(B˚
+ªorg.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)!fieldPreferences	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaçZ ç(j"
+typeFieldPreferences"
+isFinalfalse"6
+declarationString!FieldPreferences fieldPreferences*fieldPreferences2u
+(org.jabref.logic.bibtex.FieldPreferencesTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaçI ç(YàO
+8org.jabref.gui.entryeditor.SourceTab.setupSourceEditor()METHODC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaØ Ø(""
+isFinalfalse"ç
+declarationStringx<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">setupSourceEditor</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*setupSourceEditor2g
+java.lang.String.isEmpty()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaµ µ("2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaœ2 œ(62õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java–2 –(62¶
+Yorg.jabref.gui.DialogService.showWarningDialogAndWait(java.lang.String, java.lang.String)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java“" “(:2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java“H “(L2ß
+Zorg.jabref.gui.entryeditor.SourceTab.InputMethodRequestsObject.InputMethodRequestsObject()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≤, ≤(E2≠
+`org.jabref.gui.actions.ActionFactory.ActionFactory(org.jabref.gui.keyboard.KeyBindingRepository)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaΩ$ Ω(12Ø
+borg.jabref.gui.entryeditor.SourceTab.EditAction.EditAction(org.jabref.gui.actions.StandardActions)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¿@ ¿(J2Ø
+borg.jabref.gui.entryeditor.SourceTab.EditAction.EditAction(org.jabref.gui.actions.StandardActions)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¡A ¡(K2Ø
+borg.jabref.gui.entryeditor.SourceTab.EditAction.EditAction(org.jabref.gui.actions.StandardActions)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¬B ¬(L2Ø
+borg.jabref.gui.entryeditor.SourceTab.EditAction.EditAction(org.jabref.gui.actions.StandardActions)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java√G √(Q2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∞ ∞(2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java± ±(2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≤ ≤(2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≥ ≥(2ô
+Lorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?event@179.45:179.50CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¥ ¥($2ù
+Porg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?committed@180.19:180.28CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaµ µ(2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∂ ∂(2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∂$ ∂(,2ù
+Porg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?committed@180.19:180.28CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∂A ∂(J2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaπ π(2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∫ ∫(2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∫X ∫(`2ô
+Lorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?event@186.54:186.59CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∫b ∫(g2í
+Eorg.jabref.gui.entryeditor.SourceTab?keyBindingRepository@75.39:75.59CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∫i ∫(}2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaª ª(2í
+Eorg.jabref.gui.entryeditor.SourceTab?keyBindingRepository@75.39:75.59CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaΩ2 Ω(F2ü
+Rorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?contextMenu@190.20:190.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaø ø(2õ
+Norg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?factory@189.22:189.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¿ ¿(2õ
+Norg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?factory@189.22:189.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¡ ¡(2õ
+Norg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?factory@189.22:189.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¬ ¬(2õ
+Norg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?factory@189.22:189.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java√ √(2ü
+Rorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?contextMenu@190.20:190.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∆ ∆(2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java« «(2ü
+Rorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?contextMenu@190.20:190.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java«  «(+2ç
+@org.jabref.gui.entryeditor.SourceTab?sourceValidator@69.47:69.62CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java… …(2ã
+>org.jabref.gui.entryeditor.SourceTab?sourceIsValid@68.52:68.65CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java…  …(-2ç
+@org.jabref.gui.entryeditor.SourceTab?sourceValidator@69.47:69.62CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÀ À(2ç
+@org.jabref.gui.entryeditor.SourceTab?sourceValidator@69.47:69.62CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÃ6 Ã(E2™
+]org.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?sourceValidationStatus@204.29:204.51CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÕ Õ('2™
+]org.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?sourceValidationStatus@204.29:204.51CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaŒ Œ(&2õ
+Norg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?message@206.69:206.76CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java—' —(.2ã
+>org.jabref.gui.entryeditor.SourceTab?dialogService@72.32:72.45CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java“ “(!2õ
+Norg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?content@207.27:207.34CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java“a “(h2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java◊ ◊(2õ
+Norg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?onFocus@215.63:215.70CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÿ ÿ(2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaŸ* Ÿ(22Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java‹Y ‹(a2¶
+Yorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?scrollableCodeArea@220.40:220.58CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java› ›(*2§
+Porg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?committed@180.19:180.28DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¥ ¥(2¢
+Norg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?factory@189.22:189.29DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaΩ Ω(2¶
+Rorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?contextMenu@190.20:190.31DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaæ æ(2±
+]org.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?sourceValidationStatus@204.29:204.51DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÃ Ã(32¢
+Norg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?content@207.27:207.34DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaœ œ("2≠
+Yorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?scrollableCodeArea@220.40:220.58DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java‹( ‹(:2†
+Lorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?event@179.45:179.50DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≥- ≥(22†
+Lorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?event@186.54:186.59DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∫6 ∫(;2ú
+Horg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?c@203.95:203.96DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÀ_ À(`2¢
+Norg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?message@206.69:206.76DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaŒE Œ(L2û
+Jorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?obs@215.48:215.51DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java◊0 ◊(32£
+Oorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?oldValue@215.53:215.61DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java◊5 ◊(=2¢
+Norg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?onFocus@215.63:215.70DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java◊? ◊(F2X
+voidRETURN_TYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaØ Ø(«
+Porg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?committed@180.19:180.28VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¥ ¥("
+typeString"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark>String <mark class="class-field">committed</mark> = event.getCommitted()*	committed2]
+java.lang.StringTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¥ ¥(2ô
+Lorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?event@179.45:179.50CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¥ ¥($†
+Norg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?factory@189.22:189.29VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaΩ Ω("
+typeActionFactory"
+isFinalfalse"î
+declarationString<mark class="modifier"> </mark>ActionFactory <mark class="class-field">factory</mark> = new ActionFactory(keyBindingRepository)*factory2q
+$org.jabref.gui.actions.ActionFactoryTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaΩ Ω(2≠
+`org.jabref.gui.actions.ActionFactory.ActionFactory(org.jabref.gui.keyboard.KeyBindingRepository)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaΩ$ Ω(12í
+Eorg.jabref.gui.entryeditor.SourceTab?keyBindingRepository@75.39:75.59CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaΩ2 Ω(F…
+Rorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?contextMenu@190.20:190.31VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaæ æ("
+typeContextMenu"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier"> </mark>ContextMenu <mark class="class-field">contextMenu</mark> = new ContextMenu()*contextMenu2m
+ javafx.scene.control.ContextMenuTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaæ æ(´
+]org.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?sourceValidationStatus@204.29:204.51VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÃ Ã(3"
+typeValidationStatus"
+isFinalfalse"•
+declarationStringè<mark class="modifier"> </mark>ValidationStatus <mark class="class-field">sourceValidationStatus</mark> = sourceValidator.getValidationStatus()*sourceValidationStatus2
+2de.saxsys.mvvmfx.utils.validation.ValidationStatusTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÃ Ã(2ç
+@org.jabref.gui.entryeditor.SourceTab?sourceValidator@69.47:69.62CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÃ6 Ã(Eµ
+Norg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?content@207.27:207.34VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaœ œ(""
+typeString"
+isFinalfalse"Ø
+declarationStringô<mark class="modifier"> </mark>String <mark class="class-field">content</mark> = Localization.lang("User input via entry-editor in `{}bibtex source` tab led to failure.") + "\n" + Localization.lang("Please check your library file for wrong syntax.") + "\n\n" + message.getMessage()*content2]
+java.lang.StringTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaœ œ(2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaœ2 œ(62õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java–2 –(62õ
+Norg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?message@206.69:206.76CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java—' —(.°
+Yorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?scrollableCodeArea@220.40:220.58VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java‹( ‹(:"'
+typeVirtualizedScrollPane<CodeArea>"
+isFinalfalse"∞
+declarationStringö<mark class="modifier"> </mark>VirtualizedScrollPane<CodeArea> <mark class="class-field">scrollableCodeArea</mark> = new VirtualizedScrollPane<>(codeArea)*scrollableCodeArea2v
+)org.fxmisc.flowless.VirtualizedScrollPaneTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java‹ ‹(2r
+org.fxmisc.richtext.CodeAreaTYPE_ARGUMENTC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java‹ ‹(&2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java‹Y ‹(a„
+Lorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?event@179.45:179.50VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≥- ≥(2"
+type"
+isFinalfalse"
+declarationString event*event2TYPE„
+Lorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?event@186.54:186.59VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∫6 ∫(;"
+type"
+isFinalfalse"
+declarationString event*event2TYPE◊
+Horg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?c@203.95:203.96VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÀ_ À(`"
+type"
+isFinalfalse"
+declarationString c*c2TYPEÈ
+Norg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?message@206.69:206.76VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaŒE Œ(L"
+type"
+isFinalfalse"
+declarationString message*message2TYPE›
+Jorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?obs@215.48:215.51VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java◊0 ◊(3"
+type"
+isFinalfalse"
+declarationString obs*obs2TYPEÏ
+Oorg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?oldValue@215.53:215.61VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java◊5 ◊(="
+type"
+isFinalfalse"
+declarationString	 oldValue*oldValue2TYPEÈ
+Norg.jabref.gui.entryeditor.SourceTab.setupSourceEditor()?onFocus@215.63:215.70VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java◊? ◊(F"
+type"
+isFinalfalse"
+declarationString onFocus*onFocus2TYPEÅ
+Porg.jabref.gui.entryeditor.SourceTab.shouldShow(org.jabref.model.entry.BibEntry)METHODC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java· ·("
+isFinalfalse"≈
+declarationStringØ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">shouldShow</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*
+shouldShow2¶
+Uorg.jabref.gui.entryeditor.EntryEditorTab.shouldShow(org.jabref.model.entry.BibEntry)OVERRIDEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java· ·(2®
+Vorg.jabref.gui.entryeditor.SourceTab.shouldShow(org.jabref.model.entry.BibEntry)!entry	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java·' ·(,2[
+booleanRETURN_TYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java· ·(Ê
+Vorg.jabref.gui.entryeditor.SourceTab.shouldShow(org.jabref.model.entry.BibEntry)!entry	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java·' ·(,"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2l
+org.jabref.model.entry.BibEntryTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java· ·(&≥
+5org.jabref.gui.entryeditor.SourceTab.updateCodeArea()METHODC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÂ Â("
+isFinalfalse"ä
+declarationStringu<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">updateCodeArea</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*updateCodeArea2°
+Torg.jabref.gui.util.DefaultTaskExecutor.runAndWaitInJavaFXThread(java.lang.Runnable)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÊ Ê(42Ö
+8org.jabref.gui.entryeditor.SourceTab.setupSourceEditor()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaË Ë(!2¯
+™org.jabref.gui.entryeditor.SourceTab.getSourceString(org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode, org.jabref.logic.bibtex.FieldPreferences)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÌ$ Ì(32ä
+=org.jabref.gui.entryeditor.SourceTab.highlightSearchPattern()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÔ Ô(&2m
+ java.lang.Throwable.getMessage()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÚ' Ú(12õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÛ% Û()2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÁ Á(2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÎ Î(2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÌ Ì(2Ç
+5org.jabref.gui.entryeditor.SourceTab?mode@66.34:66.38CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÌB Ì(F2é
+Aorg.jabref.gui.entryeditor.SourceTab?fieldPreferences@65.35:65.51CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÌH Ì(X2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÓ Ó(2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÒ Ò(2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÚ Ú(2ì
+Forg.jabref.gui.entryeditor.SourceTab.updateCodeArea()?ex@240.33:240.35CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÚ$ Ú(&2Ñ
+7org.jabref.gui.entryeditor.SourceTab?LOGGER@64.32:64.38CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÙ Ù(2ì
+Forg.jabref.gui.entryeditor.SourceTab.updateCodeArea()?ex@240.33:240.35CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÙ0 Ù(22ö
+Forg.jabref.gui.entryeditor.SourceTab.updateCodeArea()?ex@240.33:240.35DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java! (#2X
+voidRETURN_TYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÂ Â(…
+Forg.jabref.gui.entryeditor.SourceTab.updateCodeArea()?ex@240.33:240.35VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java! (#"
+typeIOException"
+isFinalfalse"#
+declarationStringIOException ex*ex2`
+java.io.IOExceptionTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java ( √
+Qorg.jabref.gui.entryeditor.SourceTab.bindToEntry(org.jabref.model.entry.BibEntry)METHODC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java˙ ˙("
+isFinalfalse"∆
+declarationString∞<mark class="annotation">@Override</mark> <br><mark class="modifier">protected </mark><mark class="modifier">void</mark> <mark class="method">bindToEntry</mark>(BibEntry entry)"
+isStaticfalse"
+access	protected"
+
+isAbstractfalse"
+typevoid*bindToEntry2Ç
+5org.jabref.gui.entryeditor.SourceTab.updateCodeArea()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÄ Ä(2{
+.org.jabref.model.entry.BibEntry.typeProperty()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÇ Ç(2Ç
+5org.jabref.gui.entryeditor.SourceTab.updateCodeArea()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÇ5 Ç(C2Ç
+5org.jabref.model.entry.BibEntry.getFieldsObservable()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÉ É(!2Ç
+5org.jabref.gui.entryeditor.SourceTab.updateCodeArea()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÉS É(a2ã
+>org.jabref.gui.entryeditor.SourceTab?previousEntry@79.21:79.34CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java˚ ˚(2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java˚( ˚(02ã
+>org.jabref.gui.entryeditor.SourceTab?previousEntry@79.21:79.34CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¸ ¸(%2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¸' ¸(/2§
+Worg.jabref.gui.entryeditor.SourceTab.bindToEntry(org.jabref.model.entry.BibEntry)!entryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java˛ ˛("2§
+Worg.jabref.gui.entryeditor.SourceTab.bindToEntry(org.jabref.model.entry.BibEntry)!entryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÇ Ç(2§
+Worg.jabref.gui.entryeditor.SourceTab.bindToEntry(org.jabref.model.entry.BibEntry)!entryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÉ É(2ã
+>org.jabref.gui.entryeditor.SourceTab?previousEntry@79.21:79.34CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java˛ ˛(2ß
+Vorg.jabref.gui.entryeditor.EntryEditorTab.bindToEntry(org.jabref.model.entry.BibEntry)OVERRIDEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java˙ ˙(2©
+Worg.jabref.gui.entryeditor.SourceTab.bindToEntry(org.jabref.model.entry.BibEntry)!entry	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java˙( ˙(-2º
+horg.jabref.gui.entryeditor.SourceTab.bindToEntry(org.jabref.model.entry.BibEntry)?listener@258.41:258.49DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÇ) Ç(12º
+horg.jabref.gui.entryeditor.SourceTab.bindToEntry(org.jabref.model.entry.BibEntry)?listener@259.71:259.79DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÉG É(O2X
+voidRETURN_TYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java˙ ˙(Á
+Worg.jabref.gui.entryeditor.SourceTab.bindToEntry(org.jabref.model.entry.BibEntry)!entry	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java˙( ˙(-"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2l
+org.jabref.model.entry.BibEntryTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java˙ ˙('Ö
+horg.jabref.gui.entryeditor.SourceTab.bindToEntry(org.jabref.model.entry.BibEntry)?listener@258.41:258.49VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÇ) Ç(1"
+type"
+isFinalfalse"
+declarationString	 listener*listener2TYPEÖ
+horg.jabref.gui.entryeditor.SourceTab.bindToEntry(org.jabref.model.entry.BibEntry)?listener@259.71:259.79VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÉG É(O"
+type"
+isFinalfalse"
+declarationString	 listener*listener2TYPE«ª
+corg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)METHODC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÜ Ü("
+isFinalfalse"È
+declarationString”<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">storeSource</mark>(BibEntry outOfFocusEntry<mark class="modifier"><mark class="modifier">,</mark></mark> String text)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*storeSource2g
+java.lang.String.isEmpty()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaá. á(52î
+Gorg.jabref.logic.importer.fileformat.BibtexParser.parse(java.io.Reader)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaç5 ç(:2Å
+4org.jabref.logic.importer.ParserResult.getDatabase()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaé0 é(;2Ç
+5org.jabref.model.database.BibDatabase.getEntryCount()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaê ê(&2
+2org.jabref.model.database.BibDatabase.hasEntries()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaî î($2Å
+4org.jabref.logic.importer.ParserResult.hasWarnings()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaï! ï(,2d
+java.util.List.get(int)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaóL ó(O2~
+1org.jabref.logic.importer.ParserResult.warnings()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaóA ó(I2Å
+4org.jabref.logic.importer.ParserResult.hasWarnings()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaù ù((2Ö
+8org.jabref.logic.importer.ParserResult.getErrorMessage()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaü= ü(L2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¢D ¢(H2
+2org.jabref.model.database.BibDatabase.getEntries()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java£) £(32i
+java.util.Optional.orElse(T)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java§6 §(<2}
+0org.jabref.model.entry.BibEntry.getCitationKey()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java§% §(32ç
+@org.jabref.model.entry.BibEntry.setCitationKey(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaß  ß(.2{
+.org.jabref.model.entry.BibEntry.clearCiteKey()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java©  ©(,2e
+java.util.Map.entrySet()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≠P ≠(X2z
+-org.jabref.model.entry.BibEntry.getFieldMap()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≠B ≠(M2i
+java.util.Map.Entry.getKey()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÆ( Æ(.2k
+java.util.Map.Entry.getValue()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaØ* Ø(22ô
+Lorg.jabref.model.entry.BibEntry.hasField(org.jabref.model.entry.field.Field)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java± ±(&2ï
+Horg.jabref.gui.undo.NamedCompound.addEdit(javax.swing.undo.UndoableEdit)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≤ ≤($2õ
+Norg.jabref.model.entry.BibEntry.clearField(org.jabref.model.entry.field.Field)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≥$ ≥(.2e
+java.util.Map.entrySet()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∏I ∏(Q2z
+-org.jabref.model.entry.BibEntry.getFieldMap()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∏; ∏(F2i
+java.util.Map.Entry.getKey()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaπ( π(.2i
+java.util.Optional.orElse(T)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∫F ∫(L2ô
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∫2 ∫(:2k
+java.util.Map.Entry.getValue()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaª( ª(02â
+<java.util.Objects.equals(java.lang.Object, java.lang.Object)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaº º(#2¨
+_org.jabref.logic.bibtex.FieldWriter.write(org.jabref.model.entry.field.Field, java.lang.String)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaæ6 æ(;2ï
+Horg.jabref.gui.undo.NamedCompound.addEdit(javax.swing.undo.UndoableEdit)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¿ ¿($2´
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¡$ ¡(,2â
+<java.util.Objects.equals(java.lang.Object, java.lang.Object)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∆ ∆(2v
+)org.jabref.model.entry.BibEntry.getType()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∆) ∆(02v
+)org.jabref.model.entry.BibEntry.getType()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∆D ∆(K2ï
+Horg.jabref.gui.undo.NamedCompound.addEdit(javax.swing.undo.UndoableEdit)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java« «( 2v
+)org.jabref.model.entry.BibEntry.getType()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java«Y «(`2v
+)org.jabref.model.entry.BibEntry.getType()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java«m «(t2ú
+Oorg.jabref.model.entry.BibEntry.setType(org.jabref.model.entry.types.EntryType)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java»  »('2v
+)org.jabref.model.entry.BibEntry.getType()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java»1 »(82p
+#javax.swing.undo.CompoundEdit.end()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java   (2ê
+Cjavax.swing.undo.UndoManager.addEdit(javax.swing.undo.UndoableEdit)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÀ À(2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaœH œ(L2n
+ java.lang.Throwable.getMessage()CALLD
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaœw œ(Å2Ä
+3java.io.StringReader.StringReader(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaç? ç(K2î
+Gjava.lang.IllegalStateException.IllegalStateException(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaë ë(/2î
+Gjava.lang.IllegalStateException.IllegalStateException(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaó ó(32î
+Gjava.lang.IllegalStateException.IllegalStateException(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaô ô(32î
+Gjava.lang.IllegalStateException.IllegalStateException(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaü ü(/2é
+Aorg.jabref.gui.undo.NamedCompound.NamedCompound(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¢) ¢(62Ú
+§org.jabref.gui.undo.UndoableFieldChange.UndoableFieldChange(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.lang.String, java.lang.String)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≤) ≤(<2¶
+Yorg.jabref.logic.bibtex.FieldWriter.FieldWriter(org.jabref.logic.bibtex.FieldPreferences)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaæ æ(#2Ú
+§org.jabref.gui.undo.UndoableFieldChange.UndoableFieldChange(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.lang.String, java.lang.String)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¿) ¿(<2¯
+™org.jabref.gui.undo.UndoableChangeType.UndoableChangeType(org.jabref.model.entry.BibEntry, org.jabref.model.entry.types.EntryType, org.jabref.model.entry.types.EntryType)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java«% «(72¿
+sorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!outOfFocusEntryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaá á(2µ
+horg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!textCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaá) á(-2ï
+Horg.jabref.gui.entryeditor.SourceTab?importFormatPreferences@70.42:70.65CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaã5 ã(L2â
+<org.jabref.gui.entryeditor.SourceTab?fileMonitor@71.36:71.47CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaãN ã(Y2À
+~org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?bibtexParser@267.21:267.33CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaç( ç(42µ
+horg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!textCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaçL ç(P2À
+~org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?parserResult@269.25:269.37CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaé# é(/2«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?database@270.24:270.32CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaê ê(2«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?database@270.24:270.32CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaî î(2À
+~org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?parserResult@269.25:269.37CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaï ï( 2À
+~org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?parserResult@269.25:269.37CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaó4 ó(@2À
+~org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?parserResult@269.25:269.37CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaù ù(2À
+~org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?parserResult@269.25:269.37CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaü0 ü(<2«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?database@270.24:270.32CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java£  £((2«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newEntry@291.21:291.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java§ §($2≈
+xorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newKey@292.19:292.25CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¶ ¶(2¿
+sorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!outOfFocusEntryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaß ß(2≈
+xorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newKey@292.19:292.25CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaß/ ß(52¿
+sorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!outOfFocusEntryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java© ©(2¿
+sorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!outOfFocusEntryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≠2 ≠(A2ƒ
+worg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?field@301.42:301.47CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÆ" Æ('2ƒ
+worg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?field@301.42:301.47CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaØ$ Ø()2«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newEntry@291.21:291.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java± ±(2»
+{org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?fieldName@302.22:302.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java±' ±(02«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?compound@290.26:290.34CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≤ ≤(2¿
+sorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!outOfFocusEntryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≤= ≤(L2»
+{org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?fieldName@302.22:302.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≤N ≤(W2…
+|org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?fieldValue@303.23:303.33CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≤Y ≤(c2¿
+sorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!outOfFocusEntryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≥ ≥(#2»
+{org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?fieldName@302.22:302.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≥/ ≥(82«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newEntry@291.21:291.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∏2 ∏(:2ƒ
+worg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?field@312.42:312.47CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaπ" π('2¿
+sorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!outOfFocusEntryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∫" ∫(12»
+{org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?fieldName@313.22:313.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∫; ∫(D2ƒ
+worg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?field@312.42:312.47CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaª" ª('2«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?oldValue@314.23:314.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaº$ º(,2«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newValue@315.23:315.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaº. º(62é
+Aorg.jabref.gui.entryeditor.SourceTab?fieldPreferences@65.35:65.51CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaæ$ æ(42»
+{org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?fieldName@313.22:313.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaæ< æ(E2«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newValue@315.23:315.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaæG æ(O2«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?compound@290.26:290.34CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¿ ¿(2¿
+sorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!outOfFocusEntryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¿= ¿(L2»
+{org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?fieldName@313.22:313.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¿N ¿(W2«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?oldValue@314.23:314.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¿Y ¿(a2«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newValue@315.23:315.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¿c ¿(k2¿
+sorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!outOfFocusEntryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¡ ¡(#2»
+{org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?fieldName@313.22:313.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¡- ¡(62«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newValue@315.23:315.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¡8 ¡(@2«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newEntry@291.21:291.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∆  ∆((2¿
+sorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!outOfFocusEntryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∆4 ∆(C2«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?compound@290.26:290.34CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java« «(2¿
+sorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!outOfFocusEntryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java«8 «(G2¿
+sorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!outOfFocusEntryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java«I «(X2«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newEntry@291.21:291.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java«d «(l2¿
+sorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!outOfFocusEntryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java» »(2«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newEntry@291.21:291.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java»( »(02«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?compound@290.26:290.34CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java   (2â
+<org.jabref.gui.entryeditor.SourceTab?undoManager@67.30:67.41CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÀ À(2«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?compound@290.26:290.34CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÀ  À((2ã
+>org.jabref.gui.entryeditor.SourceTab?sourceIsValid@68.52:68.65CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÕ Õ(2ã
+>org.jabref.gui.entryeditor.SourceTab?sourceIsValid@68.52:68.65CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaœ œ(2¡
+torg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?ex@334.82:334.84CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaœt œ(v2Ñ
+7org.jabref.gui.entryeditor.SourceTab?LOGGER@64.32:64.38CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java– –(2¡
+torg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?ex@334.82:334.84CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java–- –(/2≈
+sorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!outOfFocusEntry	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÜ& Ü(52∫
+horg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!text	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÜ> Ü(B2“
+~org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?bibtexParser@267.21:267.33DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaã ã(!2“
+~org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?parserResult@269.25:269.37DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaç ç(%2Œ
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?database@270.24:270.32DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaé é( 2Œ
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?compound@290.26:290.34DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¢ ¢("2Œ
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newEntry@291.21:291.29DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java£ £(2Ã
+xorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newKey@292.19:292.25DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java§ §(2À
+worg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?field@301.42:301.47DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≠* ≠(/2œ
+{org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?fieldName@302.22:302.31DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÆ Æ(2–
+|org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?fieldValue@303.23:303.33DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaØ Ø(!2À
+worg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?field@312.42:312.47DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∏* ∏(/2œ
+{org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?fieldName@313.22:313.31DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaπ π(2Œ
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?oldValue@314.23:314.31DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∫ ∫(2Œ
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newValue@315.23:315.31DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaª ª(2»
+torg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?ex@334.82:334.84DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaŒR Œ(T2X
+voidRETURN_TYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÜ Ü(‘
+~org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?bibtexParser@267.21:267.33VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaã ã(!"
+typeBibtexParser"
+isFinalfalse"®
+declarationStringí<mark class="modifier"> </mark>BibtexParser <mark class="class-field">bibtexParser</mark> = new BibtexParser(importFormatPreferences, fileMonitor)*bibtexParser2~
+1org.jabref.logic.importer.fileformat.BibtexParserTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaã ã(2ï
+Horg.jabref.gui.entryeditor.SourceTab?importFormatPreferences@70.42:70.65CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaã5 ã(L2â
+<org.jabref.gui.entryeditor.SourceTab?fileMonitor@71.36:71.47CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaãN ã(Yπ	
+~org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?parserResult@269.25:269.37VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaç ç(%"
+typeParserResult"
+isFinalfalse"ú
+declarationStringÜ<mark class="modifier"> </mark>ParserResult <mark class="class-field">parserResult</mark> = bibtexParser.parse(new StringReader(text))*parserResult2s
+&org.jabref.logic.importer.ParserResultTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaç ç(2î
+Gorg.jabref.logic.importer.fileformat.BibtexParser.parse(java.io.Reader)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaç5 ç(:2Ä
+3java.io.StringReader.StringReader(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaç? ç(K2À
+~org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?bibtexParser@267.21:267.33CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaç( ç(42µ
+horg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!textCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaçL ç(PÀ
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?database@270.24:270.32VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaé é( "
+typeBibDatabase"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>BibDatabase <mark class="class-field">database</mark> = parserResult.getDatabase()*database2r
+%org.jabref.model.database.BibDatabaseTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaé é(2Å
+4org.jabref.logic.importer.ParserResult.getDatabase()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaé0 é(;2À
+~org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?parserResult@269.25:269.37CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaé# é(/¬
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?compound@290.26:290.34VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¢ ¢(""
+typeNamedCompound"
+isFinalfalse"¢
+declarationStringå<mark class="modifier"> </mark>NamedCompound <mark class="class-field">compound</mark> = new NamedCompound(Localization.lang("source edit"))*compound2n
+!org.jabref.gui.undo.NamedCompoundTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¢ ¢(2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¢D ¢(H2é
+Aorg.jabref.gui.undo.NamedCompound.NamedCompound(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java¢) ¢(6∫
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newEntry@291.21:291.29VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java£ £("
+typeBibEntry"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark>BibEntry <mark class="class-field">newEntry</mark> = database.getEntries().get(0)*newEntry2l
+org.jabref.model.entry.BibEntryTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java£ £(2
+2org.jabref.model.database.BibDatabase.getEntries()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java£) £(32«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?database@270.24:270.32CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java£  £((≥
+xorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newKey@292.19:292.25VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java§ §("
+typeString"
+isFinalfalse"™
+declarationStringî<mark class="modifier"> </mark>String <mark class="class-field">newKey</mark> = newEntry.getCitationKey().orElse(<mark class="modifier">null</mark>)*newKey2]
+java.lang.StringTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java§ §(2i
+java.util.Optional.orElse(T)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java§6 §(<2}
+0org.jabref.model.entry.BibEntry.getCitationKey()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java§% §(32«
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newEntry@291.21:291.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java§ §($º
+worg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?field@301.42:301.47VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≠* ≠(/" 
+typeMap.Entry<Field, String>"
+isFinalfalse"s
+declarationString^<mark class="modifier"> </mark>Map.Entry<Field, String> <mark class="class-field">field</mark>*field2`
+java.util.Map.EntryTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≠ ≠(2x
+"org.jabref.model.entry.field.FieldTYPE_ARGUMENTC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≠ ≠(2f
+java.lang.StringTYPE_ARGUMENTC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java≠ ≠( í
+{org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?fieldName@302.22:302.31VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÆ Æ("
+typeField"
+isFinalfalse"u
+declarationString`<mark class="modifier"> </mark>Field <mark class="class-field">fieldName</mark> = field.getKey()*	fieldName2o
+"org.jabref.model.entry.field.FieldTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÆ Æ(2i
+java.util.Map.Entry.getKey()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÆ( Æ(.2ƒ
+worg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?field@301.42:301.47CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÆ" Æ('â
+|org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?fieldValue@303.23:303.33VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaØ Ø(!"
+typeString"
+isFinalfalse"y
+declarationStringd<mark class="modifier"> </mark>String <mark class="class-field">fieldValue</mark> = field.getValue()*
+fieldValue2]
+java.lang.StringTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaØ Ø(2k
+java.util.Map.Entry.getValue()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaØ* Ø(22ƒ
+worg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?field@301.42:301.47CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaØ$ Ø()º
+worg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?field@312.42:312.47VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∏* ∏(/" 
+typeMap.Entry<Field, String>"
+isFinalfalse"s
+declarationString^<mark class="modifier"> </mark>Map.Entry<Field, String> <mark class="class-field">field</mark>*field2`
+java.util.Map.EntryTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∏ ∏(2x
+"org.jabref.model.entry.field.FieldTYPE_ARGUMENTC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∏ ∏(2f
+java.lang.StringTYPE_ARGUMENTC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∏ ∏( í
+{org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?fieldName@313.22:313.31VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaπ π("
+typeField"
+isFinalfalse"u
+declarationString`<mark class="modifier"> </mark>Field <mark class="class-field">fieldName</mark> = field.getKey()*	fieldName2o
+"org.jabref.model.entry.field.FieldTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaπ π(2i
+java.util.Map.Entry.getKey()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaπ( π(.2ƒ
+worg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?field@312.42:312.47CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaπ" π('§	
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?oldValue@314.23:314.31VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∫ ∫("
+typeString"
+isFinalfalse"∂
+declarationString†<mark class="modifier"> </mark>String <mark class="class-field">oldValue</mark> = outOfFocusEntry.getField(fieldName).orElse(<mark class="modifier">null</mark>)*oldValue2]
+java.lang.StringTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∫ ∫(2i
+java.util.Optional.orElse(T)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∫F ∫(L2ô
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∫2 ∫(:2¿
+sorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!outOfFocusEntryCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∫" ∫(12»
+{org.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?fieldName@313.22:313.31CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java∫; ∫(DÉ
+zorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?newValue@315.23:315.31VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaª ª("
+typeString"
+isFinalfalse"w
+declarationStringb<mark class="modifier"> </mark>String <mark class="class-field">newValue</mark> = field.getValue()*newValue2]
+java.lang.StringTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaª ª(2k
+java.util.Map.Entry.getValue()CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaª( ª(02ƒ
+worg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?field@312.42:312.47CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaª" ª('ó
+sorg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!outOfFocusEntry	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÜ& Ü(5"
+typeBibEntry"
+isFinalfalse"-
+declarationStringBibEntry outOfFocusEntry*outOfFocusEntry2l
+org.jabref.model.entry.BibEntryTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÜ Ü(%„
+horg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)!text	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÜ> Ü(B"
+typeString"
+isFinalfalse" 
+declarationStringString text*text2]
+java.lang.StringTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaÜ7 Ü(=π
+torg.jabref.gui.entryeditor.SourceTab.storeSource(org.jabref.model.entry.BibEntry, java.lang.String)?ex@334.82:334.84VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaŒR Œ(T"H
+type@InvalidFieldValueException | IllegalStateException | IOException"
+isFinalfalse"X
+declarationStringCInvalidFieldValueException | IllegalStateException | IOException ex*ex2∑
+jorg.jabref.logic.bibtex.InvalidFieldValueException | java.lang.IllegalStateException | java.io.IOExceptionTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaŒ Œ(Qﬁ
+Yorg.jabref.gui.entryeditor.SourceTab.listenForSaveKeybinding(javafx.scene.input.KeyEvent)METHODC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java‘ ‘(("
+isFinalfalse"¢
+declarationStringå<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">listenForSaveKeybinding</mark>(KeyEvent event)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*listenForSaveKeybinding2ë
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java’4 ’(=2¶
+Yorg.jabref.gui.keyboard.KeyBindingRepository.mapToKeyBinding(javafx.scene.input.KeyEvent)CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java’ ’(,2í
+Eorg.jabref.gui.entryeditor.SourceTab?keyBindingRepository@75.39:75.59CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java’ ’(2¨
+_org.jabref.gui.entryeditor.SourceTab.listenForSaveKeybinding(javafx.scene.input.KeyEvent)!eventCALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java’- ’(22º
+oorg.jabref.gui.entryeditor.SourceTab.listenForSaveKeybinding(javafx.scene.input.KeyEvent)?binding@341.62:341.69CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java◊ ◊(2Ü
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaŸ. Ÿ(62±
+_org.jabref.gui.entryeditor.SourceTab.listenForSaveKeybinding(javafx.scene.input.KeyEvent)!event	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java‘2 ‘(72√
+oorg.jabref.gui.entryeditor.SourceTab.listenForSaveKeybinding(javafx.scene.input.KeyEvent)?binding@341.62:341.69DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java’> ’(E2X
+voidRETURN_TYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java‘ ‘(Î
+_org.jabref.gui.entryeditor.SourceTab.listenForSaveKeybinding(javafx.scene.input.KeyEvent)!event	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java‘2 ‘(7"
+typeKeyEvent"
+isFinalfalse"#
+declarationStringKeyEvent event*event2h
+javafx.scene.input.KeyEventTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java‘) ‘(1ä
+oorg.jabref.gui.entryeditor.SourceTab.listenForSaveKeybinding(javafx.scene.input.KeyEvent)?binding@341.62:341.69VARIABLEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java’> ’(E"
+type"
+isFinalfalse"
+declarationString binding*binding2TYPEê
+7org.jabref.gui.entryeditor.SourceTab?LOGGER@64.32:64.38VALUEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java@  @(&"
+isFinaltrue"
+typeLogger"ﬂ
+declarationString…<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(SourceTab.class);"
+isStatictrue"
+accessprivate*LOGGER2[
+org.slf4j.LoggerTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java@ @(ä
+Aorg.jabref.gui.entryeditor.SourceTab?fieldPreferences@65.35:65.51VALUEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaA# A(3"
+isFinaltrue"
+typeFieldPreferences"¢
+declarationStringå<mark class="modifier">private </mark><mark class="modifier">final </mark>FieldPreferences <mark class="class-field">fieldPreferences</mark>"
+isStaticfalse"
+accessprivate*fieldPreferences2s
+(org.jabref.logic.bibtex.FieldPreferencesTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaA A("‰
+5org.jabref.gui.entryeditor.SourceTab?mode@66.34:66.38VALUEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaB" B(&"
+isFinaltrue"
+typeBibDatabaseMode"î
+declarationString<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseMode <mark class="class-field">mode</mark>"
+isStaticfalse"
+accessprivate*mode2t
+)org.jabref.model.database.BibDatabaseModeTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaB B(!Â
+<org.jabref.gui.entryeditor.SourceTab?undoManager@67.30:67.41VALUEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaC C()"
+isFinaltrue"
+typeUndoManager"ò
+declarationStringÇ<mark class="modifier">private </mark><mark class="modifier">final </mark>UndoManager <mark class="class-field">undoManager</mark>"
+isStaticfalse"
+accessprivate*undoManager2g
+javax.swing.undo.UndoManagerTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaC C(…
+>org.jabref.gui.entryeditor.SourceTab?sourceIsValid@68.52:68.65VALUEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaD4 D(A"
+isFinaltrue")
+type!ObjectProperty<ValidationMessage>"–
+declarationString∫<mark class="modifier">private </mark><mark class="modifier">final </mark>ObjectProperty<ValidationMessage> <mark class="class-field">sourceIsValid</mark> = new SimpleObjectProperty<>();"
+isStaticfalse"
+accessprivate*sourceIsValid2o
+$javafx.beans.property.ObjectPropertyTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaD D( 2á
+3de.saxsys.mvvmfx.utils.validation.ValidationMessageTYPE_ARGUMENTA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaD! D(2‹
+@org.jabref.gui.entryeditor.SourceTab?sourceValidator@69.47:69.62VALUEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaE/ E(>"
+isFinaltrue"$
+typeObservableRuleBasedValidator"”
+declarationStringΩ<mark class="modifier">private </mark><mark class="modifier">final </mark>ObservableRuleBasedValidator <mark class="class-field">sourceValidator</mark> = new ObservableRuleBasedValidator();"
+isStaticfalse"
+accessprivate*sourceValidator2â
+>de.saxsys.mvvmfx.utils.validation.ObservableRuleBasedValidatorTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaE E(.ú
+Horg.jabref.gui.entryeditor.SourceTab?importFormatPreferences@70.42:70.65VALUEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaF* F(A"
+isFinaltrue"
+typeImportFormatPreferences"∞
+declarationStringö<mark class="modifier">private </mark><mark class="modifier">final </mark>ImportFormatPreferences <mark class="class-field">importFormatPreferences</mark>"
+isStaticfalse"
+accessprivate*importFormatPreferences2b
+ImportFormatPreferencesTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaF F()¸
+<org.jabref.gui.entryeditor.SourceTab?fileMonitor@71.36:71.47VALUEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaG$ G(/"
+isFinaltrue"
+typeFileUpdateMonitor"û
+declarationStringà<mark class="modifier">private </mark><mark class="modifier">final </mark>FileUpdateMonitor <mark class="class-field">fileMonitor</mark>"
+isStaticfalse"
+accessprivate*fileMonitor2r
+'org.jabref.model.util.FileUpdateMonitorTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaG G(#Ô
+>org.jabref.gui.entryeditor.SourceTab?dialogService@72.32:72.45VALUEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaH  H(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2g
+org.jabref.gui.DialogServiceTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaH H(È
+=org.jabref.gui.entryeditor.SourceTab?stateManager@73.31:73.43VALUEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaI I(+"
+isFinaltrue"
+typeStateManager"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>StateManager <mark class="class-field">stateManager</mark>"
+isStaticfalse"
+accessprivate*stateManager2f
+org.jabref.gui.StateManagerTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaI I(ò
+Borg.jabref.gui.entryeditor.SourceTab?entryTypesManager@74.39:74.56VALUEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaJ' J(8"
+isFinaltrue"
+typeBibEntryTypesManager"ß
+declarationStringë<mark class="modifier">private </mark><mark class="modifier">final </mark>BibEntryTypesManager <mark class="class-field">entryTypesManager</mark>"
+isStaticfalse"
+accessprivate*entryTypesManager2v
++org.jabref.model.entry.BibEntryTypesManagerTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaJ J(&¢
+Eorg.jabref.gui.entryeditor.SourceTab?keyBindingRepository@75.39:75.59VALUEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaK' K(;"
+isFinaltrue"
+typeKeyBindingRepository"™
+declarationStringî<mark class="modifier">private </mark><mark class="modifier">final </mark>KeyBindingRepository <mark class="class-field">keyBindingRepository</mark>"
+isStaticfalse"
+accessprivate*keyBindingRepository2w
+,org.jabref.gui.keyboard.KeyBindingRepositoryTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaK K(&–
+Gorg.jabref.gui.entryeditor.SourceTab?searchHighlightPattern@76.30:76.52VARIABLEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaL L(4"
+isFinalfalse"
+typeOptional<Pattern>"ô
+declarationStringÉ<mark class="modifier">private </mark>Optional<Pattern> <mark class="class-field">searchHighlightPattern</mark> = Optional.empty();"
+isStaticfalse"
+accessprivate*searchHighlightPattern2]
+java.util.OptionalTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaL L(2k
+java.util.regex.PatternTYPE_ARGUMENTA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaL L(2e
+java.util.Optional.empty()CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaL@ L(E¥
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29VARIABLEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaM M("
+isFinalfalse"
+typeCodeArea"m
+declarationStringX<mark class="modifier">private </mark>CodeArea <mark class="class-field">codeArea</mark>"
+isStaticfalse"
+accessprivate*codeArea2g
+org.fxmisc.richtext.CodeAreaTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaM M(∆
+>org.jabref.gui.entryeditor.SourceTab?previousEntry@79.21:79.34VARIABLEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaO O(""
+isFinalfalse"
+typeBibEntry"r
+declarationString]<mark class="modifier">private </mark>BibEntry <mark class="class-field">previousEntry</mark>"
+isStaticfalse"
+accessprivate*previousEntry2j
+org.jabref.model.entry.BibEntryTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaO O(¯
+/org.jabref.gui.entryeditor.SourceTab.EditActionCLASSA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaQ Q("/
+package$org.jabref.gui.entryeditor.SourceTab"
+isFinalfalse"
+inner classtrue"
+
+isAbstractfalse"û
+declarationStringà<mark class="modifier">private </mark><mark class="modifier">class </mark>EditAction<mark class="modifier"> extends </mark>SimpleCommand"
+accessprivate*
+EditAction2¥
+borg.jabref.gui.entryeditor.SourceTab.EditAction.EditAction(org.jabref.gui.actions.StandardActions)DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaU U(2ã
+9org.jabref.gui.entryeditor.SourceTab.EditAction.execute()DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaZ Z(2ï
+Corg.jabref.gui.entryeditor.SourceTab.EditAction?command@83.38:83.45DECLARATIONA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaS& S(-2q
+$org.jabref.gui.actions.SimpleCommandEXTENDA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaQ% Q(2≈
+borg.jabref.gui.entryeditor.SourceTab.EditAction.EditAction(org.jabref.gui.actions.StandardActions)CONSTRUCTORA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaU U("y
+declarationStringd<mark class="modifier">public </mark><mark class="method">EditAction</mark>(StandardActions command)*
+EditAction2µ
+jorg.jabref.gui.entryeditor.SourceTab.EditAction.EditAction(org.jabref.gui.actions.StandardActions)!commandCALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaV V("2é
+Corg.jabref.gui.entryeditor.SourceTab.EditAction?command@83.38:83.45CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaV V(2∫
+jorg.jabref.gui.entryeditor.SourceTab.EditAction.EditAction(org.jabref.gui.actions.StandardActions)!command	PARAMETERA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaU* U(12Å
+/org.jabref.gui.entryeditor.SourceTab.EditActionRETURN_TYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaU U(è
+jorg.jabref.gui.entryeditor.SourceTab.EditAction.EditAction(org.jabref.gui.actions.StandardActions)!command	PARAMETERA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaU* U(1"
+typeStandardActions"
+isFinalfalse",
+declarationStringStandardActions command*command2q
+&org.jabref.gui.actions.StandardActionsTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaU U()©
+
+9org.jabref.gui.entryeditor.SourceTab.EditAction.execute()METHODA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaZ Z("
+isFinalfalse"±
+declarationStringõ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">execute</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*execute2é
+Corg.jabref.gui.entryeditor.SourceTab.EditAction?command@83.38:83.45CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java[ [(2Ñ
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java\ \(%2Ñ
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java] ]($2Ñ
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java^ ^(&2Ñ
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java_# _(+2Ñ
+9org.jabref.gui.entryeditor.SourceTab?codeArea@77.21:77.29CALLA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaa a(2V
+voidRETURN_TYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaZ Z(ˆ
+Corg.jabref.gui.entryeditor.SourceTab.EditAction?command@83.38:83.45VALUEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaS& S(-"
+isFinaltrue"
+typeStandardActions"ò
+declarationStringÇ<mark class="modifier">private </mark><mark class="modifier">final </mark>StandardActions <mark class="class-field">command</mark>"
+isStaticfalse"
+accessprivate*command2q
+&org.jabref.gui.actions.StandardActionsTYPEA
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaS S(%é
+
+>org.jabref.gui.entryeditor.SourceTab.InputMethodRequestsObjectCLASSC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaò ò(2"/
+package$org.jabref.gui.entryeditor.SourceTab"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"π
+declarationString£<mark class="modifier">private </mark><mark class="modifier">class </mark>InputMethodRequestsObject<mark class="modifier"><br>implements </mark>InputMethodRequests"
+accessprivate*InputMethodRequestsObject2§
+Porg.jabref.gui.entryeditor.SourceTab.InputMethodRequestsObject.getSelectedText()DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaõ õ(%2Æ
+Zorg.jabref.gui.entryeditor.SourceTab.InputMethodRequestsObject.getLocationOffset(int, int)DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java† †($2Æ
+Zorg.jabref.gui.entryeditor.SourceTab.InputMethodRequestsObject.cancelLatestCommittedText()DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java• •(-2ß
+Sorg.jabref.gui.entryeditor.SourceTab.InputMethodRequestsObject.getTextLocation(int)DECLARATIONC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java™ ™(&2u
+&javafx.scene.input.InputMethodRequestsEXTENDC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaò> ò(Qí
+Porg.jabref.gui.entryeditor.SourceTab.InputMethodRequestsObject.getSelectedText()METHODC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaõ õ(%"
+isFinalfalse"ù
+declarationStringá<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>String <mark class="method">getSelectedText</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*getSelectedText2d
+java.lang.StringRETURN_TYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.javaõ õ(ë
+Zorg.jabref.gui.entryeditor.SourceTab.InputMethodRequestsObject.getLocationOffset(int, int)METHODC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java† †($"
+isFinalfalse"æ
+declarationString®<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">int</mark> <mark class="method">getLocationOffset</mark>(<mark class="modifier">int</mark> x<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">int</mark> y)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeint*getLocationOffset2Æ
+\org.jabref.gui.entryeditor.SourceTab.InputMethodRequestsObject.getLocationOffset(int, int)!x	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java†) †(*2Æ
+\org.jabref.gui.entryeditor.SourceTab.InputMethodRequestsObject.getLocationOffset(int, int)!y	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java†0 †(12W
+intRETURN_TYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java† †(‹
+\org.jabref.gui.entryeditor.SourceTab.InputMethodRequestsObject.getLocationOffset(int, int)!x	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java†) †(*"
+typeint"
+isFinalfalse"8
+declarationString#<mark class="modifier">int</mark> x*x2P
+intTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java†% †((‹
+\org.jabref.gui.entryeditor.SourceTab.InputMethodRequestsObject.getLocationOffset(int, int)!y	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java†0 †(1"
+typeint"
+isFinalfalse"8
+declarationString#<mark class="modifier">int</mark> y*y2P
+intTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java†, †(/æ
+Zorg.jabref.gui.entryeditor.SourceTab.InputMethodRequestsObject.cancelLatestCommittedText()METHODC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java• •(-"
+isFinalfalse"√
+declarationString≠<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">cancelLatestCommittedText</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*cancelLatestCommittedText2X
+voidRETURN_TYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java• •(ı
+Sorg.jabref.gui.entryeditor.SourceTab.InputMethodRequestsObject.getTextLocation(int)METHODC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java™ ™(&"
+isFinalfalse"∆
+declarationString∞<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>Point2D <mark class="method">getTextLocation</mark>(<mark class="modifier">int</mark> offset)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typePoint2D*getTextLocation2¨
+Zorg.jabref.gui.entryeditor.SourceTab.InputMethodRequestsObject.getTextLocation(int)!offset	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java™+ ™(12k
+javafx.geometry.Point2DRETURN_TYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java™ ™(‰
+Zorg.jabref.gui.entryeditor.SourceTab.InputMethodRequestsObject.getTextLocation(int)!offset	PARAMETERC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java™+ ™(1"
+typeint"
+isFinalfalse"=
+declarationString(<mark class="modifier">int</mark> offset*offset2P
+intTYPEC
+7src\main\java\org\jabref\gui\entryeditor\SourceTab.java™' ™(*

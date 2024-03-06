@@ -1,0 +1,917 @@
+
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java˙#
+!org.jabref.gui.EntryTypeViewModelCLASS>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java' '("
+packageorg.jabref.gui"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"p
+declarationString[<mark class="modifier">public </mark><mark class="modifier">class </mark>EntryTypeViewModel"
+accesspublic*EntryTypeViewModel2–
+Äorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java: :(2ä
+;org.jabref.gui.EntryTypeViewModel.searchSuccesfulProperty()DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaQ Q(22Ñ
+5org.jabref.gui.EntryTypeViewModel.searchingProperty()DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaU U(,2á
+8org.jabref.gui.EntryTypeViewModel.selectedItemProperty()DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaY* Y(>2ä
+;org.jabref.gui.EntryTypeViewModel.idFieldValidationStatus()DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java] ](32Å
+2org.jabref.gui.EntryTypeViewModel.idTextProperty()DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaa a((2è
+@org.jabref.gui.EntryTypeViewModel.getFocusAndSelectAllProperty()DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javae e(72á
+8org.jabref.gui.EntryTypeViewModel.storeSelectedFetcher()DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javai i($2â
+:org.jabref.gui.EntryTypeViewModel.getLastSelectedFetcher()DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javam m(12á
+8org.jabref.gui.EntryTypeViewModel.fetcherItemsProperty()DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javau( u(<2
+0org.jabref.gui.EntryTypeViewModel.stopFetching()DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javay y(2Ö
+4org.jabref.gui.EntryTypeViewModel.runFetcherWorker()DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaè è( 2à
+7org.jabref.gui.EntryTypeViewModel.cancelFetcherWorker()DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java÷ ÷(#2É
+4org.jabref.gui.EntryTypeViewModel?LOGGER@41.32:41.38DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java)  )(&2è
+@org.jabref.gui.EntryTypeViewModel?preferencesService@43.37:43.55DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java+% +(72é
+?org.jabref.gui.EntryTypeViewModel?searchingProperty@44.34:44.51DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java," ,(32î
+Eorg.jabref.gui.EntryTypeViewModel?searchSuccesfulProperty@45.34:45.57DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java-" -(92ë
+Borg.jabref.gui.EntryTypeViewModel?selectedItemProperty@46.49:46.69DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java.1 .(E2Ö
+6org.jabref.gui.EntryTypeViewModel?fetchers@47.47:47.55DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java// /(72É
+4org.jabref.gui.EntryTypeViewModel?idText@48.33:48.39DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java0! 0('2ñ
+Gorg.jabref.gui.EntryTypeViewModel?focusAndSelectAllProperty@49.34:49.59DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java1" 1(;2ä
+;org.jabref.gui.EntryTypeViewModel?fetcherWorker@50.37:50.50DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java2% 2(22á
+8org.jabref.gui.EntryTypeViewModel?libraryTab@51.29:51.39DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java3 3('2ä
+;org.jabref.gui.EntryTypeViewModel?dialogService@52.32:52.45DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java4  4(-2ç
+>org.jabref.gui.EntryTypeViewModel?idFieldValidator@53.28:53.44DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java5 5(,2â
+:org.jabref.gui.EntryTypeViewModel?stateManager@54.31:54.43DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java6 6(+2â
+:org.jabref.gui.EntryTypeViewModel?taskExecutor@55.31:55.43DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java7 7(+2é
+?org.jabref.gui.EntryTypeViewModel?fileUpdateMonitor@56.36:56.53DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java8$ 8(52~
+/org.jabref.gui.EntryTypeViewModel.FetcherWorkerDECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java (Æ>
+Äorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)CONSTRUCTOR>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java: :("ƒ
+declarationStringÆ<mark class="modifier">public </mark><mark class="method">EntryTypeViewModel</mark>(PreferencesService preferences<mark class="modifier"><mark class="modifier">,</mark></mark> LibraryTab libraryTab<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> StateManager stateManager<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileUpdateMonitor)*EntryTypeViewModel2é
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaH H(62ä
+Borg.jabref.preferences.PreferencesService.getImporterPreferences()CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaI I(22Ç
+:org.jabref.gui.EntryTypeViewModel.getLastSelectedFetcher()CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaJ& J(<2ñ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaN5 N(92ñ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaNj N(n2‘
+ãorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!libraryTabCALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java@ @($2’
+åorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!preferencesCALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaA" A(-2◊
+éorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!dialogServiceCALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaB B(*2÷
+çorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!stateManagerCALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaC C((2÷
+çorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!taskExecutorCALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaD D((2€
+íorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!fileUpdateMonitorCALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaE! E(22~
+6org.jabref.gui.EntryTypeViewModel?fetchers@47.47:47.55CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaG G(2’
+åorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!preferencesCALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaH H(2’
+åorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!preferencesCALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaI I(2ä
+Borg.jabref.gui.EntryTypeViewModel?selectedItemProperty@46.49:46.69CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaJ J(2Ü
+>org.jabref.gui.EntryTypeViewModel?idFieldValidator@53.28:53.44CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaK K(2|
+4org.jabref.gui.EntryTypeViewModel?idText@48.33:48.39CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaL L(2Ä
+8org.jabref.gui.EntryTypeViewModel?libraryTab@51.29:51.39CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java@ @(2à
+@org.jabref.gui.EntryTypeViewModel?preferencesService@43.37:43.55CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaA A(2É
+;org.jabref.gui.EntryTypeViewModel?dialogService@52.32:52.45CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaB B(2Ç
+:org.jabref.gui.EntryTypeViewModel?stateManager@54.31:54.43CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaC C(2Ç
+:org.jabref.gui.EntryTypeViewModel?taskExecutor@55.31:55.43CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaD D(2á
+?org.jabref.gui.EntryTypeViewModel?fileUpdateMonitor@56.36:56.53CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaE E(2⁄
+åorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!preferences	PARAMETER>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java:1 :(<2Ÿ
+ãorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!libraryTab	PARAMETER>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java;) ;(32‹
+éorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!dialogService	PARAMETER>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java<, <(92€
+çorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!stateManager	PARAMETER>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java=+ =(72€
+çorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!taskExecutor	PARAMETER>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java>+ >(72‡
+íorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!fileUpdateMonitor	PARAMETER>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java?0 ?(A2p
+!org.jabref.gui.EntryTypeViewModelRETURN_TYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java: :(Ω
+åorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!preferences	PARAMETER>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java:1 :(<"
+typePreferencesService"
+isFinalfalse"3
+declarationStringPreferencesService preferences*preferences2q
+)org.jabref.preferences.PreferencesServiceTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java: :(0ö
+ãorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!libraryTab	PARAMETER>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java;) ;(3"
+type
+LibraryTab"
+isFinalfalse"*
+declarationStringLibraryTab libraryTab*
+libraryTab2a
+org.jabref.gui.LibraryTabTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java; ;((¨
+éorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!dialogService	PARAMETER>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java<, <(9"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2d
+org.jabref.gui.DialogServiceTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java< <(+¶
+çorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!stateManager	PARAMETER>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java=+ =(7"
+typeStateManager"
+isFinalfalse".
+declarationStringStateManager stateManager*stateManager2c
+org.jabref.gui.StateManagerTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java= =(*´
+çorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!taskExecutor	PARAMETER>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java>+ >(7"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2h
+ org.jabref.gui.util.TaskExecutorTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java> >(*À
+íorg.jabref.gui.EntryTypeViewModel.EntryTypeViewModel(org.jabref.preferences.PreferencesService, org.jabref.gui.LibraryTab, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, org.jabref.model.util.FileUpdateMonitor)!fileUpdateMonitor	PARAMETER>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java?0 ?(A"
+typeFileUpdateMonitor"
+isFinalfalse"8
+declarationString#FileUpdateMonitor fileUpdateMonitor*fileUpdateMonitor2o
+'org.jabref.model.util.FileUpdateMonitorTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java? ?(/ä
+;org.jabref.gui.EntryTypeViewModel.searchSuccesfulProperty()METHOD>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaQ Q(2"
+isFinalfalse"
+declarationStringj<mark class="modifier">public </mark>BooleanProperty <mark class="method">searchSuccesfulProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeBooleanProperty*searchSuccesfulProperty2ç
+Eorg.jabref.gui.EntryTypeViewModel?searchSuccesfulProperty@45.34:45.57CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaR R(&2t
+%javafx.beans.property.BooleanPropertyRETURN_TYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaQ Q(Ú
+5org.jabref.gui.EntryTypeViewModel.searchingProperty()METHOD>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaU U(,"
+isFinalfalse"y
+declarationStringd<mark class="modifier">public </mark>BooleanProperty <mark class="method">searchingProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeBooleanProperty*searchingProperty2á
+?org.jabref.gui.EntryTypeViewModel?searchingProperty@44.34:44.51CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaV V( 2t
+%javafx.beans.property.BooleanPropertyRETURN_TYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaU U(•
+8org.jabref.gui.EntryTypeViewModel.selectedItemProperty()METHOD>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaY* Y(>"
+isFinalfalse"ë
+declarationString|<mark class="modifier">public </mark>ObjectProperty&lt;IdBasedFetcher&gt; <mark class="method">selectedItemProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"&
+typeObjectProperty<IdBasedFetcher>*selectedItemProperty2ä
+Borg.jabref.gui.EntryTypeViewModel?selectedItemProperty@46.49:46.69CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaZ Z(#2s
+$javafx.beans.property.ObjectPropertyRETURN_TYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaY Y(2Ä
+(org.jabref.logic.importer.IdBasedFetcherRETURN_TYPE_ARGUMENT>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaY Y((î
+;org.jabref.gui.EntryTypeViewModel.idFieldValidationStatus()METHOD>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java] ](3"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier">public </mark>ValidationStatus <mark class="method">idFieldValidationStatus</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeValidationStatus*idFieldValidationStatus2Ü
+>org.jabref.gui.EntryTypeViewModel?idFieldValidator@53.28:53.44CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java^ ^(2Å
+2de.saxsys.mvvmfx.utils.validation.ValidationStatusRETURN_TYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java] ](⁄
+2org.jabref.gui.EntryTypeViewModel.idTextProperty()METHOD>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaa a(("
+isFinalfalse"u
+declarationString`<mark class="modifier">public </mark>StringProperty <mark class="method">idTextProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeStringProperty*idTextProperty2|
+4org.jabref.gui.EntryTypeViewModel?idText@48.33:48.39CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javab b(2s
+$javafx.beans.property.StringPropertyRETURN_TYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaa a(ú
+@org.jabref.gui.EntryTypeViewModel.getFocusAndSelectAllProperty()METHOD>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javae e(7"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier">public </mark>BooleanProperty <mark class="method">getFocusAndSelectAllProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeBooleanProperty*getFocusAndSelectAllProperty2è
+Gorg.jabref.gui.EntryTypeViewModel?focusAndSelectAllProperty@49.34:49.59CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaf f((2t
+%javafx.beans.property.BooleanPropertyRETURN_TYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javae e(˘
+8org.jabref.gui.EntryTypeViewModel.storeSelectedFetcher()METHOD>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javai i($"
+isFinalfalse"è
+declarationStringz<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">storeSelectedFetcher</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*storeSelectedFetcher2Ö
+=org.jabref.preferences.PreferencesService.getGuiPreferences()CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaj j(,2à
+@org.jabref.gui.EntryTypeViewModel?preferencesService@43.37:43.55CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaj j(2ä
+Borg.jabref.gui.EntryTypeViewModel?selectedItemProperty@46.49:46.69CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javajM j(a2S
+voidRETURN_TYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javai i(ˆ
+:org.jabref.gui.EntryTypeViewModel.getLastSelectedFetcher()METHOD>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javam m(1"
+isFinalfalse"~
+declarationStringi<mark class="modifier">private </mark>IdBasedFetcher <mark class="method">getLastSelectedFetcher</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeIdBasedFetcher*getLastSelectedFetcher2ç
+Eorg.jabref.preferences.GuiPreferences.getLastSelectedIdBasedFetcher()CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javapU p(r2Ö
+=org.jabref.preferences.PreferencesService.getGuiPreferences()CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaoU o(f2é
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javarA r([2~
+6org.jabref.gui.EntryTypeViewModel?fetchers@47.47:47.55CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javan n(2ò
+Porg.jabref.gui.EntryTypeViewModel.getLastSelectedFetcher()?fetcher@110.40:110.47CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javan3 n(:2à
+@org.jabref.gui.EntryTypeViewModel?preferencesService@43.37:43.55CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaoB o(T2à
+@org.jabref.gui.EntryTypeViewModel?preferencesService@43.37:43.55CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javar. r(@2ü
+Porg.jabref.gui.EntryTypeViewModel.getLastSelectedFetcher()?fetcher@110.40:110.47DECLARATION>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javan( n(/2w
+(org.jabref.logic.importer.IdBasedFetcherRETURN_TYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javam m(Ê
+Porg.jabref.gui.EntryTypeViewModel.getLastSelectedFetcher()?fetcher@110.40:110.47VARIABLE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javan( n(/"
+type"
+isFinalfalse"
+declarationString fetcher*fetcher2TYPEí
+8org.jabref.gui.EntryTypeViewModel.fetcherItemsProperty()METHOD>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javau( u(<"
+isFinalfalse"è
+declarationStringz<mark class="modifier">public </mark>ListProperty&lt;IdBasedFetcher&gt; <mark class="method">fetcherItemsProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"$
+typeListProperty<IdBasedFetcher>*fetcherItemsProperty2~
+6org.jabref.gui.EntryTypeViewModel?fetchers@47.47:47.55CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javav v(2q
+"javafx.beans.property.ListPropertyRETURN_TYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javau u(2Ä
+(org.jabref.logic.importer.IdBasedFetcherRETURN_TYPE_ARGUMENT>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javau u(&Õ
+0org.jabref.gui.EntryTypeViewModel.stopFetching()METHOD>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javay y("
+isFinalfalse"á
+declarationStringr<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">stopFetching</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*stopFetching2É
+;org.jabref.gui.EntryTypeViewModel?fetcherWorker@50.37:50.50CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaz z(2É
+;org.jabref.gui.EntryTypeViewModel?fetcherWorker@50.37:50.50CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java{ {(2S
+voidRETURN_TYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javay y(˝v
+4org.jabref.gui.EntryTypeViewModel.runFetcherWorker()METHOD@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaè è( "
+isFinalfalse"ã
+declarationStringv<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">runFetcherWorker</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*runFetcherWorker2
+5org.jabref.gui.EntryTypeViewModel.searchingProperty()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaê, ê(=2j
+ java.lang.Throwable.getMessage()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaï7 ï(A2Ç
+8org.jabref.gui.EntryTypeViewModel.selectedItemProperty()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javañ ñ(12ß
+]org.jabref.gui.DialogService.showInformationDialogAndWait(java.lang.String, java.lang.String)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaö ö(:2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaöH ö(L2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaöu ö(y2ß
+]org.jabref.gui.DialogService.showInformationDialogAndWait(java.lang.String, java.lang.String)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaú ú(:2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaúH ú(L2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaúu ú(y2ß
+]org.jabref.gui.DialogService.showInformationDialogAndWait(java.lang.String, java.lang.String)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaû û(:2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaûH û(L2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaûu û(y2h
+java.util.Optional.isPresent()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java© ©( 2b
+java.util.Optional.get()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java™. ™(12{
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java≠# ≠(82t
+*org.jabref.gui.LibraryTab.getUndoManager()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java∞# ∞(12‚
+óorg.jabref.gui.externalfiles.ImportHandler.importEntryWithDuplicateCheck(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.BibEntry)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¥ ¥(52{
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¥A ¥(V2£
+Yorg.jabref.gui.DialogService.showWarningDialogAndWait(java.lang.String, java.lang.String)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java∏ ∏(62ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java∏D ∏(H2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java∏j ∏(n2Ç
+8org.jabref.gui.EntryTypeViewModel.selectedItemProperty()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaº! º(52Õ
+Çorg.jabref.gui.DialogService.showConfirmationDialogAndWait(java.lang.String, java.lang.String, java.lang.String, java.lang.String)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¿5 ¿(R2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¿` ¿(d2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¡% ¡()2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¬% ¬()2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java√% √()2z
+0org.jabref.gui.importer.NewEntryAction.execute()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java *  (12
+5org.jabref.gui.EntryTypeViewModel.searchingProperty()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java– –(2ç
+Corg.jabref.gui.util.TaskExecutor.execute(javafx.concurrent.Task<V>)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java” ”(2â
+?org.jabref.gui.EntryTypeViewModel.FetcherWorker.FetcherWorker()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java§  §(-2Ä
+µorg.jabref.gui.externalfiles.ImportHandler.ImportHandler(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¨, ¨(92∆
+˚org.jabref.gui.importer.NewEntryAction.NewEntryAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.model.entry.types.EntryType, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java≈ ≈(&2â
+?org.jabref.gui.EntryTypeViewModel.FetcherWorker.FetcherWorker()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java—  —(-2Ö
+;org.jabref.gui.EntryTypeViewModel?fetcherWorker@50.37:50.50CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaê ê(2Ö
+;org.jabref.gui.EntryTypeViewModel?fetcherWorker@50.37:50.50CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaí í(2è
+Eorg.jabref.gui.EntryTypeViewModel?searchSuccesfulProperty@45.34:45.57CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaì ì(#2Ö
+;org.jabref.gui.EntryTypeViewModel?fetcherWorker@50.37:50.50CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaî" î(/2ñ
+Lorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?exception@148.22:148.31CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaï- ï(62~
+4org.jabref.gui.EntryTypeViewModel?idText@48.33:48.39CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaó ó($2ñ
+Lorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?exception@148.22:148.31CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaô ô(2Ö
+;org.jabref.gui.EntryTypeViewModel?dialogService@52.32:52.45CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaö ö(2¶
+Zorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?fetcherExceptionMessage@149.19:149.42CALLB
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaö˝ ö(î2ñ
+Lorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?exception@148.22:148.31CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaõ õ( 2Ö
+;org.jabref.gui.EntryTypeViewModel?dialogService@52.32:52.45CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaú ú(2¶
+Zorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?fetcherExceptionMessage@149.19:149.42CALLB
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaú› ú(Ù2Ö
+;org.jabref.gui.EntryTypeViewModel?dialogService@52.32:52.45CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaû û(2¶
+Zorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?fetcherExceptionMessage@149.19:149.42CALLB
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaûé û(•2~
+4org.jabref.gui.EntryTypeViewModel?LOGGER@41.32:41.38CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java° °(2î
+Jorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?fetcher@150.19:150.26CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java°b °(i2ï
+Korg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?searchId@151.19:151.27CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java°k °(s2ñ
+Lorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?exception@148.22:148.31CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java°u °(~2â
+?org.jabref.gui.EntryTypeViewModel?searchingProperty@44.34:44.51CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java£ £(2Ö
+;org.jabref.gui.EntryTypeViewModel?fetcherWorker@50.37:50.50CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java§ §(2Ö
+;org.jabref.gui.EntryTypeViewModel?fetcherWorker@50.37:50.50CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaß ß(2Ö
+;org.jabref.gui.EntryTypeViewModel?fetcherWorker@50.37:50.50CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java®( ®(52ì
+Iorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?result@168.31:168.37CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java© ©(2ì
+Iorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?result@168.31:168.37CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java™' ™(-2Ç
+8org.jabref.gui.EntryTypeViewModel?libraryTab@51.29:51.39CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java≠ ≠("2ä
+@org.jabref.gui.EntryTypeViewModel?preferencesService@43.37:43.55CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaÆ Æ(*2â
+?org.jabref.gui.EntryTypeViewModel?fileUpdateMonitor@56.36:56.53CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaØ Ø()2Ç
+8org.jabref.gui.EntryTypeViewModel?libraryTab@51.29:51.39CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java∞ ∞("2Ñ
+:org.jabref.gui.EntryTypeViewModel?stateManager@54.31:54.43CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java± ±($2Ö
+;org.jabref.gui.EntryTypeViewModel?dialogService@52.32:52.45CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java≤ ≤(%2Ñ
+:org.jabref.gui.EntryTypeViewModel?taskExecutor@55.31:55.43CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java≥ ≥($2î
+Jorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?handler@172.30:172.37CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¥ ¥(2Ç
+8org.jabref.gui.EntryTypeViewModel?libraryTab@51.29:51.39CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¥6 ¥(@2í
+Horg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?entry@170.31:170.36CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¥Z ¥(_2è
+Eorg.jabref.gui.EntryTypeViewModel?searchSuccesfulProperty@45.34:45.57CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java∂ ∂('2~
+4org.jabref.gui.EntryTypeViewModel?idText@48.33:48.39CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java∑* ∑(02Ö
+;org.jabref.gui.EntryTypeViewModel?dialogService@52.32:52.45CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java∏ ∏(2~
+4org.jabref.gui.EntryTypeViewModel?idText@48.33:48.39CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaΩ" Ω((2Ö
+;org.jabref.gui.EntryTypeViewModel?dialogService@52.32:52.45CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¿' ¿(42î
+Jorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?fetcher@188.23:188.30CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¡] ¡(d2ï
+Korg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?searchId@189.23:189.31CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¡f ¡(n2ô
+Oorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?addEntryFlag@192.24:192.36CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaƒ ƒ( 2Ç
+8org.jabref.gui.EntryTypeViewModel?libraryTab@51.29:51.39CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java∆" ∆(,2Ö
+;org.jabref.gui.EntryTypeViewModel?dialogService@52.32:52.45CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java» »()2ä
+@org.jabref.gui.EntryTypeViewModel?preferencesService@43.37:43.55CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java… …(.2Ñ
+:org.jabref.gui.EntryTypeViewModel?stateManager@54.31:54.43CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java   ((2è
+Eorg.jabref.gui.EntryTypeViewModel?searchSuccesfulProperty@45.34:45.57CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaÀ À(+2ë
+Gorg.jabref.gui.EntryTypeViewModel?focusAndSelectAllProperty@49.34:49.59CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaœ œ(%2Ö
+;org.jabref.gui.EntryTypeViewModel?fetcherWorker@50.37:50.50CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java— —(2Ñ
+:org.jabref.gui.EntryTypeViewModel?taskExecutor@55.31:55.43CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java” ”(2Ö
+;org.jabref.gui.EntryTypeViewModel?fetcherWorker@50.37:50.50CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java” ”(*2ù
+Lorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?exception@148.22:148.31DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaî î(2´
+Zorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?fetcherExceptionMessage@149.19:149.42DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaï ï(*2õ
+Jorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?fetcher@150.19:150.26DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javañ ñ(2ú
+Korg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?searchId@151.19:151.27DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaó ó(2ö
+Iorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?result@168.31:168.37DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java® ®(%2ô
+Horg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?entry@170.31:170.36DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java™ ™($2õ
+Jorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?handler@172.30:172.37DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¨ ¨(%2õ
+Jorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?fetcher@188.23:188.30DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaº º(2ú
+Korg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?searchId@189.23:189.31DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaΩ Ω(2†
+Oorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?addEntryFlag@192.24:192.36DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¿ ¿($2ô
+Horg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?event@144.35:144.40DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaê# ê((2ô
+Horg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?event@146.34:146.39DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaí" í('2ó
+Forg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?evt@167.37:167.40DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaß% ß((2U
+voidRETURN_TYPE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaè è(ª
+Lorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?exception@148.22:148.31VARIABLE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaî î("
+type	Throwable"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>Throwable <mark class="class-field">exception</mark> = fetcherWorker.getException()*	exception2]
+java.lang.ThrowableTYPE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaî î(2Ö
+;org.jabref.gui.EntryTypeViewModel?fetcherWorker@50.37:50.50CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaî" î(/”
+Zorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?fetcherExceptionMessage@149.19:149.42VARIABLE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaï ï(*"
+typeString"
+isFinalfalse"å
+declarationStringw<mark class="modifier"> </mark>String <mark class="class-field">fetcherExceptionMessage</mark> = exception.getMessage()*fetcherExceptionMessage2Z
+java.lang.StringTYPE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaï ï(2j
+ java.lang.Throwable.getMessage()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaï7 ï(A2ñ
+Lorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?exception@148.22:148.31CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaï- ï(6∏
+Jorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?fetcher@150.19:150.26VARIABLE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javañ ñ("
+typeString"
+isFinalfalse"ë
+declarationString|<mark class="modifier"> </mark>String <mark class="class-field">fetcher</mark> = selectedItemProperty().getValue().getName()*fetcher2Z
+java.lang.StringTYPE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javañ ñ(2Ç
+8org.jabref.gui.EntryTypeViewModel.selectedItemProperty()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javañ ñ(1õ
+Korg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?searchId@151.19:151.27VARIABLE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaó ó("
+typeString"
+isFinalfalse"x
+declarationStringc<mark class="modifier"> </mark>String <mark class="class-field">searchId</mark> = idText.getValue()*searchId2Z
+java.lang.StringTYPE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaó ó(2~
+4org.jabref.gui.EntryTypeViewModel?idText@48.33:48.39CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaó ó($≥
+Iorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?result@168.31:168.37VARIABLE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java® ®(%"
+typeOptional<BibEntry>"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark>Optional<BibEntry> <mark class="class-field">result</mark> = fetcherWorker.getValue()*result2\
+java.util.OptionalTYPE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java® ®(2r
+org.jabref.model.entry.BibEntryTYPE_ARGUMENT@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java® ®(2Ö
+;org.jabref.gui.EntryTypeViewModel?fetcherWorker@50.37:50.50CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java®( ®(5º
+Horg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?entry@170.31:170.36VALUE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java™ ™($"
+typeBibEntry"
+isFinaltrue"ó
+declarationStringÅ<mark class="modifier"> </mark><mark class="modifier">final </mark>BibEntry <mark class="class-field">entry</mark> = result.get()*entry2i
+org.jabref.model.entry.BibEntryTYPE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java™ ™(2b
+java.util.Optional.get()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java™. ™(12ì
+Iorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?result@168.31:168.37CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java™' ™(-¿
+Jorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?handler@172.30:172.37VARIABLE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¨ ¨(%"
+typeImportHandler"
+isFinalfalse"Œ
+declarationString∏<mark class="modifier"> </mark>ImportHandler <mark class="class-field">handler</mark> = new ImportHandler(libraryTab.getBibDatabaseContext()<mark class="modifier">,</mark> preferencesService, fileUpdateMonitor, libraryTab.getUndoManager()<mark class="modifier">,</mark> stateManager, dialogService, taskExecutor)*handler2t
+*org.jabref.gui.externalfiles.ImportHandlerTYPE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¨ ¨(2{
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java≠# ≠(82t
+*org.jabref.gui.LibraryTab.getUndoManager()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java∞# ∞(12Ä
+µorg.jabref.gui.externalfiles.ImportHandler.ImportHandler(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¨, ¨(92Ç
+8org.jabref.gui.EntryTypeViewModel?libraryTab@51.29:51.39CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java≠ ≠("2ä
+@org.jabref.gui.EntryTypeViewModel?preferencesService@43.37:43.55CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaÆ Æ(*2â
+?org.jabref.gui.EntryTypeViewModel?fileUpdateMonitor@56.36:56.53CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaØ Ø()2Ç
+8org.jabref.gui.EntryTypeViewModel?libraryTab@51.29:51.39CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java∞ ∞("2Ñ
+:org.jabref.gui.EntryTypeViewModel?stateManager@54.31:54.43CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java± ±($2Ö
+;org.jabref.gui.EntryTypeViewModel?dialogService@52.32:52.45CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java≤ ≤(%2Ñ
+:org.jabref.gui.EntryTypeViewModel?taskExecutor@55.31:55.43CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java≥ ≥($∏
+Jorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?fetcher@188.23:188.30VARIABLE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaº º("
+typeString"
+isFinalfalse"ë
+declarationString|<mark class="modifier"> </mark>String <mark class="class-field">fetcher</mark> = selectedItemProperty().getValue().getName()*fetcher2Z
+java.lang.StringTYPE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaº º(2Ç
+8org.jabref.gui.EntryTypeViewModel.selectedItemProperty()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaº! º(5õ
+Korg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?searchId@189.23:189.31VARIABLE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaΩ Ω("
+typeString"
+isFinalfalse"x
+declarationStringc<mark class="modifier"> </mark>String <mark class="class-field">searchId</mark> = idText.getValue()*searchId2Z
+java.lang.StringTYPE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaΩ Ω(2~
+4org.jabref.gui.EntryTypeViewModel?idText@48.33:48.39CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaΩ" Ω((ô
+Oorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?addEntryFlag@192.24:192.36VARIABLE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¿ ¿($"
+typeboolean"
+isFinalfalse"Ç
+declarationStringÏ<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">addEntryFlag</mark> = dialogService.showConfirmationDialogAndWait(Localization.lang("Identifier not found")<mark class="modifier">,</mark> Localization.lang("Fetcher '%0' did not find an entry for id '%1'."<mark class="modifier">,</mark> fetcher, searchId)<mark class="modifier">,</mark> Localization.lang("Add entry manually")<mark class="modifier">,</mark> Localization.lang("Return to dialog"))*addEntryFlag2Q
+booleanTYPE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¿ ¿(2Õ
+Çorg.jabref.gui.DialogService.showConfirmationDialogAndWait(java.lang.String, java.lang.String, java.lang.String, java.lang.String)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¿5 ¿(R2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¿` ¿(d2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¡% ¡()2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¬% ¬()2ò
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java√% √()2Ö
+;org.jabref.gui.EntryTypeViewModel?dialogService@52.32:52.45CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¿' ¿(42î
+Jorg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?fetcher@188.23:188.30CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¡] ¡(d2ï
+Korg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?searchId@189.23:189.31CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java¡f ¡(n‹
+Horg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?event@144.35:144.40VARIABLE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaê# ê(("
+type"
+isFinalfalse"
+declarationString event*event2TYPE‹
+Horg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?event@146.34:146.39VARIABLE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaí" í('"
+type"
+isFinalfalse"
+declarationString event*event2TYPE÷
+Forg.jabref.gui.EntryTypeViewModel.runFetcherWorker()?evt@167.37:167.40VARIABLE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaß% ß(("
+type"
+isFinalfalse"
+declarationString evt*evt2TYPE‚
+7org.jabref.gui.EntryTypeViewModel.cancelFetcherWorker()METHOD@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java÷ ÷(#"
+isFinalfalse"é
+declarationStringy<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">cancelFetcherWorker</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*cancelFetcherWorker2Ö
+;org.jabref.gui.EntryTypeViewModel?fetcherWorker@50.37:50.50CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java◊ ◊(2U
+voidRETURN_TYPE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java÷ ÷(ê
+4org.jabref.gui.EntryTypeViewModel?LOGGER@41.32:41.38VALUE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java)  )(&"
+isFinaltrue"
+typeLogger"Ë
+declarationString“<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(EntryTypeViewModel.class);"
+isStatictrue"
+accessprivate*LOGGER2X
+org.slf4j.LoggerTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java) )(å
+@org.jabref.gui.EntryTypeViewModel?preferencesService@43.37:43.55VALUE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java+% +(7"
+isFinaltrue"
+typePreferencesService"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferencesService</mark>"
+isStaticfalse"
+accessprivate*preferencesService2q
+)org.jabref.preferences.PreferencesServiceTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java+ +($û
+?org.jabref.gui.EntryTypeViewModel?searchingProperty@44.34:44.51VALUE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java," ,(3"
+isFinaltrue"
+typeBooleanProperty"¡
+declarationString´<mark class="modifier">private </mark><mark class="modifier">final </mark>BooleanProperty <mark class="class-field">searchingProperty</mark> = new SimpleBooleanProperty();"
+isStaticfalse"
+accessprivate*searchingProperty2m
+%javafx.beans.property.BooleanPropertyTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java, ,(!∞
+Eorg.jabref.gui.EntryTypeViewModel?searchSuccesfulProperty@45.34:45.57VALUE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java-" -(9"
+isFinaltrue"
+typeBooleanProperty"«
+declarationString±<mark class="modifier">private </mark><mark class="modifier">final </mark>BooleanProperty <mark class="class-field">searchSuccesfulProperty</mark> = new SimpleBooleanProperty();"
+isStaticfalse"
+accessprivate*searchSuccesfulProperty2m
+%javafx.beans.property.BooleanPropertyTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java- -(!¿
+Borg.jabref.gui.EntryTypeViewModel?selectedItemProperty@46.49:46.69VALUE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java.1 .(E"
+isFinaltrue"&
+typeObjectProperty<IdBasedFetcher>"‘
+declarationStringæ<mark class="modifier">private </mark><mark class="modifier">final </mark>ObjectProperty<IdBasedFetcher> <mark class="class-field">selectedItemProperty</mark> = new SimpleObjectProperty<>();"
+isStaticfalse"
+accessprivate*selectedItemProperty2l
+$javafx.beans.property.ObjectPropertyTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java. .( 2y
+(org.jabref.logic.importer.IdBasedFetcherTYPE_ARGUMENT>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java.! .(/∑
+6org.jabref.gui.EntryTypeViewModel?fetchers@47.47:47.55VALUE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java// /(7"
+isFinaltrue"$
+typeListProperty<IdBasedFetcher>"Á
+declarationString—<mark class="modifier">private </mark><mark class="modifier">final </mark>ListProperty<IdBasedFetcher> <mark class="class-field">fetchers</mark> = new SimpleListProperty<>(FXCollections.observableArrayList());"
+isStaticfalse"
+accessprivate*fetchers2j
+"javafx.beans.property.ListPropertyTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java/ /(2y
+(org.jabref.logic.importer.IdBasedFetcherTYPE_ARGUMENT>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java/ /(-˘
+4org.jabref.gui.EntryTypeViewModel?idText@48.33:48.39VALUE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java0! 0('"
+isFinaltrue"
+typeStringProperty"¥
+declarationStringû<mark class="modifier">private </mark><mark class="modifier">final </mark>StringProperty <mark class="class-field">idText</mark> = new SimpleStringProperty();"
+isStaticfalse"
+accessprivate*idText2l
+$javafx.beans.property.StringPropertyTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java0 0( ∂
+Gorg.jabref.gui.EntryTypeViewModel?focusAndSelectAllProperty@49.34:49.59VALUE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java1" 1(;"
+isFinaltrue"
+typeBooleanProperty"…
+declarationString≥<mark class="modifier">private </mark><mark class="modifier">final </mark>BooleanProperty <mark class="class-field">focusAndSelectAllProperty</mark> = new SimpleBooleanProperty();"
+isStaticfalse"
+accessprivate*focusAndSelectAllProperty2m
+%javafx.beans.property.BooleanPropertyTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java1 1(!Œ
+;org.jabref.gui.EntryTypeViewModel?fetcherWorker@50.37:50.50VARIABLE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java2% 2(2"
+isFinalfalse" 
+typeTask<Optional<BibEntry>>"ö
+declarationStringÑ<mark class="modifier">private </mark>Task<Optional<BibEntry>> <mark class="class-field">fetcherWorker</mark> = new FetcherWorker();"
+isStaticfalse"
+accessprivate*fetcherWorker2^
+javafx.concurrent.TaskTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java2 2(2c
+java.util.OptionalTYPE_ARGUMENT>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java2 2(2p
+org.jabref.model.entry.BibEntryTYPE_ARGUMENT>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java2 2("2á
+?org.jabref.gui.EntryTypeViewModel.FetcherWorker.FetcherWorker()CALL>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java29 2(F‘
+8org.jabref.gui.EntryTypeViewModel?libraryTab@51.29:51.39VALUE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java3 3('"
+isFinaltrue"
+type
+LibraryTab"ñ
+declarationStringÄ<mark class="modifier">private </mark><mark class="modifier">final </mark>LibraryTab <mark class="class-field">libraryTab</mark>"
+isStaticfalse"
+accessprivate*
+libraryTab2a
+org.jabref.gui.LibraryTabTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java3 3(Ê
+;org.jabref.gui.EntryTypeViewModel?dialogService@52.32:52.45VALUE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java4  4(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2d
+org.jabref.gui.DialogServiceTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java4 4(ˆ
+>org.jabref.gui.EntryTypeViewModel?idFieldValidator@53.28:53.44VALUE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java5 5(,"
+isFinaltrue"
+type	Validator"õ
+declarationStringÖ<mark class="modifier">private </mark><mark class="modifier">final </mark>Validator <mark class="class-field">idFieldValidator</mark>"
+isStaticfalse"
+accessprivate*idFieldValidator2s
++de.saxsys.mvvmfx.utils.validation.ValidatorTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java5 5(‡
+:org.jabref.gui.EntryTypeViewModel?stateManager@54.31:54.43VALUE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java6 6(+"
+isFinaltrue"
+typeStateManager"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>StateManager <mark class="class-field">stateManager</mark>"
+isStaticfalse"
+accessprivate*stateManager2c
+org.jabref.gui.StateManagerTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java6 6(Â
+:org.jabref.gui.EntryTypeViewModel?taskExecutor@55.31:55.43VALUE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java7 7(+"
+isFinaltrue"
+typeTaskExecutor"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2h
+ org.jabref.gui.util.TaskExecutorTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java7 7(Ö
+?org.jabref.gui.EntryTypeViewModel?fileUpdateMonitor@56.36:56.53VALUE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java8$ 8(5"
+isFinaltrue"
+typeFileUpdateMonitor"§
+declarationStringé<mark class="modifier">private </mark><mark class="modifier">final </mark>FileUpdateMonitor <mark class="class-field">fileUpdateMonitor</mark>"
+isStaticfalse"
+accessprivate*fileUpdateMonitor2o
+'org.jabref.model.util.FileUpdateMonitorTYPE>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java8 8(#æ
+/org.jabref.gui.EntryTypeViewModel.FetcherWorkerCLASS>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java (",
+package!org.jabref.gui.EntryTypeViewModel"
+isFinalfalse"
+inner classtrue"
+
+isAbstractfalse"¨
+declarationStringñ<mark class="modifier">private </mark><mark class="modifier">class </mark>FetcherWorker<mark class="modifier"> extends </mark>Task<Optional<BibEntry>>"
+accessprivate*FetcherWorker2á
+6org.jabref.gui.EntryTypeViewModel.FetcherWorker.call()DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaÑ% Ñ()2ñ
+Eorg.jabref.gui.EntryTypeViewModel.FetcherWorker?fetcher@128.31:128.38DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaÄ Ä(&2ó
+Forg.jabref.gui.EntryTypeViewModel.FetcherWorker?searchID@129.23:129.31DECLARATION@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaÅ Å(2`
+javafx.concurrent.TaskEXTEND>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java( (,2j
+java.util.OptionalEXTEND_TYPE_ARGUMENT>
+4src\main\java\org\jabref\gui\EntryTypeViewModel.java- (?ù
+6org.jabref.gui.EntryTypeViewModel.FetcherWorker.call()METHOD@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaÑ% Ñ()"
+isFinalfalse"˚
+declarationStringÂ<mark class="annotation">@Override</mark> <br><mark class="modifier">protected </mark>Optional&lt;BibEntry&gt; <mark class="method">call</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>FetcherException"
+isStaticfalse"
+access	protected"
+
+isAbstractfalse"
+typeOptional<BibEntry>*call2Ç
+8org.jabref.gui.EntryTypeViewModel.storeSelectedFetcher()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaÖ Ö( 2Ç
+8org.jabref.gui.EntryTypeViewModel.selectedItemProperty()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaÜ Ü(*2d
+java.lang.String.isEmpty()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaà à( 2d
+java.util.Optional.empty()CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaâ  â(%2ñ
+Lorg.jabref.logic.importer.IdBasedFetcher.performSearchById(java.lang.String)CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaã ã(,2è
+Eorg.jabref.gui.EntryTypeViewModel.FetcherWorker?fetcher@128.31:128.38CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaÜ Ü(2ê
+Forg.jabref.gui.EntryTypeViewModel.FetcherWorker?searchID@129.23:129.31CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaá á(2~
+4org.jabref.gui.EntryTypeViewModel?idText@48.33:48.39CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaá á(2ê
+Forg.jabref.gui.EntryTypeViewModel.FetcherWorker?searchID@129.23:129.31CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaà à(2è
+Eorg.jabref.gui.EntryTypeViewModel.FetcherWorker?fetcher@128.31:128.38CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaã ã(2ê
+Forg.jabref.gui.EntryTypeViewModel.FetcherWorker?searchID@129.23:129.31CALL@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaã- ã(52c
+java.util.OptionalRETURN_TYPE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaÑ Ñ(2y
+org.jabref.model.entry.BibEntryRETURN_TYPE_ARGUMENT@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaÑ Ñ(#¸
+Eorg.jabref.gui.EntryTypeViewModel.FetcherWorker?fetcher@128.31:128.38VARIABLE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaÄ Ä(&"
+isFinalfalse"
+typeIdBasedFetcher"ô
+declarationStringÉ<mark class="modifier">private </mark>IdBasedFetcher <mark class="class-field">fetcher</mark> = <mark class="modifier">null</mark>;"
+isStaticfalse"
+accessprivate*fetcher2r
+(org.jabref.logic.importer.IdBasedFetcherTYPE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaÄ Ä(µ
+Forg.jabref.gui.EntryTypeViewModel.FetcherWorker?searchID@129.23:129.31VARIABLE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaÅ Å("
+isFinalfalse"
+typeString"q
+declarationString\<mark class="modifier">private </mark>String <mark class="class-field">searchID</mark> = "";"
+isStaticfalse"
+accessprivate*searchID2Z
+java.lang.StringTYPE@
+4src\main\java\org\jabref\gui\EntryTypeViewModel.javaÅ Å(

@@ -1,0 +1,659 @@
+
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaÚ
+-org.jabref.logic.cleanup.MoveFilesCleanupTestCLASSJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java ("#
+packageorg.jabref.logic.cleanup"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"l
+declarationStringW<mark class="modifier"> </mark><mark class="modifier">class </mark>MoveFilesCleanupTest"
+accesspackage_private*MoveFilesCleanupTest2¢
+Gorg.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java(	 ((2î
+9org.jabref.logic.cleanup.MoveFilesCleanupTest.movesFile()DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaF	 F(2¶
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithMulitpleLinked()DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaS	 S($2¶
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithFileDirPattern()DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaj	 j($2±
+Vorg.jabref.logic.cleanup.MoveFilesCleanupTest.doesNotMoveFileWithEmptyFileDirPattern()DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaw	 w(/2≠
+Porg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithSubdirectoryPattern()DECLARATIONL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaÑ	 Ñ()2•
+Horg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithNoDirectory()DECLARATIONL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaë	 ë(!2¶
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest?defaultFileFolder@32.17:32.34DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java   ("2ü
+Dorg.jabref.logic.cleanup.MoveFilesCleanupTest?fileBefore@33.17:33.27DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java! !(2ú
+Aorg.jabref.logic.cleanup.MoveFilesCleanupTest?cleanup@34.29:34.36DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java" "($2ö
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java# #(2§
+Iorg.jabref.logic.cleanup.MoveFilesCleanupTest?filePreferences@36.28:36.43DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java$ $(+2§
+Iorg.jabref.logic.cleanup.MoveFilesCleanupTest?databaseContext@37.31:37.46DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java% %(.óN
+Gorg.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)METHODJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java(	 (("
+isFinalfalse"Ü
+declarationString <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">setUp</mark>(<mark class="annotation">@TempDir</mark> Path bibFolder)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*setUp2Ä
+,java.nio.file.Path.resolve(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java*& *(-2—
+}java.nio.file.Files.createDirectory(java.nio.file.Path, java.nio.file.attribute.FileAttribute<? extends java.lang.Object>...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java+ +(2Ä
+,java.nio.file.Path.resolve(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java.$ .(+2—
+}java.nio.file.Files.createDirectory(java.nio.file.Path, java.nio.file.attribute.FileAttribute<? extends java.lang.Object>...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java/ /(2Ä
+,java.nio.file.Path.resolve(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java0  0('2Ã
+xjava.nio.file.Files.createFile(java.nio.file.Path, java.nio.file.attribute.FileAttribute<? extends java.lang.Object>...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java1 1(2†
+Lorg.jabref.model.metadata.MetaData.setDefaultFileDirectory(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java4 4((2q
+java.nio.file.Path.toString()CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java4L 4(T2w
+#java.nio.file.Path.toAbsolutePath()CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java4; 4(I2Ã
+xjava.nio.file.Files.createFile(java.nio.file.Path, java.nio.file.attribute.FileAttribute<? extends java.lang.Object>...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java6 6(2Ä
+,java.nio.file.Path.resolve(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java6# 6(*2§
+Porg.jabref.model.database.BibDatabaseContext.setDatabasePath(java.nio.file.Path)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java7 7('2Ä
+,java.nio.file.Path.resolve(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java72 7(92î
+@org.jabref.model.entry.BibEntry.setCitationKey(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java: :(2≤
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java; ;(2≤
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java< <(2w
+#java.nio.file.Path.toAbsolutePath()CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java== =(K2≤
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java> >(2∂
+borg.jabref.logic.bibtex.FileFieldWriter.getStringRepresentation(org.jabref.model.entry.LinkedFile)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java>; >(R2û
+Jorg.jabref.preferences.FilePreferences.shouldStoreFilesRelativeToBibFile()CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaA A(>2Å
+-org.jabref.model.metadata.MetaData.MetaData()CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java3  3((2ﬂ
+äorg.jabref.model.database.BibDatabaseContext.BibDatabaseContext(org.jabref.model.database.BibDatabase, org.jabref.model.metadata.MetaData)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java5 5(02á
+3org.jabref.model.database.BibDatabase.BibDatabase()CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java55 5(@2~
+*org.jabref.model.entry.BibEntry.BibEntry()CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java9 9(2∏
+dorg.jabref.model.entry.LinkedFile.LinkedFile(java.lang.String, java.nio.file.Path, java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java=# =(-2Â
+êorg.jabref.logic.cleanup.MoveFilesCleanup.MoveFilesCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaB B(&2ü
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest?defaultFileFolder@32.17:32.34CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java* *(2•
+Qorg.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)!bibFolderCALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java* *(%2ü
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest?defaultFileFolder@32.17:32.34CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java+ +(/2•
+Qorg.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)!bibFolderCALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java. .(#2≤
+^org.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)?fileFolder@46.13:46.23CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java/ /((2ò
+Dorg.jabref.logic.cleanup.MoveFilesCleanupTest?fileBefore@33.17:33.27CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java0 0(2≤
+^org.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)?fileFolder@46.13:46.23CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java0 0(2ò
+Dorg.jabref.logic.cleanup.MoveFilesCleanupTest?fileBefore@33.17:33.27CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java1 1(#2∞
+\org.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)?metaData@51.17:51.25CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java4 4(2ü
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest?defaultFileFolder@32.17:32.34CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java4) 4(:2ù
+Iorg.jabref.logic.cleanup.MoveFilesCleanupTest?databaseContext@37.31:37.46CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java5 5(2∞
+\org.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)?metaData@51.17:51.25CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java5D 5(L2•
+Qorg.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)!bibFolderCALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java6 6("2ù
+Iorg.jabref.logic.cleanup.MoveFilesCleanupTest?databaseContext@37.31:37.46CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java7 7(2•
+Qorg.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)!bibFolderCALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java7( 7(12ì
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java9 9(2ì
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java: :(2ì
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java; ;(2ì
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java< <(2ò
+Dorg.jabref.logic.cleanup.MoveFilesCleanupTest?fileBefore@33.17:33.27CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java=2 =(<2ì
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java> >(2±
+]org.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)?fileField@61.19:61.28CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java>S >(\2ù
+Iorg.jabref.logic.cleanup.MoveFilesCleanupTest?filePreferences@36.28:36.43CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java@ @(2ù
+Iorg.jabref.logic.cleanup.MoveFilesCleanupTest?filePreferences@36.28:36.43CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaA A(2ï
+Aorg.jabref.logic.cleanup.MoveFilesCleanupTest?cleanup@34.29:34.36CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaB B(2ù
+Iorg.jabref.logic.cleanup.MoveFilesCleanupTest?databaseContext@37.31:37.46CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaB' B(62ù
+Iorg.jabref.logic.cleanup.MoveFilesCleanupTest?filePreferences@36.28:36.43CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaB8 B(G2™
+Qorg.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)!bibFolder	PARAMETERJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java( ((&2π
+^org.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)?fileFolder@46.13:46.23DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java. .(2∑
+\org.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)?metaData@51.17:51.25DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java3 3(2∏
+]org.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)?fileField@61.19:61.28DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java= =(2_
+voidRETURN_TYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java( ((˘
+^org.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)?fileFolder@46.13:46.23VARIABLEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java. .("
+typePath"
+isFinalfalse"Å
+declarationStringl<mark class="modifier"> </mark>Path <mark class="class-field">fileFolder</mark> = bibFolder.resolve("files")*
+fileFolder2f
+java.nio.file.PathTYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java. .(2Ä
+,java.nio.file.Path.resolve(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java.$ .(+2•
+Qorg.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)!bibFolderCALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java. .(#◊
+\org.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)?metaData@51.17:51.25VARIABLEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java3 3("
+typeMetaData"
+isFinalfalse"w
+declarationStringb<mark class="modifier"> </mark>MetaData <mark class="class-field">metaData</mark> = new MetaData()*metaData2v
+"org.jabref.model.metadata.MetaDataTYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java3 3(2Å
+-org.jabref.model.metadata.MetaData.MetaData()CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java3  3((ã
+]org.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)?fileField@61.19:61.28VARIABLEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java= =("
+type
+LinkedFile"
+isFinalfalse"‹
+declarationString∆<mark class="modifier"> </mark>LinkedFile <mark class="class-field">fileField</mark> = new LinkedFile(""<mark class="modifier">,</mark> fileBefore.toAbsolutePath()<mark class="modifier">,</mark> "")*	fileField2u
+!org.jabref.model.entry.LinkedFileTYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java= =(2w
+#java.nio.file.Path.toAbsolutePath()CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java== =(K2∏
+dorg.jabref.model.entry.LinkedFile.LinkedFile(java.lang.String, java.nio.file.Path, java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java=# =(-2ò
+Dorg.jabref.logic.cleanup.MoveFilesCleanupTest?fileBefore@33.17:33.27CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java=2 =(<ã
+Qorg.jabref.logic.cleanup.MoveFilesCleanupTest.setUp(java.nio.file.Path)!bibFolder	PARAMETERJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java( ((&"
+typePath"
+isFinalfalse"L
+declarationString7<mark class="annotation">@TempDir</mark> Path bibFolder*	bibFolder2f
+java.nio.file.PathTYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java( ((ù
+9org.jabref.logic.cleanup.MoveFilesCleanupTest.movesFile()METHODJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaF	 F("
+isFinalfalse"©
+declarationStringì<mark class="annotation">@Test</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">movesFile</mark>()"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*	movesFile2î
+@org.jabref.preferences.FilePreferences.getFileDirectoryPattern()CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaG G(42¶
+Rorg.jabref.logic.cleanup.MoveFilesCleanup.cleanup(org.jabref.model.entry.BibEntry)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaH H(2Ä
+,java.nio.file.Path.resolve(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaJ+ J(22l
+java.util.Optional.of(T)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaL L(2∂
+borg.jabref.logic.bibtex.FileFieldWriter.getStringRepresentation(org.jabref.model.entry.LinkedFile)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaL, L(C2ê
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaL\ L(^2†
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaM M(2ü
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaN N( 2ü
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaO O(2∏
+dorg.jabref.model.entry.LinkedFile.LinkedFile(java.lang.String, java.nio.file.Path, java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaLH L(R2ù
+Iorg.jabref.logic.cleanup.MoveFilesCleanupTest?filePreferences@36.28:36.43CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaG G(2ï
+Aorg.jabref.logic.cleanup.MoveFilesCleanupTest?cleanup@34.29:34.36CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaH H(2ì
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaH H(2ü
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest?defaultFileFolder@32.17:32.34CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaJ J(*2ì
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaM M(2ò
+Dorg.jabref.logic.cleanup.MoveFilesCleanupTest?fileBefore@33.17:33.27CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaN! N(+2£
+Oorg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFile()?fileAfter@74.13:74.22CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaO  O()2™
+Oorg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFile()?fileAfter@74.13:74.22DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaJ J(2_
+voidRETURN_TYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaF F(Ì
+Oorg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFile()?fileAfter@74.13:74.22VARIABLEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaJ J("
+typePath"
+isFinalfalse"ã
+declarationStringv<mark class="modifier"> </mark>Path <mark class="class-field">fileAfter</mark> = defaultFileFolder.resolve("test.pdf")*	fileAfter2f
+java.nio.file.PathTYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaJ J(2Ä
+,java.nio.file.Path.resolve(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaJ+ J(22ü
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest?defaultFileFolder@32.17:32.34CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaJ J(*ˇ1
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithMulitpleLinked()METHODJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaS	 S($"
+isFinalfalse"ª
+declarationString•<mark class="annotation">@Test</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">movesFileWithMulitpleLinked</mark>()"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*movesFileWithMulitpleLinked2w
+#java.nio.file.Path.toAbsolutePath()CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaT= T(K2≤
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaU U(2∆
+rorg.jabref.logic.bibtex.FileFieldWriter.getStringRepresentation(java.util.List<org.jabref.model.entry.LinkedFile>)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaU; U(R2q
+java.util.Arrays.asList(T...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaUZ U(`2ê
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaV( V(*2ê
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaX( X(*2î
+@org.jabref.preferences.FilePreferences.getFileDirectoryPattern()CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaZ Z(42¶
+Rorg.jabref.logic.cleanup.MoveFilesCleanup.cleanup(org.jabref.model.entry.BibEntry)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java[ [(2Ä
+,java.nio.file.Path.resolve(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java]+ ](22l
+java.util.Optional.of(T)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java_ _(2∆
+rorg.jabref.logic.bibtex.FileFieldWriter.getStringRepresentation(java.util.List<org.jabref.model.entry.LinkedFile>)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java_, _(C2q
+java.util.Arrays.asList(T...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java` `(%2ê
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaa8 a(:2ê
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javab8 b(:2ê
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javac8 c(:2†
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javad d(2ü
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javae e( 2ü
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaf f(2∏
+dorg.jabref.model.entry.LinkedFile.LinkedFile(java.lang.String, java.nio.file.Path, java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaT# T(-2∏
+dorg.jabref.model.entry.LinkedFile.LinkedFile(java.lang.String, java.nio.file.Path, java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaV V(2∏
+dorg.jabref.model.entry.LinkedFile.LinkedFile(java.lang.String, java.nio.file.Path, java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaX X(2∏
+dorg.jabref.model.entry.LinkedFile.LinkedFile(java.lang.String, java.nio.file.Path, java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaa$ a(.2∏
+dorg.jabref.model.entry.LinkedFile.LinkedFile(java.lang.String, java.nio.file.Path, java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javab$ b(.2∏
+dorg.jabref.model.entry.LinkedFile.LinkedFile(java.lang.String, java.nio.file.Path, java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javac$ c(.2ò
+Dorg.jabref.logic.cleanup.MoveFilesCleanupTest?fileBefore@33.17:33.27CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaT2 T(<2ì
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaU U(2µ
+aorg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithMulitpleLinked()?fileField@84.19:84.28CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaW W(2ù
+Iorg.jabref.logic.cleanup.MoveFilesCleanupTest?filePreferences@36.28:36.43CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaZ Z(2ï
+Aorg.jabref.logic.cleanup.MoveFilesCleanupTest?cleanup@34.29:34.36CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java[ [(2ì
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java[ [(2ü
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest?defaultFileFolder@32.17:32.34CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java] ](*2ì
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javad d(2ò
+Dorg.jabref.logic.cleanup.MoveFilesCleanupTest?fileBefore@33.17:33.27CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javae! e(+2µ
+aorg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithMulitpleLinked()?fileAfter@93.13:93.22CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaf  f()2º
+aorg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithMulitpleLinked()?fileField@84.19:84.28DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaT T(2º
+aorg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithMulitpleLinked()?fileAfter@93.13:93.22DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java] ](2_
+voidRETURN_TYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaS S(è
+aorg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithMulitpleLinked()?fileField@84.19:84.28VARIABLEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaT T("
+type
+LinkedFile"
+isFinalfalse"‹
+declarationString∆<mark class="modifier"> </mark>LinkedFile <mark class="class-field">fileField</mark> = new LinkedFile(""<mark class="modifier">,</mark> fileBefore.toAbsolutePath()<mark class="modifier">,</mark> "")*	fileField2u
+!org.jabref.model.entry.LinkedFileTYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaT T(2w
+#java.nio.file.Path.toAbsolutePath()CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaT= T(K2∏
+dorg.jabref.model.entry.LinkedFile.LinkedFile(java.lang.String, java.nio.file.Path, java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaT# T(-2ò
+Dorg.jabref.logic.cleanup.MoveFilesCleanupTest?fileBefore@33.17:33.27CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaT2 T(<ˇ
+aorg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithMulitpleLinked()?fileAfter@93.13:93.22VARIABLEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java] ]("
+typePath"
+isFinalfalse"ã
+declarationStringv<mark class="modifier"> </mark>Path <mark class="class-field">fileAfter</mark> = defaultFileFolder.resolve("test.pdf")*	fileAfter2f
+java.nio.file.PathTYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java] ](2Ä
+,java.nio.file.Path.resolve(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java]+ ](22ü
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest?defaultFileFolder@32.17:32.34CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java] ](*˛
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithFileDirPattern()METHODJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaj	 j($"
+isFinalfalse"ª
+declarationString•<mark class="annotation">@Test</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">movesFileWithFileDirPattern</mark>()"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*movesFileWithFileDirPattern2î
+@org.jabref.preferences.FilePreferences.getFileDirectoryPattern()CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javak k(42¶
+Rorg.jabref.logic.cleanup.MoveFilesCleanup.cleanup(org.jabref.model.entry.BibEntry)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javal l(2Ä
+,java.nio.file.Path.resolve(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javan; n(B2Ä
+,java.nio.file.Path.resolve(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javan+ n(22l
+java.util.Optional.of(T)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javap p(2∂
+borg.jabref.logic.bibtex.FileFieldWriter.getStringRepresentation(org.jabref.model.entry.LinkedFile)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javap, p(C2ê
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javap\ p(^2†
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaq q(2ü
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javar r( 2ü
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javas s(2∏
+dorg.jabref.model.entry.LinkedFile.LinkedFile(java.lang.String, java.nio.file.Path, java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javapH p(R2ù
+Iorg.jabref.logic.cleanup.MoveFilesCleanupTest?filePreferences@36.28:36.43CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javak k(2ï
+Aorg.jabref.logic.cleanup.MoveFilesCleanupTest?cleanup@34.29:34.36CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javal l(2ì
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javal l(2ü
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest?defaultFileFolder@32.17:32.34CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javan n(*2ì
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaq q(2ò
+Dorg.jabref.logic.cleanup.MoveFilesCleanupTest?fileBefore@33.17:33.27CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javar! r(+2∑
+corg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithFileDirPattern()?fileAfter@110.13:110.22CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javas  s()2æ
+corg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithFileDirPattern()?fileAfter@110.13:110.22DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javan n(2_
+voidRETURN_TYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaj j(ï
+corg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithFileDirPattern()?fileAfter@110.13:110.22VARIABLEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javan n("
+typePath"
+isFinalfalse"ú
+declarationStringÜ<mark class="modifier"> </mark>Path <mark class="class-field">fileAfter</mark> = defaultFileFolder.resolve("Misc").resolve("test.pdf")*	fileAfter2f
+java.nio.file.PathTYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javan n(2Ä
+,java.nio.file.Path.resolve(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javan; n(B2Ä
+,java.nio.file.Path.resolve(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javan+ n(22ü
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest?defaultFileFolder@32.17:32.34CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javan n(*∂
+Vorg.jabref.logic.cleanup.MoveFilesCleanupTest.doesNotMoveFileWithEmptyFileDirPattern()METHODJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaw	 w(/"
+isFinalfalse"∆
+declarationString∞<mark class="annotation">@Test</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">doesNotMoveFileWithEmptyFileDirPattern</mark>()"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*&doesNotMoveFileWithEmptyFileDirPattern2î
+@org.jabref.preferences.FilePreferences.getFileDirectoryPattern()CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javax x(42¶
+Rorg.jabref.logic.cleanup.MoveFilesCleanup.cleanup(org.jabref.model.entry.BibEntry)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javay y(2Ä
+,java.nio.file.Path.resolve(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java{+ {(22l
+java.util.Optional.of(T)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java} }(2∂
+borg.jabref.logic.bibtex.FileFieldWriter.getStringRepresentation(org.jabref.model.entry.LinkedFile)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java}, }(C2ê
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java}\ }(^2†
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java~ ~(2ü
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java ( 2°
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaÄ Ä(2∏
+dorg.jabref.model.entry.LinkedFile.LinkedFile(java.lang.String, java.nio.file.Path, java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java}H }(R2ù
+Iorg.jabref.logic.cleanup.MoveFilesCleanupTest?filePreferences@36.28:36.43CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javax x(2ï
+Aorg.jabref.logic.cleanup.MoveFilesCleanupTest?cleanup@34.29:34.36CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javay y(2ì
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javay y(2ü
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest?defaultFileFolder@32.17:32.34CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java{ {(*2ì
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java~ ~(2ò
+Dorg.jabref.logic.cleanup.MoveFilesCleanupTest?fileBefore@33.17:33.27CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java! (+2ƒ
+norg.jabref.logic.cleanup.MoveFilesCleanupTest.doesNotMoveFileWithEmptyFileDirPattern()?fileAfter@123.13:123.22CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaÄ  Ä()2…
+norg.jabref.logic.cleanup.MoveFilesCleanupTest.doesNotMoveFileWithEmptyFileDirPattern()?fileAfter@123.13:123.22DECLARATIONJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java{ {(2_
+voidRETURN_TYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaw w(å
+norg.jabref.logic.cleanup.MoveFilesCleanupTest.doesNotMoveFileWithEmptyFileDirPattern()?fileAfter@123.13:123.22VARIABLEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java{ {("
+typePath"
+isFinalfalse"ã
+declarationStringv<mark class="modifier"> </mark>Path <mark class="class-field">fileAfter</mark> = defaultFileFolder.resolve("test.pdf")*	fileAfter2f
+java.nio.file.PathTYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java{ {(2Ä
+,java.nio.file.Path.resolve(java.lang.String)CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java{+ {(22ü
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest?defaultFileFolder@32.17:32.34CALLJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java{ {(*∆
+Porg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithSubdirectoryPattern()METHODL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaÑ	 Ñ()"
+isFinalfalse"¿
+declarationString™<mark class="annotation">@Test</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">movesFileWithSubdirectoryPattern</mark>()"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid* movesFileWithSubdirectoryPattern2ñ
+@org.jabref.preferences.FilePreferences.getFileDirectoryPattern()CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaÖ Ö(42®
+Rorg.jabref.logic.cleanup.MoveFilesCleanup.cleanup(org.jabref.model.entry.BibEntry)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaÜ Ü(2Ç
+,java.nio.file.Path.resolve(java.lang.String)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaàK à(R2Ç
+,java.nio.file.Path.resolve(java.lang.String)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaà; à(B2Ç
+,java.nio.file.Path.resolve(java.lang.String)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaà+ à(22n
+java.util.Optional.of(T)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaä ä(2∏
+borg.jabref.logic.bibtex.FileFieldWriter.getStringRepresentation(org.jabref.model.entry.LinkedFile)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaä, ä(C2í
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaä\ ä(^2¢
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaã ã(2°
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaå å( 2°
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaç ç(2∫
+dorg.jabref.model.entry.LinkedFile.LinkedFile(java.lang.String, java.nio.file.Path, java.lang.String)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaäH ä(R2ü
+Iorg.jabref.logic.cleanup.MoveFilesCleanupTest?filePreferences@36.28:36.43CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaÖ Ö(2ó
+Aorg.jabref.logic.cleanup.MoveFilesCleanupTest?cleanup@34.29:34.36CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaÜ Ü(2ï
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaÜ Ü(2°
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest?defaultFileFolder@32.17:32.34CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaà à(*2ï
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaã ã(2ö
+Dorg.jabref.logic.cleanup.MoveFilesCleanupTest?fileBefore@33.17:33.27CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaå! å(+2æ
+horg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithSubdirectoryPattern()?fileAfter@136.13:136.22CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaç  ç()2≈
+horg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithSubdirectoryPattern()?fileAfter@136.13:136.22DECLARATIONL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaà à(2a
+voidRETURN_TYPEL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaÑ Ñ(π
+horg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithSubdirectoryPattern()?fileAfter@136.13:136.22VARIABLEL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaà à("
+typePath"
+isFinalfalse"¨
+declarationStringñ<mark class="modifier"> </mark>Path <mark class="class-field">fileAfter</mark> = defaultFileFolder.resolve("Misc").resolve("1989").resolve("test.pdf")*	fileAfter2h
+java.nio.file.PathTYPEL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaà à(2Ç
+,java.nio.file.Path.resolve(java.lang.String)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaàK à(R2Ç
+,java.nio.file.Path.resolve(java.lang.String)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaà; à(B2Ç
+,java.nio.file.Path.resolve(java.lang.String)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaà+ à(22°
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest?defaultFileFolder@32.17:32.34CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaà à(*û
+Horg.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithNoDirectory()METHODL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaë	 ë(!"
+isFinalfalse"∏
+declarationString¢<mark class="annotation">@Test</mark> <br><mark class="modifier"> </mark><mark class="modifier">void</mark> <mark class="method">movesFileWithNoDirectory</mark>()"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typevoid*movesFileWithNoDirectory2≤
+\org.jabref.model.database.BibDatabaseContext.setMetaData(org.jabref.model.metadata.MetaData)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaí í(#2ñ
+@org.jabref.preferences.FilePreferences.getFileDirectoryPattern()CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaì ì(42®
+Rorg.jabref.logic.cleanup.MoveFilesCleanup.cleanup(org.jabref.model.entry.BibEntry)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaî, î(32w
+!java.util.Collections.emptyList()CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaï! ï(*2É
+-org.jabref.model.metadata.MetaData.MetaData()CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaí( í(02ü
+Iorg.jabref.logic.cleanup.MoveFilesCleanupTest?databaseContext@37.31:37.46CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaí í(2ü
+Iorg.jabref.logic.cleanup.MoveFilesCleanupTest?filePreferences@36.28:36.43CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaì ì(2ó
+Aorg.jabref.logic.cleanup.MoveFilesCleanupTest?cleanup@34.29:34.36CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaî$ î(+2ï
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaî4 î(92¥
+^org.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithNoDirectory()?changes@148.26:148.33CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaï. ï(52ª
+^org.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithNoDirectory()?changes@148.26:148.33DECLARATIONL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaî î(!2a
+voidRETURN_TYPEL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaë ë(∏
+^org.jabref.logic.cleanup.MoveFilesCleanupTest.movesFileWithNoDirectory()?changes@148.26:148.33VARIABLEL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaî î(!"
+typeList<FieldChange>"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>List<FieldChange> <mark class="class-field">changes</mark> = cleanup.cleanup(entry)*changes2d
+java.util.ListTYPEL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaî î(2{
+org.jabref.model.FieldChangeTYPE_ARGUMENTL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaî î(2®
+Rorg.jabref.logic.cleanup.MoveFilesCleanup.cleanup(org.jabref.model.entry.BibEntry)CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaî, î(32ó
+Aorg.jabref.logic.cleanup.MoveFilesCleanupTest?cleanup@34.29:34.36CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaî$ î(+2ï
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26CALLL
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.javaî4 î(9ÿ
+Korg.jabref.logic.cleanup.MoveFilesCleanupTest?defaultFileFolder@32.17:32.34VARIABLEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java   (""
+isFinalfalse"
+typePath"r
+declarationString]<mark class="modifier">private </mark>Path <mark class="class-field">defaultFileFolder</mark>"
+isStaticfalse"
+accessprivate*defaultFileFolder2f
+java.nio.file.PathTYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java   (√
+Dorg.jabref.logic.cleanup.MoveFilesCleanupTest?fileBefore@33.17:33.27VARIABLEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java! !("
+isFinalfalse"
+typePath"k
+declarationStringV<mark class="modifier">private </mark>Path <mark class="class-field">fileBefore</mark>"
+isStaticfalse"
+accessprivate*
+fileBefore2f
+java.nio.file.PathTYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java! !(È
+Aorg.jabref.logic.cleanup.MoveFilesCleanupTest?cleanup@34.29:34.36VARIABLEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java" "($"
+isFinalfalse"
+typeMoveFilesCleanup"t
+declarationString_<mark class="modifier">private </mark>MoveFilesCleanup <mark class="class-field">cleanup</mark>"
+isStaticfalse"
+accessprivate*cleanup2}
+)org.jabref.logic.cleanup.MoveFilesCleanupTYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java" "(…
+?org.jabref.logic.cleanup.MoveFilesCleanupTest?entry@35.21:35.26VARIABLEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java# #("
+isFinalfalse"
+typeBibEntry"j
+declarationStringU<mark class="modifier">private </mark>BibEntry <mark class="class-field">entry</mark>"
+isStaticfalse"
+accessprivate*entry2s
+org.jabref.model.entry.BibEntryTYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java# #(¸
+Iorg.jabref.logic.cleanup.MoveFilesCleanupTest?filePreferences@36.28:36.43VARIABLEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java$ $(+"
+isFinalfalse"
+typeFilePreferences"{
+declarationStringf<mark class="modifier">private </mark>FilePreferences <mark class="class-field">filePreferences</mark>"
+isStaticfalse"
+accessprivate*filePreferences2z
+&org.jabref.preferences.FilePreferencesTYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java$ $(â
+Iorg.jabref.logic.cleanup.MoveFilesCleanupTest?databaseContext@37.31:37.46VARIABLEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java% %(."
+isFinalfalse"
+typeBibDatabaseContext"~
+declarationStringi<mark class="modifier">private </mark>BibDatabaseContext <mark class="class-field">databaseContext</mark>"
+isStaticfalse"
+accessprivate*databaseContext2Ä
+,org.jabref.model.database.BibDatabaseContextTYPEJ
+@src\test\java\org\jabref\logic\cleanup\MoveFilesCleanupTest.java% %(

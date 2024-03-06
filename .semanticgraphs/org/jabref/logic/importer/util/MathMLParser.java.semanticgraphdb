@@ -1,0 +1,290 @@
+
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java›
++org.jabref.logic.importer.util.MathMLParserCLASSH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java (")
+packageorg.jabref.logic.importer.util"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"j
+declarationStringU<mark class="modifier">public </mark><mark class="modifier">class </mark>MathMLParser"
+accesspublic*MathMLParser2¨
+Sorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java! !(2ó
+>org.jabref.logic.importer.util.MathMLParser?LOGGER@23.32:23.38DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java  (&2ü
+Forg.jabref.logic.importer.util.MathMLParser?XSLT_FILE_PATH@24.32:24.46DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java  (.ˆJ
+Sorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)METHODH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java! !("
+isFinalfalse"†
+declarationStringä<mark class="modifier">public </mark><mark class="modifier">static </mark>String <mark class="method">parse</mark>(XMLStreamReader reader)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeString*parse2´
+Yorg.jabref.logic.importer.util.StaxParser.getXMLContent(javax.xml.stream.XMLStreamReader)CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java'$ '(12
+-java.lang.Class.getResource(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java,2 ,(=2k
+java.net.URL.openStream()CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java-V -(`2u
+#java.util.Objects.requireNonNull(T)CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java-9 -(G2o
+java.net.URI.toASCIIString()CALLI
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java-y -(Ü2f
+java.net.URL.toURI()CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java-q -(v2Ü
+4javax.xml.transform.TransformerFactory.newInstance()CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java/G /(R2£
+Qjavax.xml.transform.TransformerFactory.newTransformer(javax.xml.transform.Source)CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java09 0(G2≥
+ajavax.xml.transform.Transformer.transform(javax.xml.transform.Source, javax.xml.transform.Result)CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java4 4(!2s
+!java.lang.StringBuffer.toString()CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java6- 6(52r
+ java.io.StringWriter.getBuffer()CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java6! 6(*2ñ
+Djavax.xml.transform.stream.StreamSource.StreamSource(java.io.Reader)CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java*# *(/2Ö
+3java.io.StringReader.StringReader(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java*4 *(@2≠
+[javax.xml.transform.stream.StreamSource.StreamSource(java.io.InputStream, java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java-$ -(02u
+#java.io.StringWriter.StringWriter()CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java2& 2(22ñ
+Djavax.xml.transform.stream.StreamResult.StreamResult(java.io.Writer)CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java3  3(,2º
+jorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xmlContent@34.15:34.25CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java' '(2¨
+Zorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)!readerCALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java'2 '(82º
+jorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xmlContent@34.15:34.25CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java*A *(K2ò
+Forg.jabref.logic.importer.util.MathMLParser?XSLT_FILE_PATH@24.32:24.46CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java,> ,(L2æ
+lorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xsltResource@44.16:44.28CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java-H -(T2æ
+lorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xsltResource@44.16:44.28CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java-d -(p2ƒ
+rorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?transformerFactory@47.31:47.49CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java0& 0(82º
+jorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xsltSource@45.19:45.29CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java0H 0(R2∏
+forg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?writer@50.25:50.31CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java3- 3(32Ω
+korg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?transformer@48.24:48.35CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java4 4(2ª
+iorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xmlSource@42.19:42.28CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java4" 4(+2∏
+forg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?result@51.19:51.25CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java4- 4(32Ω
+korg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?latexResult@35.15:35.26CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java6 6(2∏
+forg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?writer@50.25:50.31CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java6 6( 2ê
+>org.jabref.logic.importer.util.MathMLParser?LOGGER@23.32:23.38CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java8 8(2≥
+aorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?e@55.36:55.37CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java8K 8(L2ê
+>org.jabref.logic.importer.util.MathMLParser?LOGGER@23.32:23.38CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java: :(2≥
+aorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?e@57.29:57.30CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java:6 :(72ê
+>org.jabref.logic.importer.util.MathMLParser?LOGGER@23.32:23.38CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java< <(2≥
+aorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?e@59.36:59.37CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java<4 <(52ê
+>org.jabref.logic.importer.util.MathMLParser?LOGGER@23.32:23.38CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java> >(2≥
+aorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?e@61.38:61.39CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java>H >(I2Ω
+korg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?latexResult@35.15:35.26CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.javaA A(2±
+Zorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)!reader	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java!/ !(52√
+jorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xmlContent@34.15:34.25DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java" "(2ƒ
+korg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?latexResult@35.15:35.26DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java# #(2¬
+iorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xmlSource@42.19:42.28DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java* *(2≈
+lorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xsltResource@44.16:44.28DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java, ,(2√
+jorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xsltSource@45.19:45.29DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java- -(2À
+rorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?transformerFactory@47.31:47.49DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java/ /(12ƒ
+korg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?transformer@48.24:48.35DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java0 0(#2ø
+forg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?writer@50.25:50.31DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java2 2(2ø
+forg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?result@51.19:51.25DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java3 3(2∫
+aorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?e@55.36:55.37DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java7$ 7(%2∫
+aorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?e@57.29:57.30DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java9 9(2∫
+aorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?e@59.36:59.37DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java;$ ;(%2∫
+aorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?e@61.38:61.39DECLARATIONH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java=& =('2i
+java.lang.StringRETURN_TYPEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java! !(ø
+jorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xmlContent@34.15:34.25VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java" "("
+typeString"
+isFinalfalse"k
+declarationStringV<mark class="modifier"> </mark>String <mark class="class-field">xmlContent</mark> = ""*
+xmlContent2b
+java.lang.StringTYPEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java" "(‚
+korg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?latexResult@35.15:35.26VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java# #("
+typeString"
+isFinalfalse"ã
+declarationStringv<mark class="modifier"> </mark>String <mark class="class-field">latexResult</mark> = "<Unsupported MathML expression>"*latexResult2b
+java.lang.StringTYPEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java# #(‘
+iorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xmlSource@42.19:42.28VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java* *("
+typeSource"
+isFinalfalse"ó
+declarationStringÅ<mark class="modifier"> </mark>Source <mark class="class-field">xmlSource</mark> = new StreamSource(new StringReader(xmlContent))*	xmlSource2l
+javax.xml.transform.SourceTYPEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java* *(2ñ
+Djavax.xml.transform.stream.StreamSource.StreamSource(java.io.Reader)CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java*# *(/2Ö
+3java.io.StringReader.StringReader(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java*4 *(@2º
+jorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xmlContent@34.15:34.25CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java*A *(KÖ
+lorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xsltResource@44.16:44.28VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java, ,("
+typeURL"
+isFinalfalse"ó
+declarationStringÅ<mark class="modifier"> </mark>URL <mark class="class-field">xsltResource</mark> = MathMLParser.class.getResource(XSLT_FILE_PATH)*xsltResource2^
+java.net.URLTYPEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java, ,(2
+-java.lang.Class.getResource(java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java,2 ,(=2ò
+Forg.jabref.logic.importer.util.MathMLParser?XSLT_FILE_PATH@24.32:24.46CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java,> ,(Lø
+jorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xsltSource@45.19:45.29VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java- -("
+typeSource"
+isFinalfalse"Ò
+declarationString€<mark class="modifier"> </mark>Source <mark class="class-field">xsltSource</mark> = new StreamSource(Objects.requireNonNull(xsltResource).openStream()<mark class="modifier">,</mark> xsltResource.toURI().toASCIIString())*
+xsltSource2l
+javax.xml.transform.SourceTYPEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java- -(2k
+java.net.URL.openStream()CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java-V -(`2u
+#java.util.Objects.requireNonNull(T)CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java-9 -(G2o
+java.net.URI.toASCIIString()CALLI
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java-y -(Ü2f
+java.net.URL.toURI()CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java-q -(v2≠
+[javax.xml.transform.stream.StreamSource.StreamSource(java.io.InputStream, java.lang.String)CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java-$ -(02æ
+lorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xsltResource@44.16:44.28CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java-H -(T2æ
+lorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xsltResource@44.16:44.28CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java-d -(pÆ
+rorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?transformerFactory@47.31:47.49VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java/ /(1"
+typeTransformerFactory"
+isFinalfalse"û
+declarationStringà<mark class="modifier"> </mark>TransformerFactory <mark class="class-field">transformerFactory</mark> = TransformerFactory.newInstance()*transformerFactory2x
+&javax.xml.transform.TransformerFactoryTYPEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java/ /(2Ü
+4javax.xml.transform.TransformerFactory.newInstance()CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java/G /(R¥
+korg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?transformer@48.24:48.35VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java0 0(#"
+typeTransformer"
+isFinalfalse"ù
+declarationStringá<mark class="modifier"> </mark>Transformer <mark class="class-field">transformer</mark> = transformerFactory.newTransformer(xsltSource)*transformer2q
+javax.xml.transform.TransformerTYPEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java0 0(2£
+Qjavax.xml.transform.TransformerFactory.newTransformer(javax.xml.transform.Source)CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java09 0(G2ƒ
+rorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?transformerFactory@47.31:47.49CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java0& 0(82º
+jorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?xsltSource@45.19:45.29CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java0H 0(R 
+forg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?writer@50.25:50.31VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java2 2("
+typeStringWriter"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>StringWriter <mark class="class-field">writer</mark> = new StringWriter()*writer2f
+java.io.StringWriterTYPEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java2 2(2u
+#java.io.StringWriter.StringWriter()CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java2& 2(2ß
+forg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?result@51.19:51.25VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java3 3("
+typeResult"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>Result <mark class="class-field">result</mark> = new StreamResult(writer)*result2l
+javax.xml.transform.ResultTYPEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java3 3(2ñ
+Djavax.xml.transform.stream.StreamResult.StreamResult(java.io.Writer)CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java3  3(,2∏
+forg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?writer@50.25:50.31CALLH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java3- 3(3Ö
+Zorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)!reader	PARAMETERH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java!/ !(5"
+typeXMLStreamReader"
+isFinalfalse"+
+declarationStringXMLStreamReader reader*reader2r
+ javax.xml.stream.XMLStreamReaderTYPEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java! !(.ä
+aorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?e@55.36:55.37VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java7$ 7(%"
+typeXMLStreamException"
+isFinalfalse")
+declarationStringXMLStreamException e*e2u
+#javax.xml.stream.XMLStreamExceptionTYPEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java7 7(#Ï
+aorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?e@57.29:57.30VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java9 9("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2e
+java.io.IOExceptionTYPEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java9 9(Ç
+aorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?e@59.36:59.37VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java;$ ;(%"
+typeURISyntaxException"
+isFinalfalse")
+declarationStringURISyntaxException e*e2m
+java.net.URISyntaxExceptionTYPEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java; ;(#ì
+aorg.jabref.logic.importer.util.MathMLParser.parse(javax.xml.stream.XMLStreamReader)?e@61.38:61.39VARIABLEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java=& =('"
+typeTransformerException"
+isFinalfalse"+
+declarationStringTransformerException e*e2z
+(javax.xml.transform.TransformerExceptionTYPEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java= =(%®
+>org.jabref.logic.importer.util.MathMLParser?LOGGER@23.32:23.38VALUEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java  (&"
+isFinaltrue"
+typeLogger"‚
+declarationStringÃ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(MathMLParser.class);"
+isStatictrue"
+accessprivate*LOGGER2b
+org.slf4j.LoggerTYPEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java (¥
+Forg.jabref.logic.importer.util.MathMLParser?XSLT_FILE_PATH@24.32:24.46VALUEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java  (."
+isFinaltrue"
+typeString"ﬁ
+declarationString»<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">XSLT_FILE_PATH</mark> = "/xslt/mathml_latex/mmltex.xsl";"
+isStatictrue"
+accessprivate*XSLT_FILE_PATH2b
+java.lang.StringTYPEH
+>src\main\java\org\jabref\logic\importer\util\MathMLParser.java (

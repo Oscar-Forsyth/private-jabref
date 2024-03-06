@@ -1,0 +1,1271 @@
+
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¶D
+9org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModelCLASSV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java1 1()"'
+packageorg.jabref.gui.externalfiles"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"z
+declarationStringe<mark class="modifier">public </mark><mark class="modifier">class </mark>UnlinkedFilesDialogViewModel"
+accesspublic*UnlinkedFilesDialogViewModel2ç
+•org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaQ Q('2Æ
+Gorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startSearch()DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javau u(2∞
+Gorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startImport()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaé é(2∞
+Gorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java´ ´(2≥
+Jorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getFileFilters()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java 2  (@2≥
+Jorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getDateFilters()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaŒ% Œ(32Ø
+Forg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getSorters()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java“. “(82∞
+Gorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.cancelTasks()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java÷ ÷(2∏
+Oorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.browseFileDirectory()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaﬂ ﬂ(#2∑
+Norg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getSearchDirectory()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÍ Í(#2µ
+Lorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.resultTableItems()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java˜: ˜(J2µ
+Lorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.treeRootProperty()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java˚7 ˚(G2æ
+Uorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.selectedExtensionProperty()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaˇ2 ˇ(K2π
+Porg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.selectedDateProperty()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÉ% É(92π
+Porg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.selectedSortProperty()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaá. á(B2∫
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.directoryPathProperty()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaã ã(/2¬
+Yorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.directoryPathValidationStatus()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaè è(92∫
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.progressValueProperty()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaì ì(/2π
+Porg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.progressTextProperty()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaó ó(.2∑
+Norg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.taskActiveProperty()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaõ õ(-2º
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.checkedFileListProperty()DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaü; ü(R2≥
+Lorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?LOGGER@51.32:51.38DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java3  3(&2∫
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?importHandler@53.32:53.45DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java5  5(-2∫
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?directoryPath@54.33:54.46DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java6! 6(.2æ
+Worg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?selectedExtension@55.57:55.74DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java79 7(J2π
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?selectedDate@56.44:56.56DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java8, 8(82π
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?selectedSort@57.53:57.65DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java95 9(A2Ω
+Vorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?treeRootProperty@59.62:59.78DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java;> ;(N2ƒ
+]org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?checkedFileListProperty@60.66:60.89DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java<B <(Y2ø
+Xorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?taskActiveProperty@62.34:62.52DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java>" >(42¬
+[org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?progressValueProperty@63.33:63.54DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java?! ?(62¡
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?progressTextProperty@64.33:64.53DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java@! @(52∑
+Porg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?resultList@66.65:66.75DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaBA B(K2ª
+Torg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?fileFilterList@67.57:67.71DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaC9 C(G2ª
+Torg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?dateFilterList@68.44:68.58DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaD, D(:2π
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?fileSortList@69.53:69.65DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaE5 E(A2∫
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?dialogService@71.32:71.45DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaG  G(-2∏
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?preferences@72.37:72.48DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaH% H(02¬
+[org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?findUnlinkedFilesTask@73.46:73.67DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaI. I(C2∆
+_org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?importFilesBackgroundTask@74.65:74.90DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaJA J(Z2∏
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?bibDatabase@76.37:76.48DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaL% L(02π
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?taskExecutor@77.31:77.43DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaM M(+2√
+\org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?scanDirectoryValidator@79.49:79.71DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaO1 O(GõÇ
+•org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)CONSTRUCTORV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaQ Q('"–
+declarationString∫<mark class="modifier">public </mark><mark class="method">UnlinkedFilesDialogViewModel</mark>(DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> UndoManager undoManager<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileUpdateMonitor<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferences<mark class="modifier"><mark class="modifier">,</mark></mark> StateManager stateManager<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor)*UnlinkedFilesDialogViewModel2®
+Hjava.util.Optional.orElseThrow(java.util.function.Supplier<? extends X>)CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaZ< Z(G2è
+/org.jabref.gui.StateManager.getActiveDatabase()CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaZ( Z(92û
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaeR e(d2û
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javafN f(`2û
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javagR g(d2û
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javahM h(_2è
+/org.jabref.gui.externalfiles.DateRange.values()CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javajJ j(P2ò
+8org.jabref.gui.externalfiles.ExternalFileSorter.values()CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javalQ l(W2∞
+Pjava.nio.file.Files.isDirectory(java.nio.file.Path, java.nio.file.LinkOption...)CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javan6 n(A2ú
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javanG n(I2Æ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javap5 p(92z
+java.util.Optional.empty()CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javar+ r(02•
+Ejava.lang.NullPointerException.NullPointerException(java.lang.String)CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaZR Z(f2ñ
+µorg.jabref.gui.externalfiles.ImportHandler.ImportHandler(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.model.util.FileUpdateMonitor, javax.swing.undo.UndoManager, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.gui.util.TaskExecutor)CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java[ [()2Û
+íorg.jabref.gui.externalfiles.FileExtensionViewModel.FileExtensionViewModel(org.jabref.logic.util.FileType, org.jabref.preferences.FilePreferences)CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javae e(*2Û
+íorg.jabref.gui.externalfiles.FileExtensionViewModel.FileExtensionViewModel(org.jabref.logic.util.FileType, org.jabref.preferences.FilePreferences)CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaf f(*2Û
+íorg.jabref.gui.externalfiles.FileExtensionViewModel.FileExtensionViewModel(org.jabref.logic.util.FileType, org.jabref.preferences.FilePreferences)CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javag g(*2Û
+íorg.jabref.gui.externalfiles.FileExtensionViewModel.FileExtensionViewModel(org.jabref.logic.util.FileType, org.jabref.preferences.FilePreferences)CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javah h(*2í
+±org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!preferencesCALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaW W(&2î
+≥org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!dialogServiceCALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaX X(*2ì
+≤org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!taskExecutorCALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaY Y((2ì
+≤org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!stateManagerCALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaZ Z('2≥
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?importHandler@53.32:53.45CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java[ [(2±
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?bibDatabase@76.37:76.48CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java\ \(2í
+±org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!preferencesCALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java] ](2ò
+∑org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!fileUpdateMonitorCALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java^ ^(!2í
+±org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!undoManagerCALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java_ _(2ì
+≤org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!stateManagerCALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java` `(2î
+≥org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!dialogServiceCALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaa a(2ì
+≤org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!taskExecutorCALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javab b(2í
+±org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!preferencesCALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaeF e(Q2í
+±org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!preferencesCALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javafB f(M2í
+±org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!preferencesCALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javagF g(Q2í
+±org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!preferencesCALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javahA h(L2ô
+∏org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)?path@110.40:110.44CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javanJ n(N2º
+\org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?scanDirectoryValidator@79.49:79.71CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javao o(2≥
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?directoryPath@54.33:54.46CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javao> o(K2†
+øorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)?isDirectory@110.26:110.37CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaoM o(X2∂
+Vorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?treeRootProperty@59.62:59.78CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javar r(2±
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?preferences@72.37:72.48CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaW W(2≥
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?dialogService@71.32:71.45CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaX X(2≤
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?taskExecutor@77.31:77.43CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaY Y(2±
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?bibDatabase@76.37:76.48CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaZ Z(2¥
+Torg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?fileFilterList@67.57:67.71CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javad d(2¥
+Torg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?dateFilterList@68.44:68.58CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaj j(2≤
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?fileSortList@69.53:69.65CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javal l(2ô
+≥org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETERV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaQ6 Q(C2ó
+±org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!undoManager	PARAMETERV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaR4 R(?2ù
+∑org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!fileUpdateMonitor	PARAMETERV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaS: S(K2ó
+±org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!preferences	PARAMETERV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaT; T(F2ò
+≤org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!stateManager	PARAMETERV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaU5 U(A2ò
+≤org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETERV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaV5 V(A2ß
+øorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)?isDirectory@110.26:110.37DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javan n(%2†
+∏org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)?path@110.40:110.44DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javan( n(,2†
+9org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModelRETURN_TYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaQ Q('Ê
+øorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)?isDirectory@110.26:110.37VARIABLEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javan n(%"
+typePredicate<String>"
+isFinalfalse"û
+declarationStringà<mark class="modifier"> </mark>Predicate<String> <mark class="class-field">isDirectory</mark> = path -> Files.isDirectory(Path.of(path))*isDirectory2|
+java.util.function.PredicateTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javan n(2y
+java.lang.StringTYPE_ARGUMENTV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javan n(2∞
+Pjava.nio.file.Files.isDirectory(java.nio.file.Path, java.nio.file.LinkOption...)CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javan6 n(A2ú
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javanG n(I2ô
+∏org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)?path@110.40:110.44CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javanJ n(NÅ
+≥org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETERV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaQ6 Q(C"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2|
+org.jabref.gui.DialogServiceTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaQ( Q(5˜
+±org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!undoManager	PARAMETERV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaR4 R(?"
+typeUndoManager"
+isFinalfalse",
+declarationStringUndoManager undoManager*undoManager2|
+javax.swing.undo.UndoManagerTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaR( R(3°
+∑org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!fileUpdateMonitor	PARAMETERV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaS: S(K"
+typeFileUpdateMonitor"
+isFinalfalse"8
+declarationString#FileUpdateMonitor fileUpdateMonitor*fileUpdateMonitor2á
+'org.jabref.model.util.FileUpdateMonitorTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaS( S(9ì
+±org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!preferences	PARAMETERV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaT; T(F"
+typePreferencesService"
+isFinalfalse"3
+declarationStringPreferencesService preferences*preferences2â
+)org.jabref.preferences.PreferencesServiceTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaT( T(:˚
+≤org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!stateManager	PARAMETERV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaU5 U(A"
+typeStateManager"
+isFinalfalse".
+declarationStringStateManager stateManager*stateManager2{
+org.jabref.gui.StateManagerTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaU( U(4Å
+≤org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETERV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaV5 V(A"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2Ä
+ org.jabref.gui.util.TaskExecutorTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaV( V(4·
+∏org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.UnlinkedFilesDialogViewModel(org.jabref.gui.DialogService, javax.swing.undo.UndoManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)?path@110.40:110.44VARIABLEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javan( n(,"
+type"
+isFinalfalse"
+declarationString path*path2TYPE¥7
+Gorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startSearch()METHODV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javau u("
+isFinalfalse"Ü
+declarationStringq<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">startSearch</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*startSearch2Æ
+Norg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getSearchDirectory()CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javav v(02†
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java}ô }(´2∞
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÄ? Ä(C2ñ
+4org.jabref.gui.util.BackgroundTask.messageProperty()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÅD Å(S2|
+java.util.Optional.empty()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÉ7 É(<2≤
+Porg.jabref.gui.util.BackgroundTask.executeWith(org.jabref.gui.util.TaskExecutor)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaã ã()2∑
+Worg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?selectedExtension@55.57:55.74CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaw* w(;2≤
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?selectedDate@56.44:56.56CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javax' x(32≤
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?selectedSort@57.53:57.65CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javay0 y(<2ª
+[org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?progressValueProperty@63.33:63.54CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaz z(2∫
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?progressTextProperty@64.33:64.53CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java{ {(2ª
+[org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?findUnlinkedFilesTask@73.46:73.67CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java} }(2ø
+_org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startSearch()?directory@118.13:118.22CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java}9 }(B2»
+horg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startSearch()?selectedFileFilter@119.21:119.39CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java}D }(V2»
+horg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startSearch()?selectedDateFilter@120.18:120.36CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java}X }(j2»
+horg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startSearch()?selectedSortFilter@121.27:121.45CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java}l }(~2≥
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?bibDatabase@76.37:76.48CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java}Ä }(ã2≥
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?preferences@72.37:72.48CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java}ç }(ò2ª
+[org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?progressValueProperty@63.33:63.54CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java ()2º
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?progressTextProperty@64.33:64.53CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÄ Ä((2º
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?progressTextProperty@64.33:64.53CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÅ Å((2Ω
+[org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?findUnlinkedFilesTask@73.46:73.67CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÅ. Å(C2∫
+Xorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?taskActiveProperty@62.34:62.52CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÇ Ç(&2∏
+Vorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?treeRootProperty@59.62:59.78CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÉ É($2Ω
+[org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?progressValueProperty@63.33:63.54CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÜ Ü()2∫
+Xorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?taskActiveProperty@62.34:62.52CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaá á(&2∏
+Vorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?treeRootProperty@59.62:59.78CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaâ' â(72¿
+^org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startSearch()?treeRoot@137.27:137.35CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaâM â(U2Ω
+[org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?findUnlinkedFilesTask@73.46:73.67CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaã ã(2¥
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?taskExecutor@77.31:77.43CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaã* ã(62∆
+_org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startSearch()?directory@118.13:118.22DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javav v(2œ
+horg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startSearch()?selectedFileFilter@119.21:119.39DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaw w('2œ
+horg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startSearch()?selectedDateFilter@120.18:120.36DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javax x($2œ
+horg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startSearch()?selectedSortFilter@121.27:121.45DECLARATIONV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javay y(-2«
+^org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startSearch()?treeRoot@137.27:137.35DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaâ â(#2k
+voidRETURN_TYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javau u(¥
+_org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startSearch()?directory@118.13:118.22VARIABLEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javav v("
+typePath"
+isFinalfalse"û
+declarationStringà<mark class="modifier"> </mark>Path <mark class="class-field">directory</mark> = <mark class="modifier">this</mark>.getSearchDirectory()*	directory2r
+java.nio.file.PathTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javav v(2Æ
+Norg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getSearchDirectory()CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javav v(0È
+horg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startSearch()?selectedFileFilter@119.21:119.39VARIABLEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaw w('"
+typeFilter<Path>"
+isFinalfalse"†
+declarationStringä<mark class="modifier"> </mark>Filter<Path> <mark class="class-field">selectedFileFilter</mark> = selectedExtension.getValue().dirFilter()*selectedFileFilter2Ñ
+$java.nio.file.DirectoryStream.FilterTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaw w(2{
+java.nio.file.PathTYPE_ARGUMENTV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaw w(2∑
+Worg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?selectedExtension@55.57:55.74CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaw* w(;—
+horg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startSearch()?selectedDateFilter@120.18:120.36VARIABLEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javax x($"
+type	DateRange"
+isFinalfalse"ã
+declarationStringv<mark class="modifier"> </mark>DateRange <mark class="class-field">selectedDateFilter</mark> = selectedDate.getValue()*selectedDateFilter2Ü
+&org.jabref.gui.externalfiles.DateRangeTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javax x(2≤
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?selectedDate@56.44:56.56CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javax' x(3Ï
+horg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startSearch()?selectedSortFilter@121.27:121.45VARIABLEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javay y(-"
+typeExternalFileSorter"
+isFinalfalse"î
+declarationString<mark class="modifier"> </mark>ExternalFileSorter <mark class="class-field">selectedSortFilter</mark> = selectedSort.getValue()*selectedSortFilter2è
+/org.jabref.gui.externalfiles.ExternalFileSorterTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javay y(2≤
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?selectedSort@57.53:57.65CALLV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javay0 y(<ê
+^org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startSearch()?treeRoot@137.27:137.35VARIABLEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaâ â(#"
+type"
+isFinalfalse"
+declarationString	 treeRoot*treeRoot2TYPE¬0
+Gorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startImport()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaé é("
+isFinalfalse"Ü
+declarationStringq<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">startImport</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*startImport2Ü
+$java.util.stream.Collectors.toList()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaíI í(O2z
+java.util.List.isEmpty()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaì ì(2Æ
+Lorg.jabref.gui.util.BackgroundTask.onSuccess(java.util.function.Consumer<V>)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java§2 §(;2£
+Aorg.jabref.gui.util.BackgroundTask.onFinished(java.lang.Runnable)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaü2 ü(<2¢
+@org.jabref.gui.util.BackgroundTask.onRunning(java.lang.Runnable)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaö2 ö(;2»
+forg.jabref.gui.externalfiles.ImportHandler.importFilesInBackground(java.util.List<java.nio.file.Path>)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaô2 ô(I2¢
+?org.jabref.gui.util.BackgroundTask.workDonePercentageProperty()CALLY
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaõj õ(Ñ2ñ
+4org.jabref.gui.util.BackgroundTask.messageProperty()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaúi ú(x2≤
+Porg.jabref.gui.util.BackgroundTask.executeWith(org.jabref.gui.util.TaskExecutor)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java•" •(-2ø
+]org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?checkedFileListProperty@60.66:60.89CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaè è(52º
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startImport()?item@144.58:144.62CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaêB ê(F2º
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startImport()?path@145.61:145.65CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaëE ë(I2¿
+^org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startImport()?fileList@143.19:143.27CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaì ì(2Æ
+Lorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?LOGGER@51.32:51.38CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaî î(2≤
+Porg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?resultList@66.65:66.75CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaó ó(2¡
+_org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?importFilesBackgroundTask@74.65:74.90CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaô ô(!2µ
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?importHandler@53.32:53.45CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaô$ ô(12¿
+^org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startImport()?fileList@143.19:143.27CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaôJ ô(R2Ω
+[org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?progressValueProperty@63.33:63.54CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaõ5 õ(J2¡
+_org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?importFilesBackgroundTask@74.65:74.90CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaõP õ(i2º
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?progressTextProperty@64.33:64.53CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaú5 ú(I2¡
+_org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?importFilesBackgroundTask@74.65:74.90CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaúO ú(h2∫
+Xorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?taskActiveProperty@62.34:62.52CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaù5 ù(G2Ω
+[org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?progressValueProperty@63.33:63.54CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java†5 †(J2º
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?progressTextProperty@64.33:64.53CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java°5 °(I2∫
+Xorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?taskActiveProperty@62.34:62.52CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¢5 ¢(G2¡
+_org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?importFilesBackgroundTask@74.65:74.90CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java• •(!2¥
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?taskExecutor@77.31:77.43CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java•. •(:2«
+^org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startImport()?fileList@143.19:143.27DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaè è(2√
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startImport()?item@144.58:144.62DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaê: ê(>2√
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startImport()?path@145.61:145.65DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaë= ë(A2m
+voidRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaé é(®
+^org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startImport()?fileList@143.19:143.27VARIABLEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaè è("
+type
+List<Path>"
+isFinalfalse"˜
+declarationString·<mark class="modifier"> </mark>List<Path> <mark class="class-field">fileList</mark> = checkedFileListProperty.stream().map(item -> item.getValue().getPath()).filter(path -> path.toFile().isFile()).collect(Collectors.toList())*fileList2p
+java.util.ListTYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaè è(2}
+java.nio.file.PathTYPE_ARGUMENTX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaè è(2Ü
+$java.util.stream.Collectors.toList()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaíI í(O2ø
+]org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?checkedFileListProperty@60.66:60.89CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaè è(52º
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startImport()?item@144.58:144.62CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaêB ê(F2º
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startImport()?path@145.61:145.65CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaëE ë(IÑ
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startImport()?item@144.58:144.62VARIABLEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaê: ê(>"
+type"
+isFinalfalse"
+declarationString item*item2TYPEÑ
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startImport()?path@145.61:145.65VARIABLEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaë= ë(A"
+type"
+isFinalfalse"
+declarationString path*path2TYPEÄ9
+Gorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java´ ´("
+isFinalfalse"Ü
+declarationStringq<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">startExport</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*startExport2z
+java.util.List.isEmpty()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∞ ∞(2ù
+;org.jabref.gui.util.FileDialogConfiguration.Builder.build()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaπ π(2 
+horg.jabref.gui.util.FileDialogConfiguration.Builder.withDefaultExtension(org.jabref.logic.util.FileType)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∏ ∏(%2À
+iorg.jabref.gui.util.FileDialogConfiguration.Builder.addExtensionFilter(org.jabref.logic.util.FileType...)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∑ ∑(#2æ
+\org.jabref.gui.util.FileDialogConfiguration.Builder.withInitialDirectory(java.nio.file.Path)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∂ ∂(%2û
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∂G ∂(Z2†
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∂2 ∂(D2æ
+\org.jabref.gui.DialogService.showFileSaveDialog(org.jabref.gui.util.FileDialogConfiguration)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∫2 ∫(D2~
+java.util.Optional.isEmpty()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaº º(2“
+pjava.nio.file.Files.newBufferedWriter(java.nio.file.Path, java.nio.charset.Charset, java.nio.file.OpenOption...)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¿+ ¿(<2z
+java.util.Optional.get()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¿H ¿(K2à
+&java.io.Writer.write(java.lang.String)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java√ √(2
+java.nio.file.Path.toString()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java√" √(*2ü
+=org.jabref.gui.util.FileDialogConfiguration.Builder.Builder()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaµ> µ(]2ø
+]org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?checkedFileListProperty@60.66:60.89CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¨ ¨(52º
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?item@173.58:173.62CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java≠B ≠(F2º
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?path@174.61:174.65CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÆE Æ(I2¿
+^org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?fileList@172.19:172.27CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∞ ∞(2Æ
+Lorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?LOGGER@51.32:51.38CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java± ±(2≥
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?preferences@72.37:72.48CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∂& ∂(12µ
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?dialogService@71.32:71.45CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∫$ ∫(12œ
+morg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?fileDialogConfiguration@181.32:181.55CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∫E ∫(\2¬
+`org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?exportPath@186.23:186.33CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaº º(2¬
+`org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?exportPath@186.23:186.33CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¿= ¿(G2¿
+^org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?fileList@172.19:172.27CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¬ ¬(%2æ
+\org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?writer@192.28:192.34CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java√ √(2º
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?file@194.22:194.26CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java√ √(!2Æ
+Lorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?LOGGER@51.32:51.38CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∆ ∆(2π
+Worg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?e@197.29:197.30CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∆, ∆(-2«
+^org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?fileList@172.19:172.27DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¨ ¨(2÷
+morg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?fileDialogConfiguration@181.32:181.55DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaµ  µ(72…
+`org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?exportPath@186.23:186.33DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∫ ∫(!2≈
+\org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?writer@192.28:192.34DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¿ ¿("2√
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?file@194.22:194.26DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¬ ¬(2√
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?item@173.58:173.62DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java≠: ≠(>2√
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?path@174.61:174.65DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÆ= Æ(A2¿
+Worg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?e@197.29:197.30DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java≈ ≈(2m
+voidRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java´ ´(ã
+
+^org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?fileList@172.19:172.27VARIABLEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¨ ¨("
+type
+List<Path>"
+isFinalfalse"„
+declarationStringÕ<mark class="modifier"> </mark>List<Path> <mark class="class-field">fileList</mark> = checkedFileListProperty.stream().map(item -> item.getValue().getPath()).filter(path -> path.toFile().isFile()).toList()*fileList2p
+java.util.ListTYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¨ ¨(2}
+java.nio.file.PathTYPE_ARGUMENTX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¨ ¨(2ø
+]org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?checkedFileListProperty@60.66:60.89CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¨ ¨(52º
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?item@173.58:173.62CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java≠B ≠(F2º
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?path@174.61:174.65CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÆE Æ(I†
+morg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?fileDialogConfiguration@181.32:181.55VARIABLEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaµ  µ(7"
+typeFileDialogConfiguration"
+isFinalfalse"÷
+declarationString¿<mark class="modifier"> </mark>FileDialogConfiguration <mark class="class-field">fileDialogConfiguration</mark> = new FileDialogConfiguration.Builder().withInitialDirectory(preferences.getFilePreferences().getWorkingDirectory()).addExtensionFilter(StandardFileType.TXT).withDefaultExtension(StandardFileType.TXT).build()*fileDialogConfiguration2ç
++org.jabref.gui.util.FileDialogConfigurationTYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaµ µ(2ù
+;org.jabref.gui.util.FileDialogConfiguration.Builder.build()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaπ π(2 
+horg.jabref.gui.util.FileDialogConfiguration.Builder.withDefaultExtension(org.jabref.logic.util.FileType)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∏ ∏(%2À
+iorg.jabref.gui.util.FileDialogConfiguration.Builder.addExtensionFilter(org.jabref.logic.util.FileType...)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∑ ∑(#2æ
+\org.jabref.gui.util.FileDialogConfiguration.Builder.withInitialDirectory(java.nio.file.Path)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∂ ∂(%2û
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∂G ∂(Z2†
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∂2 ∂(D2ü
+=org.jabref.gui.util.FileDialogConfiguration.Builder.Builder()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaµ> µ(]2≥
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?preferences@72.37:72.48CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∂& ∂(1Í	
+`org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?exportPath@186.23:186.33VARIABLEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∫ ∫(!"
+typeOptional<Path>"
+isFinalfalse"´
+declarationStringï<mark class="modifier"> </mark>Optional<Path> <mark class="class-field">exportPath</mark> = dialogService.showFileSaveDialog(fileDialogConfiguration)*
+exportPath2t
+java.util.OptionalTYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∫ ∫(2}
+java.nio.file.PathTYPE_ARGUMENTX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∫ ∫(2æ
+\org.jabref.gui.DialogService.showFileSaveDialog(org.jabref.gui.util.FileDialogConfiguration)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∫2 ∫(D2µ
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?dialogService@71.32:71.45CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∫$ ∫(12œ
+morg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?fileDialogConfiguration@181.32:181.55CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java∫E ∫(\Ô
+\org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?writer@192.28:192.34VARIABLEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¿ ¿(""
+typeBufferedWriter"
+isFinalfalse"Ë
+declarationString“<mark class="modifier"> </mark>BufferedWriter <mark class="class-field">writer</mark> = Files.newBufferedWriter(exportPath.get()<mark class="modifier">,</mark> StandardCharsets.UTF_8, StandardOpenOption.CREATE)*writer2x
+java.io.BufferedWriterTYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¿ ¿(2“
+pjava.nio.file.Files.newBufferedWriter(java.nio.file.Path, java.nio.charset.Charset, java.nio.file.OpenOption...)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¿+ ¿(<2z
+java.util.Optional.get()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¿H ¿(K2¬
+`org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?exportPath@186.23:186.33CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¿= ¿(Gº
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?file@194.22:194.26VARIABLEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¬ ¬("
+typePath"
+isFinalfalse"^
+declarationStringI<mark class="modifier"> </mark>Path <mark class="class-field">file</mark>*file2t
+java.nio.file.PathTYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¬ ¬(Ñ
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?item@173.58:173.62VARIABLEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java≠: ≠(>"
+type"
+isFinalfalse"
+declarationString item*item2TYPEÑ
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?path@174.61:174.65VARIABLEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÆ= Æ(A"
+type"
+isFinalfalse"
+declarationString path*path2TYPEÇ
+Worg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.startExport()?e@197.29:197.30VARIABLEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java≈ ≈("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2u
+java.io.IOExceptionTYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java≈ ≈(æ
+Jorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getFileFilters()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java 2  (@"
+isFinalfalse"ì
+declarationString~<mark class="modifier">public </mark>ObservableList&lt;FileExtensionViewModel&gt; <mark class="method">getFileFilters</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse".
+type&ObservableList<FileExtensionViewModel>*getFileFilters2∂
+Torg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?fileFilterList@67.57:67.71CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÀ À("2ä
+!javafx.collections.ObservableListRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java   (2•
+3org.jabref.gui.externalfiles.FileExtensionViewModelRETURN_TYPE_ARGUMENTX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java   (0ó
+Jorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getDateFilters()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaŒ% Œ(3"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier">public </mark>ObservableList&lt;DateRange&gt; <mark class="method">getDateFilters</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"!
+typeObservableList<DateRange>*getDateFilters2∂
+Torg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?dateFilterList@68.44:68.58CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaœ œ("2ä
+!javafx.collections.ObservableListRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaŒ Œ(2ò
+&org.jabref.gui.externalfiles.DateRangeRETURN_TYPE_ARGUMENTX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaŒ Œ(#§
+Forg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getSorters()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java“. “(8"
+isFinalfalse"ã
+declarationStringv<mark class="modifier">public </mark>ObservableList&lt;ExternalFileSorter&gt; <mark class="method">getSorters</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"*
+type"ObservableList<ExternalFileSorter>*
+getSorters2¥
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?fileSortList@69.53:69.65CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java” ”( 2ä
+!javafx.collections.ObservableListRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java“ “(2°
+/org.jabref.gui.externalfiles.ExternalFileSorterRETURN_TYPE_ARGUMENTX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java“ “(,≤
+Gorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.cancelTasks()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java÷ ÷("
+isFinalfalse"Ü
+declarationStringq<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">cancelTasks</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*cancelTasks2ç
++org.jabref.gui.util.BackgroundTask.cancel()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÿ" ÿ((2ç
++org.jabref.gui.util.BackgroundTask.cancel()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java€& €(,2Ω
+[org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?findUnlinkedFilesTask@73.46:73.67CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java◊ ◊(!2Ω
+[org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?findUnlinkedFilesTask@73.46:73.67CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÿ ÿ(!2¡
+_org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?importFilesBackgroundTask@74.65:74.90CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java⁄ ⁄(%2¡
+_org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?importFilesBackgroundTask@74.65:74.90CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java€ €(%2m
+voidRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java÷ ÷(¸!
+Oorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.browseFileDirectory()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaﬂ ﬂ(#"
+isFinalfalse"é
+declarationStringy<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">browseFileDirectory</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*browseFileDirectory2¢
+@org.jabref.gui.util.DirectoryDialogConfiguration.Builder.build()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java·^ ·(c2√
+aorg.jabref.gui.util.DirectoryDialogConfiguration.Builder.withInitialDirectory(java.nio.file.Path)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java· ·(%2û
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java·G ·(Z2†
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java·2 ·(D2¶
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java‰ ‰(2Õ
+korg.jabref.gui.DialogService.showDirectorySelectionDialog(org.jabref.gui.util.DirectoryDialogConfiguration)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java„ „(22
+java.nio.file.Path.toString()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÂS Â([2Ö
+#java.nio.file.Path.toAbsolutePath()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÂB Â(P2∞
+Norg.jabref.preferences.FilePreferences.setWorkingDirectory(java.nio.file.Path)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÊ: Ê(M2†
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÊ% Ê(72Ö
+#java.nio.file.Path.toAbsolutePath()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÊ` Ê(n2§
+Borg.jabref.gui.util.DirectoryDialogConfiguration.Builder.Builder()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java‡H ‡(l2≥
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?preferences@72.37:72.48CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java·& ·(12µ
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?dialogService@71.32:71.45CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java„ „(2‹
+zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.browseFileDirectory()?directoryDialogConfiguration@224.37:224.65CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java„3 „(O2µ
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?directoryPath@54.33:54.46CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÂ Â(&2—
+oorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.browseFileDirectory()?selectedDirectory@228.32:228.49CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÂ0 Â(A2≥
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?preferences@72.37:72.48CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÊ Ê($2—
+oorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.browseFileDirectory()?selectedDirectory@228.32:228.49CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÊN Ê(_2„
+zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.browseFileDirectory()?directoryDialogConfiguration@224.37:224.65DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java‡% ‡(A2ÿ
+oorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.browseFileDirectory()?selectedDirectory@228.32:228.49DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java‰  ‰(12m
+voidRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaﬂ ﬂ(Î
+zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.browseFileDirectory()?directoryDialogConfiguration@224.37:224.65VARIABLEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java‡% ‡(A"$
+typeDirectoryDialogConfiguration"
+isFinalfalse"ë
+declarationString˚<mark class="modifier"> </mark>DirectoryDialogConfiguration <mark class="class-field">directoryDialogConfiguration</mark> = new DirectoryDialogConfiguration.Builder().withInitialDirectory(preferences.getFilePreferences().getWorkingDirectory()).build()*directoryDialogConfiguration2í
+0org.jabref.gui.util.DirectoryDialogConfigurationTYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java‡ ‡($2¢
+@org.jabref.gui.util.DirectoryDialogConfiguration.Builder.build()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java·^ ·(c2√
+aorg.jabref.gui.util.DirectoryDialogConfiguration.Builder.withInitialDirectory(java.nio.file.Path)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java· ·(%2û
+<org.jabref.preferences.FilePreferences.getWorkingDirectory()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java·G ·(Z2†
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java·2 ·(D2§
+Borg.jabref.gui.util.DirectoryDialogConfiguration.Builder.Builder()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java‡H ‡(l2≥
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?preferences@72.37:72.48CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java·& ·(1≥
+oorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.browseFileDirectory()?selectedDirectory@228.32:228.49VARIABLEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java‰  ‰(1"
+type"
+isFinalfalse"'
+declarationString selectedDirectory*selectedDirectory2TYPEì!
+Norg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getSearchDirectory()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÍ Í(#"
+isFinalfalse"p
+declarationString[<mark class="modifier">private </mark>Path <mark class="method">getSearchDirectory</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typePath*getSearchDirectory2∞
+Njava.nio.file.Files.notExists(java.nio.file.Path, java.nio.file.LinkOption...)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÏ Ï(2û
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÌ Ì(2ê
+.java.lang.System.getProperty(java.lang.String)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÌ' Ì(22
+java.nio.file.Path.toString()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÓ> Ó(F2Ö
+#java.nio.file.Path.toAbsolutePath()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÓ- Ó(;2≤
+Pjava.nio.file.Files.isDirectory(java.nio.file.Path, java.nio.file.LinkOption...)CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java (2Ä
+java.nio.file.Path.getParent()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÒ" Ò(+2
+java.nio.file.Path.toString()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÚ> Ú(F2Ö
+#java.nio.file.Path.toAbsolutePath()CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÚ- Ú(;2µ
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?directoryPath@54.33:54.46CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÎ! Î(.2»
+forg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getSearchDirectory()?directory@235.13:235.22CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÏ Ï(%2»
+forg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getSearchDirectory()?directory@235.13:235.22CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÌ Ì(2µ
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?directoryPath@54.33:54.46CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÓ Ó(2»
+forg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getSearchDirectory()?directory@235.13:235.22CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÓ# Ó(,2»
+forg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getSearchDirectory()?directory@235.13:235.22CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java ((2»
+forg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getSearchDirectory()?directory@235.13:235.22CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÒ Ò(2»
+forg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getSearchDirectory()?directory@235.13:235.22CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÒ Ò(!2µ
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?directoryPath@54.33:54.46CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÚ Ú(2»
+forg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getSearchDirectory()?directory@235.13:235.22CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÚ# Ú(,2»
+forg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getSearchDirectory()?directory@235.13:235.22CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÙ Ù(2œ
+forg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getSearchDirectory()?directory@235.13:235.22DECLARATIONX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÎ Î(2{
+java.nio.file.PathRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÍ Í(Ø
+forg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.getSearchDirectory()?directory@235.13:235.22VARIABLEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÎ Î("
+typePath"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>Path <mark class="class-field">directory</mark> = Path.of(directoryPath.getValue())*	directory2t
+java.nio.file.PathTYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÎ Î(2µ
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?directoryPath@54.33:54.46CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÎ! Î(.Ÿ
+Lorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.resultTableItems()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java˜: ˜(J"
+isFinalfalse"û
+declarationStringà<mark class="modifier">public </mark>ObservableList&lt;ImportFilesResultItemViewModel&gt; <mark class="method">resultTableItems</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"6
+type.ObservableList<ImportFilesResultItemViewModel>*resultTableItems2≤
+Porg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?resultList@66.65:66.75CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¯ ¯(2ä
+!javafx.collections.ObservableListRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java˜ ˜(2≠
+;org.jabref.gui.externalfiles.ImportFilesResultItemViewModelRETURN_TYPE_ARGUMENTX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java˜ ˜(8”
+Lorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.treeRootProperty()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java˚7 ˚(G"
+isFinalfalse"°
+declarationStringã<mark class="modifier">public </mark>ObjectProperty&lt;Optional&lt;FileNodeViewModel&gt;&gt; <mark class="method">treeRootProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"3
+type+ObjectProperty<Optional<FileNodeViewModel>>*treeRootProperty2∏
+Vorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?treeRootProperty@59.62:59.78CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java¸ ¸($2ç
+$javafx.beans.property.ObjectPropertyRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java˚ ˚(2Ñ
+java.util.OptionalRETURN_TYPE_ARGUMENTX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java˚ ˚("2ó
+%org.jabref.gui.util.FileNodeViewModelRETURN_TYPE_ARGUMENTX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java˚# ˚(4Ê
+Uorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.selectedExtensionProperty()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaˇ2 ˇ(K"
+isFinalfalse"ü
+declarationStringâ<mark class="modifier">public </mark>ObjectProperty&lt;FileExtensionViewModel&gt; <mark class="method">selectedExtensionProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse".
+type&ObjectProperty<FileExtensionViewModel>*selectedExtensionProperty2π
+Worg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?selectedExtension@55.57:55.74CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÄ Ä(%2ç
+$javafx.beans.property.ObjectPropertyRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaˇ ˇ(2•
+3org.jabref.gui.externalfiles.FileExtensionViewModelRETURN_TYPE_ARGUMENTX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaˇ ˇ(0™
+Porg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.selectedDateProperty()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÉ% É(9"
+isFinalfalse"å
+declarationStringw<mark class="modifier">public </mark>ObjectProperty&lt;DateRange&gt; <mark class="method">selectedDateProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"!
+typeObjectProperty<DateRange>*selectedDateProperty2¥
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?selectedDate@56.44:56.56CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÑ Ñ( 2ç
+$javafx.beans.property.ObjectPropertyRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÉ É(2ò
+&org.jabref.gui.externalfiles.DateRangeRETURN_TYPE_ARGUMENTX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaÉ É(#∆
+Porg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.selectedSortProperty()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaá. á(B"
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier">public </mark>ObjectProperty&lt;ExternalFileSorter&gt; <mark class="method">selectedSortProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"*
+type"ObjectProperty<ExternalFileSorter>*selectedSortProperty2¥
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?selectedSort@57.53:57.65CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaà à( 2ç
+$javafx.beans.property.ObjectPropertyRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaá á(2°
+/org.jabref.gui.externalfiles.ExternalFileSorterRETURN_TYPE_ARGUMENTX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaá á(,ˆ
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.directoryPathProperty()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaã ã(/"
+isFinalfalse"|
+declarationStringg<mark class="modifier">public </mark>StringProperty <mark class="method">directoryPathProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeStringProperty*directoryPathProperty2µ
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?directoryPath@54.33:54.46CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaå å(!2ç
+$javafx.beans.property.StringPropertyRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaã ã(™
+Yorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.directoryPathValidationStatus()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaè è(9"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier">public </mark>ValidationStatus <mark class="method">directoryPathValidationStatus</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeValidationStatus*directoryPathValidationStatus2æ
+\org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?scanDirectoryValidator@79.49:79.71CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaê ê(*2õ
+2de.saxsys.mvvmfx.utils.validation.ValidationStatusRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaè è(˛
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.progressValueProperty()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaì ì(/"
+isFinalfalse"|
+declarationStringg<mark class="modifier">public </mark>DoubleProperty <mark class="method">progressValueProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeDoubleProperty*progressValueProperty2Ω
+[org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?progressValueProperty@63.33:63.54CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaî î()2ç
+$javafx.beans.property.DoublePropertyRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaì ì(˙
+Porg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.progressTextProperty()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaó ó(."
+isFinalfalse"{
+declarationStringf<mark class="modifier">public </mark>StringProperty <mark class="method">progressTextProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeStringProperty*progressTextProperty2º
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?progressTextProperty@64.33:64.53CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaò ò((2ç
+$javafx.beans.property.StringPropertyRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaó ó(ı
+Norg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.taskActiveProperty()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaõ õ(-"
+isFinalfalse"z
+declarationStringe<mark class="modifier">public </mark>BooleanProperty <mark class="method">taskActiveProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeBooleanProperty*taskActiveProperty2∫
+Xorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?taskActiveProperty@62.34:62.52CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaú ú(&2é
+%javafx.beans.property.BooleanPropertyRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaõ õ(Ü	
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel.checkedFileListProperty()METHODX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaü; ü(R"
+isFinalfalse"¨
+declarationStringñ<mark class="modifier">public </mark>SimpleListProperty&lt;TreeItem&lt;FileNodeViewModel&gt;&gt; <mark class="method">checkedFileListProperty</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"7
+type/SimpleListProperty<TreeItem<FileNodeViewModel>>*checkedFileListProperty2ø
+]org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?checkedFileListProperty@60.66:60.89CALLX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java† †(&2ë
+(javafx.beans.property.SimpleListPropertyRETURN_TYPEX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaü ü(2è
+javafx.scene.control.TreeItemRETURN_TYPE_ARGUMENTX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaü ü(&2ó
+%org.jabref.gui.util.FileNodeViewModelRETURN_TYPE_ARGUMENTX
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaü' ü(8‚
+Lorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?LOGGER@51.32:51.38VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java3  3(&"
+isFinaltrue"
+typeLogger"Ú
+declarationString‹<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(UnlinkedFilesDialogViewModel.class);"
+isStatictrue"
+accessprivate*LOGGER2p
+org.slf4j.LoggerTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java3 3(Ω
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?importHandler@53.32:53.45VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java5  5(-"
+isFinaltrue"
+typeImportHandler"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>ImportHandler <mark class="class-field">importHandler</mark>"
+isStaticfalse"
+accessprivate*importHandler2ä
+*org.jabref.gui.externalfiles.ImportHandlerTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java5 5(Ÿ
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?directoryPath@54.33:54.46VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java6! 6(."
+isFinaltrue"
+typeStringProperty"Ω
+declarationStringß<mark class="modifier">private </mark><mark class="modifier">final </mark>StringProperty <mark class="class-field">directoryPath</mark> = new SimpleStringProperty("");"
+isStaticfalse"
+accessprivate*directoryPath2Ñ
+$javafx.beans.property.StringPropertyTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java6 6( ¥
+Worg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?selectedExtension@55.57:55.74VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java79 7(J"
+isFinaltrue".
+type&ObjectProperty<FileExtensionViewModel>"Ÿ
+declarationString√<mark class="modifier">private </mark><mark class="modifier">final </mark>ObjectProperty<FileExtensionViewModel> <mark class="class-field">selectedExtension</mark> = new SimpleObjectProperty<>();"
+isStaticfalse"
+accessprivate*selectedExtension2Ñ
+$javafx.beans.property.ObjectPropertyTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java7 7( 2ú
+3org.jabref.gui.externalfiles.FileExtensionViewModelTYPE_ARGUMENTV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java7! 7(7˛
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?selectedDate@56.44:56.56VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java8, 8(8"
+isFinaltrue"!
+typeObjectProperty<DateRange>"«
+declarationString±<mark class="modifier">private </mark><mark class="modifier">final </mark>ObjectProperty<DateRange> <mark class="class-field">selectedDate</mark> = new SimpleObjectProperty<>();"
+isStaticfalse"
+accessprivate*selectedDate2Ñ
+$javafx.beans.property.ObjectPropertyTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java8 8( 2è
+&org.jabref.gui.externalfiles.DateRangeTYPE_ARGUMENTV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java8! 8(*ô
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?selectedSort@57.53:57.65VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java95 9(A"
+isFinaltrue"*
+type"ObjectProperty<ExternalFileSorter>"–
+declarationString∫<mark class="modifier">private </mark><mark class="modifier">final </mark>ObjectProperty<ExternalFileSorter> <mark class="class-field">selectedSort</mark> = new SimpleObjectProperty<>();"
+isStaticfalse"
+accessprivate*selectedSort2Ñ
+$javafx.beans.property.ObjectPropertyTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java9 9( 2ò
+/org.jabref.gui.externalfiles.ExternalFileSorterTYPE_ARGUMENTV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java9! 9(3™
+Vorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?treeRootProperty@59.62:59.78VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java;> ;(N"
+isFinaltrue"3
+type+ObjectProperty<Optional<FileNodeViewModel>>"›
+declarationString«<mark class="modifier">private </mark><mark class="modifier">final </mark>ObjectProperty<Optional<FileNodeViewModel>> <mark class="class-field">treeRootProperty</mark> = new SimpleObjectProperty<>();"
+isStaticfalse"
+accessprivate*treeRootProperty2Ñ
+$javafx.beans.property.ObjectPropertyTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java; ;( 2{
+java.util.OptionalTYPE_ARGUMENTV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java;! ;()2é
+%org.jabref.gui.util.FileNodeViewModelTYPE_ARGUMENTV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java;* ;(;¯
+]org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?checkedFileListProperty@60.66:60.89VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java<B <(Y"
+isFinaltrue"7
+type/SimpleListProperty<TreeItem<FileNodeViewModel>>"â
+declarationStringÛ<mark class="modifier">private </mark><mark class="modifier">final </mark>SimpleListProperty<TreeItem<FileNodeViewModel>> <mark class="class-field">checkedFileListProperty</mark> = new SimpleListProperty<>(FXCollections.observableArrayList());"
+isStaticfalse"
+accessprivate*checkedFileListProperty2à
+(javafx.beans.property.SimpleListPropertyTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java< <($2Ü
+javafx.scene.control.TreeItemTYPE_ARGUMENTV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java<% <(-2é
+%org.jabref.gui.util.FileNodeViewModelTYPE_ARGUMENTV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java<. <(?ç
+Xorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?taskActiveProperty@62.34:62.52VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java>" >(4"
+isFinaltrue"
+typeBooleanProperty"Â
+declarationStringœ<mark class="modifier">private </mark><mark class="modifier">final </mark>BooleanProperty <mark class="class-field">taskActiveProperty</mark> = new SimpleBooleanProperty(<mark class="modifier">false</mark>);"
+isStaticfalse"
+accessprivate*taskActiveProperty2Ö
+%javafx.beans.property.BooleanPropertyTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java> >(!
+[org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?progressValueProperty@63.33:63.54VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java?! ?(6"
+isFinaltrue"
+typeDoubleProperty"ƒ
+declarationStringÆ<mark class="modifier">private </mark><mark class="modifier">final </mark>DoubleProperty <mark class="class-field">progressValueProperty</mark> = new SimpleDoubleProperty(0);"
+isStaticfalse"
+accessprivate*progressValueProperty2Ñ
+$javafx.beans.property.DoublePropertyTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java? ?( Ï
+Zorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?progressTextProperty@64.33:64.53VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java@! @(5"
+isFinaltrue"
+typeStringProperty"¬
+declarationString¨<mark class="modifier">private </mark><mark class="modifier">final </mark>StringProperty <mark class="class-field">progressTextProperty</mark> = new SimpleStringProperty();"
+isStaticfalse"
+accessprivate*progressTextProperty2Ñ
+$javafx.beans.property.StringPropertyTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.java@ @( ª
+Porg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?resultList@66.65:66.75VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaBA B(K"
+isFinaltrue"6
+type.ObservableList<ImportFilesResultItemViewModel>"·
+declarationStringÀ<mark class="modifier">private </mark><mark class="modifier">final </mark>ObservableList<ImportFilesResultItemViewModel> <mark class="class-field">resultList</mark> = FXCollections.observableArrayList();"
+isStaticfalse"
+accessprivate*
+resultList2Å
+!javafx.collections.ObservableListTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaB B( 2§
+;org.jabref.gui.externalfiles.ImportFilesResultItemViewModelTYPE_ARGUMENTV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaB! B(?à
+Torg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?fileFilterList@67.57:67.71VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaC9 C(G"
+isFinaltrue".
+type&ObservableList<FileExtensionViewModel>"∂
+declarationString†<mark class="modifier">private </mark><mark class="modifier">final </mark>ObservableList<FileExtensionViewModel> <mark class="class-field">fileFilterList</mark>"
+isStaticfalse"
+accessprivate*fileFilterList2Å
+!javafx.collections.ObservableListTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaC C( 2ú
+3org.jabref.gui.externalfiles.FileExtensionViewModelTYPE_ARGUMENTV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaC! C(7·
+Torg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?dateFilterList@68.44:68.58VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaD, D(:"
+isFinaltrue"!
+typeObservableList<DateRange>"©
+declarationStringì<mark class="modifier">private </mark><mark class="modifier">final </mark>ObservableList<DateRange> <mark class="class-field">dateFilterList</mark>"
+isStaticfalse"
+accessprivate*dateFilterList2Å
+!javafx.collections.ObservableListTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaD D( 2è
+&org.jabref.gui.externalfiles.DateRangeTYPE_ARGUMENTV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaD! D(*ˆ
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?fileSortList@69.53:69.65VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaE5 E(A"
+isFinaltrue"*
+type"ObservableList<ExternalFileSorter>"∞
+declarationStringö<mark class="modifier">private </mark><mark class="modifier">final </mark>ObservableList<ExternalFileSorter> <mark class="class-field">fileSortList</mark>"
+isStaticfalse"
+accessprivate*fileSortList2Å
+!javafx.collections.ObservableListTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaE E( 2ò
+/org.jabref.gui.externalfiles.ExternalFileSorterTYPE_ARGUMENTV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaE! E(3Æ
+Sorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?dialogService@71.32:71.45VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaG  G(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2|
+org.jabref.gui.DialogServiceTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaG G(¿
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?preferences@72.37:72.48VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaH% H(0"
+isFinaltrue"
+typePreferencesService"ü
+declarationStringâ<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferences</mark>"
+isStaticfalse"
+accessprivate*preferences2â
+)org.jabref.preferences.PreferencesServiceTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaH H($Â
+[org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?findUnlinkedFilesTask@73.46:73.67VARIABLEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaI. I(C"
+isFinalfalse")
+type!BackgroundTask<FileNodeViewModel>"ì
+declarationString~<mark class="modifier">private </mark>BackgroundTask<FileNodeViewModel> <mark class="class-field">findUnlinkedFilesTask</mark>"
+isStaticfalse"
+accessprivate*findUnlinkedFilesTask2Ç
+"org.jabref.gui.util.BackgroundTaskTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaI I(2é
+%org.jabref.gui.util.FileNodeViewModelTYPE_ARGUMENTV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaI I(,ß
+_org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?importFilesBackgroundTask@74.65:74.90VARIABLEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaJA J(Z"
+isFinalfalse"<
+type4BackgroundTask<List<ImportFilesResultItemViewModel>>"´
+declarationStringï<mark class="modifier">private </mark>BackgroundTask<List<ImportFilesResultItemViewModel>> <mark class="class-field">importFilesBackgroundTask</mark>"
+isStaticfalse"
+accessprivate*importFilesBackgroundTask2Ç
+"org.jabref.gui.util.BackgroundTaskTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaJ J(2w
+java.util.ListTYPE_ARGUMENTV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaJ J(2§
+;org.jabref.gui.externalfiles.ImportFilesResultItemViewModelTYPE_ARGUMENTV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaJ  J(>√
+Qorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?bibDatabase@76.37:76.48VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaL% L(0"
+isFinaltrue"
+typeBibDatabaseContext"ü
+declarationStringâ<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">bibDatabase</mark>"
+isStaticfalse"
+accessprivate*bibDatabase2å
+,org.jabref.model.database.BibDatabaseContextTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaL L($Æ
+Rorg.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?taskExecutor@77.31:77.43VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaM M(+"
+isFinaltrue"
+typeTaskExecutor"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2Ä
+ org.jabref.gui.util.TaskExecutorTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaM M(É
+\org.jabref.gui.externalfiles.UnlinkedFilesDialogViewModel?scanDirectoryValidator@79.49:79.71VALUEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaO1 O(G"
+isFinaltrue"&
+typeFunctionBasedValidator<String>"∂
+declarationString†<mark class="modifier">private </mark><mark class="modifier">final </mark>FunctionBasedValidator<String> <mark class="class-field">scanDirectoryValidator</mark>"
+isStaticfalse"
+accessprivate*scanDirectoryValidator2ò
+8de.saxsys.mvvmfx.utils.validation.FunctionBasedValidatorTYPEV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaO O((2y
+java.lang.StringTYPE_ARGUMENTV
+Lsrc\main\java\org\jabref\gui\externalfiles\UnlinkedFilesDialogViewModel.javaO) O(/

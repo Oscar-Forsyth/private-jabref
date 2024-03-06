@@ -1,0 +1,2088 @@
+
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÂ#
+7org.jabref.logic.importer.fileformat.PdfContentImporterCLASST
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java% %("/
+package$org.jabref.logic.importer.fileformat"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"†
+declarationStringä<mark class="modifier">public </mark><mark class="modifier">class </mark>PdfContentImporter<mark class="modifier"> extends </mark>Importer"
+accesspublic*PdfContentImporter2ƒ
+_org.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java8 8((2æ
+Yorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaJ J("2¿
+Yorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineTitle(java.lang.String)DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java® ®("2…
+borg.jabref.logic.importer.fileformat.PdfContentImporter.isRecognizedFormat(java.io.BufferedReader)DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≠ ≠(%2≈
+^org.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.io.BufferedReader)DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≤ ≤(&2ø
+Xorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.lang.String)DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaπ π(&2¡
+Zorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¿ ¿(&2Ÿ
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java— —(-2Ÿ
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÂ Â('2¨
+Eorg.jabref.logic.importer.fileformat.PdfContentImporter.extractYear()DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaı ı(2∫
+Sorg.jabref.logic.importer.fileformat.PdfContentImporter.proceedToNextNonEmptyLine()DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÖ Ö(*2ø
+Xorg.jabref.logic.importer.fileformat.PdfContentImporter.fillCurStringWithNonEmptyLines()DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaï ï(/2Æ
+Gorg.jabref.logic.importer.fileformat.PdfContentImporter.readLastBlock()DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÆ Æ(2®
+Aorg.jabref.logic.importer.fileformat.PdfContentImporter.getName()DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java« «(2¨
+Eorg.jabref.logic.importer.fileformat.PdfContentImporter.getFileType()DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÃ Ã('2Ø
+Horg.jabref.logic.importer.fileformat.PdfContentImporter.getDescription()DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java— —( 2Ω
+Xorg.jabref.logic.importer.fileformat.PdfContentImporter?YEAR_EXTRACT_PATTERN@39.33:39.53DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java'! '(52Æ
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java) )(2≤
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java+ +(2≤
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java, ,(2≠
+Horg.jabref.logic.importer.fileformat.PdfContentImporter?year@45.19:45.23DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java- -(2Ç
+"org.jabref.logic.importer.ImporterEXTENDT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java%( %(0œ+
+_org.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)METHODT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java8 8(("
+isFinalfalse"Å
+declarationStringl<mark class="modifier">private </mark>String <mark class="method">removeNonLettersAtEnd</mark>(String input)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*removeNonLettersAtEnd2u
+java.lang.String.trim()CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java9 9("2x
+java.lang.String.isEmpty()CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java: :(2z
+java.lang.String.charAt(int)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java= =("2w
+java.lang.String.length()CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java=* =(02Ä
+"java.lang.Character.isLetter(char)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java> >("2Ç
+$java.lang.String.substring(int, int)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java@ @(%2w
+java.lang.String.length()CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java@0 @(62x
+java.lang.String.isEmpty()CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaA A(2z
+java.lang.String.charAt(int)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaD D(%2w
+java.lang.String.length()CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaD- D(32√
+eorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)!inputCALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java9 9(2–
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?result@57.15:57.21CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java: :(2–
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?result@57.15:57.21CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java; ;(2–
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?result@57.15:57.21CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java= =(2–
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?result@57.15:57.21CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java=# =()2œ
+qorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?lastC@61.13:61.18CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java># >((2œ
+qorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?lastC@61.13:61.18CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java>. >(32–
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?result@57.15:57.21CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java@ @(2–
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?result@57.15:57.21CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java@ @(2–
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?result@57.15:57.21CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java@) @(/2–
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?result@57.15:57.21CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaA A(2œ
+qorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?lastC@61.13:61.18CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaD D(2–
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?result@57.15:57.21CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaD D(2–
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?result@57.15:57.21CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaD& D(,2–
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?result@57.15:57.21CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaG G(2»
+eorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)!input	PARAMETERT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java80 8(52◊
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?result@57.15:57.21DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java9 9(2÷
+qorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?lastC@61.13:61.18DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java= =(2u
+java.lang.StringRETURN_TYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java8 8(û
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?result@57.15:57.21VARIABLET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java9 9("
+typeString"
+isFinalfalse"q
+declarationString\<mark class="modifier"> </mark>String <mark class="class-field">result</mark> = input.trim()*result2n
+java.lang.StringTYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java9 9(2u
+java.lang.String.trim()CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java9 9("2√
+eorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)!inputCALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java9 9(Ä	
+qorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?lastC@61.13:61.18VARIABLET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java= =("
+typechar"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier"> </mark>char <mark class="class-field">lastC</mark> = result.charAt(result.length() - 1)*lastC2b
+charTYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java= =(2z
+java.lang.String.charAt(int)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java= =("2w
+java.lang.String.length()CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java=* =(02–
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?result@57.15:57.21CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java= =(2–
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)?result@57.15:57.21CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java=# =()Ñ
+eorg.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)!input	PARAMETERT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java80 8(5"
+typeString"
+isFinalfalse"!
+declarationStringString input*input2n
+java.lang.StringTYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java8) 8(/à±
+Yorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)METHODT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaJ J(""
+isFinalfalse"{
+declarationStringf<mark class="modifier">private </mark>String <mark class="method">streamlineNames</mark>(String names)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*streamlineNames2è
+1java.lang.String.contains(java.lang.CharSequence)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaO O(2Ü
+(java.lang.String.split(java.lang.String)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaP( P(-2Ω
+_org.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaT! T(62à
+*java.lang.String.indexOf(java.lang.String)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaU U(#2u
+java.lang.String.trim()CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaW3 W(72}
+java.lang.String.substring(int)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaW& W(/2à
+*java.lang.String.indexOf(java.lang.String)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaY) Y(02Ç
+$java.lang.String.substring(int, int)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java[4 [(=2á
+)java.lang.String.concat(java.lang.String)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java]2 ](82á
+)java.lang.String.concat(java.lang.String)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java]" ]((2Ω
+_org.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java]9 ](N2}
+java.lang.String.substring(int)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java^* ^(32x
+java.lang.String.isEmpty()CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javab b($2ë
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javac! c(12á
+)java.lang.String.concat(java.lang.String)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javai" i((2á
+)java.lang.String.concat(java.lang.String)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javak k($2Ü
+(java.lang.String.split(java.lang.String)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaq( q(-2ë
+1java.lang.String.contains(java.lang.CharSequence)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÄ& Ä(.2â
+)java.lang.String.concat(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÇ8 Ç(>2â
+)java.lang.String.concat(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÇ" Ç((2â
+)java.lang.String.concat(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÖ" Ö((2ø
+_org.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÖ) Ö(>2z
+java.lang.String.isEmpty()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaá+ á(22Ö
+%java.lang.Character.isLowerCase(char)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaáB á(M2|
+java.lang.String.charAt(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaá\ á(b2â
+)java.lang.String.concat(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaã& ã(,2ì
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaí í(/2â
+)java.lang.String.concat(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javañ& ñ(,2ì
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaò! ò(12ì
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaô) ô(92â
+)java.lang.String.concat(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaö& ö(,2â
+)java.lang.String.concat(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaù< ù(B2â
+)java.lang.String.concat(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaù& ù(,2Ω
+_org.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)!namesCALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaO O(2Ω
+_org.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)!namesCALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaP" P('2«
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaQ Q(2Œ
+porg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitNames@80.21:80.31CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaS$ S(.2Õ
+oorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitName@83.24:83.33CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaT7 T(@2À
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?curName@84.23:84.30CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaU U(2À
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?curName@84.23:84.30CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaW W(2À
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?curName@84.23:84.30CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaW W(%2À
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?curName@84.23:84.30CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaY! Y((2 
+lorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?posAnd@89.24:89.30CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaZ Z(2À
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?curName@84.23:84.30CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java[, [(32 
+lorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?posAnd@89.24:89.30CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java[A [(G2«
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java] ](2«
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java] ](!2Œ
+porg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?nameBefore@91.31:91.41CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java]O ](Y2À
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?curName@84.23:84.30CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java^ ^(2À
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?curName@84.23:84.30CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java^" ^()2 
+lorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?posAnd@89.24:89.30CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java^4 ^(:2À
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?curName@84.23:84.30CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javab b(2À
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?curName@84.23:84.30CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javac2 c(92À
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?curName@84.23:84.30CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javad d(2À
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?isFirst@82.20:82.27CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaf f(2À
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?isFirst@82.20:82.27CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javag g(2«
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javai i(2«
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javai i(!2«
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javak k(2«
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javak k(2À
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?curName@84.23:84.30CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javak% k(,2Ω
+_org.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)!namesCALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaq" q('2–
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitNames@113.21:113.31CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javar r(2«
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaz z(2€
+}org.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?workedOnFirstOrMiddle@119.20:119.41CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java| |()2“
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitNames@113.21:113.31CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÄ Ä("2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?i@121.16:121.17CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÄ# Ä($2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÇ Ç(2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÇ Ç(!2“
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitNames@113.21:113.31CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÇ) Ç(32…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?i@121.16:121.17CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÇ4 Ç(52…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÖ Ö(2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÖ Ö(!2“
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitNames@113.21:113.31CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÖ? Ö(I2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?i@121.16:121.17CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÖJ Ö(K2“
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitNames@113.21:113.31CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaá á('2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?i@121.16:121.17CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaá( á()2“
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitNames@113.21:113.31CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaáN á(X2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?i@121.16:121.17CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaáY á(Z2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaã ã(2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaã" ã(%2›
+}org.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?workedOnFirstOrMiddle@119.20:119.41CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaé é(12“
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitNames@113.21:113.31CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaí0 í(:2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?i@121.16:121.17CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaí; í(<2œ
+oorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?isFirst@120.20:120.27CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaì ì(#2œ
+oorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?isFirst@120.20:120.27CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaî î(#2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javañ ñ(2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javañ" ñ(%2“
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitNames@113.21:113.31CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaò2 ò(<2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?i@121.16:121.17CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaò= ò(>2“
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitNames@113.21:113.31CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaòE ò(O2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?i@121.16:121.17CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaòZ ò([2“
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitNames@113.21:113.31CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaô: ô(D2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?i@121.16:121.17CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaôE ô(F2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaö ö(2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaö" ö(%2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaù ù(2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaù" ù(%2“
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitNames@113.21:113.31CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaù- ù(72…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?i@121.16:121.17CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaù8 ù(92›
+}org.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?workedOnFirstOrMiddle@119.20:119.41CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaû û(12…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?i@121.16:121.17CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¢ ¢(2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?i@121.16:121.17CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java£ £(2“
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitNames@113.21:113.31CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java£ £(#2…
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java• •(2¬
+_org.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)!names	PARAMETERT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaJ* J(/2Œ
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaL L(2’
+porg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitNames@80.21:80.31DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaP P(2“
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?isFirst@82.20:82.27DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaR R(2‘
+oorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitName@83.24:83.33DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaS S(!2“
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?curName@84.23:84.30DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaT T(2—
+lorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?posAnd@89.24:89.30DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaY Y(2’
+porg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?nameBefore@91.31:91.41DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java[ [()2◊
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitNames@113.21:113.31DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaq q(2‚
+}org.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?workedOnFirstOrMiddle@119.20:119.41DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaw w()2‘
+oorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?isFirst@120.20:120.27DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javax x(2Œ
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?i@121.16:121.17DECLARATIONT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javay y(2u
+java.lang.StringRETURN_TYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaJ J(√
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?res@76.15:76.18VARIABLET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaL L("
+typeString"
+isFinalfalse"_
+declarationStringJ<mark class="modifier"> </mark>String <mark class="class-field">res</mark>*res2n
+java.lang.StringTYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaL L(ÿ
+porg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitNames@80.21:80.31VARIABLET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaP P("
+typeString"
+isFinalfalse"ö
+declarationStringÑ<mark class="modifier"> </mark>String[] <mark class="class-field">splitNames</mark> = names.split("<mark class="modifier">,</mark>")*
+splitNames2p
+java.lang.String[]TYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaP P(2Ü
+(java.lang.String.split(java.lang.String)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaP( P(-2Ω
+_org.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)!namesCALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaP" P('Ó
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?isFirst@82.20:82.27VARIABLET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaR R("
+typeboolean"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">isFirst</mark> = true*isFirst2e
+booleanTYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaR R(’
+oorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitName@83.24:83.33VARIABLET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaS S(!"
+typeString"
+isFinalfalse"e
+declarationStringP<mark class="modifier"> </mark>String <mark class="class-field">splitName</mark>*	splitName2n
+java.lang.StringTYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaS S(É
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?curName@84.23:84.30VARIABLET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaT T("
+typeString"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>String <mark class="class-field">curName</mark> = removeNonLettersAtEnd(splitName)*curName2n
+java.lang.StringTYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaT T(2Ω
+_org.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaT! T(62Õ
+oorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitName@83.24:83.33CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaT7 T(@Õ
+lorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?posAnd@89.24:89.30VARIABLET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaY Y("
+typeint"
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">posAnd</mark> = curName.indexOf(" and ")*posAnd2a
+intTYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaY Y(2à
+*java.lang.String.indexOf(java.lang.String)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaY) Y(02À
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?curName@84.23:84.30CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaY! Y((ò
+porg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?nameBefore@91.31:91.41VARIABLET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java[ [()"
+typeString"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark>String <mark class="class-field">nameBefore</mark> = curName.substring(0, posAnd)*
+nameBefore2n
+java.lang.StringTYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java[ [(2Ç
+$java.lang.String.substring(int, int)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java[4 [(=2À
+morg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?curName@84.23:84.30CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java[, [(32 
+lorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?posAnd@89.24:89.30CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java[A [(G∫
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?splitNames@113.21:113.31VARIABLET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaq q("
+typeString"
+isFinalfalse"{
+declarationStringf<mark class="modifier"> </mark>String[] <mark class="class-field">splitNames</mark> = names.split(" ")*
+splitNames2p
+java.lang.String[]TYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaq q(2Ü
+(java.lang.String.split(java.lang.String)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaq( q(-2Ω
+_org.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)!namesCALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaq" q('∫
+}org.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?workedOnFirstOrMiddle@119.20:119.41VARIABLET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaw w()"
+typeboolean"
+isFinalfalse"∑
+declarationString°<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">workedOnFirstOrMiddle</mark> = <mark class="modifier">false</mark>*workedOnFirstOrMiddle2e
+booleanTYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaw w(
+oorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?isFirst@120.20:120.27VARIABLET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javax x("
+typeboolean"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">isFirst</mark> = true*isFirst2e
+booleanTYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javax x(Œ
+iorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)?i@121.16:121.17VARIABLET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javay y("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 0*i2a
+intTYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javay y(˛
+_org.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)!names	PARAMETERT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaJ* J(/"
+typeString"
+isFinalfalse"!
+declarationStringString names*names2n
+java.lang.StringTYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaJ# J()Í
+Yorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineTitle(java.lang.String)METHODV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java® ®(""
+isFinalfalse"{
+declarationStringf<mark class="modifier">private </mark>String <mark class="method">streamlineTitle</mark>(String title)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*streamlineTitle2ø
+_org.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java© ©($2ø
+_org.jabref.logic.importer.fileformat.PdfContentImporter.streamlineTitle(java.lang.String)!titleCALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java©% ©(*2ƒ
+_org.jabref.logic.importer.fileformat.PdfContentImporter.streamlineTitle(java.lang.String)!title	PARAMETERV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java®* ®(/2w
+java.lang.StringRETURN_TYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java® ®(Ç
+_org.jabref.logic.importer.fileformat.PdfContentImporter.streamlineTitle(java.lang.String)!title	PARAMETERV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java®* ®(/"
+typeString"
+isFinalfalse"!
+declarationStringString title*title2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java®# ®()≠
+borg.jabref.logic.importer.fileformat.PdfContentImporter.isRecognizedFormat(java.io.BufferedReader)METHODV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≠ ≠(%"
+isFinalfalse"¢
+declarationStringå<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">isRecognizedFormat</mark>(BufferedReader input)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*isRecognizedFormat2ç
+-java.lang.String.startsWith(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÆ  Æ(*2Å
+!java.io.BufferedReader.readLine()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÆ Æ(2»
+horg.jabref.logic.importer.fileformat.PdfContentImporter.isRecognizedFormat(java.io.BufferedReader)!inputCALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÆ Æ(2±
+Morg.jabref.logic.importer.Importer.isRecognizedFormat(java.io.BufferedReader)OVERRIDEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≠ ≠(%2Õ
+horg.jabref.logic.importer.fileformat.PdfContentImporter.isRecognizedFormat(java.io.BufferedReader)!input	PARAMETERV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≠5 ≠(:2n
+booleanRETURN_TYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≠ ≠(°
+horg.jabref.logic.importer.fileformat.PdfContentImporter.isRecognizedFormat(java.io.BufferedReader)!input	PARAMETERV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≠5 ≠(:"
+typeBufferedReader"
+isFinalfalse")
+declarationStringBufferedReader input*input2v
+java.io.BufferedReaderTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≠& ≠(4–
+^org.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.io.BufferedReader)METHODV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≤ ≤(&"
+isFinalfalse"Ü
+declarationString<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>ParserResult <mark class="method">importDatabase</mark>(BufferedReader reader)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeParserResult*importDatabase2É
+#java.util.Objects.requireNonNull(T)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≥ ≥(2∑
+Wjava.lang.UnsupportedOperationException.UnsupportedOperationException(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¥ ¥(/2≈
+eorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.io.BufferedReader)!readerCALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≥ ≥(%2≠
+Iorg.jabref.logic.importer.Importer.importDatabase(java.io.BufferedReader)OVERRIDEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≤ ≤(&2 
+eorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.io.BufferedReader)!reader	PARAMETERV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≤6 ≤(<2ç
+&org.jabref.logic.importer.ParserResultRETURN_TYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≤ ≤(†
+eorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.io.BufferedReader)!reader	PARAMETERV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≤6 ≤(<"
+typeBufferedReader"
+isFinalfalse"*
+declarationStringBufferedReader reader*reader2v
+java.io.BufferedReaderTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≤' ≤(5™
+Xorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.lang.String)METHODV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaπ π(&"
+isFinalfalse"¸
+declarationStringÊ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>ParserResult <mark class="method">importDatabase</mark>(String data)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeParserResult*importDatabase2É
+#java.util.Objects.requireNonNull(T)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∫ ∫(2∑
+Wjava.lang.UnsupportedOperationException.UnsupportedOperationException(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaª ª(/2Ω
+]org.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.lang.String)!dataCALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∫ ∫(#2ß
+Corg.jabref.logic.importer.Importer.importDatabase(java.lang.String)OVERRIDEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaπ π(&2¬
+]org.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.lang.String)!data	PARAMETERV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaπ. π(22ç
+&org.jabref.logic.importer.ParserResultRETURN_TYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaπ π(˛
+]org.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.lang.String)!data	PARAMETERV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaπ. π(2"
+typeString"
+isFinalfalse" 
+declarationStringString data*data2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaπ' π(-≈6
+Zorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)METHODV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¿ ¿(&"
+isFinalfalse"Ø
+declarationStringô<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>ParserResult <mark class="method">importDatabase</mark>(Path filePath)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeParserResult*importDatabase2≤
+Rorg.jabref.logic.xmp.XmpUtilReader.loadWithAutomaticDecryption(java.nio.file.Path)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¬7 ¬(R2“
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java√' √(;2“
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaƒ' ƒ(=2§
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≈ ≈(2©
+Iorg.jabref.logic.importer.ParserResult.fromErrorMessage(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java«  «(02Æ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java«> «(B2•
+Eorg.jabref.logic.importer.ParserResult.fromError(java.lang.Exception)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java…  …()2£
+Cjava.util.ArrayList.forEach(java.util.function.Consumer<? super E>)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÃ Ã(2™
+Jorg.jabref.model.entry.BibEntry.addFile(org.jabref.model.entry.LinkedFile)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÃ& Ã(-2É
+#java.nio.file.Path.toAbsolutePath()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÃJ Ã(X2Ç
+"java.util.ArrayList.ArrayList(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¡/ ¡(:2í
+2org.jabref.logic.xmp.XmpUtilReader.XmpUtilReader()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¬' ¬(42ƒ
+dorg.jabref.model.entry.LinkedFile.LinkedFile(java.lang.String, java.nio.file.Path, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÃ2 Ã(<2 
+jorg.jabref.logic.importer.ParserResult.ParserResult(java.util.Collection<org.jabref.model.entry.BibEntry>)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÕ Õ(2√
+corg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)!filePathCALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¬S ¬([2—
+qorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?document@194.24:194.32CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java√< √(D2⁄
+zorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?firstPageContents@195.19:195.36CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaƒ> ƒ(O2Œ
+norg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?entry@196.31:196.36CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≈ ≈(2“
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?exception@200.29:200.38CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java…* …(32œ
+oorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?result@193.34:193.40CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÃ Ã(2Œ
+norg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?entry@204.23:204.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÃ  Ã(%2√
+corg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)!filePathCALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÃA Ã(I2œ
+oorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?result@193.34:193.40CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÕ  Õ(&2z
+java.util.ArrayList.add(E)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≈ ≈('2©
+Eorg.jabref.logic.importer.Importer.importDatabase(java.nio.file.Path)OVERRIDEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¿ ¿(&2»
+corg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)!filePath	PARAMETERV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¿, ¿(42÷
+oorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?result@193.34:193.40DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¡" ¡((2ÿ
+qorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?document@194.24:194.32DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¬ ¬( 2·
+zorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?firstPageContents@195.19:195.36DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java√ √($2’
+norg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?entry@196.31:196.36DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaƒ ƒ($2—
+jorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?e@198.52:198.53DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∆4 ∆(52Ÿ
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?exception@200.29:200.38DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java» »(&2’
+norg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?entry@204.23:204.28DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÃ Ã(2ç
+&org.jabref.logic.importer.ParserResultRETURN_TYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¿ ¿(∑
+oorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?result@193.34:193.40VALUEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¡" ¡(("
+typeArrayList<BibEntry>"
+isFinaltrue"©
+declarationStringì<mark class="modifier"> </mark><mark class="modifier">final </mark>ArrayList<BibEntry> <mark class="class-field">result</mark> = new ArrayList<>(1)*result2s
+java.util.ArrayListTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¡ ¡(2à
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¡ ¡( 2Ç
+"java.util.ArrayList.ArrayList(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¡/ ¡(:ƒ
+qorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?document@194.24:194.32VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¬ ¬( "
+type
+PDDocument"
+isFinalfalse"•
+declarationStringè<mark class="modifier"> </mark>PDDocument <mark class="class-field">document</mark> = new XmpUtilReader().loadWithAutomaticDecryption(filePath)*document2Ñ
+$org.apache.pdfbox.pdmodel.PDDocumentTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¬ ¬(2≤
+Rorg.jabref.logic.xmp.XmpUtilReader.loadWithAutomaticDecryption(java.nio.file.Path)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¬7 ¬(R2í
+2org.jabref.logic.xmp.XmpUtilReader.XmpUtilReader()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¬' ¬(42√
+corg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)!filePathCALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¬S ¬([ø
+zorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?firstPageContents@195.19:195.36VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java√ √($"
+typeString"
+isFinalfalse"é
+declarationStringy<mark class="modifier"> </mark>String <mark class="class-field">firstPageContents</mark> = getFirstPageContents(document)*firstPageContents2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java√ √(2“
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java√' √(;2—
+qorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?document@194.24:194.32CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java√< √(D·
+norg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?entry@196.31:196.36VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaƒ ƒ($"
+typeOptional<BibEntry>"
+isFinalfalse"¶
+declarationStringê<mark class="modifier"> </mark>Optional<BibEntry> <mark class="class-field">entry</mark> = getEntryFromPDFContent(firstPageContents, OS.NEWLINE)*entry2r
+java.util.OptionalTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaƒ ƒ(2à
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaƒ ƒ(2“
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaƒ' ƒ(=2⁄
+zorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?firstPageContents@195.19:195.36CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaƒ> ƒ(Oä
+corg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)!filePath	PARAMETERV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¿, ¿(4"
+typePath"
+isFinalfalse""
+declarationStringPath filePath*filePath2r
+java.nio.file.PathTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¿' ¿(+‰
+jorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?e@198.52:198.53VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∆4 ∆(5"*
+type"EncryptedPdfsNotSupportedException"
+isFinalfalse"9
+declarationString$EncryptedPdfsNotSupportedException e*e2ó
+7org.jabref.logic.xmp.EncryptedPdfsNotSupportedExceptionTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∆ ∆(3©
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?exception@200.29:200.38VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java» »(&"
+typeIOException"
+isFinalfalse"*
+declarationStringIOException exception*	exception2s
+java.io.IOExceptionTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java» »(ò
+norg.jabref.logic.importer.fileformat.PdfContentImporter.importDatabase(java.nio.file.Path)?entry@204.23:204.28VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÃ Ã("
+type"
+isFinalfalse"
+declarationString entry*entry2TYPEàÄ
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)METHODV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java— —(-"
+isFinalfalse"Ï
+declarationString÷<mark class="modifier"> </mark>Optional&lt;BibEntry&gt; <mark class="method">getEntryFromPDFContent</mark>(String firstpageContents<mark class="modifier"><mark class="modifier">,</mark></mark> String lineSeparator)"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typeOptional<BibEntry>*getEntryFromPDFContent2∑
+Worg.jabref.model.strings.StringUtil.unifyLineBreaks(java.lang.String, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java€? €(N2à
+(java.lang.String.split(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java›3 ›(82≥
+Sorg.jabref.logic.importer.fileformat.PdfContentImporter.proceedToNextNonEmptyLine()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java· ·(!2z
+java.util.Optional.empty()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÂ Â(!2y
+java.lang.String.length()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¸ ¸(2•
+Eorg.jabref.logic.importer.fileformat.PdfContentImporter.extractYear()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˛ ˛(2ë
+1java.lang.String.contains(java.lang.CharSequence)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaˇ ˇ("2∏
+Xorg.jabref.logic.importer.fileformat.PdfContentImporter.fillCurStringWithNonEmptyLines()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÄ Ä(.2é
+.java.lang.String.toLowerCase(java.util.Locale)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÜ) Ü(42ë
+1java.lang.String.contains(java.lang.CharSequence)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaá á("2∏
+Xorg.jabref.logic.importer.fileformat.PdfContentImporter.fillCurStringWithNonEmptyLines()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaà à(22∏
+Xorg.jabref.logic.importer.fileformat.PdfContentImporter.fillCurStringWithNonEmptyLines()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaê ê(&2π
+Yorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineTitle(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaë ë(2â
+)java.lang.String.equals(java.lang.Object)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaó1 ó(72π
+Yorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaö ö('2â
+)java.lang.String.equals(java.lang.Object)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaû û(2â
+)java.lang.String.concat(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaü4 ü(:2â
+)java.lang.String.concat(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaü$ ü(*2y
+java.lang.String.length()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java™ ™(!2y
+java.lang.String.length()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java™2 ™(82ì
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java™J ™(Z2Ñ
+$java.lang.String.substring(int, int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java™e ™(n2z
+java.lang.String.length()CALLW
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java™} ™(É2y
+java.lang.String.length()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java´ ´($2y
+java.lang.String.length()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java´5 ´(;2â
+)java.lang.String.concat(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaØT Ø(Z2w
+java.lang.String.trim()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaØM Ø(Q2
+java.lang.String.substring(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaØ* Ø(32y
+java.lang.String.length()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaØ? Ø(E2Ä
+ java.lang.System.lineSeparator()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaØb Ø(o2â
+)java.lang.String.equals(java.lang.Object)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¥9 ¥(?2â
+)java.lang.String.concat(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaµC µ(I2â
+)java.lang.String.concat(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaµ* µ(02Ä
+ java.lang.System.lineSeparator()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaµQ µ(^2w
+java.lang.String.trim()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∏& ∏(*2y
+java.lang.String.length()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∫" ∫((2y
+java.lang.String.length()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∫9 ∫(?2ì
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∫Q ∫(a2Ñ
+$java.lang.String.substring(int, int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∫l ∫(u2{
+java.lang.String.length()CALLX
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∫Ñ ∫(ä2y
+java.lang.String.length()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaª ª($2y
+java.lang.String.length()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaª5 ª(;2w
+java.lang.String.trim()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaøM ø(Q2
+java.lang.String.substring(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaø* ø(32y
+java.lang.String.length()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaø? ø(E2∏
+Xorg.jabref.logic.importer.fileformat.PdfContentImporter.fillCurStringWithNonEmptyLines()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¬ ¬(.2ø
+_org.jabref.logic.importer.fileformat.PdfContentImporter.removeNonLettersAtEnd(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java√ √(02é
+.java.lang.String.toLowerCase(java.util.Locale)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≈) ≈(42ä
+*java.lang.String.indexOf(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java«  «('2Å
+!java.lang.String.lastIndexOf(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java +  (62w
+java.lang.String.trim()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java $  ((2
+java.lang.String.substring(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaŒ+ Œ(42≥
+Sorg.jabref.logic.importer.fileformat.PdfContentImporter.proceedToNextNonEmptyLine()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java” ”()2ß
+Gorg.jabref.logic.importer.fileformat.PdfContentImporter.readLastBlock()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaﬁ ﬁ(2•
+Eorg.jabref.logic.importer.fileformat.PdfContentImporter.extractYear()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‚ ‚(2ä
+*java.lang.String.indexOf(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‰  ‰('2π
+Yorg.jabref.logic.importer.fileformat.PdfContentImporter.streamlineNames(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÈ È((2Ñ
+$java.lang.String.substring(int, int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÈ3 È(<2y
+java.lang.String.length()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÎ) Î(/2y
+java.lang.String.length()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÌ. Ì(42
+java.lang.String.substring(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÓ* Ó(32
+java.lang.String.substring(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java* (32à
+(java.lang.String.split(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÚ3 Ú(82Å
+!java.lang.String.lastIndexOf(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˜/ ˜(:2Ñ
+$java.lang.String.substring(int, int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¯( ¯(12
+java.lang.String.substring(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˘( ˘(12
+java.lang.String.substring(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˚- ˚(62y
+java.lang.String.length()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˝) ˝(/2Ñ
+$java.lang.String.substring(int, int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˛0 ˛(92ä
+*java.lang.String.indexOf(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÉ$ É(+2ä
+*java.lang.String.indexOf(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÖ( Ö(/2î
+4org.jabref.model.entry.field.StandardField.getName()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÖB Ö(I2y
+java.lang.String.length()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaâ& â(,2|
+java.lang.String.charAt(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaä7 ä(=2Ç
+"java.lang.String.indexOf(int, int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaé6 é(=2Ñ
+$java.lang.String.substring(int, int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaê0 ê(92
+java.lang.String.substring(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaí0 í(92ë
+1java.lang.String.contains(java.lang.CharSequence)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaò5 ò(=2}
+java.lang.String.indexOf(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java§( §(/2|
+java.lang.String.charAt(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java™< ™(B2Ñ
+$java.lang.String.substring(int, int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÆ7 Æ(@2Ø
+Oorg.jabref.model.entry.BibEntry.setType(org.jabref.model.entry.types.EntryType)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∑ ∑(2æ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaº º(2æ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaø ø(2æ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¬ ¬(2æ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≈ ≈(2æ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java» »(2æ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÀ À(2æ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaŒ Œ(2æ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java— —(2æ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‘ ‘(2æ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java◊ ◊(2æ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java⁄ ⁄(2æ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java› ›(2æ
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‡ ‡(2x
+java.util.Optional.of(T)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‚ ‚(2ä
+*org.jabref.model.entry.BibEntry.BibEntry()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∂ ∂(%2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)!firstpageContentsCALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java€O €(`2·
+Äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)!lineSeparatorCALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java€b €(o2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java› ›(2Ñ
+£org.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?firstpageContentsUnifiedLineBreaks@219.15:219.49CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java› ›(22·
+Äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)!lineSeparatorCALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java›9 ›(F2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaﬂ ﬂ(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‚ ‚(2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‚ ‚(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÈ È(2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÈ È(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÈ È(#2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÎ Î(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÎ Î(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¸ ¸(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaˇ ˇ(2Ï
+ãorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?conference@242.15:242.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÅ Å(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÅ Å(&2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÇ Ç(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÜ Ü((2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?lower@262.23:262.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaá á(2Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?publisher@249.15:249.24CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaâ â(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaâ  â()2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaä ä(2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?title@241.15:241.20CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaë ë(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaë  ë()2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaí í(2Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?author@237.15:237.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javañ ñ(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaó ó(2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaó ó(!2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaó8 ó(=2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaó> ó(G2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaö ö(2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaö( ö(-2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaö. ö(72Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?author@237.15:237.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaõ õ(2Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?author@237.15:237.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaú ú(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaú ú("2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaû û((2Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?author@237.15:237.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaü ü(2Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?author@237.15:237.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaü ü(#2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaü; ü(D2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¢ ¢(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java§ §(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java• •(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java® ®(2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java® ®( 2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java© ©(2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java© ©(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java© ©('2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java™ ™(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java™[ ™(d2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java´ ´(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≠ ≠(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaØ Ø(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaØ  Ø()2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java± ±(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¥ ¥(!2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¥$ ¥()2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¥@ ¥(E2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¥F ¥(O2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaµ µ(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaµ  µ()2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaµ1 µ(62≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaµ7 µ(@2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∂ ∂(2Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?abstractT@239.15:239.24CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∏ ∏(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∏ ∏(%2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaπ π(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∫ ∫(!2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∫b ∫(k2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaª ª(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaΩ Ω(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaø ø(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaø  ø()2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¡ ¡(2Í
+âorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?keywords@240.15:240.23CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java√ √(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java√1 √(:2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≈ ≈((2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?lower@325.23:325.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java« «(2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@327.20:327.23CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java» »(2Ê
+Öorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?type@251.18:251.22CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java… …(2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@327.20:327.23CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java   (2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java   (#2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@327.20:327.23CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÀ À(2Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?number@246.15:246.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaŒ Œ(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaŒ! Œ(*2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@327.20:327.23CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaŒ5 Œ(82≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java“ “(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java◊ ◊(2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java◊ ◊(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java› ›(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‰ ‰(2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÂ Â(2Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?publisher@249.15:249.24CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÂ Â((2Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?publisher@249.15:249.24CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaË Ë(2Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?editor@238.15:238.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÈ È(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÈ) È(22Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÈ@ È(C2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÏ$ Ï('2Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?edslength@363.20:363.29CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÏ* Ï(32Ô
+éorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?posWithEditor@364.20:364.33CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÌ Ì(!2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÌ$ Ì(-2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÓ Ó(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÓ  Ó()2Ô
+éorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?posWithEditor@364.20:364.33CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÓ4 Ó(A2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java (2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java  ()2Ô
+éorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?posWithEditor@364.20:364.33CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java4 (A2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÚ) Ú(22Ô
+éorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?springerSplit@370.25:370.38CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÛ Û(!2Ï
+ãorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?conference@242.15:242.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÙ Ù(2Ô
+éorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?springerSplit@370.25:370.38CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÙ! Ù(.2Ô
+éorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?springerSplit@370.25:370.38CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaˆ( ˆ(52Ï
+ãorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?seriesData@374.27:374.37CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˜$ ˜(.2Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?series@244.15:244.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¯ ¯(2Ï
+ãorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?seriesData@374.27:374.37CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¯ ¯('2Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?lastSpace@375.24:375.33CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¯5 ¯(>2Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?volume@245.15:245.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˘ ˘(2Ï
+ãorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?seriesData@374.27:374.37CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˘ ˘('2Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?lastSpace@375.24:375.33CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˘2 ˘(;2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pages@247.15:247.20CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˚ ˚(2Ô
+éorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?springerSplit@370.25:370.38CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˚ ˚()2Ô
+éorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?springerSplit@370.25:370.38CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˝ ˝(%2®
+Horg.jabref.logic.importer.fileformat.PdfContentImporter?year@45.19:45.23CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˛ ˛(2Ô
+éorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?springerSplit@370.25:370.38CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˛ ˛(,2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?DOI@243.15:243.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÇ Ç(2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÉ É(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÉ É(#2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÑ Ñ(2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÖ Ö(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÖ Ö('2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaá á(2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaà à(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaâ â(%2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaâ1 â(42≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaä- ä(62Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaä> ä(A2Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?delimiter@394.33:394.42CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaã! ã(*2Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?delimiter@394.33:394.42CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaã7 ã(@2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaå  å(#2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaé, é(52Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaéC é(F2Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?nextSpace@398.32:398.41CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaè  è()2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?DOI@243.15:243.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaê  ê(#2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaê& ê(/2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaê: ê(=2Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?nextSpace@398.32:398.41CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaê? ê(H2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?DOI@243.15:243.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaí  í(#2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaí& í(/2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaí: í(=2Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?publisher@249.15:249.24CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaò ò(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaò+ ò(42Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?publisher@249.15:249.24CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaö ö(2Ï
+ãorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?conference@242.15:242.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java£ £("2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java§ §(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java§ §('2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java• •(2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java© ©(2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java™$ ™('2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java™2 ™(;2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java™C ™(F2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java´  ´(#2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≠  ≠(#2Ï
+ãorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?conference@242.15:242.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÆ  Æ(*2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÆ- Æ(62Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÆD Æ(G2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?entry@438.17:438.22CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∑ ∑(2Ê
+Öorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?type@251.18:251.22CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∑ ∑(2Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?author@237.15:237.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaª ª(2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?entry@438.17:438.22CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaº º(2Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?author@237.15:237.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaº1 º(72Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?editor@238.15:238.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaæ æ(2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?entry@438.17:438.22CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaø ø(2Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?editor@238.15:238.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaø1 ø(72Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?abstractT@239.15:239.24CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¡ ¡(2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?entry@438.17:438.22CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¬ ¬(2Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?abstractT@239.15:239.24CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¬3 ¬(<2Í
+âorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?keywords@240.15:240.23CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaƒ# ƒ(+2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?entry@438.17:438.22CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≈ ≈(2Í
+âorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?keywords@240.15:240.23CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≈3 ≈(;2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?title@241.15:241.20CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java« «(2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?entry@438.17:438.22CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java» »(2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?title@241.15:241.20CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java»0 »(52Ï
+ãorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?conference@242.15:242.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java   (2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?entry@438.17:438.22CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÀ À(2Ï
+ãorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?conference@242.15:242.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÀ4 À(>2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?DOI@243.15:243.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÕ Õ(2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?entry@438.17:438.22CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaŒ Œ(2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?DOI@243.15:243.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaŒ. Œ(12Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?series@244.15:244.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java– –(2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?entry@438.17:438.22CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java— —(2Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?series@244.15:244.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java—1 —(72Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?volume@245.15:245.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java” ”(2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?entry@438.17:438.22CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‘ ‘(2Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?volume@245.15:245.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‘1 ‘(72Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?number@246.15:246.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java÷ ÷(2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?entry@438.17:438.22CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java◊ ◊(2Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?number@246.15:246.21CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java◊1 ◊(72Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pages@247.15:247.20CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaŸ Ÿ(2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?entry@438.17:438.22CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java⁄ ⁄(2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pages@247.15:247.20CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java⁄0 ⁄(52®
+Horg.jabref.logic.importer.fileformat.PdfContentImporter?year@45.19:45.23CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‹ ‹(2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?entry@438.17:438.22CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java› ›(2®
+Horg.jabref.logic.importer.fileformat.PdfContentImporter?year@45.19:45.23CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java›/ ›(32Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?publisher@249.15:249.24CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaﬂ ﬂ(2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?entry@438.17:438.22CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‡ ‡(2Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?publisher@249.15:249.24CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‡4 ‡(=2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?entry@438.17:438.22CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‚ ‚( 2Í
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)!firstpageContents	PARAMETERV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java—5 —(F2Ê
+Äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)!lineSeparator	PARAMETERV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java—O —(\2ã
+£org.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?firstpageContentsUnifiedLineBreaks@219.15:219.49DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java€ €(12Ô
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?author@237.15:237.21DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÌ Ì(2Ô
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?editor@238.15:238.21DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÓ Ó(2Ú
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?abstractT@239.15:239.24DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÔ Ô(2Ò
+âorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?keywords@240.15:240.23DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java (2Ó
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?title@241.15:241.20DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÒ Ò(2Û
+ãorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?conference@242.15:242.25DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÚ Ú(2Ï
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?DOI@243.15:243.18DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÛ Û(2Ô
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?series@244.15:244.21DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÙ Ù(2Ô
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?volume@245.15:245.21DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaı ı(2Ô
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?number@246.15:246.21DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaˆ ˆ(2Ó
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pages@247.15:247.20DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˜ ˜(2Ú
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?publisher@249.15:249.24DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˘ ˘(2Ì
+Öorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?type@251.18:251.22DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˚ ˚(2Ó
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?lower@262.23:262.28DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÜ Ü(2Ó
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?lower@325.23:325.28DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≈ ≈(2Ï
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@327.20:327.23DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java« «(2Ï
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‰ ‰(2Ú
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?edslength@363.20:363.29DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÎ Î(2ˆ
+éorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?posWithEditor@364.20:364.33DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÏ Ï(!2ˆ
+éorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?springerSplit@370.25:370.38DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÚ Ú(&2Û
+ãorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?seriesData@374.27:374.37DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaˆ ˆ(%2Ú
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?lastSpace@375.24:375.33DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˜ ˜(!2Ú
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?delimiter@394.33:394.42DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaä! ä(*2Ú
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?nextSpace@398.32:398.41DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaé  é()2Ó
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?entry@438.17:438.22DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∂ ∂(2y
+java.util.OptionalRETURN_TYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java— —(2è
+org.jabref.model.entry.BibEntryRETURN_TYPE_ARGUMENTV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java— —(á
+
+£org.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?firstpageContentsUnifiedLineBreaks@219.15:219.49VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java€ €(1"
+typeString"
+isFinalfalse"æ
+declarationString®<mark class="modifier"> </mark>String <mark class="class-field">firstpageContentsUnifiedLineBreaks</mark> = StringUtil.unifyLineBreaks(firstpageContents, lineSeparator)*"firstpageContentsUnifiedLineBreaks2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java€ €(2∑
+Worg.jabref.model.strings.StringUtil.unifyLineBreaks(java.lang.String, java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java€? €(N2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)!firstpageContentsCALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java€O €(`2·
+Äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)!lineSeparatorCALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java€b €(oÏ
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?author@237.15:237.21VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÌ Ì("
+typeString"
+isFinalfalse"b
+declarationStringM<mark class="modifier"> </mark>String <mark class="class-field">author</mark>*author2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÌ Ì(í
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?editor@238.15:238.21VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÓ Ó("
+typeString"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>String <mark class="class-field">editor</mark> = <mark class="modifier">null</mark>*editor2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÓ Ó(õ
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?abstractT@239.15:239.24VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÔ Ô("
+typeString"
+isFinalfalse"ä
+declarationStringu<mark class="modifier"> </mark>String <mark class="class-field">abstractT</mark> = <mark class="modifier">null</mark>*	abstractT2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÔ Ô(ò
+âorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?keywords@240.15:240.23VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java ("
+typeString"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark>String <mark class="class-field">keywords</mark> = <mark class="modifier">null</mark>*keywords2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java (È
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?title@241.15:241.20VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÒ Ò("
+typeString"
+isFinalfalse"a
+declarationStringL<mark class="modifier"> </mark>String <mark class="class-field">title</mark>*title2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÒ Ò(û
+ãorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?conference@242.15:242.25VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÚ Ú("
+typeString"
+isFinalfalse"ã
+declarationStringv<mark class="modifier"> </mark>String <mark class="class-field">conference</mark> = <mark class="modifier">null</mark>*
+conference2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÚ Ú(â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?DOI@243.15:243.18VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÛ Û("
+typeString"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier"> </mark>String <mark class="class-field">DOI</mark> = <mark class="modifier">null</mark>*DOI2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÛ Û(í
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?series@244.15:244.21VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÙ Ù("
+typeString"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>String <mark class="class-field">series</mark> = <mark class="modifier">null</mark>*series2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÙ Ù(í
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?volume@245.15:245.21VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaı ı("
+typeString"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>String <mark class="class-field">volume</mark> = <mark class="modifier">null</mark>*volume2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaı ı(í
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?number@246.15:246.21VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaˆ ˆ("
+typeString"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>String <mark class="class-field">number</mark> = <mark class="modifier">null</mark>*number2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaˆ ˆ(è
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pages@247.15:247.20VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˜ ˜("
+typeString"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>String <mark class="class-field">pages</mark> = <mark class="modifier">null</mark>*pages2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˜ ˜(õ
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?publisher@249.15:249.24VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˘ ˘("
+typeString"
+isFinalfalse"ä
+declarationStringu<mark class="modifier"> </mark>String <mark class="class-field">publisher</mark> = <mark class="modifier">null</mark>*	publisher2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˘ ˘(¶
+Öorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?type@251.18:251.22VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˚ ˚("
+type	EntryType"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark>EntryType <mark class="class-field">type</mark> = StandardEntryType.InProceedings*type2Ü
+&org.jabref.model.entry.types.EntryTypeTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˚ ˚(–
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?lower@262.23:262.28VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÜ Ü("
+typeString"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>String <mark class="class-field">lower</mark> = curString.toLowerCase(Locale.ROOT)*lower2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÜ Ü(2é
+.java.lang.String.toLowerCase(java.util.Locale)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÜ) Ü(42≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÜ Ü((–
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?lower@325.23:325.28VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≈ ≈("
+typeString"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>String <mark class="class-field">lower</mark> = curString.toLowerCase(Locale.ROOT)*lower2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≈ ≈(2é
+.java.lang.String.toLowerCase(java.util.Locale)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≈) ≈(42≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java≈ ≈((Ñ
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@327.20:327.23VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java« «("
+typeint"
+isFinalfalse"ò
+declarationStringÇ<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">pos</mark> = lower.indexOf("technical")*pos2c
+intTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java« «(2ä
+*java.lang.String.indexOf(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java«  «('2Á
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?lower@325.23:325.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java« «(À
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‰ ‰("
+typeint"
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">pos</mark> = curString.indexOf("(Eds.)")*pos2c
+intTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‰ ‰(2ä
+*java.lang.String.indexOf(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‰  ‰('2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java‰ ‰(ê
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?edslength@363.20:363.29VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÎ Î("
+typeint"
+isFinalfalse"î
+declarationString<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">edslength</mark> = "(Eds.)".length()*	edslength2c
+intTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÎ Î(2y
+java.lang.String.length()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÎ) Î(/˙
+éorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?posWithEditor@364.20:364.33VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÏ Ï(!"
+typeint"
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">posWithEditor</mark> = pos + edslength + 2*posWithEditor2c
+intTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÏ Ï(2Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÏ$ Ï('2Î
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?edslength@363.20:363.29CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÏ* Ï(3¯
+éorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?springerSplit@370.25:370.38VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÚ Ú(&"
+typeString"
+isFinalfalse"¢
+declarationStringå<mark class="modifier"> </mark>String[] <mark class="class-field">springerSplit</mark> = curString.split("<mark class="modifier">,</mark> ")*springerSplit2r
+java.lang.String[]TYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÚ Ú(2à
+(java.lang.String.split(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÚ3 Ú(82≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÚ) Ú(2˝
+ãorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?seriesData@374.27:374.37VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaˆ ˆ(%"
+typeString"
+isFinalfalse"y
+declarationStringd<mark class="modifier"> </mark>String <mark class="class-field">seriesData</mark> = springerSplit[1]*
+seriesData2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaˆ ˆ(2Ô
+éorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?springerSplit@370.25:370.38CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaˆ( ˆ(5ì
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?lastSpace@375.24:375.33VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˜ ˜(!"
+typeint"
+isFinalfalse"ü
+declarationStringâ<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">lastSpace</mark> = seriesData.lastIndexOf(' ')*	lastSpace2c
+intTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˜ ˜(2Å
+!java.lang.String.lastIndexOf(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˜/ ˜(:2Ï
+ãorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?seriesData@374.27:374.37CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˜$ ˜(.ì
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?delimiter@394.33:394.42VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaä! ä(*"
+typechar"
+isFinalfalse"{
+declarationStringf<mark class="modifier"> </mark>char <mark class="class-field">delimiter</mark> = curString.charAt(pos)*	delimiter2d
+charTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaä ä( 2|
+java.lang.String.charAt(int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaä7 ä(=2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaä- ä(62Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaä> ä(A€
+äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?nextSpace@398.32:398.41VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaé  é()"
+typeint"
+isFinalfalse"Ω
+declarationStringß<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">nextSpace</mark> = curString.indexOf(' '<mark class="modifier">,</mark> pos)*	nextSpace2c
+intTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaé é(2Ç
+"java.lang.String.indexOf(int, int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaé6 é(=2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaé, é(52Â
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?pos@356.16:356.19CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaéC é(Fö
+Üorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)?entry@438.17:438.22VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∂ ∂("
+typeBibEntry"
+isFinalfalse"t
+declarationString_<mark class="modifier"> </mark>BibEntry <mark class="class-field">entry</mark> = new BibEntry()*entry2
+org.jabref.model.entry.BibEntryTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∂ ∂(2ä
+*org.jabref.model.entry.BibEntry.BibEntry()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∂ ∂(%¿
+Ñorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)!firstpageContents	PARAMETERV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java—5 —(F"
+typeString"
+isFinalfalse"-
+declarationStringString firstpageContents*firstpageContents2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java—. —(4¥
+Äorg.jabref.logic.importer.fileformat.PdfContentImporter.getEntryFromPDFContent(java.lang.String, java.lang.String)!lineSeparator	PARAMETERV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java—O —(\"
+typeString"
+isFinalfalse")
+declarationStringString lineSeparator*lineSeparator2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java—H —(N¬
+rorg.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)METHODV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÂ Â('"
+isFinalfalse"◊
+declarationString¡<mark class="modifier">private </mark>String <mark class="method">getFirstPageContents</mark>(PDDocument document)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*getFirstPageContents2Ä
+ java.lang.System.lineSeparator()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÎ( Î(52
+java.io.StringWriter.toString()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÔ Ô(2É
+#java.io.StringWriter.StringWriter()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÏ" Ï(.2Í
+âorg.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)?stripper@486.24:486.32CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaË Ë(2Í
+âorg.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)?stripper@486.24:486.32CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÈ È(2Í
+âorg.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)?stripper@486.24:486.32CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÍ Í(2Í
+âorg.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)?stripper@486.24:486.32CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÎ Î(2Í
+âorg.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)?stripper@486.24:486.32CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÌ Ì(2€
+{org.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)!documentCALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÌ Ì(#2Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)?writer@492.21:492.27CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÌ% Ì(+2Ë
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)?writer@492.21:492.27CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÔ Ô(2‡
+{org.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)!document	PARAMETERV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÂ3 Â(;2Ò
+âorg.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)?stripper@486.24:486.32DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÊ Ê( 2Ô
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)?writer@492.21:492.27DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÏ Ï(2w
+java.lang.StringRETURN_TYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÂ Â(¥
+âorg.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)?stripper@486.24:486.32VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÊ Ê( "
+typePDFTextStripper"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark>PDFTextStripper <mark class="class-field">stripper</mark> = new PDFTextStripper()*stripper2Ü
+&org.apache.pdfbox.text.PDFTextStripperTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÊ Ê(ó
+áorg.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)?writer@492.21:492.27VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÏ Ï("
+typeStringWriter"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>StringWriter <mark class="class-field">writer</mark> = new StringWriter()*writer2t
+java.io.StringWriterTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÏ Ï(2É
+#java.io.StringWriter.StringWriter()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÏ" Ï(.¡
+{org.jabref.logic.importer.fileformat.PdfContentImporter.getFirstPageContents(org.apache.pdfbox.pdmodel.PDDocument)!document	PARAMETERV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÂ3 Â(;"
+type
+PDDocument"
+isFinalfalse"(
+declarationStringPDDocument document*document2Ñ
+$org.apache.pdfbox.pdmodel.PDDocumentTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÂ( Â(2ˇ
+Eorg.jabref.logic.importer.fileformat.PdfContentImporter.extractYear()METHODV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaı ı("
+isFinalfalse"á
+declarationStringr<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">extractYear</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*extractYear2ó
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˙) ˙(02~
+java.util.regex.Matcher.find()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˚ ˚(2Ñ
+$java.lang.String.substring(int, int)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¸ ¸(&2
+java.util.regex.Matcher.start()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¸) ¸(.2}
+java.util.regex.Matcher.end()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¸4 ¸(72®
+Horg.jabref.logic.importer.fileformat.PdfContentImporter?year@45.19:45.23CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaˆ ˆ(2∏
+Xorg.jabref.logic.importer.fileformat.PdfContentImporter?YEAR_EXTRACT_PATTERN@39.33:39.53CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˙ ˙((2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˙1 ˙(:2µ
+Uorg.jabref.logic.importer.fileformat.PdfContentImporter.extractYear()?m@506.16:506.17CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˚ ˚(2®
+Horg.jabref.logic.importer.fileformat.PdfContentImporter?year@45.19:45.23CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¸ ¸(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¸ ¸(2µ
+Uorg.jabref.logic.importer.fileformat.PdfContentImporter.extractYear()?m@506.16:506.17CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¸' ¸((2µ
+Uorg.jabref.logic.importer.fileformat.PdfContentImporter.extractYear()?m@506.16:506.17CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¸2 ¸(32º
+Uorg.jabref.logic.importer.fileformat.PdfContentImporter.extractYear()?m@506.16:506.17DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˙ ˙(2k
+voidRETURN_TYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaı ı(Ë
+Uorg.jabref.logic.importer.fileformat.PdfContentImporter.extractYear()?m@506.16:506.17VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˙ ˙("
+typeMatcher"
+isFinalfalse"à
+declarationStrings<mark class="modifier"> </mark>Matcher <mark class="class-field">m</mark> = YEAR_EXTRACT_PATTERN.matcher(curString)*m2w
+java.util.regex.MatcherTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˙ ˙(2ó
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˙) ˙(02∏
+Xorg.jabref.logic.importer.fileformat.PdfContentImporter?YEAR_EXTRACT_PATTERN@39.33:39.53CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˙ ˙((2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java˙1 ˙(:é
+Sorg.jabref.logic.importer.fileformat.PdfContentImporter.proceedToNextNonEmptyLine()METHODV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÖ Ö(*"
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">proceedToNextNonEmptyLine</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*proceedToNextNonEmptyLine2z
+java.lang.String.isEmpty()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÜE Ü(L2w
+java.lang.String.trim()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÜ> Ü(B2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÜ Ü(2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÜ Ü(!2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÜ- Ü(22≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÜ3 Ü(<2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaá á(2k
+voidRETURN_TYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÖ Ö(ù&
+Xorg.jabref.logic.importer.fileformat.PdfContentImporter.fillCurStringWithNonEmptyLines()METHODV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaï ï(/"
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">fillCurStringWithNonEmptyLines</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*fillCurStringWithNonEmptyLines2w
+java.lang.String.trim()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaó ó("2â
+)java.lang.String.equals(java.lang.Object)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaò1 ò(72w
+java.lang.String.trim()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaô. ô(22z
+java.lang.String.isEmpty()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaö ö( 2z
+java.lang.String.isEmpty()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaõ õ(&2â
+)java.lang.String.concat(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaù* ù(02â
+)java.lang.String.concat(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaü& ü(,2≥
+Sorg.jabref.logic.importer.fileformat.PdfContentImporter.proceedToNextNonEmptyLine()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java§ §(!2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaó ó(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaó ó(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaò ò(2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaò ò(!2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaò8 ò(=2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaò> ò(G2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaô ô("2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaô# ô(,2Œ
+norg.jabref.logic.importer.fileformat.PdfContentImporter.fillCurStringWithNonEmptyLines()?curLine@537.19:537.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaö ö(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaõ õ(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaù ù(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaù  ù()2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaü ü(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaü ü(%2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaü- ü(22≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaü3 ü(<2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java° °(2’
+norg.jabref.logic.importer.fileformat.PdfContentImporter.fillCurStringWithNonEmptyLines()?curLine@537.19:537.26DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaô ô(2k
+voidRETURN_TYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaï ï(√
+norg.jabref.logic.importer.fileformat.PdfContentImporter.fillCurStringWithNonEmptyLines()?curLine@537.19:537.26VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaô ô("
+typeString"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>String <mark class="class-field">curLine</mark> = lines[lineIndex].trim()*curLine2p
+java.lang.StringTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaô ô(2w
+java.lang.String.trim()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaô. ô(22©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaô ô("2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaô# ô(,ˆ+
+Gorg.jabref.logic.importer.fileformat.PdfContentImporter.readLastBlock()METHODV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÆ Æ("
+isFinalfalse"â
+declarationStringt<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">readLastBlock</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*readLastBlock2z
+java.lang.String.isEmpty()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaØ; Ø(B2w
+java.lang.String.trim()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaØ4 Ø(82â
+)java.lang.String.equals(java.lang.Object)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∑' ∑(-2â
+)java.lang.String.concat(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaø" ø((2w
+java.lang.String.trim()CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaø2 ø(62â
+)java.lang.String.concat(java.lang.String)CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¡& ¡(,2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaØ Ø(2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaØ# Ø((2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaØ) Ø(22≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∞ ∞(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¥ ¥(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∑ ∑(2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∑. ∑(32≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∑4 ∑(=2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java∏ ∏(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaΩ Ω(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaæ æ(2∑
+Worg.jabref.logic.importer.fileformat.PdfContentImporter.readLastBlock()?j@574.17:574.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaæ$ æ(%2π
+Yorg.jabref.logic.importer.fileformat.PdfContentImporter.readLastBlock()?end@564.12:564.15CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaæ) æ(,2∑
+Worg.jabref.logic.importer.fileformat.PdfContentImporter.readLastBlock()?j@574.17:574.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaæ. æ(/2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaø ø(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaø ø(!2©
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaø) ø(.2∑
+Worg.jabref.logic.importer.fileformat.PdfContentImporter.readLastBlock()?j@574.17:574.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaø/ ø(02∑
+Worg.jabref.logic.importer.fileformat.PdfContentImporter.readLastBlock()?j@574.17:574.18CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¿ ¿(2π
+Yorg.jabref.logic.importer.fileformat.PdfContentImporter.readLastBlock()?end@564.12:564.15CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¿ ¿(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¡ ¡(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¡ ¡(%2¿
+Yorg.jabref.logic.importer.fileformat.PdfContentImporter.readLastBlock()?end@564.12:564.15DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¥ ¥(2æ
+Worg.jabref.logic.importer.fileformat.PdfContentImporter.readLastBlock()?j@574.17:574.18DECLARATIONV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaæ æ(2k
+voidRETURN_TYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÆ Æ(ˇ
+Yorg.jabref.logic.importer.fileformat.PdfContentImporter.readLastBlock()?end@564.12:564.15VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¥ ¥("
+typeint"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">end</mark> = lineIndex*end2c
+intTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¥ ¥(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java¥ ¥(˝
+Worg.jabref.logic.importer.fileformat.PdfContentImporter.readLastBlock()?j@574.17:574.18VARIABLEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaæ æ("
+typeint"
+isFinalfalse"à
+declarationStrings<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">j</mark> = lineIndex + 1*j2c
+intTYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaæ æ(2≠
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25CALLV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaæ æ(´
+Aorg.jabref.logic.importer.fileformat.PdfContentImporter.getName()METHODV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java« «("
+isFinalfalse"î
+declarationString<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>String <mark class="method">getName</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*getName2ê
+,org.jabref.logic.importer.Importer.getName()OVERRIDEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java« «(2w
+java.lang.StringRETURN_TYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java« «(–
+Eorg.jabref.logic.importer.fileformat.PdfContentImporter.getFileType()METHODV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÃ Ã('"
+isFinalfalse"£
+declarationStringç<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>StandardFileType <mark class="method">getFileType</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeStandardFileType*getFileType2ç
+&org.jabref.logic.util.StandardFileTypeRETURN_TYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.javaÃ Ã(»
+Horg.jabref.logic.importer.fileformat.PdfContentImporter.getDescription()METHODV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java— —( "
+isFinalfalse"ú
+declarationStringÜ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>String <mark class="method">getDescription</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*getDescription2ó
+3org.jabref.logic.importer.Importer.getDescription()OVERRIDEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java— —( 2w
+java.lang.StringRETURN_TYPEV
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java— —(ˇ
+Xorg.jabref.logic.importer.fileformat.PdfContentImporter?YEAR_EXTRACT_PATTERN@39.33:39.53VALUET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java'! '(5"
+isFinaltrue"
+typePattern"ﬂ
+declarationString…<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Pattern <mark class="class-field">YEAR_EXTRACT_PATTERN</mark> = Pattern.compile("\\d{4}");"
+isStatictrue"
+accessprivate*YEAR_EXTRACT_PATTERN2u
+java.util.regex.PatternTYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java' '( 2è
+1java.util.regex.Pattern.compile(java.lang.String)CALLT
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java'@ '(Gÿ
+Iorg.jabref.logic.importer.fileformat.PdfContentImporter?lines@41.21:41.26VARIABLET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java) )("
+isFinalfalse"
+typeString"j
+declarationStringU<mark class="modifier">private </mark>String[] <mark class="class-field">lines</mark>"
+isStaticfalse"
+accessprivate*lines2p
+java.lang.String[]TYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java) )(Ï
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?lineIndex@43.16:43.25VARIABLET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java+ +("
+isFinalfalse"
+typeint"á
+declarationStringr<mark class="modifier">private </mark><mark class="modifier">int</mark> <mark class="class-field">lineIndex</mark>"
+isStaticfalse"
+accessprivate*	lineIndex2a
+intTYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java+ +(‡
+Morg.jabref.logic.importer.fileformat.PdfContentImporter?curString@44.19:44.28VARIABLET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java, ,("
+isFinalfalse"
+typeString"l
+declarationStringW<mark class="modifier">private </mark>String <mark class="class-field">curString</mark>"
+isStaticfalse"
+accessprivate*	curString2n
+java.lang.StringTYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java, ,(—
+Horg.jabref.logic.importer.fileformat.PdfContentImporter?year@45.19:45.23VARIABLET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java- -("
+isFinalfalse"
+typeString"g
+declarationStringR<mark class="modifier">private </mark>String <mark class="class-field">year</mark>"
+isStaticfalse"
+accessprivate*year2n
+java.lang.StringTYPET
+Jsrc\main\java\org\jabref\logic\importer\fileformat\PdfContentImporter.java- -(

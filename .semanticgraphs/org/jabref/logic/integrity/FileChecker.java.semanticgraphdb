@@ -1,0 +1,207 @@
+
+9src\main\java\org\jabref\logic\integrity\FileChecker.javaπ	
+&org.jabref.logic.integrity.FileCheckerCLASSC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java ("%
+packageorg.jabref.logic.integrity"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"£
+declarationStringç<mark class="modifier">public </mark><mark class="modifier">class </mark>FileChecker<mark class="modifier"><br>implements </mark>ValueChecker"
+accesspublic*FileChecker2›
+àorg.jabref.logic.integrity.FileChecker.FileChecker(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)DECLARATIONC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java (2ó
+Corg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)DECLARATIONC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java (&2é
+:org.jabref.logic.integrity.FileChecker?context@17.37:17.44DECLARATIONC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java% (,2ñ
+Borg.jabref.logic.integrity.FileChecker?filePreferences@18.34:18.49DECLARATIONC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java" (12v
+'org.jabref.logic.integrity.ValueCheckerEXTENDC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java$ (0˛
+àorg.jabref.logic.integrity.FileChecker.FileChecker(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CONSTRUCTORC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java ("€
+declarationString≈<mark class="modifier">public </mark><mark class="method">FileChecker</mark>(BibDatabaseContext context<mark class="modifier"><mark class="modifier">,</mark></mark> FilePreferences filePreferences)*FileChecker2ﬁ
+êorg.jabref.logic.integrity.FileChecker.FileChecker(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!contextCALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java (2Ê
+òorg.jabref.logic.integrity.FileChecker.FileChecker(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!filePreferencesCALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java (.2á
+:org.jabref.logic.integrity.FileChecker?context@17.37:17.44CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java (2è
+Borg.jabref.logic.integrity.FileChecker?filePreferences@18.34:18.49CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java (2„
+êorg.jabref.logic.integrity.FileChecker.FileChecker(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!context	PARAMETERC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java* (12Î
+òorg.jabref.logic.integrity.FileChecker.FileChecker(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!filePreferences	PARAMETERC
+9src\main\java\org\jabref\logic\integrity\FileChecker.javaC (R2z
+&org.jabref.logic.integrity.FileCheckerRETURN_TYPEC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java (∆
+êorg.jabref.logic.integrity.FileChecker.FileChecker(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!context	PARAMETERC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java* (1"
+typeBibDatabaseContext"
+isFinalfalse"/
+declarationStringBibDatabaseContext context*context2y
+,org.jabref.model.database.BibDatabaseContextTYPEC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java ()“
+òorg.jabref.logic.integrity.FileChecker.FileChecker(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!filePreferences	PARAMETERC
+9src\main\java\org\jabref\logic\integrity\FileChecker.javaC (R"
+typeFilePreferences"
+isFinalfalse"4
+declarationStringFilePreferences filePreferences*filePreferences2s
+&org.jabref.preferences.FilePreferencesTYPEC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java3 (Bﬁ'
+Corg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)METHODC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java (&"
+isFinalfalse"¥
+declarationStringû<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>Optional&lt;String&gt; <mark class="method">checkValue</mark>(String value)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<String>*
+checkValue2ä
+=org.jabref.model.strings.StringUtil.isBlank(java.lang.String)CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java (2g
+java.util.Optional.empty()CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java (!2ô
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java" "(2î
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java! !(2j
+java.util.Collection.stream()CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java   ($2ì
+Forg.jabref.logic.importer.util.FileFieldParser.parse(java.lang.String)CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java   (2}
+0org.jabref.model.entry.LinkedFile.isOnlineLink()CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java!& !(22q
+$java.util.stream.Collectors.toList()CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java"$ "(*2À
+~org.jabref.model.entry.LinkedFile.findIn(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java%- %(32k
+java.util.Optional.isPresent()CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java& &(&2ò
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java&4 &(:2e
+java.util.Optional.get()CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java&F &(I2e
+java.util.Optional.of(T)CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java'  '("2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java'0 '(42g
+java.util.Optional.empty()CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java+ +(2ñ
+Iorg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)!valueCALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java ($2ñ
+Iorg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)!valueCALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java   (2°
+Torg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)?file@33.24:33.28CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java!! !(%2®
+[org.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)?linkedFiles@31.25:31.36CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java$ $(*2°
+Torg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)?file@36.24:36.28CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java%( %(,2á
+:org.jabref.logic.integrity.FileChecker?context@17.37:17.44CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java%4 %(;2è
+Borg.jabref.logic.integrity.FileChecker?filePreferences@18.34:18.49CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java%= %(L2ß
+Zorg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)?linkedFile@37.27:37.37CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java& &(2ß
+Zorg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)?linkedFile@37.27:37.37CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java&; &(E2ï
+Dorg.jabref.logic.integrity.ValueChecker.checkValue(java.lang.String)OVERRIDEC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java (&2õ
+Iorg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)!value	PARAMETERC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java. (32Ø
+[org.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)?linkedFiles@31.25:31.36DECLARATIONC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java ($2®
+Torg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)?file@36.24:36.28DECLARATIONC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java$ $(2Æ
+Zorg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)?linkedFile@37.27:37.37DECLARATIONC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java% %(%2®
+Torg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)?file@33.24:33.28DECLARATIONC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java! !(2f
+java.util.OptionalRETURN_TYPEC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java (2m
+java.lang.StringRETURN_TYPE_ARGUMENTC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java (˛
+[org.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)?linkedFiles@31.25:31.36VARIABLEC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java ($"
+typeList<LinkedFile>"
+isFinalfalse"‹
+declarationString∆<mark class="modifier"> </mark>List<LinkedFile> <mark class="class-field">linkedFiles</mark> = FileFieldParser.parse(value).stream().filter(file -> !file.isOnlineLink()).collect(Collectors.toList())*linkedFiles2[
+java.util.ListTYPEC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java (2w
+!org.jabref.model.entry.LinkedFileTYPE_ARGUMENTC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java (2ô
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java" "(2î
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java! !(2j
+java.util.Collection.stream()CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java   ($2ì
+Forg.jabref.logic.importer.util.FileFieldParser.parse(java.lang.String)CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java   (2}
+0org.jabref.model.entry.LinkedFile.isOnlineLink()CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java!& !(22q
+$java.util.stream.Collectors.toList()CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java"$ "(*2ñ
+Iorg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)!valueCALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java   (2°
+Torg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)?file@33.24:33.28CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java!! !(%ß
+Torg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)?file@36.24:36.28VARIABLEC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java$ $("
+type
+LinkedFile"
+isFinalfalse"d
+declarationStringO<mark class="modifier"> </mark>LinkedFile <mark class="class-field">file</mark>*file2n
+!org.jabref.model.entry.LinkedFileTYPEC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java$ $(‘	
+Zorg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)?linkedFile@37.27:37.37VARIABLEC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java% %(%"
+typeOptional<Path>"
+isFinalfalse"ó
+declarationStringÅ<mark class="modifier"> </mark>Optional<Path> <mark class="class-field">linkedFile</mark> = file.findIn(context, filePreferences)*
+linkedFile2_
+java.util.OptionalTYPEC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java% %(2h
+java.nio.file.PathTYPE_ARGUMENTC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java% %(2À
+~org.jabref.model.entry.LinkedFile.findIn(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java%- %(32°
+Torg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)?file@36.24:36.28CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java%( %(,2á
+:org.jabref.logic.integrity.FileChecker?context@17.37:17.44CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java%4 %(;2è
+Borg.jabref.logic.integrity.FileChecker?filePreferences@18.34:18.49CALLC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java%= %(L∆
+Iorg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)!value	PARAMETERC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java. (3"
+typeString"
+isFinalfalse"!
+declarationStringString value*value2]
+java.lang.StringTYPEC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java' (-È
+Torg.jabref.logic.integrity.FileChecker.checkValue(java.lang.String)?file@33.24:33.28VARIABLEC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java! !("
+type"
+isFinalfalse"
+declarationString file*file2TYPE˝
+:org.jabref.logic.integrity.FileChecker?context@17.37:17.44VALUEC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java% (,"
+isFinaltrue"
+typeBibDatabaseContext"õ
+declarationStringÖ<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">context</mark>"
+isStaticfalse"
+accessprivate*context2y
+,org.jabref.model.database.BibDatabaseContextTYPEC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java ($â
+Borg.jabref.logic.integrity.FileChecker?filePreferences@18.34:18.49VALUEC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java" (1"
+isFinaltrue"
+typeFilePreferences"†
+declarationStringä<mark class="modifier">private </mark><mark class="modifier">final </mark>FilePreferences <mark class="class-field">filePreferences</mark>"
+isStaticfalse"
+accessprivate*filePreferences2s
+&org.jabref.preferences.FilePreferencesTYPEC
+9src\main\java\org\jabref\logic\integrity\FileChecker.java (!

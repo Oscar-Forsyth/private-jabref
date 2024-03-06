@@ -1,0 +1,821 @@
+
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaù
+0org.jabref.logic.importer.fetcher.MedlineFetcherCLASSM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java/ /(",
+package!org.jabref.logic.importer.fetcher"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"¬
+declarationString¨<mark class="modifier">public </mark><mark class="modifier">class </mark>MedlineFetcher<mark class="modifier"><br>implements </mark>IdBasedParserFetcher, SearchBasedFetcher"
+accesspublic*MedlineFetcher2∂
+Xorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)DECLARATIONM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java? ?(.2ò
+:org.jabref.logic.importer.fetcher.MedlineFetcher.getName()DECLARATIONM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javav v(2ú
+>org.jabref.logic.importer.fetcher.MedlineFetcher.getHelpPage()DECLARATIONM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java{ {()2∂
+Vorg.jabref.logic.importer.fetcher.MedlineFetcher.getUrlForIdentifier(java.lang.String)DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÄ Ä("2ú
+<org.jabref.logic.importer.fetcher.MedlineFetcher.getParser()DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaâ â(2ø
+_org.jabref.logic.importer.fetcher.MedlineFetcher.doPostCleanup(org.jabref.model.entry.BibEntry)DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaé é(2≤
+Rorg.jabref.logic.importer.fetcher.MedlineFetcher.createSearchUrl(java.lang.String)DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaó ó(2ø
+_org.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaß ß('2€
+{org.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaæ æ('2°
+Corg.jabref.logic.importer.fetcher.MedlineFetcher?LOGGER@48.32:48.38DECLARATIONM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java0  0(&2™
+Lorg.jabref.logic.importer.fetcher.MedlineFetcher?NUMBER_TO_FETCH@50.29:50.44DECLARATIONM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java2 2(,2°
+Corg.jabref.logic.importer.fetcher.MedlineFetcher?ID_URL@51.32:51.38DECLARATIONM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java3  3(&2•
+Gorg.jabref.logic.importer.fetcher.MedlineFetcher?SEARCH_URL@52.32:52.42DECLARATIONM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java4  4(*2Ø
+Qorg.jabref.logic.importer.fetcher.MedlineFetcher?numberOfResultsFound@54.16:54.36DECLARATIONM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java6 6($2á
+.org.jabref.logic.importer.IdBasedParserFetcherEXTENDM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java/' /(;2Ö
+,org.jabref.logic.importer.SearchBasedFetcherEXTENDM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java/= /(O¨V
+Xorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)METHODM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java? ?(."
+isFinalfalse"‚
+declarationStringÃ<mark class="modifier">private </mark>List&lt;String&gt; <mark class="method">getPubMedIdsFromQuery</mark>(String query)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>FetcherException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeList<String>*getPubMedIdsFromQuery2©
+Rorg.jabref.logic.importer.fetcher.MedlineFetcher.createSearchUrl(java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaD D(&2Ñ
+-javax.xml.stream.XMLInputFactory.newFactory()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaF; F(E2¢
+Kjavax.xml.stream.XMLInputFactory.createXMLStreamReader(java.io.InputStream)CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaG8 G(M2p
+java.net.URL.openStream()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaGS G(]2Å
+*javax.xml.stream.XMLStreamReader.hasNext()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaJ  J('2Ü
+/javax.xml.stream.XMLStreamReader.getEventType()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaK) K(52Ä
+)java.lang.String.equals(java.lang.Object)CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaO$ O(*2{
+$javax.xml.namespace.QName.toString()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaOB O(J2Å
+*javax.xml.stream.XMLStreamReader.getName()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaO8 O(?2Ä
+)java.lang.String.equals(java.lang.Object)CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaS% S(+2{
+$javax.xml.namespace.QName.toString()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaSC S(K2Å
+*javax.xml.stream.XMLStreamReader.getName()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaS9 S(@2É
+,java.lang.Integer.parseInt(java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaZ; Z(C2Å
+*javax.xml.stream.XMLStreamReader.getText()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaZQ Z(X2l
+java.util.List.add(E)CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java_# _(&2Å
+*javax.xml.stream.XMLStreamReader.getText()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java_4 _(;2Ä
+)java.lang.String.equals(java.lang.Object)CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javae% e(+2{
+$javax.xml.namespace.QName.toString()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaeC e(K2Å
+*javax.xml.stream.XMLStreamReader.getName()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javae9 e(@2~
+'javax.xml.stream.XMLStreamReader.next()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javai i(!2
+(javax.xml.stream.XMLStreamReader.close()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javak k(2•
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javanP n(T2•
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javapS p(W2v
+java.util.ArrayList.ArrayList()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaB" B(-2À
+torg.jabref.logic.importer.FetcherException.FetcherException(java.lang.String, java.lang.String, java.lang.Throwable)CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javan n(&2À
+torg.jabref.logic.importer.FetcherException.FetcherException(java.lang.String, java.lang.String, java.lang.Throwable)CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javap p(&2µ
+^org.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)!queryCALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaD' D(,2»
+qorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?inputFactory@70.28:70.40CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaG+ G(72¿
+iorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?ncbi@68.16:68.20CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaGN G(R2»
+qorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?streamReader@71.28:71.40CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaJ J(2»
+qorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?streamReader@71.28:71.40CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaK K((2¡
+jorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?event@75.20:75.25CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaM M(2»
+qorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?streamReader@71.28:71.40CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaO+ O(72“
+{org.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?firstOccurrenceOfCount@65.16:65.38CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaP P(22»
+qorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?streamReader@71.28:71.40CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaS, S(82ƒ
+morg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?fetchIDs@64.16:64.24CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaT T($2“
+{org.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?firstOccurrenceOfCount@65.16:65.38CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaY Y(22®
+Qorg.jabref.logic.importer.fetcher.MedlineFetcher?numberOfResultsFound@54.16:54.36CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaZ Z(02»
+qorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?streamReader@71.28:71.40CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaZD Z(P2“
+{org.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?firstOccurrenceOfCount@65.16:65.38CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java[ [(22ƒ
+morg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?fetchIDs@64.16:64.24CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java^ ^($2¬
+korg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?idList@66.21:66.27CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java_ _("2»
+qorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?streamReader@71.28:71.40CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java_' _(32»
+qorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?streamReader@71.28:71.40CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javae, e(82»
+qorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?streamReader@71.28:71.40CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javai i(2»
+qorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?streamReader@71.28:71.40CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javak k(2¬
+korg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?idList@66.21:66.27CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javal l(2ø
+horg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?e@109.50:109.51CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javanr n(s2ø
+horg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?e@111.36:111.37CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaq q(2∫
+^org.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)!query	PARAMETERM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java?6 ?(;2À
+morg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?fetchIDs@64.16:64.24DECLARATIONM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java@ @(2Ÿ
+{org.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?firstOccurrenceOfCount@65.16:65.38DECLARATIONM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaA A(&2…
+korg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?idList@66.21:66.27DECLARATIONM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaB B(2«
+iorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?ncbi@68.16:68.20DECLARATIONM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaD D(2œ
+qorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?inputFactory@70.28:70.40DECLARATIONM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaF F((2œ
+qorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?streamReader@71.28:71.40DECLARATIONM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaG G((2»
+jorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?event@75.20:75.25DECLARATIONM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaK K(2∆
+horg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?e@109.50:109.51DECLARATIONM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javam2 m(32∆
+horg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?e@111.36:111.37DECLARATIONM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javao$ o(%2l
+java.util.ListRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java? ?(2w
+java.lang.StringRETURN_TYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java? ?(Ç
+morg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?fetchIDs@64.16:64.24VARIABLEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java@ @("
+typeboolean"
+isFinalfalse"™
+declarationStringî<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">fetchIDs</mark> = <mark class="modifier">false</mark>*fetchIDs2^
+booleanTYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java@ @(¨
+{org.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?firstOccurrenceOfCount@65.16:65.38VARIABLEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaA A(&"
+typeboolean"
+isFinalfalse"∏
+declarationString¢<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">firstOccurrenceOfCount</mark> = <mark class="modifier">false</mark>*firstOccurrenceOfCount2^
+booleanTYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaA A(≈
+korg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?idList@66.21:66.27VARIABLEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaB B("
+typeList<String>"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark>List<String> <mark class="class-field">idList</mark> = new ArrayList<>()*idList2e
+java.util.ListTYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaB B(2p
+java.lang.StringTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaB B(2v
+java.util.ArrayList.ArrayList()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaB" B(-™
+iorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?ncbi@68.16:68.20VARIABLEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaD D("
+typeURL"
+isFinalfalse"v
+declarationStringa<mark class="modifier"> </mark>URL <mark class="class-field">ncbi</mark> = createSearchUrl(query)*ncbi2c
+java.net.URLTYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaD D(2©
+Rorg.jabref.logic.importer.fetcher.MedlineFetcher.createSearchUrl(java.lang.String)CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaD D(&2µ
+^org.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)!queryCALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaD' D(,ò
+qorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?inputFactory@70.28:70.40VARIABLEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaF F(("
+typeXMLInputFactory"
+isFinalfalse"ê
+declarationString{<mark class="modifier"> </mark>XMLInputFactory <mark class="class-field">inputFactory</mark> = XMLInputFactory.newFactory()*inputFactory2w
+ javax.xml.stream.XMLInputFactoryTYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaF F(2Ñ
+-javax.xml.stream.XMLInputFactory.newFactory()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaF; F(E–	
+qorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?streamReader@71.28:71.40VARIABLEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaG G(("
+typeXMLStreamReader"
+isFinalfalse"™
+declarationStringî<mark class="modifier"> </mark>XMLStreamReader <mark class="class-field">streamReader</mark> = inputFactory.createXMLStreamReader(ncbi.openStream())*streamReader2w
+ javax.xml.stream.XMLStreamReaderTYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaG G(2¢
+Kjavax.xml.stream.XMLInputFactory.createXMLStreamReader(java.io.InputStream)CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaG8 G(M2p
+java.net.URL.openStream()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaGS G(]2»
+qorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?inputFactory@70.28:70.40CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaG+ G(72¿
+iorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?ncbi@68.16:68.20CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaGN G(Rπ
+jorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?event@75.20:75.25VARIABLEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaK K("
+typeint"
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">event</mark> = streamReader.getEventType()*event2Z
+intTYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaK K(2Ü
+/javax.xml.stream.XMLStreamReader.getEventType()CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaK) K(52»
+qorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?streamReader@71.28:71.40CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaK K((Ô
+^org.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)!query	PARAMETERM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java?6 ?(;"
+typeString"
+isFinalfalse"!
+declarationStringString query*query2g
+java.lang.StringTYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java?/ ?(5∆
+horg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?e@109.50:109.51VARIABLEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javam2 m(3"(
+type IOException | URISyntaxException"
+isFinalfalse"7
+declarationString"IOException | URISyntaxException e*e2à
+1java.io.IOException | java.net.URISyntaxExceptionTYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javam m(1õ
+horg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)?e@111.36:111.37VARIABLEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javao$ o(%"
+typeXMLStreamException"
+isFinalfalse")
+declarationStringXMLStreamException e*e2z
+#javax.xml.stream.XMLStreamExceptionTYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javao o(#ó
+:org.jabref.logic.importer.fetcher.MedlineFetcher.getName()METHODM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javav v("
+isFinalfalse"î
+declarationString<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>String <mark class="method">getName</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*getName2â
+.org.jabref.logic.importer.WebFetcher.getName()OVERRIDEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javav v(2â
+.org.jabref.logic.importer.WebFetcher.getName()OVERRIDEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javav v(2n
+java.lang.StringRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javav v(≈
+>org.jabref.logic.importer.fetcher.MedlineFetcher.getHelpPage()METHODM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java{ {()"
+isFinalfalse"´
+declarationStringï<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>Optional&lt;HelpFile&gt; <mark class="method">getHelpPage</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<HelpFile>*getHelpPage2o
+java.util.Optional.of(T)CALLM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java| |(2ç
+2org.jabref.logic.importer.WebFetcher.getHelpPage()OVERRIDEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java{ {()2ç
+2org.jabref.logic.importer.WebFetcher.getHelpPage()OVERRIDEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java{ {()2p
+java.util.OptionalRETURN_TYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java{ {(2Ö
+org.jabref.logic.help.HelpFileRETURN_TYPE_ARGUMENTM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java{ {(Ü
+Vorg.jabref.logic.importer.fetcher.MedlineFetcher.getUrlForIdentifier(java.lang.String)METHODO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÄ Ä(""
+isFinalfalse"¶
+declarationStringê<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>URL <mark class="method">getUrlForIdentifier</mark>(String identifier)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>URISyntaxException<mark class="modifier"><mark class="modifier">,</mark></mark> MalformedURLException<mark class="modifier"><mark class="modifier">,</mark></mark> FetcherException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeURL*getUrlForIdentifier2ú
+Corg.jabref.logic.importer.fetcher.MedlineFetcher?ID_URL@51.32:51.38CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÅ/ Å(52»
+oorg.jabref.logic.importer.fetcher.MedlineFetcher.getUrlForIdentifier(java.lang.String)?uriBuilder@129.19:129.29CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÇ Ç(2»
+oorg.jabref.logic.importer.fetcher.MedlineFetcher.getUrlForIdentifier(java.lang.String)?uriBuilder@129.19:129.29CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÉ É(2»
+oorg.jabref.logic.importer.fetcher.MedlineFetcher.getUrlForIdentifier(java.lang.String)?uriBuilder@129.19:129.29CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÑ Ñ(2∫
+aorg.jabref.logic.importer.fetcher.MedlineFetcher.getUrlForIdentifier(java.lang.String)!identifierCALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÑ& Ñ(02»
+oorg.jabref.logic.importer.fetcher.MedlineFetcher.getUrlForIdentifier(java.lang.String)?uriBuilder@129.19:129.29CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÖ Ö(2±
+Torg.jabref.logic.importer.IdBasedParserFetcher.getUrlForIdentifier(java.lang.String)OVERRIDEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÄ Ä("2ø
+aorg.jabref.logic.importer.fetcher.MedlineFetcher.getUrlForIdentifier(java.lang.String)!identifier	PARAMETERO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÄ* Ä(42œ
+oorg.jabref.logic.importer.fetcher.MedlineFetcher.getUrlForIdentifier(java.lang.String)?uriBuilder@129.19:129.29DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÅ Å(2l
+java.net.URLRETURN_TYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÄ Ä(¶
+oorg.jabref.logic.importer.fetcher.MedlineFetcher.getUrlForIdentifier(java.lang.String)?uriBuilder@129.19:129.29VARIABLEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÅ Å("
+type
+URIBuilder"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark>URIBuilder <mark class="class-field">uriBuilder</mark> = new URIBuilder(ID_URL)*
+uriBuilder2Ä
+'org.apache.http.client.utils.URIBuilderTYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÅ Å(2ú
+Corg.jabref.logic.importer.fetcher.MedlineFetcher?ID_URL@51.32:51.38CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÅ/ Å(5Ä
+aorg.jabref.logic.importer.fetcher.MedlineFetcher.getUrlForIdentifier(java.lang.String)!identifier	PARAMETERO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÄ* Ä(4"
+typeString"
+isFinalfalse"&
+declarationStringString identifier*
+identifier2i
+java.lang.StringTYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÄ# Ä()◊
+<org.jabref.logic.importer.fetcher.MedlineFetcher.getParser()METHODO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaâ â("
+isFinalfalse"ó
+declarationStringÅ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>Parser <mark class="method">getParser</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeParser*	getParser2ü
+Forg.jabref.logic.importer.fileformat.MedlineImporter.MedlineImporter()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaä ä("2ó
+:org.jabref.logic.importer.IdBasedParserFetcher.getParser()OVERRIDEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaâ â(2Ä
+ org.jabref.logic.importer.ParserRETURN_TYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaâ â(‰)
+_org.jabref.logic.importer.fetcher.MedlineFetcher.doPostCleanup(org.jabref.model.entry.BibEntry)METHODO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaé é("
+isFinalfalse"≈
+declarationStringØ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">doPostCleanup</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*doPostCleanup2∞
+Worg.jabref.logic.cleanup.FieldFormatterCleanup.cleanup(org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaèb è(i2∞
+Worg.jabref.logic.cleanup.FieldFormatterCleanup.cleanup(org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaêT ê([2∞
+Worg.jabref.logic.cleanup.FieldFormatterCleanup.cleanup(org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaëW ë(^2∞
+Worg.jabref.logic.cleanup.FieldFormatterCleanup.cleanup(org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaìV ì(]2∞
+Worg.jabref.logic.cleanup.FieldFormatterCleanup.cleanup(org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaîW î(^2Ê
+åorg.jabref.logic.cleanup.FieldFormatterCleanup.FieldFormatterCleanup(org.jabref.model.entry.field.Field, org.jabref.logic.cleanup.Formatter)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaè è(!2°
+Horg.jabref.model.entry.field.UnknownField.UnknownField(java.lang.String)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaè& è(22†
+Gorg.jabref.logic.formatter.bibtexfields.ClearFormatter.ClearFormatter()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaèP è(^2Ê
+åorg.jabref.logic.cleanup.FieldFormatterCleanup.FieldFormatterCleanup(org.jabref.model.entry.field.Field, org.jabref.logic.cleanup.Formatter)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaê ê(!2°
+Horg.jabref.model.entry.field.UnknownField.UnknownField(java.lang.String)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaê& ê(22†
+Gorg.jabref.logic.formatter.bibtexfields.ClearFormatter.ClearFormatter()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaêB ê(P2Ê
+åorg.jabref.logic.cleanup.FieldFormatterCleanup.FieldFormatterCleanup(org.jabref.model.entry.field.Field, org.jabref.logic.cleanup.Formatter)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaë ë(!2°
+Horg.jabref.model.entry.field.UnknownField.UnknownField(java.lang.String)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaë& ë(22†
+Gorg.jabref.logic.formatter.bibtexfields.ClearFormatter.ClearFormatter()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaëE ë(S2Ê
+åorg.jabref.logic.cleanup.FieldFormatterCleanup.FieldFormatterCleanup(org.jabref.model.entry.field.Field, org.jabref.logic.cleanup.Formatter)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaì ì(!2≤
+Yorg.jabref.logic.formatter.bibtexfields.NormalizeMonthFormatter.NormalizeMonthFormatter()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaì; ì(R2Ê
+åorg.jabref.logic.cleanup.FieldFormatterCleanup.FieldFormatterCleanup(org.jabref.model.entry.field.Field, org.jabref.logic.cleanup.Formatter)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaî î(!2≤
+Yorg.jabref.logic.formatter.bibtexfields.NormalizeNamesFormatter.NormalizeNamesFormatter()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaî< î(S2æ
+eorg.jabref.logic.importer.fetcher.MedlineFetcher.doPostCleanup(org.jabref.model.entry.BibEntry)!entryCALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaèj è(o2æ
+eorg.jabref.logic.importer.fetcher.MedlineFetcher.doPostCleanup(org.jabref.model.entry.BibEntry)!entryCALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaê\ ê(a2æ
+eorg.jabref.logic.importer.fetcher.MedlineFetcher.doPostCleanup(org.jabref.model.entry.BibEntry)!entryCALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaë_ ë(d2æ
+eorg.jabref.logic.importer.fetcher.MedlineFetcher.doPostCleanup(org.jabref.model.entry.BibEntry)!entryCALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaì^ ì(c2æ
+eorg.jabref.logic.importer.fetcher.MedlineFetcher.doPostCleanup(org.jabref.model.entry.BibEntry)!entryCALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaî_ î(d2∫
+]org.jabref.logic.importer.IdBasedParserFetcher.doPostCleanup(org.jabref.model.entry.BibEntry)OVERRIDEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaé é(2√
+eorg.jabref.logic.importer.fetcher.MedlineFetcher.doPostCleanup(org.jabref.model.entry.BibEntry)!entry	PARAMETERO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaé' é(,2d
+voidRETURN_TYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaé é(ç
+eorg.jabref.logic.importer.fetcher.MedlineFetcher.doPostCleanup(org.jabref.model.entry.BibEntry)!entry	PARAMETERO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaé' é(,"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2x
+org.jabref.model.entry.BibEntryTYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaé é(&å
+Rorg.jabref.logic.importer.fetcher.MedlineFetcher.createSearchUrl(java.lang.String)METHODO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaó ó("
+isFinalfalse"¢
+declarationStringå<mark class="modifier">private </mark>URL <mark class="method">createSearchUrl</mark>(String query)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>URISyntaxException<mark class="modifier"><mark class="modifier">,</mark></mark> MalformedURLException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeURL*createSearchUrl2v
+java.lang.String.valueOf(int)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaõ1 õ(82†
+Gorg.jabref.logic.importer.fetcher.MedlineFetcher?SEARCH_URL@52.32:52.42CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaò/ ò(92ƒ
+korg.jabref.logic.importer.fetcher.MedlineFetcher.createSearchUrl(java.lang.String)?uriBuilder@152.19:152.29CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaô ô(2ƒ
+korg.jabref.logic.importer.fetcher.MedlineFetcher.createSearchUrl(java.lang.String)?uriBuilder@152.19:152.29CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaö ö(2ƒ
+korg.jabref.logic.importer.fetcher.MedlineFetcher.createSearchUrl(java.lang.String)?uriBuilder@152.19:152.29CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaõ õ(2•
+Lorg.jabref.logic.importer.fetcher.MedlineFetcher?NUMBER_TO_FETCH@50.29:50.44CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaõ9 õ(H2ƒ
+korg.jabref.logic.importer.fetcher.MedlineFetcher.createSearchUrl(java.lang.String)?uriBuilder@152.19:152.29CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaú ú(2±
+Xorg.jabref.logic.importer.fetcher.MedlineFetcher.createSearchUrl(java.lang.String)!queryCALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaú( ú(-2ƒ
+korg.jabref.logic.importer.fetcher.MedlineFetcher.createSearchUrl(java.lang.String)?uriBuilder@152.19:152.29CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaù ù(2∂
+Xorg.jabref.logic.importer.fetcher.MedlineFetcher.createSearchUrl(java.lang.String)!query	PARAMETERO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaó' ó(,2À
+korg.jabref.logic.importer.fetcher.MedlineFetcher.createSearchUrl(java.lang.String)?uriBuilder@152.19:152.29DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaò ò(2l
+java.net.URLRETURN_TYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaó ó(™
+korg.jabref.logic.importer.fetcher.MedlineFetcher.createSearchUrl(java.lang.String)?uriBuilder@152.19:152.29VARIABLEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaò ò("
+type
+URIBuilder"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>URIBuilder <mark class="class-field">uriBuilder</mark> = new URIBuilder(SEARCH_URL)*
+uriBuilder2Ä
+'org.apache.http.client.utils.URIBuilderTYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaò ò(2†
+Gorg.jabref.logic.importer.fetcher.MedlineFetcher?SEARCH_URL@52.32:52.42CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaò/ ò(9Ì
+Xorg.jabref.logic.importer.fetcher.MedlineFetcher.createSearchUrl(java.lang.String)!query	PARAMETERO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaó' ó(,"
+typeString"
+isFinalfalse"!
+declarationStringString query*query2i
+java.lang.StringTYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaó  ó(&ü:
+_org.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)METHODO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaß ß('"
+isFinalfalse"Â
+declarationStringœ<mark class="modifier">private </mark>List&lt;BibEntry&gt; <mark class="method">fetchMedline</mark>(List&lt;String&gt; ids)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>FetcherException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeList<BibEntry>*fetchMedline2Ø
+Vorg.jabref.logic.importer.fetcher.MedlineFetcher.getUrlForIdentifier(java.lang.String)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java™ ™(.2º
+cjava.lang.String.join(java.lang.CharSequence, java.lang.Iterable<? extends java.lang.CharSequence>)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java™6 ™(:2v
+java.net.URL.openConnection()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java´* ´(82¥
+[org.jabref.logic.importer.fileformat.MedlineImporter.importDatabase(java.io.BufferedReader)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¨8 ¨(F2Ä
+'java.net.URLConnection.getInputStream()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java≠B ≠(P2ç
+4org.jabref.logic.importer.ParserResult.hasWarnings()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÆ Æ("2ë
+8org.jabref.logic.importer.ParserResult.getErrorMessage()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaØ# Ø(22ã
+2org.jabref.model.database.BibDatabase.getEntries()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java±= ±(G2ç
+4org.jabref.logic.importer.ParserResult.getDatabase()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java±/ ±(:2õ
+Bjava.lang.Iterable.forEach(java.util.function.Consumer<? super T>)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java≤ ≤(2ß
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java∂! ∂(%2ß
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaπ! π(%2ü
+Forg.jabref.logic.importer.fileformat.MedlineImporter.MedlineImporter()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¨& ¨(52é
+5java.io.BufferedReader.BufferedReader(java.io.Reader)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java≠ ≠(&2≥
+Zjava.io.InputStreamReader.InputStreamReader(java.io.InputStream, java.nio.charset.Charset)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java≠+ ≠(<2Õ
+torg.jabref.logic.importer.FetcherException.FetcherException(java.lang.String, java.lang.String, java.lang.Throwable)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaµ µ(&2Õ
+torg.jabref.logic.importer.FetcherException.FetcherException(java.lang.String, java.lang.String, java.lang.Throwable)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java∏ ∏(&2º
+corg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)!idsCALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java™@ ™(C2œ
+vorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?fetchURL@170.16:170.24CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java´! ´()2À
+rorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?data@171.26:171.30CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java≠= ≠(A2Õ
+torg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?result@172.25:172.31CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÆ Æ(2ú
+Corg.jabref.logic.importer.fetcher.MedlineFetcher?LOGGER@48.32:48.38CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaØ Ø(2Õ
+torg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?result@172.25:172.31CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaØ Ø("2Õ
+torg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?result@172.25:172.31CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java±( ±(.2—
+xorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?resultList@177.27:177.37CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java≤ ≤(2—
+xorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?resultList@177.27:177.37CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java≥ ≥(2»
+oorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?e@180.60:180.61CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java∂K ∂(L2»
+oorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?e@183.29:183.30CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaπR π(S2∏
+_org.jabref.logic.importer.fetcher.MedlineFetcher.doPostCleanup(org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java≤ ≤(22¡
+corg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)!ids	PARAMETERO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaß5 ß(82÷
+vorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?fetchURL@170.16:170.24DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java™ ™(2“
+rorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?data@171.26:171.30DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java´ ´(2‘
+torg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?result@172.25:172.31DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¨ ¨(2ÿ
+xorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?resultList@177.27:177.37DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java± ±(%2œ
+oorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?e@180.60:180.61DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¥< ¥(=2œ
+oorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?e@183.29:183.30DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java∑ ∑(2n
+java.util.ListRETURN_TYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaß ß(2à
+org.jabref.model.entry.BibEntryRETURN_TYPE_ARGUMENTO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaß ß(·
+vorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?fetchURL@170.16:170.24VARIABLEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java™ ™("
+typeURL"
+isFinalfalse"À
+declarationStringµ<mark class="modifier"> </mark>URL <mark class="class-field">fetchURL</mark> = getUrlForIdentifier(String.join("<mark class="modifier">,</mark>"<mark class="modifier">,</mark> ids))*fetchURL2e
+java.net.URLTYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java™ ™(2Ø
+Vorg.jabref.logic.importer.fetcher.MedlineFetcher.getUrlForIdentifier(java.lang.String)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java™ ™(.2º
+cjava.lang.String.join(java.lang.CharSequence, java.lang.Iterable<? extends java.lang.CharSequence>)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java™6 ™(:2º
+corg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)!idsCALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java™@ ™(Cø
+rorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?data@171.26:171.30VARIABLEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java´ ´("
+typeURLConnection"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark>URLConnection <mark class="class-field">data</mark> = fetchURL.openConnection()*data2o
+java.net.URLConnectionTYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java´ ´(2v
+java.net.URL.openConnection()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java´* ´(82œ
+vorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?fetchURL@170.16:170.24CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java´! ´()˛
+torg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?result@172.25:172.31VARIABLEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¨ ¨("
+typeParserResult"
+isFinalfalse"à
+declarationStringÚ<mark class="modifier"> </mark>ParserResult <mark class="class-field">result</mark> = new MedlineImporter().importDatabase(new BufferedReader(new InputStreamReader(data.getInputStream()<mark class="modifier">,</mark> StandardCharsets.UTF_8)))*result2
+&org.jabref.logic.importer.ParserResultTYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¨ ¨(2¥
+[org.jabref.logic.importer.fileformat.MedlineImporter.importDatabase(java.io.BufferedReader)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¨8 ¨(F2Ä
+'java.net.URLConnection.getInputStream()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java≠B ≠(P2ü
+Forg.jabref.logic.importer.fileformat.MedlineImporter.MedlineImporter()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¨& ¨(52é
+5java.io.BufferedReader.BufferedReader(java.io.Reader)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java≠ ≠(&2≥
+Zjava.io.InputStreamReader.InputStreamReader(java.io.InputStream, java.nio.charset.Charset)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java≠+ ≠(<2À
+rorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?data@171.26:171.30CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java≠= ≠(A˚
+xorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?resultList@177.27:177.37VARIABLEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java± ±(%"
+typeList<BibEntry>"
+isFinalfalse"í
+declarationString}<mark class="modifier"> </mark>List<BibEntry> <mark class="class-field">resultList</mark> = result.getDatabase().getEntries()*
+resultList2g
+java.util.ListTYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java± ±(2Å
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java± ±(2ã
+2org.jabref.model.database.BibDatabase.getEntries()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java±= ±(G2ç
+4org.jabref.logic.importer.ParserResult.getDatabase()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java±/ ±(:2Õ
+torg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?result@172.25:172.31CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java±( ±(.Ú
+corg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)!ids	PARAMETERO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaß5 ß(8"
+typeList<String>"
+isFinalfalse"%
+declarationStringList<String> ids*ids2g
+java.util.ListTYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaß( ß(,2r
+java.lang.StringTYPE_ARGUMENTO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaß- ß(3
+oorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?e@180.60:180.61VARIABLEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¥< ¥(="2
+type*URISyntaxException | MalformedURLException"
+isFinalfalse"A
+declarationString,URISyntaxException | MalformedURLException e*e2ï
+<java.net.URISyntaxException | java.net.MalformedURLExceptionTYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¥ ¥(;à
+oorg.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)?e@183.29:183.30VARIABLEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java∑ ∑("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2l
+java.io.IOExceptionTYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java∑ ∑(ò4
+{org.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)METHODO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaæ æ('"
+isFinalfalse"í
+declarationString¸<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>List&lt;BibEntry&gt; <mark class="method">performSearch</mark>(QueryNode luceneQuery)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>FetcherException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<BibEntry>*performSearch2u
+java.util.Optional.isEmpty()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java√ √($2s
+java.lang.String.isBlank()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java√A √(H2q
+java.util.Optional.get()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java√; √(>2z
+!java.util.Collections.emptyList()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaƒ ƒ((2±
+Xorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java«" «(72q
+java.util.Optional.get()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java«I «(L2q
+java.util.List.isEmpty()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java… …(2z
+!java.util.Collections.emptyList()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÀ# À(,2∏
+_org.jabref.logic.importer.fetcher.MedlineFetcher.fetchMedline(java.util.List<java.lang.String>)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java” ”($2π
+`org.jabref.logic.importer.fetcher.transformers.MedlineQueryTransformer.MedlineQueryTransformer()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¿2 ¿(I2Ô
+ïorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?transformer@192.32:192.43CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¡, ¡(72·
+áorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)!luceneQueryCALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¡M ¡(X2Ù
+öorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?transformedQuery@193.25:193.41CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java√ √(2Ù
+öorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?transformedQuery@193.25:193.41CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java√* √(:2Ù
+öorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?transformedQuery@193.25:193.41CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java«8 «(H2Í
+êorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?idList@199.25:199.31CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java… …(2ú
+Corg.jabref.logic.importer.fetcher.MedlineFetcher?LOGGER@48.32:48.38CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java   (2™
+Qorg.jabref.logic.importer.fetcher.MedlineFetcher?numberOfResultsFound@54.16:54.36CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÕ Õ($2•
+Lorg.jabref.logic.importer.fetcher.MedlineFetcher?NUMBER_TO_FETCH@50.29:50.44CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaÕ' Õ(62ú
+Corg.jabref.logic.importer.fetcher.MedlineFetcher?LOGGER@48.32:48.38CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaŒ Œ(2™
+Qorg.jabref.logic.importer.fetcher.MedlineFetcher?numberOfResultsFound@54.16:54.36CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaœ œ(,2Ì
+ìorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?entryList@191.23:191.32CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java” ”(2Í
+êorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?idList@199.25:199.31CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java”% ”(+2Ì
+ìorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?entryList@191.23:191.32CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java’ ’(2‘
+worg.jabref.logic.importer.SearchBasedFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)OVERRIDEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaæ æ('2Ê
+áorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)!luceneQuery	PARAMETERO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaæ2 æ(=2Ù
+ìorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?entryList@191.23:191.32DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaø ø( 2ˆ
+ïorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?transformer@192.32:192.43DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¿  ¿(+2˚
+öorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?transformedQuery@193.25:193.41DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¡ ¡()2Ò
+êorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?idList@199.25:199.31DECLARATIONO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java« «(2n
+java.util.ListRETURN_TYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaæ æ(2à
+org.jabref.model.entry.BibEntryRETURN_TYPE_ARGUMENTO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaæ æ(Ç
+ìorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?entryList@191.23:191.32VARIABLEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaø ø( "
+typeList<BibEntry>"
+isFinalfalse"m
+declarationStringX<mark class="modifier"> </mark>List<BibEntry> <mark class="class-field">entryList</mark>*	entryList2g
+java.util.ListTYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaø ø(2Å
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaø ø(≠
+ïorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?transformer@192.32:192.43VARIABLEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¿  ¿(+"
+typeMedlineQueryTransformer"
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier"> </mark>MedlineQueryTransformer <mark class="class-field">transformer</mark> = new MedlineQueryTransformer()*transformer2ü
+Forg.jabref.logic.importer.fetcher.transformers.MedlineQueryTransformerTYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¿ ¿(2π
+`org.jabref.logic.importer.fetcher.transformers.MedlineQueryTransformer.MedlineQueryTransformer()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¿2 ¿(Ió	
+öorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?transformedQuery@193.25:193.41VARIABLEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¡ ¡()"
+typeOptional<String>"
+isFinalfalse"ß
+declarationStringë<mark class="modifier"> </mark>Optional<String> <mark class="class-field">transformedQuery</mark> = transformer.transformLuceneQuery(luceneQuery)*transformedQuery2k
+java.util.OptionalTYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¡ ¡(2r
+java.lang.StringTYPE_ARGUMENTO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¡ ¡(2Ô
+ïorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?transformer@192.32:192.43CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¡, ¡(72·
+áorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)!luceneQueryCALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java¡M ¡(Xµ	
+êorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?idList@199.25:199.31VARIABLEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java« «("
+typeList<String>"
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier"> </mark>List<String> <mark class="class-field">idList</mark> = getPubMedIdsFromQuery(transformedQuery.get())*idList2g
+java.util.ListTYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java« «(2r
+java.lang.StringTYPE_ARGUMENTO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java« «(2±
+Xorg.jabref.logic.importer.fetcher.MedlineFetcher.getPubMedIdsFromQuery(java.lang.String)CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java«" «(72q
+java.util.Optional.get()CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java«I «(L2Ù
+öorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)?transformedQuery@193.25:193.41CALLO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java«8 «(H€
+áorg.jabref.logic.importer.fetcher.MedlineFetcher.performSearch(org.apache.lucene.queryparser.flexible.core.nodes.QueryNode)!luceneQuery	PARAMETERO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaæ2 æ(="
+type	QueryNode"
+isFinalfalse"*
+declarationStringQueryNode luceneQuery*luceneQuery2î
+;org.apache.lucene.queryparser.flexible.core.nodes.QueryNodeTYPEO
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.javaæ( æ(1π
+Corg.jabref.logic.importer.fetcher.MedlineFetcher?LOGGER@48.32:48.38VALUEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java0  0(&"
+isFinaltrue"
+typeLogger"‰
+declarationStringŒ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(MedlineFetcher.class);"
+isStatictrue"
+accessprivate*LOGGER2g
+org.slf4j.LoggerTYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java0 0(¥
+Lorg.jabref.logic.importer.fetcher.MedlineFetcher?NUMBER_TO_FETCH@50.29:50.44VALUEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java2 2(,"
+isFinaltrue"
+typeint"›
+declarationString«<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark><mark class="modifier">int</mark> <mark class="class-field">NUMBER_TO_FETCH</mark> = 50;"
+isStatictrue"
+accessprivate*NUMBER_TO_FETCH2Z
+intTYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java2 2(«
+Corg.jabref.logic.importer.fetcher.MedlineFetcher?ID_URL@51.32:51.38VALUEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java3  3(&"
+isFinaltrue"
+typeString"Ú
+declarationString‹<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">ID_URL</mark> = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi";"
+isStatictrue"
+accessprivate*ID_URL2g
+java.lang.StringTYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java3 3(‘
+Gorg.jabref.logic.importer.fetcher.MedlineFetcher?SEARCH_URL@52.32:52.42VALUEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java4  4(*"
+isFinaltrue"
+typeString"˜
+declarationString·<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">SEARCH_URL</mark> = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi";"
+isStatictrue"
+accessprivate*
+SEARCH_URL2g
+java.lang.StringTYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java4 4(¯
+Qorg.jabref.logic.importer.fetcher.MedlineFetcher?numberOfResultsFound@54.16:54.36VARIABLEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java6 6($"
+isFinalfalse"
+typeint"í
+declarationString}<mark class="modifier">private </mark><mark class="modifier">int</mark> <mark class="class-field">numberOfResultsFound</mark>"
+isStaticfalse"
+accessprivate*numberOfResultsFound2Z
+intTYPEM
+Csrc\main\java\org\jabref\logic\importer\fetcher\MedlineFetcher.java6 6(

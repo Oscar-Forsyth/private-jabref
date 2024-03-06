@@ -1,0 +1,893 @@
+
+8src\main\java\org\jabref\gui\importer\ImportCommand.java¯
+%org.jabref.gui.importer.ImportCommandCLASSB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java, ,(""
+packageorg.jabref.gui.importer"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"†
+declarationStringä<mark class="modifier">public </mark><mark class="modifier">class </mark>ImportCommand<mark class="modifier"> extends </mark>SimpleCommand"
+accesspublic*ImportCommand2ê
+ºorg.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java9 9(2Ç
+/org.jabref.gui.importer.ImportCommand.execute()DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaM M(2Å
+≠org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java^ ^(!2À
+vorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)DECLARATIOND
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÅ Å(!2g
+mergeImportResultsDECLARATIOND
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaª ª(*2ã
+8org.jabref.gui.importer.ImportCommand?LOGGER@45.32:45.38DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java-  -(&2ë
+>org.jabref.gui.importer.ImportCommand?tabContainer@49.38:49.50DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java1& 1(22ë
+>org.jabref.gui.importer.ImportCommand?importMethod@50.31:50.43DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java2 2(+2í
+?org.jabref.gui.importer.ImportCommand?dialogService@52.32:52.45DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java4  4(-2ó
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java5% 5(72ñ
+Corg.jabref.gui.importer.ImportCommand?fileUpdateMonitor@54.36:54.53DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java6$ 6(52ë
+>org.jabref.gui.importer.ImportCommand?taskExecutor@55.31:55.43DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java7 7(+2Ö
+2org.jabref.gui.importer.ImportCommand.ImportMethodDECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java/ /(2r
+$org.jabref.gui.actions.SimpleCommandEXTENDB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java,# ,(0˙B
+ºorg.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)CONSTRUCTORB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java9 9("®
+declarationStringí<mark class="modifier">public </mark><mark class="method">ImportCommand</mark>(LibraryTabContainer tabContainer<mark class="modifier"><mark class="modifier">,</mark></mark> ImportMethod importMethod<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferencesService<mark class="modifier"><mark class="modifier">,</mark></mark> StateManager stateManager<mark class="modifier"><mark class="modifier">,</mark></mark> FileUpdateMonitor fileUpdateMonitor<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService)*ImportCommand2ö
+Norg.jabref.gui.actions.ActionHelper.needsDatabase(org.jabref.gui.StateManager)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaH! H(.2ñ
+…org.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!tabContainerCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java@ @((2ñ
+…org.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!importMethodCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaA A((2ú
+œorg.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!preferencesServiceCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaB" B(42õ
+Œorg.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!fileUpdateMonitorCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaC! C(22ñ
+…org.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!taskExecutorCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaD D((2ó
+ org.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!dialogServiceCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaE E(*2ñ
+…org.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!importMethodCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaG G(2ñ
+…org.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!stateManagerCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaH/ H(;2ä
+>org.jabref.gui.importer.ImportCommand?tabContainer@49.38:49.50CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java@ @(2ä
+>org.jabref.gui.importer.ImportCommand?importMethod@50.31:50.43CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaA A(2ê
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaB B(2è
+Corg.jabref.gui.importer.ImportCommand?fileUpdateMonitor@54.36:54.53CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaC C(2ä
+>org.jabref.gui.importer.ImportCommand?taskExecutor@55.31:55.43CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaD D(2ã
+?org.jabref.gui.importer.ImportCommand?dialogService@52.32:52.45CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaE E(2ä
+>org.jabref.gui.importer.ImportCommand.ImportMethod?TO_EXISTINGCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaG) G(42õ
+…org.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!tabContainer	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java9- 9(92õ
+…org.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!importMethod	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java:& :(22°
+œorg.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!preferencesService	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java;, ;(>2õ
+…org.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!stateManager	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java<& <(22†
+Œorg.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!fileUpdateMonitor	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java=+ =(<2õ
+…org.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!taskExecutor	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java>& >(22ú
+ org.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!dialogService	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java?' ?(42x
+%org.jabref.gui.importer.ImportCommandRETURN_TYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java9 9(ˇ
+…org.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!tabContainer	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java9- 9(9"
+typeLibraryTabContainer"
+isFinalfalse"5
+declarationString LibraryTabContainer tabContainer*tabContainer2n
+"org.jabref.gui.LibraryTabContainerTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java9 9(,Å
+…org.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!importMethod	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java:& :(2"
+typeImportMethod"
+isFinalfalse".
+declarationStringImportMethod importMethod*importMethod2~
+2org.jabref.gui.importer.ImportCommand.ImportMethodTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java: :(%ñ
+œorg.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!preferencesService	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java;, ;(>"
+typePreferencesService"
+isFinalfalse":
+declarationString%PreferencesService preferencesService*preferencesService2u
+)org.jabref.preferences.PreferencesServiceTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java; ;(+Í
+…org.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!stateManager	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java<& <(2"
+typeStateManager"
+isFinalfalse".
+declarationStringStateManager stateManager*stateManager2g
+org.jabref.gui.StateManagerTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java< <(%è
+Œorg.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!fileUpdateMonitor	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java=+ =(<"
+typeFileUpdateMonitor"
+isFinalfalse"8
+declarationString#FileUpdateMonitor fileUpdateMonitor*fileUpdateMonitor2s
+'org.jabref.model.util.FileUpdateMonitorTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java= =(*Ô
+…org.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!taskExecutor	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java>& >(2"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2l
+ org.jabref.gui.util.TaskExecutorTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java> >(%
+ org.jabref.gui.importer.ImportCommand.ImportCommand(org.jabref.gui.LibraryTabContainer, org.jabref.gui.importer.ImportCommand.ImportMethod, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager, org.jabref.model.util.FileUpdateMonitor, org.jabref.gui.util.TaskExecutor, org.jabref.gui.DialogService)!dialogService	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java?' ?(4"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2h
+org.jabref.gui.DialogServiceTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java? ?(&∑-
+/org.jabref.gui.importer.ImportCommand.execute()METHODB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaM M("
+isFinalfalse"±
+declarationStringõ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">execute</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*execute2é
+Borg.jabref.preferences.PreferencesService.getImporterPreferences()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaO# O(92í
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaP# P(=2ã
+?org.jabref.logic.importer.ImportFormatReader.getImportFormats()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaR; R(K2á
+;org.jabref.gui.util.FileDialogConfiguration.Builder.build()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaY Y(2®
+\org.jabref.gui.util.FileDialogConfiguration.Builder.withInitialDirectory(java.nio.file.Path)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaX X(%2Õ
+Äorg.jabref.gui.util.FileDialogConfiguration.Builder.addExtensionFilter(java.util.List<javafx.stage.FileChooser.ExtensionFilter>)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaW W(#2º
+porg.jabref.gui.util.FileDialogConfiguration.Builder.addExtensionFilter(javafx.stage.FileChooser.ExtensionFilter)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaV V(#2º
+porg.jabref.gui.util.FileDialogConfiguration.Builder.addExtensionFilter(javafx.stage.FileChooser.ExtensionFilter)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaU U(#2º
+porg.jabref.gui.util.FileFilterConverter.forAllImporters(java.util.SortedSet<org.jabref.logic.importer.Importer>)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaV8 V(G2«
+{org.jabref.gui.util.FileFilterConverter.importerToExtensionFilter(java.util.Collection<org.jabref.logic.importer.Importer>)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaW8 W(Q2ï
+Iorg.jabref.logic.importer.ImporterPreferences.getImportWorkingDirectory()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaXR X(k2é
+Borg.jabref.preferences.PreferencesService.getImporterPreferences()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaX9 X(O2ê
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java[ [(2®
+\org.jabref.gui.DialogService.showFileOpenDialog(org.jabref.gui.util.FileDialogConfiguration)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaZ Z((2˙
+≠org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java[( [(82î
+Horg.jabref.gui.util.FileDialogConfiguration.getSelectedExtensionFilter()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java[b [(|2â
+=org.jabref.gui.util.FileDialogConfiguration.Builder.Builder()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaT> T(]2ê
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaO O("2ê
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaP P("2è
+Corg.jabref.gui.importer.ImportCommand?fileUpdateMonitor@54.36:54.53CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaQ Q(!2ö
+Norg.jabref.gui.importer.ImportCommand.execute()?importFormatReader@78.27:78.45CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaR( R(:2ë
+Eorg.jabref.gui.importer.ImportCommand.execute()?importers@82.28:82.37CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaVH V(Q2ë
+Eorg.jabref.gui.importer.ImportCommand.execute()?importers@82.28:82.37CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaWR W([2ê
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaX& X(82ã
+?org.jabref.gui.importer.ImportCommand?dialogService@52.32:52.45CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaZ Z(2ü
+Sorg.jabref.gui.importer.ImportCommand.execute()?fileDialogConfiguration@84.32:84.55CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaZ) Z(@2å
+@org.jabref.gui.importer.ImportCommand.execute()?path@91.32:91.36CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java[9 [(=2ë
+Eorg.jabref.gui.importer.ImportCommand.execute()?importers@82.28:82.37CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java[? [(H2ü
+Sorg.jabref.gui.importer.ImportCommand.execute()?fileDialogConfiguration@84.32:84.55CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java[J [(a2°
+Norg.jabref.gui.importer.ImportCommand.execute()?importFormatReader@78.27:78.45DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaN N(-2ò
+Eorg.jabref.gui.importer.ImportCommand.execute()?importers@82.28:82.37DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaR R(%2¶
+Sorg.jabref.gui.importer.ImportCommand.execute()?fileDialogConfiguration@84.32:84.55DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaT  T(72ì
+@org.jabref.gui.importer.ImportCommand.execute()?path@91.32:91.36DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java[  [($2W
+voidRETURN_TYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaM M(¸
+
+Norg.jabref.gui.importer.ImportCommand.execute()?importFormatReader@78.27:78.45VARIABLEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaN N(-"
+typeImportFormatReader"
+isFinalfalse"¡
+declarationString´<mark class="modifier"> </mark>ImportFormatReader <mark class="class-field">importFormatReader</mark> = new ImportFormatReader(preferencesService.getImporterPreferences()<mark class="modifier">,</mark> preferencesService.getImportFormatPreferences()<mark class="modifier">,</mark> fileUpdateMonitor)*importFormatReader2x
+,org.jabref.logic.importer.ImportFormatReaderTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaN N(2é
+Borg.jabref.preferences.PreferencesService.getImporterPreferences()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaO# O(92í
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaP# P(=2ê
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaO O("2ê
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaP P("2è
+Corg.jabref.gui.importer.ImportCommand?fileUpdateMonitor@54.36:54.53CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaQ Q(!Ú
+Eorg.jabref.gui.importer.ImportCommand.execute()?importers@82.28:82.37VARIABLEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaR R(%"
+typeSortedSet<Importer>"
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier"> </mark>SortedSet<Importer> <mark class="class-field">importers</mark> = importFormatReader.getImportFormats()*	importers2_
+java.util.SortedSetTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaR R(2w
+"org.jabref.logic.importer.ImporterTYPE_ARGUMENTB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaR R(2ã
+?org.jabref.logic.importer.ImportFormatReader.getImportFormats()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaR; R(K2ö
+Norg.jabref.gui.importer.ImportCommand.execute()?importFormatReader@78.27:78.45CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaR( R(:ª
+Sorg.jabref.gui.importer.ImportCommand.execute()?fileDialogConfiguration@84.32:84.55VARIABLEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaT  T(7"
+typeFileDialogConfiguration"
+isFinalfalse"‘
+declarationStringæ<mark class="modifier"> </mark>FileDialogConfiguration <mark class="class-field">fileDialogConfiguration</mark> = new FileDialogConfiguration.Builder().addExtensionFilter(FileFilterConverter.ANY_FILE).addExtensionFilter(FileFilterConverter.forAllImporters(importers)).addExtensionFilter(FileFilterConverter.importerToExtensionFilter(importers)).withInitialDirectory(preferencesService.getImporterPreferences().getImportWorkingDirectory()).build()*fileDialogConfiguration2w
++org.jabref.gui.util.FileDialogConfigurationTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaT T(2á
+;org.jabref.gui.util.FileDialogConfiguration.Builder.build()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaY Y(2®
+\org.jabref.gui.util.FileDialogConfiguration.Builder.withInitialDirectory(java.nio.file.Path)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaX X(%2Õ
+Äorg.jabref.gui.util.FileDialogConfiguration.Builder.addExtensionFilter(java.util.List<javafx.stage.FileChooser.ExtensionFilter>)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaW W(#2º
+porg.jabref.gui.util.FileDialogConfiguration.Builder.addExtensionFilter(javafx.stage.FileChooser.ExtensionFilter)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaV V(#2º
+porg.jabref.gui.util.FileDialogConfiguration.Builder.addExtensionFilter(javafx.stage.FileChooser.ExtensionFilter)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaU U(#2º
+porg.jabref.gui.util.FileFilterConverter.forAllImporters(java.util.SortedSet<org.jabref.logic.importer.Importer>)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaV8 V(G2«
+{org.jabref.gui.util.FileFilterConverter.importerToExtensionFilter(java.util.Collection<org.jabref.logic.importer.Importer>)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaW8 W(Q2ï
+Iorg.jabref.logic.importer.ImporterPreferences.getImportWorkingDirectory()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaXR X(k2é
+Borg.jabref.preferences.PreferencesService.getImporterPreferences()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaX9 X(O2â
+=org.jabref.gui.util.FileDialogConfiguration.Builder.Builder()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaT> T(]2ë
+Eorg.jabref.gui.importer.ImportCommand.execute()?importers@82.28:82.37CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaVH V(Q2ë
+Eorg.jabref.gui.importer.ImportCommand.execute()?importers@82.28:82.37CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaWR W([2ê
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaX& X(8‘
+@org.jabref.gui.importer.ImportCommand.execute()?path@91.32:91.36VARIABLEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java[  [($"
+type"
+isFinalfalse"
+declarationString path*path2TYPEÚb
+≠org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)METHODB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java^ ^(!"
+isFinalfalse"Ë
+declarationString“<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">importSingleFile</mark>(Path file<mark class="modifier"><mark class="modifier">,</mark></mark> SortedSet&lt;Importer&gt; importers<mark class="modifier"><mark class="modifier">,</mark></mark> FileChooser.ExtensionFilter selectedExtensionFilter)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*importSingleFile2ó
+Kjava.nio.file.Files.exists(java.nio.file.Path, java.nio.file.LinkOption...)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java_ _(2£
+Worg.jabref.gui.DialogService.showErrorDialogAndWait(java.lang.String, java.lang.String)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java` `(02ö
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java`> `(B2ö
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaa! a(%2l
+ java.nio.file.Path.getFileName()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaaG a(R2‰
+óorg.jabref.gui.util.FileFilterConverter.getImporter(javafx.stage.FileChooser.ExtensionFilter, java.util.Collection<org.jabref.logic.importer.Importer>)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaf8 f(C2á
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javag; g(?2¬
+vorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javah h(2r
+&java.util.Collections.singletonList(T)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javah+ h(82h
+java.util.Optional.orElse(T)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javahG h(M2ú
+Porg.jabref.gui.util.BackgroundTask.executeWith(org.jabref.gui.util.TaskExecutor)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javas s(2™
+^org.jabref.gui.util.BackgroundTask.onFailure(java.util.function.Consumer<java.lang.Exception>)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javao o(2ò
+Lorg.jabref.gui.util.BackgroundTask.onSuccess(java.util.function.Consumer<V>)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javak k(2¨
+`org.jabref.gui.LibraryTabContainer.addTab(org.jabref.model.database.BibDatabaseContext, boolean)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javal! l('2á
+;org.jabref.logic.importer.ParserResult.getDatabaseContext()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javal5 l(G2ö
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javam6 m(:2~
+2org.jabref.model.database.BibDatabase.getEntries()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javams m(}2Ä
+4org.jabref.logic.importer.ParserResult.getDatabase()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javame m(p2Å
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaq" q((2ö
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaq6 q(:2}
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaue u(z2Ö
+9org.jabref.gui.LibraryTabContainer.getCurrentLibraryTab()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javauN u(b2ö
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javav) v(-2†
+Torg.jabref.gui.DialogService.showCustomDialogAndWait(javafx.scene.control.Dialog<R>)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaw w(12ß
+[org.jabref.logic.importer.ImporterPreferences.setImportWorkingDirectory(java.nio.file.Path)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java{4 {(M2é
+Borg.jabref.preferences.PreferencesService.getImporterPreferences()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java{ {(12j
+java.nio.file.Path.getParent()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java{S {(\2Ü
+πorg.jabref.gui.importer.ImportEntriesDialog.ImportEntriesDialog(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.BackgroundTask<org.jabref.logic.importer.ParserResult>)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javau- u(@2ˇ
+≤org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)!fileCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java_ _(2ã
+?org.jabref.gui.importer.ImportCommand?dialogService@52.32:52.45CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java` `(2ˇ
+≤org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)!fileCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaaB a(F2í
+≈org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)!selectedExtensionFilterCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javafD f([2Ñ
+∑org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)!importersCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaf] f(f2ˇ
+≤org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)!fileCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javah9 h(=2è
+¬org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?format@102.27:102.33CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javah@ h(F2ä
+>org.jabref.gui.importer.ImportCommand?importMethod@50.31:50.43CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaj j(2ç
+¿org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?task@103.37:103.41CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javak k(2ä
+>org.jabref.gui.importer.ImportCommand?tabContainer@49.38:49.50CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javal l( 2ï
+»org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?parserResult@107.27:107.39CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javal( l(42ã
+?org.jabref.gui.importer.ImportCommand?dialogService@52.32:52.45CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javam m(!2ï
+»org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?parserResult@107.27:107.39CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javamX m(d2Ñ
+8org.jabref.gui.importer.ImportCommand?LOGGER@45.32:45.38CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javap p(2ã
+æorg.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?ex@111.27:111.29CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javap4 p(62ã
+?org.jabref.gui.importer.ImportCommand?dialogService@52.32:52.45CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaq q(!2ä
+>org.jabref.gui.importer.ImportCommand?taskExecutor@55.31:55.43CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javas s()2ä
+>org.jabref.gui.importer.ImportCommand?tabContainer@49.38:49.50CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javauA u(M2é
+¿org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?task@103.37:103.41CALLC
+8src\main\java\org\jabref\gui\importer\ImportCommand.javau~ u(Ç2è
+¬org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?dialog@117.32:117.38CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javav v(2ã
+?org.jabref.gui.importer.ImportCommand?dialogService@52.32:52.45CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaw w(2è
+¬org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?dialog@117.32:117.38CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaw2 w(82ê
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java{ {(2ˇ
+≤org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)!fileCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java{N {(R2Ö
+9org.jabref.gui.importer.ImportCommand.ImportMethod?AS_NEWCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaj) j(/2Ñ
+≤org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)!file	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java^' ^(+2â
+∑org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)!importers	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java^A ^(J2ó
+≈org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)!selectedExtensionFilter	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java^h ^(2ñ
+¬org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?format@102.27:102.33DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaf f(!2î
+¿org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?task@103.37:103.41DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javag% g()2ñ
+¬org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?dialog@117.32:117.38DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javau  u(&2ú
+»org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?parserResult@107.27:107.39DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javak k('2í
+æorg.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?ex@111.27:111.29DECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javao o(2W
+voidRETURN_TYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java^ ^(›
+¬org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?format@102.27:102.33VARIABLEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaf f(!"
+typeOptional<Importer>"
+isFinalfalse"µ
+declarationStringü<mark class="modifier"> </mark>Optional<Importer> <mark class="class-field">format</mark> = FileFilterConverter.getImporter(selectedExtensionFilter, importers)*format2^
+java.util.OptionalTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaf f(2w
+"org.jabref.logic.importer.ImporterTYPE_ARGUMENTB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaf f(2‰
+óorg.jabref.gui.util.FileFilterConverter.getImporter(javafx.stage.FileChooser.ExtensionFilter, java.util.Collection<org.jabref.logic.importer.Importer>)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaf8 f(C2í
+≈org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)!selectedExtensionFilterCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javafD f([2Ñ
+∑org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)!importersCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaf] f(fè
+¿org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?task@103.37:103.41VARIABLEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javag% g()"$
+typeBackgroundTask<ParserResult>"
+isFinalfalse"è
+declarationString˘<mark class="modifier"> </mark>BackgroundTask<ParserResult> <mark class="class-field">task</mark> = BackgroundTask.wrap(() -> doImport(Collections.singletonList(file)<mark class="modifier">,</mark> format.orElse(<mark class="modifier">null</mark>)))*task2n
+"org.jabref.gui.util.BackgroundTaskTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javag g(2{
+&org.jabref.logic.importer.ParserResultTYPE_ARGUMENTB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javag g(#2á
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javag; g(?2¬
+vorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javah h(2r
+&java.util.Collections.singletonList(T)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javah+ h(82h
+java.util.Optional.orElse(T)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javahG h(M2ˇ
+≤org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)!fileCALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javah9 h(=2è
+¬org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?format@102.27:102.33CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javah@ h(Fﬂ
+¬org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?dialog@117.32:117.38VARIABLEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javau  u(&"
+typeImportEntriesDialog"
+isFinalfalse"Î
+declarationString’<mark class="modifier"> </mark>ImportEntriesDialog <mark class="class-field">dialog</mark> = new ImportEntriesDialog(tabContainer.getCurrentLibraryTab().getBibDatabaseContext()<mark class="modifier">,</mark> task)*dialog2w
++org.jabref.gui.importer.ImportEntriesDialogTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javau u(2}
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaue u(z2Ö
+9org.jabref.gui.LibraryTabContainer.getCurrentLibraryTab()CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javauN u(b2Ü
+πorg.jabref.gui.importer.ImportEntriesDialog.ImportEntriesDialog(org.jabref.model.database.BibDatabaseContext, org.jabref.gui.util.BackgroundTask<org.jabref.logic.importer.ParserResult>)CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javau- u(@2ä
+>org.jabref.gui.importer.ImportCommand?tabContainer@49.38:49.50CALLB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javauA u(M2é
+¿org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?task@103.37:103.41CALLC
+8src\main\java\org\jabref\gui\importer\ImportCommand.javau~ u(Ç™
+≤org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)!file	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java^' ^(+"
+typePath"
+isFinalfalse"
+declarationString	Path file*file2^
+java.nio.file.PathTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java^" ^(&—
+∑org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)!importers	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java^A ^(J"
+typeSortedSet<Importer>"
+isFinalfalse"2
+declarationStringSortedSet<Importer> importers*	importers2_
+java.util.SortedSetTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java^- ^(62w
+"org.jabref.logic.importer.ImporterTYPE_ARGUMENTB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java^7 ^(?ß
+≈org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)!selectedExtensionFilter	PARAMETERB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java^h ^("#
+typeFileChooser.ExtensionFilter"
+isFinalfalse"H
+declarationString3FileChooser.ExtensionFilter selectedExtensionFilter*selectedExtensionFilter2t
+(javafx.stage.FileChooser.ExtensionFilterTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java^X ^(gÌ
+»org.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?parserResult@107.27:107.39VARIABLEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javak k('"
+type"
+isFinalfalse""
+declarationString parserResult*parserResult2TYPEœ
+æorg.jabref.gui.importer.ImportCommand.importSingleFile(java.nio.file.Path, java.util.SortedSet<org.jabref.logic.importer.Importer>, javafx.stage.FileChooser.ExtensionFilter)?ex@111.27:111.29VARIABLEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.javao o("
+type"
+isFinalfalse"
+declarationString ex*ex2TYPEïr
+vorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)METHODD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÅ Å(!"
+isFinalfalse"ß
+declarationStringë<mark class="modifier">private </mark>ParserResult <mark class="method">doImport</mark>(List&lt;Path&gt; files<mark class="modifier"><mark class="modifier">,</mark></mark> Importer importFormat)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeParserResult*doImport2n
+ java.util.Optional.ofNullable(T)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÇ/ Ç(92ê
+Borg.jabref.preferences.PreferencesService.getImporterPreferences()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÜ# Ü(92î
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaá# á(=2j
+java.util.Optional.isEmpty()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaã ã($2¢
+Torg.jabref.gui.util.DefaultTaskExecutor.runAndWaitInJavaFXThread(java.lang.Runnable)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaç( ç(@2ç
+?org.jabref.logic.util.io.FileUtil.isPDFFile(java.nio.file.Path)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaé% é(.2Ó
+üorg.jabref.gui.importer.GrobidOptInDialogHelper.showAndWaitIfUserIsUndecided(org.jabref.gui.DialogService, org.jabref.logic.importer.fetcher.GrobidPreferences)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaéT é(p2ê
+@org.jabref.preferences.PreferencesService.getGrobidPreferences()CALLF
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaéì é(ß2Ç
+4org.jabref.logic.importer.ImportFormatReader.reset()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaè/ è(42É
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaë& ë(,2ú
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaë: ë(>2l
+java.nio.file.Path.toString()CALLE
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaë} ë(Ö2n
+ java.nio.file.Path.getFileName()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaëo ë(z2À
+}org.jabref.logic.importer.ImportFormatReader.importUnknownFormat(java.nio.file.Path, org.jabref.model.util.FileUpdateMonitor)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaî3 î(F2¢
+Torg.jabref.gui.util.DefaultTaskExecutor.runAndWaitInJavaFXThread(java.lang.Runnable)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javañ( ñ(@2f
+java.util.Optional.get()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaó' ó(*2f
+java.util.Optional.get()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaò- ò(02Ó
+üorg.jabref.gui.importer.GrobidOptInDialogHelper.showAndWaitIfUserIsUndecided(org.jabref.gui.DialogService, org.jabref.logic.importer.fetcher.GrobidPreferences)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaô; ô(W2è
+@org.jabref.preferences.PreferencesService.getGrobidPreferences()CALLE
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaôz ô(é2Ç
+4org.jabref.logic.importer.ImportFormatReader.reset()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaö/ ö(42É
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaú& ú(,2ú
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaú: ú(>2z
+,org.jabref.logic.importer.Importer.getName()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaúh ú(o2f
+java.util.Optional.get()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaúb ú(e2ì
+Eorg.jabref.logic.importer.Importer.importDatabase(java.nio.file.Path)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaü5 ü(C2f
+java.util.Optional.get()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaü/ ü(22z
+,org.jabref.logic.importer.Importer.getName()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java†Z †(a2f
+java.util.Optional.get()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java†T †(W2¢
+Torg.jabref.gui.util.DefaultTaskExecutor.runAndWaitInJavaFXThread(java.lang.Runnable)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java£$ £(<2ß
+Yorg.jabref.gui.DialogService.showWarningDialogAndWait(java.lang.String, java.lang.String)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java§, §(D2ú
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java•- •(12ú
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java¶- ¶(12Ñ
+6org.jabref.logic.JabRefException.getLocalizedMessage()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java®% ®(82¢
+Torg.jabref.gui.util.DefaultTaskExecutor.runAndWaitInJavaFXThread(java.lang.Runnable)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java≠  ≠(82ß
+Yorg.jabref.gui.DialogService.showWarningDialogAndWait(java.lang.String, java.lang.String)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÆ( Æ(@2ú
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaØ) Ø(-2ú
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java∞) ∞(-2m
+java.util.ArrayList.ArrayList()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÑC Ñ(N2É
+5org.jabref.logic.importer.ParserResult.ParserResult()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java≤ ≤(#2“
+Éorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)!importFormatCALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÇ: Ç(F2í
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÜ Ü("2í
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaá á("2ë
+Corg.jabref.gui.importer.ImportCommand?fileUpdateMonitor@54.36:54.53CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaà à(!2 
+|org.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)!filesCALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaâ â("2‹
+çorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?importer@130.27:130.35CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaã ã(2‹
+çorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?filename@137.18:137.26CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaé/ é(72ç
+?org.jabref.gui.importer.ImportCommand?dialogService@52.32:52.45CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaéq é(~2î
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55CALLF
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaéÄ é(í2Ê
+óorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?importFormatReader@133.27:133.45CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaè è(.2ç
+?org.jabref.gui.importer.ImportCommand?dialogService@52.32:52.45CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaë ë(%2‹
+çorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?filename@137.18:137.26CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaëf ë(n2€
+åorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?imports@132.53:132.60CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaî î(2Ê
+óorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?importFormatReader@133.27:133.45CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaî  î(22‹
+çorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?filename@137.18:137.26CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaîG î(O2ë
+Corg.jabref.gui.importer.ImportCommand?fileUpdateMonitor@54.36:54.53CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaîQ î(b2‹
+çorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?importer@130.27:130.35CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaó ó(&2‹
+çorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?importer@130.27:130.35CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaò$ ò(,2ç
+?org.jabref.gui.importer.ImportCommand?dialogService@52.32:52.45CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaôX ô(e2í
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaôg ô(y2Ê
+óorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?importFormatReader@133.27:133.45CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaö ö(.2ç
+?org.jabref.gui.importer.ImportCommand?dialogService@52.32:52.45CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaú ú(%2‹
+çorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?importer@130.27:130.35CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaúY ú(a2‹
+çorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?importer@130.27:130.35CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaü& ü(.2‹
+çorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?filename@137.18:137.26CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaüD ü(L2€
+åorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?imports@132.53:132.60CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java† †(2‹
+çorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?importer@130.27:130.35CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java†K †(S2÷
+áorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?pr@159.33:159.35CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java†e †(g2ç
+?org.jabref.gui.importer.ImportCommand?dialogService@52.32:52.45CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java§ §(+2÷
+áorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?ex@162.37:162.39CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java®" ®($2€
+åorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?imports@132.53:132.60CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java¨ ¨(2ç
+?org.jabref.gui.importer.ImportCommand?dialogService@52.32:52.45CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÆ Æ('2€
+åorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?imports@132.53:132.60CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaµ" µ()2œ
+|org.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)!files	PARAMETERD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÅ- Å(22◊
+Éorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)!importFormat	PARAMETERD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÅ= Å(I2„
+çorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?importer@130.27:130.35DECLARATIOND
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÇ Ç(#2‚
+åorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?imports@132.53:132.60DECLARATIOND
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÑ5 Ñ(<2Ì
+óorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?importFormatReader@133.27:133.45DECLARATIOND
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÖ Ö(-2„
+çorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?filename@137.18:137.26DECLARATIOND
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaâ â(2›
+áorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?pr@159.33:159.35DECLARATIOND
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaü! ü(#2›
+áorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?ex@162.37:162.39DECLARATIOND
+8src\main\java\org\jabref\gui\importer\ImportCommand.java¢% ¢('2{
+&org.jabref.logic.importer.ParserResultRETURN_TYPED
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÅ Å(—
+çorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?importer@130.27:130.35VARIABLED
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÇ Ç(#"
+typeOptional<Importer>"
+isFinalfalse"î
+declarationString<mark class="modifier"> </mark>Optional<Importer> <mark class="class-field">importer</mark> = Optional.ofNullable(importFormat)*importer2`
+java.util.OptionalTYPED
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÇ Ç(2y
+"org.jabref.logic.importer.ImporterTYPE_ARGUMENTD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÇ Ç(2n
+ java.util.Optional.ofNullable(T)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÇ/ Ç(92“
+Éorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)!importFormatCALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÇ: Ç(Fî
+åorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?imports@132.53:132.60VARIABLED
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÑ5 Ñ(<"4
+type,List<ImportFormatReader.UnknownFormatImport>"
+isFinalfalse"û
+declarationStringà<mark class="modifier"> </mark>List<ImportFormatReader.UnknownFormatImport> <mark class="class-field">imports</mark> = new ArrayList<>()*imports2R
+ListTYPED
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÑ Ñ(2m
+java.util.ArrayList.ArrayList()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÑC Ñ(N‘
+óorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?importFormatReader@133.27:133.45VARIABLED
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÖ Ö(-"
+typeImportFormatReader"
+isFinalfalse"¡
+declarationString´<mark class="modifier"> </mark>ImportFormatReader <mark class="class-field">importFormatReader</mark> = new ImportFormatReader(preferencesService.getImporterPreferences()<mark class="modifier">,</mark> preferencesService.getImportFormatPreferences()<mark class="modifier">,</mark> fileUpdateMonitor)*importFormatReader2z
+,org.jabref.logic.importer.ImportFormatReaderTYPED
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÖ Ö(2ê
+Borg.jabref.preferences.PreferencesService.getImporterPreferences()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÜ# Ü(92î
+Forg.jabref.preferences.PreferencesService.getImportFormatPreferences()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaá# á(=2í
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÜ Ü("2í
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaá á("2ë
+Corg.jabref.gui.importer.ImportCommand?fileUpdateMonitor@54.36:54.53CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaà à(!–
+çorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?filename@137.18:137.26VARIABLED
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaâ â("
+typePath"
+isFinalfalse"b
+declarationStringM<mark class="modifier"> </mark>Path <mark class="class-field">filename</mark>*filename2`
+java.nio.file.PathTYPED
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaâ â(…	
+áorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?pr@159.33:159.35VARIABLED
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaü! ü(#"
+typeParserResult"
+isFinalfalse"é
+declarationStringy<mark class="modifier"> </mark>ParserResult <mark class="class-field">pr</mark> = importer.get().importDatabase(filename)*pr2t
+&org.jabref.logic.importer.ParserResultTYPED
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaü ü( 2ì
+Eorg.jabref.logic.importer.Importer.importDatabase(java.nio.file.Path)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaü5 ü(C2f
+java.util.Optional.get()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaü/ ü(22‹
+çorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?importer@130.27:130.35CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaü& ü(.2‹
+çorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?filename@137.18:137.26CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaüD ü(LÏ
+|org.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)!files	PARAMETERD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÅ- Å(2"
+type
+List<Path>"
+isFinalfalse"%
+declarationStringList<Path> files*files2\
+java.util.ListTYPED
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÅ" Å(&2i
+java.nio.file.PathTYPE_ARGUMENTD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÅ' Å(+ß
+Éorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)!importFormat	PARAMETERD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÅ= Å(I"
+typeImporter"
+isFinalfalse"*
+declarationStringImporter importFormat*importFormat2p
+"org.jabref.logic.importer.ImporterTYPED
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÅ4 Å(<´
+áorg.jabref.gui.importer.ImportCommand.doImport(java.util.List<java.nio.file.Path>, org.jabref.logic.importer.Importer)?ex@162.37:162.39VARIABLED
+8src\main\java\org\jabref\gui\importer\ImportCommand.java¢% ¢('"
+typeImportException"
+isFinalfalse"'
+declarationStringImportException ex*ex2w
+)org.jabref.logic.importer.ImportExceptionTYPED
+8src\main\java\org\jabref\gui\importer\ImportCommand.java¢ ¢($Ó
+mergeImportResultsMETHODD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaª ª(*"
+isFinalfalse"≤
+declarationStringú<mark class="modifier">public </mark>ParserResult <mark class="method">mergeImportResults</mark>(List&lt;ImportFormatReader.UnknownFormatImport&gt; imports)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeParserResult*mergeImportResults2Ä
+2org.jabref.model.database.BibDatabase.getEntries()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaƒD ƒ(N2Ç
+4org.jabref.logic.importer.ParserResult.getDatabase()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaƒ6 ƒ(A2é
+@org.jabref.preferences.BibEntryPreferences.getKeywordSeparator()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java»O »(b2ê
+Borg.jabref.preferences.PreferencesService.getBibEntryPreferences()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java»6 »(L2Ç
+4org.jabref.logic.importer.ParserResult.getMetaData()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java… …(*2Ç
+4org.jabref.logic.importer.ParserResult.getMetaData()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java %  (02Ä
+2org.jabref.model.database.BibDatabase.getEntries()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÃ3 Ã(=2Ç
+4org.jabref.logic.importer.ParserResult.getDatabase()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÃ% Ã(02Ä
+2org.jabref.model.database.BibDatabase.getEntries()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java“6 “(@2ç
+?org.jabref.preferences.PreferencesService.getOwnerPreferences()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java“W “(j2ì
+Corg.jabref.preferences.PreferencesService.getTimestampPreferences()CALLF
+8src\main\java\org\jabref\gui\importer\ImportCommand.java“Å “(ò2Å
+3org.jabref.model.database.BibDatabase.BibDatabase()CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaº) º(42®
+Zorg.jabref.logic.importer.ParserResult.ParserResult(org.jabref.model.database.BibDatabase)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaΩ" Ω(.2ã
+=org.jabref.logic.database.DatabaseMerger.DatabaseMerger(char)CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java» »("2í
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java»# »(52í
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55CALLD
+8src\main\java\org\jabref\gui\importer\ImportCommand.java“D “(V2ì
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55CALLE
+8src\main\java\org\jabref\gui\importer\ImportCommand.java“n “(Ä2{
+&org.jabref.logic.importer.ParserResultRETURN_TYPED
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaª ª( 
+imports	PARAMETERD
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaªX ª(_"4
+type,List<ImportFormatReader.UnknownFormatImport>"
+isFinalfalse"I
+declarationString4List<ImportFormatReader.UnknownFormatImport> imports*imports2R
+ListTYPED
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaª+ ª(/ö
+pathVARIABLED
+8src\main\java\org\jabref\gui\importer\ImportCommand.javaÀB À(F"
+type"
+isFinalfalse"
+declarationString path*path2TYPEó
+8org.jabref.gui.importer.ImportCommand?LOGGER@45.32:45.38VALUEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java-  -(&"
+isFinaltrue"
+typeLogger"„
+declarationStringÕ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(ImportCommand.class);"
+isStatictrue"
+accessprivate*LOGGER2\
+org.slf4j.LoggerTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java- -(Å
+>org.jabref.gui.importer.ImportCommand?tabContainer@49.38:49.50VALUEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java1& 1(2"
+isFinaltrue"
+typeLibraryTabContainer"°
+declarationStringã<mark class="modifier">private </mark><mark class="modifier">final </mark>LibraryTabContainer <mark class="class-field">tabContainer</mark>"
+isStaticfalse"
+accessprivate*tabContainer2n
+"org.jabref.gui.LibraryTabContainerTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java1 1(%É
+>org.jabref.gui.importer.ImportCommand?importMethod@50.31:50.43VALUEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java2 2(+"
+isFinaltrue"
+typeImportMethod"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>ImportMethod <mark class="class-field">importMethod</mark>"
+isStaticfalse"
+accessprivate*importMethod2~
+2org.jabref.gui.importer.ImportCommand.ImportMethodTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java2 2(Ú
+?org.jabref.gui.importer.ImportCommand?dialogService@52.32:52.45VALUEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java4  4(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2h
+org.jabref.gui.DialogServiceTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java4 4(ò
+Dorg.jabref.gui.importer.ImportCommand?preferencesService@53.37:53.55VALUEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java5% 5(7"
+isFinaltrue"
+typePreferencesService"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferencesService</mark>"
+isStaticfalse"
+accessprivate*preferencesService2u
+)org.jabref.preferences.PreferencesServiceTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java5 5($ë
+Corg.jabref.gui.importer.ImportCommand?fileUpdateMonitor@54.36:54.53VALUEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java6$ 6(5"
+isFinaltrue"
+typeFileUpdateMonitor"§
+declarationStringé<mark class="modifier">private </mark><mark class="modifier">final </mark>FileUpdateMonitor <mark class="class-field">fileUpdateMonitor</mark>"
+isStaticfalse"
+accessprivate*fileUpdateMonitor2s
+'org.jabref.model.util.FileUpdateMonitorTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java6 6(#Ò
+>org.jabref.gui.importer.ImportCommand?taskExecutor@55.31:55.43VALUEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java7 7(+"
+isFinaltrue"
+typeTaskExecutor"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2l
+ org.jabref.gui.util.TaskExecutorTYPEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java7 7(ı
+2org.jabref.gui.importer.ImportCommand.ImportMethodENUMB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java/ /("D
+declarationString/<mark class="modifier">enum </mark>ImportMethod*ImportMethod2å
+9org.jabref.gui.importer.ImportCommand.ImportMethod?AS_NEWDECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java/ /(%2ë
+>org.jabref.gui.importer.ImportCommand.ImportMethod?TO_EXISTINGDECLARATIONB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java/' /(2ú
+9org.jabref.gui.importer.ImportCommand.ImportMethod?AS_NEWVALUEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java/ /(%"
+enumtrue*AS_NEW¶
+>org.jabref.gui.importer.ImportCommand.ImportMethod?TO_EXISTINGVALUEB
+8src\main\java\org\jabref\gui\importer\ImportCommand.java/' /(2"
+enumtrue*TO_EXISTING

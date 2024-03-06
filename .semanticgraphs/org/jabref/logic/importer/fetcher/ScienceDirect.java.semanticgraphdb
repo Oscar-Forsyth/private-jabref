@@ -1,0 +1,703 @@
+
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaü
+/org.jabref.logic.importer.fetcher.ScienceDirectCLASSL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java# #(",
+package!org.jabref.logic.importer.fetcher"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"¿
+declarationString™<mark class="modifier">public </mark><mark class="modifier">class </mark>ScienceDirect<mark class="modifier"><br>implements </mark>FulltextFetcher, CustomizableKeyFetcher"
+accesspublic*ScienceDirect2…
+lorg.jabref.logic.importer.fetcher.ScienceDirect.ScienceDirect(org.jabref.logic.importer.ImporterPreferences)DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java, ,(2∫
+]org.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java1 1(%2û
+?org.jabref.logic.importer.fetcher.ScienceDirect.getTrustLevel()DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaÑ Ñ(#2¨
+Morg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaà à(2ò
+9org.jabref.logic.importer.fetcher.ScienceDirect.getName()DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java§ §(2ü
+Borg.jabref.logic.importer.fetcher.ScienceDirect?LOGGER@36.32:36.38DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java$  $(&2†
+Corg.jabref.logic.importer.fetcher.ScienceDirect?API_URL@38.32:38.39DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java&  &('2†
+Corg.jabref.logic.importer.fetcher.ScienceDirect?API_KEY@39.32:39.39DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java'  '('2•
+Horg.jabref.logic.importer.fetcher.ScienceDirect?FETCHER_NAME@40.32:40.44DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java(  ((,2¨
+Oorg.jabref.logic.importer.fetcher.ScienceDirect?importerPreferences@42.38:42.57DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java*& *(92Å
+)org.jabref.logic.importer.FulltextFetcherEXTENDL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java#& #(52ê
+8org.jabref.logic.importer.fetcher.CustomizableKeyFetcherEXTENDL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java#7 #(M◊
+lorg.jabref.logic.importer.fetcher.ScienceDirect.ScienceDirect(org.jabref.logic.importer.ImporterPreferences)CONSTRUCTORL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java, ,("å
+declarationStringw<mark class="modifier">public </mark><mark class="method">ScienceDirect</mark>(ImporterPreferences importerPreferences)*ScienceDirect2◊
+Äorg.jabref.logic.importer.fetcher.ScienceDirect.ScienceDirect(org.jabref.logic.importer.ImporterPreferences)!importerPreferencesCALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java-# -(62•
+Oorg.jabref.logic.importer.fetcher.ScienceDirect?importerPreferences@42.38:42.57CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java- -( 2‹
+Äorg.jabref.logic.importer.fetcher.ScienceDirect.ScienceDirect(org.jabref.logic.importer.ImporterPreferences)!importerPreferences	PARAMETERL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java,- ,(@2å
+/org.jabref.logic.importer.fetcher.ScienceDirectRETURN_TYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java, ,(‰
+Äorg.jabref.logic.importer.fetcher.ScienceDirect.ScienceDirect(org.jabref.logic.importer.ImporterPreferences)!importerPreferences	PARAMETERL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java,- ,(@"
+typeImporterPreferences"
+isFinalfalse"<
+declarationString'ImporterPreferences importerPreferences*importerPreferences2É
+-org.jabref.logic.importer.ImporterPreferencesTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java, ,(,Àä
+]org.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)METHODL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java1 1(%"
+isFinalfalse"Ñ
+declarationStringÓ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>Optional&lt;URL&gt; <mark class="method">findFullText</mark>(BibEntry entry)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<URL>*findFullText2y
+#java.util.Objects.requireNonNull(T)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java2 2(2√
+mjava.util.Optional.flatMap(java.util.function.Function<? super T, ? extends java.util.Optional<? extends U>>)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java4> 4(E2¢
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java4" 4(*2r
+java.util.Optional.isEmpty()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java5 5(2p
+java.util.Optional.empty()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java7 7(!2£
+Morg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java: :('2Ñ
+.org.jabref.model.entry.identifier.DOI.getDOI()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java:2 :(82n
+java.util.Optional.get()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java:, :(/2p
+java.lang.String.isEmpty()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java; ;(2p
+java.util.Optional.empty()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java< <(!2n
+java.util.Optional.of(T)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaI I(2r
+java.util.Optional.isEmpty()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java^  ^('2p
+java.util.Optional.empty()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java` `(!2n
+java.util.Optional.get()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javac5 c(82Ö
+/java.lang.String.formatted(java.lang.Object...)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javai( i(12p
+java.net.URL.getProtocol()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javai6 i(A2q
+java.net.URL.getAuthority()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaiI i(U2ë
+;java.util.stream.Collectors.joining(java.lang.CharSequence)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaoJ o(Q2p
+java.util.Optional.empty()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaw w(!2n
+java.util.Optional.of(T)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java| |(2p
+java.util.Optional.empty()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java (!2x
+"java.net.URL.URL(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaI# I(&2x
+"java.net.URL.URL(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javah h(2x
+"java.net.URL.URL(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java|# |(&2π
+corg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)!entryCALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java2 2($2π
+corg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)!entryCALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java4 4(!2√
+morg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?doi@52.22:52.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java5 5(2√
+morg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?doi@52.22:52.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java:( :(+2 
+torg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?urlFromDoi@58.15:58.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java; ;(2 
+torg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?urlFromDoi@58.15:58.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java?& ?(02ƒ
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?html@63.17:63.21CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaF F(!2…
+sorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?metaLinks@70.17:70.26CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaG G(2…
+sorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?metaLinks@70.17:70.26CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaH H(#2ƒ
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?link@72.19:72.23CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaI' I(+2ƒ
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?html@63.17:63.21CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaP3 P(72«
+qorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?element@83.25:83.32CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaS$ S(+2«
+qorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?element@85.21:85.28CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaU  U('2ƒ
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?json@88.24:88.28CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaX  X($2ƒ
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?json@89.21:89.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaY Y(!2ƒ
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?json@90.24:90.28CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaZ  Z($2ƒ
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?json@91.21:91.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java[ [(!2”
+}org.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?pdfDownloadOptional@80.29:80.48CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java^ ^(2ò
+Borg.jabref.logic.importer.fetcher.ScienceDirect?LOGGER@36.32:36.38CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java_ _(2”
+}org.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?pdfDownloadOptional@80.29:80.48CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javac! c(42À
+uorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?pdfDownload@99.19:99.30CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaf f(2À
+uorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?pdfDownload@99.19:99.30CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javag g(*2 
+torg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?urlFromDoi@58.15:58.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javah h((2œ
+yorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?fullLinkToPdf@101.15:101.28CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javai i(2≈
+oorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?url@104.16:104.19CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javai2 i(52≈
+oorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?url@104.16:104.19CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaiE i(H2À
+uorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?linkToPdf@103.19:103.28CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaiY i(b2À
+uorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?pdfDownload@99.19:99.30CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaj j(2À
+uorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?pdfDownload@99.19:99.30CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javak% k(02Õ
+worg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?urlMetadata@107.23:107.34CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javal+ l(62”
+}org.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?queryParamsObject@108.23:108.40CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javam% m(62≈
+oorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?key@110.59:110.62CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javanY n(\2”
+}org.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?queryParamsObject@108.23:108.40CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javan^ n(o2≈
+oorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?key@110.59:110.62CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javanz n(}2œ
+yorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?fullLinkToPdf@101.15:101.28CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javap p(2Õ
+worg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?urlMetadata@107.23:107.34CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaq q(2Õ
+worg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?urlMetadata@107.23:107.34CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javar r(2Õ
+worg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?urlMetadata@107.23:107.34CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javas s(2—
+{org.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?queryParameters@109.19:109.34CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javat t(#2ò
+Borg.jabref.logic.importer.fetcher.ScienceDirect?LOGGER@36.32:36.38CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javav v(2ò
+Borg.jabref.logic.importer.fetcher.ScienceDirect?LOGGER@36.32:36.38CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaz z(2œ
+yorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?fullLinkToPdf@101.15:101.28CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javazB z(O2œ
+yorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?fullLinkToPdf@101.15:101.28CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java|' |(42ò
+Borg.jabref.logic.importer.fetcher.ScienceDirect?LOGGER@36.32:36.38CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java~ ~(2√
+morg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?e@125.39:125.40CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java~* ~(+2ì
+=org.jabref.model.entry.identifier.DOI.parse(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java4F 4(P2±
+Worg.jabref.logic.importer.FulltextFetcher.findFullText(org.jabref.model.entry.BibEntry)OVERRIDEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java1 1(%2æ
+corg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)!entry	PARAMETERL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java1/ 1(42 
+morg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?doi@52.22:52.25DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java4 4(2—
+torg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?urlFromDoi@58.15:58.25DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java: :(2À
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?html@63.17:63.21DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java? ?(2–
+sorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?metaLinks@70.17:70.26DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaF F(2À
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?link@72.19:72.23DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaH H(2⁄
+}org.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?pdfDownloadOptional@80.29:80.48DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaP P(02“
+uorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?pdfDownload@99.19:99.30DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javac c(2÷
+yorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?fullLinkToPdf@101.15:101.28DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javae e(2“
+uorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?linkToPdf@103.19:103.28DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javag g(2Ã
+oorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?url@104.16:104.19DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javah h(2‘
+worg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?urlMetadata@107.23:107.34DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javak k("2⁄
+}org.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?queryParamsObject@108.23:108.40DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javal l((2ÿ
+{org.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?queryParameters@109.19:109.34DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javam m("2Œ
+qorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?element@83.25:83.32DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaS S( 2Œ
+qorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?element@85.21:85.28DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaU U(2À
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?json@88.24:88.28DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaX X(2À
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?json@89.21:89.25DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaY Y(2À
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?json@90.24:90.28DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaZ Z(2À
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?json@91.21:91.25DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java[ [(2Ã
+oorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?key@110.59:110.62DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javan; n(>2 
+morg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?e@125.39:125.40DECLARATIONL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java}' }((2o
+java.util.OptionalRETURN_TYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java1 1(2r
+java.net.URLRETURN_TYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java1 1(≈
+
+morg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?doi@52.22:52.25VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java4 4("
+typeOptional<DOI>"
+isFinalfalse"ü
+declarationStringâ<mark class="modifier"> </mark>Optional<DOI> <mark class="class-field">doi</mark> = entry.getField(StandardField.DOI).flatMap(DOI::parse)*doi2h
+java.util.OptionalTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java4 4(2Ñ
+%org.jabref.model.entry.identifier.DOITYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java4 4(2√
+mjava.util.Optional.flatMap(java.util.function.Function<? super T, ? extends java.util.Optional<? extends U>>)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java4> 4(E2¢
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java4" 4(*2π
+corg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)!entryCALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java4 4(!2ì
+=org.jabref.model.entry.identifier.DOI.parse(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java4F 4(P“
+torg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?urlFromDoi@58.15:58.25VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java: :("
+typeString"
+isFinalfalse"à
+declarationStrings<mark class="modifier"> </mark>String <mark class="class-field">urlFromDoi</mark> = getUrlByDoi(doi.get().getDOI())*
+urlFromDoi2f
+java.lang.StringTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java: :(2£
+Morg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java: :('2Ñ
+.org.jabref.model.entry.identifier.DOI.getDOI()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java:2 :(82n
+java.util.Optional.get()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java:, :(/2√
+morg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?doi@52.22:52.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java:( :(+ì
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?html@63.17:63.21VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java? ?("
+typeDocument"
+isFinalfalse"·
+declarationStringÀ<mark class="modifier"> </mark>Document <mark class="class-field">html</mark> = Jsoup.connect(urlFromDoi).userAgent(URLDownload.USER_AGENT).referrer("https://www.google.com").ignoreHttpErrors(true).get()*html2n
+org.jsoup.nodes.DocumentTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java? ?(2 
+torg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?urlFromDoi@58.15:58.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java?& ?(0¸
+sorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?metaLinks@70.17:70.26VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaF F("
+typeElements"
+isFinalfalse"≈
+declarationStringØ<mark class="modifier"> </mark>Elements <mark class="class-field">metaLinks</mark> = html.getElementsByAttributeValue("name"<mark class="modifier">,</mark> "citation_pdf_url")*	metaLinks2o
+org.jsoup.select.ElementsTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaF F(2ƒ
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?html@63.17:63.21CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaF F(!´
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?link@72.19:72.23VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaH H("
+typeString"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier"> </mark>String <mark class="class-field">link</mark> = metaLinks.first().attr("content")*link2f
+java.lang.StringTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaH H(2…
+sorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?metaLinks@70.17:70.26CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaH H(#˝
+}org.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?pdfDownloadOptional@80.29:80.48VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaP P(0"
+typeOptional<JSONObject>"
+isFinalfalse"Ä
+declarationStringÍ<mark class="modifier"> </mark>Optional<JSONObject> <mark class="class-field">pdfDownloadOptional</mark> = html.getElementsByAttributeValue("type"<mark class="modifier">,</mark> "application/json").stream().flatMap(element -> element.getElementsByTag("script").stream()).// The first DOM child of the script element is the script itself (represented as HTML text)
+map(element -> element.childNode(0)).map(Node::toString).map(JSONObject::new).filter(json -> json.has("article")).map(json -> json.getJSONObject("article")).filter(json -> json.has("pdfDownload")).map(json -> json.getJSONObject("pdfDownload")).findAny()*pdfDownloadOptional2h
+java.util.OptionalTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaP P(2{
+kong.unirest.json.JSONObjectTYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaP P(2ƒ
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?html@63.17:63.21CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaP3 P(72«
+qorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?element@83.25:83.32CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaS$ S(+2«
+qorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?element@85.21:85.28CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaU  U('2ƒ
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?json@88.24:88.28CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaX  X($2ƒ
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?json@89.21:89.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaY Y(!2ƒ
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?json@90.24:90.28CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaZ  Z($2ƒ
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?json@91.21:91.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java[ [(!∆
+uorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?pdfDownload@99.19:99.30VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javac c("
+type
+JSONObject"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>JSONObject <mark class="class-field">pdfDownload</mark> = pdfDownloadOptional.get()*pdfDownload2r
+kong.unirest.json.JSONObjectTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javac c(2n
+java.util.Optional.get()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javac5 c(82”
+}org.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?pdfDownloadOptional@80.29:80.48CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javac! c(4◊
+yorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?fullLinkToPdf@101.15:101.28VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javae e("
+typeString"
+isFinalfalse"i
+declarationStringT<mark class="modifier"> </mark>String <mark class="class-field">fullLinkToPdf</mark>*fullLinkToPdf2f
+java.lang.StringTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javae e(ø
+uorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?linkToPdf@103.19:103.28VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javag g("
+typeString"
+isFinalfalse"ä
+declarationStringu<mark class="modifier"> </mark>String <mark class="class-field">linkToPdf</mark> = pdfDownload.getString("linkToPdf")*	linkToPdf2f
+java.lang.StringTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javag g(2À
+uorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?pdfDownload@99.19:99.30CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javag g(*å
+oorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?url@104.16:104.19VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javah h("
+typeURL"
+isFinalfalse"r
+declarationString]<mark class="modifier"> </mark>URL <mark class="class-field">url</mark> = new URL(urlFromDoi)*url2b
+java.net.URLTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javah h(2x
+"java.net.URL.URL(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javah h(2 
+torg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?urlFromDoi@58.15:58.25CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javah h((‡
+worg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?urlMetadata@107.23:107.34VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javak k(""
+type
+JSONObject"
+isFinalfalse"ó
+declarationStringÅ<mark class="modifier"> </mark>JSONObject <mark class="class-field">urlMetadata</mark> = pdfDownload.getJSONObject("urlMetadata")*urlMetadata2r
+kong.unirest.json.JSONObjectTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javak k(2À
+uorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?pdfDownload@99.19:99.30CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javak% k(0Ù
+}org.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?queryParamsObject@108.23:108.40VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javal l(("
+type
+JSONObject"
+isFinalfalse"ù
+declarationStringá<mark class="modifier"> </mark>JSONObject <mark class="class-field">queryParamsObject</mark> = urlMetadata.getJSONObject("queryParams")*queryParamsObject2r
+kong.unirest.json.JSONObjectTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javal l(2Õ
+worg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?urlMetadata@107.23:107.34CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javal+ l(6ﬁ
+{org.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?queryParameters@109.19:109.34VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javam m(""
+typeString"
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier"> </mark>String <mark class="class-field">queryParameters</mark> = queryParamsObject.keySet().stream().map(key -> String.format("%s=%s"<mark class="modifier">,</mark> key, queryParamsObject.getString(key))).collect(Collectors.joining("&"))*queryParameters2f
+java.lang.StringTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javam m(2ë
+;java.util.stream.Collectors.joining(java.lang.CharSequence)CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaoJ o(Q2”
+}org.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?queryParamsObject@108.23:108.40CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javam% m(62≈
+oorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?key@110.59:110.62CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javanY n(\2”
+}org.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?queryParamsObject@108.23:108.40CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javan^ n(o2≈
+oorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?key@110.59:110.62CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javanz n(}Ö
+corg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)!entry	PARAMETERL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java1/ 1(4"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2u
+org.jabref.model.entry.BibEntryTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java1& 1(.ï
+qorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?element@83.25:83.32VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaS S( "
+type"
+isFinalfalse"
+declarationString element*element2TYPEï
+qorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?element@85.21:85.28VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaU U("
+type"
+isFinalfalse"
+declarationString element*element2TYPEå
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?json@88.24:88.28VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaX X("
+type"
+isFinalfalse"
+declarationString json*json2TYPEå
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?json@89.21:89.25VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaY Y("
+type"
+isFinalfalse"
+declarationString json*json2TYPEå
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?json@90.24:90.28VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaZ Z("
+type"
+isFinalfalse"
+declarationString json*json2TYPEå
+norg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?json@91.21:91.25VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java[ [("
+type"
+isFinalfalse"
+declarationString json*json2TYPEã
+oorg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?key@110.59:110.62VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javan; n(>"
+type"
+isFinalfalse"
+declarationString key*key2TYPEü
+morg.jabref.logic.importer.fetcher.ScienceDirect.findFullText(org.jabref.model.entry.BibEntry)?e@125.39:125.40VARIABLEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java}' }(("
+typeMalformedURLException"
+isFinalfalse",
+declarationStringMalformedURLException e*e2t
+java.net.MalformedURLExceptionTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java} }(&–
+?org.jabref.logic.importer.fetcher.ScienceDirect.getTrustLevel()METHODN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaÑ Ñ(#"
+isFinalfalse"ü
+declarationStringâ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>TrustLevel <mark class="method">getTrustLevel</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+type
+TrustLevel*getTrustLevel2ï
+9org.jabref.logic.importer.FulltextFetcher.getTrustLevel()OVERRIDEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaÑ Ñ(#2ã
+,org.jabref.logic.importer.fetcher.TrustLevelRETURN_TYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaÑ Ñ(Ω0
+Morg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)METHODN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaà à("
+isFinalfalse" 
+declarationString¥<mark class="modifier">private </mark>String <mark class="method">getUrlByDoi</mark>(String doi)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>UnirestException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*getUrlByDoi2u
+java.util.Optional.orElse(T)CALLO
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaçz ç(Ä2°
+Iorg.jabref.logic.importer.ImporterPreferences.getApiKey(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaçe ç(n2ë
+9org.jabref.logic.importer.fetcher.ScienceDirect.getName()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaço ç(v2õ
+Corg.jabref.logic.importer.fetcher.ScienceDirect?API_URL@38.32:38.39CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaã ã($2©
+Qorg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)!doiCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaã' ã(*2ª
+corg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?request@139.19:139.26CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaå> å(E2ß
+Oorg.jabref.logic.importer.fetcher.ScienceDirect?importerPreferences@42.38:42.57CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaçQ ç(d2ù
+Corg.jabref.logic.importer.fetcher.ScienceDirect?API_KEY@39.32:39.39CALLP
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaçÅ ç(à2¿
+horg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?jsonResponse@140.35:140.47CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaë ë(*2∏
+`org.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?json@145.23:145.27CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaí í("2µ
+]org.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?i@150.21:150.22CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javañ ñ(2π
+aorg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?links@146.22:146.27CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javañ  ñ(%2µ
+]org.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?i@150.21:150.22CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javañ0 ñ(12π
+aorg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?links@146.22:146.27CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaó" ó('2µ
+]org.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?i@150.21:150.22CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaó6 ó(72∏
+`org.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?link@151.27:151.31CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaò ò(2ª
+corg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?sciLink@137.15:137.22CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaô ô(2∏
+`org.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?link@151.27:151.31CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaô ô("2ª
+corg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?sciLink@137.15:137.22CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaú ú(2ö
+Borg.jabref.logic.importer.fetcher.ScienceDirect?LOGGER@36.32:36.38CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaû û(2µ
+]org.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?e@157.31:157.32CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaûG û(H2ª
+corg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?sciLink@137.15:137.22CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaü ü(2Æ
+Qorg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)!doi	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaà& à()2¬
+corg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?sciLink@137.15:137.22DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaâ â(2¬
+corg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?request@139.19:139.26DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaã ã(2«
+horg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?jsonResponse@140.35:140.47DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaå# å(/2ø
+`org.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?json@145.23:145.27DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaë ë(2¿
+aorg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?links@146.22:146.27DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaí í(2º
+]org.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?i@150.21:150.22DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javañ ñ(2ø
+`org.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?link@151.27:151.31DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaó ó(2º
+]org.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?e@157.31:157.32DECLARATIONN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaù ù( 2o
+java.lang.StringRETURN_TYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaà à(æ
+corg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?sciLink@137.15:137.22VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaâ â("
+typeString"
+isFinalfalse"h
+declarationStringS<mark class="modifier"> </mark>String <mark class="class-field">sciLink</mark> = ""*sciLink2h
+java.lang.StringTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaâ â(ì
+corg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?request@139.19:139.26VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaã ã("
+typeString"
+isFinalfalse"s
+declarationString^<mark class="modifier"> </mark>String <mark class="class-field">request</mark> = API_URL + doi*request2h
+java.lang.StringTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaã ã(2õ
+Corg.jabref.logic.importer.fetcher.ScienceDirect?API_URL@38.32:38.39CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaã ã($2©
+Qorg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)!doiCALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaã' ã(*˝
+horg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?jsonResponse@140.35:140.47VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaå# å(/"
+typeHttpResponse<JsonNode>"
+isFinalfalse"‘
+declarationStringæ<mark class="modifier"> </mark>HttpResponse<JsonNode> <mark class="class-field">jsonResponse</mark> = Unirest.get(request).header("X-ELS-APIKey"<mark class="modifier">,</mark> importerPreferences.getApiKey(getName()).orElse(API_KEY)).queryString("httpAccept"<mark class="modifier">,</mark> "application/json").asJson()*jsonResponse2q
+kong.unirest.HttpResponseTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaå å(2v
+kong.unirest.JsonNodeTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaå å(!2u
+java.util.Optional.orElse(T)CALLO
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaçz ç(Ä2°
+Iorg.jabref.logic.importer.ImporterPreferences.getApiKey(java.lang.String)CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaçe ç(n2ë
+9org.jabref.logic.importer.fetcher.ScienceDirect.getName()CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaço ç(v2ª
+corg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?request@139.19:139.26CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaå> å(E2ß
+Oorg.jabref.logic.importer.fetcher.ScienceDirect?importerPreferences@42.38:42.57CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaçQ ç(d2ù
+Corg.jabref.logic.importer.fetcher.ScienceDirect?API_KEY@39.32:39.39CALLP
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaçÅ ç(à≠
+`org.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?json@145.23:145.27VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaë ë("
+type
+JSONObject"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark>JSONObject <mark class="class-field">json</mark> = jsonResponse.getBody().getObject()*json2t
+kong.unirest.json.JSONObjectTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaë ë(2¿
+horg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?jsonResponse@140.35:140.47CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaë ë(*Â
+aorg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?links@146.22:146.27VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaí í("
+type	JSONArray"
+isFinalfalse"…
+declarationString≥<mark class="modifier"> </mark>JSONArray <mark class="class-field">links</mark> = json.getJSONObject("full-text-retrieval-response").getJSONObject("coredata").getJSONArray("link")*links2s
+kong.unirest.json.JSONArrayTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaí í(2∏
+`org.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?json@145.23:145.27CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaí í("∂
+]org.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?i@150.21:150.22VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javañ ñ("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 0*i2[
+intTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javañ ñ(—
+`org.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?link@151.27:151.31VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaó ó("
+type
+JSONObject"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>JSONObject <mark class="class-field">link</mark> = links.getJSONObject(i)*link2t
+kong.unirest.json.JSONObjectTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaó ó(2π
+aorg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?links@146.22:146.27CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaó" ó('2µ
+]org.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?i@150.21:150.22CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaó6 ó(7‡
+Qorg.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)!doi	PARAMETERN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaà& à()"
+typeString"
+isFinalfalse"
+declarationString
+String doi*doi2h
+java.lang.StringTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaà à(%Ñ
+]org.jabref.logic.importer.fetcher.ScienceDirect.getUrlByDoi(java.lang.String)?e@157.31:157.32VARIABLEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaù ù( "
+typeJSONException"
+isFinalfalse"$
+declarationStringJSONException e*e2w
+kong.unirest.json.JSONExceptionTYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.javaù ù(∞
+9org.jabref.logic.importer.fetcher.ScienceDirect.getName()METHODN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java§ §("
+isFinalfalse"î
+declarationString<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>String <mark class="method">getName</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*getName2†
+Horg.jabref.logic.importer.fetcher.ScienceDirect?FETCHER_NAME@40.32:40.44CALLN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java• •(2ä
+.org.jabref.logic.importer.WebFetcher.getName()OVERRIDEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java§ §(2o
+java.lang.StringRETURN_TYPEN
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java§ §(µ
+Borg.jabref.logic.importer.fetcher.ScienceDirect?LOGGER@36.32:36.38VALUEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java$  $(&"
+isFinaltrue"
+typeLogger"„
+declarationStringÕ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(ScienceDirect.class);"
+isStatictrue"
+accessprivate*LOGGER2f
+org.slf4j.LoggerTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java$ $(ª
+Corg.jabref.logic.importer.fetcher.ScienceDirect?API_URL@38.32:38.39VALUEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java&  &('"
+isFinaltrue"
+typeString"Á
+declarationString—<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">API_URL</mark> = "https://api.elsevier.com/content/article/doi/";"
+isStatictrue"
+accessprivate*API_URL2f
+java.lang.StringTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java& &(≥
+Corg.jabref.logic.importer.fetcher.ScienceDirect?API_KEY@39.32:39.39VALUEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java'  '('"
+isFinaltrue"
+typeString"€
+declarationString≈<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">API_KEY</mark> = new BuildInfo().scienceDirectApiKey;"
+isStatictrue"
+accessprivate*API_KEY2f
+java.lang.StringTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java' '(2Å
++org.jabref.logic.util.BuildInfo.BuildInfo()CALLL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java'. '(7™
+Horg.jabref.logic.importer.fetcher.ScienceDirect?FETCHER_NAME@40.32:40.44VALUEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java(  ((,"
+isFinaltrue"
+typeString"Ã
+declarationString∂<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">FETCHER_NAME</mark> = "ScienceDirect";"
+isStatictrue"
+accessprivate*FETCHER_NAME2f
+java.lang.StringTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java( ((¿
+Oorg.jabref.logic.importer.fetcher.ScienceDirect?importerPreferences@42.38:42.57VALUEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java*& *(9"
+isFinaltrue"
+typeImporterPreferences"®
+declarationStringí<mark class="modifier">private </mark><mark class="modifier">final </mark>ImporterPreferences <mark class="class-field">importerPreferences</mark>"
+isStaticfalse"
+accessprivate*importerPreferences2É
+-org.jabref.logic.importer.ImporterPreferencesTYPEL
+Bsrc\main\java\org\jabref\logic\importer\fetcher\ScienceDirect.java* *(%

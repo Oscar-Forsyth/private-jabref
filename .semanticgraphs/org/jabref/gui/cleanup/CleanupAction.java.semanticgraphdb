@@ -1,0 +1,704 @@
+
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaâ
+$org.jabref.gui.cleanup.CleanupActionCLASSA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java ("!
+packageorg.jabref.gui.cleanup"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"†
+declarationStringä<mark class="modifier">public </mark><mark class="modifier">class </mark>CleanupAction<mark class="modifier"> extends </mark>SimpleCommand"
+accesspublic*CleanupAction2„
+êorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java% %(2Ä
+.org.jabref.gui.cleanup.CleanupAction.execute()DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java6 6(2û
+Àorg.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javai i(2Ñ
+2org.jabref.gui.cleanup.CleanupAction.showResults()DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javax x(2⁄
+Öorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)DECLARATIONC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaã ã(2é
+<org.jabref.gui.cleanup.CleanupAction?tabSupplier@27.39:27.50DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java' (22é
+<org.jabref.gui.cleanup.CleanupAction?preferences@28.37:28.48DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java% (02ê
+>org.jabref.gui.cleanup.CleanupAction?dialogService@29.32:29.45DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java  (-2è
+=org.jabref.gui.cleanup.CleanupAction?stateManager@30.31:30.43DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java (+2è
+=org.jabref.gui.cleanup.CleanupAction?taskExecutor@31.31:31.43DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java (+2é
+<org.jabref.gui.cleanup.CleanupAction?undoManager@32.30:32.41DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java   ()2ç
+;org.jabref.gui.cleanup.CleanupAction?isCanceled@34.20:34.30DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java" "(2ó
+Eorg.jabref.gui.cleanup.CleanupAction?modifiedEntriesCount@35.16:35.36DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java# #($2q
+$org.jabref.gui.actions.SimpleCommandEXTENDA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java# (0™5
+êorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)CONSTRUCTORA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java% %("ƒ
+declarationStringÆ<mark class="modifier">public </mark><mark class="method">CleanupAction</mark>(Supplier&lt;LibraryTab&gt; tabSupplier<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferences<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> StateManager stateManager<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor<mark class="modifier"><mark class="modifier">,</mark></mark> UndoManager undoManager)*CleanupAction2†
+Uorg.jabref.gui.actions.ActionHelper.needsEntriesSelected(org.jabref.gui.StateManager)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java2* 2(>2Ë
+úorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!tabSupplierCALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java+ +(&2Ë
+úorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!preferencesCALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java, ,(&2Í
+ûorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!dialogServiceCALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java- -(*2È
+ùorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!stateManagerCALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java. .((2È
+ùorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!taskExecutorCALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java/ /((2Ë
+úorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!undoManagerCALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java0 0(&2È
+ùorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!stateManagerCALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java2? 2(K2á
+<org.jabref.gui.cleanup.CleanupAction?tabSupplier@27.39:27.50CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java+ +(2á
+<org.jabref.gui.cleanup.CleanupAction?preferences@28.37:28.48CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java, ,(2â
+>org.jabref.gui.cleanup.CleanupAction?dialogService@29.32:29.45CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java- -(2à
+=org.jabref.gui.cleanup.CleanupAction?stateManager@30.31:30.43CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java. .(2à
+=org.jabref.gui.cleanup.CleanupAction?taskExecutor@31.31:31.43CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java/ /(2á
+<org.jabref.gui.cleanup.CleanupAction?undoManager@32.30:32.41CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java0 0(2Ì
+úorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!tabSupplier	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java%. %(92Ì
+úorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!preferences	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java&, &(72Ô
+ûorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!dialogService	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java'' '(42Ó
+ùorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!stateManager	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java(& ((22Ó
+ùorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!taskExecutor	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java)& )(22Ì
+úorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!undoManager	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java*% *(02v
+$org.jabref.gui.cleanup.CleanupActionRETURN_TYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java% %(∏
+úorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!tabSupplier	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java%. %(9"
+typeSupplier<LibraryTab>"
+isFinalfalse"5
+declarationString Supplier<LibraryTab> tabSupplier*tabSupplier2f
+java.util.function.SupplierTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java% %(!2m
+org.jabref.gui.LibraryTabTYPE_ARGUMENTA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java%" %(,”
+úorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!preferences	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java&, &(7"
+typePreferencesService"
+isFinalfalse"3
+declarationStringPreferencesService preferences*preferences2t
+)org.jabref.preferences.PreferencesServiceTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java& &(+¬
+ûorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!dialogService	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java'' '(4"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2g
+org.jabref.gui.DialogServiceTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java' '(&º
+ùorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!stateManager	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java(& ((2"
+typeStateManager"
+isFinalfalse".
+declarationStringStateManager stateManager*stateManager2f
+org.jabref.gui.StateManagerTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java( ((%¡
+ùorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!taskExecutor	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java)& )(2"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2k
+ org.jabref.gui.util.TaskExecutorTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java) )(%∏
+úorg.jabref.gui.cleanup.CleanupAction.CleanupAction(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.preferences.PreferencesService, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor, javax.swing.undo.UndoManager)!undoManager	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java*% *(0"
+typeUndoManager"
+isFinalfalse",
+declarationStringUndoManager undoManager*undoManager2g
+javax.swing.undo.UndoManagerTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java* *($ÿW
+.org.jabref.gui.cleanup.CleanupAction.execute()METHODA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java6 6("
+isFinalfalse"±
+declarationStringõ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">execute</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*execute2g
+java.util.Optional.isEmpty()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java7- 7(42z
+/org.jabref.gui.StateManager.getActiveDatabase()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java7 7(*2{
+0org.jabref.gui.StateManager.getSelectedEntries()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java; ;(+2®
+]org.jabref.gui.DialogService.showInformationDialogAndWait(java.lang.String, java.lang.String)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java< <(62ô
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java<D <(H2ô
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java<h <(l2{
+0org.jabref.gui.StateManager.getSelectedEntries()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaA. A(@2c
+java.util.Optional.get()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaG1 G(42z
+/org.jabref.gui.StateManager.getActiveDatabase()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaG G(.2å
+Aorg.jabref.preferences.PreferencesService.getCleanupPreferences()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaH H(12â
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaI I(.2ü
+Torg.jabref.gui.DialogService.showCustomDialogAndWait(javafx.scene.control.Dialog<R>)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaLB L(Y2è
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaN N(2¥
+iorg.jabref.preferences.CleanupPreferences.isActive(org.jabref.preferences.CleanupPreferences.CleanupStep)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaO O(2í
+Forg.jabref.logic.util.io.AutoLinkPreferences.shouldAskAutoNamingPdfs()CALLB
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaOs O(ä2ç
+Borg.jabref.preferences.PreferencesService.getAutoLinkPreferences()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaOZ O(p2ö
+Œorg.jabref.gui.DialogService.showConfirmationDialogWithOptOutAndWait(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.function.Consumer<java.lang.Boolean>)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaP2 P(Y2ô
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaPg P(k2ô
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaQ% Q()2ô
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaR% R()2ô
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaS% S()2ô
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaT% T()2ï
+Jorg.jabref.logic.util.io.AutoLinkPreferences.setAskAutoNamingPdfs(boolean)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaUG U([2ç
+Borg.jabref.preferences.PreferencesService.getAutoLinkPreferences()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaU. U(D2»
+}org.jabref.preferences.CleanupPreferences.setActiveJobs(java.util.Set<org.jabref.preferences.CleanupPreferences.CleanupStep>)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java\0 \(=2å
+Aorg.jabref.preferences.PreferencesService.getCleanupPreferences()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java\ \(-2Ñ
+9org.jabref.preferences.CleanupPreferences.getActiveJobs()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java\E \(R2ø
+torg.jabref.preferences.CleanupPreferences.setFieldFormatterCleanups(org.jabref.logic.cleanup.FieldFormatterCleanups)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java]0 ](I2å
+Aorg.jabref.preferences.PreferencesService.getCleanupPreferences()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java] ](-2ê
+Eorg.jabref.preferences.CleanupPreferences.getFieldFormatterCleanups()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java]Q ](j2©
+^org.jabref.gui.util.BackgroundTask.onFailure(java.util.function.Consumer<java.lang.Exception>)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaa a($2ó
+Lorg.jabref.gui.util.BackgroundTask.onSuccess(java.util.function.Consumer<V>)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java` `($2Ü
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java_ _(2—
+Öorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java_& _(-2c
+java.util.Optional.get()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java_O _(R2z
+/org.jabref.gui.StateManager.getActiveDatabase()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java_; _(L2}
+2org.jabref.gui.cleanup.CleanupAction.showResults()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java`/ `(:2ˇ
+≥org.jabref.gui.cleanup.CleanupDialog.CleanupDialog(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.preferences.FilePreferences)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaF* F(72à
+=org.jabref.gui.cleanup.CleanupAction?stateManager@30.31:30.43CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java7 7(2à
+=org.jabref.gui.cleanup.CleanupAction?stateManager@30.31:30.43CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java; ;(2â
+>org.jabref.gui.cleanup.CleanupAction?dialogService@29.32:29.45CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java< <(2â
+>org.jabref.gui.cleanup.CleanupAction?dialogService@29.32:29.45CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java@ @(2à
+=org.jabref.gui.cleanup.CleanupAction?stateManager@30.31:30.43CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaA! A(-2Ü
+;org.jabref.gui.cleanup.CleanupAction?isCanceled@34.20:34.30CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaC C(2ê
+Eorg.jabref.gui.cleanup.CleanupAction?modifiedEntriesCount@35.16:35.36CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaD D(2à
+=org.jabref.gui.cleanup.CleanupAction?stateManager@30.31:30.43CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaG G(2á
+<org.jabref.gui.cleanup.CleanupAction?preferences@28.37:28.48CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaH H(2á
+<org.jabref.gui.cleanup.CleanupAction?preferences@28.37:28.48CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaI I(2â
+>org.jabref.gui.cleanup.CleanupAction?dialogService@29.32:29.45CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaL4 L(A2ì
+Horg.jabref.gui.cleanup.CleanupAction.execute()?cleanupDialog@70.22:70.35CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaLZ L(g2í
+Gorg.jabref.gui.cleanup.CleanupAction.execute()?chosenPreset@76.37:76.49CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaN N(2å
+Aorg.jabref.gui.cleanup.CleanupAction.execute()?preset@78.31:78.37CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaO O(2á
+<org.jabref.gui.cleanup.CleanupAction?preferences@28.37:28.48CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaON O(Y2â
+>org.jabref.gui.cleanup.CleanupAction?dialogService@29.32:29.45CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaP$ P(12á
+<org.jabref.gui.cleanup.CleanupAction?preferences@28.37:28.48CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaU" U(-2å
+Aorg.jabref.gui.cleanup.CleanupAction.execute()?optOut@85.24:85.30CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaU] U(c2è
+Dorg.jabref.gui.cleanup.CleanupAction.execute()?confirmed@80.24:80.33CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaV V(2Ü
+;org.jabref.gui.cleanup.CleanupAction?isCanceled@34.20:34.30CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaW W(2á
+<org.jabref.gui.cleanup.CleanupAction?preferences@28.37:28.48CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java\ \(2å
+Aorg.jabref.gui.cleanup.CleanupAction.execute()?preset@78.31:78.37CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java\> \(D2á
+<org.jabref.gui.cleanup.CleanupAction?preferences@28.37:28.48CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java] ](2å
+Aorg.jabref.gui.cleanup.CleanupAction.execute()?preset@78.31:78.37CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java]J ](P2à
+=org.jabref.gui.cleanup.CleanupAction?stateManager@30.31:30.43CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java_. _(:2å
+Aorg.jabref.gui.cleanup.CleanupAction.execute()?preset@78.31:78.37CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java_V _(\2à
+=org.jabref.gui.cleanup.CleanupAction?taskExecutor@31.31:31.43CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javab' b(32ì
+Horg.jabref.gui.DialogService.showErrorDialogAndWait(java.lang.Exception)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaa% a(J2ö
+Horg.jabref.gui.cleanup.CleanupAction.execute()?cleanupDialog@70.22:70.35DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaF F(#2ô
+Gorg.jabref.gui.cleanup.CleanupAction.execute()?chosenPreset@76.37:76.49DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaL% L(12ñ
+Dorg.jabref.gui.cleanup.CleanupAction.execute()?confirmed@80.24:80.33DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaP P(!2ì
+Aorg.jabref.gui.cleanup.CleanupAction.execute()?preset@78.31:78.37DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaN N(%2ì
+Aorg.jabref.gui.cleanup.CleanupAction.execute()?optOut@85.24:85.30DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaU U(2ì
+Aorg.jabref.gui.cleanup.CleanupAction.execute()?result@96.37:96.43DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java`% `(+2V
+voidRETURN_TYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java6 6(ê
+Horg.jabref.gui.cleanup.CleanupAction.execute()?cleanupDialog@70.22:70.35VARIABLEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaF F(#"
+typeCleanupDialog"
+isFinalfalse"∞
+declarationStringö<mark class="modifier"> </mark>CleanupDialog <mark class="class-field">cleanupDialog</mark> = new CleanupDialog(stateManager.getActiveDatabase().get()<mark class="modifier">,</mark> preferences.getCleanupPreferences()<mark class="modifier">,</mark> preferences.getFilePreferences())*cleanupDialog2o
+$org.jabref.gui.cleanup.CleanupDialogTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaF F(2c
+java.util.Optional.get()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaG1 G(42z
+/org.jabref.gui.StateManager.getActiveDatabase()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaG G(.2å
+Aorg.jabref.preferences.PreferencesService.getCleanupPreferences()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaH H(12â
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaI I(.2ˇ
+≥org.jabref.gui.cleanup.CleanupDialog.CleanupDialog(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.preferences.FilePreferences)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaF* F(72à
+=org.jabref.gui.cleanup.CleanupAction?stateManager@30.31:30.43CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaG G(2á
+<org.jabref.gui.cleanup.CleanupAction?preferences@28.37:28.48CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaH H(2á
+<org.jabref.gui.cleanup.CleanupAction?preferences@28.37:28.48CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaI I(∑
+Gorg.jabref.gui.cleanup.CleanupAction.execute()?chosenPreset@76.37:76.49VARIABLEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaL% L(1"$
+typeOptional<CleanupPreferences>"
+isFinalfalse"∂
+declarationString†<mark class="modifier"> </mark>Optional<CleanupPreferences> <mark class="class-field">chosenPreset</mark> = dialogService.showCustomDialogAndWait(cleanupDialog)*chosenPreset2]
+java.util.OptionalTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaL L(2}
+)org.jabref.preferences.CleanupPreferencesTYPE_ARGUMENTA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaL L(#2ü
+Torg.jabref.gui.DialogService.showCustomDialogAndWait(javafx.scene.control.Dialog<R>)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaLB L(Y2â
+>org.jabref.gui.cleanup.CleanupAction?dialogService@29.32:29.45CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaL4 L(A2ì
+Horg.jabref.gui.cleanup.CleanupAction.execute()?cleanupDialog@70.22:70.35CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaLZ L(gû
+Dorg.jabref.gui.cleanup.CleanupAction.execute()?confirmed@80.24:80.33VARIABLEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaP P(!"
+typeboolean"
+isFinalfalse"ê
+declarationString˙<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">confirmed</mark> = dialogService.showConfirmationDialogWithOptOutAndWait(Localization.lang("Autogenerate PDF Names")<mark class="modifier">,</mark> Localization.lang("Auto-generating PDF-Names does not support undo. Continue?")<mark class="modifier">,</mark> Localization.lang("Autogenerate PDF Names")<mark class="modifier">,</mark> Localization.lang("Cancel")<mark class="modifier">,</mark> Localization.lang("Do not ask again")<mark class="modifier">,</mark> optOut -> preferences.getAutoLinkPreferences().setAskAutoNamingPdfs(!optOut))*	confirmed2R
+booleanTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaP P(2ö
+Œorg.jabref.gui.DialogService.showConfirmationDialogWithOptOutAndWait(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.function.Consumer<java.lang.Boolean>)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaP2 P(Y2ô
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaPg P(k2ô
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaQ% Q()2ô
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaR% R()2ô
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaS% S()2ô
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaT% T()2ï
+Jorg.jabref.logic.util.io.AutoLinkPreferences.setAskAutoNamingPdfs(boolean)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaUG U([2ç
+Borg.jabref.preferences.PreferencesService.getAutoLinkPreferences()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaU. U(D2â
+>org.jabref.gui.cleanup.CleanupAction?dialogService@29.32:29.45CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaP$ P(12á
+<org.jabref.gui.cleanup.CleanupAction?preferences@28.37:28.48CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaU" U(-2å
+Aorg.jabref.gui.cleanup.CleanupAction.execute()?optOut@85.24:85.30CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaU] U(cÿ
+Aorg.jabref.gui.cleanup.CleanupAction.execute()?preset@78.31:78.37VARIABLEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaN N(%"
+type"
+isFinalfalse"
+declarationString preset*preset2TYPEÿ
+Aorg.jabref.gui.cleanup.CleanupAction.execute()?optOut@85.24:85.30VARIABLEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaU U("
+type"
+isFinalfalse"
+declarationString optOut*optOut2TYPEÿ
+Aorg.jabref.gui.cleanup.CleanupAction.execute()?result@96.37:96.43VARIABLEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java`% `(+"
+type"
+isFinalfalse"
+declarationString result*result2TYPEå2
+Àorg.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)METHODA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javai i("
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">doCleanup</mark>(BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> CleanupPreferences preset<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> NamedCompound ce)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*	doCleanup2â
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javam m(.2é
+Corg.jabref.preferences.PreferencesService.getTimestampPreferences()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javan n(32≈
+zorg.jabref.logic.cleanup.CleanupWorker.cleanup(org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javap, p(32ì
+Horg.jabref.gui.undo.NamedCompound.addEdit(javax.swing.undo.UndoableEdit)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javat t(2â
+Ωorg.jabref.logic.cleanup.CleanupWorker.CleanupWorker(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences, org.jabref.logic.preferences.TimestampPreferences)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javak$ k(12§
+Yorg.jabref.gui.undo.UndoableFieldChange.UndoableFieldChange(org.jabref.model.FieldChange)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javat t(.2ß
+€org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)!databaseContextCALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javal l(2á
+<org.jabref.gui.cleanup.CleanupAction?preferences@28.37:28.48CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javam m(2á
+<org.jabref.gui.cleanup.CleanupAction?preferences@28.37:28.48CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javan n(2≠
+·org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)?cleaner@107.22:107.29CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javap$ p(+2û
+“org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)!presetCALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javap4 p(:2ù
+—org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)!entryCALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javap< p(A2≠
+·org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)?changes@112.26:112.33CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javas" s()2ö
+Œorg.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)!ceCALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javat t(2¨
+‡org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)?change@115.25:115.31CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javat/ t(52¨
+€org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)!databaseContext	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javai. i(=2£
+“org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)!preset	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaiR i(X2¢
+—org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)!entry	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaic i(h2ü
+Œorg.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)!ce	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaix i(z2¥
+·org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)?cleaner@107.22:107.29DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javak k(2¥
+·org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)?changes@112.26:112.33DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javap p(!2≥
+‡org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)?change@115.25:115.31DECLARATIONA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javas s(2V
+voidRETURN_TYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javai i(∑
+·org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)?cleaner@107.22:107.29VARIABLEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javak k("
+typeCleanupWorker"
+isFinalfalse"˜
+declarationString·<mark class="modifier"> </mark>CleanupWorker <mark class="class-field">cleaner</mark> = new CleanupWorker(databaseContext, preferences.getFilePreferences()<mark class="modifier">,</mark> preferences.getTimestampPreferences())*cleaner2q
+&org.jabref.logic.cleanup.CleanupWorkerTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javak k(2â
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javam m(.2é
+Corg.jabref.preferences.PreferencesService.getTimestampPreferences()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javan n(32â
+Ωorg.jabref.logic.cleanup.CleanupWorker.CleanupWorker(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences, org.jabref.logic.preferences.TimestampPreferences)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javak$ k(12ß
+€org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)!databaseContextCALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javal l(2á
+<org.jabref.gui.cleanup.CleanupAction?preferences@28.37:28.48CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javam m(2á
+<org.jabref.gui.cleanup.CleanupAction?preferences@28.37:28.48CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javan n(ˇ
+·org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)?changes@112.26:112.33VARIABLEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javap p(!"
+typeList<FieldChange>"
+isFinalfalse"è
+declarationStringz<mark class="modifier"> </mark>List<FieldChange> <mark class="class-field">changes</mark> = cleaner.cleanup(preset, entry)*changes2Y
+java.util.ListTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javap p(2p
+org.jabref.model.FieldChangeTYPE_ARGUMENTA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javap p(2≈
+zorg.jabref.logic.cleanup.CleanupWorker.cleanup(org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry)CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javap, p(32≠
+·org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)?cleaner@107.22:107.29CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javap$ p(+2û
+“org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)!presetCALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javap4 p(:2ù
+—org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)!entryCALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javap< p(A±
+‡org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)?change@115.25:115.31VARIABLEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javas s("
+typeFieldChange"
+isFinalfalse"g
+declarationStringR<mark class="modifier"> </mark>FieldChange <mark class="class-field">change</mark>*change2g
+org.jabref.model.FieldChangeTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javas s(ù
+€org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)!databaseContext	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javai. i(="
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2w
+,org.jabref.model.database.BibDatabaseContextTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javai i(-ˇ
+“org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)!preset	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaiR i(X"
+typeCleanupPreferences"
+isFinalfalse".
+declarationStringCleanupPreferences preset*preset2t
+)org.jabref.preferences.CleanupPreferencesTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javai? i(Qﬁ
+—org.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)!entry	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaic i(h"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2j
+org.jabref.model.entry.BibEntryTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaiZ i(b·
+Œorg.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)!ce	PARAMETERA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaix i(z"
+typeNamedCompound"
+isFinalfalse"%
+declarationStringNamedCompound ce*ce2l
+!org.jabref.gui.undo.NamedCompoundTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaij i(wë
+2org.jabref.gui.cleanup.CleanupAction.showResults()METHODA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javax x("
+isFinalfalse"á
+declarationStringr<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">showResults</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*showResults2Å
+6org.jabref.gui.LibraryTab.updateEntryEditorIfShowing()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java~ ~(82l
+!java.util.function.Supplier.get()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java~ ~(2v
++org.jabref.gui.LibraryTab.markBaseChanged()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java (-2l
+!java.util.function.Supplier.get()CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java (2Ç
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaÉ É( 2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaÉ. É(22Ç
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaÖ Ö( 2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaÖ. Ö(22Ç
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaá á( 2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaá. á(22l
+java.lang.Integer.toString(int)CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaá[ á(c2Ü
+;org.jabref.gui.cleanup.CleanupAction?isCanceled@34.20:34.30CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javay y(2ê
+Eorg.jabref.gui.cleanup.CleanupAction?modifiedEntriesCount@35.16:35.36CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java} }( 2á
+<org.jabref.gui.cleanup.CleanupAction?tabSupplier@27.39:27.50CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java~ ~(2á
+<org.jabref.gui.cleanup.CleanupAction?tabSupplier@27.39:27.50CALLA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java (2í
+Eorg.jabref.gui.cleanup.CleanupAction?modifiedEntriesCount@35.16:35.36CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaÇ Ç( 2ã
+>org.jabref.gui.cleanup.CleanupAction?dialogService@29.32:29.45CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaÉ É(2í
+Eorg.jabref.gui.cleanup.CleanupAction?modifiedEntriesCount@35.16:35.36CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaÑ Ñ('2ã
+>org.jabref.gui.cleanup.CleanupAction?dialogService@29.32:29.45CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaÖ Ö(2ã
+>org.jabref.gui.cleanup.CleanupAction?dialogService@29.32:29.45CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaá á(2í
+Eorg.jabref.gui.cleanup.CleanupAction?modifiedEntriesCount@35.16:35.36CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaád á(x2V
+voidRETURN_TYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javax x(§%
+Öorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)METHODC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaã ã("
+isFinalfalse"â
+declarationStringÛ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">cleanup</mark>(BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> CleanupPreferences cleanupPreferences)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*cleanup2}
+0org.jabref.gui.StateManager.getSelectedEntries()CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaå+ å(=2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaé> é(B2ô
+Àorg.jabref.gui.cleanup.CleanupAction.doCleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences, org.jabref.model.entry.BibEntry, org.jabref.gui.undo.NamedCompound)CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaê ê(2p
+#javax.swing.undo.CompoundEdit.end()CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaí í(2y
+,org.jabref.gui.undo.NamedCompound.hasEdits()CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaì ì(2ê
+Cjavax.swing.undo.UndoManager.addEdit(javax.swing.undo.UndoableEdit)CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaï ï(#2é
+Aorg.jabref.gui.undo.NamedCompound.NamedCompound(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaé# é(02ä
+=org.jabref.gui.cleanup.CleanupAction?stateManager@30.31:30.43CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaå å(*2„
+ïorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)!databaseContextCALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaê ê(%2Ê
+òorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)!cleanupPreferencesCALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaê' ê(92Á
+ôorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)?entry@140.22:140.27CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaê; ê(@2‰
+ñorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)?ce@142.26:142.28CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaêB ê(D2‰
+ñorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)?ce@142.26:142.28CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaí í(2‰
+ñorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)?ce@142.26:142.28CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaì ì(2í
+Eorg.jabref.gui.cleanup.CleanupAction?modifiedEntriesCount@35.16:35.36CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaî î($2â
+<org.jabref.gui.cleanup.CleanupAction?undoManager@32.30:32.41CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaï ï(2‰
+ñorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)?ce@142.26:142.28CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaï$ ï(&2Ë
+ïorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)!databaseContext	PARAMETERC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaã, ã(;2Î
+òorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)!cleanupPreferences	PARAMETERC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaãP ã(b2Ó
+ôorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)?entry@140.22:140.27DECLARATIONC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaå å(2Î
+ñorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)?ce@142.26:142.28DECLARATIONC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaé é(2X
+voidRETURN_TYPEC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaã ã(È
+ôorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)?entry@140.22:140.27VARIABLEC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaå å("
+typeBibEntry"
+isFinalfalse"c
+declarationStringN<mark class="modifier"> </mark>BibEntry <mark class="class-field">entry</mark>*entry2l
+org.jabref.model.entry.BibEntryTYPEC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaå å(’
+ñorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)?ce@142.26:142.28VARIABLEC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaé é("
+typeNamedCompound"
+isFinalfalse"û
+declarationStringà<mark class="modifier"> </mark>NamedCompound <mark class="class-field">ce</mark> = new NamedCompound(Localization.lang("Cleanup entry"))*ce2n
+!org.jabref.gui.undo.NamedCompoundTYPEC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaé é(2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaé> é(B2é
+Aorg.jabref.gui.undo.NamedCompound.NamedCompound(java.lang.String)CALLC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaé# é(0€
+ïorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)!databaseContext	PARAMETERC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaã, ã(;"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2y
+,org.jabref.model.database.BibDatabaseContextTYPEC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaã ã(+·
+òorg.jabref.gui.cleanup.CleanupAction.cleanup(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.CleanupPreferences)!cleanupPreferences	PARAMETERC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaãP ã(b"
+typeCleanupPreferences"
+isFinalfalse":
+declarationString%CleanupPreferences cleanupPreferences*cleanupPreferences2v
+)org.jabref.preferences.CleanupPreferencesTYPEC
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.javaã= ã(OÂ
+<org.jabref.gui.cleanup.CleanupAction?tabSupplier@27.39:27.50VALUEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java' (2"
+isFinaltrue"
+typeSupplier<LibraryTab>"°
+declarationStringã<mark class="modifier">private </mark><mark class="modifier">final </mark>Supplier<LibraryTab> <mark class="class-field">tabSupplier</mark>"
+isStaticfalse"
+accessprivate*tabSupplier2f
+java.util.function.SupplierTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java (2m
+org.jabref.gui.LibraryTabTYPE_ARGUMENTA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java (%Ä
+<org.jabref.gui.cleanup.CleanupAction?preferences@28.37:28.48VALUEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java% (0"
+isFinaltrue"
+typePreferencesService"ü
+declarationStringâ<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferences</mark>"
+isStaticfalse"
+accessprivate*preferences2t
+)org.jabref.preferences.PreferencesServiceTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java ($Ô
+>org.jabref.gui.cleanup.CleanupAction?dialogService@29.32:29.45VALUEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java  (-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2g
+org.jabref.gui.DialogServiceTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java (È
+=org.jabref.gui.cleanup.CleanupAction?stateManager@30.31:30.43VALUEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java (+"
+isFinaltrue"
+typeStateManager"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>StateManager <mark class="class-field">stateManager</mark>"
+isStaticfalse"
+accessprivate*stateManager2f
+org.jabref.gui.StateManagerTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java (Ó
+=org.jabref.gui.cleanup.CleanupAction?taskExecutor@31.31:31.43VALUEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java (+"
+isFinaltrue"
+typeTaskExecutor"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2k
+ org.jabref.gui.util.TaskExecutorTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java (Â
+<org.jabref.gui.cleanup.CleanupAction?undoManager@32.30:32.41VALUEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java   ()"
+isFinaltrue"
+typeUndoManager"ò
+declarationStringÇ<mark class="modifier">private </mark><mark class="modifier">final </mark>UndoManager <mark class="class-field">undoManager</mark>"
+isStaticfalse"
+accessprivate*undoManager2g
+javax.swing.undo.UndoManagerTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java   (¬
+;org.jabref.gui.cleanup.CleanupAction?isCanceled@34.20:34.30VARIABLEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java" "("
+isFinalfalse"
+typeboolean"å
+declarationStringw<mark class="modifier">private </mark><mark class="modifier">boolean</mark> <mark class="class-field">isCanceled</mark>"
+isStaticfalse"
+accessprivate*
+isCanceled2R
+booleanTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java" "(‘
+Eorg.jabref.gui.cleanup.CleanupAction?modifiedEntriesCount@35.16:35.36VARIABLEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java# #($"
+isFinalfalse"
+typeint"í
+declarationString}<mark class="modifier">private </mark><mark class="modifier">int</mark> <mark class="class-field">modifiedEntriesCount</mark>"
+isStaticfalse"
+accessprivate*modifiedEntriesCount2N
+intTYPEA
+7src\main\java\org\jabref\gui\cleanup\CleanupAction.java# #(

@@ -1,0 +1,372 @@
+
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaå
+.org.jabref.logic.openoffice.action.ExportCitedCLASSK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java ("-
+package"org.jabref.logic.openoffice.action"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"i
+declarationStringT<mark class="modifier">public </mark><mark class="modifier">class </mark>ExportCited"
+accesspublic*ExportCited2ò
+<org.jabref.logic.openoffice.action.ExportCited.ExportCited()DECLARATIONK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java (2Ù
+óorg.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)DECLARATIONK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java+) +(9ò
+<org.jabref.logic.openoffice.action.ExportCited.ExportCited()CONSTRUCTORK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java ("d
+declarationStringO<mark class="modifier">private </mark><mark class="method">ExportCited</mark>()*ExportCited2ä
+.org.jabref.logic.openoffice.action.ExportCitedRETURN_TYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java (öu
+óorg.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)METHODK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java+) +(9"
+isFinalfalse"¿
+declarationString™<mark class="modifier">public </mark><mark class="modifier">static </mark>GenerateDatabaseResult <mark class="method">generateDatabase</mark>(XTextDocument doc<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;BibDatabase&gt; databases)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>NoDocumentException<mark class="modifier"><mark class="modifier">,</mark></mark> WrappedTargetException"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeGenerateDatabaseResult*generateDatabase2ù
+Horg.jabref.model.openoffice.style.CitationGroups.getCitedKeysUnordered()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java19 1(N2…
+torg.jabref.model.openoffice.style.CitedKeys.lookupInDatabases(java.util.List<org.jabref.model.database.BibDatabase>)CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java2 2(&2â
+4org.jabref.model.openoffice.style.CitedKeys.values()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java:. :(42q
+java.util.Optional.isEmpty()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java;+ ;(22ë
+<org.jabref.model.openoffice.style.CitedKey.getLookupResult()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java; ;((2j
+java.util.List.add(E)CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java< <("2m
+java.util.Optional.get()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java>< >(?2ë
+<org.jabref.model.openoffice.style.CitedKey.getLookupResult()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java>* >(92m
+java.util.Optional.get()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java?F ?(I2ë
+<org.jabref.model.openoffice.style.CitedKey.getLookupResult()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java?4 ?(C2|
+'org.jabref.model.entry.BibEntry.clone()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaB8 B(=2j
+java.util.List.add(E)CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaE  E(#2ô
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaJ J("2°
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaI I(!2}
+(java.util.Set.contains(java.lang.Object)CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaK2 K(:2ô
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaP) P(22¢
+Morg.jabref.model.database.BibDatabase.getEntryByCitationKey(java.lang.String)CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaO) O(>2i
+java.util.Set.add(E)CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaQ% Q((2π
+dorg.jabref.model.database.BibDatabase.insertEntries(java.util.List<org.jabref.model.entry.BibEntry>)CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaW W($2∞
+[org.jabref.logic.openoffice.frontend.OOFrontend.OOFrontend(com.sun.star.text.XTextDocument)CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java0" 0(,2t
+java.util.ArrayList.ArrayList()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java4* 4(52à
+3org.jabref.model.database.BibDatabase.BibDatabase()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java5) 5(42t
+java.util.ArrayList.ArrayList()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java7- 7(82p
+java.util.HashSet.HashSet()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java8 8((2˚
+•org.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResult.GenerateDatabaseResult(java.util.List<java.lang.String>, org.jabref.model.database.BibDatabase)CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaX X()2Ò
+õorg.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)!docCALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java0- 0(02Ç
+¨org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?frontend@48.19:48.27CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java1! 1()2Ü
+∞org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?citationKeys@49.18:49.30CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java2 2(2˜
+°org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)!databasesCALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java2' 2(02Ü
+∞org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?citationKeys@49.18:49.30CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java:! :(-2Ç
+¨org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?citation@58.22:58.30CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java; ;(2à
+≤org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?unresolvedKeys@52.21:52.35CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java< <(2Ç
+¨org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?citation@58.22:58.30CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java<# <(+2Ç
+¨org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?citation@58.22:58.30CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java>! >()2Ç
+¨org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?citation@58.22:58.30CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java?+ ?(32ˇ
+©org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?entry@62.25:62.30CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaB2 B(72â
+≥org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?entriesToInsert@55.23:55.38CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaE E(2Ö
+Øorg.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?clonedEntry@66.25:66.36CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaE$ E(/2Ö
+Øorg.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?clonedEntry@66.25:66.36CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaH H(2˛
+®org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?seen@56.20:56.24CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaK- K(12à
+≤org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?crossReference@74.35:74.49CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaK; K(I2ˇ
+©org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?isNew@75.36:75.41CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaL  L(%2Ü
+∞org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?loopDatabase@63.28:63.40CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaN  N(,2à
+≤org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?crossReference@74.35:74.49CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaO? O(M2˛
+®org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?seen@56.20:56.24CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaQ  Q($2à
+≤org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?crossReference@74.35:74.49CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaQ) Q(72à
+≤org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?resultDatabase@53.20:53.34CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaW W(2â
+≥org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?entriesToInsert@55.23:55.38CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaW% W(42à
+≤org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?unresolvedKeys@52.21:52.35CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaX* X(82à
+≤org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?resultDatabase@53.20:53.34CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaX: X(H2j
+java.util.List.add(E)CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaP3 P(G2ˆ
+õorg.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)!doc	PARAMETERK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java+H +(K2¸
+°org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)!databases	PARAMETERK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java+_ +(h2â
+¨org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?frontend@48.19:48.27DECLARATIONK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java0 0(2ç
+∞org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?citationKeys@49.18:49.30DECLARATIONK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java1 1(2è
+≤org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?unresolvedKeys@52.21:52.35DECLARATIONK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java4 4(#2è
+≤org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?resultDatabase@53.20:53.34DECLARATIONK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java5 5("2ê
+≥org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?entriesToInsert@55.23:55.38DECLARATIONK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java7 7(&2Ö
+®org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?seen@56.20:56.24DECLARATIONK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java8 8(2â
+¨org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?citation@58.22:58.30DECLARATIONK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java: :(2Ü
+©org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?entry@62.25:62.30DECLARATIONK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java> >(2ç
+∞org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?loopDatabase@63.28:63.40DECLARATIONK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java? ?((2å
+Øorg.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?clonedEntry@66.25:66.36DECLARATIONK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaB B($2Ü
+©org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?isNew@75.36:75.41DECLARATIONK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaK$ K()2è
+≤org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?crossReference@74.35:74.49DECLARATIONK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaJ# J(12°
+Eorg.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResultRETURN_TYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java+ +((‰
+¨org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?frontend@48.19:48.27VARIABLEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java0 0("
+type
+OOFrontend"
+isFinalfalse"~
+declarationStringi<mark class="modifier"> </mark>OOFrontend <mark class="class-field">frontend</mark> = new OOFrontend(doc)*frontend2Ñ
+/org.jabref.logic.openoffice.frontend.OOFrontendTYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java0 0(2∞
+[org.jabref.logic.openoffice.frontend.OOFrontend.OOFrontend(com.sun.star.text.XTextDocument)CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java0" 0(,2Ò
+õorg.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)!docCALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java0- 0(0Ü
+∞org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?citationKeys@49.18:49.30VARIABLEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java1 1("
+type	CitedKeys"
+isFinalfalse"û
+declarationStringà<mark class="modifier"> </mark>CitedKeys <mark class="class-field">citationKeys</mark> = frontend.citationGroups.getCitedKeysUnordered()*citationKeys2Ä
++org.jabref.model.openoffice.style.CitedKeysTYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java1 1(2ù
+Horg.jabref.model.openoffice.style.CitationGroups.getCitedKeysUnordered()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java19 1(N2Ç
+¨org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?frontend@48.19:48.27CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java1! 1()ñ
+≤org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?unresolvedKeys@52.21:52.35VARIABLEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java4 4(#"
+typeList<String>"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier"> </mark>List<String> <mark class="class-field">unresolvedKeys</mark> = new ArrayList<>()*unresolvedKeys2c
+java.util.ListTYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java4 4(2n
+java.lang.StringTYPE_ARGUMENTK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java4 4(2t
+java.util.ArrayList.ArrayList()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java4* 4(5–
+≤org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?resultDatabase@53.20:53.34VARIABLEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java5 5(""
+typeBibDatabase"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark>BibDatabase <mark class="class-field">resultDatabase</mark> = new BibDatabase()*resultDatabase2z
+%org.jabref.model.database.BibDatabaseTYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java5 5(2à
+3org.jabref.model.database.BibDatabase.BibDatabase()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java5) 5(4¨
+≥org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?entriesToInsert@55.23:55.38VARIABLEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java7 7(&"
+typeList<BibEntry>"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>List<BibEntry> <mark class="class-field">entriesToInsert</mark> = new ArrayList<>()*entriesToInsert2c
+java.util.ListTYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java7 7(2}
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java7 7(2t
+java.util.ArrayList.ArrayList()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java7- 7(8Ó
+®org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?seen@56.20:56.24VARIABLEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java8 8("
+typeSet<String>"
+isFinalfalse"w
+declarationStringb<mark class="modifier"> </mark>Set<String> <mark class="class-field">seen</mark> = new HashSet<>()*seen2b
+java.util.SetTYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java8 8(2n
+java.lang.StringTYPE_ARGUMENTK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java8 8(2p
+java.util.HashSet.HashSet()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java8 8((ù
+¨org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?citation@58.22:58.30VARIABLEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java: :("
+typeCitedKey"
+isFinalfalse"f
+declarationStringQ<mark class="modifier"> </mark>CitedKey <mark class="class-field">citation</mark>*citation2
+*org.jabref.model.openoffice.style.CitedKeyTYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java: :(ª
+©org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?entry@62.25:62.30VARIABLEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java> >("
+typeBibEntry"
+isFinalfalse"å
+declarationStringw<mark class="modifier"> </mark>BibEntry <mark class="class-field">entry</mark> = citation.getLookupResult().get().entry*entry2t
+org.jabref.model.entry.BibEntryTYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java> >(2m
+java.util.Optional.get()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java>< >(?2ë
+<org.jabref.model.openoffice.style.CitedKey.getLookupResult()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java>* >(92Ç
+¨org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?citation@58.22:58.30CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java>! >()‡
+∞org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?loopDatabase@63.28:63.40VARIABLEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java? ?(("
+typeBibDatabase"
+isFinalfalse"ö
+declarationStringÑ<mark class="modifier"> </mark>BibDatabase <mark class="class-field">loopDatabase</mark> = citation.getLookupResult().get().database*loopDatabase2z
+%org.jabref.model.database.BibDatabaseTYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java? ?(2m
+java.util.Optional.get()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java?F ?(I2ë
+<org.jabref.model.openoffice.style.CitedKey.getLookupResult()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java?4 ?(C2Ç
+¨org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?citation@58.22:58.30CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java?+ ?(3∑
+Øorg.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?clonedEntry@66.25:66.36VARIABLEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaB B($"
+typeBibEntry"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier"> </mark>BibEntry <mark class="class-field">clonedEntry</mark> = (BibEntry) entry.clone()*clonedEntry2t
+org.jabref.model.entry.BibEntryTYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaB B(2|
+'org.jabref.model.entry.BibEntry.clone()CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaB8 B(=2ˇ
+©org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?entry@62.25:62.30CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaB2 B(7ª	
+©org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?isNew@75.36:75.41VARIABLEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaK$ K()"
+typeboolean"
+isFinalfalse"¢
+declarationStringå<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">isNew</mark> = !seen.contains(crossReference)*isNew2\
+booleanTYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaK K(#2}
+(java.util.Set.contains(java.lang.Object)CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaK2 K(:2˛
+®org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?seen@56.20:56.24CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaK- K(12à
+≤org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?crossReference@74.35:74.49CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaK; K(I¬
+õorg.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)!doc	PARAMETERK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java+H +(K"
+typeXTextDocument"
+isFinalfalse"&
+declarationStringXTextDocument doc*doc2t
+com.sun.star.text.XTextDocumentTYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java+: +(G—
+°org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)!databases	PARAMETERK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java+_ +(h"
+typeList<BibDatabase>"
+isFinalfalse"0
+declarationStringList<BibDatabase> databases*	databases2c
+java.util.ListTYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java+M +(Q2É
+%org.jabref.model.database.BibDatabaseTYPE_ARGUMENTK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java+R +(]‰
+≤org.jabref.logic.openoffice.action.ExportCited.generateDatabase(com.sun.star.text.XTextDocument, java.util.List<org.jabref.model.database.BibDatabase>)?crossReference@74.35:74.49VARIABLEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaJ# J(1"
+type"
+isFinalfalse"$
+declarationString crossReference*crossReference2TYPE≥
+Eorg.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResultCLASSK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java (."9
+package.org.jabref.logic.openoffice.action.ExportCited"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"t
+declarationString_<mark class="modifier">public </mark><mark class="modifier">class </mark>GenerateDatabaseResult"
+accesspublic*GenerateDatabaseResult2Ç
+•org.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResult.GenerateDatabaseResult(java.util.List<java.lang.String>, org.jabref.model.database.BibDatabase)DECLARATIONK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java (2º
+`org.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResult?unresolvedKeys@27.34:27.48DECLARATIONK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java" (02π
+]org.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResult?newDatabase@28.33:28.44DECLARATIONK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java! (,≈
+•org.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResult.GenerateDatabaseResult(java.util.List<java.lang.String>, org.jabref.model.database.BibDatabase)CONSTRUCTORK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java ("ﬂ
+declarationString…<mark class="modifier"> </mark><mark class="method">GenerateDatabaseResult</mark>(List&lt;String&gt; unresolvedKeys<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabase newDatabase)*GenerateDatabaseResult2ä
+¥org.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResult.GenerateDatabaseResult(java.util.List<java.lang.String>, org.jabref.model.database.BibDatabase)!unresolvedKeysCALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java" (02á
+±org.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResult.GenerateDatabaseResult(java.util.List<java.lang.String>, org.jabref.model.database.BibDatabase)!newDatabaseCALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java   (*2µ
+`org.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResult?unresolvedKeys@27.34:27.48CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java (2≤
+]org.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResult?newDatabase@28.33:28.44CALLK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java   (2è
+¥org.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResult.GenerateDatabaseResult(java.util.List<java.lang.String>, org.jabref.model.database.BibDatabase)!unresolvedKeys	PARAMETERK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java, (:2å
+±org.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResult.GenerateDatabaseResult(java.util.List<java.lang.String>, org.jabref.model.database.BibDatabase)!newDatabase	PARAMETERK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaH (S2°
+Eorg.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResultRETURN_TYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java (Œ
+¥org.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResult.GenerateDatabaseResult(java.util.List<java.lang.String>, org.jabref.model.database.BibDatabase)!unresolvedKeys	PARAMETERK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java, (:"
+typeList<String>"
+isFinalfalse"0
+declarationStringList<String> unresolvedKeys*unresolvedKeys2c
+java.util.ListTYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java (#2n
+java.lang.StringTYPE_ARGUMENTK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java$ (*Í
+±org.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResult.GenerateDatabaseResult(java.util.List<java.lang.String>, org.jabref.model.database.BibDatabase)!newDatabase	PARAMETERK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.javaH (S"
+typeBibDatabase"
+isFinalfalse",
+declarationStringBibDatabase newDatabase*newDatabase2z
+%org.jabref.model.database.BibDatabaseTYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java< (GÖ
+`org.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResult?unresolvedKeys@27.34:27.48VALUEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java" (0"
+isFinaltrue"
+typeList<String>"õ
+declarationStringÖ<mark class="modifier">public </mark><mark class="modifier">final </mark>List<String> <mark class="class-field">unresolvedKeys</mark>"
+isStaticfalse"
+accesspublic*unresolvedKeys2c
+java.util.ListTYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java (2n
+java.lang.StringTYPE_ARGUMENTK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java ( °
+]org.jabref.logic.openoffice.action.ExportCited.GenerateDatabaseResult?newDatabase@28.33:28.44VALUEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java! (,"
+isFinaltrue"
+typeBibDatabase"ó
+declarationStringÅ<mark class="modifier">public </mark><mark class="modifier">final </mark>BibDatabase <mark class="class-field">newDatabase</mark>"
+isStaticfalse"
+accesspublic*newDatabase2z
+%org.jabref.model.database.BibDatabaseTYPEK
+Asrc\main\java\org\jabref\logic\openoffice\action\ExportCited.java ( 

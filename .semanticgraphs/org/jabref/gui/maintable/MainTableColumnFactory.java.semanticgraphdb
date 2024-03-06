@@ -1,0 +1,1423 @@
+
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javañ+
+/org.jabref.gui.maintable.MainTableColumnFactoryCLASSL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java0 0(#"#
+packageorg.jabref.gui.maintable"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"t
+declarationString_<mark class="modifier">public </mark><mark class="modifier">class </mark>MainTableColumnFactory"
+accesspublic*MainTableColumnFactory2§
+∆org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)DECLARATIONL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java? ?(!2»
+korg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)DECLARATIONL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaP2 P(>2ú
+?org.jabref.gui.maintable.MainTableColumnFactory.createColumns()DECLARATIONL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java8 (E2Ã
+morg.jabref.gui.maintable.MainTableColumnFactory.setExactWidth(javafx.scene.control.TableColumn<?, ?>, double)DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaâ â($2œ
+porg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaí8 í(I2œ
+porg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java•3 •(D2”
+torg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaπ3 π(H2é
+Æorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java… …('2ç
+≠org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÍ Í(&2œ
+porg.jabref.gui.maintable.MainTableColumnFactory.createFieldColumn(org.jabref.gui.maintable.MainTableColumnModel)DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaâ3 â(D2‘
+uorg.jabref.gui.maintable.MainTableColumnFactory.createIdentifierColumn(org.jabref.gui.maintable.MainTableColumnModel)DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaêD ê(Z2÷
+worg.jabref.gui.maintable.MainTableColumnFactory.createSpecialFieldColumn(org.jabref.gui.maintable.MainTableColumnModel)DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaóV ó(n2œ
+porg.jabref.gui.maintable.MainTableColumnFactory.createFilesColumn(org.jabref.gui.maintable.MainTableColumnModel)DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaüB ü(S2”
+torg.jabref.gui.maintable.MainTableColumnFactory.createExtraFileColumn(org.jabref.gui.maintable.MainTableColumnModel)DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java™B ™(W2—
+rorg.jabref.gui.maintable.MainTableColumnFactory.createLibraryColumn(org.jabref.gui.maintable.MainTableColumnModel)DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∂8 ∂(K2™
+Morg.jabref.gui.maintable.MainTableColumnFactory?STYLE_ICON_COLUMN@50.31:50.48DECLARATIONL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java2 2(02ü
+Borg.jabref.gui.maintable.MainTableColumnFactory?LOGGER@52.32:52.38DECLARATIONL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java4  4(&2´
+Norg.jabref.gui.maintable.MainTableColumnFactory?preferencesService@54.37:54.55DECLARATIONL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java6% 6(72™
+Morg.jabref.gui.maintable.MainTableColumnFactory?columnPreferences@55.36:55.53DECLARATIONL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java7$ 7(52°
+Dorg.jabref.gui.maintable.MainTableColumnFactory?database@56.37:56.45DECLARATIONL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java8% 8(-2§
+Gorg.jabref.gui.maintable.MainTableColumnFactory?cellFactory@57.30:57.41DECLARATIONL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java9 9()2§
+Gorg.jabref.gui.maintable.MainTableColumnFactory?undoManager@58.30:58.41DECLARATIONL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java: :()2¶
+Iorg.jabref.gui.maintable.MainTableColumnFactory?dialogService@59.32:59.45DECLARATIONL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java;  ;(-2•
+Horg.jabref.gui.maintable.MainTableColumnFactory?taskExecutor@60.31:60.43DECLARATIONL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java< <(+2•
+Horg.jabref.gui.maintable.MainTableColumnFactory?stateManager@61.31:61.43DECLARATIONL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java= =(+⁄M
+∆org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)CONSTRUCTORL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java? ?(!"¨
+declarationStringñ<mark class="modifier">public </mark><mark class="method">MainTableColumnFactory</mark>(BibDatabaseContext database<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferencesService<mark class="modifier"><mark class="modifier">,</mark></mark> ColumnPreferences abstractColumnPrefs<mark class="modifier"><mark class="modifier">,</mark></mark> UndoManager undoManager<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> StateManager stateManager<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor)*MainTableColumnFactory2y
+#java.util.Objects.requireNonNull(T)CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaF  F(.2y
+#java.util.Objects.requireNonNull(T)CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaG* G(82œ
+yorg.jabref.gui.maintable.CellFactory.CellFactory(org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaK K(*2¶
+œorg.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!databaseCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaF/ F(72∞
+Ÿorg.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!preferencesServiceCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaG9 G(K2±
+⁄org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!abstractColumnPrefsCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaH! H(42´
+‘org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!dialogServiceCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaI I(*2™
+”org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!taskExecutorCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaJ J((2∞
+Ÿorg.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!preferencesServiceCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaK+ K(=2©
+“org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!undoManagerCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaK? K(J2©
+“org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!undoManagerCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaL L(&2™
+”org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!stateManagerCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaM M((2ö
+Dorg.jabref.gui.maintable.MainTableColumnFactory?database@56.37:56.45CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaF F(2§
+Norg.jabref.gui.maintable.MainTableColumnFactory?preferencesService@54.37:54.55CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaG G(2£
+Morg.jabref.gui.maintable.MainTableColumnFactory?columnPreferences@55.36:55.53CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaH H(2ü
+Iorg.jabref.gui.maintable.MainTableColumnFactory?dialogService@59.32:59.45CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaI I(2û
+Horg.jabref.gui.maintable.MainTableColumnFactory?taskExecutor@60.31:60.43CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaJ J(2ù
+Gorg.jabref.gui.maintable.MainTableColumnFactory?cellFactory@57.30:57.41CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaK K(2ù
+Gorg.jabref.gui.maintable.MainTableColumnFactory?undoManager@58.30:58.41CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaL L(2û
+Horg.jabref.gui.maintable.MainTableColumnFactory?stateManager@61.31:61.43CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaM M(2´
+œorg.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!database	PARAMETERL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java?5 ?(=2µ
+Ÿorg.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!preferencesService	PARAMETERL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java@5 @(G2∂
+⁄org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!abstractColumnPrefs	PARAMETERL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaA4 A(G2Æ
+“org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!undoManager	PARAMETERL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaB. B(92∞
+‘org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETERL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaC0 C(=2Ø
+”org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!stateManager	PARAMETERL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaD/ D(;2Ø
+”org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETERL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaE/ E(;2å
+/org.jabref.gui.maintable.MainTableColumnFactoryRETURN_TYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java? ?(!ö
+œorg.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!database	PARAMETERL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java?5 ?(="
+typeBibDatabaseContext"
+isFinalfalse"0
+declarationStringBibDatabaseContext database*database2Ç
+,org.jabref.model.database.BibDatabaseContextTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java?" ?(4¥
+Ÿorg.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!preferencesService	PARAMETERL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java@5 @(G"
+typePreferencesService"
+isFinalfalse":
+declarationString%PreferencesService preferencesService*preferencesService2
+)org.jabref.preferences.PreferencesServiceTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java@" @(4∑
+⁄org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!abstractColumnPrefs	PARAMETERL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaA4 A(G"
+typeColumnPreferences"
+isFinalfalse":
+declarationString%ColumnPreferences abstractColumnPrefs*abstractColumnPrefs2Ä
+*org.jabref.gui.maintable.ColumnPreferencesTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaA" A(3Ñ
+“org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!undoManager	PARAMETERL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaB. B(9"
+typeUndoManager"
+isFinalfalse",
+declarationStringUndoManager undoManager*undoManager2r
+javax.swing.undo.UndoManagerTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaB" B(-é
+‘org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETERL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaC0 C(="
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2r
+org.jabref.gui.DialogServiceTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaC" C(/à
+”org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!stateManager	PARAMETERL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaD/ D(;"
+typeStateManager"
+isFinalfalse".
+declarationStringStateManager stateManager*stateManager2q
+org.jabref.gui.StateManagerTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaD" D(.ç
+”org.jabref.gui.maintable.MainTableColumnFactory.MainTableColumnFactory(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.PreferencesService, org.jabref.gui.maintable.ColumnPreferences, javax.swing.undo.UndoManager, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETERL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaE/ E(;"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2v
+ org.jabref.gui.util.TaskExecutorTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaE" E(.ÓU
+korg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)METHODL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaP2 P(>"
+isFinalfalse"Ë
+declarationString“<mark class="modifier">public </mark>TableColumn&lt;BibEntryTableViewModel<mark class="modifier"><mark class="modifier">,</mark></mark>?&gt; <mark class="method">createColumn</mark>(MainTableColumnModel column)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse".
+type&TableColumn<BibEntryTableViewModel, ?>*createColumn2ç
+7org.jabref.gui.maintable.MainTableColumnModel.getType()CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaR R(2∆
+porg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaT T(02∆
+porg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaW W(02 
+torg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaZ Z(42∆
+porg.jabref.gui.maintable.MainTableColumnFactory.createFilesColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java] ](02À
+uorg.jabref.gui.maintable.MainTableColumnFactory.createIdentifierColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java` `(52»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createLibraryColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javac c(22p
+java.lang.String.isBlank()CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaf+ f(22í
+<org.jabref.gui.maintable.MainTableColumnModel.getQualifier()CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaf f((2 
+torg.jabref.gui.maintable.MainTableColumnFactory.createExtraFileColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javag# g(82p
+java.lang.String.isBlank()CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javak+ k(22í
+<org.jabref.gui.maintable.MainTableColumnModel.getQualifier()CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javak k((2ú
+Forg.jabref.model.entry.field.FieldFactory.parseField(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javal/ l(92í
+<org.jabref.gui.maintable.MainTableColumnModel.getQualifier()CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javalA l(M2Õ
+worg.jabref.gui.maintable.MainTableColumnFactory.createSpecialFieldColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javan' n(?2í
+<org.jabref.gui.maintable.MainTableColumnModel.getQualifier()CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javapl p(x2∆
+porg.jabref.gui.maintable.MainTableColumnFactory.createFieldColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaq' q(82p
+java.lang.String.isBlank()CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaw+ w(22í
+<org.jabref.gui.maintable.MainTableColumnModel.getQualifier()CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaw w((2∆
+porg.jabref.gui.maintable.MainTableColumnFactory.createFieldColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javax# x(42»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaR R(2€
+Ñorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)?returnColumn@81.47:81.59CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaT T(2»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaT1 T(72€
+Ñorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)?returnColumn@81.47:81.59CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaW W(2»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaW1 W(72€
+Ñorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)?returnColumn@81.47:81.59CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaZ Z(2»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaZ5 Z(;2€
+Ñorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)?returnColumn@81.47:81.59CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java] ](2»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java]1 ](72€
+Ñorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)?returnColumn@81.47:81.59CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java` `(2»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java`6 `(<2€
+Ñorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)?returnColumn@81.47:81.59CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javac c(2»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javac3 c(92»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaf f(2€
+Ñorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)?returnColumn@81.47:81.59CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javag g( 2»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javag9 g(?2»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javak k(2»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javal: l(@2’
+org.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)?field@108.26:108.31CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javam m(2€
+Ñorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)?returnColumn@81.47:81.59CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javan n($2»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javan@ n(F2ò
+Borg.jabref.gui.maintable.MainTableColumnFactory?LOGGER@52.32:52.38CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javap p(2»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javape p(k2€
+Ñorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)?returnColumn@81.47:81.59CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaq q($2»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaq9 q(?2»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaw w(2€
+Ñorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)?returnColumn@81.47:81.59CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javax x( 2»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javax5 x(;2€
+Ñorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)?returnColumn@81.47:81.59CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java| |(2Õ
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!column	PARAMETERL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaPT P(Z2‚
+Ñorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)?returnColumn@81.47:81.59DECLARATIONL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaQ/ Q(;2‹
+org.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)?field@108.26:108.31DECLARATIONL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javal l(2}
+ javafx.scene.control.TableColumnRETURN_TYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaP P(2ï
+/org.jabref.gui.maintable.BibEntryTableViewModelRETURN_TYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaP P(-È
+Ñorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)?returnColumn@81.47:81.59VARIABLEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaQ/ Q(;".
+type&TableColumn<BibEntryTableViewModel, ?>"
+isFinalfalse"Æ
+declarationStringò<mark class="modifier"> </mark>TableColumn<BibEntryTableViewModel, ?> <mark class="class-field">returnColumn</mark> = <mark class="modifier">null</mark>*returnColumn2v
+ javafx.scene.control.TableColumnTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaQ Q(2é
+/org.jabref.gui.maintable.BibEntryTableViewModelTYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaQ Q(*é
+org.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)?field@108.26:108.31VARIABLEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javal l("
+typeField"
+isFinalfalse"ë
+declarationString|<mark class="modifier"> </mark>Field <mark class="class-field">field</mark> = FieldFactory.parseField(column.getQualifier())*field2x
+"org.jabref.model.entry.field.FieldTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javal l(2ú
+Forg.jabref.model.entry.field.FieldFactory.parseField(java.lang.String)CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javal/ l(92í
+<org.jabref.gui.maintable.MainTableColumnModel.getQualifier()CALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javalA l(M2»
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnCALLL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javal: l(@Ω
+rorg.jabref.gui.maintable.MainTableColumnFactory.createColumn(org.jabref.gui.maintable.MainTableColumnModel)!column	PARAMETERL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaPT P(Z"
+typeMainTableColumnModel"
+isFinalfalse"0
+declarationStringMainTableColumnModel column*column2É
+-org.jabref.gui.maintable.MainTableColumnModelTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaP? P(S¬
+?org.jabref.gui.maintable.MainTableColumnFactory.createColumns()METHODL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java8 (E"
+isFinalfalse"⁄
+declarationStringƒ<mark class="modifier">public </mark>List&lt;TableColumn&lt;BibEntryTableViewModel<mark class="modifier"><mark class="modifier">,</mark></mark>?&gt;&gt; <mark class="method">createColumns</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"4
+type,List<TableColumn<BibEntryTableViewModel, ?>>*createColumns2è
+7org.jabref.gui.maintable.ColumnPreferences.getColumns()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÇ Ç($2w
+java.util.ArrayList.ArrayList()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÄC Ä(N2•
+Morg.jabref.gui.maintable.MainTableColumnFactory?columnPreferences@55.36:55.53CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÇ Ç(2≠
+Uorg.jabref.gui.maintable.MainTableColumnFactory.createColumns()?columns@128.53:128.60CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÉ É(2¨
+Torg.jabref.gui.maintable.MainTableColumnFactory.createColumns()?column@130.47:130.53CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÉ% É(+2≠
+Uorg.jabref.gui.maintable.MainTableColumnFactory.createColumns()?columns@128.53:128.60CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÜ Ü(2¥
+Uorg.jabref.gui.maintable.MainTableColumnFactory.createColumns()?columns@128.53:128.60DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÄ5 Ä(<2≥
+Torg.jabref.gui.maintable.MainTableColumnFactory.createColumns()?column@130.47:130.53DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÇ/ Ç(52k
+java.util.ListRETURN_TYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java (2Ü
+ javafx.scene.control.TableColumnRETURN_TYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java (2ï
+/org.jabref.gui.maintable.BibEntryTableViewModelRETURN_TYPE_ARGUMENTL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java (2õ
+Uorg.jabref.gui.maintable.MainTableColumnFactory.createColumns()?columns@128.53:128.60VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÄ5 Ä(<"4
+type,List<TableColumn<BibEntryTableViewModel, ?>>"
+isFinalfalse"û
+declarationStringà<mark class="modifier"> </mark>List<TableColumn<BibEntryTableViewModel, ?>> <mark class="class-field">columns</mark> = new ArrayList<>()*columns2f
+java.util.ListTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÄ Ä(2Å
+ javafx.scene.control.TableColumnTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÄ Ä(2ê
+/org.jabref.gui.maintable.BibEntryTableViewModelTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÄ Ä(/2w
+java.util.ArrayList.ArrayList()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÄC Ä(N¯
+Torg.jabref.gui.maintable.MainTableColumnFactory.createColumns()?column@130.47:130.53VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÇ/ Ç(5"
+type"
+isFinalfalse"
+declarationString column*column2TYPEÖ
+morg.jabref.gui.maintable.MainTableColumnFactory.setExactWidth(javafx.scene.control.TableColumn<?, ?>, double)METHODN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaâ â($"
+isFinalfalse"
+declarationString⁄<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">setExactWidth</mark>(TableColumn&lt;?<mark class="modifier"><mark class="modifier">,</mark></mark> ?&gt; column<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">double</mark> width)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typevoid*setExactWidth2Ã
+torg.jabref.gui.maintable.MainTableColumnFactory.setExactWidth(javafx.scene.control.TableColumn<?, ?>, double)!columnCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaä ä(2À
+sorg.jabref.gui.maintable.MainTableColumnFactory.setExactWidth(javafx.scene.control.TableColumn<?, ?>, double)!widthCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaä ä( 2Ã
+torg.jabref.gui.maintable.MainTableColumnFactory.setExactWidth(javafx.scene.control.TableColumn<?, ?>, double)!columnCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaã ã(2À
+sorg.jabref.gui.maintable.MainTableColumnFactory.setExactWidth(javafx.scene.control.TableColumn<?, ?>, double)!widthCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaã ã(!2Ã
+torg.jabref.gui.maintable.MainTableColumnFactory.setExactWidth(javafx.scene.control.TableColumn<?, ?>, double)!columnCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaå å(2À
+sorg.jabref.gui.maintable.MainTableColumnFactory.setExactWidth(javafx.scene.control.TableColumn<?, ?>, double)!widthCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaå å( 2—
+torg.jabref.gui.maintable.MainTableColumnFactory.setExactWidth(javafx.scene.control.TableColumn<?, ?>, double)!column	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaâ7 â(=2–
+sorg.jabref.gui.maintable.MainTableColumnFactory.setExactWidth(javafx.scene.control.TableColumn<?, ?>, double)!width	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaâF â(K2c
+voidRETURN_TYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaâ â(Õ
+torg.jabref.gui.maintable.MainTableColumnFactory.setExactWidth(javafx.scene.control.TableColumn<?, ?>, double)!column	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaâ7 â(="
+typeTableColumn<?, ?>"
+isFinalfalse"K
+declarationString6TableColumn<?<mark class="modifier">,</mark> ?> column*column2x
+ javafx.scene.control.TableColumnTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaâ% â(0ö
+sorg.jabref.gui.maintable.MainTableColumnFactory.setExactWidth(javafx.scene.control.TableColumn<?, ?>, double)!width	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaâF â(K"
+typedouble"
+isFinalfalse"?
+declarationString*<mark class="modifier">double</mark> width*width2^
+doubleTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaâ? â(E«.
+porg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)METHODN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaí8 í(I"
+isFinalfalse"¯
+declarationString‚<mark class="modifier">private </mark>TableColumn&lt;BibEntryTableViewModel<mark class="modifier"><mark class="modifier">,</mark></mark>String&gt; <mark class="method">createIndexColumn</mark>(MainTableColumnModel columnModel)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"3
+type+TableColumn<BibEntryTableViewModel, String>*createIndexColumn2õ
+Corg.jabref.gui.maintable.MainTableColumnModel.Type.getDisplayName()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javañL ñ(Z2±
+Yorg.jabref.gui.util.ValueTableCellFactory.install(javafx.scene.control.TableColumn<S, T>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaù ù(2º
+dorg.jabref.gui.util.ValueTableCellFactory.withText(java.util.function.Function<T, java.lang.String>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaú ú(2«
+oorg.jabref.gui.maintable.columns.MainTableColumn.MainTableColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaìA ì(R2ô
+Aorg.jabref.gui.util.ValueTableCellFactory.ValueTableCellFactory()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaõ õ(A2‘
+|org.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModelCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaìS ì(^2ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?header@148.13:148.19CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaï ï(2ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?header@148.13:148.19CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javañ ñ(2ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@147.52:147.58CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaó ó(2ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?header@148.13:148.19CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaó ó( 2ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@147.52:147.58CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaò ò(2ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@147.52:147.58CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaô ô(2‡
+áorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?cellData@153.35:153.43CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaö ö('2‡
+áorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?cellData@153.35:153.43CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaöJ ö(R2‹
+Éorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?text@156.26:156.30CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaú" ú(&2ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@147.52:147.58CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaù ù(2ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@147.52:147.58CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaû û(2ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@147.52:147.58CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaü ü(2Ÿ
+|org.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaí_ í(j2Â
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@147.52:147.58DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaì4 ì(:2Â
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?header@148.13:148.19DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaî î(2Á
+áorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?cellData@153.35:153.43DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaô# ô(+2„
+Éorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?text@156.26:156.30DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaú ú(2
+ javafx.scene.control.TableColumnRETURN_TYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaí í(2ó
+/org.jabref.gui.maintable.BibEntryTableViewModelRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaí í(.2x
+java.lang.StringRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaí0 í(6Ç
+
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@147.52:147.58VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaì4 ì(:"3
+type+TableColumn<BibEntryTableViewModel, String>"
+isFinalfalse"≠
+declarationStringó<mark class="modifier"> </mark>TableColumn<BibEntryTableViewModel, String> <mark class="class-field">column</mark> = new MainTableColumn<>(columnModel)*column2x
+ javafx.scene.control.TableColumnTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaì ì(2ê
+/org.jabref.gui.maintable.BibEntryTableViewModelTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaì ì(*2q
+java.lang.StringTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaì, ì(22«
+oorg.jabref.gui.maintable.columns.MainTableColumn.MainTableColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaìA ì(R2‘
+|org.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModelCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaìS ì(^Á
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?header@148.13:148.19VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaî î("
+typeNode"
+isFinalfalse"p
+declarationString[<mark class="modifier"> </mark>Node <mark class="class-field">header</mark> = new Text("#")*header2i
+javafx.scene.NodeTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaî î(’
+|org.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaí_ í(j"
+typeMainTableColumnModel"
+isFinalfalse"5
+declarationString MainTableColumnModel columnModel*columnModel2Ö
+-org.jabref.gui.maintable.MainTableColumnModelTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaíJ í(^∞
+áorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?cellData@153.35:153.43VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaô# ô(+"
+type"
+isFinalfalse"
+declarationString	 cellData*cellData2TYPE§
+Éorg.jabref.gui.maintable.MainTableColumnFactory.createIndexColumn(org.jabref.gui.maintable.MainTableColumnModel)?text@156.26:156.30VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaú ú("
+type"
+isFinalfalse"
+declarationString text*text2TYPEè-
+porg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)METHODN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java•3 •(D"
+isFinalfalse"Û
+declarationString›<mark class="modifier">private </mark>TableColumn&lt;BibEntryTableViewModel<mark class="modifier"><mark class="modifier">,</mark></mark>?&gt; <mark class="method">createGroupColumn</mark>(MainTableColumnModel columnModel)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse".
+type&TableColumn<BibEntryTableViewModel, ?>*createGroupColumn2í
+:org.jabref.gui.icon.IconTheme.JabRefIcons.getGraphicNode()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaßF ß(T2¶
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java®@ ®(D2≈
+morg.jabref.gui.maintable.MainTableColumnFactory.setExactWidth(javafx.scene.control.TableColumn<?, ?>, double)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java´ ´(2«
+oorg.jabref.gui.maintable.columns.MainTableColumn.MainTableColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¶N ¶(_2ô
+Aorg.jabref.gui.util.ValueTableCellFactory.ValueTableCellFactory()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÆ Æ(N2‘
+|org.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModelCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¶` ¶(k2Â
+åorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?headerGraphic@167.13:167.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java® ®(%2ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@166.65:166.71CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java© ©(2Â
+åorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?headerGraphic@167.13:167.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java© ©('2ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@166.65:166.71CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java™ ™(2•
+Morg.jabref.gui.maintable.MainTableColumnFactory?STYLE_ICON_COLUMN@50.31:50.48CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java™# ™(42ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@166.65:166.71CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java´ ´(2ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@166.65:166.71CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¨ ¨(2ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@166.65:166.71CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java≠ ≠(2‡
+áorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?cellData@173.35:173.43CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java≠/ ≠(72ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@166.65:166.71CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∞ ∞(2ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@166.65:166.71CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java± ±(2ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@166.65:166.71CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java≤ ≤(2ﬁ
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@166.65:166.71CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java≥ ≥(2Ÿ
+|org.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java•Z •(e2Â
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@166.65:166.71DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¶A ¶(G2Ï
+åorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?headerGraphic@167.13:167.26DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaß ß(2Á
+áorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?cellData@173.35:173.43DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java≠# ≠(+2
+ javafx.scene.control.TableColumnRETURN_TYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java• •(2ó
+/org.jabref.gui.maintable.BibEntryTableViewModelRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java• •(.£
+Öorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@166.65:166.71VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¶A ¶(G"@
+type8TableColumn<BibEntryTableViewModel, List<AbstractGroup>>"
+isFinalfalse"∫
+declarationString§<mark class="modifier"> </mark>TableColumn<BibEntryTableViewModel, List<AbstractGroup>> <mark class="class-field">column</mark> = new MainTableColumn<>(columnModel)*column2x
+ javafx.scene.control.TableColumnTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¶ ¶(2ê
+/org.jabref.gui.maintable.BibEntryTableViewModelTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¶ ¶(*2o
+java.util.ListTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¶, ¶(02Ü
+%org.jabref.model.groups.AbstractGroupTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¶1 ¶(>2«
+oorg.jabref.gui.maintable.columns.MainTableColumn.MainTableColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¶N ¶(_2‘
+|org.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModelCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¶` ¶(kø
+åorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?headerGraphic@167.13:167.26VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaß ß("
+typeNode"
+isFinalfalse"§
+declarationStringé<mark class="modifier"> </mark>Node <mark class="class-field">headerGraphic</mark> = IconTheme.JabRefIcons.DEFAULT_GROUP_ICON.getGraphicNode()*headerGraphic2i
+javafx.scene.NodeTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaß ß(2í
+:org.jabref.gui.icon.IconTheme.JabRefIcons.getGraphicNode()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaßF ß(T’
+|org.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java•Z •(e"
+typeMainTableColumnModel"
+isFinalfalse"5
+declarationString MainTableColumnModel columnModel*columnModel2Ö
+-org.jabref.gui.maintable.MainTableColumnModelTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java•E •(Y∞
+áorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColumn(org.jabref.gui.maintable.MainTableColumnModel)?cellData@173.35:173.43VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java≠# ≠(+"
+type"
+isFinalfalse"
+declarationString	 cellData*cellData2TYPE¥*
+torg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)METHODN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaπ3 π(H"
+isFinalfalse"˜
+declarationString·<mark class="modifier">private </mark>TableColumn&lt;BibEntryTableViewModel<mark class="modifier"><mark class="modifier">,</mark></mark>?&gt; <mark class="method">createGroupIconColumn</mark>(MainTableColumnModel columnModel)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse".
+type&TableColumn<BibEntryTableViewModel, ?>*createGroupIconColumn2í
+:org.jabref.gui.icon.IconTheme.JabRefIcons.getGraphicNode()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaªM ª([2¶
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaº@ º(D2«
+oorg.jabref.gui.maintable.columns.MainTableColumn.MainTableColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∫N ∫(_2ô
+Aorg.jabref.gui.util.ValueTableCellFactory.ValueTableCellFactory()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¡ ¡(N2Ÿ
+Äorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModelCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∫` ∫(k2È
+êorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)?headerGraphic@187.13:187.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaº º(%2‚
+âorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@186.65:186.71CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaΩ Ω(2È
+êorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)?headerGraphic@187.13:187.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaΩ Ω('2‚
+âorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@186.65:186.71CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaæ æ(2•
+Morg.jabref.gui.maintable.MainTableColumnFactory?STYLE_ICON_COLUMN@50.31:50.48CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaæ# æ(42‚
+âorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@186.65:186.71CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaø ø(2‚
+âorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@186.65:186.71CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¿ ¿(2‰
+ãorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)?cellData@192.35:192.43CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¿/ ¿(72‚
+âorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@186.65:186.71CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java√ √(2‚
+âorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@186.65:186.71CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaƒ ƒ(2‚
+âorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@186.65:186.71CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java≈ ≈(2‚
+âorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@186.65:186.71CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∆ ∆(2ﬁ
+Äorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaπ^ π(i2È
+âorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@186.65:186.71DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∫A ∫(G2
+êorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)?headerGraphic@187.13:187.26DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaª ª(2Î
+ãorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)?cellData@192.35:192.43DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¿# ¿(+2
+ javafx.scene.control.TableColumnRETURN_TYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaπ π(2ó
+/org.jabref.gui.maintable.BibEntryTableViewModelRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaπ π(.¨
+âorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)?column@186.65:186.71VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∫A ∫(G"@
+type8TableColumn<BibEntryTableViewModel, List<AbstractGroup>>"
+isFinalfalse"∫
+declarationString§<mark class="modifier"> </mark>TableColumn<BibEntryTableViewModel, List<AbstractGroup>> <mark class="class-field">column</mark> = new MainTableColumn<>(columnModel)*column2x
+ javafx.scene.control.TableColumnTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∫ ∫(2ê
+/org.jabref.gui.maintable.BibEntryTableViewModelTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∫ ∫(*2o
+java.util.ListTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∫, ∫(02Ü
+%org.jabref.model.groups.AbstractGroupTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∫1 ∫(>2«
+oorg.jabref.gui.maintable.columns.MainTableColumn.MainTableColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∫N ∫(_2Ÿ
+Äorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModelCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∫` ∫(k 
+êorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)?headerGraphic@187.13:187.26VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaª ª("
+typeNode"
+isFinalfalse"´
+declarationStringï<mark class="modifier"> </mark>Node <mark class="class-field">headerGraphic</mark> = IconTheme.JabRefIcons.DEFAULT_GROUP_ICON_COLUMN.getGraphicNode()*headerGraphic2i
+javafx.scene.NodeTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaª ª(2í
+:org.jabref.gui.icon.IconTheme.JabRefIcons.getGraphicNode()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaªM ª([⁄
+Äorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaπ^ π(i"
+typeMainTableColumnModel"
+isFinalfalse"5
+declarationString MainTableColumnModel columnModel*columnModel2Ö
+-org.jabref.gui.maintable.MainTableColumnModelTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaπI π(]¥
+ãorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconColumn(org.jabref.gui.maintable.MainTableColumnModel)?cellData@192.35:192.43VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¿# ¿(+"
+type"
+isFinalfalse"
+declarationString	 cellData*cellData2TYPE˙[
+Æorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)METHODN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java… …('"
+isFinalfalse"ˆ
+declarationString‡<mark class="modifier">private </mark>Node <mark class="method">createGroupColorRegion</mark>(BibEntryTableViewModel entry<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;AbstractGroup&gt; matchedGroups)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeNode*createGroupColorRegion2x
+ java.util.stream.Stream.toList()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÃ0 Ã(62œ
+wjava.util.stream.Stream.flatMap(java.util.function.Function<? super T, ? extends java.util.stream.Stream<? extends R>>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÀ0 À(72u
+java.util.Collection.stream()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java 0  (62s
+java.util.Optional.stream()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÀR À(X2à
+0org.jabref.model.groups.AbstractGroup.getColor()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÀG À(O2p
+java.util.List.isEmpty()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaŒ Œ( 2ü
+Gjava.util.stream.Stream.forEach(java.util.function.Consumer<? super T>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java’, ’(32z
+"java.util.stream.Stream.distinct()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java’! ’()2u
+java.util.Collection.stream()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java’ ’(2§
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java‚7 ‚(>2®
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java·7 ·(:2z
+"java.util.stream.Stream.distinct()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java‡7 ‡(?2u
+java.util.Collection.stream()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaﬂ7 ﬂ(=2ì
+;java.util.stream.Collectors.joining(java.lang.CharSequence)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java‚J ‚(Q2¶
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java„7 „(;2ï
+ºorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)!matchedGroupsCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java "  (/2õ
+¬org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?group@203.56:203.61CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÀA À(F2°
+»org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupColors@202.20:202.31CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaŒ Œ(2ü
+∆org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@207.17:207.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java– –(2ü
+∆org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@207.17:207.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java— —(2ü
+∆org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@207.17:207.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java“ “(2ü
+∆org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@207.17:207.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java” ”(2°
+»org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupColors@202.20:202.31CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java’ ’(2§
+Àorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupRectangle@214.26:214.40CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java◊ ◊(2§
+Àorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupRectangle@214.26:214.40CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÿ ÿ(2§
+Àorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupRectangle@214.26:214.40CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaŸ Ÿ(2§
+Àorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupRectangle@214.26:214.40CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java⁄ ⁄(2†
+«org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupColor@213.52:213.62CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java⁄' ⁄(12§
+Àorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupRectangle@214.26:214.40CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java€ €(2ü
+∆org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@207.17:207.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java‹ ‹(2§
+Àorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupRectangle@214.26:214.40CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java‹, ‹(:2ï
+ºorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)!matchedGroupsCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaﬂ) ﬂ(62™
+–org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?matchedGroupsString@223.19:223.38CALLO
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java„t „(á2ü
+∆org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@207.17:207.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java‰ ‰(%2ù
+ƒorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?tooltip@227.20:227.27CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java‰' ‰(.2ü
+∆org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@207.17:207.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÂ Â(2á
+/org.jabref.model.groups.AbstractGroup.getName()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java·; ·(Q2í
+¥org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)!entry	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java…? …(D2ö
+ºorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)!matchedGroups	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java…Z …(g2®
+»org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupColors@202.20:202.31DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java   (2¶
+∆org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@207.17:207.26DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaœ œ(2´
+Àorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupRectangle@214.26:214.40DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java÷ ÷((2∞
+–org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?matchedGroupsString@223.19:223.38DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaﬂ ﬂ(&2§
+ƒorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?tooltip@227.20:227.27DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java„ „(2¢
+¬org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?group@203.56:203.61DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÀ8 À(=2ß
+«org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupColor@213.52:213.62DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java’4 ’(>2p
+javafx.scene.NodeRETURN_TYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java… …(Û
+»org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupColors@202.20:202.31VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java   ("
+typeList<Color>"
+isFinalfalse"ª
+declarationString•<mark class="modifier"> </mark>List<Color> <mark class="class-field">groupColors</mark> = matchedGroups.stream().flatMap(group -> group.getColor().stream()).toList()*groupColors2f
+java.util.ListTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java   (2y
+javafx.scene.paint.ColorTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java   (2x
+ java.util.stream.Stream.toList()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÃ0 Ã(62œ
+wjava.util.stream.Stream.flatMap(java.util.function.Function<? super T, ? extends java.util.stream.Stream<? extends R>>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÀ0 À(72u
+java.util.Collection.stream()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java 0  (62s
+java.util.Optional.stream()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÀR À(X2à
+0org.jabref.model.groups.AbstractGroup.getColor()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÀG À(O2ï
+ºorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)!matchedGroupsCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java "  (/2õ
+¬org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?group@203.56:203.61CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÀA À(F≤
+∆org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@207.17:207.26VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaœ œ("
+typeHBox"
+isFinalfalse"p
+declarationString[<mark class="modifier"> </mark>HBox <mark class="class-field">container</mark> = new HBox()*	container2p
+javafx.scene.layout.HBoxTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaœ œ(‘
+Àorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupRectangle@214.26:214.40VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java÷ ÷(("
+type	Rectangle"
+isFinalfalse"
+declarationStringj<mark class="modifier"> </mark>Rectangle <mark class="class-field">groupRectangle</mark> = new Rectangle()*groupRectangle2t
+javafx.scene.shape.RectangleTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java÷ ÷(æ
+–org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?matchedGroupsString@223.19:223.38VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaﬂ ﬂ(&"
+typeString"
+isFinalfalse"
+declarationString⁄<mark class="modifier"> </mark>String <mark class="class-field">matchedGroupsString</mark> = matchedGroups.stream().distinct().map(AbstractGroup::getName).collect(Collectors.joining("<mark class="modifier">,</mark> "))*matchedGroupsString2h
+java.lang.StringTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaﬂ ﬂ(2§
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java‚7 ‚(>2®
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java·7 ·(:2z
+"java.util.stream.Stream.distinct()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java‡7 ‡(?2u
+java.util.Collection.stream()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaﬂ7 ﬂ(=2ì
+;java.util.stream.Collectors.joining(java.lang.CharSequence)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java‚J ‚(Q2ï
+ºorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)!matchedGroupsCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaﬂ) ﬂ(62á
+/org.jabref.model.groups.AbstractGroup.getName()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java·; ·(QÓ
+ƒorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?tooltip@227.20:227.27VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java„ „("
+typeTooltip"
+isFinalfalse"“
+declarationStringº<mark class="modifier"> </mark>Tooltip <mark class="class-field">tooltip</mark> = new Tooltip(Localization.lang("Entry is contained in the following groups:") + "\n" + matchedGroupsString)*tooltip2t
+javafx.scene.control.TooltipTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java„ „(2¶
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java„7 „(;2™
+–org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?matchedGroupsString@223.19:223.38CALLO
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java„t „(áà
+¥org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)!entry	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java…? …(D"
+typeBibEntryTableViewModel"
+isFinalfalse"1
+declarationStringBibEntryTableViewModel entry*entry2á
+/org.jabref.gui.maintable.BibEntryTableViewModelTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java…( …(>Å
+ºorg.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)!matchedGroups	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java…Z …(g"
+typeList<AbstractGroup>"
+isFinalfalse"6
+declarationString!List<AbstractGroup> matchedGroups*matchedGroups2f
+java.util.ListTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java…F …(J2Ü
+%org.jabref.model.groups.AbstractGroupTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java…K …(XÂ
+¬org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?group@203.56:203.61VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÀ8 À(="
+type"
+isFinalfalse"
+declarationString group*group2TYPEÙ
+«org.jabref.gui.maintable.MainTableColumnFactory.createGroupColorRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupColor@213.52:213.62VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java’4 ’(>"
+type"
+isFinalfalse" 
+declarationString groupColor*
+groupColor2TYPEú\
+≠org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)METHODN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÍ Í(&"
+isFinalfalse"ı
+declarationStringﬂ<mark class="modifier">private </mark>Node <mark class="method">createGroupIconRegion</mark>(BibEntryTableViewModel entry<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;AbstractGroup&gt; matchedGroups)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeNode*createGroupIconRegion2x
+ java.util.stream.Stream.toList()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÔ4 Ô(:2œ
+wjava.util.stream.Stream.flatMap(java.util.function.Function<? super T, ? extends java.util.stream.Stream<? extends R>>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌ4 Ì(;2ü
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÏ4 Ï(:2u
+java.util.Collection.stream()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÎ4 Î(:2v
+java.util.Optional.isPresent()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÏh Ï(q2ã
+3org.jabref.model.groups.AbstractGroup.getIconName()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÏZ Ï(e2u
+java.util.Optional.stream()CALLP
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌÆ Ì(¥2™
+Rorg.jabref.gui.icon.IconTheme.findIcon(java.lang.String, javafx.scene.paint.Color)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌO Ì(W2p
+java.util.Optional.get()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌl Ì(o2ã
+3org.jabref.model.groups.AbstractGroup.getIconName()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌ^ Ì(i2v
+java.util.Optional.orElse(T)CALLP
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌÑ Ì(ä2â
+0org.jabref.model.groups.AbstractGroup.getColor()CALLO
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌy Ì(Å2é
+4org.jabref.gui.icon.IconTheme.getDefaultGroupColor()CALLP
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌï Ì(©2p
+java.util.List.isEmpty()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java (2ü
+Gjava.util.stream.Stream.forEach(java.util.function.Consumer<? super T>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˜+ ˜(22z
+"java.util.stream.Stream.distinct()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˜  ˜((2u
+java.util.Collection.stream()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˜ ˜(2á
+/org.jabref.gui.icon.JabRefIcon.getGraphicNode()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¯6 ¯(D2§
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˛7 ˛(>2®
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˝7 ˝(:2z
+"java.util.stream.Stream.distinct()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¸7 ¸(?2u
+java.util.Collection.stream()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˚7 ˚(=2ì
+;java.util.stream.Collectors.joining(java.lang.CharSequence)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˛J ˛(Q2¶
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaˇ7 ˇ(;2î
+ªorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)!matchedGroupsCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÎ& Î(32¢
+…org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?abstractGroup@236.59:236.72CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÏL Ï(Y2ö
+¡org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?group@237.60:237.65CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌX Ì(]2ö
+¡org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?group@237.60:237.65CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌs Ì(x2ü
+∆org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupIcons@235.25:235.35CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java (2û
+≈org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@241.17:241.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÚ Ú(2û
+≈org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@241.17:241.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÛ Û(2û
+≈org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@241.17:241.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÙ Ù(2û
+≈org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@241.17:241.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaı ı(2ü
+∆org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupIcons@235.25:235.35CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˜ ˜(2û
+≈org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@241.17:241.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¯ ¯(2û
+≈org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupIcon@247.51:247.60CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¯, ¯(52î
+ªorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)!matchedGroupsCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˚) ˚(62©
+œorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?matchedGroupsString@251.19:251.38CALLO
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaˇt ˇ(á2û
+≈org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@241.17:241.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÄ Ä(%2ú
+√org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?tooltip@255.20:255.27CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÄ' Ä(.2û
+≈org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@241.17:241.26CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÅ Å(2á
+/org.jabref.model.groups.AbstractGroup.getName()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˝; ˝(Q2ë
+≥org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)!entry	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÍ> Í(C2ô
+ªorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)!matchedGroups	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÍY Í(f2¶
+∆org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupIcons@235.25:235.35DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÎ Î(#2•
+≈org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@241.17:241.26DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÒ Ò(2Ø
+œorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?matchedGroupsString@251.19:251.38DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˚ ˚(&2£
+√org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?tooltip@255.20:255.27DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaˇ ˇ(2©
+…org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?abstractGroup@236.59:236.72DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÏ; Ï(H2°
+¡org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?group@237.60:237.65DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌ< Ì(A2•
+≈org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupIcon@247.51:247.60DECLARATIONN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˜3 ˜(<2p
+javafx.scene.NodeRETURN_TYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÍ Í(◊
+∆org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupIcons@235.25:235.35VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÎ Î(#"
+typeList<JabRefIcon>"
+isFinalfalse"ˆ
+declarationString‡<mark class="modifier"> </mark>List<JabRefIcon> <mark class="class-field">groupIcons</mark> = matchedGroups.stream().filter(abstractGroup -> abstractGroup.getIconName().isPresent()).flatMap(group -> IconTheme.findIcon(group.getIconName().get()<mark class="modifier">,</mark> group.getColor().orElse(IconTheme.getDefaultGroupColor())).stream()).toList()*
+groupIcons2f
+java.util.ListTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÎ Î(2
+org.jabref.gui.icon.JabRefIconTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÎ Î(2x
+ java.util.stream.Stream.toList()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÔ4 Ô(:2œ
+wjava.util.stream.Stream.flatMap(java.util.function.Function<? super T, ? extends java.util.stream.Stream<? extends R>>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌ4 Ì(;2ü
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÏ4 Ï(:2u
+java.util.Collection.stream()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÎ4 Î(:2v
+java.util.Optional.isPresent()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÏh Ï(q2ã
+3org.jabref.model.groups.AbstractGroup.getIconName()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÏZ Ï(e2u
+java.util.Optional.stream()CALLP
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌÆ Ì(¥2™
+Rorg.jabref.gui.icon.IconTheme.findIcon(java.lang.String, javafx.scene.paint.Color)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌO Ì(W2p
+java.util.Optional.get()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌl Ì(o2ã
+3org.jabref.model.groups.AbstractGroup.getIconName()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌ^ Ì(i2v
+java.util.Optional.orElse(T)CALLP
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌÑ Ì(ä2â
+0org.jabref.model.groups.AbstractGroup.getColor()CALLO
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌy Ì(Å2é
+4org.jabref.gui.icon.IconTheme.getDefaultGroupColor()CALLP
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌï Ì(©2î
+ªorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)!matchedGroupsCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÎ& Î(32¢
+…org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?abstractGroup@236.59:236.72CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÏL Ï(Y2ö
+¡org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?group@237.60:237.65CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌX Ì(]2ö
+¡org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?group@237.60:237.65CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌs Ì(x±
+≈org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?container@241.17:241.26VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÒ Ò("
+typeHBox"
+isFinalfalse"p
+declarationString[<mark class="modifier"> </mark>HBox <mark class="class-field">container</mark> = new HBox()*	container2p
+javafx.scene.layout.HBoxTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÒ Ò(º
+œorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?matchedGroupsString@251.19:251.38VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˚ ˚(&"
+typeString"
+isFinalfalse"
+declarationString⁄<mark class="modifier"> </mark>String <mark class="class-field">matchedGroupsString</mark> = matchedGroups.stream().distinct().map(AbstractGroup::getName).collect(Collectors.joining("<mark class="modifier">,</mark> "))*matchedGroupsString2h
+java.lang.StringTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˚ ˚(2§
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˛7 ˛(>2®
+Pjava.util.stream.Stream.map(java.util.function.Function<? super T, ? extends R>)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˝7 ˝(:2z
+"java.util.stream.Stream.distinct()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¸7 ¸(?2u
+java.util.Collection.stream()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˚7 ˚(=2ì
+;java.util.stream.Collectors.joining(java.lang.CharSequence)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˛J ˛(Q2î
+ªorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)!matchedGroupsCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˚) ˚(62á
+/org.jabref.model.groups.AbstractGroup.getName()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˝; ˝(QÏ
+√org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?tooltip@255.20:255.27VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaˇ ˇ("
+typeTooltip"
+isFinalfalse"“
+declarationStringº<mark class="modifier"> </mark>Tooltip <mark class="class-field">tooltip</mark> = new Tooltip(Localization.lang("Entry is contained in the following groups:") + "\n" + matchedGroupsString)*tooltip2t
+javafx.scene.control.TooltipTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaˇ ˇ(2¶
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaˇ7 ˇ(;2©
+œorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?matchedGroupsString@251.19:251.38CALLO
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaˇt ˇ(áá
+≥org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)!entry	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÍ> Í(C"
+typeBibEntryTableViewModel"
+isFinalfalse"1
+declarationStringBibEntryTableViewModel entry*entry2á
+/org.jabref.gui.maintable.BibEntryTableViewModelTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÍ' Í(=Ä
+ªorg.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)!matchedGroups	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÍY Í(f"
+typeList<AbstractGroup>"
+isFinalfalse"6
+declarationString!List<AbstractGroup> matchedGroups*matchedGroups2f
+java.util.ListTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÍE Í(I2Ü
+%org.jabref.model.groups.AbstractGroupTYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÍJ Í(W¸
+…org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?abstractGroup@236.59:236.72VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÏ; Ï(H"
+type"
+isFinalfalse"#
+declarationString abstractGroup*abstractGroup2TYPE‰
+¡org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?group@237.60:237.65VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÌ< Ì(A"
+type"
+isFinalfalse"
+declarationString group*group2TYPE
+≈org.jabref.gui.maintable.MainTableColumnFactory.createGroupIconRegion(org.jabref.gui.maintable.BibEntryTableViewModel, java.util.List<org.jabref.model.groups.AbstractGroup>)?groupIcon@247.51:247.60VARIABLEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java˜3 ˜(<"
+type"
+isFinalfalse"
+declarationString
+ groupIcon*	groupIcon2TYPE‡
+porg.jabref.gui.maintable.MainTableColumnFactory.createFieldColumn(org.jabref.gui.maintable.MainTableColumnModel)METHODN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaâ3 â(D"
+isFinalfalse"Û
+declarationString›<mark class="modifier">private </mark>TableColumn&lt;BibEntryTableViewModel<mark class="modifier"><mark class="modifier">,</mark></mark>?&gt; <mark class="method">createFieldColumn</mark>(MainTableColumnModel columnModel)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse".
+type&TableColumn<BibEntryTableViewModel, ?>*createFieldColumn2ø
+gorg.jabref.gui.maintable.columns.FieldColumn.FieldColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaä ä(2‘
+|org.jabref.gui.maintable.MainTableColumnFactory.createFieldColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModelCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaä ä(*2Ÿ
+|org.jabref.gui.maintable.MainTableColumnFactory.createFieldColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaâZ â(e2
+ javafx.scene.control.TableColumnRETURN_TYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaâ â(2ó
+/org.jabref.gui.maintable.BibEntryTableViewModelRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaâ â(.’
+|org.jabref.gui.maintable.MainTableColumnFactory.createFieldColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaâZ â(e"
+typeMainTableColumnModel"
+isFinalfalse"5
+declarationString MainTableColumnModel columnModel*columnModel2Ö
+-org.jabref.gui.maintable.MainTableColumnModelTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaâE â(Yﬁ
+uorg.jabref.gui.maintable.MainTableColumnFactory.createIdentifierColumn(org.jabref.gui.maintable.MainTableColumnModel)METHODN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaêD ê(Z"
+isFinalfalse" 
+declarationString¥<mark class="modifier">private </mark>TableColumn&lt;BibEntryTableViewModel<mark class="modifier"><mark class="modifier">,</mark></mark>Map&lt;Field<mark class="modifier"><mark class="modifier">,</mark></mark>String&gt;&gt; <mark class="method">createIdentifierColumn</mark>(MainTableColumnModel columnModel)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"?
+type7TableColumn<BibEntryTableViewModel, Map<Field, String>>*createIdentifierColumn2ê
+∑org.jabref.gui.maintable.columns.LinkedIdentifierColumn.LinkedIdentifierColumn(org.jabref.gui.maintable.MainTableColumnModel, org.jabref.gui.maintable.CellFactory, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.StateManager)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaë ë()2⁄
+Åorg.jabref.gui.maintable.MainTableColumnFactory.createIdentifierColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModelCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaë* ë(52ü
+Gorg.jabref.gui.maintable.MainTableColumnFactory?cellFactory@57.30:57.41CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaë7 ë(B2ú
+Dorg.jabref.gui.maintable.MainTableColumnFactory?database@56.37:56.45CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaëD ë(L2°
+Iorg.jabref.gui.maintable.MainTableColumnFactory?dialogService@59.32:59.45CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaëN ë([2¶
+Norg.jabref.gui.maintable.MainTableColumnFactory?preferencesService@54.37:54.55CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaë] ë(o2†
+Horg.jabref.gui.maintable.MainTableColumnFactory?stateManager@61.31:61.43CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaëq ë(}2ﬂ
+Åorg.jabref.gui.maintable.MainTableColumnFactory.createIdentifierColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaêp ê({2
+ javafx.scene.control.TableColumnRETURN_TYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaê ê(2ó
+/org.jabref.gui.maintable.BibEntryTableViewModelRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaê ê(.2u
+java.util.MapRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaê0 ê(32ä
+"org.jabref.model.entry.field.FieldRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaê4 ê(92x
+java.lang.StringRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaê; ê(A€
+Åorg.jabref.gui.maintable.MainTableColumnFactory.createIdentifierColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaêp ê({"
+typeMainTableColumnModel"
+isFinalfalse"5
+declarationString MainTableColumnModel columnModel*columnModel2Ö
+-org.jabref.gui.maintable.MainTableColumnModelTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaê[ ê(oî
+worg.jabref.gui.maintable.MainTableColumnFactory.createSpecialFieldColumn(org.jabref.gui.maintable.MainTableColumnModel)METHODN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaóV ó(n"
+isFinalfalse"£
+declarationStringç<mark class="modifier">private </mark>TableColumn&lt;BibEntryTableViewModel<mark class="modifier"><mark class="modifier">,</mark></mark>Optional&lt;SpecialFieldValueViewModel&gt;&gt; <mark class="method">createSpecialFieldColumn</mark>(MainTableColumnModel columnModel)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"Q
+typeITableColumn<BibEntryTableViewModel, Optional<SpecialFieldValueViewModel>>*createSpecialFieldColumn2ó
+æorg.jabref.gui.maintable.columns.SpecialFieldColumn.SpecialFieldColumn(org.jabref.gui.maintable.MainTableColumnModel, org.jabref.preferences.PreferencesService, javax.swing.undo.UndoManager)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaò ò(%2‹
+Éorg.jabref.gui.maintable.MainTableColumnFactory.createSpecialFieldColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModelCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaò& ò(12¶
+Norg.jabref.gui.maintable.MainTableColumnFactory?preferencesService@54.37:54.55CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaò3 ò(E2ü
+Gorg.jabref.gui.maintable.MainTableColumnFactory?undoManager@58.30:58.41CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaòG ò(R2„
+Éorg.jabref.gui.maintable.MainTableColumnFactory.createSpecialFieldColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERP
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaóÑ ó(è2
+ javafx.scene.control.TableColumnRETURN_TYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaó ó(2ó
+/org.jabref.gui.maintable.BibEntryTableViewModelRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaó ó(.2z
+java.util.OptionalRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaó0 ó(82ü
+7org.jabref.gui.specialfields.SpecialFieldValueViewModelRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaó9 ó(S‡
+Éorg.jabref.gui.maintable.MainTableColumnFactory.createSpecialFieldColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERP
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaóÑ ó(è"
+typeMainTableColumnModel"
+isFinalfalse"5
+declarationString MainTableColumnModel columnModel*columnModel2Ü
+-org.jabref.gui.maintable.MainTableColumnModelTYPEO
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaóo ó(ÉØ
+porg.jabref.gui.maintable.MainTableColumnFactory.createFilesColumn(org.jabref.gui.maintable.MainTableColumnModel)METHODN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaüB ü(S"
+isFinalfalse"à
+declarationStringÚ<mark class="modifier">private </mark>TableColumn&lt;BibEntryTableViewModel<mark class="modifier"><mark class="modifier">,</mark></mark>List&lt;LinkedFile&gt;&gt; <mark class="method">createFilesColumn</mark>(MainTableColumnModel columnModel)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"=
+type5TableColumn<BibEntryTableViewModel, List<LinkedFile>>*createFilesColumn2◊
+˛org.jabref.gui.maintable.columns.FileColumn.FileColumn(org.jabref.gui.maintable.MainTableColumnModel, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, org.jabref.gui.util.TaskExecutor)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java† †(2‘
+|org.jabref.gui.maintable.MainTableColumnFactory.createFilesColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModelCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java† †()2ú
+Dorg.jabref.gui.maintable.MainTableColumnFactory?database@56.37:56.45CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java° °(2°
+Iorg.jabref.gui.maintable.MainTableColumnFactory?dialogService@59.32:59.45CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¢ ¢(2¶
+Norg.jabref.gui.maintable.MainTableColumnFactory?preferencesService@54.37:54.55CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java£ £("2†
+Horg.jabref.gui.maintable.MainTableColumnFactory?taskExecutor@60.31:60.43CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java§ §(2Ÿ
+|org.jabref.gui.maintable.MainTableColumnFactory.createFilesColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaüi ü(t2
+ javafx.scene.control.TableColumnRETURN_TYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaü ü(2ó
+/org.jabref.gui.maintable.BibEntryTableViewModelRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaü ü(.2v
+java.util.ListRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaü0 ü(42â
+!org.jabref.model.entry.LinkedFileRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaü5 ü(?’
+|org.jabref.gui.maintable.MainTableColumnFactory.createFilesColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaüi ü(t"
+typeMainTableColumnModel"
+isFinalfalse"5
+declarationString MainTableColumnModel columnModel*columnModel2Ö
+-org.jabref.gui.maintable.MainTableColumnModelTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaüT ü(h 
+torg.jabref.gui.maintable.MainTableColumnFactory.createExtraFileColumn(org.jabref.gui.maintable.MainTableColumnModel)METHODN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java™B ™(W"
+isFinalfalse"å
+declarationStringˆ<mark class="modifier">private </mark>TableColumn&lt;BibEntryTableViewModel<mark class="modifier"><mark class="modifier">,</mark></mark>List&lt;LinkedFile&gt;&gt; <mark class="method">createExtraFileColumn</mark>(MainTableColumnModel columnModel)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"=
+type5TableColumn<BibEntryTableViewModel, List<LinkedFile>>*createExtraFileColumn2î
+<org.jabref.gui.maintable.MainTableColumnModel.getQualifier()CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaØ Ø((2È
+êorg.jabref.gui.maintable.columns.FileColumn.FileColumn(org.jabref.gui.maintable.MainTableColumnModel, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService, java.lang.String, org.jabref.gui.util.TaskExecutor)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java´ ´(2Ÿ
+Äorg.jabref.gui.maintable.MainTableColumnFactory.createExtraFileColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModelCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java´ ´()2ú
+Dorg.jabref.gui.maintable.MainTableColumnFactory?database@56.37:56.45CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java¨ ¨(2°
+Iorg.jabref.gui.maintable.MainTableColumnFactory?dialogService@59.32:59.45CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java≠ ≠(2¶
+Norg.jabref.gui.maintable.MainTableColumnFactory?preferencesService@54.37:54.55CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaÆ Æ("2Ÿ
+Äorg.jabref.gui.maintable.MainTableColumnFactory.createExtraFileColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModelCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.javaØ Ø(2†
+Horg.jabref.gui.maintable.MainTableColumnFactory?taskExecutor@60.31:60.43CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∞ ∞(2ﬁ
+Äorg.jabref.gui.maintable.MainTableColumnFactory.createExtraFileColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java™m ™(x2
+ javafx.scene.control.TableColumnRETURN_TYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java™ ™(2ó
+/org.jabref.gui.maintable.BibEntryTableViewModelRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java™ ™(.2v
+java.util.ListRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java™0 ™(42â
+!org.jabref.model.entry.LinkedFileRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java™5 ™(?⁄
+Äorg.jabref.gui.maintable.MainTableColumnFactory.createExtraFileColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java™m ™(x"
+typeMainTableColumnModel"
+isFinalfalse"5
+declarationString MainTableColumnModel columnModel*columnModel2Ö
+-org.jabref.gui.maintable.MainTableColumnModelTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java™X ™(lÚ
+rorg.jabref.gui.maintable.MainTableColumnFactory.createLibraryColumn(org.jabref.gui.maintable.MainTableColumnModel)METHODN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∂8 ∂(K"
+isFinalfalse"˙
+declarationString‰<mark class="modifier">private </mark>TableColumn&lt;BibEntryTableViewModel<mark class="modifier"><mark class="modifier">,</mark></mark>String&gt; <mark class="method">createLibraryColumn</mark>(MainTableColumnModel columnModel)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"3
+type+TableColumn<BibEntryTableViewModel, String>*createLibraryColumn2√
+korg.jabref.gui.maintable.columns.LibraryColumn.LibraryColumn(org.jabref.gui.maintable.MainTableColumnModel)CALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∑ ∑( 2÷
+~org.jabref.gui.maintable.MainTableColumnFactory.createLibraryColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModelCALLN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∑! ∑(,2€
+~org.jabref.gui.maintable.MainTableColumnFactory.createLibraryColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∂a ∂(l2
+ javafx.scene.control.TableColumnRETURN_TYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∂ ∂(2ó
+/org.jabref.gui.maintable.BibEntryTableViewModelRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∂ ∂(.2x
+java.lang.StringRETURN_TYPE_ARGUMENTN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∂0 ∂(6◊
+~org.jabref.gui.maintable.MainTableColumnFactory.createLibraryColumn(org.jabref.gui.maintable.MainTableColumnModel)!columnModel	PARAMETERN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∂a ∂(l"
+typeMainTableColumnModel"
+isFinalfalse"5
+declarationString MainTableColumnModel columnModel*columnModel2Ö
+-org.jabref.gui.maintable.MainTableColumnModelTYPEN
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java∂L ∂(`µ
+Morg.jabref.gui.maintable.MainTableColumnFactory?STYLE_ICON_COLUMN@50.31:50.48VALUEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java2 2(0"
+isFinaltrue"
+typeString"Œ
+declarationString∏<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">STYLE_ICON_COLUMN</mark> = "column-icon";"
+isStatictrue"
+accesspublic*STYLE_ICON_COLUMN2f
+java.lang.StringTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java2 2(æ
+Borg.jabref.gui.maintable.MainTableColumnFactory?LOGGER@52.32:52.38VALUEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java4  4(&"
+isFinaltrue"
+typeLogger"Ï
+declarationString÷<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(MainTableColumnFactory.class);"
+isStatictrue"
+accessprivate*LOGGER2f
+org.slf4j.LoggerTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java4 4(∂
+Norg.jabref.gui.maintable.MainTableColumnFactory?preferencesService@54.37:54.55VALUEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java6% 6(7"
+isFinaltrue"
+typePreferencesService"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferencesService</mark>"
+isStaticfalse"
+accessprivate*preferencesService2
+)org.jabref.preferences.PreferencesServiceTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java6 6($≥
+Morg.jabref.gui.maintable.MainTableColumnFactory?columnPreferences@55.36:55.53VALUEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java7$ 7(5"
+isFinaltrue"
+typeColumnPreferences"§
+declarationStringé<mark class="modifier">private </mark><mark class="modifier">final </mark>ColumnPreferences <mark class="class-field">columnPreferences</mark>"
+isStaticfalse"
+accessprivate*columnPreferences2Ä
+*org.jabref.gui.maintable.ColumnPreferencesTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java7 7(#ú
+Dorg.jabref.gui.maintable.MainTableColumnFactory?database@56.37:56.45VALUEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java8% 8(-"
+isFinaltrue"
+typeBibDatabaseContext"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">database</mark>"
+isStaticfalse"
+accessprivate*database2Ç
+,org.jabref.model.database.BibDatabaseContextTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java8 8($é
+Gorg.jabref.gui.maintable.MainTableColumnFactory?cellFactory@57.30:57.41VALUEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java9 9()"
+isFinaltrue"
+typeCellFactory"ò
+declarationStringÇ<mark class="modifier">private </mark><mark class="modifier">final </mark>CellFactory <mark class="class-field">cellFactory</mark>"
+isStaticfalse"
+accessprivate*cellFactory2z
+$org.jabref.gui.maintable.CellFactoryTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java9 9(Ü
+Gorg.jabref.gui.maintable.MainTableColumnFactory?undoManager@58.30:58.41VALUEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java: :()"
+isFinaltrue"
+typeUndoManager"ò
+declarationStringÇ<mark class="modifier">private </mark><mark class="modifier">final </mark>UndoManager <mark class="class-field">undoManager</mark>"
+isStaticfalse"
+accessprivate*undoManager2r
+javax.swing.undo.UndoManagerTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java: :(ê
+Iorg.jabref.gui.maintable.MainTableColumnFactory?dialogService@59.32:59.45VALUEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java;  ;(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2r
+org.jabref.gui.DialogServiceTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java; ;(è
+Horg.jabref.gui.maintable.MainTableColumnFactory?taskExecutor@60.31:60.43VALUEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java< <(+"
+isFinaltrue"
+typeTaskExecutor"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2v
+ org.jabref.gui.util.TaskExecutorTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java< <(ä
+Horg.jabref.gui.maintable.MainTableColumnFactory?stateManager@61.31:61.43VALUEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java= =(+"
+isFinaltrue"
+typeStateManager"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>StateManager <mark class="class-field">stateManager</mark>"
+isStaticfalse"
+accessprivate*stateManager2q
+org.jabref.gui.StateManagerTYPEL
+Bsrc\main\java\org\jabref\gui\maintable\MainTableColumnFactory.java= =(

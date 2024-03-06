@@ -1,0 +1,478 @@
+
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java®
+#org.jabref.logic.cleanup.DoiCleanupCLASS@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java ("#
+packageorg.jabref.logic.cleanup"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"†
+declarationStringä<mark class="modifier">public </mark><mark class="modifier">class </mark>DoiCleanup<mark class="modifier"><br>implements </mark>CleanupJob"
+accesspublic*
+DoiCleanup2ù
+Lorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java ($2˘
+ßorg.jabref.logic.cleanup.DoiCleanup.removeFieldValue(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.util.List<org.jabref.model.FieldChange>)DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaU U(!2á
+6org.jabref.logic.cleanup.DoiCleanup?FIELDS@26.37:26.43DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java% (+2o
+#org.jabref.logic.cleanup.CleanupJobEXTEND@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java# (-‰{
+Lorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)METHOD@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java ($"
+isFinalfalse"¥
+declarationStringû<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>List&lt;FieldChange&gt; <mark class="method">cleanup</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<FieldChange>*cleanup2ñ
+Lorg.jabref.model.entry.BibEntry.hasField(org.jabref.model.entry.field.Field)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java" "(2f
+java.util.Optional.orElse(T)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java#E #(K2ñ
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java#) #(12ê
+Fjava.net.URLDecoder.decode(java.lang.String, java.nio.charset.Charset)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java&- &(32á
+=org.jabref.model.entry.identifier.DOI.parse(java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java)$ )()2h
+java.util.Optional.isPresent()CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java+ +(2x
+.org.jabref.model.entry.identifier.DOI.getDOI()CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java,, ,(22b
+java.util.Optional.get()CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java,& ,()2s
+)java.lang.String.equals(java.lang.Object)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java-# -()2®
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java. .("2_
+java.util.List.add(E)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java1 1(2é
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java7 7(#2∑
+mjava.util.Optional.flatMap(java.util.function.Function<? super T, ? extends java.util.Optional<? extends U>>)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java6* 6(12ñ
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java6 6("2Ú
+ßorg.jabref.logic.cleanup.DoiCleanup.removeFieldValue(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.util.List<org.jabref.model.FieldChange>)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java7. 7(>2ñ
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java=9 =(A2∑
+mjava.util.Optional.flatMap(java.util.function.Function<? super T, ? extends java.util.Optional<? extends U>>)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java?4 ?(;2h
+java.util.Optional.isPresent()CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaA A(!2®
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaC9 C(A2x
+.org.jabref.model.entry.identifier.DOI.getDOI()CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaC_ C(e2b
+java.util.Optional.get()CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaCY C(\2é
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaD D($2Ú
+ßorg.jabref.logic.cleanup.DoiCleanup.removeFieldValue(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.util.List<org.jabref.model.FieldChange>)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaE E($2é
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaK$ K(-2∑
+mjava.util.Optional.flatMap(java.util.function.Function<? super T, ? extends java.util.Optional<? extends U>>)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaJ$ J(+2∑
+mjava.util.Optional.flatMap(java.util.function.Function<? super T, ? extends java.util.Optional<? extends U>>)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaI$ I(+2®
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaLL L(T2x
+.org.jabref.model.entry.identifier.DOI.getDOI()CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaLt L(z2é
+Djava.util.Optional.ifPresent(java.util.function.Consumer<? super T>)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaM. M(72i
+java.util.ArrayList.ArrayList()CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java( (32‹
+ëorg.jabref.model.FieldChange.FieldChange(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.lang.String, java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java0- 0(82ú
+Rorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java" "(2ú
+Rorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java## #((2∂
+lorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?decodeDoiFieldValue@37.19:37.38CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java& &(2∞
+forg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doiFieldValue@35.19:35.32CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java&4 &(A2∞
+forg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doiFieldValue@35.19:35.32CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java' '(2∂
+lorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?decodeDoiFieldValue@37.19:37.38CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java' '(/2∞
+forg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doiFieldValue@35.19:35.32CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java)* )(72¶
+\org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doi@41.26:41.29CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java+ +(2¶
+\org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doi@41.26:41.29CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java," ,(%2∞
+forg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doiFieldValue@35.19:35.32CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java- -("2´
+aorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?newValue@44.23:44.31CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java-* -(22ú
+Rorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java. .(2´
+aorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?newValue@44.23:44.31CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java.6 .(>2ú
+Rorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java09 0(>2∞
+forg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doiFieldValue@35.19:35.32CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java0S 0(`2´
+aorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?newValue@44.23:44.31CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java0b 0(j2™
+`org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?changes@31.26:31.33CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java1 1(2©
+_org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?change@48.32:48.38CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java1  1(&2Ä
+6org.jabref.logic.cleanup.DoiCleanup?FIELDS@26.37:26.43CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java5# 5()2ú
+Rorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java6 6(2®
+^org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?field@53.27:53.32CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java6# 6((2ú
+Rorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java7? 7(D2®
+^org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?field@53.27:53.32CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java7F 7(K2™
+`org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?changes@31.26:31.33CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java7M 7(T2Ä
+6org.jabref.logic.cleanup.DoiCleanup?FIELDS@26.37:26.43CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java< <(%2ú
+Rorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java=3 =(82®
+^org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?field@60.23:60.28CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java=B =(G2≤
+horg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?fieldContentOpt@61.33:61.48CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java?$ ?(32¶
+\org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doi@63.30:63.33CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaA A(2ú
+Rorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaC3 C(82¶
+\org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doi@63.30:63.33CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaCU C(X2©
+_org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?change@67.42:67.48CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaD D(2ú
+Rorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaE% E(*2®
+^org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?field@60.23:60.28CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaE, E(12™
+`org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?changes@31.26:31.33CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaE3 E(:2®
+^org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?field@60.23:60.28CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaH, H(12≤
+horg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?fieldContentOpt@61.33:61.48CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaI I(#2ú
+Rorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaLF L(K2Æ
+dorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?inferredDoi@75.46:75.57CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaLh L(s2©
+_org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?change@76.61:76.67CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaM' M(-2™
+`org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?changes@31.26:31.33CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaR R(2á
+=org.jabref.model.entry.identifier.DOI.parse(java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java62 6(<2á
+=org.jabref.model.entry.identifier.DOI.parse(java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java?< ?(F2_
+java.util.List.add(E)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaD% D(12ì
+Iorg.jabref.model.entry.identifier.ArXivIdentifier.parse(java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaI, I(B2Ü
+<org.jabref.model.entry.identifier.ArXivIdentifier.inferDOI()CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaJ, J(E2_
+java.util.List.add(E)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaM8 M(D2ö
+Lorg.jabref.logic.cleanup.CleanupJob.cleanup(org.jabref.model.entry.BibEntry)OVERRIDE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java ($2°
+Rorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)!entry	PARAMETER@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java. (32±
+`org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?changes@31.26:31.33DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java (!2∑
+forg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doiFieldValue@35.19:35.32DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java# #( 2Ω
+lorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?decodeDoiFieldValue@37.19:37.38DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java% %(&2≠
+\org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doi@41.26:41.29DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java) )(2≤
+aorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?newValue@44.23:44.31DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java, ,(2∞
+_org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?change@48.32:48.38DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java0  0(&2Ø
+^org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?field@53.27:53.32DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java5 5( 2Ø
+^org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?field@60.23:60.28DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java< <(2π
+horg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?fieldContentOpt@61.33:61.48DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java=! =(02≠
+\org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doi@63.30:63.33DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java? ?(!2∞
+_org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?change@67.42:67.48DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaC* C(02∞
+_org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?change@76.61:76.67DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaL= L(C2∞
+_org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?unused@55.36:55.42DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java7$ 7(*2µ
+dorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?inferredDoi@75.46:75.57DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaK. K(92_
+java.util.ListRETURN_TYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java (2v
+org.jabref.model.FieldChangeRETURN_TYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java (ü
+`org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?changes@31.26:31.33VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java (!"
+typeList<FieldChange>"
+isFinalfalse"Ç
+declarationStringm<mark class="modifier"> </mark>List<FieldChange> <mark class="class-field">changes</mark> = new ArrayList<>()*changes2X
+java.util.ListTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java (2o
+org.jabref.model.FieldChangeTYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java (2i
+java.util.ArrayList.ArrayList()CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java( (3ù
+forg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doiFieldValue@35.19:35.32VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java# #( "
+typeString"
+isFinalfalse"π
+declarationString£<mark class="modifier"> </mark>String <mark class="class-field">doiFieldValue</mark> = entry.getField(StandardField.DOI).orElse(<mark class="modifier">null</mark>)*doiFieldValue2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java# #(2f
+java.util.Optional.orElse(T)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java#E #(K2ñ
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java#) #(12ú
+Rorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java## #((√
+lorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?decodeDoiFieldValue@37.19:37.38VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java% %(&"
+typeString"
+isFinalfalse"t
+declarationString_<mark class="modifier"> </mark>String <mark class="class-field">decodeDoiFieldValue</mark> = ""*decodeDoiFieldValue2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java% %(Ò
+\org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doi@41.26:41.29VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java) )("
+typeOptional<DOI>"
+isFinalfalse"Å
+declarationStringl<mark class="modifier"> </mark>Optional<DOI> <mark class="class-field">doi</mark> = DOI.parse(doiFieldValue)*doi2\
+java.util.OptionalTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java) )(2x
+%org.jabref.model.entry.identifier.DOITYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java) )(2á
+=org.jabref.model.entry.identifier.DOI.parse(java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java)$ )()2∞
+forg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doiFieldValue@35.19:35.32CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java)* )(7π
+aorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?newValue@44.23:44.31VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java, ,("
+typeString"
+isFinalfalse"y
+declarationStringd<mark class="modifier"> </mark>String <mark class="class-field">newValue</mark> = doi.get().getDOI()*newValue2Z
+java.lang.StringTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java, ,(2x
+.org.jabref.model.entry.identifier.DOI.getDOI()CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java,, ,(22b
+java.util.Optional.get()CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java,& ,()2¶
+\org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doi@41.26:41.29CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java," ,(%”	
+_org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?change@48.32:48.38VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java0  0(&"
+typeFieldChange"
+isFinalfalse"≠
+declarationStringó<mark class="modifier"> </mark>FieldChange <mark class="class-field">change</mark> = new FieldChange(entry, StandardField.DOI, doiFieldValue, newValue)*change2f
+org.jabref.model.FieldChangeTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java0 0(2‹
+ëorg.jabref.model.FieldChange.FieldChange(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.lang.String, java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java0- 0(82ú
+Rorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java09 0(>2∞
+forg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doiFieldValue@35.19:35.32CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java0S 0(`2´
+aorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?newValue@44.23:44.31CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java0b 0(j§
+^org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?field@53.27:53.32VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java5 5( "
+typeField"
+isFinalfalse"`
+declarationStringK<mark class="modifier"> </mark>Field <mark class="class-field">field</mark>*field2l
+"org.jabref.model.entry.field.FieldTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java5 5(§
+^org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?field@60.23:60.28VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java< <("
+typeField"
+isFinalfalse"`
+declarationStringK<mark class="modifier"> </mark>Field <mark class="class-field">field</mark>*field2l
+"org.jabref.model.entry.field.FieldTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java< <(©
+horg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?fieldContentOpt@61.33:61.48VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java=! =(0"
+typeOptional<String>"
+isFinalfalse"ç
+declarationStringx<mark class="modifier"> </mark>Optional<String> <mark class="class-field">fieldContentOpt</mark> = entry.getField(field)*fieldContentOpt2\
+java.util.OptionalTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java= =(2c
+java.lang.StringTYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java= =(2ñ
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java=9 =(A2ú
+Rorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java=3 =(82®
+^org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?field@60.23:60.28CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java=B =(G∏
+\org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doi@63.30:63.33VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java? ?(!"
+typeOptional<DOI>"
+isFinalfalse"å
+declarationStringw<mark class="modifier"> </mark>Optional<DOI> <mark class="class-field">doi</mark> = fieldContentOpt.flatMap(DOI::parse)*doi2\
+java.util.OptionalTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java? ?(2x
+%org.jabref.model.entry.identifier.DOITYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java? ?(2∑
+mjava.util.Optional.flatMap(java.util.function.Function<? super T, ? extends java.util.Optional<? extends U>>)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java?4 ?(;2≤
+horg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?fieldContentOpt@61.33:61.48CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java?$ ?(32á
+=org.jabref.model.entry.identifier.DOI.parse(java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java?< ?(F≥
+
+_org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?change@67.42:67.48VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaC* C(0"
+typeOptional<FieldChange>"
+isFinalfalse"™
+declarationStringî<mark class="modifier"> </mark>Optional<FieldChange> <mark class="class-field">change</mark> = entry.setField(StandardField.DOI, doi.get().getDOI())*change2\
+java.util.OptionalTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaC C(2o
+org.jabref.model.FieldChangeTYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaC C((2®
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaC9 C(A2x
+.org.jabref.model.entry.identifier.DOI.getDOI()CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaC_ C(e2b
+java.util.Optional.get()CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaCY C(\2ú
+Rorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaC3 C(82¶
+\org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?doi@63.30:63.33CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaCU C(XŸ	
+_org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?change@76.61:76.67VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaL= L(C"
+typeOptional<FieldChange>"
+isFinalfalse"¨
+declarationStringñ<mark class="modifier"> </mark>Optional<FieldChange> <mark class="class-field">change</mark> = entry.setField(StandardField.DOI, inferredDoi.getDOI())*change2\
+java.util.OptionalTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaL' L(/2o
+org.jabref.model.FieldChangeTYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaL0 L(;2®
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaLL L(T2x
+.org.jabref.model.entry.identifier.DOI.getDOI()CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaLt L(z2ú
+Rorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaLF L(K2Æ
+dorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?inferredDoi@75.46:75.57CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaLh L(s‹
+Rorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)!entry	PARAMETER@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java. (3"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2i
+org.jabref.model.entry.BibEntryTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java% (-ı
+_org.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?unused@55.36:55.42VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java7$ 7(*"
+type"
+isFinalfalse"
+declarationString unused*unused2TYPEÑ
+dorg.jabref.logic.cleanup.DoiCleanup.cleanup(org.jabref.model.entry.BibEntry)?inferredDoi@75.46:75.57VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaK. K(9"
+type"
+isFinalfalse"!
+declarationString inferredDoi*inferredDoi2TYPEî
+ßorg.jabref.logic.cleanup.DoiCleanup.removeFieldValue(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.util.List<org.jabref.model.FieldChange>)METHOD@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaU U(!"
+isFinalfalse"¡
+declarationString´<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">removeFieldValue</mark>(BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> Field field<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;FieldChange&gt; changes)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*removeFieldValue2Ç
+8java.util.List.addAll(java.util.Collection<? extends E>)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaW W(2ñ
+Lorg.jabref.logic.cleanup.CleanupJob.cleanup(org.jabref.model.entry.BibEntry)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaW W(%2◊
+åorg.jabref.logic.cleanup.FieldFormatterCleanup.FieldFormatterCleanup(org.jabref.model.entry.field.Field, org.jabref.logic.cleanup.Formatter)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaV  V(52ë
+Gorg.jabref.logic.formatter.bibtexfields.ClearFormatter.ClearFormatter()CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaVA V(O2¯
+≠org.jabref.logic.cleanup.DoiCleanup.removeFieldValue(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.util.List<org.jabref.model.FieldChange>)!fieldCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaV6 V(;2˙
+Øorg.jabref.logic.cleanup.DoiCleanup.removeFieldValue(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.util.List<org.jabref.model.FieldChange>)!changesCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaW W(2Ö
+∫org.jabref.logic.cleanup.DoiCleanup.removeFieldValue(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.util.List<org.jabref.model.FieldChange>)?eraser@86.19:86.25CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaW W(2¯
+≠org.jabref.logic.cleanup.DoiCleanup.removeFieldValue(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.util.List<org.jabref.model.FieldChange>)!entryCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaW& W(+2˝
+≠org.jabref.logic.cleanup.DoiCleanup.removeFieldValue(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.util.List<org.jabref.model.FieldChange>)!entry	PARAMETER@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaU+ U(02˝
+≠org.jabref.logic.cleanup.DoiCleanup.removeFieldValue(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.util.List<org.jabref.model.FieldChange>)!field	PARAMETER@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaU8 U(=2ˇ
+Øorg.jabref.logic.cleanup.DoiCleanup.removeFieldValue(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.util.List<org.jabref.model.FieldChange>)!changes	PARAMETER@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaUQ U(X2å
+∫org.jabref.logic.cleanup.DoiCleanup.removeFieldValue(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.util.List<org.jabref.model.FieldChange>)?eraser@86.19:86.25DECLARATION@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaV V(2U
+voidRETURN_TYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaU U(≤	
+∫org.jabref.logic.cleanup.DoiCleanup.removeFieldValue(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.util.List<org.jabref.model.FieldChange>)?eraser@86.19:86.25VARIABLE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaV V("
+type
+CleanupJob"
+isFinalfalse"†
+declarationStringä<mark class="modifier"> </mark>CleanupJob <mark class="class-field">eraser</mark> = new FieldFormatterCleanup(field, new ClearFormatter())*eraser2m
+#org.jabref.logic.cleanup.CleanupJobTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaV V(2◊
+åorg.jabref.logic.cleanup.FieldFormatterCleanup.FieldFormatterCleanup(org.jabref.model.entry.field.Field, org.jabref.logic.cleanup.Formatter)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaV  V(52ë
+Gorg.jabref.logic.formatter.bibtexfields.ClearFormatter.ClearFormatter()CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaVA V(O2¯
+≠org.jabref.logic.cleanup.DoiCleanup.removeFieldValue(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.util.List<org.jabref.model.FieldChange>)!fieldCALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaV6 V(;∏
+≠org.jabref.logic.cleanup.DoiCleanup.removeFieldValue(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.util.List<org.jabref.model.FieldChange>)!entry	PARAMETER@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaU+ U(0"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2i
+org.jabref.model.entry.BibEntryTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaU" U(*µ
+≠org.jabref.logic.cleanup.DoiCleanup.removeFieldValue(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.util.List<org.jabref.model.FieldChange>)!field	PARAMETER@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaU8 U(="
+typeField"
+isFinalfalse" 
+declarationStringField field*field2l
+"org.jabref.model.entry.field.FieldTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaU2 U(7∞
+Øorg.jabref.logic.cleanup.DoiCleanup.removeFieldValue(org.jabref.model.entry.BibEntry, org.jabref.model.entry.field.Field, java.util.List<org.jabref.model.FieldChange>)!changes	PARAMETER@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaUQ U(X"
+typeList<FieldChange>"
+isFinalfalse".
+declarationStringList<FieldChange> changes*changes2X
+java.util.ListTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaU? U(C2o
+org.jabref.model.FieldChangeTYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.javaUD U(Oƒ
+6org.jabref.logic.cleanup.DoiCleanup?FIELDS@26.37:26.43VALUE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java% (+"
+isFinaltrue"
+typeList<Field>"û
+declarationStringà<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>List<Field> <mark class="class-field">FIELDS</mark> = Arrays.asList(StandardField.NOTE, StandardField.URL, StandardField.EPRINT, new UnknownField("ee"));"
+isStatictrue"
+accessprivate*FIELDS2X
+java.util.ListTYPE@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java (2u
+"org.jabref.model.entry.field.FieldTYPE_ARGUMENT@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java (#2g
+java.util.Arrays.asList(T...)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java5 (;2í
+Horg.jabref.model.entry.field.UnknownField.UnknownField(java.lang.String)CALL@
+6src\main\java\org\jabref\logic\cleanup\DoiCleanup.java (

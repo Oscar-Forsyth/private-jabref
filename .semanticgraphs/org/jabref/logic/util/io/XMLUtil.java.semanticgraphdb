@@ -1,0 +1,488 @@
+
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaŸ
+ org.jabref.logic.util.io.XMLUtilCLASS=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java ("#
+packageorg.jabref.logic.util.io"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"¬
+declarationString¨<mark class="annotation">@AllowedToUseStandardStreams("Used for debugging only")</mark> <br><mark class="modifier">public </mark><mark class="modifier">class </mark>XMLUtil"
+accesspublic*XMLUtil2x
+*org.jabref.logic.util.io.XMLUtil.XMLUtil()DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java! !(2í
+Dorg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java' '($2ã
+=org.jabref.logic.util.io.XMLUtil.asList(org.w3c.dom.NodeList)DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java6 6(#2°
+Sorg.jabref.logic.util.io.XMLUtil.getNodeContent(org.w3c.dom.Node, java.lang.String)DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaA# A(12¶
+Xorg.jabref.logic.util.io.XMLUtil.getAttributeContent(org.w3c.dom.Node, java.lang.String)DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaS# S(62°
+Sorg.jabref.logic.util.io.XMLUtil.getNodesByName(org.w3c.dom.Node, java.lang.String)DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java` `(+2ö
+Lorg.jabref.logic.util.io.XMLUtil.getNode(org.w3c.dom.Node, java.lang.String)DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javap! p((2Å
+3org.jabref.logic.util.io.XMLUtil?LOGGER@31.32:31.38DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java  (&”
+*org.jabref.logic.util.io.XMLUtil.XMLUtil()CONSTRUCTOR=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java! !("`
+declarationStringK<mark class="modifier">private </mark><mark class="method">XMLUtil</mark>()*XMLUtil2n
+ org.jabref.logic.util.io.XMLUtilRETURN_TYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java! !(ﬂ 
+Dorg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)METHOD=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java' '($"
+isFinalfalse"∫
+declarationString§<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">printDocument</mark>(Document doc)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typevoid*printDocument2{
+4javax.xml.transform.TransformerFactory.newInstance()CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java,7 ,(B2~
+7javax.xml.transform.TransformerFactory.newTransformer()CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java-) -(72ú
+Ujavax.xml.transform.Transformer.setOutputProperty(java.lang.String, java.lang.String)CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java. .()2®
+ajavax.xml.transform.Transformer.transform(javax.xml.transform.Source, javax.xml.transform.Result)CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java/ /(!2t
+-java.io.PrintStream.println(java.lang.Object)CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java0 0(2j
+#java.io.StringWriter.StringWriter()CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java*& *(22ã
+Djavax.xml.transform.stream.StreamResult.StreamResult(java.io.Writer)CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java+& +(22è
+Horg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)!docCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java)0 )(32û
+Worg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?writer@42.25:42.31CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java+3 +(92ö
+Sorg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?tf@44.31:44.33CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java-& -((2£
+\org.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?transformer@45.24:45.35CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java. .(2£
+\org.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?transformer@45.24:45.35CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java/ /(2°
+Zorg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?domSource@41.22:41.31CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java/" /(+2û
+Worg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?result@43.25:43.31CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java/- /(32û
+Worg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?writer@42.25:42.31CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java0 0(%2z
+3org.jabref.logic.util.io.XMLUtil?LOGGER@31.32:31.38CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java2 2(2ö
+Sorg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?ex@49.38:49.40CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java2 2(2î
+Horg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)!doc	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java'. '(12®
+Zorg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?domSource@41.22:41.31DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java) )(2•
+Worg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?writer@42.25:42.31DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java* *(2•
+Worg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?result@43.25:43.31DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java+ +(2°
+Sorg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?tf@44.31:44.33DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java, ,(!2™
+\org.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?transformer@45.24:45.35DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java- -(#2°
+Sorg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?ex@49.38:49.40DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java1& 1((2R
+voidRETURN_TYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java' '(–
+Zorg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?domSource@41.22:41.31VARIABLE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java) )("
+type	DOMSource"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>DOMSource <mark class="class-field">domSource</mark> = new DOMSource(doc)*	domSource2h
+!javax.xml.transform.dom.DOMSourceTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java) )(2è
+Horg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)!docCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java)0 )(3ö
+Worg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?writer@42.25:42.31VARIABLE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java* *("
+typeStringWriter"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>StringWriter <mark class="class-field">writer</mark> = new StringWriter()*writer2[
+java.io.StringWriterTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java* *(2j
+#java.io.StringWriter.StringWriter()CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java*& *(2˜
+Worg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?result@43.25:43.31VARIABLE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java+ +("
+typeStreamResult"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark>StreamResult <mark class="class-field">result</mark> = new StreamResult(writer)*result2n
+'javax.xml.transform.stream.StreamResultTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java+ +(2ã
+Djavax.xml.transform.stream.StreamResult.StreamResult(java.io.Writer)CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java+& +(22û
+Worg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?writer@42.25:42.31CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java+3 +(9Ã
+Sorg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?tf@44.31:44.33VARIABLE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java, ,(!"
+typeTransformerFactory"
+isFinalfalse"ç
+declarationStringx<mark class="modifier"> </mark>TransformerFactory <mark class="class-field">tf</mark> = TransformerFactory.newInstance()*tf2m
+&javax.xml.transform.TransformerFactoryTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java, ,(2{
+4javax.xml.transform.TransformerFactory.newInstance()CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java,7 ,(BÂ
+\org.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?transformer@45.24:45.35VARIABLE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java- -(#"
+typeTransformer"
+isFinalfalse"Ç
+declarationStringm<mark class="modifier"> </mark>Transformer <mark class="class-field">transformer</mark> = tf.newTransformer()*transformer2f
+javax.xml.transform.TransformerTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java- -(2~
+7javax.xml.transform.TransformerFactory.newTransformer()CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java-) -(72ö
+Sorg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?tf@44.31:44.33CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java-& -((Ω
+Horg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)!doc	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java'. '(1"
+typeDocument"
+isFinalfalse"!
+declarationStringDocument doc*doc2[
+org.w3c.dom.DocumentTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java'% '(-Ò
+Sorg.jabref.logic.util.io.XMLUtil.printDocument(org.w3c.dom.Document)?ex@49.38:49.40VARIABLE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java1& 1(("
+typeTransformerException"
+isFinalfalse",
+declarationStringTransformerException ex*ex2o
+(javax.xml.transform.TransformerExceptionTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java1 1(%Ä
+
+=org.jabref.logic.util.io.XMLUtil.asList(org.w3c.dom.NodeList)METHOD=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java6 6(#"
+isFinalfalse"ü
+declarationStringâ<mark class="modifier">public </mark><mark class="modifier">static </mark>List&lt;Node&gt; <mark class="method">asList</mark>(NodeList n)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+type
+List<Node>*asList2h
+!java.util.Collections.emptyList()CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java70 7(92ù
+Vorg.jabref.logic.util.io.XMLUtil.NodeListWrapper.NodeListWrapper(org.w3c.dom.NodeList)CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java7B 7(Q2Ü
+?org.jabref.logic.util.io.XMLUtil.asList(org.w3c.dom.NodeList)!nCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java7 7(2Ü
+?org.jabref.logic.util.io.XMLUtil.asList(org.w3c.dom.NodeList)!nCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java7R 7(S2ã
+?org.jabref.logic.util.io.XMLUtil.asList(org.w3c.dom.NodeList)!n	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java6- 6(.2\
+java.util.ListRETURN_TYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java6 6(2g
+org.w3c.dom.NodeRETURN_TYPE_ARGUMENT=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java6 6(∞
+?org.jabref.logic.util.io.XMLUtil.asList(org.w3c.dom.NodeList)!n	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java6- 6(."
+typeNodeList"
+isFinalfalse"
+declarationString
+NodeList n*n2[
+org.w3c.dom.NodeListTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java6$ 6(,˜
+Sorg.jabref.logic.util.io.XMLUtil.getNodeContent(org.w3c.dom.Node, java.lang.String)METHOD=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaA# A(1"
+isFinalfalse"˘
+declarationString„<mark class="modifier">public </mark><mark class="modifier">static </mark>Optional&lt;String&gt; <mark class="method">getNodeContent</mark>(Node item<mark class="modifier"><mark class="modifier">,</mark></mark> String nodeName)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<String>*getNodeContent2a
+java.util.Optional.empty()CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaC C(!2a
+java.util.Optional.empty()CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaJ J(!2ü
+Xorg.jabref.logic.util.io.XMLUtil.getNodeContent(org.w3c.dom.Node, java.lang.String)!itemCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaB B(2ü
+Xorg.jabref.logic.util.io.XMLUtil.getNodeContent(org.w3c.dom.Node, java.lang.String)!itemCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaF' F(+2£
+\org.jabref.logic.util.io.XMLUtil.getNodeContent(org.w3c.dom.Node, java.lang.String)!nodeNameCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaFB F(J2Ø
+horg.jabref.logic.util.io.XMLUtil.getNodeContent(org.w3c.dom.Node, java.lang.String)?metadata@70.17:70.25CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaG G(2Ø
+horg.jabref.logic.util.io.XMLUtil.getNodeContent(org.w3c.dom.Node, java.lang.String)?metadata@70.17:70.25CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaH' H(/2§
+Xorg.jabref.logic.util.io.XMLUtil.getNodeContent(org.w3c.dom.Node, java.lang.String)!item	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaA7 A(;2®
+\org.jabref.logic.util.io.XMLUtil.getNodeContent(org.w3c.dom.Node, java.lang.String)!nodeName	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaAD A(L2∂
+horg.jabref.logic.util.io.XMLUtil.getNodeContent(org.w3c.dom.Node, java.lang.String)?metadata@70.17:70.25DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaF F(2`
+java.util.OptionalRETURN_TYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaA A(2g
+java.lang.StringRETURN_TYPE_ARGUMENT=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaA A(!¢
+horg.jabref.logic.util.io.XMLUtil.getNodeContent(org.w3c.dom.Node, java.lang.String)?metadata@70.17:70.25VARIABLE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaF F("
+typeNodeList"
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier"> </mark>NodeList <mark class="class-field">metadata</mark> = ((Element) item).getElementsByTagName(nodeName)*metadata2[
+org.w3c.dom.NodeListTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaF F(2ü
+Xorg.jabref.logic.util.io.XMLUtil.getNodeContent(org.w3c.dom.Node, java.lang.String)!itemCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaF' F(+2£
+\org.jabref.logic.util.io.XMLUtil.getNodeContent(org.w3c.dom.Node, java.lang.String)!nodeNameCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaFB F(J√
+Xorg.jabref.logic.util.io.XMLUtil.getNodeContent(org.w3c.dom.Node, java.lang.String)!item	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaA7 A(;"
+typeNode"
+isFinalfalse"
+declarationString	Node item*item2W
+org.w3c.dom.NodeTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaA2 A(6”
+\org.jabref.logic.util.io.XMLUtil.getNodeContent(org.w3c.dom.Node, java.lang.String)!nodeName	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaAD A(L"
+typeString"
+isFinalfalse"$
+declarationStringString nodeName*nodeName2W
+java.lang.StringTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaA= A(Cù
+Xorg.jabref.logic.util.io.XMLUtil.getAttributeContent(org.w3c.dom.Node, java.lang.String)METHOD=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaS# S(6"
+isFinalfalse"É
+declarationStringÌ<mark class="modifier">public </mark><mark class="modifier">static </mark>Optional&lt;String&gt; <mark class="method">getAttributeContent</mark>(Node item<mark class="modifier"><mark class="modifier">,</mark></mark> String attributeName)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<String>*getAttributeContent2§
+]org.jabref.logic.util.io.XMLUtil.getAttributeContent(org.w3c.dom.Node, java.lang.String)!itemCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaT" T(&2∂
+oorg.jabref.logic.util.io.XMLUtil.getAttributeContent(org.w3c.dom.Node, java.lang.String)?attributes@84.21:84.31CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaU# U(-2≠
+forg.jabref.logic.util.io.XMLUtil.getAttributeContent(org.w3c.dom.Node, java.lang.String)!attributeNameCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaU; U(H2©
+]org.jabref.logic.util.io.XMLUtil.getAttributeContent(org.w3c.dom.Node, java.lang.String)!item	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaS< S(@2≤
+forg.jabref.logic.util.io.XMLUtil.getAttributeContent(org.w3c.dom.Node, java.lang.String)!attributeName	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaSI S(V2Ω
+oorg.jabref.logic.util.io.XMLUtil.getAttributeContent(org.w3c.dom.Node, java.lang.String)?attributes@84.21:84.31DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaT T(2`
+java.util.OptionalRETURN_TYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaS S(2g
+java.lang.StringRETURN_TYPE_ARGUMENT=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaS S(!¸
+oorg.jabref.logic.util.io.XMLUtil.getAttributeContent(org.w3c.dom.Node, java.lang.String)?attributes@84.21:84.31VARIABLE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaT T("
+typeNamedNodeMap"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark>NamedNodeMap <mark class="class-field">attributes</mark> = item.getAttributes()*
+attributes2_
+org.w3c.dom.NamedNodeMapTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaT T(2§
+]org.jabref.logic.util.io.XMLUtil.getAttributeContent(org.w3c.dom.Node, java.lang.String)!itemCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaT" T(&»
+]org.jabref.logic.util.io.XMLUtil.getAttributeContent(org.w3c.dom.Node, java.lang.String)!item	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaS< S(@"
+typeNode"
+isFinalfalse"
+declarationString	Node item*item2W
+org.w3c.dom.NodeTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaS7 S(;Á
+forg.jabref.logic.util.io.XMLUtil.getAttributeContent(org.w3c.dom.Node, java.lang.String)!attributeName	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaSI S(V"
+typeString"
+isFinalfalse")
+declarationStringString attributeName*attributeName2W
+java.lang.StringTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaSB S(Hﬁ
+Sorg.jabref.logic.util.io.XMLUtil.getNodesByName(org.w3c.dom.Node, java.lang.String)METHOD=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java` `(+"
+isFinalfalse"Û
+declarationString›<mark class="modifier">public </mark><mark class="modifier">static </mark>List&lt;Node&gt; <mark class="method">getNodesByName</mark>(Node item<mark class="modifier"><mark class="modifier">,</mark></mark> String nodeName)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+type
+List<Node>*getNodesByName2h
+!java.util.Collections.emptyList()CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javab b((2Ñ
+=org.jabref.logic.util.io.XMLUtil.asList(org.w3c.dom.NodeList)CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javae e(2ü
+Xorg.jabref.logic.util.io.XMLUtil.getNodesByName(org.w3c.dom.Node, java.lang.String)!itemCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaa a(2ü
+Xorg.jabref.logic.util.io.XMLUtil.getNodesByName(org.w3c.dom.Node, java.lang.String)!itemCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javad$ d((2£
+\org.jabref.logic.util.io.XMLUtil.getNodesByName(org.w3c.dom.Node, java.lang.String)!nodeNameCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javad? d(G2Æ
+gorg.jabref.logic.util.io.XMLUtil.getNodesByName(org.w3c.dom.Node, java.lang.String)?nodes@100.17:100.22CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javae e(2§
+Xorg.jabref.logic.util.io.XMLUtil.getNodesByName(org.w3c.dom.Node, java.lang.String)!item	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java`1 `(52®
+\org.jabref.logic.util.io.XMLUtil.getNodesByName(org.w3c.dom.Node, java.lang.String)!nodeName	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java`> `(F2µ
+gorg.jabref.logic.util.io.XMLUtil.getNodesByName(org.w3c.dom.Node, java.lang.String)?nodes@100.17:100.22DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javad d(2\
+java.util.ListRETURN_TYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java` `(2g
+org.w3c.dom.NodeRETURN_TYPE_ARGUMENT=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java` `(õ
+gorg.jabref.logic.util.io.XMLUtil.getNodesByName(org.w3c.dom.Node, java.lang.String)?nodes@100.17:100.22VARIABLE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javad d("
+typeNodeList"
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier"> </mark>NodeList <mark class="class-field">nodes</mark> = ((Element) item).getElementsByTagName(nodeName)*nodes2[
+org.w3c.dom.NodeListTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javad d(2ü
+Xorg.jabref.logic.util.io.XMLUtil.getNodesByName(org.w3c.dom.Node, java.lang.String)!itemCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javad$ d((2£
+\org.jabref.logic.util.io.XMLUtil.getNodesByName(org.w3c.dom.Node, java.lang.String)!nodeNameCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javad? d(G√
+Xorg.jabref.logic.util.io.XMLUtil.getNodesByName(org.w3c.dom.Node, java.lang.String)!item	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java`1 `(5"
+typeNode"
+isFinalfalse"
+declarationString	Node item*item2W
+org.w3c.dom.NodeTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java`, `(0”
+\org.jabref.logic.util.io.XMLUtil.getNodesByName(org.w3c.dom.Node, java.lang.String)!nodeName	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java`> `(F"
+typeString"
+isFinalfalse"$
+declarationStringString nodeName*nodeName2W
+java.lang.StringTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java`7 `(=¨
+Lorg.jabref.logic.util.io.XMLUtil.getNode(org.w3c.dom.Node, java.lang.String)METHOD=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javap! p(("
+isFinalfalse"
+declarationString⁄<mark class="modifier">public </mark><mark class="modifier">static </mark>Optional&lt;Node&gt; <mark class="method">getNode</mark>(Node item<mark class="modifier"><mark class="modifier">,</mark></mark> String nodeName)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeOptional<Node>*getNode2j
+#java.util.stream.Stream.findFirst()CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaq7 q(@2d
+java.util.Collection.stream()CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaq. q(42ö
+Sorg.jabref.logic.util.io.XMLUtil.getNodesByName(org.w3c.dom.Node, java.lang.String)CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaq q(2ò
+Qorg.jabref.logic.util.io.XMLUtil.getNode(org.w3c.dom.Node, java.lang.String)!itemCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaq q("2ú
+Uorg.jabref.logic.util.io.XMLUtil.getNode(org.w3c.dom.Node, java.lang.String)!nodeNameCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaq$ q(,2ù
+Qorg.jabref.logic.util.io.XMLUtil.getNode(org.w3c.dom.Node, java.lang.String)!item	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javap. p(22°
+Uorg.jabref.logic.util.io.XMLUtil.getNode(org.w3c.dom.Node, java.lang.String)!nodeName	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javap; p(C2`
+java.util.OptionalRETURN_TYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javap p(2g
+org.w3c.dom.NodeRETURN_TYPE_ARGUMENT=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javap p(º
+Qorg.jabref.logic.util.io.XMLUtil.getNode(org.w3c.dom.Node, java.lang.String)!item	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javap. p(2"
+typeNode"
+isFinalfalse"
+declarationString	Node item*item2W
+org.w3c.dom.NodeTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javap) p(-Ã
+Uorg.jabref.logic.util.io.XMLUtil.getNode(org.w3c.dom.Node, java.lang.String)!nodeName	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javap; p(C"
+typeString"
+isFinalfalse"$
+declarationStringString nodeName*nodeName2W
+java.lang.StringTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javap4 p(:Ç
+3org.jabref.logic.util.io.XMLUtil?LOGGER@31.32:31.38VALUE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java  (&"
+isFinaltrue"
+typeLogger"›
+declarationString«<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(XMLUtil.class);"
+isStatictrue"
+accessprivate*LOGGER2W
+org.slf4j.LoggerTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java (á
+0org.jabref.logic.util.io.XMLUtil.NodeListWrapperCLASS=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javav v(."+
+package org.jabref.logic.util.io.XMLUtil"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"Ö
+declarationStringÔ<mark class="modifier">private </mark><mark class="modifier">final </mark><mark class="modifier">class </mark>NodeListWrapper<mark class="modifier"> extends </mark>AbstractList<Node><mark class="modifier"><br>implements </mark>RandomAccess"
+accessprivate*NodeListWrapper2§
+Vorg.jabref.logic.util.io.XMLUtil.NodeListWrapper.NodeListWrapper(org.w3c.dom.NodeList)DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaz z(2á
+9org.jabref.logic.util.io.XMLUtil.NodeListWrapper.get(int)DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java (2á
+7org.jabref.logic.util.io.XMLUtil.NodeListWrapper.size()DECLARATION?
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaÑ Ñ(2ë
+Corg.jabref.logic.util.io.XMLUtil.NodeListWrapper?list@120.31:120.35DECLARATION=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javax x(#2_
+java.util.RandomAccessEXTEND=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javavU v(a2_
+java.util.AbstractListEXTEND=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javav7 v(C2g
+org.w3c.dom.NodeEXTEND_TYPE_ARGUMENT=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javavD v(HÅ
+Vorg.jabref.logic.util.io.XMLUtil.NodeListWrapper.NodeListWrapper(org.w3c.dom.NodeList)CONSTRUCTOR=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaz z("n
+declarationStringY<mark class="modifier"> </mark><mark class="method">NodeListWrapper</mark>(NodeList list)*NodeListWrapper2¢
+[org.jabref.logic.util.io.XMLUtil.NodeListWrapper.NodeListWrapper(org.w3c.dom.NodeList)!listCALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java{ {(2ä
+Corg.jabref.logic.util.io.XMLUtil.NodeListWrapper?list@120.31:120.35CALL=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java{ {(2ß
+[org.jabref.logic.util.io.XMLUtil.NodeListWrapper.NodeListWrapper(org.w3c.dom.NodeList)!list	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaz! z(%2~
+0org.jabref.logic.util.io.XMLUtil.NodeListWrapperRETURN_TYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaz z(“
+[org.jabref.logic.util.io.XMLUtil.NodeListWrapper.NodeListWrapper(org.w3c.dom.NodeList)!list	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaz! z(%"
+typeNodeList"
+isFinalfalse""
+declarationStringNodeList list*list2[
+org.w3c.dom.NodeListTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaz z( ¢
+9org.jabref.logic.util.io.XMLUtil.NodeListWrapper.get(int)METHOD=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java ("
+isFinalfalse"∂
+declarationString†<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark>Node <mark class="method">get</mark>(<mark class="modifier">int</mark> index)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeNode*get2å
+Corg.jabref.logic.util.io.XMLUtil.NodeListWrapper?list@120.31:120.35CALL?
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaÄ Ä(2à
+?org.jabref.logic.util.io.XMLUtil.NodeListWrapper.get(int)!indexCALL?
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaÄ Ä("2ã
+?org.jabref.logic.util.io.XMLUtil.NodeListWrapper.get(int)!index	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java (!2^
+org.w3c.dom.NodeRETURN_TYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java (ª
+?org.jabref.logic.util.io.XMLUtil.NodeListWrapper.get(int)!index	PARAMETER=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java (!"
+typeint"
+isFinalfalse"<
+declarationString'<mark class="modifier">int</mark> index*index2J
+intTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.java (ı
+7org.jabref.logic.util.io.XMLUtil.NodeListWrapper.size()METHOD?
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaÑ Ñ("
+isFinalfalse"≠
+declarationStringó<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">int</mark> <mark class="method">size</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeint*size2å
+Corg.jabref.logic.util.io.XMLUtil.NodeListWrapper?list@120.31:120.35CALL?
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaÖ Ö(2S
+intRETURN_TYPE?
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javaÑ Ñ(«
+Corg.jabref.logic.util.io.XMLUtil.NodeListWrapper?list@120.31:120.35VALUE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javax x(#"
+isFinaltrue"
+typeNodeList"ç
+declarationStringx<mark class="modifier">private </mark><mark class="modifier">final </mark>NodeList <mark class="class-field">list</mark>"
+isStaticfalse"
+accessprivate*list2[
+org.w3c.dom.NodeListTYPE=
+3src\main\java\org\jabref\logic\util\io\XMLUtil.javax x(

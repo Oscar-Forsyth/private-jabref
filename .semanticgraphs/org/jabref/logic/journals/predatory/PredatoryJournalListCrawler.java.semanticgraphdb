@@ -1,0 +1,571 @@
+
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaª
+?org.jabref.logic.journals.predatory.PredatoryJournalListCrawlerCLASS\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java ((".
+package#org.jabref.logic.journals.predatory"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"y
+declarationStringd<mark class="modifier">public </mark><mark class="modifier">class </mark>PredatoryJournalListCrawler"
+accesspublic*PredatoryJournalListCrawler2ƒ
+Worg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.loadFromOnlineSources()DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaI0 I(E2r
+crawlDECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaO O(2∆
+Yorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaa a(2‚
+uorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleHTML(java.util.regex.Pattern, java.lang.String)DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javav v(2ƒ
+Worg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java} }(2«
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.decode(java.lang.String)DECLARATION^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaó ó(2ø
+Rorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?LOGGER@48.32:48.38DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java0  0(&2≈
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?PATTERN_NAME@49.33:49.45DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java1! 1(-2ƒ
+Worg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?PATTERN_URL@50.33:50.44DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java2! 2(,2≈
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?PATTERN_ABBR@51.33:51.45DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java3! 3(-2…
+\org.jabref.logic.journals.predatory.PredatoryJournalListCrawler?predatorySources@52.33:52.49DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java4! 4(12≈
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?linkElements@63.31:63.43DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java? ?(+2‘
+gorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?predatoryJournalInformation@65.52:65.79DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaA4 A(O£
+Worg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.loadFromOnlineSources()METHOD\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaI0 I(E"
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier">public </mark>HashSet&lt;PredatoryJournalInformation&gt; <mark class="method">loadFromOnlineSources</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse",
+type$HashSet<PredatoryJournalInformation>*loadFromOnlineSources2®
+Bjava.lang.Iterable.forEach(java.util.function.Consumer<? super T>)CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaK K(2¬
+\org.jabref.logic.journals.predatory.PredatoryJournalListCrawler?predatorySources@52.33:52.49CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaJ J(2æ
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?linkElements@63.31:63.43CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaK K(2Õ
+gorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?predatoryJournalInformation@65.52:65.79CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaL L(82Ω
+Worg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaK K((2t
+HashSetRETURN_TYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaI I(˚
+crawlMETHOD\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaO O("
+isFinalfalse"ê
+declarationString{<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">crawl</mark>(PJSource source)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*crawl2ï
+/org.jabref.logic.net.URLDownload.canBeReached()CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaS S(&2ø
+Yorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaV V(2ñ
+0org.jabref.logic.net.URLDownload.asInputStream()CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaV9 V(F2ë
++org.jabref.logic.net.URLDownload.asString()CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaYE Y(M2¶
+@java.io.InputStreamReader.InputStreamReader(java.io.InputStream)CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaV V(/2∏
+Rorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?LOGGER@48.32:48.38CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaT T(2∏
+Rorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?LOGGER@48.32:48.38CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java] ](2q
+voidRETURN_TYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaO O(≥
+source	PARAMETER\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaO  O(&"
+typePJSource"
+isFinalfalse"$
+declarationStringPJSource source*source2n
+PJSourceTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaO O(∑
+exVARIABLE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java\ \("
+typeIOException"
+isFinalfalse"#
+declarationStringIOException ex*ex2y
+java.io.IOExceptionTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java\ \(”-
+Yorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)METHOD\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaa a("
+isFinalfalse"‚
+declarationStringÃ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">handleCSV</mark>(Reader reader)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*	handleCSV2©
+Corg.jabref.model.strings.StringUtil.isNullOrEmpty(java.lang.String)CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaj j((2Ä
+java.lang.String.isEmpty()CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javak k(!2æ
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.decode(java.lang.String)CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javarL r(R2æ
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.decode(java.lang.String)CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javarZ r(`2∆
+`org.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)!readerCALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javac, c(22“
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?format@98.18:98.24CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javac4 c(:2’
+oorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?csvParser@99.18:99.27CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javae# e(,2◊
+qorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?csvRecord@101.23:101.32CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaf f(#2◊
+qorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?csvRecord@101.23:101.32CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javag g(#2◊
+qorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?csvRecord@101.23:101.32CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javah h("2“
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?name@102.19:102.23CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaj) j(-2“
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?abbr@103.19:103.23CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javak k(2“
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?name@102.19:102.23CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javal l(2“
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?abbr@103.19:103.23CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javal l(2Õ
+gorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?predatoryJournalInformation@65.52:65.79CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javar r('2“
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?name@102.19:102.23CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javarS r(W2“
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?abbr@103.19:103.23CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javara r(e2—
+korg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?url@104.19:104.22CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javarh r(k2À
+`org.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)!reader	PARAMETER\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaa" a((2Ÿ
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?format@98.18:98.24DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javab b(2‹
+oorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?csvParser@99.18:99.27DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javac c(2ﬁ
+qorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?csvRecord@101.23:101.32DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javae e( 2Ÿ
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?name@102.19:102.23DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaf f(2Ÿ
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?abbr@103.19:103.23DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javag g(2ÿ
+korg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?url@104.19:104.22DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javah h(2q
+voidRETURN_TYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaa a(≥
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?format@98.18:98.24VARIABLE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javab b("
+type	CSVFormat"
+isFinalfalse"§
+declarationStringé<mark class="modifier"> </mark>CSVFormat <mark class="class-field">format</mark> = CSVFormat.EXCEL.builder().setSkipHeaderRecord(true).build()*format2Ü
+ org.apache.commons.csv.CSVFormatTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javab b(ª
+oorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?csvParser@99.18:99.27VARIABLE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javac c("
+type	CSVParser"
+isFinalfalse"à
+declarationStrings<mark class="modifier"> </mark>CSVParser <mark class="class-field">csvParser</mark> = new CSVParser(reader, format)*	csvParser2Ü
+ org.apache.commons.csv.CSVParserTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javac c(2∆
+`org.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)!readerCALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javac, c(22“
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?format@98.18:98.24CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javac4 c(:˛
+qorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?csvRecord@101.23:101.32VARIABLE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javae e( "
+type	CSVRecord"
+isFinalfalse"h
+declarationStringS<mark class="modifier"> </mark>CSVRecord <mark class="class-field">csvRecord</mark>*	csvRecord2Ü
+ org.apache.commons.csv.CSVRecordTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javae e(≈
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?name@102.19:102.23VARIABLE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaf f("
+typeString"
+isFinalfalse"s
+declarationString^<mark class="modifier"> </mark>String <mark class="class-field">name</mark> = csvRecord.get(1)*name2v
+java.lang.StringTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaf f(2◊
+qorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?csvRecord@101.23:101.32CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaf f(#≈
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?abbr@103.19:103.23VARIABLE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javag g("
+typeString"
+isFinalfalse"s
+declarationString^<mark class="modifier"> </mark>String <mark class="class-field">abbr</mark> = csvRecord.get(2)*abbr2v
+java.lang.StringTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javag g(2◊
+qorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?csvRecord@101.23:101.32CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javag g(#¬
+korg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?url@104.19:104.22VARIABLE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javah h("
+typeString"
+isFinalfalse"r
+declarationString]<mark class="modifier"> </mark>String <mark class="class-field">url</mark> = csvRecord.get(0)*url2v
+java.lang.StringTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javah h(2◊
+qorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)?csvRecord@101.23:101.32CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javah h("è
+`org.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleCSV(java.io.Reader)!reader	PARAMETER\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaa" a(("
+typeReader"
+isFinalfalse""
+declarationStringReader reader*reader2t
+java.io.ReaderTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaa a(!à
+uorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleHTML(java.util.regex.Pattern, java.lang.String)METHOD\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javav v("
+isFinalfalse"ﬂ
+declarationString…<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">handleHTML</mark>(Pattern pattern<mark class="modifier"><mark class="modifier">,</mark></mark> String body)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*
+handleHTML2ù
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaw" w()2Ñ
+java.util.regex.Matcher.find()CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javax x(2{
+java.util.List.add(E)CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javay y(2Ö
+java.util.regex.Matcher.group()CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javay% y(*2„
+}org.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleHTML(java.util.regex.Pattern, java.lang.String)!patternCALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaw w(!2‡
+zorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleHTML(java.util.regex.Pattern, java.lang.String)!bodyCALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaw* w(.2Ú
+ãorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleHTML(java.util.regex.Pattern, java.lang.String)?matcher@119.16:119.23CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javax x(2æ
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?linkElements@63.31:63.43CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javay y(2Ú
+ãorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleHTML(java.util.regex.Pattern, java.lang.String)?matcher@119.16:119.23CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javay y($2Ë
+}org.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleHTML(java.util.regex.Pattern, java.lang.String)!pattern	PARAMETER\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javav$ v(+2Â
+zorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleHTML(java.util.regex.Pattern, java.lang.String)!body	PARAMETER\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javav4 v(82˘
+ãorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleHTML(java.util.regex.Pattern, java.lang.String)?matcher@119.16:119.23DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaw w(2q
+voidRETURN_TYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javav v(à	
+ãorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleHTML(java.util.regex.Pattern, java.lang.String)?matcher@119.16:119.23VARIABLE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaw w("
+typeMatcher"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark>Matcher <mark class="class-field">matcher</mark> = pattern.matcher(body)*matcher2}
+java.util.regex.MatcherTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaw w(2ù
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaw" w()2„
+}org.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleHTML(java.util.regex.Pattern, java.lang.String)!patternCALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaw w(!2‡
+zorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleHTML(java.util.regex.Pattern, java.lang.String)!bodyCALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaw* w(.π
+}org.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleHTML(java.util.regex.Pattern, java.lang.String)!pattern	PARAMETER\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javav$ v(+"
+typePattern"
+isFinalfalse"$
+declarationStringPattern pattern*pattern2}
+java.util.regex.PatternTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javav v(#ß
+zorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.handleHTML(java.util.regex.Pattern, java.lang.String)!body	PARAMETER\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javav4 v(8"
+typeString"
+isFinalfalse" 
+declarationStringString body*body2v
+java.lang.StringTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javav- v(3‹F
+Worg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)METHOD\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java} }("
+isFinalfalse"å
+declarationStringw<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">clean</mark>(String item)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*clean2ù
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java~& ~(-2ù
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java$ (+2ü
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÄ& Ä(-2Ü
+java.util.regex.Matcher.find()CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÑ Ñ(2Ü
+java.util.regex.Matcher.find()CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÑ# Ñ('2á
+java.util.regex.Matcher.group()CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÖ! Ö(&2∞
+Hjava.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaá á(#2Ü
+java.util.regex.Matcher.find()CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaâ! â(%2á
+java.util.regex.Matcher.group()CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaâ1 â(62á
+java.util.regex.Matcher.group()CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaä ä($2´
+Corg.jabref.model.strings.StringUtil.isNullOrEmpty(java.lang.String)CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaå å((2Ç
+java.lang.String.isEmpty()CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaç ç(!2¿
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.decode(java.lang.String)CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaìL ì(R2¿
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.decode(java.lang.String)CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaìZ ì(`2æ
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?PATTERN_NAME@49.33:49.45CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java~ ~(%2¬
+\org.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)!itemCALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java~. ~(22Ω
+Worg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?PATTERN_URL@50.33:50.44CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java (#2¬
+\org.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)!itemCALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java, (02¿
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?PATTERN_ABBR@51.33:51.45CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÄ Ä(%2ƒ
+\org.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)!itemCALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÄ. Ä(22‘
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?m_name@126.16:126.22CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÑ Ñ(2”
+korg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?m_url@127.16:127.21CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÑ Ñ("2‘
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?m_name@126.16:126.22CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÖ Ö( 2“
+jorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?name@133.19:133.23CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÜ Ü(2“
+jorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?name@133.19:133.23CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaá á(2“
+jorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?name@133.19:133.23CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaá á(2‘
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?m_abbr@128.16:128.22CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaâ â( 2‘
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?m_abbr@128.16:128.22CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaâ* â(02”
+korg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?m_url@127.16:127.21CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaä ä(2“
+jorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?name@133.19:133.23CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaå) å(-2“
+jorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?abbr@137.19:137.23CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaç ç(2“
+jorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?name@133.19:133.23CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaé é(2“
+jorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?abbr@137.19:137.23CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaé é(2œ
+gorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?predatoryJournalInformation@65.52:65.79CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaì ì('2“
+jorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?name@133.19:133.23CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaìS ì(W2“
+jorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?abbr@137.19:137.23CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaìa ì(e2—
+iorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?url@138.19:138.22CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaìh ì(k2«
+\org.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)!item	PARAMETER\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java} }("2Ÿ
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?m_name@126.16:126.22DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java~ ~(2ÿ
+korg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?m_url@127.16:127.21DECLARATION\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java (2€
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?m_abbr@128.16:128.22DECLARATION^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÄ Ä(2Ÿ
+jorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?name@133.19:133.23DECLARATION^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÖ Ö(2Ÿ
+jorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?abbr@137.19:137.23DECLARATION^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaâ â(2ÿ
+iorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?url@138.19:138.22DECLARATION^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaä ä(2q
+voidRETURN_TYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java} }(©
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?m_name@126.16:126.22VARIABLE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java~ ~("
+typeMatcher"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier"> </mark>Matcher <mark class="class-field">m_name</mark> = PATTERN_NAME.matcher(item)*m_name2}
+java.util.regex.MatcherTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java~ ~(2ù
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java~& ~(-2æ
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?PATTERN_NAME@49.33:49.45CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java~ ~(%2¬
+\org.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)!itemCALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java~. ~(2£
+korg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?m_url@127.16:127.21VARIABLE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java ("
+typeMatcher"
+isFinalfalse"~
+declarationStringi<mark class="modifier"> </mark>Matcher <mark class="class-field">m_url</mark> = PATTERN_URL.matcher(item)*m_url2}
+java.util.regex.MatcherTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java (2ù
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java$ (+2Ω
+Worg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?PATTERN_URL@50.33:50.44CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java (#2¬
+\org.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)!itemCALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java, (0≥
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?m_abbr@128.16:128.22VARIABLE^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÄ Ä("
+typeMatcher"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier"> </mark>Matcher <mark class="class-field">m_abbr</mark> = PATTERN_ABBR.matcher(item)*m_abbr2
+java.util.regex.MatcherTYPE^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÄ Ä(2ü
+7java.util.regex.Pattern.matcher(java.lang.CharSequence)CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÄ& Ä(-2¿
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?PATTERN_ABBR@51.33:51.45CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÄ Ä(%2ƒ
+\org.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)!itemCALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÄ. Ä(2Ã
+jorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?name@133.19:133.23VARIABLE^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÖ Ö("
+typeString"
+isFinalfalse"q
+declarationString\<mark class="modifier"> </mark>String <mark class="class-field">name</mark> = m_name.group()*name2x
+java.lang.StringTYPE^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÖ Ö(2á
+java.util.regex.Matcher.group()CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÖ! Ö(&2‘
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?m_name@126.16:126.22CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaÖ Ö( ¬	
+jorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?abbr@137.19:137.23VARIABLE^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaâ â("
+typeString"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>String <mark class="class-field">abbr</mark> = m_abbr.find() ? m_abbr.group() : ""*abbr2x
+java.lang.StringTYPE^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaâ â(2Ü
+java.util.regex.Matcher.find()CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaâ! â(%2á
+java.util.regex.Matcher.group()CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaâ1 â(62‘
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?m_abbr@128.16:128.22CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaâ â( 2‘
+lorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?m_abbr@128.16:128.22CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaâ* â(0«
+iorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?url@138.19:138.22VARIABLE^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaä ä("
+typeString"
+isFinalfalse"o
+declarationStringZ<mark class="modifier"> </mark>String <mark class="class-field">url</mark> = m_url.group()*url2x
+java.lang.StringTYPE^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaä ä(2á
+java.util.regex.Matcher.group()CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaä ä($2”
+korg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)?m_url@127.16:127.21CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaä ä(â
+\org.jabref.logic.journals.predatory.PredatoryJournalListCrawler.clean(java.lang.String)!item	PARAMETER\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java} }(""
+typeString"
+isFinalfalse" 
+declarationStringString item*item2v
+java.lang.StringTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java} }(Ö
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.decode(java.lang.String)METHOD^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaó ó("
+isFinalfalse"n
+declarationStringY<mark class="modifier">private </mark>String <mark class="method">decode</mark>(String s)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*decode2∞
+Hjava.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaù ù(2∞
+Hjava.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaú ú(2∞
+Hjava.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaõ õ(2∞
+Hjava.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaö ö(2Ñ
+java.util.Optional.orElse(T)CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaô ô(2à
+ java.util.Optional.ofNullable(T)CALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaò ò("2¬
+Zorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.decode(java.lang.String)!sCALL^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaò# ò($2«
+Zorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.decode(java.lang.String)!s	PARAMETER^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaó! ó("2
+java.lang.StringRETURN_TYPE^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaó ó(Ö
+Zorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler.decode(java.lang.String)!s	PARAMETER^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaó! ó(""
+typeString"
+isFinalfalse"
+declarationStringString s*s2x
+java.lang.StringTYPE^
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaó ó( Û
+Rorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?LOGGER@48.32:48.38VALUE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java0  0(&"
+isFinaltrue"
+typeLogger"Ò
+declarationString€<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(PredatoryJournalListCrawler.class);"
+isStatictrue"
+accessprivate*LOGGER2v
+org.slf4j.LoggerTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java0 0(ë
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?PATTERN_NAME@49.33:49.45VALUE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java1! 1(-"
+isFinaltrue"
+typePattern"·
+declarationStringÀ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Pattern <mark class="class-field">PATTERN_NAME</mark> = Pattern.compile("(?<=\">).*?(?=<)");"
+isStatictrue"
+accessprivate*PATTERN_NAME2}
+java.util.regex.PatternTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java1 1( 2ó
+1java.util.regex.Pattern.compile(java.lang.String)CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java18 1(?ã
+Worg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?PATTERN_URL@50.33:50.44VALUE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java2! 2(,"
+isFinaltrue"
+typePattern"›
+declarationString«<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Pattern <mark class="class-field">PATTERN_URL</mark> = Pattern.compile("http.*?(?=\")");"
+isStatictrue"
+accessprivate*PATTERN_URL2}
+java.util.regex.PatternTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java2 2( 2ó
+1java.util.regex.Pattern.compile(java.lang.String)CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java27 2(>ï
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?PATTERN_ABBR@51.33:51.45VALUE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java3! 3(-"
+isFinaltrue"
+typePattern"Â
+declarationStringœ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Pattern <mark class="class-field">PATTERN_ABBR</mark> = Pattern.compile("(?<=\\()[^ ]*(?=\\))");"
+isStatictrue"
+accessprivate*PATTERN_ABBR2}
+java.util.regex.PatternTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java3 3( 2ó
+1java.util.regex.Pattern.compile(java.lang.String)CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java38 3(?Ò	
+\org.jabref.logic.journals.predatory.PredatoryJournalListCrawler?predatorySources@52.33:52.49VALUE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java4! 4(1"
+isFinaltrue"
+typeList<PJSource>"ﬁ
+declarationString»<mark class="modifier">private </mark><mark class="modifier">final </mark>List<PJSource> <mark class="class-field">predatorySources</mark> = List.of(new PJSource("https://raw.githubusercontent.com/stop-predatory-journals/stop-predatory-journals.github.io/master/_data/journals.csv")<mark class="modifier">,</mark> new PJSource("https://raw.githubusercontent.com/stop-predatory-journals/stop-predatory-journals.github.io/master/_data/publishers.csv")<mark class="modifier">,</mark> new PJSource("https://beallslist.net/"<mark class="modifier">,</mark> "<li>.*?</li>")<mark class="modifier">,</mark> new PJSource("https://beallslist.net/standalone-journals/"<mark class="modifier">,</mark> "<li>.*?</li>")<mark class="modifier">,</mark> new PJSource("https://beallslist.net/hijacked-journals/"<mark class="modifier">,</mark> "<tr>.*?</tr>"));"
+isStaticfalse"
+accessprivate*predatorySources2j
+ListTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java4 4(À
+Xorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?linkElements@63.31:63.43VALUE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java? ?(+"
+isFinaltrue"
+typeList<String>"Ø
+declarationStringô<mark class="modifier">private </mark><mark class="modifier">final </mark>List<String> <mark class="class-field">linkElements</mark> = new ArrayList<>();"
+isStaticfalse"
+accessprivate*linkElements2t
+java.util.ListTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java? ?(2
+java.lang.StringTYPE_ARGUMENT\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java? ?(2Ö
+java.util.ArrayList.ArrayList()CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.java?2 ?(=ó
+gorg.jabref.logic.journals.predatory.PredatoryJournalListCrawler?predatoryJournalInformation@65.52:65.79VALUE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaA4 A(O"
+isFinaltrue")
+type!List<PredatoryJournalInformation>"”
+declarationStringΩ<mark class="modifier">private </mark><mark class="modifier">final </mark>List<PredatoryJournalInformation> <mark class="class-field">predatoryJournalInformation</mark> = new ArrayList<>();"
+isStaticfalse"
+accessprivate*predatoryJournalInformation2j
+ListTYPE\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaA A(2Ö
+java.util.ArrayList.ArrayList()CALL\
+Rsrc\main\java\org\jabref\logic\journals\predatory\PredatoryJournalListCrawler.javaAV A(a

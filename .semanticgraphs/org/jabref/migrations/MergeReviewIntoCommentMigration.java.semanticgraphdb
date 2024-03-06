@@ -1,0 +1,469 @@
+
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaÛ
+5org.jabref.migrations.MergeReviewIntoCommentMigrationCLASSR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java (," 
+packageorg.jabref.migrations"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"}
+declarationStringh<mark class="modifier">public </mark><mark class="modifier">class </mark>MergeReviewIntoCommentMigration"
+accesspublic*MergeReviewIntoCommentMigration2œ
+lorg.jabref.migrations.MergeReviewIntoCommentMigration.needsMigration(org.jabref.logic.importer.ParserResult)DECLARATIONR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java ((2—
+norg.jabref.migrations.MergeReviewIntoCommentMigration.performMigration(org.jabref.logic.importer.ParserResult)DECLARATIONR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java ( 2—
+norg.jabref.migrations.MergeReviewIntoCommentMigration.collectConflicts(org.jabref.logic.importer.ParserResult)DECLARATIONR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java"! "(12‹
+yorg.jabref.migrations.MergeReviewIntoCommentMigration.performConflictingMigration(org.jabref.logic.importer.ParserResult)DECLARATIONR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java+ +(+2…
+forg.jabref.migrations.MergeReviewIntoCommentMigration.hasCommentField(org.jabref.model.entry.BibEntry)DECLARATIONR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java/ /(*2»
+eorg.jabref.migrations.MergeReviewIntoCommentMigration.hasReviewField(org.jabref.model.entry.BibEntry)DECLARATIONR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java3 3()2Á
+Éorg.jabref.migrations.MergeReviewIntoCommentMigration.mergeCommentFieldIfPresent(org.jabref.model.entry.BibEntry, java.lang.String)DECLARATIONR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java7 7(-2Í
+Üorg.jabref.migrations.MergeReviewIntoCommentMigration.migrate(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.ParserResult)DECLARATIONR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java? ?(2ÿ
+uorg.jabref.migrations.MergeReviewIntoCommentMigration.updateFields(org.jabref.model.entry.BibEntry, java.lang.String)DECLARATIONR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaF F(2´
+Horg.jabref.migrations.MergeReviewIntoCommentMigration?LOGGER@15.32:15.38DECLARATIONR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java  (&í
+lorg.jabref.migrations.MergeReviewIntoCommentMigration.needsMigration(org.jabref.logic.importer.ParserResult)METHODR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java (("
+isFinalfalse"À
+declarationStringµ<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">boolean</mark> <mark class="method">needsMigration</mark>(ParserResult parserResult)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*needsMigration2é
+2org.jabref.model.database.BibDatabase.getEntries()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java* (42ê
+4org.jabref.logic.importer.ParserResult.getDatabase()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java ('2’
+yorg.jabref.migrations.MergeReviewIntoCommentMigration.needsMigration(org.jabref.logic.importer.ParserResult)!parserResultCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java (2ﬁ
+Åorg.jabref.migrations.MergeReviewIntoCommentMigration.needsMigration(org.jabref.logic.importer.ParserResult)?bibEntry@19.37:19.45CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java1 (92⁄
+yorg.jabref.migrations.MergeReviewIntoCommentMigration.needsMigration(org.jabref.logic.importer.ParserResult)!parserResult	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java6 (B2Â
+Åorg.jabref.migrations.MergeReviewIntoCommentMigration.needsMigration(org.jabref.logic.importer.ParserResult)?bibEntry@19.37:19.45DECLARATIONR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java% (-2j
+booleanRETURN_TYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java (≈
+yorg.jabref.migrations.MergeReviewIntoCommentMigration.needsMigration(org.jabref.logic.importer.ParserResult)!parserResult	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java6 (B"
+typeParserResult"
+isFinalfalse".
+declarationStringParserResult parserResult*parserResult2Ç
+&org.jabref.logic.importer.ParserResultTYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java) (5Æ
+Åorg.jabref.migrations.MergeReviewIntoCommentMigration.needsMigration(org.jabref.logic.importer.ParserResult)?bibEntry@19.37:19.45VARIABLER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java% (-"
+type"
+isFinalfalse"
+declarationString	 bibEntry*bibEntry2TYPE∂!
+norg.jabref.migrations.MergeReviewIntoCommentMigration.performMigration(org.jabref.logic.importer.ParserResult)METHODR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java ( "
+isFinalfalse"•
+declarationStringè<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">performMigration</mark>(ParserResult parserResult)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*performMigration2é
+2org.jabref.model.database.BibDatabase.getEntries()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaT (^2ê
+4org.jabref.logic.importer.ParserResult.getDatabase()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaF (Q2
+#java.util.Objects.requireNonNull(T)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java) (72£
+Gjava.util.stream.Stream.forEach(java.util.function.Consumer<? super T>)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java (2£
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java (2£
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java (2y
+java.util.Collection.stream()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java (2¬
+forg.jabref.migrations.MergeReviewIntoCommentMigration.hasCommentField(org.jabref.model.entry.BibEntry)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaA (P2„
+Üorg.jabref.migrations.MergeReviewIntoCommentMigration.migrate(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.ParserResult)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java! ((2◊
+{org.jabref.migrations.MergeReviewIntoCommentMigration.performMigration(org.jabref.logic.importer.ParserResult)!parserResultCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java8 (D2ﬂ
+Çorg.jabref.migrations.MergeReviewIntoCommentMigration.performMigration(org.jabref.logic.importer.ParserResult)?entries@26.23:26.30CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java (2›
+Äorg.jabref.migrations.MergeReviewIntoCommentMigration.performMigration(org.jabref.logic.importer.ParserResult)?entry@30.23:30.28CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaQ (V2›
+Äorg.jabref.migrations.MergeReviewIntoCommentMigration.performMigration(org.jabref.logic.importer.ParserResult)?entry@31.24:31.29CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java) (.2◊
+{org.jabref.migrations.MergeReviewIntoCommentMigration.performMigration(org.jabref.logic.importer.ParserResult)!parserResultCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java0 (<2¡
+eorg.jabref.migrations.MergeReviewIntoCommentMigration.hasReviewField(org.jabref.model.entry.BibEntry)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java (F2‹
+{org.jabref.migrations.MergeReviewIntoCommentMigration.performMigration(org.jabref.logic.importer.ParserResult)!parserResult	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java. (:2Ê
+Çorg.jabref.migrations.MergeReviewIntoCommentMigration.performMigration(org.jabref.logic.importer.ParserResult)?entries@26.23:26.30DECLARATIONR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java (2‰
+Äorg.jabref.migrations.MergeReviewIntoCommentMigration.performMigration(org.jabref.logic.importer.ParserResult)?entry@30.23:30.28DECLARATIONR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java (2‰
+Äorg.jabref.migrations.MergeReviewIntoCommentMigration.performMigration(org.jabref.logic.importer.ParserResult)?entry@31.24:31.29DECLARATIONR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java (2g
+voidRETURN_TYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java (π
+
+Çorg.jabref.migrations.MergeReviewIntoCommentMigration.performMigration(org.jabref.logic.importer.ParserResult)?entries@26.23:26.30VARIABLER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java ("
+typeList<BibEntry>"
+isFinalfalse"Æ
+declarationStringò<mark class="modifier"> </mark>List<BibEntry> <mark class="class-field">entries</mark> = Objects.requireNonNull(parserResult).getDatabase().getEntries()*entries2j
+java.util.ListTYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java (2Ñ
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java (2é
+2org.jabref.model.database.BibDatabase.getEntries()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaT (^2ê
+4org.jabref.logic.importer.ParserResult.getDatabase()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaF (Q2
+#java.util.Objects.requireNonNull(T)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java) (72◊
+{org.jabref.migrations.MergeReviewIntoCommentMigration.performMigration(org.jabref.logic.importer.ParserResult)!parserResultCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java8 (D«
+{org.jabref.migrations.MergeReviewIntoCommentMigration.performMigration(org.jabref.logic.importer.ParserResult)!parserResult	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java. (:"
+typeParserResult"
+isFinalfalse".
+declarationStringParserResult parserResult*parserResult2Ç
+&org.jabref.logic.importer.ParserResultTYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java! (-ß
+Äorg.jabref.migrations.MergeReviewIntoCommentMigration.performMigration(org.jabref.logic.importer.ParserResult)?entry@30.23:30.28VARIABLER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java ("
+type"
+isFinalfalse"
+declarationString entry*entry2TYPEß
+Äorg.jabref.migrations.MergeReviewIntoCommentMigration.performMigration(org.jabref.logic.importer.ParserResult)?entry@31.24:31.29VARIABLER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java ("
+type"
+isFinalfalse"
+declarationString entry*entry2TYPE®
+norg.jabref.migrations.MergeReviewIntoCommentMigration.collectConflicts(org.jabref.logic.importer.ParserResult)METHODR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java"! "(1"
+isFinalfalse"º
+declarationString¶<mark class="modifier">public </mark><mark class="modifier">static </mark>List&lt;BibEntry&gt; <mark class="method">collectConflicts</mark>(ParserResult parserResult)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeList<BibEntry>*collectConflicts2é
+2org.jabref.model.database.BibDatabase.getEntries()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java#T #(^2ê
+4org.jabref.logic.importer.ParserResult.getDatabase()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java#F #(Q2
+#java.util.Objects.requireNonNull(T)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java#) #(72®
+Ljava.util.stream.Stream.collect(java.util.stream.Collector<? super T, A, R>)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java( ((2£
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java' '(2£
+Gjava.util.stream.Stream.filter(java.util.function.Predicate<? super T>)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java& &(2y
+java.util.Collection.stream()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java% %(2Ä
+$java.util.stream.Collectors.toList()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java(* ((02◊
+{org.jabref.migrations.MergeReviewIntoCommentMigration.collectConflicts(org.jabref.logic.importer.ParserResult)!parserResultCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java#8 #(D2ﬂ
+Çorg.jabref.migrations.MergeReviewIntoCommentMigration.collectConflicts(org.jabref.logic.importer.ParserResult)?entries@35.23:35.30CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java% %(2¡
+eorg.jabref.migrations.MergeReviewIntoCommentMigration.hasReviewField(org.jabref.model.entry.BibEntry)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java& &(M2¬
+forg.jabref.migrations.MergeReviewIntoCommentMigration.hasCommentField(org.jabref.model.entry.BibEntry)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java' '(N2‹
+{org.jabref.migrations.MergeReviewIntoCommentMigration.collectConflicts(org.jabref.logic.importer.ParserResult)!parserResult	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java"? "(K2Ê
+Çorg.jabref.migrations.MergeReviewIntoCommentMigration.collectConflicts(org.jabref.logic.importer.ParserResult)?entries@35.23:35.30DECLARATIONR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java# #(2q
+java.util.ListRETURN_TYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java" "(2ã
+org.jabref.model.entry.BibEntryRETURN_TYPE_ARGUMENTR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java" "(π
+
+Çorg.jabref.migrations.MergeReviewIntoCommentMigration.collectConflicts(org.jabref.logic.importer.ParserResult)?entries@35.23:35.30VARIABLER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java# #("
+typeList<BibEntry>"
+isFinalfalse"Æ
+declarationStringò<mark class="modifier"> </mark>List<BibEntry> <mark class="class-field">entries</mark> = Objects.requireNonNull(parserResult).getDatabase().getEntries()*entries2j
+java.util.ListTYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java# #(2Ñ
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java# #(2é
+2org.jabref.model.database.BibDatabase.getEntries()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java#T #(^2ê
+4org.jabref.logic.importer.ParserResult.getDatabase()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java#F #(Q2
+#java.util.Objects.requireNonNull(T)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java#) #(72◊
+{org.jabref.migrations.MergeReviewIntoCommentMigration.collectConflicts(org.jabref.logic.importer.ParserResult)!parserResultCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java#8 #(D«
+{org.jabref.migrations.MergeReviewIntoCommentMigration.collectConflicts(org.jabref.logic.importer.ParserResult)!parserResult	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java"? "(K"
+typeParserResult"
+isFinalfalse".
+declarationStringParserResult parserResult*parserResult2Ç
+&org.jabref.logic.importer.ParserResultTYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java"2 "(>“
+yorg.jabref.migrations.MergeReviewIntoCommentMigration.performConflictingMigration(org.jabref.logic.importer.ParserResult)METHODR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java+ +(+"
+isFinalfalse"∞
+declarationStringö<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">performConflictingMigration</mark>(ParserResult parserResult)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*performConflictingMigration2û
+Bjava.lang.Iterable.forEach(java.util.function.Consumer<? super T>)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java,' ,(.2 
+norg.jabref.migrations.MergeReviewIntoCommentMigration.collectConflicts(org.jabref.logic.importer.ParserResult)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java, ,(2„
+Üorg.jabref.migrations.MergeReviewIntoCommentMigration.migrate(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.ParserResult)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java,8 ,(?2„
+Üorg.jabref.migrations.MergeReviewIntoCommentMigration.performConflictingMigration(org.jabref.logic.importer.ParserResult)!parserResultCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java, ,(%2Ë
+ãorg.jabref.migrations.MergeReviewIntoCommentMigration.performConflictingMigration(org.jabref.logic.importer.ParserResult)?entry@44.47:44.52CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java,@ ,(E2„
+Üorg.jabref.migrations.MergeReviewIntoCommentMigration.performConflictingMigration(org.jabref.logic.importer.ParserResult)!parserResultCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java,G ,(S2Ë
+Üorg.jabref.migrations.MergeReviewIntoCommentMigration.performConflictingMigration(org.jabref.logic.importer.ParserResult)!parserResult	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java+9 +(E2Ô
+ãorg.jabref.migrations.MergeReviewIntoCommentMigration.performConflictingMigration(org.jabref.logic.importer.ParserResult)?entry@44.47:44.52DECLARATIONR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java,/ ,(42g
+voidRETURN_TYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java+ +(”
+Üorg.jabref.migrations.MergeReviewIntoCommentMigration.performConflictingMigration(org.jabref.logic.importer.ParserResult)!parserResult	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java+9 +(E"
+typeParserResult"
+isFinalfalse".
+declarationStringParserResult parserResult*parserResult2Ç
+&org.jabref.logic.importer.ParserResultTYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java+, +(8≤
+ãorg.jabref.migrations.MergeReviewIntoCommentMigration.performConflictingMigration(org.jabref.logic.importer.ParserResult)?entry@44.47:44.52VARIABLER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java,/ ,(4"
+type"
+isFinalfalse"
+declarationString entry*entry2TYPE•
+
+forg.jabref.migrations.MergeReviewIntoCommentMigration.hasCommentField(org.jabref.model.entry.BibEntry)METHODR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java/ /(*"
+isFinalfalse"¬
+declarationString¨<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">boolean</mark> <mark class="method">hasCommentField</mark>(BibEntry entry)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeboolean*hasCommentField2z
+java.util.Optional.isPresent()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java05 0(>2®
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java0 0(2»
+lorg.jabref.migrations.MergeReviewIntoCommentMigration.hasCommentField(org.jabref.model.entry.BibEntry)!entryCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java0 0(2Õ
+lorg.jabref.migrations.MergeReviewIntoCommentMigration.hasCommentField(org.jabref.model.entry.BibEntry)!entry	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java/4 /(92j
+booleanRETURN_TYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java/ /(ö
+lorg.jabref.migrations.MergeReviewIntoCommentMigration.hasCommentField(org.jabref.model.entry.BibEntry)!entry	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java/4 /(9"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2{
+org.jabref.model.entry.BibEntryTYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java/+ /(3†
+
+eorg.jabref.migrations.MergeReviewIntoCommentMigration.hasReviewField(org.jabref.model.entry.BibEntry)METHODR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java3 3()"
+isFinalfalse"¡
+declarationString´<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">boolean</mark> <mark class="method">hasReviewField</mark>(BibEntry entry)"
+isStatictrue"
+accessprivate"
+
+isAbstractfalse"
+typeboolean*hasReviewField2z
+java.util.Optional.isPresent()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java44 4(=2®
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java4 4(2«
+korg.jabref.migrations.MergeReviewIntoCommentMigration.hasReviewField(org.jabref.model.entry.BibEntry)!entryCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java4 4(2Ã
+korg.jabref.migrations.MergeReviewIntoCommentMigration.hasReviewField(org.jabref.model.entry.BibEntry)!entry	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java33 3(82j
+booleanRETURN_TYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java3 3(ô
+korg.jabref.migrations.MergeReviewIntoCommentMigration.hasReviewField(org.jabref.model.entry.BibEntry)!entry	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java33 3(8"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2{
+org.jabref.model.entry.BibEntryTYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java3* 3(2—
+Éorg.jabref.migrations.MergeReviewIntoCommentMigration.mergeCommentFieldIfPresent(org.jabref.model.entry.BibEntry, java.lang.String)METHODR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java7 7(-"
+isFinalfalse"‘
+declarationStringæ<mark class="modifier">private </mark>String <mark class="method">mergeCommentFieldIfPresent</mark>(BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> String review)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeString*mergeCommentFieldIfPresent2z
+java.util.Optional.isPresent()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java82 8(;2®
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java8 8(2ã
+/java.lang.String.formatted(java.lang.Object...)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java9q 9(z2ï
+7org.jabref.model.entry.BibEntry.getAuthorTitleYear(int)CALLT
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java9Å 9(ì2ã
+/java.lang.String.formatted(java.lang.Object...)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java:! :(*2s
+java.lang.String.trim()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java:W :([2t
+java.util.Optional.get()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java:Q :(T2®
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java:1 :(92™
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java:l :(p2u
+java.lang.String.trim()CALLT
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java:É :(á2Ê
+âorg.jabref.migrations.MergeReviewIntoCommentMigration.mergeCommentFieldIfPresent(org.jabref.model.entry.BibEntry, java.lang.String)!entryCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java8 8(2§
+Horg.jabref.migrations.MergeReviewIntoCommentMigration?LOGGER@15.32:15.38CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java9 9(2Á
+âorg.jabref.migrations.MergeReviewIntoCommentMigration.mergeCommentFieldIfPresent(org.jabref.model.entry.BibEntry, java.lang.String)!entryCALLS
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java9{ 9(Ä2Ê
+âorg.jabref.migrations.MergeReviewIntoCommentMigration.mergeCommentFieldIfPresent(org.jabref.model.entry.BibEntry, java.lang.String)!entryCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java:+ :(02Ë
+äorg.jabref.migrations.MergeReviewIntoCommentMigration.mergeCommentFieldIfPresent(org.jabref.model.entry.BibEntry, java.lang.String)!reviewCALLS
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java:| :(Ç2Á
+äorg.jabref.migrations.MergeReviewIntoCommentMigration.mergeCommentFieldIfPresent(org.jabref.model.entry.BibEntry, java.lang.String)!reviewCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java< <(2Î
+âorg.jabref.migrations.MergeReviewIntoCommentMigration.mergeCommentFieldIfPresent(org.jabref.model.entry.BibEntry, java.lang.String)!entry	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java77 7(<2Ï
+äorg.jabref.migrations.MergeReviewIntoCommentMigration.mergeCommentFieldIfPresent(org.jabref.model.entry.BibEntry, java.lang.String)!review	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java7E 7(K2s
+java.lang.StringRETURN_TYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java7 7(∏
+âorg.jabref.migrations.MergeReviewIntoCommentMigration.mergeCommentFieldIfPresent(org.jabref.model.entry.BibEntry, java.lang.String)!entry	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java77 7(<"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2{
+org.jabref.model.entry.BibEntryTYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java7. 7(6®
+äorg.jabref.migrations.MergeReviewIntoCommentMigration.mergeCommentFieldIfPresent(org.jabref.model.entry.BibEntry, java.lang.String)!review	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java7E 7(K"
+typeString"
+isFinalfalse""
+declarationStringString review*review2l
+java.lang.StringTYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java7> 7(D„
+Üorg.jabref.migrations.MergeReviewIntoCommentMigration.migrate(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.ParserResult)METHODR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java? ?("
+isFinalfalse"È
+declarationString”<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">migrate</mark>(BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> ParserResult parserResult)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*migrate2¡
+eorg.jabref.migrations.MergeReviewIntoCommentMigration.hasReviewField(org.jabref.model.entry.BibEntry)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java@ @(2—
+uorg.jabref.migrations.MergeReviewIntoCommentMigration.updateFields(org.jabref.model.entry.BibEntry, java.lang.String)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaA A(2‡
+Éorg.jabref.migrations.MergeReviewIntoCommentMigration.mergeCommentFieldIfPresent(org.jabref.model.entry.BibEntry, java.lang.String)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaA  A(:2t
+java.util.Optional.get()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaAg A(j2®
+Lorg.jabref.model.entry.BibEntry.getField(org.jabref.model.entry.field.Field)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaAH A(P2ö
+>org.jabref.logic.importer.ParserResult.wasChangedOnMigration()CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaB B(.2È
+åorg.jabref.migrations.MergeReviewIntoCommentMigration.migrate(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.ParserResult)!entryCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java@ @( 2È
+åorg.jabref.migrations.MergeReviewIntoCommentMigration.migrate(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.ParserResult)!entryCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaA A(2È
+åorg.jabref.migrations.MergeReviewIntoCommentMigration.migrate(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.ParserResult)!entryCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaA; A(@2È
+åorg.jabref.migrations.MergeReviewIntoCommentMigration.migrate(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.ParserResult)!entryCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaAB A(G2
+ìorg.jabref.migrations.MergeReviewIntoCommentMigration.migrate(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.ParserResult)!parserResultCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaB B(2Ó
+åorg.jabref.migrations.MergeReviewIntoCommentMigration.migrate(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.ParserResult)!entry	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java?" ?('2ı
+ìorg.jabref.migrations.MergeReviewIntoCommentMigration.migrate(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.ParserResult)!parserResult	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java?6 ?(B2g
+voidRETURN_TYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java? ?(ª
+åorg.jabref.migrations.MergeReviewIntoCommentMigration.migrate(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.ParserResult)!entry	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java?" ?('"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2{
+org.jabref.model.entry.BibEntryTYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java? ?(!‡
+ìorg.jabref.migrations.MergeReviewIntoCommentMigration.migrate(org.jabref.model.entry.BibEntry, org.jabref.logic.importer.ParserResult)!parserResult	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java?6 ?(B"
+typeParserResult"
+isFinalfalse".
+declarationStringParserResult parserResult*parserResult2Ç
+&org.jabref.logic.importer.ParserResultTYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java?) ?(5¬
+uorg.jabref.migrations.MergeReviewIntoCommentMigration.updateFields(org.jabref.model.entry.BibEntry, java.lang.String)METHODR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaF F("
+isFinalfalse"‚
+declarationStringÃ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">updateFields</mark>(BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> String review)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*updateFields2∫
+^org.jabref.model.entry.BibEntry.setField(org.jabref.model.entry.field.Field, java.lang.String)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaG G(2™
+Norg.jabref.model.entry.BibEntry.clearField(org.jabref.model.entry.field.Field)CALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaH H(2◊
+{org.jabref.migrations.MergeReviewIntoCommentMigration.updateFields(org.jabref.model.entry.BibEntry, java.lang.String)!entryCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaG G(2ÿ
+|org.jabref.migrations.MergeReviewIntoCommentMigration.updateFields(org.jabref.model.entry.BibEntry, java.lang.String)!reviewCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaG. G(42◊
+{org.jabref.migrations.MergeReviewIntoCommentMigration.updateFields(org.jabref.model.entry.BibEntry, java.lang.String)!entryCALLR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaH H(2‹
+{org.jabref.migrations.MergeReviewIntoCommentMigration.updateFields(org.jabref.model.entry.BibEntry, java.lang.String)!entry	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaF' F(,2›
+|org.jabref.migrations.MergeReviewIntoCommentMigration.updateFields(org.jabref.model.entry.BibEntry, java.lang.String)!review	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaF5 F(;2g
+voidRETURN_TYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaF F(©
+{org.jabref.migrations.MergeReviewIntoCommentMigration.updateFields(org.jabref.model.entry.BibEntry, java.lang.String)!entry	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaF' F(,"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2{
+org.jabref.model.entry.BibEntryTYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaF F(&ô
+|org.jabref.migrations.MergeReviewIntoCommentMigration.updateFields(org.jabref.model.entry.BibEntry, java.lang.String)!review	PARAMETERR
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaF5 F(;"
+typeString"
+isFinalfalse""
+declarationStringString review*review2l
+java.lang.StringTYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.javaF. F(4Ÿ
+Horg.jabref.migrations.MergeReviewIntoCommentMigration?LOGGER@15.32:15.38VALUER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java  (&"
+isFinaltrue"
+typeLogger"ı
+declarationStringﬂ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(MergeReviewIntoCommentMigration.class);"
+isStatictrue"
+accessprivate*LOGGER2l
+org.slf4j.LoggerTYPER
+Hsrc\main\java\org\jabref\migrations\MergeReviewIntoCommentMigration.java (

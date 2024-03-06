@@ -1,0 +1,1350 @@
+
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaø"
+0org.jabref.gui.duplicationFinder.DuplicateSearchCLASSM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java) )("+
+package org.jabref.gui.duplicationFinder"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"¢
+declarationStringå<mark class="modifier">public </mark><mark class="modifier">class </mark>DuplicateSearch<mark class="modifier"> extends </mark>SimpleCommand"
+accesspublic*DuplicateSearch2å
+≠org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java; ;(2ò
+:org.jabref.gui.duplicationFinder.DuplicateSearch.execute()DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaL L(2Ñ
+•org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javab b()2°
+Corg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javau" u(22˛
+ùorg.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaù ù(#2Í
+âorg.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java∫ ∫(!2¶
+Horg.jabref.gui.duplicationFinder.DuplicateSearch?tabSupplier@43.39:43.50DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java+' +(22•
+Gorg.jabref.gui.duplicationFinder.DuplicateSearch?duplicates@44.48:44.58DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java,0 ,(:2™
+Lorg.jabref.gui.duplicationFinder.DuplicateSearch?libraryAnalyzed@46.32:46.47DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java.  .(/2¥
+Vorg.jabref.gui.duplicationFinder.DuplicateSearch?autoRemoveExactDuplicates@47.32:47.57DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java/  /(92©
+Korg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateCount@48.32:48.46DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java0  0(.2≥
+Uorg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateCountObservable@49.39:49.63DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java1' 1(?2©
+Korg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateTotal@50.39:50.53DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java2' 2(52¨
+Norg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateProgress@51.40:51.57DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java3( 3(92®
+Jorg.jabref.gui.duplicationFinder.DuplicateSearch?dialogService@52.32:52.45DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java4  4(-2ß
+Iorg.jabref.gui.duplicationFinder.DuplicateSearch?stateManager@53.31:53.43DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java5 5(+2†
+Borg.jabref.gui.duplicationFinder.DuplicateSearch?prefs@55.37:55.42DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java7% 7(*2¨
+Norg.jabref.gui.duplicationFinder.DuplicateSearch?entryTypesManager@56.39:56.56DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java8' 8(82ß
+Iorg.jabref.gui.duplicationFinder.DuplicateSearch?taskExecutor@57.31:57.43DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java9 9(+2}
+$org.jabref.gui.actions.SimpleCommandEXTENDM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java)% )(2£;
+≠org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)CONSTRUCTORM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java; ;("œ
+declarationStringπ<mark class="modifier">public </mark><mark class="method">DuplicateSearch</mark>(Supplier&lt;LibraryTab&gt; tabSupplier<mark class="modifier"><mark class="modifier">,</mark></mark> DialogService dialogService<mark class="modifier"><mark class="modifier">,</mark></mark> StateManager stateManager<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService prefs<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntryTypesManager entryTypesManager<mark class="modifier"><mark class="modifier">,</mark></mark> TaskExecutor taskExecutor)*DuplicateSearch2•
+Norg.jabref.gui.actions.ActionHelper.needsDatabase(org.jabref.gui.StateManager)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaH H(*2ë
+πorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!tabSupplierCALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaA A(&2ì
+ªorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!dialogServiceCALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaB B(*2í
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!stateManagerCALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaC C((2ã
+≥org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!prefsCALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaD D(2ó
+øorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!entryTypesManagerCALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaE! E(22í
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!taskExecutorCALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaF F((2í
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!stateManagerCALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaH+ H(72ü
+Horg.jabref.gui.duplicationFinder.DuplicateSearch?tabSupplier@43.39:43.50CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaA A(2°
+Jorg.jabref.gui.duplicationFinder.DuplicateSearch?dialogService@52.32:52.45CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaB B(2†
+Iorg.jabref.gui.duplicationFinder.DuplicateSearch?stateManager@53.31:53.43CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaC C(2ô
+Borg.jabref.gui.duplicationFinder.DuplicateSearch?prefs@55.37:55.42CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaD D(2•
+Norg.jabref.gui.duplicationFinder.DuplicateSearch?entryTypesManager@56.39:56.56CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaE E(2†
+Iorg.jabref.gui.duplicationFinder.DuplicateSearch?taskExecutor@57.31:57.43CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaF F(2ñ
+πorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!tabSupplier	PARAMETERM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java;0 ;(;2ò
+ªorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETERM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java<) <(62ó
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!stateManager	PARAMETERM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java=( =(42ê
+≥org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!prefs	PARAMETERM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java>. >(32ú
+øorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!entryTypesManager	PARAMETERM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java?0 ?(A2ó
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETERM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java@( @(42é
+0org.jabref.gui.duplicationFinder.DuplicateSearchRETURN_TYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java; ;(˘
+πorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!tabSupplier	PARAMETERM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java;0 ;(;"
+typeSupplier<LibraryTab>"
+isFinalfalse"5
+declarationString Supplier<LibraryTab> tabSupplier*tabSupplier2r
+java.util.function.SupplierTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java; ;(#2y
+org.jabref.gui.LibraryTabTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java;$ ;(.˜
+ªorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!dialogService	PARAMETERM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java<) <(6"
+typeDialogService"
+isFinalfalse"0
+declarationStringDialogService dialogService*dialogService2s
+org.jabref.gui.DialogServiceTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java< <((Ò
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!stateManager	PARAMETERM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java=( =(4"
+typeStateManager"
+isFinalfalse".
+declarationStringStateManager stateManager*stateManager2r
+org.jabref.gui.StateManagerTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java= =('˜
+≥org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!prefs	PARAMETERM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java>. >(3"
+typePreferencesService"
+isFinalfalse"-
+declarationStringPreferencesService prefs*prefs2Ä
+)org.jabref.preferences.PreferencesServiceTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java> >(-°
+øorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!entryTypesManager	PARAMETERM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java?0 ?(A"
+typeBibEntryTypesManager"
+isFinalfalse";
+declarationString&BibEntryTypesManager entryTypesManager*entryTypesManager2Ç
++org.jabref.model.entry.BibEntryTypesManagerTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java? ?(/ˆ
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearch(java.util.function.Supplier<org.jabref.gui.LibraryTab>, org.jabref.gui.DialogService, org.jabref.gui.StateManager, org.jabref.preferences.PreferencesService, org.jabref.model.entry.BibEntryTypesManager, org.jabref.gui.util.TaskExecutor)!taskExecutor	PARAMETERM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java@( @(4"
+typeTaskExecutor"
+isFinalfalse".
+declarationStringTaskExecutor taskExecutor*taskExecutor2w
+ org.jabref.gui.util.TaskExecutorTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java@ @('ñ3
+:org.jabref.gui.duplicationFinder.DuplicateSearch.execute()METHODM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaL L("
+isFinalfalse"±
+declarationStringõ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">execute</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*execute2ü
+Hjava.util.Optional.orElseThrow(java.util.function.Supplier<? extends X>)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaMG M(R2Ü
+/org.jabref.gui.StateManager.getActiveDatabase()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaM3 M(D2å
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaN N(2•
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaN* N(.2ê
+9org.jabref.model.database.BibDatabaseContext.getEntries()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaP* P(42s
+java.util.Collection.clear()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaQ Q(2ç
+6java.util.concurrent.atomic.AtomicBoolean.set(boolean)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaR R(2ç
+6java.util.concurrent.atomic.AtomicBoolean.set(boolean)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaS" S(%2â
+2java.util.concurrent.atomic.AtomicInteger.set(int)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaT T(2l
+java.util.List.size()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaV V(2´
+Torg.jabref.gui.util.DefaultTaskExecutor.runAndWaitInJavaFXThread(java.lang.Runnable)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaZ^ Z(v2∫
+corg.jabref.gui.JabRefExecutorService.executeInterruptableTask(java.lang.Runnable, java.lang.String)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java\' \(?2˝
+•org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java\F \(^2ç
+6org.jabref.model.database.BibDatabaseContext.getMode()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java\q \(x2£
+Lorg.jabref.gui.util.BackgroundTask.onSuccess(java.util.function.Consumer<V>)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java^ ^( 2í
+;org.jabref.gui.util.BackgroundTask.wrap(java.lang.Runnable)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java] ](2ú
+Ejava.lang.NullPointerException.NullPointerException(java.lang.String)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaM] M(q2†
+Iorg.jabref.gui.duplicationFinder.DuplicateSearch?stateManager@53.31:53.43CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaM& M(22°
+Jorg.jabref.gui.duplicationFinder.DuplicateSearch?dialogService@52.32:52.45CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaN N(2¶
+Oorg.jabref.gui.duplicationFinder.DuplicateSearch.execute()?database@77.27:77.35CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaP! P()2û
+Gorg.jabref.gui.duplicationFinder.DuplicateSearch?duplicates@44.48:44.58CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaQ Q(2£
+Lorg.jabref.gui.duplicationFinder.DuplicateSearch?libraryAnalyzed@46.32:46.47CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaR R(2≠
+Vorg.jabref.gui.duplicationFinder.DuplicateSearch?autoRemoveExactDuplicates@47.32:47.57CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaS S(!2¢
+Korg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateCount@48.32:48.46CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaT T(2•
+Norg.jabref.gui.duplicationFinder.DuplicateSearch.execute()?entries@80.23:80.30CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaV V(2¨
+Uorg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateCountObservable@49.39:49.63CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaZ Z( 2£
+Korg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateTotal@50.39:50.53CALLN
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaZ} Z(ã2®
+Oorg.jabref.gui.duplicationFinder.DuplicateSearch.execute()?newValue@90.61:90.69CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaZê Z(ò2•
+Norg.jabref.gui.duplicationFinder.DuplicateSearch.execute()?entries@80.23:80.30CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java\_ \(f2¶
+Oorg.jabref.gui.duplicationFinder.DuplicateSearch.execute()?database@77.27:77.35CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java\h \(p2†
+Iorg.jabref.gui.duplicationFinder.DuplicateSearch?taskExecutor@57.31:57.43CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java_# _(/2ö
+Corg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java] ](22≠
+Oorg.jabref.gui.duplicationFinder.DuplicateSearch.execute()?database@77.27:77.35DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaM M(#2¨
+Norg.jabref.gui.duplicationFinder.DuplicateSearch.execute()?entries@80.23:80.30DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaP P(2®
+Jorg.jabref.gui.duplicationFinder.DuplicateSearch.execute()?obj@90.46:90.49DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaZ. Z(12≠
+Oorg.jabref.gui.duplicationFinder.DuplicateSearch.execute()?oldValue@90.51:90.59DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaZ3 Z(;2≠
+Oorg.jabref.gui.duplicationFinder.DuplicateSearch.execute()?newValue@90.61:90.69DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaZ= Z(E2b
+voidRETURN_TYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaL L(«	
+Oorg.jabref.gui.duplicationFinder.DuplicateSearch.execute()?database@77.27:77.35VARIABLEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaM M(#"
+typeBibDatabaseContext"
+isFinalfalse"Ô
+declarationStringŸ<mark class="modifier"> </mark>BibDatabaseContext <mark class="class-field">database</mark> = stateManager.getActiveDatabase().orElseThrow(() -> new NullPointerException("Database <mark class="modifier">null</mark>"))*database2É
+,org.jabref.model.database.BibDatabaseContextTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaM M(2ü
+Hjava.util.Optional.orElseThrow(java.util.function.Supplier<? extends X>)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaMG M(R2Ü
+/org.jabref.gui.StateManager.getActiveDatabase()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaM3 M(D2ú
+Ejava.lang.NullPointerException.NullPointerException(java.lang.String)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaM] M(q2†
+Iorg.jabref.gui.duplicationFinder.DuplicateSearch?stateManager@53.31:53.43CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaM& M(2Ü
+Norg.jabref.gui.duplicationFinder.DuplicateSearch.execute()?entries@80.23:80.30VARIABLEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaP P("
+typeList<BibEntry>"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark>List<BibEntry> <mark class="class-field">entries</mark> = database.getEntries()*entries2e
+java.util.ListTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaP P(2
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaP P(2ê
+9org.jabref.model.database.BibDatabaseContext.getEntries()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaP* P(42¶
+Oorg.jabref.gui.duplicationFinder.DuplicateSearch.execute()?database@77.27:77.35CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaP! P()Á
+Jorg.jabref.gui.duplicationFinder.DuplicateSearch.execute()?obj@90.46:90.49VARIABLEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaZ. Z(1"
+type"
+isFinalfalse"
+declarationString obj*obj2TYPEˆ
+Oorg.jabref.gui.duplicationFinder.DuplicateSearch.execute()?oldValue@90.51:90.59VARIABLEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaZ3 Z(;"
+type"
+isFinalfalse"
+declarationString	 oldValue*oldValue2TYPEˆ
+Oorg.jabref.gui.duplicationFinder.DuplicateSearch.execute()?newValue@90.61:90.69VARIABLEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaZ= Z(E"
+type"
+isFinalfalse"
+declarationString	 newValue*newValue2TYPEìH
+•org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)METHODM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javab b()"
+isFinalfalse"ã
+declarationStringı<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">searchPossibleDuplicates</mark>(List&lt;BibEntry&gt; entries<mark class="modifier"><mark class="modifier">,</mark></mark> BibDatabaseMode databaseMode)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*searchPossibleDuplicates2l
+java.util.List.size()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javac% c()2l
+java.util.List.size()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javad, d(02u
+java.lang.Thread.interrupted()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javae e(&2n
+java.util.List.get(int)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javai) i(,2n
+java.util.List.get(int)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaj* j(-2˘
+°org.jabref.logic.database.DuplicateCheck.isDuplicate(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.model.database.BibDatabaseMode)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javal: l(E2Ä
+)java.util.concurrent.BlockingQueue.add(E)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javam m("2t
+java.util.Arrays.asList(T...)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javam* m(02t
+java.lang.String.valueOf(int)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javan8 n(?2í
+;java.util.concurrent.atomic.AtomicInteger.incrementAndGet()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javanO n(^2ç
+6java.util.concurrent.atomic.AtomicBoolean.set(boolean)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javar r(2ª
+dorg.jabref.logic.database.DuplicateCheck.DuplicateCheck(org.jabref.model.entry.BibEntryTypesManager)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javal l(&2ã
+≥org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?i@99.17:99.18CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javac c(2Ö
+≠org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)!entriesCALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javac c($2ã
+≥org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?i@99.17:99.18CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javac2 c(32ã
+≥org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?i@99.17:99.18CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javad d(2ç
+µorg.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?j@100.21:100.22CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javad  d(!2Ö
+≠org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)!entriesCALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javad$ d(+2ç
+µorg.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?j@100.21:100.22CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javad4 d(52Ö
+≠org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)!entriesCALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javai! i((2ã
+≥org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?i@99.17:99.18CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javai- i(.2Ö
+≠org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)!entriesCALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaj" j()2ç
+µorg.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?j@100.21:100.22CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaj. j(/2•
+Norg.jabref.gui.duplicationFinder.DuplicateSearch?entryTypesManager@56.39:56.56CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javal' l(82ë
+πorg.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?first@105.25:105.30CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javalF l(K2í
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?second@106.25:106.31CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javalM l(S2ä
+≤org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)!databaseModeCALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javalU l(a2û
+Gorg.jabref.gui.duplicationFinder.DuplicateSearch?duplicates@44.48:44.58CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javam m(2ë
+πorg.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?first@105.25:105.30CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javam1 m(62í
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?second@106.25:106.31CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javam8 m(>2¨
+Uorg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateCountObservable@49.39:49.63CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javan n(,2¢
+Korg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateCount@48.32:48.46CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javan@ n(N2£
+Lorg.jabref.gui.duplicationFinder.DuplicateSearch?libraryAnalyzed@46.32:46.47CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javar r(2ä
+≠org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)!entries	PARAMETERM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javab9 b(@2è
+≤org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)!databaseMode	PARAMETERM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javabR b(^2í
+≥org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?i@99.17:99.18DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javac c(2î
+µorg.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?j@100.21:100.22DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javad d(2ò
+πorg.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?first@105.25:105.30DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javai i(2ô
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?second@106.25:106.31DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaj j(2b
+voidRETURN_TYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javab b(ã
+≥org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?i@99.17:99.18VARIABLEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javac c("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 0*i2Z
+intTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javac c(†
+µorg.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?j@100.21:100.22VARIABLEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javad d("
+typeint"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">j</mark> = i + 1*j2Z
+intTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javad d(2ã
+≥org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?i@99.17:99.18CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javad d(¥	
+πorg.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?first@105.25:105.30VARIABLEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javai i("
+typeBibEntry"
+isFinalfalse"t
+declarationString_<mark class="modifier"> </mark>BibEntry <mark class="class-field">first</mark> = entries.get(i)*first2v
+org.jabref.model.entry.BibEntryTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javai i(2n
+java.util.List.get(int)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javai) i(,2Ö
+≠org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)!entriesCALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javai! i((2ã
+≥org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?i@99.17:99.18CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javai- i(.π	
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?second@106.25:106.31VARIABLEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaj j("
+typeBibEntry"
+isFinalfalse"u
+declarationString`<mark class="modifier"> </mark>BibEntry <mark class="class-field">second</mark> = entries.get(j)*second2v
+org.jabref.model.entry.BibEntryTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaj j(2n
+java.util.List.get(int)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaj* j(-2Ö
+≠org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)!entriesCALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaj" j()2ç
+µorg.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)?j@100.21:100.22CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaj. j(/“
+≠org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)!entries	PARAMETERM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javab9 b(@"
+typeList<BibEntry>"
+isFinalfalse"+
+declarationStringList<BibEntry> entries*entries2e
+java.util.ListTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javab* b(.2
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javab/ b(7˛
+≤org.jabref.gui.duplicationFinder.DuplicateSearch.searchPossibleDuplicates(java.util.List<org.jabref.model.entry.BibEntry>, org.jabref.model.database.BibDatabaseMode)!databaseMode	PARAMETERM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javabR b(^"
+typeBibDatabaseMode"
+isFinalfalse"1
+declarationStringBibDatabaseMode databaseMode*databaseMode2Ä
+)org.jabref.model.database.BibDatabaseModeTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javabB b(QÙB
+Corg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()METHODM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javau" u(2"
+isFinalfalse"
+declarationStringj<mark class="modifier">private </mark>DuplicateSearchResult <mark class="method">verifyDuplicates</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeDuplicateSearchResult*verifyDuplicates2Ü
+/java.util.concurrent.atomic.AtomicBoolean.get()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javax  x(#2u
+java.util.Collection.isEmpty()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javax5 x(<2£
+Ljava.util.concurrent.BlockingQueue.poll(long, java.util.concurrent.TimeUnit)CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java~' ~(+2p
+java.util.List.get(int)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaá# á(&2À
+rorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.isToRemove(org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaâ â("2À
+rorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.isToRemove(org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaâ5 â(?2€
+Åorg.jabref.logic.database.DuplicateCheck.compareEntriesStrictly(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaå# å(92à
+/java.util.concurrent.atomic.AtomicBoolean.get()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaç2 ç(52«
+norg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.remove(org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaé é(%2≠
+Torg.jabref.gui.util.DefaultTaskExecutor.runAndWaitInJavaFXThread(java.lang.Runnable)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javañ$ ñ(<2˜
+ùorg.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javañC ñ(U2µ
+^org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.DuplicateSearchResult()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javav+ v(@2£
+Lorg.jabref.gui.duplicationFinder.DuplicateSearch?libraryAnalyzed@46.32:46.47CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javax x(2û
+Gorg.jabref.gui.duplicationFinder.DuplicateSearch?duplicates@44.48:44.58CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javax* x(42•
+Norg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateProgress@51.40:51.57CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javay y(2•
+Norg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateProgress@51.40:51.57CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javay" y(32≠
+Vorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?dups@123.27:123.31CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java~ ~(2≠
+Vorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?dups@123.27:123.31CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java (2Ø
+Vorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?dups@123.27:123.31CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÜ Ü(!2Ø
+Vorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?dups@123.27:123.31CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaá á("2±
+Xorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?result@118.30:118.36CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaâ â(2∞
+Worg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?first@134.21:134.26CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaâ# â((2±
+Xorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?result@118.30:118.36CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaâ. â(42±
+Xorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?second@135.21:135.27CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaâ@ â(F2∞
+Worg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?first@134.21:134.26CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaå: å(?2±
+Xorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?second@135.21:135.27CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaåA å(G2Ø
+Vorg.jabref.gui.duplicationFinder.DuplicateSearch?autoRemoveExactDuplicates@47.32:47.57CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaç ç(12±
+Xorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?result@118.30:118.36CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaé é(2±
+Xorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?second@135.21:135.27CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaé& é(,2∏
+_org.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?askAboutExact@139.24:139.37CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaë ë(!2∏
+_org.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?askAboutExact@139.24:139.37CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaî5 î(B2±
+Xorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?result@118.30:118.36CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javañV ñ(\2∞
+Worg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?first@134.21:134.26CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javañ^ ñ(c2±
+Xorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?second@135.21:135.27CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javañe ñ(k2∑
+^org.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?resolverType@148.38:148.50CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javañm ñ(y2±
+Xorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?result@118.30:118.36CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaö ö(2û
+Gorg.jabref.gui.duplicationFinder.DuplicateSearch?duplicates@44.48:44.58CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java~ ~(&2∂
+Xorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?result@118.30:118.36DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javav v($2¥
+Vorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?dups@123.27:123.31DECLARATIONM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java{ {(2∑
+Worg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?first@134.21:134.26DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÜ Ü(2∏
+Xorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?second@135.21:135.27DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaá á(2ø
+_org.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?askAboutExact@139.24:139.37DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaã ã(%2æ
+^org.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?resolverType@148.38:148.50DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaî& î(22≥
+Sorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?e@130.42:130.43DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÇ* Ç(+2§
+Forg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResultRETURN_TYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javau u(!÷
+Xorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?result@118.30:118.36VARIABLEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javav v($"
+typeDuplicateSearchResult"
+isFinalfalse"è
+declarationStringz<mark class="modifier"> </mark>DuplicateSearchResult <mark class="class-field">result</mark> = new DuplicateSearchResult()*result2ù
+Forg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResultTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javav v(2µ
+^org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.DuplicateSearchResult()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javav+ v(@≥
+Vorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?dups@123.27:123.31VARIABLEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java{ {("
+typeList<BibEntry>"
+isFinalfalse"h
+declarationStringS<mark class="modifier"> </mark>List<BibEntry> <mark class="class-field">dups</mark>*dups2e
+java.util.ListTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java{ {(2
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java{ {(Ç
+Worg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?first@134.21:134.26VARIABLEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÜ Ü("
+typeBibEntry"
+isFinalfalse"u
+declarationString`<mark class="modifier"> </mark>BibEntry <mark class="class-field">first</mark> = dups.getFirst()*first2x
+org.jabref.model.entry.BibEntryTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÜ Ü(2Ø
+Vorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?dups@123.27:123.31CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÜ Ü(!Û
+Xorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?second@135.21:135.27VARIABLEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaá á("
+typeBibEntry"
+isFinalfalse"r
+declarationString]<mark class="modifier"> </mark>BibEntry <mark class="class-field">second</mark> = dups.get(1)*second2x
+org.jabref.model.entry.BibEntryTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaá á(2p
+java.util.List.get(int)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaá# á(&2Ø
+Vorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?dups@123.27:123.31CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaá á("Ç
+_org.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?askAboutExact@139.24:139.37VARIABLEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaã ã(%"
+typeboolean"
+isFinalfalse"Ø
+declarationStringô<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">askAboutExact</mark> = <mark class="modifier">false</mark>*askAboutExact2`
+booleanTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaã ã(«
+^org.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?resolverType@148.38:148.50VARIABLEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaî& î(2"
+typeDuplicateResolverType"
+isFinalfalse"Â
+declarationStringœ<mark class="modifier"> </mark>DuplicateResolverType <mark class="class-field">resolverType</mark> = askAboutExact ? DuplicateResolverType.DUPLICATE_SEARCH_WITH_EXACT : DuplicateResolverType.DUPLICATE_SEARCH*resolverType2ß
+Norg.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverTypeTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaî î(%2∏
+_org.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?askAboutExact@139.24:139.37CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaî5 î(Bâ
+Sorg.jabref.gui.duplicationFinder.DuplicateSearch.verifyDuplicates()?e@130.42:130.43VARIABLEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÇ* Ç(+"
+typeInterruptedException"
+isFinalfalse"+
+declarationStringInterruptedException e*e2w
+java.lang.InterruptedExceptionTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÇ Ç()∞´
+ùorg.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)METHODO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaù ù(#"
+isFinalfalse"§
+declarationStringé<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">askResolveStrategy</mark>(DuplicateSearchResult result<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntry first<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntry second<mark class="modifier"><mark class="modifier">,</mark></mark> DuplicateResolverType resolverType)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*askResolveStrategy2ã
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLP
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaût û(â2z
+!java.util.function.Supplier.get()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaûn û(q2u
+java.util.Optional.orElse(T)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java£? £(E2≠
+Torg.jabref.gui.DialogService.showCustomDialogAndWait(javafx.scene.control.Dialog<R>)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¢? ¢(V2«
+norg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.remove(org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaß ß(2Í
+êorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java® ®(2£
+Jorg.jabref.gui.duplicationFinder.DuplicateResolverDialog.getNewLeftEntry()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java®) ®(82è
+6java.util.concurrent.atomic.AtomicBoolean.set(boolean)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java™* ™(-2«
+norg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.remove(org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java≠ ≠(2Í
+êorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÆ Æ(2§
+Korg.jabref.gui.duplicationFinder.DuplicateResolverDialog.getNewRightEntry()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÆ* Æ(:2è
+6java.util.concurrent.atomic.AtomicBoolean.set(boolean)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java∞ ∞(2u
+java.util.Collection.clear()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java± ±(2ã
+±org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java≥ ≥(2¢
+Iorg.jabref.gui.duplicationFinder.DuplicateResolverDialog.getMergedEntry()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java≥1 ≥(?2Í
+êorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaµ µ(2£
+Jorg.jabref.gui.duplicationFinder.DuplicateResolverDialog.getNewLeftEntry()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaµ) µ(82Í
+êorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java∂ ∂(2§
+Korg.jabref.gui.duplicationFinder.DuplicateResolverDialog.getNewRightEntry()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java∂* ∂(:2–
+ˆorg.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverDialog(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaû- û(D2˝
+£org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!firstCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaûE û(J2˛
+§org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!secondCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaûL û(R2Ñ
+™org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!resolverTypeCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaûT û(`2°
+Horg.jabref.gui.duplicationFinder.DuplicateSearch?tabSupplier@43.39:43.50CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaûb û(m2§
+Iorg.jabref.gui.duplicationFinder.DuplicateSearch?stateManager@53.31:53.43CALLQ
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaûç û(ô2•
+Jorg.jabref.gui.duplicationFinder.DuplicateSearch?dialogService@52.32:52.45CALLQ
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaûõ û(®2ù
+Borg.jabref.gui.duplicationFinder.DuplicateSearch?prefs@55.37:55.42CALLQ
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaû™ û(Ø2å
+≤org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?dialog@158.32:158.38CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java† †(2å
+≤org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?dialog@158.32:158.38CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java†4 †(:2ß
+Norg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateProgress@51.40:51.57CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java†[ †(l2¶
+Korg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateTotal@50.39:50.53CALLQ
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java†å †(ö2£
+Jorg.jabref.gui.duplicationFinder.DuplicateSearch?dialogService@52.32:52.45CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¢1 ¢(>2å
+≤org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?dialog@158.32:158.38CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¢W ¢(]2î
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?resolverResult@162.32:162.46CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java• •(2î
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?resolverResult@162.32:162.46CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¶ ¶("2˛
+§org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!resultCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaß ß(2˛
+§org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!secondCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaß ß( 2˛
+§org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!resultCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java® ®(2˝
+£org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!firstCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java® ®( 2å
+≤org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?dialog@158.32:158.38CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java®" ®((2î
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?resolverResult@162.32:162.46CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java© ©(2Ø
+Vorg.jabref.gui.duplicationFinder.DuplicateSearch?autoRemoveExactDuplicates@47.32:47.57CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java™ ™()2î
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?resolverResult@162.32:162.46CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¨ ¨(!2˛
+§org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!resultCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java≠ ≠(2˝
+£org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!firstCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java≠ ≠(2˛
+§org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!resultCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÆ Æ(2˛
+§org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!secondCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÆ Æ(!2å
+≤org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?dialog@158.32:158.38CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÆ# Æ()2î
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?resolverResult@162.32:162.46CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaØ Ø(!2•
+Lorg.jabref.gui.duplicationFinder.DuplicateSearch?libraryAnalyzed@46.32:46.47CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java∞ ∞(2†
+Gorg.jabref.gui.duplicationFinder.DuplicateSearch?duplicates@44.48:44.58CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java± ±(2î
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?resolverResult@162.32:162.46CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java≤ ≤(!2˛
+§org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!resultCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java≥ ≥(2˝
+£org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!firstCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java≥ ≥( 2˛
+§org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!secondCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java≥" ≥((2å
+≤org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?dialog@158.32:158.38CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java≥* ≥(02î
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?resolverResult@162.32:162.46CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¥ ¥(!2˛
+§org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!resultCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaµ µ(2˝
+£org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!firstCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaµ µ( 2å
+≤org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?dialog@158.32:158.38CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaµ" µ((2˛
+§org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!resultCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java∂ ∂(2˛
+§org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!secondCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java∂ ∂(!2å
+≤org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?dialog@158.32:158.38CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java∂# ∂()2É
+§org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!result	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaù: ù(@2Ç
+£org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!first	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaùK ù(P2É
+§org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!second	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaù[ ù(a2ä
+™org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!resolverType	PARAMETERP
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaùy ù(Ö2ì
+≤org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?dialog@158.32:158.38DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaû  û(&2õ
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?resolverResult@162.32:162.46DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¢  ¢(.2d
+voidRETURN_TYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaù ù(ˆ
+≤org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?dialog@158.32:158.38VARIABLEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaû  û(&"
+typeDuplicateResolverDialog"
+isFinalfalse"ú
+declarationStringÜ<mark class="modifier"> </mark>DuplicateResolverDialog <mark class="class-field">dialog</mark> = new DuplicateResolverDialog(first, second, resolverType, tabSupplier.get().getBibDatabaseContext()<mark class="modifier">,</mark> stateManager, dialogService, prefs)*dialog2ë
+8org.jabref.gui.duplicationFinder.DuplicateResolverDialogTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaû û(2ã
+1org.jabref.gui.LibraryTab.getBibDatabaseContext()CALLP
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaût û(â2z
+!java.util.function.Supplier.get()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaûn û(q2–
+ˆorg.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverDialog(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType, org.jabref.model.database.BibDatabaseContext, org.jabref.gui.StateManager, org.jabref.gui.DialogService, org.jabref.preferences.PreferencesService)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaû- û(D2˝
+£org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!firstCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaûE û(J2˛
+§org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!secondCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaûL û(R2Ñ
+™org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!resolverTypeCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaûT û(`2°
+Horg.jabref.gui.duplicationFinder.DuplicateSearch?tabSupplier@43.39:43.50CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaûb û(m2§
+Iorg.jabref.gui.duplicationFinder.DuplicateSearch?stateManager@53.31:53.43CALLQ
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaûç û(ô2•
+Jorg.jabref.gui.duplicationFinder.DuplicateSearch?dialogService@52.32:52.45CALLQ
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaûõ û(®2ù
+Borg.jabref.gui.duplicationFinder.DuplicateSearch?prefs@55.37:55.42CALLQ
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaû™ û(Ø∏
+∫org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?resolverResult@162.32:162.46VARIABLEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¢  ¢(."
+typeDuplicateResolverResult"
+isFinalfalse"“
+declarationStringº<mark class="modifier"> </mark>DuplicateResolverResult <mark class="class-field">resolverResult</mark> = dialogService.showCustomDialogAndWait(dialog).orElse(DuplicateResolverResult.BREAK)*resolverResult2©
+Porg.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverResultTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¢ ¢(2u
+java.util.Optional.orElse(T)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java£? £(E2≠
+Torg.jabref.gui.DialogService.showCustomDialogAndWait(javafx.scene.control.Dialog<R>)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¢? ¢(V2£
+Jorg.jabref.gui.duplicationFinder.DuplicateSearch?dialogService@52.32:52.45CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¢1 ¢(>2å
+≤org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)?dialog@158.32:158.38CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¢W ¢(]ë
+§org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!result	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaù: ù(@"
+typeDuplicateSearchResult"
+isFinalfalse"1
+declarationStringDuplicateSearchResult result*result2ü
+Forg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResultTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaù$ ù(9Ã
+£org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!first	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaùK ù(P"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry first*first2x
+org.jabref.model.entry.BibEntryTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaùB ù(Jœ
+§org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!second	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaù[ ù(a"
+typeBibEntry"
+isFinalfalse"$
+declarationStringBibEntry second*second2x
+org.jabref.model.entry.BibEntryTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaùR ù(Z¨
+™org.jabref.gui.duplicationFinder.DuplicateSearch.askResolveStrategy(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverType)!resolverType	PARAMETERP
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaùy ù(Ö"
+typeDuplicateResolverType"
+isFinalfalse"7
+declarationString"DuplicateResolverType resolverType*resolverType2ß
+Norg.jabref.gui.duplicationFinder.DuplicateResolverDialog.DuplicateResolverTypeTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaùc ù(x¬[
+âorg.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)METHODO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java∫ ∫(!"
+isFinalfalse"©
+declarationStringì<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">handleDuplicates</mark>(DuplicateSearchResult result)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*handleDuplicates2z
+!java.util.function.Supplier.get()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaø, ø(/2ß
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¿J ¿(N2q
+java.util.List.isEmpty()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¬" ¬()2≠
+Torg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.getToRemove()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¬ ¬(2°
+Horg.jabref.gui.undo.NamedCompound.addEdit(javax.swing.undo.UndoableEdit)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java√ √( 2Ä
+'org.jabref.gui.LibraryTab.getDatabase()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java√F √(Q2≠
+Torg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.getToRemove()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java√\ √(g2Ω
+dorg.jabref.model.database.BibDatabase.removeEntries(java.util.List<org.jabref.model.entry.BibEntry>)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaƒ% ƒ(22Ä
+'org.jabref.gui.LibraryTab.getDatabase()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaƒ ƒ("2≠
+Torg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.getToRemove()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaƒ: ƒ(E2Ñ
++org.jabref.gui.LibraryTab.markBaseChanged()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java≈ ≈(&2q
+java.util.List.isEmpty()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java» »(&2™
+Qorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.getToAdd()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java» »(2°
+Horg.jabref.gui.undo.NamedCompound.addEdit(javax.swing.undo.UndoableEdit)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java… …( 2Ä
+'org.jabref.gui.LibraryTab.getDatabase()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java…F …(Q2™
+Qorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.getToAdd()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java…\ …(d2Ω
+dorg.jabref.model.database.BibDatabase.insertEntries(java.util.List<org.jabref.model.entry.BibEntry>)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java %  (22Ä
+'org.jabref.gui.LibraryTab.getDatabase()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java   ("2™
+Qorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.getToAdd()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java :  (B2Ñ
++org.jabref.gui.LibraryTab.markBaseChanged()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÀ À(&2é
+5org.jabref.gui.DialogService.notify(java.lang.String)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java– –(2ß
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java–* –(.2à
+/java.util.concurrent.atomic.AtomicInteger.get()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java–[ –(^2ß
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java— —(#2≥
+Zorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.getDuplicateCount()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java—G —(X2|
+#javax.swing.undo.CompoundEdit.end()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java“ “(2ß
+Norg.jabref.gui.undo.CountingUndoManager.addEdit(javax.swing.undo.UndoableEdit)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java”$ ”(+2É
+*org.jabref.gui.LibraryTab.getUndoManager()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java” ”(!2ö
+Aorg.jabref.gui.undo.NamedCompound.NamedCompound(java.lang.String)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¿/ ¿(<2Ò
+óorg.jabref.gui.undo.UndoableRemoveEntries.UndoableRemoveEntries(org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java√% √(:2Ò
+óorg.jabref.gui.undo.UndoableInsertEntries.UndoableInsertEntries(org.jabref.model.database.BibDatabase, java.util.List<org.jabref.model.entry.BibEntry>)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java…% …(:2Í
+êorg.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)!resultCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaª ª(2°
+Horg.jabref.gui.duplicationFinder.DuplicateSearch?tabSupplier@43.39:43.50CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaø  ø(+2Í
+êorg.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)!resultCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¬ ¬(2˛
+§org.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)?compoundEdit@192.28:192.40CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java√ √(2¸
+¢org.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)?libraryTab@191.19:191.29CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java√; √(E2Í
+êorg.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)!resultCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java√U √([2¸
+¢org.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)?libraryTab@191.19:191.29CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaƒ ƒ(2Í
+êorg.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)!resultCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaƒ3 ƒ(92¸
+¢org.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)?libraryTab@191.19:191.29CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java≈ ≈(2Í
+êorg.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)!resultCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java» »(2˛
+§org.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)?compoundEdit@192.28:192.40CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java… …(2¸
+¢org.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)?libraryTab@191.19:191.29CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java…; …(E2Í
+êorg.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)!resultCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java…U …([2¸
+¢org.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)?libraryTab@191.19:191.29CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java   (2Í
+êorg.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)!resultCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java 3  (92¸
+¢org.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)?libraryTab@191.19:191.29CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÀ À(2ß
+Norg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateProgress@51.40:51.57CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaŒ Œ(2£
+Jorg.jabref.gui.duplicationFinder.DuplicateSearch?dialogService@52.32:52.45CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java– –(2§
+Korg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateCount@48.32:48.46CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java–L –(Z2Í
+êorg.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)!resultCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java—@ —(F2˛
+§org.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)?compoundEdit@192.28:192.40CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java“ “(2¸
+¢org.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)?libraryTab@191.19:191.29CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java” ”(2˛
+§org.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)?compoundEdit@192.28:192.40CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java”, ”(82Ô
+êorg.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)!result	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java∫8 ∫(>2É
+¢org.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)?libraryTab@191.19:191.29DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaø ø(2Ö
+§org.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)?compoundEdit@192.28:192.40DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¿ ¿((2d
+voidRETURN_TYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java∫ ∫(∆
+¢org.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)?libraryTab@191.19:191.29VARIABLEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaø ø("
+type
+LibraryTab"
+isFinalfalse"~
+declarationStringi<mark class="modifier"> </mark>LibraryTab <mark class="class-field">libraryTab</mark> = tabSupplier.get()*
+libraryTab2r
+org.jabref.gui.LibraryTabTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaø ø(2z
+!java.util.function.Supplier.get()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaø, ø(/2°
+Horg.jabref.gui.duplicationFinder.DuplicateSearch?tabSupplier@43.39:43.50CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaø  ø(+À
+§org.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)?compoundEdit@192.28:192.40VALUEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¿ ¿(("
+typeNamedCompound"
+isFinaltrue"–
+declarationString∫<mark class="modifier"> </mark><mark class="modifier">final </mark>NamedCompound <mark class="class-field">compoundEdit</mark> = new NamedCompound(Localization.lang("duplicate removal"))*compoundEdit2z
+!org.jabref.gui.undo.NamedCompoundTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¿ ¿(2ß
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¿J ¿(N2ö
+Aorg.jabref.gui.undo.NamedCompound.NamedCompound(java.lang.String)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¿/ ¿(<˝
+êorg.jabref.gui.duplicationFinder.DuplicateSearch.handleDuplicates(org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult)!result	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java∫8 ∫(>"
+typeDuplicateSearchResult"
+isFinalfalse"1
+declarationStringDuplicateSearchResult result*result2ü
+Forg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResultTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java∫" ∫(7ï
+Horg.jabref.gui.duplicationFinder.DuplicateSearch?tabSupplier@43.39:43.50VALUEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java+' +(2"
+isFinaltrue"
+typeSupplier<LibraryTab>"°
+declarationStringã<mark class="modifier">private </mark><mark class="modifier">final </mark>Supplier<LibraryTab> <mark class="class-field">tabSupplier</mark>"
+isStaticfalse"
+accessprivate*tabSupplier2r
+java.util.function.SupplierTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java+ +(2y
+org.jabref.gui.LibraryTabTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java+ +(%ÿ
+Gorg.jabref.gui.duplicationFinder.DuplicateSearch?duplicates@44.48:44.58VALUEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java,0 ,(:"
+isFinaltrue"%
+typeBlockingQueue<List<BibEntry>>"»
+declarationString≤<mark class="modifier">private </mark><mark class="modifier">final </mark>BlockingQueue<List<BibEntry>> <mark class="class-field">duplicates</mark> = new LinkedBlockingQueue<>();"
+isStaticfalse"
+accessprivate*
+duplicates2y
+"java.util.concurrent.BlockingQueueTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java, ,(2n
+java.util.ListTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java,  ,($2
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java,% ,(-2ï
+>java.util.concurrent.LinkedBlockingQueue.LinkedBlockingQueue()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java,A ,(V—
+Lorg.jabref.gui.duplicationFinder.DuplicateSearch?libraryAnalyzed@46.32:46.47VALUEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java.  .(/"
+isFinaltrue"
+typeAtomicBoolean"µ
+declarationStringü<mark class="modifier">private </mark><mark class="modifier">final </mark>AtomicBoolean <mark class="class-field">libraryAnalyzed</mark> = new AtomicBoolean();"
+isStaticfalse"
+accessprivate*libraryAnalyzed2Ä
+)java.util.concurrent.atomic.AtomicBooleanTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java. .(2ê
+9java.util.concurrent.atomic.AtomicBoolean.AtomicBoolean()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java.6 .(CÔ
+Vorg.jabref.gui.duplicationFinder.DuplicateSearch?autoRemoveExactDuplicates@47.32:47.57VALUEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java/  /(9"
+isFinaltrue"
+typeAtomicBoolean"ø
+declarationString©<mark class="modifier">private </mark><mark class="modifier">final </mark>AtomicBoolean <mark class="class-field">autoRemoveExactDuplicates</mark> = new AtomicBoolean();"
+isStaticfalse"
+accessprivate*autoRemoveExactDuplicates2Ä
+)java.util.concurrent.atomic.AtomicBooleanTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java/ /(2ê
+9java.util.concurrent.atomic.AtomicBoolean.AtomicBoolean()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java/@ /(MŒ
+Korg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateCount@48.32:48.46VALUEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java0  0(."
+isFinaltrue"
+typeAtomicInteger"¥
+declarationStringû<mark class="modifier">private </mark><mark class="modifier">final </mark>AtomicInteger <mark class="class-field">duplicateCount</mark> = new AtomicInteger();"
+isStaticfalse"
+accessprivate*duplicateCount2Ä
+)java.util.concurrent.atomic.AtomicIntegerTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java0 0(2ê
+9java.util.concurrent.atomic.AtomicInteger.AtomicInteger()CALLM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java05 0(BÔ
+Uorg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateCountObservable@49.39:49.63VALUEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java1' 1(?"
+isFinaltrue"
+typeSimpleStringProperty"Ã
+declarationString∂<mark class="modifier">private </mark><mark class="modifier">final </mark>SimpleStringProperty <mark class="class-field">duplicateCountObservable</mark> = new SimpleStringProperty();"
+isStaticfalse"
+accessprivate*duplicateCountObservable2Å
+*javafx.beans.property.SimpleStringPropertyTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java1 1(&—
+Korg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateTotal@50.39:50.53VALUEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java2' 2(5"
+isFinaltrue"
+typeSimpleStringProperty"¬
+declarationString¨<mark class="modifier">private </mark><mark class="modifier">final </mark>SimpleStringProperty <mark class="class-field">duplicateTotal</mark> = new SimpleStringProperty();"
+isStaticfalse"
+accessprivate*duplicateTotal2Å
+*javafx.beans.property.SimpleStringPropertyTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java2 2(&ﬂ
+Norg.jabref.gui.duplicationFinder.DuplicateSearch?duplicateProgress@51.40:51.57VALUEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java3( 3(9"
+isFinaltrue"
+typeSimpleIntegerProperty"»
+declarationString≤<mark class="modifier">private </mark><mark class="modifier">final </mark>SimpleIntegerProperty <mark class="class-field">duplicateProgress</mark> = new SimpleIntegerProperty(0);"
+isStaticfalse"
+accessprivate*duplicateProgress2Ç
++javafx.beans.property.SimpleIntegerPropertyTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java3 3('ì
+Jorg.jabref.gui.duplicationFinder.DuplicateSearch?dialogService@52.32:52.45VALUEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java4  4(-"
+isFinaltrue"
+typeDialogService"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">final </mark>DialogService <mark class="class-field">dialogService</mark>"
+isStaticfalse"
+accessprivate*dialogService2s
+org.jabref.gui.DialogServiceTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java4 4(ç
+Iorg.jabref.gui.duplicationFinder.DuplicateSearch?stateManager@53.31:53.43VALUEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java5 5(+"
+isFinaltrue"
+typeStateManager"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>StateManager <mark class="class-field">stateManager</mark>"
+isStaticfalse"
+accessprivate*stateManager2r
+org.jabref.gui.StateManagerTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java5 5(ì
+Borg.jabref.gui.duplicationFinder.DuplicateSearch?prefs@55.37:55.42VALUEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java7% 7(*"
+isFinaltrue"
+typePreferencesService"ô
+declarationStringÉ<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">prefs</mark>"
+isStaticfalse"
+accessprivate*prefs2Ä
+)org.jabref.preferences.PreferencesServiceTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java7 7($Ω
+Norg.jabref.gui.duplicationFinder.DuplicateSearch?entryTypesManager@56.39:56.56VALUEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java8' 8(8"
+isFinaltrue"
+typeBibEntryTypesManager"ß
+declarationStringë<mark class="modifier">private </mark><mark class="modifier">final </mark>BibEntryTypesManager <mark class="class-field">entryTypesManager</mark>"
+isStaticfalse"
+accessprivate*entryTypesManager2Ç
++org.jabref.model.entry.BibEntryTypesManagerTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java8 8(&í
+Iorg.jabref.gui.duplicationFinder.DuplicateSearch?taskExecutor@57.31:57.43VALUEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java9 9(+"
+isFinaltrue"
+typeTaskExecutor"ö
+declarationStringÑ<mark class="modifier">private </mark><mark class="modifier">final </mark>TaskExecutor <mark class="class-field">taskExecutor</mark>"
+isStaticfalse"
+accessprivate*taskExecutor2w
+ org.jabref.gui.util.TaskExecutorTYPEM
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java9 9(—
+Forg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResultCLASSO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java€ €(&";
+package0org.jabref.gui.duplicationFinder.DuplicateSearch"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"m
+declarationStringX<mark class="modifier"> </mark><mark class="modifier">class </mark>DuplicateSearchResult"
+accesspackage_private*DuplicateSearchResult2¥
+Torg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.getToRemove()DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java‚+ ‚(62±
+Qorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.getToAdd()DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÊ+ Ê(32Œ
+norg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.remove(org.jabref.model.entry.BibEntry)DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÍ! Í('2í
+±org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÔ! Ô((2Ò
+êorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaˆ! ˆ((2“
+rorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.isToRemove(org.jabref.model.entry.BibEntry)DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java˚$ ˚(.2∫
+Zorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.getDuplicateCount()DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaˇ  ˇ(12Ω
+]org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult?toRemove@221.45:221.53DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java›- ›(52∫
+Zorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult?toAdd@222.37:222.42DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaﬁ% ﬁ(*2ø
+_org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult?duplicates@224.20:224.30DECLARATIONO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java‡ ‡(à	
+Torg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.getToRemove()METHODO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java‚+ ‚(6"
+isFinalfalse"§
+declarationStringé<mark class="modifier">public </mark><mark class="modifier">synchronized </mark>List&lt;BibEntry&gt; <mark class="method">getToRemove</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<BibEntry>*getToRemove2o
+java.util.Map.values()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java„, „(22ô
+@java.util.ArrayList.ArrayList(java.util.Collection<? extends E>)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java„ „("2∂
+]org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult?toRemove@221.45:221.53CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java„# „(+2n
+java.util.ListRETURN_TYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java‚ ‚( 2à
+org.jabref.model.entry.BibEntryRETURN_TYPE_ARGUMENTO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java‚! ‚()Ô
+Qorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.getToAdd()METHODO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÊ+ Ê(3"
+isFinalfalse"°
+declarationStringã<mark class="modifier">public </mark><mark class="modifier">synchronized </mark>List&lt;BibEntry&gt; <mark class="method">getToAdd</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<BibEntry>*getToAdd2≥
+Zorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult?toAdd@222.37:222.42CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÁ Á(2n
+java.util.ListRETURN_TYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÊ Ê( 2à
+org.jabref.model.entry.BibEntryRETURN_TYPE_ARGUMENTO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÊ! Ê()π
+norg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.remove(org.jabref.model.entry.BibEntry)METHODO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÍ! Í('"
+isFinalfalse"ª
+declarationString•<mark class="modifier">public </mark><mark class="modifier">synchronized </mark><mark class="modifier">void</mark> <mark class="method">remove</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*remove2p
+java.util.Map.put(K, V)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÎ Î(2å
+3java.lang.System.identityHashCode(java.lang.Object)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÎ  Î(02∂
+]org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult?toRemove@221.45:221.53CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÎ Î(2Õ
+torg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.remove(org.jabref.model.entry.BibEntry)!entryCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÎ1 Î(62Õ
+torg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.remove(org.jabref.model.entry.BibEntry)!entryCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÎ9 Î(>2∏
+_org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult?duplicates@224.20:224.30CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÏ Ï(2“
+torg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.remove(org.jabref.model.entry.BibEntry)!entry	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÍ1 Í(62d
+voidRETURN_TYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÍ Í( ú
+torg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.remove(org.jabref.model.entry.BibEntry)!entry	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÍ1 Í(6"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2x
+org.jabref.model.entry.BibEntryTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÍ( Í(0æ
+±org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)METHODO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÔ! Ô(("
+isFinalfalse"€
+declarationString≈<mark class="modifier">public </mark><mark class="modifier">synchronized </mark><mark class="modifier">void</mark> <mark class="method">replace</mark>(BibEntry first<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntry second<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntry replacement)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*replace2«
+norg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.remove(org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java (2«
+norg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.remove(org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÒ Ò(2n
+java.util.List.add(E)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÚ Ú(2ë
+∑org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)!firstCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java (2í
+∏org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)!secondCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÒ Ò(2≥
+Zorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult?toAdd@222.37:222.42CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÚ Ú(2ó
+Ωorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)!replacementCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÚ Ú(!2∏
+_org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult?duplicates@224.20:224.30CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÛ Û(2ñ
+∑org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)!first	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÔ2 Ô(72ó
+∏org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)!second	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÔB Ô(H2ú
+Ωorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)!replacement	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÔS Ô(^2d
+voidRETURN_TYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÔ Ô( ‡
+∑org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)!first	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÔ2 Ô(7"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry first*first2x
+org.jabref.model.entry.BibEntryTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÔ) Ô(1„
+∏org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)!second	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÔB Ô(H"
+typeBibEntry"
+isFinalfalse"$
+declarationStringBibEntry second*second2x
+org.jabref.model.entry.BibEntryTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÔ9 Ô(AÚ
+Ωorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)!replacement	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÔS Ô(^"
+typeBibEntry"
+isFinalfalse")
+declarationStringBibEntry replacement*replacement2x
+org.jabref.model.entry.BibEntryTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÔJ Ô(Rè
+êorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)METHODO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaˆ! ˆ(("
+isFinalfalse"é
+declarationString¯<mark class="modifier">public </mark><mark class="modifier">synchronized </mark><mark class="modifier">void</mark> <mark class="method">replace</mark>(BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> BibEntry replacement)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*replace2«
+norg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.remove(org.jabref.model.entry.BibEntry)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java˜ ˜(2n
+java.util.List.add(E)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¯ ¯(2™
+Qorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.getToAdd()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¯ ¯(2
+ñorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)!entryCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java˜ ˜(2ˆ
+úorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)!replacementCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¯ ¯(&2ı
+ñorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)!entry	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaˆ2 ˆ(72˚
+úorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)!replacement	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaˆB ˆ(M2d
+voidRETURN_TYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaˆ ˆ( ø
+ñorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)!entry	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaˆ2 ˆ(7"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2x
+org.jabref.model.entry.BibEntryTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaˆ) ˆ(1—
+úorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.replace(org.jabref.model.entry.BibEntry, org.jabref.model.entry.BibEntry)!replacement	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaˆB ˆ(M"
+typeBibEntry"
+isFinalfalse")
+declarationStringBibEntry replacement*replacement2x
+org.jabref.model.entry.BibEntryTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaˆ9 ˆ(A‡
+rorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.isToRemove(org.jabref.model.entry.BibEntry)METHODO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java˚$ ˚(."
+isFinalfalse"¬
+declarationString¨<mark class="modifier">public </mark><mark class="modifier">synchronized </mark><mark class="modifier">boolean</mark> <mark class="method">isToRemove</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*
+isToRemove2Ñ
++java.util.Map.containsKey(java.lang.Object)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¸ ¸('2å
+3java.lang.System.identityHashCode(java.lang.Object)CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¸/ ¸(?2∂
+]org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult?toRemove@221.45:221.53CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¸ ¸(2—
+xorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.isToRemove(org.jabref.model.entry.BibEntry)!entryCALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java¸@ ¸(E2÷
+xorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.isToRemove(org.jabref.model.entry.BibEntry)!entry	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java˚8 ˚(=2g
+booleanRETURN_TYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java˚ ˚(#†
+xorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.isToRemove(org.jabref.model.entry.BibEntry)!entry	PARAMETERO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java˚8 ˚(="
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2x
+org.jabref.model.entry.BibEntryTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java˚/ ˚(7˚
+Zorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult.getDuplicateCount()METHODO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaˇ  ˇ(1"
+isFinalfalse"∑
+declarationString°<mark class="modifier">public </mark><mark class="modifier">synchronized </mark><mark class="modifier">int</mark> <mark class="method">getDuplicateCount</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeint*getDuplicateCount2∏
+_org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult?duplicates@224.20:224.30CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaÄ Ä(2c
+intRETURN_TYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaˇ ˇ(•
+]org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult?toRemove@221.45:221.53VALUEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java›- ›(5"
+isFinaltrue"
+typeMap<Integer, BibEntry>"≥
+declarationStringù<mark class="modifier">private </mark><mark class="modifier">final </mark>Map<Integer, BibEntry> <mark class="class-field">toRemove</mark> = new HashMap<>();"
+isStaticfalse"
+accessprivate*toRemove2f
+java.util.MapTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java› ›(2s
+java.lang.IntegerTYPE_ARGUMENTO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java› ›(!2Å
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java›# ›(+2t
+java.util.HashMap.HashMap()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java›< ›(Eû
+Zorg.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult?toAdd@222.37:222.42VALUEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaﬁ% ﬁ(*"
+isFinaltrue"
+typeList<BibEntry>"™
+declarationStringî<mark class="modifier">private </mark><mark class="modifier">final </mark>List<BibEntry> <mark class="class-field">toAdd</mark> = new ArrayList<>();"
+isStaticfalse"
+accessprivate*toAdd2g
+java.util.ListTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaﬁ ﬁ(2Å
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaﬁ ﬁ(#2x
+java.util.ArrayList.ArrayList()CALLO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.javaﬁ1 ﬁ(<˚
+_org.jabref.gui.duplicationFinder.DuplicateSearch.DuplicateSearchResult?duplicates@224.20:224.30VARIABLEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java‡ ‡("
+isFinalfalse"
+typeint"ç
+declarationStringx<mark class="modifier">private </mark><mark class="modifier">int</mark> <mark class="class-field">duplicates</mark> = 0;"
+isStaticfalse"
+accessprivate*
+duplicates2\
+intTYPEO
+Csrc\main\java\org\jabref\gui\duplicationFinder\DuplicateSearch.java‡ ‡(

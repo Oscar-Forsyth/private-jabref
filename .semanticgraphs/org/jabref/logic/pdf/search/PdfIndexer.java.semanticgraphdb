@@ -1,0 +1,1383 @@
+
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¶(
+&org.jabref.logic.pdf.search.PdfIndexerCLASSC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java- -("&
+packageorg.jabref.logic.pdf.search"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"h
+declarationStringS<mark class="modifier">public </mark><mark class="modifier">class </mark>PdfIndexer"
+accesspublic*
+PdfIndexer2ˇ
+™org.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)DECLARATIONC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java> >(2Ë
+ìorg.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, org.jabref.preferences.FilePreferences)DECLARATIONC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaU U(2”
+org.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)DECLARATIONC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java\ \(2à
+4org.jabref.logic.pdf.search.PdfIndexer.createIndex()DECLARATIONC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javad d(2ã
+7org.jabref.logic.pdf.search.PdfIndexer.getIndexWriter()DECLARATIONC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javap p((2Õ
+yorg.jabref.logic.pdf.search.PdfIndexer.initializeIndexWriterAndReader(org.apache.lucene.index.IndexWriterConfig.OpenMode)DECLARATIONC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java{ {(/2ã
+5org.jabref.logic.pdf.search.PdfIndexer.rebuildIndex()DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaò ò(2∏
+borg.jabref.logic.pdf.search.PdfIndexer.addToIndex(java.util.List<org.jabref.model.entry.BibEntry>)DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaû û(2®
+Rorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry)DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java∞ ∞(2±
+[org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, boolean)DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¥ ¥(2‚
+ãorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>)DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¿ ¿(2Î
+îorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>, boolean)DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaƒ ƒ(2á
+1org.jabref.logic.pdf.search.PdfIndexer.doCommit()DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÕ Õ(2û
+Horg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.lang.String)DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java⁄ ⁄(2≠
+Worg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(org.jabref.model.entry.BibEntry)DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÍ Í(2≈
+oorg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.util.Collection<org.jabref.model.entry.LinkedFile>)DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÒ Ò(2π
+corg.jabref.logic.pdf.search.PdfIndexer.removePathsFromIndex(java.util.Collection<java.lang.String>)DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java˜ ˜($2À
+uorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile)DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÑ Ñ(2‘
+~org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaà à(2ë
+;org.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaæ æ()2Ñ
+.org.jabref.logic.pdf.search.PdfIndexer.close()DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java‘ ‘(2ç
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38DECLARATIONC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java/  /(&2í
+>org.jabref.logic.pdf.search.PdfIndexer?indexWriter@51.16:51.27DECLARATIONC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java3 3(2ñ
+Borg.jabref.logic.pdf.search.PdfIndexer?databaseContext@53.37:53.52DECLARATIONC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java5% 5(42ñ
+Borg.jabref.logic.pdf.search.PdfIndexer?filePreferences@55.34:55.49DECLARATIONC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java7" 7(12ï
+Aorg.jabref.logic.pdf.search.PdfIndexer?indexDirectory@58.28:58.42DECLARATIONC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java: :(*2ç
+9org.jabref.logic.pdf.search.PdfIndexer?reader@60.24:60.30DECLARATIONC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java< <(ß0
+™org.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)CONSTRUCTORC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java> >("π
+declarationString£<mark class="modifier">private </mark><mark class="method">PdfIndexer</mark>(BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> Directory indexDirectory<mark class="modifier"><mark class="modifier">,</mark></mark> FilePreferences filePreferences)*
+PdfIndexer2{
+.java.lang.System.getProperty(java.lang.String)CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaB# B(.2â
+<java.nio.file.Path.of(java.lang.String, java.lang.String...)CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaF< F(>2à
+∫org.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)!databaseContextCALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java? ?(.2á
+πorg.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)!indexDirectoryCALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java@ @(2Ü
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaC C(2ã
+Ωorg.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)?tmpDir@66.19:66.25CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaCP C(V2ñ
+»org.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)?tmpIndexDirectory@68.22:68.39CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaF F(!2ã
+Ωorg.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)?tmpDir@66.19:66.25CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaF? F(E2Ü
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaH H(2ã
+Ωorg.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)?tmpDir@66.19:66.25CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaHG H(M2Ü
+∏org.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)?e@71.33:71.34CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaHO H(P2ñ
+»org.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)?tmpIndexDirectory@68.22:68.39CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaJ" J(32á
+πorg.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)!indexDirectoryCALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaL" L(02à
+∫org.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)!filePreferencesCALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaN N(.2è
+Borg.jabref.logic.pdf.search.PdfIndexer?databaseContext@53.37:53.52CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java? ?(2é
+Aorg.jabref.logic.pdf.search.PdfIndexer?indexDirectory@58.28:58.42CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaJ J(2é
+Aorg.jabref.logic.pdf.search.PdfIndexer?indexDirectory@58.28:58.42CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaL L(2è
+Borg.jabref.logic.pdf.search.PdfIndexer?filePreferences@55.34:55.49CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaN N(2ç
+∫org.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)!databaseContext	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java>* >(92å
+πorg.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)!indexDirectory	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java>E >(S2ç
+∫org.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)!filePreferences	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java>e >(t2í
+Ωorg.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)?tmpDir@66.19:66.25DECLARATIONC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaB B(2ù
+»org.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)?tmpIndexDirectory@68.22:68.39DECLARATIONC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaD D('2ç
+∏org.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)?e@71.33:71.34DECLARATIONC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaG! G("2z
+&org.jabref.logic.pdf.search.PdfIndexerRETURN_TYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java> >(°
+Ωorg.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)?tmpDir@66.19:66.25VARIABLEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaB B("
+typeString"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark>String <mark class="class-field">tmpDir</mark> = System.getProperty("java.io.tmpdir")*tmpDir2]
+java.lang.StringTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaB B(2{
+.java.lang.System.getProperty(java.lang.String)CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaB# B(.€
+»org.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)?tmpIndexDirectory@68.22:68.39VARIABLEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaD D('"
+type	Directory"
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier"> </mark>Directory <mark class="class-field">tmpIndexDirectory</mark> = <mark class="modifier">null</mark>*tmpIndexDirectory2n
+!org.apache.lucene.store.DirectoryTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaD D(Ä
+∫org.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)!databaseContext	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java>* >(9"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2y
+,org.jabref.model.database.BibDatabaseContextTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java> >()‡
+πorg.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)!indexDirectory	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java>E >(S"
+type	Directory"
+isFinalfalse"-
+declarationStringDirectory indexDirectory*indexDirectory2n
+!org.apache.lucene.store.DirectoryTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java>; >(DÙ
+∫org.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)!filePreferences	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java>e >(t"
+typeFilePreferences"
+isFinalfalse"4
+declarationStringFilePreferences filePreferences*filePreferences2s
+&org.jabref.preferences.FilePreferencesTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java>U >(d∫
+∏org.jabref.logic.pdf.search.PdfIndexer.PdfIndexer(org.jabref.model.database.BibDatabaseContext, org.apache.lucene.store.Directory, org.jabref.preferences.FilePreferences)?e@71.33:71.34VARIABLEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaG! G(""
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2`
+java.io.IOExceptionTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaG G( Î
+ìorg.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, org.jabref.preferences.FilePreferences)METHODC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaU U("
+isFinalfalse"·
+declarationStringÀ<mark class="annotation">@VisibleForTesting</mark> <br><mark class="modifier">public </mark><mark class="modifier">static </mark>PdfIndexer <mark class="method">of</mark>(BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> Path indexDirectory<mark class="modifier"><mark class="modifier">,</mark></mark> FilePreferences filePreferences)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+type
+PdfIndexer*of2Ò
+£org.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, org.jabref.preferences.FilePreferences)!databaseContextCALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaV V(-2
+¢org.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, org.jabref.preferences.FilePreferences)!indexDirectoryCALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaVB V(P2Ò
+£org.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, org.jabref.preferences.FilePreferences)!filePreferencesCALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaVS V(b2ˆ
+£org.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, org.jabref.preferences.FilePreferences)!databaseContext	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaU3 U(B2ı
+¢org.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, org.jabref.preferences.FilePreferences)!indexDirectory	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaUI U(W2ˆ
+£org.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, org.jabref.preferences.FilePreferences)!filePreferences	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaUi U(x2z
+&org.jabref.logic.pdf.search.PdfIndexerRETURN_TYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaU U(È
+£org.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, org.jabref.preferences.FilePreferences)!databaseContext	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaU3 U(B"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2y
+,org.jabref.model.database.BibDatabaseContextTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaU  U(2∞
+¢org.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, org.jabref.preferences.FilePreferences)!indexDirectory	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaUI U(W"
+typePath"
+isFinalfalse"(
+declarationStringPath indexDirectory*indexDirectory2_
+java.nio.file.PathTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaUD U(H›
+£org.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, java.nio.file.Path, org.jabref.preferences.FilePreferences)!filePreferences	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaUi U(x"
+typeFilePreferences"
+isFinalfalse"4
+declarationStringFilePreferences filePreferences*filePreferences2s
+&org.jabref.preferences.FilePreferencesTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaUY U(hÜ
+org.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)METHODC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java\ \("
+isFinalfalse"Ÿ
+declarationString√<mark class="modifier">public </mark><mark class="modifier">static </mark>PdfIndexer <mark class="method">of</mark>(BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> FilePreferences filePreferences)<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+type
+PdfIndexer*of2ê
+Corg.jabref.model.database.BibDatabaseContext.getFulltextIndexPath()CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java]R ](f2›
+èorg.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!databaseContextCALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java] ](-2›
+èorg.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!databaseContextCALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java]B ](Q2›
+èorg.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!filePreferencesCALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java]k ](z2‚
+èorg.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!databaseContext	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java\3 \(B2‚
+èorg.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!filePreferences	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java\T \(c2z
+&org.jabref.logic.pdf.search.PdfIndexerRETURN_TYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java\ \(’
+èorg.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!databaseContext	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java\3 \(B"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2y
+,org.jabref.model.database.BibDatabaseContextTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java\  \(2…
+èorg.jabref.logic.pdf.search.PdfIndexer.of(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)!filePreferences	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java\T \(c"
+typeFilePreferences"
+isFinalfalse"4
+declarationStringFilePreferences filePreferences*filePreferences2s
+&org.jabref.preferences.FilePreferencesTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java\D \(SÅ
+4org.jabref.logic.pdf.search.PdfIndexer.createIndex()METHODC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javad d("
+isFinalfalse"Ü
+declarationStringq<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">createIndex</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*createIndex2é
+Aorg.jabref.logic.pdf.search.PdfIndexer?indexDirectory@58.28:58.42CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javae e(2Ü
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaf f(2Ü
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javai i(2é
+Aorg.jabref.logic.pdf.search.PdfIndexer?indexDirectory@58.28:58.42CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javai= i(K2X
+voidRETURN_TYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javad d(ô
+7org.jabref.logic.pdf.search.PdfIndexer.getIndexWriter()METHODC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javap p(("
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark>Optional&lt;IndexWriter&gt; <mark class="method">getIndexWriter</mark>()"
+isStaticfalse"
+accesspackage_private"
+
+isAbstractfalse"
+typeOptional<IndexWriter>*getIndexWriter2m
+ java.util.Optional.ofNullable(T)CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javax x("2Ü
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaq q(2ã
+>org.jabref.logic.pdf.search.PdfIndexer?indexWriter@51.16:51.27CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javar r(2Ü
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javas s(2Ü
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javav v(2ã
+>org.jabref.logic.pdf.search.PdfIndexer?indexWriter@51.16:51.27CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javax# x(.2f
+java.util.OptionalRETURN_TYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javap p(2Ä
+#org.apache.lucene.index.IndexWriterRETURN_TYPE_ARGUMENTC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javap p(Ä
+yorg.jabref.logic.pdf.search.PdfIndexer.initializeIndexWriterAndReader(org.apache.lucene.index.IndexWriterConfig.OpenMode)METHODC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java{ {(/"
+isFinalfalse"∫
+declarationString§<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">initializeIndexWriterAndReader</mark>(IndexWriterConfig.OpenMode mode)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*initializeIndexWriterAndReader2î
+Eorg.jabref.model.pdf.search.EnglishStemAnalyzer.EnglishStemAnalyzer()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÑ  Ñ(32é
+Aorg.jabref.logic.pdf.search.PdfIndexer?indexDirectory@58.28:58.42CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java| |(2Ü
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java} }(2ç
+>org.jabref.logic.pdf.search.PdfIndexer?indexWriter@51.16:51.27CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÅ Å(2ê
+Aorg.jabref.logic.pdf.search.PdfIndexer?indexDirectory@58.28:58.42CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÇ Ç("2Õ
+~org.jabref.logic.pdf.search.PdfIndexer.initializeIndexWriterAndReader(org.apache.lucene.index.IndexWriterConfig.OpenMode)!modeCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÑC Ñ(G2à
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÜ Ü(2Ÿ
+âorg.jabref.logic.pdf.search.PdfIndexer.initializeIndexWriterAndReader(org.apache.lucene.index.IndexWriterConfig.OpenMode)?e@133.29:133.30CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÜA Ü(B2à
+9org.jabref.logic.pdf.search.PdfIndexer?reader@60.24:60.30CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaè è(2ç
+>org.jabref.logic.pdf.search.PdfIndexer?indexWriter@51.16:51.27CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaè* è(52à
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaë ë(2Ÿ
+âorg.jabref.logic.pdf.search.PdfIndexer.initializeIndexWriterAndReader(org.apache.lucene.index.IndexWriterConfig.OpenMode)?e@144.29:144.30CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaëA ë(B2–
+~org.jabref.logic.pdf.search.PdfIndexer.initializeIndexWriterAndReader(org.apache.lucene.index.IndexWriterConfig.OpenMode)!mode	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java{K {(O2‡
+âorg.jabref.logic.pdf.search.PdfIndexer.initializeIndexWriterAndReader(org.apache.lucene.index.IndexWriterConfig.OpenMode)?e@133.29:133.30DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÖ Ö(2‡
+âorg.jabref.logic.pdf.search.PdfIndexer.initializeIndexWriterAndReader(org.apache.lucene.index.IndexWriterConfig.OpenMode)?e@144.29:144.30DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaê ê(2X
+voidRETURN_TYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java{ {(√
+~org.jabref.logic.pdf.search.PdfIndexer.initializeIndexWriterAndReader(org.apache.lucene.index.IndexWriterConfig.OpenMode)!mode	PARAMETERC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java{K {(O""
+typeIndexWriterConfig.OpenMode"
+isFinalfalse"4
+declarationStringIndexWriterConfig.OpenMode mode*mode2
+2org.apache.lucene.index.IndexWriterConfig.OpenModeTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java{B {(Jè
+âorg.jabref.logic.pdf.search.PdfIndexer.initializeIndexWriterAndReader(org.apache.lucene.index.IndexWriterConfig.OpenMode)?e@133.29:133.30VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÖ Ö("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2b
+java.io.IOExceptionTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÖ Ö(è
+âorg.jabref.logic.pdf.search.PdfIndexer.initializeIndexWriterAndReader(org.apache.lucene.index.IndexWriterConfig.OpenMode)?e@144.29:144.30VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaê ê("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2b
+java.io.IOExceptionTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaê ê(∏	
+5org.jabref.logic.pdf.search.PdfIndexer.rebuildIndex()METHODE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaò ò("
+isFinalfalse"á
+declarationStringr<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">rebuildIndex</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*rebuildIndex2É
+4org.jabref.logic.pdf.search.PdfIndexer.createIndex()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaö ö(2±
+borg.jabref.logic.pdf.search.PdfIndexer.addToIndex(java.util.List<org.jabref.model.entry.BibEntry>)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaõ õ(2à
+9org.jabref.model.database.BibDatabaseContext.getEntries()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaõ# õ(-2à
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaô ô(2ë
+Borg.jabref.logic.pdf.search.PdfIndexer?databaseContext@53.37:53.52CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaõ õ("2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaò ò(ì
+borg.jabref.logic.pdf.search.PdfIndexer.addToIndex(java.util.List<org.jabref.model.entry.BibEntry>)METHODE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaû û("
+isFinalfalse"¢
+declarationStringå<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">addToIndex</mark>(List&lt;BibEntry&gt; entries)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*
+addToIndex2™
+[org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, boolean)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java° °(2Ä
+1org.jabref.logic.pdf.search.PdfIndexer.doCommit()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java§ §(2Ä
+1org.jabref.logic.pdf.search.PdfIndexer.doCommit()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaß ß(2π
+jorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(java.util.List<org.jabref.model.entry.BibEntry>)!entriesCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java† †(%2≈
+vorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(java.util.List<org.jabref.model.entry.BibEntry>)?entry@160.22:160.27CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java° °(2≈
+vorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(java.util.List<org.jabref.model.entry.BibEntry>)?count@159.12:159.17CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¢ ¢(2≈
+vorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(java.util.List<org.jabref.model.entry.BibEntry>)?count@159.12:159.17CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java£ £(2à
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java® ®(2≈
+vorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(java.util.List<org.jabref.model.entry.BibEntry>)?count@159.12:159.17CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java®9 ®(>2æ
+jorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaû* û(12Ã
+vorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(java.util.List<org.jabref.model.entry.BibEntry>)?count@159.12:159.17DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaü ü(2Ã
+vorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(java.util.List<org.jabref.model.entry.BibEntry>)?entry@160.22:160.27DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java† †(2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaû û(∆
+vorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(java.util.List<org.jabref.model.entry.BibEntry>)?count@159.12:159.17VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaü ü("
+typeint"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">count</mark> = 0*count2R
+intTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaü ü(…
+vorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(java.util.List<org.jabref.model.entry.BibEntry>)?entry@160.22:160.27VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java† †("
+typeBibEntry"
+isFinalfalse"c
+declarationStringN<mark class="modifier"> </mark>BibEntry <mark class="class-field">entry</mark>*entry2n
+org.jabref.model.entry.BibEntryTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java† †(ˆ
+jorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(java.util.List<org.jabref.model.entry.BibEntry>)!entries	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaû* û(1"
+typeList<BibEntry>"
+isFinalfalse"+
+declarationStringList<BibEntry> entries*entries2]
+java.util.ListTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaû û(2w
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaû  û((‡
+
+Rorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry)METHODE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java∞ ∞("
+isFinalfalse"ì
+declarationString~<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">addToIndex</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*
+addToIndex2‰
+îorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>, boolean)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java± ±(2y
+*org.jabref.model.entry.BibEntry.getFiles()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java±  ±((2ß
+Xorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry)!entryCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java± ±(2ß
+Xorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry)!entryCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java± ±(2¨
+Xorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry)!entry	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java∞$ ∞()2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java∞ ∞(Ï
+Xorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry)!entry	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java∞$ ∞()"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2n
+org.jabref.model.entry.BibEntryTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java∞ ∞(#Û
+[org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, boolean)METHODE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¥ ¥("
+isFinalfalse"Ö
+declarationStringÔ<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">addToIndex</mark>(BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">boolean</mark> shouldCommit)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*
+addToIndex2‰
+îorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>, boolean)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaµ µ(2y
+*org.jabref.model.entry.BibEntry.getFiles()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaµ  µ((2Ä
+1org.jabref.logic.pdf.search.PdfIndexer.doCommit()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java∑ ∑(2∞
+aorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, boolean)!entryCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaµ µ(2∞
+aorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, boolean)!entryCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaµ µ(2∑
+horg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, boolean)!shouldCommitCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java∂ ∂(2µ
+aorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, boolean)!entry	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¥% ¥(*2º
+horg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, boolean)!shouldCommit	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¥4 ¥(@2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¥ ¥(ı
+aorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, boolean)!entry	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¥% ¥(*"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2n
+org.jabref.model.entry.BibEntryTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¥ ¥($é
+horg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, boolean)!shouldCommit	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¥4 ¥(@"
+typeboolean"
+isFinalfalse"G
+declarationString2<mark class="modifier">boolean</mark> shouldCommit*shouldCommit2V
+booleanTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¥, ¥(3©
+ãorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>)METHODE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¿ ¿("
+isFinalfalse"˙
+declarationString‰<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">addToIndex</mark>(BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> Collection&lt;LinkedFile&gt; linkedFiles)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*
+addToIndex2‰
+îorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>, boolean)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¡ ¡(2·
+ëorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>)!entryCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¡ ¡(2Á
+óorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>)!linkedFilesCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¡ ¡(%2Ê
+ëorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>)!entry	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¿$ ¿()2Ï
+óorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>)!linkedFiles	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¿B ¿(M2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¿ ¿(¶
+ëorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>)!entry	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¿$ ¿()"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2n
+org.jabref.model.entry.BibEntryTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¿ ¿(#ƒ
+óorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>)!linkedFiles	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¿B ¿(M"
+typeCollection<LinkedFile>"
+isFinalfalse"7
+declarationString"Collection<LinkedFile> linkedFiles*linkedFiles2c
+java.util.CollectionTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¿+ ¿(52y
+!org.jabref.model.entry.LinkedFileTYPE_ARGUMENTE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¿6 ¿(@¶
+îorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>, boolean)METHODE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaƒ ƒ("
+isFinalfalse"Í
+declarationString‘<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">addToIndex</mark>(BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> Collection&lt;LinkedFile&gt; linkedFiles<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">boolean</mark> shouldCommit)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*
+addToIndex2Õ
+~org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java∆ ∆(2Ä
+1org.jabref.logic.pdf.search.PdfIndexer.doCommit()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java… …(2
+†org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>, boolean)!linkedFilesCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java≈% ≈(02Í
+öorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>, boolean)!entryCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java∆ ∆(2˝
+≠org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>, boolean)?linkedFile@197.24:197.34CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java∆ ∆((2Ò
+°org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>, boolean)!shouldCommitCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java» »(2Ô
+öorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>, boolean)!entry	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaƒ$ ƒ()2ı
+†org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>, boolean)!linkedFiles	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaƒB ƒ(M2ˆ
+°org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>, boolean)!shouldCommit	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaƒW ƒ(c2Ñ
+≠org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>, boolean)?linkedFile@197.24:197.34DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java≈ ≈("2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaƒ ƒ(ë
+≠org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>, boolean)?linkedFile@197.24:197.34VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java≈ ≈(""
+type
+LinkedFile"
+isFinalfalse"j
+declarationStringU<mark class="modifier"> </mark>LinkedFile <mark class="class-field">linkedFile</mark>*
+linkedFile2p
+!org.jabref.model.entry.LinkedFileTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java≈ ≈(Ø
+öorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>, boolean)!entry	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaƒ$ ƒ()"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2n
+org.jabref.model.entry.BibEntryTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaƒ ƒ(#Õ
+†org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>, boolean)!linkedFiles	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaƒB ƒ(M"
+typeCollection<LinkedFile>"
+isFinalfalse"7
+declarationString"Collection<LinkedFile> linkedFiles*linkedFiles2c
+java.util.CollectionTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaƒ+ ƒ(52y
+!org.jabref.model.entry.LinkedFileTYPE_ARGUMENTE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaƒ6 ƒ(@»
+°org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, java.util.Collection<org.jabref.model.entry.LinkedFile>, boolean)!shouldCommit	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaƒW ƒ(c"
+typeboolean"
+isFinalfalse"G
+declarationString2<mark class="modifier">boolean</mark> shouldCommit*shouldCommit2V
+booleanTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaƒO ƒ(V¬
+
+1org.jabref.logic.pdf.search.PdfIndexer.doCommit()METHODE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÕ Õ("
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">doCommit</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*doCommit2Ü
+7org.jabref.logic.pdf.search.PdfIndexer.getIndexWriter()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaœ œ(2ï
+Forg.jabref.logic.pdf.search.PdfIndexer.doCommit()?writer@207.58:207.64CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaœD œ(J2à
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java— —(2ê
+Aorg.jabref.logic.pdf.search.PdfIndexer.doCommit()?e@208.38:208.39CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java—B —(C2ú
+Forg.jabref.logic.pdf.search.PdfIndexer.doCommit()?writer@207.58:207.64DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaœ: œ(@2ó
+Aorg.jabref.logic.pdf.search.PdfIndexer.doCommit()?e@208.38:208.39DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java–& –('2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÕ Õ(·
+Forg.jabref.logic.pdf.search.PdfIndexer.doCommit()?writer@207.58:207.64VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaœ: œ(@"
+type"
+isFinalfalse"
+declarationString writer*writer2TYPE·
+Aorg.jabref.logic.pdf.search.PdfIndexer.doCommit()?e@208.38:208.39VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java–& –('"
+typeUncheckedIOException"
+isFinalfalse"+
+declarationStringUncheckedIOException e*e2k
+java.io.UncheckedIOExceptionTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java– –(%Ü
+Horg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.lang.String)METHODE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java⁄ ⁄("
+isFinalfalse"†
+declarationStringä<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">removeFromIndex</mark>(String linkedFilePath)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*removeFromIndex2Ü
+7org.jabref.logic.pdf.search.PdfIndexer.getIndexWriter()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java‹ ‹(2¨
+]org.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.lang.String)?writer@220.58:220.64CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java› ›(2¶
+Worg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.lang.String)!linkedFilePathCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java›K ›(Y2¨
+]org.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.lang.String)?writer@220.58:220.64CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaﬁ ﬁ(2à
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java· ·(2¶
+Worg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.lang.String)!linkedFilePathCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java·I ·(W2ß
+Xorg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.lang.String)?e@224.38:224.39CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java·Y ·(Z2´
+Worg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.lang.String)!linkedFilePath	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java⁄' ⁄(52≥
+]org.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.lang.String)?writer@220.58:220.64DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java‹: ‹(@2Æ
+Xorg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.lang.String)?e@224.38:224.39DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java‡& ‡('2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java⁄ ⁄(Í
+Worg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.lang.String)!linkedFilePath	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java⁄' ⁄(5"
+typeString"
+isFinalfalse"*
+declarationStringString linkedFilePath*linkedFilePath2_
+java.lang.StringTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java⁄  ⁄(&¯
+]org.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.lang.String)?writer@220.58:220.64VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java‹: ‹(@"
+type"
+isFinalfalse"
+declarationString writer*writer2TYPE¯
+Xorg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.lang.String)?e@224.38:224.39VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java‡& ‡('"
+typeUncheckedIOException"
+isFinalfalse"+
+declarationStringUncheckedIOException e*e2k
+java.io.UncheckedIOExceptionTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java‡ ‡(%™	
+Worg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(org.jabref.model.entry.BibEntry)METHODE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÍ Í("
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">removeFromIndex</mark>(BibEntry entry)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*removeFromIndex2æ
+oorg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.util.Collection<org.jabref.model.entry.LinkedFile>)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÎ Î(2y
+*org.jabref.model.entry.BibEntry.getFiles()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÎ Î(&2¨
+]org.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(org.jabref.model.entry.BibEntry)!entryCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÎ Î(2±
+]org.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(org.jabref.model.entry.BibEntry)!entry	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÍ) Í(.2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÍ Í(Ò
+]org.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(org.jabref.model.entry.BibEntry)!entry	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÍ) Í(."
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2n
+org.jabref.model.entry.BibEntryTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÍ  Í((Ø
+oorg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.util.Collection<org.jabref.model.entry.LinkedFile>)METHODE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÒ Ò("
+isFinalfalse"≥
+declarationStringù<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">removeFromIndex</mark>(Collection&lt;LinkedFile&gt; linkedFiles)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*removeFromIndex2ó
+Horg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.lang.String)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÛ Û(2z
++org.jabref.model.entry.LinkedFile.getLink()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÛ' Û(.2 
+{org.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.util.Collection<org.jabref.model.entry.LinkedFile>)!linkedFilesCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÚ% Ú(02ÿ
+àorg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.util.Collection<org.jabref.model.entry.LinkedFile>)?linkedFile@242.24:242.34CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÛ Û(&2œ
+{org.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.util.Collection<org.jabref.model.entry.LinkedFile>)!linkedFiles	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÒ7 Ò(B2ﬂ
+àorg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.util.Collection<org.jabref.model.entry.LinkedFile>)?linkedFile@242.24:242.34DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÚ Ú("2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÒ Ò(Ï
+àorg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.util.Collection<org.jabref.model.entry.LinkedFile>)?linkedFile@242.24:242.34VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÚ Ú(""
+type
+LinkedFile"
+isFinalfalse"j
+declarationStringU<mark class="modifier"> </mark>LinkedFile <mark class="class-field">linkedFile</mark>*
+linkedFile2p
+!org.jabref.model.entry.LinkedFileTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÚ Ú(ß
+{org.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.util.Collection<org.jabref.model.entry.LinkedFile>)!linkedFiles	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÒ7 Ò(B"
+typeCollection<LinkedFile>"
+isFinalfalse"7
+declarationString"Collection<LinkedFile> linkedFiles*linkedFiles2c
+java.util.CollectionTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÒ  Ò(*2y
+!org.jabref.model.entry.LinkedFileTYPE_ARGUMENTE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÒ+ Ò(5˚
+corg.jabref.logic.pdf.search.PdfIndexer.removePathsFromIndex(java.util.Collection<java.lang.String>)METHODE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java˜ ˜($"
+isFinalfalse"¥
+declarationStringû<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">removePathsFromIndex</mark>(Collection&lt;String&gt; linkedFiles)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*removePathsFromIndex2ó
+Horg.jabref.logic.pdf.search.PdfIndexer.removeFromIndex(java.lang.String)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java˘ ˘(2æ
+oorg.jabref.logic.pdf.search.PdfIndexer.removePathsFromIndex(java.util.Collection<java.lang.String>)!linkedFilesCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¯! ¯(,2À
+|org.jabref.logic.pdf.search.PdfIndexer.removePathsFromIndex(java.util.Collection<java.lang.String>)?linkedFile@248.20:248.30CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java˘ ˘(&2√
+oorg.jabref.logic.pdf.search.PdfIndexer.removePathsFromIndex(java.util.Collection<java.lang.String>)!linkedFiles	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java˜8 ˜(C2“
+|org.jabref.logic.pdf.search.PdfIndexer.removePathsFromIndex(java.util.Collection<java.lang.String>)?linkedFile@248.20:248.30DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¯ ¯(2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java˜ ˜(∆
+|org.jabref.logic.pdf.search.PdfIndexer.removePathsFromIndex(java.util.Collection<java.lang.String>)?linkedFile@248.20:248.30VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¯ ¯("
+typeString"
+isFinalfalse"f
+declarationStringQ<mark class="modifier"> </mark>String <mark class="class-field">linkedFile</mark>*
+linkedFile2_
+java.lang.StringTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¯ ¯(Ç
+oorg.jabref.logic.pdf.search.PdfIndexer.removePathsFromIndex(java.util.Collection<java.lang.String>)!linkedFiles	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java˜8 ˜(C"
+typeCollection<String>"
+isFinalfalse"3
+declarationStringCollection<String> linkedFiles*linkedFiles2c
+java.util.CollectionTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java˜% ˜(/2h
+java.lang.StringTYPE_ARGUMENTE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java˜0 ˜(6å
+uorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile)METHODE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÑ Ñ("
+isFinalfalse"Á
+declarationString—<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">addToIndex</mark>(BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> LinkedFile linkedFile)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*
+addToIndex2Õ
+~org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÖ Ö(2 
+{org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile)!entryCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÖ Ö(2–
+Äorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile)!linkedFileCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÖ Ö()2œ
+{org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile)!entry	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÑ$ Ñ()2’
+Äorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile)!linkedFile	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÑ6 Ñ(@2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÑ Ñ(è
+{org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile)!entry	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÑ$ Ñ()"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2n
+org.jabref.model.entry.BibEntryTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÑ Ñ(#•
+Äorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile)!linkedFile	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÑ6 Ñ(@"
+type
+LinkedFile"
+isFinalfalse"*
+declarationStringLinkedFile linkedFile*
+linkedFile2p
+!org.jabref.model.entry.LinkedFileTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÑ+ Ñ(5Ìz
+~org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)METHODE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaà à("
+isFinalfalse"ÿ
+declarationString¬<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">addToIndex</mark>(BibEntry entry<mark class="modifier"><mark class="modifier">,</mark></mark> LinkedFile linkedFile<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">boolean</mark> shouldCommit)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*
+addToIndex2
+0org.jabref.model.entry.LinkedFile.isOnlineLink()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaâ â(#2x
+)java.lang.String.equals(java.lang.Object)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaä1 ä(72
+0org.jabref.logic.util.StandardFileType.getName()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaä' ä(.2~
+/org.jabref.model.entry.LinkedFile.getFileType()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaäC ä(N2z
++java.lang.String.endsWith(java.lang.String)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaå/ å(72z
++org.jabref.model.entry.LinkedFile.getLink()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaå% å(,2z
++java.lang.String.endsWith(java.lang.String)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaåY å(a2z
++org.jabref.model.entry.LinkedFile.getLink()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaåO å(V2Õ
+~org.jabref.model.entry.LinkedFile.findIn(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaè1 è(72k
+java.util.Optional.isEmpty()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaê ê( 2z
++org.jabref.model.entry.LinkedFile.getLink()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaë9 ë(@2z
++org.jabref.model.entry.LinkedFile.getLink()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaî6 î(=2z
++org.jabref.model.entry.LinkedFile.getLink()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaô_ ô(f2∂
+gjava.nio.file.Files.readAttributes(java.nio.file.Path, java.lang.Class<A>, java.nio.file.LinkOption...)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaü; ü(I2g
+java.util.Optional.get()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaüW ü(Z2ë
+Bjava.nio.file.attribute.FileTime.to(java.util.concurrent.TimeUnit)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java†O †(Q2ç
+>java.nio.file.attribute.BasicFileAttributes.lastModifiedTime()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java†< †(L2z
++org.jabref.model.entry.LinkedFile.getLink()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java°N °(U2Ÿ
+âorg.jabref.logic.pdf.search.DocumentReader.readLinkedPdf(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.LinkedFile)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java©X ©(e2m
+java.util.Optional.isPresent()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java™ ™(2Ü
+7org.jabref.logic.pdf.search.PdfIndexer.getIndexWriter()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java´ ´(2g
+java.util.Optional.get()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¨. ¨(12z
++org.jabref.model.entry.LinkedFile.getLink()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java≤G ≤(N2z
++org.jabref.model.entry.LinkedFile.getLink()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaµN µ(U2“
+Çorg.jabref.logic.pdf.search.DocumentReader.DocumentReader(org.jabref.model.entry.BibEntry, org.jabref.preferences.FilePreferences)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java©1 ©(?2Ÿ
+âorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!linkedFileCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaâ â(2Ÿ
+âorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!linkedFileCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaä8 ä(B2Ÿ
+âorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!linkedFileCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaå å($2Ÿ
+âorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!linkedFileCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaåD å(N2Ÿ
+âorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!linkedFileCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaè& è(02ë
+Borg.jabref.logic.pdf.search.PdfIndexer?databaseContext@53.37:53.52CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaè8 è(G2ë
+Borg.jabref.logic.pdf.search.PdfIndexer?filePreferences@55.34:55.49CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaèI è(X2È
+ôorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?resolvedPath@271.23:271.35CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaê ê(2à
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaë ë(2Ÿ
+âorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!linkedFileCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaë. ë(82à
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaî î(2Ÿ
+âorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!linkedFileCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaî+ î(52à
+9org.jabref.logic.pdf.search.PdfIndexer?reader@60.24:60.30CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaò; ò(A2Ÿ
+âorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!linkedFileCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaôT ô(^2Â
+ïorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?searcher@280.30:280.38CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaö" ö(*2‚
+íorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?query@281.26:281.31CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaö2 ö(72‰
+îorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?topDocs@282.24:282.31CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaú ú(2à
+9org.jabref.logic.pdf.search.PdfIndexer?reader@60.24:60.30CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaù# ù()2‰
+îorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?topDocs@282.24:282.31CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaù3 ù(:2‡
+êorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?doc@285.29:285.32CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaû@ û(C2È
+ôorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?resolvedPath@271.23:271.35CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaüJ ü(V2Ú
+¢org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?indexModificationTime@286.25:286.46CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java† †(-2Á
+óorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?attributes@287.40:287.50CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java†1 †(;2à
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java° °(2Ÿ
+âorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!linkedFileCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java°C °(M2à
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¶ ¶(2ﬁ
+éorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?e@293.44:293.45CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¶= ¶(>2‘
+Ñorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!entryCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java©@ ©(E2ë
+Borg.jabref.logic.pdf.search.PdfIndexer?filePreferences@55.34:55.49CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java©G ©(V2⁄
+âorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!linkedFileCALLF
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java©| ©(Ü2‚
+íorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?pages@297.37:297.42CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java™ ™(2„
+ìorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?writer@299.62:299.68CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¨ ¨(2‚
+íorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?pages@297.37:297.42CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¨( ¨(-2€
+ãorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!shouldCommitCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java≠ ≠($2„
+ìorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?writer@299.62:299.68CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÆ Æ(2à
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java≤ ≤(2Ÿ
+âorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!linkedFileCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java≤< ≤(F2à
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaµ µ(2Ÿ
+âorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!linkedFileCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaµC µ(M2ﬁ
+éorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?e@308.52:308.53CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaµY µ(Z2ë
+Borg.jabref.logic.pdf.search.PdfIndexer?databaseContext@53.37:53.52CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java©k ©(z2Ÿ
+Ñorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!entry	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaà% à(*2ﬁ
+âorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!linkedFile	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaà7 à(A2‡
+ãorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!shouldCommit	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaàK à(W2
+ôorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?resolvedPath@271.23:271.35DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaè è(#2Ï
+ïorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?searcher@280.30:280.38DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaò ò(&2È
+íorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?query@281.26:281.31DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaô ô(2Î
+îorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?topDocs@282.24:282.31DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaö ö(2Á
+êorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?doc@285.29:285.32DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaù ù( 2˘
+¢org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?indexModificationTime@286.25:286.46DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaû û(.2Ó
+óorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?attributes@287.40:287.50DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaü( ü(22È
+íorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?pages@297.37:297.42DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java©% ©(*2Â
+éorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?e@293.44:293.45DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java•, •(-2Í
+ìorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?writer@299.62:299.68DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java´> ´(D2Â
+éorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?e@308.52:308.53DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¥4 ¥(52Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaà à(Ú
+
+ôorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?resolvedPath@271.23:271.35VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaè è(#"
+typeOptional<Path>"
+isFinalfalse"ß
+declarationStringë<mark class="modifier"> </mark>Optional<Path> <mark class="class-field">resolvedPath</mark> = linkedFile.findIn(databaseContext, filePreferences)*resolvedPath2a
+java.util.OptionalTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaè è(2j
+java.nio.file.PathTYPE_ARGUMENTE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaè è(2Õ
+~org.jabref.model.entry.LinkedFile.findIn(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaè1 è(72Ÿ
+âorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!linkedFileCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaè& è(02ë
+Borg.jabref.logic.pdf.search.PdfIndexer?databaseContext@53.37:53.52CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaè8 è(G2ë
+Borg.jabref.logic.pdf.search.PdfIndexer?filePreferences@55.34:55.49CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaèI è(X®
+ïorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?searcher@280.30:280.38VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaò ò(&"
+typeIndexSearcher"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>IndexSearcher <mark class="class-field">searcher</mark> = new IndexSearcher(reader)*searcher2u
+&org.apache.lucene.search.IndexSearcherTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaò ò(2à
+9org.jabref.logic.pdf.search.PdfIndexer?reader@60.24:60.30CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaò; ò(Aê
+íorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?query@281.26:281.31VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaô ô("
+type	TermQuery"
+isFinalfalse"∞
+declarationStringö<mark class="modifier"> </mark>TermQuery <mark class="class-field">query</mark> = new TermQuery(new Term(SearchFieldConstants.PATH, linkedFile.getLink()))*query2q
+"org.apache.lucene.search.TermQueryTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaô ô(2z
++org.jabref.model.entry.LinkedFile.getLink()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaô_ ô(f2Ÿ
+âorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!linkedFileCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaôT ô(^’
+îorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?topDocs@282.24:282.31VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaö ö("
+typeTopDocs"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier"> </mark>TopDocs <mark class="class-field">topDocs</mark> = searcher.search(query, 1)*topDocs2o
+ org.apache.lucene.search.TopDocsTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaö ö(2Â
+ïorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?searcher@280.30:280.38CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaö" ö(*2‚
+íorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?query@281.26:281.31CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaö2 ö(7É
+êorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?doc@285.29:285.32VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaù ù( "
+typeDocument"
+isFinalfalse"ç
+declarationStringx<mark class="modifier"> </mark>Document <mark class="class-field">doc</mark> = reader.document(topDocs.scoreDocs[0].doc)*doc2r
+#org.apache.lucene.document.DocumentTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaù ù(2à
+9org.jabref.logic.pdf.search.PdfIndexer?reader@60.24:60.30CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaù# ù()2‰
+îorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?topDocs@282.24:282.31CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaù3 ù(:¬
+¢org.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?indexModificationTime@286.25:286.46VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaû û(."
+typelong"
+isFinalfalse"⁄
+declarationStringƒ<mark class="modifier"> </mark><mark class="modifier">long</mark> <mark class="class-field">indexModificationTime</mark> = Long.parseLong(doc.getField(SearchFieldConstants.MODIFIED).stringValue())*indexModificationTime2S
+longTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaû û(2‡
+êorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?doc@285.29:285.32CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaû@ û(Cã	
+óorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?attributes@287.40:287.50VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaü( ü(2"
+typeBasicFileAttributes"
+isFinalfalse"ÿ
+declarationString¬<mark class="modifier"> </mark>BasicFileAttributes <mark class="class-field">attributes</mark> = Files.readAttributes(resolvedPath.get()<mark class="modifier">,</mark> BasicFileAttributes.class)*
+attributes2z
++java.nio.file.attribute.BasicFileAttributesTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaü ü('2∂
+gjava.nio.file.Files.readAttributes(java.nio.file.Path, java.lang.Class<A>, java.nio.file.LinkOption...)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaü; ü(I2g
+java.util.Optional.get()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaüW ü(Z2È
+ôorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?resolvedPath@271.23:271.35CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaüJ ü(VË
+íorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?pages@297.37:297.42VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java©% ©(*" 
+typeOptional<List<Document>>"
+isFinalfalse"Ô
+declarationStringŸ<mark class="modifier"> </mark>Optional<List<Document>> <mark class="class-field">pages</mark> = new DocumentReader(entry, filePreferences).readLinkedPdf(<mark class="modifier">this</mark>.databaseContext, linkedFile)*pages2a
+java.util.OptionalTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java© ©(2f
+java.util.ListTYPE_ARGUMENTE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java© ©(2{
+#org.apache.lucene.document.DocumentTYPE_ARGUMENTE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java© ©("2Ÿ
+âorg.jabref.logic.pdf.search.DocumentReader.readLinkedPdf(org.jabref.model.database.BibDatabaseContext, org.jabref.model.entry.LinkedFile)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java©X ©(e2“
+Çorg.jabref.logic.pdf.search.DocumentReader.DocumentReader(org.jabref.model.entry.BibEntry, org.jabref.preferences.FilePreferences)CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java©1 ©(?2‘
+Ñorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!entryCALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java©@ ©(E2ë
+Borg.jabref.logic.pdf.search.PdfIndexer?filePreferences@55.34:55.49CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java©G ©(V2⁄
+âorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!linkedFileCALLF
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java©| ©(Ü2ë
+Borg.jabref.logic.pdf.search.PdfIndexer?databaseContext@53.37:53.52CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java©k ©(zô
+Ñorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!entry	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaà% à(*"
+typeBibEntry"
+isFinalfalse"#
+declarationStringBibEntry entry*entry2n
+org.jabref.model.entry.BibEntryTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaà à($Æ
+âorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!linkedFile	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaà7 à(A"
+type
+LinkedFile"
+isFinalfalse"*
+declarationStringLinkedFile linkedFile*
+linkedFile2p
+!org.jabref.model.entry.LinkedFileTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaà, à(6≤
+ãorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)!shouldCommit	PARAMETERE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaàK à(W"
+typeboolean"
+isFinalfalse"G
+declarationString2<mark class="modifier">boolean</mark> shouldCommit*shouldCommit2V
+booleanTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaàC à(J≈
+éorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?e@293.44:293.45VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java•, •(-"
+typeIndexNotFoundException"
+isFinalfalse"-
+declarationStringIndexNotFoundException e*e2}
+.org.apache.lucene.index.IndexNotFoundExceptionTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java• •(+Ø
+ìorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?writer@299.62:299.68VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java´> ´(D"
+type"
+isFinalfalse"
+declarationString writer*writer2TYPE‚
+éorg.jabref.logic.pdf.search.PdfIndexer.addToIndex(org.jabref.model.entry.BibEntry, org.jabref.model.entry.LinkedFile, boolean)?e@308.52:308.53VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¥4 ¥(5"*
+type"UncheckedIOException | IOException"
+isFinalfalse"9
+declarationString$UncheckedIOException | IOException e*e2Å
+2java.io.UncheckedIOException | java.io.IOExceptionTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¥ ¥(3ù(
+;org.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()METHODE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaæ æ()"
+isFinalfalse"|
+declarationStringg<mark class="modifier">public </mark>Set&lt;String&gt; <mark class="method">getListOfFilePaths</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeSet<String>*getListOfFilePaths2Ü
+7org.jabref.logic.pdf.search.PdfIndexer.getIndexWriter()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¿4 ¿(B2k
+java.util.Optional.isEmpty()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¡  ¡('2g
+java.util.Optional.get()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java≈K ≈(N2j
+java.util.HashSet.HashSet()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaø  ø()2¨
+]org.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?optionalIndexWriter@320.30:320.49CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¡ ¡(2à
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¬ ¬(2û
+Oorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?paths@319.20:319.25CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java√ √(2¨
+]org.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?optionalIndexWriter@320.30:320.49CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java≈7 ≈(J2ü
+Porg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?reader@325.25:325.31CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java∆7 ∆(=2°
+Rorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?searcher@326.26:326.34CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java» »(&2û
+Oorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?query@327.30:327.35CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java». »(32†
+Qorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?allDocs@328.20:328.27CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java…% …(,2ü
+Porg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?reader@325.25:325.31CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java   (%2°
+Rorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?scoreDoc@329.26:329.34CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java /  (72û
+Oorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?paths@319.20:319.25CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÀ À(2ú
+Morg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?doc@330.25:330.28CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÀ À(2à
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaŒ Œ(2ö
+Korg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?e@333.29:333.30CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaŒV Œ(W2û
+Oorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?paths@319.20:319.25CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaœ œ(2û
+Oorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?paths@319.20:319.25CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java— —(2•
+Oorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?paths@319.20:319.25DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaø ø(2≥
+]org.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?optionalIndexWriter@320.30:320.49DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¿ ¿(12¶
+Porg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?reader@325.25:325.31DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java≈ ≈(2®
+Rorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?searcher@326.26:326.34DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java∆ ∆("2•
+Oorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?query@327.30:327.35DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java« «(#2ß
+Qorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?allDocs@328.20:328.27DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java» »(2®
+Rorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?scoreDoc@329.26:329.34DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java… …("2£
+Morg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?doc@330.25:330.28DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java   (2°
+Korg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?e@333.29:333.30DECLARATIONE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÕ Õ(2c
+java.util.SetRETURN_TYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaæ æ(2o
+java.lang.StringRETURN_TYPE_ARGUMENTE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaæ æ(˛
+Oorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?paths@319.20:319.25VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaø ø("
+typeSet<String>"
+isFinalfalse"x
+declarationStringc<mark class="modifier"> </mark>Set<String> <mark class="class-field">paths</mark> = new HashSet<>()*paths2\
+java.util.SetTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaø ø(2h
+java.lang.StringTYPE_ARGUMENTE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaø ø(2j
+java.util.HashSet.HashSet()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaø  ø()Û
+]org.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?optionalIndexWriter@320.30:320.49VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¿ ¿(1"
+typeOptional<IndexWriter>"
+isFinalfalse"ë
+declarationString|<mark class="modifier"> </mark>Optional<IndexWriter> <mark class="class-field">optionalIndexWriter</mark> = getIndexWriter()*optionalIndexWriter2a
+java.util.OptionalTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¿ ¿(2{
+#org.apache.lucene.index.IndexWriterTYPE_ARGUMENTE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¿ ¿(2Ü
+7org.jabref.logic.pdf.search.PdfIndexer.getIndexWriter()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java¿4 ¿(B˚
+Porg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?reader@325.25:325.31VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java≈ ≈("
+typeIndexReader"
+isFinalfalse"ö
+declarationStringÑ<mark class="modifier"> </mark>IndexReader <mark class="class-field">reader</mark> = DirectoryReader.open(optionalIndexWriter.get())*reader2r
+#org.apache.lucene.index.IndexReaderTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java≈ ≈(2g
+java.util.Optional.get()CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java≈K ≈(N2¨
+]org.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?optionalIndexWriter@320.30:320.49CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java≈7 ≈(J˚
+Rorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?searcher@326.26:326.34VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java∆ ∆(""
+typeIndexSearcher"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>IndexSearcher <mark class="class-field">searcher</mark> = new IndexSearcher(reader)*searcher2u
+&org.apache.lucene.search.IndexSearcherTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java∆ ∆(2ü
+Porg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?reader@325.25:325.31CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java∆7 ∆(=⁄
+Oorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?query@327.30:327.35VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java« «(#"
+typeMatchAllDocsQuery"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>MatchAllDocsQuery <mark class="class-field">query</mark> = new MatchAllDocsQuery()*query2y
+*org.apache.lucene.search.MatchAllDocsQueryTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java« «(ô
+Qorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?allDocs@328.20:328.27VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java» »("
+typeTopDocs"
+isFinalfalse"ê
+declarationString{<mark class="modifier"> </mark>TopDocs <mark class="class-field">allDocs</mark> = searcher.search(query, Integer.MAX_VALUE)*allDocs2o
+ org.apache.lucene.search.TopDocsTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java» »(2°
+Rorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?searcher@326.26:326.34CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java» »(&2û
+Oorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?query@327.30:327.35CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java». »(3≠
+Rorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?scoreDoc@329.26:329.34VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java… …(""
+typeScoreDoc"
+isFinalfalse"f
+declarationStringQ<mark class="modifier"> </mark>ScoreDoc <mark class="class-field">scoreDoc</mark>*scoreDoc2p
+!org.apache.lucene.search.ScoreDocTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java… …(á
+Morg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?doc@330.25:330.28VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java   ("
+typeDocument"
+isFinalfalse"Å
+declarationStringl<mark class="modifier"> </mark>Document <mark class="class-field">doc</mark> = reader.document(scoreDoc.doc)*doc2r
+#org.apache.lucene.document.DocumentTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java   (2ü
+Porg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?reader@325.25:325.31CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java   (%2°
+Rorg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?scoreDoc@329.26:329.34CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java /  (7–
+Korg.jabref.logic.pdf.search.PdfIndexer.getListOfFilePaths()?e@333.29:333.30VARIABLEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÕ Õ("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2b
+java.io.IOExceptionTYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaÕ Õ(∫
+.org.jabref.logic.pdf.search.PdfIndexer.close()METHODE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java‘ ‘("
+isFinalfalse"–
+declarationString∫<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">close</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>IOException"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*close2ç
+>org.jabref.logic.pdf.search.PdfIndexer?indexWriter@51.16:51.27CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java’ ’(2à
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java÷ ÷(2ç
+>org.jabref.logic.pdf.search.PdfIndexer?indexWriter@51.16:51.27CALLE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.javaŸ Ÿ(2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java‘ ‘(ó
+9org.jabref.logic.pdf.search.PdfIndexer?LOGGER@47.32:47.38VALUEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java/  /(&"
+isFinaltrue"
+typeLogger"‡
+declarationString <mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(PdfIndexer.class);"
+isStatictrue"
+accessprivate*LOGGER2]
+org.slf4j.LoggerTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java/ /(—
+>org.jabref.logic.pdf.search.PdfIndexer?indexWriter@51.16:51.27VARIABLEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java3 3("
+isFinalfalse"
+typeIndexWriter"l
+declarationStringW<mark class="modifier"> </mark>IndexWriter <mark class="class-field">indexWriter</mark>"
+isStaticfalse"
+accesspackage_private*indexWriter2p
+#org.apache.lucene.index.IndexWriterTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java3 3(ï
+Borg.jabref.logic.pdf.search.PdfIndexer?databaseContext@53.37:53.52VALUEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java5% 5(4"
+isFinaltrue"
+typeBibDatabaseContext"£
+declarationStringç<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">databaseContext</mark>"
+isStaticfalse"
+accessprivate*databaseContext2y
+,org.jabref.model.database.BibDatabaseContextTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java5 5($â
+Borg.jabref.logic.pdf.search.PdfIndexer?filePreferences@55.34:55.49VALUEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java7" 7(1"
+isFinaltrue"
+typeFilePreferences"†
+declarationStringä<mark class="modifier">private </mark><mark class="modifier">final </mark>FilePreferences <mark class="class-field">filePreferences</mark>"
+isStaticfalse"
+accessprivate*filePreferences2s
+&org.jabref.preferences.FilePreferencesTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java7 7(!ı
+Aorg.jabref.logic.pdf.search.PdfIndexer?indexDirectory@58.28:58.42VALUEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java: :(*"
+isFinaltrue"
+type	Directory"ô
+declarationStringÉ<mark class="modifier">private </mark><mark class="modifier">final </mark>Directory <mark class="class-field">indexDirectory</mark>"
+isStaticfalse"
+accessprivate*indexDirectory2n
+!org.apache.lucene.store.DirectoryTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java: :(¡
+9org.jabref.logic.pdf.search.PdfIndexer?reader@60.24:60.30VARIABLEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java< <("
+isFinalfalse"
+typeIndexReader"n
+declarationStringY<mark class="modifier">private </mark>IndexReader <mark class="class-field">reader</mark>"
+isStaticfalse"
+accessprivate*reader2p
+#org.apache.lucene.index.IndexReaderTYPEC
+9src\main\java\org\jabref\logic\pdf\search\PdfIndexer.java< <(

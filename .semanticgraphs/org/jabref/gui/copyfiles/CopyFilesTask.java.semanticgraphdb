@@ -1,0 +1,823 @@
+
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java§
+&org.jabref.gui.copyfiles.CopyFilesTaskCLASSC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java ("#
+packageorg.jabref.gui.copyfiles"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"ª
+declarationString•<mark class="modifier">public </mark><mark class="modifier">class </mark>CopyFilesTask<mark class="modifier"> extends </mark>Task<List<CopyFilesResultItemViewModel>>"
+accesspublic*CopyFilesTask2ß
+“org.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java/ /(2Å
+-org.jabref.gui.copyfiles.CopyFilesTask.call()DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java81 8(52»
+torg.jabref.gui.copyfiles.CopyFilesTask.writeLogMessage(java.nio.file.Path, java.io.BufferedWriter, java.lang.String)DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaz z( 2ª
+eorg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)DECLARATIONE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÉ É( 2ç
+9org.jabref.gui.copyfiles.CopyFilesTask?LOGGER@30.32:30.38DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java  (&2ï
+Aorg.jabref.gui.copyfiles.CopyFilesTask?LOGFILE_PREFIX@31.32:31.46DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java  (.2í
+>org.jabref.gui.copyfiles.CopyFilesTask?LOGFILE_EXT@32.32:32.43DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java    (+2ñ
+Borg.jabref.gui.copyfiles.CopyFilesTask?databaseContext@33.37:33.52DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java!% !(42ô
+Eorg.jabref.gui.copyfiles.CopyFilesTask?preferencesService@34.37:34.55DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java"% "(72ë
+=org.jabref.gui.copyfiles.CopyFilesTask?exportPath@35.23:35.33DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java# #(!2û
+Jorg.jabref.gui.copyfiles.CopyFilesTask?localizedSuccessMessage@36.25:36.48DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java$ $(02ú
+Horg.jabref.gui.copyfiles.CopyFilesTask?localizedErrorMessage@37.25:37.46DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java% %(.2ñ
+Borg.jabref.gui.copyfiles.CopyFilesTask?totalFilesCount@38.23:38.38DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java& &(&2é
+:org.jabref.gui.copyfiles.CopyFilesTask?entries@39.33:39.40DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java'! '((2é
+:org.jabref.gui.copyfiles.CopyFilesTask?results@40.53:40.60DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java(5 ((<2é
+:org.jabref.gui.copyfiles.CopyFilesTask?newPath@41.27:41.34DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java) )("2ó
+Corg.jabref.gui.copyfiles.CopyFilesTask?numberSuccessful@42.16:42.32DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java* *( 2ò
+Dorg.jabref.gui.copyfiles.CopyFilesTask?totalFilesCounter@43.16:43.33DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java+ +(!2ö
+Forg.jabref.gui.copyfiles.CopyFilesTask?resolvePathFilename@45.47:45.66DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java-/ -(B2e
+javafx.concurrent.TaskEXTENDC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java# ('2k
+java.util.ListEXTEND_TYPE_ARGUMENTC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java( (Jí+
+“org.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)CONSTRUCTORC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java/ /("å
+declarationStringˆ<mark class="modifier">public </mark><mark class="method">CopyFilesTask</mark>(BibDatabaseContext databaseContext<mark class="modifier"><mark class="modifier">,</mark></mark> List&lt;BibEntry&gt; entries<mark class="modifier"><mark class="modifier">,</mark></mark> Path path<mark class="modifier"><mark class="modifier">,</mark></mark> PreferencesService preferencesService)*CopyFilesTask2n
+!java.util.stream.LongStream.sum()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java4W 4(Z2ú
+Ojava.util.stream.Stream.mapToLong(java.util.function.ToLongFunction<? super T>)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java4+ 4(42j
+java.util.Collection.stream()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java4" 4((2b
+java.util.List.size()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java4O 4(S2w
+*org.jabref.model.entry.BibEntry.getFiles()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java4D 4(L2∞
+‚org.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)!databaseContextCALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java0 0(.2≥
+Âorg.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)!preferencesServiceCALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java1" 1(42®
+⁄org.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)!entriesCALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java2 2(2•
+◊org.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)!pathCALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java3 3(2è
+Borg.jabref.gui.copyfiles.CopyFilesTask?totalFilesCount@38.23:38.38CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java4 4(2®
+⁄org.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)!entriesCALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java4 4(!2≤
+‰org.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)?entry@52.53:52.58CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java4> 4(C2è
+Borg.jabref.gui.copyfiles.CopyFilesTask?databaseContext@33.37:33.52CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java0 0(2í
+Eorg.jabref.gui.copyfiles.CopyFilesTask?preferencesService@34.37:34.55CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java1 1(2á
+:org.jabref.gui.copyfiles.CopyFilesTask?entries@39.33:39.40CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java2 2(2ä
+=org.jabref.gui.copyfiles.CopyFilesTask?exportPath@35.23:35.33CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java3 3(2µ
+‚org.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)!databaseContext	PARAMETERC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java/, /(;2≠
+⁄org.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)!entries	PARAMETERC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java/L /(S2™
+◊org.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)!path	PARAMETERC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java/Z /(^2π
+Âorg.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)!preferencesService	PARAMETERD
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java/s /(Ö2π
+‰org.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)?entry@52.53:52.58DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java45 4(:2z
+&org.jabref.gui.copyfiles.CopyFilesTaskRETURN_TYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java/ /(®
+‚org.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)!databaseContext	PARAMETERC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java/, /(;"
+typeBibDatabaseContext"
+isFinalfalse"7
+declarationString"BibDatabaseContext databaseContext*databaseContext2y
+,org.jabref.model.database.BibDatabaseContextTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java/ /(+·
+⁄org.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)!entries	PARAMETERC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java/L /(S"
+typeList<BibEntry>"
+isFinalfalse"+
+declarationStringList<BibEntry> entries*entries2[
+java.util.ListTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java/= /(A2u
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java/B /(J—
+◊org.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)!path	PARAMETERC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java/Z /(^"
+typePath"
+isFinalfalse"
+declarationString	Path path*path2_
+java.nio.file.PathTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java/U /(YØ
+Âorg.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)!preferencesService	PARAMETERD
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java/s /(Ö"
+typePreferencesService"
+isFinalfalse":
+declarationString%PreferencesService preferencesService*preferencesService2v
+)org.jabref.preferences.PreferencesServiceTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java/` /(r¸
+‰org.jabref.gui.copyfiles.CopyFilesTask.CopyFilesTask(org.jabref.model.database.BibDatabaseContext, java.util.List<org.jabref.model.entry.BibEntry>, java.nio.file.Path, org.jabref.preferences.PreferencesService)?entry@52.53:52.58VARIABLEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java45 4(:"
+type"
+isFinalfalse"
+declarationString entry*entry2TYPEªy
+-org.jabref.gui.copyfiles.CopyFilesTask.call()METHODC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java81 8(5"
+isFinalfalse"ÿ
+declarationString¬<mark class="annotation">@Override</mark> <br><mark class="modifier">protected </mark>List&lt;CopyFilesResultItemViewModel&gt; <mark class="method">call</mark>()<mark class="modifier"> <mark class="modifier">throws</mark> </mark>InterruptedException<mark class="modifier"><mark class="modifier">,</mark></mark> IOException"
+isStaticfalse"
+access	protected"
+
+isAbstractfalse"*
+type"List<CopyFilesResultItemViewModel>*call2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java:# :('2j
+java.time.LocalDateTime.now()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java=2 =(52è
+Bjava.time.LocalDateTime.format(java.time.format.DateTimeFormatter)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java>) >(/2ã
+>java.time.format.DateTimeFormatter.ofPattern(java.lang.String)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java>B >(K2Ω
+pjava.nio.file.Files.newBufferedWriter(java.nio.file.Path, java.nio.charset.Charset, java.nio.file.OpenOption...)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java@' @(82y
+,java.nio.file.Path.resolve(java.lang.String)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java@D @(K2b
+java.util.List.size()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaA( A(,2w
+*org.jabref.model.entry.BibEntry.getFiles()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaF8 F(@2d
+java.util.List.get(int)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaF1 F(42b
+java.util.List.size()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaH* H(.2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaM/ M(32l
+java.lang.Integer.toString(int)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaM[ M(c2l
+java.lang.Integer.toString(int)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaMt M(|2d
+java.util.List.get(int)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaO0 O(32À
+~org.jabref.model.entry.LinkedFile.findIn(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaQ; Q(A2ã
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaQf Q(x2Œ
+Äorg.jabref.model.util.OptionalUtil.combine(java.util.Optional<T>, java.util.Optional<S>, java.util.function.BiFunction<T, S, R>)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaS+ S(22e
+java.util.Optional.of(T)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaS< S(>2k
+java.util.Optional.isPresent()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaU  U()2e
+java.util.Optional.get()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaV/ V(22®
+[org.jabref.logic.util.io.FileUtil.copyFile(java.nio.file.Path, java.nio.file.Path, boolean)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaW3 W(;2e
+java.util.Optional.get()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaWI W(L2i
+java.lang.Thread.sleep(long)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaZ# Z((2¡
+torg.jabref.gui.copyfiles.CopyFilesTask.writeLogMessage(java.nio.file.Path, java.io.BufferedWriter, java.lang.String)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javad d(+2≤
+eorg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javae e(+2¡
+torg.jabref.gui.copyfiles.CopyFilesTask.writeLogMessage(java.nio.file.Path, java.io.BufferedWriter, java.lang.String)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javah h(+2≤
+eorg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javai i(+2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javan' n(+2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javap1 p(52l
+java.lang.Integer.toString(int)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaq q($2l
+java.lang.Integer.toString(int)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javar r($2i
+java.util.Optional.orElse(T)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javasE s(K2ò
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javas1 s(42ò
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javas s(2s
+&java.io.Writer.write(java.lang.String)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javau u(2è
+Borg.jabref.gui.copyfiles.CopyFilesTask?totalFilesCount@38.23:38.38CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java; ;()2í
+Eorg.jabref.gui.copyfiles.CopyFilesTask.call()?currentTime@61.22:61.33CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java> >((2ä
+=org.jabref.gui.copyfiles.CopyFilesTask?exportPath@35.23:35.33CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java@9 @(C2é
+Aorg.jabref.gui.copyfiles.CopyFilesTask?LOGFILE_PREFIX@31.32:31.46CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java@L @(Z2í
+Eorg.jabref.gui.copyfiles.CopyFilesTask.call()?currentDate@62.15:62.26CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java@] @(h2ã
+>org.jabref.gui.copyfiles.CopyFilesTask?LOGFILE_EXT@32.32:32.43CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java@k @(v2à
+;org.jabref.gui.copyfiles.CopyFilesTask.call()?i@65.21:65.22CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaA A(2á
+:org.jabref.gui.copyfiles.CopyFilesTask?entries@39.33:39.40CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaA  A('2à
+;org.jabref.gui.copyfiles.CopyFilesTask.call()?i@65.21:65.22CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaA0 A(12á
+:org.jabref.gui.copyfiles.CopyFilesTask?entries@39.33:39.40CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaF) F(02à
+;org.jabref.gui.copyfiles.CopyFilesTask.call()?i@65.21:65.22CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaF5 F(62à
+;org.jabref.gui.copyfiles.CopyFilesTask.call()?j@72.25:72.26CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaH  H(!2å
+?org.jabref.gui.copyfiles.CopyFilesTask.call()?files@70.33:70.38CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaH$ H()2à
+;org.jabref.gui.copyfiles.CopyFilesTask.call()?j@72.25:72.26CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaH2 H(32à
+;org.jabref.gui.copyfiles.CopyFilesTask.call()?j@72.25:72.26CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaMd M(e2à
+;org.jabref.gui.copyfiles.CopyFilesTask.call()?i@65.21:65.22CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaM} M(~2å
+?org.jabref.gui.copyfiles.CopyFilesTask.call()?files@70.33:70.38CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaO* O(/2à
+;org.jabref.gui.copyfiles.CopyFilesTask.call()?j@72.25:72.26CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaO4 O(52è
+Borg.jabref.gui.copyfiles.CopyFilesTask.call()?fileName@79.31:79.39CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaQ2 Q(:2è
+Borg.jabref.gui.copyfiles.CopyFilesTask?databaseContext@33.37:33.52CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaQB Q(Q2í
+Eorg.jabref.gui.copyfiles.CopyFilesTask?preferencesService@34.37:34.55CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaQS Q(e2á
+:org.jabref.gui.copyfiles.CopyFilesTask?newPath@41.27:41.34CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaS S(2ä
+=org.jabref.gui.copyfiles.CopyFilesTask?exportPath@35.23:35.33CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaS? S(I2ì
+Forg.jabref.gui.copyfiles.CopyFilesTask.call()?fileToExport@81.35:81.47CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaSL S(X2ì
+Forg.jabref.gui.copyfiles.CopyFilesTask?resolvePathFilename@45.47:45.66CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaSZ S(m2á
+:org.jabref.gui.copyfiles.CopyFilesTask?newPath@41.27:41.34CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaU U(2á
+:org.jabref.gui.copyfiles.CopyFilesTask?newPath@41.27:41.34CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaV' V(.2ì
+Forg.jabref.gui.copyfiles.CopyFilesTask.call()?fileToExport@81.35:81.47CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaW< W(H2é
+Aorg.jabref.gui.copyfiles.CopyFilesTask.call()?newFile@86.29:86.36CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaWP W(W2ë
+Dorg.jabref.gui.copyfiles.CopyFilesTask?totalFilesCounter@43.16:43.33CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaX' X(82è
+Borg.jabref.gui.copyfiles.CopyFilesTask?totalFilesCount@38.23:38.38CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaX< X(K2é
+Aorg.jabref.gui.copyfiles.CopyFilesTask.call()?success@87.32:87.39CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaa a(#2ó
+Jorg.jabref.gui.copyfiles.CopyFilesTask?localizedSuccessMessage@36.25:36.48CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javab* b(A2ê
+Corg.jabref.gui.copyfiles.CopyFilesTask?numberSuccessful@42.16:42.32CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javac c(,2é
+Aorg.jabref.gui.copyfiles.CopyFilesTask.call()?newFile@86.29:86.36CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javad, d(32â
+<org.jabref.gui.copyfiles.CopyFilesTask.call()?bw@64.28:64.30CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javad5 d(72ó
+Jorg.jabref.gui.copyfiles.CopyFilesTask?localizedSuccessMessage@36.25:36.48CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javad9 d(P2é
+Aorg.jabref.gui.copyfiles.CopyFilesTask.call()?newFile@86.29:86.36CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javae, e(32é
+Aorg.jabref.gui.copyfiles.CopyFilesTask.call()?success@87.32:87.39CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javae5 e(<2ó
+Jorg.jabref.gui.copyfiles.CopyFilesTask?localizedSuccessMessage@36.25:36.48CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javae> e(U2ï
+Horg.jabref.gui.copyfiles.CopyFilesTask?localizedErrorMessage@37.25:37.46CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javag* g(?2é
+Aorg.jabref.gui.copyfiles.CopyFilesTask.call()?newFile@86.29:86.36CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javah, h(32â
+<org.jabref.gui.copyfiles.CopyFilesTask.call()?bw@64.28:64.30CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javah5 h(72ï
+Horg.jabref.gui.copyfiles.CopyFilesTask?localizedErrorMessage@37.25:37.46CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javah9 h(N2é
+Aorg.jabref.gui.copyfiles.CopyFilesTask.call()?newFile@86.29:86.36CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javai, i(32é
+Aorg.jabref.gui.copyfiles.CopyFilesTask.call()?success@87.32:87.39CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javai5 i(<2ï
+Horg.jabref.gui.copyfiles.CopyFilesTask?localizedErrorMessage@37.25:37.46CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javai> i(S2ê
+Corg.jabref.gui.copyfiles.CopyFilesTask?numberSuccessful@42.16:42.32CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaq% q(52ë
+Dorg.jabref.gui.copyfiles.CopyFilesTask?totalFilesCounter@43.16:43.33CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javar% r(62á
+:org.jabref.gui.copyfiles.CopyFilesTask?newPath@41.27:41.34CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javas s(2ó
+Jorg.jabref.gui.copyfiles.CopyFilesTask.call()?successMessage@112.19:112.33CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javat t((2â
+<org.jabref.gui.copyfiles.CopyFilesTask.call()?bw@64.28:64.30CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javau u(2ó
+Jorg.jabref.gui.copyfiles.CopyFilesTask.call()?successMessage@112.19:112.33CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javau u(#2á
+:org.jabref.gui.copyfiles.CopyFilesTask?results@40.53:40.60CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javav v(2k
+java.nio.file.Path.getParent()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javas  s(/2j
+java.nio.file.Path.toString()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javas5 s(C2ô
+Eorg.jabref.gui.copyfiles.CopyFilesTask.call()?currentTime@61.22:61.33DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java= =(!2ô
+Eorg.jabref.gui.copyfiles.CopyFilesTask.call()?currentDate@62.15:62.26DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java> >(2ê
+<org.jabref.gui.copyfiles.CopyFilesTask.call()?bw@64.28:64.30DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java@ @(2è
+;org.jabref.gui.copyfiles.CopyFilesTask.call()?i@65.21:65.22DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaA A(2ì
+?org.jabref.gui.copyfiles.CopyFilesTask.call()?files@70.33:70.38DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaF! F(&2è
+;org.jabref.gui.copyfiles.CopyFilesTask.call()?j@72.25:72.26DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaH H(2ñ
+Borg.jabref.gui.copyfiles.CopyFilesTask.call()?fileName@79.31:79.39DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaO O('2ö
+Forg.jabref.gui.copyfiles.CopyFilesTask.call()?fileToExport@81.35:81.47DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaQ# Q(/2ï
+Aorg.jabref.gui.copyfiles.CopyFilesTask.call()?newFile@86.29:86.36DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaV V($2ï
+Aorg.jabref.gui.copyfiles.CopyFilesTask.call()?success@87.32:87.39DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaW  W('2û
+Jorg.jabref.gui.copyfiles.CopyFilesTask.call()?successMessage@112.19:112.33DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javap p(!2è
+;org.jabref.gui.copyfiles.CopyFilesTask.call()?e@91.54:91.55DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java[6 [(72b
+java.util.ListRETURN_TYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java8 8(2í
+5org.jabref.gui.copyfiles.CopyFilesResultItemViewModelRETURN_TYPE_ARGUMENTC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java8 8(/•
+Eorg.jabref.gui.copyfiles.CopyFilesTask.call()?currentTime@61.22:61.33VARIABLEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java= =(!"
+typeLocalDateTime"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier"> </mark>LocalDateTime <mark class="class-field">currentTime</mark> = LocalDateTime.now()*currentTime2d
+java.time.LocalDateTimeTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java= =(2j
+java.time.LocalDateTime.now()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java=2 =(5ç
+Eorg.jabref.gui.copyfiles.CopyFilesTask.call()?currentDate@62.15:62.26VARIABLEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java> >("
+typeString"
+isFinalfalse"±
+declarationStringõ<mark class="modifier"> </mark>String <mark class="class-field">currentDate</mark> = currentTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm-ss"))*currentDate2]
+java.lang.StringTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java> >(2è
+Bjava.time.LocalDateTime.format(java.time.format.DateTimeFormatter)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java>) >(/2ã
+>java.time.format.DateTimeFormatter.ofPattern(java.lang.String)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java>B >(K2í
+Eorg.jabref.gui.copyfiles.CopyFilesTask.call()?currentTime@61.22:61.33CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java> >((ñ
+<org.jabref.gui.copyfiles.CopyFilesTask.call()?bw@64.28:64.30VARIABLEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java@ @("
+typeBufferedWriter"
+isFinalfalse"˜
+declarationString·<mark class="modifier"> </mark>BufferedWriter <mark class="class-field">bw</mark> = Files.newBufferedWriter(exportPath.resolve(LOGFILE_PREFIX + currentDate + LOGFILE_EXT)<mark class="modifier">,</mark> StandardCharsets.UTF_8)*bw2c
+java.io.BufferedWriterTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java@ @(2Ω
+pjava.nio.file.Files.newBufferedWriter(java.nio.file.Path, java.nio.charset.Charset, java.nio.file.OpenOption...)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java@' @(82y
+,java.nio.file.Path.resolve(java.lang.String)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java@D @(K2ä
+=org.jabref.gui.copyfiles.CopyFilesTask?exportPath@35.23:35.33CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java@9 @(C2é
+Aorg.jabref.gui.copyfiles.CopyFilesTask?LOGFILE_PREFIX@31.32:31.46CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java@L @(Z2í
+Eorg.jabref.gui.copyfiles.CopyFilesTask.call()?currentDate@62.15:62.26CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java@] @(h2ã
+>org.jabref.gui.copyfiles.CopyFilesTask?LOGFILE_EXT@32.32:32.43CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java@k @(v˛
+;org.jabref.gui.copyfiles.CopyFilesTask.call()?i@65.21:65.22VARIABLEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaA A("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 0*i2P
+intTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaA A(ó
+?org.jabref.gui.copyfiles.CopyFilesTask.call()?files@70.33:70.38VARIABLEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaF! F(&"
+typeList<LinkedFile>"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>List<LinkedFile> <mark class="class-field">files</mark> = entries.get(i).getFiles()*files2[
+java.util.ListTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaF F(2w
+!org.jabref.model.entry.LinkedFileTYPE_ARGUMENTC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaF F(2w
+*org.jabref.model.entry.BibEntry.getFiles()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaF8 F(@2d
+java.util.List.get(int)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaF1 F(42á
+:org.jabref.gui.copyfiles.CopyFilesTask?entries@39.33:39.40CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaF) F(02à
+;org.jabref.gui.copyfiles.CopyFilesTask.call()?i@65.21:65.22CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaF5 F(6˛
+;org.jabref.gui.copyfiles.CopyFilesTask.call()?j@72.25:72.26VARIABLEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaH H("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">j</mark> = 0*j2P
+intTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaH H(¨
+Borg.jabref.gui.copyfiles.CopyFilesTask.call()?fileName@79.31:79.39VARIABLEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaO O('"
+type
+LinkedFile"
+isFinalfalse"w
+declarationStringb<mark class="modifier"> </mark>LinkedFile <mark class="class-field">fileName</mark> = files.get(j)*fileName2n
+!org.jabref.model.entry.LinkedFileTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaO O(2d
+java.util.List.get(int)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaO0 O(32å
+?org.jabref.gui.copyfiles.CopyFilesTask.call()?files@70.33:70.38CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaO* O(/2à
+;org.jabref.gui.copyfiles.CopyFilesTask.call()?j@72.25:72.26CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaO4 O(5Ô
+
+Forg.jabref.gui.copyfiles.CopyFilesTask.call()?fileToExport@81.35:81.47VARIABLEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaQ# Q(/"
+typeOptional<Path>"
+isFinalfalse"Ω
+declarationStringß<mark class="modifier"> </mark>Optional<Path> <mark class="class-field">fileToExport</mark> = fileName.findIn(databaseContext, preferencesService.getFilePreferences())*fileToExport2_
+java.util.OptionalTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaQ Q(2h
+java.nio.file.PathTYPE_ARGUMENTC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaQ Q(!2À
+~org.jabref.model.entry.LinkedFile.findIn(org.jabref.model.database.BibDatabaseContext, org.jabref.preferences.FilePreferences)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaQ; Q(A2ã
+>org.jabref.preferences.PreferencesService.getFilePreferences()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaQf Q(x2è
+Borg.jabref.gui.copyfiles.CopyFilesTask.call()?fileName@79.31:79.39CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaQ2 Q(:2è
+Borg.jabref.gui.copyfiles.CopyFilesTask?databaseContext@33.37:33.52CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaQB Q(Q2í
+Eorg.jabref.gui.copyfiles.CopyFilesTask?preferencesService@34.37:34.55CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaQS Q(eÄ
+Aorg.jabref.gui.copyfiles.CopyFilesTask.call()?newFile@86.29:86.36VARIABLEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaV V($"
+typePath"
+isFinalfalse"q
+declarationString\<mark class="modifier"> </mark>Path <mark class="class-field">newFile</mark> = newPath.get()*newFile2_
+java.nio.file.PathTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaV V(2e
+java.util.Optional.get()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaV/ V(22á
+:org.jabref.gui.copyfiles.CopyFilesTask?newPath@41.27:41.34CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaV' V(.«
+Aorg.jabref.gui.copyfiles.CopyFilesTask.call()?success@87.32:87.39VARIABLEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaW  W('"
+typeboolean"
+isFinalfalse"˜
+declarationString·<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">success</mark> = FileUtil.copyFile(fileToExport.get()<mark class="modifier">,</mark> newFile, <mark class="modifier">false</mark>)*success2T
+booleanTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaW W(2®
+[org.jabref.logic.util.io.FileUtil.copyFile(java.nio.file.Path, java.nio.file.Path, boolean)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaW3 W(;2e
+java.util.Optional.get()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaWI W(L2ì
+Forg.jabref.gui.copyfiles.CopyFilesTask.call()?fileToExport@81.35:81.47CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaW< W(H2é
+Aorg.jabref.gui.copyfiles.CopyFilesTask.call()?newFile@86.29:86.36CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaWP W(Wﬂ
+Jorg.jabref.gui.copyfiles.CopyFilesTask.call()?successMessage@112.19:112.33VARIABLEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javap p(!"
+typeString"
+isFinalfalse"ã
+declarationStringı<mark class="modifier"> </mark>String <mark class="class-field">successMessage</mark> = Localization.lang("Copied %0 files of %1 successfully to %2"<mark class="modifier">,</mark> Integer.toString(numberSuccessful)<mark class="modifier">,</mark> Integer.toString(totalFilesCounter)<mark class="modifier">,</mark> newPath.map(Path::getParent).map(Path::toString).orElse(""))*successMessage2]
+java.lang.StringTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javap p(2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javap1 p(52l
+java.lang.Integer.toString(int)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaq q($2l
+java.lang.Integer.toString(int)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javar r($2i
+java.util.Optional.orElse(T)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javasE s(K2ò
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javas1 s(42ò
+Kjava.util.Optional.map(java.util.function.Function<? super T, ? extends U>)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javas s(2ê
+Corg.jabref.gui.copyfiles.CopyFilesTask?numberSuccessful@42.16:42.32CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaq% q(52ë
+Dorg.jabref.gui.copyfiles.CopyFilesTask?totalFilesCounter@43.16:43.33CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javar% r(62á
+:org.jabref.gui.copyfiles.CopyFilesTask?newPath@41.27:41.34CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javas s(2k
+java.nio.file.Path.getParent()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javas  s(/2j
+java.nio.file.Path.toString()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javas5 s(CŸ
+;org.jabref.gui.copyfiles.CopyFilesTask.call()?e@91.54:91.55VARIABLEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java[6 [(7"
+typeInterruptedException"
+isFinalfalse"+
+declarationStringInterruptedException e*e2k
+java.lang.InterruptedExceptionTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java[! [(5Ä
+torg.jabref.gui.copyfiles.CopyFilesTask.writeLogMessage(java.nio.file.Path, java.io.BufferedWriter, java.lang.String)METHODC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaz z( "
+isFinalfalse"∂
+declarationString†<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">writeLogMessage</mark>(Path newFile<mark class="modifier"><mark class="modifier">,</mark></mark> BufferedWriter bw<mark class="modifier"><mark class="modifier">,</mark></mark> String logMessage)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*writeLogMessage2s
+&java.io.Writer.write(java.lang.String)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java| |(2s
+&java.io.Writer.write(java.lang.String)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java} }(2ƒ
+worg.jabref.gui.copyfiles.CopyFilesTask.writeLogMessage(java.nio.file.Path, java.io.BufferedWriter, java.lang.String)!bwCALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java| |(2Ã
+org.jabref.gui.copyfiles.CopyFilesTask.writeLogMessage(java.nio.file.Path, java.io.BufferedWriter, java.lang.String)!logMessageCALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java| |(2…
+|org.jabref.gui.copyfiles.CopyFilesTask.writeLogMessage(java.nio.file.Path, java.io.BufferedWriter, java.lang.String)!newFileCALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java|) |(02ƒ
+worg.jabref.gui.copyfiles.CopyFilesTask.writeLogMessage(java.nio.file.Path, java.io.BufferedWriter, java.lang.String)!bwCALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java} }(2Ü
+9org.jabref.gui.copyfiles.CopyFilesTask?LOGGER@30.32:30.38CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java (2“
+Ñorg.jabref.gui.copyfiles.CopyFilesTask.writeLogMessage(java.nio.file.Path, java.io.BufferedWriter, java.lang.String)?e@126.29:126.30CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java3 (42Œ
+|org.jabref.gui.copyfiles.CopyFilesTask.writeLogMessage(java.nio.file.Path, java.io.BufferedWriter, java.lang.String)!newFile	PARAMETERC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaz& z(-2…
+worg.jabref.gui.copyfiles.CopyFilesTask.writeLogMessage(java.nio.file.Path, java.io.BufferedWriter, java.lang.String)!bw	PARAMETERC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaz> z(@2—
+org.jabref.gui.copyfiles.CopyFilesTask.writeLogMessage(java.nio.file.Path, java.io.BufferedWriter, java.lang.String)!logMessage	PARAMETERC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javazI z(S2Ÿ
+Ñorg.jabref.gui.copyfiles.CopyFilesTask.writeLogMessage(java.nio.file.Path, java.io.BufferedWriter, java.lang.String)?e@126.29:126.30DECLARATIONC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java~ ~(2X
+voidRETURN_TYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaz z(˚
+|org.jabref.gui.copyfiles.CopyFilesTask.writeLogMessage(java.nio.file.Path, java.io.BufferedWriter, java.lang.String)!newFile	PARAMETERC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaz& z(-"
+typePath"
+isFinalfalse"!
+declarationStringPath newFile*newFile2_
+java.nio.file.PathTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaz! z(%Ñ
+worg.jabref.gui.copyfiles.CopyFilesTask.writeLogMessage(java.nio.file.Path, java.io.BufferedWriter, java.lang.String)!bw	PARAMETERC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaz> z(@"
+typeBufferedWriter"
+isFinalfalse"&
+declarationStringBufferedWriter bw*bw2c
+java.io.BufferedWriterTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaz/ z(=Ü
+org.jabref.gui.copyfiles.CopyFilesTask.writeLogMessage(java.nio.file.Path, java.io.BufferedWriter, java.lang.String)!logMessage	PARAMETERC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javazI z(S"
+typeString"
+isFinalfalse"&
+declarationStringString logMessage*
+logMessage2]
+java.lang.StringTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javazB z(HÜ
+Ñorg.jabref.gui.copyfiles.CopyFilesTask.writeLogMessage(java.nio.file.Path, java.io.BufferedWriter, java.lang.String)?e@126.29:126.30VARIABLEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java~ ~("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2`
+java.io.IOExceptionTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java~ ~(«
+eorg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)METHODE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÉ É( "
+isFinalfalse"“
+declarationStringº<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">addResultToList</mark>(Path newFile<mark class="modifier"><mark class="modifier">,</mark></mark> <mark class="modifier">boolean</mark> success<mark class="modifier"><mark class="modifier">,</mark></mark> String logMessage)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*addResultToList2d
+java.util.List.add(E)CALLE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÖ Ö(2—
+Åorg.jabref.gui.copyfiles.CopyFilesResultItemViewModel.CopyFilesResultItemViewModel(java.nio.file.Path, boolean, java.lang.String)CALLE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÑ2 Ñ(N2º
+morg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)!newFileCALLE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÑO Ñ(V2º
+morg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)!successCALLE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÑX Ñ(_2ø
+porg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)!logMessageCALLE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÑa Ñ(k2â
+:org.jabref.gui.copyfiles.CopyFilesTask?results@40.53:40.60CALLE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÖ Ö(2…
+zorg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)?result@132.37:132.43CALLE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÖ Ö(2¡
+morg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)!newFile	PARAMETERE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÉ& É(-2¡
+morg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)!success	PARAMETERE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÉ7 É(>2ƒ
+porg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)!logMessage	PARAMETERE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÉG É(Q2–
+zorg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)?result@132.37:132.43DECLARATIONE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÑ% Ñ(+2Z
+voidRETURN_TYPEE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÉ É(Â
+
+zorg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)?result@132.37:132.43VARIABLEE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÑ% Ñ(+"$
+typeCopyFilesResultItemViewModel"
+isFinalfalse"∫
+declarationString§<mark class="modifier"> </mark>CopyFilesResultItemViewModel <mark class="class-field">result</mark> = new CopyFilesResultItemViewModel(newFile, success, logMessage)*result2Ñ
+5org.jabref.gui.copyfiles.CopyFilesResultItemViewModelTYPEE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÑ Ñ($2—
+Åorg.jabref.gui.copyfiles.CopyFilesResultItemViewModel.CopyFilesResultItemViewModel(java.nio.file.Path, boolean, java.lang.String)CALLE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÑ2 Ñ(N2º
+morg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)!newFileCALLE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÑO Ñ(V2º
+morg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)!successCALLE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÑX Ñ(_2ø
+porg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)!logMessageCALLE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÑa Ñ(k
+morg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)!newFile	PARAMETERE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÉ& É(-"
+typePath"
+isFinalfalse"!
+declarationStringPath newFile*newFile2a
+java.nio.file.PathTYPEE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÉ! É(%â
+morg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)!success	PARAMETERE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÉ7 É(>"
+typeboolean"
+isFinalfalse"B
+declarationString-<mark class="modifier">boolean</mark> success*success2V
+booleanTYPEE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÉ/ É(6˚
+porg.jabref.gui.copyfiles.CopyFilesTask.addResultToList(java.nio.file.Path, boolean, java.lang.String)!logMessage	PARAMETERE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÉG É(Q"
+typeString"
+isFinalfalse"&
+declarationStringString logMessage*
+logMessage2_
+java.lang.StringTYPEE
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.javaÉ@ É(Fú
+9org.jabref.gui.copyfiles.CopyFilesTask?LOGGER@30.32:30.38VALUEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java  (&"
+isFinaltrue"
+typeLogger"Â
+declarationStringœ<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>Logger <mark class="class-field">LOGGER</mark> = LoggerFactory.getLogger(CopyFilesAction.class);"
+isStatictrue"
+accessprivate*LOGGER2]
+org.slf4j.LoggerTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java (ï
+Aorg.jabref.gui.copyfiles.CopyFilesTask?LOGFILE_PREFIX@31.32:31.46VALUEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java  (."
+isFinaltrue"
+typeString"Œ
+declarationString∏<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">LOGFILE_PREFIX</mark> = "copyFileslog_";"
+isStatictrue"
+accessprivate*LOGFILE_PREFIX2]
+java.lang.StringTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java (É
+>org.jabref.gui.copyfiles.CopyFilesTask?LOGFILE_EXT@32.32:32.43VALUEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java    (+"
+isFinaltrue"
+typeString"¬
+declarationString¨<mark class="modifier">private </mark><mark class="modifier">static </mark><mark class="modifier">final </mark>String <mark class="class-field">LOGFILE_EXT</mark> = ".log";"
+isStatictrue"
+accessprivate*LOGFILE_EXT2]
+java.lang.StringTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java   (ï
+Borg.jabref.gui.copyfiles.CopyFilesTask?databaseContext@33.37:33.52VALUEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java!% !(4"
+isFinaltrue"
+typeBibDatabaseContext"£
+declarationStringç<mark class="modifier">private </mark><mark class="modifier">final </mark>BibDatabaseContext <mark class="class-field">databaseContext</mark>"
+isStaticfalse"
+accessprivate*databaseContext2y
+,org.jabref.model.database.BibDatabaseContextTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java! !($õ
+Eorg.jabref.gui.copyfiles.CopyFilesTask?preferencesService@34.37:34.55VALUEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java"% "(7"
+isFinaltrue"
+typePreferencesService"¶
+declarationStringê<mark class="modifier">private </mark><mark class="modifier">final </mark>PreferencesService <mark class="class-field">preferencesService</mark>"
+isStaticfalse"
+accessprivate*preferencesService2v
+)org.jabref.preferences.PreferencesServiceTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java" "($œ
+=org.jabref.gui.copyfiles.CopyFilesTask?exportPath@35.23:35.33VALUEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java# #(!"
+isFinaltrue"
+typePath"è
+declarationStringz<mark class="modifier">private </mark><mark class="modifier">final </mark>Path <mark class="class-field">exportPath</mark>"
+isStaticfalse"
+accessprivate*
+exportPath2_
+java.nio.file.PathTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java# #(»
+Jorg.jabref.gui.copyfiles.CopyFilesTask?localizedSuccessMessage@36.25:36.48VALUEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java$ $(0"
+isFinaltrue"
+typeString"–
+declarationString∫<mark class="modifier">private </mark><mark class="modifier">final </mark>String <mark class="class-field">localizedSuccessMessage</mark> = Localization.lang("Copied file successfully");"
+isStaticfalse"
+accessprivate*localizedSuccessMessage2]
+java.lang.StringTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java$ $(2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java$@ $(DÖ
+Horg.jabref.gui.copyfiles.CopyFilesTask?localizedErrorMessage@37.25:37.46VALUEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java% %(."
+isFinaltrue"
+typeString"Û
+declarationString›<mark class="modifier">private </mark><mark class="modifier">final </mark>String <mark class="class-field">localizedErrorMessage</mark> = Localization.lang("Could not copy file") + ": " + Localization.lang("File exists");"
+isStaticfalse"
+accessprivate*localizedErrorMessage2]
+java.lang.StringTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java% %(2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java%> %(B2õ
+Norg.jabref.logic.l10n.Localization.lang(java.lang.String, java.lang.Object...)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java%p %(tÔ
+Borg.jabref.gui.copyfiles.CopyFilesTask?totalFilesCount@38.23:38.38VALUEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java& &(&"
+isFinaltrue"
+typelong"≥
+declarationStringù<mark class="modifier">private </mark><mark class="modifier">final </mark><mark class="modifier">long</mark> <mark class="class-field">totalFilesCount</mark>"
+isStaticfalse"
+accessprivate*totalFilesCount2Q
+longTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java& &(Œ
+:org.jabref.gui.copyfiles.CopyFilesTask?entries@39.33:39.40VALUEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java'! '(("
+isFinaltrue"
+typeList<BibEntry>"ó
+declarationStringÅ<mark class="modifier">private </mark><mark class="modifier">final </mark>List<BibEntry> <mark class="class-field">entries</mark>"
+isStaticfalse"
+accessprivate*entries2[
+java.util.ListTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java' '(2u
+org.jabref.model.entry.BibEntryTYPE_ARGUMENTC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java' '(ê
+:org.jabref.gui.copyfiles.CopyFilesTask?results@40.53:40.60VALUEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java(5 ((<"
+isFinaltrue"*
+type"List<CopyFilesResultItemViewModel>"¿
+declarationString™<mark class="modifier">private </mark><mark class="modifier">final </mark>List<CopyFilesResultItemViewModel> <mark class="class-field">results</mark> = new ArrayList<>();"
+isStaticfalse"
+accessprivate*results2[
+java.util.ListTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java( ((2ã
+5org.jabref.gui.copyfiles.CopyFilesResultItemViewModelTYPE_ARGUMENTC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java( ((32l
+java.util.ArrayList.ArrayList()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java(C ((N°
+:org.jabref.gui.copyfiles.CopyFilesTask?newPath@41.27:41.34VARIABLEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java) )(""
+isFinalfalse"
+typeOptional<Path>"Ü
+declarationStringq<mark class="modifier">private </mark>Optional<Path> <mark class="class-field">newPath</mark> = Optional.empty();"
+isStaticfalse"
+accessprivate*newPath2_
+java.util.OptionalTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java) )(2h
+java.nio.file.PathTYPE_ARGUMENTC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java) )(2g
+java.util.Optional.empty()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java). )(3Œ
+Corg.jabref.gui.copyfiles.CopyFilesTask?numberSuccessful@42.16:42.32VARIABLEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java* *( "
+isFinalfalse"
+typeint"é
+declarationStringy<mark class="modifier">private </mark><mark class="modifier">int</mark> <mark class="class-field">numberSuccessful</mark>"
+isStaticfalse"
+accessprivate*numberSuccessful2P
+intTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java* *(—
+Dorg.jabref.gui.copyfiles.CopyFilesTask?totalFilesCounter@43.16:43.33VARIABLEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java+ +(!"
+isFinalfalse"
+typeint"è
+declarationStringz<mark class="modifier">private </mark><mark class="modifier">int</mark> <mark class="class-field">totalFilesCounter</mark>"
+isStaticfalse"
+accessprivate*totalFilesCounter2P
+intTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java+ +(í
+Forg.jabref.gui.copyfiles.CopyFilesTask?resolvePathFilename@45.47:45.66VALUEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java-/ -(B"
+isFinaltrue"$
+typeBiFunction<Path, Path, Path>"Â
+declarationStringœ<mark class="modifier">private </mark><mark class="modifier">final </mark>BiFunction<Path, Path, Path> <mark class="class-field">resolvePathFilename</mark> = (path, file) -> path.resolve(file.getFileName());"
+isStaticfalse"
+accessprivate*resolvePathFilename2j
+java.util.function.BiFunctionTYPEC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java- -(2h
+java.nio.file.PathTYPE_ARGUMENTC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java- -(!2h
+java.nio.file.PathTYPE_ARGUMENTC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java-# -('2h
+java.nio.file.PathTYPE_ARGUMENTC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java-) -(-2{
+.java.nio.file.Path.resolve(java.nio.file.Path)CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java-Z -(a2m
+ java.nio.file.Path.getFileName()CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java-g -(r2Ñ
+7org.jabref.gui.copyfiles.CopyFilesTask?path@45.70:45.74CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java-U -(Y2Ñ
+7org.jabref.gui.copyfiles.CopyFilesTask?file@45.76:45.80CALLC
+9src\main\java\org\jabref\gui\copyfiles\CopyFilesTask.java-b -(f
